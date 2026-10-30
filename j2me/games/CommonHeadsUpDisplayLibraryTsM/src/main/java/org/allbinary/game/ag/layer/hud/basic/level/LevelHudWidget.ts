@@ -37,6 +37,7 @@ import { PaintableInterface } from '../../../../../../../../org/allbinary/graphi
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { PrimitiveLongUtil } from '../../../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
 //not GWT import const PrimitiveLongUtil
@@ -98,7 +99,7 @@ public constructor (maxlevel: number, location: number, direction: number){
 this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(1000);
     
 
-    var LEVEL: string = "Lv ";;
+    let LEVEL: string = "Lv ";;
     
 this.levelString= LEVEL.split('');
     
@@ -115,7 +116,7 @@ this.updateMaxHeight= 14;
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.updateMaxWidth= font.getSize() *4;
     
@@ -205,6 +206,4 @@ super.paintDX(graphics, this.levelString, 0, this.levelString!.length, this.leve
 
 
 }
-
-
 

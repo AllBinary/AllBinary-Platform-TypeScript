@@ -50,15 +50,13 @@ import { AdvancedPlayerOwnedRTSLayers } from './AdvancedPlayerOwnedRTSLayers.js'
 export interface AdvancedRTSPlayerLayerInterface extends RTSPlayerLayerInterface {
         
 
-    getAdvancedPlayerOwnedRTSLayers(): AdvancedPlayerOwnedRTSLayers
+    getAdvancedPlayerOwnedRTSLayers(): AdvancedPlayerOwnedRTSLayers;
 
-    isLocalPlayer(): boolean
+    isLocalPlayer(): boolean;
 
-    getGameType(): GameType
+    getGameType(): GameType;
 
-    getDecalBasicColor(): BasicColor
+    getDecalBasicColor(): BasicColor;
 
 }
-
-
 

@@ -11,6 +11,7 @@ import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -50,7 +51,7 @@ export class FontDebugBase
 
     public readonly SET_FONT: string = "setFont";
 
-    public debugMetrics(currentFont: Font, convertedTextSize: number, displayMetrics: any = {}, stringBuffer: StringMaker){
+    public debugMetrics(currentFont: Font, convertedTextSize: number, displayMetrics: any, stringBuffer: StringMaker){
 }
 
 
@@ -63,6 +64,4 @@ export class FontDebugBase
 
 
 }
-
-
 

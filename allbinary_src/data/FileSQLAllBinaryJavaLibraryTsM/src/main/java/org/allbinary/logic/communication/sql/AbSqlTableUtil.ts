@@ -26,6 +26,7 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { ResultSet } from '../../../../../java/sql/ResultSet.js';
 //not GWT import const ResultSet
@@ -62,9 +63,11 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { PATH_GLOBALS } from '../../../../../org/allbinary/globals/PATH_GLOBALS.js';
 //not GWT import const PATH_GLOBALS
@@ -74,12 +77,15 @@ import { OutputStream } from '../../../../../java/io/OutputStream.js';
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -178,9 +184,8 @@ export class AbSqlTableUtil
 
     getOutputStream(backupPath: string, tableName: string): OutputStream{
 
-        try {
-            
-    var fileName: string = tableName +this.EXTENSION;;
+ try { 
+    let fileName: string = tableName +this.EXTENSION;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -192,10 +197,10 @@ export class AbSqlTableUtil
                                     }
                                 
 
-    var backupFilePath: AbPath = new AbPath(backupPath, fileName);;
+    let backupFilePath: AbPath = new AbPath(backupPath, fileName);;
     
 
-    var backupFile: AbFile = AbFile.createAbFile(backupFilePath)!;;
+    let backupFile: AbFile = AbFile.createAbFile(backupFilePath)!;;
     
 
                         if(backupFile!.exists())
@@ -211,7 +216,7 @@ backupFile!.delete();
 backupFile!.createNewFile();
     
 
-    var outputStream: OutputStream = new AbFileOutputStream(backupFile);;
+    let outputStream: OutputStream = new AbFileOutputStream(backupFile);;
     
 
 
@@ -219,10 +224,11 @@ backupFile!.createNewFile();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return outputStream;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -238,29 +244,30 @@ backupFile!.createNewFile();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     backupFile(path: AbPath, backupPath: string, tableName: string): boolean{
 
-        try {
-            
-    var calendar: Calendar = Calendar.getInstance()!;;
+ try { 
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var timeLong: Long = new Long(calendar.getTimeInMillis());;
+    let timeLong: Long = new Long(calendar.getTimeInMillis());;
     
 
-    var time: string = timeLong!.toString()!;;
+    let time: string = timeLong!.toString()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var fileName: string = tableName +this.EXTENSION;;
+    let fileName: string = tableName +this.EXTENSION;;
     
 stringBuffer!.append(backupPath);
     
@@ -269,7 +276,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(time);
     
 
-    var backupAbPath: AbPath = new AbPath(stringBuffer!.toString());;
+    let backupAbPath: AbPath = new AbPath(stringBuffer!.toString());;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -293,7 +300,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_BACKUP_FILE);
 Directory.create(backupAbPath);
     
 
-    var backupFileBak: AbFile = AbFile.createAbFile(backupAbPath!.toFileSystemString())!;;
+    let backupFileBak: AbFile = AbFile.createAbFile(backupAbPath!.toFileSystemString())!;;
     
 backupFileBak!.createNewFile();
     
@@ -305,10 +312,11 @@ FileUtil.getInstance()!.copy(path, backupAbPath);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -324,20 +332,22 @@ FileUtil.getInstance()!.copy(path, backupAbPath);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     convertNewLines(value: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var lastIndex: number = 0;;
+    let lastIndex: number = 0;;
     
 
         while(index < value.length)
@@ -349,7 +359,7 @@ index= value.indexOf(specialCharArray[0]!, lastIndex);
                         
                                     {
                                     
-    var nextLine: string = value.substring(lastIndex, index -1)!;;
+    let nextLine: string = value.substring(lastIndex, index -1)!;;
     
 stringBuffer!.append(nextLine);
     
@@ -390,18 +400,17 @@ lastIndex= index +1;
 
     public backupTable(abSqlTable: AbSqlTable): string{
 
-    var tableName: string = abSqlTable!.getTableName()!;;
+    let tableName: string = abSqlTable!.getTableName()!;;
     
 
-        try {
-            
-    var count: number = 0;;
+ try { 
+    let count: number = 0;;
     
 
-    var sqlStatement: string = this.sqlStrings!.SELECT_ALL_FROM +tableName;;
+    let sqlStatement: string = this.sqlStrings!.SELECT_ALL_FROM +tableName;;
     
 
-    var path: string = org.allbinary.globals.URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.BACKUP_PATH;;
+    let path: string = org.allbinary.globals.URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.BACKUP_PATH;;
     
 
                         if(!Directory.create(new AbPath(path)))
@@ -420,22 +429,22 @@ lastIndex= index +1;
                                     }
                                 
 
-    var rset: ResultSet = abSqlTable!.executeSQLStatement(sqlStatement)!;;
+    let rset: ResultSet = abSqlTable!.executeSQLStatement(sqlStatement)!;;
     
 
-    var rsmd: ResultSetMetaData = rset.getMetaData()!;;
+    let rsmd: ResultSetMetaData = rset.getMetaData()!;;
     
 
-    var colNum: number = rsmd.getColumnCount()!;;
+    let colNum: number = rsmd.getColumnCount()!;;
     
 
-    var QUERY_START: string = new StringBuilder().append(this.sqlStrings!.INSERT_INTO)!.append(tableName)!.append(this.sqlStrings!.VALUES)!.toString()!;;
+    let QUERY_START: string = new StringBuilder().append(this.sqlStrings!.INSERT_INTO)!.append(tableName)!.append(this.sqlStrings!.VALUES)!.toString()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var outputStream: OutputStream = this.getOutputStream(path, tableName)!;;
+    let outputStream: OutputStream = this.getOutputStream(path, tableName)!;;
     
 
         while(rset.next())
@@ -449,10 +458,10 @@ stringBuffer!.append(QUERY_START);
 
 
                         for (
-    var i: number = 1;i < colNum; i++)
+    let i: number = 1;i < colNum; i++)
         {
 
-    var value: string = rset.getString(i)!;;
+    let value: string = rset.getString(i)!;;
     
 stringBuffer!.append(this.convertNewLines(value));
     
@@ -465,7 +474,7 @@ stringBuffer!.append(rset.getString(colNum));
 stringBuffer!.append(this.END);
     
 
-    var sqlStatementLine: string = stringBuffer!.toString()!;;
+    let sqlStatementLine: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -488,10 +497,11 @@ StreamUtil.getInstance()!.close(outputStream);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.TABLE_LABEL +tableName +this.BACKUP_SUCCESS;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -507,23 +517,24 @@ StreamUtil.getInstance()!.close(outputStream);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.TABLE_LABEL +tableName +" Backup Failed";
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public restoreTable(abSqlTable: AbSqlTable, portion: Portion): string{
 
-    var tableName: string = abSqlTable!.getTableName()!;;
+    let tableName: string = abSqlTable!.getTableName()!;;
     
 
-        try {
-            
-    var path: string = org.allbinary.globals.URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.BACKUP_PATH;;
+ try { 
+    let path: string = org.allbinary.globals.URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.BACKUP_PATH;;
     
 
-    var current: number = portion.getCurrent()!.intValue()!;;
+    let current: number = portion.getCurrent()!.intValue()!;;
     
 
                         if(current == 0)
@@ -549,22 +560,22 @@ StreamUtil.getInstance()!.close(outputStream);
                                     }
                                 
 
-    var backupFile: AbFile = AbFile.createAbFile(path, tableName +this.EXTENSION)!;;
+    let backupFile: AbFile = AbFile.createAbFile(path, tableName +this.EXTENSION)!;;
     
 
-    var bufferedLineReader: BufferedLineReader = new BufferedLineReader(backupFile);;
+    let bufferedLineReader: BufferedLineReader = new BufferedLineReader(backupFile);;
     
 
-    var size: number = bufferedLineReader!.getSize()!;;
+    let size: number = bufferedLineReader!.getSize()!;;
     
 
-    var section: number = size /portion.getTotal()!.intValue() +1;;
+    let section: number = size /portion.getTotal()!.intValue() +1;;
     
 
-    var start: number = section *current;;
+    let start: number = section *current;;
     
 
-    var end: number = start +section;;
+    let end: number = start +section;;
     
 
                         if(end > size)
@@ -576,7 +587,7 @@ StreamUtil.getInstance()!.close(outputStream);
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.TOTAL_LABEL);
     
@@ -602,7 +613,7 @@ stringBuffer!.append(end);
 bufferedLineReader!.readUpToLines(start);
     
 
-    var line: string = this.stringUtil!.EMPTY_STRING;;
+    let line: string = this.stringUtil!.EMPTY_STRING;;
     
 
         while(bufferedLineReader!.getCurrent() < end && (line= bufferedLineReader!.readLine()) != 
@@ -634,10 +645,11 @@ stringBuffer!.append(this.PORTION_RESTORED);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -648,7 +660,7 @@ stringBuffer!.append(this.PORTION_RESTORED);
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.TABLE_LABEL);
     
@@ -662,12 +674,12 @@ stringBuffer!.append(" Restoration Failed");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

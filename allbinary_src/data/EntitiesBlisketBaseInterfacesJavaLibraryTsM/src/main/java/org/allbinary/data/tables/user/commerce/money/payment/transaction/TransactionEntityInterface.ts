@@ -46,11 +46,9 @@ import { BasicDataTableInterface } from '../../../../../../../../../org/allbinar
 export interface TransactionEntityInterface extends BasicDataTableInterface {
         
 
-    remove(userName: string, orderNumber: string)
+    remove(userName: string, orderNumber: string): void;
 
-    add(userName: string, orderNumber: string, paymentTransactionInterface: PaymentTransactionInterface)
+    add(userName: string, orderNumber: string, paymentTransactionInterface: PaymentTransactionInterface): void;
 
 }
-
-
 

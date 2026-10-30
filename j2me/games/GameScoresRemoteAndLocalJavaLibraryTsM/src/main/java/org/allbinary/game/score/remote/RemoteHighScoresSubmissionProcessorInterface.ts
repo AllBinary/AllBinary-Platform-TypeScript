@@ -48,9 +48,7 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
 export interface RemoteHighScoresSubmissionProcessorInterface {
         
 
-    process(remoteHighScores: RemoteHighScores, abeClientInformation: AbeClientInformationInterface, highScore: HighScore)
+    process(remoteHighScores: RemoteHighScores, abeClientInformation: AbeClientInformationInterface, highScore: HighScore): void;
 
 }
-
-
 

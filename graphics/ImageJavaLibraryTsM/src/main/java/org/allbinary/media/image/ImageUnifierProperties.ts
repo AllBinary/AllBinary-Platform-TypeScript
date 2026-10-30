@@ -130,5 +130,3 @@ this.imageUnifierCell= imageUnifierCell;
 
 }
 
-
-

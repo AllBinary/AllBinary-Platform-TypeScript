@@ -73,14 +73,14 @@ public constructor (animationInterface: AnimationInterface, healthInterface: Hea
 this.image= new Array(this.healthInterface!.getMaxHealth());
     
 
-    var imageCacheFactory: ImageCacheFactory = ImageCacheFactory.getInstance()!;;
+    let imageCacheFactory: ImageCacheFactory = ImageCacheFactory.getInstance()!;;
     
 
 
 
 
                         for (
-    var numOfHealth: number = 0;numOfHealth <= max; numOfHealth++)
+    let numOfHealth: number = 0;numOfHealth <= max; numOfHealth++)
         {
 this.image[numOfHealth]= imageCacheFactory!.get(this, numOfHealth +1 *10, 10);
     
@@ -91,14 +91,14 @@ this.image[numOfHealth]= imageCacheFactory!.get(this, numOfHealth +1 *10, 10);
 
 
                         for (
-    var numOfHealth: number = 0;numOfHealth <= max; numOfHealth++)
+    let numOfHealth: number = 0;numOfHealth <= max; numOfHealth++)
         {
 
 
 
 
                         for (
-    var index: number = 0;index < numOfHealth; index++)
+    let index: number = 0;index < numOfHealth; index++)
         {
 this.animationInterface!.paint(this.image[numOfHealth]!.getGraphics(), numOfHealth *10, 0);
     
@@ -116,6 +116,4 @@ graphics.drawImage(this.image[max]!, x, y, Anchor.TOP_LEFT);
 
 
 }
-
-
 

@@ -39,9 +39,11 @@ import { Context } from '../../../android/content/Context.js';
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -91,29 +93,29 @@ export class AndroidServicesUtil
 
     public isServiceRunning(name: string): boolean{
 
-    var activityManager: ActivityManager = this.resourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE) as unknown as ActivityManager;;
+    let activityManager: ActivityManager = this.resourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE) as unknown as ActivityManager;;
     
 
-    var runningServicesList: List<RunningServiceInfo> = activityManager!.getRunningServices(this.SERVICE_LIMIT_MAX)!;;
+    let runningServicesList: List<RunningServiceInfo> = activityManager!.getRunningServices(this.SERVICE_LIMIT_MAX)!;;
     
 
-    var runningServiceInfo: RunningServiceInfo;;
+    let runningServiceInfo: RunningServiceInfo;;
     
 
-    var serviceComponent: ComponentName;;
+    let serviceComponent: ComponentName;;
     
 
-    var serviceName: string;;
+    let serviceName: string;;
     
 
-    var size: number = runningServicesList!.length!;;
+    let size: number = runningServicesList!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 runningServiceInfo= runningServicesList!.get(index);
     
@@ -148,6 +150,4 @@ this.logUtil!.putF(this.SERVICE_NOT_FOUND_RUNNING +name, this, this.IS_SERVICE_R
 
 
 }
-
-
 

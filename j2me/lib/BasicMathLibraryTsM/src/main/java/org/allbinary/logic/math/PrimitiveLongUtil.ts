@@ -24,12 +24,15 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -61,17 +64,17 @@ export class PrimitiveLongUtil
 
     public static createPowerOfTen(powerOfTen: number): PrimitiveLongUtil{
 
-    var primitiveLongUtil: PrimitiveLongUtil = new PrimitiveLongUtil(powerOfTen, NullUtil.getInstance()!.NULL_OBJECT);;
+    let primitiveLongUtil: PrimitiveLongUtil = new PrimitiveLongUtil(powerOfTen, NullUtil.getInstance()!.NULL_OBJECT);;
     
 
                         if(powerOfTen % 10 != 0)
                         
                                     {
                                     
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, primitiveLongUtil, commonStrings!.CONSTRUCTOR, new Exception("Max must be power of 10"));
     
@@ -101,7 +104,7 @@ logUtil!.put(commonStrings!.EXCEPTION, primitiveLongUtil, commonStrings!.CONSTRU
 
     private readonly primitiveLongSingleton: PrimitiveLongSingleton = PrimitiveLongSingleton.getInstance()!;
 
-public constructor (powerOfTen: number, unused: any = {}){
+public constructor (powerOfTen: number, unused: any){
 
             super();
         this.maxDigits= MathUtil.getInstance()!.getTotalDigits(powerOfTen);
@@ -147,19 +150,19 @@ this.charArray= new Array(this.maxDigits);
                                     }
                                 
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var div: number = this.powerOfTen;;
+    let div: number = this.powerOfTen;;
     
 
-    var lastValue: number = 0;;
+    let lastValue: number = 0;;
     
 
         while(div >= 1)
         {
 
-    var digit: number = globalThis.Math.trunc((value -lastValue) /div);;
+    let digit: number = globalThis.Math.trunc((value -lastValue) /div);;
     
 
                         if(digit >= 0 && digit < 10)
@@ -225,6 +228,4 @@ this.currentTotalDigits= currentTotalDigits;
 
 
 }
-
-
 

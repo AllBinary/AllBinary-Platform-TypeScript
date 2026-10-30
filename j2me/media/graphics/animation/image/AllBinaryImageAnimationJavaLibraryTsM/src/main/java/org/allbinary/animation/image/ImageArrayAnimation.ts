@@ -43,6 +43,7 @@ import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/Primitive
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -186,6 +187,4 @@ graphics.drawImage(this.imageArray[this.circularIndexUtil!.getIndex()]!, x, y, t
 
 
 }
-
-
 

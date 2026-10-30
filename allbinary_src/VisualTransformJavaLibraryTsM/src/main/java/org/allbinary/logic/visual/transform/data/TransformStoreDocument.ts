@@ -37,6 +37,7 @@ import { WeblisketSession } from '../../../../../../org/allbinary/logic/communic
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SearchRequest } from '../../../../../../org/allbinary/logic/control/search/SearchRequest.js';
 //not GWT import const SearchRequest
@@ -74,9 +75,8 @@ public constructor (pageContext: PageContext, weblisketSession: WeblisketSession
                             //For kotlin this is before the body of the constructor.
                     
 
-        try {
-            
-    var storeName: string = weblisketSession!.getStoreName()!;;
+ try { 
+    let storeName: string = weblisketSession!.getStoreName()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -91,10 +91,11 @@ this.getBaseNode()!.appendChild(StoreFrontViewFactory.getInstance(storeName)!.to
     
 this.getBaseNode()!.appendChild(new RequestParams(pageContext!.getRequest() as HttpServletRequest).toXmlNode(this.getDoc()));
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -109,8 +110,10 @@ this.getBaseNode()!.appendChild(new RequestParams(pageContext!.getRequest() as H
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -121,15 +124,15 @@ public constructor (searchRequest: SearchRequest){
                             //For kotlin this is before the body of the constructor.
                     
 
-        try {
-            this.getBaseNode()!.appendChild(StoreFrontViewFactory.getInstance(searchRequest!.getStoreFront()!.getName())!.toXmlNode(this.getDoc()));
+ try { this.getBaseNode()!.appendChild(StoreFrontViewFactory.getInstance(searchRequest!.getStoreFront()!.getName())!.toXmlNode(this.getDoc()));
     
 this.getBaseNode()!.appendChild(searchRequest!.getParams()!.getParamsNode(this.getDoc()));
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -144,12 +147,12 @@ this.getBaseNode()!.appendChild(searchRequest!.getParams()!.getParamsNode(this.g
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -22,15 +22,19 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -78,20 +82,22 @@ this.gameInputProcessorInterface= gameInputProcessorInterface;
 
     public update(){
 
-        try {
-            
-    var list: BasicArrayList = this.getGameKeyEventList()!;;
+ try { 
+    let list: BasicArrayList = this.getGameKeyEventList()!;;
     
 this.gameInputProcessorInterface!.onInput(list);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDATE, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -108,6 +114,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDAT
 
 
 }
-
-
 

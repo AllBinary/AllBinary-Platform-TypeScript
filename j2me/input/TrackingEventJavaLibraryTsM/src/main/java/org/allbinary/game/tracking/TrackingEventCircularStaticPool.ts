@@ -81,7 +81,7 @@ this.EVENT_POOL.initAllBinaryEventCircularPool(new TrackingEventFactory());
 
     public getNextInstance(layerInterface: AllBinaryLayer): TrackingEvent{
 
-    var trackingEvent: TrackingEvent = this.EVENT_POOL.getNextInstance() as TrackingEvent;;
+    let trackingEvent: TrackingEvent = this.EVENT_POOL.getNextInstance() as TrackingEvent;;
     
 trackingEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);
     
@@ -95,6 +95,4 @@ trackingEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);
 
 
 }
-
-
 

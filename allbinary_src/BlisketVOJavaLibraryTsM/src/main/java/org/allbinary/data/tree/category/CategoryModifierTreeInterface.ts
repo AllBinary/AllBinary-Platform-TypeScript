@@ -43,11 +43,9 @@ import { CategoryInterface } from '../../../../../org/allbinary/business/categor
 export interface CategoryModifierTreeInterface {
         
 
-    insert(parentCategoryInterface: CategoryInterface, newChildCategoryInterface: CategoryInterface)
+    insert(parentCategoryInterface: CategoryInterface, newChildCategoryInterface: CategoryInterface): void;
 
-    delete(parentCategoryInterface: CategoryInterface, newChildCategoryInterface: CategoryInterface)
+    delete(parentCategoryInterface: CategoryInterface, newChildCategoryInterface: CategoryInterface): void;
 
 }
-
-
 

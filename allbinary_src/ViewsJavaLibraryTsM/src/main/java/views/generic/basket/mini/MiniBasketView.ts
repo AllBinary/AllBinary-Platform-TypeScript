@@ -31,6 +31,7 @@ import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNod
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SearchData } from '../../../../org/allbinary/logic/control/search/SearchData.js';
 //not GWT import const SearchData
@@ -84,34 +85,33 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var basketInterface: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;;
+ try { 
+    let basketInterface: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;;
     
 
-    var basketNode: Node = document.createElement(BasketData.BASKET)!;;
+    let basketNode: Node = document.createElement(BasketData.BASKET)!;;
     
 
-    var totalNumberNode: Node = document.createElement(SearchData.TOTAL_NUMBER_ITEMS)!;;
+    let totalNumberNode: Node = document.createElement(SearchData.TOTAL_NUMBER_ITEMS)!;;
     
 
-    var totalNumberTextNode: Node = document.createTextNode(basketInterface!.getNumberOfItems()!.toString())!;;
+    let totalNumberTextNode: Node = document.createTextNode(basketInterface!.getNumberOfItems()!.toString())!;;
     
 totalNumberNode!.appendChild(totalNumberTextNode);
     
 
-    var totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;;
+    let totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;;
     
 
-    var totalWeightTextNode: Node = document.createTextNode(basketInterface!.getTotalWeight()!.toString())!;;
+    let totalWeightTextNode: Node = document.createTextNode(basketInterface!.getTotalWeight()!.toString())!;;
     
 totalWeightNode!.appendChild(totalWeightTextNode);
     
 
-    var subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;;
+    let subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;;
     
 
-    var subTotalTextNode: Node = document.createTextNode(basketInterface!.getSubTotal()!.toString())!;;
+    let subTotalTextNode: Node = document.createTextNode(basketInterface!.getSubTotal()!.toString())!;;
     
 subTotalNode!.appendChild(subTotalTextNode);
     
@@ -127,10 +127,11 @@ basketNode!.appendChild(subTotalNode);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return basketNode;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
@@ -145,8 +146,10 @@ basketNode!.appendChild(subTotalNode);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -160,8 +163,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -169,10 +171,11 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -187,12 +190,12 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

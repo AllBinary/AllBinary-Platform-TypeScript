@@ -48,13 +48,11 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 export interface PickedUpLayerInterfaceFactoryInterface {
         
 
-    getPickedUpLayerType(): PickedUpLayerType
+    getPickedUpLayerType(): PickedUpLayerType;
 
-    getIconLayer(): AllBinaryLayer
+    getIconLayer(): AllBinaryLayer;
 
-    getAnimationInterface(): Animation
+    getAnimationInterface(): Animation;
 
 }
-
-
 

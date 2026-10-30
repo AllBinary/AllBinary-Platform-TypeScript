@@ -72,5 +72,3 @@ export class CollidableNeverCollideBehaviorFactory extends CollidableBaseBehavio
 
 }
 
-
-

@@ -24,6 +24,7 @@
         
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
 
 import { URI } from '../../../../java/net/URI.js';
 //not GWT import const URI
@@ -105,6 +106,7 @@ import { InputAutomationRobotChangeEvent } from '../../../../org/allbinary/input
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
@@ -120,6 +122,7 @@ import { InputAutomationClientInformationFactory } from '../../../../org/allbina
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
 //not GWT import const RunnableInterface
@@ -212,7 +215,7 @@ InputAutomationJFrame.INPUTAUTOMATION_JFRAME.setVisible(false);
 LogConfigTypeFactory.getInstance();
     
 
-    var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();;
+    let appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();;
     
 appUrlGlobals!.setWebappPath("G:/mnt/bc/mydev/work_automation/automation/run/");
     
@@ -225,14 +228,13 @@ java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            logUtil!.putF("Running", this, commonStrings!.RUN);
+ try { logUtil!.putF("Running", this, commonStrings!.RUN);
     
 INPUTAUTOMATION_JFRAME= new InputAutomationJFrame();
     
@@ -253,14 +255,17 @@ inputAutomationBundleActivatorListenerInterface!.useServices();
                                 
 INPUTAUTOMATION_JFRAME.setVisible(true);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -302,7 +307,7 @@ public constructor (){
         this.initComponents();
     
 
-    var url: URL = this.constructor.name.getResource("/help/Help.hs")!;;
+    let url: URL = this.constructor.name.getResource("/help/Help.hs")!;;
     
 this.logUtil!.putF("URL: " +url, this, this.commonStrings!.CONSTRUCTOR);
     
@@ -311,7 +316,7 @@ this.helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);
 url= this.constructor.name.getResource("/resources/allbinaryicon8bit.jpg");
     
 
-    var imageIcon: ImageIcon = new ImageIcon(url);;
+    let imageIcon: ImageIcon = new ImageIcon(url);;
     
 this.setIconImage(imageIcon!.getImage());
     
@@ -336,12 +341,12 @@ this.helpSet!.remove(helpSetEvent!.getHelpSet());
             
     init(){
 
-    var inputAutomationConfigurationFactory: InputAutomationConfigurationFactory = InputAutomationConfigurationFactory.getInstance()!;;
+    let inputAutomationConfigurationFactory: InputAutomationConfigurationFactory = InputAutomationConfigurationFactory.getInstance()!;;
     
 inputAutomationConfigurationFactory!.init(InputAutomationClientInformationFactory.getInstance());
     
 
-    var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = inputAutomationConfigurationFactory!.inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;;
+    let inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = inputAutomationConfigurationFactory!.inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;;
     
 
                         if(inputAutomationModuleConfigurationList == 
@@ -415,7 +420,7 @@ this.noModuleSelectedJDialog!.setMinimumSize(new java.awt.Dimension(200, 100));
 this.noModuleSelectedJLabel!.setText("Please Select A Module");
     
 
-    var noModuleSelectedJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.noModuleSelectedJDialog!.getContentPane());;
+    let noModuleSelectedJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.noModuleSelectedJDialog!.getContentPane());;
     
 this.noModuleSelectedJDialog!.getContentPane()!.setLayout(noModuleSelectedJDialogLayout);
     
@@ -479,7 +484,7 @@ inputAutomationModuleJListValueChanged(evt);
 this.jScrollPane1!.setViewportView(this.inputAutomationModuleJList);
     
 
-    var inputAutomationModuleJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.inputAutomationModuleJPanel);;
+    let inputAutomationModuleJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.inputAutomationModuleJPanel);;
     
 this.inputAutomationModuleJPanel!.setLayout(inputAutomationModuleJPanelLayout);
     
@@ -490,7 +495,7 @@ inputAutomationModuleJPanelLayout!.setVerticalGroup(inputAutomationModuleJPanelL
 this.gameRobotJTabbedPane!.addTab("Modules", inputAutomationModuleJPanel);
     
 
-    var automationModuleConfigurationJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.automationModuleConfigurationJPanel);;
+    let automationModuleConfigurationJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.automationModuleConfigurationJPanel);;
     
 this.automationModuleConfigurationJPanel!.setLayout(automationModuleConfigurationJPanelLayout);
     
@@ -652,7 +657,7 @@ this.mainJMenuBar!.add(this.toolsJMenu);
 setJMenuBar(this.mainJMenuBar);
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());;
     
 getContentPane()!.setLayout(layout);
     
@@ -667,39 +672,43 @@ pack();
 
     subscriptionJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            Desktop.getDesktop()!.browse(this.uri);
+ try { Desktop.getDesktop()!.browse(this.uri);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "subscriptionJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     updatesJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            Desktop.getDesktop()!.browse(this.uri);
+ try { Desktop.getDesktop()!.browse(this.uri);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updatesJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     aboutJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-    var textJDialog: JDialog = new BasicTextJDialog("Copyright (c) 2002-2007 AllBinary");;
+    let textJDialog: JDialog = new BasicTextJDialog("Copyright (c) 2002-2007 AllBinary");;
     
 textJDialog!.setVisible(true);
     
@@ -710,17 +719,19 @@ textJDialog!.setLocationRelativeTo(this);
 
     modulesJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            new DesktopBundle().start();
+ try { new DesktopBundle().start();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "modulesJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -778,9 +789,8 @@ this.logUtil!.putF("Nothing", this, "focusLost");
 
     inputAutomationModuleJListValueChanged(evt: javax.swing.event.ListSelectionEvent){
 
-        try {
-            
-    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue() as string;;
+ try { 
+    let gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue() as string;;
     
 
                         if(gameAutomationRobotModuleNameString != 
@@ -793,7 +803,7 @@ this.logUtil!.putF("Nothing", this, "focusLost");
 this.getAutomationModuleConfigurationJPanel()!.removeAll();
     
 
-    var layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout() as javax.swing.GroupLayout;;
+    let layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout() as javax.swing.GroupLayout;;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
     
@@ -814,14 +824,17 @@ this.gameRobotJTabbedPane!.setEnabledAt(1, false);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "gameAutomationRobotModuleJListValueChanged", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -850,8 +863,7 @@ this.noModuleSelectedJDialog!.setLocationRelativeTo(this);
 
     startJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.logUtil!.putF("Starting", this, "startJMenuItemActionPerformed");
+ try { this.logUtil!.putF("Starting", this, "startJMenuItemActionPerformed");
     
 
                         if(this.inputAutomationModuleInterface != 
@@ -899,14 +911,17 @@ this.noModuleSelectedJDialog!.setLocationRelativeTo(this);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "startJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -925,73 +940,92 @@ this.automationModuleConfigurationJPanel= automationModuleConfigurationJPanel;
     
 }
 
+onAdd(...args: any[]): any {
+   
+    if (args.length === 1) return this.onAdd$overload1(args[0]);
+   
+    if (args.length === 1) return this.onAdd$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: onAdd'); }
+  
+    public onAdd$overload1(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent){
 
-    public onAdd(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent){
-
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "onAdd");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "onAdd");
     
 InputRobotFactory.getInstance()!.add(inputAutomationRobotChangeEvent!.getInputAutomationRobotInterfaceWrapper()!.getInputRobotInterface());
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e);
     
+
+ }
+   }
+ 
 }
 
-}
+onRemove(...args: any[]): any {
+   
+    if (args.length === 1) return this.onRemove$overload1(args[0]);
+   
+    if (args.length === 1) return this.onRemove$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: onRemove'); }
+  
+    public onRemove$overload1(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent){
 
-
-    public onRemove(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent){
-
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "onRemove");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "onRemove");
     
 InputRobotFactory.getInstance()!.add(inputAutomationRobotChangeEvent!.getInputAutomationRobotInterfaceWrapper()!.getInputRobotInterface());
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e);
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public onAdd$overload2(inputAutomationConfigurationChangeEvent: InputAutomationConfigurationModuleChangeEvent){
 
-    public onAdd(inputAutomationConfigurationChangeEvent: InputAutomationConfigurationModuleChangeEvent){
-
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "onAdd");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "onAdd");
     
 this.inputAutomationModuleConfigurations!.add(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration());
     
 this.init();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e);
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public onRemove$overload2(inputAutomationConfigurationChangeEvent: InputAutomationConfigurationModuleChangeEvent){
 
-    public onRemove(inputAutomationConfigurationChangeEvent: InputAutomationConfigurationModuleChangeEvent){
-
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "onRemove");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "onRemove");
     
 
-    var inputAutomationConfiguration: InputAutomationConfiguration = InputAutomationConfigurationFactory.getInstance()!.inputAutomationConfiguration;;
+    let inputAutomationConfiguration: InputAutomationConfiguration = InputAutomationConfigurationFactory.getInstance()!.inputAutomationConfiguration;;
     
 
-    var inputAutomationModuleConfigurationList: java.util.List<InputAutomationModuleConfiguration> = inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;;
+    let inputAutomationModuleConfigurationList: java.util.List<InputAutomationModuleConfiguration> = inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;;
     
 
                         if(inputAutomationModuleConfigurationList == 
@@ -1000,10 +1034,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e);
                         
                                     {
                                     
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF("inputAutomationModuleConfigurationList: " +inputAutomationModuleConfigurationList, this, commonStrings!.INIT);
     
@@ -1016,20 +1050,23 @@ logUtil!.putF("inputAutomationModuleConfigurationList: " +inputAutomationModuleC
                                     }
                                 
 
-    var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = new InputAutomationModuleConfigurations(inputAutomationConfiguration!.getInputAutomationModuleConfigurationList());;
+    let inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = new InputAutomationModuleConfigurations(inputAutomationConfiguration!.getInputAutomationModuleConfigurationList());;
     
 inputAutomationModuleConfigurations!.remove(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration());
     
 this.init();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -1072,6 +1109,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e);
     private updatesJMenuItem: javax.swing.JMenuItem;
 
 }
-
-
 

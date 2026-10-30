@@ -40,9 +40,7 @@
 export interface IntermissionEnableListenerInterface {
         
 
-    notifyIntermission(enable: boolean)
+    notifyIntermission(enable: boolean): void;
 
 }
-
-
 

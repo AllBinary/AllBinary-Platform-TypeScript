@@ -66,5 +66,3 @@ protected constructor (value: string){
 
 }
 
-
-

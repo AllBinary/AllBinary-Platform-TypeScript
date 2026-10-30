@@ -42,23 +42,21 @@
 export interface HealthInterface {
         
 
-    isAlive(): boolean
+    isAlive(): boolean;
 
-    damage(ahealth: number)
+    damage(ahealth: number): void;
 
-    heal(ahealth: number)
+    heal(ahealth: number): void;
 
-    healMax()
+    healMax(): void;
 
-    getMaxHealth(): number
+    getMaxHealth(): number;
 
-    setMaxHealth(maxHealth: number)
+    setMaxHealth(maxHealth: number): void;
 
-    getHealth(): number
+    getHealth(): number;
 
-    addListener(healthListenerInterface: HealthListenerInterface)
+    addListener(healthListenerInterface: HealthListenerInterface): void;
 
 }
-
-
 

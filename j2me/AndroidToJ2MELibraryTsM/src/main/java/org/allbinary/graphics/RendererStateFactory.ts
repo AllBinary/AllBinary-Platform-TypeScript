@@ -94,5 +94,3 @@ this.surfaceChanged= initialized;
 
 }
 
-
-

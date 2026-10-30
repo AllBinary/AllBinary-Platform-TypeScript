@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -58,6 +60,7 @@ import { GLOBALS2 } from '../../../org/allbinary/globals/GLOBALS2.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
@@ -147,8 +150,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -156,10 +158,11 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -174,41 +177,42 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var node: Node = document.createElement(OrderData.ORDERS)!;;
+ try { 
+    let node: Node = document.createElement(OrderData.ORDERS)!;;
     
 
-    var orderHistoryEntity: OrderHistoryEntity = new OrderHistoryEntity();;
+    let orderHistoryEntity: OrderHistoryEntity = new OrderHistoryEntity();;
     
 
-    var orderReviewVector: BasicArrayList = orderHistoryEntity!.getOrders(this.userName)!;;
+    let orderReviewVector: BasicArrayList = orderHistoryEntity!.getOrders(this.userName)!;;
     
 
-    var size: number = orderReviewVector!.size()!;;
+    let size: number = orderReviewVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderReviewVector!.get(index) as OrderHistory;;
+    let orderHistory: OrderHistory = orderReviewVector!.get(index) as OrderHistory;;
     
 
-    var orderHistoryNode: Node = orderHistory!.toXmlNode(document)!;;
+    let orderHistoryNode: Node = orderHistory!.toXmlNode(document)!;;
     
 
-    var orderNode: Node = document.createElement(orderHistory!.getPaymentMethod())!;;
+    let orderNode: Node = document.createElement(orderHistory!.getPaymentMethod())!;;
     
 node.appendChild(orderHistory!.toXmlNode(document));
     
@@ -241,10 +245,11 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
@@ -260,8 +265,10 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -276,14 +283,14 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                                     }
                                 
 
-                        if(UserName.getInstance()!.isValid(this.userName) == Boolean.TRUE)
+                        if(UserName.getInstance()!.isValid(this.userName) == true)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -292,7 +299,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 }
 
@@ -329,7 +336,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                         return "No User Name Specified<br />";
     
 
-                        if(UserName.getInstance()!.isValid(this.userName) == Boolean.FALSE)
+                        if(UserName.getInstance()!.isValid(this.userName) == false)
                         
                                     {
                                     
@@ -351,6 +358,4 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
 
 
 }
-
-
 

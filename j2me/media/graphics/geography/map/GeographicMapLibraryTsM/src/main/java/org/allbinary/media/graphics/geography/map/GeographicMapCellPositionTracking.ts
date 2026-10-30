@@ -80,7 +80,7 @@ public constructor (){
             
     public getCurrentOverCellType(geographicMap: BasicGeographicMap): GeographicMapCellType{
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.currentGeographicMapCellPosition;;
+    let geographicMapCellPosition: GeographicMapCellPosition = this.currentGeographicMapCellPosition;;
     
 
                         if(geographicMapCellPosition != this.previousGeographicMapCellPosition)
@@ -108,10 +108,10 @@ public constructor (){
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager() as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager() as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAtXY(layer.getXP() +layer.getHalfWidth(), layer.getYP() +layer.getHalfHeight());
     
@@ -188,6 +188,4 @@ this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAtXY(l
 
 
 }
-
-
 

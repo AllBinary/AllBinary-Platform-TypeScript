@@ -36,9 +36,11 @@ import { NoDecimalTrigTable } from '../../../../org/allbinary/math/NoDecimalTrig
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -88,23 +90,23 @@ this.pointBasicArrayList= points;
             
     public translate(x: number, y: number){
 
-    var newBasicArrayList: BasicArrayList = new BasicArrayListD();;
+    let newBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = this.pointBasicArrayList!.size()!;;
+    let size: number = this.pointBasicArrayList!.size()!;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var secondPoint: GPoint;;
+    let secondPoint: GPoint;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
     
@@ -144,41 +146,41 @@ this.rotate(globalThis.Math.trunc(angle.getValue()));
             
     rotate(angle: number){
 
-    var newBasicArrayList: BasicArrayList = new BasicArrayListD();;
+    let newBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
-    var secondPoint: GPoint;;
+    let secondPoint: GPoint;;
     
 
-    var y: number= 0;;
+    let y: number= 0;;
     
 
-    var secondX: number= 0;;
+    let secondX: number= 0;;
     
 
-    var secondY: number= 0;;
+    let secondY: number= 0;;
     
 
-    var point: GPoint;;
+    let point: GPoint;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var size: number = this.pointBasicArrayList!.size()!;;
+    let size: number = this.pointBasicArrayList!.size()!;;
     
 
-    var sin: number= 0;;
+    let sin: number= 0;;
     
 
-    var cos: number= 0;;
+    let cos: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
     
@@ -220,32 +222,32 @@ this.pointBasicArrayList= newBasicArrayList;
             
     public mirror(width: number){
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var halfWidth: number = (width>>1);;
+    let halfWidth: number = (width>>1);;
     
 
-    var newBasicArrayList: BasicArrayList = new BasicArrayListD();;
+    let newBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
-    var secondPoint: GPoint;;
+    let secondPoint: GPoint;;
     
 
-    var newX: number= 0;;
+    let newX: number= 0;;
     
 
-    var point: GPoint;;
+    let point: GPoint;;
     
 
-    var size: number = this.pointBasicArrayList!.size()!;;
+    let size: number = this.pointBasicArrayList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
     
@@ -301,6 +303,4 @@ this.pointBasicArrayList= newBasicArrayList;
 
 
 }
-
-
 

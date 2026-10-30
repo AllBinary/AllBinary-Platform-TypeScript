@@ -40,9 +40,7 @@
 export interface DemoPaintableInterface {
         
 
-    showGamePaintable()
+    showGamePaintable(): void;
 
 }
-
-
 

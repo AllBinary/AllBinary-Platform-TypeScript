@@ -45,6 +45,7 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -97,12 +98,11 @@ this.status= value;
             
     setOrderStatus(): string{
 
-        try {
-            
-    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;;
+ try { 
+    let request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;;
     
 
-    var anyType: any = new OrderHistoryRequestHelperFactory().getInstance(this.getPropertiesHashMap(), pageContext)!;;
+    let anyType: any = new OrderHistoryRequestHelperFactory().getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
                         if(this.status == 
@@ -111,14 +111,14 @@ this.status= value;
                         
                                     {
                                     
-    var helperClass: Function = anyType!.constructor!;;
+    let helperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod("setOrderStatus", 
+    let method: Method = helperClass!.getMethod("setOrderStatus", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -132,25 +132,25 @@ this.status= value;
                                 
                         else {
                             
-    var helperClass: Function = anyType!.constructor!;;
+    let helperClass: Function = anyType!.constructor!;;
     
 
-    var methodParams: Function[] = 
+    let methodParams: Function[] = 
                                                         [
                                                             this.status.constructor
                                                         ];;
     
 
-    var method: Method = helperClass!.getMethod("setOrderStatus", methodParams)!;;
+    let method: Method = helperClass!.getMethod("setOrderStatus", methodParams)!;;
     
 
-    var methodArgs: any[] = 
+    let methodArgs: any[] = 
                                                         [
                                                             this.status
                                                         ];;
     
 
-    var result: string = method.invoke(anyType, methodArgs) as string;;
+    let result: string = method.invoke(anyType, methodArgs) as string;;
     
 
 
@@ -161,22 +161,23 @@ this.status= value;
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to set Order Status";;
+    let error: string = "Failed to set Order Status";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -193,8 +194,10 @@ this.status= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -202,8 +205,7 @@ this.status= value;
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(this.isEnabled())
                         
                                     {
@@ -246,10 +248,11 @@ this.status= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -258,11 +261,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -271,12 +274,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

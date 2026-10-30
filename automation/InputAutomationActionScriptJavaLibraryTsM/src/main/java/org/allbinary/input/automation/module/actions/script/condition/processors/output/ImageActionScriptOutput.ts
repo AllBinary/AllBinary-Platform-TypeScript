@@ -36,12 +36,15 @@ import { ModDomHelper } from '../../../../../../../../../../org/allbinary/data/t
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { Document } from '../../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -107,7 +110,7 @@ public constructor (node: Node){
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var actionNode: Node = DomSearchHelper.getNode(ImageActionScriptOutputData.NAME, node.getChildNodes())!;;
+    let actionNode: Node = DomSearchHelper.getNode(ImageActionScriptOutputData.NAME, node.getChildNodes())!;;
     
 
                         if(actionNode != 
@@ -116,24 +119,24 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
                         
                                     {
                                     
-    var nodeList: NodeList = actionNode!.getChildNodes()!;;
+    let nodeList: NodeList = actionNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var childNode: Node = nodeList!.item(index)!;;
+    let childNode: Node = nodeList!.item(index)!;;
     
 
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.SAVE) == 0)
                         
                                     {
                                     
-    var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.setSaved(.valueOf());
     
@@ -145,7 +148,7 @@ this.setSaved(.valueOf());
                         
                                     {
                                     
-    var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.setSaved(.valueOf());
     
@@ -218,7 +221,7 @@ this.actionScriptOutputJPanel= new ImageActionScriptOutputJPanel(this);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(ImageActionScriptOutputData.DISPLAY, Boolean.toString(this.isDisplay()));
     
@@ -239,10 +242,10 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = super.toXmlNode(document)!;;
+    let node: Node = super.toXmlNode(document)!;;
     
 
-    var newNode: Node = ModDomHelper.createNodeWithValueNodes(document, ImageActionScriptOutputData.NAME, this.toHashMap())!;;
+    let newNode: Node = ModDomHelper.createNodeWithValueNodes(document, ImageActionScriptOutputData.NAME, this.toHashMap())!;;
     
 newNode!.appendChild(this.getImageTypes()!.toXmlNode(document));
     
@@ -305,7 +308,7 @@ this.display= display;
 
     public future_toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(" Is Save: ");
     
@@ -351,6 +354,4 @@ this.imageTypes= imageTypes;
 
 
 }
-
-
 

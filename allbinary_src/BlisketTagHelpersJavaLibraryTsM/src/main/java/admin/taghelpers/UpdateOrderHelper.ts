@@ -61,9 +61,11 @@ import { OrderHistoryEntityFactory } from '../../org/allbinary/data/tables/user/
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -257,15 +259,14 @@ this.storeCancelComment= this.request.getParameter(OrderData.STORECANCELCOMMENT)
 
     public update(): string{
 
-        try {
-            
-    var success: string = "Successful update";;
+ try { 
+    let success: string = "Successful update";;
     
 
-    var orderHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let orderHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 orderHashMap!.put(EntryData.getInstance()!.ID, this.entryId);
     
@@ -356,12 +357,13 @@ OrderHistoryEntityFactory.getInstance()!.update(whereHashMap, orderHashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to update order table";;
+    let error: string = "Failed to update order table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -378,12 +380,12 @@ OrderHistoryEntityFactory.getInstance()!.update(whereHashMap, orderHashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -42,13 +42,11 @@
 export interface HitPointGameObjectInterface extends MeteredGameObjectInterface {
         
 
-    isMoreThan(aFloat: number): boolean
+    isMoreThan(aFloat: number): boolean;
 
-    isCloseDeath(): boolean
+    isCloseDeath(): boolean;
 
-    isDamaged(): boolean
+    isDamaged(): boolean;
 
 }
-
-
 

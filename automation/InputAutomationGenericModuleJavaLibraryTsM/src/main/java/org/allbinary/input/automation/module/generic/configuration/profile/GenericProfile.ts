@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomNodeHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
@@ -39,9 +41,11 @@ import { GenericProfileActions } from '../../../../../../../../org/allbinary/inp
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -98,7 +102,7 @@ public constructor (node: Node){
 this.vector= new BasicArrayListD();
     
 
-    var nodeList: NodeList = node.getChildNodes()!;;
+    let nodeList: NodeList = node.getChildNodes()!;;
     
 this.logUtil!.putF("Name: " +this.getName() +" Child Nodes: " +nodeList!.getLength(), this, "Contructor");
     
@@ -107,17 +111,17 @@ this.logUtil!.putF("Name: " +this.getName() +" Child Nodes: " +nodeList!.getLeng
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var profileNode: Node = nodeList!.item(index)!;;
+    let profileNode: Node = nodeList!.item(index)!;;
     
 
                         if(profileNode!.getNodeName()!.compareTo(GenericProfileDataWorkerData.NAME) == 0)
                         
                                     {
                                     
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = GenericProfileDataWorkerType.getInstance(profileNode)!;;
+    let genericProfileDataWorkerType: GenericProfileDataWorkerType = GenericProfileDataWorkerType.getInstance(profileNode)!;;
     
 this.logUtil!.putF("Adding GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "Contructor");
     
@@ -168,20 +172,20 @@ this.vector.remove(genericProfileDataWorkerType);
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createTextNode(document, GenericProfileData.NAME, this.name)!;;
+    let node: Node = ModDomHelper.createTextNode(document, GenericProfileData.NAME, this.name)!;;
     
 
-    var size: number = this.vector.size()!;;
+    let size: number = this.vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = this.vector.get(index) as GenericProfileDataWorkerType;;
+    let genericProfileDataWorkerType: GenericProfileDataWorkerType = this.vector.get(index) as GenericProfileDataWorkerType;;
     
 node.appendChild(genericProfileDataWorkerType!.toXmlNode(document));
     
@@ -229,6 +233,4 @@ this.genericProfileActions= genericProfileActions;
 
 
 }
-
-
 

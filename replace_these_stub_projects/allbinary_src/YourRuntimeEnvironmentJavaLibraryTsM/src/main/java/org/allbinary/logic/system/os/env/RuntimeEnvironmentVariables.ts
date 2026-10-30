@@ -23,6 +23,7 @@ import { Properties } from '../../../../../../java/util/Properties.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 //not GWT import const GenericOperatingSystem
@@ -35,6 +36,7 @@ import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/o
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -84,7 +86,7 @@ public constructor (){
 
     public getVariable(var: string): string{
 
-    var environmentVariables: Properties = this.get()!;;
+    let environmentVariables: Properties = this.get()!;;
     
 
 
@@ -97,30 +99,29 @@ public constructor (){
 
     public get(): Properties{
 
-        try {
-            
-    var process: Process;;
+ try { 
+    let process: Process;;
     
 
-    var environmentVariables: Properties = new Properties();;
+    let environmentVariables: Properties = new Properties();;
     
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
+    let operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
-    var osName: string = operatingSystemInterface!.getName()!;;
+    let osName: string = operatingSystemInterface!.getName()!;;
     
 
-    var linuxCommand: string = "env";;
+    let linuxCommand: string = "env";;
     
 
-    var windowsCommand: string = "cmd.exe /c set";;
+    let windowsCommand: string = "cmd.exe /c set";;
     
 
-    var solarisCommand: string = linuxCommand;;
+    let solarisCommand: string = linuxCommand;;
     
 
-    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
+    let operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
     
 
                         if(osName!.compareTo(operatingSystems!.LINUX) == 0)
@@ -159,13 +160,13 @@ public constructor (){
                         }
                             
 
-    var processInputStreamReader: InputStreamReader = new InputStreamReader(process.getInputStream());;
+    let processInputStreamReader: InputStreamReader = new InputStreamReader(process.getInputStream());;
     
 
-    var bufferedReader: BufferedReader = new BufferedReader(processInputStreamReader);;
+    let bufferedReader: BufferedReader = new BufferedReader(processInputStreamReader);;
     
 
-    var keyValuePair: string;;
+    let keyValuePair: string;;
     
 
         while((keyValuePair= bufferedReader!.readLine()) != 
@@ -173,13 +174,13 @@ public constructor (){
                                 )
         {
 
-    var index: number = keyValuePair!.indexOf('=')!;;
+    let index: number = keyValuePair!.indexOf('=')!;;
     
 
-    var key: string = keyValuePair!.substring(0, index)!;;
+    let key: string = keyValuePair!.substring(0, index)!;;
     
 
-    var value: string = keyValuePair!.substring(index +1)!;;
+    let value: string = keyValuePair!.substring(index +1)!;;
     
 environmentVariables!.put(key, value);
     
@@ -191,10 +192,11 @@ environmentVariables!.put(key, value);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return environmentVariables;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
@@ -210,24 +212,26 @@ environmentVariables!.put(key, value);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getTempDir(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return System.getProperty("java.io.tmpdir");;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
@@ -243,24 +247,26 @@ environmentVariables!.put(key, value);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getLibraryPath(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return System.getProperty("java.library.path");;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
@@ -276,24 +282,26 @@ environmentVariables!.put(key, value);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getClassPath(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return System.getProperty("java.class.path");;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
@@ -309,23 +317,25 @@ environmentVariables!.put(key, value);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public updateLibraryPath(libPath: string){
 
-        try {
-            
-    var existingPath: string = this.getLibraryPath()!;;
+ try { 
+    let existingPath: string = this.getLibraryPath()!;;
     
 System.setProperty("java.library.path", libPath +":" +existingPath);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
@@ -335,24 +345,26 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public getUserHome(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return System.getProperty("user.home");;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
@@ -368,24 +380,26 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getUserDir(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return System.getProperty("user.dir");;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
@@ -401,18 +415,20 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public set(){
 
-        try {
-            
-                //: 
-} catch(e) 
-            {
+ try {  }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
@@ -422,28 +438,29 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public setVariable(var: string, val: string){
 
-        try {
-            
-    var process: Process;;
+ try { 
+    let process: Process;;
     
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
+    let operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
-    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
+    let operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
     
 
-    var osName: string = operatingSystemInterface!.getName()!;;
+    let osName: string = operatingSystemInterface!.getName()!;;
     
 
-    var windowsCommand: string = "cmd.exe /c set" +var +"=" +val;;
+    let windowsCommand: string = "cmd.exe /c set" +var +"=" +val;;
     
 
                         if(osName!.compareTo(operatingSystems!.LINUX) == 0)
@@ -487,10 +504,11 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
@@ -500,12 +518,12 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
 
                                     }
                                 
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

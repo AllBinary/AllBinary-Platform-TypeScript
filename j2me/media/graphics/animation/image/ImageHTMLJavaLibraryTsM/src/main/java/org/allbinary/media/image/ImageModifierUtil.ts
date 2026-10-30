@@ -31,9 +31,11 @@ import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMu
 
 //not plain js import { CanvasImage } 
 const CanvasImage = globalThis.playn.core.CanvasImage;
+type CanvasImage<T = any, U = any> = typeof CanvasImage extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CanvasImage;
 
 //not plain js import { CanvasSurface } 
 const CanvasSurface = globalThis.playn.core.CanvasSurface;
+type CanvasSurface<T = any, U = any> = typeof CanvasSurface extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CanvasSurface;
 
 
 
@@ -102,6 +104,4 @@ export class ImageModifierUtil
 
 
 }
-
-
 

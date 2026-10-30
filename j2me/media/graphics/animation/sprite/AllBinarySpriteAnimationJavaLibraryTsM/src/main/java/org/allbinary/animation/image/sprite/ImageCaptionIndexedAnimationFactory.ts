@@ -60,6 +60,7 @@ import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/im
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 import { ScaleProperties } from '../../../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
@@ -162,19 +163,19 @@ this.animationBehaviorFactory= animationBehaviorFactory;
             
     public getInstance(instanceId: number): Animation{
 
-    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.captionImage, this.captionImage!.getWidth(), this.captionImage!.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
+    let scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.captionImage, this.captionImage!.getWidth(), this.captionImage!.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
-    var animationInterface: Animation = new ImageAnimation(scaledImage, this.animationBehaviorFactory!.getOrCreateInstance());;
+    let animationInterface: Animation = new ImageAnimation(scaledImage, this.animationBehaviorFactory!.getOrCreateInstance());;
     
 
-    var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.spriteMovieImage, this.frameWidth, this.frameHeight, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
+    let sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.spriteMovieImage, this.frameWidth, this.frameHeight, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
-    var movieIndexedAnimationInterface: IndexedAnimation = new SpriteIndexedAnimation(sprite, this.spriteMovieImage, BasicColorUtil.getInstance()!.ZERO_ARRAY, this.animationBehaviorFactory!.getOrCreateInstance());;
+    let movieIndexedAnimationInterface: IndexedAnimation = new SpriteIndexedAnimation(sprite, this.spriteMovieImage, BasicColorUtil.getInstance()!.ZERO_ARRAY, this.animationBehaviorFactory!.getOrCreateInstance());;
     
 
-    var player: Player = this.soundInterface!.getPlayerP()!;;
+    let player: Player = this.soundInterface!.getPlayerP()!;;
     
 
                         if(player == 
@@ -206,6 +207,4 @@ this.scaleProperties= scaleProperties;
 
 
 }
-
-
 

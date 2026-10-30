@@ -47,9 +47,7 @@ export interface DomDocumentMappingInterface {
 
                 //@Throws(Exception.constructor)
             
-    toXmlDoc(): Document
+    toXmlDoc(): Document;
 
 }
-
-
 

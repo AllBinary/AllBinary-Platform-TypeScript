@@ -79,7 +79,7 @@ export class AllBinaryArrayImageRotationAnimationFactory extends BaseImageAnimat
             
     public static createFactory(image: Image, dx: number, dy: number): AllBinaryArrayImageRotationAnimationFactory{
 
-    var arrayImageRotationAnimationFactory: AllBinaryArrayImageRotationAnimationFactory = new AllBinaryArrayImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity(), AnimationBehaviorFactory.getInstance());;
+    let arrayImageRotationAnimationFactory: AllBinaryArrayImageRotationAnimationFactory = new AllBinaryArrayImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity(), AnimationBehaviorFactory.getInstance());;
     
 arrayImageRotationAnimationFactory!.initDXY(dx, dy);
     
@@ -96,7 +96,7 @@ arrayImageRotationAnimationFactory!.initDXY(dx, dy);
             
     public static createFactoryA(image: Image, dx: number, dy: number, angleIncrement: number): AllBinaryArrayImageRotationAnimationFactory{
 
-    var arrayImageRotationAnimationFactory: AllBinaryArrayImageRotationAnimationFactory = new AllBinaryArrayImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), angleIncrement, AnimationBehaviorFactory.getInstance());;
+    let arrayImageRotationAnimationFactory: AllBinaryArrayImageRotationAnimationFactory = new AllBinaryArrayImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), angleIncrement, AnimationBehaviorFactory.getInstance());;
     
 arrayImageRotationAnimationFactory!.initDXY(dx, dy);
     
@@ -150,21 +150,21 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
             
     public getInstance(instanceId: number): Animation{
 
-    var scaledImageArray: Image[] = new Array(this.imageArray!.length);;
+    let scaledImageArray: Image[] = new Array(this.imageArray!.length);;
     
 
-    var size: number = scaledImageArray!.length
+    let size: number = scaledImageArray!.length
                 ;;
     
 
-    var image: Image = this.getImage()!;;
+    let image: Image = this.getImage()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 scaledImageArray[index]= this.animationFactoryImageScaleUtil!.createImage(image, image.getWidth(), image.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight);
     
@@ -215,6 +215,4 @@ this.imageArray= imageArray;
 
 
 }
-
-
 

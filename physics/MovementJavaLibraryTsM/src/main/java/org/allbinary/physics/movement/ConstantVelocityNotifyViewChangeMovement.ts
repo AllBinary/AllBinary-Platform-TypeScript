@@ -82,7 +82,7 @@ this.basicVelocityProperties= new BasicVelocityProperties();
 this.speedBasicDecimal= speedBasicDecimal;
     
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
+    let angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 this.basicVelocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angleFactory!.getAt(angle), angleFactory!.getAt(otherAngle));
     
@@ -91,16 +91,16 @@ this.basicVelocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angle
 
     public moveOutsideRadius(layer: AllBinaryLayer, radius: number, angle: number, otherAngle: number){
 
-    var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;;
+    let scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;;
     
 
-    var xVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue));;
+    let xVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue));;
     
 
-    var yVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue));;
+    let yVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue));;
     
 
-    var zVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue));;
+    let zVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue));;
     
 layer.moveDXYZ(xVector, yVector, zVector);
     
@@ -111,13 +111,13 @@ layer.moveDXYZ(xVector, yVector, zVector);
             
     public process(layer: AllBinaryGameLayer){
 
-    var x: number = this.basicVelocityProperties!.getVelocityXBasicDecimalP()!.getScaled()!;;
+    let x: number = this.basicVelocityProperties!.getVelocityXBasicDecimalP()!.getScaled()!;;
     
 
-    var y: number = this.basicVelocityProperties!.getVelocityYBasicDecimalP()!.getScaled()!;;
+    let y: number = this.basicVelocityProperties!.getVelocityYBasicDecimalP()!.getScaled()!;;
     
 
-    var z: number = this.basicVelocityProperties!.getVelocityZBasicDecimalP()!.getScaled()!;;
+    let z: number = this.basicVelocityProperties!.getVelocityZBasicDecimalP()!.getScaled()!;;
     
 layer.moveDXYZ(x, y, z);
     
@@ -140,6 +140,4 @@ this.basicVelocityProperties!.zero();
 
 
 }
-
-
 

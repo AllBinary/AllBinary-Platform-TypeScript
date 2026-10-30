@@ -26,6 +26,7 @@ import { LayerManager } from '../../../../org/allbinary/layer/LayerManager.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -85,7 +86,7 @@ this.layerInterface= layerInterface;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("LayerManagerEvent: \n");
     
@@ -107,6 +108,4 @@ stringBuffer!.append(this.crud.toString());
 
 
 }
-
-
 

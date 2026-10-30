@@ -50,6 +50,7 @@ import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -107,7 +108,7 @@ private constructor (){
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.COPYRIGHT_Y= 2 *font.getHeight();
     
@@ -142,10 +143,10 @@ this.myFontProcessor!.process(graphics);
 graphics.setColor(this.color);
     
 
-    var halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
+    let halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
     
 
-    var height: number = this.displayInfo!.getLastHeight()!;;
+    let height: number = this.displayInfo!.getLastHeight()!;;
     
 graphics.drawString(this.COPYRIGHT, halfWidth -this.beginWidth, height -this.COPYRIGHT_Y, this.anchor);
     
@@ -153,6 +154,4 @@ graphics.drawString(this.COPYRIGHT, halfWidth -this.beginWidth, height -this.COP
 
 
 }
-
-
 

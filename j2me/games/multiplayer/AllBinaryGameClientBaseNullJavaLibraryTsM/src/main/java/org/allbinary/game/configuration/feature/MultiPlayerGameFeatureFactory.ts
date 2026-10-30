@@ -54,12 +54,12 @@ private constructor (){
         }
 
 
-    public addCommands(anyType: any = {}){
+    public addCommands(anyType: any){
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
+    let gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 
-    var canvas: Canvas = anyType as Canvas;;
+    let canvas: Canvas = anyType as Canvas;;
     
 canvas.addCommand(gameCommandsFactory!.QUIT_COMMAND);
     
@@ -67,6 +67,4 @@ canvas.addCommand(gameCommandsFactory!.QUIT_COMMAND);
 
 
 }
-
-
 

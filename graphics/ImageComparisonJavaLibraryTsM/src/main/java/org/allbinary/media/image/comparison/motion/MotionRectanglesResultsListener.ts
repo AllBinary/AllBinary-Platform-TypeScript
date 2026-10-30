@@ -45,9 +45,7 @@ import { BasicEventListenerInterface } from '../../../../../../org/allbinary/log
 export interface MotionRectanglesResultsListener extends BasicEventListenerInterface {
         
 
-    onMotionRectanglesImageComparisonResultsEvent(motionRectanglesImageComparisonResultsEvent: MotionRectanglesResultsEvent)
+    onMotionRectanglesImageComparisonResultsEvent(motionRectanglesImageComparisonResultsEvent: MotionRectanglesResultsEvent): void;
 
 }
-
-
 

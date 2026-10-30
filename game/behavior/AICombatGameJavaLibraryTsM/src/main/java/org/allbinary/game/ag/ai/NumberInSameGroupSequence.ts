@@ -85,7 +85,7 @@ private constructor (){
 
             super();
         
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 this.NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO= smallIntegerSingletonFactory!.getAt(100);
     
@@ -116,6 +116,4 @@ this.NUMBER_ON_SAME_TEAM_SEQUENCE=
 
 
 }
-
-
 

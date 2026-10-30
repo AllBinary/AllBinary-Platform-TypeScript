@@ -87,7 +87,7 @@ this.boundsVisitorInterface= boundsVisitorInterface;
 
     public paint(graphics: Graphics){
 
-    var rectange: Rectangle = this.layerBounds!.getRectangleP()!;;
+    let rectange: Rectangle = this.layerBounds!.getRectangleP()!;;
     
 graphics.drawRect(rectange.getPoint()!.getX(), rectange.getPoint()!.getY(), rectange.getWidth(), rectange.getHeight());
     
@@ -103,6 +103,4 @@ this.layerBounds!.visit(this.boundsVisitorInterface);
 
 
 }
-
-
 

@@ -37,6 +37,7 @@ import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNod
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -85,13 +86,13 @@ this.paymentGatewayInterface= paymentGatewayInterface;
             
     public addDomNodeInterfaces(){
 
-    var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(this.paymentGatewayInterface!.getName())!;;
+    let paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(this.paymentGatewayInterface!.getName())!;;
     
 
-    var paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface = paymentType!.getPaymentGatewayDomNodeFactoryInterface()!;;
+    let paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface = paymentType!.getPaymentGatewayDomNodeFactoryInterface()!;;
     
 
-    var domNodeInterface: DomNodeInterface = paymentGatewayDomNodeFactoryInterface!.getInstance(this.paymentGatewayInterface) as DomNodeInterface;;
+    let domNodeInterface: DomNodeInterface = paymentGatewayDomNodeFactoryInterface!.getInstance(this.paymentGatewayInterface) as DomNodeInterface;;
     
 this.addDomNodeInterface(domNodeInterface);
     
@@ -100,8 +101,7 @@ this.addDomNodeInterface(domNodeInterface);
 
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -109,12 +109,13 @@ this.addDomNodeInterface(domNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to view payment gateway";;
+    let error: string = "Failed to view payment gateway";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
@@ -131,12 +132,12 @@ this.addDomNodeInterface(domNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

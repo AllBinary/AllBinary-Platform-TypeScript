@@ -27,9 +27,11 @@ import { Calendar } from '../../../java/util/Calendar.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -57,15 +59,18 @@ import { GLOBALS2 } from '../../../org/allbinary/globals/GLOBALS2.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -216,8 +221,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -225,10 +229,11 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -243,20 +248,21 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
     public toXmlNode(document: Document): Node{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Attempt to View orders in (fromDate=");
     
@@ -274,7 +280,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "view");
                                     }
                                 
 
-    var node: Node = document.createElement(OrderData.ORDERS)!;;
+    let node: Node = document.createElement(OrderData.ORDERS)!;;
     
 
                         if(this.preprocessing != 
@@ -292,20 +298,20 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "view");
                                     }
                                 
 
-    var orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PREPROCESSING, fromDate, toDate)!;;
+    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PREPROCESSING, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.size()!;;
+    let size: number = orderHistoryVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
+    let orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
     
 node.appendChild(orderHistory!.toXmlNode(document));
     
@@ -330,20 +336,20 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    var orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.SHIPPED, fromDate, toDate)!;;
+    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.SHIPPED, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.size()!;;
+    let size: number = orderHistoryVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
+    let orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
     
 node.appendChild(orderHistory!.toXmlNode(document));
     
@@ -368,20 +374,20 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    var orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PARTIALLYSHIPPED, fromDate, toDate)!;;
+    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PARTIALLYSHIPPED, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.size()!;;
+    let size: number = orderHistoryVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
+    let orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
     
 node.appendChild(orderHistory!.toXmlNode(document));
     
@@ -406,20 +412,20 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    var orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PROCESSING, fromDate, toDate)!;;
+    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PROCESSING, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.size()!;;
+    let size: number = orderHistoryVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
+    let orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
     
 node.appendChild(orderHistory!.toXmlNode(document));
     
@@ -444,20 +450,20 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    var orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.CANCELLED, fromDate, toDate)!;;
+    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.CANCELLED, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.size()!;;
+    let size: number = orderHistoryVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
+    let orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
     
 node.appendChild(orderHistory!.toXmlNode(document));
     
@@ -484,10 +490,11 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
@@ -503,16 +510,17 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public isValid(): Boolean{
 
-        try {
-            
-    var isValid: Boolean = Boolean.TRUE;;
+ try { 
+    let isValid: Boolean = Boolean.TRUE;;
     
 
                         if(this.dateType == 
@@ -520,7 +528,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                                  || (this.dateType!.compareTo(OrderHistoryData.TYPELONG) != 0 && this.dateType!.compareTo(OrderHistoryData.TYPECAESAR) != 0))
                         
                                     {
-                                    isValid= Boolean.FALSE;
+                                    isValid= false;
     
 
                                     }
@@ -536,20 +544,20 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                         
                                     {
                                     
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var currentTime: number = calendar.getTimeInMillis()!;;
+    let currentTime: number = calendar.getTimeInMillis()!;;
     
 
-    var rangeDate: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let rangeDate: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(this.command.compareTo(this.VIEWORDERSINLASTHOUR) == 0)
                         
                                     {
                                     
-    var oneHour: number = 60 *60 *1000;;
+    let oneHour: number = 60 *60 *1000;;
     
 rangeDate= new Long(oneHour).toString();
     
@@ -561,7 +569,7 @@ rangeDate= new Long(oneHour).toString();
                         
                                     {
                                     
-    var oneDay: number = 24 *60 *60 *1000;;
+    let oneDay: number = 24 *60 *60 *1000;;
     
 rangeDate= new Long(oneDay).toString();
     
@@ -573,7 +581,7 @@ rangeDate= new Long(oneDay).toString();
                         
                                     {
                                     
-    var oneWeek: number = 7 *24 *60 *60 *1000;;
+    let oneWeek: number = 7 *24 *60 *60 *1000;;
     
 rangeDate= new Long(oneWeek).toString();
     
@@ -585,7 +593,7 @@ rangeDate= new Long(oneWeek).toString();
                         
                                     {
                                     
-    var thirtyDays: number = 30 *24 *60 *60 *1000;;
+    let thirtyDays: number = 30 *24 *60 *60 *1000;;
     
 rangeDate= new Long(thirtyDays).toString();
     
@@ -602,12 +610,12 @@ rangeDate= new Long(thirtyDays).toString();
                                     }
                                 
 
-    var rangeDateLong: number = new Long(rangeDate).longValue()!;;
+    let rangeDateLong: number = new Long(rangeDate).longValue()!;;
     
 this.fromDate= new Long(currentTime -rangeDateLong).toString();
     
 
-    var time: string = new Long(currentTime).toString();;
+    let time: string = new Long(currentTime).toString();;
     
 this.toDate= time;
     
@@ -619,7 +627,7 @@ this.toDate= time;
                         
                                     {
                                     
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 TimeUtil.getInstance()!.setCalendar(calendar, this.fromYear, this.fromMonth, this.fromDay, this.fromHour);
     
@@ -636,7 +644,7 @@ this.toDate= new Long(calendar.getTimeInMillis()).toString();
                         if(StringValidationUtil.getInstance()!.isEmpty(this.toDate) || this.toDate!.length > this.MAXLEN)
                         
                                     {
-                                    isValid= Boolean.FALSE;
+                                    isValid= false;
     
 
                                     }
@@ -645,7 +653,7 @@ this.toDate= new Long(calendar.getTimeInMillis()).toString();
                         if(StringValidationUtil.getInstance()!.isEmpty(this.fromDate) || this.fromDate!.length > this.MAXLEN)
                         
                                     {
-                                    isValid= Boolean.FALSE;
+                                    isValid= false;
     
 
                                     }
@@ -658,7 +666,7 @@ this.toDate= new Long(calendar.getTimeInMillis()).toString();
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Attempt to View orders in (fromDate=");
     
@@ -681,10 +689,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -698,10 +707,12 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -729,9 +740,8 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
             
     public validationInfo(): string{
 
-        try {
-            
-    var result: StringMaker = new StringMaker();;
+ try { 
+    let result: StringMaker = new StringMaker();;
     
 
                         if(this.dateType == 
@@ -768,10 +778,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -787,12 +798,12 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Getting Validation Info";
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -40,9 +40,7 @@
 export interface IdentifierInterface {
         
 
-    getId(): number
+    getId(): number;
 
 }
-
-
 

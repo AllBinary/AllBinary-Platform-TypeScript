@@ -43,6 +43,7 @@ import { OrderItemsEntityFactory } from '../../org/allbinary/data/tables/user/co
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -97,17 +98,23 @@ this.status= this.request.getParameter(OrderHistoryData.STATUS);
     
 }
 
+setOrderStatus(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.setOrderStatus$overload1(args[0]);
+   
+    if (args.length === 0) return this.setOrderStatus$overload2();
+   
+   throw new TypeError('No matching overload: setOrderStatus'); }
+  
+    public setOrderStatus$overload1(newStatus: string): string{
 
-    public setOrderStatus(newStatus: string): string{
-
-        try {
-            
+ try { 
                         if(newStatus == 
                                     null
                                 )
                         newStatus= this.status
 
-    var success: string = "Status successfully set to: " +newStatus;;
+    let success: string = "Status successfully set to: " +newStatus;;
     
 OrderItemsEntityFactory.getInstance()!.setStatus(this.id, this.groupId, newStatus);
     
@@ -126,12 +133,13 @@ OrderItemsEntityFactory.getInstance()!.setStatus(this.id, this.groupId, newStatu
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to view order table";;
+    let error: string = "Failed to view order table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -148,16 +156,17 @@ OrderItemsEntityFactory.getInstance()!.setStatus(this.id, this.groupId, newStatu
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public setOrderStatus$overload2(): string{
 
-    public setOrderStatus(): string{
-
-        try {
-            
-    var success: string = "Status successfully set to: " +this.status;;
+ try { 
+    let success: string = "Status successfully set to: " +this.status;;
     
 OrderItemsEntityFactory.getInstance()!.setStatus(this.id, this.groupId, this.status);
     
@@ -176,12 +185,13 @@ OrderItemsEntityFactory.getInstance()!.setStatus(this.id, this.groupId, this.sta
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to view order table";;
+    let error: string = "Failed to view order table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -198,12 +208,12 @@ OrderItemsEntityFactory.getInstance()!.setStatus(this.id, this.groupId, this.sta
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

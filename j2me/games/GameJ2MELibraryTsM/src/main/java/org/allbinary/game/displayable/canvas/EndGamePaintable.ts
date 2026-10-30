@@ -66,5 +66,3 @@ this.gameCanvas!.paintGameOver(graphics);
 
 }
 
-
-

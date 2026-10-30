@@ -52,24 +52,26 @@ export class Life
 
     public static createLife(): Life{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Life(0, 0);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw new RuntimeException();
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -260,6 +262,4 @@ this.startLives= startLives;
 
 
 }
-
-
 

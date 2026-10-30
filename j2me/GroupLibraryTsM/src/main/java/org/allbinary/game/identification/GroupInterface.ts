@@ -40,11 +40,9 @@
 export interface GroupInterface {
         
 
-    getGroupName(): string
+    getGroupName(): string;
 
-    getGroupId(): number
+    getGroupId(): number;
 
 }
-
-
 

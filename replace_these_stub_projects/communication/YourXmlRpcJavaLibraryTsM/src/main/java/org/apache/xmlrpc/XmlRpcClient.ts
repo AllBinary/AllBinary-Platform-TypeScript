@@ -17,15 +17,18 @@ import { URL } from '../../../java/net/URL.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { CryptInterface } from '../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
 //not GWT import const CryptInterface
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -76,10 +79,17 @@ public constructor (url: string){
     public setBasicAuthentication(user: string, password: string){
 }
 
-
+execute(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.execute$overload1(args[0], args[1]);
+   
+    if (args.length === 3 && typeof args[0] === 'string') return this.execute$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: execute'); }
+  
                 //@Throws(XmlRpcException.constructor, IOException.constructor)
             
-    public execute(method: string, params: BasicArrayList): any{
+    public execute$overload1(method: string, params: BasicArrayList): any{
 
 
 
@@ -91,7 +101,7 @@ public constructor (url: string){
 
                 //@Throws(XmlRpcException.constructor, IOException.constructor)
             
-    public execute(method: string, params: BasicArrayList, cryptInterface: CryptInterface): any{
+    public execute$overload2(method: string, params: BasicArrayList, cryptInterface: CryptInterface): any{
 
 
 
@@ -102,6 +112,4 @@ public constructor (url: string){
 
 
 }
-
-
 

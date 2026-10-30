@@ -46,9 +46,7 @@ export interface BasicWeaponPartFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(): BasicWeaponPart
+    getInstance(): BasicWeaponPart;
 
 }
-
-
 

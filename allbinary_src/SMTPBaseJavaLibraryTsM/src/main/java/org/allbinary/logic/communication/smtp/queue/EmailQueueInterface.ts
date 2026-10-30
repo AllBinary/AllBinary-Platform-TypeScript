@@ -47,13 +47,11 @@ export interface EmailQueueInterface {
 
                 //@Throws(Exception.constructor)
             
-    offer(emailInterface: EmailInterface): boolean
+    offer(emailInterface: EmailInterface): boolean;
 
                 //@Throws(Exception.constructor)
             
-    remove(): EmailInterface
+    remove(): EmailInterface;
 
 }
-
-
 

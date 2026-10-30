@@ -40,9 +40,7 @@
 export interface HealthListenerInterface {
         
 
-    onHealthChange()
+    onHealthChange(): void;
 
 }
-
-
 

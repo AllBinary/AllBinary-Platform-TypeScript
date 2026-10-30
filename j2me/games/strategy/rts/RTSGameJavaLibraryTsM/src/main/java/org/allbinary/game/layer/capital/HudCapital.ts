@@ -83,5 +83,3 @@ this.capitalGraphic!.add(points);
 
 }
 
-
-

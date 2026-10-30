@@ -42,6 +42,7 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
@@ -76,7 +77,7 @@ export class CustomTextAnimationFactory
 
     public static createDXY(text: string, fontSize: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): CustomTextAnimationFactory{
 
-    var customTextAnimationFactory: CustomTextAnimationFactory = new CustomTextAnimationFactory(text, fontSize, animationBehaviorFactory);;
+    let customTextAnimationFactory: CustomTextAnimationFactory = new CustomTextAnimationFactory(text, fontSize, animationBehaviorFactory);;
     
 customTextAnimationFactory!.dx= dx;
     
@@ -131,7 +132,7 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight
             
     public getInstance(instanceId: number): Animation{
 
-    var customTextAnimation: CustomTextAnimation;;
+    let customTextAnimation: CustomTextAnimation;;
     
 
                         if(this.dx != 0 || this.dy != 0)
@@ -184,6 +185,4 @@ customTextAnimation!.setBasicColorP(this.basicColor);
 
 
 }
-
-
 

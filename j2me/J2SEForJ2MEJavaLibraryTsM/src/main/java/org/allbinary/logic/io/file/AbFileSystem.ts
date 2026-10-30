@@ -35,15 +35,19 @@ import { InputStream } from '../../../../../java/io/InputStream.js';
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -85,7 +89,7 @@ export class AbFileSystem
             
     public static main(args: string[]){
 
-    var isDirectory: boolean = AbFileSystem.getInstance()!.isDirectory("c:")!;;
+    let isDirectory: boolean = AbFileSystem.getInstance()!.isDirectory("c:")!;;
     
 console.log("isDirectory: " +isDirectory);
     
@@ -98,7 +102,7 @@ console.log("isDirectory: " +isDirectory);
 
     public isDirectoryOrFile(path: string): boolean{
 
-    var file: File = new File(path);;
+    let file: File = new File(path);;
     
 
 
@@ -121,7 +125,7 @@ console.log("isDirectory: " +isDirectory);
 
     public getFilesAsStringArrayForPath(currentDirPath: string): string[]{
 
-    var file: File = new File(currentDirPath);;
+    let file: File = new File(currentDirPath);;
     
 
                         if(file.exists())
@@ -148,10 +152,17 @@ console.log("isDirectory: " +isDirectory);
                             
 }
 
+readAsString(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.readAsString$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.readAsString$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: readAsString'); }
+  
+    public readAsString$overload1(fileName: string): string{
 
-    public readAsString(fileName: string): string{
-
-    var bytes: number[] = new Array(1000000);;
+    let bytes: number[] = new Array(1000000);;
     
 
 
@@ -162,19 +173,18 @@ console.log("isDirectory: " +isDirectory);
 }
 
 
-    public readAsString(fileName: string, bytes: number[]): string{
+    public readAsString$overload2(fileName: string, bytes: number[]): string{
 
-    var closeable: any = NullUtil.getInstance()!.NULL_OBJECT;;
+    let closeable: any = NullUtil.getInstance()!.NULL_OBJECT;;
     
 
-        try {
-            
-    var idFile: InputStream = new FileInputStream(fileName);;
+ try { 
+    let idFile: InputStream = new FileInputStream(fileName);;
     
 closeable= idFile;
     
 
-    var size: number = idFile!.read(bytes)!;;
+    let size: number = idFile!.read(bytes)!;;
     
 
                         if(size > 0)
@@ -184,25 +194,24 @@ closeable= idFile;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return String.fromCharCode(...bytes);
+                        return ((data: any[], offset: number, count: number) => data.slice(offset, offset + count).map(value => typeof value === 'number' ? String.fromCharCode(value & 255) : value).join(''))(bytes, 0, size);
     
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "readAsString", e);
     
-}
 
-         finally {
-            this.close(closeable);
+ }
+   }
+ finally { this.close(closeable);
     
-
-         }
-        
+ }
 
 
 
@@ -212,17 +221,16 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "readAsString", e);
 }
 
 
-    public close(closeable: any = {}): boolean{
+    public close(closeable: any): boolean{
 
-        try {
-            
+ try { 
                         if(closeable != 
                                     null
                                 )
                         
                                     {
                                     
-    var inputStream: InputStream = (closeable as InputStream);;
+    let inputStream: InputStream = (closeable as InputStream);;
     
 inputStream!.close();
     
@@ -235,10 +243,11 @@ inputStream!.close();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CLOSE, e);
     
 
@@ -247,12 +256,12 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CLOSE
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

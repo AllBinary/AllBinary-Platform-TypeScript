@@ -22,6 +22,7 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -63,7 +64,7 @@ export class InventorySearchLoopInfo
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.CURRENT);
     
@@ -87,6 +88,4 @@ stringBuffer!.appendint(this.lastPage);
 
 
 }
-
-
 

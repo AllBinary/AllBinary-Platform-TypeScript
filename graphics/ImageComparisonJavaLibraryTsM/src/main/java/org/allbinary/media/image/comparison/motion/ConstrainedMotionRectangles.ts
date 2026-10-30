@@ -28,15 +28,19 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -89,35 +93,35 @@ this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface)
 this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(), this, "applyMotionRectangleConstraints");
     
 
-    var bufferedImageArray: BufferedImage[] = motionRectangles!.getImageComparisonResult()!.getBufferedImages()!;;
+    let bufferedImageArray: BufferedImage[] = motionRectangles!.getImageComparisonResult()!.getBufferedImages()!;;
     
 
-    var bufferedImage: BufferedImage = bufferedImageArray[1]!;;
+    let bufferedImage: BufferedImage = bufferedImageArray[1]!;;
     
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 
-    var vector2: BasicArrayList = motionRectangles!.getVector()!;;
+    let vector2: BasicArrayList = motionRectangles!.getVector()!;;
     
 
-    var size: number = vector2.size()!;;
+    let size: number = vector2.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector2.get(index) as MotionRectangle;;
+    let motionRectangle: MotionRectangle = vector2.get(index) as MotionRectangle;;
     
 
-    var rectangle: Rectangle = motionRectangle!.getRectangle()!;;
+    let rectangle: Rectangle = motionRectangle!.getRectangle()!;;
     
 
-    var isTooSmall: boolean = this.getMotionRectangleConstraintsInterface()!.isTooSmall(rectangle)!;;
+    let isTooSmall: boolean = this.getMotionRectangleConstraintsInterface()!.isTooSmall(rectangle)!;;
     
 
                         if(isTooSmall)
@@ -131,7 +135,7 @@ this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(
                                     }
                                 
 
-    var isAreaTooSmall: boolean = this.getMotionRectangleConstraintsInterface()!.isAreaTooSmall(rectangle)!;;
+    let isAreaTooSmall: boolean = this.getMotionRectangleConstraintsInterface()!.isAreaTooSmall(rectangle)!;;
     
 
                         if(isAreaTooSmall)
@@ -145,7 +149,7 @@ this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(
                                     }
                                 
 
-    var isTooBig: boolean = this.getMotionRectangleConstraintsInterface()!.isTooBig(rectangle)!;;
+    let isTooBig: boolean = this.getMotionRectangleConstraintsInterface()!.isTooBig(rectangle)!;;
     
 
                         if(isTooBig)
@@ -159,7 +163,7 @@ this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(
                                     }
                                 
 
-    var isValid: boolean = this.getMotionRectangleConstraintsInterface()!.isValid(this.getImageComparisonResult()!.getFrameTwo(), bufferedImage, motionRectangle!.getRectangle())!;;
+    let isValid: boolean = this.getMotionRectangleConstraintsInterface()!.isValid(this.getImageComparisonResult()!.getFrameTwo(), bufferedImage, motionRectangle!.getRectangle())!;;
     
 
                         if(!isValid)
@@ -199,6 +203,4 @@ this.motionRectangleConstraintsInterface= motionRectangleConstraintsInterface;
 
 
 }
-
-
 

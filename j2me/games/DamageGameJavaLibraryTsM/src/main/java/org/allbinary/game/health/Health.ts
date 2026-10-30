@@ -22,12 +22,15 @@
         
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -85,7 +88,7 @@ this.setHealth(maxHealth);
 
     public heal(ahealth: number){
 
-    var newHealth: number = this.getHealth() +ahealth;;
+    let newHealth: number = this.getHealth() +ahealth;;
     
 
                         if(newHealth > this.getMaxHealth())
@@ -144,7 +147,7 @@ this.setHealth(this.getMaxHealth());
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("******* Trying to heal when damaging. Damage: ");
     
@@ -166,7 +169,7 @@ ForcedLogUtil.log(stringBuffer!.toString(), this);
                                     }
                                 
 
-    var health: number = this.getHealth() -ahealth;;
+    let health: number = this.getHealth() -ahealth;;
     
 this.setHealth(health);
     
@@ -273,7 +276,7 @@ this.healthListenerInterface= healthGraphic;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(Health.HEALTH_LABEL);
     
@@ -293,6 +296,4 @@ stringBuffer!.appendint(this.maxHealth);
 
 
 }
-
-
 

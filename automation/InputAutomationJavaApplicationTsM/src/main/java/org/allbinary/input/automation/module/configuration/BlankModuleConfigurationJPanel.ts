@@ -62,7 +62,7 @@ this.jLabel1= new javax.swing.JLabel();
 this.jLabel1!.setText("No Configuration Available");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -76,6 +76,4 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
     private jLabel1: javax.swing.JLabel;
 
 }
-
-
 

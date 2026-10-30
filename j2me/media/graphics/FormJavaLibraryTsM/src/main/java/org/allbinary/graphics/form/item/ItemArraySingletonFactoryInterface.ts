@@ -46,9 +46,7 @@ export interface ItemArraySingletonFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getItems(): ABCustomItem[]
+    getItems(): ABCustomItem[];
 
 }
-
-
 

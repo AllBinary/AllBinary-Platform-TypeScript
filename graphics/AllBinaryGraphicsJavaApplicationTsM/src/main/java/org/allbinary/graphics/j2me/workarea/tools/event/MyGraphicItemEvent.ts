@@ -47,7 +47,7 @@ import { MyGraphicItemEventSource } from './MyGraphicItemEventSource.js';
 export class MyGraphicItemEvent extends java.util.EventObject {
         
 
-public constructor (source: any = {}){
+public constructor (source: any){
             super(source);
                     
 
@@ -78,7 +78,7 @@ public constructor (source: any = {}){
 
     public getCommand(): string{
 
-    var myEventSource: MyGraphicItemEventSource = this.getSource() as MyGraphicItemEventSource;;
+    let myEventSource: MyGraphicItemEventSource = this.getSource() as MyGraphicItemEventSource;;
     
 
 
@@ -91,7 +91,7 @@ public constructor (source: any = {}){
 
     public getTreeNode(): MutableTreeNode{
 
-    var myEventSource: MyGraphicItemEventSource = this.getSource() as MyGraphicItemEventSource;;
+    let myEventSource: MyGraphicItemEventSource = this.getSource() as MyGraphicItemEventSource;;
     
 
 
@@ -104,7 +104,7 @@ public constructor (source: any = {}){
 
     public getAngle(): number{
 
-    var myEventSource: MyGraphicItemEventSource = this.getSource() as MyGraphicItemEventSource;;
+    let myEventSource: MyGraphicItemEventSource = this.getSource() as MyGraphicItemEventSource;;
     
 
 
@@ -116,6 +116,4 @@ public constructor (source: any = {}){
 
 
 }
-
-
 

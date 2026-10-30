@@ -24,6 +24,7 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
@@ -90,10 +91,10 @@ private constructor (){
             
     public getFileInputStreamInstance(path: string, fileName: string): AbFileInputStream{
 
-    var FILEABPATH: AbPath = new AbPath(path, fileName);;
+    let FILEABPATH: AbPath = new AbPath(path, fileName);;
     
 
-    var file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
+    let file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 
 
@@ -108,10 +109,10 @@ private constructor (){
             
     public getFileOutputStreamInstance(path: string, fileName: string): AbFileOutputStream{
 
-    var FILEABPATH: AbPath = new AbPath(path, fileName);;
+    let FILEABPATH: AbPath = new AbPath(path, fileName);;
     
 
-    var file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
+    let file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 
                         if(file.exists())
@@ -137,10 +138,10 @@ file.createNewFile();
             
     public delete(path: string, fileName: string){
 
-    var FILEABPATH: AbPath = new AbPath(path, fileName);;
+    let FILEABPATH: AbPath = new AbPath(path, fileName);;
     
 
-    var file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
+    let file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 file.delete();
     
@@ -148,6 +149,4 @@ file.delete();
 
 
 }
-
-
 

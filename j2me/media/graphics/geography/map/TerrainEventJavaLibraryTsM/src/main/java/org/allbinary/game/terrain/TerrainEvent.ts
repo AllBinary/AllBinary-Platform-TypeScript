@@ -20,9 +20,11 @@
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -53,7 +55,7 @@ export class TerrainEvent extends AllBinaryEventObject {
 
     private basicTerrainInfo: BasicTerrainInfo = BasicTerrainInfo.NULL_BASIC_TERRAIN_INFO;
 
-public constructor (basicTerrainInfo: any = {}){
+public constructor (basicTerrainInfo: any){
             super(basicTerrainInfo);
                     
 
@@ -66,7 +68,7 @@ this.setBasicTerrainInfo(this.basicTerrainInfo);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TerrainEvent: \n");
     
@@ -106,6 +108,4 @@ this.basicTerrainInfo= basicTerrainInfo;
 
 
 }
-
-
 

@@ -22,6 +22,7 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
 //not GWT import const RotationAnimation
@@ -62,33 +63,31 @@ import { GeographicMapCellPositionTracking } from '../../../../org/allbinary/med
 export interface VehicleLayerInterface extends LayerInterface, VehiclePropertiesCompositeInterface {
         
 
-    getGameKeyEventList(): BasicArrayList
+    getGameKeyEventList(): BasicArrayList;
 
-    getSpeedBasicDecimal(): BasicDecimal
+    getSpeedBasicDecimal(): BasicDecimal;
 
-    isReadyForExplosion(): boolean
+    isReadyForExplosion(): boolean;
 
-    getRotationAnimationInterface(): RotationAnimation
+    getRotationAnimationInterface(): RotationAnimation;
 
-    setRotationAnimationInterface(animationInterface: RotationAnimation)
+    setRotationAnimationInterface(animationInterface: RotationAnimation): void;
 
-    isDestroyed(): boolean
+    isDestroyed(): boolean;
 
-    isFinish(): boolean
+    isFinish(): boolean;
 
-    getFinalPosition(): number
+    getFinalPosition(): number;
 
                 //@Throws(Exception.constructor)
             
-    handleFinish()
+    handleFinish(): void;
 
-    getGeographicMapCellPositionTracking(): GeographicMapCellPositionTracking
+    getGeographicMapCellPositionTracking(): GeographicMapCellPositionTracking;
 
-    getGeographicMapCellHistoryArray(): GeographicMapCellHistory[]
+    getGeographicMapCellHistoryArray(): GeographicMapCellHistory[];
 
-    setGeographicMapCellHistoryArray(geographicMapCellHistory: GeographicMapCellHistory[])
+    setGeographicMapCellHistoryArray(geographicMapCellHistory: GeographicMapCellHistory[]): void;
 
 }
-
-
 

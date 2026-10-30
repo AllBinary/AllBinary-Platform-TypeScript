@@ -22,9 +22,11 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 
 
@@ -54,24 +56,24 @@ export class LongUtil
 
     public static fillIn(end: string): string{
 
-    var frameStringBuffer: StringMaker = new StringMaker();;
+    let frameStringBuffer: StringMaker = new StringMaker();;
     
 
                         if(frameStringBuffer!.length() < LongData.MAX_LONG_LENGTH)
                         
                                     {
                                     
-    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
+    let commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 
-    var size: number = LongData.MAX_LONG_LENGTH -frameStringBuffer!.length();;
+    let size: number = LongData.MAX_LONG_LENGTH -frameStringBuffer!.length();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 frameStringBuffer!.append(commonPhoneStrings!.ZERO);
     
@@ -98,6 +100,4 @@ private constructor (){
 
 
 }
-
-
 

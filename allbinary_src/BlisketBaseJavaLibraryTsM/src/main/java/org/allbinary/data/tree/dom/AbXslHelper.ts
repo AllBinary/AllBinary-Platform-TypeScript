@@ -74,10 +74,19 @@ export class AbXslHelper
     
 }
 
-
+translate(...args: any[]): any {
+   
+    if (args.length === 2) return this.translate$overload1(args[0], args[1]);
+   
+    if (args.length === 2) return this.translate$overload2(args[0], args[1]);
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.translate$overload3(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: translate'); }
+  
                 //@Throws(Exception.constructor)
             
-    public translate(xslFile: AbFile, xmlFile: AbFile): string{
+    public translate$overload1(xslFile: AbFile, xmlFile: AbFile): string{
 
 
 
@@ -89,7 +98,7 @@ export class AbXslHelper
 
                 //@Throws(Exception.constructor)
             
-    public translate(xslPath: AbPath, xmlPath: AbPath): string{
+    public translate$overload2(xslPath: AbPath, xmlPath: AbPath): string{
 
 
 
@@ -101,11 +110,10 @@ export class AbXslHelper
 
                 //@Throws(Exception.constructor)
             
-    public translate(xsltFilePath: string, xmlFilePath: string): string{
+    public translate$overload3(xsltFilePath: string, xmlFilePath: string): string{
 
-        try {
-            
-    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+ try { 
+    let outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
 
@@ -113,21 +121,22 @@ export class AbXslHelper
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return XslHelper.getInstance()!.translate(new StreamSource(xsltFilePath), new StreamSource(xmlFilePath), new StreamResult(outputStream))!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

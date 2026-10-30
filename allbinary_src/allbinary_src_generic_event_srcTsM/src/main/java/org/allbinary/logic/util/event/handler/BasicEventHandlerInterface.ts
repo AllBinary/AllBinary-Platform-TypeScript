@@ -48,17 +48,15 @@ import { EventListenerInterface } from '../../../../../../org/allbinary/logic/ut
 export interface BasicEventHandlerInterface {
         
 
-    addListenerInterface(eventListenerInterface: EventListenerInterface)
+    addListenerInterface(eventListenerInterface: EventListenerInterface): void;
 
                 //@Throws(Exception.constructor)
             
-    fireEvent(eventObject: AllBinaryEventObject)
+    fireEvent(eventObject: AllBinaryEventObject): void;
 
-    removeAllListeners()
+    removeAllListeners(): void;
 
-    removeListener(eventListenerInterface: EventListenerInterface)
+    removeListener(eventListenerInterface: EventListenerInterface): void;
 
 }
-
-
 

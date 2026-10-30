@@ -49,9 +49,7 @@ export interface BuildingEventListenerInterface extends EventListenerInterface {
 
                 //@Throws(Exception.constructor)
             
-    onBuildingEvent(event: RTSLayerEvent)
+    onBuildingEvent(event: RTSLayerEvent): void;
 
 }
-
-
 

@@ -20,21 +20,26 @@
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
 //not GWT import const HtmlTag
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 
 
@@ -147,13 +152,13 @@ this.htmlRowsVector!.add(htmlRow);
 
     public toString(): string{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var result: string = stringUtil!.EMPTY_STRING;;
+    let result: string = stringUtil!.EMPTY_STRING;;
     
 
-    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;;
+    let attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;;
     
 result= this.before;
     
@@ -166,13 +171,13 @@ result += " ";
 
 
                         for (
-    var i: number = 0;i < attributeKeys!.length; i++)
+    let i: number = 0;i < attributeKeys!.length; i++)
         {
 
-    var key: string = attributeKeys[i]! as string;;
+    let key: string = attributeKeys[i]! as string;;
     
 
-    var value: string = otherAttributes!.get(key) as string;;
+    let value: string = otherAttributes!.get(key) as string;;
     
 
                         if(value != 
@@ -196,14 +201,14 @@ result += "\" ";
 result += this.END;
     
 
-    var size: number = this.htmlRowsVector!.size()!;;
+    let size: number = this.htmlRowsVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 result += this.htmlRowsVector!.get(i)!.toString();
     
@@ -225,6 +230,4 @@ result += this.after;
 
 
 }
-
-
 

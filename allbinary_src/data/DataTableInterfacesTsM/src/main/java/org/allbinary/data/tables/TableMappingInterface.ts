@@ -25,6 +25,7 @@ import { HashMap } from '../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -50,17 +51,15 @@ export interface TableMappingInterface {
 
                 //@Throws(Exception.constructor)
             
-    getKey(): any
+    getKey(): any;
 
                 //@Throws(Exception.constructor)
             
-    toVector(): BasicArrayList
+    toVector(): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    toHashMap(): HashMap<any, any>
+    toHashMap(): HashMap<any, any>;
 
 }
-
-
 

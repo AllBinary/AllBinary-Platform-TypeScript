@@ -165,5 +165,3 @@ public constructor (server: string, from: string, to: string, subject: string, t
 
 }
 
-
-

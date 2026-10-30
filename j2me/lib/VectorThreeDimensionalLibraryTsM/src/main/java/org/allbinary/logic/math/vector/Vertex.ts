@@ -25,12 +25,15 @@ import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecim
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+type PositionStrings<T = any, U = any> = typeof PositionStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PositionStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -70,10 +73,10 @@ public constructor (){
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var positionStrings: PositionStrings = PositionStrings.getInstance()!;;
+    let positionStrings: PositionStrings = PositionStrings.getInstance()!;;
     
 stringBuffer!.append(positionStrings!.X_LABEL);
     
@@ -101,6 +104,4 @@ stringBuffer!.append(this.z.toString());
 
 
 }
-
-
 

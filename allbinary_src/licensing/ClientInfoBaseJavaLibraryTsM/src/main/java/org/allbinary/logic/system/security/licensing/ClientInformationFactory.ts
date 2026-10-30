@@ -22,12 +22,15 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -57,15 +60,15 @@ export class ClientInformationFactory
 
     public getInstance(): ClientInformation{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonStrings!.NOT_IMPLEMENTED, this, commonStrings!.GET_INSTANCE);
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
 
@@ -77,6 +80,4 @@ logUtil!.putF(commonStrings!.NOT_IMPLEMENTED, this, commonStrings!.GET_INSTANCE)
 
 
 }
-
-
 

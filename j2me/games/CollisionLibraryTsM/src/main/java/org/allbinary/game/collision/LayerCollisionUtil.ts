@@ -80,10 +80,10 @@ private constructor (){
 
             super();
         
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
+    let gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
     
 
                         if(OpenGLFeatureUtil.getInstance()!.isAnyThreed() && !features.isFeature(gameFeatureFactory!.COLLISIONS_FORCED_TWO_DIMENSIONAL))
@@ -114,6 +114,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -50,11 +50,9 @@ export interface AnimationInterface extends LocationPaintableInterface {
 
                 //@Throws(Exception.constructor)
             
-    nextFrame()
+    nextFrame(): void;
 
-    paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number)
+    paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number): void;
 
 }
-
-
 

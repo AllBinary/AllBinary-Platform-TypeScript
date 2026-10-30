@@ -170,5 +170,3 @@ DisposalUtil.getInstance()!.disposeImage(this.image);
 
 }
 
-
-

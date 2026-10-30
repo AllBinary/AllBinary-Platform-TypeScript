@@ -75,10 +75,10 @@ export class OrderProcessorUtil
             
     public process(userName: string, order: Order): string{
 
-    var orderItems: OrderItemsEntity = new OrderItemsEntity();;
+    let orderItems: OrderItemsEntity = new OrderItemsEntity();;
     
 
-    var orderHistory: OrderHistoryEntity = new OrderHistoryEntity();;
+    let orderHistory: OrderHistoryEntity = new OrderHistoryEntity();;
     
 order.setId(new OrderIdGenerator().getNext());
     
@@ -96,6 +96,4 @@ orderHistory!.insert(userName, order);
 
 
 }
-
-
 

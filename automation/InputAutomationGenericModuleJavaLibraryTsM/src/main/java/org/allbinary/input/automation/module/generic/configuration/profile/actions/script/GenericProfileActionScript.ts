@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DefaultMutableTreeNode } from '../../../../../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
 //not GWT import const DefaultMutableTreeNode
@@ -52,12 +54,15 @@ import { GenericProfileActionJPanel } from '../../../../../../../../../../org/al
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -111,7 +116,7 @@ this.genericProfileActionJPanel= genericProfileActionJPanel;
 this.setProfileActionConditionInterfaceVector(new BasicArrayListD());
     
 
-    var actionScriptNode: Node = DomSearchHelper.getNode(GenericProfileActionData.SCRIPT, node.getChildNodes())!;;
+    let actionScriptNode: Node = DomSearchHelper.getNode(GenericProfileActionData.SCRIPT, node.getChildNodes())!;;
     
 
                         if(actionScriptNode != 
@@ -120,17 +125,17 @@ this.setProfileActionConditionInterfaceVector(new BasicArrayListD());
                         
                                     {
                                     
-    var nodeList: NodeList = actionScriptNode!.getChildNodes()!;;
+    let nodeList: NodeList = actionScriptNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var actionConditionNode: Node = nodeList!.item(index)!;;
+    let actionConditionNode: Node = nodeList!.item(index)!;;
     
 
                         if(actionConditionNode!.getNodeType() == Node.ELEMENT_NODE)
@@ -190,7 +195,7 @@ this.remove(profileActionScriptNodeInterface);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
     
@@ -223,23 +228,23 @@ this.profileActionConditionInterfaceVector= profileActionConditionInterfaceVecto
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(GenericProfileActionData.SCRIPT)!;;
+    let node: Node = document.createElement(GenericProfileActionData.SCRIPT)!;;
     
 
-    var vector: BasicArrayList = this.getProfileActionConditionInterfaceVector()!;;
+    let vector: BasicArrayList = this.getProfileActionConditionInterfaceVector()!;;
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var profileActionConditionInterface: ProfileActionScriptConditionInterface = vector.get(index) as ProfileActionScriptConditionInterface;;
+    let profileActionConditionInterface: ProfileActionScriptConditionInterface = vector.get(index) as ProfileActionScriptConditionInterface;;
     
 node.appendChild(profileActionConditionInterface!.toXmlNode(document));
     
@@ -255,6 +260,4 @@ node.appendChild(profileActionConditionInterface!.toXmlNode(document));
 
 
 }
-
-
 

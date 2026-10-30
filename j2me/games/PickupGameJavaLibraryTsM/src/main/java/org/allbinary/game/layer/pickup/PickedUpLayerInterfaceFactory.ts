@@ -102,5 +102,3 @@ this.iconLayer= iconLayer;
 
 }
 
-
-

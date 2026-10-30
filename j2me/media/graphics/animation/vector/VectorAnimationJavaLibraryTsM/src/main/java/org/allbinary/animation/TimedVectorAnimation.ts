@@ -79,5 +79,3 @@ public constructor (currentPoints: number[][][], basicColor: BasicColor, animati
 
 }
 
-
-

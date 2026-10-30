@@ -80,7 +80,7 @@ this.EVENT_POOL.initAllBinaryEventCircularPool(new TerrainEventFactory());
 
     public getNext(basicTerrainInfo: BasicTerrainInfo): TerrainEvent{
 
-    var trackingEvent: TerrainEvent = this.EVENT_POOL.getNextInstance() as TerrainEvent;;
+    let trackingEvent: TerrainEvent = this.EVENT_POOL.getNextInstance() as TerrainEvent;;
     
 trackingEvent!.setBasicTerrainInfoForCircularStaticPool(basicTerrainInfo);
     
@@ -94,6 +94,4 @@ trackingEvent!.setBasicTerrainInfoForCircularStaticPool(basicTerrainInfo);
 
 
 }
-
-
 

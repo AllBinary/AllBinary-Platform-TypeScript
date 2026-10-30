@@ -70,5 +70,3 @@ form.append(item);
 
 }
 
-
-

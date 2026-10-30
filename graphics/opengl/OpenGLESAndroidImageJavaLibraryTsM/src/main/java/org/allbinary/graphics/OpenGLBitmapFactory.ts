@@ -50,6 +50,7 @@ import { AndroidImageInterface } from '../../../org/microemu/android/device/Andr
 //not GWT import - same folder const Config
 import { OpenGLBitmap } from './OpenGLBitmap.js';
 //not GWT import - same folder const OpenGLBitmap
+type Config = InstanceType<OpenGLBitmapFactory['Config']>;
 
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
         
@@ -67,7 +68,7 @@ export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
 
 
 //inner= member=true isStatic=
-Config = class
+Config = (() => { const outer$OpenGLBitmapFactory = this; return class
             extends Object
          {
         
@@ -84,12 +85,17 @@ Config = class
 }
 
 
-}
-
-
+}; })();
     public readonly ARGB_8888 = new this.Config(Bitmap.Config.ARGB_8888);
-
-    public createBitmap(width: number, height: number, config: OpenGLBitmapFactory.Config): OpenGLBitmap{
+createBitmap(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.createBitmap$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 1) return this.createBitmap$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: createBitmap'); }
+  
+    public createBitmap$overload1(width: number, height: number, config: OpenGLBitmapFactory.Config): OpenGLBitmap{
 
 
 
@@ -111,7 +117,7 @@ Config = class
 }
 
 
-    public createBitmap(image: Image): PlatformBitmapBase{
+    public createBitmap$overload2(image: Image): PlatformBitmapBase{
 
 
 
@@ -122,6 +128,4 @@ Config = class
 
 
 }
-
-
 

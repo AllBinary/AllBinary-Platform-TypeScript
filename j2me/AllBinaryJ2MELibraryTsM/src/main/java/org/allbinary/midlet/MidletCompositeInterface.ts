@@ -48,13 +48,11 @@ import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
 export interface MidletCompositeInterface {
         
 
-    setMidlet(midlet: MIDlet)
+    setMidlet(midlet: MIDlet): void;
 
-    getMidlet(): AllBinaryMidlet
+    getMidlet(): AllBinaryMidlet;
 
-    getDisplayable(): Displayable
+    getDisplayable(): Displayable;
 
 }
-
-
 

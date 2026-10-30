@@ -43,12 +43,14 @@ import { RootStoreCategoryPropertiesFactory } from '../../../../../org/allbinary
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -98,12 +100,18 @@ this.transformInfoInterface= transformInfoInterface;
     
 }
 
+getRootInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getRootInstance$overload1();
+   
+    if (args.length === 1) return this.getRootInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getRootInstance'); }
+  
+    public getRootInstance$overload1(): CategoryInterface{
 
-    public getRootInstance(): CategoryInterface{
-
-        try {
-            
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface) as CategoryPropertiesFactoryInterface;;
+ try { 
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -111,10 +119,11 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Category(categoryPropertiesFactoryInterface) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -130,19 +139,20 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getRootInstance$overload2(categoryPath: AbPath): CategoryInterface{
 
-    public getRootInstance(categoryPath: AbPath): CategoryInterface{
-
-        try {
-            
-    var level: number = CategoryUtil.getPathLevel(categoryPath)!;;
+ try { 
+    let level: number = CategoryUtil.getPathLevel(categoryPath)!;;
     
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface, categoryPath) as CategoryPropertiesFactoryInterface;;
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface, categoryPath) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -150,10 +160,11 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Category(categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -169,22 +180,23 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getRootInstanceFromNode(node: Node): CategoryInterface{
 
-        try {
-            
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;;
+ try { 
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;;
     
 
-    var categoryPath: AbPath = new AbPath(CategoryUtil.getNameFromNode(node), StringUtil.getInstance()!.EMPTY_STRING);;
+    let categoryPath: AbPath = new AbPath(CategoryUtil.getNameFromNode(node), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var level: number = CategoryUtil.getPathLevel(categoryPath)!;;
+    let level: number = CategoryUtil.getPathLevel(categoryPath)!;;
     
 
 
@@ -192,10 +204,11 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Category(categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -211,12 +224,12 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

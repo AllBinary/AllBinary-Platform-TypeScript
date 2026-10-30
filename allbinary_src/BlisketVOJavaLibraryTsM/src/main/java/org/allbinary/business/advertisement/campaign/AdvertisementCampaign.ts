@@ -114,5 +114,3 @@ this.hashMap!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
 
 }
 
-
-

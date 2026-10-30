@@ -35,9 +35,11 @@ import { Set } from '../../../../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
@@ -59,6 +61,7 @@ import { XmlDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { RequestParams } from '../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 //not GWT import const RequestParams
@@ -68,18 +71,22 @@ import { WeblisketSession } from '../../../../../../org/allbinary/logic/communic
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { WorkFlowData } from '../../../../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
 //not GWT import const WorkFlowData
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -129,7 +136,7 @@ public constructor (){
 this.workFlowDoc= DomDocumentHelper.create();
     
 
-    var workFlowNode: Node = this.workFlowDoc!.createElement(WorkFlowData.getInstance()!.WORKFLOW)!;;
+    let workFlowNode: Node = this.workFlowDoc!.createElement(WorkFlowData.getInstance()!.WORKFLOW)!;;
     
 this.workFlowDoc!.appendChild(workFlowNode);
     
@@ -140,12 +147,12 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-    var weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);;
+    let weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);;
     
 this.storeName= weblisketSession!.getStoreName();
     
 
-    var requestHashMap: HashMap<any, any> = new RequestParams(pageContext).toHashMap()!;;
+    let requestHashMap: HashMap<any, any> = new RequestParams(pageContext).toHashMap()!;;
     
 this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME) as string;
     
@@ -200,7 +207,7 @@ this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance
             
     public toVector(): BasicArrayList{
 
-    var values: BasicArrayList = new BasicArrayListD();;
+    let values: BasicArrayList = new BasicArrayListD();;
     
 values.add(this.workFlowName);
     
@@ -209,10 +216,10 @@ values.add(this.storeName);
 values.add(XmlDocumentHelper.toString(this.workFlowDoc));
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.add(time);
     
@@ -231,7 +238,7 @@ values.add(time);
             
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(WorkFlowData.getInstance()!.NAME, this.workFlowName);
     
@@ -240,10 +247,10 @@ hashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
 hashMap!.put(WorkFlowData.getInstance()!.DATA, XmlDocumentHelper.toString(this.workFlowDoc));
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -258,21 +265,20 @@ hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var hashMap: HashMap<any, any> = this.toHashMap()!;;
+ try { 
+    let hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;;
+    let keySet: Set = hashMap!.keys()!;;
     
 
-    var node: Node = document.createElement(WorkFlowData.getInstance()!.WORKFLOW)!;;
+    let node: Node = document.createElement(WorkFlowData.getInstance()!.WORKFLOW)!;;
     
 
-    var nameArray: any[] = keySet!.()!;;
+    let nameArray: any[] = keySet!.()!;;
     
 
-    var size: number = nameArray!.length
+    let size: number = nameArray!.length
                 ;;
     
 
@@ -280,13 +286,13 @@ hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var name: string = nameArray[index]! as string;;
+    let name: string = nameArray[index]! as string;;
     
 
-    var value: string = hashMap!.get(name) as string;;
+    let value: string = hashMap!.get(name) as string;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
     
@@ -298,10 +304,11 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -317,24 +324,26 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public toXmlDoc(): Document{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.workFlowDoc;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -350,16 +359,17 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public isValid(): Boolean{
 
-        try {
-            
-    var returnBoolean: Boolean = Boolean.TRUE;;
+ try { 
+    let returnBoolean: Boolean = Boolean.TRUE;;
     
 
                         if(this.workFlowName == 
@@ -367,7 +377,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                                 )
                         
                                     {
-                                    returnBoolean= Boolean.FALSE;
+                                    returnBoolean= false;
     
 
                                     }
@@ -378,10 +388,11 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return returnBoolean;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -395,18 +406,19 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.workFlowName == 
@@ -419,10 +431,11 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -438,8 +451,10 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Getting Validation Info";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -464,6 +479,4 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 
 
 }
-
-
 

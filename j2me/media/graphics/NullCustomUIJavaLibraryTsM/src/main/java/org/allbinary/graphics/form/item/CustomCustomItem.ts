@@ -62,5 +62,3 @@ protected constructor (label: string, backgroundBasicColor: BasicColor, foregrou
 
 }
 
-
-

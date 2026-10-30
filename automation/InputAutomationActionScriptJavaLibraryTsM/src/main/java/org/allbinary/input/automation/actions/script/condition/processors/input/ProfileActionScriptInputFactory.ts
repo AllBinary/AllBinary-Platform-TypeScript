@@ -66,7 +66,7 @@ export class ProfileActionScriptInputFactory
             
     public static getInstance(node: Node): ProfileActionScriptInputInterface{
 
-    var profileActionScriptInputInterface: ProfileActionScriptInputInterface = 
+    let profileActionScriptInputInterface: ProfileActionScriptInputInterface = 
                 null
             ;;
     
@@ -117,6 +117,4 @@ private constructor (){
 
 
 }
-
-
 

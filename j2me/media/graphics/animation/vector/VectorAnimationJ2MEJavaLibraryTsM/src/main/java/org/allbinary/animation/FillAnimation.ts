@@ -59,7 +59,7 @@ this.pixelBuffer= pixelBuffer;
 
     public setBasicColorP(basicColor: BasicColor){
 
-    var changed: boolean = false;;
+    let changed: boolean = false;;
     
 
                         if(this.getBasicColorP() == 
@@ -88,7 +88,7 @@ super.setBasicColorP(basicColor);
 
     public changeBasicColor(basicColor: BasicColor){
 
-    var changed: boolean = false;;
+    let changed: boolean = false;;
     
 
                         if(this.getChangeBasicColor() == 
@@ -117,7 +117,7 @@ super.changeBasicColor(basicColor);
 
     public setAlpha(alpha: number){
 
-    var changed: boolean = false;;
+    let changed: boolean = false;;
     
 
                         if(this.alphaP != alpha)
@@ -161,6 +161,4 @@ g.drawRGB(pixelBuffer, 0, width, 0, 0, width, height, true);
 
 
 }
-
-
 

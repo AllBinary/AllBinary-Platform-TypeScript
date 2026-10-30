@@ -51,17 +51,15 @@ import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/lo
 export interface TransformInterface extends DomDocumentMappingInterface, CompositeTransformInfoInterface {
         
 
-    getTypeId(): number
+    getTypeId(): number;
 
-    setTransformDocumentInterface(viewDocumentInterface: TransformDocumentInterface)
+    setTransformDocumentInterface(viewDocumentInterface: TransformDocumentInterface): void;
 
-    getTransformDocumentInterface(): TransformDocumentInterface
+    getTransformDocumentInterface(): TransformDocumentInterface;
 
                 //@Throws(Exception.constructor)
             
-    view(): string
+    view(): string;
 
 }
-
-
 

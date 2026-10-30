@@ -45,11 +45,9 @@ import { EventListenerInterface } from '../../../../../../org/allbinary/logic/ut
 export interface BaseMotionGestureEventListener extends EventListenerInterface {
         
 
-    onMotionGestureEvent(motionGestureEvent: MotionGestureEvent)
+    onMotionGestureEvent(motionGestureEvent: MotionGestureEvent): void;
 
-    onScrolledMotionGestureEvent(motionGestureEvent: MotionGestureEvent)
+    onScrolledMotionGestureEvent(motionGestureEvent: MotionGestureEvent): void;
 
 }
-
-
 

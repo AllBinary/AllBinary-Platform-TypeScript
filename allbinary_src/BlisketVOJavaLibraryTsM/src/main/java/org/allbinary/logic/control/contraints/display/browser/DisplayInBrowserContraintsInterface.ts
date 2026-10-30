@@ -40,23 +40,21 @@
 export interface DisplayInBrowserContraintsInterface {
         
 
-    isMountable(): boolean
+    isMountable(): boolean;
 
-    isFrameable(): boolean
+    isFrameable(): boolean;
 
-    isQuickFrameable(): boolean
+    isQuickFrameable(): boolean;
 
-    setMountable(canBeMounted: boolean)
+    setMountable(canBeMounted: boolean): void;
 
-    setFrameable(canBeFramed: boolean)
+    setFrameable(canBeFramed: boolean): void;
 
-    setQuickFrameable(canBeQuickFramed: boolean)
+    setQuickFrameable(canBeQuickFramed: boolean): void;
 
-    setMountedLink(mountedLink: string)
+    setMountedLink(mountedLink: string): void;
 
-    getMountedLink(): string
+    getMountedLink(): string;
 
 }
-
-
 

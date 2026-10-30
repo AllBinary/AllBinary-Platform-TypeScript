@@ -32,6 +32,7 @@ import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -72,10 +73,10 @@ this.setTableName(this.tableName);
 
     public createTableStatement(): string{
 
-    var abeHttpRequestInfoData: AbeHttpRequestInfoData = AbeHttpRequestInfoData.getInstance()!;;
+    let abeHttpRequestInfoData: AbeHttpRequestInfoData = AbeHttpRequestInfoData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(this.sqlStrings!.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(abeHttpRequestInfoData!.HTTP_USER_AGENT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(abeHttpRequestInfoData!.REMOTE_HOST)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(abeHttpRequestInfoData!.REMOTE_ADDRESS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(abeHttpRequestInfoData!.REQUEST_FILE_PATH)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(abeHttpRequestInfoData!.REMOTE_PORT)!.append(this.sqlTypeStrings!.MAX_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(this.sqlStrings!.ID)!.append(this.sqlStrings!.END);
     
@@ -99,6 +100,4 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
 
 }
-
-
 

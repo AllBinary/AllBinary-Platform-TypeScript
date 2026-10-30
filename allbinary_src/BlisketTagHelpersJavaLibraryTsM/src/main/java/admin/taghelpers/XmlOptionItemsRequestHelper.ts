@@ -30,9 +30,11 @@ import { HashMap } from '../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -54,15 +56,19 @@ import { XmlOptionItemsEntityFactory } from '../../org/allbinary/data/tables/use
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -130,7 +136,7 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     getHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 values.put(this.basicItemData!.ID, this.id);
     
@@ -139,10 +145,10 @@ values.put(XmlOptionItemData.XML_FILE_STATUS, this.xmlFileStatus);
 values.put(XmlOptionItemData.OPTION_XML_FILE, this.optionXmlFile);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -157,15 +163,14 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
     public insert(): string{
 
-        try {
-            
-    var calendar: Calendar = Calendar.getInstance()!;;
+ try { 
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var values: BasicArrayList = new BasicArrayListD();;
+    let values: BasicArrayList = new BasicArrayListD();;
     
 values.add(this.id);
     
@@ -180,7 +185,7 @@ values.add(time);
 XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.insert(values);
     
 
-    var success: string = "Successfully inserted " +this.id +" into items table";;
+    let success: string = "Successfully inserted " +this.id +" into items table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -197,12 +202,13 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.in
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to insert " +this.id +" into items table";;
+    let error: string = "Failed to insert " +this.id +" into items table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -219,18 +225,19 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.in
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(): string{
 
-        try {
-            XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.delete(this.id);
+ try { XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.delete(this.id);
     
 
-    var success: string = "Successfully deleted";;
+    let success: string = "Successfully deleted";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -247,12 +254,13 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.in
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to delete";;
+    let error: string = "Failed to delete";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -269,19 +277,20 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.in
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public update(): string{
 
-        try {
-            
-    var success: string = "Update Successful";;
+ try { 
+    let success: string = "Update Successful";;
     
 
-    var values: HashMap<any, any> = this.getHashMap()!;;
+    let values: HashMap<any, any> = this.getHashMap()!;;
     
 XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.update(values);
     
@@ -300,12 +309,13 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.up
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to update: " +this.id;;
+    let error: string = "Failed to update: " +this.id;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -322,12 +332,12 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.up
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

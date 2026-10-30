@@ -35,21 +35,27 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -85,20 +91,20 @@ export class NumberOnOwnGroupSequenceAIFactory
             
     public getInstance(hashtable: ABHashtable<any, any>, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 
-    var integerArray: Integer[] = NumberInSameGroupSequence.getInstance()!.NUMBER_ON_SAME_TEAM_SEQUENCE;;
+    let integerArray: Integer[] = NumberInSameGroupSequence.getInstance()!.NUMBER_ON_SAME_TEAM_SEQUENCE;;
     
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < integerArray!.length; index++)
+    let index: number = 0;index < integerArray!.length; index++)
         {
 
-    var integerCanBeNull: any = hashtable.get(integerArray[index]!);;
+    let integerCanBeNull: any = hashtable.get(integerArray[index]!);;
     
 
                         if(integerCanBeNull == 
@@ -117,7 +123,7 @@ list.add(integerCanBeNull);
 }
 
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Total AI Properties: ");
     
@@ -130,7 +136,7 @@ stringBuffer!.appendint(artificialIntelligenceInterface!.length);
 stringBuffer!.append(" + 1");
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     
@@ -159,14 +165,14 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
                                     }
                                 
 
-    var numberOnSameTeam: Integer[] = new Array(list.size());;
+    let numberOnSameTeam: Integer[] = new Array(list.size());;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOnSameTeam!.length; index++)
+    let index: number = 0;index < numberOnSameTeam!.length; index++)
         {
 numberOnSameTeam[index]= list.objectArray[index]! as Integer;
     
@@ -182,6 +188,4 @@ numberOnSameTeam[index]= list.objectArray[index]! as Integer;
 
 
 }
-
-
 

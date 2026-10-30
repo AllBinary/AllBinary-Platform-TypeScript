@@ -45,18 +45,21 @@ import { RootStoreThemeCategoryPropertiesFactory } from '../../../../../../org/a
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
@@ -109,12 +112,18 @@ this.transformInfoInterface= transformInfoInterface;
     
 }
 
+getRootInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getRootInstance$overload1();
+   
+    if (args.length === 1) return this.getRootInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getRootInstance'); }
+  
+    public getRootInstance$overload1(): CategoryInterface{
 
-    public getRootInstance(): CategoryInterface{
-
-        try {
-            
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface) as CategoryPropertiesFactoryInterface;;
+ try { 
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -122,10 +131,11 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, 0) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -141,19 +151,20 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getRootInstance$overload2(categoryAbPath: AbPath): CategoryInterface{
 
-    public getRootInstance(categoryAbPath: AbPath): CategoryInterface{
-
-        try {
-            
-    var level: number = CategoryUtil.getPathLevel(categoryAbPath)!;;
+ try { 
+    let level: number = CategoryUtil.getPathLevel(categoryAbPath)!;;
     
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, categoryAbPath) as CategoryPropertiesFactoryInterface;;
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, categoryAbPath) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -161,10 +172,11 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -180,22 +192,23 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getRootInstanceFromNode(node: Node): CategoryInterface{
 
-        try {
-            
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;;
+ try { 
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;;
     
 
-    var categoryPath: AbPath = new AbPath(CategoryUtil.getNameFromNode(node), StringUtil.getInstance()!.EMPTY_STRING);;
+    let categoryPath: AbPath = new AbPath(CategoryUtil.getNameFromNode(node), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var level: number = CategoryUtil.getPathLevel(categoryPath)!;;
+    let level: number = CategoryUtil.getPathLevel(categoryPath)!;;
     
 
 
@@ -203,10 +216,11 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StoreThemeCategory(this.transformInfoInterface, node, categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -222,16 +236,32 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
+getInstance(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'number') return this.getInstance$overload1(args[0], args[1]);
+   
+    if (args.length === 3 && typeof args[2] === 'string') return this.getInstance$overload2(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[1] === 'number') return this.getInstance$overload3(args[0], args[1]);
+   
+    if (args.length === 3) return this.getInstance$overload4(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[1] === 'number') return this.getInstance$overload5(args[0], args[1]);
+   
+    if (args.length === 3) return this.getInstance$overload6(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public getInstance$overload1(categoryPath: string, level: number): CategoryInterface{
 
-
-    public getInstance(categoryPath: string, level: number): CategoryInterface{
-
-        try {
-            
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPath) as CategoryPropertiesFactoryInterface;;
+ try { 
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPath) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -239,10 +269,11 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -258,16 +289,17 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getInstance$overload2(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPath: string): CategoryInterface{
 
-    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPath: string): CategoryInterface{
-
-        try {
-            
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPath) as CategoryPropertiesFactoryInterface;;
+ try { 
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPath) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -275,10 +307,11 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StoreThemeCategory(this.transformInfoInterface, rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -294,16 +327,17 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getInstance$overload3(node: Node, level: number): CategoryInterface{
 
-    public getInstance(node: Node, level: number): CategoryInterface{
-
-        try {
-            
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;;
+ try { 
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -311,10 +345,11 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -330,16 +365,17 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getInstance$overload4(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, node: Node): CategoryInterface{
 
-    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, node: Node): CategoryInterface{
-
-        try {
-            
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;;
+ try { 
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -347,10 +383,11 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StoreThemeCategory(this.transformInfoInterface, rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -366,16 +403,17 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getInstance$overload5(categoryPropertiesHashMap: HashMap<any, any>, level: number): CategoryInterface{
 
-    public getInstance(categoryPropertiesHashMap: HashMap<any, any>, level: number): CategoryInterface{
-
-        try {
-            
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;;
+ try { 
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -383,10 +421,11 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -402,16 +441,17 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getInstance$overload6(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface{
 
-    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface{
-
-        try {
-            
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;;
+ try { 
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -419,10 +459,11 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StoreThemeCategory(this.transformInfoInterface, rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -438,12 +479,12 @@ this.transformInfoInterface= transformInfoInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -22,9 +22,11 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -173,7 +175,7 @@ okJButtonActionPerformed(evt);
 this.jLabel2!.setText("Time (ms):");
     
 
-    var timeIntervalActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.timeIntervalActionJDialog!.getContentPane());;
+    let timeIntervalActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.timeIntervalActionJDialog!.getContentPane());;
     
 this.timeIntervalActionJDialog!.getContentPane()!.setLayout(timeIntervalActionJDialogLayout);
     
@@ -199,7 +201,7 @@ timeIntervalActionJButtonActionPerformed(evt);
 this.jLabel1!.setText("Time Interval:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -239,6 +241,4 @@ this.getTimeIntervalActionJDialog()!.setVisible(true);
     private titleJLabel: javax.swing.JLabel;
 
 }
-
-
 

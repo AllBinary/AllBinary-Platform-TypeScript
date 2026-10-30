@@ -34,6 +34,7 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -84,10 +85,10 @@ private constructor (){
 
     public removeAllListeners(){
 
-    var eventListenerInterface: EventListenerInterface = NullEventListener.NULL_EVENT_LISTENER;;
+    let eventListenerInterface: EventListenerInterface = NullEventListener.NULL_EVENT_LISTENER;;
     
 
-    var list: BasicArrayList = this.eventListenerInterfaceList;;
+    let list: BasicArrayList = this.eventListenerInterfaceList;;
     
 
                         if(list.size() > 0)
@@ -129,7 +130,7 @@ super.removeAllListeners();
                                     }
                                 
 
-    var gameNotificationListenerInterface: GameNotificationListenerInterface = eventListenerInterface as GameNotificationListenerInterface;;
+    let gameNotificationListenerInterface: GameNotificationListenerInterface = eventListenerInterface as GameNotificationListenerInterface;;
     
 gameNotificationListenerInterface!.onGameNotificationEvent(eventObject as GameNotificationEvent);
     
@@ -137,6 +138,4 @@ gameNotificationListenerInterface!.onGameNotificationEvent(eventObject as GameNo
 
 
 }
-
-
 

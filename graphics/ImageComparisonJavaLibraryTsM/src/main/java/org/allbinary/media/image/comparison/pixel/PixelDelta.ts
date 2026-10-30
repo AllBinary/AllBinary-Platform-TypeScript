@@ -28,6 +28,7 @@ import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
 //not GWT import const CacheableInterface
@@ -37,6 +38,7 @@ import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparis
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -62,7 +64,7 @@ export class PixelDelta
          implements CacheableInterface {
         
 
-    public static getKey(point: GPoint, colorDelta: ColorDelta): any{
+    public static getKey$overload2(point: GPoint, colorDelta: ColorDelta): any{
 
 
 
@@ -89,8 +91,15 @@ this.key= PixelDelta.getKey(this.getPoint(), this.getColorDelta());
     
 }
 
-
-    public getKey(): any{
+getKey(...args: any[]): any {
+   
+    if (args.length === 0) return this.getKey$overload1();
+   
+    if (args.length === 2) return this.getKey$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getKey'); }
+  
+    public getKey$overload1(): any{
 
 
 
@@ -143,6 +152,4 @@ this.colorDelta= colorDelta;
 
 
 }
-
-
 

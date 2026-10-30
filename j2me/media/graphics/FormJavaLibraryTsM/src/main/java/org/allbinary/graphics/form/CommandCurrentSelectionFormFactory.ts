@@ -77,7 +77,7 @@ export class CommandCurrentSelectionFormFactory
                         
                                     {
                                     
-    var scrollSelectionForm: ScrollSelectionForm = new CommandCurrentSelectionForm(title, items, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);;
+    let scrollSelectionForm: ScrollSelectionForm = new CommandCurrentSelectionForm(title, items, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);;
     
 scrollSelectionForm!.init(rectangle, formType);
     
@@ -104,6 +104,4 @@ scrollSelectionForm!.init(rectangle, formType);
 
 
 }
-
-
 

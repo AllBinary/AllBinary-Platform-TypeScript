@@ -75,5 +75,3 @@ export class CaptionAnimationHelperBase extends Animation {
 
 }
 
-
-

@@ -44,9 +44,7 @@ export interface TransformInfoObjectConfigGeneratorInterface {
 
                 //@Throws(Exception.constructor)
             
-    process(input: string): string
+    process(input: string): string;
 
 }
-
-
 

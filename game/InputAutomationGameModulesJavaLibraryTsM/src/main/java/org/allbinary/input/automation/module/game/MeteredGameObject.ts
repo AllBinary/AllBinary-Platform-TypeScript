@@ -31,9 +31,11 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -101,10 +103,10 @@ this.setSize(maxX -minX);
 
 
                         for (
-    var index: number = 0;index < bufferedImage!.length; index++)
+    let index: number = 0;index < bufferedImage!.length; index++)
         {
 
-    var nominator: number = GraphicsAnalysisUtil.getNominator(bufferedImage[index]!, this.getMinX(), this.getMaxX(), this.getY())!;;
+    let nominator: number = GraphicsAnalysisUtil.getNominator(bufferedImage[index]!, this.getMinX(), this.getMaxX(), this.getY())!;;
     
 this.getRatios()[index]= new number(nominator /this.getSize());
     
@@ -187,10 +189,10 @@ this.dropping= dropping;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
@@ -201,7 +203,7 @@ stringBuffer!.append(this.RATIOS_LABEL);
 
 
                         for (
-    var index: number = 0;index < this.getRatios()!.length; index++)
+    let index: number = 0;index < this.getRatios()!.length; index++)
         {
 stringBuffer!.append(this.getRatios()[index]!.toString());
     
@@ -308,6 +310,4 @@ this.size= size;
 
 
 }
-
-
 

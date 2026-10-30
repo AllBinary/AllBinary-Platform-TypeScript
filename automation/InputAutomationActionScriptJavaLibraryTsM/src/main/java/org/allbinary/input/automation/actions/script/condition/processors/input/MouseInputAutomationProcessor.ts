@@ -29,12 +29,15 @@ import { InputRobotInterface } from '../../../../../../../../../org/allbinary/in
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -66,15 +69,15 @@ export class MouseInputAutomationProcessor
             
     public static process(mouseActionScriptInputInterface: MouseActionScriptInputInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(new StringMaker().append("Start - Processing Mouse Input at: ")!.append(mouseActionScriptInputInterface!.getPoint()!.toString())!.append(" clicks: ")!.appendint(mouseActionScriptInputInterface!.getButtonClicks())!.toString(), "MouseInputAutomationProcessor", commonStrings!.PROCESS);
     
 
-    var inputRobotInterface: InputRobotInterface = mouseActionScriptInputInterface!.getInputRobotInterface()!;;
+    let inputRobotInterface: InputRobotInterface = mouseActionScriptInputInterface!.getInputRobotInterface()!;;
     
 
                         if(mouseActionScriptInputInterface!.getPoint()!.x !=  -1 && mouseActionScriptInputInterface!.getPoint()!.y !=  -1)
@@ -112,6 +115,4 @@ private constructor (){
 
 
 }
-
-
 

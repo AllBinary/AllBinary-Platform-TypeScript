@@ -46,12 +46,14 @@ import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.j
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -114,7 +116,7 @@ public constructor (backgroundBasicColor: BasicColor, foregroundBasicColor: Basi
 this.foregroundBasicColor= foregroundBasicColor;
     
 
-    var itemColorFactory: ItemColorFactory = ItemColorFactory.getInstance()!;;
+    let itemColorFactory: ItemColorFactory = ItemColorFactory.getInstance()!;;
     
 itemColorFactory!.INVERT_PAINT= this.backgroundBasicColor!.intValue();
     
@@ -193,10 +195,10 @@ this.gameInfo= gameInfo;
 
     public setLayerProcessorList(list: BasicArrayList){
 
-    var layerProcessorInterfaceArray: LayerProcessor[] = new Array(list.size());;
+    let layerProcessorInterfaceArray: LayerProcessor[] = new Array(list.size());;
     
 
-    var size: number = layerProcessorInterfaceArray!.length
+    let size: number = layerProcessorInterfaceArray!.length
                 ;;
     
 
@@ -204,7 +206,7 @@ this.gameInfo= gameInfo;
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 layerProcessorInterfaceArray[index]= list.objectArray[index]! as LayerProcessor;
     
@@ -232,6 +234,4 @@ this.playerGameInputCompositeInterface= playerGameInputCompositeInterface;
 
 
 }
-
-
 

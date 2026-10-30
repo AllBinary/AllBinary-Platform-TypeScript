@@ -22,6 +22,7 @@
         
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 
 
@@ -58,7 +59,7 @@ public constructor (initFileName: string, read: boolean){
 
     public getUrl(): string{
 
-    var url: string = super.getUrl()!;;
+    let url: string = super.getUrl()!;;
     
 PreLogUtil.put("Url: " +url, this, "getUrl");
     
@@ -91,6 +92,4 @@ PreLogUtil.put("Url: " +url, this, "getUrl");
 
 
 }
-
-
 

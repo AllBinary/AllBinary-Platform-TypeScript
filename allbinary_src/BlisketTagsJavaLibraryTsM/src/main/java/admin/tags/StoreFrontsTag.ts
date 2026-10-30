@@ -43,6 +43,7 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -87,16 +88,15 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
             
     generateSelect(): string{
 
-        try {
-            
-    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
+ try { 
+    let anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var method: Method = anyType!.constructor.name.getMethod("generateSelect", 
+    let method: Method = anyType!.constructor.name.getMethod("generateSelect", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -105,22 +105,23 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to generate storefronts select";;
+    let error: string = "Failed to generate storefronts select";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -137,8 +138,10 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -146,16 +149,15 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
             
     install(): string{
 
-        try {
-            
-    var anyType: any = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
+ try { 
+    let anyType: any = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var method: Method = anyType!.constructor.name.getMethod("install", 
+    let method: Method = anyType!.constructor.name.getMethod("install", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -164,22 +166,23 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to generate storefronts select";;
+    let error: string = "Failed to generate storefronts select";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -196,8 +199,10 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -205,16 +210,15 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
             
     sendStoreCreatedEmails(): string{
 
-        try {
-            
-    var anyType: any = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
+ try { 
+    let anyType: any = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var method: Method = anyType!.constructor.name.getMethod("sendStoreCreatedEmails", 
+    let method: Method = anyType!.constructor.name.getMethod("sendStoreCreatedEmails", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -223,22 +227,23 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to send email";;
+    let error: string = "Failed to send email";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -255,8 +260,10 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -264,8 +271,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(this.isEnabled())
                         
                                     {
@@ -276,7 +282,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         
                                     {
                                     
-    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
+    let storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
     
 
                         if(this.getCommand()!.compareTo(storeFrontData!.SELECT) == 0)
@@ -344,10 +350,11 @@ this.install();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -356,11 +363,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -369,12 +376,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

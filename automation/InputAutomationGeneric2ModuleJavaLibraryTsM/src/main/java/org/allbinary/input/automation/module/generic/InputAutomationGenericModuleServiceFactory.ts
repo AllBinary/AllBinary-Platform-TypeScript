@@ -28,6 +28,7 @@ import { InputAutomationModuleServiceFactory } from '../../../../../../org/allbi
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -71,26 +72,26 @@ public constructor (){
 
             super();
         
-        try {
-            
-    var inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[] = new Array(1);;
+ try { 
+    let inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[] = new Array(1);;
     
 inputAutomationModuleInterfaceArray[0]= new GenericModuleFactory();
     
 this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

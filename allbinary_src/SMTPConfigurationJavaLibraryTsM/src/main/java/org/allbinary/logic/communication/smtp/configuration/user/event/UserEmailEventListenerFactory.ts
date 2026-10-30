@@ -66,10 +66,10 @@ export class UserEmailEventListenerFactory
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface, userInterface: UserInterface): UserEmailEventListenerInterface{
 
-    var params: any[] = new Array(1);;
+    let params: any[] = new Array(1);;
     
 
-    var classes: Function[] = new Array(1);;
+    let classes: Function[] = new Array(1);;
     
 classes[0]= 
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
@@ -93,6 +93,4 @@ private constructor (){
 
 
 }
-
-
 

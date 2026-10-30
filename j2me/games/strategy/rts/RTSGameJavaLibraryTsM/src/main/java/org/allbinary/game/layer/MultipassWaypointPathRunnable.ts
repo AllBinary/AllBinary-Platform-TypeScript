@@ -26,15 +26,19 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
@@ -47,9 +51,11 @@ import { PathFindingInfo } from '../../../../org/allbinary/media/graphics/geogra
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -79,24 +85,15 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
 //not GWT import - same folder const EndRunnable
 import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
 //not GWT import - same folder const WaypointBehaviorBase
+type FirstRunnable = InstanceType<MultipassWaypointPathRunnable['FirstRunnable']>;
+type SecondRunnable = InstanceType<MultipassWaypointPathRunnable['SecondRunnable']>;
+type EndRunnable = InstanceType<MultipassWaypointPathRunnable['EndRunnable']>;
 
 export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
         
 
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
-
-    private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-
-    private readonly multipassState: MultipassState = new MultipassState();
-
-    private done: boolean = false;
-
-    private list: BasicArrayList = this.basicArrayListUtil!.getImmutableInstance()!;
-
-    private pathFindingInfo: any = NullUtil.getInstance()!.NULL_OBJECT;
-
 //inner= member=true isStatic=
-FirstRunnable = class extends ARunnable {
+FirstRunnable = (() => { const outer$MultipassWaypointPathRunnable = this; return class extends ARunnable {
         
 
     private readonly multipassWaypointPathRunnable: MultipassWaypointPathRunnable;
@@ -115,13 +112,9 @@ this.multipassWaypointPathRunnable!.processFirstRunnable();
 }
 
 
-}
-
-
-    private readonly FIRST_RUNNABLE: Runnable = new this.FirstRunnable(this);
-//    private boolean first = true;
+}; })();//    private boolean first = true;
 //inner= member=true isStatic=
-SecondRunnable = class extends ARunnable {
+SecondRunnable = (() => { const outer$MultipassWaypointPathRunnable = this; return class extends ARunnable {
         
 
     private readonly multipassWaypointPathRunnable: MultipassWaypointPathRunnable;
@@ -140,13 +133,9 @@ this.multipassWaypointPathRunnable!.processSecondRunnable();
 }
 
 
-}
-
-
-    private readonly SECOND_RUNNABLE: Runnable = new this.SecondRunnable(this);
-
+}; })();
 //inner= member=true isStatic=
-EndRunnable = class extends ARunnable {
+EndRunnable = (() => { const outer$MultipassWaypointPathRunnable = this; return class extends ARunnable {
         
 
     private readonly multipassWaypointPathRunnable: MultipassWaypointPathRunnable;
@@ -165,8 +154,22 @@ this.multipassWaypointPathRunnable!.processEndRunnable();
 }
 
 
-}
+}; })();
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
+
+    private readonly multipassState: MultipassState = new MultipassState();
+
+    private done: boolean = false;
+
+    private list: BasicArrayList = this.basicArrayListUtil!.getImmutableInstance()!;
+
+    private pathFindingInfo: any = NullUtil.getInstance()!.NULL_OBJECT;
+
+    private readonly FIRST_RUNNABLE: Runnable = new this.FirstRunnable(this);
+
+    private readonly SECOND_RUNNABLE: Runnable = new this.SecondRunnable(this);
 
     private readonly END_RUNNABLE: Runnable = new this.EndRunnable(this);
 
@@ -211,25 +214,27 @@ this.done= false;
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            this.currentPassRunnable!.run();
+ try { this.currentPassRunnable!.run();
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 this.setRunning(false);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -277,13 +282,12 @@ this.done= false;
 
     processFirstRunnable(){
 
-        try {
-            this.pathFindingLayer!.getWaypointRunnableLogHelper()!.start(this.pathFindingLayer);
+ try { this.pathFindingLayer!.getWaypointRunnableLogHelper()!.start(this.pathFindingLayer);
     
 this.reset2();
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.pathFindingLayer!.getCurrentGeographicMapCellPosition()!;;
+    let geographicMapCellPosition: GeographicMapCellPosition = this.pathFindingLayer!.getCurrentGeographicMapCellPosition()!;;
     
 
                         if(geographicMapCellPosition == 
@@ -302,7 +306,7 @@ this.reset2();
 this.pathFindingInfo= this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathFindingInfo(geographicMapCellPosition);
     
 
-    var localPathFindingInfo: PathFindingInfo = this.pathFindingInfo as PathFindingInfo;;
+    let localPathFindingInfo: PathFindingInfo = this.pathFindingInfo as PathFindingInfo;;
     
 this.list= this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, this.multipassState);
     
@@ -321,12 +325,13 @@ this.list= this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.ge
 
                         }
                             
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
@@ -334,19 +339,20 @@ this.setRunning(false);
     
 this.finish();
     
-}
 
+ }
+   }
+ 
 }
 
 
     processSecondRunnable(){
 
-        try {
-            
-    var geographicMapCellPosition: GeographicMapCellPosition = this.pathFindingLayer!.getCurrentGeographicMapCellPosition()!;;
+ try { 
+    let geographicMapCellPosition: GeographicMapCellPosition = this.pathFindingLayer!.getCurrentGeographicMapCellPosition()!;;
     
 
-    var localPathFindingInfo: PathFindingInfo = this.pathFindingInfo as PathFindingInfo;;
+    let localPathFindingInfo: PathFindingInfo = this.pathFindingInfo as PathFindingInfo;;
     
 this.list= this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, this.multipassState);
     
@@ -359,12 +365,13 @@ this.list= this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.ge
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
@@ -372,40 +379,42 @@ this.setRunning(false);
     
 this.finish();
     
-}
 
+ }
+   }
+ 
 }
 
 
     processEndRunnable(){
 
-        try {
-            
-    var waypointBehavior: WaypointBehaviorBase = this.pathFindingLayer!.getWaypointBehavior()!;;
+ try { 
+    let waypointBehavior: WaypointBehaviorBase = this.pathFindingLayer!.getWaypointBehavior()!;;
     
 waypointBehavior!.setWaypointPathsList(this.list);
     
 this.pathFindingLayer!.getWaypointRunnableLogHelper()!.end(this.pathFindingLayer);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 this.setRunning(false);
     
-}
 
+ }
+   }
+ 
 this.finish();
     
 }
 
 
 }
-
-
 

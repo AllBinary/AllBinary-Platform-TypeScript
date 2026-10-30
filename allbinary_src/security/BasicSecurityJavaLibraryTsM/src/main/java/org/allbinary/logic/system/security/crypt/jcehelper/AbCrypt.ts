@@ -45,12 +45,15 @@ import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jc
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { BouncyCastleProvider } from '../../../../../../../org/bouncycastle/jce/provider/BouncyCastleProvider.js';
 //not GWT import const BouncyCastleProvider
@@ -101,63 +104,67 @@ public constructor (algorithm: string){
 
     public init(keyAsString: string){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-        try {
-            Security.addProvider(new BouncyCastleProvider());
+ try { 
+ try { Security.addProvider(new BouncyCastleProvider());
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     
-}
 
+ }
+   }
+ 
 
-    var key: number[] = this.tsUtil!.getByteArray(keyAsString)!;;
+    let key: number[] = this.tsUtil!.getByteArray(keyAsString)!;;
     
 
-    var keySpec: KeySpec = KeySpecFactory.getInstance()!.getInstance(this.algorithm, key)!;;
+    let keySpec: KeySpec = KeySpecFactory.getInstance()!.getInstance(this.algorithm, key)!;;
     
 
-    var keyFactory: SecretKeyFactory = SecretKeyFactory.getInstance(this.algorithm)!;;
+    let keyFactory: SecretKeyFactory = SecretKeyFactory.getInstance(this.algorithm)!;;
     
 
-    var secretKey: SecretKey = keyFactory!.generateSecret(keySpec)!;;
+    let secretKey: SecretKey = keyFactory!.generateSecret(keySpec)!;;
     
 
-    var cipher: Cipher = Cipher.getInstance(this.algorithm)!;;
+    let cipher: Cipher = Cipher.getInstance(this.algorithm)!;;
     
 this.secretComposite= new SecretComposite(secretKey, cipher, key);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE("init Failed", this, commonStrings!.INIT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public encrypt(array: number[]): number[]{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.secretComposite!.encrypt(array);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
     
 
@@ -166,24 +173,26 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NullUtil.getInstance()!.NULL_BYTE_ARRAY;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public decrypt(array: number[]): number[]{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.secretComposite!.decrypt(array);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE("decrypt Failed", this, "decrypt", e);
     
 
@@ -192,12 +201,12 @@ PreLogUtil.putOE("decrypt Failed", this, "decrypt", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NullUtil.getInstance()!.NULL_BYTE_ARRAY;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

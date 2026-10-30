@@ -22,6 +22,7 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -46,17 +47,26 @@ export class IntArrayUtil
             extends Object
          {
         
+static toString(...args: any[]): any {
+   
+    if (args.length === 1) return this.toString$overload1(args[0]);
+   
+    if (args.length === 1) return this.toString$overload2(args[0]);
+   
+    if (args.length === 1) return this.toString$overload3(args[0]);
+   
+   throw new TypeError('No matching overload: toString'); }
+  
+    public static toString$overload1(array: number[]): string{
 
-    public static toString(array: number[]): string{
-
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < array.length; index++)
+    let index: number = 0;index < array.length; index++)
         {
 stringBuffer!.appendint(array[index]!);
     
@@ -80,16 +90,16 @@ stringBuffer!.appendint(array[index]!);
 }
 
 
-    public static toString(array: number[][]): string{
+    public static toString$overload2(array: number[][]): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < array.length; index++)
+    let index: number = 0;index < array.length; index++)
         {
 stringBuffer!.append("{");
     
@@ -98,7 +108,7 @@ stringBuffer!.append("{");
 
 
                         for (
-    var index2: number = 0;index2 < array[index]!.length; index2++)
+    let index2: number = 0;index2 < array[index]!.length; index2++)
         {
 stringBuffer!.appendint(array[index]![index2]!);
     
@@ -135,16 +145,16 @@ stringBuffer!.append("}");
 }
 
 
-    public static toString(array: number[][][]): string{
+    public static toString$overload3(array: number[][][]): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < array.length; index++)
+    let index: number = 0;index < array.length; index++)
         {
 stringBuffer!.append("{");
     
@@ -153,7 +163,7 @@ stringBuffer!.append("{");
 
 
                         for (
-    var index2: number = 0;index2 < array[index]!.length; index2++)
+    let index2: number = 0;index2 < array[index]!.length; index2++)
         {
 stringBuffer!.append("{");
     
@@ -162,7 +172,7 @@ stringBuffer!.append("{");
 
 
                         for (
-    var index3: number = 0;index3 < array[index]![index2]!.length; index3++)
+    let index3: number = 0;index3 < array[index]![index2]!.length; index3++)
         {
 stringBuffer!.appendint(array[index]![index2]![index3]!);
     
@@ -219,6 +229,4 @@ private constructor (){
 
 
 }
-
-
 

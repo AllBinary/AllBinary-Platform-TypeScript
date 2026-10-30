@@ -27,6 +27,7 @@ import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -68,7 +69,7 @@ export class ParentInventoryTagHelper
 
                 //@Throws(Exception.constructor)
             
-    public isValid(tagClass: any = {}, parentTag: Tag){
+    public isValid(tagClass: any, parentTag: Tag){
 
                         if(parentTag == 
                                     null
@@ -88,7 +89,7 @@ export class ParentInventoryTagHelper
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Must have at least a ");
     
@@ -112,6 +113,4 @@ stringBuffer!.append(parentTag!.constructor.name.toString()!);
 
 
 }
-
-
 

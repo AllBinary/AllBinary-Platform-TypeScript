@@ -48,17 +48,15 @@ import { TableMappingInterface } from '../../../../../../../../../org/allbinary/
 export interface StoreFrontOrdersHistoryStatisticsInterface extends TableMappingInterface {
         
 
-    getNumberOfOrders(): Long
+    getNumberOfOrders(): Long;
 
-    getSubTotal(): Money
+    getSubTotal(): Money;
 
-    getShippingCost(): Money
+    getShippingCost(): Money;
 
-    getTaxes(): Money
+    getTaxes(): Money;
 
-    getTotal(): Money
+    getTotal(): Money;
 
 }
-
-
 

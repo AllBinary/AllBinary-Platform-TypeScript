@@ -47,24 +47,30 @@ import { CharBuffer } from '../../../../../java/nio/CharBuffer.js';
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
 //not GWT import const StreamUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -301,7 +307,7 @@ export class SimpleFileUtil
 
     public loadFileAsListReturnLine(inputStream: InputStream, max: number, byteArray1: number[], includeReturnLine: number): BasicArrayList{
 
-    var stringList: BasicArrayList = new BasicArrayListD();;
+    let stringList: BasicArrayList = new BasicArrayListD();;
     
 
                         if(inputStream == 
@@ -319,27 +325,29 @@ export class SimpleFileUtil
                                     }
                                 
 
-    var byteArray: number[] = this.nullUtil!.NULL_BYTE_ARRAY;;
+    let byteArray: number[] = this.nullUtil!.NULL_BYTE_ARRAY;;
     
 
-        try {
-            
-    var outputStream2: ByteArrayOutputStream = new ByteArrayOutputStream(max);;
+ try { 
+    let outputStream2: ByteArrayOutputStream = new ByteArrayOutputStream(max);;
     
 byteArray= this.streamUtil!.getByteArray(inputStream, outputStream2, byteArray1);
     
 this.streamUtil!.close(inputStream);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.streamUtil!.close(inputStream);
     
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, e);
     
-}
 
+ }
+   }
+ 
 
                         if(byteArray == 
                                     null
@@ -356,17 +364,17 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, 
                                     }
                                 
 
-    var size: number = byteArray!.length
+    let size: number = byteArray!.length
                 ;;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var startIndex: number= 0;;
+    let startIndex: number= 0;;
     
 
-    var returnLine: number = 0;;
+    let returnLine: number = 0;;
     
 
         while(index < size)
@@ -403,7 +411,7 @@ index++;
                                     }
                                 
 
-    var s: string = String.fromCharCode(...byteArray);;
+    let s: string = ((data: any[], offset: number, count: number) => data.slice(offset, offset + count).map(value => typeof value === 'number' ? String.fromCharCode(value & 255) : value).join(''))(byteArray, startIndex, (index +includeReturnLine -returnLine -startIndex));;
     
 stringList!.add(s);
     
@@ -422,10 +430,10 @@ index++;
 
     public createStringFromArrayOfStrings(stringArray: string[]): string{
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var size: number = stringArray!.length
+    let size: number = stringArray!.length
                 ;;
     
 
@@ -433,7 +441,7 @@ index++;
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 stringMaker!.append(stringArray[index]!);
     
@@ -449,6 +457,4 @@ stringMaker!.append(stringArray[index]!);
 
 
 }
-
-
 

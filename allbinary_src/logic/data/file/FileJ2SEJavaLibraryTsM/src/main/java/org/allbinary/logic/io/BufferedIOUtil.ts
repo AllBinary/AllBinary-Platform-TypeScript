@@ -42,6 +42,7 @@ import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFile
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -71,13 +72,13 @@ export class BufferedIOUtil
             
     public static copy(backupFile: AbFile, backupFileBak: AbFile){
 
-    var line: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let line: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
-    var tmpOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(backupFileBak)));;
+    let tmpOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(backupFileBak)));;
     
 
-    var tmpIn: BufferedReader = new BufferedReader(new FileReader(AbFileNativeUtil.get(backupFile)));;
+    let tmpIn: BufferedReader = new BufferedReader(new FileReader(AbFileNativeUtil.get(backupFile)));;
     
 
         while(true)
@@ -108,6 +109,4 @@ tmpOut!.flush();
 
 
 }
-
-
 

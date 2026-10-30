@@ -88,7 +88,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
             
     generate(objectConfigDocument: Document): Document{
 
-    var newObjectConfigDocument: Document = super.generate(objectConfigDocument)!;;
+    let newObjectConfigDocument: Document = super.generate(objectConfigDocument)!;;
     
 
 
@@ -100,6 +100,4 @@ this.setDocument(this.generate(this.toXmlDoc()));
 
 
 }
-
-
 

@@ -29,6 +29,7 @@ import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 //not GWT import const GenericOperatingSystem
@@ -41,9 +42,11 @@ import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/o
 
 //not plain js import { SystemProperties } 
 const SystemProperties = globalThis.org.allbinary.logic.system.os.SystemProperties;
+type SystemProperties<T = any, U = any> = typeof SystemProperties extends abstract new (...args: any[]) => infer Instance ? Instance : typeof SystemProperties;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -97,15 +100,14 @@ private constructor (){
             
     public getOperatingSystemInstance(): GenericOperatingSystem{
 
-        try {
-            
-    var GenericOperatingSystem: GenericOperatingSystem;;
+ try { 
+    let GenericOperatingSystem: GenericOperatingSystem;;
     
 
-    var systemProperties: SystemProperties = SystemProperties.getInstance()!;;
+    let systemProperties: SystemProperties = SystemProperties.getInstance()!;;
     
 
-    var osName: string = systemProperties!.getName()!;;
+    let osName: string = systemProperties!.getName()!;;
     
 
                         if(this.tsUtil!.compareTo(osName, OperatingSystems.getInstance()!.ANDROID) == 0)
@@ -144,12 +146,13 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return GenericOperatingSystem;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put("Failed to get OperatingSystem returning NoOperatingSystem", this, commonStrings!.GET_INSTANCE, e);
     
@@ -159,12 +162,12 @@ this.logUtil!.put("Failed to get OperatingSystem returning NoOperatingSystem", t
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NoOperatingSystem.NO_OPERATING_SYSTEM;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

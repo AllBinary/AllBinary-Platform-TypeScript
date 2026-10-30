@@ -91,7 +91,7 @@ public constructor (){
 
     public setTiledLayer(tiledLayer: AllBinaryTiledLayer){
 
-    var viewPosition: TileLayerPositionIntoViewPosition = this.getViewPosition() as TileLayerPositionIntoViewPosition;;
+    let viewPosition: TileLayerPositionIntoViewPosition = this.getViewPosition() as TileLayerPositionIntoViewPosition;;
     
 viewPosition!.setTiledLayer(tiledLayer);
     
@@ -116,6 +116,4 @@ super.setDestroyed(destroyed);
 
 
 }
-
-
 

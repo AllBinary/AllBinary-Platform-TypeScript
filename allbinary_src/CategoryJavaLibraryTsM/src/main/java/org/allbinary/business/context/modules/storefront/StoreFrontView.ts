@@ -36,9 +36,11 @@ import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModD
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -86,7 +88,7 @@ public constructor (storeFrontInterface: StoreFrontInterface){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF("Constructing: StoreFrontView for: " +storeFrontInterface!.getName(), this, commonStrings!.GET_INSTANCE);
     
@@ -102,10 +104,10 @@ this.storeFrontInterface= storeFrontInterface;
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.storeFrontInterface!.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.storeFrontInterface!.toHashMap()!;;
     
 
-    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
+    let storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
     
 hashMap!.put(storeFrontData!.CURRENTHOMEHOSTNAME, this.storeFrontInterface!.getCurrentHomeHostName());
     
@@ -118,7 +120,7 @@ hashMap!.put(storeFrontData!.CURRENTHOSTNAMEPATH, this.storeFrontInterface!.getC
 hashMap!.put(BasketData.NAME, this.storeFrontInterface!.getBasketName());
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, storeFrontData!.NAME, hashMap)!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, storeFrontData!.NAME, hashMap)!;;
     
 
 
@@ -130,6 +132,4 @@ hashMap!.put(BasketData.NAME, this.storeFrontInterface!.getBasketName());
 
 
 }
-
-
 

@@ -59,5 +59,3 @@ export class LaptopGameInputMapping extends PCGameInputMapping {
 
 }
 
-
-

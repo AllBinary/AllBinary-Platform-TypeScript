@@ -22,15 +22,19 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+type PositionStrings<T = any, U = any> = typeof PositionStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PositionStrings;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -74,13 +78,13 @@ export class AnimationFactoryInitializationVisitor
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
+    let commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(PositionStrings.getInstance()!.DX_LABEL)!.appendfloat(this.dx);
     
@@ -106,6 +110,4 @@ stringBuffer!.appendint(this.height);
 
 
 }
-
-
 

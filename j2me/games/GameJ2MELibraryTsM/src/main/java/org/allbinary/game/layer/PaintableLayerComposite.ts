@@ -68,7 +68,7 @@ public constructor (paintableArray: Layer[]){
 
 
                         for (
-    var index: number = this.paintableArray!.length
+    let index: number = this.paintableArray!.length
                 ;--index >= 0; )
         {
 this.paintableArray[index]!.paint(graphics);
@@ -80,14 +80,14 @@ this.paintableArray[index]!.paint(graphics);
 
     public paintThreed(graphics: Graphics){
 
-    var paintableInterface: PaintableInterface;;
+    let paintableInterface: PaintableInterface;;
     
 
 
 
 
                         for (
-    var index: number = this.paintableArray!.length
+    let index: number = this.paintableArray!.length
                 ;--index >= 0; )
         {
 paintableInterface= this.paintableArray[index]! as PaintableInterface;
@@ -100,6 +100,4 @@ paintableInterface!.paintThreed(graphics);
 
 
 }
-
-
 

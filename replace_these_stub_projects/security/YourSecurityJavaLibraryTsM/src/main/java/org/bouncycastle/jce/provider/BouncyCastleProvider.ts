@@ -42,11 +42,9 @@ public constructor (){
 }
 
 
-    public setParameter(parameterName: string, parameter: any = {}){
+    public setParameter(parameterName: string, parameter: any){
 }
 
 
 }
-
-
 

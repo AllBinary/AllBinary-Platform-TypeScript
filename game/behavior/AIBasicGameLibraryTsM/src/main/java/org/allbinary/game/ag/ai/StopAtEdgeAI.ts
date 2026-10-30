@@ -76,34 +76,34 @@ public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    let ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = (ownerLayerInterface as VelocityInterfaceCompositeInterface);;
+    let velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = (ownerLayerInterface as VelocityInterfaceCompositeInterface);;
     
 
-    var velocityProperties: BasicVelocityProperties = velocityInterfaceCompositeInterface!.getVelocityProperties()!;;
+    let velocityProperties: BasicVelocityProperties = velocityInterfaceCompositeInterface!.getVelocityProperties()!;;
     
 
-    var x: number = ownerLayerInterface!.getXP()!;;
+    let x: number = ownerLayerInterface!.getXP()!;;
     
 
-    var y: number = ownerLayerInterface!.getYP()!;;
+    let y: number = ownerLayerInterface!.getYP()!;;
     
 
-    var x2: number = ownerLayerInterface!.getX2()!;;
+    let x2: number = ownerLayerInterface!.getX2()!;;
     
 
-    var y2: number = ownerLayerInterface!.getY2()!;;
+    let y2: number = ownerLayerInterface!.getY2()!;;
     
 
-    var width: number = ownerLayerInterface!.getWidth()!;;
+    let width: number = ownerLayerInterface!.getWidth()!;;
     
 
-    var height: number = ownerLayerInterface!.getHeight()!;;
+    let height: number = ownerLayerInterface!.getHeight()!;;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
                         if(x2 +velocityProperties!.getVelocityXBasicDecimalP()!.getScaled() > displayInfo!.getLastWidth())
@@ -153,6 +153,4 @@ velocityProperties!.getVelocityXBasicDecimalP()!.setint(0);
 
 
 }
-
-
 

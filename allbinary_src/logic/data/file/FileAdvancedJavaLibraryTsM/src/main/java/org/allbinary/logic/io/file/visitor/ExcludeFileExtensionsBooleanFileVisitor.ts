@@ -23,6 +23,7 @@ import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js'
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -56,8 +57,15 @@ public constructor (filterStringBasicArrayList: BasicArrayList){
                     
 }
 
-
-    public visit(file: AbFile): Boolean{
+visit(...args: any[]): any {
+   
+    if (args.length === 1) return this.visit$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.visit$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: visit'); }
+  
+    public visit$overload1(file: AbFile): Boolean{
 
                         if(this.getFilterStringBasicArrayList()!.size() == 0)
                         
@@ -66,7 +74,7 @@ public constructor (filterStringBasicArrayList: BasicArrayList){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -80,19 +88,19 @@ public constructor (filterStringBasicArrayList: BasicArrayList){
 }
 
 
-    public visit(file: AbFile, fileNameString: string): Boolean{
+    public visit$overload2(file: AbFile, fileNameString: string): Boolean{
 
-    var fileNameAndExtension: string = file.getPath()!;;
+    let fileNameAndExtension: string = file.getPath()!;;
     
 
                         if(fileNameAndExtension!.length > fileNameString!.length)
                         
                                     {
                                     
-    var startIndex: number = fileNameAndExtension!.length -fileNameString!.length;;
+    let startIndex: number = fileNameAndExtension!.length -fileNameString!.length;;
     
 
-    var fileName: string = fileNameAndExtension!.substring(startIndex)!;;
+    let fileName: string = fileNameAndExtension!.substring(startIndex)!;;
     
 
                         if(fileName!.compareTo(fileNameString) == 0)
@@ -102,7 +110,7 @@ public constructor (filterStringBasicArrayList: BasicArrayList){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -114,12 +122,10 @@ public constructor (filterStringBasicArrayList: BasicArrayList){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
 
 }
-
-
 

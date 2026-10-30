@@ -33,6 +33,7 @@ import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbDataInputStream } from '../../../../org/allbinary/logic/io/AbDataInputStream.js';
 //not GWT import const AbDataInputStream
@@ -51,9 +52,11 @@ import { FileStreamFactory } from '../../../../org/allbinary/logic/io/FileStream
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { DatabaseEncoder } from '../../../../org/allbinary/logic/system/security/crypt/DatabaseEncoder.js';
 //not GWT import const DatabaseEncoder
@@ -63,6 +66,7 @@ import { WeakCrypt } from '../../../../org/allbinary/logic/system/security/crypt
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 
 
@@ -135,32 +139,31 @@ this.filePath= filePath;
                                     }
                                 
 
-        try {
-            
-    var tsUtil: TsUtil = TsUtil.getInstance()!;;
+ try { 
+    let tsUtil: TsUtil = TsUtil.getInstance()!;;
     
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(this.filePath, this.INITFILENAME)!;;
+    let dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(this.filePath, this.INITFILENAME)!;;
     
 
-    var licenseIdCrypted: number[] = tsUtil!.getByteArray(new WeakCrypt(1).encrypt(initData!.getLicenseId()))!;;
+    let licenseIdCrypted: number[] = tsUtil!.getByteArray(new WeakCrypt(1).encrypt(initData!.getLicenseId()))!;;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseIdCrypted));
     
 
-    var numberOfLicenseServers: number = initData!.getNumberOfServers()!;;
+    let numberOfLicenseServers: number = initData!.getNumberOfServers()!;;
     
 dataOutputStream!.writeInt(numberOfLicenseServers);
     
 
-    var licenseServerCrypted: number[];;
+    let licenseServerCrypted: number[];;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfLicenseServers; index++)
+    let index: number = 0;index < numberOfLicenseServers; index++)
         {
 licenseServerCrypted= tsUtil!.getByteArray(new WeakCrypt(3).encrypt(initData!.getServer(index)));
     
@@ -168,10 +171,11 @@ dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseServerCrypted));
     
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Command Failed: " +this.INITFILENAME, this, "write", e);
     
 FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
@@ -181,8 +185,10 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -204,7 +210,7 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
 
     public readAgain(initializeCounter: number): LicenseInitInfo{
 
-    var METHOD_NAME: string = "readAgain";;
+    let METHOD_NAME: string = "readAgain";;
     
 
                         if(this.filePath == this.stringUtil!.EMPTY_STRING)
@@ -216,14 +222,13 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
                                     }
                                 
 
-        try {
-            this.logUtil!.putF("LicenseInitInfo File: " +this.INITFILENAME, this, METHOD_NAME);
+ try { this.logUtil!.putF("LicenseInitInfo File: " +this.INITFILENAME, this, METHOD_NAME);
     
 
-    var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
+    let fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var iFile: AbFileInputStream = fileStreamFactory!.getFileInputStreamInstance(this.filePath, this.INITFILENAME)!;;
+    let iFile: AbFileInputStream = fileStreamFactory!.getFileInputStreamInstance(this.filePath, this.INITFILENAME)!;;
     
 
                         if(iFile != 
@@ -232,34 +237,34 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
                         
                                     {
                                     
-    var iData: AbDataInputStream = new AbDataInputStream(iFile);;
+    let iData: AbDataInputStream = new AbDataInputStream(iFile);;
     
 
-    var initInfo: LicenseInitInfo = new LicenseInitInfo();;
+    let initInfo: LicenseInitInfo = new LicenseInitInfo();;
     
 
-    var decodedByteArray: number[] = DatabaseEncoder.decode(iData!.readUTF())!;;
+    let decodedByteArray: number[] = DatabaseEncoder.decode(iData!.readUTF())!;;
     
 
-    var licenseIdDecoded: string = String.fromCharCode(...decodedByteArray);;
+    let licenseIdDecoded: string = String.fromCharCode(...decodedByteArray);;
     
 initInfo!.setLicenseId(new WeakCrypt(1).decrypt(licenseIdDecoded));
     
 
-    var numberOfLicenseServers: number = iData!.readInt()!;;
+    let numberOfLicenseServers: number = iData!.readInt()!;;
     
 
-    var NEXT_FILE: string = new StringMaker().append(CommonLabels.getInstance()!.NEXT)!.append(" License Server From File: ")!.toString()!;;
+    let NEXT_FILE: string = new StringMaker().append(CommonLabels.getInstance()!.NEXT)!.append(" License Server From File: ")!.toString()!;;
     
 
-    var licenseServerDecoded: string;;
+    let licenseServerDecoded: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfLicenseServers; index++)
+    let index: number = 0;index < numberOfLicenseServers; index++)
         {
 decodedByteArray= DatabaseEncoder.decode(iData!.readUTF());
     
@@ -289,29 +294,34 @@ this.logUtil!.putF(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME);
 
                         }
                             
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-        try {
-            this.logUtil!.put("Command Failed: " +this.INITFILENAME, this, METHOD_NAME, e);
+ try { this.logUtil!.put("Command Failed: " +this.INITFILENAME, this, METHOD_NAME, e);
     
-
-                //: 
-} catch(e2) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e2 = caught;
+  
 this.logUtil!.put("LicenseInitInfo Read Retry: " +this.INITFILENAME, this, "readAgain()", e2);
     
-}
 
+ }
+   }
+ 
 
 
 
                             throw new Exception("LicenseInitInfo Read Error: " +this.INITFILENAME);
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -326,6 +336,4 @@ this.logUtil!.put("LicenseInitInfo Read Retry: " +this.INITFILENAME, this, "read
 
 
 }
-
-
 

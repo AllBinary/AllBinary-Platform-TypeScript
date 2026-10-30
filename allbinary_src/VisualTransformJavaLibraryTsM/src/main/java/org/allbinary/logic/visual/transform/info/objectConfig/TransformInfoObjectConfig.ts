@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
@@ -42,6 +44,7 @@ import { XmlDocumentHelper } from '../../../../../../../org/allbinary/data/tree/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { InputOutputTypeData } from '../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
 //not GWT import const InputOutputTypeData
@@ -51,6 +54,7 @@ import { OutputTypeData } from '../../../../../../../org/allbinary/logic/io/Outp
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
 //not GWT import const TransformInfoData
@@ -69,6 +73,7 @@ import { XslData } from '../../../../../../../org/allbinary/logic/visual/transfo
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Attr } from '../../../../../../../org/w3c/dom/Attr.js';
 //not GWT import const Attr
@@ -135,7 +140,7 @@ this.createDocument();
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TransformInfo: ");
     
@@ -176,7 +181,7 @@ public constructor (transformInfoInterface: Object, document: Object){
 this.document= document;
     
 
-    var node: Node = DomSearchHelper.getNodeNoThrow(OutputTypeData.getInstance()!.NAME, this.getRootNode()!.getChildNodes())!;;
+    let node: Node = DomSearchHelper.getNodeNoThrow(OutputTypeData.getInstance()!.NAME, this.getRootNode()!.getChildNodes())!;;
     
 
                         if(node != 
@@ -194,7 +199,7 @@ this.document= document;
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TransformInfo: ");
     
@@ -235,12 +240,12 @@ public constructor (transformInfoInterface: Object, name: string, type: string){
 this.createDocument();
     
 
-    var configNameAttr: Attr = this.document.createAttribute(TransformInfoObjectConfigData.getInstance()!.NAME)!;;
+    let configNameAttr: Attr = this.document.createAttribute(TransformInfoObjectConfigData.getInstance()!.NAME)!;;
     
 configNameAttr!.setValue(name);
     
 
-    var objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
+    let objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
     
 objectConfigNode!.appendChild(configNameAttr);
     
@@ -249,7 +254,7 @@ objectConfigNode!.appendChild(configNameAttr);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TransformInfo: ");
     
@@ -286,7 +291,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInt
 this.document= DomDocumentHelper.create();
     
 
-    var objectConfigNode: Node = this.document.createElement(TransformInfoObjectConfigData.getInstance()!.NAME)!;;
+    let objectConfigNode: Node = this.document.createElement(TransformInfoObjectConfigData.getInstance()!.NAME)!;;
     
 this.document.appendChild(objectConfigNode);
     
@@ -323,29 +328,29 @@ this.document= document;
 
     public containsView(transformInfoInterface: TransformInfoInterface): boolean{
 
-    var objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
+    let objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
     
 
-    var viewNodeList: NodeList = objectConfigNode!.getChildNodes()!;;
+    let viewNodeList: NodeList = objectConfigNode!.getChildNodes()!;;
     
 
-    var numberOfViews: number = viewNodeList!.getLength()!;;
+    let numberOfViews: number = viewNodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfViews; index++)
+    let index: number = 0;index < numberOfViews; index++)
         {
 
-    var viewNode: Node = viewNodeList!.item(index)!;;
+    let viewNode: Node = viewNodeList!.item(index)!;;
     
 
-    var viewAttributes: NamedNodeMap = viewNode!.getAttributes()!;;
+    let viewAttributes: NamedNodeMap = viewNode!.getAttributes()!;;
     
 
-    var attrNode: Attr = viewAttributes!.getNamedItem(TransformInfoData.getInstance()!.NAME) as Attr;;
+    let attrNode: Attr = viewAttributes!.getNamedItem(TransformInfoData.getInstance()!.NAME) as Attr;;
     
 
                         if(transformInfoInterface!.getName()!.compareTo(attrNode!.getValue()) == 0)
@@ -375,7 +380,7 @@ this.document= document;
             
     getTemplateAttributes(): NamedNodeMap{
 
-    var componentNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
+    let componentNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
     
 
 
@@ -390,7 +395,7 @@ this.document= document;
             
     public getName(): string{
 
-    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME) as Attr;;
+    let attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME) as Attr;;
     
 
 
@@ -405,7 +410,7 @@ this.document= document;
             
     public setName(name: string){
 
-    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME) as Attr;;
+    let attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME) as Attr;;
     
 attrNode!.setValue(name);
     
@@ -416,7 +421,7 @@ attrNode!.setValue(name);
             
     getNodeVector(nodeName: string): BasicArrayList{
 
-    var componentsNodeList: NodeList = this.document.getElementsByTagName(nodeName)!;;
+    let componentsNodeList: NodeList = this.document.getElementsByTagName(nodeName)!;;
     
 
                         if(componentsNodeList != 
@@ -425,17 +430,17 @@ attrNode!.setValue(name);
                         
                                     {
                                     
-    var viewNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNodeList!.item(0)!.getChildNodes())!;;
+    let viewNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNodeList!.item(0)!.getChildNodes())!;;
     
 
-    var numberOfViews: number = viewNodeVector!.size()!;;
+    let numberOfViews: number = viewNodeVector!.size()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Number Of ");
     
@@ -467,28 +472,35 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getNodeVector(nodename)");
     
 }
 
-
+getTransformDomNodes(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getTransformDomNodes$overload1(args[0]);
+   
+    if (args.length === 0) return this.getTransformDomNodes$overload2();
+   
+   throw new TypeError('No matching overload: getTransformDomNodes'); }
+  
                 //@Throws(Exception.constructor)
             
-    getTransformDomNodes(nodeName: string): BasicArrayList{
+    getTransformDomNodes$overload1(nodeName: string): BasicArrayList{
 
-    var viewVector: BasicArrayList = new BasicArrayListD();;
+    let viewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var viewNodeVector: BasicArrayList = this.getNodeVector(nodeName)!;;
+    let viewNodeVector: BasicArrayList = this.getNodeVector(nodeName)!;;
     
 
-    var size: number = viewNodeVector!.size()!;;
+    let size: number = viewNodeVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index) as Node;;
+    let viewNode: Node = viewNodeVector!.get(index) as Node;;
     
 viewVector!.add(new TransformInfoDomNode(viewNode));
     
@@ -502,28 +514,35 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
     
 }
 
-
+getTransforms(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getTransforms$overload1(args[0]);
+   
+    if (args.length === 0) return this.getTransforms$overload2();
+   
+   throw new TypeError('No matching overload: getTransforms'); }
+  
                 //@Throws(Exception.constructor)
             
-    public getTransforms(nodeName: string): BasicArrayList{
+    public getTransforms$overload1(nodeName: string): BasicArrayList{
 
-    var viewVector: BasicArrayList = new BasicArrayListD();;
+    let viewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var viewNodeVector: BasicArrayList = this.getNodeVector(nodeName)!;;
+    let viewNodeVector: BasicArrayList = this.getNodeVector(nodeName)!;;
     
 
-    var size: number = viewNodeVector!.size()!;;
+    let size: number = viewNodeVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index) as Node;;
+    let viewNode: Node = viewNodeVector!.get(index) as Node;;
     
 viewVector!.add(new TransformInfoDomNode(viewNode).getTransformInfoInterface());
     
@@ -551,13 +570,13 @@ viewVector!.add(new TransformInfoDomNode(viewNode).getTransformInfoInterface());
                                     }
                                 
 
-    var viewVector: BasicArrayList = new BasicArrayListD();;
+    let viewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var GROUP: string = TransformInfosData.getInstance()!.GROUP;;
+    let GROUP: string = TransformInfosData.getInstance()!.GROUP;;
     
 
-    var componentsNodeList: NodeList = this.document.getElementsByTagName(GROUP)!;;
+    let componentsNodeList: NodeList = this.document.getElementsByTagName(GROUP)!;;
     
 
                         if(componentsNodeList != 
@@ -566,29 +585,29 @@ viewVector!.add(new TransformInfoDomNode(viewNode).getTransformInfoInterface());
                         
                                     {
                                     
-    var componentsNode: Node = componentsNodeList!.item(0)!;;
+    let componentsNode: Node = componentsNodeList!.item(0)!;;
     
 
-    var length: number = componentsNodeList!.getLength()!;;
+    let length: number = componentsNodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < length; index++)
+    let index: number = 0;index < length; index++)
         {
 
-    var node: Node = componentsNodeList!.item(index)!;;
+    let node: Node = componentsNodeList!.item(index)!;;
     
 
-    var attributes: NamedNodeMap = node.getAttributes()!;;
+    let attributes: NamedNodeMap = node.getAttributes()!;;
     
 
-    var attrNode: Attr = attributes.getNamedItem(GROUP) as Attr;;
+    let attrNode: Attr = attributes.getNamedItem(GROUP) as Attr;;
     
 
-    var value: string = attrNode!.getValue()!;;
+    let value: string = attrNode!.getValue()!;;
     
 
                         if(value.compareTo(group) == 0)
@@ -605,10 +624,10 @@ break;
 }
 
 
-    var viewNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNode!.getChildNodes())!;;
+    let viewNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNode!.getChildNodes())!;;
     
 
-    var numberOfViews: number = viewNodeVector!.size()!;;
+    let numberOfViews: number = viewNodeVector!.size()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -620,17 +639,17 @@ break;
                                     }
                                 
 
-    var size: number = viewNodeVector!.size()!;;
+    let size: number = viewNodeVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index) as Node;;
+    let viewNode: Node = viewNodeVector!.get(index) as Node;;
     
 viewVector!.add(new TransformInfoDomNode(viewNode));
     
@@ -678,7 +697,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
                 //@Throws(Exception.constructor)
             
-    public getTransformDomNodes(): BasicArrayList{
+    public getTransformDomNodes$overload2(): BasicArrayList{
 
 
 
@@ -690,7 +709,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
                 //@Throws(Exception.constructor)
             
-    public getTransforms(): BasicArrayList{
+    public getTransforms$overload2(): BasicArrayList{
 
 
 
@@ -756,7 +775,7 @@ this.outputTypeName= outputTypeName;
             
     public getInputOutputTypeName(): string{
 
-    var node: Node = DomSearchHelper.getNode(InputOutputTypeData.getInstance()!.NAME, this.getRootNode()!.getChildNodes())!;;
+    let node: Node = DomSearchHelper.getNode(InputOutputTypeData.getInstance()!.NAME, this.getRootNode()!.getChildNodes())!;;
     
 
 
@@ -771,7 +790,7 @@ this.outputTypeName= outputTypeName;
             
     public getInputOutputTypeFile(): string{
 
-    var node: Node = DomSearchHelper.getNode(InputOutputTypeData.getInstance()!.FILE, this.getRootNode()!.getChildNodes())!;;
+    let node: Node = DomSearchHelper.getNode(InputOutputTypeData.getInstance()!.FILE, this.getRootNode()!.getChildNodes())!;;
     
 
 
@@ -786,7 +805,7 @@ this.outputTypeName= outputTypeName;
             
     public getImportUriPath(): string{
 
-    var node: Node = DomSearchHelper.getNode(XslData.getInstance()!.ROOT_IMPORT_URI, this.getRootNode()!.getChildNodes())!;;
+    let node: Node = DomSearchHelper.getNode(XslData.getInstance()!.ROOT_IMPORT_URI, this.getRootNode()!.getChildNodes())!;;
     
 
 
@@ -799,8 +818,7 @@ this.outputTypeName= outputTypeName;
 
     public toString(): string{
 
-        try {
-            
+ try { 
                         if(this.document != 
                                     null
                                 )
@@ -825,10 +843,11 @@ this.outputTypeName= outputTypeName;
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -844,12 +863,12 @@ this.outputTypeName= outputTypeName;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

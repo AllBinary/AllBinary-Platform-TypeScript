@@ -46,6 +46,7 @@ import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/Pla
 //not GWT import - same folder const Config
 import { OpenGLBitmap } from './OpenGLBitmap.js';
 //not GWT import - same folder const OpenGLBitmap
+type Config = InstanceType<OpenGLBitmapFactory['Config']>;
 
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
         
@@ -63,7 +64,7 @@ export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
 
 
 //inner= member=true isStatic=
-Config = class
+Config = (() => { const outer$OpenGLBitmapFactory = this; return class
             extends Object
          {
         
@@ -72,7 +73,7 @@ Config = class
 
     public readonly bitmapConfig: any;
 
-private constructor (bitmapConfig: any = {}){
+private constructor (bitmapConfig: any){
 
             super();
         this.bitmapConfig= bitmapConfig;
@@ -80,13 +81,18 @@ private constructor (bitmapConfig: any = {}){
 }
 
 
-}
-
-
+}; })();
     public readonly ARGB_8888 = new this.Config(
                             null);
-
-    public createBitmap(width: number, height: number, config: OpenGLBitmapFactory.Config): OpenGLBitmap{
+createBitmap(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.createBitmap$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 1) return this.createBitmap$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: createBitmap'); }
+  
+    public createBitmap$overload1(width: number, height: number, config: OpenGLBitmapFactory.Config): OpenGLBitmap{
 
 
 
@@ -108,7 +114,7 @@ private constructor (bitmapConfig: any = {}){
 }
 
 
-    public createBitmap(image: Image): PlatformBitmapBase{
+    public createBitmap$overload2(image: Image): PlatformBitmapBase{
 
 
 
@@ -119,6 +125,4 @@ private constructor (bitmapConfig: any = {}){
 
 
 }
-
-
 

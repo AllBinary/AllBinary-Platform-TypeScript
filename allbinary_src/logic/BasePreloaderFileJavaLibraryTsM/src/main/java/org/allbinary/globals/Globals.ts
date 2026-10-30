@@ -24,9 +24,11 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -36,9 +38,11 @@ import { WebappClassLoaderInfo } from '../../../org/allbinary/logic/system/loade
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -90,10 +94,10 @@ private constructor (){
 
     public init(classLoader: ClassLoader, pathString: string){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();;
+    let appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();;
     
 appUrlGlobals!.setWebappPath(pathString);
     
@@ -102,7 +106,7 @@ URLGLOBALS.init(appUrlGlobals);
 WebappClassLoaderInfo.setLoader(classLoader);
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Setting Up AllBinary System Configuration Args: ");
     
@@ -115,7 +119,7 @@ stringBuffer!.append(classLoader!.constructor.name.toString()!);
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(pathString))
@@ -152,6 +156,4 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
 
 
 }
-
-
 

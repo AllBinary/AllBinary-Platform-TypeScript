@@ -22,6 +22,7 @@
         
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -89,14 +90,14 @@ this.colorIndex++;
 
     public getAndOrCreate(colorAsInt: number): BasicColor{
 
-    var basicColor: BasicColor;;
+    let basicColor: BasicColor;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.SIZE; index++)
+    let index: number = 0;index < this.SIZE; index++)
         {
 
                         if(this.INDEX_TO_COLOR[index] == colorAsInt)
@@ -114,7 +115,7 @@ this.colorIndex++;
 }
 
 
-    var ALPHA_MASK: number = globalThis.Math.trunc(0xFF000000);;
+    let ALPHA_MASK: number = globalThis.Math.trunc(0xFF000000);;
     
 basicColor= BasicColorFactory.getInstance()!.createInstanceAN(colorAsInt&ALPHA_MASK, colorAsInt&0x00FFFFFF, StringUtil.getInstance()!.EMPTY_STRING);
     
@@ -130,6 +131,4 @@ this.add(basicColor);
 
 
 }
-
-
 

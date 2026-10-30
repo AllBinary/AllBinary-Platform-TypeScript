@@ -28,9 +28,11 @@ import { Set } from '../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -61,6 +63,7 @@ import { DownloadableItemView } from '../../../org/allbinary/business/user/comme
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { HttpFileUploadUtil } from '../../../org/allbinary/logic/communication/http/file/upload/HttpFileUploadUtil.js';
 //not GWT import const HttpFileUploadUtil
@@ -76,15 +79,18 @@ import { RequestMapInterface } from '../../../org/allbinary/logic/communication/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 import { PathUtil } from '../../../org/allbinary/logic/io/path/PathUtil.js';
 //not GWT import const PathUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { MediaData } from '../../../org/allbinary/logic/visual/media/MediaData.js';
 //not GWT import const MediaData
@@ -180,14 +186,14 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 this.setRequestHashMap(new MultipartRequestParams(this.request).toHashMap());
     
 
-    var imageFileItemObject: any = this.getRequestHashMap()!.get(this.basicItemData!.IMAGE)!;;
+    let imageFileItemObject: any = this.getRequestHashMap()!.get(this.basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(imageFileItemObject))
                         
                                     {
                                     
-    var fileItem: FileItem = imageFileItemObject as FileItem;;
+    let fileItem: FileItem = imageFileItemObject as FileItem;;
     
 
                         if(fileItem != 
@@ -198,10 +204,10 @@ this.setRequestHashMap(new MultipartRequestParams(this.request).toHashMap());
                                     this.imageFileName= HttpRequestUtil.getInstance()!.generateFileName(fileItem!.getName());
     
 
-    var pathData: AbPathData = AbPathData.getInstance()!;;
+    let pathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var pathUtil: PathUtil = PathUtil.getInstance()!;;
+    let pathUtil: PathUtil = PathUtil.getInstance()!;;
     
 this.mediaData= MediaData.get(pathData!.getExtension(this.imageFileName));
     
@@ -212,7 +218,7 @@ this.imageFileName= pathUtil!.getWithoutExtension(this.imageFileName);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Uploaded File Data: ");
     
@@ -240,20 +246,20 @@ this.itemInterface= new BasicItem(this.getRequestHashMap()) as ItemInterface;
 
     public addDomNodeInterfaces(){
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 
-    var downloadableItem: DownloadableItem;;
+    let downloadableItem: DownloadableItem;;
     
 
-    var size: number = this.downloadableItemVector!.size()!;;
+    let size: number = this.downloadableItemVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 downloadableItem= this.downloadableItemVector!.get(index) as DownloadableItem;
     
@@ -280,8 +286,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -289,10 +294,11 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -307,8 +313,10 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -316,13 +324,13 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
             
     processImageFiles(){
 
-    var set: Set = this.getRequestHashMap()!.keys()!;;
+    let set: Set = this.getRequestHashMap()!.keys()!;;
     
 
-    var fieldNameArray: any[] = set.toArray()!;;
+    let fieldNameArray: any[] = set.toArray()!;;
     
 
-    var size: number = fieldNameArray!.length
+    let size: number = fieldNameArray!.length
                 ;;
     
 
@@ -330,23 +338,23 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var fieldName: string = fieldNameArray[index]! as string;;
+    let fieldName: string = fieldNameArray[index]! as string;;
     
 
                         if(fieldName!.compareTo(this.basicItemData!.IMAGE) == 0)
                         
                                     {
                                     
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
     
 
-    var inventoryUploadMediaUtil: InventoryUploadMediaUtil = new InventoryUploadMediaUtil(storeFrontInterface, this.itemInterface);;
+    let inventoryUploadMediaUtil: InventoryUploadMediaUtil = new InventoryUploadMediaUtil(storeFrontInterface, this.itemInterface);;
     
 
-    var fileItem: FileItem = this.getRequestHashMap()!.get(this.basicItemData!.IMAGE) as FileItem;;
+    let fileItem: FileItem = this.getRequestHashMap()!.get(this.basicItemData!.IMAGE) as FileItem;;
     
 this.itemInterface= inventoryUploadMediaUtil!.saveFiles(fileItem!.get(), this.imageFileName, this.mediaData);
     
@@ -375,6 +383,4 @@ this.requestHashMap= requestHashMap;
 
 
 }
-
-
 

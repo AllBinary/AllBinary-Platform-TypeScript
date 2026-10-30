@@ -54,6 +54,7 @@ import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageMo
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -124,7 +125,7 @@ this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!;
 this.imageModifierUtil!.reset();
     
 
-    var index: number = this.circularIndexUtil!.getIndex()!;;
+    let index: number = this.circularIndexUtil!.getIndex()!;;
     
 this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
     
@@ -138,7 +139,7 @@ this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArra
 super.nextRotation();
     
 
-    var index: number = this.circularIndexUtil!.getIndex()!;;
+    let index: number = this.circularIndexUtil!.getIndex()!;;
     
 this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
     
@@ -151,7 +152,7 @@ this.currentImage= this.imageArray[index]!;
 super.previousRotation();
     
 
-    var index: number = this.circularIndexUtil!.getIndex()!;;
+    let index: number = this.circularIndexUtil!.getIndex()!;;
     
 this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
     
@@ -164,7 +165,7 @@ this.currentImage= this.imageArray[index]!;
 super.setFrame(index2);
     
 
-    var index: number = this.circularIndexUtil!.getIndex()!;;
+    let index: number = this.circularIndexUtil!.getIndex()!;;
     
 this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
     
@@ -207,10 +208,10 @@ graphics.drawImage(this.currentImage, x, y, this.anchor);
 
     public close(){
 
-    var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;;
+    let disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;;
     
 
-    var size2: number = this.imageArray!.length
+    let size2: number = this.imageArray!.length
                 ;;
     
 
@@ -218,14 +219,14 @@ graphics.drawImage(this.currentImage, x, y, this.anchor);
 
 
                         for (
-    var index: number = 0;index < size2; index++)
+    let index: number = 0;index < size2; index++)
         {
 disposalUtil!.disposeImage(this.imageArray[index]!);
     
 }
 
 
-    var size: number = this.originalImageArray!.length
+    let size: number = this.originalImageArray!.length
                 ;;
     
 
@@ -233,7 +234,7 @@ disposalUtil!.disposeImage(this.imageArray[index]!);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 disposalUtil!.disposeImage(this.originalImageArray[index]!);
     
@@ -248,10 +249,10 @@ disposalUtil!.disposeImage(this.currentImage);
             
     finalize(){
 
-    var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;;
+    let disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;;
     
 
-    var size2: number = this.imageArray!.length
+    let size2: number = this.imageArray!.length
                 ;;
     
 
@@ -259,14 +260,14 @@ disposalUtil!.disposeImage(this.currentImage);
 
 
                         for (
-    var index: number = 0;index < size2; index++)
+    let index: number = 0;index < size2; index++)
         {
 disposalUtil!.disposeImage(this.imageArray[index]!);
     
 }
 
 
-    var size: number = this.originalImageArray!.length
+    let size: number = this.originalImageArray!.length
                 ;;
     
 
@@ -274,7 +275,7 @@ disposalUtil!.disposeImage(this.imageArray[index]!);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 disposalUtil!.disposeImage(this.originalImageArray[index]!);
     
@@ -286,6 +287,4 @@ disposalUtil!.disposeImage(this.currentImage);
 
 
 }
-
-
 

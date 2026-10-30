@@ -22,6 +22,7 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
@@ -61,7 +62,7 @@ public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: num
 
                 //@Throws(Exception.constructor)
             
-    public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
+    public visit(graph: any, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
 this.fixStart(graph, startPathFindingNodeList);
     
 this.fixEnd(graph, endPathFindingNodeList);
@@ -73,19 +74,19 @@ this.fixOverPassEdges(graph);
 
                 //@Throws(Exception.constructor)
             
-    fixStart(graph: any = {}, startPathFindingNodeList: BasicArrayList){
+    fixStart(graph: any, startPathFindingNodeList: BasicArrayList){
 }
 
 
                 //@Throws(Exception.constructor)
             
-    fixEnd(graph: any = {}, endPathFindingNodeList: BasicArrayList){
+    fixEnd(graph: any, endPathFindingNodeList: BasicArrayList){
 }
 
 
                 //@Throws(Exception.constructor)
             
-    fixOverPassEdges(graph: any = {}){
+    fixOverPassEdges(graph: any){
 }
 
 
@@ -101,7 +102,7 @@ this.fixOverPassEdges(graph);
 }
 
 
-    public isValid(graphPath: any = {}): boolean{
+    public isValid(graphPath: any): boolean{
 
 
 
@@ -112,6 +113,4 @@ this.fixOverPassEdges(graph);
 
 
 }
-
-
 

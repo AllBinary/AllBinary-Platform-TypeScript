@@ -49,9 +49,11 @@ import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMu
 
 //not plain js import { CanvasImage } 
 const CanvasImage = globalThis.playn.core.CanvasImage;
+type CanvasImage<T = any, U = any> = typeof CanvasImage extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CanvasImage;
 
 //not plain js import { CanvasSurface } 
 const CanvasSurface = globalThis.playn.core.CanvasSurface;
+type CanvasSurface<T = any, U = any> = typeof CanvasSurface extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CanvasSurface;
 
 
 
@@ -120,13 +122,13 @@ this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!);
 
     public getCanvasSurface(image: Image): CanvasSurface{
 
-    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
+    let htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
+    let canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
     
 
-    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;;
+    let canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;;
     
 canvasSurface!.translate(this.originalImage!.getWidth() /2, this.originalImage!.getHeight() /2);
     
@@ -141,7 +143,7 @@ canvasSurface!.translate(this.originalImage!.getWidth() /2, this.originalImage!.
 
     public setBasicColorP(basicColor: BasicColor){
 
-    var changed: boolean = false;;
+    let changed: boolean = false;;
     
 
                         if(this.getBasicColorP() == 
@@ -170,7 +172,7 @@ super.setBasicColorP(basicColor);
 
     public setAlpha(alpha: number){
 
-    var changed: boolean = false;;
+    let changed: boolean = false;;
     
 
                         if(this.alphaP != alpha)
@@ -215,7 +217,7 @@ this.updateImage();
 
     updateImage(){
 
-    var canvasSurface: CanvasSurface = this.canvasSurfaceArray[this.bufferedImageIndex]!;;
+    let canvasSurface: CanvasSurface = this.canvasSurfaceArray[this.bufferedImageIndex]!;;
     
 canvasSurface!.save();
     
@@ -268,6 +270,4 @@ graphics.drawImage(this.imageToShow, x, y, this.anchor);
 
 
 }
-
-
 

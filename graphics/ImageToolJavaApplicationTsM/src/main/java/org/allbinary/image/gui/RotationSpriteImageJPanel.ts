@@ -41,9 +41,11 @@ import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { ImageJ2SERotationUtil } from '../../../../org/allbinary/media/image/ImageJ2SERotationUtil.js';
 //not GWT import const ImageJ2SERotationUtil
@@ -59,12 +61,15 @@ import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -139,50 +144,49 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var generatedBufferedImageArray: BufferedImage[];;
+ try { 
+    let generatedBufferedImageArray: BufferedImage[];;
     
 
-    var imageProcessorInput: ImageProcessorInput = RotationSpriteImageJPanel.prototype.getImageProcessorInput()!;;
+    let imageProcessorInput: ImageProcessorInput = outer$RotationSpriteImageJPanel.getImageProcessorInput()!;;
     
 
-    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
+    let bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < bufferedImageArray!.length; index++)
+    let index: number = 0;index < bufferedImageArray!.length; index++)
         {
 
-    var totalFrames: Integer = Integer.valueOf(RotationSpriteImageJPanel.prototype.totalFramesJComboBox!.getSelectedItem() as string)!;;
+    let totalFrames: Integer = Integer.valueOf(outer$RotationSpriteImageJPanel.totalFramesJComboBox!.getSelectedItem() as string)!;;
     
 
-    var totalAngle: Integer = Integer.valueOf(RotationSpriteImageJPanel.prototype.totalAngleJComboBox!.getSelectedItem() as string)!;;
+    let totalAngle: Integer = Integer.valueOf(outer$RotationSpriteImageJPanel.totalAngleJComboBox!.getSelectedItem() as string)!;;
     
 generatedBufferedImageArray= ImageJ2SERotationUtil.getInstance()!.getRotatedImages(bufferedImageArray[index]!, totalFrames, totalAngle);
     
-RotationSpriteImageJPanel.prototype.result= ImageJ2SERotationUtil.getInstance()!.createSpriteImage(generatedBufferedImageArray);
+outer$RotationSpriteImageJPanel.result= ImageJ2SERotationUtil.getInstance()!.createSpriteImage(generatedBufferedImageArray);
     
-RotationSpriteImageJPanel.prototype.getParent()!.repaint();
-    
-
-    var file: File = imageProcessorInput!.getFiles()[index]!;;
+outer$RotationSpriteImageJPanel.getParent()!.repaint();
     
 
-                        if(!RotationSpriteImageJPanel.prototype.writeOverOriginalJCheckBox!.isSelected())
+    let file: File = imageProcessorInput!.getFiles()[index]!;;
+    
+
+                        if(!outer$RotationSpriteImageJPanel.writeOverOriginalJCheckBox!.isSelected())
                         
                                     {
                                     
-    var filePath: string = file.getAbsolutePath()!;;
+    let filePath: string = file.getAbsolutePath()!;;
     
 
-    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
+    let extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
     
 filePath= new StringMaker().append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append("sprite")!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
@@ -194,20 +198,23 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(RotationSpriteImageJPanel.prototype.result as RenderedImage, this.imageStrings!.PNG, file)!;;
+    let isWritten: boolean = ImageIO.write(outer$RotationSpriteImageJPanel.result as RenderedImage, this.imageStrings!.PNG, file)!;;
     
 logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, this.commonStrings!.RUN);
     
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -222,13 +229,13 @@ this.jPanel1= new class extends javax.swing.JPanel
                                 
     public paint(graphics: Graphics){
 
-                        if(RotationSpriteImageJPanel.prototype.result != 
+                        if(outer$RotationSpriteImageJPanel.result != 
                                     null
                                 )
                         
                                     {
-                                    graphics.drawImage(RotationSpriteImageJPanel.prototype.result, 0, 0, RotationSpriteImageJPanel.prototype.result.getWidth(
-                            null), RotationSpriteImageJPanel.prototype.result.getHeight(
+                                    graphics.drawImage(outer$RotationSpriteImageJPanel.result, 0, 0, outer$RotationSpriteImageJPanel.result.getWidth(
+                            null), outer$RotationSpriteImageJPanel.result.getHeight(
                             null), 
                             null);
     
@@ -259,7 +266,7 @@ this.jPanel3= new javax.swing.JPanel();
 this.jLabel2= new javax.swing.JLabel();
     
 
-    var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel1);;
+    let jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -308,7 +315,7 @@ this.jLabel3!.setText("Total Angle:");
 this.writeOverOriginalJCheckBox!.setText("Write Over Original");
     
 
-    var jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel2);;
+    let jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel2);;
     
 this.jPanel2!.setLayout(jPanel2Layout);
     
@@ -319,7 +326,7 @@ jPanel2Layout!.setVerticalGroup(jPanel2Layout!.createParallelGroup(org.jdesktop.
 this.jLabel2!.setText("Results:");
     
 
-    var jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel3);;
+    let jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel3);;
     
 this.jPanel3!.setLayout(jPanel3Layout);
     
@@ -328,7 +335,7 @@ jPanel3Layout!.setHorizontalGroup(jPanel3Layout!.createParallelGroup(org.jdeskto
 jPanel3Layout!.setVerticalGroup(jPanel3Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jLabel2));
     
 
-    var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this);;
+    let layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -386,6 +393,4 @@ this.imageProcessorInput= imageProcessorInput;
 
 
 }
-
-
 

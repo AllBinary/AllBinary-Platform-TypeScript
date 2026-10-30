@@ -52,9 +52,7 @@ export interface UserFactoryInterface extends Serializable {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(hashMap: HashMap<any, any>): UserInterface
+    getInstance(hashMap: HashMap<any, any>): UserInterface;
 
 }
-
-
 

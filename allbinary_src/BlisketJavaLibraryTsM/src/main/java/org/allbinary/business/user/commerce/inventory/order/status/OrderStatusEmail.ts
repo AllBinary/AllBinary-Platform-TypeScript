@@ -39,6 +39,7 @@ import { UserEntityFactory } from '../../../../../../../../org/allbinary/data/ta
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { UserEmailEventNameData } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 //not GWT import const UserEmailEventNameData
@@ -72,6 +73,7 @@ import { AbeClientInformationInterface } from '../../../../../../../../org/allbi
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -117,7 +119,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, orderHi
 this.orderHistory= orderHistory;
     
 
-    var storeName: string = orderHistory!.getStoreName()!;;
+    let storeName: string = orderHistory!.getStoreName()!;;
     
 this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
     
@@ -140,8 +142,7 @@ this.notifyUser();
             
     notifyStoreAdmin(){
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -151,40 +152,41 @@ this.notifyUser();
                                     }
                                 
 
-    var adminEmailSubject: string = "Order " +this.orderHistory!.getStatus() +" Attempt";;
+    let adminEmailSubject: string = "Order " +this.orderHistory!.getStatus() +" Attempt";;
     
 
-    var adminEmailTextBody: string = "Order attempt: " +this.orderHistory!.getId() +" Preprocessing by: " +this.user.getUserName();;
+    let adminEmailTextBody: string = "Order attempt: " +this.orderHistory!.getId() +" Preprocessing by: " +this.user.getUserName();;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
+    let adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
     
 
-    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
+    let storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
     
 
-    var storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);;
+    let storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);;
     
 
-    var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);;
+    let adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);;
     
 
-    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.getInstance(this.orderHistory!.getStatus())!;;
+    let userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.getInstance(this.orderHistory!.getStatus())!;;
     
 
-    var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, userEmailEventNameData)!;;
+    let adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, userEmailEventNameData)!;;
     
 
-    var storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(userEmailEventNameData, this.abeClientInformation, this.storeFrontInterface)!;;
+    let storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(userEmailEventNameData, this.abeClientInformation, this.storeFrontInterface)!;;
     
 storeAdminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, storeAdminEmailInfo);
     
 adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailInfo);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
@@ -194,8 +196,10 @@ adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailI
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -203,8 +207,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailI
             
     notifyUser(){
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -214,29 +217,30 @@ adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailI
                                     }
                                 
 
-    var subject: string = "Order " +this.orderHistory!.getStatus() +" Attempt";;
+    let subject: string = "Order " +this.orderHistory!.getStatus() +" Attempt";;
     
 
-    var textBody: string = "Order attempt: " +this.orderHistory!.getId() +" Preprocessing by: " +this.user.getUserName();;
+    let textBody: string = "Order attempt: " +this.orderHistory!.getId() +" Preprocessing by: " +this.user.getUserName();;
     
 
-    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, subject, textBody) as BasicEmailInfo;;
+    let basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, subject, textBody) as BasicEmailInfo;;
     
 
-    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
+    let emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
     
 
-    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.getInstance(this.orderHistory!.getStatus())!;;
+    let userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.getInstance(this.orderHistory!.getStatus())!;;
     
 
-    var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, userEmailEventNameData, this.user)!;;
+    let userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, userEmailEventNameData, this.user)!;;
     
 userEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, emailInfo);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
@@ -251,12 +255,12 @@ userEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, emailInfo);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

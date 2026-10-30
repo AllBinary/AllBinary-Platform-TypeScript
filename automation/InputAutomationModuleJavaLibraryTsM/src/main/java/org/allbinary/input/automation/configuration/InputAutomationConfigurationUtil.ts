@@ -58,10 +58,10 @@ export class InputAutomationConfigurationUtil
             
     public static getChangeEvent(inputAutomationModuleInterface: InputAutomationModuleFactoryInterface): InputAutomationConfigurationModuleChangeEvent{
 
-    var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration = new InputAutomationModuleConfiguration(inputAutomationModuleInterface);;
+    let inputAutomationModuleConfiguration: InputAutomationModuleConfiguration = new InputAutomationModuleConfiguration(inputAutomationModuleInterface);;
     
 
-    var inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = new InputAutomationConfigurationModuleChangeEvent(inputAutomationModuleConfiguration);;
+    let inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = new InputAutomationConfigurationModuleChangeEvent(inputAutomationModuleConfiguration);;
     
 
 
@@ -79,6 +79,4 @@ private constructor (){
 
 
 }
-
-
 

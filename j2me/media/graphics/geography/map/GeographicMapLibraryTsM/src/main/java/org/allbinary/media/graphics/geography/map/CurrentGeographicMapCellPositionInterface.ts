@@ -42,9 +42,7 @@
 export interface CurrentGeographicMapCellPositionInterface {
         
 
-    getCurrentGeographicMapCellPosition(): GeographicMapCellPosition
+    getCurrentGeographicMapCellPosition(): GeographicMapCellPosition;
 
 }
-
-
 

@@ -27,9 +27,11 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -167,10 +169,10 @@ this.damaged= damaged;
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.HP_LABEL);
     
@@ -198,6 +200,4 @@ stringBuffer!.appendboolean(this.isCloseDeath());
 
 
 }
-
-
 

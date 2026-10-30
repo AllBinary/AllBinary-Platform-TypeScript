@@ -49,9 +49,7 @@ import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/
 export interface PaymentTransactionInterface extends TableMappingInterface, DomNodeInterface {
         
 
-    getOrderHistory(): OrderHistory
+    getOrderHistory(): OrderHistory;
 
 }
-
-
 

@@ -41,18 +41,23 @@ import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveInt
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+type PositionStrings<T = any, U = any> = typeof PositionStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PositionStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { JSONArray } from '../../../org/json/me/JSONArray.js';
 //not GWT import const JSONArray
@@ -109,16 +114,16 @@ export class SVGAsJSONSimpleLoader
             
     public static main(args: string[]){
 
-    var svgAsJson: string = "{\"svg\": {\n" +"    \"rect\": {\n" +"        \"width\": 20,\n" +"        \"fill\": \"#008c00\",\n" +"        \"height\": 20\n" +"    },\n" +"    \"xmlns\": \"http://www.w3.org/2000/svg\",\n" +"    \"width\": 20,\n" +"    \"height\": 20\n" +"}}\n";;
+    let svgAsJson: string = "{\"svg\": {\n" +"    \"rect\": {\n" +"        \"width\": 20,\n" +"        \"fill\": \"#008c00\",\n" +"        \"height\": 20\n" +"    },\n" +"    \"xmlns\": \"http://www.w3.org/2000/svg\",\n" +"    \"width\": 20,\n" +"    \"height\": 20\n" +"}}\n";;
     
 
-    var points: number[][] = SVGAsJSONSimpleLoader.getInstance()!.load(svgAsJson)!;;
+    let points: number[][] = SVGAsJSONSimpleLoader.getInstance()!.load(svgAsJson)!;;
     
 
-    var stringBuilder: StringMaker = new StringMaker();;
+    let stringBuilder: StringMaker = new StringMaker();;
     
 
-    var size: number = points.length
+    let size: number = points.length
                 ;;
     
 
@@ -126,10 +131,10 @@ export class SVGAsJSONSimpleLoader
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var size2: number = points[index]!.length
+    let size2: number = points[index]!.length
                 ;;
     
 
@@ -137,7 +142,7 @@ export class SVGAsJSONSimpleLoader
 
 
                         for (
-    var index2: number = 0;index2 < size2; index2++)
+    let index2: number = 0;index2 < size2; index2++)
         {
 stringBuilder!.appendint(points[index]![index2]!);
     
@@ -209,40 +214,34 @@ console.log(stringBuilder!.toString());
                                     }
                                 
 
-        try {
-            
-    var root: JSONObject = new JSONObject(svgAsJson);;
+ try { 
+    let root: JSONObject = new JSONObject(svgAsJson);;
     
 
-    var svgValue: any = root.opt(KEY_SVG)!;;
+    let svgValue: any = root.opt(KEY_SVG)!;;
     
 
-    var svg: JSONObject = svgValue == 
+    let svg: JSONObject = (svgValue == 
                                     null
-                                
-                        ?       
-                                root
-                                :
-
-                            this.asObject(svgValue, KEY_SVG);;
+                                 ? root : this.asObject(svgValue, KEY_SVG));;
     
 
-    var pointVector: BasicArrayList = new BasicArrayListD();;
+    let pointVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var keys: Enumeration<any> = svg.keys()!;;
+    let keys: Enumeration<any> = svg.keys()!;;
     
 
         while(keys.hasMoreElements())
         {
 
-    var key: string = keys.nextElement()! as string;;
+    let key: string = keys.nextElement()! as string;;
     
 
-    var value: any = svg.opt(key)!;;
+    let value: any = svg.opt(key)!;;
     
 
-                        if(this.shapeTypeFactory!.KEY_LINE === key)
+                        if((this.shapeTypeFactory!.KEY_LINE === key))
                         
                                     {
                                     this.addShapes(pointVector, value, this.shapeTypeFactory!.LINE);
@@ -251,7 +250,7 @@ console.log(stringBuilder!.toString());
                                     }
                                 
                              else 
-                        if(this.shapeTypeFactory! === key)
+                        if((this.shapeTypeFactory === key))
                         
                                     {
                                     this.addShapes(pointVector, value, this.shapeTypeFactory!.CIRCLE);
@@ -260,7 +259,7 @@ console.log(stringBuilder!.toString());
                                     }
                                 
                              else 
-                        if(this.shapeTypeFactory!.KEY_RECT === key || this.shapeTypeFactory!.KEY_RECTANGLE === key)
+                        if((this.shapeTypeFactory!.KEY_RECT === key) || (this.shapeTypeFactory!.KEY_RECTANGLE === key))
                         
                                     {
                                     this.addShapes(pointVector, value, this.shapeTypeFactory!.RECTANGLE);
@@ -276,39 +275,42 @@ console.log(stringBuilder!.toString());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.toPoints(pointVector);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof JSONException) {
+  const e = caught;
+  
 
 
 
                             throw new IllegalArgumentException(ERROR_PARSE_SVG_JSON, e);
                     
-}
 
+ }
+  else { throw caught; } }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    addShapes(pointVector: BasicArrayList, value: any = {}, shapeType: ShapeType){
+    addShapes(pointVector: BasicArrayList, value: any, shapeType: ShapeType){
 
                         if(value instanceof JSONArray)
                         
                                     {
                                     
-    var array: JSONArray = value as JSONArray;;
+    let array: JSONArray = value as JSONArray;;
     
 
-    var size: number = array.length()!;;
+    let size: number = array.length()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.addShape(pointVector, array.opt(index), shapeType);
     
@@ -328,9 +330,9 @@ this.addShape(pointVector, array.opt(index), shapeType);
 
                 //@Throws(Exception.constructor)
             
-    addShape(pointVector: BasicArrayList, value: any = {}, shapeType: ShapeType){
+    addShape(pointVector: BasicArrayList, value: any, shapeType: ShapeType){
 
-    var shape: JSONObject = this.asObject(value, shapeType!.getName())!;;
+    let shape: JSONObject = this.asObject(value, shapeType!.getName())!;;
     
 
                         if(shapeType == this.shapeTypeFactory!.LINE)
@@ -375,29 +377,29 @@ this.addSeparator(pointVector);
             
     addCircle(pointVector: BasicArrayList, circle: JSONObject){
 
-    var cx: number = this.readInt(circle, KEY_CX)!;;
+    let cx: number = this.readInt(circle, KEY_CX)!;;
     
 
-    var cy: number = this.readInt(circle, KEY_CY)!;;
+    let cy: number = this.readInt(circle, KEY_CY)!;;
     
 
-    var radius: number = this.readInt(circle, KEY_R)!;;
+    let radius: number = this.readInt(circle, KEY_R)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index <= CIRCLE_SEGMENTS; index++)
+    let index: number = 0;index <= CIRCLE_SEGMENTS; index++)
         {
 
-    var angle: number = (Math.PI *2.0d *index) /CIRCLE_SEGMENTS;;
+    let angle: number = (Math.PI *2.0d *index) /CIRCLE_SEGMENTS;;
     
 
-    var x: number = globalThis.Math.trunc(Math.round(cx +(Math.cos(angle) *radius)));;
+    let x: number = globalThis.Math.trunc(Math.round(cx +(Math.cos(angle) *radius)));;
     
 
-    var y: number = globalThis.Math.trunc(Math.round(cy +(Math.sin(angle) *radius)));;
+    let y: number = globalThis.Math.trunc(Math.round(cy +(Math.sin(angle) *radius)));;
     
 this.addPoint(pointVector, x, y);
     
@@ -412,16 +414,16 @@ this.addSeparator(pointVector);
             
     addRectangle(pointVector: BasicArrayList, rectangle: JSONObject){
 
-    var x: number = this.readInt(rectangle, KEY_X, 0)!;;
+    let x: number = this.readInt(rectangle, KEY_X, 0)!;;
     
 
-    var y: number = this.readInt(rectangle, KEY_Y, 0)!;;
+    let y: number = this.readInt(rectangle, KEY_Y, 0)!;;
     
 
-    var width: number = this.readInt(rectangle, this.graphicsStrings!.WIDTH)!;;
+    let width: number = this.readInt(rectangle, this.graphicsStrings!.WIDTH)!;;
     
 
-    var height: number = this.readInt(rectangle, this.graphicsStrings!.HEIGHT)!;;
+    let height: number = this.readInt(rectangle, this.graphicsStrings!.HEIGHT)!;;
     
 this.addPoint(pointVector, x, y);
     
@@ -449,12 +451,19 @@ pointVector!.add([SHAPE_SEPARATOR[0],SHAPE_SEPARATOR[1]]);
     
 }
 
-
+readInt(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.readInt$overload1(args[0], args[1]);
+   
+    if (args.length === 3 && typeof args[1] === 'string' && typeof args[2] === 'number') return this.readInt$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: readInt'); }
+  
                 //@Throws(Exception.constructor)
             
-    readInt(anyType: JSONObject, key: string): number{
+    readInt$overload1(anyType: JSONObject, key: string): number{
 
-    var value: any = anyType!.get(key)!;;
+    let value: any = anyType!.get(key)!;;
     
 
                         if(value == 
@@ -479,15 +488,14 @@ pointVector!.add([SHAPE_SEPARATOR[0],SHAPE_SEPARATOR[1]]);
 }
 
 
-    readInt(anyType: JSONObject, key: string, defaultValue: number): number{
+    readInt$overload2(anyType: JSONObject, key: string, defaultValue: number): number{
 
-        try {
-            
+ try { 
                         if(anyType!.has(key))
                         
                                     {
                                     
-    var value: any = anyType!.get(key)!;;
+    let value: any = anyType!.get(key)!;;
     
 
 
@@ -498,14 +506,17 @@ pointVector!.add([SHAPE_SEPARATOR[0],SHAPE_SEPARATOR[1]]);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 e.printStackTrace();
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -515,7 +526,7 @@ e.printStackTrace();
 }
 
 
-    toInt(value: any = {}, key: string): number{
+    toInt(value: any, key: string): number{
 
                         if(value instanceof Number)
                         
@@ -530,7 +541,7 @@ e.printStackTrace();
                                     }
                                 
 
-                        if(value instanceof String)
+                        if(((value: any) => typeof value === 'string' || value instanceof String)(value))
                         
                                     {
                                     
@@ -587,17 +598,17 @@ e.printStackTrace();
                                     }
                                 
 
-    var points: number[][] = new Array(pointVector!.size()).fill(null).map(() => new Array(2).fill(null));;
+    let points: number[][] = new Array(pointVector!.size()).fill(null).map(() => new Array(2).fill(null));;
     
 
 
 
 
                         for (
-    var index: number = 0;index < pointVector!.size(); index++)
+    let index: number = 0;index < pointVector!.size(); index++)
         {
 
-    var point: number[] = 
+    let point: number[] = 
                         //Otherwise - castExpression - ArrayType - INT
 pointVector!.get(index)
                         //Otherwise - castExpression - ArrayType - INT
@@ -617,6 +628,4 @@ points[index]= point;
 
 
 }
-
-
 

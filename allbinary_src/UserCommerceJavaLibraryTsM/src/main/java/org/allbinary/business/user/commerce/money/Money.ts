@@ -26,18 +26,22 @@
         
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 
 
@@ -136,14 +140,21 @@ public constructor (units: number){
                             
 }
 
-
-    public add(moreMoney: Money){
+add(...args: any[]): any {
+   
+    if (args.length === 1) return this.add$overload1(args[0]);
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.add$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: add'); }
+  
+    public add$overload1(moreMoney: Money){
 this.add(moreMoney!.toString());
     
 }
 
 
-    public add(usDollarStr: string){
+    public add$overload2(usDollarStr: string){
 this.units= new Long(this.units.longValue() +convertUsdToUnits(usDollarStr));
     
 }
@@ -154,14 +165,21 @@ this.units= new Long(this.units.longValue() -convertUsdToUnits(usDollarStr));
     
 }
 
-
-    public multiply(multiplier: number){
+multiply(...args: any[]): any {
+   
+    if (args.length === 1) return this.multiply$overload1(args[0]);
+   
+    if (args.length === 1 && typeof args[0] === 'number') return this.multiply$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: multiply'); }
+  
+    public multiply$overload1(multiplier: number){
 this.units= new Long(new number(this.units.longValue() *multiplier).longValue());
     
 }
 
 
-    public multiply(multiplier: number){
+    public multiply$overload2(multiplier: number){
 this.units= new Long(this.units.longValue() *multiplier);
     
 }
@@ -169,17 +187,17 @@ this.units= new Long(this.units.longValue() *multiplier);
 
     convertUnitsTo(currency: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(currency.compareTo(this.DEFAULT_CURRENCY) == 0)
                         
                                     {
                                     
-    var dollar: number = this.units.longValue() /100;;
+    let dollar: number = this.units.longValue() /100;;
     
 
-    var cents: number = this.units.longValue() -(dollar *100);;
+    let cents: number = this.units.longValue() -(dollar *100);;
     
 stringBuffer!.append(new Long(dollar).toString());
     
@@ -210,19 +228,19 @@ stringBuffer!.append(new Long(cents).toString());
 
     convertUsdToUnits(usDollarStr: string): number{
 
-    var localUnit: number = 0;;
+    let localUnit: number = 0;;
     
 
-    var index: number = usDollarStr!.indexOf(AbPathData.getInstance()!.EXTENSION_SEP)!;;
+    let index: number = usDollarStr!.indexOf(AbPathData.getInstance()!.EXTENSION_SEP)!;;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var dollarStr: string = stringUtil!.EMPTY_STRING;;
+    let dollarStr: string = stringUtil!.EMPTY_STRING;;
     
 
-    var centsStr: string = stringUtil!.EMPTY_STRING;;
+    let centsStr: string = stringUtil!.EMPTY_STRING;;
     
 
                         if(index < 1)
@@ -287,6 +305,4 @@ localUnit += new Long(centsStr).longValue();
 
 
 }
-
-
 

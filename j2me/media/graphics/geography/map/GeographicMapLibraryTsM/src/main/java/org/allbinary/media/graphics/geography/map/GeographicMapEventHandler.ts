@@ -34,9 +34,11 @@ import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/E
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -115,29 +117,29 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;--index >= 0; )
+    let index: number = this.list.size()!;--index >= 0; )
         {
 
-        try {
-            
-    var gameLayer: AllBinaryGameLayer = this.list.get(index) as AllBinaryGameLayer;;
+ try { 
+    let gameLayer: AllBinaryGameLayer = this.list.get(index) as AllBinaryGameLayer;;
     
 gameLayer!.move();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
+
+ }
+   }
+ 
 }
 
 }
 
-}
-
 
 }
-
-
 

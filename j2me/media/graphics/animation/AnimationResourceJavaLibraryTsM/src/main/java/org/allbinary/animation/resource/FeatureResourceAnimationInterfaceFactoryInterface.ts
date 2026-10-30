@@ -26,6 +26,7 @@ import { RectangleResourceFactoryInterface } from '../../../../org/allbinary/gam
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -51,9 +52,7 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 export interface FeatureResourceAnimationInterfaceFactoryInterface extends ResourceAnimationInterfaceFactoryInterface, RectangleResourceFactoryInterface, GameFeatureControlledInterface {
         
 
-    getHashtable(): ABHashtable<any, any>
+    getHashtable(): ABHashtable<any, any>;
 
 }
-
-
 

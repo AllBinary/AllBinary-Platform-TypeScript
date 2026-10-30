@@ -87,7 +87,7 @@ export class EnumerationUtil
 
     public getAsArray(enumeration: Enumeration<any>): any[]{
 
-    var basicArrayList: BasicArrayList = new BasicArrayListD();;
+    let basicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
         while(this.hasMoreElements(enumeration))
@@ -106,6 +106,4 @@ basicArrayList!.add(this.nextElement(enumeration)!);
 
 
 }
-
-
 

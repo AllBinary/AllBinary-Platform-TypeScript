@@ -83,21 +83,20 @@ public constructor (jarURL: URL){
 
     public show(){
 
-    var cache: number[] = new Array(1024);;
+    let cache: number[] = new Array(1024);;
     
 
-        try {
-            
-    var conn: URLConnection = this.jarURL!.openConnection()!;;
+ try { 
+    let conn: URLConnection = this.jarURL!.openConnection()!;;
     
 
-    var jis: JarInputStream = new JarInputStream(conn.getInputStream());;
+    let jis: JarInputStream = new JarInputStream(conn.getInputStream());;
     
 
         while(true)
         {
 
-    var entry: JarEntry = jis.getNextJarEntry()!;;
+    let entry: JarEntry = jis.getNextJarEntry()!;;
     
 
                         if(entry != 
@@ -110,10 +109,10 @@ public constructor (jarURL: URL){
                         
                                     {
                                     
-    var offset: number = 0;;
+    let offset: number = 0;;
     
 
-    var i: number = 0;;
+    let i: number = 0;;
     
 
         while((i= jis.read(cache, offset, cache.length -offset)) !=  -1)
@@ -125,7 +124,7 @@ offset += i;
                         
                                     {
                                     
-    var newcache: number[] = new Array(cache.length +1024);;
+    let newcache: number[] = new Array(cache.length +1024);;
     
 System.arraycopy(cache, 0, newcache, 0, cache.length);
     
@@ -137,7 +136,7 @@ cache= newcache;
 }
 
 
-    var tmp: number[] = new Array(offset);;
+    let tmp: number[] = new Array(offset);;
     
 System.arraycopy(cache, 0, tmp, 0, offset);
     
@@ -158,20 +157,21 @@ console.log(entry.getName());
                             
 }
 
-
-                //: 
-} catch(ex) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof IOException) {
+  const ex = caught;
+  
 System.err.println(ex);
     
 ex.printStackTrace();
     
+
+ }
+  else { throw caught; } }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -81,10 +81,10 @@ public constructor (file: AbFile){
             
     public toXmlNode(document: Document): Node{
 
-    var tableMappingInterface: TableMappingInterface = new FileTableMapping(this.file) as TableMappingInterface;;
+    let tableMappingInterface: TableMappingInterface = new FileTableMapping(this.file) as TableMappingInterface;;
     
 
-    var hashMap: HashMap<any, any> = tableMappingInterface!.toHashMap()!;;
+    let hashMap: HashMap<any, any> = tableMappingInterface!.toHashMap()!;;
     
 
 
@@ -96,6 +96,4 @@ public constructor (file: AbFile){
 
 
 }
-
-
 

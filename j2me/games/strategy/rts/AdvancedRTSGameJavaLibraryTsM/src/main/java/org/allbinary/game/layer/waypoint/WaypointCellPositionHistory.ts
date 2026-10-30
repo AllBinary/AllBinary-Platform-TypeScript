@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
 //not GWT import const CellPosition
@@ -86,7 +88,7 @@ this.layerList!.add(layerInterface);
 
 
                         for (
-    var index: number = list.size() -1;index >= 0; index--)
+    let index: number = list.size() -1;index >= 0; index--)
         {
 this.add(list.get(index) as CellPosition, layerInterface);
     
@@ -97,7 +99,7 @@ this.add(list.get(index) as CellPosition, layerInterface);
 
     public remove(cellPosition: CellPosition){
 
-    var index: number = this.positionList!.indexOf(cellPosition)!;;
+    let index: number = this.positionList!.indexOf(cellPosition)!;;
     
 
                         if(index >= 0)
@@ -115,7 +117,7 @@ this.layerList!.removeAt(index);
 
     public removeLayer(layerInterface: AllBinaryLayer){
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(index !=  -1)
@@ -162,7 +164,7 @@ this.layerList!.clear();
 
 
                         for (
-    var index: number = list.size() -1;index >= 0; index--)
+    let index: number = list.size() -1;index >= 0; index--)
         {
 
                         if(this.isCellPositionWithDrop(list.get(index) as CellPosition))
@@ -190,7 +192,7 @@ this.layerList!.clear();
 
     public getLayerInterface(cellPosition: CellPosition): AllBinaryLayer{
 
-    var index: number = this.positionList!.indexOf(cellPosition)!;;
+    let index: number = this.positionList!.indexOf(cellPosition)!;;
     
 
                         if(index >= 0)
@@ -219,6 +221,4 @@ this.layerList!.clear();
 
 
 }
-
-
 

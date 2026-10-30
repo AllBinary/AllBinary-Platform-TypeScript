@@ -53,7 +53,7 @@ export class AdjustedCircleAnimation extends CircleAnimation {
 
     public static createAnimation(width: number, height: number, xAdjustment: number, yAdjustment: number, basicColor: BasicColor): AdjustedCircleAnimation{
 
-    var adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);;
+    let adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);;
     
 adjustedCircleAnimation!.initXY(xAdjustment, yAdjustment);
     
@@ -68,7 +68,7 @@ adjustedCircleAnimation!.initXY(xAdjustment, yAdjustment);
 
     public static createW(width: number, height: number, innerWidth: number, basicColor: BasicColor): AdjustedCircleAnimation{
 
-    var adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);;
+    let adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);;
     
 adjustedCircleAnimation!.init(innerWidth);
     
@@ -108,7 +108,7 @@ this.yAdjustment= yAdjustment;
                         
                                     {
                                     
-    var widthPortion: number = (globalThis.Math.trunc(((globalThis.Math.trunc(innerWidth /3)) *10) /7));;
+    let widthPortion: number = (globalThis.Math.trunc(((globalThis.Math.trunc(innerWidth /3)) *10) /7));;
     
 this.xAdjustment=  -((this.width>>1) -widthPortion);
     
@@ -137,6 +137,4 @@ graphics.drawArc(x +this.xAdjustment, y +this.yAdjustment, this.width, this.heig
 
 
 }
-
-
 

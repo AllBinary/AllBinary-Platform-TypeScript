@@ -47,13 +47,11 @@ export interface RectangleResourceFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getRectangle(resource: string): Rectangle
+    getRectangle(resource: string): Rectangle;
 
                 //@Throws(Exception.constructor)
             
-    getRectangleArrayOfArrays(resource: string): Rectangle[][]
+    getRectangleArrayOfArrays(resource: string): Rectangle[][];
 
 }
-
-
 

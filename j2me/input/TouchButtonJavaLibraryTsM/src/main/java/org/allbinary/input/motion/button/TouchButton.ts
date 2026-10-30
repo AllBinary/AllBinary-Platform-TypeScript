@@ -49,15 +49,19 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -161,20 +165,19 @@ this.animationInterface!.paintXY(graphics, this.animationX, this.animationY);
 
     updateRectangle(){
 
-        try {
-            
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+ try { 
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var x: number = this.rawRectangle!.getWidth() *this.cellPositionP!.getColumn();;
+    let x: number = this.rawRectangle!.getWidth() *this.cellPositionP!.getColumn();;
     
 
-    var y: number = this.rawRectangle!.getHeight() *this.cellPositionP!.getRow();;
+    let y: number = this.rawRectangle!.getHeight() *this.cellPositionP!.getRow();;
     
 this.rectangleP= new Rectangle(pointFactory!.createXY(x +this.xBorder, y +this.yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
     
 
-    var point: GPoint = this.rectangleP!.getPoint()!;;
+    let point: GPoint = this.rectangleP!.getPoint()!;;
     
 this.animationX= point.getX();
     
@@ -182,14 +185,17 @@ this.animationY= point.getY();
     
 this.hintAnimationY= this.animationY -32;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -225,10 +231,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 stringBuffer!.append("TouchButton: ");
     
@@ -256,6 +262,4 @@ stringBuffer!.appendint(this.yBorder);
 
 
 }
-
-
 

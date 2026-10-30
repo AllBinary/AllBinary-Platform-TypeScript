@@ -45,11 +45,9 @@ import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/lay
 export interface CountedPickedUpLayerInterfaceFactoryInterface extends PickedUpLayerInterfaceFactoryInterface, LayerInterfaceFactoryInterface {
         
 
-    getId(): number
+    getId(): number;
 
-    getTotal(): number
+    getTotal(): number;
 
 }
-
-
 

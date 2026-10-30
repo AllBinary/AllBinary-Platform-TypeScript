@@ -24,9 +24,11 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -57,8 +59,15 @@ export class BasicStoreFrontFactory
         
 
     private static readonly instance: BasicStoreFrontFactory = new BasicStoreFrontFactory();
-
-    public static getInstance(): BasicStoreFrontFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): BasicStoreFrontFactory{
 
 
 
@@ -78,11 +87,10 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(storeName: string): BasicStoreFrontInterface{
+    public getInstance$overload2(storeName: string): BasicStoreFrontInterface{
 
-        try {
-            
-    var storeFronts: BasicStoreFrontsEntity = new BasicStoreFrontsEntity();;
+ try { 
+    let storeFronts: BasicStoreFrontsEntity = new BasicStoreFrontsEntity();;
     
 
 
@@ -90,16 +98,17 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return storeFronts!.getStoreFrontInterface(storeName);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
@@ -112,12 +121,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

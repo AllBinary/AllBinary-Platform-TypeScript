@@ -42,18 +42,22 @@ import { GameOptionsForm } from '../../../../../org/allbinary/game/configuration
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { MidletStrings } from '../../../../../org/allbinary/midlet/MidletStrings.js';
 //not GWT import const MidletStrings
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -93,9 +97,8 @@ public constructor (gameOptionsForm: GameOptionsForm){
 
     public commandAction(command: Command, item: Item){
 
-        try {
-            
-    var itemLabel: string = item.getLabel()!;;
+ try { 
+    let itemLabel: string = item.getLabel()!;;
     
 this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, MidletStrings.getInstance()!.COMMAND_ACTION);
     
@@ -108,21 +111,22 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LAB
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, MidletStrings.getInstance()!.COMMAND_ACTION, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

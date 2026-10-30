@@ -27,12 +27,15 @@ import { FileLog } from '../../../../../org/allbinary/log/FileLog.js';
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -80,23 +83,23 @@ private constructor (){
 
     /*actual*/ public putL(log: Log){
 
-    var specialMessage: string = log.getSpecialMessage()!;;
+    let specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;;
+    let anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;;
+    let functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;;
+    let exception: any = log.getThrowable()!;;
     
 this.put(specialMessage, anyType, functionName, exception);
     
 }
 
 
-    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any, functionName: string){
 FileLog.put(specialMessage, anyType, functionName);
     
 }
@@ -108,13 +111,11 @@ FileLog.put(specialMessage, className, functionName);
 }
 
 
-    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public put(specialMessage: string, anyType: any, functionName: string, exception: any){
 FileLog.put(specialMessage, anyType, functionName, exception as Throwable);
     
 }
 
 
 }
-
-
 

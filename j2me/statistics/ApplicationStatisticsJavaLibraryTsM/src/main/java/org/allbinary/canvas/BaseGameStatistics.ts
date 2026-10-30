@@ -32,12 +32,15 @@ import { ScaleFactorFactory } from '../../../org/allbinary/logic/math/ScaleFacto
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { GameTickTimeDelayHelper } from '../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 //not GWT import const GameTickTimeDelayHelper
@@ -122,14 +125,14 @@ this.totalRefreshes++;
 
     public getRefreshRate(): number{
 
-    var elapsed: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
+    let elapsed: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
 
                         if(elapsed > 1)
                         
                                     {
                                     
-    var time: number = (globalThis.Math.trunc(this.totalRefreshes /(elapsed>>this.DEFAULT_SCALE_FACTOR)));;
+    let time: number = (globalThis.Math.trunc(this.totalRefreshes /(elapsed>>this.DEFAULT_SCALE_FACTOR)));;
     
 
 
@@ -187,7 +190,7 @@ this.totalRefreshes++;
 
     public to2DCharArray(): string[][]{
 
-    var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
+    let totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
 totalTime= (totalTime>>this.DEFAULT_SCALE_FACTOR);
     
@@ -196,7 +199,7 @@ totalTime= (totalTime>>this.DEFAULT_SCALE_FACTOR);
                         
                                     {
                                     
-    var framesPerSec: number = globalThis.Math.trunc((globalThis.Math.trunc(this.totalFrames /totalTime)));;
+    let framesPerSec: number = globalThis.Math.trunc((globalThis.Math.trunc(this.totalFrames /totalTime)));;
     
 
                         if(framesPerSec < 10)
@@ -214,10 +217,10 @@ this.CHAR_ARRAY[1]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[framesPer
                         
                                     {
                                     
-    var tens: number = globalThis.Math.trunc(framesPerSec /10);;
+    let tens: number = globalThis.Math.trunc(framesPerSec /10);;
     
 
-    var removeTens: number = tens *10;;
+    let removeTens: number = tens *10;;
     
 this.CHAR_ARRAY[1]![0]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[tens]!;
     
@@ -235,7 +238,7 @@ this.CHAR_ARRAY[1]![1]= this.PLUS_CHAR;
                         }
                             
 
-    var refreshesPerSec: number = globalThis.Math.trunc((globalThis.Math.trunc(this.totalRefreshes /totalTime)));;
+    let refreshesPerSec: number = globalThis.Math.trunc((globalThis.Math.trunc(this.totalRefreshes /totalTime)));;
     
 
                         if(refreshesPerSec < 10)
@@ -253,10 +256,10 @@ this.CHAR_ARRAY[3]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshes
                         
                                     {
                                     
-    var tens: number = globalThis.Math.trunc(refreshesPerSec /10);;
+    let tens: number = globalThis.Math.trunc(refreshesPerSec /10);;
     
 
-    var removeTens: number = tens *10;;
+    let removeTens: number = tens *10;;
     
 this.CHAR_ARRAY[3]![0]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[globalThis.Math.trunc(refreshesPerSec /10)]!;
     
@@ -287,7 +290,7 @@ this.CHAR_ARRAY[3]![1]= this.PLUS_CHAR;
 
     public toStringArray(): string[]{
 
-    var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
+    let totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
 totalTime= (globalThis.Math.trunc(totalTime /10000));
     
@@ -310,7 +313,7 @@ this.STRING_ARRAY[9]= (globalThis.Math.trunc(this.totalRefreshes /totalTime)).to
                                 
                         else {
                             
-    var string: string = this.EMPTY_STRING;;
+    let string: string = this.EMPTY_STRING;;
     
 this.STRING_ARRAY[1]= string;
     
@@ -336,7 +339,7 @@ this.STRING_ARRAY[9]= string;
 
     public toStringAt(totalTime: number): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.STRING_ARRAY[0]!);
     
@@ -378,7 +381,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 
     public toString(): string{
 
-    var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
+    let totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
 totalTime= (globalThis.Math.trunc(totalTime /1000));
     
@@ -409,6 +412,4 @@ totalTime= (globalThis.Math.trunc(totalTime /1000));
 
 
 }
-
-
 

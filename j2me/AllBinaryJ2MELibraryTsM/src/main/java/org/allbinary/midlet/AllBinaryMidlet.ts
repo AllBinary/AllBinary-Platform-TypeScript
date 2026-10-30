@@ -43,39 +43,49 @@ import { MIDletStateChangeException } from '../../../javax/microedition/midlet/M
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { EventStrings } from '../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Memory } from '../../../org/allbinary/system/Memory.js';
 //not GWT import const Memory
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -146,7 +156,7 @@ public constructor (){
 
     setDisplay(newDisplay: Displayable){
 
-    var title: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let title: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(newDisplay != NullCanvas.NULL_CANVAS)
@@ -175,7 +185,7 @@ public constructor (){
                                     }
                                 
 
-    var display: Display = this.getDisplay()!;;
+    let display: Display = this.getDisplay()!;;
     
 display.setCurrent(newDisplay);
     
@@ -238,24 +248,26 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     destroyApp(unconditional: boolean){
 
-    var METHOD_NAME: string = "AllBinaryMidlet::destroyApp";;
+    let METHOD_NAME: string = "AllBinaryMidlet::destroyApp";;
     
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, METHOD_NAME);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, METHOD_NAME);
     
 PreLogUtil.put(Memory.getInfo(), this, METHOD_NAME);
     
 this.setDestroyed(true);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -301,9 +313,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getStateHashtable");
 }
 
 
-}
-
-//JSNI Expose so JSNI can access this class *** 
+}//JSNI Expose so JSNI can access this class *** 
  globalThis.org = globalThis.org || {}; 
  globalThis.org.allbinary = globalThis.org.allbinary || {}; 
  globalThis.org.allbinary.midlet = globalThis.org.allbinary.midlet || {}; 

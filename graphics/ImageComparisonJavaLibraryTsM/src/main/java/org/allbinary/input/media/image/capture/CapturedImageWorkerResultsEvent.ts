@@ -52,7 +52,7 @@ export class CapturedImageWorkerResultsEvent extends AllBinaryEventObject {
 
     private bufferedImage: BufferedImage;
 
-public constructor (anyType: any = {}, frame: Long, bufferedImage: BufferedImage){
+public constructor (anyType: any, frame: Long, bufferedImage: BufferedImage){
             super(anyType);
                     
 
@@ -92,6 +92,4 @@ this.bufferedImage= bufferedImage;
 
 
 }
-
-
 

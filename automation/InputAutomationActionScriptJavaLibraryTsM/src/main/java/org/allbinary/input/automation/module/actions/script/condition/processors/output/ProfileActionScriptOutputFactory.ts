@@ -62,7 +62,7 @@ export class ProfileActionScriptOutputFactory
             
     public static getInstance(node: Node): ProfileActionScriptOutputInterface{
 
-    var profileActionScriptOutputInterface: ProfileActionScriptOutputInterface = 
+    let profileActionScriptOutputInterface: ProfileActionScriptOutputInterface = 
                 null
             ;;
     
@@ -102,6 +102,4 @@ private constructor (){
 
 
 }
-
-
 

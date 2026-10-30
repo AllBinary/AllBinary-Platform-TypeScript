@@ -67,5 +67,3 @@ public constructor (rectangle: Rectangle){
 
 }
 
-
-

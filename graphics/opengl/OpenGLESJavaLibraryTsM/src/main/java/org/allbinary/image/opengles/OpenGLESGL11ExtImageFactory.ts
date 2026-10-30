@@ -65,5 +65,3 @@ export class OpenGLESGL11ExtImageFactory extends OpenGLImageFactory {
 
 }
 
-
-

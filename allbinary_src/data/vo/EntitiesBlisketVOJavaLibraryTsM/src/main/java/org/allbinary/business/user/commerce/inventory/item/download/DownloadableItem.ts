@@ -32,9 +32,11 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
@@ -47,9 +49,11 @@ import { ProductIdGenerator } from '../../../../../../../../org/allbinary/data/g
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -113,7 +117,7 @@ public constructor (id: string){
 
             super();
         
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 this.id= new ProductIdGenerator().getNext();
     
@@ -135,9 +139,9 @@ this.licenseFile= EMPTY_STRING;
     
 this.file= EMPTY_STRING;
     
-this.size= (0).toLong();
+this.size= Number(0);
     
-this.validTime= (0).toLong();
+this.validTime= Number(0);
     
 this.retries= EMPTY_STRING;
     
@@ -168,13 +172,13 @@ this.licenseFile= hashMap!.get(DownloadItemData.LICENSE_FILE) as string;
 this.file= hashMap!.get(DownloadItemData.FILE) as string;
     
 
-    var value: string = hashMap!.get(DownloadItemData.SIZE) as string;;
+    let value: string = hashMap!.get(DownloadItemData.SIZE) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(value))
                         
                                     {
-                                    this.size= (value).toLong();
+                                    this.size= Number(value);
     
 
                                     }
@@ -186,38 +190,38 @@ this.file= hashMap!.get(DownloadItemData.FILE) as string;
                         }
                             
 
-    var validTime: string = hashMap!.get(DownloadItemData.VALID_TIME) as string;;
+    let validTime: string = hashMap!.get(DownloadItemData.VALID_TIME) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(validTime))
                         
                                     {
-                                    this.validTime= (validTime).toLong();
+                                    this.validTime= Number(validTime);
     
 
                                     }
                                 
                         else {
                             
-    var totalYears: string = hashMap!.get(DownloadItemData.VALID_TIME_YEARS) as string;;
+    let totalYears: string = hashMap!.get(DownloadItemData.VALID_TIME_YEARS) as string;;
     
 
-    var totalMonths: string = hashMap!.get(DownloadItemData.VALID_TIME_MONTHS) as string;;
+    let totalMonths: string = hashMap!.get(DownloadItemData.VALID_TIME_MONTHS) as string;;
     
 
-    var totalDays: string = hashMap!.get(DownloadItemData.VALID_TIME_DAYS) as string;;
+    let totalDays: string = hashMap!.get(DownloadItemData.VALID_TIME_DAYS) as string;;
     
 
-    var totalHours: string = hashMap!.get(DownloadItemData.VALID_TIME_HOURS) as string;;
+    let totalHours: string = hashMap!.get(DownloadItemData.VALID_TIME_HOURS) as string;;
     
 
-    var totalMinutes: string = hashMap!.get(DownloadItemData.VALID_TIME_MINUTES) as string;;
+    let totalMinutes: string = hashMap!.get(DownloadItemData.VALID_TIME_MINUTES) as string;;
     
 
-    var totalSeconds: string = hashMap!.get(DownloadItemData.VALID_TIME_SECONDS) as string;;
+    let totalSeconds: string = hashMap!.get(DownloadItemData.VALID_TIME_SECONDS) as string;;
     
 
-    var totalTime: number = TimeUtil.getInstance()!.getTotalTime(totalYears, totalMonths, totalDays, totalHours, totalMinutes, totalSeconds)!;;
+    let totalTime: number = TimeUtil.getInstance()!.getTotalTime(totalYears, totalMonths, totalDays, totalHours, totalMinutes, totalSeconds)!;;
     
 this.validTime= new Long(totalTime);
     
@@ -231,13 +235,13 @@ this.retries= hashMap!.get(DownloadItemData.RETRIES) as string;
 
     public toVector(): BasicArrayList{
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString()!;;
+    let time: string = new Long(calendar.getTimeInMillis()).toString()!;;
     
 
-    var values: BasicArrayList = new BasicArrayListD();;
+    let values: BasicArrayList = new BasicArrayListD();;
     
 values.add(getId());
     
@@ -280,7 +284,7 @@ values.add(time);
 
     public toHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 values.put(DownloadItemData.ID, this.getId());
     
@@ -309,10 +313,10 @@ values.put(DownloadItemData.VALID_TIME, this.getValidTime()!.toString());
 values.put(DownloadItemData.RETRIES, this.getRetries());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -436,6 +440,4 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
 }
-
-
 

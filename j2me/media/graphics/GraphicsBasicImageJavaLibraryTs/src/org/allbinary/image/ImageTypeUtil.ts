@@ -22,6 +22,7 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -89,10 +90,10 @@ mediaFileType= mediaFileType!.toLowerCase();
 
 
                         for (
-    var index: number = this.list.size() -1;index >= 0; index--)
+    let index: number = this.list.size() -1;index >= 0; index--)
         {
 
-    var name: string = this.list.objectArray[index]! as string;;
+    let name: string = this.list.objectArray[index]! as string;;
     
 
                         if(mediaFileType!.compareTo(name) == 0)
@@ -119,6 +120,4 @@ mediaFileType= mediaFileType!.toLowerCase();
 
 
 }
-
-
 

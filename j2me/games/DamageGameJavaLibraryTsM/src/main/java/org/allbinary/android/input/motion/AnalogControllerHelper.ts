@@ -144,5 +144,3 @@ this.downTimeElapsedHelper!.delay= ((this.SCALE_VALUE +xAnalogValue)>>this.reduc
 
 }
 
-
-

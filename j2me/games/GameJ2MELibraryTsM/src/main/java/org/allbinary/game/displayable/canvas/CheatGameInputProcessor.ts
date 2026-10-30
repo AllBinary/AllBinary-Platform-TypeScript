@@ -43,12 +43,15 @@ import { SpecialGameInputInterface } from '../../../../../org/allbinary/game/lay
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -96,28 +99,27 @@ this.gameCanvas= gameCanvas;
 
     public update(){
 
-        try {
-            
-    var gameLayerManager: AllBinaryGameLayerManager = this.gameCanvas!.getLayerManager()!;;
+ try { 
+    let gameLayerManager: AllBinaryGameLayerManager = this.gameCanvas!.getLayerManager()!;;
     
 
-    var list: BasicArrayList = this.getGameKeyEventList()!;;
+    let list: BasicArrayList = this.getGameKeyEventList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var anyType: any = list.objectArray[index]!;;
+    let anyType: any = list.objectArray[index]!;;
     
 
-    var key: number = GameKeyEventUtil.getKey(anyType)!;;
+    let key: number = GameKeyEventUtil.getKey(anyType)!;;
     
 
                         if(key == this.gameKeyFactory!.LEVEL_DOWN.getId())
@@ -219,18 +221,19 @@ break;
 
 list.clear();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDATE, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

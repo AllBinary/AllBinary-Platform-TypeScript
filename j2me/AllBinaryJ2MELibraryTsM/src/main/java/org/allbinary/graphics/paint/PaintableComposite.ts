@@ -63,7 +63,7 @@ public constructor (paintableArray: PaintableInterface[]){
 
 
                         for (
-    var index: number = this.paintableArray!.length -1;index >= 0; index--)
+    let index: number = this.paintableArray!.length -1;index >= 0; index--)
         {
 this.paintableArray[index]!.paint(graphics);
     
@@ -78,7 +78,7 @@ this.paintableArray[index]!.paint(graphics);
 
 
                         for (
-    var index: number = this.paintableArray!.length -1;index >= 0; index--)
+    let index: number = this.paintableArray!.length -1;index >= 0; index--)
         {
 this.paintableArray[index]!.paintThreed(graphics);
     
@@ -88,6 +88,4 @@ this.paintableArray[index]!.paintThreed(graphics);
 
 
 }
-
-
 

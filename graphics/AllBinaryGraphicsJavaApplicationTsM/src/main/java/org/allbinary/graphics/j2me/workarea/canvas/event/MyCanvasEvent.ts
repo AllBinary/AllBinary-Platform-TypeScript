@@ -47,7 +47,7 @@ import { MyCanvasEventSource } from './MyCanvasEventSource.js';
 export class MyCanvasEvent extends java.util.EventObject {
         
 
-public constructor (source: any = {}){
+public constructor (source: any){
             super(source);
                     
 
@@ -78,7 +78,7 @@ public constructor (source: any = {}){
 
     public getCommand(): string{
 
-    var myEventSource: MyCanvasEventSource = this.getSource() as MyCanvasEventSource;;
+    let myEventSource: MyCanvasEventSource = this.getSource() as MyCanvasEventSource;;
     
 
 
@@ -91,7 +91,7 @@ public constructor (source: any = {}){
 
     public getTreeNode(): MutableTreeNode{
 
-    var myEventSource: MyCanvasEventSource = this.getSource() as MyCanvasEventSource;;
+    let myEventSource: MyCanvasEventSource = this.getSource() as MyCanvasEventSource;;
     
 
 
@@ -104,7 +104,7 @@ public constructor (source: any = {}){
 
     public getAngle(): number{
 
-    var myEventSource: MyCanvasEventSource = this.getSource() as MyCanvasEventSource;;
+    let myEventSource: MyCanvasEventSource = this.getSource() as MyCanvasEventSource;;
     
 
 
@@ -116,6 +116,4 @@ public constructor (source: any = {}){
 
 
 }
-
-
 

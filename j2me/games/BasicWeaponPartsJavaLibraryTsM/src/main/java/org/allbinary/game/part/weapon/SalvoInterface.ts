@@ -53,13 +53,11 @@ export interface SalvoInterface {
 
                 //@Throws(Exception.constructor)
             
-    process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number)
+    process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number): void;
 
                 //@Throws(Exception.constructor)
             
-    processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface)
+    processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface): void;
 
 }
-
-
 

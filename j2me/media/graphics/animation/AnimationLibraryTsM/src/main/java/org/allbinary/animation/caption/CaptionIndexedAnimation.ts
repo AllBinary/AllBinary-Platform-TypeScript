@@ -115,7 +115,7 @@ this.time= time;
 this.END_EVENT= new AllBinaryEventObject(this);
     
 
-    var timePerFrame: number = this.time /this.getSize();;
+    let timePerFrame: number = this.time /this.getSize();;
     
 this.timeDelayHelper= new TimeDelayHelper(timePerFrame);
     
@@ -240,6 +240,4 @@ this.movieIndexedAnimationInterface!.paintThreedXYZ(graphics, x +this.captionDx 
 
 
 }
-
-
 

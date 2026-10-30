@@ -59,5 +59,3 @@ export class NormalJ2MEGameInputMapping extends J2MEGameInputMapping {
 
 }
 
-
-

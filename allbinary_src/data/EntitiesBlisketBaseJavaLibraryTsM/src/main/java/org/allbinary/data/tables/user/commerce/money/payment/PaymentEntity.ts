@@ -35,9 +35,11 @@ import { Random } from '../../../../../../../../java/util/Random.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
@@ -62,9 +64,11 @@ import { PaymentIdGenerator } from '../../../../../../../../org/allbinary/data/g
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
@@ -74,9 +78,11 @@ import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -129,17 +135,16 @@ this.setTableName(this.tableName);
 
     public setDefault(userName: string, index: Integer){
 
-        try {
-            
-    var updateKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let updateKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var whereKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let whereKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereKeyAndValue!.put(UserData.USERNAME, userName);
     
 
-    var paymentInterface: PaymentInterface = this.getDefault(userName)!;;
+    let paymentInterface: PaymentInterface = this.getDefault(userName)!;;
     
 
                         if(paymentInterface != 
@@ -171,10 +176,11 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -184,40 +190,41 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public get(userName: string): BasicArrayList{
 
-        try {
-            
-    var paymentVector: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let paymentVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var keyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keyAndValue!.put(UserData.USERNAME, userName);
     
 
-    var paymentList: BasicArrayList = super.getRows(keyAndValue)!;;
+    let paymentList: BasicArrayList = super.getRows(keyAndValue)!;;
     
 
-    var size: number = paymentList!.size()!;;
+    let size: number = paymentList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var paymentHashMap: HashMap<any, any> = paymentList!.get(index) as HashMap<any, any>;;
+    let paymentHashMap: HashMap<any, any> = paymentList!.get(index) as HashMap<any, any>;;
     
 
-    var payment: Payment = new Payment(paymentHashMap);;
+    let payment: Payment = new Payment(paymentHashMap);;
     
 
                         if(payment != 
@@ -238,10 +245,11 @@ keyAndValue!.put(UserData.USERNAME, userName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return paymentVector;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -257,19 +265,20 @@ keyAndValue!.put(UserData.USERNAME, userName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getDefault(userName: string): PaymentInterface{
 
-        try {
-            
-    var paymentHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let paymentHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var updateKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let updateKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 updateKeyAndValue!.put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT);
     
@@ -284,7 +293,7 @@ paymentHashMap= super.getRow(updateKeyAndValue);
                         
                                     {
                                     
-    var payment: Payment = new Payment(paymentHashMap);;
+    let payment: Payment = new Payment(paymentHashMap);;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -314,10 +323,11 @@ paymentHashMap= super.getRow(updateKeyAndValue);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -333,16 +343,17 @@ paymentHashMap= super.getRow(updateKeyAndValue);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public remove(userName: string, index: Integer){
 
-        try {
-            
-    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
@@ -359,10 +370,11 @@ super.deleteWhere(whereHashMap);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -372,16 +384,17 @@ super.deleteWhere(whereHashMap);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public add(userName: string, paymentInterface: PaymentInterface){
 
-        try {
-            
-    var vector: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 vector.add(new PaymentIdGenerator().getNext());
     
@@ -396,17 +409,17 @@ vector.add(paymentInterface!.getType());
 vector.add(paymentInterface!.getExpiration());
     
 
-    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;;
+    let random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;;
     
 vector.add(new SuperCrypt(random).encrypt(paymentInterface!.getNumber()));
     
 vector.add(new Integer(random).toString());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 vector.add(time);
     
@@ -421,10 +434,11 @@ super.insert(vector);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -434,17 +448,19 @@ super.insert(vector);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public createTableStatement(): string{
 
-    var entryData: EntryData = EntryData.getInstance()!;;
+    let entryData: EntryData = EntryData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(PaymentData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_AUTO_INCREMENT_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(entryData!.DEFAULT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(PaymentData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(PaymentData.TYPE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(PaymentData.EXPIRATION)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(PaymentData.NUMBER)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(entryData!.ENCRYPTION)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(entryData!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(PaymentData.ID)!.append(this.sqlStrings!.END);
     
@@ -478,6 +494,4 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
 
 }
-
-
 

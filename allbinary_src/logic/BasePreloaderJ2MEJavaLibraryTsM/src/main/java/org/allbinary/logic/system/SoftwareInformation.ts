@@ -25,9 +25,11 @@ import { KotlinUtil } from '../../../../org/allbinary/KotlinUtil.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -103,13 +105,13 @@ this.shortName= new StringMaker().append(shortName)!.append(KotlinUtil.getShortN
 
     public toString(): string{
 
-    var NAME: string = "Name: ";;
+    let NAME: string = "Name: ";;
     
 
-    var VERSION: string = "Version: ";;
+    let VERSION: string = "Version: ";;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(NAME);
     
@@ -131,6 +133,4 @@ stringBuffer!.append(this.getVersion());
 
 
 }
-
-
 

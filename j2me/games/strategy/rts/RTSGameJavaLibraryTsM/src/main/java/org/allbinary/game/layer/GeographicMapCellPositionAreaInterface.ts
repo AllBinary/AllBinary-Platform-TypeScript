@@ -28,6 +28,7 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -51,17 +52,15 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 export interface GeographicMapCellPositionAreaInterface {
         
 
-    getNextSurroundingGeographicMapCellPosition(): GeographicMapCellPosition
+    getNextSurroundingGeographicMapCellPosition(): GeographicMapCellPosition;
 
-    getOccupyingGeographicMapCellPositionList(): BasicArrayList
+    getOccupyingGeographicMapCellPositionList(): BasicArrayList;
 
-    getSurroundingGeographicMapCellPositionList(): BasicArrayList
+    getSurroundingGeographicMapCellPositionList(): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    update(geographicMapInterface: BasicGeographicMap)
+    update(geographicMapInterface: BasicGeographicMap): void;
 
 }
-
-
 

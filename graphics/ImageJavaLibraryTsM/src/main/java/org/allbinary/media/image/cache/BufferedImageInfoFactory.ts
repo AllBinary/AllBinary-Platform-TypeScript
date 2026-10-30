@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -59,7 +61,7 @@ export class BufferedImageInfoFactory
 
     public static getInstance(width: number, height: number, type: number): BufferedImageInfo{
 
-    var stringbuffer: StringMaker = new StringMaker();;
+    let stringbuffer: StringMaker = new StringMaker();;
     
 stringbuffer.appendint(width);
     
@@ -68,10 +70,10 @@ stringbuffer.appendint(height);
 stringbuffer.appendint(type);
     
 
-    var key: string = stringbuffer.toString()!;;
+    let key: string = stringbuffer.toString()!;;
     
 
-    var bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.hashMap!.get(key) as BufferedImageInfo;;
+    let bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.hashMap!.get(key) as BufferedImageInfo;;
     
 
                         if(bufferedImageInfo == 
@@ -102,6 +104,4 @@ private constructor (){
 
 
 }
-
-
 

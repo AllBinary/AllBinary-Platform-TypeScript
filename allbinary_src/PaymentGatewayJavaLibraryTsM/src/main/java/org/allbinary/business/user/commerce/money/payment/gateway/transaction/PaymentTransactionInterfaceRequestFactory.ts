@@ -81,9 +81,11 @@ import { WeblisketSession } from '../../../../../../../../../org/allbinary/logic
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -96,6 +98,7 @@ import { TransformInfoInterface } from '../../../../../../../../../org/allbinary
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -126,8 +129,15 @@ export class PaymentTransactionInterfaceRequestFactory
         
 
     private static readonly instance: PaymentTransactionInterfaceRequestFactory = new PaymentTransactionInterfaceRequestFactory();
-
-    public static getInstance(): PaymentTransactionInterfaceRequestFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): PaymentTransactionInterfaceRequestFactory{
 
 
 
@@ -149,20 +159,19 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(transformInfoInterface: TransformInfoInterface): PaymentTransactionInterface{
+    public getInstance$overload2(transformInfoInterface: TransformInfoInterface): PaymentTransactionInterface{
 
-        try {
-            
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
+ try { 
+    let httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var pageContext: PageContext = httpTransformInfoInterface!.getPageContext()!;;
+    let pageContext: PageContext = httpTransformInfoInterface!.getPageContext()!;;
     
 
-    var httpServletRequest: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
+    let httpServletRequest: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
     
 
-    var command: string = httpServletRequest!.getParameter(org.allbinary.globals.GLOBALS2.ADMINCOMMAND)!;;
+    let command: string = httpServletRequest!.getParameter(org.allbinary.globals.GLOBALS2.ADMINCOMMAND)!;;
     
 
                         if(command != 
@@ -181,28 +190,28 @@ private constructor (){
                                 
                         else {
                             
-    var propertiesHashMap: HashMap<any, any> = httpTransformInfoInterface!.getPropertiesHashMap()!;;
+    let propertiesHashMap: HashMap<any, any> = httpTransformInfoInterface!.getPropertiesHashMap()!;;
     
 
-    var weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);;
+    let weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);;
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;;
     
 
-    var order: OrderInterface = weblisketSession!.getOrder()!;;
+    let order: OrderInterface = weblisketSession!.getOrder()!;;
     
 
-    var orderId: string = order.getId()!;;
+    let orderId: string = order.getId()!;;
     
 
-    var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;;
+    let orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;;
     
 
-    var orderReview: OrderHistory = orderHistoryEntityInterface!.getOrder(orderId)!;;
+    let orderReview: OrderHistory = orderHistoryEntityInterface!.getOrder(orderId)!;;
     
 
-    var orderPaymentInfo: Payment = orderReview!.getPaymentInfo()!;;
+    let orderPaymentInfo: Payment = orderReview!.getPaymentInfo()!;;
     
 orderPaymentInfo!.setTransactionType(TransactionTypeFactory.getInstance()!.SALE.toString());
     
@@ -220,7 +229,7 @@ orderReview!.setPaymentInfo(orderPaymentInfo);
                                     }
                                 
 
-    var paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceFactory.getInstance()!.getInstance(orderReview)!;;
+    let paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceFactory.getInstance()!.getInstance(orderReview)!;;
     
 
 
@@ -231,10 +240,11 @@ orderReview!.setPaymentInfo(orderPaymentInfo);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
@@ -249,8 +259,10 @@ orderReview!.setPaymentInfo(orderPaymentInfo);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -258,27 +270,26 @@ orderReview!.setPaymentInfo(orderPaymentInfo);
             
     generateFromTestData(transformInfoInterface: TransformInfoInterface): PaymentTransactionInterface{
 
-        try {
-            
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
+ try { 
+    let httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var propertiesHashMap: HashMap<any, any> = httpTransformInfoInterface!.getPropertiesHashMap()!;;
+    let propertiesHashMap: HashMap<any, any> = httpTransformInfoInterface!.getPropertiesHashMap()!;;
     
 
-    var pageContext: PageContext = httpTransformInfoInterface!.getPageContext()!;;
+    let pageContext: PageContext = httpTransformInfoInterface!.getPageContext()!;;
     
 
-    var weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);;
+    let weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);;
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;;
     
 
-    var httpServletRequest: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
+    let httpServletRequest: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
     
 
-    var gatewayName: string = weblisketSession!.getPaymentMethod() as string;;
+    let gatewayName: string = weblisketSession!.getPaymentMethod() as string;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(gatewayName))
@@ -290,20 +301,20 @@ orderReview!.setPaymentInfo(orderPaymentInfo);
                                     }
                                 
 
-    var transactionType: string = httpServletRequest!.getParameter(PaymentData.TRANSACTIONTYPE)!;;
+    let transactionType: string = httpServletRequest!.getParameter(PaymentData.TRANSACTIONTYPE)!;;
     
 
-    var tenderType: string = httpServletRequest!.getParameter(PaymentData.TENDERTYPE)!;;
+    let tenderType: string = httpServletRequest!.getParameter(PaymentData.TENDERTYPE)!;;
     
 
-    var payment: Payment = new Payment();;
+    let payment: Payment = new Payment();;
     
 payment.setTransactionType(transactionType);
     
 payment.setTenderType(tenderType);
     
 
-    var orderReview: OrderHistory = new OrderHistory(new Basket());;
+    let orderReview: OrderHistory = new OrderHistory(new Basket());;
     
 orderReview!.setStoreName(storeFrontInterface!.getName());
     
@@ -312,7 +323,7 @@ orderReview!.setPaymentMethod(gatewayName);
 orderReview!.setUserName("testing");
     
 
-    var orderId: string = httpServletRequest!.getParameter("orderNumber")!;;
+    let orderId: string = httpServletRequest!.getParameter("orderNumber")!;;
     
 
                         if(orderId == 
@@ -325,28 +336,28 @@ orderReview!.setUserName("testing");
 orderReview!.setId(orderId);
     
 
-    var account: string = httpServletRequest!.getParameter("account")!;;
+    let account: string = httpServletRequest!.getParameter("account")!;;
     
 
-    var expirationDate: string = httpServletRequest!.getParameter("expirationDate")!;;
+    let expirationDate: string = httpServletRequest!.getParameter("expirationDate")!;;
     
 
-    var checkNumber: string = httpServletRequest!.getParameter("checkNumber")!;;
+    let checkNumber: string = httpServletRequest!.getParameter("checkNumber")!;;
     
 
-    var driversLicense: string = httpServletRequest!.getParameter("driversLicense")!;;
+    let driversLicense: string = httpServletRequest!.getParameter("driversLicense")!;;
     
 
-    var magneticInkCheckReader: string = httpServletRequest!.getParameter("magneticInkCheckReader")!;;
+    let magneticInkCheckReader: string = httpServletRequest!.getParameter("magneticInkCheckReader")!;;
     
 
-    var aba: string = httpServletRequest!.getParameter("aba")!;;
+    let aba: string = httpServletRequest!.getParameter("aba")!;;
     
 
-    var accountType: string = httpServletRequest!.getParameter("accountType")!;;
+    let accountType: string = httpServletRequest!.getParameter("accountType")!;;
     
 
-    var name: string = httpServletRequest!.getParameter("name")!;;
+    let name: string = httpServletRequest!.getParameter("name")!;;
     
 payment.setName(name);
     
@@ -365,19 +376,19 @@ payment.setAba(aba);
 payment.setAccountType(accountType);
     
 
-    var street: string = httpServletRequest!.getParameter("street")!;;
+    let street: string = httpServletRequest!.getParameter("street")!;;
     
 
-    var city: string = httpServletRequest!.getParameter("city")!;;
+    let city: string = httpServletRequest!.getParameter("city")!;;
     
 
-    var state: string = httpServletRequest!.getParameter("state")!;;
+    let state: string = httpServletRequest!.getParameter("state")!;;
     
 
-    var zip: string = httpServletRequest!.getParameter("zip")!;;
+    let zip: string = httpServletRequest!.getParameter("zip")!;;
     
 
-    var streetAddress: StreetAddress = new StreetAddress();;
+    let streetAddress: StreetAddress = new StreetAddress();;
     
 streetAddress!.setName(name);
     
@@ -390,10 +401,10 @@ streetAddress!.setState(state);
 streetAddress!.setCode(zip);
     
 
-    var email: string = httpServletRequest!.getParameter("email")!;;
+    let email: string = httpServletRequest!.getParameter("email")!;;
     
 
-    var amount: string = httpServletRequest!.getParameter("amount")!;;
+    let amount: string = httpServletRequest!.getParameter("amount")!;;
     
 orderReview!.setTotal(new Money(amount));
     
@@ -411,7 +422,7 @@ orderReview!.setBillingAddress(streetAddress);
 orderReview!.setPaymentInfo(payment);
     
 
-    var paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceFactory.getInstance()!.getInstance(orderReview)!;;
+    let paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceFactory.getInstance()!.getInstance(orderReview)!;;
     
 
 
@@ -419,10 +430,11 @@ orderReview!.setPaymentInfo(payment);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return paymentTransactionInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
@@ -437,12 +449,12 @@ orderReview!.setPaymentInfo(payment);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

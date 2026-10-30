@@ -48,11 +48,9 @@ export interface PickupBehaviorInterface {
 
                 //@Throws(Exception.constructor)
             
-    doPickup(pickupProcessorInterface: PickupProcessorInterface)
+    doPickup(pickupProcessorInterface: PickupProcessorInterface): void;
 
-    doPickupLayer(pickupLayerInterface: PickedUpLayerInterface)
+    doPickupLayer(pickupLayerInterface: PickedUpLayerInterface): void;
 
 }
-
-
 

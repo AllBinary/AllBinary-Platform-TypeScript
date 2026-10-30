@@ -43,11 +43,9 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 export interface PaintableInterface {
         
 
-    paint(graphics: Graphics)
+    paint(graphics: Graphics): void;
 
-    paintThreed(graphics: Graphics)
+    paintThreed(graphics: Graphics): void;
 
 }
-
-
 

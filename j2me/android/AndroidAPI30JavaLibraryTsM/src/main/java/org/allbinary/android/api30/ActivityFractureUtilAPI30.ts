@@ -72,10 +72,10 @@ export class ActivityFractureUtilAPI30 extends ActivityFractureUtilAPI5 {
 
     public setFullScreen(activity: Activity){
 
-    var window: Window = activity.getWindow()!;;
+    let window: Window = activity.getWindow()!;;
     
 
-    var windowInsetsController: WindowInsetsControllerCompat = WindowCompat.getInsetsController(window, window.getDecorView())!;;
+    let windowInsetsController: WindowInsetsControllerCompat = WindowCompat.getInsetsController(window, window.getDecorView())!;;
     
 windowInsetsController!.hide(WindowInsetsCompat.Type.systemBars());
     
@@ -85,6 +85,4 @@ windowInsetsController!.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAV
 
 
 }
-
-
 

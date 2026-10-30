@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { UserDomNode } from '../../../org/allbinary/business/user/UserDomNode.js';
 //not GWT import const UserDomNode
@@ -40,6 +42,7 @@ import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeIn
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -90,22 +93,21 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var usersNode: Node = document.createElement(UsersData.NAME)!;;
+ try { 
+    let usersNode: Node = document.createElement(UsersData.NAME)!;;
     
 
-    var size: number = this.userVector!.size()!;;
+    let size: number = this.userVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var userInterface: User = this.userVector!.get(index) as User;;
+    let userInterface: User = this.userVector!.get(index) as User;;
     
 
                         if(userInterface != 
@@ -114,7 +116,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         
                                     {
                                     
-    var node: Node = new UserDomNode(userInterface).toXmlNode(document)!;;
+    let node: Node = new UserDomNode(userInterface).toXmlNode(document)!;;
     
 usersNode!.appendChild(node);
     
@@ -135,10 +137,11 @@ usersNode!.appendChild(node);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return usersNode;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
@@ -154,8 +157,10 @@ usersNode!.appendChild(node);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -169,8 +174,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -178,10 +182,11 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -196,12 +201,12 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

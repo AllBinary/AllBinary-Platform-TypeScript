@@ -32,6 +32,7 @@ import { MotionGestureReceiveInterfaceFactory } from '../../../../../org/allbina
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -77,7 +78,7 @@ this.addListener();
 
     public addListener(){
 
-    var motionGesturesHandler: BasicMotionGesturesHandler = BasicMotionGesturesHandler.getInstance()!;;
+    let motionGesturesHandler: BasicMotionGesturesHandler = BasicMotionGesturesHandler.getInstance()!;;
     
 motionGesturesHandler!.addListenerInterface(this.gameMotionGestureListener);
     
@@ -85,6 +86,4 @@ motionGesturesHandler!.addListenerInterface(this.gameMotionGestureListener);
 
 
 }
-
-
 

@@ -47,13 +47,11 @@ import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.j
 export interface HighScoresFactoryInterface {
         
 
-    fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener)
+    fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener): void;
 
-    fetchHighScoresPreload(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean)
+    fetchHighScoresPreload(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean): void;
 
-    createHighScoresHelper(): HighScoresHelperBaseInterface
+    createHighScoresHelper(): HighScoresHelperBaseInterface;
 
 }
-
-
 

@@ -58,15 +58,22 @@ export class InitDbHelperFactory
         
 
     private static readonly CLASSNAME: string = "org.allbinary.business.installer.InitDbCrypted";
-
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 2) return this.getInstance$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(LicensingException.constructor)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, databaseConnectionInfoInterface: DatabaseConnectionInfoInterface): any{
+    public static getInstance$overload1(abeClientInformation: AbeClientInformationInterface, databaseConnectionInfoInterface: DatabaseConnectionInfoInterface): any{
 
-    var params: any[] = new Array(1);;
+    let params: any[] = new Array(1);;
     
 
-    var classes: Function[] = new Array(1);;
+    let classes: Function[] = new Array(1);;
     
 classes[0]= 
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
@@ -75,7 +82,7 @@ classes[0]=
 params[0]= databaseConnectionInfoInterface;
     
 
-    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, classes, params)!;;
+    let anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, classes, params)!;;
     
 
 
@@ -88,9 +95,9 @@ params[0]= databaseConnectionInfoInterface;
 
                 //@Throws(LicensingException.constructor)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface): any{
+    public static getInstance$overload2(abeClientInformation: AbeClientInformationInterface): any{
 
-    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, 
+    let anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, 
                             null, 
                             null)!;;
     
@@ -110,6 +117,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -28,6 +28,7 @@ import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
 
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+type MathUtil<T = any, U = any> = typeof MathUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MathUtil;
 
 
 
@@ -69,10 +70,10 @@ export class LayerDistanceUtil
 
     public getDistance(layerInterface: AllBinaryLayer, layerInterface2: AllBinaryLayer): number{
 
-    var dx: number = (layerInterface!.getXP() +layerInterface!.getHalfWidth()) -(layerInterface2!.getXP() +layerInterface2!.getHalfWidth());;
+    let dx: number = (layerInterface!.getXP() +layerInterface!.getHalfWidth()) -(layerInterface2!.getXP() +layerInterface2!.getHalfWidth());;
     
 
-    var dy: number = (layerInterface!.getYP() +layerInterface!.getHalfHeight()) -(layerInterface2!.getYP() +layerInterface2!.getHalfHeight());;
+    let dy: number = (layerInterface!.getYP() +layerInterface!.getHalfHeight()) -(layerInterface2!.getYP() +layerInterface2!.getHalfHeight());;
     
 
 
@@ -85,13 +86,13 @@ export class LayerDistanceUtil
 
     public getDistance3D(layerInterface: AllBinaryLayer, layerInterface2: AllBinaryLayer): number{
 
-    var dx: number = (layerInterface!.getXP() +layerInterface!.getHalfWidth()) -(layerInterface2!.getXP() +layerInterface2!.getHalfWidth());;
+    let dx: number = (layerInterface!.getXP() +layerInterface!.getHalfWidth()) -(layerInterface2!.getXP() +layerInterface2!.getHalfWidth());;
     
 
-    var dy: number = (layerInterface!.getYP() +layerInterface!.getHalfHeight()) -(layerInterface2!.getYP() +layerInterface2!.getHalfHeight());;
+    let dy: number = (layerInterface!.getYP() +layerInterface!.getHalfHeight()) -(layerInterface2!.getYP() +layerInterface2!.getHalfHeight());;
     
 
-    var dz: number = (layerInterface!.getZP() +layerInterface!.getHalfDepth()) -(layerInterface2!.getZP() +layerInterface2!.getHalfDepth());;
+    let dz: number = (layerInterface!.getZP() +layerInterface!.getHalfDepth()) -(layerInterface2!.getZP() +layerInterface2!.getHalfDepth());;
     
 
 
@@ -104,10 +105,10 @@ export class LayerDistanceUtil
 
     public getDistanceAt(layerInterface: AllBinaryLayer, point: GPoint): number{
 
-    var dx: number = layerInterface!.getXP() -point.getX();;
+    let dx: number = layerInterface!.getXP() -point.getX();;
     
 
-    var dy: number = layerInterface!.getYP() -point.getY();;
+    let dy: number = layerInterface!.getYP() -point.getY();;
     
 
 
@@ -119,6 +120,4 @@ export class LayerDistanceUtil
 
 
 }
-
-
 

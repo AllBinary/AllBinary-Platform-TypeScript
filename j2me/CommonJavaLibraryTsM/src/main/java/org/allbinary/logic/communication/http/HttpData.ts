@@ -22,6 +22,7 @@
         
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -71,7 +72,7 @@ private constructor (){
 
             super();
         
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 this.EQUALS= commonSeps!.EQUALS;
     
@@ -83,6 +84,4 @@ this.URL_PARAM_SEP= commonSeps!.QUESTION;
 
 
 }
-
-
 

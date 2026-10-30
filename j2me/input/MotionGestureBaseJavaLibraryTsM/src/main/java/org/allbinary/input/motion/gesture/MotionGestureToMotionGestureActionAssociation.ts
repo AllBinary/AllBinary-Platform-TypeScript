@@ -25,6 +25,7 @@ import { CompleteMotionGestureInputEvent } from '../../../../../org/allbinary/ga
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -98,7 +99,7 @@ this.motionGestureAction= commandAction;
 
     public isMotionGestureArrayEquals(aList: BasicArrayList): boolean{
 
-    var size: number = aList!.size()!;;
+    let size: number = aList!.size()!;;
     
 
                         if(this.list.size() != size)
@@ -118,7 +119,7 @@ this.motionGestureAction= commandAction;
 
 
                         for (
-    var i: number = size -1;i >= 0; i--)
+    let i: number = size -1;i >= 0; i--)
         {
 
                         if(aList!.objectArray[i] != this.list.objectArray[i])
@@ -145,6 +146,4 @@ this.motionGestureAction= commandAction;
 
 
 }
-
-
 

@@ -77,7 +77,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var inputMappingEventListenerInterface: InputMappingEventListenerInterface = eventListenerInterface as InputMappingEventListenerInterface;;
+    let inputMappingEventListenerInterface: InputMappingEventListenerInterface = eventListenerInterface as InputMappingEventListenerInterface;;
     
 inputMappingEventListenerInterface!.onInputMappingEvent(eventObject as InputMappingEvent);
     
@@ -85,6 +85,4 @@ inputMappingEventListenerInterface!.onInputMappingEvent(eventObject as InputMapp
 
 
 }
-
-
 

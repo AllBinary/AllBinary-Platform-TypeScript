@@ -49,9 +49,7 @@ export interface PressGameKeyEventListenerInterface extends EventListenerInterfa
 
                 //@Throws(Exception.constructor)
             
-    onPressGameKeyEvent(gameKeyEvent: GameKeyEvent)
+    onPressGameKeyEvent(gameKeyEvent: GameKeyEvent): void;
 
 }
-
-
 

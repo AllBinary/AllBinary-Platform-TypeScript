@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileInputStream.js';
 //not GWT import const AbFileInputStream
@@ -33,9 +34,11 @@ import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js'
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -91,22 +94,24 @@ private constructor (){
 
     public loadFileAsList(file: AbFile, max: number, byteArray1: number[]): BasicArrayList{
 
-    var inputStream: AbFileInputStream = 
+    let inputStream: AbFileInputStream = 
                 null
             ;;
     
 
-        try {
-            inputStream= new AbFileInputStream(file);
+ try { inputStream= new AbFileInputStream(file);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, e);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -117,6 +122,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, 
 
 
 }
-
-
 

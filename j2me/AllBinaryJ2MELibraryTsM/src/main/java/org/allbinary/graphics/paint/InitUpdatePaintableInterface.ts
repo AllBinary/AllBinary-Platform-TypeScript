@@ -50,5 +50,3 @@ export interface InitUpdatePaintableInterface extends InitInterface, UpdateInter
 
 }
 
-
-

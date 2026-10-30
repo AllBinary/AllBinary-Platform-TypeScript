@@ -36,6 +36,7 @@ import { CategoryInterface } from '../../../../../org/allbinary/business/categor
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CryptFileWriter } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
 //not GWT import const CryptFileWriter
@@ -45,6 +46,7 @@ import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -85,7 +87,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, "CategoryPrivateTree(CategoryFactoryInterface categoryFactoryInterface)");
     
@@ -111,10 +113,10 @@ this.categoryFactoryInterface= categoryFactoryInterface;
                                     }
                                 
 
-    var document: Document = new CategoryComponent(categoryInterface).toXmlDoc()!;;
+    let document: Document = new CategoryComponent(categoryInterface).toXmlDoc()!;;
     
 
-    var cryptFileWriter: CryptFileWriter = new CryptFileWriter(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);;
+    let cryptFileWriter: CryptFileWriter = new CryptFileWriter(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);;
     
 cryptFileWriter!.write(categoryInterface!.getFilePath(), document);
     
@@ -139,7 +141,7 @@ cryptFileWriter!.write(categoryInterface!.getFilePath(), document);
                         
                                     {
                                     
-    var categoryFile: AbFile = AbFile.createAbFileFromAbPath(categoryInterface!.getFilePath())!;;
+    let categoryFile: AbFile = AbFile.createAbFileFromAbPath(categoryInterface!.getFilePath())!;;
     
 
                         if(categoryFile!.delete())
@@ -177,6 +179,4 @@ cryptFileWriter!.write(categoryInterface!.getFilePath(), document);
 
 
 }
-
-
 

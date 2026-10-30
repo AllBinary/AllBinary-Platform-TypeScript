@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { ShippingAddressData } from '../../../../org/allbinary/business/user/address/ShippingAddressData.js';
 //not GWT import const ShippingAddressData
@@ -40,6 +42,7 @@ import { ValidationComponentInterface } from '../../../../org/allbinary/logic/co
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -85,10 +88,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
     public isValid(): Boolean{
 
-    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
+    let billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 
-    var streetAddressList: BasicArrayList = billingAddressesEntity!.get()!;;
+    let streetAddressList: BasicArrayList = billingAddressesEntity!.get()!;;
     
 
                         if(streetAddressList == 
@@ -100,23 +103,23 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var size: number = streetAddressList!.size()!;;
+    let size: number = streetAddressList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
+    let aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
     
 
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
@@ -128,7 +131,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -139,7 +142,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 }
 
@@ -175,6 +178,4 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
 }
-
-
 

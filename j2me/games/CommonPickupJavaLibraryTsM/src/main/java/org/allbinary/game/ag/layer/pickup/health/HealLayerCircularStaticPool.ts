@@ -71,13 +71,13 @@ public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterfa
             
     public visit(sourceLayerInterface: AllBinaryLayer){
 
-    var healLayer: HealLayer = this.getNextInstance() as HealLayer;;
+    let healLayer: HealLayer = this.getNextInstance() as HealLayer;;
     
 
-    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface = sourceLayerInterface as unknown as HealthInterfaceCompositeInterface;;
+    let healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface = sourceLayerInterface as unknown as HealthInterfaceCompositeInterface;;
     
 
-    var healthInterface: HealthInterface = healthInterfaceCompositeInterface!.getHealthInterface()!;;
+    let healthInterface: HealthInterface = healthInterfaceCompositeInterface!.getHealthInterface()!;;
     
 healLayer!.visit(healthInterface);
     
@@ -85,6 +85,4 @@ healLayer!.visit(healthInterface);
 
 
 }
-
-
 

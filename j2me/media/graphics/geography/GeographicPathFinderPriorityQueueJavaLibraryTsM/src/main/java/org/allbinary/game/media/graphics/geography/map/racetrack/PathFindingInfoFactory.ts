@@ -49,6 +49,7 @@ import { PathFindingNodeCostInfoFactory } from '../../../../../../../../org/allb
 
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+type BasicArrayListS<T = any, U = any> = typeof BasicArrayListS extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListS;
 
 
 
@@ -110,7 +111,7 @@ this.pathFinder= new PathFinder();
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, mapArray: number[][]): PathFindingInfo{
 
-    var pathFindingInfo: PathFindingInfo = new PathFindingInfo(this.pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface(), new BasicArrayListS(1), new BasicArrayListS(1));;
+    let pathFindingInfo: PathFindingInfo = new PathFindingInfo(this.pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface(), new BasicArrayListS(1), new BasicArrayListS(1));;
     
 RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.init();
     
@@ -149,30 +150,30 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray);
             
     buildPathFindingNodes(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
 
-    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
+    let geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
     
 
-    var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
+    let allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var totalColumns: number = allBinaryTiledLayer!.getColumns()!;;
+    let totalColumns: number = allBinaryTiledLayer!.getColumns()!;;
     
 
-    var totalRows: number = allBinaryTiledLayer!.getRows()!;;
+    let totalRows: number = allBinaryTiledLayer!.getRows()!;;
     
 
 
 
 
                         for (
-    var column: number = 0;column < totalColumns; column++)
+    let column: number = 0;column < totalColumns; column++)
         {
 
 
 
 
                         for (
-    var row: number = 0;row < totalRows; row++)
+    let row: number = 0;row < totalRows; row++)
         {
 this.buildPathFindingNodesForCellPosition(geographicMapInterface, pathFindingInfo, mapArray, geographicMapCellPositionFactory!.getAt(column, row));
     
@@ -184,6 +185,4 @@ this.buildPathFindingNodesForCellPosition(geographicMapInterface, pathFindingInf
 
 
 }
-
-
 

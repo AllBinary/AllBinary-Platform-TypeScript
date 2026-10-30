@@ -42,6 +42,7 @@ import { URLGLOBALS } from '../../../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CryptFileReader } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
@@ -54,9 +55,11 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TransformInfoHttpStoreInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreInterface.js';
 //not GWT import const TransformInfoHttpStoreInterface
@@ -117,17 +120,16 @@ this.basicURIResolver= basicURIResolver;
             
     public resolve(href: string, base: string): Source{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.parentTransformInfoInterface as TransformInfoHttpStoreInterface;;
+    let transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.parentTransformInfoInterface as TransformInfoHttpStoreInterface;;
     
 stringBuffer!.append(URLGLOBALS.getMainPath())!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)!.append(transformInfoHttpStoreInterface!.getStoreName())!.append(AbPathData.getInstance()!.SEPARATOR)!.append(href);
     
 
-    var fileAbPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;;
+    let fileAbPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
@@ -168,55 +170,58 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.uriResolverStrings!.RESO
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StreamSource(new CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).getInputStream(fileAbPath));
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof TransformerException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
 
 
                             throw new TransformerException(e);
                     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
     public toString(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +"{Store Name if Any}/{import url}";
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "StoreUriResolver - Does not work without webapp path should be changed";
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

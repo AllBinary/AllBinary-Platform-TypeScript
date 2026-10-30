@@ -60,6 +60,7 @@ import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { FileUtil } from '../../../../../org/allbinary/logic/io/file/FileUtil.js';
 //not GWT import const FileUtil
@@ -72,6 +73,7 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -156,21 +158,21 @@ this.logUtil!.putF("Installed: " +installed, this, "setIntalled");
             
     public save(){
 
-    var document: Document = DomDocumentHelper.create()!;;
+    let document: Document = DomDocumentHelper.create()!;;
     
 
                     //Otherwise - statement - EmptyStmt
 
 
-    var file: File = new File(FILENAME);;
+    let file: File = new File(FILENAME);;
     
 FileUtil.getInstance()!.copy(new AbPath(file.getAbsolutePath(), StringUtil.getInstance()!.EMPTY_STRING), new AbPath(file.getAbsolutePath() +".bak.xml", StringUtil.getInstance()!.EMPTY_STRING));
     
 
-    var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration.constructor)!;;
+    let jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration)!;;
     
 
-    var marshaller: Marshaller = jaxbContext!.createMarshaller()!;;
+    let marshaller: Marshaller = jaxbContext!.createMarshaller()!;;
     
 marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
     
@@ -182,6 +184,4 @@ DomDocumentFileHelper.save(FileWrapperUtil.wrapFile(file), document);
 
 
 }
-
-
 

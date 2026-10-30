@@ -33,12 +33,14 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
 
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HashtableUtil;
 
 import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
 //not GWT import const BasicAI
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -75,10 +77,10 @@ public constructor (hashtable: ABHashtable<any, any>, ownerLayerInterface: AllBi
 this.keys= new Array(hashtable.size());
     
 
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
+    let objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
     
 
-    var size: number = objectArray!.length
+    let size: number = objectArray!.length
                 ;;
     
 
@@ -86,7 +88,7 @@ this.keys= new Array(hashtable.size());
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.keys[index]= hashtable.get(objectArray[index]!) as Integer;
     
@@ -107,7 +109,7 @@ this.keys[index]= hashtable.get(objectArray[index]!) as Integer;
 
 
                         for (
-    var index: number = 0;index < this.keys.length; index++)
+    let index: number = 0;index < this.keys.length; index++)
         {
 super.processKeyAI(this.keys[index]!.intValue());
     
@@ -173,6 +175,4 @@ this.on= on;
 
 
 }
-
-
 

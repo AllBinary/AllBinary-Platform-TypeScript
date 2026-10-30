@@ -40,9 +40,7 @@
 export interface PositionInterface {
         
 
-    setPosition(x: number, y: number, z: number)
+    setPosition(x: number, y: number, z: number): void;
 
 }
-
-
 

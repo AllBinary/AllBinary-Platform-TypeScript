@@ -25,6 +25,7 @@ import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 
 
@@ -52,7 +53,7 @@ export class CanvasUtil
 
     public static getKeyName(key: number): string{
 
-    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
+    let commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 
                         if(key == Canvas.UP)
@@ -135,6 +136,4 @@ private constructor (){
 
 
 }
-
-
 

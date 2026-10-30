@@ -42,7 +42,7 @@ export class OpenGLThreadUtil
 }
 
 
-    public set(glSurfaceView: any = {}){
+    public set(glSurfaceView: any){
 }
 
 
@@ -55,6 +55,4 @@ export class OpenGLThreadUtil
 
 
 }
-
-
 

@@ -50,9 +50,9 @@ export class ClassLoaderUtil
 
                 //@Throws(Exception.constructor)
             
-    public static getName(anyType: any = {}): string{
+    public static getName(anyType: any): string{
 
-    var classLoader: ClassLoader = anyType!.constructor.namegetClassLoader()!;;
+    let classLoader: ClassLoader = anyType!.constructor.namegetClassLoader()!;;
     
 
                         if(classLoader != 
@@ -84,6 +84,4 @@ private constructor (){
 
 
 }
-
-
 

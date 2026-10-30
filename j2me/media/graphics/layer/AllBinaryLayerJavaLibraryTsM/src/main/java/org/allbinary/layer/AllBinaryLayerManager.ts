@@ -91,7 +91,7 @@ this.basicLayerProcessorArray= layerProcessorArray;
 
     public log(){
 
-    var size: number = this.basicLayerProcessorArray!.length
+    let size: number = this.basicLayerProcessorArray!.length
                 ;;
     
 
@@ -99,10 +99,10 @@ this.basicLayerProcessorArray= layerProcessorArray;
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var layerProcessorInterface: LayerProcessor = this.basicLayerProcessorArray[index]!;;
+    let layerProcessorInterface: LayerProcessor = this.basicLayerProcessorArray[index]!;;
     
 }
 
@@ -151,14 +151,14 @@ this.createLayerManagerEvent!.setLayerInterface(layerInterface);
 this.layerManagerEventHandler!.fireEvent(this.createLayerManagerEvent);
     
 
-    var layerProcessorInterface: LayerProcessor;;
+    let layerProcessorInterface: LayerProcessor;;
     
 
 
 
 
                         for (
-    var index: number = this.basicLayerProcessorArray!.length
+    let index: number = this.basicLayerProcessorArray!.length
                 ;--index >= 0; )
         {
 layerProcessorInterface= this.basicLayerProcessorArray[index]!;
@@ -186,14 +186,14 @@ this.deleteLayerManagerEvent!.setLayerInterface(layerInterface);
 this.layerManagerEventHandler!.fireDeleteEvent(this.deleteLayerManagerEvent);
     
 
-    var layerProcessorInterface: LayerProcessor;;
+    let layerProcessorInterface: LayerProcessor;;
     
 
 
 
 
                         for (
-    var index: number = this.basicLayerProcessorArray!.length
+    let index: number = this.basicLayerProcessorArray!.length
                 ;--index >= 0; )
         {
 layerProcessorInterface= this.basicLayerProcessorArray[index]!;
@@ -211,10 +211,10 @@ super.remove(layerInterface);
             
     public process(){
 
-    var layerProcessorInterface: LayerProcessor;;
+    let layerProcessorInterface: LayerProcessor;;
     
 
-    var size: number = this.basicLayerProcessorArray!.length
+    let size: number = this.basicLayerProcessorArray!.length
                 ;;
     
 
@@ -222,7 +222,7 @@ super.remove(layerInterface);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 layerProcessorInterface= this.basicLayerProcessorArray[index]!;
     
@@ -237,10 +237,10 @@ layerProcessorInterface!.process(this);
             
     public cleanup(){
 
-    var layerProcessorInterface: LayerProcessor;;
+    let layerProcessorInterface: LayerProcessor;;
     
 
-    var size: number = this.basicLayerProcessorArray!.length
+    let size: number = this.basicLayerProcessorArray!.length
                 ;;
     
 
@@ -248,7 +248,7 @@ layerProcessorInterface!.process(this);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 layerProcessorInterface= this.basicLayerProcessorArray[index]!;
     
@@ -262,6 +262,4 @@ super.cleanup();
 
 
 }
-
-
 

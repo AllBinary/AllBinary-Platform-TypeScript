@@ -36,6 +36,7 @@ import { AllBinaryGameLayerManager } from '../../../../../../org/allbinary/game/
 
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+type MyRandomFactory<T = any, U = any> = typeof MyRandomFactory extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MyRandomFactory;
 
 import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 //not GWT import const DisplayInfoSingleton
@@ -63,6 +64,7 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -139,17 +141,17 @@ super.processKeyAI(this.keyDirection);
                         
                                     {
                                     
-    var layerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    let layerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var currentOwnerLayerX: number = layerInterface!.getXP()!;;
+    let currentOwnerLayerX: number = layerInterface!.getXP()!;;
     
 
                         if(currentOwnerLayerX <  -layerInterface!.getWidth())
                         
                                     {
                                     
-    var y: number = MyRandomFactory.getInstance()!.getAbsoluteNextIntAllowZero(50)!;;
+    let y: number = MyRandomFactory.getInstance()!.getAbsoluteNextIntAllowZero(50)!;;
     
 layerInterface!.setPosition(this.displayInfoSingleton!.getLastWidth() +layerInterface!.getWidth() +50, y, layerInterface!.getZP());
     
@@ -169,10 +171,10 @@ this.secondaryPlayerQueue!.add(this.sound);
                                     super.processKeyAI(Canvas.KEY_NUM1);
     
 
-    var gameLayerManager: AllBinaryGameLayerManager = allBinaryLayerManager as AllBinaryGameLayerManager;;
+    let gameLayerManager: AllBinaryGameLayerManager = allBinaryLayerManager as AllBinaryGameLayerManager;;
     
 
-    var FIRE: number = (gameLayerManager!.getGameInfo()!.getCurrentLevel() +12)>>2;;
+    let FIRE: number = (gameLayerManager!.getGameInfo()!.getCurrentLevel() +12)>>2;;
     
 
                         if(FIRE > this.MAX_FIRE)
@@ -210,6 +212,4 @@ this.firedIndex++;
 
 
 }
-
-
 

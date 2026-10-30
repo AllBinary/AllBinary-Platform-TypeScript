@@ -60,5 +60,3 @@ DownGameKeyEventHandler.getInstance()!.removeAllListeners();
 
 }
 
-
-

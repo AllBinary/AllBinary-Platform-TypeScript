@@ -25,6 +25,7 @@ import { XmlDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/do
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StoreTransformer } from '../../../../../org/allbinary/logic/visual/transform/StoreTransformer.js';
 //not GWT import const StoreTransformer
@@ -37,6 +38,7 @@ import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visua
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { HttpComponentView } from '../../../../../views/HttpComponentView.js';
 //not GWT import const HttpComponentView
@@ -91,8 +93,7 @@ this.setTransformDocumentInterface(TransformStoreDocumentFactory.getInstance(thi
             
     public view(): string{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -104,10 +105,10 @@ this.setTransformDocumentInterface(TransformStoreDocumentFactory.getInstance(thi
 this.toXmlDoc();
     
 
-    var success: string = XmlDocumentHelper.toString(this.getDoc())!;;
+    let success: string = XmlDocumentHelper.toString(this.getDoc())!;;
     
 
-    var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
+    let result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
     
 
 
@@ -115,10 +116,11 @@ this.toXmlDoc();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -133,12 +135,12 @@ this.toXmlDoc();
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

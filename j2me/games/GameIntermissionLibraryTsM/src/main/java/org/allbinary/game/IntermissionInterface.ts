@@ -45,15 +45,13 @@ import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js'
 export interface IntermissionInterface {
         
 
-    getTimeDelayHelper(): TimeDelayHelper
+    getTimeDelayHelper(): TimeDelayHelper;
 
-    isEnabled(): boolean
+    isEnabled(): boolean;
 
-    setEnabled(value: boolean)
+    setEnabled(value: boolean): void;
 
-    setListener(enableListener: IntermissionEnableListenerInterface)
+    setListener(enableListener: IntermissionEnableListenerInterface): void;
 
 }
-
-
 

@@ -24,15 +24,19 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { HardwareInterface } from '../../../../../../org/allbinary/logic/system/hardware/HardwareInterface.js';
 //not GWT import const HardwareInterface
@@ -78,9 +82,11 @@ import { VideoInterface } from '../../../../../../org/allbinary/logic/system/har
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -140,8 +146,7 @@ public constructor (){
 
             super();
         
-        try {
-            this.componentInterfaceVector= new BasicArrayListD();
+ try { this.componentInterfaceVector= new BasicArrayListD();
     
 this.videoInterfaceVector= new BasicArrayListD();
     
@@ -170,17 +175,20 @@ this.monitorInterfaceVector= new BasicArrayListD();
                         
                                     throw new Exception("Not Enough Data For A Valid License On Windows");
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -404,20 +412,20 @@ this.monitorInterfaceVector= new BasicArrayListD();
 
     public toString(): string{
 
-    var hardwareBuffer: StringMaker = new StringMaker();;
+    let hardwareBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = this.componentInterfaceVector!.size()!;;
+    let size: number = this.componentInterfaceVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;;
+    let componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;;
     
 hardwareBuffer!.append(componentInterface!.toString());
     
@@ -455,6 +463,4 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 
 
 }
-
-
 

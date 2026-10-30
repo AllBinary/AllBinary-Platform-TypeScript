@@ -195,5 +195,3 @@ add(this.modifierJPanel);
 
 }
 
-
-

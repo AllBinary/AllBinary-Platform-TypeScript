@@ -118,7 +118,7 @@ this.textureVertexFloatBuffer!.rewind();
 
     public set(gl: GL){
 
-    var gl10: GL10 = gl as GL10;;
+    let gl10: GL10 = gl as GL10;;
     
 
                         if(super.initTexture(gl10))
@@ -273,6 +273,4 @@ gl.glDisable(GL10.GL_TEXTURE_2D);
 
 
 }
-
-
 

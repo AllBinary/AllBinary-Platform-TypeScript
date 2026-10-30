@@ -52,9 +52,11 @@ import { SWTJOGLProcessor } from '../../../../../org/allbinary/graphics/threed/S
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -100,30 +102,25 @@ export class MyFormUtil
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;;
+    let isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;;
     
 
-    var TOTAL_CHAR_WIDTH: number = SWTJOGLProcessor.getInstance()!.isJOGL() && isOpenGL
-                        ?       
-                                2
-                                :
-
-                            3;;
+    let TOTAL_CHAR_WIDTH: number = (SWTJOGLProcessor.getInstance()!.isJOGL() && isOpenGL ? 2 : 3);;
     
 
-    var width: number = MyFontProcessor.defaultStringWidth(font, TOTAL_CHAR_WIDTH)!;;
+    let width: number = MyFontProcessor.defaultStringWidth(font, TOTAL_CHAR_WIDTH)!;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
                         if(displayInfo!.getLastHeight() < 320)
@@ -154,6 +151,4 @@ export class MyFormUtil
 
 
 }
-
-
 

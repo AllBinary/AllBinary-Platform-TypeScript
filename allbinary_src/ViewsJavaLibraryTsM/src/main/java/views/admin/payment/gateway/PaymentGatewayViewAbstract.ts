@@ -70,10 +70,10 @@ this.getFormData(this.getPageContext()!.getRequest() as HttpServletRequest);
 
     public getFormData(request: HttpServletRequest){
 
-    var storeName: string = this.getWeblisketSession()!.getStoreName()!;;
+    let storeName: string = this.getWeblisketSession()!.getStoreName()!;;
     
 
-    var gatewayName: string = request.getParameter(PaymentGatewayData.NAME.toString())!;;
+    let gatewayName: string = request.getParameter(PaymentGatewayData.NAME.toString())!;;
     
 this.setPaymentGatewayPrimaryKey(new PaymentGatewayPrimaryKey(storeName, gatewayName));
     
@@ -97,6 +97,4 @@ this.paymentGatewayPrimaryKey= paymentGatewayPrimaryKey;
 
 
 }
-
-
 

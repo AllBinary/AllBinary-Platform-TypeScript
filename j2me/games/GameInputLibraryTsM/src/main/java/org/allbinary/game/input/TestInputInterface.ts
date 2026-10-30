@@ -43,19 +43,17 @@ import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/Pai
 export interface TestInputInterface extends PaintableInterface {
         
 
-    up()
+    up(): void;
 
-    down()
+    down(): void;
 
-    left()
+    left(): void;
 
-    right()
+    right(): void;
 
-    strafeLeft()
+    strafeLeft(): void;
 
-    strafeRight()
+    strafeRight(): void;
 
 }
-
-
 

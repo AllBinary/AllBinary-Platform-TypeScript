@@ -40,9 +40,7 @@
 export interface Controllable2 {
         
 
-    setVolume(leftVolume: number, rightVolume: number)
+    setVolume(leftVolume: number, rightVolume: number): void;
 
 }
-
-
 

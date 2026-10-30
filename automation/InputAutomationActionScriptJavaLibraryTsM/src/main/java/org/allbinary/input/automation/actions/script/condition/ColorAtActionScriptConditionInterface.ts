@@ -48,17 +48,15 @@ import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/im
 export interface ColorAtActionScriptConditionInterface {
         
 
-    getPoint(): Point
+    getPoint(): Point;
 
-    setPoint(point: Point)
+    setPoint(point: Point): void;
 
-    getColorRangeInterface(): ColorRangeInterface
+    getColorRangeInterface(): ColorRangeInterface;
 
-    setColorRangeInterface(colorRangeInterface: ColorRangeInterface)
+    setColorRangeInterface(colorRangeInterface: ColorRangeInterface): void;
 
-    log()
+    log(): void;
 
 }
-
-
 

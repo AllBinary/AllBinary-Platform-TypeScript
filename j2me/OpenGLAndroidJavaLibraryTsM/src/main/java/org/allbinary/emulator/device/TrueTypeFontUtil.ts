@@ -49,6 +49,7 @@ import { Typeface } from '../../../../android/graphics/Typeface.js';
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
@@ -64,12 +65,15 @@ import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLES
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
 //not GWT import const AndroidImageInterface
@@ -132,37 +136,39 @@ private constructor (){
 
     public saveFontAtlasAsFile(){
 
-        try {
-            
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+ try { 
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var file: File = ResourceUtil.getInstance()!.getContext()!.getFilesDir()!;;
+    let file: File = ResourceUtil.getInstance()!.getContext()!.getFilesDir()!;;
     
 
-    var path: string = file.getAbsolutePath() +CanvasStrings.getInstance()!.FONT_ATLAS;;
+    let path: string = file.getAbsolutePath() +CanvasStrings.getInstance()!.FONT_ATLAS;;
     
 this.logUtil!.putF(path, this, commonStrings!.CONSTRUCTOR);
     
 
-    var fos: FileOutputStream = new FileOutputStream(path);;
+    let fos: FileOutputStream = new FileOutputStream(path);;
     
 
-    var bitmap: Bitmap = (getImage as AndroidImageInterface).getBitmap()!;;
+    let bitmap: Bitmap = (getImage as AndroidImageInterface).getBitmap()!;;
     
 bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -172,37 +178,37 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
                         
                                     {
                                     
-    var cellsPerRow2: number = this.CELLS_PER_ROW *2;;
+    let cellsPerRow2: number = this.CELLS_PER_ROW *2;;
     
 
-    var cellsPerRow3: number = this.CELLS_PER_ROW *3;;
+    let cellsPerRow3: number = this.CELLS_PER_ROW *3;;
     
 
-    var cellsPerRow4: number = this.CELLS_PER_ROW *4;;
+    let cellsPerRow4: number = this.CELLS_PER_ROW *4;;
     
 
-    var cellsPerRow5: number = this.CELLS_PER_ROW *5;;
+    let cellsPerRow5: number = this.CELLS_PER_ROW *5;;
     
 
-    var cellsPerRow6: number = this.CELLS_PER_ROW *6;;
+    let cellsPerRow6: number = this.CELLS_PER_ROW *6;;
     
 
-    var cellsPerRow7: number = this.CELLS_PER_ROW *7;;
+    let cellsPerRow7: number = this.CELLS_PER_ROW *7;;
     
 
-    var typeface: Typeface = Typeface.DEFAULT;;
+    let typeface: Typeface = Typeface.DEFAULT;;
     
 
-    var textureSize: number = this.getAsTextureSize(this.CELLS_PER_ROW *cellSize)!;;
+    let textureSize: number = this.getAsTextureSize(this.CELLS_PER_ROW *cellSize)!;;
     
 
-    var bitmap: Bitmap = Bitmap.createBitmap(textureSize, textureSize, Bitmap.Config.ARGB_8888)!;;
+    let bitmap: Bitmap = Bitmap.createBitmap(textureSize, textureSize, Bitmap.Config.ARGB_8888)!;;
     
 
-    var canvas: Canvas = new Canvas(bitmap);;
+    let canvas: Canvas = new Canvas(bitmap);;
     
 
-    var paint: Paint = new Paint();;
+    let paint: Paint = new Paint();;
     
 paint.setTypeface(typeface);
     
@@ -213,23 +219,23 @@ paint.setAlpha(globalThis.Math.trunc(basicColor!.alpha));
 paint.setColor(basicColor!.intValue());
     
 
-    var biggestHeight: number = 0;;
+    let biggestHeight: number = 0;;
     
 
-    var bounds: Rect = new Rect();;
+    let bounds: Rect = new Rect();;
     
 
-    var x: number= 0;;
+    let x: number= 0;;
     
 
-    var y: number= 0;;
+    let y: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.size; index++)
+    let index: number = 0;index < this.size; index++)
         {
 this.characterArray[0]= this.pattern[index];
     
@@ -328,7 +334,7 @@ canvas.drawText(this.characterArray, 0, 1, x -3, y -6, paint);
 canvas.save();
     
 
-    var image: Image = AndroidImmutableImage.create(bitmap)!;;
+    let image: Image = AndroidImmutableImage.create(bitmap)!;;
     
 this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage;
     
@@ -356,10 +362,10 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage;
 
     public getFontWidths(filename: string, fontSize: number): number[]{
 
-    var typeface: Typeface = Typeface.DEFAULT;;
+    let typeface: Typeface = Typeface.DEFAULT;;
     
 
-    var paint: Paint = new Paint();;
+    let paint: Paint = new Paint();;
     
 paint.setTypeface(typeface);
     
@@ -368,14 +374,14 @@ paint.setTextSize(fontSize);
 paint.setARGB(255, 255, 255, 255);
     
 
-    var bounds: Rect = new Rect();;
+    let bounds: Rect = new Rect();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.size; index++)
+    let index: number = 0;index < this.size; index++)
         {
 this.characterArray[0]= this.pattern[index];
     
@@ -544,6 +550,4 @@ this._characterWidth[0]= (fontSize>>1) -2;
 
 
 }
-
-
 

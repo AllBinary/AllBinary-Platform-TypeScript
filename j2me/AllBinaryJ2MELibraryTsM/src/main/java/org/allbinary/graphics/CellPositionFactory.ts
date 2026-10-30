@@ -24,12 +24,15 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -88,10 +91,10 @@ private constructor (){
 
     public init(columns: number, rows: number){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Init: columns: ");
     
@@ -115,14 +118,14 @@ this.rows= rows;
 
 
                         for (
-    var column: number = 0;column < columns; column++)
+    let column: number = 0;column < columns; column++)
         {
 
 
 
 
                         for (
-    var row: number = 0;row < rows; row++)
+    let row: number = 0;row < rows; row++)
         {
 this.createInstance(column, row);
     
@@ -135,19 +138,19 @@ this.createInstance(column, row);
 
     public getInstanceColRow(i_column: number, i_row: number): CellPosition{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.cellPositionArray[i_column]![i_row]!;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(new StringMaker().append("columns: ")!.appendint(this.getColumns())!.append(" rows: ")!.appendint(this.getRows())!.append(" col: ")!.appendint(i_column)!.append(" row: ")!.appendint(i_row)!.toString(), this, commonStrings!.GET_INSTANCE, e);
     
@@ -157,14 +160,16 @@ this.logUtil!.put(new StringMaker().append("columns: ")!.appendint(this.getColum
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.NONE;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public createInstance(i_column: number, i_row: number): CellPosition{
 
-    var cellPositionCanBeNull: CellPosition = this.cellPositionArray[i_column]![i_row];;
+    let cellPositionCanBeNull: CellPosition = this.cellPositionArray[i_column]![i_row];;
     
 
                         if(cellPositionCanBeNull == 
@@ -209,6 +214,4 @@ this.cellPositionArray[i_column]![i_row]= cellPositionCanBeNull;
 
 
 }
-
-
 

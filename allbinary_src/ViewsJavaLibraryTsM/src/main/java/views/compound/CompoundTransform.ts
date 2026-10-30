@@ -34,6 +34,7 @@ import { StoreUriResolver } from '../../org/allbinary/data/tree/dom/StoreUriReso
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -85,7 +86,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 this.setURIResolver(new StoreUriResolver(this.getTransformInfoInterface(), this.getURIResolver() as BasicUriResolver) as URIResolver);
     
 
-    var objectConfig: CompoundContextTransformInfoObjectConfig = new CompoundContextTransformInfoObjectConfig(this.abeClientInformation, this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());;
+    let objectConfig: CompoundContextTransformInfoObjectConfig = new CompoundContextTransformInfoObjectConfig(this.abeClientInformation, this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -97,7 +98,7 @@ this.setURIResolver(new StoreUriResolver(this.getTransformInfoInterface(), this.
                                     }
                                 
 
-    var templateInputStream: InputStream = objectConfig!.createInputStream()!;;
+    let templateInputStream: InputStream = objectConfig!.createInputStream()!;;
     
 this.setInputStream(templateInputStream);
     
@@ -105,6 +106,4 @@ this.setInputStream(templateInputStream);
 
 
 }
-
-
 

@@ -40,12 +40,14 @@ import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/Ca
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
 //not GWT import const ImagePersistanceUtil
@@ -61,12 +63,15 @@ import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -119,7 +124,7 @@ initComponents();
 this.imageProcessorInput= imageProcessorInput;
     
 
-    var numberStringArray: string[] = new Array(101);;
+    let numberStringArray: string[] = new Array(101);;
     
 numberStringArray[0]= Integer.toString( -1);
     
@@ -128,14 +133,14 @@ numberStringArray[0]= Integer.toString( -1);
 
 
                         for (
-    var index: number = 1;index < 100; index++)
+    let index: number = 1;index < 100; index++)
         {
 numberStringArray[index]= index.toString();
     
 }
 
 
-    var araster: Raster = this.imageProcessorInput!.getBufferedImageArray()[0]!.getAlphaRaster()!;;
+    let araster: Raster = this.imageProcessorInput!.getBufferedImageArray()[0]!.getAlphaRaster()!;;
     
 
                         if(araster == 
@@ -163,86 +168,85 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var imageUtil: ImageUtil = ImageUtil.getInstance()!;;
+ try { 
+    let imageUtil: ImageUtil = ImageUtil.getInstance()!;;
     
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var imageProcessorInput: ImageProcessorInput = CreateIconImagesJPanel.prototype.getImageProcessorInput()!;;
+    let imageProcessorInput: ImageProcessorInput = outer$CreateIconImagesJPanel.getImageProcessorInput()!;;
     
 
-    var files: File[] = imageProcessorInput!.getFiles()!;;
+    let files: File[] = imageProcessorInput!.getFiles()!;;
     
 
-    var iconWidthList: BasicArrayList = new BasicArrayListD();;
+    let iconWidthList: BasicArrayList = new BasicArrayListD();;
     
 
-    var iconHeightList: BasicArrayList = new BasicArrayListD();;
+    let iconHeightList: BasicArrayList = new BasicArrayListD();;
     
 iconWidthList!.add(864);
     
 iconHeightList!.add(864);
     
 
-    var ANDROID: string = "android-icon-";;
+    let ANDROID: string = "android-icon-";;
     
 
-    var IOS: string = "ios-icon-";;
+    let IOS: string = "ios-icon-";;
     
 
-    var size: number = iconWidthList!.size()!;;
+    let size: number = iconWidthList!.size()!;;
     
 
-    var width: number = 0;;
+    let width: number = 0;;
     
 
-    var height: number = 0;;
+    let height: number = 0;;
     
 
 
 
 
                         for (
-    var index2: number = 0;index2 < size; index2++)
+    let index2: number = 0;index2 < size; index2++)
         {
 width= (get as Integer).intValue();
     
 height= (get as Integer).intValue();
     
 
-    var generatedBufferedImageArray: BufferedImage[] = imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true)!;;
+    let generatedBufferedImageArray: BufferedImage[] = imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true)!;;
     
 
-    var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;;
+    let imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < generatedBufferedImageArray!.length; index++)
+    let index: number = 0;index < generatedBufferedImageArray!.length; index++)
         {
 
-    var filePath: string = files[index]!.getAbsolutePath()!;;
+    let filePath: string = files[index]!.getAbsolutePath()!;;
     
 
-    var endIndex: number = filePath!.lastIndexOf('\\')!;;
+    let endIndex: number = filePath!.lastIndexOf('\\')!;;
     
 
-    var path: string = filePath!.substring(0, endIndex +1)!;;
+    let path: string = filePath!.substring(0, endIndex +1)!;;
     
 stringMaker!.delete(0, stringMaker!.length());
     
 stringMaker!.append(path)!.append(ANDROID)!.appendint(width)!.append(CanvasStrings.getInstance()!._PNG);
     
 
-    var newFilePath: string = stringMaker!.toString()!;;
+    let newFilePath: string = stringMaker!.toString()!;;
     
 imagePersistanceUtil!.saveWithBatik(AbFile.createAbFile(newFilePath), generatedBufferedImageArray[index]!);
     
@@ -258,16 +262,19 @@ imagePersistanceUtil!.saveWithBatik(AbFile.createAbFile(newFilePath), generatedB
 
 }
 
-CreateIconImagesJPanel.prototype.getParent()!.repaint();
+outer$CreateIconImagesJPanel.getParent()!.repaint();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -309,7 +316,7 @@ aboveJButtonActionPerformed(evt);
                             );
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -329,6 +336,4 @@ this.process();
     private aboveJButton: javax.swing.JButton;
 
 }
-
-
 

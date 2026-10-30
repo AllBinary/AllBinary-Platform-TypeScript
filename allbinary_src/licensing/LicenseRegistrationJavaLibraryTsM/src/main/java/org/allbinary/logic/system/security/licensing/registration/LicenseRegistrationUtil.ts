@@ -24,9 +24,11 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -36,9 +38,11 @@ import { SpecialMessageUtil } from '../../../../../../../org/allbinary/canvas/Sp
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -71,21 +75,20 @@ export class LicenseRegistrationUtil
 
     public static process(abeClientInformation: AbeClientInformationInterface, registrationId: string){
 
-        try {
-            
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+ try { 
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +"License Registration", "LicenseRegistrationUtil", commonStrings!.PROCESS);
     
 
-    var registrationConfiguration: RegistrationConfiguration = RegistrationConfiguration.getInstance()!;;
+    let registrationConfiguration: RegistrationConfiguration = RegistrationConfiguration.getInstance()!;;
     
 registrationConfiguration!.setRegistrationCode(registrationId);
     
 registrationConfiguration!.write();
     
 
-    var hashtable: ABHashtable<any, any> = abeClientInformation!.toHashtable()!;;
+    let hashtable: ABHashtable<any, any> = abeClientInformation!.toHashtable()!;;
     
 hashtable.put(RegistrationConfiguration.getInstance()!.NAME, registrationId);
     
@@ -93,14 +96,17 @@ hashtable.put("message", SpecialMessageUtil.getInstance()!.get());
     
 new XmlRpcRemoteLicenseRegistrationClient(abeClientInformation).get(hashtable);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE("License Registration Exception", "LicenseRegistrationUtil", "License Registration", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -111,6 +117,4 @@ private constructor (){
 
 
 }
-
-
 

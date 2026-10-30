@@ -10,12 +10,15 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 
 
@@ -49,20 +52,20 @@ export class PathParser
 
     static tokenize(d: string): string[]{
 
-    var tokens: BasicArrayList = new BasicArrayListD();;
+    let tokens: BasicArrayList = new BasicArrayListD();;
     
 
-    var sb: StringBuffer = new StringBuffer();;
+    let sb: StringBuffer = new StringBuffer();;
     
 
 
 
 
                         for (
-    var i: number = 0;i < d.length; i++)
+    let i: number = 0;i < d.length; i++)
         {
 
-    var c: string = d[i]!;;
+    let c: string = d[i]!;;
     
 
                         if(c == ' '.charCodeAt(0) || c == ','.charCodeAt(0) || c == '\t'.charCodeAt(0) || c == '\n'.charCodeAt(0) || c == '\r'.charCodeAt(0))
@@ -114,7 +117,7 @@ tokens.add(c.slice(, ).join(''));
                         if(sb.length() > 0)
                         tokens.add(sb.toString())
 
-    var res: string[] = new Array(tokens.size());;
+    let res: string[] = new Array(tokens.size());;
     
 tokens.toArrayType(res);
     
@@ -129,41 +132,41 @@ tokens.toArrayType(res);
 
     public static parsePath(d: string, outX: number[], outY: number[], maxPoints: number): number{
 
-    var tokens: string[] = tokenize(d)!;;
+    let tokens: string[] = tokenize(d)!;;
     
 
-    var count: number[] = [0];;
+    let count: number[] = [0];;
     
 
-    var fixedPoint: FixedPoint = FixedPoint.getInstance()!;;
+    let fixedPoint: FixedPoint = FixedPoint.getInstance()!;;
     
 
-    var curX: number = 0;var curY: number = 0;;
+    let curX: number = 0;let curY: number = 0;;
     
 
-    var startX: number = 0;var startY: number = 0;;
+    let startX: number = 0;let startY: number = 0;;
     
 
-    var idx: number = 0;;
+    let idx: number = 0;;
     
 
         while(idx < tokens.length)
         {
 
-    var tok: string = tokens[idx++]!;;
+    let tok: string = tokens[idx++]!;;
     
 
-    var cmd: string = tok[0]!;;
+    let cmd: string = tok[0]!;;
     
 
                         if(cmd == 'M'.charCodeAt(0) || cmd == 'm'.charCodeAt(0))
                         
                                     {
                                     
-    var x: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let x: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-    var y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
                         if(cmd == 'm'.charCodeAt(0))
@@ -198,10 +201,10 @@ count[0]++;
                         
                                     {
                                     
-    var x: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let x: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-    var y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
                         if(cmd == 'l'.charCodeAt(0))
@@ -232,7 +235,7 @@ count[0]++;
                         
                                     {
                                     
-    var y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
                         if(cmd == 'v'.charCodeAt(0))
@@ -259,22 +262,22 @@ count[0]++;
                         
                                     {
                                     
-    var x1: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let x1: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-    var y1: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let y1: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-    var x2: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let x2: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-    var y2: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let y2: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-    var x3: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let x3: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-    var y3: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let y3: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
                         if(cmd == 'c'.charCodeAt(0))
@@ -329,10 +332,10 @@ count[0]++;
                         
                                     {
                                     
-    var x: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let x: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-    var y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
                         if(cmd == 'm'.charCodeAt(0) || cmd == 'l'.charCodeAt(0))
@@ -363,7 +366,7 @@ count[0]++;
                         
                                     {
                                     
-    var y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
+    let y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
                         if(cmd == 'v'.charCodeAt(0))
@@ -400,7 +403,7 @@ count[0]++;
 
     static isCommand(tok: string): boolean{
 
-    var c: string = tok[0]!;;
+    let c: string = tok[0]!;;
     
 
 
@@ -412,6 +415,4 @@ count[0]++;
 
 
 }
-
-
 

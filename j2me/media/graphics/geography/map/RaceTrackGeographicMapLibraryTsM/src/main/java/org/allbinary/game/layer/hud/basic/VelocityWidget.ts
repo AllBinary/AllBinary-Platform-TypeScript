@@ -40,6 +40,7 @@ import { MyFontProcessor } from '../../../../../../org/allbinary/graphics/font/M
 
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+type MathUtil<T = any, U = any> = typeof MathUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MathUtil;
 
 import { PrimitiveLongSingleton } from '../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
 //not GWT import const PrimitiveLongSingleton
@@ -111,7 +112,7 @@ this.updateMaxHeight= 14;
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.updateMaxWidth= font.getSize() *(5 +MathUtil.getInstance()!.getTotalDigits(this.powerOfTenVelocity) +1);
     
@@ -142,7 +143,7 @@ this.set(this.velocity +value);
 
     public set(value: number){
 
-    var lastVelocity: number = this.velocity;;
+    let lastVelocity: number = this.velocity;;
     
 this.velocity= value;
     
@@ -197,6 +198,4 @@ super.paintDXY(graphics, this.string, 0, this.totalDigits, this.KILOMETERS_PER_H
 
 
 }
-
-
 

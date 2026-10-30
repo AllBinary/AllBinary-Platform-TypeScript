@@ -29,6 +29,7 @@ import { GenericProfileActionJPanel } from '../../../../../../../../../../org/al
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -105,7 +106,7 @@ add(this.removeJButton);
 
     removeJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 
-    var genericProfileAction: GenericProfileAction = this.genericProfileActionJPanel!.getGenericProfileAction()!;;
+    let genericProfileAction: GenericProfileAction = this.genericProfileActionJPanel!.getGenericProfileAction()!;;
     
 
                         if(genericProfileAction == 
@@ -134,6 +135,4 @@ this.genericProfileActionJPanel!.updateProfileActionUI();
     private removeJButton: javax.swing.JButton;
 
 }
-
-
 

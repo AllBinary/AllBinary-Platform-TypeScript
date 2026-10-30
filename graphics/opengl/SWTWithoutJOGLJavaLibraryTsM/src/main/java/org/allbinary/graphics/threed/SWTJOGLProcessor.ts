@@ -73,13 +73,13 @@ export class SWTJOGLProcessor
     public glHolder: GLHolder = new class extends GLHolder
                                 {
                                 
-    public run(renderer: any = {}){
+    public run(renderer: any){
 }
 
                                 }
                             ;
 
-    public init(display: any = {}, comp: any = {}){
+    public init(display: any, comp: any){
 }
 
 
@@ -93,7 +93,7 @@ export class SWTJOGLProcessor
 }
 
 
-    public setRenderer(renderer: any = {}){
+    public setRenderer(renderer: any){
 }
 
 
@@ -115,7 +115,7 @@ export class SWTJOGLProcessor
 }
 
 
-    public onSurfaceChangedForEvent(event: any = {}){
+    public onSurfaceChangedForEvent(event: any){
 }
 
 
@@ -188,6 +188,4 @@ export class SWTJOGLProcessor
 
 
 }
-
-
 

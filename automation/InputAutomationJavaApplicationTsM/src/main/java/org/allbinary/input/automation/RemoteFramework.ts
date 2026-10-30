@@ -46,13 +46,11 @@ import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
 export interface RemoteFramework {
         
 
-    connect(host: string): BundleContext
+    connect(host: string): BundleContext;
 
-    disconnect(bc: BundleContext)
+    disconnect(bc: BundleContext): void;
 
-    getSystemProperties(bc: BundleContext): Map
+    getSystemProperties(bc: BundleContext): Map;
 
 }
-
-
 

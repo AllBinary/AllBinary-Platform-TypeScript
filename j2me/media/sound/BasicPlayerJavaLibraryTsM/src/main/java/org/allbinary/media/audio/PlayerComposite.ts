@@ -39,9 +39,11 @@ const PlayerListener = PlayerListenerI;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 //not GWT import const GameTickTimeDelayHelper
@@ -153,33 +155,37 @@ this.player.deallocate();
 
     public prefetch(){
 
-        try {
-            this.player.prefetch();
+ try { this.player.prefetch();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "prefetch", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public realize(){
 
-        try {
-            this.player.realize();
+ try { this.player.realize();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "realize", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -201,17 +207,17 @@ this.player.setLoopCount(count);
 
     public setMediaTime(now: number): number{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.player.setMediaTime(now);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setMediaTime", e);
     
 
@@ -220,8 +226,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setMediaTime", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return  -1;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -229,8 +237,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setMediaTime", e);
 
     public start(){
 
-        try {
-            
+ try { 
                         if(this.timeElapsedHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
@@ -239,30 +246,35 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setMediaTime", e);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START_METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public stop(){
 
-        try {
-            this.player.stop();
+ try { this.player.stop();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "stop", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -287,7 +299,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "stop", e);
 
     public setVolume(leftVolume: number, rightVolume: number){
 
-    var controllable2: Controllable2 = (this.player as unknown as Controllable2);;
+    let controllable2: Controllable2 = (this.player as unknown as Controllable2);;
     
 controllable2.setVolume(leftVolume, rightVolume);
     
@@ -305,6 +317,4 @@ controllable2.setVolume(leftVolume, rightVolume);
 
 
 }
-
-
 

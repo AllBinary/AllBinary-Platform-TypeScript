@@ -40,12 +40,15 @@ import { MotionRecognizer } from '../../../../../../org/allbinary/input/motion/M
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -104,7 +107,7 @@ private constructor (){
 
             super();
         
-    var size: number = GameInputMotionInfoAPI5.getInstance()!.MAX_POINTERS;;
+    let size: number = GameInputMotionInfoAPI5.getInstance()!.MAX_POINTERS;;
     
 this.motionRecognizerArray= new Array(size);
     
@@ -115,7 +118,7 @@ this.TOTAL_MINUS_ONE= size;
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.motionRecognizerArray[index]= new AllMotionRecognizer();
     
@@ -130,7 +133,7 @@ this.motionRecognizerArray[index]= new AllMotionRecognizer();
                         
                                     {
                                     
-    var message: string = "Log that the pointer Ids are not what would be expected or Android has more than what I set my stuff to support pointerId: ";;
+    let message: string = "Log that the pointer Ids are not what would be expected or Android has more than what I set my stuff to support pointerId: ";;
     
 ForcedLogUtil.log(message +pointerId, this);
     
@@ -158,12 +161,11 @@ ForcedLogUtil.log(message +pointerId, this);
 
     public process(motionEvent: MotionEvent){
 
-        try {
-            
-    var action: number = motionEvent!.getAction()!;;
+ try { 
+    let action: number = motionEvent!.getAction()!;;
     
 
-    var total: number = this.motionRecognizerArray!.length
+    let total: number = this.motionRecognizerArray!.length
                 ;;
     
 
@@ -177,7 +179,7 @@ ForcedLogUtil.log(message +pointerId, this);
                                 
                         else {
                             
-    var message: string = "Log that Android has more pointers than I have expected so increase it motionEvent.getPointerCount(): ";;
+    let message: string = "Log that Android has more pointers than I have expected so increase it motionEvent.getPointerCount(): ";;
     
 ForcedLogUtil.log(message +motionEvent!.getPointerCount(), this);
     
@@ -185,7 +187,7 @@ ForcedLogUtil.log(message +motionEvent!.getPointerCount(), this);
                         }
                             
 
-    var totalMinusOne: number = total -1;;
+    let totalMinusOne: number = total -1;;
     
 
                         if(action == MotionEvent.ACTION_DOWN)
@@ -196,23 +198,23 @@ ForcedLogUtil.log(message +motionEvent!.getPointerCount(), this);
 
 
                         for (
-    var pointerIndex: number = totalMinusOne;pointerIndex >= 0; pointerIndex--)
+    let pointerIndex: number = totalMinusOne;pointerIndex >= 0; pointerIndex--)
         {
 
-    var pointerId: number = motionEvent!.getPointerId(pointerIndex)!;;
+    let pointerId: number = motionEvent!.getPointerId(pointerIndex)!;;
     
 
                         if(this.isValid(pointerId))
                         
                                     {
                                     
-    var scalableListener: ScalableListener = this.displayInfo!.getScalableListener()!;;
+    let scalableListener: ScalableListener = this.displayInfo!.getScalableListener()!;;
     
 
-    var x: number = globalThis.Math.trunc(((motionEvent!.getX(pointerIndex) -this.displayInfo!.getLeft()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
+    let x: number = globalThis.Math.trunc(((motionEvent!.getX(pointerIndex) -this.displayInfo!.getLeft()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
     
 
-    var y: number = globalThis.Math.trunc(((motionEvent!.getY(pointerIndex) -this.displayInfo!.getTop()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
+    let y: number = globalThis.Math.trunc(((motionEvent!.getY(pointerIndex) -this.displayInfo!.getTop()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
     
 this.motionRecognizerArray[pointerId]!.processStartMotionEvent(x, y, motionEvent!.getDeviceId(), 0);
     
@@ -233,23 +235,23 @@ this.motionRecognizerArray[pointerId]!.processStartMotionEvent(x, y, motionEvent
 
 
                         for (
-    var pointerIndex: number = totalMinusOne;pointerIndex >= 0; pointerIndex--)
+    let pointerIndex: number = totalMinusOne;pointerIndex >= 0; pointerIndex--)
         {
 
-    var pointerId: number = motionEvent!.getPointerId(pointerIndex)!;;
+    let pointerId: number = motionEvent!.getPointerId(pointerIndex)!;;
     
 
                         if(this.isValid(pointerId))
                         
                                     {
                                     
-    var scalableListener: ScalableListener = this.displayInfo!.getScalableListener()!;;
+    let scalableListener: ScalableListener = this.displayInfo!.getScalableListener()!;;
     
 
-    var x: number = globalThis.Math.trunc(((motionEvent!.getX(pointerIndex) -this.displayInfo!.getLeft()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
+    let x: number = globalThis.Math.trunc(((motionEvent!.getX(pointerIndex) -this.displayInfo!.getLeft()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
     
 
-    var y: number = globalThis.Math.trunc(((motionEvent!.getY(pointerIndex) -this.displayInfo!.getTop()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
+    let y: number = globalThis.Math.trunc(((motionEvent!.getY(pointerIndex) -this.displayInfo!.getTop()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
     
 this.motionRecognizerArray[pointerId]!.processEndMotionEvent(x, y, motionEvent!.getDeviceId(), 0);
     
@@ -270,23 +272,23 @@ this.motionRecognizerArray[pointerId]!.processEndMotionEvent(x, y, motionEvent!.
 
 
                         for (
-    var pointerIndex: number = totalMinusOne;pointerIndex >= 0; pointerIndex--)
+    let pointerIndex: number = totalMinusOne;pointerIndex >= 0; pointerIndex--)
         {
 
-    var pointerId: number = motionEvent!.getPointerId(pointerIndex)!;;
+    let pointerId: number = motionEvent!.getPointerId(pointerIndex)!;;
     
 
                         if(this.isValid(pointerId))
                         
                                     {
                                     
-    var scalableListener: ScalableListener = this.displayInfo!.getScalableListener()!;;
+    let scalableListener: ScalableListener = this.displayInfo!.getScalableListener()!;;
     
 
-    var x: number = globalThis.Math.trunc(((motionEvent!.getX(pointerIndex) -this.displayInfo!.getLeft()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
+    let x: number = globalThis.Math.trunc(((motionEvent!.getX(pointerIndex) -this.displayInfo!.getLeft()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
     
 
-    var y: number = globalThis.Math.trunc(((motionEvent!.getY(pointerIndex) -this.displayInfo!.getTop()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
+    let y: number = globalThis.Math.trunc(((motionEvent!.getY(pointerIndex) -this.displayInfo!.getTop()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
     
 this.motionRecognizerArray[pointerId]!.processDraggedMotionEvent(x, y, motionEvent!.getDeviceId(), 0);
     
@@ -298,18 +300,19 @@ this.motionRecognizerArray[pointerId]!.processDraggedMotionEvent(x, y, motionEve
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

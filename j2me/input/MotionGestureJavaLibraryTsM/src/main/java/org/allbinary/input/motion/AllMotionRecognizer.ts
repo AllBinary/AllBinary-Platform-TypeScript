@@ -34,6 +34,7 @@ import { MotionGestureRecognizer } from '../../../../org/allbinary/input/motion/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -102,7 +103,7 @@ this.touchButtonRecognizer= new TouchButtonRecognizer();
                         
                                     {
                                     
-    var point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
+    let point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
     
 point.setX(x);
     
@@ -131,7 +132,7 @@ this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifie
                         
                                     {
                                     
-    var point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
+    let point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
     
 point.setX(x);
     
@@ -171,7 +172,7 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
                         
                                     {
                                     
-    var point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
+    let point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
     
 point.setX(x);
     
@@ -201,7 +202,7 @@ this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifie
 this.lastY= y;
     
 
-    var point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
+    let point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
     
 point.setX(x);
     
@@ -219,7 +220,7 @@ this.motionGestureRecognizer!.processMovedMotionEvent(point, deviceId, modifiers
             
     public processScrolledMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 
-    var point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
+    let point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
     
 point.setX(x);
     
@@ -241,6 +242,4 @@ this.motionGestureRecognizer!.processScrolledMotionEvent(point, deviceId, modifi
 
 
 }
-
-
 

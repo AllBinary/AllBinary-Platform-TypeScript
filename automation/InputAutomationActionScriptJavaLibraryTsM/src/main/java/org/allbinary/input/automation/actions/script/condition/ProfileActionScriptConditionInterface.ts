@@ -55,15 +55,13 @@ import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/
 export interface ProfileActionScriptConditionInterface extends ProfileActionScriptNodeInterface, CustomTreeNodeInterface, ProfileActionScriptItemInterface {
         
 
-    addProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface)
+    addProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface): void;
 
-    removeProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface)
+    removeProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface): void;
 
                 //@Throws(Exception.constructor)
             
-    shouldProcess(frame: Long): boolean
+    shouldProcess(frame: Long): boolean;
 
 }
-
-
 

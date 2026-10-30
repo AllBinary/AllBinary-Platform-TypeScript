@@ -49,9 +49,7 @@ export interface DestroyedEventListenerInterface extends EventListenerInterface 
 
                 //@Throws(Exception.constructor)
             
-    onDestroyed(destroyedEvent: DestroyedEvent)
+    onDestroyed(destroyedEvent: DestroyedEvent): void;
 
 }
-
-
 

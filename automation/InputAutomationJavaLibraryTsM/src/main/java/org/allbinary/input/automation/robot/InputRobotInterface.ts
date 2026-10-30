@@ -59,53 +59,51 @@ import { Point } from './Point.js';
 export interface InputRobotInterface {
         
 
-    getName(): string
+    getName(): string;
 
-    getHelpSet(): HelpSet
+    getHelpSet(): HelpSet;
 
-    createScreenCapture(screenRect: Rectangle): BufferedImage
+    createScreenCapture(screenRect: Rectangle): BufferedImage;
 
-    delay(ms: Integer)
+    delay(ms: Integer): void;
 
-    getAutoDelay(): Integer
+    getAutoDelay(): Integer;
 
-    getPixelColor(x: Integer, y: Integer): Color
+    getPixelColor(x: Integer, y: Integer): Color;
 
-    isAutoWaitForIdle(): boolean
+    isAutoWaitForIdle(): boolean;
 
-    keyPress(keycode: Integer)
+    keyPress(keycode: Integer): void;
 
-    keyRelease(keycode: Integer)
+    keyRelease(keycode: Integer): void;
 
-    getMousePoint(): Point
+    getMousePoint(): Point;
 
-    mouseMove(x: Integer, y: Integer)
+    mouseMove(x: Integer, y: Integer): void;
 
-    mousePress(buttons: Integer)
+    mousePress(buttons: Integer): void;
 
-    mouseRelease(buttons: Integer)
+    mouseRelease(buttons: Integer): void;
 
-    mouseWheel(wheelAmt: Integer)
+    mouseWheel(wheelAmt: Integer): void;
 
-    setAutoDelay(ms: Integer)
+    setAutoDelay(ms: Integer): void;
 
-    setAutoWaitForIdle(isOn: boolean)
+    setAutoWaitForIdle(isOn: boolean): void;
 
-    toString(): string
+    toString(): string;
 
-    waitForIdle()
+    waitForIdle(): void;
 
-    mouseMove(point: Point)
-
-                //@Throws(Exception.constructor)
-            
-    mouseMoveToTarget(rectangle: Rectangle)
+    mouseMove(point: Point): void;
 
                 //@Throws(Exception.constructor)
             
-    mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer)
+    mouseMoveToTarget(rectangle: Rectangle): void;
+
+                //@Throws(Exception.constructor)
+            
+    mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer): void;
 
 }
-
-
 

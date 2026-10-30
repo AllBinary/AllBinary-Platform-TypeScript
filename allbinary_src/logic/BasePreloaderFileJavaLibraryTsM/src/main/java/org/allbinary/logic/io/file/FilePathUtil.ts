@@ -22,6 +22,7 @@
         
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -54,13 +55,13 @@ export class FilePathUtil
 
     public static adjust(path: string): string{
 
-    var abPathData: AbPathData = AbPathData.getInstance()!;;
+    let abPathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var filePathData: FilePathData = FilePathData.getInstance()!;;
+    let filePathData: FilePathData = FilePathData.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(path))
@@ -93,6 +94,4 @@ private constructor (){
 
 
 }
-
-
 

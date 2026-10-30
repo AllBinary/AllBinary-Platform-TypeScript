@@ -58,21 +58,21 @@ export class PointsUtil
 
     public adjustXY(points: number[][][], x: number, y: number): number[][][]{
 
-    var size: number = points.length
+    let size: number = points.length
                 ;;
     
 
-    var newPoints: number[][][] = Array.from({ length: size }, () => Array.from({ length: 0 }, () => new Array(0).fill(0)));;
+    let newPoints: number[][][] = Array.from({ length: size }, () => Array.from({ length: 0 }, () => new Array(0).fill(0)));;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var size2: number = points[index]!.length
+    let size2: number = points[index]!.length
                 ;;
     
 newPoints[index]= new Array(size2).fill(null).map(() => new Array(2).fill(null));
@@ -82,7 +82,7 @@ newPoints[index]= new Array(size2).fill(null).map(() => new Array(2).fill(null))
 
 
                         for (
-    var index2: number = 0;index2 < size2; index2++)
+    let index2: number = 0;index2 < size2; index2++)
         {
 
                         if(points[index]![index2]![0] != 1000)
@@ -115,8 +115,15 @@ newPoints[index]![index2]![1]= 1000;
     
 }
 
-
-    public adjust(points: number[][], both: number): number[][]{
+adjust(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[1] === 'number') return this.adjust$overload1(args[0], args[1]);
+   
+    if (args.length === 3 && typeof args[1] === 'number' && typeof args[2] === 'number') return this.adjust$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: adjust'); }
+  
+    public adjust$overload1(points: number[][], both: number): number[][]{
 
 
 
@@ -126,16 +133,16 @@ newPoints[index]![index2]![1]= 1000;
 }
 
 
-    public adjust(points: number[][], x: number, y: number): number[][]{
+    public adjust$overload2(points: number[][], x: number, y: number): number[][]{
 
-    var newPoints: number[][] = new Array(points.length).fill(null).map(() => new Array(2).fill(null));;
+    let newPoints: number[][] = new Array(points.length).fill(null).map(() => new Array(2).fill(null));;
     
 
 
 
 
                         for (
-    var index2: number = 0;index2 < points.length; index2++)
+    let index2: number = 0;index2 < points.length; index2++)
         {
 
                         if(points[index2]![0] != 1000)
@@ -168,6 +175,4 @@ newPoints[index2]![1]= 1000;
 
 
 }
-
-
 

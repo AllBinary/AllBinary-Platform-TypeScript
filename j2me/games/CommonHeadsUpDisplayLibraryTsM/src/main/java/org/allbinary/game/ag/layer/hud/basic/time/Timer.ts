@@ -104,10 +104,10 @@ this.startTime= this.gameTickTimeDelayHelper!.startTime;
 
     public update(){
 
-    var lastLowerTime: number = this.hundredthTime;;
+    let lastLowerTime: number = this.hundredthTime;;
     
 
-    var currentTime: number = ((this.modifier +this.gameTickTimeDelayHelper!.startTime) -this.startTime);;
+    let currentTime: number = ((this.modifier +this.gameTickTimeDelayHelper!.startTime) -this.startTime);;
     
 
                         if(currentTime < 0)
@@ -183,6 +183,4 @@ this.modifier += value;
 
 
 }
-
-
 

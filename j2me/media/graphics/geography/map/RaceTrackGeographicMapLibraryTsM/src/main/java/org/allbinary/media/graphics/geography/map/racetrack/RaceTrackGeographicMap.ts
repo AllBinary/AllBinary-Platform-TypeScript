@@ -22,6 +22,7 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
@@ -98,14 +99,14 @@ this.customMapGenerator= customMapGeneratorBaseFactory!.create(this);
             
     public isValid(geographicMapCellPosition: GeographicMapCellPosition): boolean{
 
-    var customMapArray: number[][] = this.customMapGenerator!.getCustomMapArray()!;;
+    let customMapArray: number[][] = this.customMapGenerator!.getCustomMapArray()!;;
     
 
                         if(geographicMapCellPosition!.getColumn() >= customMapArray[0]!.length)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Column: ");
     
@@ -148,7 +149,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Row: ");
     
@@ -196,6 +197,4 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
 }
-
-
 

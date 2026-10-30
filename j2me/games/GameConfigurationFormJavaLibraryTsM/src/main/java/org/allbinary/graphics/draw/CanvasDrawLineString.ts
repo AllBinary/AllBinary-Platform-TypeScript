@@ -85,7 +85,7 @@ this.y= y;
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.fontHeight= font.getHeight();
     
@@ -103,6 +103,4 @@ this.drawStringUtil!.drawCenterString(graphics, string, 0, string.length, this.x
 
 
 }
-
-
 

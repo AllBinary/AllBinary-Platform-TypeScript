@@ -45,9 +45,7 @@ import { Set } from '../../../../../java/util/Set.js';
 export interface J2SECacheInterface extends AutomaticCacheInterface {
         
 
-    keySet(): Set<any>
+    keySet(): Set<any>;
 
 }
-
-
 

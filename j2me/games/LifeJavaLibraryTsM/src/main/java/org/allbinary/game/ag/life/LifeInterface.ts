@@ -40,21 +40,19 @@
 export interface LifeInterface {
         
 
-    get(): number
+    get(): number;
 
-    set(lives: number)
+    set(lives: number): void;
 
-    reset()
+    reset(): void;
 
-    add(lives: number)
+    add(lives: number): void;
 
-    deaths(lives: number)
+    deaths(lives: number): void;
 
-    getMaxlives(): number
+    getMaxlives(): number;
 
-    isAlive(): boolean
+    isAlive(): boolean;
 
 }
-
-
 

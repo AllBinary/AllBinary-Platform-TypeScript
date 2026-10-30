@@ -60,7 +60,7 @@ export class TsUtil
 }
 
 
-    public hashCode(anyType: any = {}): number{
+    public hashCode(anyType: any): number{
 
 
 
@@ -72,16 +72,16 @@ export class TsUtil
 
                 //@Throws(InterruptedException.constructor)
             
-    public waitFor(any: any = {}, timeoutMillis: number){
+    public waitFor(any: any, timeoutMillis: number){
 
-    var anyType: any = any;;
+    let anyType: any = any;;
     
 anyType!.wait(timeoutMillis);
     
 }
 
 
-    public getRecord(anyType: any = {}, recordId: number): number[]{
+    public getRecord(anyType: any, recordId: number): number[]{
 
 
 
@@ -111,12 +111,12 @@ anyType!.wait(timeoutMillis);
 }
 
 
-    public equalsNotstring(anyType: any = {}, object2: any = {}): boolean{
+    public equalsNotstring(anyType: any, object2: any): boolean{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return anyType! === object2;;
+                        return (anyType === object2);;
     
 }
 
@@ -126,7 +126,7 @@ anyType!.wait(timeoutMillis);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return globalThis.Math.trunc(value);
+                        return globalThis.Math.trunc(value.charCodeAt(0));
     
 }
 
@@ -151,7 +151,7 @@ anyType!.wait(timeoutMillis);
 }
 
 
-    public isItemListener(owner: any = {}): boolean{
+    public isItemListener(owner: any): boolean{
 
 
 
@@ -161,7 +161,7 @@ anyType!.wait(timeoutMillis);
 }
 
 
-    public printAvailableMethods(anyType: any = {}){
+    public printAvailableMethods(anyType: any){
 }
 
 
@@ -172,6 +172,4 @@ System.gc();
 
 
 }
-
-
 

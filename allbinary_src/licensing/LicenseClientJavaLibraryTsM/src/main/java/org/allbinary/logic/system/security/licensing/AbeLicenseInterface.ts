@@ -20,6 +20,7 @@
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -45,23 +46,21 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 export interface AbeLicenseInterface {
         
 
-    hasKey(): boolean
+    hasKey(): boolean;
 
-    getKey(keyName: string): string
+    getKey(keyName: string): string;
 
-    getLicenseId(): string
+    getLicenseId(): string;
 
-    getServers(): BasicArrayList
+    getServers(): BasicArrayList;
 
-    getSpecial(): string
+    getSpecial(): string;
 
-    getLicenseType(): LicenseType
+    getLicenseType(): LicenseType;
 
-    isValid(): boolean
+    isValid(): boolean;
 
-    toString(): string
+    toString(): string;
 
 }
-
-
 

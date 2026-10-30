@@ -68,10 +68,10 @@ public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterfa
             
     public visit(sourceLayerInterface: AllBinaryLayer){
 
-    var pointsLayer: PointsLayer = this.getNextInstance() as PointsLayer;;
+    let pointsLayer: PointsLayer = this.getNextInstance() as PointsLayer;;
     
 
-    var scoreableInterface: ScoreableInterface = sourceLayerInterface as ScoreableInterface;;
+    let scoreableInterface: ScoreableInterface = sourceLayerInterface as ScoreableInterface;;
     
 pointsLayer!.visit(scoreableInterface);
     
@@ -79,6 +79,4 @@ pointsLayer!.visit(scoreableInterface);
 
 
 }
-
-
 

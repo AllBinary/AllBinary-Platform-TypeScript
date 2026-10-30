@@ -31,6 +31,7 @@ import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/disp
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -70,13 +71,13 @@ export class FormUtil
 
     public createFormRectangle(): Rectangle{
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var rectangle: Rectangle = new Rectangle(pointFactory!.createXY(30, 10), displayInfo!.getLastWidth() -30, displayInfo!.getLastHeight() -35);;
+    let rectangle: Rectangle = new Rectangle(pointFactory!.createXY(30, 10), displayInfo!.getLastWidth() -30, displayInfo!.getLastHeight() -35);;
     
 
 
@@ -88,6 +89,4 @@ export class FormUtil
 
 
 }
-
-
 

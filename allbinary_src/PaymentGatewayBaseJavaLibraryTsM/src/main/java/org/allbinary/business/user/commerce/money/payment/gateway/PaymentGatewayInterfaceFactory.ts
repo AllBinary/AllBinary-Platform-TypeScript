@@ -36,15 +36,18 @@ import { BasicPaymentTypeUtil } from '../../../../../../../../org/allbinary/busi
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { RequestParams } from '../../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 //not GWT import const RequestParams
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -83,16 +86,24 @@ public constructor (){
             super();
         }
 
-
+getInstance(...args: any[]): any {
+   
+    if (args.length === 1) return this.getInstance$overload1(args[0]);
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+    if (args.length === 1) return this.getInstance$overload3(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
-    public getInstance(httpServletRequest: HttpServletRequest): PaymentGatewayInterface{
+    public getInstance$overload1(httpServletRequest: HttpServletRequest): PaymentGatewayInterface{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
@@ -107,10 +118,11 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(new RequestParams(httpServletRequest).toHashMap());;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
@@ -125,16 +137,18 @@ public constructor (){
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(paymentType: BasicPaymentType): PaymentGatewayInterface{
+    public getInstance$overload2(paymentType: BasicPaymentType): PaymentGatewayInterface{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
     
@@ -149,17 +163,16 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface{
+    public getInstance$overload3(hashMap: HashMap<any, any>): PaymentGatewayInterface{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-    var gatewayName: string = hashMap!.get(PaymentGatewayData.NAME.toString()) as string;;
+ try { 
+    let gatewayName: string = hashMap!.get(PaymentGatewayData.NAME.toString()) as string;;
     
 
-    var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(gatewayName)!;;
+    let paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(gatewayName)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
@@ -171,7 +184,7 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
                                     }
                                 
 
-    var paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface = paymentType!.getPaymentGatewayInterfaceFactoryInterface()!;;
+    let paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface = paymentType!.getPaymentGatewayInterfaceFactoryInterface()!;;
     
 
 
@@ -179,10 +192,11 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return paymentGatewayInterfaceFactoryInterface!.getInstance(hashMap);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
@@ -197,12 +211,12 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

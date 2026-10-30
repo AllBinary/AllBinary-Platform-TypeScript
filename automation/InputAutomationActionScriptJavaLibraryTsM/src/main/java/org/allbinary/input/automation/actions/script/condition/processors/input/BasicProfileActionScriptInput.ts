@@ -51,18 +51,23 @@ import { InputRobotInterface } from '../../../../../../../../../org/allbinary/in
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -111,13 +116,13 @@ public constructor (label: string, node: Node){
 this.logUtil!.putF(this.commonStrings!.START +label, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptInputData.TYPE, node.getChildNodes())!;;
+    let actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptInputData.TYPE, node.getChildNodes())!;;
     
 
-    var inputTypeString: string = DomNodeHelper.getTextNodeValue(actionNode)!;;
+    let inputTypeString: string = DomNodeHelper.getTextNodeValue(actionNode)!;;
     
 
-    var timeNode: Node = DomSearchHelper.getNodeNoThrow(GenericProfileActionScriptInputData.DELAY, node.getChildNodes())!;;
+    let timeNode: Node = DomSearchHelper.getNodeNoThrow(GenericProfileActionScriptInputData.DELAY, node.getChildNodes())!;;
     
 
                         if(timeNode != 
@@ -126,7 +131,7 @@ this.logUtil!.putF(this.commonStrings!.START +label, this, this.commonStrings!.C
                         
                                     {
                                     
-    var delayString: string = DomNodeHelper.getTextNodeValue(timeNode)!;;
+    let delayString: string = DomNodeHelper.getTextNodeValue(timeNode)!;;
     
 this.setTime(Integer.valueOf(delayString)!.intValue());
     
@@ -153,16 +158,16 @@ public constructor (label: string){
 this.logUtil!.putF(this.commonStrings!.START +label, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var inputRobotFactory: InputRobotFactory = InputRobotFactory.getInstance()!;;
+    let inputRobotFactory: InputRobotFactory = InputRobotFactory.getInstance()!;;
     
 
-    var hashtable: ABHashtable<any, any> = inputRobotFactory!.get() as ABHashtable<any, any>;;
+    let hashtable: ABHashtable<any, any> = inputRobotFactory!.get() as ABHashtable<any, any>;;
     
 
-    var set: Set = hashtable.keys()!;;
+    let set: Set = hashtable.keys()!;;
     
 
-    var iterator: Iterator = set.iterator()!;;
+    let iterator: Iterator = set.iterator()!;;
     
 this.setInputRobotInterface(inputRobotFactory!.get(iterator.next() as string));
     
@@ -189,7 +194,7 @@ this.time= time;
 
     public BasicProfileActionScriptInput_toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(GenericProfileActionScriptInputData.TYPE, this.getInputRobotInterface()!.getName());
     
@@ -210,7 +215,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNodeWithValueNodes(document, GenericProfileActionScriptInputData.NAME, this.BasicProfileActionScriptInput_toHashMap())!;;
+    let node: Node = ModDomHelper.createNodeWithValueNodes(document, GenericProfileActionScriptInputData.NAME, this.BasicProfileActionScriptInput_toHashMap())!;;
     
 
 
@@ -239,7 +244,7 @@ this.inputRobotInterface= inputRobotInterface;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toString());
     
@@ -276,6 +281,4 @@ stringBuffer!.appendlong(this.getTime());
 
 
 }
-
-
 

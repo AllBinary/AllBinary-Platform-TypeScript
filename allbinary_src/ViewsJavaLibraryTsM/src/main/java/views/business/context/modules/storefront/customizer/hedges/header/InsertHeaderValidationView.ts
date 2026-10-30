@@ -40,12 +40,14 @@ import { MultipartRequestParams } from '../../../../../../../../org/allbinary/lo
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -100,13 +102,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var multipartRequestHashMap: HashMap<any, any> = new MultipartRequestParams(this.getPageContext()).toHashMap()!;;
+    let multipartRequestHashMap: HashMap<any, any> = new MultipartRequestParams(this.getPageContext()).toHashMap()!;;
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
     
 
-    var fullPath: string = URLGLOBALS.getWebappPath() +storeFrontInterface!.getCurrentHostNamePath() +this.LOGOPATH;;
+    let fullPath: string = URLGLOBALS.getWebappPath() +storeFrontInterface!.getCurrentHostNamePath() +this.LOGOPATH;;
     
 multipartRequestHashMap!.put(LogoData.getInstance()!.IMAGEPATH, fullPath);
     
@@ -129,8 +131,7 @@ this.heading= new HeadingValidation(multipartRequestHashMap);
 
     public isValid(): Boolean{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -140,10 +141,10 @@ this.heading= new HeadingValidation(multipartRequestHashMap);
                                     }
                                 
 
-    var isValid: Boolean = this.heading.isValid()!;;
+    let isValid: Boolean = this.heading.isValid()!;;
     
 
-                        if(isValid == Boolean.TRUE)
+                        if(isValid == true)
                         
                                     {
                                     CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as DomNodeInterface);
@@ -157,10 +158,11 @@ this.heading= new HeadingValidation(multipartRequestHashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -174,18 +176,19 @@ this.heading= new HeadingValidation(multipartRequestHashMap);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.heading.validationInfo());
     
@@ -195,10 +198,11 @@ stringBuffer!.append(this.heading.validationInfo());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -214,8 +218,10 @@ stringBuffer!.append(this.heading.validationInfo());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Getting Validation Info";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -240,6 +246,4 @@ stringBuffer!.append(this.heading.validationInfo());
 
 
 }
-
-
 

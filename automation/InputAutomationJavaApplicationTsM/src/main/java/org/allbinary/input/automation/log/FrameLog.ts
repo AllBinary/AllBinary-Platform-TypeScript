@@ -32,9 +32,11 @@ import { FileOutputStream } from '../../../../../java/io/FileOutputStream.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { ImageOutputData } from '../../../../../org/allbinary/input/automation/ImageOutputData.js';
 //not GWT import const ImageOutputData
@@ -44,9 +46,11 @@ import { LongUtil } from '../../../../../org/allbinary/logic/java/number/LongUti
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -100,14 +104,14 @@ this.infoStringBuffer!.append(infoString);
 
     public addActions(vectorOfStrings: BasicArrayList){
 
-    var size: number = vectorOfStrings!.size()!;;
+    let size: number = vectorOfStrings!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.addAction(vectorOfStrings!.get(index) as string);
     
@@ -128,7 +132,7 @@ this.actionsStringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
             
     public write(){
 
-    var filePathStringBuffer: StringMaker = new StringMaker();;
+    let filePathStringBuffer: StringMaker = new StringMaker();;
     
 filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
     
@@ -137,10 +141,10 @@ filePathStringBuffer!.append(LongUtil.fillIn(this.frame.toString()));
 filePathStringBuffer!.append(".txt");
     
 
-    var filePath: string = filePathStringBuffer!.toString()!;;
+    let filePath: string = filePathStringBuffer!.toString()!;;
     
 
-    var fileOutputStream: FileOutputStream = new FileOutputStream(new File(filePath));;
+    let fileOutputStream: FileOutputStream = new FileOutputStream(new File(filePath));;
     
 fileOutputStream!.write(FrameLog.frameBytes);
     
@@ -174,6 +178,4 @@ fileOutputStream!.close();
 
 
 }
-
-
 

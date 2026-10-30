@@ -47,39 +47,37 @@ import { Document } from '../../../../../org/w3c/dom/Document.js';
 export interface WorkAreaJPanelInterface extends java.awt.event.KeyListener {
         
 
-    getName(): string
+    getName(): string;
 
-    deselect()
+    deselect(): void;
 
-    select()
+    select(): void;
 
-    changeZoom(factor: number)
+    changeZoom(factor: number): void;
 
-    explodeAll()
-
-                //@Throws(Exception.constructor)
-            
-    autoRotate(increments: number, totalAngle: number)
+    explodeAll(): void;
 
                 //@Throws(Exception.constructor)
             
-    autoExplode(numberOfFrames: number, explodeType: number)
+    autoRotate(increments: number, totalAngle: number): void;
 
                 //@Throws(Exception.constructor)
             
-    autoMirror()
-
-    play()
-
-    stop()
-
-    isPlaying(): boolean
+    autoExplode(numberOfFrames: number, explodeType: number): void;
 
                 //@Throws(Exception.constructor)
             
-    toDocument(): Document
+    autoMirror(): void;
+
+    play(): void;
+
+    stop(): void;
+
+    isPlaying(): boolean;
+
+                //@Throws(Exception.constructor)
+            
+    toDocument(): Document;
 
 }
-
-
 

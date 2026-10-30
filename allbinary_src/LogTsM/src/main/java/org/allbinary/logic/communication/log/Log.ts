@@ -24,9 +24,11 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { LogFormatUtil } 
 const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+type LogFormatUtil<T = any, U = any> = typeof LogFormatUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogFormatUtil;
 
 
 
@@ -62,7 +64,7 @@ export class Log
 
     private readonly exception: any;
 
-public constructor (specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+public constructor (specialMessage: string, anyType: any, functionName: string, exception: any){
 
             super();
         this.specialMessage= specialMessage;
@@ -118,10 +120,10 @@ this.exception= exception;
 
     public toString(): string{
 
-    var className: string = CommonStrings.getInstance()!.EMPTY;;
+    let className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
-    var clazz: Function = this.anyType!.constructor!;;
+    let clazz: Function = this.anyType!.constructor!;;
     
 
                         if(clazz.toString()! != 
@@ -144,6 +146,4 @@ this.exception= exception;
 
 
 }
-
-
 

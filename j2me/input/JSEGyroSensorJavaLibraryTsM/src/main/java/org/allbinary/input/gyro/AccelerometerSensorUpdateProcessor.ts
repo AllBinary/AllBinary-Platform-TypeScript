@@ -64,7 +64,7 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
             
     public process(){
 
-    var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;;
+    let sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;;
     
 
                         if(Features.getInstance()!.isFeature(sensorFeatureFactory!.ORIENTATION_SENSORS))
@@ -106,6 +106,4 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
 
 
 }
-
-
 

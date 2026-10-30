@@ -22,15 +22,18 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { UserFactoryInterface } from '../../../../../org/allbinary/business/user/UserFactoryInterface.js';
 //not GWT import const UserFactoryInterface
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -76,20 +79,20 @@ UserRoleFactory.getInstance();
                         
                                     {
                                     
-    var roleVector: BasicArrayList = UserRoleB.getAll()!;;
+    let roleVector: BasicArrayList = UserRoleB.getAll()!;;
     
 
-    var size: number = roleVector!.size()!;;
+    let size: number = roleVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var userRole: UserRole = roleVector!.get(index) as UserRole;;
+    let userRole: UserRole = roleVector!.get(index) as UserRole;;
     
 
                         if(role.compareTo(userRole!.toString()) == 0)
@@ -141,6 +144,4 @@ UserRoleB.roleVector!.add(this);
 
 
 }
-
-
 

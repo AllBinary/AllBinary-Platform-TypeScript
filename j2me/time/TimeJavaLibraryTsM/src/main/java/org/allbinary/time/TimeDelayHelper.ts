@@ -26,12 +26,15 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 
 
@@ -75,7 +78,7 @@ this.setStartTimeTNT();
 
     public isTimeTNT(): boolean{
 
-    var currentTime: number = Date.now()!;;
+    let currentTime: number = Date.now()!;;
     
 
                         if(currentTime -this.startTime > this.delay)
@@ -103,7 +106,7 @@ this.setStartTimeTNT();
 
     public isTimeSinceTNT(delay: number): boolean{
 
-    var currentTime: number = Date.now()!;;
+    let currentTime: number = Date.now()!;;
     
 
                         if(currentTime -this.startTime > delay)
@@ -337,17 +340,17 @@ this.setStartTimeTNT();
 
     public toStringAt(currentTime: number): string{
 
-    var elapsed: number = this.getElapsed(currentTime)!;;
+    let elapsed: number = this.getElapsed(currentTime)!;;
     
 
                         if(elapsed > 0)
                         
                                     {
                                     
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
+    let commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var elapsedAsString: string = (elapsed).toString()!;;
+    let elapsedAsString: string = (elapsed).toString()!;;
     
 
 
@@ -373,20 +376,20 @@ this.setStartTimeTNT();
 
     public toString(): string{
 
-    var currentTime: number = Date.now()!;;
+    let currentTime: number = Date.now()!;;
     
 
-    var elapsed: number = this.getElapsed(currentTime)!;;
+    let elapsed: number = this.getElapsed(currentTime)!;;
     
 
                         if(elapsed > 0)
                         
                                     {
                                     
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
+    let commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var elapsedAsString: string = (elapsed).toString()!;;
+    let elapsedAsString: string = (elapsed).toString()!;;
     
 
 
@@ -411,6 +414,4 @@ this.setStartTimeTNT();
 
 
 }
-
-
 

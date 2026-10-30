@@ -34,9 +34,11 @@ import { MotionRecognizer } from '../../../../../../org/allbinary/input/motion/M
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -93,15 +95,14 @@ private constructor (){
 
     public process(motionEvent: MotionEvent){
 
-        try {
-            
-    var x: number = globalThis.Math.trunc(motionEvent!.getX());;
+ try { 
+    let x: number = globalThis.Math.trunc(motionEvent!.getX());;
     
 
-    var y: number = globalThis.Math.trunc(motionEvent!.getY());;
+    let y: number = globalThis.Math.trunc(motionEvent!.getY());;
     
 
-    var action: number = motionEvent!.getAction()!;;
+    let action: number = motionEvent!.getAction()!;;
     
 
                         if(action == MotionEvent.ACTION_DOWN)
@@ -130,18 +131,19 @@ private constructor (){
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -46,9 +46,7 @@ export interface LayerInterfaceVisitor {
 
                 //@Throws(Exception.constructor)
             
-    visit(layerInterface: AllBinaryLayer)
+    visit(layerInterface: AllBinaryLayer): void;
 
 }
-
-
 

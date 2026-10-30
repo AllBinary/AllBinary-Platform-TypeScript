@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DynamicObjectData } from '../../../../../org/allbinary/business/DynamicObjectData.js';
 //not GWT import const DynamicObjectData
@@ -43,9 +45,11 @@ import { UserDbInitInfo } from '../../../../../org/allbinary/business/init/db/Us
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
@@ -61,6 +65,7 @@ import { WorkFlowInterface } from '../../../../../org/allbinary/logic/control/wo
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -118,8 +123,7 @@ this.setTableName(this.tableName);
 
     public insert(values: BasicArrayList){
 
-        try {
-            super.insert(values);
+ try { super.insert(values);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -130,10 +134,11 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -143,16 +148,17 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(name: string, storeName: string){
 
-        try {
-            
-    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
     
@@ -169,10 +175,11 @@ super.deleteWhere(keysAndValues);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -182,25 +189,33 @@ super.deleteWhere(keysAndValues);
 
                                     }
                                 
+
+ }
+   }
+ 
 }
 
-}
-
-
+get(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.get$overload1(args[0], args[1]);
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.get$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: get'); }
+  
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
-    public get(name: string, storeName: string): WorkFlowInterface{
+    public get$overload1(name: string, storeName: string): WorkFlowInterface{
 
-        try {
-            
-    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
+    let hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
 
@@ -208,29 +223,11 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DbWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap) as WorkFlowInterface;
     
-
-                //: 
-} catch(e) 
-            {
-
-                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
-                        
-                                    {
-                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e);
-    
-
-                                    }
-                                
-
-
-
-                            throw e;
-                    
-}
-
-                //: 
-/* catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -245,37 +242,57 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
                             throw e;
                     
-}
-*/
-}
 
+ }
+  else {
+  const e = caught;
+  
 
-    public get(storeName: string): BasicArrayList{
-
-        try {
-            
-    var workFlowsVector: BasicArrayList = new BasicArrayListD();;
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
+                        
+                                    {
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e);
     
 
-    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+                                    }
+                                
+
+
+
+                            throw e;
+                    
+
+ }
+   }
+ 
+}
+
+
+    public get$overload2(storeName: string): BasicArrayList{
+
+ try { 
+    let workFlowsVector: BasicArrayList = new BasicArrayListD();;
+    
+
+    let keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
+    let hashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var size: number = hashMapVector!.size()!;;
+    let size: number = hashMapVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var workFlowHashMap: HashMap<any, any> = hashMapVector!.get(i) as HashMap<any, any>;;
+    let workFlowHashMap: HashMap<any, any> = hashMapVector!.get(i) as HashMap<any, any>;;
     
 
                         if(workFlowHashMap != 
@@ -296,10 +313,11 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return workFlowsVector;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -315,16 +333,17 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public update(updatedValues: HashMap<any, any>){
 
-        try {
-            
-    var wherekeysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let wherekeysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME) as string);
     
@@ -332,10 +351,11 @@ wherekeysAndValues!.put(StoreFrontData.getInstance()!.NAME, updatedValues!.get(S
     
 super.updateWhere(wherekeysAndValues, updatedValues);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -345,17 +365,19 @@ super.updateWhere(wherekeysAndValues, updatedValues);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public createTableStatement(): string{
 
-    var workFlowData: WorkFlowData = WorkFlowData.getInstance()!;;
+    let workFlowData: WorkFlowData = WorkFlowData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(workFlowData!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(workFlowData!.DATA)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(workFlowData!.NAME)!.append(this.sqlStrings!.END);
     
@@ -389,6 +411,4 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
 
 }
-
-
 

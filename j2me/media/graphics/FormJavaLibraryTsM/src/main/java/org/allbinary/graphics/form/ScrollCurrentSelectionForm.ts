@@ -84,14 +84,18 @@ import { FormTypeFactory } from './FormTypeFactory.js';
 //not GWT import - same folder const TempHorizontalItemIndexDx
 import { FormType } from './FormType.js';
 //not GWT import - same folder const FormType
+type TempHorizontalFormProcessor = InstanceType<ScrollCurrentSelectionForm['TempHorizontalFormProcessor']>;
+type HorizontalFormProcessor = InstanceType<ScrollCurrentSelectionForm['HorizontalFormProcessor']>;
+type VerticalFormProcessor = InstanceType<ScrollCurrentSelectionForm['VerticalFormProcessor']>;
+type TempHorizontalItemIndexDx = InstanceType<ScrollCurrentSelectionForm['TempHorizontalItemIndexDx']>;
+type HorizontalItemIndexDx = InstanceType<ScrollCurrentSelectionForm['HorizontalItemIndexDx']>;
+type VerticalItemIndexDx = InstanceType<ScrollCurrentSelectionForm['VerticalItemIndexDx']>;
 
 export class ScrollCurrentSelectionForm extends ScrollSelectionForm implements UpdateMyFontInterface {
         
 
-    private readonly moveForSmallScreen: boolean;
-
 //inner= member=true isStatic=
-TempHorizontalFormProcessor = class extends Processor {
+TempHorizontalFormProcessor = (() => { const outer$ScrollCurrentSelectionForm = this; return class extends Processor {
         
 
     private readonly scrollCurrentSelectionForm: ScrollCurrentSelectionForm;
@@ -114,11 +118,9 @@ this.scrollCurrentSelectionForm!.processor= Processor.getInstance();
 }
 
 
-}
-
-
+}; })();
 //inner= member=true isStatic=
-HorizontalFormProcessor = class extends Processor {
+HorizontalFormProcessor = (() => { const outer$ScrollCurrentSelectionForm = this; return class extends Processor {
         
 
     private readonly scrollCurrentSelectionForm: ScrollCurrentSelectionForm;
@@ -141,11 +143,9 @@ this.scrollCurrentSelectionForm!.processor= Processor.getInstance();
 }
 
 
-}
-
-
+}; })();
 //inner= member=true isStatic=
-VerticalFormProcessor = class extends Processor {
+VerticalFormProcessor = (() => { const outer$ScrollCurrentSelectionForm = this; return class extends Processor {
         
 
     private readonly scrollCurrentSelectionForm: ScrollCurrentSelectionForm;
@@ -168,11 +168,9 @@ this.scrollCurrentSelectionForm!.processor= Processor.getInstance();
 }
 
 
-}
-
-
+}; })();
 //inner= member=true isStatic=
-TempHorizontalItemIndexDx = class extends ItemIndexDx {
+TempHorizontalItemIndexDx = (() => { const outer$ScrollCurrentSelectionForm = this; return class extends ItemIndexDx {
         
 
     private readonly scrollCurrentSelectionForm: ScrollCurrentSelectionForm;
@@ -197,11 +195,9 @@ TempHorizontalItemIndexDx = class extends ItemIndexDx {
 }
 
 
-}
-
-
+}; })();
 //inner= member=true isStatic=
-HorizontalItemIndexDx = class extends ItemIndexDx {
+HorizontalItemIndexDx = (() => { const outer$ScrollCurrentSelectionForm = this; return class extends ItemIndexDx {
         
 
     private readonly scrollCurrentSelectionForm: ScrollCurrentSelectionForm;
@@ -226,11 +222,9 @@ HorizontalItemIndexDx = class extends ItemIndexDx {
 }
 
 
-}
-
-
+}; })();
 //inner= member=true isStatic=
-VerticalItemIndexDx = class extends ItemIndexDx {
+VerticalItemIndexDx = (() => { const outer$ScrollCurrentSelectionForm = this; return class extends ItemIndexDx {
         
 
     private readonly scrollCurrentSelectionForm: ScrollCurrentSelectionForm;
@@ -255,8 +249,8 @@ VerticalItemIndexDx = class extends ItemIndexDx {
 }
 
 
-}
-
+}; })();
+    private readonly moveForSmallScreen: boolean;
 
     readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
 
@@ -289,7 +283,7 @@ this.moveForSmallScreen= moveForSmallScreen;
 super.init(rectangle, formType);
     
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
+    let formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 
                         if(formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
@@ -358,20 +352,20 @@ this.dy= this.y;
 
     processHorizontalForm(){
 
-    var size: number = this.size()!;;
+    let size: number = this.size()!;;
     
 
-    var totalWidth: number = 0;;
+    let totalWidth: number = 0;;
     
 
-    var item: ABCustomItem;;
+    let item: ABCustomItem;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 item= this.get(index);
     
@@ -388,7 +382,7 @@ this.dy= this.y +(this.rectangle.getHeight()>>1);
                         
                                     {
                                     
-    var maxTitleHeight: number = 175;;
+    let maxTitleHeight: number = 175;;
     
 
                         if(this.dy < maxTitleHeight)
@@ -407,20 +401,20 @@ this.dy= this.y +(this.rectangle.getHeight()>>1);
 
     processVerticalForm(){
 
-    var totalHeight: number = 0;;
+    let totalHeight: number = 0;;
     
 
-    var size: number = this.size()!;;
+    let size: number = this.size()!;;
     
 
-    var item2: ABCustomItem;;
+    let item2: ABCustomItem;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 item2= this.get(index);
     
@@ -450,7 +444,7 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
                         
                                     {
                                     
-    var maxTitleHeight: number = 175;;
+    let maxTitleHeight: number = 175;;
     
 
                         if(this.dy < maxTitleHeight)
@@ -538,38 +532,37 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
 
     public paint(graphics: Graphics){
 
-        try {
-            this.processor.process();
+ try { this.processor.process();
     
 
-    var delta: number = 0;;
+    let delta: number = 0;;
     
 
-    var deltaX: number = this.getDx()!;;
+    let deltaX: number = this.getDx()!;;
     
 
-    var deltaY: number = this.getDy()!;;
+    let deltaY: number = this.getDy()!;;
     
 
-    var size: number = this.size()!;;
+    let size: number = this.size()!;;
     
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
+    let formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 
-    var item: ABCustomItem;;
+    let item: ABCustomItem;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 item= this.get(index);
     
 
-    var diffX: number = this.preItemIndexDx!.getDx(index, item, this.dx, this.dy)!;;
+    let diffX: number = this.preItemIndexDx!.getDx(index, item, this.dx, this.dy)!;;
     
 
                         if(index == this.getSelectedIndex())
@@ -626,18 +619,19 @@ this.paintable.paint(graphics, index, deltaX +diffX, deltaY);
                             
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.PAINT, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

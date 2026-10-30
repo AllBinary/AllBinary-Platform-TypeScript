@@ -42,9 +42,7 @@
 export interface CollidableInterfaceCompositeInterface {
         
 
-    getCollidableInferface(): CollidableBaseBehavior
+    getCollidableInferface(): CollidableBaseBehavior;
 
 }
-
-
 

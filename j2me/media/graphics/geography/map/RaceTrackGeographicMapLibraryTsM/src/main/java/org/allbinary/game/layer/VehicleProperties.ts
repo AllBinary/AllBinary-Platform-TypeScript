@@ -91,5 +91,3 @@ this.vehicleFrictionProperties= vehicleFrictionProperties;
 
 }
 
-
-

@@ -31,15 +31,18 @@ import { ModDomHelper } from '../../../../../../../../../../org/allbinary/data/t
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Validation } from '../../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
 //not GWT import const Validation
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StylesData } from '../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StylesData.js';
 //not GWT import const StylesData
@@ -90,7 +93,7 @@ public constructor (document: Document){
 
             super();
         
-    var nodeList: NodeList = document.getElementsByTagName(StylesData.getInstance()!.NAME)!;;
+    let nodeList: NodeList = document.getElementsByTagName(StylesData.getInstance()!.NAME)!;;
     
 }
 
@@ -111,9 +114,8 @@ public constructor (hashMap: HashMap<any, any>){
 
     public isValid(): Boolean{
 
-        try {
-            
-    var isValid: Boolean = Boolean.TRUE;;
+ try { 
+    let isValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -139,10 +141,11 @@ public constructor (hashMap: HashMap<any, any>){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -156,18 +159,19 @@ public constructor (hashMap: HashMap<any, any>){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -175,10 +179,11 @@ public constructor (hashMap: HashMap<any, any>){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -194,8 +199,10 @@ public constructor (hashMap: HashMap<any, any>){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -223,7 +230,7 @@ public constructor (hashMap: HashMap<any, any>){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, StringUtil.getInstance()!.EMPTY_STRING)!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, StringUtil.getInstance()!.EMPTY_STRING)!;;
     
 
 
@@ -235,6 +242,4 @@ public constructor (hashMap: HashMap<any, any>){
 
 
 }
-
-
 

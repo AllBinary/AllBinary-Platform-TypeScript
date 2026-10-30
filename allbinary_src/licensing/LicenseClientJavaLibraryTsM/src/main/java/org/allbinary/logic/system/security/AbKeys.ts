@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -83,8 +84,7 @@ private constructor (){
 
     public getKey(abeClientInformation: AbeClientInformationInterface, keyName: string): string{
 
-        try {
-            this.logUtil!.putF("Getting Key: " +keyName, this, "getKey");
+ try { this.logUtil!.putF("Getting Key: " +keyName, this, "getKey");
     
 
                         if(keyName!.compareTo("DirectX 8") == 0 || keyName!.compareTo("DirectX") == 0 || keyName!.compareTo("Low Level") == 0 || keyName!.compareTo("System Drivers") == 0)
@@ -105,20 +105,21 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return AbeLicenseInterfaceFactory.getInstance()!.getLicenseInstance(abeClientInformation)!.getKey(keyName);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 this.logUtil!.put("Licensing Failure", this, "getKey()", e);
     
 
@@ -126,12 +127,12 @@ this.logUtil!.put("Licensing Failure", this, "getKey()", e);
 
                             throw new LicensingException("Unknown License Failure");
                     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

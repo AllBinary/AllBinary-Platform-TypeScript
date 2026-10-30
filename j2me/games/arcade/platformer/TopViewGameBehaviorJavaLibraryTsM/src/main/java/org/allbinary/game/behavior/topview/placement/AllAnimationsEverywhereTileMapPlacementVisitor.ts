@@ -47,25 +47,25 @@ export class AllAnimationsEverywhereTileMapPlacementVisitor extends TileMapPlace
 
     public visit(lastMap: TiledMap, mapData: number[][]){
 
-    var size: number = mapData!.length
+    let size: number = mapData!.length
                 ;;
     
 
-    var size2: number = mapData[0]!.length -7;;
+    let size2: number = mapData[0]!.length -7;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
 
 
 
                         for (
-    var index2: number = 0;index2 < size2; )
+    let index2: number = 0;index2 < size2; )
         {
 mapData[index]![index2]= 1;
     
@@ -89,6 +89,4 @@ mapData[index]![index2 +6]= 97;
 
 
 }
-
-
 

@@ -37,9 +37,11 @@ import { Random } from '../../../../../../../../java/util/Random.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
@@ -124,9 +126,11 @@ import { PaymentEntity } from '../../../../../../../../org/allbinary/data/tables
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
@@ -136,9 +140,11 @@ import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -184,48 +190,54 @@ this.setTableName(this.tableName);
     
 }
 
+insert(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.insert$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.insert$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: insert'); }
+  
+    public insert$overload1(userName: string, order: Order){
 
-    public insert(userName: string, order: Order){
-
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 
-        try {
-            
-    var paymentInterface: PaymentInterface = new PaymentEntity().getDefault(userName)!;;
+ try { 
+    let paymentInterface: PaymentInterface = new PaymentEntity().getDefault(userName)!;;
     
 
-    var billingAddress: StreetAddress = new BillingAddressesEntity(userName).getDefault()!;;
+    let billingAddress: StreetAddress = new BillingAddressesEntity(userName).getDefault()!;;
     
 
-    var shippingAddress: StreetAddress = new ShippingAddressesEntity(userName).getDefault()!;;
+    let shippingAddress: StreetAddress = new ShippingAddressesEntity(userName).getDefault()!;;
     
 
-    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
+    let abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(order.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(order.getStoreName())!;;
     
 
-    var shippingInterface: ShippingInterface = new ShippingMethods(abeClientInformation, storeFrontInterface).getShippingInterface(order.getShippingMethod())!;;
+    let shippingInterface: ShippingInterface = new ShippingMethods(abeClientInformation, storeFrontInterface).getShippingInterface(order.getShippingMethod())!;;
     
 
-    var shippingCost: Money = shippingInterface!.getCost(order)!;;
+    let shippingCost: Money = shippingInterface!.getCost(order)!;;
     
 
-    var basketInterface: BasketInterface = order.getBasket()!;;
+    let basketInterface: BasketInterface = order.getBasket()!;;
     
 
-    var subTotal: Money = basketInterface!.getSubTotal()!;;
+    let subTotal: Money = basketInterface!.getSubTotal()!;;
     
 
-    var taxRate: number = TaxFactory.getInstance()!.getInstance(abeClientInformation, storeFrontInterface)!.getTaxRate(shippingAddress, storeFrontInterface)!;;
+    let taxRate: number = TaxFactory.getInstance()!.getInstance(abeClientInformation, storeFrontInterface)!.getTaxRate(shippingAddress, storeFrontInterface)!;;
     
 
-    var tax: Money = new Money();;
+    let tax: Money = new Money();;
     
 
-    var total: Money = new Money();;
+    let total: Money = new Money();;
     
 total.add(shippingCost!.toString());
     
@@ -238,12 +250,12 @@ tax.multiply(taxRate);
 total.add(tax.toString());
     
 
-    var empty: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let empty: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 vector.add(new OrderHistoryIdGenerator().getNext());
     
 
-    var ZERO: string = TableDataFactory.getInstance()!.ZERO_STRING;;
+    let ZERO: string = TableDataFactory.getInstance()!.ZERO_STRING;;
     
 vector.add(order.getId());
     
@@ -252,10 +264,10 @@ vector.add(userName);
 vector.add(order.getStoreName());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 vector.add(ZERO);
     
@@ -282,7 +294,7 @@ vector.add(paymentInterface!.getType());
 vector.add(paymentInterface!.getExpiration());
     
 
-    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;;
+    let random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;;
     
 vector.add(new SuperCrypt(random).encrypt(paymentInterface!.getNumber()));
     
@@ -410,10 +422,11 @@ this.insert(vector);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -423,15 +436,16 @@ this.insert(vector);
 
                                     }
                                 
+
+ }
+   }
+ 
 }
 
-}
 
+    public insert$overload2(values: BasicArrayList){
 
-    public insert(values: BasicArrayList){
-
-        try {
-            super.insert(values);
+ try { super.insert(values);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -442,10 +456,11 @@ this.insert(vector);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -455,22 +470,23 @@ this.insert(vector);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public setStatus(orderId: string, status: string){
 
-        try {
-            
-    var calendar: Calendar = Calendar.getInstance()!;;
+ try { 
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var updateHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let updateHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 updateHashMap!.put(OrderHistoryData.STATUS, status);
     
@@ -494,10 +510,11 @@ updateHashMap!.put(OrderHistoryData.STATUS, status);
                                 
 super.updateWhere(OrderData.ID, orderId, updateHashMap);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -507,22 +524,23 @@ super.updateWhere(OrderData.ID, orderId, updateHashMap);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public setPaymentMethod(orderId: string, paymentMethod: string){
 
-        try {
-            
-    var calendar: Calendar = Calendar.getInstance()!;;
+ try { 
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var updateHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let updateHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 updateHashMap!.put(PaymentData.METHOD, paymentMethod);
     
@@ -530,10 +548,11 @@ updateHashMap!.put(OrderHistoryData.TRANSDATE, time);
     
 super.updateWhere(OrderData.ID, orderId, updateHashMap);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -543,8 +562,10 @@ super.updateWhere(OrderData.ID, orderId, updateHashMap);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -552,31 +573,31 @@ super.updateWhere(OrderData.ID, orderId, updateHashMap);
             
     public getStoreOrders(storeFrontInterface: StoreFrontInterface): BasicArrayList{
 
-    var orderReviewVector: BasicArrayList = new BasicArrayListD();;
+    let orderReviewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName());
     
 
-    var orderHashMapVector: BasicArrayList = super.getRows(whereHashMap)!;;
+    let orderHashMapVector: BasicArrayList = super.getRows(whereHashMap)!;;
     
 
-    var size: number = orderHashMapVector!.size()!;;
+    let size: number = orderHashMapVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(i) as HashMap<any, any>;;
+    let orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(i) as HashMap<any, any>;;
     
 
-    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
+    let orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
     
 orderReviewVector!.add(orderReview);
     
@@ -590,36 +611,45 @@ orderReviewVector!.add(orderReview);
     
 }
 
-
+getOrders(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getOrders$overload1(args[0]);
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string') return this.getOrders$overload2(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.getOrders$overload3(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getOrders'); }
+  
                 //@Throws(Exception.constructor)
             
-    public getOrders(userName: string): BasicArrayList{
+    public getOrders$overload1(userName: string): BasicArrayList{
 
-    var orderReviewVector: BasicArrayList = new BasicArrayListD();;
+    let orderReviewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
 
-    var orderHashMapVector: BasicArrayList = super.getRows(whereHashMap)!;;
+    let orderHashMapVector: BasicArrayList = super.getRows(whereHashMap)!;;
     
 
-    var size: number = orderHashMapVector!.size()!;;
+    let size: number = orderHashMapVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;;
+    let orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;;
     
 
-    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
+    let orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
     
 orderReviewVector!.add(orderReview);
     
@@ -636,33 +666,33 @@ orderReviewVector!.add(orderReview);
 
                 //@Throws(Exception.constructor)
             
-    public getOrders(status: string, fromDate: string, toDate: string): BasicArrayList{
+    public getOrders$overload2(status: string, fromDate: string, toDate: string): BasicArrayList{
 
-    var orderReviewVector: BasicArrayList = new BasicArrayListD();;
+    let orderReviewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(OrderHistoryData.STATUS, status);
     
 
-    var orderHashMapVector: BasicArrayList = super.getRowsWhereBetween(whereHashMap, OrderHistoryData.ORDERDATE, fromDate, toDate)!;;
+    let orderHashMapVector: BasicArrayList = super.getRowsWhereBetween(whereHashMap, OrderHistoryData.ORDERDATE, fromDate, toDate)!;;
     
 
-    var size: number = orderHashMapVector!.size()!;;
+    let size: number = orderHashMapVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;;
+    let orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;;
     
 
-    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
+    let orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
     
 orderReviewVector!.add(orderReview);
     
@@ -679,28 +709,28 @@ orderReviewVector!.add(orderReview);
 
                 //@Throws(Exception.constructor)
             
-    public getOrders(fromDate: string, toDate: string): BasicArrayList{
+    public getOrders$overload3(fromDate: string, toDate: string): BasicArrayList{
 
-    var orderReviewVector: BasicArrayList = new BasicArrayListD();;
+    let orderReviewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var orderHashMapVector: BasicArrayList = super.getRowsWhereBetween(OrderHistoryData.ORDERDATE, fromDate, toDate)!;;
+    let orderHashMapVector: BasicArrayList = super.getRowsWhereBetween(OrderHistoryData.ORDERDATE, fromDate, toDate)!;;
     
 
-    var size: number = orderHashMapVector!.size()!;;
+    let size: number = orderHashMapVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;;
+    let orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;;
     
 
-    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
+    let orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
     
 orderReviewVector!.add(orderReview);
     
@@ -719,12 +749,12 @@ orderReviewVector!.add(orderReview);
             
     public getOrder(id: string): OrderHistory{
 
-    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(OrderData.ID, id);
     
 
-    var orderReviewHashMap: HashMap<any, any> = super.getRow(whereHashMap)!;;
+    let orderReviewHashMap: HashMap<any, any> = super.getRow(whereHashMap)!;;
     
 
                         if(orderReviewHashMap != 
@@ -733,7 +763,7 @@ whereHashMap!.put(OrderData.ID, id);
                         
                                     {
                                     
-    var orderHistory: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
+    let orderHistory: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
     
 
 
@@ -759,10 +789,10 @@ whereHashMap!.put(OrderData.ID, id);
 
     public createTableStatement(): string{
 
-    var entryData: EntryData = EntryData.getInstance()!;;
+    let entryData: EntryData = EntryData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("CREATE TABLE ");
     
@@ -957,24 +987,24 @@ stringBuffer!.append(") )");
             
     public update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>){
 
-        try {
-            updateWhere(whereHashMap, orderHashMap);
+ try { updateWhere(whereHashMap, orderHashMap);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

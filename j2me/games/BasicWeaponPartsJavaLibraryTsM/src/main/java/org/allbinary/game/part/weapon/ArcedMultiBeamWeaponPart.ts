@@ -94,23 +94,23 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
 
-    var increment: number = (globalThis.Math.trunc((this.total -1) /this.TOTAL_ANGLE));;
+    let increment: number = (globalThis.Math.trunc((this.total -1) /this.TOTAL_ANGLE));;
     
 
-    var minAngle: number = (angle -((increment *this.total)>>1));;
+    let minAngle: number = (angle -((increment *this.total)>>1));;
     
 
-    var next: number = 0;;
+    let next: number = 0;;
     
 
-    var weaponLayer: WeaponLayer;;
+    let weaponLayer: WeaponLayer;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.total; index++)
+    let index: number = 0;index < this.total; index++)
         {
 weaponLayer= this.weaponLayerCircularStaticPool!.getInstanceWeaponLayer(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), 0, globalThis.Math.trunc((minAngle +increment)), globalThis.Math.trunc(otherAngle), weaponProperties, scoreableInterface);
     
@@ -124,6 +124,4 @@ next += increment;
 
 
 }
-
-
 

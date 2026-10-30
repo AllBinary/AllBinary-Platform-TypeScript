@@ -71,7 +71,7 @@ public constructor (){
 
             super();
         
-    var bundleContext: BundleContext = InputAutomationBundleActivator.getBundleContext()!;;
+    let bundleContext: BundleContext = InputAutomationBundleActivator.getBundleContext()!;;
     
 
                         if(bundleContext != 
@@ -80,20 +80,20 @@ public constructor (){
                         
                                     {
                                     
-    var bundleArray: Bundle[] = bundleContext!.getBundles()!;;
+    let bundleArray: Bundle[] = bundleContext!.getBundles()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < bundleArray!.length; index++)
+    let index: number = 0;index < bundleArray!.length; index++)
         {
 
-    var bundle: Bundle = bundleArray[index]!;;
+    let bundle: Bundle = bundleArray[index]!;;
     
 
-    var symbolicName: string = bundle.getSymbolicName()!;;
+    let symbolicName: string = bundle.getSymbolicName()!;;
     
 
                         if(symbolicName!.compareTo(DesktopBundle.DESKTOP_SYMBOLIC_NAME) == 0)
@@ -111,7 +111,7 @@ public constructor (){
                                 
                         else {
                             
-    var textJDialog: JDialog = new BasicTextJDialog("BundlContext is Null");;
+    let textJDialog: JDialog = new BasicTextJDialog("BundlContext is Null");;
     
 textJDialog!.setVisible(true);
     
@@ -130,6 +130,4 @@ this.bundle.start();
 
 
 }
-
-
 

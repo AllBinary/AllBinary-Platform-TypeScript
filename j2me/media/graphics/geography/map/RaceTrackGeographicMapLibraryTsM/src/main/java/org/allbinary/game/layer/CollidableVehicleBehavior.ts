@@ -25,6 +25,7 @@ import { PickedUpLayerInterface } from '../../../../org/allbinary/game/layer/pic
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 import { CollidableInterfaceCompositeInterface } from '../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
 //not GWT import const CollidableInterfaceCompositeInterface
@@ -86,17 +87,17 @@ public constructor (collidable: boolean){
             
     public collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
 
-    var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;;
+    let collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;;
     
 
-    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;;
+    let collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;;
     
 
                         if(collisionType == collisionTypeFactory!.PICKUP)
                         
                                     {
                                     
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = (ownerLayer as CollidableDestroyableDamageableLayer);;
+    let collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = (ownerLayer as CollidableDestroyableDamageableLayer);;
     
 collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collidableInterfaceCompositeInterface as PickedUpLayerInterface);
     
@@ -133,19 +134,19 @@ ForcedLogUtil.log("Don't Use Interface Version It Is Slower", this);
 
     collideVehicle(ownerLayer: CollidableCompositeLayer, vehiclePropertiesCompositeInterface: VehiclePropertiesCompositeInterface){
 
-    var ownerVehicleLayerInterface: VehiclePropertiesCompositeInterface = (ownerLayer as VehiclePropertiesCompositeInterface);;
+    let ownerVehicleLayerInterface: VehiclePropertiesCompositeInterface = (ownerLayer as VehiclePropertiesCompositeInterface);;
     
 
-    var ownerVehicleProperties: VehicleProperties = ownerVehicleLayerInterface!.getVehicleProperties()!;;
+    let ownerVehicleProperties: VehicleProperties = ownerVehicleLayerInterface!.getVehicleProperties()!;;
     
 
-    var vehicleProperties: VehicleProperties = vehiclePropertiesCompositeInterface!.getVehicleProperties()!;;
+    let vehicleProperties: VehicleProperties = vehiclePropertiesCompositeInterface!.getVehicleProperties()!;;
     
 
-    var impactVelocityX: number = ownerVehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.getUnscaled() -vehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.getUnscaled();;
+    let impactVelocityX: number = ownerVehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.getUnscaled() -vehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.getUnscaled();;
     
 
-    var impactVelocityY: number = ownerVehicleProperties!.getVelocityProperties()!.getVelocityYBasicDecimalP()!.getUnscaled() -vehicleProperties!.getVelocityProperties()!.getVelocityYBasicDecimalP()!.getUnscaled();;
+    let impactVelocityY: number = ownerVehicleProperties!.getVelocityProperties()!.getVelocityYBasicDecimalP()!.getUnscaled() -vehicleProperties!.getVelocityProperties()!.getVelocityYBasicDecimalP()!.getUnscaled();;
     
 
                         if(impactVelocityX != 0)
@@ -192,7 +193,7 @@ this.totalImpactVelocity= impactVelocityX +impactVelocityY;
 
     collideFriction(vehiclePropertiesCompositeInterface: VehiclePropertiesCompositeInterface){
 
-    var vehicleFrictionProperties: VehicleFrictionProperties = vehiclePropertiesCompositeInterface!.getVehicleProperties()!.getVehicleFrictionProperties()!;;
+    let vehicleFrictionProperties: VehicleFrictionProperties = vehiclePropertiesCompositeInterface!.getVehicleProperties()!.getVehicleFrictionProperties()!;;
     
 vehiclePropertiesCompositeInterface!.getVehicleProperties()!.getVehicleFrictionProperties()!.friction(vehiclePropertiesCompositeInterface!.getVehicleProperties()!.getVelocityProperties(), vehicleFrictionProperties!.getCrashFrictionNominator());
     
@@ -200,6 +201,4 @@ vehiclePropertiesCompositeInterface!.getVehicleProperties()!.getVehicleFrictionP
 
 
 }
-
-
 

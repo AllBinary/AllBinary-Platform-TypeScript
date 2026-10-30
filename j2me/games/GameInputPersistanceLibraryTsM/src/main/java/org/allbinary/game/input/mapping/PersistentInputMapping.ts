@@ -45,30 +45,38 @@ import { NullInputMappingEventListener } from '../../../../../org/allbinary/game
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+type EnumerationUtil<T = any, U = any> = typeof EnumerationUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof EnumerationUtil;
 
 
 
@@ -218,13 +226,13 @@ this.inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping());
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.INIT);
     
 
-        try {
-            this.inputPersistance!.loadAll(abeClientInformation);
+ try { this.inputPersistance!.loadAll(abeClientInformation);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 this.inputPersistance!.deleteRecoreStore(abeClientInformation);
@@ -233,35 +241,37 @@ this.setDefault(abeClientInformation);
     
 this.inputPersistance!.loadAll(abeClientInformation);
     
-}
 
+ }
+   }
+ 
 
-    var list: BasicArrayList = this.inputPersistance!.getList()!;;
+    let list: BasicArrayList = this.inputPersistance!.getList()!;;
     
 
-    var totalMappedTo: number = 0;;
+    let totalMappedTo: number = 0;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var hashtable: ABHashtable<any, any>;;
+    let hashtable: ABHashtable<any, any>;;
     
 
-    var enumeration: Enumeration<any>;;
+    let enumeration: Enumeration<any>;;
     
 
-    var mappedToInput: Input;;
+    let mappedToInput: Input;;
     
 
-    var gameActionInput: Input;;
+    let gameActionInput: Input;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 hashtable= list.objectArray[index]! as ABHashtable<any, any>;
     
@@ -283,7 +293,7 @@ this.getInputMapping()!.add(gameActionInput, mappedToInput);
 }
 
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("End - Total Loaded Keys Mapped: ");
     
@@ -347,6 +357,4 @@ this.inputMappingEventListenerInterface= inputMappingEventListenerInterface;
 
 
 }
-
-
 

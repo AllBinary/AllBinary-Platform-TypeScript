@@ -56,5 +56,3 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
 }
 
-
-

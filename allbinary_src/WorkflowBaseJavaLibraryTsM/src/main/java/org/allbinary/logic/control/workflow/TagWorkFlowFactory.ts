@@ -35,9 +35,11 @@ import { DynamicObjectData } from '../../../../../org/allbinary/business/Dynamic
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeFactory } from '../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
 //not GWT import const AbeFactory
@@ -50,6 +52,7 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -78,8 +81,15 @@ export class TagWorkFlowFactory
         
 
     private static readonly instance: TagWorkFlowFactory = new TagWorkFlowFactory();
-
-    public static getInstance(): TagWorkFlowFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 3) return this.getInstance$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): TagWorkFlowFactory{
 
 
 
@@ -99,17 +109,16 @@ private constructor (){
 
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
+    public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
 
-        try {
-            
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;;
+ try { 
+    let workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;;
     
 
-    var params: any[] = new Array(2);;
+    let params: any[] = new Array(2);;
     
 
-    var classes: Function[] = new Array(2);;
+    let classes: Function[] = new Array(2);;
     
 classes[0]= propertiesHashMap!.constructor;
     
@@ -125,19 +134,20 @@ params[1]= pageContext;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return AbeFactory.getInstance()!.getInstance(abeClientInformation, workFlowClassName, classes, params) as WorkFlowInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;;
+    let workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failed To Get Instance: ");
     
@@ -148,7 +158,7 @@ stringBuffer!.append("->");
 stringBuffer!.append(TagWorkFlowFactory.instance.constructor.name.toString()!);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
     
@@ -160,20 +170,20 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;;
+    let workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failed To Get Instance: ");
     
@@ -184,7 +194,7 @@ stringBuffer!.append("->");
 stringBuffer!.append(TagWorkFlowFactory.instance.constructor.name.toString()!);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
     
@@ -196,12 +206,12 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

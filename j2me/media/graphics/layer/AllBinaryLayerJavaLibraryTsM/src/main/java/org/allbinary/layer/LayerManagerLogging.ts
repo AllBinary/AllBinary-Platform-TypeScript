@@ -27,15 +27,19 @@ import { TsUtil } from '../../../org/allbinary/TsUtil.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -191,24 +195,24 @@ LayerManagerLogging.removeFailed= true;
 this.stringBuilder!.delete(0, this.stringBuilder!.length());
     
 
-    var size: number = layerManager!.getSize()!;;
+    let size: number = layerManager!.getSize()!;;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 this.stringBuilder!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(layerManager)))!.append(commonSeps!.COLON_SEP);
     
 this.stringBuilder!.appendint(size)!.append(commonSeps!.COLON_SEP);
     
 
-    var allBinaryLayer: AllBinaryLayer;;
+    let allBinaryLayer: AllBinaryLayer;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 allBinaryLayer= (layerManager!.getLayerAt(index) as AllBinaryLayer);
     
@@ -230,6 +234,4 @@ this.logUtil!.putF(this.stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(
 
 
 }
-
-
 

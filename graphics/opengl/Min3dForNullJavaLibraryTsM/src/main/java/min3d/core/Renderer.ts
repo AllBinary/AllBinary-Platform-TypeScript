@@ -46,13 +46,11 @@ import { GL10 } from '../../javax/microedition/khronos/opengles/GL10.js';
 export interface Renderer {
         
 
-    onSurfaceCreated(gl: GL10, config: EGLConfig)
+    onSurfaceCreated(gl: GL10, config: EGLConfig): void;
 
-    onSurfaceChanged(gl: GL10, width: number, height: number)
+    onSurfaceChanged(gl: GL10, width: number, height: number): void;
 
-    onDrawFrame(gl: GL10)
+    onDrawFrame(gl: GL10): void;
 
 }
-
-
 

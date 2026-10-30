@@ -42,41 +42,39 @@
 export interface AdvertisementsInterface {
         
 
-    add(advertisementInterface: AdvertisementInterface)
+    add(advertisementInterface: AdvertisementInterface): void;
 
-    get(index: number): AdvertisementInterface
+    get(index: number): AdvertisementInterface;
 
-    getCurrentPageNum(): number
+    getCurrentPageNum(): number;
 
-    getErrorDescription(): string
+    getErrorDescription(): string;
 
-    getErrorNum(): string
+    getErrorNum(): string;
 
-    getNumberOfPosters(): number
+    getNumberOfPosters(): number;
 
-    getNumberOfProductsInPage(): number
+    getNumberOfProductsInPage(): number;
 
-    getStatusCode(): number
+    getStatusCode(): number;
 
-    getTotalNumberOfProducts(): number
+    getTotalNumberOfProducts(): number;
 
-    isSearchValid(): boolean
+    isSearchValid(): boolean;
 
-    setCurrentPageNum(currentPageNum: number)
+    setCurrentPageNum(currentPageNum: number): void;
 
-    setErrorDescription(errorDescription: string)
+    setErrorDescription(errorDescription: string): void;
 
-    setErrorNum(errorNum: string)
+    setErrorNum(errorNum: string): void;
 
-    setNumberOfProductsInPage(numberOfProductsInPage: number)
+    setNumberOfProductsInPage(numberOfProductsInPage: number): void;
 
-    setStatusCode(statusCode: number)
+    setStatusCode(statusCode: number): void;
 
-    setTotalNumberOfProducts(totalNumberOfProducts: number)
+    setTotalNumberOfProducts(totalNumberOfProducts: number): void;
 
-    toString(): string
+    toString(): string;
 
 }
-
-
 

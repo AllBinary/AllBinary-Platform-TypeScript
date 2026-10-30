@@ -126,13 +126,11 @@ protected constructor (x: number, y: number, z: number){
 }
 
 
-    public setAllbinaryLayer(allbinaryLayer: any = {}){
+    public setAllbinaryLayer(allbinaryLayer: any){
 this.allbinaryLayer= allbinaryLayer as unknown as AllBinaryLayer;
     
 }
 
 
 }
-
-
 

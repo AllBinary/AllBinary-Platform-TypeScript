@@ -66,7 +66,7 @@ public constructor (){
         }
 
 
-    public process(gl: GL10, aObject3d: any = {}){
+    public process(gl: GL10, aObject3d: any){
 
 
 
@@ -76,6 +76,4 @@ public constructor (){
 
 
 }
-
-
 

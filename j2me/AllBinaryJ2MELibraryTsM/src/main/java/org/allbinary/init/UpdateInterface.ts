@@ -44,9 +44,7 @@ export interface UpdateInterface {
 
                 //@Throws(Exception.constructor)
             
-    update()
+    update(): void;
 
 }
-
-
 

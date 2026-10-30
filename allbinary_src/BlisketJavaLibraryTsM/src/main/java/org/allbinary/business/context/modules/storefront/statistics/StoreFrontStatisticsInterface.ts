@@ -52,15 +52,13 @@ import { StoreFrontUsersStatisticsInterface } from '../../../../../../../org/all
 export interface StoreFrontStatisticsInterface {
         
 
-    getAdvertisements(): StoreFrontAdvertisementsStatisticsInterface
+    getAdvertisements(): StoreFrontAdvertisementsStatisticsInterface;
 
-    getUsers(): StoreFrontUsersStatisticsInterface
+    getUsers(): StoreFrontUsersStatisticsInterface;
 
-    getInventory(): StoreFrontInventoryStatisticsInterface
+    getInventory(): StoreFrontInventoryStatisticsInterface;
 
-    getOrders(): StoreFrontOrdersHistoryStatisticsInterface
+    getOrders(): StoreFrontOrdersHistoryStatisticsInterface;
 
 }
-
-
 

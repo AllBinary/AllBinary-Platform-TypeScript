@@ -42,15 +42,13 @@
 export interface ProgressActivityInterface {
         
 
-    runOnUiThread(action: Runnable)
+    runOnUiThread(action: Runnable): void;
 
-    onDismissTitleProgressBar()
+    onDismissTitleProgressBar(): void;
 
-    onShowTitleProgressBar(value: number, indeterminate: boolean)
+    onShowTitleProgressBar(value: number, indeterminate: boolean): void;
 
-    onTitleProgressBarSetProgress(value: number)
+    onTitleProgressBarSetProgress(value: number): void;
 
 }
-
-
 

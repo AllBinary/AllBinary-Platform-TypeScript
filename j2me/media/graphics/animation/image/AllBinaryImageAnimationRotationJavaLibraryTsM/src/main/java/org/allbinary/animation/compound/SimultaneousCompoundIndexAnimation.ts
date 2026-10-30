@@ -76,7 +76,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.setFrame(frameIndex);
@@ -124,7 +124,7 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex);
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.previousFrame();
@@ -142,7 +142,7 @@ this.animationInterfaceArray[index]!.previousFrame();
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.nextFrame();
@@ -172,7 +172,7 @@ this.animationInterfaceArray[index]!.nextFrame();
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
@@ -188,7 +188,7 @@ this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.paintThreedXYZ(graphics, x, y, z);
@@ -206,7 +206,7 @@ this.animationInterfaceArray[index]!.paintThreedXYZ(graphics, x, y, z);
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.set(gl);
@@ -233,6 +233,4 @@ this.animationInterfaceArray= animationInterfaceArray;
 
 
 }
-
-
 

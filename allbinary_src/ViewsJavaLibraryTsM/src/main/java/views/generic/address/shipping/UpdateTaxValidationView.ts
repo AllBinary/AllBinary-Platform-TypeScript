@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 //not GWT import const StoreFrontFactory
@@ -95,26 +97,26 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 this.streetAddress= new StreetAddress(this.getRequest());
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;;
     
 
-                        if(TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.isValid(this.streetAddress, storeFrontInterface) == Boolean.FALSE)
+                        if(TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.isValid(this.streetAddress, storeFrontInterface) == false)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
+    let billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 
-    var streetAddressList: BasicArrayList = billingAddressesEntity!.get()!;;
+    let streetAddressList: BasicArrayList = billingAddressesEntity!.get()!;;
     
 
                         if(streetAddressList == 
@@ -126,26 +128,26 @@ this.streetAddress= new StreetAddress(this.getRequest());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var count: number = 0;;
+    let count: number = 0;;
     
 
-    var size: number = streetAddressList!.size()!;;
+    let size: number = streetAddressList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
+    let aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
     
 
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
@@ -164,13 +166,13 @@ this.streetAddress= new StreetAddress(this.getRequest());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
@@ -206,6 +208,4 @@ this.streetAddress= new StreetAddress(this.getRequest());
 
 
 }
-
-
 

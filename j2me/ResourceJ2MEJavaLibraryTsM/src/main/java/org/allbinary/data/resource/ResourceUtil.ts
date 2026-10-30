@@ -29,15 +29,19 @@ import { InputStream } from '../../../../java/io/InputStream.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -93,7 +97,7 @@ this.logUtil!.putF(CommonStrings.getInstance()!.NOT_IMPLEMENTED, this, "setLoadi
             
     public getResourceAsStream(resource: string): InputStream{
 
-    var inputStream: InputStream = resource..javaClass.getResourceAsStream(resource)!;;
+    let inputStream: InputStream = resource..javaClass.getResourceAsStream(resource)!;;
     
 
                         if(inputStream == 
@@ -118,13 +122,13 @@ this.logUtil!.putF(CommonStrings.getInstance()!.NOT_IMPLEMENTED, this, "setLoadi
                         
                                     {
                                     
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var index: number = resource.lastIndexOf('/')!;;
+    let index: number = resource.lastIndexOf('/')!;;
     
 
-    var resourcePath: string = resource.substring(index +1)!;;
+    let resourcePath: string = resource.substring(index +1)!;;
     
 inputStream= resource..javaClass.getResourceAsStream(resourcePath);
     
@@ -145,7 +149,7 @@ inputStream= resource..javaClass.getResourceAsStream(resourcePath);
                         
                                     {
                                     
-    var RES: string = "res";;
+    let RES: string = "res";;
     
 resourcePath= stringMaker!.append(RES)!.append(resource.substring(index))!.toString();
     
@@ -164,7 +168,7 @@ resourcePath= stringMaker!.append("/")!.append(RES)!.append(resource.substring(i
 inputStream= resource..javaClass.getResourceAsStream(resourcePath);
     
 
-    var COLON: string = CommonSeps.getInstance()!.COLON;;
+    let COLON: string = CommonSeps.getInstance()!.COLON;;
     
 
                         if(inputStream == 
@@ -197,7 +201,7 @@ inputStream= resource..javaClass.getResourceAsStream(resourcePath);
                         
                                     {
                                     
-    var RESOURCE_STRING: string = "resource";;
+    let RESOURCE_STRING: string = "resource";;
     
 stringMaker!.delete(0, stringMaker!.length());
     
@@ -276,16 +280,16 @@ inputStream= resource..javaClass.getResourceAsStream(resourcePath);
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var index: number = resource.indexOf(CommonSeps.getInstance()!.COLON)!;;
+    let index: number = resource.indexOf(CommonSeps.getInstance()!.COLON)!;;
     
 
-    var resourcePath: string = resource.substring(index +startIndex)!;;
+    let resourcePath: string = resource.substring(index +startIndex)!;;
     
 
-    var inputStream: InputStream = resource..javaClass.getResourceAsStream(resourcePath)!;;
+    let inputStream: InputStream = resource..javaClass.getResourceAsStream(resourcePath)!;;
     
 
                         if(inputStream != 
@@ -316,6 +320,4 @@ inputStream= resource..javaClass.getResourceAsStream(resourcePath);
 
 
 }
-
-
 

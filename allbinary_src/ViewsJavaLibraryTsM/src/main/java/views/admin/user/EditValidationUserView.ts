@@ -37,12 +37,14 @@ import { RequestParams } from '../../../org/allbinary/logic/communication/http/r
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -88,10 +90,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpServletRequest: HttpServletRequest = this.getPageContext()!.getRequest() as HttpServletRequest;;
+    let httpServletRequest: HttpServletRequest = this.getPageContext()!.getRequest() as HttpServletRequest;;
     
 
-    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;;
+    let hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;;
     
 this.userName= new UserName(hashMap).get();
     
@@ -100,9 +102,8 @@ this.userName= new UserName(hashMap).get();
 
     public isValid(): Boolean{
 
-        try {
-            
-                        if(UserName.getInstance()!.isValid(this.userName) == Boolean.TRUE)
+ try { 
+                        if(UserName.getInstance()!.isValid(this.userName) == true)
                         
                                     {
                                     this.user= UserEntityFactory.getInstance()!.getUser(this.userName);
@@ -117,7 +118,7 @@ this.userName= new UserName(hashMap).get();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -130,7 +131,7 @@ this.userName= new UserName(hashMap).get();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                         }
@@ -141,10 +142,11 @@ this.userName= new UserName(hashMap).get();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.user.isValid();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -158,21 +160,22 @@ this.userName= new UserName(hashMap).get();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-                        if(UserName.getInstance()!.isValid(this.userName) == Boolean.TRUE)
+                        if(UserName.getInstance()!.isValid(this.userName) == true)
                         
                                     {
                                     
@@ -219,7 +222,7 @@ this.user= UserEntityFactory.getInstance()!.getUser(this.userName);
                         }
                             
 
-                        if(this.user.isValid() == Boolean.FALSE)
+                        if(this.user.isValid() == false)
                         
                                     {
                                     
@@ -244,10 +247,11 @@ stringBuffer!.append(this.user.validationInfo());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -263,8 +267,10 @@ stringBuffer!.append(this.user.validationInfo());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -289,6 +295,4 @@ stringBuffer!.append(this.user.validationInfo());
 
 
 }
-
-
 

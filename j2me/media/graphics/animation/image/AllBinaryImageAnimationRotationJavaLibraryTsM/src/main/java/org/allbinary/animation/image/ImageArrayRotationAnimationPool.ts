@@ -83,15 +83,15 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
 
                 //@Throws(Exception.constructor)
             
-    public remove(key: any = {}): CacheableInterface{
+    public remove(key: any): CacheableInterface{
 
-    var cacheableInterface: CacheableInterface = super.remove(key)!;;
+    let cacheableInterface: CacheableInterface = super.remove(key)!;;
     
 
-    var allBinaryImageRotationAnimationInfo: ImageArrayRotationAnimationInfo = key as ImageArrayRotationAnimationInfo;;
+    let allBinaryImageRotationAnimationInfo: ImageArrayRotationAnimationInfo = key as ImageArrayRotationAnimationInfo;;
     
 
-    var imageArrayRotationAnimationCacheable: ImageArrayRotationAnimationCacheable = (cacheableInterface as ImageArrayRotationAnimationCacheable);;
+    let imageArrayRotationAnimationCacheable: ImageArrayRotationAnimationCacheable = (cacheableInterface as ImageArrayRotationAnimationCacheable);;
     
 imageArrayRotationAnimationCacheable!.setImageArray(allBinaryImageRotationAnimationInfo!.getImageArray());
     
@@ -105,6 +105,4 @@ imageArrayRotationAnimationCacheable!.setImageArray(allBinaryImageRotationAnimat
 
 
 }
-
-
 

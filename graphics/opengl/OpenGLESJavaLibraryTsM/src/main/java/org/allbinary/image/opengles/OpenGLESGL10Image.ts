@@ -88,7 +88,7 @@ export class OpenGLESGL10Image extends OpenGLESImage {
                                 
     private readonly glUtil: GLUtil = GLUtil.getInstance()!;
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-    private readonly textureVertexFloatBuffer: FloatBuffer = OpenGLESGL10Image.prototype.textureVertexFloatBuffer;
+    private readonly textureVertexFloatBuffer: FloatBuffer = outer$OpenGLESGL10Image.textureVertexFloatBuffer;
     private readonly regionTextureRectangleFloatArray: number[] = new Array(8);
     private readonly regionTextureVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *2)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
     private readonly regionRectangleFloatArray: number[] = [
@@ -117,13 +117,13 @@ export class OpenGLESGL10Image extends OpenGLESImage {
                                 //Otherwise - values - DoubleLiteralExpr
 ];
     readonly regionRectangleVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *3)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
-    readonly openGLESImageProperties: OpenGLESImageProperties = OpenGLESGL10Image.prototype.openGLESImageProperties;
+    readonly openGLESImageProperties: OpenGLESImageProperties = outer$OpenGLESGL10Image.openGLESImageProperties;
     public drawRegion(gl: GL10, viewHeight: number, x_src: number, y_src: number, width: number, height: number, x: number, y: number, z: number){
 
-    var imageWidth: number = OpenGLESGL10Image.prototype.getWidth()!;;
+    let imageWidth: number = outer$OpenGLESGL10Image.getWidth()!;;
     
 
-    var imageHeight: number = OpenGLESGL10Image.prototype.getHeight()!;;
+    let imageHeight: number = outer$OpenGLESGL10Image.getHeight()!;;
     
 this.regionRectangleFloatArray[7]= viewHeight;
     
@@ -154,25 +154,25 @@ this.regionTextureRectangleFloatArray[6]= this.regionTextureRectangleFloatArray[
 this.regionTextureRectangleFloatArray[7]= this.regionTextureRectangleFloatArray[5]!;
     
 
-    var u_center: number = (this.regionTextureRectangleFloatArray[0] +this.regionTextureRectangleFloatArray[2]) /2.0;;
+    let u_center: number = (this.regionTextureRectangleFloatArray[0] +this.regionTextureRectangleFloatArray[2]) /2.0;;
     
 
-    var v_center: number = (this.regionTextureRectangleFloatArray[5] +this.regionTextureRectangleFloatArray[1]) /2.0;;
+    let v_center: number = (this.regionTextureRectangleFloatArray[5] +this.regionTextureRectangleFloatArray[1]) /2.0;;
     
 this.glUtil!.rotateUVs(this.regionTextureRectangleFloatArray,  -this.openGLESImageProperties!.angle, u_center, v_center);
     
 gl.glPushMatrix();
     
 
-    var imageProcessor: OpenGLESImageProcessor = OpenGLESGL10Image.prototype.imageProcessor;;
+    let imageProcessor: OpenGLESImageProcessor = outer$OpenGLESGL10Image.imageProcessor;;
     
-OpenGLESGL10Image.prototype.openGLESImageTranslate!.translate(gl, OpenGLESGL10Image.prototype, x,  -y);
+outer$OpenGLESGL10Image.openGLESImageTranslate!.translate(gl, outer$OpenGLESGL10Image, x,  -y);
     
 imageProcessor!.scale(gl, this.openGLESImageProperties!.scaleX, this.openGLESImageProperties!.scaleY);
     
 imageProcessor!.colorMask(gl, this.openGLESImageProperties!.redf, this.openGLESImageProperties!.greenf, this.openGLESImageProperties!.bluef, this.openGLESImageProperties!.alphaf);
     
-OpenGLESGL10Image.prototype.openGLESImageTranslate!.translate2(gl, OpenGLESGL10Image.prototype);
+outer$OpenGLESGL10Image.openGLESImageTranslate!.translate2(gl, outer$OpenGLESGL10Image);
     
 this.regionRectangleVertexFloatBuffer!.put(this.regionRectangleFloatArray);
     
@@ -208,10 +208,10 @@ gl.glPopMatrix();
 
     public draw(gl: GL10, x: number, y: number, z: number){
 
-    var width: number = OpenGLESGL10Image.prototype.getWidth()!;;
+    let width: number = outer$OpenGLESGL10Image.getWidth()!;;
     
 
-    var height: number = OpenGLESGL10Image.prototype.getHeight()!;;
+    let height: number = outer$OpenGLESGL10Image.getHeight()!;;
     
 this.regionRectangleFloatArray[7]= this.displayInfoSingleton!.getLastHeight();
     
@@ -243,16 +243,16 @@ this.regionTextureRectangleFloatArray[7]= 0;
     
 gl.glPushMatrix();
     
-OpenGLESGL10Image.prototype.openGLESImageTranslate!.translate(gl, OpenGLESGL10Image.prototype, x,  -y);
+outer$OpenGLESGL10Image.openGLESImageTranslate!.translate(gl, outer$OpenGLESGL10Image, x,  -y);
     
 
-    var imageProcessor: OpenGLESImageProcessor = OpenGLESGL10Image.prototype.imageProcessor;;
+    let imageProcessor: OpenGLESImageProcessor = outer$OpenGLESGL10Image.imageProcessor;;
     
 imageProcessor!.scale(gl, this.openGLESImageProperties!.scaleX, this.openGLESImageProperties!.scaleY);
     
 imageProcessor!.colorMask(gl, this.openGLESImageProperties!.redf, this.openGLESImageProperties!.greenf, this.openGLESImageProperties!.bluef, this.openGLESImageProperties!.alphaf);
     
-OpenGLESGL10Image.prototype.openGLESImageTranslate!.translate2(gl, OpenGLESGL10Image.prototype);
+outer$OpenGLESGL10Image.openGLESImageTranslate!.translate2(gl, outer$OpenGLESGL10Image);
     
 this.regionRectangleVertexFloatBuffer!.put(this.regionRectangleFloatArray);
     
@@ -330,7 +330,7 @@ this.textureVertexFloatBuffer!.rewind();
 
     public set(gl: GL){
 
-    var gl10: GL10 = gl as GL10;;
+    let gl10: GL10 = gl as GL10;;
     
 
                         if(super.initTexture(gl10))
@@ -363,6 +363,4 @@ this.openGLESImageDraw!.draw(gl, x, y, z);
 
 
 }
-
-
 

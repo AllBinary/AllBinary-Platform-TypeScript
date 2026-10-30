@@ -51,6 +51,7 @@ import { WeblisketSession } from '../../../../../org/allbinary/logic/communicati
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -82,24 +83,31 @@ export class RequestWorkFlowFactory
             extends Object
          {
         
-
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 4) return this.getInstance$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 2) return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
-    public static getInstance(request: ServletRequest, response: ServletResponse, servletConfig: ServletConfig, servletContext: ServletContext): WorkFlowInterface{
+    public static getInstance$overload1(request: ServletRequest, response: ServletResponse, servletConfig: ServletConfig, servletContext: ServletContext): WorkFlowInterface{
 
-    var httpRequest: HttpServletRequest = request as HttpServletRequest;;
+    let httpRequest: HttpServletRequest = request as HttpServletRequest;;
     
 
-    var requestCommand: string = httpRequest!.getPathInfo()!;;
+    let requestCommand: string = httpRequest!.getPathInfo()!;;
     
 
-    var index: number = requestCommand!.indexOf(AbPathData.getInstance()!.SEPARATOR)!;;
+    let index: number = requestCommand!.indexOf(AbPathData.getInstance()!.SEPARATOR)!;;
     
 
-    var storeName: string = requestCommand!.substring(0, index)!;;
+    let storeName: string = requestCommand!.substring(0, index)!;;
     
 
-    var requestName: string = requestCommand!.substring(index, requestCommand!.length)!;;
+    let requestName: string = requestCommand!.substring(index, requestCommand!.length)!;;
     
 
 
@@ -112,15 +120,15 @@ export class RequestWorkFlowFactory
 
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
-    public static getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
+    public static getInstance$overload2(hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
 
-    var workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME) as string;;
+    let workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME) as string;;
     
 
-    var weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);;
+    let weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);;
     
 
-    var storeName: string = weblisketSession!.getStoreName()!;;
+    let storeName: string = weblisketSession!.getStoreName()!;;
     
 
 
@@ -138,6 +146,4 @@ private constructor (){
 
 
 }
-
-
 

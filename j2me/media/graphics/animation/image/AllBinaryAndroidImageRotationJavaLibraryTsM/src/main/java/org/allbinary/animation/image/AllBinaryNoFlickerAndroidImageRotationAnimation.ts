@@ -116,7 +116,7 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImage(image);
 
     public setBasicColorP(basicColor: BasicColor){
 
-    var changed: boolean = false;;
+    let changed: boolean = false;;
     
 
                         if(this.getBasicColorP() == 
@@ -155,7 +155,7 @@ this.setBasicColorP(basicColor);
 
     public setAlpha(alpha: number){
 
-    var changed: boolean = false;;
+    let changed: boolean = false;;
     
 
                         if(this.alphaP != alpha)
@@ -214,12 +214,12 @@ this.swap();
 
     public setFrame(index: number){
 
-    var currentFrame: number = this.circularIndexUtil!.getIndex()!;;
+    let currentFrame: number = this.circularIndexUtil!.getIndex()!;;
     
 this.circularIndexUtil!.setIndex(index);
     
 
-    var newFrame: number = this.circularIndexUtil!.getIndex()!;;
+    let newFrame: number = this.circularIndexUtil!.getIndex()!;;
     
 this.angleInfo!.adjustAngle(newFrame);
     
@@ -258,6 +258,4 @@ graphics.drawImage(this.imageToShow, x, y, this.anchor);
 
 
 }
-
-
 

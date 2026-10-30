@@ -20,6 +20,7 @@
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 
 
@@ -58,7 +59,7 @@ this.name= name;
 }
 
 
-    public add(e: any = {}): boolean{
+    public add(e: any): boolean{
 ForcedLogUtil.log(this.name, this);
     
 
@@ -70,7 +71,7 @@ ForcedLogUtil.log(this.name, this);
 }
 
 
-    public addAt(index: number, element: any = {}){
+    public addAt(index: number, element: any){
 ForcedLogUtil.log(this.name, this);
     
 }
@@ -87,6 +88,4 @@ ForcedLogUtil.log(this.name, this);
 
 
 }
-
-
 

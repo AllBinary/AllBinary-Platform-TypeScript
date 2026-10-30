@@ -25,9 +25,11 @@
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -66,7 +68,7 @@ export class BaseCircularPool
 
     public getNextInstance(): any{
 
-    var anyType: any = this.OBJECT_ARRAY[this.circularIndexUtil!.getIndex()]!;;
+    let anyType: any = this.OBJECT_ARRAY[this.circularIndexUtil!.getIndex()]!;;
     
 this.circularIndexUtil!.next();
     
@@ -83,14 +85,14 @@ this.circularIndexUtil!.next();
 this.circularIndexUtil!.setIndex(0);
     
 
-    var size: number = this.circularIndexUtil!.getSize()!;;
+    let size: number = this.circularIndexUtil!.getSize()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance();
     
@@ -112,6 +114,4 @@ this.OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance();
 
 
 }
-
-
 

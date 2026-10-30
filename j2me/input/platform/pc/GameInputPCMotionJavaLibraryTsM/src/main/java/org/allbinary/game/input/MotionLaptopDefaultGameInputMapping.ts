@@ -66,19 +66,19 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var pcKeyFactory: PCKeyFactory = PCKeyFactory.getInstance()!;;
+    let pcKeyFactory: PCKeyFactory = PCKeyFactory.getInstance()!;;
     
 
-    var inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;;
+    let inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;;
     
 
-    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;;
+    let gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;;
     
 
-    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
+    let touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
     
 
-    var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;;
+    let basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.FIRE, pcKeyFactory!.ENTER);
     
@@ -204,6 +204,4 @@ inputToGameKeyMapping!.add(gameKeyFactory!.LEVEL_UP, pcKeyFactory!.PERIOD);
 
 
 }
-
-
 

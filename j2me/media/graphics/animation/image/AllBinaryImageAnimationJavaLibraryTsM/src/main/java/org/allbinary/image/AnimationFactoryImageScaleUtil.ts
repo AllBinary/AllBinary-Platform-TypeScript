@@ -33,9 +33,11 @@ import { BaseImageAnimationFactory } from '../../../org/allbinary/animation/imag
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
@@ -45,9 +47,11 @@ import { ImageJ2MEScaleUtil } from '../../../org/allbinary/media/image/ImageJ2ME
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -91,17 +95,17 @@ export class AnimationFactoryImageScaleUtil
             
     public createImage(image: Image, width: number, height: number, scaleWidth: number, scaleHeight: number): Image{
 
-    var scaledImage: Image;;
+    let scaledImage: Image;;
     
 
                         if(scaleWidth != 0 && scaleHeight != 0)
                         
                                     {
                                     
-    var scaleX: number = (scaleWidth) /(width);;
+    let scaleX: number = (scaleWidth) /(width);;
     
 
-    var scaleY: number = (scaleHeight) /(height);;
+    let scaleY: number = (scaleHeight) /(height);;
     
 
                         if((scaleX == 1.0 && scaleY == 1.0) || (scaleX == 0.0 || scaleY == 0.0))
@@ -114,10 +118,10 @@ export class AnimationFactoryImageScaleUtil
                                 
                         else {
                             
-    var scaledWidth: number = globalThis.Math.trunc((scaleX *width));;
+    let scaledWidth: number = globalThis.Math.trunc((scaleX *width));;
     
 
-    var scaledHeight: number = globalThis.Math.trunc((scaleY *height));;
+    let scaledHeight: number = globalThis.Math.trunc((scaleY *height));;
     
 scaledImage= this.imageScaleUtil!.scale(image, scaledWidth, scaledHeight);
     
@@ -146,20 +150,20 @@ scaledImage= this.imageScaleUtil!.scale(image, scaledWidth, scaledHeight);
             
     public processAdjust(baseImageAnimationFactory: BaseImageAnimationFactory){
 
-    var scaleProperties: ScaleProperties = baseImageAnimationFactory!.getScalePropertiesP()!;;
+    let scaleProperties: ScaleProperties = baseImageAnimationFactory!.getScalePropertiesP()!;;
     
 
                         if(scaleProperties!.scaleWidth != 0 && scaleProperties!.scaleHeight != 0)
                         
                                     {
                                     
-    var animationFactoryInitializationVisitor: AnimationFactoryInitializationVisitor = baseImageAnimationFactory!.getAnimationFactoryInitializationVisitorP()!;;
+    let animationFactoryInitializationVisitor: AnimationFactoryInitializationVisitor = baseImageAnimationFactory!.getAnimationFactoryInitializationVisitorP()!;;
     
 
-    var scaleX: number = (scaleProperties!.scaleWidth) /(animationFactoryInitializationVisitor!.width);;
+    let scaleX: number = (scaleProperties!.scaleWidth) /(animationFactoryInitializationVisitor!.width);;
     
 
-    var scaleY: number = (scaleProperties!.scaleHeight) /(animationFactoryInitializationVisitor!.height);;
+    let scaleY: number = (scaleProperties!.scaleHeight) /(animationFactoryInitializationVisitor!.height);;
     
 
                         if((scaleX == 1.0 && scaleY == 1.0) || (scaleX == 0.0 || scaleY == 0.0))
@@ -187,6 +191,4 @@ animationFactoryInitializationVisitor!.dy= globalThis.Math.trunc((animationFacto
 
 
 }
-
-
 

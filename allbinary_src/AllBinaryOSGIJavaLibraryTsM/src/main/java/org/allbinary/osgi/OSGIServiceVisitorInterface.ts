@@ -45,9 +45,7 @@ import { VisitorInterface } from '../../../org/allbinary/logic/util/visitor/Visi
 export interface OSGIServiceVisitorInterface extends VisitorInterface {
         
 
-    visit(osgiServiceInterface: OSGIServiceInterface): Boolean
+    visit(osgiServiceInterface: OSGIServiceInterface): Boolean;
 
 }
-
-
 

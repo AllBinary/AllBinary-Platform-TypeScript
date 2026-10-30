@@ -34,6 +34,7 @@ import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterfac
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -71,7 +72,7 @@ public constructor (layerInterface: LayerInterface){
         this.layerInterface= layerInterface;
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = layerInterface as VelocityInterfaceCompositeInterface;;
+    let velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = layerInterface as VelocityInterfaceCompositeInterface;;
     
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties() as VelocityInterface;
     
@@ -127,6 +128,4 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
 
 }
-
-
 

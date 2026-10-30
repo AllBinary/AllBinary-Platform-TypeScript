@@ -31,9 +31,11 @@ import { ImageCache } from '../../../org/allbinary/image/ImageCache.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -61,14 +63,13 @@ import { ABRunnable } from './ABRunnable.js';
 //not GWT import - same folder const ImageCacheRunnable
 import { ImageThreadPool } from './ImageThreadPool.js';
 //not GWT import - same folder const ImageThreadPool
+type ImageCacheRunnable = InstanceType<ConcurrentImageLoadingProcessor['ImageCacheRunnable']>;
 
 export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {
         
 
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
-
 //inner= member=true isStatic=
-ImageCacheRunnable = class extends ABRunnable {
+ImageCacheRunnable = (() => { const outer$ConcurrentImageLoadingProcessor = this; return class extends ABRunnable {
         
 
     private readonly imageCache: ImageCache;
@@ -83,11 +84,10 @@ public constructor (imageCache: ImageCache){
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            this.setRunning(true);
+ try { this.setRunning(true);
     
 this.imageCache!.waitForLoadNow();
     
@@ -98,7 +98,7 @@ this.imageCache!.loadRemainingAnimations();
 this.setRunning(false);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 
                         if(!progressCanvas!.inProgress)
@@ -109,24 +109,27 @@ this.setRunning(false);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.setRunning(false);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
 
-
-}
-
+}; })();
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly runnable: ABRunnable;
 
@@ -152,6 +155,4 @@ public constructor (imageCache: ImageCache){
 
 
 }
-
-
 

@@ -44,21 +44,19 @@
 export interface SimpleProgressActivityInterface {
         
 
-    runOnUiThread(action: Runnable)
+    runOnUiThread(action: Runnable): void;
 
                 //@Throws(Exception.constructor)
             
-    onSetProgress(value: number, text: string)
+    onSetProgress(value: number, text: string): void;
 
                 //@Throws(Exception.constructor)
             
-    onDismissProgress(animationSequence: number[])
+    onDismissProgress(animationSequence: number[]): void;
 
                 //@Throws(Exception.constructor)
             
-    onShowProgress(indeterminate: boolean, animationSequence: number[])
+    onShowProgress(indeterminate: boolean, animationSequence: number[]): void;
 
 }
-
-
 

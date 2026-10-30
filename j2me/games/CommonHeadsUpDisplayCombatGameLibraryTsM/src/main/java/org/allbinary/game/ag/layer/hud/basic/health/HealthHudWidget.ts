@@ -126,7 +126,7 @@ this.update();
 
 
                         for (
-    var index: number = 0;index < this.xArray!.length; index++)
+    let index: number = 0;index < this.xArray!.length; index++)
         {
 this.xArray[index]= this.getX() +(index *16);
     
@@ -203,7 +203,7 @@ this.myFontProcessor!.process(graphics);
 
 
                         for (
-    var index: number = 0;index < this.max; index++)
+    let index: number = 0;index < this.max; index++)
         {
 
                         if(this.timeDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
@@ -224,6 +224,4 @@ this.myFontProcessor!.process(graphics);
 
 
 }
-
-
 

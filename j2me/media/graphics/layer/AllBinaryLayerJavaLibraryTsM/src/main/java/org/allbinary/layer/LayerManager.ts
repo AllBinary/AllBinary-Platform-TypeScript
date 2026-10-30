@@ -16,21 +16,26 @@ import { TsUtil } from '../../../org/allbinary/TsUtil.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { SynchObject } from '../../../org/allbinary/thread/SynchObject.js';
 //not GWT import const SynchObject
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+type ABSystemWrapper<T = any, U = any> = typeof ABSystemWrapper extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABSystemWrapper;
 
 
 
@@ -100,24 +105,24 @@ this.layerManagerLogging= layerManagerLogging;
             
     public update(layerInterface: AllBinaryLayer){
 
-    var had: boolean = this.list.remove(layerInterface)!;;
+    let had: boolean = this.list.remove(layerInterface)!;;
     
 
                         if(had)
                         
                                     {
                                     
-    var nextLayerInterface: AllBinaryLayer;;
+    let nextLayerInterface: AllBinaryLayer;;
     
 
-    var size: number = this.list.size()!;;
+    let size: number = this.list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 nextLayerInterface= this.list.get(index) as AllBinaryLayer;
     
@@ -150,17 +155,17 @@ this.list.add(layerInterface);
             
     public insert(layerInterface: AllBinaryLayer){
 
-    var nextLayerInterface: AllBinaryLayer;;
+    let nextLayerInterface: AllBinaryLayer;;
     
 
-    var size: number = this.list.size()!;;
+    let size: number = this.list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 nextLayerInterface= this.list.get(index) as AllBinaryLayer;
     
@@ -219,7 +224,7 @@ this.list.addAt(index, layerInterface);
 this.layerManagerLogging!.remove(layerInterface);
     
 
-    var result: boolean = this.list.remove(layerInterface)!;;
+    let result: boolean = this.list.remove(layerInterface)!;;
     
 this.layerManagerLogging!.removeResult(this, layerInterface, result);
     
@@ -280,14 +285,14 @@ this.tsUtil!.gc();
         //mutex.withLock
         
 
-    var comp: Layer;;
+    let comp: Layer;;
     
 
 
 
 
                         for (
-    var index: number = this.list.size()!;--index >= 0; )
+    let index: number = this.list.size()!;--index >= 0; )
         {
 comp= this.list.objectArray[index]! as Layer;
     
@@ -310,6 +315,4 @@ comp= this.list.objectArray[index]! as Layer;
 
 
 }
-
-
 

@@ -37,30 +37,37 @@ import { NullRecordFilter } from '../../../../org/allbinary/game/configuration/p
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HashtableUtil;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -101,22 +108,22 @@ public constructor (name: string){
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
 
-    var recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;;
+    let recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;;
     
 
-    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
+    let recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var hashtable: ABHashtable<any, any>;;
+    let hashtable: ABHashtable<any, any>;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var id: number= 0;;
+    let id: number= 0;;
     
 
         while(recordEnum!.hasNextElement())
@@ -146,22 +153,22 @@ recordStore!.closeRecordStore();
 PreLogUtil.put(new StringMaker().append(this.persistanceStrings!.NOT_SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
     
 
-    var recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;;
+    let recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;;
     
 
-    var gameActionInput: Input;;
+    let gameActionInput: Input;;
     
 
-    var list: BasicArrayList;;
+    let list: BasicArrayList;;
     
 
-    var input: Input;;
+    let input: Input;;
     
 
-    var inputObjectArray: any[] = this.hashtableUtil!.getKeysAsArray(hashtable)!;;
+    let inputObjectArray: any[] = this.hashtableUtil!.getKeysAsArray(hashtable)!;;
     
 
-    var size: number = inputObjectArray!.length
+    let size: number = inputObjectArray!.length
                 ;;
     
 
@@ -169,7 +176,7 @@ PreLogUtil.put(new StringMaker().append(this.persistanceStrings!.NOT_SAVING)!.ap
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 gameActionInput= inputObjectArray[index]! as Input;
     
@@ -180,7 +187,7 @@ list= hashtable.get(inputObjectArray[index]!) as BasicArrayList;
 
 
                         for (
-    var index2: number = 0;index2 < list.size(); index2++)
+    let index2: number = 0;index2 < list.size(); index2++)
         {
 input= list.get(index2) as Input;
     
@@ -194,6 +201,4 @@ recordStore!.closeRecordStore();
 
 
 }
-
-
 

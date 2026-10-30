@@ -68,5 +68,3 @@ imageModifierUtil!.setAlpha(originalImage, imageToShow, index, alpha);
 
 }
 
-
-

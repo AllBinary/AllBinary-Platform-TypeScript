@@ -44,17 +44,15 @@ export interface ModifyTableInterface {
 
                 //@Throws(Exception.constructor)
             
-    insert(): string
+    insert(): string;
 
                 //@Throws(Exception.constructor)
             
-    delete(): string
+    delete(): string;
 
                 //@Throws(Exception.constructor)
             
-    update(): string
+    update(): string;
 
 }
-
-
 

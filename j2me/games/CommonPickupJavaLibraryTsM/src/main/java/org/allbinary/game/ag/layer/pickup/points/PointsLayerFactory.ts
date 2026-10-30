@@ -78,5 +78,3 @@ public constructor (points: number){
 
 }
 
-
-

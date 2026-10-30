@@ -87,5 +87,3 @@ graphics.drawArc(x, y, this.width, this.height, 0, this.TOTAL_ANGLE);
 
 }
 
-
-

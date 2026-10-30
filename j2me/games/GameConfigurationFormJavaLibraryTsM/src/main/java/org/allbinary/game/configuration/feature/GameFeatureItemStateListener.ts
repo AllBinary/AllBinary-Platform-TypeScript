@@ -42,21 +42,27 @@ import { GameOptionsForm } from '../../../../../org/allbinary/game/configuration
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -113,7 +119,7 @@ public constructor (gameOptionsForm: GameOptionsForm){
         this.gameOptionsForm= gameOptionsForm;
     
 
-    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
+    let gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
     
 GameFeatureItemStateListener.add(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR);
     
@@ -136,9 +142,8 @@ GameFeatureItemStateListener.add(gameFeatureFactory!.TICKABLE_LAYER_PROCESSOR);
 
     public itemStateChanged(item: Item){
 
-        try {
-            
-    var itemLabel: string = item.getLabel()!;;
+ try { 
+    let itemLabel: string = item.getLabel()!;;
     
 this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
@@ -156,7 +161,7 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LAB
                         
                                     {
                                     
-    var gameFeatureUtil: GameFeatureUtil = GameFeatureUtil.getInstance()!;;
+    let gameFeatureUtil: GameFeatureUtil = GameFeatureUtil.getInstance()!;;
     
 
                         if(gameFeatureUtil!.isExclusive(itemLabel))
@@ -176,21 +181,22 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LAB
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

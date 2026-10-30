@@ -86,22 +86,22 @@ private constructor (){
             
     public mirrorVerticle(motionGestureEvent: MotionGestureEvent, halfWidth: number): MotionGestureEvent{
 
-    var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(motionGestureEvent!.getMotionGesture())!;;
+    let event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(motionGestureEvent!.getMotionGesture())!;;
     
 
-    var previousNewX: number = this.getNewX(motionGestureEvent!.getPreviousPoint()!.getX(), halfWidth)!;;
+    let previousNewX: number = this.getNewX(motionGestureEvent!.getPreviousPoint()!.getX(), halfWidth)!;;
     
 
-    var currentNewX: number = this.getNewX(motionGestureEvent!.getCurrentPoint()!.getX(), halfWidth)!;;
+    let currentNewX: number = this.getNewX(motionGestureEvent!.getCurrentPoint()!.getX(), halfWidth)!;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var mirroredPreviousPoint: GPoint = pointFactory!.createXY(previousNewX, motionGestureEvent!.getPreviousPoint()!.getY())!;;
+    let mirroredPreviousPoint: GPoint = pointFactory!.createXY(previousNewX, motionGestureEvent!.getPreviousPoint()!.getY())!;;
     
 
-    var mirroredCurrentPoint: GPoint = pointFactory!.createXY(currentNewX, motionGestureEvent!.getCurrentPoint()!.getY())!;;
+    let mirroredCurrentPoint: GPoint = pointFactory!.createXY(currentNewX, motionGestureEvent!.getCurrentPoint()!.getY())!;;
     
 event.setPreviousPoint(mirroredPreviousPoint);
     
@@ -118,7 +118,7 @@ event.setCurrentPoint(mirroredCurrentPoint);
 
     public getNewX(x: number, halfWidth: number): number{
 
-    var newX: number= 0;;
+    let newX: number= 0;;
     
 
                         if(x > halfWidth)
@@ -145,6 +145,4 @@ event.setCurrentPoint(mirroredCurrentPoint);
 
 
 }
-
-
 

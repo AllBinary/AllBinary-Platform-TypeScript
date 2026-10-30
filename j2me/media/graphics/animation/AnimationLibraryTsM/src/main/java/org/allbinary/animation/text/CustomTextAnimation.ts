@@ -34,6 +34,7 @@ import { FontDebugFactory } from '../../../../org/allbinary/graphics/font/FontDe
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -88,7 +89,7 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, fontSize);
 this.myFontProcessor!.process(graphics);
     
 
-    var existingFont: Font = graphics.getFont()!;;
+    let existingFont: Font = graphics.getFont()!;;
     
 this.fontDebugFactory!.setFont(this.font, graphics);
     
@@ -180,6 +181,4 @@ this.hasChanged= false;
 
 
 }
-
-
 

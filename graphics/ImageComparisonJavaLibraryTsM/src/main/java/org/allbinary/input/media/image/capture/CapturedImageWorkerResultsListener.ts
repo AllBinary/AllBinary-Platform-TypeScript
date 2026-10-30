@@ -45,9 +45,7 @@ import { BasicEventListenerInterface } from '../../../../../../org/allbinary/log
 export interface CapturedImageWorkerResultsListener extends BasicEventListenerInterface {
         
 
-    onCaptureEvent(capturedimageworkerresultsevent: CapturedImageWorkerResultsEvent)
+    onCaptureEvent(capturedimageworkerresultsevent: CapturedImageWorkerResultsEvent): void;
 
 }
-
-
 

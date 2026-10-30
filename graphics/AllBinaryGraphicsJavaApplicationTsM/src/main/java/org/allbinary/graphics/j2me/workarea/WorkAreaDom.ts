@@ -27,6 +27,7 @@ import { DomHelper } from '../../../../../org/allbinary/dom/DomHelper.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -75,7 +76,7 @@ public constructor (document: Document){
 
             super();
         
-    var workAreaNodeList: NodeList = document.getElementsByTagName(this.WORKAREA)!;;
+    let workAreaNodeList: NodeList = document.getElementsByTagName(this.WORKAREA)!;;
     
 
                         if(workAreaNodeList != 
@@ -84,20 +85,20 @@ public constructor (document: Document){
                         
                                     {
                                     
-    var numberOfworkAreas: number = workAreaNodeList!.getLength()!;;
+    let numberOfworkAreas: number = workAreaNodeList!.getLength()!;;
     
 
                         if(numberOfworkAreas == 1)
                         
                                     {
                                     
-    var numberOfNodes: number = workAreaNodeList!.getLength()!;;
+    let numberOfNodes: number = workAreaNodeList!.getLength()!;;
     
 
-    var nameNode: Node = DomHelper.getInstance()!.searchNodeList(this.NAME, workAreaNodeList!.item(0)!.getChildNodes())!;;
+    let nameNode: Node = DomHelper.getInstance()!.searchNodeList(this.NAME, workAreaNodeList!.item(0)!.getChildNodes())!;;
     
 
-    var nameTextNode: Node = nameNode!.getFirstChild()!;;
+    let nameTextNode: Node = nameNode!.getFirstChild()!;;
     
 this.name= nameTextNode!.getNodeValue();
     
@@ -151,6 +152,4 @@ this.canvasNodeList= DomHelper.getInstance()!.getChildrenWithoutTextNodes(WorkAr
 
 
 }
-
-
 

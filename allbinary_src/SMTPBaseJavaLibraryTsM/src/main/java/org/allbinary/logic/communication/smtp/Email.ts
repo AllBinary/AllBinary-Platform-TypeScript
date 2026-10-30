@@ -69,18 +69,22 @@ import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomH
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -159,17 +163,23 @@ this.init(from, to, subject, server, textBody, htmlAttachment, contentBase);
     
 }
 
-
+init(...args: any[]): any {
+   
+    if (args.length === 7 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string' && typeof args[3] === 'string' && typeof args[4] === 'string' && typeof args[5] === 'string' && typeof args[6] === 'string') return this.init$overload1(args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
+   
+    if (args.length === 8 && typeof args[0] === 'string' && typeof args[6] === 'string') return this.init$overload2(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7]);
+   
+   throw new TypeError('No matching overload: init'); }
+  
                 //@Throws(Exception.constructor)
             
-    public init(from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string){
+    public init$overload1(from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string){
 
-        try {
-            
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+ try { 
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var mimeBodyParts: MimeBodyPart[] = new Array(
+    let mimeBodyParts: MimeBodyPart[] = new Array(
                             //Otherwise - levels - level - dimension - ConditionalExpr
 );;
     
@@ -182,7 +192,7 @@ mimeBodyParts[0]!.setText(textBody);
                         
                                     {
                                     
-    var internetHeaders: InternetHeaders = new InternetHeaders();;
+    let internetHeaders: InternetHeaders = new InternetHeaders();;
     
 internetHeaders!.addHeader("Content-Type", "text/html");
     
@@ -208,16 +218,17 @@ this.init(server, null as Authenticator,
                                                     new InternetAddress(to)
                                                 ], null as InternetAddress[], null as InternetAddress[], subject, mimeBodyParts);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "emailConstructor", e);
     
@@ -229,22 +240,23 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "emailConstructor", e);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(MessagingException.constructor)
             
-    public init(server: string, authenticator: Authenticator, addresses_from: InternetAddress[], addresses_to: InternetAddress[], addresses_cc: InternetAddress[], addresses_bcc: InternetAddress[], subject: string, mimeBodyParts: MimeBodyPart[]){
+    public init$overload2(server: string, authenticator: Authenticator, addresses_from: InternetAddress[], addresses_to: InternetAddress[], addresses_cc: InternetAddress[], addresses_bcc: InternetAddress[], subject: string, mimeBodyParts: MimeBodyPart[]){
 this.properties= new Properties();
     
 this.properties.put(Email.SMTP_HOST, server);
     
 
-        try {
-            
-    var hostName: string = StringUtil.getInstance()!.EMPTY_STRING;;
+ try { 
+    let hostName: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(hostName))
@@ -264,10 +276,11 @@ this.properties.put(Email.SMTP_LOCAL_HOST, "FakeHostName");
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
@@ -279,8 +292,10 @@ this.properties.put(Email.SMTP_LOCAL_HOST, "FakeHostName");
                                 
 this.properties.put(Email.SMTP_LOCAL_HOST, "FakeHostName");
     
-}
 
+ }
+   }
+ 
 
                         if(this.isDebug)
                         
@@ -291,7 +306,7 @@ this.properties.put(Email.SMTP_LOCAL_HOST, "FakeHostName");
                                     }
                                 
 
-    var session: Session = Session.getInstance(this.properties, authenticator)!;;
+    let session: Session = Session.getInstance(this.properties, authenticator)!;;
     
 
                         if(this.isDebug)
@@ -302,7 +317,7 @@ this.properties.put(Email.SMTP_LOCAL_HOST, "FakeHostName");
 this.bs= new ByteArrayOutputStream();
     
 
-    var printStream: PrintStream = new PrintStream(this.bs);;
+    let printStream: PrintStream = new PrintStream(this.bs);;
     
 session.setDebugOut(printStream);
     
@@ -322,14 +337,14 @@ this.msg.setRecipients(Message.RecipientType.BCC, addresses_bcc);
 this.msg.setSubject(subject);
     
 
-    var mimeMultipart: MimeMultipart = new MimeMultipart();;
+    let mimeMultipart: MimeMultipart = new MimeMultipart();;
     
 
 
 
 
                         for (
-    var i: number = 0;i < mimeBodyParts!.length; i++)
+    let i: number = 0;i < mimeBodyParts!.length; i++)
         {
 mimeMultipart!.addBodyPart(mimeBodyParts[i]!);
     
@@ -359,9 +374,7 @@ this.msg.setContent(mimeMultipart);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return "More Logging Before This To Standard Out: " +
-                                    //Otherwise - right - ObjectCreationExpr
-;
+                        return "More Logging Before This To Standard Out: " +this.bs.toString();
     
 
                                     }
@@ -395,14 +408,13 @@ this.msg.setContent(mimeMultipart);
             
     public toHashMap(): HashMap<any, any>{
 
-        try {
-            
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(EmailData.SERVER, this.properties.get(Email.SMTP_HOST) as string);
     
 
-    var addresses: Address[] = this.msg.getFrom()!;;
+    let addresses: Address[] = this.msg.getFrom()!;;
     
 
                         if(addresses != 
@@ -415,7 +427,7 @@ hashMap!.put(EmailData.SERVER, this.properties.get(Email.SMTP_HOST) as string);
 
 
                         for (
-    var index: number = 0;index < addresses.length; index++)
+    let index: number = 0;index < addresses.length; index++)
         {
 hashMap!.put(EmailData.FROM, addresses[index]!.toString());
     
@@ -437,7 +449,7 @@ addresses= this.msg.getRecipients(Message.RecipientType.TO);
 
 
                         for (
-    var index: number = 0;index < addresses.length; index++)
+    let index: number = 0;index < addresses.length; index++)
         {
 hashMap!.put(EmailData.TO, addresses[index]!.toString());
     
@@ -459,7 +471,7 @@ addresses= this.msg.getRecipients(Message.RecipientType.CC);
 
 
                         for (
-    var index: number = 0;index < addresses.length; index++)
+    let index: number = 0;index < addresses.length; index++)
         {
 hashMap!.put(EmailData.CC, addresses[index]!.toString());
     
@@ -481,7 +493,7 @@ addresses= this.msg.getRecipients(Message.RecipientType.BCC);
 
 
                         for (
-    var index: number = 0;index < addresses.length; index++)
+    let index: number = 0;index < addresses.length; index++)
         {
 hashMap!.put(EmailData.BCC, addresses[index]!.toString());
     
@@ -493,7 +505,7 @@ hashMap!.put(EmailData.BCC, addresses[index]!.toString());
 hashMap!.put(EmailData.SUBJECT, this.msg.getSubject());
     
 
-    var mimeMultipart: MimeMultipart = this.msg.getContent() as MimeMultipart;;
+    let mimeMultipart: MimeMultipart = this.msg.getContent() as MimeMultipart;;
     
 
                         if(mimeMultipart != 
@@ -506,10 +518,10 @@ hashMap!.put(EmailData.SUBJECT, this.msg.getSubject());
 
 
                         for (
-    var index: number = 0;index < mimeMultipart!.getCount(); index++)
+    let index: number = 0;index < mimeMultipart!.getCount(); index++)
         {
 
-    var content: string = mimeMultipart!.getBodyPart(index)!.getContent() as string;;
+    let content: string = mimeMultipart!.getBodyPart(index)!.getContent() as string;;
     
 hashMap!.put(EmailData.CONTENT, content);
     
@@ -524,10 +536,11 @@ hashMap!.put(EmailData.CONTENT, content);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return hashMap;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
@@ -542,8 +555,10 @@ hashMap!.put(EmailData.CONTENT, content);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -551,7 +566,7 @@ hashMap!.put(EmailData.CONTENT, content);
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, EmailData.NAME, this.toHashMap())!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, EmailData.NAME, this.toHashMap())!;;
     
 
 
@@ -574,6 +589,4 @@ hashMap!.put(EmailData.CONTENT, content);
 
 
 }
-
-
 

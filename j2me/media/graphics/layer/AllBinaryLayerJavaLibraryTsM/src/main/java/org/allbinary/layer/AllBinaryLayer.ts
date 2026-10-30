@@ -48,18 +48,23 @@ import { TsUtil } from '../../../org/allbinary/TsUtil.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+type PositionStrings<T = any, U = any> = typeof PositionStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PositionStrings;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { ViewPositionBase } from '../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
@@ -114,7 +119,7 @@ public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPositi
                             //For kotlin this is before the body of the constructor.
                     
 
-    var localName: string;;
+    let localName: string;;
     
 
                         if(name == 
@@ -136,7 +141,7 @@ public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPositi
 this.name= localName;
     
 
-    var point: GPoint = rectangle.getPoint()!;;
+    let point: GPoint = rectangle.getPoint()!;;
     
 this.setPosition(point.getX(), point.getY(), point.getZ());
     
@@ -341,13 +346,13 @@ this.viewPosition= viewPosition;
 
     public toStringAppend(stringBuffer: StringMaker){
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var positionStrings: PositionStrings = PositionStrings.getInstance()!;;
+    let positionStrings: PositionStrings = PositionStrings.getInstance()!;;
     
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
+    let commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 stringBuffer!.append(this.getName());
     
@@ -392,7 +397,7 @@ stringBuffer!.appendint(this.getHeight());
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 this.toStringAppend(stringBuffer);
     
@@ -406,6 +411,4 @@ this.toStringAppend(stringBuffer);
 
 
 }
-
-
 

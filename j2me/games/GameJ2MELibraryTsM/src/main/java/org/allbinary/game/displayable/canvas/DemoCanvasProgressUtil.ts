@@ -66,12 +66,12 @@ DemoCanvasProgressUtil.showProgressOptionallyInTheBackground(demoCanvas, false);
 
     public static showProgressOptionallyInTheBackground(demoCanvas: DemoCanvas, background: boolean){
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.startBackground(background);
     
 
-    var paintableArray: PaintableInterface[] = new Array(2);;
+    let paintableArray: PaintableInterface[] = new Array(2);;
     
 paintableArray[0]= progressCanvas;
     
@@ -85,6 +85,4 @@ demoCanvas!.setPaintableInterface(demoCanvas!.getDefaultPaintableInterface());
 
 
 }
-
-
 

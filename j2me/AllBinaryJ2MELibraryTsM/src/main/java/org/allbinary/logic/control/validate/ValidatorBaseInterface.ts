@@ -20,9 +20,11 @@
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -46,15 +48,13 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 export interface ValidatorBaseInterface {
         
 
-    isValid(): Boolean
+    isValid(): Boolean;
 
-    validationInfo(): string
+    validationInfo(): string;
 
-    toHashtable(): ABHashtable<any, any>
+    toHashtable(): ABHashtable<any, any>;
 
-    toList(): BasicArrayList
+    toList(): BasicArrayList;
 
 }
-
-
 

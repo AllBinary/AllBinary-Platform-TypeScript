@@ -36,9 +36,11 @@ import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/M
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -94,7 +96,7 @@ public constructor (node: Node){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var actionNode: Node = DomSearchHelper.getNode(AlwaysActionScriptConditionData.NAME, node.getChildNodes())!;;
+    let actionNode: Node = DomSearchHelper.getNode(AlwaysActionScriptConditionData.NAME, node.getChildNodes())!;;
     
 
                         if(actionNode != 
@@ -103,24 +105,24 @@ public constructor (node: Node){
                         
                                     {
                                     
-    var nodeList: NodeList = actionNode!.getChildNodes()!;;
+    let nodeList: NodeList = actionNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var childNode: Node = nodeList!.item(index)!;;
+    let childNode: Node = nodeList!.item(index)!;;
     
 
                         if(childNode!.getNodeName()!.compareTo(AlwaysActionScriptConditionData.IS_ON) == 0)
                         
                                     {
                                     
-    var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.setIsOn(.valueOf());
     
@@ -196,7 +198,7 @@ this.alwaysActionScriptConditionJPanel!.getAlwaysActionJDialog()!.setVisible(tru
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(AlwaysActionScriptConditionData.IS_ON, Boolean.toString(this.isIsOn()));
     
@@ -215,7 +217,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = super.toXmlNode(document)!;;
+    let node: Node = super.toXmlNode(document)!;;
     
 node.appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScriptConditionData.NAME, this.toHashMap()));
     
@@ -260,6 +262,4 @@ this.logUtil!.putF("Is On: " +this.isIsOn(), this, "log");
 
 
 }
-
-
 

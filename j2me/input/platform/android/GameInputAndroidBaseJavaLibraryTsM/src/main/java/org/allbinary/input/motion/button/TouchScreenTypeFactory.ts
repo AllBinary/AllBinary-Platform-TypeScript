@@ -28,9 +28,11 @@ import { Configuration } from '../../../../../android/content/res/Configuration.
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 
 
@@ -74,19 +76,19 @@ export class TouchScreenTypeFactory
 
     public update(activity: Activity){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;;
+    let touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;;
     
 
-    var touchScreenTypesFactory: TouchScreenTypesFactory = TouchScreenTypesFactory.getInstance()!;;
+    let touchScreenTypesFactory: TouchScreenTypesFactory = TouchScreenTypesFactory.getInstance()!;;
     
 
-    var configuration: Configuration = activity.getResources()!.getConfiguration()!;;
+    let configuration: Configuration = activity.getResources()!.getConfiguration()!;;
     
 
-    var touchScreen: number = configuration.touchscreen;;
+    let touchScreen: number = configuration.touchscreen;;
     
 
                         if(touchScreen == Configuration.TOUCHSCREEN_FINGER)
@@ -150,6 +152,4 @@ touchScreenFactory!.setTouch(true);
 
 
 }
-
-
 

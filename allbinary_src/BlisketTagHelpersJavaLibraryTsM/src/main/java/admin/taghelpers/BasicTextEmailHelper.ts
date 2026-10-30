@@ -94,19 +94,19 @@ this.hashMap= hashMap;
             
     public send(){
 
-    var adminEmailSubject: string = this.hashMap!.get("Subject") as string;;
+    let adminEmailSubject: string = this.hashMap!.get("Subject") as string;;
     
 
-    var adminEmailTextBody: string = this.hashMap!.get("Body") as string;;
+    let adminEmailTextBody: string = this.hashMap!.get("Body") as string;;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
+    let adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
     
 
-    var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);;
+    let adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);;
     
 
-    var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.INSTALLER)!;;
+    let adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.INSTALLER)!;;
     
 adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.INSTALLER, adminEmailInfo);
     
@@ -114,6 +114,4 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.INSTALLER, a
 
 
 }
-
-
 

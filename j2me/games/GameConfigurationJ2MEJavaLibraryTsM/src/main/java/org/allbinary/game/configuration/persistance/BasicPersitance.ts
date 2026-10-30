@@ -29,12 +29,15 @@ import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.j
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -44,12 +47,15 @@ import { PlatformRecordIdUtil } from '../../../../../org/allbinary/persistance/P
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -113,17 +119,17 @@ RecordStore.deleteRecordStore(this.getRecordId(abeClientInformation));
             
     public deleteAll(abeClientInformation: AbeClientInformationInterface){
 
-    var size: number = this.idList!.size()!;;
+    let size: number = this.idList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var integer: Integer = this.idList!.objectArray[index]! as Integer;;
+    let integer: Integer = this.idList!.objectArray[index]! as Integer;;
     
 this.delete(abeClientInformation, integer.intValue());
     
@@ -138,29 +144,29 @@ this.clear();
             
     public delete(abeClientInformation: AbeClientInformationInterface, deleteId: number){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
+    let recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
-        try {
-            this.logUtil!.putF(new StringMaker().append(this.persistanceStrings!.DELETING_WITH_ID)!.appendint(deleteId)!.toString(), this, this.commonStrings!.delete);
+ try { this.logUtil!.putF(new StringMaker().append(this.persistanceStrings!.DELETING_WITH_ID)!.appendint(deleteId)!.toString(), this, this.commonStrings!.delete);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 recordStore!.deleteRecord(deleteId);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-         finally {
-            
+ }
+   }
+ finally { 
                         if(recordStore != 
                                     null
                                 )
@@ -173,9 +179,7 @@ recordStore!.closeRecordStore();
 
                                     }
                                 
-
-         }
-        
+ }
 }
 
 
@@ -218,6 +222,4 @@ this.idList!.clear();
 
 
 }
-
-
 

@@ -49,13 +49,11 @@ export interface GeographicMapCellPositionEventListenerInterface extends EventLi
 
                 //@Throws(Exception.constructor)
             
-    onGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent)
+    onGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent): void;
 
                 //@Throws(Exception.constructor)
             
-    onRemoveGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent)
+    onRemoveGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent): void;
 
 }
-
-
 

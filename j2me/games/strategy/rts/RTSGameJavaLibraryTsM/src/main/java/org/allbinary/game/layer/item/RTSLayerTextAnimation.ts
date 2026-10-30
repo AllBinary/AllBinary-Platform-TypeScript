@@ -81,7 +81,7 @@ this.image= image;
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.fontHeight= font.getHeight();
     
@@ -96,7 +96,7 @@ this.myFontProcessor!.process(graphics);
 super.paintXY(graphics, x, y);
     
 
-    var adjustedCostY: number = this.image.getHeight() -this.fontHeight;;
+    let adjustedCostY: number = this.image.getHeight() -this.fontHeight;;
     
 graphics.drawString(this.text, x, y +adjustedCostY, 0);
     
@@ -104,6 +104,4 @@ graphics.drawString(this.text, x, y +adjustedCostY, 0);
 
 
 }
-
-
 

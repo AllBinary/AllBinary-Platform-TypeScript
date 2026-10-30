@@ -67,5 +67,3 @@ this.paintVectors(graphics, x, y);
 
 }
 
-
-

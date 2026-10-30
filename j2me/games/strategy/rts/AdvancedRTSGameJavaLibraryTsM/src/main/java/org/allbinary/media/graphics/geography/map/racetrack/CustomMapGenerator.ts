@@ -81,10 +81,10 @@ public constructor (raceTrackGeographicMap: RaceTrackGeographicMap){
 this.geographicMapCellTypeFactory= this.raceTrackGeographicMap!.getGeographicMapCellTypeFactory();
     
 
-    var mapArray: number[][] = raceTrackGeographicMap!.getRaceTrackData()!.getMapArray()!;;
+    let mapArray: number[][] = raceTrackGeographicMap!.getRaceTrackData()!.getMapArray()!;;
     
 
-    var size2: number = mapArray[0]!.length
+    let size2: number = mapArray[0]!.length
                 ;;
     
 this.customMapArray= new Array(mapArray!.length).fill(null).map(() => new Array(size2).fill(null));
@@ -108,24 +108,24 @@ this.customMapArray= new Array(mapArray!.length).fill(null).map(() => new Array(
             
     public copyMapIntoCustomMap(){
 
-    var mapArray: number[][] = this.raceTrackGeographicMap!.getRaceTrackData()!.getMapArray()!;;
+    let mapArray: number[][] = this.raceTrackGeographicMap!.getRaceTrackData()!.getMapArray()!;;
     
 
-    var startIndex2: number = mapArray[0]!.length -1;;
+    let startIndex2: number = mapArray[0]!.length -1;;
     
 
 
 
 
                         for (
-    var index: number = mapArray!.length -1;index >= 0; index--)
+    let index: number = mapArray!.length -1;index >= 0; index--)
         {
 
 
 
 
                         for (
-    var index2: number = startIndex2;index2 >= 0; index2--)
+    let index2: number = startIndex2;index2 >= 0; index2--)
         {
 this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[index]![index2]!);
     
@@ -142,20 +142,20 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
             
     public getCustomType(column: number, row: number, currentType: number): number{
 
-    var emptyType: number = this.geographicMapCellTypeFactory!.getEmptyType()!;;
+    let emptyType: number = this.geographicMapCellTypeFactory!.getEmptyType()!;;
     
 
-    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.raceTrackGeographicMap!.getGeographicMapCellPositionFactory()!;;
+    let geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.raceTrackGeographicMap!.getGeographicMapCellPositionFactory()!;;
     
 
-    var cellPosition: CellPosition = geographicMapCellPositionFactory!.getAt(column, row)!;;
+    let cellPosition: CellPosition = geographicMapCellPositionFactory!.getAt(column, row)!;;
     
 
                         if(this.dropCellPositionHistory!.isCellPositionWithDrop(cellPosition))
                         
                                     {
                                     
-    var layer: AllBinaryLayer = this.dropCellPositionHistory!.getLayerInterface(cellPosition)!;;
+    let layer: AllBinaryLayer = this.dropCellPositionHistory!.getLayerInterface(cellPosition)!;;
     
 
                         if(layer == AllBinaryLayer.NULL_ALLBINARY_LAYER)
@@ -171,7 +171,7 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
                                     }
                                 
 
-    var rtsLayer: AdvancedRTSGameLayer = layer as AdvancedRTSGameLayer;;
+    let rtsLayer: AdvancedRTSGameLayer = layer as AdvancedRTSGameLayer;;
     
 
                         if(!(rtsLayer!.getType() == WaypointLayer.getStaticType()))
@@ -209,6 +209,4 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
 
 
 }
-
-
 

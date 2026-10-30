@@ -22,6 +22,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlData } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
 //not GWT import const AbSqlData
@@ -31,6 +32,7 @@ import { Validation } from '../../../../../../../../org/allbinary/logic/control/
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -79,8 +81,7 @@ public constructor (downloadableItem: DownloadableItem){
 
     public isValid(): Boolean{
 
-        try {
-            
+ try { 
                         if(this.downloadableItem!.getId() == 
                                     null
                                  || this.downloadableItem!.getId()!.length() < 1 || this.downloadableItem!.getId()!.length() > AbSqlData.MAXNUM)
@@ -90,7 +91,7 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -105,7 +106,7 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -120,7 +121,7 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -135,7 +136,7 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -150,7 +151,7 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -165,7 +166,7 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -180,7 +181,7 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -195,14 +196,14 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
                         else {
                             
-    var size: string = this.downloadableItem!.getSize()!.toString()!;;
+    let size: string = this.downloadableItem!.getSize()!.toString()!;;
     
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
@@ -212,7 +213,7 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -230,14 +231,14 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
                         else {
                             
-    var size: string = this.downloadableItem!.getValidTime()!.toString()!;;
+    let size: string = this.downloadableItem!.getValidTime()!.toString()!;;
     
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
@@ -247,7 +248,7 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -265,14 +266,14 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
                         else {
                             
-    var size: string = this.downloadableItem!.getRetries()!.toString()!;;
+    let size: string = this.downloadableItem!.getRetries()!.toString()!;;
     
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
@@ -282,7 +283,7 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -294,12 +295,13 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -313,18 +315,19 @@ public constructor (downloadableItem: DownloadableItem){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.downloadableItem!.getId() == 
@@ -440,7 +443,7 @@ stringBuffer!.append(" and >= 0 characters long.<br/>");
                                 
                         else {
                             
-    var size: string = this.downloadableItem!.getSize()!.toString()!;;
+    let size: string = this.downloadableItem!.getSize()!.toString()!;;
     
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
@@ -471,7 +474,7 @@ stringBuffer!.append(" and > 0 digits.<br/>");
                                 
                         else {
                             
-    var size: string = this.downloadableItem!.getValidTime()!.toString()!;;
+    let size: string = this.downloadableItem!.getValidTime()!.toString()!;;
     
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
@@ -502,7 +505,7 @@ stringBuffer!.append(" and > 0 digits.<br/>");
                                 
                         else {
                             
-    var size: string = this.downloadableItem!.getRetries()!.toString()!;;
+    let size: string = this.downloadableItem!.getRetries()!.toString()!;;
     
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
@@ -526,10 +529,11 @@ stringBuffer!.append(" and > 0 digits.<br/>");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -545,8 +549,10 @@ stringBuffer!.append(" and > 0 digits.<br/>");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -571,6 +577,4 @@ stringBuffer!.append(" and > 0 digits.<br/>");
 
 
 }
-
-
 

@@ -58,6 +58,7 @@ import { WeblisketSession } from '../org/allbinary/logic/communication/http/requ
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SearchParams } from '../org/allbinary/logic/control/search/SearchParams.js';
 //not GWT import const SearchParams
@@ -67,6 +68,7 @@ import { SearchRequest } from '../org/allbinary/logic/control/search/SearchReque
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { TransformInfoData } from '../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
 //not GWT import const TransformInfoData
@@ -123,10 +125,10 @@ public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageConte
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
+    let storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
-    var xslFile: string = propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME) as string;;
+    let xslFile: string = propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME) as string;;
     
 
                         if(storeName != 
@@ -135,13 +137,13 @@ this.request= pageContext!.getRequest() as HttpServletRequest;
                         
                                     {
                                     
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(storeName)!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(storeName)!;;
     
 
-    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(this.request)!;;
+    let contentType: string = AcceptableResponseGenerator.getInstance()!.get(this.request)!;;
     
 
-    var searchParams: SearchParams = new SearchParams(this.request);;
+    let searchParams: SearchParams = new SearchParams(this.request);;
     
 this.searchRequest= new SearchRequest(storeFrontInterface, searchParams, xslFile, contentType, propertiesHashMap, pageContext);
     
@@ -161,12 +163,11 @@ this.id= this.request.getParameter(this.basicItemData!.ID);
 
     public viewSummary(): string{
 
-        try {
-            
-    var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(this.searchRequest)!;;
+ try { 
+    let inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(this.searchRequest)!;;
     
 
-    var result: string = inventoryViewSearchInterface!.getProduct(this.id)!;;
+    let result: string = inventoryViewSearchInterface!.getProduct(this.id)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -183,12 +184,13 @@ this.id= this.request.getParameter(this.basicItemData!.ID);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to View Summary";;
+    let error: string = "Failed to View Summary";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -205,19 +207,20 @@ this.id= this.request.getParameter(this.basicItemData!.ID);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error +"<br>" +"Exception: " +e +"<br>";
     
-}
 
+ }
+   }
+ 
 }
 
 
     public search(): string{
 
-        try {
-            
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+ try { 
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var keywords: string = this.searchRequest!.getParams()!.get()!.get(this.basicItemData!.KEYWORDS) as string;;
+    let keywords: string = this.searchRequest!.getParams()!.get()!.get(this.basicItemData!.KEYWORDS) as string;;
     
 
                         if(keywords == 
@@ -235,10 +238,10 @@ this.id= this.request.getParameter(this.basicItemData!.ID);
                                     }
                                 
 
-    var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(this.searchRequest)!;;
+    let inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(this.searchRequest)!;;
     
 
-    var result: string = inventoryViewSearchInterface!.searchSingleDynamicPage()!;;
+    let result: string = inventoryViewSearchInterface!.searchSingleDynamicPage()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -255,12 +258,13 @@ this.id= this.request.getParameter(this.basicItemData!.ID);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to search Inventory by keyword";;
+    let error: string = "Failed to search Inventory by keyword";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -277,12 +281,12 @@ this.id= this.request.getParameter(this.basicItemData!.ID);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error +"<br>" +"Exception: " +e +"<br>";
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

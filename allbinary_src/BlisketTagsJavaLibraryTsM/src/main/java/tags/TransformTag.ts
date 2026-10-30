@@ -31,9 +31,11 @@ import { AbResponseHandler } from '../org/allbinary/logic/communication/http/req
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -108,9 +110,8 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             
     view(): string{
 
-        try {
-            
-    var result: string = this.getHelper()!.constructor.name.getMethod("view", 
+ try { 
+    let result: string = this.getHelper()!.constructor.name.getMethod("view", 
                             null)!.invoke(this.getHelper(), 
                             null) as string;;
     
@@ -120,10 +121,11 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
@@ -138,8 +140,10 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -147,8 +151,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
@@ -162,7 +165,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("ViewTag Start For: ");
     
@@ -196,10 +199,11 @@ pageContext!.getOut()!.print(this.view());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -208,11 +212,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -221,12 +225,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

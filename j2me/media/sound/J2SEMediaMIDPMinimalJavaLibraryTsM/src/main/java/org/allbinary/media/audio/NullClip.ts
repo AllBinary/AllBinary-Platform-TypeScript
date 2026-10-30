@@ -79,16 +79,25 @@ export class NullClip
         
 
     public static readonly NULL_CONTROL: NullJ2SEControl = new NullJ2SEControl(BooleanControl.Type.MUTE);
-
+open(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[2] === 'number' && typeof args[3] === 'number') return this.open$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 1) return this.open$overload2(args[0]);
+   
+    if (args.length === 0) return this.open$overload3();
+   
+   throw new TypeError('No matching overload: open'); }
+  
                 //@Throws(LineUnavailableException.constructor)
             
-    public open(format: AudioFormat, data: number[], offset: number, bufferSize: number){
+    public open$overload1(format: AudioFormat, data: number[], offset: number, bufferSize: number){
 }
 
 
                 //@Throws(LineUnavailableException.constructor, IOException.constructor)
             
-    public open(stream: AudioInputStream){
+    public open$overload2(stream: AudioInputStream){
 }
 
 
@@ -246,7 +255,7 @@ export class NullClip
 
                 //@Throws(LineUnavailableException.constructor)
             
-    public open(){
+    public open$overload3(){
 }
 
 
@@ -303,6 +312,4 @@ export class NullClip
 
 
 }
-
-
 

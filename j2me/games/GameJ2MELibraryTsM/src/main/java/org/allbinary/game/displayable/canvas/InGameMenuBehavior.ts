@@ -109,5 +109,3 @@ allBinaryGameCanvas!.closeMenu2();
 
 }
 
-
-

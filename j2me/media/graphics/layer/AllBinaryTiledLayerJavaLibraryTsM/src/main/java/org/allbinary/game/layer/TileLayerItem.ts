@@ -148,5 +148,3 @@ this.tiledLayer!.paint(graphics);
 
 }
 
-
-

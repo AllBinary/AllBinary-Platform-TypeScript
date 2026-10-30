@@ -74,7 +74,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var techEventListenerInterface: TechEventListenerInterface = (eventListenerInterface as TechEventListenerInterface);;
+    let techEventListenerInterface: TechEventListenerInterface = (eventListenerInterface as TechEventListenerInterface);;
     
 techEventListenerInterface!.onTechEvent(eventObject);
     
@@ -82,6 +82,4 @@ techEventListenerInterface!.onTechEvent(eventObject);
 
 
 }
-
-
 

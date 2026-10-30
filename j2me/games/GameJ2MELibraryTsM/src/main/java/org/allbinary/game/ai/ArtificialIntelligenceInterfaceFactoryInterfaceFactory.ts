@@ -24,15 +24,19 @@
         
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -84,13 +88,13 @@ this.list= new BasicArrayListD();
 
     public getInstanceFromCollection(hashtable: ABHashtable<any, any>): ArtificialIntelligenceInterfaceFactoryInterface{
 
-    var typeInteger: Integer = hashtable.get(BasicAI.ID) as Integer;;
+    let typeInteger: Integer = hashtable.get(BasicAI.ID) as Integer;;
     
 
-    var type: number = typeInteger!.intValue()!;;
+    let type: number = typeInteger!.intValue()!;;
     
 
-    var artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface = this.list.objectArray[type -1]! as ArtificialIntelligenceInterfaceFactoryInterface;;
+    let artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface = this.list.objectArray[type -1]! as ArtificialIntelligenceInterfaceFactoryInterface;;
     
 
 
@@ -108,6 +112,4 @@ this.list.add(artificialIntelligenceInterfaceFactoryInterface);
 
 
 }
-
-
 

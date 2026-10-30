@@ -75,8 +75,7 @@ this.hasPainted= false;
 
     public end(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.END_METHOD_NAME);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.END_METHOD_NAME);
     
 this.endActual();
     
@@ -86,14 +85,17 @@ ImageCacheFactory.getInstance()!.runTask();
     
 ImageCacheFactory.getInstance()!.progressEnded();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, this.commonStrings!.END_METHOD_NAME);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -125,6 +127,4 @@ this.paintable= NullPaintable.getInstance();
 
 
 }
-
-
 

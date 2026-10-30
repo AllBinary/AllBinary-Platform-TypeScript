@@ -96,5 +96,3 @@ this.WATER_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -waterFrict
 
 }
 
-
-

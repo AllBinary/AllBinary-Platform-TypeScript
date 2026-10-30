@@ -43,13 +43,11 @@ import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/
 export interface AdvertisementImageInterface {
         
 
-    getFileName(): string
+    getFileName(): string;
 
-    getUrl(): string
+    getUrl(): string;
 
-    getTwoDimensionalConstraint(): TwoDimensionalConstraintInterface
+    getTwoDimensionalConstraint(): TwoDimensionalConstraintInterface;
 
 }
-
-
 

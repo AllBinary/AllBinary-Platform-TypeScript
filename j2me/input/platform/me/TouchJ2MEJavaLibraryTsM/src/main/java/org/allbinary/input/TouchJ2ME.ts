@@ -36,9 +36,11 @@ import { MotionGestureReceiveInterfaceFactory } from '../../../org/allbinary/inp
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -74,7 +76,7 @@ public constructor (){
 
             super();
         
-    var motionGesturesHandler: BasicMotionGesturesHandler = this.motionRecognizer!.getMotionGestureRecognizer()!.getMotionGesturesHandler()!;;
+    let motionGesturesHandler: BasicMotionGesturesHandler = this.motionRecognizer!.getMotionGestureRecognizer()!.getMotionGesturesHandler()!;;
     
 motionGesturesHandler!.addListenerInterface(new GameMotionGestureListener(MotionGestureReceiveInterfaceFactory.getInstance()));
     
@@ -83,62 +85,66 @@ motionGesturesHandler!.addListenerInterface(new GameMotionGestureListener(Motion
 
     public pointerDragged(x: number, y: number){
 
-        try {
-            this.motionRecognizer!.processDraggedMotionEvent(x, y, DEVICE_ID, 0);
+ try { this.motionRecognizer!.processDraggedMotionEvent(x, y, DEVICE_ID, 0);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerDragged", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public pointerPressed(x: number, y: number){
 
-        try {
-            this.motionRecognizer!.processStartMotionEvent(x, y, DEVICE_ID, 0);
+ try { this.motionRecognizer!.processStartMotionEvent(x, y, DEVICE_ID, 0);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerPressed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public pointerReleased(x: number, y: number){
 
-        try {
-            this.motionRecognizer!.processEndMotionEvent(x, y, DEVICE_ID, 0);
+ try { this.motionRecognizer!.processEndMotionEvent(x, y, DEVICE_ID, 0);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerReleased", e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

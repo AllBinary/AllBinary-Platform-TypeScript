@@ -46,6 +46,7 @@ import { DrawStringUtil } from '../../../../../org/allbinary/graphics/draw/DrawS
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -119,10 +120,10 @@ this.myFontProcessor!.process(graphics);
 this.colorFillPaintable!.paint(graphics);
     
 
-    var halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
+    let halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
     
 
-    var beginWidth: number = (graphics.getFont()!.stringWidth(this.TITLE)>>1);;
+    let beginWidth: number = (graphics.getFont()!.stringWidth(this.TITLE)>>1);;
     
 graphics.setColor(this.foregroundColor);
     
@@ -136,6 +137,4 @@ super.paint(graphics);
 
 
 }
-
-
 

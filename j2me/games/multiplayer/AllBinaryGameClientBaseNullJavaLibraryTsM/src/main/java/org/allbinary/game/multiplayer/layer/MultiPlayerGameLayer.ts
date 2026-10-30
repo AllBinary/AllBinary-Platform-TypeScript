@@ -97,5 +97,3 @@ public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], name: strin
 
 }
 
-
-

@@ -24,21 +24,27 @@
         
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -86,8 +92,7 @@ export class PlayerQueue
 
     public add(sound: Sound){
 
-        try {
-            
+ try { 
                         if(!this.list.contains(sound))
                         
                                     {
@@ -96,25 +101,27 @@ export class PlayerQueue
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public process(): boolean{
 
-    var sound: Sound = NoSound.getInstance()!;;
+    let sound: Sound = NoSound.getInstance()!;;
     
 
-        try {
-            
-    var played: boolean = false;;
+ try { 
+    let played: boolean = false;;
     
 
                         if(this.list.size() > 0)
@@ -151,12 +158,13 @@ played= true;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return played;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var resource: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let resource: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(sound != 
@@ -177,8 +185,10 @@ PreLogUtil.put(new StringMaker().append(this.commonStrings!.EXCEPTION_LABEL)!.ap
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -199,6 +209,4 @@ this.list.clear();
 
 
 }
-
-
 

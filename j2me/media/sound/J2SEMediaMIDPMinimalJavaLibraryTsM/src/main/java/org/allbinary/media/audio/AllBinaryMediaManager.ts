@@ -51,6 +51,7 @@ import { AudioContentTypeDataFactory } from '../../../../org/allbinary/audio/Aud
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
@@ -63,12 +64,15 @@ import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -132,10 +136,10 @@ export class AllBinaryMediaManager
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;;
+    let commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INIT);
     
@@ -181,12 +185,11 @@ TsUtil.getInstance()!.gc();
                         
                                     {
                                     
-        try {
-            
-    var inputStream: InputStream = ResourceUtil.getInstance()!.getResourceAsStream(resource)!;;
+ try { 
+    let inputStream: InputStream = ResourceUtil.getInstance()!.getResourceAsStream(resource)!;;
     
 
-    var bufferedInputStream: BufferedInputStream = new BufferedInputStream(inputStream);;
+    let bufferedInputStream: BufferedInputStream = new BufferedInputStream(inputStream);;
     
 
 
@@ -194,15 +197,16 @@ TsUtil.getInstance()!.gc();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new PCClipWavPlayer(bufferedInputStream);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;;
+    let commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonString!.EXCEPTION, AllBinaryMediaManager.THIS, CREATE_PLAYER, e);
     
@@ -212,8 +216,10 @@ logUtil!.put(commonString!.EXCEPTION, AllBinaryMediaManager.THIS, CREATE_PLAYER,
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NoPlayer.NO_PLAYER;
     
-}
 
+ }
+   }
+ 
 
                                     }
                                 
@@ -270,6 +276,4 @@ private constructor (){
 
 
 }
-
-
 

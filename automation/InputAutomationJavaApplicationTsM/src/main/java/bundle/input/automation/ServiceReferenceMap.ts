@@ -34,6 +34,7 @@ import { ServiceReference } from '../../../org/osgi/framework/ServiceReference.j
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -61,7 +62,7 @@ export class ServiceReferenceMap
 
     public static toString(map: Map): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -102,7 +103,7 @@ public constructor (serviceReference: ServiceReference){
 }
 
 
-    public containsKey(key: any = {}): boolean{
+    public containsKey(key: any): boolean{
 
 
 
@@ -112,7 +113,7 @@ public constructor (serviceReference: ServiceReference){
 }
 
 
-    public containsValue(value: any = {}): boolean{
+    public containsValue(value: any): boolean{
 
 
 
@@ -122,7 +123,7 @@ public constructor (serviceReference: ServiceReference){
 }
 
 
-    public get(key: any = {}): any{
+    public get(key: any): any{
 
 
 
@@ -132,7 +133,7 @@ public constructor (serviceReference: ServiceReference){
 }
 
 
-    public put(key: any = {}, value: any = {}): any{
+    public put(key: any, value: any): any{
 
 
 
@@ -142,7 +143,7 @@ public constructor (serviceReference: ServiceReference){
 }
 
 
-    public remove(key: any = {}): any{
+    public remove(key: any): any{
 
 
 
@@ -162,7 +163,7 @@ public constructor (serviceReference: ServiceReference){
 
     public keySet(): Set{
 
-    var keyStringArray: string[] = this.serviceReference!.getPropertyKeys()!;;
+    let keyStringArray: string[] = this.serviceReference!.getPropertyKeys()!;;
     
 
 
@@ -194,6 +195,4 @@ public constructor (serviceReference: ServiceReference){
 
 
 }
-
-
 

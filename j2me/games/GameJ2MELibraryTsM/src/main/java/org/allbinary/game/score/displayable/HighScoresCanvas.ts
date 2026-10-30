@@ -94,21 +94,26 @@ import { SimpleTextPaintable } from '../../../../../org/allbinary/graphics/paint
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
 
 import { SecondaryThreadPool } from '../../../../../org/allbinary/thread/SecondaryThreadPool.js';
 //not GWT import const SecondaryThreadPool
 
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+type ABSystemWrapper<T = any, U = any> = typeof ABSystemWrapper extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABSystemWrapper;
 
 
 
@@ -214,18 +219,17 @@ class HighScoreRunnable extends ARunnable {
 
     public run(){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var highScoresCanvas: HighScoresCanvas = this.highScoresCanvas;;
+    let highScoresCanvas: HighScoresCanvas = this.highScoresCanvas;;
     
 
-        try {
-            
-    var isHTML: boolean = J2MEUtil.isHTML()!;;
+ try { 
+    let isHTML: boolean = J2MEUtil.isHTML()!;;
     
 
                         if(!isHTML)
@@ -242,13 +246,13 @@ highScoresCanvas!.hasPainted= false;
                                     }
                                 
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;;
+    let systemWrapper: ABSystemWrapper = ABSystemWrapper.getInstance()!;;
     
 
-    var currentTimeMillis: number = systemWrapper!.currentTimeMillis()!;;
+    let currentTimeMillis: number = systemWrapper!.currentTimeMillis()!;;
     
 logUtil!.putF(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(currentTimeMillis)!.toString(), this, commonStrings!.RUN);
     
@@ -272,20 +276,21 @@ logUtil!.putF(stringMaker!.append("HighScoresCanvas - Now that the canvas has co
     
 highScoresCanvas!.executeUpdate();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 
                     //Otherwise - statement - EmptyStmt
 
@@ -343,17 +348,19 @@ this.hasPainted= true;
 
     public executeUpdate(){
 
-        try {
-            this.highScoresFactoryInterface!.fetchHighScores(this.getGameInfo(), this);
+ try { this.highScoresFactoryInterface!.fetchHighScores(this.getGameInfo(), this);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDATE, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -369,8 +376,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDAT
 
     public setHighScoresArray(highScoresArray: HighScores[]){
 
-        try {
-            
+ try { 
                         if(highScoresArray != 
                                     null
                                 )
@@ -393,14 +399,17 @@ this.updateCommand(this.currentCommand);
     
 this.setPaintable(this.getHighScoresPaintable());
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDATE, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -410,20 +419,20 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDAT
 this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(this.stringUtil!.toString(command))!.toString(), this, this.commonStrings!.UPDATE);
     
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
+    let gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 
                         if(this.highScoreCommandsFactory!.isHighScoreCommand(command))
                         
                                     {
                                     
-    var index: number = this.highScoreCommandsFactory!.getIndex(command)!;;
+    let index: number = this.highScoreCommandsFactory!.getIndex(command)!;;
     
 
-    var nextIndex: number = index +1;;
+    let nextIndex: number = index +1;;
     
 
-    var highScoresArray: HighScores[] = this.highScoresHelper!.getHighScoresArray()!;;
+    let highScoresArray: HighScores[] = this.highScoresHelper!.getHighScoresArray()!;;
     
 
                         if(nextIndex >= highScoresArray!.length)
@@ -497,6 +506,4 @@ this.repaintBehavior!.onChangeRepaint(this);
 
 
 }
-
-
 

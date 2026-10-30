@@ -42,21 +42,26 @@ import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomH
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -118,32 +123,32 @@ public constructor (node: Node){
 
             super();
         
-    var nameNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, node.getChildNodes())!;;
+    let nameNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, node.getChildNodes())!;;
     
 this.name= DomNodeHelper.getTextNodeValue(nameNode);
     
 
-    var streetNode: Node = DomSearchHelper.getNode(StreetAddressData.STREET, node.getChildNodes())!;;
+    let streetNode: Node = DomSearchHelper.getNode(StreetAddressData.STREET, node.getChildNodes())!;;
     
 this.street= DomNodeHelper.getTextNodeValue(streetNode);
     
 
-    var cityNode: Node = DomSearchHelper.getNode(StreetAddressData.CITY, node.getChildNodes())!;;
+    let cityNode: Node = DomSearchHelper.getNode(StreetAddressData.CITY, node.getChildNodes())!;;
     
 this.city= DomNodeHelper.getTextNodeValue(cityNode);
     
 
-    var stateNode: Node = DomSearchHelper.getNode(StreetAddressData.STATE, node.getChildNodes())!;;
+    let stateNode: Node = DomSearchHelper.getNode(StreetAddressData.STATE, node.getChildNodes())!;;
     
 this.state= DomNodeHelper.getTextNodeValue(stateNode);
     
 
-    var codeNode: Node = DomSearchHelper.getNode(StreetAddressData.CODE, node.getChildNodes())!;;
+    let codeNode: Node = DomSearchHelper.getNode(StreetAddressData.CODE, node.getChildNodes())!;;
     
 this.code= DomNodeHelper.getTextNodeValue(codeNode);
     
 
-    var countryNode: Node = DomSearchHelper.getNode(StreetAddressData.COUNTRY, node.getChildNodes())!;;
+    let countryNode: Node = DomSearchHelper.getNode(StreetAddressData.COUNTRY, node.getChildNodes())!;;
     
 this.country= DomNodeHelper.getTextNodeValue(countryNode);
     
@@ -236,7 +241,7 @@ this.code= address.get(StreetAddressData.CODE) as string;
 this.country= address.get(StreetAddressData.COUNTRY) as string;
     
 
-    var def: string = address.get(StreetAddressData.DEFAULT) as string;;
+    let def: string = address.get(StreetAddressData.DEFAULT) as string;;
     
 
                         if(def != 
@@ -397,7 +402,7 @@ this.country= value;
 
     public isEmpty(): Boolean{
 
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(this.getName() == 
@@ -419,7 +424,7 @@ this.country= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -428,14 +433,14 @@ this.country= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 }
 
 
     public isValid(): Boolean{
 
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(this.getName() == 
@@ -457,7 +462,7 @@ this.country= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -466,19 +471,19 @@ this.country= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
 
     public validationInfo(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Address Failed To Validate - All fields must contain data.<br></br>");
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.getName(), StreetAddressData.MIN, StreetAddressData.MAX))
@@ -567,9 +572,8 @@ stringBuffer!.append("<br></br>");
 
     toValidationInfoNode(document: Document): Node{
 
-        try {
-            
-    var node: Node = document.createElement(StreetAddressData.FORM)!;;
+ try { 
+    let node: Node = document.createElement(StreetAddressData.FORM)!;;
     
 node.appendChild(this.toXmlNode(document));
     
@@ -579,16 +583,17 @@ node.appendChild(this.toXmlNode(document));
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e);
     
@@ -601,14 +606,16 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(StreetAddressData.ID, this.id);
     
@@ -637,36 +644,36 @@ hashMap!.put(StreetAddressData.COUNTRY, this.country);
             
     public toXmlNode(document: Document): Node{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;;
+    let keySet: Set = hashMap!.keys()!;;
     
 
-    var keyArray: any[] = keySet!.()!;;
+    let keyArray: any[] = keySet!.()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
-    var node: Node = document.createElement(StreetAddressData.ADDRESS)!;;
+    let node: Node = document.createElement(StreetAddressData.ADDRESS)!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var name: string = keyArray[i]! as string;;
+    let name: string = keyArray[i]! as string;;
     
 
-    var value: string = stringUtil!.getNonNull(hashMap!.get(name) as string)!;;
+    let value: string = stringUtil!.getNonNull(hashMap!.get(name) as string)!;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
     
@@ -682,6 +689,4 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 
 
 }
-
-
 

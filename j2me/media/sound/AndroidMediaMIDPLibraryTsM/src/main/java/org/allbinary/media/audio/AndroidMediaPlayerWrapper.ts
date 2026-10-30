@@ -40,18 +40,23 @@ import { NullAndroidCanvas } from '../../../../org/allbinary/android/NullAndroid
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -79,24 +84,26 @@ export class AndroidMediaPlayerWrapper extends BasicPlayer {
 
     public static createPlayerWrapper(): AndroidMediaPlayerWrapper{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new AndroidMediaPlayerWrapper(StringUtil.getInstance()!.EMPTY_STRING);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw new RuntimeException();
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -110,8 +117,7 @@ public constructor (resource: string){
 
             super();
         
-        try {
-            
+ try { 
                         if(resource == StringUtil.getInstance()!.EMPTY_STRING)
                         
                                     {
@@ -120,10 +126,10 @@ public constructor (resource: string){
                                 
                         else {
                             
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
+    let resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var mediaPlayer: MediaPlayer = MediaPlayer.create(resourceUtil!.getContext(), resourceUtil!.getResourceId(resource)!.intValue())!;;
+    let mediaPlayer: MediaPlayer = MediaPlayer.create(resourceUtil!.getContext(), resourceUtil!.getResourceId(resource)!.intValue())!;;
     
 
                         if(mediaPlayer == 
@@ -146,10 +152,11 @@ this.mediaPlayer!.setLooping(false);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION_LABEL +resource, this, this.commonStrings!.CONSTRUCTOR, e);
     
 
@@ -157,8 +164,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION_LABEL +resource, this, this.comm
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -232,19 +241,21 @@ super.removePlayerListener(playerListener);
 
     public close(){
 
-        try {
-            this.mediaPlayer!.release();
+ try { this.mediaPlayer!.release();
     
 this.mediaPlayer= NullAndroidCanvas.NULL_MEDIA_PLAYER;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CLOSE, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -253,8 +264,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CLOSE
 
     public start(){
 
-        try {
-            
+ try { 
                         if(this.mediaPlayer!.isPlaying())
                         
                                     {
@@ -269,14 +279,17 @@ this.mediaPlayer!.start();
     
 super.start();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START_METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -285,21 +298,23 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START
 
     public stop(){
 
-        try {
-            this.mediaPlayer!.stop();
+ try { this.mediaPlayer!.stop();
     
 this.mediaPlayer!.prepare();
     
 super.stop();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "stop", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -307,17 +322,17 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "stop", e);
 this.logUtil!.putF("LineEvent: " +event, this, this.commonStrings!.UPDATE);
     
 
-    var size: number = this.listenersList!.size()!;;
+    let size: number = this.listenersList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var listener: PlayerListener = this.listenersList!.objectArray[index]! as PlayerListener;;
+    let listener: PlayerListener = this.listenersList!.objectArray[index]! as PlayerListener;;
     
 listener.playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT);
     
@@ -359,6 +374,4 @@ this.mediaPlayer= mediaPlayer;
 
 
 }
-
-
 

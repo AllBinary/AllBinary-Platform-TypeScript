@@ -36,9 +36,11 @@ import { OutputStream } from '../../../../java/io/OutputStream.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -88,7 +90,7 @@ private constructor (){
             
     public get(inputStream: InputStream, outputStream: OutputStream, buffer: number[]): OutputStream{
 
-    var len: number = 0;;
+    let len: number = 0;;
     
 
         while(true)
@@ -126,11 +128,10 @@ outputStream!.write(buffer, 0, len);
             
     public getByteArray(inputStream: InputStream, outputStream2: ByteArrayOutputStream, byteArray: number[]): number[]{
 
-    var outputStream: ByteArrayOutputStream = outputStream2;;
+    let outputStream: ByteArrayOutputStream = outputStream2;;
     
 
-        try {
-            this.get(inputStream, outputStream, byteArray);
+ try { this.get(inputStream, outputStream, byteArray);
     
 
 
@@ -138,30 +139,28 @@ outputStream!.write(buffer, 0, len);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return outputStream!.toByteArray();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-         finally {
-            this.close(outputStream);
+ }
+   }
+ finally { this.close(outputStream);
     
-
-         }
-        
+ }
 }
 
 
     public close(closeable: Closeable): boolean{
 
-        try {
-            
+ try { 
                         if(closeable != 
                                     null
                                 )
@@ -178,12 +177,13 @@ outputStream!.write(buffer, 0, len);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);
     
@@ -193,12 +193,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

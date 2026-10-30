@@ -90,5 +90,3 @@ export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
 
 }
 
-
-

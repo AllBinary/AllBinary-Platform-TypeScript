@@ -30,6 +30,7 @@ import { PageContext } from '../javax/servlet/jsp/PageContext.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -51,6 +52,7 @@ import { TransformInfoInterface } from '../org/allbinary/logic/visual/transform/
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -111,19 +113,19 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             
     public view(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.componentInterface!.view();;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to View: ";;
+    let error: string = "Failed to View: ";;
     
 
                         if(this.componentInterface != 
@@ -147,8 +149,10 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -156,18 +160,18 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             
     public toXmlDoc(): Document{
 
-        try {
-            
+ try { 
 
 
                             throw new Exception("Hmm: " +this.componentInterface!.getTransformDocumentInterface()!.getDoc());
                     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to View: ";;
+    let error: string = "Failed to View: ";;
     
 
                         if(this.componentInterface != 
@@ -191,8 +195,10 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -239,6 +245,4 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
 
 }
-
-
 

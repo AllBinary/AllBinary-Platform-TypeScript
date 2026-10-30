@@ -40,12 +40,15 @@ import { LayerManagerEventListener } from '../../../../../org/allbinary/layer/ev
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -55,15 +58,19 @@ import { EventStrings } from '../../../../../org/allbinary/logic/util/event/Even
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -113,17 +120,17 @@ private constructor (){
 
     public clear(){
 
-    var groupList: BasicArrayList;;
+    let groupList: BasicArrayList;;
     
 
-    var size: number = this.list.size()!;;
+    let size: number = this.list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = size -1;index >= 0; index--)
+    let index: number = size -1;index >= 0; index--)
         {
 groupList= this.list.objectArray[index]! as BasicArrayList;
     
@@ -136,7 +143,7 @@ groupList!.clear();
 
     public getGroupSizeFromInterface(groupInterfaceCompositeInterface: GroupInterfaceCompositeInterface): number{
 
-    var groupInterfaceArray: Group[] = groupInterfaceCompositeInterface!.getGroupInterface()!;;
+    let groupInterfaceArray: Group[] = groupInterfaceCompositeInterface!.getGroupInterface()!;;
     
 
 
@@ -149,7 +156,7 @@ groupList!.clear();
 
     public getGroupSize(groupInterface: Group): number{
 
-    var id: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
+    let id: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
     
 
 
@@ -162,7 +169,7 @@ groupList!.clear();
 
     public getList(groupInterface: Group): BasicArrayList{
 
-    var id: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
+    let id: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
     
 
 
@@ -175,7 +182,7 @@ groupList!.clear();
 
     getListById(groupId: number): BasicArrayList{
 
-    var groupList: BasicArrayList = this.list.objectArray[groupId]! as BasicArrayList;;
+    let groupList: BasicArrayList = this.list.objectArray[groupId]! as BasicArrayList;;
     
 
 
@@ -188,10 +195,10 @@ groupList!.clear();
 
     getGroupSizeById(groupId: number): number{
 
-    var groupList: BasicArrayList = this.list.objectArray[groupId]! as BasicArrayList;;
+    let groupList: BasicArrayList = this.list.objectArray[groupId]! as BasicArrayList;;
     
 
-    var size: number = groupList!.size()!;;
+    let size: number = groupList!.size()!;;
     
 
 
@@ -204,24 +211,24 @@ groupList!.clear();
 
     public areAllOtherGroupsEmpty(groupInterface: Group): boolean{
 
-    var id: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
+    let id: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
     
 
-    var size: number = this.list.size()!;;
+    let size: number = this.list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = size -1;index >= 0; index--)
+    let index: number = size -1;index >= 0; index--)
         {
 
                         if(id != index)
                         
                                     {
                                     
-    var groupSize: number = this.getGroupSizeById(index)!;;
+    let groupSize: number = this.getGroupSizeById(index)!;;
     
 
                         if(groupSize != 0)
@@ -254,28 +261,28 @@ groupList!.clear();
 
     isIdInList(id: number, excludeGroupList: BasicArrayList): boolean{
 
-    var size: number = excludeGroupList!.size()!;;
+    let size: number = excludeGroupList!.size()!;;
     
 
-    var groupInterfaceArray: Group[];;
+    let groupInterfaceArray: Group[];;
     
 
-    var groupInterface: Group;;
+    let groupInterface: Group;;
     
 
-    var groupId: number= 0;;
+    let groupId: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = size -1;index >= 0; index--)
+    let index: number = size -1;index >= 0; index--)
         {
 groupInterfaceArray= excludeGroupList!.objectArray[index]! as Group[];
     
 
-    var size2: number = groupInterfaceArray!.length
+    let size2: number = groupInterfaceArray!.length
                 ;;
     
 
@@ -283,7 +290,7 @@ groupInterfaceArray= excludeGroupList!.objectArray[index]! as Group[];
 
 
                         for (
-    var index2: number = 0;index2 < size2; index2++)
+    let index2: number = 0;index2 < size2; index2++)
         {
 groupInterface= groupInterfaceArray[index2]!;
     
@@ -317,21 +324,21 @@ groupId= globalThis.Math.trunc(groupInterface!.getGroupId());
 
     public areAllOtherGroupsLessThan(excludeGroupList: BasicArrayList, maxSize: number): boolean{
 
-    var size: number = this.list.size()!;;
+    let size: number = this.list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = size -1;index >= 0; index--)
+    let index: number = size -1;index >= 0; index--)
         {
 
                         if(!this.isIdInList(index, excludeGroupList))
                         
                                     {
                                     
-    var groupSize: number = this.getGroupSizeById(index)!;;
+    let groupSize: number = this.getGroupSizeById(index)!;;
     
 
                         if(groupSize >= maxSize)
@@ -381,27 +388,27 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
             
     public onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
 
-    var layerInterface: AllBinaryLayer = layerManagerEvent!.getLayerInterface()!;;
+    let layerInterface: AllBinaryLayer = layerManagerEvent!.getLayerInterface()!;;
     
 
-    var groupInterfaceArray: Group[] = layerInterface!.getGroupInterface()!;;
+    let groupInterfaceArray: Group[] = layerInterface!.getGroupInterface()!;;
     
 
-    var size: number = groupInterfaceArray!.length
+    let size: number = groupInterfaceArray!.length
                 ;;
     
 
-    var id: number= 0;;
+    let id: number= 0;;
     
 
-    var groupList: BasicArrayList;;
+    let groupList: BasicArrayList;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 id= globalThis.Math.trunc(groupInterfaceArray[index]!.getGroupId());
     
@@ -440,27 +447,27 @@ groupList= this.list.objectArray[id]! as BasicArrayList;
             
     public onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
 
-    var layerInterface: AllBinaryLayer = layerManagerEvent!.getLayerInterface()!;;
+    let layerInterface: AllBinaryLayer = layerManagerEvent!.getLayerInterface()!;;
     
 
-    var groupInterfaceArray: Group[] = layerInterface!.getGroupInterface()!;;
+    let groupInterfaceArray: Group[] = layerInterface!.getGroupInterface()!;;
     
 
-    var size: number = groupInterfaceArray!.length
+    let size: number = groupInterfaceArray!.length
                 ;;
     
 
-    var id: number= 0;;
+    let id: number= 0;;
     
 
-    var groupList: BasicArrayList;;
+    let groupList: BasicArrayList;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 id= globalThis.Math.trunc(groupInterfaceArray[index]!.getGroupId());
     
@@ -475,29 +482,29 @@ groupList!.remove(layerInterface);
 
     public log(){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var GROUP: string = "Group: ";;
+    let GROUP: string = "Group: ";;
     
 
-    var SPACE: string = CommonSeps.getInstance()!.SPACE;;
+    let SPACE: string = CommonSeps.getInstance()!.SPACE;;
     
 
-    var TOTAL_LABEL: string = CommonLabels.getInstance()!.TOTAL_LABEL;;
+    let TOTAL_LABEL: string = CommonLabels.getInstance()!.TOTAL_LABEL;;
     
 
-    var size: number = this.list.size()!;;
+    let size: number = this.list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = size -1;index >= 0; index--)
+    let index: number = size -1;index >= 0; index--)
         {
 
-    var groupList: BasicArrayList = this.list.objectArray[index]! as BasicArrayList;;
+    let groupList: BasicArrayList = this.list.objectArray[index]! as BasicArrayList;;
     
 stringBuffer!.append(GROUP);
     
@@ -519,6 +526,4 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "log");
 
 
 }
-
-
 

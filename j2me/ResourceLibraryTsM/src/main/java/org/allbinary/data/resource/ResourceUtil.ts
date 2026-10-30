@@ -33,18 +33,23 @@ import { InputStream } from '../../../../java/io/InputStream.js';
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -110,7 +115,7 @@ ResourceUtil.classLoader= classLoader;
             
     public getResourceAsStream(resource: string): InputStream{
 
-    var inputStream: InputStream = this.getResourceAsStreamAtStart(resource, 2)!;;
+    let inputStream: InputStream = this.getResourceAsStreamAtStart(resource, 2)!;;
     
 
                         if(inputStream == 
@@ -150,16 +155,16 @@ ResourceUtil.classLoader= classLoader;
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var index: number = resource.indexOf(commonSeps!.COLON)!;;
+    let index: number = resource.indexOf(commonSeps!.COLON)!;;
     
 
-    var resourcePath: string = resource.substring(index +startIndex)!;;
+    let resourcePath: string = resource.substring(index +startIndex)!;;
     
 
-    var inputStream: InputStream = resource..javaClass.getResourceAsStream(resourcePath)!;;
+    let inputStream: InputStream = resource..javaClass.getResourceAsStream(resourcePath)!;;
     
 
                         if(inputStream != 
@@ -177,7 +182,7 @@ ResourceUtil.classLoader= classLoader;
                                     }
                                 
 
-    var classLoader: ClassLoader = ResourceUtil.classLoader as ClassLoader;;
+    let classLoader: ClassLoader = ResourceUtil.classLoader as ClassLoader;;
     
 inputStream= classLoader!.getResourceAsStream(resourcePath);
     
@@ -227,6 +232,4 @@ inputStream= Thread.currentThread()!.getContextClassLoader()!.getResourceAsStrea
 
 
 }
-
-
 

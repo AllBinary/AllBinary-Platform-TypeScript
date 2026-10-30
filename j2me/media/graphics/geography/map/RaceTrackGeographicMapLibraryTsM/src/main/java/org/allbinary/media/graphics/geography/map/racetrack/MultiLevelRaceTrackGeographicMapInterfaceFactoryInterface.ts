@@ -46,13 +46,11 @@ export interface MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface exten
 
                 //@Throws(Exception.constructor)
             
-    getFirstWaveWithTrack(track: number): number
+    getFirstWaveWithTrack(track: number): number;
 
-    getTotalTracks(): number
+    getTotalTracks(): number;
 
-    getTotalLevels(): number
+    getTotalLevels(): number;
 
 }
-
-
 

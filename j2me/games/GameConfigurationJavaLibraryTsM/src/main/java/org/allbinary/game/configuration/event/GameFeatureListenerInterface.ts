@@ -45,9 +45,7 @@ import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/
 export interface GameFeatureListenerInterface extends EventListenerInterface {
         
 
-    onGameFeatureChange(gameFeatureEvent: GameFeatureEvent)
+    onGameFeatureChange(gameFeatureEvent: GameFeatureEvent): void;
 
 }
-
-
 

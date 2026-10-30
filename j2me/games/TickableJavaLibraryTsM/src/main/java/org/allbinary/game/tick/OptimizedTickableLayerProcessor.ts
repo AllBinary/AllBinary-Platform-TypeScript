@@ -69,7 +69,7 @@ public constructor (){
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 
-    var tickableInterface: AllBinaryGameLayer = layerInterface as AllBinaryGameLayer;;
+    let tickableInterface: AllBinaryGameLayer = layerInterface as AllBinaryGameLayer;;
     
 tickableInterface!.processTick(allBinaryLayerManager);
     
@@ -104,6 +104,4 @@ tickableInterface!.processTick(allBinaryLayerManager);
 
 
 }
-
-
 

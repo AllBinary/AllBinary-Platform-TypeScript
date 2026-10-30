@@ -34,6 +34,7 @@ import { WorkFlowEntityFactory } from '../../org/allbinary/data/tables/workflow/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 //not GWT import const AbSqlTableUtil
@@ -84,19 +85,19 @@ this.portion= new Portion(hashMap);
 
     public drop(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return WorkFlowEntityFactory.getInstance()!.create2()!.dropTable();;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to drop view info table";;
+    let error: string = "Failed to drop view info table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -113,26 +114,28 @@ this.portion= new Portion(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public create(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return WorkFlowEntityFactory.getInstance()!.create2()!.createTable();;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to create workflow table";;
+    let error: string = "Failed to create workflow table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -149,19 +152,20 @@ this.portion= new Portion(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public restore(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(WorkFlowEntityFactory.getInstance()!.create2(), this.portion)!;;
+    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(WorkFlowEntityFactory.getInstance()!.create2(), this.portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -178,12 +182,13 @@ this.portion= new Portion(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to restore backup";;
+    let error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -200,19 +205,20 @@ this.portion= new Portion(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public backup(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(WorkFlowEntityFactory.getInstance()!.create2())!;;
+    let result: string = AbSqlTableUtil.getInstance()!.backupTable(WorkFlowEntityFactory.getInstance()!.create2())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -229,12 +235,13 @@ this.portion= new Portion(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to make backup";;
+    let error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -251,12 +258,12 @@ this.portion= new Portion(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -22,6 +22,7 @@
         
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
 
 import { BasicHighScoresGameInfoFactory } from '../../../../org/allbinary/game/BasicHighScoresGameInfoFactory.js';
 //not GWT import const BasicHighScoresGameInfoFactory
@@ -40,6 +41,7 @@ import { RemoteHighScores } from '../../../../org/allbinary/game/score/remote/Re
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
@@ -156,22 +158,21 @@ SecondaryThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            logUtil!.putF(BasicHighScoresFactory.prototype.commonStrings!.START, this, FETCH);
+ try { logUtil!.putF(outer$BasicHighScoresFactory.commonStrings!.START, this, FETCH);
     
 highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, new ScoreComparator(true));
     
 
-    var gameType: GameType = gameInfo!.getGameType()!;;
+    let gameType: GameType = gameInfo!.getGameType()!;;
     
 
-    var gameTypeFactory: GameTypeFactory = GameTypeFactory.getInstance()!;;
+    let gameTypeFactory: GameTypeFactory = GameTypeFactory.getInstance()!;;
     
 
-    var gameInfo2: GameInfo = gameInfo;;
+    let gameInfo2: GameInfo = gameInfo;;
     
 
                         if(gameType == gameTypeFactory!.SINGLE_PLAYER || gameType == gameTypeFactory!.BOT)
@@ -193,20 +194,23 @@ highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, game
                                 
 highScoresArray[1]= RemoteHighScores.getInstancePreload(abeClientInformation, softwareInformation, gameInfo2, WORLD_TOP_SCORES, SCORES, BooleanFactory.getInstance()!.FALSE, preload);
     
-logUtil!.putF(BasicHighScoresFactory.prototype.commonStrings!.END, this, FETCH);
+logUtil!.putF(outer$BasicHighScoresFactory.commonStrings!.END, this, FETCH);
     
 LastFetchHighScoresFactory.getInstance()!.highScoresArray= highScoresArray;
     
 highScoresResultsListener!.setHighScoresArray(highScoresArray);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -226,6 +230,4 @@ logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e);
 
 
 }
-
-
 

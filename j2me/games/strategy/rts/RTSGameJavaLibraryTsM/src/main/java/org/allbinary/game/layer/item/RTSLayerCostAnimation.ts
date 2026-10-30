@@ -37,12 +37,15 @@ import { TechEventListenerInterface } from '../../../../../org/allbinary/game/rt
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
@@ -58,6 +61,7 @@ import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/fon
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -124,7 +128,7 @@ this.update();
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.fontHeight= font.getHeight();
     
@@ -143,20 +147,22 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     public onTechEvent(event: AllBinaryEventObject){
 
-        try {
-            this.update();
+ try { this.update();
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "onTechEvent", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -178,10 +184,10 @@ this.myFontProcessor!.process(graphics);
 super.paintXY(graphics, x, y);
     
 
-    var adjustedCostY: number = this.image.getHeight() -this.fontHeight;;
+    let adjustedCostY: number = this.image.getHeight() -this.fontHeight;;
     
 
-    var xa: number = x +2;;
+    let xa: number = x +2;;
     
 graphics.drawString(this.DOLLAR, xa, y +adjustedCostY, 0);
     
@@ -191,6 +197,4 @@ graphics.drawChars(this.costString, 0, this.len, x +this.adjustedCostX, y +adjus
 
 
 }
-
-
 

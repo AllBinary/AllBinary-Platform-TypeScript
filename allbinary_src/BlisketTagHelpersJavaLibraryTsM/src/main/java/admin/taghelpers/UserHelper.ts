@@ -25,9 +25,11 @@ import { HashMap } from '../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -67,12 +69,14 @@ import { RequestParams } from '../../org/allbinary/logic/communication/http/requ
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 //not GWT import const AbSqlTableUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -131,17 +135,16 @@ this.portion= new Portion(hashMap);
 
     public delete(): string{
 
-        try {
-            
-    var requestHashMap: HashMap<any, any> = new RequestParams(this.request).toHashMap()!;;
+ try { 
+    let requestHashMap: HashMap<any, any> = new RequestParams(this.request).toHashMap()!;;
     
 
-    var userName: UserName = new UserName(requestHashMap);;
+    let userName: UserName = new UserName(requestHashMap);;
     
 UserEntityFactory.getInstance()!.deleteWhere(UserData.USERNAME, userName!.get());
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Successfully Removed the user with ");
     
@@ -154,7 +157,7 @@ stringBuffer!.append(userName!.get());
 stringBuffer!.append(" from to the user table");
     
 
-    var success: string = stringBuffer!.toString()!;;
+    let success: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -171,12 +174,13 @@ stringBuffer!.append(" from to the user table");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to remove user with " +UserData.USERNAME +" from User table";;
+    let error: string = "Failed to remove user with " +UserData.USERNAME +" from User table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -193,8 +197,10 @@ stringBuffer!.append(" from to the user table");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -202,12 +208,11 @@ stringBuffer!.append(" from to the user table");
             
     public insert(): string{
 
-        try {
-            
-    var userInterface: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;;
+ try { 
+    let userInterface: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;;
     
 
-    var enable: string = this.hashMap!.get(EntryData.getInstance()!.ENABLE) as string;;
+    let enable: string = this.hashMap!.get(EntryData.getInstance()!.ENABLE) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(enable))
@@ -219,12 +224,12 @@ stringBuffer!.append(" from to the user table");
                                     }
                                 
 
-    var values: BasicArrayList = userInterface!.toVector()!;;
+    let values: BasicArrayList = userInterface!.toVector()!;;
     
 UserEntityFactory.getInstance()!.insert(values);
     
 
-    var success: string = "New User Successfully added to the Users Table";;
+    let success: string = "New User Successfully added to the Users Table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -241,12 +246,13 @@ UserEntityFactory.getInstance()!.insert(values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to add User";;
+    let error: string = "Failed to add User";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -263,24 +269,25 @@ UserEntityFactory.getInstance()!.insert(values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public update(): string{
 
-        try {
-            
-    var user: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;;
+ try { 
+    let user: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;;
     
 
-    var values: HashMap<any, any> = user.toHashMap()!;;
+    let values: HashMap<any, any> = user.toHashMap()!;;
     
 UserEntityFactory.getInstance()!.update(user.getUserName(), values);
     
 
-    var success: string = "New User Successfully added to the Users Table";;
+    let success: string = "New User Successfully added to the Users Table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -297,12 +304,13 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to add User";;
+    let error: string = "Failed to add User";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -319,16 +327,17 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public drop(): string{
 
-        try {
-            
-    var success: string = UserEntityFactory.getInstance()!.dropTable()!;;
+ try { 
+    let success: string = UserEntityFactory.getInstance()!.dropTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -345,12 +354,13 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to drop user table";;
+    let error: string = "Failed to drop user table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
@@ -367,16 +377,17 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public create(): string{
 
-        try {
-            
-    var success: string = UserEntityFactory.getInstance()!.createTable()!;;
+ try { 
+    let success: string = UserEntityFactory.getInstance()!.createTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -393,12 +404,13 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to create user table";;
+    let error: string = "Failed to create user table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
@@ -415,19 +427,20 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public restore(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(UserEntityFactory.getInstance(), this.portion)!;;
+    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(UserEntityFactory.getInstance(), this.portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -444,12 +457,13 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to restore backup";;
+    let error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
@@ -466,19 +480,20 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public backup(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(UserEntityFactory.getInstance())!;;
+    let result: string = AbSqlTableUtil.getInstance()!.backupTable(UserEntityFactory.getInstance())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -495,12 +510,13 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to make backup";;
+    let error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
@@ -517,12 +533,12 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

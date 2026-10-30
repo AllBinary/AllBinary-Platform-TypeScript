@@ -115,5 +115,3 @@ export class OpenGLResources
 
 }
 
-
-

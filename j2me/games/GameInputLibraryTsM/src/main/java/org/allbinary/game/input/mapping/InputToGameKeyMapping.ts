@@ -39,27 +39,35 @@ import { InputFactory } from '../../../../../org/allbinary/game/input/InputFacto
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -133,7 +141,7 @@ this.clear();
 
 
                         for (
-    var index: number = this.platformToGameKeyMapping!.length -1;index >= 0; index--)
+    let index: number = this.platformToGameKeyMapping!.length -1;index >= 0; index--)
         {
 this.platformToGameKeyMapping[index]= this.gameKeyFactory!.NONE;
     
@@ -156,10 +164,10 @@ this.clear();
 
 
                         for (
-    var index: number = inputToGameKeyMapping!.getMaxMappable() -1;index >= 0; index--)
+    let index: number = inputToGameKeyMapping!.getMaxMappable() -1;index >= 0; index--)
         {
 
-    var input: Input = inputToGameKeyMapping!.getInstance(index)!;;
+    let input: Input = inputToGameKeyMapping!.getInstance(index)!;;
     
 
                         if(input != this.gameKeyFactory!.NONE)
@@ -181,10 +189,10 @@ this.clear();
 
 
                         for (
-    var index: number = list.size() -1;index >= 0; index--)
+    let index: number = list.size() -1;index >= 0; index--)
         {
 
-    var mappedToInput: Input = list.objectArray[index]! as Input;;
+    let mappedToInput: Input = list.objectArray[index]! as Input;;
     
 this.add(input, mappedToInput);
     
@@ -213,7 +221,7 @@ this.set(input, this.gameKeyFactory!.NONE);
 
     set(input: Input, mappedToInput: Input){
 
-    var id: number = mappedToInput!.getId()!;;
+    let id: number = mappedToInput!.getId()!;;
     
 
                         if(id >= 0 && id < this.platformToGameKeyMapping!.length)
@@ -239,24 +247,24 @@ this.set(input, this.gameKeyFactory!.NONE);
 
     public getReverseInstance(id: number): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
-    var inputFactory: InputFactory = InputFactory.getInstance()!;;
+    let inputFactory: InputFactory = InputFactory.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.platformToGameKeyMapping!.length; index++)
+    let index: number = 0;index < this.platformToGameKeyMapping!.length; index++)
         {
 
                         if(this.platformToGameKeyMapping[index]!.getId() == id)
                         
                                     {
                                     
-    var input: Input = inputFactory!.getInstanceById(index)!;;
+    let input: Input = inputFactory!.getInstanceById(index)!;;
     
 
                         if(input != 
@@ -287,7 +295,7 @@ this.set(input, this.gameKeyFactory!.NONE);
             
     initGameKey(canvas: Canvas, gameKey: GameKey){
 
-    var key: number = canvas.getKeyCode(gameKey!.getId())!;;
+    let key: number = canvas.getKeyCode(gameKey!.getId())!;;
     
 
                         if(key < 0 &&  -key < this.negativePlatformToGameKeyMapping!.length)
@@ -327,17 +335,17 @@ this.set(input, this.gameKeyFactory!.NONE);
             
     getSmallestCanvasGameKeyCode(canvas: Canvas): number{
 
-    var nextKey: number = 0;;
+    let nextKey: number = 0;;
     
 
-    var smallestKey: number = 0;;
+    let smallestKey: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = this.mappedGameKeys!.length
+    let index: number = this.mappedGameKeys!.length
                 ;--index >= 0; )
         {
 nextKey= canvas.getKeyCode(this.mappedGameKeys[index]!.getId());
@@ -364,12 +372,11 @@ nextKey= canvas.getKeyCode(this.mappedGameKeys[index]!.getId());
 
     public init(canvas: Canvas){
 
-        try {
-            
-    var negativePlatformToGameKeyMapping: GameKey[] = [];;
+ try { 
+    let negativePlatformToGameKeyMapping: GameKey[] = [];;
     
 
-    var smallestKey: number = this.getSmallestCanvasGameKeyCode(canvas)!;;
+    let smallestKey: number = this.getSmallestCanvasGameKeyCode(canvas)!;;
     
 
                         if(smallestKey < 0)
@@ -393,7 +400,7 @@ negativePlatformToGameKeyMapping= new Array( -smallestKey);
 
 
                         for (
-    var index: number = negativePlatformToGameKeyMapping!.length
+    let index: number = negativePlatformToGameKeyMapping!.length
                 ;--index >= 0; )
         {
 negativePlatformToGameKeyMapping[index]= this.gameKeyFactory!.NONE;
@@ -410,21 +417,24 @@ this.negativePlatformToGameKeyMapping= negativePlatformToGameKeyMapping;
 
 
                         for (
-    var index: number = this.mappedGameKeys!.length
+    let index: number = this.mappedGameKeys!.length
                 ;--index >= 0; )
         {
 this.initGameKey(canvas, this.mappedGameKeys[index]!);
     
 }
 
-
-                //: 
-} catch(t) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const t = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, t);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -509,6 +519,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
 
 
 }
-
-
 

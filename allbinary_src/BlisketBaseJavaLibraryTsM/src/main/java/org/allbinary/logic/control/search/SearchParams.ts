@@ -41,6 +41,7 @@ import { ToDomHelper } from '../../../../../org/allbinary/data/tree/dom/ToDomHel
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -96,7 +97,7 @@ this.setLength(request.getParameter(SearchData.LENGTH));
 this.setOrder(request.getParameter(SearchData.ORDER));
     
 
-    var page: string = request.getParameter(SearchData.PAGE)!;;
+    let page: string = request.getParameter(SearchData.PAGE)!;;
     
 this.setStartPage(page);
     
@@ -105,13 +106,13 @@ this.setEndPage(page);
 this.setSortBy(request.getParameter(SearchData.SORTBY));
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var columnName: string = request.getParameter(SearchData.COLUMNNAME +"[0]")!;;
+    let columnName: string = request.getParameter(SearchData.COLUMNNAME +"[0]")!;;
     
 
-    var columnValue: string = request.getParameter(SearchData.COLUMNVALUE +"[0]")!;;
+    let columnValue: string = request.getParameter(SearchData.COLUMNVALUE +"[0]")!;;
     
 
         while(columnName != 
@@ -297,7 +298,7 @@ this.endPage= value;
             
     public getParamsNode(document: Document): Node{
 
-    var paramsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.PARAMS, SearchData.PARAMS)!;;
+    let paramsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.PARAMS, SearchData.PARAMS)!;;
     
 paramsNode!.appendChild(this.getFieldsNode(document));
     
@@ -320,16 +321,16 @@ paramsNode!.appendChild(this.getLengthNode(document));
             
     getFieldsNode(document: Document): Node{
 
-    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, new Integer(this.columnsAndSearchValues!.size()).toString())!;;
+    let fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, new Integer(this.columnsAndSearchValues!.size()).toString())!;;
     
 
-    var set: Set = this.columnsAndSearchValues!.keySet()!;;
+    let set: Set = this.columnsAndSearchValues!.keySet()!;;
     
 
-    var searchValueArray: any[] = set.toArray()!;;
+    let searchValueArray: any[] = set.toArray()!;;
     
 
-    var size: number = searchValueArray!.length
+    let size: number = searchValueArray!.length
                 ;;
     
 
@@ -337,13 +338,13 @@ paramsNode!.appendChild(this.getLengthNode(document));
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var key: string = searchValueArray[index]! as string;;
+    let key: string = searchValueArray[index]! as string;;
     
 
-    var searchValue: string = this.columnsAndSearchValues!.get(key) as string;;
+    let searchValue: string = this.columnsAndSearchValues!.get(key) as string;;
     
 fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.FIELD, key, ToDomHelper.convertNull(searchValue)));
     
@@ -395,6 +396,4 @@ fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.F
 
 
 }
-
-
 

@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { Category } from '../../../../../org/allbinary/business/category/Category.js';
 //not GWT import const Category
@@ -43,15 +45,18 @@ import { InventoryDbInitInfo } from '../../../../../org/allbinary/business/init/
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -105,12 +110,11 @@ this.setTableName(this.tableName);
 
     public insert(category: Category){
 
-        try {
-            
-    var categoryVector: BasicArrayList = category.toVector()!;;
+ try { 
+    let categoryVector: BasicArrayList = category.toVector()!;;
     
 
-    var values: BasicArrayList = new BasicArrayListD();;
+    let values: BasicArrayList = new BasicArrayListD();;
     
 values.add(categoryVector!.get(0));
     
@@ -127,10 +131,11 @@ super.insert(values);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -140,15 +145,16 @@ super.insert(values);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(value: string){
 
-        try {
-            super.deleteWhere(CategoryData.getInstance()!.NAME, value);
+ try { super.deleteWhere(CategoryData.getInstance()!.NAME, value);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -159,10 +165,11 @@ super.insert(values);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -172,14 +179,16 @@ super.insert(values);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public createTableStatement(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
@@ -237,6 +246,4 @@ super.updateWhere(CategoryData.getInstance()!.NAME, updatedValues!.get(CategoryD
 
 
 }
-
-
 

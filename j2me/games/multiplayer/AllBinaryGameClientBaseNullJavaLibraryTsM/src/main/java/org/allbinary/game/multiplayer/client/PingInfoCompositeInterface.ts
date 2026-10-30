@@ -40,9 +40,7 @@
 export interface PingInfoCompositeInterface {
         
 
-    setPingInfo(show: boolean)
+    setPingInfo(show: boolean): void;
 
 }
-
-
 

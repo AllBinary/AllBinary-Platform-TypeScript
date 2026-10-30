@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { UserInterface } from '../../../../../../../org/allbinary/business/user/UserInterface.js';
 //not GWT import const UserInterface
@@ -36,9 +38,11 @@ import { UserConfigurationInterface } from '../../../../../../../org/allbinary/b
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { UserEmailConfigurationInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
 //not GWT import const UserEmailConfigurationInterface
@@ -57,6 +61,7 @@ import { LogUserEmailEventListenerModule } from '../../../../../../../org/allbin
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -103,19 +108,19 @@ export class EmailEventHandlerUtil
             
     public static getUserEmailEventListenerVector(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): BasicArrayList{
 
-    var userConfigurationInterface: UserConfigurationInterface = userInterface!.getUserConfigurationInterface()!;;
+    let userConfigurationInterface: UserConfigurationInterface = userInterface!.getUserConfigurationInterface()!;;
     
 
-    var userEmailConfigurationInterface: UserEmailConfigurationInterface = userConfigurationInterface!.getUserEmailConfigurationInterface()!;;
+    let userEmailConfigurationInterface: UserEmailConfigurationInterface = userConfigurationInterface!.getUserEmailConfigurationInterface()!;;
     
 
-    var userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface = userEmailConfigurationInterface!.getUserEmailEventsConfigurationInterface()!;;
+    let userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface = userEmailConfigurationInterface!.getUserEmailEventsConfigurationInterface()!;;
     
 
-    var userEmailEventListenerInterface: UserEmailEventListenerInterface = userEmailEventsConfigurationInterface!.getEventListener(abeClientInformation, userEmailEventNameData, userInterface)!;;
+    let userEmailEventListenerInterface: UserEmailEventListenerInterface = userEmailEventsConfigurationInterface!.getEventListener(abeClientInformation, userEmailEventNameData, userInterface)!;;
     
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 vector.add(userEmailEventListenerInterface);
     
@@ -144,7 +149,7 @@ private constructor (){
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Returning UserEmailEventHandler for ");
     
@@ -158,25 +163,25 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getEventHandler");
                                     }
                                 
 
-    var userEmailEventHandler: UserEmailEventHandler = new UserEmailEventHandler();;
+    let userEmailEventHandler: UserEmailEventHandler = new UserEmailEventHandler();;
     
 userEmailEventHandler!.addListener(new LogUserEmailEventListenerModule());
     
 
-    var size: number = userVector!.size()!;;
+    let size: number = userVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var userInterface: UserInterface = userVector!.get(index) as UserInterface;;
+    let userInterface: UserInterface = userVector!.get(index) as UserInterface;;
     
 
-    var vector: BasicArrayList = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;;
+    let vector: BasicArrayList = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;;
     
 userEmailEventHandler!.addListener(vector);
     
@@ -192,6 +197,4 @@ userEmailEventHandler!.addListener(vector);
 
 
 }
-
-
 

@@ -48,6 +48,7 @@ import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 //not GWT import const PointFactory
@@ -75,12 +76,15 @@ import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLES
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -147,42 +151,32 @@ private constructor (){
 
                         }
                             
-this.widthScale= (this.scale == 2)
-                        ?       
-                                
-                                        //Otherwise - thenExpr - DoubleLiteralExpr
-
-                                :
-
-                            
-                                        //Otherwise - expression - elseExpr - DoubleLiteralExpr
-;
+this.widthScale= ((this.scale == 2) ? 1.2f : 1f);
     
 }
 
 
     public getFontBitmapGL(gl: GL10, filename: string, cellSize: number, basicColor: BasicColor): Image{
 
-        try {
-            
+ try { 
                         if(this.fontImage == OpenGLESImage.NULL_OPENGL_IMAGE)
                         
                                     {
                                     
-    var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;;
+    let canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;;
     
 
-    var openGLCapabilities: OpenGLCapabilities = OpenGLCapabilities.getInstance()!;;
+    let openGLCapabilities: OpenGLCapabilities = OpenGLCapabilities.getInstance()!;;
     
 
                         if(openGLCapabilities!.isTextureSizeValid(1024) && this.scale == 2)
                         
                                     {
                                     
-    var FONT_ATLAS_1024: string = "/font_1024.png";;
+    let FONT_ATLAS_1024: string = "/font_1024.png";;
     
 
-    var image: Image = Image.createImage(ResourceUtil.getInstance()!.getResourceAsStream(FONT_ATLAS_1024))!;;
+    let image: Image = Image.createImage(ResourceUtil.getInstance()!.getResourceAsStream(FONT_ATLAS_1024))!;;
     
 image.setName(canvasStrings!.FONT_ATLAS);
     
@@ -196,10 +190,10 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage;
                         
                                     {
                                     
-    var FONT_ATLAS_512: string = "/font_512.png";;
+    let FONT_ATLAS_512: string = "/font_512.png";;
     
 
-    var image: Image = Image.createImage(ResourceUtil.getInstance()!.getResourceAsStream(FONT_ATLAS_512))!;;
+    let image: Image = Image.createImage(ResourceUtil.getInstance()!.getResourceAsStream(FONT_ATLAS_512))!;;
     
 image.setName(canvasStrings!.FONT_ATLAS);
     
@@ -210,10 +204,10 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage;
                                 
                         else {
                             
-    var FONT_ATLAS_512: string = "/font_512.png";;
+    let FONT_ATLAS_512: string = "/font_512.png";;
     
 
-    var image: Image = Image.createImage(ResourceUtil.getInstance()!.getResourceAsStream(FONT_ATLAS_512))!;;
+    let image: Image = Image.createImage(ResourceUtil.getInstance()!.getResourceAsStream(FONT_ATLAS_512))!;;
     
 image.setName(canvasStrings!.FONT_ATLAS);
     
@@ -241,12 +235,13 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage;
 
                         }
                             
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
     
@@ -255,21 +250,23 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
 
                             throw new RuntimeException();
                     
-}
 
+ }
+   }
+ 
 }
 
 
     public saveFontAtlasAsFile(){
 
-    var image: Image = this.getFontBitmap(
+    let image: Image = this.getFontBitmap(
                             null, cellSize, BasicColorFactory.getInstance()!.WHITE)!;;
     
 
-    var imageLoader: ImageLoader = new ImageLoader();;
+    let imageLoader: ImageLoader = new ImageLoader();;
     
 
-    var imageData: ImageData = image = imageimage as SwtMutableImage
+    let imageData: ImageData = image = imageimage as SwtMutableImage
 image.
                     image.getImageData()!;;
     
@@ -287,49 +284,49 @@ imageLoader!.save(CommonSeps.getInstance()!.PERIOD +CanvasStrings.getInstance()!
 
     public getFontBitmap(filename: string, cellSize: number, basicColor: BasicColor): Image{
 
-    var cellsPerRow2: number = this.CELLS_PER_ROW *2;;
+    let cellsPerRow2: number = this.CELLS_PER_ROW *2;;
     
 
-    var cellsPerRow3: number = this.CELLS_PER_ROW *3;;
+    let cellsPerRow3: number = this.CELLS_PER_ROW *3;;
     
 
-    var cellsPerRow4: number = this.CELLS_PER_ROW *4;;
+    let cellsPerRow4: number = this.CELLS_PER_ROW *4;;
     
 
-    var cellsPerRow5: number = this.CELLS_PER_ROW *5;;
+    let cellsPerRow5: number = this.CELLS_PER_ROW *5;;
     
 
-    var cellsPerRow6: number = this.CELLS_PER_ROW *6;;
+    let cellsPerRow6: number = this.CELLS_PER_ROW *6;;
     
 
-    var cellsPerRow7: number = this.CELLS_PER_ROW *7;;
+    let cellsPerRow7: number = this.CELLS_PER_ROW *7;;
     
 
-    var image: Image = Image.createImage(textureSize, textureSize)!;;
+    let image: Image = Image.createImage(textureSize, textureSize)!;;
     
 
-    var graphics: Graphics = image.getGraphics()!;;
+    let graphics: Graphics = image.getGraphics()!;;
     
 graphics.setColor(basicColor!.intValue());
     
 
-    var biggestHeight: number = 0;;
+    let biggestHeight: number = 0;;
     
 
-    var bounds: Rectangle = new Rectangle(PointFactory.getInstance()!.createXY(0, 0), cellSize, cellSize);;
+    let bounds: Rectangle = new Rectangle(PointFactory.getInstance()!.createXY(0, 0), cellSize, cellSize);;
     
 
-    var x: number= 0;;
+    let x: number= 0;;
     
 
-    var y: number= 0;;
+    let y: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.characterArray[0]= pattern[index];
     
@@ -386,14 +383,14 @@ graphics.drawChar(this.characterArray[0]!, x, y, 0);
 
     public getFontWidths(filename: string, fontSize: number): number[]{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.characterArray[0]= pattern[index];
     
@@ -408,10 +405,10 @@ this.characterArray[0]= pattern[index];
                                 
                         else {
                             
-    var shortPatternIndex: number = this.shortPattern!.indexOf(this.characterArray[0]!)!;;
+    let shortPatternIndex: number = this.shortPattern!.indexOf(this.characterArray[0]!)!;;
     
 
-    var w: number = globalThis.Math.trunc((this.widthFloatArray[shortPatternIndex] /75)) +19;;
+    let w: number = globalThis.Math.trunc((this.widthFloatArray[shortPatternIndex] /75)) +19;;
     
 _characterWidth[index]= globalThis.Math.trunc(w);
     
@@ -450,6 +447,4 @@ _characterWidth[index] *= this.widthScale;
 
 
 }
-
-
 

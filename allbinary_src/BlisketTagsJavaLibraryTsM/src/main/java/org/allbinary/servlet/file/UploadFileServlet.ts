@@ -55,6 +55,7 @@ import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { FileUploadData } from '../../../../org/allbinary/logic/communication/http/file/upload/FileUploadData.js';
 //not GWT import const FileUploadData
@@ -70,6 +71,7 @@ import { MultipartRequestParams } from '../../../../org/allbinary/logic/communic
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFileOutputStream } from '../../../../org/allbinary/logic/io/AbFileOutputStream.js';
 //not GWT import const AbFileOutputStream
@@ -82,12 +84,14 @@ import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { BlisketServletUtil } from '../../../../org/allbinary/servlet/BlisketServletUtil.js';
 //not GWT import const BlisketServletUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { FileItem } from '../../../../org/apache/commons/fileupload/FileItem.js';
 //not GWT import const FileItem
@@ -126,21 +130,20 @@ export class UploadFileServlet extends HttpServlet {
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
 
-    var isError: boolean = false;;
+    let isError: boolean = false;;
     
 
-    var inputStream: InputStream = 
+    let inputStream: InputStream = 
                 null
             ;;
     
 
-        try {
-            BlisketServletUtil.getInstance()!.init(request);
+ try { BlisketServletUtil.getInstance()!.init(request);
     
 this.requestHashMap= new MultipartRequestParams(request).toHashMap();
     
 
-    var filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH) as string;;
+    let filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH) as string;;
     
 
                         if(filePath == 
@@ -162,10 +165,10 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().getInstance(hashMap, request) as AuthenticationHelper;;
+    let authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().getInstance(hashMap, request) as AuthenticationHelper;;
     
 
                         if(authenticationHelper!.isAuthenticated())
@@ -203,10 +206,11 @@ response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Please Login");
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -220,10 +224,10 @@ isError= true;
     
 response.sendError(HttpServletResponse.SC_NOT_FOUND);
     
-}
 
-         finally {
-            
+ }
+   }
+ finally { 
                         if(!isError)
                         
                                     {
@@ -239,9 +243,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
                                     
                                     }
                                 
-
-         }
-        
+ }
 }
 
 
@@ -249,14 +251,13 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
             
     saveFile(filePath: string){
 
-    var fileOutputStream: AbFileOutputStream = 
+    let fileOutputStream: AbFileOutputStream = 
                 null
             ;;
     
 
-        try {
-            
-    var fileItem: FileItem = this.requestHashMap!.get(FileUploadData.getInstance()!.FILE_DATA) as FileItem;;
+ try { 
+    let fileItem: FileItem = this.requestHashMap!.get(FileUploadData.getInstance()!.FILE_DATA) as FileItem;;
     
 
                         if(fileItem != 
@@ -276,14 +277,14 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
                                     }
                                 
 
-    var file: AbFile = AbFile.createAbFile(URLGLOBALS.getWebappPath() +filePath)!;;
+    let file: AbFile = AbFile.createAbFile(URLGLOBALS.getWebappPath() +filePath)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Uploaded File: ");
     
@@ -301,7 +302,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "saveFile()");
 HttpFileUploadUtil.log(fileItem);
     
 
-    var byteArray: number[] = fileItem!.get()!;;
+    let byteArray: number[] = fileItem!.get()!;;
     
 
                         if(file.isFile())
@@ -321,9 +322,8 @@ fileOutputStream!.write(byteArray);
 
                                     }
                                 
-
-         finally {
-            
+ }
+ finally { 
                         if(fileOutputStream != 
                                     null
                                 )
@@ -334,9 +334,7 @@ fileOutputStream!.write(byteArray);
 
                                     }
                                 
-
-         }
-        
+ }
 }
 
 
@@ -367,6 +365,4 @@ this.processRequest(request, response);
 
 
 }
-
-
 

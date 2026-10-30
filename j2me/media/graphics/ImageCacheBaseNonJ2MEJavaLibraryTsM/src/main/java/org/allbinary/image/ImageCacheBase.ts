@@ -35,27 +35,35 @@ import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -111,7 +119,7 @@ public constructor (){
 
 
                         for (
-    var index: number = this.listOfList!.length -1;index >= 0; index--)
+    let index: number = this.listOfList!.length -1;index >= 0; index--)
         {
 this.listOfList[index]= new BasicArrayListD();
     
@@ -122,7 +130,7 @@ this.listOfList[index]= new BasicArrayListD();
 
 
                         for (
-    var index: number = this.availableListOfList!.length -1;index >= 0; index--)
+    let index: number = this.availableListOfList!.length -1;index >= 0; index--)
         {
 this.availableListOfList[index]= new BasicArrayListD();
     
@@ -131,9 +139,9 @@ this.availableListOfList[index]= new BasicArrayListD();
 }
 
 
-    getImage(resourceId: any = {}): Image{
+    getImage(resourceId: any): Image{
 
-    var imageCanBeNull: any = this.hashtable.get(resourceId);;
+    let imageCanBeNull: any = this.hashtable.get(resourceId);;
     
 
                         if(imageCanBeNull == 
@@ -165,7 +173,7 @@ this.availableListOfList[index]= new BasicArrayListD();
 
 
                         for (
-    var index: number = this.listOfList!.length -1;index >= 0; index--)
+    let index: number = this.listOfList!.length -1;index >= 0; index--)
         {
 this.availableListOfList[index]!.clear();
     
@@ -180,10 +188,10 @@ this.logUtil!.putF(new StringMaker().append("ImageCache: ")!.append(this.toStrin
 
     getIndexWH(width: number, height: number): number{
 
-    var foundIndex: number =  -1;;
+    let foundIndex: number =  -1;;
     
 
-    var size: number = this.widths.length
+    let size: number = this.widths.length
                 ;;
     
 
@@ -191,7 +199,7 @@ this.logUtil!.putF(new StringMaker().append("ImageCache: ")!.append(this.toStrin
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(this.widths[index] == width && this.heights[index] == height)
@@ -229,7 +237,7 @@ this.logUtil!.putF(new StringMaker().append("ImageCache: ")!.append(this.toStrin
                         
                                     {
                                     
-    var list: BasicArrayList = this.availableListOfList[foundIndex]!;;
+    let list: BasicArrayList = this.availableListOfList[foundIndex]!;;
     
 
 
@@ -265,7 +273,7 @@ this.logUtil!.putF(new StringMaker().append("ImageCache: ")!.append(this.toStrin
 
                 //@Throws(Exception.constructor)
             
-    public getWithKey(key: any = {}): Image{
+    public getWithKey(key: any): Image{
 
 
 
@@ -288,7 +296,7 @@ this.logUtil!.putF(new StringMaker().append("ImageCache: ")!.append(this.toStrin
 
                 //@Throws(Exception.constructor)
             
-    createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
+    createImageFromInputStream(key: any, inputStream: InputStream): Image{
 
 
 
@@ -300,26 +308,26 @@ this.logUtil!.putF(new StringMaker().append("ImageCache: ")!.append(this.toStrin
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = this.nextIndex -1;index >= 0; index--)
+    let index: number = this.nextIndex -1;index >= 0; index--)
         {
 
-    var width: number = this.widths[index]!;;
+    let width: number = this.widths[index]!;;
     
 
-    var height: number = this.heights[index]!;;
+    let height: number = this.heights[index]!;;
     
 
-    var total: number = this.listOfList[index]!.size()!;;
+    let total: number = this.listOfList[index]!.size()!;;
     
 
-    var totalAvailable: number = this.availableListOfList[index]!.size()!;;
+    let totalAvailable: number = this.availableListOfList[index]!.size()!;;
     
 stringBuffer!.append(" w: ");
     
@@ -369,6 +377,4 @@ stringBuffer!.appendint(totalAvailable);
 
 
 }
-
-
 

@@ -29,9 +29,11 @@ import { HashMap } from '../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { CategoryHierarchy } from '../../../../org/allbinary/business/category/hierarchy/CategoryHierarchy.js';
 //not GWT import const CategoryHierarchy
@@ -50,21 +52,26 @@ import { RootCategoryPropertiesInterface } from '../../../../org/allbinary/busin
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -177,17 +184,17 @@ this.log();
             
     public getRootFilePath(): AbPath{
 
-    var rootAbPath: AbPath = new AbPath(NOT_ROOT, StringUtil.getInstance()!.EMPTY_STRING);;
+    let rootAbPath: AbPath = new AbPath(NOT_ROOT, StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var categoryInterface: CategoryInterface = this.categoryHierarchyInterface!.getRoot()!;;
+    let categoryInterface: CategoryInterface = this.categoryHierarchyInterface!.getRoot()!;;
     
 
                         if(categoryInterface!.getProperties()!.isRoot())
                         
                                     {
                                     
-    var rootCategoryPropertiesInterface: RootCategoryPropertiesInterface = categoryInterface!.getProperties() as RootCategoryPropertiesInterface;;
+    let rootCategoryPropertiesInterface: RootCategoryPropertiesInterface = categoryInterface!.getProperties() as RootCategoryPropertiesInterface;;
     
 rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
     
@@ -219,7 +226,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
             
     public getWebAppPath(): AbPath{
 
-    var categoryInterface: CategoryInterface = this.categoryHierarchyInterface!.getRoot()!;;
+    let categoryInterface: CategoryInterface = this.categoryHierarchyInterface!.getRoot()!;;
     
 
 
@@ -269,7 +276,7 @@ this.removeDuplicateChild(categoryInterface);
                                     }
                                 
 
-    var childCategoryHierarchyInterface: CategoryHierarchyInterface = categoryInterface!.getHierarchy()!;;
+    let childCategoryHierarchyInterface: CategoryHierarchyInterface = categoryInterface!.getHierarchy()!;;
     
 childCategoryHierarchyInterface!.setParent(this);
     
@@ -301,30 +308,30 @@ this.typeVector!.add(this.CATEGORY);
 
     public removeChild(categoryInterface: CategoryInterface): boolean{
 
-    var removalVector: BasicArrayList = new BasicArrayListD();;
+    let removalVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var bool_return: boolean = false;;
+    let bool_return: boolean = false;;
     
 
-    var size: number = this.childCategoryVector!.size()!;;
+    let size: number = this.childCategoryVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(this.CATEGORY == this.typeVector!.get(index))
                         
                                     {
                                     
-    var anyType: any = this.childCategoryVector!.get(index)!;;
+    let anyType: any = this.childCategoryVector!.get(index)!;;
     
 
-    var currentCategoryInterface: CategoryInterface = anyType as CategoryInterface;;
+    let currentCategoryInterface: CategoryInterface = anyType as CategoryInterface;;
     
 
                         if(currentCategoryInterface!.getProperties()!.getValue()!.compareTo(categoryInterface!.getProperties()!.getValue()) == 0)
@@ -355,20 +362,20 @@ this.removal(removalVector);
 
     removal(removalVector: BasicArrayList){
 
-    var removalSize: number = removalVector!.size()!;;
+    let removalSize: number = removalVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < removalSize; index++)
+    let index: number = 0;index < removalSize; index++)
         {
 
-    var anyType: any = removalVector!.get(index)!;;
+    let anyType: any = removalVector!.get(index)!;;
     
 
-    var objectIndex: number = this.childCategoryVector!.indexOf(anyType)!;;
+    let objectIndex: number = this.childCategoryVector!.indexOf(anyType)!;;
     
 this.typeVector!.remove(objectIndex);
     
@@ -382,30 +389,30 @@ this.childCategoryVector!.remove(objectIndex);
 
     removeDuplicateChild(categoryInterface: CategoryInterface): boolean{
 
-    var removalVector: BasicArrayList = new BasicArrayListD();;
+    let removalVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var bool_return: boolean = false;;
+    let bool_return: boolean = false;;
     
 
-    var size: number = this.childCategoryVector!.size()!;;
+    let size: number = this.childCategoryVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var anyType: any = this.childCategoryVector!.get(index)!;;
+    let anyType: any = this.childCategoryVector!.get(index)!;;
     
 
                         if(this.PROPERTIES == this.typeVector!.get(index))
                         
                                     {
                                     
-    var categoryPropertiesInterface: CategoryPropertiesInterface = anyType as CategoryPropertiesInterface;;
+    let categoryPropertiesInterface: CategoryPropertiesInterface = anyType as CategoryPropertiesInterface;;
     
 
                         if(categoryInterface!.getProperties()!.getValue()!.compareTo(categoryPropertiesInterface!.getValue()) == 0)
@@ -429,10 +436,10 @@ break;
                         
                                     {
                                     
-    var existingCategoryInterface: CategoryInterface = anyType as CategoryInterface;;
+    let existingCategoryInterface: CategoryInterface = anyType as CategoryInterface;;
     
 
-    var categoryPropertiesInterface: CategoryPropertiesInterface = existingCategoryInterface!.getProperties()!;;
+    let categoryPropertiesInterface: CategoryPropertiesInterface = existingCategoryInterface!.getProperties()!;;
     
 
                         if(categoryInterface!.getProperties()!.getValue()!.compareTo(categoryPropertiesInterface!.getValue()) == 0)
@@ -551,30 +558,30 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var size: number = this.childCategoryVector!.size()!;;
+    let size: number = this.childCategoryVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var anyType: any = this.childCategoryVector!.get(index)!;;
+    let anyType: any = this.childCategoryVector!.get(index)!;;
     
 
                         if(this.PROPERTIES == this.typeVector!.get(index))
                         
                                     {
                                     
-    var categoryPropertiesInterface: CategoryPropertiesInterface = anyType as CategoryPropertiesInterface;;
+    let categoryPropertiesInterface: CategoryPropertiesInterface = anyType as CategoryPropertiesInterface;;
     
 
                         if(!categoryPropertiesInterface!.isValid().valueOf())
@@ -584,7 +591,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -597,7 +604,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface = anyType as CategoryInterface;;
+    let categoryInterface: CategoryInterface = anyType as CategoryInterface;;
     
 
                         if(!categoryInterface!.isValid().valueOf())
@@ -607,7 +614,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -621,7 +628,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
@@ -666,7 +673,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
             
     public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<any, any> = this.categoryPropertiesInterface!.toHashMap()!;;
+    let categoryHashMap: HashMap<any, any> = this.categoryPropertiesInterface!.toHashMap()!;;
     
 
 
@@ -681,7 +688,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
             
     public toVector(): BasicArrayList{
 
-    var categoryVector: BasicArrayList = this.categoryPropertiesInterface!.toVector()!;;
+    let categoryVector: BasicArrayList = this.categoryPropertiesInterface!.toVector()!;;
     
 categoryVector!.add(this.childCategoryVector);
     
@@ -702,7 +709,7 @@ categoryVector!.add(this.childCategoryVector);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Category Name: ");
     
@@ -725,6 +732,4 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "log()");
 
 
 }
-
-
 

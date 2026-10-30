@@ -30,6 +30,7 @@ import { LicenseInitInfoUtil } from '../../../../../../../org/allbinary/business
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { XmlRpcAbeClient } from '../../../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
 //not GWT import const XmlRpcAbeClient
@@ -45,9 +46,11 @@ import { AbeLicenseInterface } from '../../../../../../../org/allbinary/logic/sy
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -92,30 +95,29 @@ public constructor (){
 
     public get(abeClientInformation: AbeClientInformationInterface): AbeLicenseInterface{
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.GET);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.GET);
     
 
-    var xmlRpcAbeLicenseClient: XmlRpcAbeClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);;
+    let xmlRpcAbeLicenseClient: XmlRpcAbeClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);;
     
 
-    var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
+    let abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
                             null) as AbeLicenseInterface;;
     
 
-    var licenseId: string = abeLicenseInterface!.getLicenseId()!;;
+    let licenseId: string = abeLicenseInterface!.getLicenseId()!;;
     
 
-    var servers: BasicArrayList = abeLicenseInterface!.getServers()!;;
+    let servers: BasicArrayList = abeLicenseInterface!.getServers()!;;
     
 
-    var isNewLicenseId: boolean = false;;
+    let isNewLicenseId: boolean = false;;
     
 
-    var isBetterServerList: boolean = false;;
+    let isBetterServerList: boolean = false;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(abeClientInformation!.getLicenseId()) && !abeClientInformation!.isSameId(licenseId))
@@ -140,7 +142,7 @@ public constructor (){
                         
                                     {
                                     
-    var initInfo: LicenseInitInfo = LicenseInitInfoUtil.getInstance()!.read()!;;
+    let initInfo: LicenseInitInfo = LicenseInitInfoUtil.getInstance()!.read()!;;
     
 initInfo!.setLicenseId(licenseId);
     
@@ -161,21 +163,22 @@ this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.GET);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return abeLicenseInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

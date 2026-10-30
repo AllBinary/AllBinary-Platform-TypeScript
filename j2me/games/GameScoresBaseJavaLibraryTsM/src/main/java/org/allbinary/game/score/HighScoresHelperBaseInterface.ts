@@ -44,13 +44,11 @@ import { HighScores } from './HighScores.js';
 export interface HighScoresHelperBaseInterface extends HighScoresResultsListener {
         
 
-    setSelectedHighScores(selectedHighScores: HighScores)
+    setSelectedHighScores(selectedHighScores: HighScores): void;
 
-    getHighScoresArray(): HighScores[]
+    getHighScoresArray(): HighScores[];
 
-    getSelectedHighScores(): HighScores
+    getSelectedHighScores(): HighScores;
 
 }
-
-
 

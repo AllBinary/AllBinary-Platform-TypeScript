@@ -30,12 +30,14 @@ import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/Ga
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
 
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HashtableUtil;
 
 import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
 //not GWT import const PlaynImage
@@ -96,7 +98,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
             
     public isReady(image: Image, name: string, timeDelayHelper: TimeDelayHelper): boolean{
 
-    var playnImage: PlaynImage = image as PlaynImage;;
+    let playnImage: PlaynImage = image as PlaynImage;;
     
 
                         if(!playnImage!.getImage()!.isReady() && playnImage!.getImage()!.width() +playnImage!.getImage()!.height() == 0)
@@ -136,7 +138,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
             
     waitForATime(image: Image, name: string, timeDelayHelper: TimeDelayHelper){
 
-    var playnImage: PlaynImage = image as PlaynImage;;
+    let playnImage: PlaynImage = image as PlaynImage;;
     
 
         while(!playnImage!.getImage()!.isReady() && playnImage!.getImage()!.width() +playnImage!.getImage()!.height() == 0)
@@ -164,13 +166,13 @@ this.waitForATime(image, name, this.timeDelayHelper);
 this.allTimeDelayHelper!.setStartTime();
     
 
-    var hashtable: Hashtable<any, any> = GameFeatureImageCacheFactory.getInstance()!.getHashtable()!;;
+    let hashtable: Hashtable<any, any> = GameFeatureImageCacheFactory.getInstance()!.getHashtable()!;;
     
 
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
+    let objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
     
 
-    var size: number = objectArray!.length
+    let size: number = objectArray!.length
                 ;;
     
 PreLogUtil.put("Total: " +size, this, "waitForAll");
@@ -180,7 +182,7 @@ PreLogUtil.put("Total: " +size, this, "waitForAll");
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.waitForATime(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as string, this.allTimeDelayHelper);
     
@@ -190,6 +192,4 @@ this.waitForATime(hashtable.get(objectArray[index]!) as Image, objectArray[index
 
 
 }
-
-
 

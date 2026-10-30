@@ -107,29 +107,29 @@ this.userRole= userRole;
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(StoreFrontStatisticsData.getInstance()!.NAME)!;;
+    let node: Node = document.createElement(StoreFrontStatisticsData.getInstance()!.NAME)!;;
     
 
-    var storeFrontAdvertisementsStatisticsInterface: StoreFrontAdvertisementsStatisticsInterface = this.storeFrontStatisticsInterface!.getAdvertisements()!;;
+    let storeFrontAdvertisementsStatisticsInterface: StoreFrontAdvertisementsStatisticsInterface = this.storeFrontStatisticsInterface!.getAdvertisements()!;;
     
 
-    var storeFrontAdvertisementsStatisticsDomNodeInterface: DomNodeInterface = new StoreFrontAdvertisementsStatisticsView(storeFrontAdvertisementsStatisticsInterface);;
+    let storeFrontAdvertisementsStatisticsDomNodeInterface: DomNodeInterface = new StoreFrontAdvertisementsStatisticsView(storeFrontAdvertisementsStatisticsInterface);;
     
 node.appendChild(storeFrontAdvertisementsStatisticsDomNodeInterface!.toXmlNode(document));
     
 
-    var storeFrontInventoryStatisticsInterface: StoreFrontInventoryStatisticsInterface = this.storeFrontStatisticsInterface!.getInventory()!;;
+    let storeFrontInventoryStatisticsInterface: StoreFrontInventoryStatisticsInterface = this.storeFrontStatisticsInterface!.getInventory()!;;
     
 
-    var storeFrontInventoryStatisticsDomNodeInterface: DomNodeInterface = new StoreFrontInventoryStatisticsView(storeFrontInventoryStatisticsInterface);;
+    let storeFrontInventoryStatisticsDomNodeInterface: DomNodeInterface = new StoreFrontInventoryStatisticsView(storeFrontInventoryStatisticsInterface);;
     
 node.appendChild(storeFrontInventoryStatisticsDomNodeInterface!.toXmlNode(document));
     
 
-    var storeFrontOrdersHistoryStatisticsInterface: StoreFrontOrdersHistoryStatisticsInterface = this.storeFrontStatisticsInterface!.getOrders()!;;
+    let storeFrontOrdersHistoryStatisticsInterface: StoreFrontOrdersHistoryStatisticsInterface = this.storeFrontStatisticsInterface!.getOrders()!;;
     
 
-    var storeFrontOrdersHistoryStatisticsDomNodeInterface: DomNodeInterface = new StoreFrontOrdersHistoryStatisticsView(storeFrontOrdersHistoryStatisticsInterface);;
+    let storeFrontOrdersHistoryStatisticsDomNodeInterface: DomNodeInterface = new StoreFrontOrdersHistoryStatisticsView(storeFrontOrdersHistoryStatisticsInterface);;
     
 node.appendChild(storeFrontOrdersHistoryStatisticsDomNodeInterface!.toXmlNode(document));
     
@@ -138,10 +138,10 @@ node.appendChild(storeFrontOrdersHistoryStatisticsDomNodeInterface!.toXmlNode(do
                         
                                     {
                                     
-    var storeFrontUsersStatisticsInterface: StoreFrontUsersStatisticsInterface = this.storeFrontStatisticsInterface!.getUsers()!;;
+    let storeFrontUsersStatisticsInterface: StoreFrontUsersStatisticsInterface = this.storeFrontStatisticsInterface!.getUsers()!;;
     
 
-    var storeFrontUsersStatisticsDomNodeInterface: DomNodeInterface = new StoreFrontUsersStatisticsView(storeFrontUsersStatisticsInterface);;
+    let storeFrontUsersStatisticsDomNodeInterface: DomNodeInterface = new StoreFrontUsersStatisticsView(storeFrontUsersStatisticsInterface);;
     
 node.appendChild(storeFrontUsersStatisticsDomNodeInterface!.toXmlNode(document));
     
@@ -158,6 +158,4 @@ node.appendChild(storeFrontUsersStatisticsDomNodeInterface!.toXmlNode(document))
 
 
 }
-
-
 

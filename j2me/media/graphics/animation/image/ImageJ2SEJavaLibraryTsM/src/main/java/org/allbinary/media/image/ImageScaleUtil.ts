@@ -107,19 +107,19 @@ private constructor (){
             
     public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
 
-    var width: number = originalImage!.getWidth()!;;
+    let width: number = originalImage!.getWidth()!;;
     
 
-    var height: number = originalImage!.getHeight()!;;
+    let height: number = originalImage!.getHeight()!;;
     
 
-    var scaleX: number = scaleNominatorX /scaleDenominatorX;;
+    let scaleX: number = scaleNominatorX /scaleDenominatorX;;
     
 
-    var scaleY: number = scaleNominatorY /scaleDenominatorY;;
+    let scaleY: number = scaleNominatorY /scaleDenominatorY;;
     
 
-    var image: Image;;
+    let image: Image;;
     
 
                         if(cached)
@@ -166,16 +166,16 @@ this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false);
 
     public scale(originalImage: Image, newMaxSizeImage: Image, scaleX: number, scaleY: number, clear: boolean){
 
-    var bufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(originalImage)!;;
+    let bufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(originalImage)!;;
     
 
-    var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(newMaxSizeImage)!;;
+    let newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(newMaxSizeImage)!;;
     
 
-    var at: AffineTransform = AffineTransform.getScaleInstance(scaleX, scaleY)!;;
+    let at: AffineTransform = AffineTransform.getScaleInstance(scaleX, scaleY)!;;
     
 
-    var g: Graphics2D = newBufferedImage!.createGraphics()!;;
+    let g: Graphics2D = newBufferedImage!.createGraphics()!;;
     
 
                         if(clear)
@@ -196,6 +196,4 @@ g.dispose();
 
 
 }
-
-
 

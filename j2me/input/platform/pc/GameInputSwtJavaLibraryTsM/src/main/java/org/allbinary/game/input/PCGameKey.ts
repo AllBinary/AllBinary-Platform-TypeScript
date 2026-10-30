@@ -20,6 +20,7 @@
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -49,7 +50,7 @@ export class PCGameKey extends Input {
 
     public static getString(keyCode: number): string{
 
-    var input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;;
+    let input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;;
     
 
                         if(input != 
@@ -86,7 +87,7 @@ export class PCGameKey extends Input {
                             //For kotlin this is before the body of the constructor.
                     
 
-    var id: number = this.getId()!;;
+    let id: number = this.getId()!;;
     
 
                         if(id >= 0)
@@ -111,6 +112,4 @@ export class PCGameKey extends Input {
 
 
 }
-
-
 

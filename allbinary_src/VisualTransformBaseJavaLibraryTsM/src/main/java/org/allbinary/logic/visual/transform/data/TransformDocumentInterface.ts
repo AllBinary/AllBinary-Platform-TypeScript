@@ -46,11 +46,9 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
 export interface TransformDocumentInterface {
         
 
-    getBaseNode(): Node
+    getBaseNode(): Node;
 
-    getDoc(): Document
+    getDoc(): Document;
 
 }
-
-
 

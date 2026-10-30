@@ -45,5 +45,3 @@ export class ABHashSet extends HashSet<E> {
 
 }
 
-
-

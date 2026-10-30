@@ -56,5 +56,3 @@ export class OpenGLVUtil extends OpenGLVUtilBase {
 
 }
 
-
-

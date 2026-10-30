@@ -37,6 +37,7 @@ import { PickedUpLayerInterface } from '../../../../../org/allbinary/game/layer/
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 
 
@@ -77,17 +78,17 @@ public constructor (collidable: boolean){
             
     public collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
 
-    var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;;
+    let collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;;
     
 
-    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;;
+    let collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;;
     
 
                         if(collisionType == collisionTypeFactory!.PICKUP)
                         
                                     {
                                     
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = ownerLayer as CollidableDestroyableDamageableLayer;;
+    let collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = ownerLayer as CollidableDestroyableDamageableLayer;;
     
 collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collidableInterfaceCompositeInterface as PickedUpLayerInterface);
     
@@ -110,6 +111,4 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
 
 
 }
-
-
 

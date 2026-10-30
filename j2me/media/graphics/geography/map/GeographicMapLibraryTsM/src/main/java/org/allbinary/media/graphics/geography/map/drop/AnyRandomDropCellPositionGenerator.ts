@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { AllBinaryGameLayerManager } from '../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 //not GWT import const AllBinaryGameLayerManager
@@ -34,12 +36,14 @@ import { AllBinaryTiledLayer } from '../../../../../../../org/allbinary/game/lay
 
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+type MyRandomFactory<T = any, U = any> = typeof MyRandomFactory extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MyRandomFactory;
 
 import { AllBinaryLayerManager } from '../../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 //not GWT import const AllBinaryLayerManager
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { BasicGeographicMapCellPositionFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
 //not GWT import const BasicGeographicMapCellPositionFactory
@@ -84,32 +88,32 @@ export class AnyRandomDropCellPositionGenerator extends BaseDropCellPositionGene
 this.geographicMapInterface= geographicMapInterface;
     
 
-    var basicGeographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
+    let basicGeographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
     
 
-    var randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;;
+    let randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;;
     
 
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
+    let tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var total: number = tiledLayer!.getColumns() *tiledLayer!.getRows();;
+    let total: number = tiledLayer!.getColumns() *tiledLayer!.getRows();;
     
 
-    var randomColumn: number= 0;;
+    let randomColumn: number= 0;;
     
 
-    var randomRow: number= 0;;
+    let randomRow: number= 0;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition;;
+    let geographicMapCellPosition: GeographicMapCellPosition;;
     
 
 
 
 
                         for (
-    var index: number = total;--index >= 0; )
+    let index: number = total;--index >= 0; )
         {
 randomColumn= randomFactory!.getAbsoluteNextInt(tiledLayer!.getColumns());
     
@@ -138,6 +142,4 @@ geographicMapCellPosition= basicGeographicMapCellPositionFactory!.getAt(randomCo
 
 
 }
-
-
 

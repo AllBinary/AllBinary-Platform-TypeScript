@@ -84,7 +84,7 @@ export class ABStack extends Stack<E> {
 }
 
 
-    public search(obj: any = {}): number{
+    public search(obj: any): number{
 
 
 
@@ -94,7 +94,7 @@ export class ABStack extends Stack<E> {
 }
 
 
-    public removeElement(obj: any = {}): boolean{
+    public removeElement(obj: any): boolean{
 
 
 
@@ -105,6 +105,4 @@ export class ABStack extends Stack<E> {
 
 
 }
-
-
 

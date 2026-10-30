@@ -33,9 +33,11 @@ import { XmlRpcException } from '../../../../../org/apache/xmlrpc/XmlRpcExceptio
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { XmlRpcAbeClient } from '../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
 //not GWT import const XmlRpcAbeClient
@@ -48,12 +50,15 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -90,22 +95,21 @@ public constructor (clientInfo: AbeClientInformationInterface){
 
                 //@Throws(Exception.constructor)
             
-    public get(anyType: any = {}): any{
+    public get(anyType: any): any{
 
-        try {
-            
-    var param: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let param: BasicArrayList = new BasicArrayListD();;
     
 
-    var serverUrl: string = getClientInfo()!.getLicenseServer(this.getServer())!;;
+    let serverUrl: string = getClientInfo()!.getLicenseServer(this.getServer())!;;
     
 
-    var index: number = serverUrl!.lastIndexOf("/")!;;
+    let index: number = serverUrl!.lastIndexOf("/")!;;
     
 serverUrl= serverUrl!.substring(0, index +1) +"logservssl.php";
     
 
-    var xmlRpcClient: XmlRpcClient = new XmlRpcClient(serverUrl);;
+    let xmlRpcClient: XmlRpcClient = new XmlRpcClient(serverUrl);;
     
 this.setClient(xmlRpcClient);
     
@@ -114,12 +118,12 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: ABHashtable<any, any> = anyType as ABHashtable<any, any>;;
+    let hashtable: ABHashtable<any, any> = anyType as ABHashtable<any, any>;;
     
 param.add(hashtable);
     
 
-    var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, this.noCrypt)!;;
+    let result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, this.noCrypt)!;;
     
 console.log(CommonLabels.getInstance()!.RESULT_ +CommonSeps.getInstance()!.NEW_LINE +result.toString());
     
@@ -129,10 +133,11 @@ console.log(CommonLabels.getInstance()!.RESULT_ +CommonSeps.getInstance()!.NEW_L
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof IOException) {
+  const e = caught;
+  
 console.log("IOException Trying Other Servers");
     
 
@@ -157,34 +162,34 @@ console.log("IOException Trying Other Servers");
 
                         }
                             
-}
 
-                //: 
-/* catch(e) 
-            {
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tryAnother(anyType);;
-    
-}
-*/
-                //: 
-/* catch(e) 
-            {
+ }
+  else if (caught instanceof XmlRpcException) {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tryAnother(anyType);;
     
+
+ }
+  else {
+  const e = caught;
+  
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.tryAnother(anyType);;
+    
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

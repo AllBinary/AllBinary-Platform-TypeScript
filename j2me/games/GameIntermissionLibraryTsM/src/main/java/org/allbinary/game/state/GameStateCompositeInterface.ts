@@ -46,11 +46,9 @@ export interface GameStateCompositeInterface {
 
                 //@Throws(Exception.constructor)
             
-    setGameState(gameState: GameState)
+    setGameState(gameState: GameState): void;
 
-    getGameState(): GameState
+    getGameState(): GameState;
 
 }
-
-
 

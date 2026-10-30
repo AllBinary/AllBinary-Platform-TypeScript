@@ -71,13 +71,13 @@ public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterfa
             
     public visit(sourceLayerInterface: AllBinaryLayer){
 
-    var lifeLayer: LifeLayer = this.getNextInstance() as LifeLayer;;
+    let lifeLayer: LifeLayer = this.getNextInstance() as LifeLayer;;
     
 
-    var lifeInterfaceCompositeInterface: LifeInterfaceCompositeInterface = sourceLayerInterface as unknown as LifeInterfaceCompositeInterface;;
+    let lifeInterfaceCompositeInterface: LifeInterfaceCompositeInterface = sourceLayerInterface as unknown as LifeInterfaceCompositeInterface;;
     
 
-    var lifeInterface: Life = lifeInterfaceCompositeInterface!.getLifeInterface()!;;
+    let lifeInterface: Life = lifeInterfaceCompositeInterface!.getLifeInterface()!;;
     
 lifeLayer!.visit(lifeInterface);
     
@@ -85,6 +85,4 @@ lifeLayer!.visit(lifeInterface);
 
 
 }
-
-
 

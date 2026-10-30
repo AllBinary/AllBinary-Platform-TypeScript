@@ -24,6 +24,7 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -49,15 +50,13 @@ expect export class PreLogUtil
          {
         
 
-    public static put(specialMessage: string, anyType: any = {}, functionName: string)
+    public static put(specialMessage: string, anyType: any, functionName: string)
 
-    public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {})
+    public static putOE(specialMessage: string, anyType: any, functionName: string, exception: any)
 
-    public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {})
+    public static putSE(specialMessage: string, className: string, functionName: string, exception: any)
 
 public constructor ()
 
 }
-
-
 

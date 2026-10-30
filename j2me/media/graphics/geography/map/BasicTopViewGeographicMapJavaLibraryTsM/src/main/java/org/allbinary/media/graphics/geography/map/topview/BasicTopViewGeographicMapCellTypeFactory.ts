@@ -20,9 +20,11 @@
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 //not GWT import const GeographicMapCellType
@@ -35,12 +37,15 @@ import { RaceTrackGeographicMapCellType } from '../../../../../../../org/allbina
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HashtableUtil;
 
 
 
@@ -88,23 +93,23 @@ public constructor (tileTypeToTileIdsMap: ABHashtable<any, any>, maxTileId: numb
 
             super();
         
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.maxTileId= maxTileId;
     
 
-    var basicTopViewGeographicMapStrings: BasicTopViewGeographicMapStrings = BasicTopViewGeographicMapStrings.getInstance()!;;
+    let basicTopViewGeographicMapStrings: BasicTopViewGeographicMapStrings = BasicTopViewGeographicMapStrings.getInstance()!;;
     
 
-    var geographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;;
+    let geographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;;
     
 
-    var geographicMapCellTypeArray: GeographicMapCellType[] = geographicMapCellTypeFactory!.getGeographicMapCellTypeArray()!;;
+    let geographicMapCellTypeArray: GeographicMapCellType[] = geographicMapCellTypeFactory!.getGeographicMapCellTypeArray()!;;
     
 
-    var type: number = 0;;
+    let type: number = 0;;
     
 
                         if(geographicMapCellTypeArray[type] == 
@@ -122,55 +127,55 @@ this.maxTileId= maxTileId;
                         }
                             
 
-    var BLOCK_CELL_TYPE: BasicTopViewGeographicMapCellType = BasicTopViewGeographicMapCellType.createType(basicTopViewGeographicMapStrings!.DEFAULT, 1, 1)!;;
+    let BLOCK_CELL_TYPE: BasicTopViewGeographicMapCellType = BasicTopViewGeographicMapCellType.createType(basicTopViewGeographicMapStrings!.DEFAULT, 1, 1)!;;
     
 
-    var OFF_MAP_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;;
+    let OFF_MAP_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;;
     
 
-    var FLOOR_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;;
+    let FLOOR_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;;
     
 
-    var DOOR_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;;
+    let DOOR_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;;
     
 
-    var STAIRS_UP_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;;
+    let STAIRS_UP_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;;
     
 
-    var STAIRS_DOWN_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;;
+    let STAIRS_DOWN_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;;
     
 
-    var OTHER_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;;
+    let OTHER_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;;
     
 
-    var keyArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(tileTypeToTileIdsMap)!;;
+    let keyArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(tileTypeToTileIdsMap)!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
-    var idsWithTypeList: BasicArrayList;;
+    let idsWithTypeList: BasicArrayList;;
     
 
-    var key: string;;
+    let key: string;;
     
 
-    var basicPlatormGeographicMapCellType: BasicTopViewGeographicMapCellType;;
+    let basicPlatormGeographicMapCellType: BasicTopViewGeographicMapCellType;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 key= keyArray[index]! as string;
     
 idsWithTypeList= tileTypeToTileIdsMap!.get(key) as BasicArrayList;
     
 
-                        if(key === basicTopViewGeographicMapStrings!.WALL)
+                        if((key === basicTopViewGeographicMapStrings!.WALL))
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.WALL, idsWithTypeList, 1000);
@@ -181,7 +186,7 @@ BLOCK_CELL_TYPE= basicPlatormGeographicMapCellType;
                                     }
                                 
                              else 
-                        if(key === basicTopViewGeographicMapStrings!.OFF_MAP)
+                        if((key === basicTopViewGeographicMapStrings!.OFF_MAP))
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.OFF_MAP, idsWithTypeList, 1001);
@@ -192,7 +197,7 @@ OFF_MAP_CELL_TYPE= basicPlatormGeographicMapCellType;
                                     }
                                 
                              else 
-                        if(key === basicTopViewGeographicMapStrings!.FLOOR)
+                        if((key === basicTopViewGeographicMapStrings!.FLOOR))
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.FLOOR, idsWithTypeList, 1);
@@ -203,7 +208,7 @@ FLOOR_CELL_TYPE= basicPlatormGeographicMapCellType;
                                     }
                                 
                              else 
-                        if(key === basicTopViewGeographicMapStrings!.DOOR)
+                        if((key === basicTopViewGeographicMapStrings!.DOOR))
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.DOOR, idsWithTypeList, 1);
@@ -214,7 +219,7 @@ DOOR_CELL_TYPE= basicPlatormGeographicMapCellType;
                                     }
                                 
                              else 
-                        if(key === basicTopViewGeographicMapStrings!.STAIRS_UP)
+                        if((key === basicTopViewGeographicMapStrings!.STAIRS_UP))
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.STAIRS_UP, idsWithTypeList, 1);
@@ -225,7 +230,7 @@ STAIRS_UP_CELL_TYPE= basicPlatormGeographicMapCellType;
                                     }
                                 
                              else 
-                        if(key === basicTopViewGeographicMapStrings!.STAIRS_DOWN)
+                        if((key === basicTopViewGeographicMapStrings!.STAIRS_DOWN))
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.STAIRS_DOWN, idsWithTypeList, 1);
@@ -236,7 +241,7 @@ STAIRS_DOWN_CELL_TYPE= basicPlatormGeographicMapCellType;
                                     }
                                 
                              else 
-                        if(key === basicTopViewGeographicMapStrings!.OTHER)
+                        if((key === basicTopViewGeographicMapStrings!.OTHER))
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.OTHER, idsWithTypeList, 1);
@@ -363,6 +368,4 @@ type= this.maxTileId -2;
 
 
 }
-
-
 

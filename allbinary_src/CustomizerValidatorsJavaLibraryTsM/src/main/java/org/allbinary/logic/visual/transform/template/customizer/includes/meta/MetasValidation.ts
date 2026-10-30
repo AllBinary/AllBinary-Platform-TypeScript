@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontFactory } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 //not GWT import const StoreFrontFactory
@@ -37,15 +39,18 @@ import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
 //not GWT import const Validation
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { HtmlMetaAttributeDataFactory } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaAttributeDataFactory.js';
 //not GWT import const HtmlMetaAttributeDataFactory
@@ -58,6 +63,7 @@ import { HtmlMetasData } from '../../../../../../../../../org/allbinary/logic/vi
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -103,16 +109,16 @@ public constructor (storeName: string){
 this.metaValidationVector= new BasicArrayListD();
     
 
-    var contentValue: string = this.storeFrontInterface!.getName() +" E-Commerce Site";;
+    let contentValue: string = this.storeFrontInterface!.getName() +" E-Commerce Site";;
     
 
-    var keywordsMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Keywords", HtmlMetaAttributeValuesData.getInstance()!.KEYWORDS, contentValue);;
+    let keywordsMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Keywords", HtmlMetaAttributeValuesData.getInstance()!.KEYWORDS, contentValue);;
     
 
-    var abstractMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Abstract", HtmlMetaAttributeValuesData.getInstance()!.ABSTRACT, contentValue);;
+    let abstractMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Abstract", HtmlMetaAttributeValuesData.getInstance()!.ABSTRACT, contentValue);;
     
 
-    var descriptionMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Description", HtmlMetaAttributeValuesData.getInstance()!.DESCRIPTION, contentValue);;
+    let descriptionMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Description", HtmlMetaAttributeValuesData.getInstance()!.DESCRIPTION, contentValue);;
     
 this.metaValidationVector!.add(keywordsMetaValidation);
     
@@ -136,9 +142,8 @@ public constructor (document: Document){
 
     public isValid(): Boolean{
 
-        try {
-            
-    var valid: Boolean = Boolean.TRUE;;
+ try { 
+    let valid: Boolean = Boolean.TRUE;;
     
 
 
@@ -146,10 +151,11 @@ public constructor (document: Document){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -163,18 +169,19 @@ public constructor (document: Document){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -182,10 +189,11 @@ public constructor (document: Document){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -201,8 +209,10 @@ public constructor (document: Document){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -230,13 +240,13 @@ public constructor (document: Document){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(HtmlMetasData.getInstance()!.NAME)!;;
+    let node: Node = document.createElement(HtmlMetasData.getInstance()!.NAME)!;;
     
 
-    var metaArray: MetaValidation[] = this.metaValidationVector!.toArrayType(new Array(this.metaValidationVector!.size())) as MetaValidation[];;
+    let metaArray: MetaValidation[] = this.metaValidationVector!.toArrayType(new Array(this.metaValidationVector!.size())) as MetaValidation[];;
     
 
-    var size: number = metaArray!.length
+    let size: number = metaArray!.length
                 ;;
     
 
@@ -244,10 +254,10 @@ public constructor (document: Document){
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var metaValidation: MetaValidation = metaArray[i]!;;
+    let metaValidation: MetaValidation = metaArray[i]!;;
     
 node.appendChild(metaValidation!.toXmlNode(document));
     
@@ -263,6 +273,4 @@ node.appendChild(metaValidation!.toXmlNode(document));
 
 
 }
-
-
 

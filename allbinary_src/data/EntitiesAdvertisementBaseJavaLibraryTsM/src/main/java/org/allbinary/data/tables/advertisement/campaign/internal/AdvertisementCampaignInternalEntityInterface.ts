@@ -23,9 +23,11 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { BasicDataTableInterface } from '../../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
 //not GWT import const BasicDataTableInterface
@@ -52,13 +54,11 @@ import { BasicDataTableInterface } from '../../../../../../../org/allbinary/data
 export interface AdvertisementCampaignInternalEntityInterface extends BasicDataTableInterface {
         
 
-    delete(value: string)
+    delete(value: string): void;
 
-    insert(values: BasicArrayList)
+    insert(values: BasicArrayList): void;
 
-    update(updatedValues: HashMap<any, any>)
+    update(updatedValues: HashMap<any, any>): void;
 
 }
-
-
 

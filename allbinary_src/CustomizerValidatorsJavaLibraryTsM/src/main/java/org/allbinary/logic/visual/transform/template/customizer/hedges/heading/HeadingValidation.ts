@@ -31,12 +31,14 @@ import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/t
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
 //not GWT import const Validation
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { LogoData } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/logo/LogoData.js';
 //not GWT import const LogoData
@@ -103,13 +105,13 @@ public constructor (document: Document){
 
             super();
         
-    var headingNodeList: NodeList = document.getElementsByTagName(HeadingData.NAME)!;;
+    let headingNodeList: NodeList = document.getElementsByTagName(HeadingData.NAME)!;;
     
 
-    var titleNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, headingNodeList!.item(0)!.getChildNodes())!;;
+    let titleNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, headingNodeList!.item(0)!.getChildNodes())!;;
     
 
-    var logoNode: Node = DomSearchHelper.getNode(LogoData.getInstance()!.NAME, headingNodeList!.item(0)!.getChildNodes())!;;
+    let logoNode: Node = DomSearchHelper.getNode(LogoData.getInstance()!.NAME, headingNodeList!.item(0)!.getChildNodes())!;;
     
 this.title= new TitleValidation(titleNode);
     
@@ -138,15 +140,14 @@ this.logo= new LogoValidation(hashMap);
 
     public isValid(): Boolean{
 
-        try {
-            
-    var valid: Boolean = Boolean.TRUE;;
+ try { 
+    let valid: Boolean = Boolean.TRUE;;
     
 
-    var titleValid: Boolean = Boolean.TRUE;;
+    let titleValid: Boolean = Boolean.TRUE;;
     
 
-    var logoValid: Boolean = Boolean.TRUE;;
+    let logoValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -161,7 +162,7 @@ this.logo= new LogoValidation(hashMap);
                         if(!this.title.isValid().valueOf())
                         
                                     {
-                                    titleValid= Boolean.FALSE;
+                                    titleValid= false;
     
 
                                     }
@@ -170,7 +171,7 @@ this.logo= new LogoValidation(hashMap);
                         if(!this.logo.isValid().valueOf())
                         
                                     {
-                                    logoValid= Boolean.FALSE;
+                                    logoValid= false;
     
 
                                     }
@@ -185,7 +186,7 @@ this.logo= new LogoValidation(hashMap);
                         if(!titleValid.valueOf() && !logoValid.valueOf())
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -205,10 +206,11 @@ this.logo= new LogoValidation(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -222,33 +224,34 @@ this.logo= new LogoValidation(hashMap);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var valid: Boolean = Boolean.TRUE;;
+ try { 
+    let valid: Boolean = Boolean.TRUE;;
     
 
-    var titleValid: Boolean = Boolean.TRUE;;
+    let titleValid: Boolean = Boolean.TRUE;;
     
 
-    var logoValid: Boolean = Boolean.TRUE;;
+    let logoValid: Boolean = Boolean.TRUE;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(!this.title.isValid().valueOf())
                         
                                     {
-                                    titleValid= Boolean.FALSE;
+                                    titleValid= false;
     
 
                                     }
@@ -257,7 +260,7 @@ this.logo= new LogoValidation(hashMap);
                         if(!this.logo.isValid().valueOf())
                         
                                     {
-                                    logoValid= Boolean.FALSE;
+                                    logoValid= false;
     
 
                                     }
@@ -266,7 +269,7 @@ this.logo= new LogoValidation(hashMap);
                         if(!titleValid.valueOf() && !logoValid.valueOf())
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -286,10 +289,11 @@ this.logo= new LogoValidation(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -305,8 +309,10 @@ this.logo= new LogoValidation(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -334,7 +340,7 @@ this.logo= new LogoValidation(hashMap);
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(HeadingData.NAME)!;;
+    let node: Node = document.createElement(HeadingData.NAME)!;;
     
 node.appendChild(this.logo.toXmlNode(document));
     
@@ -350,6 +356,4 @@ node.appendChild(this.title.toXmlNode(document));
 
 
 }
-
-
 

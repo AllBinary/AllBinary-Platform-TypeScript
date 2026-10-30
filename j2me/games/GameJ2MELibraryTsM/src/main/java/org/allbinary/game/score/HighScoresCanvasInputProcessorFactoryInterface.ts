@@ -45,9 +45,7 @@ import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayab
 export interface HighScoresCanvasInputProcessorFactoryInterface {
         
 
-    getInstance(highScoresCanvas: HighScoresCanvas): HighScoresCanvasInputProcessor
+    getInstance(highScoresCanvas: HighScoresCanvas): HighScoresCanvasInputProcessor;
 
 }
-
-
 

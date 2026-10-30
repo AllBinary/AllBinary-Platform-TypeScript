@@ -83,5 +83,3 @@ gl.glScalef(scaleX, scaleY, 1);
 
 }
 
-
-

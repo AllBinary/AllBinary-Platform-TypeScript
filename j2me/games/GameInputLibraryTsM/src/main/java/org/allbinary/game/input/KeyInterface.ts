@@ -40,15 +40,13 @@
 export interface KeyInterface {
         
 
-    keyPressed(keyCode: number)
+    keyPressed(keyCode: number): void;
 
-    keyReleased(keyCode: number)
+    keyReleased(keyCode: number): void;
 
-    keyPressedByDevice(keyCode: number, deviceId: number)
+    keyPressedByDevice(keyCode: number, deviceId: number): void;
 
-    keyReleasedByDevice(keyCode: number, deviceId: number)
+    keyReleasedByDevice(keyCode: number, deviceId: number): void;
 
 }
-
-
 

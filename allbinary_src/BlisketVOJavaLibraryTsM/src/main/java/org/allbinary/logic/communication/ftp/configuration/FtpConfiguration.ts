@@ -145,5 +145,3 @@ this.ftpPassword= value;
 
 }
 
-
-

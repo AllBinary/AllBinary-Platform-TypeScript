@@ -37,6 +37,7 @@ import { LogTableEntityFactory } from '../../org/allbinary/data/tables/log/LogTa
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 //not GWT import const AbSqlTableUtil
@@ -79,19 +80,19 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
     public drop(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!.dropTable();;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to drop log table";;
+    let error: string = "Failed to drop log table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -108,26 +109,28 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public create(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!.createTable();;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to create new log table";;
+    let error: string = "Failed to create new log table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -144,22 +147,23 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public restore(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var logTableEntity: LogTableEntity = LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!;;
+    let logTableEntity: LogTableEntity = LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!;;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(logTableEntity, this.portion)!;;
+    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(logTableEntity, this.portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -176,12 +180,13 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to restore backup";;
+    let error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -198,19 +203,20 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public backup(): string{
 
-        try {
-            
-    var success: string = "Backup Successful";;
+ try { 
+    let success: string = "Backup Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(LogTableEntityFactory.getInstance()!.getLogTableEntityInstance())!;;
+    let result: string = AbSqlTableUtil.getInstance()!.backupTable(LogTableEntityFactory.getInstance()!.getLogTableEntityInstance())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -227,12 +233,13 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to make backup";;
+    let error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -249,12 +256,12 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

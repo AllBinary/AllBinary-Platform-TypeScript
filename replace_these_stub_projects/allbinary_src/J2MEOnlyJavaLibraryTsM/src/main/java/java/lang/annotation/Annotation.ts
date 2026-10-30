@@ -28,9 +28,7 @@
 export interface Annotation {
         
 
-    annotationType(): Function
+    annotationType(): Function;
 
 }
-
-
 

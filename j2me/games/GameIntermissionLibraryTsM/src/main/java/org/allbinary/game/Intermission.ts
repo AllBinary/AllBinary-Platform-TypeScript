@@ -110,5 +110,3 @@ this.intermissionEnableListener!.notifyIntermission(enabled);
 
 }
 
-
-

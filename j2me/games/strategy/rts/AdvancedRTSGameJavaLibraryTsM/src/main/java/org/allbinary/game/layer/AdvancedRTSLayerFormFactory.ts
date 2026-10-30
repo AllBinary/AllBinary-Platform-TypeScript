@@ -28,9 +28,11 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 //not GWT import const ScrollSelectionForm
@@ -72,26 +74,28 @@ protected constructor (label: string, itemArrayFactoryInterface: ItemArraySingle
 
             super();
         
-    var scrollSelectionForm: ScrollSelectionForm = ScrollSelectionForm.getNullScrollSelectionForm()!;;
+    let scrollSelectionForm: ScrollSelectionForm = ScrollSelectionForm.getNullScrollSelectionForm()!;;
     
 
-        try {
-            
-    var items: ABCustomItem[] = itemArrayFactoryInterface!.getItems()!;;
+ try { 
+    let items: ABCustomItem[] = itemArrayFactoryInterface!.getItems()!;;
     
 scrollSelectionForm= RTSScrollSelectionFormFactory.getInstance(label, items);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
-}
 
+ }
+   }
+ 
 this.scrollSelectionForm= scrollSelectionForm;
     
 }
@@ -108,6 +112,4 @@ this.scrollSelectionForm= scrollSelectionForm;
 
 
 }
-
-
 

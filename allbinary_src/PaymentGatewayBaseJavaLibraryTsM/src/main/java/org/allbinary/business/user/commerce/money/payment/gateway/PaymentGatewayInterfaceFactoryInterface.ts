@@ -49,9 +49,7 @@ export interface PaymentGatewayInterfaceFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface
+    getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface;
 
 }
-
-
 

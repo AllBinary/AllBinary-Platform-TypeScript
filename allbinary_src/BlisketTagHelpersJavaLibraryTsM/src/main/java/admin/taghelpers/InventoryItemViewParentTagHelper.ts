@@ -27,6 +27,7 @@ import { RequestMapInterface } from '../../org/allbinary/logic/communication/htt
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TransformInterface } from '../../org/allbinary/logic/visual/transform/TransformInterface.js';
 //not GWT import const TransformInterface
@@ -91,17 +92,17 @@ export class InventoryItemViewParentTagHelper
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;;
+    let validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;;
     
 
-    var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;;
+    let viewObject: TransformInterface = validationViewHelper!.getViewObject()!;;
     
 
                         if(viewObject!.getTypeId() != InventoryItemView.TYPE_ID)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Must have ");
     
@@ -150,17 +151,17 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;;
+    let validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;;
     
 
-    var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;;
+    let viewObject: TransformInterface = validationViewHelper!.getViewObject()!;;
     
 
                         if(viewObject!.getTypeId() != DownloadableInventoryItemView.TYPE_ID)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Must have ");
     
@@ -209,17 +210,17 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;;
+    let validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;;
     
 
-    var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;;
+    let viewObject: TransformInterface = validationViewHelper!.getViewObject()!;;
     
 
                         if(viewObject!.getTypeId() != InventoryItemView.TYPE_ID && viewObject!.getTypeId() != DownloadableInventoryItemView.TYPE_ID)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Must have ");
     
@@ -258,13 +259,13 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
 
                 //@Throws(Exception.constructor)
             
-    public checkForValidationViewHelper(helperObject: any = {}){
+    public checkForValidationViewHelper(helperObject: any){
 
                         if(!(helperObject instanceof ValidationViewHelper))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Must have ");
     
@@ -286,6 +287,4 @@ stringBuffer!.append(helperObject!.constructor.name.toString()!);
 
 
 }
-
-
 

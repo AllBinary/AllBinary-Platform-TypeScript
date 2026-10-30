@@ -114,7 +114,7 @@ this.isJumpOver= false;
                         
                                     {
                                     
-    var acceleration2: number =  -acceleration.getForward() *accelerationMultiplier;;
+    let acceleration2: number =  -acceleration.getForward() *accelerationMultiplier;;
     
 velocityProperties!.getVelocityYBasicDecimalP()!.addint(acceleration2);
     
@@ -164,6 +164,4 @@ this.isJumpAction= false;
 
 
 }
-
-
 

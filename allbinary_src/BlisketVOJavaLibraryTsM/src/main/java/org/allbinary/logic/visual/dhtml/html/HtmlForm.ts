@@ -22,15 +22,19 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { HtmlInput } from '../../../../../../org/allbinary/logic/visual/dhtml/html/input/HtmlInput.js';
 //not GWT import const HtmlInput
@@ -123,16 +127,16 @@ this.inputs.add(htmlTable);
 
     public toString(): string{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var result: string = stringUtil!.EMPTY_STRING;;
+    let result: string = stringUtil!.EMPTY_STRING;;
     
 
-    var inputArray: any[] = this.inputs.toArray()!;;
+    let inputArray: any[] = this.inputs.toArray()!;;
     
 
-    var inputSize: number = inputArray!.length
+    let inputSize: number = inputArray!.length
                 ;;
     
 result= this.FORMBEGIN;
@@ -156,7 +160,7 @@ result += this.END;
 
 
                         for (
-    var i: number = 0;i < inputSize; i++)
+    let i: number = 0;i < inputSize; i++)
         {
 result += inputArray[i]!.toString();
     
@@ -176,6 +180,4 @@ result += this.FORMEND;
 
 
 }
-
-
 

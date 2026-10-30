@@ -58,7 +58,7 @@ public constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(key: any = {}): CacheableInterface{
+    public getInstance(key: any): CacheableInterface{
 
 
 
@@ -68,6 +68,4 @@ public constructor (){
 
 
 }
-
-
 

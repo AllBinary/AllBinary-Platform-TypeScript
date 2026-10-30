@@ -36,15 +36,19 @@ import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMu
 
 //not plain js import { Canvas } 
 const Canvas = globalThis.playn.core.Canvas;
+type Canvas<T = any, U = any> = typeof Canvas extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Canvas;
 
 //not plain js import { CoreImage } 
 const CoreImage = globalThis.playn.core.CoreImage;
+type CoreImage<T = any, U = any> = typeof CoreImage extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CoreImage;
 
 //not plain js import { ImageImpl } 
 const ImageImpl = globalThis.playn.core.ImageImpl;
+type ImageImpl<T = any, U = any> = typeof ImageImpl extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ImageImpl;
 
 //not plain js import { HTMLPlaynUtil } 
 const HTMLPlaynUtil = globalThis.playn.html.HTMLPlaynUtil;
+type HTMLPlaynUtil<T = any, U = any> = typeof HTMLPlaynUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HTMLPlaynUtil;
 
 
 
@@ -108,10 +112,10 @@ private constructor (){
             
     public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
 
-    var scaleX: number = scaleNominatorX /scaleDenominatorX;;
+    let scaleX: number = scaleNominatorX /scaleDenominatorX;;
     
 
-    var scaleY: number = scaleNominatorY /scaleDenominatorY;;
+    let scaleY: number = scaleNominatorY /scaleDenominatorY;;
     
 
 
@@ -138,14 +142,14 @@ private constructor (){
             
     public createImageInternal(originalImage: Image, scaleX: number, scaleY: number): Image{
 
-    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(globalThis.Math.trunc((originalImage!.getWidth() *scaleX)), globalThis.Math.trunc((originalImage!.getHeight() *scaleY)))!;;
+    let image: Image = ImageCreationUtil.getInstance()!.createImageWH(globalThis.Math.trunc((originalImage!.getWidth() *scaleX)), globalThis.Math.trunc((originalImage!.getHeight() *scaleY)))!;;
     
 
                         if(image.isMutable())
                         
                                     {
                                     
-    var originalPlayNImage: CoreImage = 
+    let originalPlayNImage: CoreImage = 
                 null
             ;;
     
@@ -154,7 +158,7 @@ private constructor (){
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;;
+    let originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
     
@@ -163,7 +167,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;;
+    let originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
     
@@ -171,13 +175,13 @@ originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
                         }
                             
 
-    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
+    let htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
     
 
-    var canvasImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
+    let canvasImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
     
 
-    var canvas: Canvas = this.playnUtil!.getCanvas(canvasImage)!;;
+    let canvas: Canvas = this.playnUtil!.getCanvas(canvasImage)!;;
     
 canvas.drawScale(originalPlayNImage, 0, 0, image.getWidth(), image.getHeight(), 0, 0, originalImage!.getWidth(), originalImage!.getHeight());
     
@@ -203,6 +207,4 @@ canvas.drawScale(originalPlayNImage, 0, 0, image.getWidth(), image.getHeight(), 
 
 
 }
-
-
 

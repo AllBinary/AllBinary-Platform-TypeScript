@@ -141,17 +141,19 @@ this.initVisibility(rtsPlayerLayerInterface);
 
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 
-        try {
-            this.indexedButShouldBeRotationAnimationInterface!.nextFrame();
+ try { this.indexedButShouldBeRotationAnimationInterface!.nextFrame();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "processTick", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -209,6 +211,4 @@ super.setDestroyed(destroyed);
 
 
 }
-
-
 

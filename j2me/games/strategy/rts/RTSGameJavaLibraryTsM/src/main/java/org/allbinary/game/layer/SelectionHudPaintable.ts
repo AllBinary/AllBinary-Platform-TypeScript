@@ -26,6 +26,7 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
@@ -125,10 +126,10 @@ this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(10000);
 
     public updateMeasurement(graphics: Graphics){
 
-    var commonButtons: CommonButtons = CommonButtons.getInstance()!;;
+    let commonButtons: CommonButtons = CommonButtons.getInstance()!;;
     
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.setHeight(commonButtons!.STANDARD_BUTTON_SIZE +font.getHeight());
     
@@ -139,13 +140,13 @@ this.myFontProcessor= MyFontProcessor.getInstance();
 
     public update(){
 
-    var commonButtons: CommonButtons = CommonButtons.getInstance()!;;
+    let commonButtons: CommonButtons = CommonButtons.getInstance()!;;
     
 
-    var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();;
+    let touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();;
     
 
-    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 this.x= commonButtons!.STANDARD_BUTTON_SIZE +touchButtonLocationHelper!.getColumnsRemainderHalf();
     
@@ -295,6 +296,4 @@ graphics.drawString(this.getName(), this.textX, this.y, 0);
 
 
 }
-
-
 

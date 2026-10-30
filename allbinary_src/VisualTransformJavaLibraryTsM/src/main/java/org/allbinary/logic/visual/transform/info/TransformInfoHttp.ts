@@ -49,6 +49,7 @@ import { WeblisketSessionInterface } from '../../../../../../org/allbinary/logic
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlData } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
 //not GWT import const AbSqlData
@@ -208,7 +209,7 @@ this.abContext= new AbContext(parentViewOfThisTransformInfoInterface!.getPropert
                                     }
                                 
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
+    let transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 this.setName(hashMap!.get(transformInfoData!.NAME) as string);
     
@@ -219,10 +220,10 @@ this.setObjectFile(hashMap!.get(transformInfoData!.OBJECTFILENAME) as string);
 this.setObject(hashMap!.get(transformInfoData!.OBJECT) as string);
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var objectConfigString: string = hashMap!.get(transformInfoData!.OBJECTCONFIG) as string;;
+    let objectConfigString: string = hashMap!.get(transformInfoData!.OBJECTCONFIG) as string;;
     
 
                         if(stringValidationUtil!.isValidRequired(objectConfigString, 10, AbSqlData.MAXBLOB))
@@ -335,6 +336,4 @@ this.setData(hashMap!.get(transformInfoData!.DATA) as string);
 
 
 }
-
-
 

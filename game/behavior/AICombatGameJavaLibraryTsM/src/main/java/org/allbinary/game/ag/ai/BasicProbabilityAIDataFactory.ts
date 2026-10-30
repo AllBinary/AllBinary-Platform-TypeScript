@@ -33,6 +33,7 @@ import { NoTimeDelayHelper } from '../../../../../org/allbinary/time/NoTimeDelay
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -62,11 +63,11 @@ export class BasicProbabilityAIDataFactory
 
     public getInstance(): ABHashtable<any, any>{
 
-    var likelyhoodIntegerArray: Integer[][] = new Array(Canvas.KEY_NUM9 +1).fill(null).map(() => new Array(2).fill(null))
+    let likelyhoodIntegerArray: Integer[][] = new Array(Canvas.KEY_NUM9 +1).fill(null).map(() => new Array(2).fill(null))
                                                             ;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 likelyhoodIntegerArray[Canvas.UP]![0]= smallIntegerSingletonFactory!.getAt(0);
     
@@ -97,7 +98,7 @@ likelyhoodIntegerArray[Canvas.KEY_NUM1]![0]= smallIntegerSingletonFactory!.getAt
 likelyhoodIntegerArray[Canvas.KEY_NUM1]![1]= smallIntegerSingletonFactory!.getAt(40);
     
 
-    var repeatLikelyhoodIntegerArray: Integer[] = new Array(Canvas.KEY_NUM9 +1);;
+    let repeatLikelyhoodIntegerArray: Integer[] = new Array(Canvas.KEY_NUM9 +1);;
     
 repeatLikelyhoodIntegerArray[Canvas.UP]= smallIntegerSingletonFactory!.getAt(0);
     
@@ -114,7 +115,7 @@ repeatLikelyhoodIntegerArray[Canvas.KEY_NUM9]= smallIntegerSingletonFactory!.get
 repeatLikelyhoodIntegerArray[Canvas.KEY_NUM1]= smallIntegerSingletonFactory!.getAt(10);
     
 
-    var inputProbability: InputProbability = new InputProbability(likelyhoodIntegerArray, repeatLikelyhoodIntegerArray, 42, NoTimeDelayHelper.SINGLETON);;
+    let inputProbability: InputProbability = new InputProbability(likelyhoodIntegerArray, repeatLikelyhoodIntegerArray, 42, NoTimeDelayHelper.SINGLETON);;
     
 
 
@@ -126,6 +127,4 @@ repeatLikelyhoodIntegerArray[Canvas.KEY_NUM1]= smallIntegerSingletonFactory!.get
 
 
 }
-
-
 

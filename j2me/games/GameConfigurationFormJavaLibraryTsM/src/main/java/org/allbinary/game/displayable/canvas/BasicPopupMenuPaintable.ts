@@ -161,18 +161,18 @@ this.init(rectangle);
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;;
+    let isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;;
     
 this.drawStringUtil!.updateMeasurement(graphics, this.label);
     
 
-    var BORDER: number = 0;;
+    let BORDER: number = 0;;
     
 
                         if(J2MEUtil.isHTML() || isOpenGL)
@@ -226,12 +226,7 @@ this.heightOffset= this.rectangle.getHeight() -(font.getHeight() *BasicPopupMenu
 
                                     }
                                 
-this.offset= (this.heightOffset>>1) +(SWTJOGLProcessor.getInstance()!.isJOGL()
-                        ?       
-                                4
-                                :
-
-                            0);
+this.offset= (this.heightOffset>>1) +((SWTJOGLProcessor.getInstance()!.isJOGL() ? 4 : 0));
     
 this.myFontProcessor= MyFontProcessor.getInstance();
     
@@ -244,10 +239,10 @@ this.myFontProcessor= MyFontProcessor.getInstance();
 this.rectangle= rectangle;
     
 
-    var width: number = this.rectangle.getWidth()!;;
+    let width: number = this.rectangle.getWidth()!;;
     
 
-    var height: number = this.rectangle.getHeight()!;;
+    let height: number = this.rectangle.getHeight()!;;
     
 
                         if(J2MEUtil.isJ2ME() || J2MEUtil.isHTML())
@@ -258,7 +253,7 @@ this.rectangle= rectangle;
                                 
                         else {
                             
-    var rectangleFilledAnimation: RectangleFilledAnimation = this.animationInterface as RectangleFilledAnimation;;
+    let rectangleFilledAnimation: RectangleFilledAnimation = this.animationInterface as RectangleFilledAnimation;;
     
 rectangleFilledAnimation!.setWidth(width);
     
@@ -274,19 +269,19 @@ rectangleFilledAnimation!.setHeight(height);
 this.myFontProcessor!.process(graphics);
     
 
-    var point: GPoint = this.rectangle.getPoint()!;;
+    let point: GPoint = this.rectangle.getPoint()!;;
     
 
-    var x: number = point.getX()!;;
+    let x: number = point.getX()!;;
     
 
-    var y: number = point.getY()!;;
+    let y: number = point.getY()!;;
     
 
-    var width: number = this.rectangle.getWidth()!;;
+    let width: number = this.rectangle.getWidth()!;;
     
 
-    var height: number = this.rectangle.getHeight()!;;
+    let height: number = this.rectangle.getHeight()!;;
     
 this.animationInterface!.paintXY(graphics, x, y);
     
@@ -300,6 +295,4 @@ graphics.drawRect(x, y, width, height);
 
 
 }
-
-
 

@@ -73,7 +73,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
     public isValid(): Boolean{
 
-    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
+    let billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 this.streetAddressList= billingAddressesEntity!.get();
     
@@ -87,26 +87,26 @@ this.streetAddressList= billingAddressesEntity!.get();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var size: number = this.streetAddressList!.size()!;;
+    let size: number = this.streetAddressList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var streetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
+    let streetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
     
 
-                        if(streetAddress!.isValid() == Boolean.FALSE)
+                        if(streetAddress!.isValid() == false)
                         
                                     {
                                     streetAddressList!.remove(streetAddress);
@@ -124,7 +124,7 @@ this.streetAddressList= billingAddressesEntity!.get();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -133,7 +133,7 @@ this.streetAddressList= billingAddressesEntity!.get();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
@@ -169,6 +169,4 @@ this.streetAddressList= billingAddressesEntity!.get();
 
 
 }
-
-
 

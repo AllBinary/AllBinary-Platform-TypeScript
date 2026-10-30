@@ -31,9 +31,11 @@ import { ViewWrapper } from '../../../org/allbinary/android/view/ViewWrapper.js'
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -69,14 +71,14 @@ public constructor (){
 
             super();
         
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.ANDROID_STRING_ARRAY.length; index++)
+    let index: number = 0;index < this.ANDROID_STRING_ARRAY.length; index++)
         {
 this.ANDROID_STRING_ARRAY[index]= stringUtil!.EMPTY_STRING;
     
@@ -113,21 +115,21 @@ this.totalOnDraws++;
 
     public toStringArray(): string[]{
 
-    var stringArray: string[] = super.toStringArray()!;;
+    let stringArray: string[] = super.toStringArray()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < stringArray!.length; index++)
+    let index: number = 0;index < stringArray!.length; index++)
         {
 this.ANDROID_STRING_ARRAY[index]= stringArray[index]!;
     
 }
 
 
-    var totalTime: number = this.getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
+    let totalTime: number = this.getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
 totalTime= (globalThis.Math.trunc(totalTime /10000));
     
@@ -150,7 +152,7 @@ this.ANDROID_STRING_ARRAY[13]= (globalThis.Math.trunc(this.totalOnDraws /totalTi
 
     public toString(): string{
 
-    var totalTime: number = this.getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
+    let totalTime: number = this.getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
 totalTime= (globalThis.Math.trunc(totalTime /1000));
     
@@ -159,7 +161,7 @@ totalTime= (globalThis.Math.trunc(totalTime /1000));
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toStringAt(totalTime));
     
@@ -174,7 +176,7 @@ stringBuffer!.append(this.totalOnDraws.toString());
 stringBuffer!.append(this.ONDRAWS_RATE);
     
 
-    var drawsOverTime: string = (globalThis.Math.trunc(this.totalOnDraws /totalTime)).toString()!;;
+    let drawsOverTime: string = (globalThis.Math.trunc(this.totalOnDraws /totalTime)).toString()!;;
     
 stringBuffer!.append(drawsOverTime);
     
@@ -204,6 +206,4 @@ stringBuffer!.append(drawsOverTime);
 
 
 }
-
-
 

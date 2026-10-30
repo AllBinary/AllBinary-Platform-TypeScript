@@ -39,9 +39,11 @@ import { LocalPlayerBuildingEventHandler } from '../../../../../org/allbinary/ga
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
 //not GWT import const CellPosition
@@ -57,6 +59,7 @@ import { ScrollMapEventListenerInterface } from '../../../../../org/allbinary/la
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -130,10 +133,10 @@ this.paintSimpleTiledLayer= this.ALL_VISIBLE_TILEDLAYER;
 this.currentIndex= 0;
     
 
-    var rows: number = simpleTiledLayer!.getRows()!;;
+    let rows: number = simpleTiledLayer!.getRows()!;;
     
 
-    var columns: number = simpleTiledLayer!.getColumns()!;;
+    let columns: number = simpleTiledLayer!.getColumns()!;;
     
 this.stationaryVisibleCellPositions= new Array(rows).fill(null).map(() => new Array(columns).fill(null));
     
@@ -174,10 +177,10 @@ this.move(scrollMapEvent!.getDx(), scrollMapEvent!.getDy());
 
 
                         for (
-    var index: number = list.size() -1;index >= 0; index--)
+    let index: number = list.size() -1;index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index) as CellPosition;;
+    let cellPosition: CellPosition = list.get(index) as CellPosition;;
     
 this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;
     
@@ -192,10 +195,10 @@ this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getCo
 
 
                         for (
-    var index: number = list.size() -1;index >= 0; index--)
+    let index: number = list.size() -1;index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index) as CellPosition;;
+    let cellPosition: CellPosition = list.get(index) as CellPosition;;
     
 this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]--;
     
@@ -210,7 +213,7 @@ this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getCo
                         
                                     {
                                     
-    var temp: number[][] = this.currentlyVisibleCellPositions;;
+    let temp: number[][] = this.currentlyVisibleCellPositions;;
     
 this.currentlyVisibleCellPositions= this.visibleCellPositions;
     
@@ -221,14 +224,14 @@ this.visibleCellPositions= temp;
 
 
                         for (
-    var index: number = this.visibleCellPositions!.length -1;index >= 0; index--)
+    let index: number = this.visibleCellPositions!.length -1;index >= 0; index--)
         {
 
 
 
 
                         for (
-    var index2: number = this.visibleCellPositions[0]!.length -1;index2 >= 0; index2--)
+    let index2: number = this.visibleCellPositions[0]!.length -1;index2 >= 0; index2--)
         {
 this.visibleCellPositions[index]![index2]= this.stationaryVisibleCellPositions[index]![index2]!;
     
@@ -286,10 +289,10 @@ this.currentIndex++;
 
 
                         for (
-    var index: number = list.size() -1;index >= 0; index--)
+    let index: number = list.size() -1;index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index) as CellPosition;;
+    let cellPosition: CellPosition = list.get(index) as CellPosition;;
     
 this.visibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;
     
@@ -354,6 +357,4 @@ this.simpleTiledLayer= simpleTiledLayer;
 
 
 }
-
-
 

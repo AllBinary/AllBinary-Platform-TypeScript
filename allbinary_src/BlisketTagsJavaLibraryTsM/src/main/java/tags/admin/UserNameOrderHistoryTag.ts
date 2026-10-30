@@ -72,8 +72,7 @@ this.status= value;
             
     public doStartTag(): number{
 
-        try {
-            this.setName("Range Order History View");
+ try { this.setName("Range Order History View");
     
 this.setObjectFile("views.admin.orderhistory.UserNameOrderHistoryView");
     
@@ -113,10 +112,11 @@ this.setObjectFile("views.admin.orderhistory.UserNameOrderHistoryView");
 
                             throw new Exception("Command Null");
                     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -125,12 +125,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

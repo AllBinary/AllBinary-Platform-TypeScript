@@ -25,6 +25,7 @@ import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -54,17 +55,17 @@ export class RectangleCollisionPointUtil
 
     public static allPointsInside(rectX1: number, rectY1: number, rectX2: number, rectY2: number, list: BasicArrayList): boolean{
 
-    var rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;;
+    let rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;;
     
 
-    var point: GPoint;;
+    let point: GPoint;;
     
 
 
 
 
                         for (
-    var index: number = list.size()!;--index >= 0; )
+    let index: number = list.size()!;--index >= 0; )
         {
 point= list.objectArray[index]! as GPoint;
     
@@ -94,17 +95,17 @@ point= list.objectArray[index]! as GPoint;
 
     public static allPointsInsideCell(rectX1: number, rectY1: number, rectX2: number, rectY2: number, list: BasicArrayList, xCellSize: number, yCellSize: number): boolean{
 
-    var rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;;
+    let rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;;
     
 
-    var point: GPoint;;
+    let point: GPoint;;
     
 
 
 
 
                         for (
-    var index: number = list.size()!;--index >= 0; )
+    let index: number = list.size()!;--index >= 0; )
         {
 point= list.objectArray[index]! as GPoint;
     
@@ -139,6 +140,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -28,9 +28,7 @@
 export interface ServiceRegistration {
         
 
-    getReference(): ServiceReference
+    getReference(): ServiceReference;
 
 }
-
-
 

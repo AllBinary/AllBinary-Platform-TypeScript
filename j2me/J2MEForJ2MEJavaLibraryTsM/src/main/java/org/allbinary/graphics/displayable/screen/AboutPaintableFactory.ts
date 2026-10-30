@@ -31,6 +31,7 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -72,13 +73,13 @@ private constructor (){
 
             super();
         
-    var INFO: string[] = 
+    let INFO: string[] = 
                                                         [
                                                             "Built with the","AllBinary Platform",StringUtil.getInstance()!.EMPTY_STRING,"Comments or Questions:","support@allbinary.com"
                                                         ];;
     
 
-    var DEVELOPERS: string[] = 
+    let DEVELOPERS: string[] = 
                                                         [
                                                             "Developed By:","Travis Berthelot"
                                                         ];;
@@ -94,6 +95,4 @@ this.paintableArray= AboutPaintable.getInstance(INFO, DEVELOPERS)!.getPaintableA
                                                 ];
 
 }
-
-
 

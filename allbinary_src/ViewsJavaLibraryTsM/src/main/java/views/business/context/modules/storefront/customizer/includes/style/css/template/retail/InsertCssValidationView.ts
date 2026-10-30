@@ -31,12 +31,14 @@ import { NameSpaceRequestParams } from '../../../../../../../../../../../org/all
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TransformInfoInterface } from '../../../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -90,7 +92,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var requestHashMap: HashMap<any, any> = new NameSpaceRequestParams(this.getPageContext()).toHashMap()!;;
+    let requestHashMap: HashMap<any, any> = new NameSpaceRequestParams(this.getPageContext()).toHashMap()!;;
     
 this.styleValidationInterface= new CssStyleValidation(requestHashMap);
     
@@ -111,9 +113,8 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
 
     public isValid(): Boolean{
 
-        try {
-            
-    var isValid: Boolean = Boolean.TRUE;;
+ try { 
+    let isValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -125,7 +126,7 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
                                     }
                                 
 
-                        if(isValid == Boolean.TRUE)
+                        if(isValid == true)
                         
                                     {
                                     CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.styleValidationInterface as DomNodeInterface);
@@ -139,10 +140,11 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -156,18 +158,19 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -175,10 +178,11 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -194,8 +198,10 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Getting Validation Info";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -223,17 +229,17 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
             
     public view(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StoreCustomizerComponentUtil.getInstance()!.generate(this.abeClientInformation, this.getTransformInfoInterface());;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -248,12 +254,12 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

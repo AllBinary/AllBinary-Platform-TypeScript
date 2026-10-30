@@ -29,12 +29,14 @@ import { Level } from '../../../../../java/util/logging/Level.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { Logger } from '../../../../../java/util/logging/Logger.js';
 //not GWT import const Logger
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -78,7 +80,7 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
 }
 
 
-    private readonly logger: Logger = Logger.getLogger(LogUtil.constructor.toString()!)!;
+    private readonly logger: Logger = Logger.getLogger(LogUtil.toString()!)!;
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
 
@@ -96,30 +98,29 @@ PreLogUtil.put("Loggin Initialized", this, "init()");
 
     /*actual*/ public putL(log: Log){
 
-    var exception: any = log.getThrowable()!;;
+    let exception: any = log.getThrowable()!;;
     
 
-        try {
-            
+ try { 
                         if(exception != 
                                     null
                                 )
                         
                                     {
                                     
-    var specialMessage: string = log.getSpecialMessage()!;;
+    let specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;;
+    let anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;;
+    let functionName: string = log.getFunctionName()!;;
     
 
-    var className: string = CommonStrings.getInstance()!.EMPTY;;
+    let className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
-    var clazz: Function = anyType!.constructor!;;
+    let clazz: Function = anyType!.constructor!;;
     
 
                         if(clazz.toString()! != 
@@ -133,30 +134,32 @@ PreLogUtil.put("Loggin Initialized", this, "init()");
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
     
 this.logger.log(Level.INFO, message);
     
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
+ }
+   }
+ 
 }
 
-}
 
+    /*actual*/ public put(specialMessage: string, anyType: any, functionName: string, exception: any){
 
-    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
-
-        try {
-            
-    var className: string = CommonStrings.getInstance()!.EMPTY;;
+ try { 
+    let className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
-    var clazz: Function = anyType!.constructor!;;
+    let clazz: Function = anyType!.constructor!;;
     
 
                         if(clazz.toString()! != 
@@ -170,7 +173,7 @@ this.logger.log(Level.INFO, message);
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
+    let message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 
                         if(exception != 
@@ -189,16 +192,17 @@ this.logger.log(Level.INFO, message);
 
                         }
                             
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

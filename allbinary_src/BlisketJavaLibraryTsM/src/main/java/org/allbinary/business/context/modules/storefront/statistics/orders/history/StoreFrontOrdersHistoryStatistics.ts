@@ -29,9 +29,11 @@ import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontInterface } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
@@ -50,6 +52,7 @@ import { OrderHistoryEntityInterface } from '../../../../../../../../../org/allb
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 
 
@@ -101,26 +104,26 @@ this.taxesMoney= new Money();
 this.totalMoney= new Money();
     
 
-    var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;;
+    let orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;;
     
 
-    var orderHistoryInterfaceVector: BasicArrayList = orderHistoryEntityInterface!.getStoreOrders(storeFrontInterface)!;;
+    let orderHistoryInterfaceVector: BasicArrayList = orderHistoryEntityInterface!.getStoreOrders(storeFrontInterface)!;;
     
 
-    var numberOfOrders: number = 0;;
+    let numberOfOrders: number = 0;;
     
 
-    var orderHistoryInterface: OrderHistoryInterface;;
+    let orderHistoryInterface: OrderHistoryInterface;;
     
 
-    var size: number = orderHistoryInterfaceVector!.size()!;;
+    let size: number = orderHistoryInterfaceVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 orderHistoryInterface= orderHistoryInterfaceVector!.get(index) as OrderHistoryInterface;
     
@@ -193,10 +196,10 @@ this.numberOfOrdersLong= new Long(numberOfOrders);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var storeFrontOrdersHistoryStatisticsData: StoreFrontOrdersHistoryStatisticsData = StoreFrontOrdersHistoryStatisticsData.getInstance()!;;
+    let storeFrontOrdersHistoryStatisticsData: StoreFrontOrdersHistoryStatisticsData = StoreFrontOrdersHistoryStatisticsData.getInstance()!;;
     
 hashMap!.put(storeFrontOrdersHistoryStatisticsData!.NUMBEROFORDERS, this.getNumberOfOrders()!.toString());
     
@@ -238,6 +241,4 @@ hashMap!.put(storeFrontOrdersHistoryStatisticsData!.TOTAL, this.getTotal()!.toSt
 
 
 }
-
-
 

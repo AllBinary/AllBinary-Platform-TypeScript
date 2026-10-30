@@ -49,9 +49,7 @@ export interface TransformInfoObjectConfigGeneratorFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator
+    getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator;
 
 }
-
-
 

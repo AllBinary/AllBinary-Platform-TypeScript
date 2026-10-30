@@ -156,12 +156,15 @@ import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/m
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -171,9 +174,11 @@ import { EventStrings } from '../../../../../org/allbinary/logic/util/event/Even
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -268,22 +273,24 @@ this.initCommands(cmdListener);
                         
                                     {
                                     
-        try {
-            this.initMenu();
+ try { this.initMenu();
     
 this.repaintProcessor!.process();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw new RuntimeException();
                     
-}
 
+ }
+   }
+ 
 
                                     }
                                 
@@ -292,29 +299,31 @@ this.repaintProcessor!.process();
 
     public updateMeasurement(graphics: Graphics){
 
-        try {
-            
-    var font: Font = graphics.getFont()!;;
+ try { 
+    let font: Font = graphics.getFont()!;;
     
 this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(this.canvasStrings!.FD_WIDTH)!.appendint(MyFontProcessor.defaultCharWidth(font))!.append(this.canvasStrings!.FD_HEIGHT)!.appendint(font.getHeight())!.toString(), this, this.canvasStrings!.UPDATE_MEASUREMENT);
     
 this.fontHeight= font.getHeight();
     
 
-    var rectangle: Rectangle = this.createRectangle(this.menuForm!.size())!;;
+    let rectangle: Rectangle = this.createRectangle(this.menuForm!.size())!;;
     
 this.menuForm!.init(rectangle, FormTypeFactory.getInstance()!.VERTICAL_CENTER_FORM);
     
 this.update();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 this.myFontProcessor= MyFontProcessor.getInstance();
     
 }
@@ -348,7 +357,7 @@ this.setCommandListener(cmdListener);
             
     initMenu(){
 
-    var form: ScrollSelectionForm = this.createForm()!;;
+    let form: ScrollSelectionForm = this.createForm()!;;
     
 this.menuForm= form;
     
@@ -372,10 +381,10 @@ this.repaintBehavior!.onChangeRepaint(this);
             
     public createForm(): ScrollSelectionForm{
 
-    var items: ABCustomItem[] = new CommandTextItemArrayFactory(new AllCommandsVisitor()).getInstance(this.getCommandStack(), this.backgroundBasicColor, this.foregroundBasicColor)!;;
+    let items: ABCustomItem[] = new CommandTextItemArrayFactory(new AllCommandsVisitor()).getInstance(this.getCommandStack(), this.backgroundBasicColor, this.foregroundBasicColor)!;;
     
 
-    var rectangle: Rectangle = this.createRectangle(items.length)!;;
+    let rectangle: Rectangle = this.createRectangle(items.length)!;;
     
 
 
@@ -388,16 +397,16 @@ this.repaintBehavior!.onChangeRepaint(this);
 
     public createRectangle(size: number): Rectangle{
 
-    var height: number = size *this.fontHeight;;
+    let height: number = size *this.fontHeight;;
     
 
-    var startY: number = (this.displayInfo!.getLastHeight() *2 /3) -height;;
+    let startY: number = (this.displayInfo!.getLastHeight() *2 /3) -height;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var rectangle: Rectangle = new Rectangle(pointFactory!.createXY(30, startY), this.displayInfo!.getLastWidth() -30, startY);;
+    let rectangle: Rectangle = new Rectangle(pointFactory!.createXY(30, startY), this.displayInfo!.getLastWidth() -30, startY);;
     
 
 
@@ -497,16 +506,15 @@ this.removeGameKeyEvent(keyCode, deviceId, false);
 
     addGameKeyEvent(keyCode: number, deviceId: number, repeated: boolean){
 
-        try {
-            
-    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;;
+ try { 
+    let gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;;
     
 
                         if(gameKey != this.gameKeyFactory!.NONE)
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;;
+    let gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;;
     
 this.downGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
@@ -521,29 +529,31 @@ this.downGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyE
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     removeGameKeyEvent(keyCode: number, deviceId: number, repeated: boolean){
 
-        try {
-            
-    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;;
+ try { 
+    let gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;;
     
 
                         if(gameKey != this.gameKeyFactory!.NONE)
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;;
+    let gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;;
     
 this.upGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
@@ -558,14 +568,17 @@ this.upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEve
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -596,6 +609,4 @@ this.menuInputProcessor= menuInputProcessor;
 
 
 }
-
-
 

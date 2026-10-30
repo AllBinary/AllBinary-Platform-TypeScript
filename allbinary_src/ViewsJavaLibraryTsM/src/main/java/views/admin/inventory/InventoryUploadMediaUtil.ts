@@ -39,6 +39,7 @@ import { UploadMediaSingleton } from '../../../org/allbinary/logic/communication
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
@@ -48,9 +49,11 @@ import { FileUtil } from '../../../org/allbinary/logic/io/file/FileUtil.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -66,6 +69,7 @@ import { MediaUtil } from '../../../org/allbinary/logic/visual/media/MediaUtil.j
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -152,10 +156,10 @@ this.itemInterface= itemInterface;
                                     }
                                 
 
-    var fileUtil: FileUtil = FileUtil.getInstance()!;;
+    let fileUtil: FileUtil = FileUtil.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
@@ -164,10 +168,10 @@ stringBuffer!.append(this.storeFrontInterface!.getCurrentHostNamePath());
 stringBuffer!.append(this.itemInterface!.getCategory());
     
 
-    var fullPath: string = stringBuffer!.toString()!;;
+    let fullPath: string = stringBuffer!.toString()!;;
     
 
-    var imageDirectoryFile: AbFile = AbFile.createAbFile(fullPath)!;;
+    let imageDirectoryFile: AbFile = AbFile.createAbFile(fullPath)!;;
     
 
                         if(!imageDirectoryFile!.isDirectory())
@@ -192,7 +196,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 stringBuffer!.append(mediaData!.getName());
     
 
-    var originalImageFile: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
+    let originalImageFile: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
@@ -208,10 +212,10 @@ originalImageFile!.createNewFile();
 fileUtil!.write(new ByteArrayInputStream(byteArray), originalImageFile);
     
 
-    var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;;
+    let uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;;
     
 
-    var isMediaSupported: boolean = uploadMedia!.isWriterSupported(mediaData!.getName()) || uploadMedia!.isReaderSupported(mediaData!.getName());;
+    let isMediaSupported: boolean = uploadMedia!.isWriterSupported(mediaData!.getName()) || uploadMedia!.isReaderSupported(mediaData!.getName());;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
@@ -233,7 +237,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "saveFiles()");
                                     }
                                 
 
-    var defaultMediaData: MediaData = MediaData.getDefault()!;;
+    let defaultMediaData: MediaData = MediaData.getDefault()!;;
     
 this.setFileNames(fileName);
     
@@ -242,7 +246,7 @@ this.setFileNames(fileName);
                         
                                     {
                                     
-    var isMediaResizable: boolean = uploadMedia!.isWriterMedia(mediaData!.getName(), MediaTypeData.getInstance()!.RESIZABLE_MEDIA)!;;
+    let isMediaResizable: boolean = uploadMedia!.isWriterMedia(mediaData!.getName(), MediaTypeData.getInstance()!.RESIZABLE_MEDIA)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
@@ -291,7 +295,7 @@ this.mediaUtil!.saveImageFile(originalImageFile, this.itemInterface!.getLargeIma
                                 
                         else {
                             
-    var isConvertable: boolean = mediaData!.isConvertableTo(defaultMediaData)!;;
+    let isConvertable: boolean = mediaData!.isConvertableTo(defaultMediaData)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
@@ -340,21 +344,21 @@ this.mediaUtil!.saveImageFile(originalImageFile, this.itemInterface!.getLargeIma
                                 
                         else {
                             
-    var smallImageFile: AbFile = AbFile.createAbFile(this.itemInterface!.getSmallImage())!;;
+    let smallImageFile: AbFile = AbFile.createAbFile(this.itemInterface!.getSmallImage())!;;
     
 smallImageFile!.createNewFile();
     
 fileUtil!.write(new ByteArrayInputStream(byteArray), smallImageFile);
     
 
-    var mediumImageFile: AbFile = AbFile.createAbFile(this.itemInterface!.getMediumImage())!;;
+    let mediumImageFile: AbFile = AbFile.createAbFile(this.itemInterface!.getMediumImage())!;;
     
 smallImageFile!.createNewFile();
     
 fileUtil!.write(new ByteArrayInputStream(byteArray), mediumImageFile);
     
 
-    var largeImageFile: AbFile = AbFile.createAbFile(this.itemInterface!.getSmallImage())!;;
+    let largeImageFile: AbFile = AbFile.createAbFile(this.itemInterface!.getSmallImage())!;;
     
 largeImageFile!.createNewFile();
     
@@ -374,7 +378,7 @@ fileUtil!.write(new ByteArrayInputStream(byteArray), largeImageFile);
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.END, this, "saveFiles()");
     
@@ -392,7 +396,7 @@ this.logUtil!.putF(commonStrings!.END, this, "saveFiles()");
 
     setFileNames(fileName: string){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.itemInterface!.getId());
     
@@ -401,7 +405,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 stringBuffer!.append(MediaData.getDefault()!.getName());
     
 
-    var END: string = stringBuffer!.toString()!;;
+    let END: string = stringBuffer!.toString()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -412,7 +416,7 @@ stringBuffer!.append(this.SMALL);
 stringBuffer!.append(END);
     
 
-    var newImageFileName: string = stringBuffer!.toString()!;;
+    let newImageFileName: string = stringBuffer!.toString()!;;
     
 this.itemInterface!.setSmallImage(newImageFileName);
     
@@ -444,6 +448,4 @@ this.itemInterface!.setLargeImage(newImageFileName);
 
 
 }
-
-
 

@@ -41,21 +41,25 @@ import { UnsupportedEncodingException } from '../../../../../../../java/io/Unsup
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFile } from '../../../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { FileItem } from '../../../../../../../org/apache/commons/fileupload/FileItem.js';
 //not GWT import const FileItem
@@ -172,10 +176,17 @@ this.byteArray= byteArray;
     
 }
 
-
+getString(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getString$overload1(args[0]);
+   
+    if (args.length === 0) return this.getString$overload2();
+   
+   throw new TypeError('No matching overload: getString'); }
+  
                 //@Throws(UnsupportedEncodingException.constructor)
             
-    public getString(encoding: string): string{
+    public getString$overload1(encoding: string): string{
 
 
 
@@ -185,19 +196,19 @@ this.byteArray= byteArray;
 }
 
 
-    public getString(): string{
+    public getString$overload2(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return FileItemUtil.getInstance()!.getString(this.byteArray);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
                         
@@ -213,14 +224,23 @@ this.byteArray= byteArray;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringUtil.getInstance()!.EMPTY_STRING;
     
+
+ }
+   }
+ 
 }
 
-}
-
-
+write(...args: any[]): any {
+   
+    if (args.length === 1) return this.write$overload1(args[0]);
+   
+    if (args.length === 1) return this.write$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: write'); }
+  
                 //@Throws(Exception.constructor)
             
-    public write(file: File){
+    public write$overload1(file: File){
 
 
 
@@ -231,7 +251,7 @@ this.byteArray= byteArray;
 
                 //@Throws(Exception.constructor)
             
-    public write(file: AbFile){
+    public write$overload2(file: AbFile){
 
 
 
@@ -323,6 +343,4 @@ this.fieldName= name;
 
 
 }
-
-
 

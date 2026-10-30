@@ -25,9 +25,11 @@ import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 
 
@@ -127,6 +129,4 @@ export class GameKeyFactory
     public LEVEL_UP: GameKey = new GameKey(Canvas.KEY_NUM9 +2, "Cheat Level Down");
 
 }
-
-
 

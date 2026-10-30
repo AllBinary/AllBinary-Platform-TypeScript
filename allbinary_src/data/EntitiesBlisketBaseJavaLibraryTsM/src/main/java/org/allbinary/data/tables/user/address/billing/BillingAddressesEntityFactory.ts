@@ -27,9 +27,11 @@ import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/t
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -58,8 +60,15 @@ export class BillingAddressesEntityFactory
         
 
     private static readonly instance: BillingAddressesEntityFactory = new BillingAddressesEntityFactory();
-
-    public static getInstance(): BillingAddressesEntityFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): BillingAddressesEntityFactory{
 
 
 
@@ -77,25 +86,25 @@ private constructor (){
         }
 
 
-    public getInstance(userName: string): StreetAddressesEntity{
+    public getInstance$overload2(userName: string): StreetAddressesEntity{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new BillingAddressesEntity(userName);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
@@ -108,12 +117,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

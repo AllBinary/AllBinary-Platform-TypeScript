@@ -57,6 +57,7 @@ import { LayerInterface } from '../../../../../../org/allbinary/layer/LayerInter
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -66,12 +67,15 @@ import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/E
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -122,10 +126,10 @@ this.trackingList= new BasicArrayListD();
 this.update();
     
 
-    var direction: Direction = this.setFiringDirectionForTargetIfInRange()!;;
+    let direction: Direction = this.setFiringDirectionForTargetIfInRange()!;;
     
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
+    let directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 
                         if(direction == directionFactory!.LEFT)
@@ -186,54 +190,54 @@ super.processKeyAI(Canvas.KEY_NUM1);
 
     setFiringDirectionForTargetIfInRange(): Direction{
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
+    let directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    let ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var direction: Direction = directionFactory!.NOT_BORDERED_WITH;;
+    let direction: Direction = directionFactory!.NOT_BORDERED_WITH;;
     
 
-    var lastTrackingEvent: TrackingEvent;;
+    let lastTrackingEvent: TrackingEvent;;
     
 
-    var lastTrackingLayerInterface: LayerInterface;;
+    let lastTrackingLayerInterface: LayerInterface;;
     
 
-    var directionCompositeInterface: DirectionCompositeInterface;;
+    let directionCompositeInterface: DirectionCompositeInterface;;
     
 
-    var size: number = this.trackingList!.size()!;;
+    let size: number = this.trackingList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 lastTrackingEvent= this.trackingList!.get(0) as TrackingEvent;
     
 lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
     
 
-    var x: number = lastTrackingLayerInterface!.getXP()!;;
+    let x: number = lastTrackingLayerInterface!.getXP()!;;
     
 
-    var y: number = lastTrackingLayerInterface!.getYP()!;;
+    let y: number = lastTrackingLayerInterface!.getYP()!;;
     
 
-    var yDistance: number = ownerLayerInterface!.getYP() -y -ownerLayerInterface!.getHeight();;
+    let yDistance: number = ownerLayerInterface!.getYP() -y -ownerLayerInterface!.getHeight();;
     
 
-    var xDistance: number = ownerLayerInterface!.getXP() -x -ownerLayerInterface!.getWidth();;
+    let xDistance: number = ownerLayerInterface!.getXP() -x -ownerLayerInterface!.getWidth();;
     
 
-    var absXDistance: number = Math.abs(xDistance)!;;
+    let absXDistance: number = Math.abs(xDistance)!;;
     
 
-    var absYDistance: number = Math.abs(yDistance)!;;
+    let absYDistance: number = Math.abs(yDistance)!;;
     
 
                         if(absYDistance <= 100)
@@ -315,6 +319,4 @@ this.firingDistance= firingDistance;
 
 
 }
-
-
 

@@ -337,21 +337,27 @@ import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/m
 
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+type ABSystemWrapper<T = any, U = any> = typeof ABSystemWrapper extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABSystemWrapper;
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
 //not GWT import const OperatingSystemFactory
@@ -382,9 +388,11 @@ import { SelectSound } from '../../../../../org/allbinary/media/audio/SelectSoun
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { SecondaryThreadPool } from '../../../../../org/allbinary/thread/SecondaryThreadPool.js';
 //not GWT import const SecondaryThreadPool
@@ -400,15 +408,19 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -688,9 +700,8 @@ DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
 
     public updateMeasurement(graphics: Graphics){
 
-        try {
-            
-    var font: Font = graphics.getFont()!;;
+ try { 
+    let font: Font = graphics.getFont()!;;
     
 this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(this.canvasStrings!.FD_WIDTH)!.appendint(MyFontProcessor.defaultCharWidth(font))!.append(this.canvasStrings!.FD_HEIGHT)!.appendint(font.getHeight())!.toString(), this, this.canvasStrings!.UPDATE_MEASUREMENT);
     
@@ -699,10 +710,10 @@ this.fontHeightP= font.getHeight();
 this.myFormUtil!.updateMeasurement(graphics);
     
 
-    var popupMenuRectangle: Rectangle = this.myFormUtil!.getPopupMenuRectangle()!;;
+    let popupMenuRectangle: Rectangle = this.myFormUtil!.getPopupMenuRectangle()!;;
     
 
-    var basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable() as BasicPopupMenuPaintable);;
+    let basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable() as BasicPopupMenuPaintable);;
     
 basicPopupMenuPaintable!.init(popupMenuRectangle);
     
@@ -711,7 +722,7 @@ basicPopupMenuPaintable!.init(popupMenuRectangle);
                         
                                     {
                                     
-    var popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor() as PopupMenuInputProcessor);;
+    let popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor() as PopupMenuInputProcessor);;
     
 popupMenuInputProcessor!.init(popupMenuRectangle);
     
@@ -720,14 +731,17 @@ popupMenuInputProcessor!.init(popupMenuRectangle);
                                 
 this.myFontProcessor= MyFontProcessor.getInstance();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -768,21 +782,23 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
 
-        try {
-            this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(DisplayInfoSingleton.getInstance()!.toString())!.toString(), this, this.canvasStrings!.UPDATE_MEASUREMENT);
+ try { this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(DisplayInfoSingleton.getInstance()!.toString())!.toString(), this, this.canvasStrings!.UPDATE_MEASUREMENT);
     
 this.myFontProcessor= this.updateMyFontProcessor;
     
 this.menuBehavior!.onDisplayChangeEvent(this, displayChangeEvent);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -790,10 +806,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DI
             
     public updateMenuFromEvent(displayChangeEvent: DisplayChangeEvent){
 
-    var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
+    let formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
+    let rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 this.menuForm!.init(rectangle, formType);
     
@@ -852,10 +868,10 @@ super.processSleep();
                         
                                     {
                                     
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var popupMenuRectangle: Rectangle = this.myFormUtil!.getPopupMenuRectangle()!;;
+    let popupMenuRectangle: Rectangle = this.myFormUtil!.getPopupMenuRectangle()!;;
     
 
                         if(features.isFeature(this.touchFeatureFactory!.TOUCH_ENABLED))
@@ -880,17 +896,19 @@ this.setPopupMenuInputProcessor(new PopupMenuInputProcessor(new BasicArrayListD(
 
     initMenu(){
 
-        try {
-            this.menuBehavior!.initMenu(this);
+ try { this.menuBehavior!.initMenu(this);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "initMenu", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -900,27 +918,27 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "initMenu", e);
 this.closeMenu();
     
 
-    var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
+    let formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var gameLimitedCommandTextItemArrayFactory: GameLimitedCommandTextItemArrayFactory = GameLimitedCommandTextItemArrayFactory.getInstance()!;;
+    let gameLimitedCommandTextItemArrayFactory: GameLimitedCommandTextItemArrayFactory = GameLimitedCommandTextItemArrayFactory.getInstance()!;;
     
 
-    var commandTextItemArrayFactory: CommandTextItemArrayFactory = gameLimitedCommandTextItemArrayFactory!.getCommandTextItemArrayFactory()!;;
+    let commandTextItemArrayFactory: CommandTextItemArrayFactory = gameLimitedCommandTextItemArrayFactory!.getCommandTextItemArrayFactory()!;;
     
 
-    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack(), this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;;
+    let items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack(), this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;;
     
 
-    var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
+    let rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 25, false, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()));
     
 
-    var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;;
+    let scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;;
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(this.touchFeatureFactory!.TOUCH_ENABLED))
@@ -957,17 +975,19 @@ this.closeMenu();
 
     public updateMenu(){
 
-        try {
-            this.menuBehavior!.updateMenu(this);
+ try { this.menuBehavior!.updateMenu(this);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "initMenu", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -975,21 +995,21 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "initMenu", e);
             
     public updateMenu2(){
 
-    var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;;
+    let scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;;
     
 scrollSelectionForm!.deleteAll();
     
 
-    var gameLimitedCommandTextItemArrayFactory: GameLimitedCommandTextItemArrayFactory = GameLimitedCommandTextItemArrayFactory.getInstance()!;;
+    let gameLimitedCommandTextItemArrayFactory: GameLimitedCommandTextItemArrayFactory = GameLimitedCommandTextItemArrayFactory.getInstance()!;;
     
 
-    var commandTextItemArrayFactory: CommandTextItemArrayFactory = gameLimitedCommandTextItemArrayFactory!.getCommandTextItemArrayFactory()!;;
+    let commandTextItemArrayFactory: CommandTextItemArrayFactory = gameLimitedCommandTextItemArrayFactory!.getCommandTextItemArrayFactory()!;;
     
 
-    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack(), this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;;
+    let items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack(), this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;;
     
 
-    var size: number = items.length
+    let size: number = items.length
                 ;;
     
 
@@ -997,17 +1017,17 @@ scrollSelectionForm!.deleteAll();
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 scrollSelectionForm!.append(items[index]!);
     
 }
 
 
-    var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
+    let formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
+    let rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 scrollSelectionForm!.init(rectangle, formType);
     
@@ -1203,7 +1223,7 @@ this.setLayerManager(gameLayerManager);
                         
                                     {
                                     
-    var BUFF_MESSAGE: string = "XXX Not Buffering Causes Concurrency Issues XXX";;
+    let BUFF_MESSAGE: string = "XXX Not Buffering Causes Concurrency Issues XXX";;
     
 this.logUtil!.putF(BUFF_MESSAGE, this, this.commonStrings!.CONSTRUCTOR);
     
@@ -1222,7 +1242,7 @@ this.logUtil!.putF(BUFF_MESSAGE, this, this.commonStrings!.CONSTRUCTOR);
 this.setGameInputProcessor(Processor.getInstance());
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(GameFeatureFactory.getInstance()!.CHEATING))
@@ -1311,24 +1331,24 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
 
     initConfigurable(abeClientInformation: AbeClientInformationInterface){
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.addNormalPortion(50, "Setting Configurables");
     
 GameInitializationUtil.getInstance()!.initGame(abeClientInformation, this, this.gameInitializationInterfaceFactoryInterface);
     
 
-    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
+    let gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
     
 
-    var changedGameFeatureListener: ChangedGameFeatureListener = ChangedGameFeatureListener.getInstance()!;;
+    let changedGameFeatureListener: ChangedGameFeatureListener = ChangedGameFeatureListener.getInstance()!;;
     
 
                         if(changedGameFeatureListener!.isChangedFeature(gameFeatureFactory!.SOUND))
                         
                                     {
                                     
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 this.logUtil!.putF(new StringMaker().append("Sound Changing To: ")!.appendboolean(features.isFeature(gameFeatureFactory!.SOUND))!.toString(), this, "initConfigurable");
     
@@ -1340,7 +1360,7 @@ changedGameFeatureListener!.remove(gameFeatureFactory!.SOUND);
                                     }
                                 
 
-    var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;;
+    let sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;;
     
 
                         if(changedGameFeatureListener!.isChangedFeature(sensorFeatureFactory!.ORIENTATION_SENSORS) || changedGameFeatureListener!.isChangedFeature(sensorFeatureFactory!.NO_ORIENTATION) || changedGameFeatureListener!.isChangedFeature(sensorFeatureFactory!.SIMULATED_ORIENTATION_SENSORS))
@@ -1356,7 +1376,7 @@ changedGameFeatureListener!.remove(sensorFeatureFactory!.SIMULATED_ORIENTATION_S
                                     }
                                 
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
+    let resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 this.loadResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_GAME);
     
@@ -1383,10 +1403,10 @@ this.initTouch();
             
     initTouch(){
 
-    var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;;
+    let gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;;
     
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
+    let resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 gameInitializedEvent!.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_TOUCH);
     
@@ -1432,7 +1452,7 @@ this.gameBehavior!.updateTouch(this);
             
     updateTouch2(){
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(this.touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS))
@@ -1475,10 +1495,10 @@ this.setCommandListener(cmdListener);
 
     public addCommands(){
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
+    let gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 
-    var myCommandsFactory: MyCommandsFactory = MyCommandsFactory.getInstance()!;;
+    let myCommandsFactory: MyCommandsFactory = MyCommandsFactory.getInstance()!;;
     
 
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
@@ -1496,7 +1516,7 @@ this.addCommand(myCommandsFactory!.PAUSE_COMMAND);
 this.addCommand(gameCommandsFactory!.QUIT_COMMAND);
     
 
-    var isOverScan: boolean = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan()!;;
+    let isOverScan: boolean = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan()!;;
     
 
                         if(J2MEUtil.isHTML())
@@ -1537,9 +1557,8 @@ this.addCommand(gameCommandsFactory!.DISPLAY_LOAD_FORM);
 
     public itemStateChanged(item: Item){
 
-        try {
-            
-    var itemLabel: string = item.getLabel()!;;
+ try { 
+    let itemLabel: string = item.getLabel()!;;
     
 this.logUtil!.putF(new StringMaker().append(this.commonLabels!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
@@ -1548,7 +1567,7 @@ this.logUtil!.putF(new StringMaker().append(this.commonLabels!.ITEM_LABEL)!.appe
                         
                                     {
                                     
-    var gameFeatureUtil: GameFeatureUtil = GameFeatureUtil.getInstance()!;;
+    let gameFeatureUtil: GameFeatureUtil = GameFeatureUtil.getInstance()!;;
     
 
                         if(gameFeatureUtil!.isExclusive(itemLabel))
@@ -1576,14 +1595,17 @@ this.updateScreenButtonPaintable();
     
 this.sensorGameUpdateProcessor!.sendNotifications(this.gameLayerManager);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "itemStateChanged", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -1597,7 +1619,7 @@ this.gameBehavior!.updateScreenButtonPaintable(this);
 
     public updateScreenButtonPaintable2(){
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(this.touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS))
@@ -1748,7 +1770,7 @@ this.gameBehavior!.setGameState(this);
             
     public updateGameState(){
 
-    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
+    let gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
     
 gameAdState!.processAdState(this.gameState, this.gameLayerManager!.getGameInfo()!.getGameType());
     
@@ -1799,10 +1821,10 @@ this.logUtil!.putF("Remove PlayerInput Listeners", this, "removeAllGameKeyInputL
 
 
                         for (
-    var index: number = this.localPlayerGameInputList!.size() -1;index >= 0; index--)
+    let index: number = this.localPlayerGameInputList!.size() -1;index >= 0; index--)
         {
 
-    var playerGameInput: PlayerGameInput = this.localPlayerGameInputList!.get(index) as PlayerGameInput;;
+    let playerGameInput: PlayerGameInput = this.localPlayerGameInputList!.get(index) as PlayerGameInput;;
     
 this.removeKeyInputListener(playerGameInput);
     
@@ -1860,7 +1882,7 @@ this.gameBehavior!.updateEndGameProcessor(this);
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CLEANUP);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.addNormalPortion(10, "Cleaning Up");
     
@@ -1877,7 +1899,7 @@ GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear();
             
     public loadResourceLoadingLevel(resourceLoadingLevel: ResourceLoadingLevel){
 
-    var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;;
+    let gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;;
     
 gameInitializedEvent!.setResourceLoadingLevel(resourceLoadingLevel);
     
@@ -1890,7 +1912,7 @@ GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent);
             
     public loadResources(level: number){
 
-    var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;;
+    let gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;;
     
 gameInitializedEvent!.setLevel(level);
     
@@ -1913,10 +1935,10 @@ this.screenCapture!.endRecording();
 this.screenCapture!.startRecording();
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 progressCanvas!.addNormalPortion(portion, "Generic Build");
     
@@ -2020,14 +2042,14 @@ this.gameBehavior!.buildGame(this);
 PreLogUtil.put(new StringMaker().append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUTS)!.appendint(this.localPlayerGameInputList!.size())!.toString(), this, this.BUILD_GAME);
     
 
-    var playerGameInput: PlayerGameInput;;
+    let playerGameInput: PlayerGameInput;;
     
 
 
 
 
                         for (
-    var index: number = this.localPlayerGameInputList!.size() -1;index >= 0; index--)
+    let index: number = this.localPlayerGameInputList!.size() -1;index >= 0; index--)
         {
 playerGameInput= this.localPlayerGameInputList!.get(index) as PlayerGameInput;
     
@@ -2062,7 +2084,7 @@ this.gameCanvasStartListener= gameCanvasStartListener;
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.LOAD);
     
 
-    var hashtable: ABHashtable<any, any> = this.getLoadStateHashtable()!;;
+    let hashtable: ABHashtable<any, any> = this.getLoadStateHashtable()!;;
     
 
                         if(hashtable != 
@@ -2071,13 +2093,13 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.LOAD);
                         
                                     {
                                     
-    var levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME) as string;;
+    let levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME) as string;;
     
 
-    var level: number = Integer.valueOf(levelAsString)!.intValue()!;;
+    let level: number = Integer.valueOf(levelAsString)!.intValue()!;;
     
 
-    var gameInfo: GameInfo = this.gameLayerManager!.getGameInfo()!;;
+    let gameInfo: GameInfo = this.gameLayerManager!.getGameInfo()!;;
     
 gameInfo!.setCurrentLevel(level);
     
@@ -2111,10 +2133,10 @@ this.hashtable= hashtable;
 
     public getCurrentStateHashtable(): ABHashtable<any, any>{
 
-    var hashtable: ABHashtable<any, any> = this.stdUtil!.createHashtable()!;;
+    let hashtable: ABHashtable<any, any> = this.stdUtil!.createHashtable()!;;
     
 
-    var level: number = this.gameLayerManager!.getGameInfo()!.getCurrentLevel()!;;
+    let level: number = this.gameLayerManager!.getGameInfo()!.getCurrentLevel()!;;
     
 hashtable.put(GameInfo.LEVEL_NAME.toString(), level.toString());
     
@@ -2248,17 +2270,17 @@ this.inputProcessor!.keyReleasedByDevice(this, keyCode, deviceId);
 
     endProgress(isProgress: boolean): number{
 
-    var portion: number = 30;;
+    let portion: number = 30;;
     
 
                         if(isProgress && this.isMainCanvas())
                         
                                     {
                                     
-    var myCommandsFactory: MyCommandsFactory = MyCommandsFactory.getInstance()!;;
+    let myCommandsFactory: MyCommandsFactory = MyCommandsFactory.getInstance()!;;
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.start();
     
@@ -2353,7 +2375,7 @@ this.threadObjectUtil!.notifyObject(this);
             
     public shouldWait(){
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
                         if(AndroidUtil.isAndroid())
@@ -2375,7 +2397,7 @@ this.threadObjectUtil!.notifyObject(this);
                         
                                     {
                                     
-    var openGLImageSpecificFactory: OpenGLImageSpecificFactory = OpenGLImageSpecificFactory.getInstance()!;;
+    let openGLImageSpecificFactory: OpenGLImageSpecificFactory = OpenGLImageSpecificFactory.getInstance()!;;
     
 
         while(openGLImageSpecificFactory!.updating)
@@ -2395,11 +2417,10 @@ Thread.sleep(this.YIELD_SLEEP);
 
     public run(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
+ try { this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.addNormalPortion(50, "Game Thread");
     
@@ -2432,7 +2453,7 @@ this.threadInit();
 this.open();
     
 
-    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
+    let gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
     
 gameAdState!.init();
     
@@ -2442,14 +2463,17 @@ this.gameBehavior!.run(this);
     
 this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.RUN);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -2457,7 +2481,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, 
             
     public run2(){
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
                         if(features.isDefault(this.openGLFeatureFactory!.OPENGL_AS_GAME_THREAD) || J2MEUtil.isHTML())
@@ -2482,7 +2506,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, 
                                     }
                                 
 
-    var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
+    let currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
     
 currentDisplayableFactory!.setRunnable(this.gameRunnable);
     
@@ -2549,9 +2573,8 @@ this.processLoopSleep();
 super.setRunning(running);
     
 
-        try {
-            
-    var features: Features = Features.getInstance()!;;
+ try { 
+    let features: Features = Features.getInstance()!;;
     
 
                         if(running)
@@ -2570,7 +2593,7 @@ super.setRunning(running);
                         
                                     {
                                     
-    var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
+    let currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
     
 currentDisplayableFactory!.clearRunnable();
     
@@ -2585,14 +2608,17 @@ this.end();
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.SET_RUNNING, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -2624,7 +2650,7 @@ DisplayChangeEventHandler.getInstance()!.removeListener(this);
 GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear();
     
 
-    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
+    let gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
     
 gameAdState!.notPlayingAdState();
     
@@ -2633,7 +2659,7 @@ gameAdState!.notPlayingAdState();
 
     public createHighScore(score: number): HighScore{
 
-    var gameInfo: GameInfo = this.gameLayerManager!.getGameInfo()!;;
+    let gameInfo: GameInfo = this.gameLayerManager!.getGameInfo()!;;
     
 
 
@@ -2656,10 +2682,10 @@ this.gameBehavior!.setHighScore(abeClientInformation, this, name, score, autoSub
             
     public setHighScore2(abeClientInformation: AbeClientInformationInterface, name: string, score: number, autoSubmit: boolean, isLast: boolean){
 
-    var highScore: HighScore = this.createHighScore(score)!;;
+    let highScore: HighScore = this.createHighScore(score)!;;
     
 
-    var textBox: HighScoreTextBox = new HighScoreTextBox(this.highScoresFactoryInterface, this.highScoresHelper, abeClientInformation, this.gameLayerManager!.getGameInfo(), this.getCustomCommandListener(), name, highScore, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor());;
+    let textBox: HighScoreTextBox = new HighScoreTextBox(this.highScoresFactoryInterface, this.highScoresHelper, abeClientInformation, this.gameLayerManager!.getGameInfo(), this.getCustomCommandListener(), name, highScore, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor());;
     
 
                         if(isLast)
@@ -2685,11 +2711,10 @@ class SaveHighScoreRunnable
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
+ try { 
                         if(isLast)
                         
                                     {
@@ -2704,25 +2729,26 @@ class SaveHighScoreRunnable
 
                         }
                             
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, "run", e);
     
 this.progressCanvas!.end();
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 SecondaryThreadPool.getInstance()!.runTask(new SaveHighScoreRunnable());
     
 
@@ -2879,14 +2905,14 @@ this.highScoresPaintable= highScoresPaintable;
 
     clearPlayerGameInputList(){
 
-    var playerGameInput: PlayerGameInput;;
+    let playerGameInput: PlayerGameInput;;
     
 
 
 
 
                         for (
-    var index: number = this.localPlayerGameInputList!.size() -1;index >= 0; index--)
+    let index: number = this.localPlayerGameInputList!.size() -1;index >= 0; index--)
         {
 playerGameInput= this.localPlayerGameInputList!.get(index) as PlayerGameInput;
     
@@ -3219,10 +3245,10 @@ this.gameSpecificPaintable= gameSpecificPaintable;
 
     public isRunningInAnotherThread(): boolean{
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
@@ -3261,6 +3287,4 @@ this.gameSpecificPaintable= gameSpecificPaintable;
 
 
 }
-
-
 

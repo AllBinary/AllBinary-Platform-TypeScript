@@ -92,25 +92,25 @@ private constructor (){
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 
-    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
+    let image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
     
 
                         if(image.isMutable())
                         
                                     {
                                     
-    var bitmap: Bitmap = (image as AndroidImageInterface).getBitmap()!;;
+    let bitmap: Bitmap = (image as AndroidImageInterface).getBitmap()!;;
     
 
-    var width: number = bitmap.getWidth()!;;
+    let width: number = bitmap.getWidth()!;;
     
 
-    var height: number = bitmap.getHeight()!;;
+    let height: number = bitmap.getHeight()!;;
     
 this.matrix.setRotate(rotationInDegrees, (width>>1), (height>>1));
     
 
-    var canvas: Canvas = (image as AndroidImageInterface).getCanvas()!;;
+    let canvas: Canvas = (image as AndroidImageInterface).getCanvas()!;;
     
 canvas.concat(this.matrix);
     
@@ -138,6 +138,4 @@ image.getGraphics()!.drawImage(originalImage, 0, 0, this.anchor);
 
 
 }
-
-
 

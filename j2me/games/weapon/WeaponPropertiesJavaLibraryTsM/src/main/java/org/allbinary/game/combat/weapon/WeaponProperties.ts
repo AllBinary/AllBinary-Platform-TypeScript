@@ -20,18 +20,22 @@
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
 //not GWT import const BasicDecimal
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -85,10 +89,10 @@ public constructor (reloadTime: number, targetingTime: number, speed: number, da
                         
                                     {
                                     
-    var MESSAGE: string = "Danger Danger Danger: Speed probably to slow if using 1 degree calculations as velocity for a single axis could be below 1024: ";;
+    let MESSAGE: string = "Danger Danger Danger: Speed probably to slow if using 1 degree calculations as velocity for a single axis could be below 1024: ";;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(new StringMaker().append(MESSAGE)!.appendlong(speed)!.toString(), this, commonStrings!.CONSTRUCTOR);
     
@@ -112,13 +116,13 @@ this.setSpeed(new BasicDecimal(speed));
                         
                                     {
                                     
-    var unscaledDamage: number = this.speed.getUnscaled() *damage;;
+    let unscaledDamage: number = this.speed.getUnscaled() *damage;;
     
 
-    var scaledDissipation: number = dissipation *this.speed.getScaledFactorValue();;
+    let scaledDissipation: number = dissipation *this.speed.getScaledFactorValue();;
     
 
-    var value: number = (globalThis.Math.trunc(unscaledDamage /scaledDissipation));;
+    let value: number = (globalThis.Math.trunc(unscaledDamage /scaledDissipation));;
     
 this.setRange(globalThis.Math.trunc(globalThis.Math.trunc((value *9)) /10));
     
@@ -188,13 +192,13 @@ this.speed= speed;
 
     public toStringArray(): string[]{
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var stringArray: string[] = new Array(3);;
+    let stringArray: string[] = new Array(3);;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringArray[index++]= stringBuffer!.append(WeaponProperties.DAMAGE)!.appendint(this.getDamage())!.toString();
     
@@ -217,7 +221,7 @@ stringArray[index++]= stringBuffer!.append(WeaponProperties.RELOAD)!.appendlong(
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(WeaponProperties.DAMAGE)!.appendint(this.getDamage());
     
@@ -239,6 +243,4 @@ stringBuffer!.append(WeaponProperties.RELOAD)!.appendlong(this.getReloadTime());
 
 
 }
-
-
 

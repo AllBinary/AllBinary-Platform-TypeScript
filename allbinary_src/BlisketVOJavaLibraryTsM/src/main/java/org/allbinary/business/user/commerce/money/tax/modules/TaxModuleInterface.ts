@@ -52,13 +52,11 @@ export interface TaxModuleInterface {
 
                 //@Throws(Exception.constructor)
             
-    getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): number
+    getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): number;
 
                 //@Throws(Exception.constructor)
             
-    isValid(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Boolean
+    isValid(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Boolean;
 
 }
-
-
 

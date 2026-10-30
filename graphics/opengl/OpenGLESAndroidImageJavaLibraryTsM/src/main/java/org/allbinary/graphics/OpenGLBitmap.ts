@@ -34,7 +34,7 @@ export class OpenGLBitmap extends PlatformBitmapBase {
 
     public readonly bitmap: Bitmap;
 
-public constructor (bitmap: any = {}){
+public constructor (bitmap: any){
 
             super();
         this.bitmap= bitmap as Bitmap;
@@ -81,6 +81,4 @@ this.bitmap.recycle();
 
 
 }
-
-
 

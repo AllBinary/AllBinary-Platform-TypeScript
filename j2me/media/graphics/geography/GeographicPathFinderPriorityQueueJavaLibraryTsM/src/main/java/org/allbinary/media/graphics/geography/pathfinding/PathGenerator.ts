@@ -32,6 +32,7 @@ import { GeographicMapCellHistory } from '../../../../../../org/allbinary/media/
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -85,7 +86,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public init(geographicMapInterface: any = {}, totalPaths: number){
+    public init(geographicMapInterface: any, totalPaths: number){
 }
 
 
@@ -93,7 +94,7 @@ private constructor (){
             
     public getInstanceNoCache(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
 
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = this.create(geographicMapInterface, pathFindingInfo, totalPaths)!;;
+    let geographicMapCellPositionBasicArrayList: BasicArrayList = this.create(geographicMapInterface, pathFindingInfo, totalPaths)!;;
     
 
 
@@ -119,16 +120,16 @@ private constructor (){
             
     create(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
 
-    var startPathFindingNodeList: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;;
+    let startPathFindingNodeList: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;;
     
 
-    var endPathFindingNodeList: BasicArrayList = pathFindingInfo!.getEndPathFindingNodeList()!;;
+    let endPathFindingNodeList: BasicArrayList = pathFindingInfo!.getEndPathFindingNodeList()!;;
     
 
-    var geographicPathFinderInterface: GeographicPathFinderBase = pathFindingInfo!.getPathFinder()!;;
+    let geographicPathFinderInterface: GeographicPathFinderBase = pathFindingInfo!.getPathFinder()!;;
     
 
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = geographicPathFinderInterface!.searchTotalPath(startPathFindingNodeList, endPathFindingNodeList, totalPaths)!;;
+    let geographicMapCellPositionBasicArrayList: BasicArrayList = geographicPathFinderInterface!.searchTotalPath(startPathFindingNodeList, endPathFindingNodeList, totalPaths)!;;
     
 
 
@@ -143,16 +144,16 @@ private constructor (){
             
     public createN(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number, multipassState: MultipassState): BasicArrayList{
 
-    var startPathFindingNodeList: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;;
+    let startPathFindingNodeList: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;;
     
 
-    var endPathFindingNodeList: BasicArrayList = pathFindingInfo!.getEndPathFindingNodeList()!;;
+    let endPathFindingNodeList: BasicArrayList = pathFindingInfo!.getEndPathFindingNodeList()!;;
     
 
-    var geographicPathFinderInterface: GeographicPathFinderBase = pathFindingInfo!.getPathFinder()!;;
+    let geographicPathFinderInterface: GeographicPathFinderBase = pathFindingInfo!.getPathFinder()!;;
     
 
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = geographicPathFinderInterface!.searchTotalPathN(startPathFindingNodeList, endPathFindingNodeList, totalPaths, multipassState)!;;
+    let geographicMapCellPositionBasicArrayList: BasicArrayList = geographicPathFinderInterface!.searchTotalPathN(startPathFindingNodeList, endPathFindingNodeList, totalPaths, multipassState)!;;
     
 
 
@@ -175,6 +176,4 @@ private constructor (){
 
 
 }
-
-
 

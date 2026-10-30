@@ -25,6 +25,7 @@ import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
@@ -34,6 +35,7 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -67,14 +69,13 @@ public constructor (){
         }
 
 
-    public visit(anyType: any = {}): any{
+    public visit(anyType: any): any{
 
-        try {
-            
-    var basicAI: BasicAI = anyType as BasicAI;;
+ try { 
+    let basicAI: BasicAI = anyType as BasicAI;;
     
 
-    var key: number = basicAI!.getLastKey()!;;
+    let key: number = basicAI!.getLastKey()!;;
     
 
                         if(key !=  -1)
@@ -85,17 +86,20 @@ public constructor (){
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -106,6 +110,4 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
 
 
 }
-
-
 

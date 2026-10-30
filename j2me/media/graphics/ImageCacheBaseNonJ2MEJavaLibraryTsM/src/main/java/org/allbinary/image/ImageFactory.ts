@@ -87,12 +87,19 @@ export class ImageFactory
     
 }
 
-
+createImageFromInputStream(...args: any[]): any {
+   
+    if (args.length === 2) return this.createImageFromInputStream$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.createImageFromInputStream$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: createImageFromInputStream'); }
+  
                 //@Throws(Exception.constructor)
             
-    public createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
+    public createImageFromInputStream$overload1(key: any, inputStream: InputStream): Image{
 
-    var image: Image = Image.createImageFromInputStream(inputStream)!;;
+    let image: Image = Image.createImageFromInputStream(inputStream)!;;
     
 
 
@@ -105,7 +112,7 @@ export class ImageFactory
 
                 //@Throws(Exception.constructor)
             
-    public createImageFromInputStream(inputStream: InputStream): Image{
+    public createImageFromInputStream$overload2(inputStream: InputStream): Image{
 
 
 
@@ -116,6 +123,4 @@ export class ImageFactory
 
 
 }
-
-
 

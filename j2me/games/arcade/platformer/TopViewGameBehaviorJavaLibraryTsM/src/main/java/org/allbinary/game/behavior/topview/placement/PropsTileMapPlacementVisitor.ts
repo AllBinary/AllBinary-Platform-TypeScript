@@ -20,12 +20,15 @@
 
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+type MyRandomFactory<T = any, U = any> = typeof MyRandomFactory extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MyRandomFactory;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { TileLayer } from '../../../../../../org/mapeditor/core/TileLayer.js';
 //not GWT import const TileLayer
@@ -63,20 +66,20 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
 
     public visit(lastMap: TiledMap, mapData: number[][]){
 
-    var layerIndex: number = 0;;
+    let layerIndex: number = 0;;
     
 
-    var tileLayer: TileLayer = (lastMap!.getLayer(layerIndex) as TileLayer);;
+    let tileLayer: TileLayer = (lastMap!.getLayer(layerIndex) as TileLayer);;
     
 
-    var mapArray: number[][] = tileLayer!.getMapArray()!;;
+    let mapArray: number[][] = tileLayer!.getMapArray()!;;
     
 
-    var size: number = mapData!.length
+    let size: number = mapData!.length
                 ;;
     
 
-    var size2: number = mapData[0]!.length
+    let size2: number = mapData[0]!.length
                 ;;
     
 
@@ -84,14 +87,14 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
 
 
 
                         for (
-    var index2: number = 0;index2 < size2; index2++)
+    let index2: number = 0;index2 < size2; index2++)
         {
 
                         if(mapArray[index]![index2] == 14)
@@ -115,7 +118,7 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
                         
                                     {
                                     
-    var randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(3)!;;
+    let randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(3)!;;
     
 
                         if(randomInt == 0)
@@ -152,7 +155,7 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
                         
                                     {
                                     
-    var randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(3)!;;
+    let randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(3)!;;
     
 
                         if(randomInt == 0)
@@ -196,7 +199,7 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
                         
                                     {
                                     
-    var randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(4)!;;
+    let randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(4)!;;
     
 
                         if(randomInt == 0)
@@ -249,23 +252,23 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
 
     public visit2(mapArray: number[][], mapData: number[][], index: number, index2: number){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var countX: number = 0;;
+    let countX: number = 0;;
     
 
-    var countY: number = 0;;
+    let countY: number = 0;;
     
 
-    var index3: number = index -1;;
+    let index3: number = index -1;;
     
 
 
 
 
                         for (
-    var index4: number = index2 -1;index4 > 0; index4--)
+    let index4: number = index2 -1;index4 > 0; index4--)
         {
 index3--;
     
@@ -295,14 +298,14 @@ index3--;
 
 
                         for (
-    var index5: number = index3 +1;index5 < index -1; index5++)
+    let index5: number = index3 +1;index5 < index -1; index5++)
         {
 
 
 
 
                         for (
-    var index6: number = index4 +1;index6 < index2 -1; index6++)
+    let index6: number = index4 +1;index6 < index2 -1; index6++)
         {
 
                         if(mapArray[index5]![index6] != 14 || mapData[index5]![index6] != 0)
@@ -322,10 +325,10 @@ index3--;
 }
 
 
-    var x: number = index -(globalThis.Math.trunc(countX /2));;
+    let x: number = index -(globalThis.Math.trunc(countX /2));;
     
 
-    var y: number = index2 -(globalThis.Math.trunc(countY /2));;
+    let y: number = index2 -(globalThis.Math.trunc(countY /2));;
     
 
                         if(x >= 0 && y >= 0 && x < mapData!.length && y < mapData[0]!.length)
@@ -356,6 +359,4 @@ countX++;
 
 
 }
-
-
 

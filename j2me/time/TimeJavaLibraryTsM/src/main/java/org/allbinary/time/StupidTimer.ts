@@ -10,24 +10,30 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Visitor } from '../../../org/allbinary/logic/util/visitor/Visitor.js';
 //not GWT import const Visitor
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { ThreadObjectUtil } from '../../../org/allbinary/thread/ThreadObjectUtil.js';
 //not GWT import const ThreadObjectUtil
@@ -68,10 +74,10 @@ export class StupidTimer
 
     visitBool(visitorInterface: Visitor): boolean{
 
-    var result: Boolean = visitorInterface!.visit(this.nullUtil!.NULL_OBJECT) as Boolean;;
+    let result: Boolean = visitorInterface!.visit(this.nullUtil!.NULL_OBJECT) as Boolean;;
     
 
-    var result2: boolean = result.valueOf()!;;
+    let result2: boolean = result.valueOf()!;;
     
 
 
@@ -86,15 +92,15 @@ export class StupidTimer
             
     public visit(visitorInterface: Visitor, timeDelayHelper: TimeDelayHelper){
 
-    var tookTooLong: boolean = false;;
+    let tookTooLong: boolean = false;;
     
 
-    var WAITING_FOR: string = "Waiting for: ";;
+    let WAITING_FOR: string = "Waiting for: ";;
     
 PreLogUtil.put(new StringMaker().append(WAITING_FOR)!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString(), this, this.commonStrings!.VISIT);
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(this.visitBool(visitorInterface))
@@ -171,6 +177,4 @@ this.threadObjectUtil!.notifyObject(this);
 
 
 }
-
-
 

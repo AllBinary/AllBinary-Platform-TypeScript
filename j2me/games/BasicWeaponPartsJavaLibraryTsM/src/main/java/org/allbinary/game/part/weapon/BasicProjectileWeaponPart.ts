@@ -98,7 +98,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
 
-    var weaponLayer: WeaponLayer = this.weaponLayerCircularStaticPool!.getInstanceWeaponLayer(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), this.relativeRelationship!.getZ(), globalThis.Math.trunc(angle), globalThis.Math.trunc(otherAngle), weaponProperties, scoreableInterface)!;;
+    let weaponLayer: WeaponLayer = this.weaponLayerCircularStaticPool!.getInstanceWeaponLayer(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), this.relativeRelationship!.getZ(), globalThis.Math.trunc(angle), globalThis.Math.trunc(otherAngle), weaponProperties, scoreableInterface)!;;
     
 allbinaryLayerManager!.append(weaponLayer);
     
@@ -106,6 +106,4 @@ allbinaryLayerManager!.append(weaponLayer);
 
 
 }
-
-
 

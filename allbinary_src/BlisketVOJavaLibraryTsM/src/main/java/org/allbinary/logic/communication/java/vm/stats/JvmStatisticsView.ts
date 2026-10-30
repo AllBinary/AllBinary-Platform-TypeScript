@@ -74,10 +74,10 @@ public constructor (){
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, JvmStatisticsData.NAME, hashMap)!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, JvmStatisticsData.NAME, hashMap)!;;
     
 
 
@@ -89,6 +89,4 @@ public constructor (){
 
 
 }
-
-
 

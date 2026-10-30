@@ -33,9 +33,11 @@ import { Layer } from '../../../../../../org/allbinary/layer/Layer.js';
 
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+type MathUtil<T = any, U = any> = typeof MathUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MathUtil;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -275,7 +277,7 @@ default: {
 
 
                         for (
-    var index: number = 0;index < 4; index++)
+    let index: number = 0;index < 4; index++)
         {
 
                         if(newGeographicMapCellPosition == this.getCellPositionNoThrow(index, oldGeographicMapCellPosition))
@@ -305,13 +307,13 @@ default: {
             
     public getCellPositionAtXY(x: number, y: number): GeographicMapCellPosition{
 
-    var allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;;
+    let allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;;
     
 
-    var i_column: number = this.mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;;
+    let i_column: number = this.mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;;
     
 
-    var i_row: number = this.mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;;
+    let i_row: number = this.mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;;
     
 
 
@@ -324,38 +326,40 @@ default: {
 
     public getCellPositionAtXYNoThrow(x: number, y: number): GeographicMapCellPosition{
 
-    var allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;;
+    let allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;;
     
 
-    var i_column: number = this.mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;;
+    let i_column: number = this.mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;;
     
 
-    var i_row: number = this.mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;;
+    let i_row: number = this.mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;;
     
 
                         if(allBinaryTiledLayer!.getColumns() > i_column && allBinaryTiledLayer!.getRows() > i_row)
                         
                                     {
                                     
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.geographicMapCellPositionFactory!.getAt(i_column, i_row);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
     
-}
 
+ }
+   }
+ 
 
                                     }
                                 
@@ -376,13 +380,13 @@ default: {
             
     public isOnMap(geographicMapCellPosition: GeographicMapCellPosition): boolean{
 
-    var allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;;
+    let allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;;
     
 
-    var i_column: number = geographicMapCellPosition!.getColumn()!;;
+    let i_column: number = geographicMapCellPosition!.getColumn()!;;
     
 
-    var i_row: number = geographicMapCellPosition!.getRow()!;;
+    let i_row: number = geographicMapCellPosition!.getRow()!;;
     
 
                         if(allBinaryTiledLayer!.getColumns() > i_column && allBinaryTiledLayer!.getRows() > i_row)
@@ -416,33 +420,33 @@ default: {
 geographicMapCellPositionList!.clear();
     
 
-    var allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;;
+    let allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;;
     
 
-    var i_columnMin: number = this.mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;;
+    let i_columnMin: number = this.mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;;
     
 
-    var i_rowMin: number = this.mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;;
+    let i_rowMin: number = this.mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;;
     
 
-    var i_columnMax: number = this.mathUtil!.abs(x2 /allBinaryTiledLayer!.getCellHeight()) +1;;
+    let i_columnMax: number = this.mathUtil!.abs(x2 /allBinaryTiledLayer!.getCellHeight()) +1;;
     
 
-    var i_rowMax: number = this.mathUtil!.abs(y2 /allBinaryTiledLayer!.getCellWidth()) +1;;
+    let i_rowMax: number = this.mathUtil!.abs(y2 /allBinaryTiledLayer!.getCellWidth()) +1;;
     
 
 
 
 
                         for (
-    var columnIndex: number = i_columnMin;columnIndex < i_columnMax; columnIndex++)
+    let columnIndex: number = i_columnMin;columnIndex < i_columnMax; columnIndex++)
         {
 
 
 
 
                         for (
-    var rowIndex: number = i_rowMin;rowIndex < i_rowMax; rowIndex++)
+    let rowIndex: number = i_rowMin;rowIndex < i_rowMax; rowIndex++)
         {
 
                         if(allBinaryTiledLayer!.getColumns() > columnIndex && allBinaryTiledLayer!.getRows() > rowIndex)
@@ -470,41 +474,41 @@ geographicMapCellPositionList!.clear();
             
     public getCellPositionsAt(layer: Layer, currentCellPositionArray: GeographicMapCellPosition[][], cellPositionArray: GeographicMapCellPosition[][]): boolean{
 
-    var hasChanged: boolean = false;;
+    let hasChanged: boolean = false;;
     
 
-    var size: number = cellPositionArray!.length
+    let size: number = cellPositionArray!.length
                 ;;
     
 
-    var size2: number = cellPositionArray[0]!.length
+    let size2: number = cellPositionArray[0]!.length
                 ;;
     
 
-    var xPortion: number = layer.getXP() /(size -1);;
+    let xPortion: number = layer.getXP() /(size -1);;
     
 
-    var yPortion: number = layer.getYP() /(size -1);;
+    let yPortion: number = layer.getYP() /(size -1);;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
 
 
 
                         for (
-    var index2: number = 0;index2 < size2; index2++)
+    let index2: number = 0;index2 < size2; index2++)
         {
 
-    var x: number = xPortion *index;;
+    let x: number = xPortion *index;;
     
 
-    var y: number = yPortion *index;;
+    let y: number = yPortion *index;;
     
 cellPositionArray[index]![index2]= this.getCellPositionAtXY(x, y);
     
@@ -534,7 +538,7 @@ cellPositionArray[index]![index2]= this.getCellPositionAtXY(x, y);
             
     public getCellTypeAtXY(x: number, y: number): GeographicMapCellType{
 
-    var cellPosition: GeographicMapCellPosition = this.getCellPositionAtXY(x, y)!;;
+    let cellPosition: GeographicMapCellPosition = this.getCellPositionAtXY(x, y)!;;
     
 
 
@@ -576,6 +580,4 @@ cellPositionArray[index]![index2]= this.getCellPositionAtXY(x, y);
 
 
 }
-
-
 

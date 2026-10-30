@@ -22,6 +22,7 @@
         
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
@@ -34,6 +35,7 @@ import { PathFindingNode } from '../../../../../../../../org/allbinary/media/gra
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -81,7 +83,7 @@ this.maxPathWeight= maxPathWeight;
 
                 //@Throws(Exception.constructor)
             
-    public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
+    public visit(graph: any, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
 }
 
 
@@ -89,14 +91,14 @@ this.maxPathWeight= maxPathWeight;
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
 
-    var startPathFindingNode: PathFindingNode;;
+    let startPathFindingNode: PathFindingNode;;
     
 
 
 
 
                         for (
-    var index: number = startPathFindingNodeList!.size() -1;index >= 0; index--)
+    let index: number = startPathFindingNodeList!.size() -1;index >= 0; index--)
         {
 startPathFindingNode= startPathFindingNodeList!.get(index) as PathFindingNode;
     
@@ -109,7 +111,7 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
 }
 
 
-    public isValid(graphPath: any = {}): boolean{
+    public isValid(graphPath: any): boolean{
 
 
 
@@ -119,7 +121,7 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
 }
 
 
-    public getInvalidReason(graphPath: any = {}): string{
+    public getInvalidReason(graphPath: any): string{
 
 
 
@@ -130,6 +132,4 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
 
 
 }
-
-
 

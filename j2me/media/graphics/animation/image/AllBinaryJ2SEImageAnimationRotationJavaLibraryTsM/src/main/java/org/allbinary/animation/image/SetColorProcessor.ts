@@ -71,5 +71,3 @@ imageModifierUtil!.setColor(originalImage, imageToShow, index, basicColor);
 
 }
 
-
-

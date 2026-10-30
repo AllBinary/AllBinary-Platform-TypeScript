@@ -76,5 +76,3 @@ VirtualKeyboardEventHandler.getInstance()!.addListenerInterface(this);
 
 }
 
-
-

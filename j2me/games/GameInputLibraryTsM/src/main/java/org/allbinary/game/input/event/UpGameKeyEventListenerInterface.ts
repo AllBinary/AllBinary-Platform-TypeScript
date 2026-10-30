@@ -49,9 +49,7 @@ export interface UpGameKeyEventListenerInterface extends EventListenerInterface 
 
                 //@Throws(Exception.constructor)
             
-    onUpGameKeyEvent(gameKeyEvent: GameKeyEvent)
+    onUpGameKeyEvent(gameKeyEvent: GameKeyEvent): void;
 
 }
-
-
 

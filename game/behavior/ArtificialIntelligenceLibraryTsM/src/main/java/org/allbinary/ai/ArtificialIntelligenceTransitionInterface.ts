@@ -40,9 +40,7 @@
 export interface ArtificialIntelligenceTransitionInterface {
         
 
-    transition()
+    transition(): void;
 
 }
-
-
 

@@ -43,9 +43,7 @@ import { EventListenerInterface } from '../../../org/allbinary/logic/util/event/
 export interface AnimationListener extends EventListenerInterface {
         
 
-    onEnd()
+    onEnd(): void;
 
 }
-
-
 

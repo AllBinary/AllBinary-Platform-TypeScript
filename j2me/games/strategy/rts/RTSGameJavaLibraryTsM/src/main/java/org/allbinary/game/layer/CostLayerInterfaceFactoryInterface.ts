@@ -47,9 +47,7 @@ export interface CostLayerInterfaceFactoryInterface extends LayerInterfaceFactor
 
                 //@Throws(Exception.constructor)
             
-    getCost(): number
+    getCost(): number;
 
 }
-
-
 

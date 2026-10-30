@@ -52,19 +52,17 @@ public constructor (){
         }
 
 
-    public runOnSurfaceCreated(renderer: any = {}){
+    public runOnSurfaceCreated(renderer: any){
 }
 
 
-    public runOnSurfaceChanged(renderer: any = {}, width: number, height: number){
+    public runOnSurfaceChanged(renderer: any, width: number, height: number){
 }
 
 
-    public run(renderer: any = {}){
+    public run(renderer: any){
 }
 
 
 }
-
-
 

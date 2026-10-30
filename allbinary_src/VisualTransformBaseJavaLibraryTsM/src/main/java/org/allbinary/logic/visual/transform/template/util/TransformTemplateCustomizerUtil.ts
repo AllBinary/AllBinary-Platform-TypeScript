@@ -28,12 +28,15 @@ import { GLOBALS2 } from '../../../../../../../org/allbinary/globals/GLOBALS2.js
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Replace } from '../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 //not GWT import const Replace
@@ -49,9 +52,11 @@ import { TitleData } from '../../../../../../../org/allbinary/logic/visual/trans
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -111,10 +116,10 @@ private constructor (){
 
             super();
         
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var SPACE: string = CommonSeps.getInstance()!.SPACE;;
+    let SPACE: string = CommonSeps.getInstance()!.SPACE;;
     
 this.CUSTOMIZER_NAME= SPACE +CustomizerTransformInfoData.NAME;
     
@@ -137,13 +142,13 @@ this.GLOBALS_UPDATE= commonStrings!.UPDATE +SPACE;
 
     public getPageNameHack(viewName: string, storeName: string): string{
 
-    var SPACE: string = CommonSeps.getInstance()!.SPACE;;
+    let SPACE: string = CommonSeps.getInstance()!.SPACE;;
     
 
-    var ONE_EMPTY_STRING_ARRAY: string[] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;;
+    let ONE_EMPTY_STRING_ARRAY: string[] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;;
     
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(
                                                 [
@@ -196,12 +201,12 @@ hashMap!.put(
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 
-    var replace: Replace = 
+    let replace: Replace = 
                 null
             ;;
     
 
-    var rootViewName: string = replace.all(viewName)!;;
+    let rootViewName: string = replace.all(viewName)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -222,6 +227,4 @@ hashMap!.put(
 
 
 }
-
-
 

@@ -40,6 +40,7 @@ import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/Ca
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
@@ -58,6 +59,7 @@ import { SimpleGeographicMapCellPositionFactory } from '../../../../org/allbinar
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -131,9 +133,8 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
 
     public paintXY(graphics: Graphics, x: number, y: number){
 
-        try {
-            
-    var waypointBehaviorBase: WaypointBehaviorBase = this.pathFindingLayer!.getWaypointBehavior()!;;
+ try { 
+    let waypointBehaviorBase: WaypointBehaviorBase = this.pathFindingLayer!.getWaypointBehavior()!;;
     
 
                         if(waypointBehaviorBase != 
@@ -142,45 +143,45 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
                         
                                     {
                                     
-    var geographicMapCellHistory: GeographicMapCellHistory = waypointBehaviorBase!.getCurrentGeographicMapCellHistory()!;;
+    let geographicMapCellHistory: GeographicMapCellHistory = waypointBehaviorBase!.getCurrentGeographicMapCellHistory()!;;
     
 
-    var list: BasicArrayList = geographicMapCellHistory!.getTracked()!;;
+    let list: BasicArrayList = geographicMapCellHistory!.getTracked()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
                         if(size > 0)
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
+    let tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;;
+    let geographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;;
     
 
-    var nextPoint: GPoint;;
+    let nextPoint: GPoint;;
     
 
-    var point: GPoint;;
+    let point: GPoint;;
     
 
-    var start: number = size -2;;
+    let start: number = size -2;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size -1; index++)
+    let index: number = 0;index < size -1; index++)
         {
 
                         if(index == start)
@@ -230,18 +231,19 @@ this.linePathAnimation!.paint(graphics, point, nextPoint, tiledLayer);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.putF("Cleared Target", this, CanvasStrings.getInstance()!.PAINT);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -44,15 +44,18 @@ import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BooleanFactory } from '../../../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -118,7 +121,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
 this.point= new Point();
     
 
-    var actionNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.NAME, node.getChildNodes())!;;
+    let actionNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.NAME, node.getChildNodes())!;;
     
 
                         if(actionNode != 
@@ -127,24 +130,24 @@ this.point= new Point();
                         
                                     {
                                     
-    var nodeList: NodeList = actionNode!.getChildNodes()!;;
+    let nodeList: NodeList = actionNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var childNode: Node = nodeList!.item(index)!;;
+    let childNode: Node = nodeList!.item(index)!;;
     
 
                         if(childNode!.getNodeName()!.compareTo(MouseActionScriptInputData.BUTTONS) == 0)
                         
                                     {
                                     
-    var buttons: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let buttons: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.setButtonClicks(Integer.valueOf(buttons)!.intValue());
     
@@ -156,25 +159,25 @@ this.setButtonClicks(Integer.valueOf(buttons)!.intValue());
                         
                                     {
                                     
-    var mouseXNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.MOVE_X, childNode!.getChildNodes())!;;
+    let mouseXNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.MOVE_X, childNode!.getChildNodes())!;;
     
 
-    var mouseXString: string = DomNodeHelper.getTextNodeValue(mouseXNode)!;;
+    let mouseXString: string = DomNodeHelper.getTextNodeValue(mouseXNode)!;;
     
 
-    var mouseXInteger: Integer = Integer.valueOf(mouseXString)!;;
+    let mouseXInteger: Integer = Integer.valueOf(mouseXString)!;;
     
 
-    var mouseYNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.MOVE_Y, childNode!.getChildNodes())!;;
+    let mouseYNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.MOVE_Y, childNode!.getChildNodes())!;;
     
 
-    var mouseYString: string = DomNodeHelper.getTextNodeValue(mouseYNode)!;;
+    let mouseYString: string = DomNodeHelper.getTextNodeValue(mouseYNode)!;;
     
 
-    var mouseYInteger: Integer = Integer.valueOf(mouseYString)!;;
+    let mouseYInteger: Integer = Integer.valueOf(mouseYString)!;;
     
 
-    var newPoint: Point = new Point(mouseXInteger!.intValue(), mouseYInteger!.intValue());;
+    let newPoint: Point = new Point(mouseXInteger!.intValue(), mouseYInteger!.intValue());;
     
 this.setPoint(newPoint);
     
@@ -266,7 +269,7 @@ this.mouseActionScriptInputJPanel!.getMouseActionJDialog()!.setVisible(true);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(MouseActionScriptInputData.BUTTONS, Integer.toString(this.getButtonClicks()));
     
@@ -285,15 +288,15 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = super.toXmlNode(document)!;;
+    let node: Node = super.toXmlNode(document)!;;
     
 
-    var mouseNode: Node = ModDomHelper.createNodeWithValueNodes(document, MouseActionScriptInputData.NAME, this.toHashMap())!;;
+    let mouseNode: Node = ModDomHelper.createNodeWithValueNodes(document, MouseActionScriptInputData.NAME, this.toHashMap())!;;
     
 node.appendChild(mouseNode);
     
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(MouseActionScriptInputData.MOVE_X, Integer.toString(this.getPoint()!.x));
     
@@ -320,12 +323,12 @@ MouseInputAutomationProcessor.process(this);
 
     public log(){
 
-    var buttonStringBuffer: StringMaker = new StringMaker();;
+    let buttonStringBuffer: StringMaker = new StringMaker();;
     
 buttonStringBuffer!.append("1: ");
     
 
-    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
+    let booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
                         if((this.getButtonClicks()&InputEvent.BUTTON1_MASK) != 0)
@@ -382,6 +385,4 @@ this.logUtil!.putF("Input Type: " +this.getInputRobotInterface()!.getName() +" P
 
 
 }
-
-
 

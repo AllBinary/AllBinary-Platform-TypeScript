@@ -142,7 +142,7 @@ this.collided= true;
                         
                                     {
                                     
-    var layerInterface: AllBinaryLayer = collidableInterfaceCompositeInterface as AllBinaryLayer;;
+    let layerInterface: AllBinaryLayer = collidableInterfaceCompositeInterface as AllBinaryLayer;;
     
 
                         if(ownerLayer!.getGroupInterface()[0] != layerInterface!.getGroupInterface()[0])
@@ -213,6 +213,4 @@ this.collided= collided;
 
 
 }
-
-
 

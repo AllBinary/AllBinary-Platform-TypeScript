@@ -25,9 +25,11 @@ import { StoreFront } from '../../../../../../../../org/allbinary/business/conte
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -105,11 +107,11 @@ this.name= name;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
-stringBuffer!.append(PaymentGatewayPrimaryKey.constructor.toString()!);
+stringBuffer!.append(PaymentGatewayPrimaryKey.toString()!);
     
-stringBuffer!.append(StoreFront.constructor.toString()!);
+stringBuffer!.append(StoreFront.toString()!);
     
 stringBuffer!.append(" =");
     
@@ -117,7 +119,7 @@ stringBuffer!.append(this.getStoreName());
     
 stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
-stringBuffer!.append(PaymentGateway.constructor.toString()!);
+stringBuffer!.append(PaymentGateway.toString()!);
     
 stringBuffer!.append("=");
     
@@ -133,6 +135,4 @@ stringBuffer!.append(this.getName());
 
 
 }
-
-
 

@@ -50,11 +50,9 @@ export interface GameInputInterface extends NamedInterface {
 
                 //@Throws(Exception.constructor)
             
-    processInput(layerManager: AllBinaryLayerManager)
+    processInput(layerManager: AllBinaryLayerManager): void;
 
-    initInputProcessors()
+    initInputProcessors(): void;
 
 }
-
-
 

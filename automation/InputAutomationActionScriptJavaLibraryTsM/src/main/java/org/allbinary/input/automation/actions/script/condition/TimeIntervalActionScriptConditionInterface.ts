@@ -43,11 +43,9 @@ import { TimeDelayHelper } from '../../../../../../../org/allbinary/time/TimeDel
 export interface TimeIntervalActionScriptConditionInterface {
         
 
-    getTimeDelayHelper(): TimeDelayHelper
+    getTimeDelayHelper(): TimeDelayHelper;
 
-    log()
+    log(): void;
 
 }
-
-
 

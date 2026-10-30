@@ -72,5 +72,3 @@ this.setURIResolver(new StoreUriResolver(this.getTransformInfoInterface(), this.
 
 }
 
-
-

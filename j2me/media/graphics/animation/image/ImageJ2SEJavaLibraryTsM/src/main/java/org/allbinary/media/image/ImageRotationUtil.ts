@@ -30,6 +30,7 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImmutableImage.js';
 //not GWT import const J2SEImmutableImage
@@ -91,13 +92,13 @@ private constructor (){
                         
                                     {
                                     
-    var j2seImage: J2SEMutableImage = image as J2SEMutableImage;;
+    let j2seImage: J2SEMutableImage = image as J2SEMutableImage;;
     
 
-    var newBufferedImage: BufferedImage = j2seImage!.getImage() as BufferedImage;;
+    let newBufferedImage: BufferedImage = j2seImage!.getImage() as BufferedImage;;
     
 
-    var originalAwtImage: java.awt.Image = 
+    let originalAwtImage: java.awt.Image = 
                 null
             ;;
     
@@ -106,7 +107,7 @@ private constructor (){
                         
                                     {
                                     
-    var originalJ2SEImage: J2SEMutableImage = originalImage as J2SEMutableImage;;
+    let originalJ2SEImage: J2SEMutableImage = originalImage as J2SEMutableImage;;
     
 originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
     
@@ -115,7 +116,7 @@ originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
                                 
                         else {
                             
-    var originalJ2SEImage: J2SEImmutableImage = originalImage as J2SEImmutableImage;;
+    let originalJ2SEImage: J2SEImmutableImage = originalImage as J2SEImmutableImage;;
     
 originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
     
@@ -140,14 +141,14 @@ this.imageJ2SERotationUtil!.rotateImage(originalAwtImage, newBufferedImage, tota
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 
-    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
+    let image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
     
 
                         if(image.isMutable())
                         
                                     {
                                     
-    var originalAwtImage: java.awt.Image = 
+    let originalAwtImage: java.awt.Image = 
                 null
             ;;
     
@@ -156,7 +157,7 @@ this.imageJ2SERotationUtil!.rotateImage(originalAwtImage, newBufferedImage, tota
                         
                                     {
                                     
-    var originalJ2SEImage: J2SEMutableImage = originalImage as J2SEMutableImage;;
+    let originalJ2SEImage: J2SEMutableImage = originalImage as J2SEMutableImage;;
     
 originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
     
@@ -165,7 +166,7 @@ originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
                                 
                         else {
                             
-    var originalJ2SEImage: J2SEImmutableImage = originalImage as J2SEImmutableImage;;
+    let originalJ2SEImage: J2SEImmutableImage = originalImage as J2SEImmutableImage;;
     
 originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
     
@@ -173,13 +174,13 @@ originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
                         }
                             
 
-    var j2seImage: J2SEMutableImage = image as J2SEMutableImage;;
+    let j2seImage: J2SEMutableImage = image as J2SEMutableImage;;
     
 
-    var newBufferedImage: BufferedImage = j2seImage!.getImage() as BufferedImage;;
+    let newBufferedImage: BufferedImage = j2seImage!.getImage() as BufferedImage;;
     
 
-    var bufferedImage: BufferedImage = this.imageJ2SERotationUtil!.createRotatedImage(originalAwtImage, newBufferedImage, rotationInDegrees)!;;
+    let bufferedImage: BufferedImage = this.imageJ2SERotationUtil!.createRotatedImage(originalAwtImage, newBufferedImage, rotationInDegrees)!;;
     
 
 
@@ -203,6 +204,4 @@ originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
 
 
 }
-
-
 

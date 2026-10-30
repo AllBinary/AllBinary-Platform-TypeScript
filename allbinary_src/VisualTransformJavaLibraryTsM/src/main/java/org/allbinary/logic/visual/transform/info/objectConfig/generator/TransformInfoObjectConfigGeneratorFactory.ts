@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { InputOutputTypeData } from '../../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
 //not GWT import const InputOutputTypeData
@@ -33,6 +34,7 @@ import { TransformInfoInterface } from '../../../../../../../../org/allbinary/lo
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -67,8 +69,15 @@ export class TransformInfoObjectConfigGeneratorFactory
         
 
     private static readonly instance: TransformInfoObjectConfigGeneratorFactory = new TransformInfoObjectConfigGeneratorFactory();
-
-    public static getInstance(): TransformInfoObjectConfigGeneratorFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): TransformInfoObjectConfigGeneratorFactory{
 
 
 
@@ -88,16 +97,16 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator{
+    public getInstance$overload2(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator{
 
-    var type: string = transformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName() as string;;
+    let type: string = transformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName() as string;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF("Generating Instance for type: " +type, this, commonStrings!.GET_INSTANCE);
     
@@ -145,6 +154,4 @@ this.logUtil!.putF("Generating Instance for type: " +type, this, commonStrings!.
 
 
 }
-
-
 

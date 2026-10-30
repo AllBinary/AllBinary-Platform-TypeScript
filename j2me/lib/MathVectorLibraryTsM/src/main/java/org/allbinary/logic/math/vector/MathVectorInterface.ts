@@ -43,13 +43,11 @@ import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecim
 export interface MathVectorInterface {
         
 
-    getDirection(): number
+    getDirection(): number;
 
-    getMagnitude(): BasicDecimal
+    getMagnitude(): BasicDecimal;
 
-    getResult(): BasicDecimal
+    getResult(): BasicDecimal;
 
 }
-
-
 

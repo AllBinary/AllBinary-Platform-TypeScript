@@ -22,12 +22,15 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
 //not GWT import const NodeList
@@ -60,17 +63,17 @@ export class DomNodeListHelper
 
     public static getVector(nodeList: NodeList): BasicArrayList{
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = nodeList!.getLength()!;;
+    let size: number = nodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 vector.add(DomNodeHelper.getTextNodeValue(nodeList!.item(index)));
     
@@ -86,6 +89,4 @@ vector.add(DomNodeHelper.getTextNodeValue(nodeList!.item(index)));
 
 
 }
-
-
 

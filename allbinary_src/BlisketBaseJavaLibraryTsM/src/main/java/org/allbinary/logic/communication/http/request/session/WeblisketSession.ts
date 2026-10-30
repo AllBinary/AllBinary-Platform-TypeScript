@@ -118,10 +118,10 @@ public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletR
 
             super();
         
-    var propertiesHashMap: HashMap<any, any> = hashMap;;
+    let propertiesHashMap: HashMap<any, any> = hashMap;;
     
 
-    var request: HttpServletRequest = httpServletRequest;;
+    let request: HttpServletRequest = httpServletRequest;;
     
 this.session= request.getSession(true);
     
@@ -166,8 +166,15 @@ this.session.setAttribute(PaymentGatewayData.NAME.toString(), value);
     
 }
 
-
-    public setAuthenticated(){
+setAuthenticated(...args: any[]): any {
+   
+    if (args.length === 0) return this.setAuthenticated$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'boolean') return this.setAuthenticated$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: setAuthenticated'); }
+  
+    public setAuthenticated$overload1(){
 this.session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.TRUE_STRING);
     
 }
@@ -281,7 +288,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
             
     public getRole(): UserRole{
 
-    var userRole: UserRole = this.session.getAttribute(UserRoleData.NAME.toString()) as UserRole;;
+    let userRole: UserRole = this.session.getAttribute(UserRoleData.NAME.toString()) as UserRole;;
     
 
                         if(userRole != 
@@ -315,17 +322,17 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
             
     public getOrder(): OrderInterface{
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getStoreName())!;;
     
 
-    var basketName: string = storeFrontInterface!.getBasketName()!;;
+    let basketName: string = storeFrontInterface!.getBasketName()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(basketName))
                         
                                     {
                                     
-    var orderInterface: OrderInterface = this.session.getAttribute(basketName) as OrderInterface;;
+    let orderInterface: OrderInterface = this.session.getAttribute(basketName) as OrderInterface;;
     
 
                         if(orderInterface == 
@@ -361,7 +368,7 @@ this.session.setAttribute(basketName, orderInterface);
 }
 
 
-    public setAuthenticated(value: boolean){
+    public setAuthenticated$overload2(value: boolean){
 this.session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.FALSE_STRING);
     
 }
@@ -401,10 +408,10 @@ this.session.removeAttribute(UserData.USERNAME);
 
     public removeBasket(){
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getStoreName())!;;
     
 
-    var basketName: string = storeFrontInterface!.getBasketName()!;;
+    let basketName: string = storeFrontInterface!.getBasketName()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(basketName))
@@ -419,6 +426,4 @@ this.session.removeAttribute(UserData.USERNAME);
 
 
 }
-
-
 

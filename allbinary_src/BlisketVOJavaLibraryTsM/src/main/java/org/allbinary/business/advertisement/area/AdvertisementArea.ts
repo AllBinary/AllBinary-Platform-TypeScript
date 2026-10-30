@@ -89,10 +89,10 @@ this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
 this.description= hashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION) as string;
     
 
-    var constraintsDomString: string = hashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS) as string;;
+    let constraintsDomString: string = hashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS) as string;;
     
 
-    var document: Document = DomDocumentHelper.create(constraintsDomString)!;;
+    let document: Document = DomDocumentHelper.create(constraintsDomString)!;;
     
 this.advertisementAreaConstraintsInterface= new AdvertisementAreaConstraints(document);
     
@@ -182,6 +182,4 @@ this.campaign= campaign;
 
 
 }
-
-
 

@@ -32,9 +32,11 @@ import { Processor } from '../../../org/allbinary/canvas/Processor.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -86,8 +88,7 @@ this.processor= processor;
 
     public run(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
+ try { this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 this.midlet.destroyAppInRunnable(false, this.isProgress);
     
@@ -99,30 +100,33 @@ this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.R
     
 this.processor.process();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 
-        try {
-            this.processor.process();
+ try { this.processor.process();
     
-
-                //: 
-} catch(e2) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e2 = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
+
+ }
+   }
+ 
 }
 
-}
 
 }
-
-
-}
-
-
 

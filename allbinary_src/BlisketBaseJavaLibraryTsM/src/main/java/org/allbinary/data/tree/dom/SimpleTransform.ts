@@ -90,13 +90,13 @@ this.dataFilePath= dataFilePath;
             
     public transform(): string{
 
-    var inputStream: AbFileLocalInputStream = new AbFileLocalInputStream(AbFile.createAbFileFromAbPath(this.xsltFilePath));;
+    let inputStream: AbFileLocalInputStream = new AbFileLocalInputStream(AbFile.createAbFileFromAbPath(this.xsltFilePath));;
     
 
-    var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(AbFile.createAbFileFromAbPath(this.dataFilePath)))!;;
+    let document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(AbFile.createAbFileFromAbPath(this.dataFilePath)))!;;
     
 
-    var result: string = XslHelper.getInstance()!.translate(new StreamSource(inputStream), new StreamSource(new StringBufferInputStream(XmlDocumentHelper.toString(document))))!;;
+    let result: string = XslHelper.getInstance()!.translate(new StreamSource(inputStream), new StreamSource(new StringBufferInputStream(XmlDocumentHelper.toString(document))))!;;
     
 
 
@@ -108,6 +108,4 @@ this.dataFilePath= dataFilePath;
 
 
 }
-
-
 

@@ -36,9 +36,11 @@ import { AbFileItemFactory } from '../../../../../../../org/allbinary/logic/comm
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { FileItemIterator } from '../../../../../../../org/apache/commons/fileupload/FileItemIterator.js';
 //not GWT import const FileItemIterator
@@ -103,26 +105,25 @@ private constructor (){
             
     public getFileItemStreamList(httpServletRequest: HttpServletRequest): List{
 
-        try {
-            
-    var fileUpload: AbFileUpload = new AbFileUpload(new AbFileItemFactory());;
+ try { 
+    let fileUpload: AbFileUpload = new AbFileUpload(new AbFileItemFactory());;
     
 
-    var iterator: FileItemIterator = fileUpload!.getItemIterator(httpServletRequest)!;;
+    let iterator: FileItemIterator = fileUpload!.getItemIterator(httpServletRequest)!;;
     
 
-    var items: List = new ArrayList();;
+    let items: List = new ArrayList();;
     
 
         while(iterator.hasNext())
         {
 
-    var fileItemStream: FileItemStream = iterator.next()!;;
+    let fileItemStream: FileItemStream = iterator.next()!;;
     
 HttpFileUploadUtil.log(fileItemStream);
     
 
-    var fileItem: AbFileItem = new AbFileItem(fileItemStream!.getName(), fileItemStream!.getFieldName(), FileItemUtil.getInstance()!.getBytes(fileItemStream));;
+    let fileItem: AbFileItem = new AbFileItem(fileItemStream!.getName(), fileItemStream!.getFieldName(), FileItemUtil.getInstance()!.getBytes(fileItemStream));;
     
 items.add(fileItem);
     
@@ -134,16 +135,17 @@ items.add(fileItem);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return items;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
     
@@ -155,8 +157,10 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -164,9 +168,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
             
     public getFileItemList(httpServletRequest: HttpServletRequest): List{
 
-        try {
-            
-    var abFileUpload: AbFileUpload = new AbFileUpload(new AbFileItemFactory());;
+ try { 
+    let abFileUpload: AbFileUpload = new AbFileUpload(new AbFileItemFactory());;
     
 
 
@@ -174,12 +177,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return abFileUpload!.parseRequest(httpServletRequest);;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
@@ -195,12 +199,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -96,30 +96,30 @@ this.setCurrentStatePaintable(this.getMainDemoStatePaintable());
 
     setColor(basicColor: BasicColor){
 
-    var mainGameDemoStatePaintable: MainGameDemoStatePaintable = this.getMainDemoStatePaintable() as MainGameDemoStatePaintable;;
+    let mainGameDemoStatePaintable: MainGameDemoStatePaintable = this.getMainDemoStatePaintable() as MainGameDemoStatePaintable;;
     
 
-    var formPaintable: FormPaintable = mainGameDemoStatePaintable!.getMenuPaintableInterface() as FormPaintable;;
+    let formPaintable: FormPaintable = mainGameDemoStatePaintable!.getMenuPaintableInterface() as FormPaintable;;
     
 
-    var scrollSelectionForm: ScrollSelectionForm = formPaintable!.getForm() as ScrollSelectionForm;;
+    let scrollSelectionForm: ScrollSelectionForm = formPaintable!.getForm() as ScrollSelectionForm;;
     
 mainGameDemoStatePaintable!.getOwnershipPaintableInterface()!.setBasicColorP(basicColor);
     
 scrollSelectionForm!.setButtonBasicColor(basicColor);
     
 
-    var item: ABTextItem;;
+    let item: ABTextItem;;
     
 
-    var stringComponent: ABStringComponent;;
+    let stringComponent: ABStringComponent;;
     
 
 
 
 
                         for (
-    var index: number = scrollSelectionForm!.size() -1;index >= 0; index--)
+    let index: number = scrollSelectionForm!.size() -1;index >= 0; index--)
         {
 item= scrollSelectionForm!.get(index) as ABTextItem;
     
@@ -142,6 +142,4 @@ stringComponent= item.getLabelStringComponent();
 
 
 }
-
-
 

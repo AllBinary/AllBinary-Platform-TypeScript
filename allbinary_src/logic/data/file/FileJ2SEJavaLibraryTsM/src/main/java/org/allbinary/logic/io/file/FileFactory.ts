@@ -49,8 +49,17 @@ export class FileFactory
         
 
     private static readonly instance: FileFactory = new FileFactory();
-
-    public static getInstance(): FileFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.getInstance$overload3(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): FileFactory{
 
 
 
@@ -62,7 +71,7 @@ export class FileFactory
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(filePath: string): AbFile{
+    public getInstance$overload2(filePath: string): AbFile{
 
 
 
@@ -74,7 +83,7 @@ export class FileFactory
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(file: AbFile, childFilePath: string): AbFile{
+    public getInstance$overload3(file: AbFile, childFilePath: string): AbFile{
 
 
 
@@ -88,7 +97,7 @@ export class FileFactory
             
     public isFile(path: string): boolean{
 
-    var file: AbFile = AbFile.createAbFile(path)!;;
+    let file: AbFile = AbFile.createAbFile(path)!;;
     
 
                         if(file.exists())
@@ -117,6 +126,4 @@ export class FileFactory
 
 
 }
-
-
 

@@ -220,5 +220,3 @@ this.changeColorP= this.changeBasicColorP!.intValue();
 
 }
 
-
-

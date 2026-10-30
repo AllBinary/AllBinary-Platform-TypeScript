@@ -36,6 +36,7 @@ import { InputAutomationModuleFactoryInterface } from '../../../../../../org/all
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { OSGIServiceInterface } from '../../../../../../org/allbinary/osgi/OSGIServiceInterface.js';
 //not GWT import const OSGIServiceInterface
@@ -45,6 +46,7 @@ import { OSGIServiceVisitorInterface } from '../../../../../../org/allbinary/osg
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -79,8 +81,15 @@ public constructor (){
             super();
         }
 
-
-    public visit(anyType: any = {}): any{
+visit(...args: any[]): any {
+   
+    if (args.length === 1) return this.visit$overload1(args[0]);
+   
+    if (args.length === 1) return this.visit$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: visit'); }
+  
+    public visit$overload1(anyType: any): any{
 
 
 
@@ -90,21 +99,20 @@ public constructor (){
 }
 
 
-    public visit(osgiServiceInterface: OSGIServiceInterface): Boolean{
+    public visit$overload2(osgiServiceInterface: OSGIServiceInterface): Boolean{
 
-        try {
-            
-    var inputAutomationModuleService: InputAutomationModuleService = osgiServiceInterface as InputAutomationModuleService;;
+ try { 
+    let inputAutomationModuleService: InputAutomationModuleService = osgiServiceInterface as InputAutomationModuleService;;
     
 
-    var inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[] = inputAutomationModuleService!.getInputAutomationModuleInterfaceArray()!;;
+    let inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[] = inputAutomationModuleService!.getInputAutomationModuleInterfaceArray()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < inputAutomationModuleInterfaceArray!.length; index++)
+    let index: number = 0;index < inputAutomationModuleInterfaceArray!.length; index++)
         {
 InputAutomationJFrame.getInstance()!.onAdd(InputAutomationConfigurationUtil.getChangeEvent(inputAutomationModuleInterfaceArray[index]!));
     
@@ -114,26 +122,27 @@ InputAutomationJFrame.getInstance()!.onAdd(InputAutomationConfigurationUtil.getC
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "visit", e);
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

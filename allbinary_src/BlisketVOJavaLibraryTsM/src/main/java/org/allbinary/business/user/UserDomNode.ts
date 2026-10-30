@@ -39,6 +39,7 @@ import { ModDomHelper } from '../../../../org/allbinary/data/tree/dom/ModDomHelp
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Document } from '../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -86,10 +87,10 @@ public constructor (dataMappingInterface: TableMappingInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
-    var hashMap: HashMap<any, any> = this.dataMappingInterface!.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.dataMappingInterface!.toHashMap()!;;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, EMPTY_STRING);
     
@@ -131,6 +132,4 @@ hashMap!.put(UserData.PASSWORD, EMPTY_STRING);
 
 
 }
-
-
 

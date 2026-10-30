@@ -24,6 +24,7 @@
         
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 
 
@@ -66,6 +67,4 @@ export class TableDataFactory
     public readonly ZERO_STRING: string = CommonPhoneStrings.getInstance()!.ZERO;
 
 }
-
-
 

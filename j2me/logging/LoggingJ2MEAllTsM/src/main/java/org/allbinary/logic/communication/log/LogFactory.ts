@@ -22,9 +22,11 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -54,10 +56,10 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
 
     /*actual*/ public static getInstanceD(): Log{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var nullUtil: NullUtil = NullUtil.getInstance()!;;
+    let nullUtil: NullUtil = NullUtil.getInstance()!;;
     
 
 
@@ -68,7 +70,7 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
 }
 
 
-    /*actual*/ public static getInstanceNoF(specialMessage: string, anyType: any = {}, exception: any = {}): Log{
+    /*actual*/ public static getInstanceNoF(specialMessage: string, anyType: any, exception: any): Log{
 
 
 
@@ -78,7 +80,7 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
 }
 
 
-    /*actual*/ public static getInstance(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}): Log{
+    /*actual*/ public static getInstance(specialMessage: string, anyType: any, functionName: string, exception: any): Log{
 
 
 
@@ -88,9 +90,9 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
 }
 
 
-    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
+    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any, functionName: string): Log{
 
-    var nullUtil: NullUtil = NullUtil.getInstance()!;;
+    let nullUtil: NullUtil = NullUtil.getInstance()!;;
     
 
 
@@ -102,6 +104,4 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
 
 
 }
-
-
 

@@ -31,9 +31,11 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringUtils } from '../../../../org/apache/commons/lang3/StringUtils.js';
 //not GWT import const StringUtils
@@ -76,7 +78,7 @@ export class CategoryUtil
 
     public static getPathLevel(categoryPath: AbPath): number{
 
-    var count: number = StringUtils.countMatches(categoryPath!.toString(), AbPathData.getInstance()!.SEPARATOR)!;;
+    let count: number = StringUtils.countMatches(categoryPath!.toString(), AbPathData.getInstance()!.SEPARATOR)!;;
     
 
 
@@ -90,10 +92,10 @@ export class CategoryUtil
 
     public static getNameFromNode(node: Node): string{
 
-    var attributes: NamedNodeMap = node.getAttributes()!;;
+    let attributes: NamedNodeMap = node.getAttributes()!;;
     
 
-    var attrNode: Attr = attributes.getNamedItem(CategoryData.getInstance()!.LABEL) as Attr;;
+    let attrNode: Attr = attributes.getNamedItem(CategoryData.getInstance()!.LABEL) as Attr;;
     
 
                         if(attrNode != 
@@ -112,7 +114,7 @@ export class CategoryUtil
                                 
                         else {
                             
-    var labelNode: Node = DomSearchHelper.getNodeNoThrow(CategoryData.getInstance()!.LABEL, node.getChildNodes())!;;
+    let labelNode: Node = DomSearchHelper.getNodeNoThrow(CategoryData.getInstance()!.LABEL, node.getChildNodes())!;;
     
 
                         if(labelNode != 
@@ -148,6 +150,4 @@ private constructor (){
 
 
 }
-
-
 

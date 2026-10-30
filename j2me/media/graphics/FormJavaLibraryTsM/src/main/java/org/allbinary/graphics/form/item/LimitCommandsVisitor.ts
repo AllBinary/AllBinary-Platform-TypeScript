@@ -64,19 +64,19 @@ public constructor (){
 
             super();
         
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 this.isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_WIDTH) || (!displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_HEIGHT);
     
 }
 
 
-    public visit(anyType: any = {}): any{
+    public visit(anyType: any): any{
 
-    var command: Command = anyType as Command;;
+    let command: Command = anyType as Command;;
     
 
-    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
+    let booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
                         if(this.isNotSmallDisplay || command.getPriority() == 1 || command == GameCommandsFactory.getInstance()!.EXIT_COMMAND || command == GameCommandsFactory.getInstance()!.EXIT_WITHOUT_PROGRESS_COMMAND)
@@ -105,6 +105,4 @@ this.isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight
 
 
 }
-
-
 

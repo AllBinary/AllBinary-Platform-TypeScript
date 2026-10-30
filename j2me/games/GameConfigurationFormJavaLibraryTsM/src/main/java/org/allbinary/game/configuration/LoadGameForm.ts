@@ -57,12 +57,15 @@ import { MEUtil } from '../../../../org/allbinary/logic/MEUtil.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -107,7 +110,7 @@ this.initCommands(commandListener);
 
     public initCommands(cmdListener: CommandListener){
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
+    let gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 this.removeAllCommands();
     
@@ -126,7 +129,7 @@ this.setCommandListener(cmdListener);
             
     public update(){
 
-    var list: BasicArrayList = GamePersistanceSingleton.getInstance()!.getIds()!;;
+    let list: BasicArrayList = GamePersistanceSingleton.getInstance()!.getIds()!;;
     
 this.deleteAll();
     
@@ -156,7 +159,7 @@ super.update();
 
     add(list: BasicArrayList, name: string, option: number){
 
-    var choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;;
+    let choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;;
     
 
                         if(list.size() > 0)
@@ -174,26 +177,26 @@ this.meUtil!.appendItem(this, choiceGroup);
 
     getChoiceGroup(list: BasicArrayList, name: string, option: number): ChoiceGroup{
 
-    var METHOD_NAME: string = "getChoiceGroup";;
+    let METHOD_NAME: string = "getChoiceGroup";;
     
 
-    var ADDING_CHOICE: string = "Adding Choice: ";;
+    let ADDING_CHOICE: string = "Adding Choice: ";;
     
 
-    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullImage.NULL_IMAGE_ARRAY);;
+    let choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullImage.NULL_IMAGE_ARRAY);;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var anyType: any = list.objectArray[index]!;;
+    let anyType: any = list.objectArray[index]!;;
     
 this.logUtil!.putF(new StringMaker().append(ADDING_CHOICE)!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
     
@@ -216,7 +219,7 @@ choiceGroup!.append(anyType!.toString(), NullImage.NULL_IMAGE);
                         
                                     {
                                     
-    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;;
+    let choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;;
     
 
 
@@ -246,10 +249,10 @@ choiceGroup!.append(anyType!.toString(), NullImage.NULL_IMAGE);
                         
                                     {
                                     
-    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;;
+    let choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;;
     
 
-    var value: number = Integer.valueOf(choiceGroup!.getString(choiceGroup!.getSelectedIndex()))!.intValue()!;;
+    let value: number = Integer.valueOf(choiceGroup!.getString(choiceGroup!.getSelectedIndex()))!.intValue()!;;
     
 
 
@@ -274,6 +277,4 @@ choiceGroup!.append(anyType!.toString(), NullImage.NULL_IMAGE);
 
 
 }
-
-
 

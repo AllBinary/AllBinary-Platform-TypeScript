@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
@@ -62,23 +64,21 @@ export interface TransformInfoEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(Exception.constructor)
             
-    get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface
+    get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface;
 
                 //@Throws(Exception.constructor)
             
-    getObjectConfigs(storeName: string): BasicArrayList
+    getObjectConfigs(storeName: string): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    getNames(storeName: string): BasicArrayList
+    getNames(storeName: string): BasicArrayList;
 
-    delete(name: string)
+    delete(name: string): void;
 
-    insert(values: BasicArrayList)
+    insert(values: BasicArrayList): void;
 
-    update(updatedValues: HashMap<any, any>)
+    update(updatedValues: HashMap<any, any>): void;
 
 }
-
-
 

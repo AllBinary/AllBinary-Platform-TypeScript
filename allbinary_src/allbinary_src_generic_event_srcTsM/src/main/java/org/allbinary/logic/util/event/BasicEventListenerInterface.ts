@@ -44,5 +44,3 @@ export interface BasicEventListenerInterface extends EventListenerInterface {
 
 }
 
-
-

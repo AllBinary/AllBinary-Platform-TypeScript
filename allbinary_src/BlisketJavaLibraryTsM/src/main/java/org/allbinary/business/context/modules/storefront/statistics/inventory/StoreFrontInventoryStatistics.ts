@@ -31,9 +31,11 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
@@ -52,6 +54,7 @@ import { InventoryEntityInterface } from '../../../../../../../../org/allbinary/
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 
 
@@ -91,31 +94,31 @@ public constructor (storeFrontInterface: StoreFrontInterface){
         this.totalInventorySaleValueMoney= new Money();
     
 
-    var inventoryEntityInterface: InventoryEntityInterface = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
+    let inventoryEntityInterface: InventoryEntityInterface = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var itemVector: BasicArrayList = inventoryEntityInterface!.getItems(storeFrontInterface)!;;
+    let itemVector: BasicArrayList = inventoryEntityInterface!.getItems(storeFrontInterface)!;;
     
 
-    var size: number = itemVector!.size()!;;
+    let size: number = itemVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var itemInterface: ItemInterface = itemVector!.get(index) as ItemInterface;;
+    let itemInterface: ItemInterface = itemVector!.get(index) as ItemInterface;;
     
 
-    var numberInStock: number = Integer.valueOf(itemInterface!.getNumber())!.intValue()!;;
+    let numberInStock: number = Integer.valueOf(itemInterface!.getNumber())!.intValue()!;;
     
 this.totalNumberOfItems= this.totalNumberOfItems +numberInStock;
     
 
-    var itemPriceMoney: Money = itemInterface!.getPrice()!;;
+    let itemPriceMoney: Money = itemInterface!.getPrice()!;;
     
 itemPriceMoney!.multiply(numberInStock);
     
@@ -148,7 +151,7 @@ this.totalInventorySaleValueMoney!.add(itemPriceMoney!.toString());
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.NUMBEROFITEMS, this.getNumber()!.toString());
     
@@ -184,6 +187,4 @@ hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.TOTALVALUE, this.g
 
 
 }
-
-
 

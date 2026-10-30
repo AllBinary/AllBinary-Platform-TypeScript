@@ -28,15 +28,19 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -112,7 +116,7 @@ public constructor (poolName: string, numThreads: number, priority: number){
                                 
                         else {
                             
-    var runnable: Runnable = this.getTask()!;;
+    let runnable: Runnable = this.getTask()!;;
     
 
                         if(runnable == this.NULL_RUNNABLE)
@@ -150,7 +154,7 @@ this.currentPriorityRunnable!.run();
             
     public runATask(){
 
-    var runnable: Runnable = this.getTask()!;;
+    let runnable: Runnable = this.getTask()!;;
     
 
                         if(runnable != 
@@ -199,20 +203,20 @@ this.taskQueue= new BasicArrayListD();
                         
                                     {
                                     
-    var size: number = this.taskQueue!.size()!;;
+    let size: number = this.taskQueue!.size()!;;
     
 
-    var runnable: PriorityRunnable;;
+    let runnable: PriorityRunnable;;
     
 
-    var lowerPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;;
+    let lowerPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 runnable= this.taskQueue!.get(index) as PriorityRunnable;
     
@@ -241,7 +245,7 @@ break;
                                 
                         else {
                             
-    var index: number = this.taskQueue!.indexOf(lowerPriorityRunnable)!;;
+    let index: number = this.taskQueue!.indexOf(lowerPriorityRunnable)!;;
     
 this.taskQueue!.addAt(index, task);
     
@@ -419,6 +423,4 @@ this.currentPriorityRunnable= this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
 
 
 }
-
-
 

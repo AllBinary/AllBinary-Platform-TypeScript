@@ -28,6 +28,7 @@ import { CategoryInterface } from '../../../../../org/allbinary/business/categor
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
 //not GWT import const Directory
@@ -37,9 +38,11 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -94,8 +97,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
 
     public insert(parentCategoryInterface: CategoryInterface, newChildCategoryInterface: CategoryInterface){
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -111,7 +113,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
                                     parentCategoryInterface!.addChild(newChildCategoryInterface);
     
 
-    var directoryToBeCreatedAbPath: AbPath = new AbPath(newChildCategoryInterface!.getRootFilePath()!.toString() +newChildCategoryInterface!.getPath()!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let directoryToBeCreatedAbPath: AbPath = new AbPath(newChildCategoryInterface!.getRootFilePath()!.toString() +newChildCategoryInterface!.getPath()!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 this.directory.create(directoryToBeCreatedAbPath);
     
@@ -134,10 +136,11 @@ this.save(newChildCategoryInterface);
                              else 
                         if()
                         
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -147,23 +150,24 @@ this.save(newChildCategoryInterface);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public delete(parentCategoryInterface: CategoryInterface, existingChildCategoryInterface: CategoryInterface){
 
-        try {
-            
+ try { 
                         if(parentCategoryInterface!.isValid().valueOf())
                         
                                     {
                                     parentCategoryInterface!.addChild(existingChildCategoryInterface);
     
 
-    var directoryToBeDeletedAbPath: AbPath = new AbPath(existingChildCategoryInterface!.getRootFilePath()!.toString() +existingChildCategoryInterface!.getPath()!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let directoryToBeDeletedAbPath: AbPath = new AbPath(existingChildCategoryInterface!.getRootFilePath()!.toString() +existingChildCategoryInterface!.getPath()!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 this.delete(existingChildCategoryInterface);
     
@@ -179,10 +183,11 @@ this.directory.remove(directoryToBeDeletedAbPath);
                              else 
                         if()
                         
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -192,12 +197,12 @@ this.directory.remove(directoryToBeDeletedAbPath);
 
                                     }
                                 
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

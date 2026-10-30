@@ -77,7 +77,7 @@ public constructor (label: string){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(GenericProfileActionScriptOutputData.NAME)!;;
+    let node: Node = document.createElement(GenericProfileActionScriptOutputData.NAME)!;;
     
 
 
@@ -89,6 +89,4 @@ public constructor (label: string){
 
 
 }
-
-
 

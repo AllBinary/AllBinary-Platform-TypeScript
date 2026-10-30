@@ -141,17 +141,15 @@ export class OpenGLESStrings
                     
 }
 
-
-    public stringWidth(string: string): number{
-
-
-
-                            throw new RuntimeException();
-                    
-}
-
-
-    public stringWidth(string: string, offset: number, len: number): number{
+stringWidth(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.stringWidth$overload1(args[0]);
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'number' && typeof args[2] === 'number') return this.stringWidth$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: stringWidth'); }
+  
+    public stringWidth$overload1(string: string): number{
 
 
 
@@ -160,7 +158,14 @@ export class OpenGLESStrings
 }
 
 
+    public stringWidth$overload2(string: string, offset: number, len: number): number{
+
+
+
+                            throw new RuntimeException();
+                    
 }
 
 
+}
 

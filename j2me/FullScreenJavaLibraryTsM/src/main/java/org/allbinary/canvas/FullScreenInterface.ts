@@ -42,19 +42,17 @@
 export interface FullScreenInterface {
         
 
-    isFullScreenMode(): boolean
+    isFullScreenMode(): boolean;
 
-    setFullScreenMode(mode: boolean)
-
-                //@Throws(Exception.constructor)
-            
-    stopWaiting()
+    setFullScreenMode(mode: boolean): void;
 
                 //@Throws(Exception.constructor)
             
-    waitOnNotify(wait: number)
+    stopWaiting(): void;
+
+                //@Throws(Exception.constructor)
+            
+    waitOnNotify(wait: number): void;
 
 }
-
-
 

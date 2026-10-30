@@ -39,6 +39,7 @@ import { File } from '../../../../java/io/File.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { FileWrapperUtil } from '../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
 //not GWT import const FileWrapperUtil
@@ -57,6 +58,7 @@ import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -119,7 +121,7 @@ initComponents();
 this.imageProcessorInput= imageProcessorInput;
     
 
-    var numberStringArray: string[] = new Array(101);;
+    let numberStringArray: string[] = new Array(101);;
     
 numberStringArray[0]= Integer.toString( -1);
     
@@ -128,7 +130,7 @@ numberStringArray[0]= Integer.toString( -1);
 
 
                         for (
-    var index: number = 1;index < 100; index++)
+    let index: number = 1;index < 100; index++)
         {
 numberStringArray[index]= index.toString();
     
@@ -137,7 +139,7 @@ numberStringArray[index]= index.toString();
 this.jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel(numberStringArray));
     
 
-    var araster: Raster = this.imageProcessorInput!.getBufferedImageArray()[0]!.getAlphaRaster()!;;
+    let araster: Raster = this.imageProcessorInput!.getBufferedImageArray()[0]!.getAlphaRaster()!;;
     
 
                         if(araster == 
@@ -165,27 +167,26 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var imageUtil: ImageUtil = ImageUtil.getInstance()!;;
+ try { 
+    let imageUtil: ImageUtil = ImageUtil.getInstance()!;;
     
 
-    var percent: Integer = Integer.valueOf(ResizeImageJPanel.prototype.jComboBox1!.getSelectedItem() as string)!;;
+    let percent: Integer = Integer.valueOf(outer$ResizeImageJPanel.jComboBox1!.getSelectedItem() as string)!;;
     
 
-    var percentAsFloat: number = Float.parseFloat(ResizeImageJPanel.prototype.floatPercentJTextField!.getText())!;;
+    let percentAsFloat: number = Float.parseFloat(outer$ResizeImageJPanel.floatPercentJTextField!.getText())!;;
     
 
-    var imageProcessorInput: ImageProcessorInput = ResizeImageJPanel.prototype.getImageProcessorInput()!;;
+    let imageProcessorInput: ImageProcessorInput = outer$ResizeImageJPanel.getImageProcessorInput()!;;
     
 
-    var files: File[] = imageProcessorInput!.getFiles()!;;
+    let files: File[] = imageProcessorInput!.getFiles()!;;
     
 
-    var generatedBufferedImageArray: BufferedImage[] = 
+    let generatedBufferedImageArray: BufferedImage[] = 
                 null
             ;;
     
@@ -209,10 +210,10 @@ new class extends Thread
                                 
                         else {
                             
-    var width: Integer = Integer.valueOf(ResizeImageJPanel.prototype.jTextField1!.getText() as string)!;;
+    let width: Integer = Integer.valueOf(outer$ResizeImageJPanel.jTextField1!.getText() as string)!;;
     
 
-    var height: Integer = Integer.valueOf(ResizeImageJPanel.prototype.jTextField2!.getText() as string)!;;
+    let height: Integer = Integer.valueOf(outer$ResizeImageJPanel.jTextField2!.getText() as string)!;;
     
 generatedBufferedImageArray= imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true);
     
@@ -220,7 +221,7 @@ generatedBufferedImageArray= imageUtil!.createBufferedImage3(imageProcessorInput
                         }
                             
 
-    var araster: Raster = generatedBufferedImageArray[0]!.getAlphaRaster()!;;
+    let araster: Raster = generatedBufferedImageArray[0]!.getAlphaRaster()!;;
     
 
                         if(araster == 
@@ -240,29 +241,32 @@ generatedBufferedImageArray= imageUtil!.createBufferedImage3(imageProcessorInput
                         }
                             
 
-    var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;;
+    let imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < generatedBufferedImageArray!.length; index++)
+    let index: number = 0;index < generatedBufferedImageArray!.length; index++)
         {
 imagePersistanceUtil!.saveWithBatik(FileWrapperUtil.wrapFile(files[index]!), generatedBufferedImageArray[index]!);
     
 }
 
-ResizeImageJPanel.prototype.getParent()!.repaint();
+outer$ResizeImageJPanel.getParent()!.repaint();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -277,47 +281,49 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var imageProcessorInput: ImageProcessorInput = ResizeImageJPanel.prototype.getImageProcessorInput()!;;
+ try { 
+    let imageProcessorInput: ImageProcessorInput = outer$ResizeImageJPanel.getImageProcessorInput()!;;
     
 
-    var size: number = imageProcessorInput!.getBufferedImageArray()!.length;;
+    let size: number = imageProcessorInput!.getBufferedImageArray()!.length;;
     
 
-    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
+    let bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
     
 
-    var bufferedImage: BufferedImage;;
+    let bufferedImage: BufferedImage;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 bufferedImage= bufferedImageArray[0]!;
     
-ResizeImageJPanel.prototype.jTextField1!.setText(bufferedImage!.getWidth().toString());
+outer$ResizeImageJPanel.jTextField1!.setText(bufferedImage!.getWidth().toString());
     
-ResizeImageJPanel.prototype.jTextField2!.setText(bufferedImage!.getHeight().toString());
+outer$ResizeImageJPanel.jTextField2!.setText(bufferedImage!.getHeight().toString());
     
 }
 
-ResizeImageJPanel.prototype.getParent()!.repaint();
+outer$ResizeImageJPanel.getParent()!.repaint();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -332,47 +338,49 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var imageProcessorInput: ImageProcessorInput = ResizeImageJPanel.prototype.getImageProcessorInput()!;;
+ try { 
+    let imageProcessorInput: ImageProcessorInput = outer$ResizeImageJPanel.getImageProcessorInput()!;;
     
 
-    var size: number = imageProcessorInput!.getBufferedImageArray()!.length;;
+    let size: number = imageProcessorInput!.getBufferedImageArray()!.length;;
     
 
-    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
+    let bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
     
 
-    var bufferedImage: BufferedImage;;
+    let bufferedImage: BufferedImage;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 bufferedImage= bufferedImageArray[0]!;
     
-ResizeImageJPanel.prototype.jTextField1!.setText(bufferedImage!.getWidth() /16 *16.toString());
+outer$ResizeImageJPanel.jTextField1!.setText(bufferedImage!.getWidth() /16 *16.toString());
     
-ResizeImageJPanel.prototype.jTextField2!.setText(bufferedImage!.getHeight() /16 *16.toString());
+outer$ResizeImageJPanel.jTextField2!.setText(bufferedImage!.getHeight() /16 *16.toString());
     
 }
 
-ResizeImageJPanel.prototype.getParent()!.repaint();
+outer$ResizeImageJPanel.getParent()!.repaint();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -387,47 +395,49 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var imageProcessorInput: ImageProcessorInput = ResizeImageJPanel.prototype.getImageProcessorInput()!;;
+ try { 
+    let imageProcessorInput: ImageProcessorInput = outer$ResizeImageJPanel.getImageProcessorInput()!;;
     
 
-    var size: number = imageProcessorInput!.getBufferedImageArray()!.length;;
+    let size: number = imageProcessorInput!.getBufferedImageArray()!.length;;
     
 
-    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
+    let bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
     
 
-    var bufferedImage: BufferedImage;;
+    let bufferedImage: BufferedImage;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 bufferedImage= bufferedImageArray[0]!;
     
-ResizeImageJPanel.prototype.jTextField1!.setText(((bufferedImage!.getWidth() /16) +1) *16.toString());
+outer$ResizeImageJPanel.jTextField1!.setText(((bufferedImage!.getWidth() /16) +1) *16.toString());
     
-ResizeImageJPanel.prototype.jTextField2!.setText(((bufferedImage!.getHeight() /16) +1) *16.toString());
+outer$ResizeImageJPanel.jTextField2!.setText(((bufferedImage!.getHeight() /16) +1) *16.toString());
     
 }
 
-ResizeImageJPanel.prototype.getParent()!.repaint();
+outer$ResizeImageJPanel.getParent()!.repaint();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -543,7 +553,7 @@ adjustFor16BelowJButtonActionPerformed(evt);
                             );
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -601,6 +611,4 @@ this.updateFor16Below();
     private updateJButton: javax.swing.JButton;
 
 }
-
-
 

@@ -74,7 +74,7 @@ this.angleInfo!.adjustAngle(this.getFrame());
 
     public setFrameByDirection(direction: Direction){
 
-    var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;;
+    let angle: Angle = this.directionUtil!.getFrameAngle(direction)!;;
     
 this.adjustFrameToAngle(angle);
     
@@ -108,6 +108,4 @@ this.adjustFrame(newAngle!.getValue());
 
 
 }
-
-
 

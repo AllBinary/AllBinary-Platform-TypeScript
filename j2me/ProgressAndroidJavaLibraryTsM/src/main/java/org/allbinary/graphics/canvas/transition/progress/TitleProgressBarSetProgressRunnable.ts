@@ -22,9 +22,11 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Activity } from '../../../../../../android/app/Activity.js';
 //not GWT import const Activity
@@ -68,24 +70,24 @@ public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
 
     public run(){
 
-        try {
-            this.midletActivity!.onSetProgress(globalThis.Math.trunc(this.progressCanvas!.getValue()), this.progressCanvas!.getText());
+ try { this.midletActivity!.onSetProgress(globalThis.Math.trunc(this.progressCanvas!.getValue()), this.progressCanvas!.getText());
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

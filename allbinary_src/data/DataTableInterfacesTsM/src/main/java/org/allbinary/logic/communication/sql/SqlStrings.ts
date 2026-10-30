@@ -8,6 +8,7 @@
         
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -116,6 +117,4 @@ export class SqlStrings
     public readonly FIELD_VALUE: string = "\nField Value: ";
 
 }
-
-
 

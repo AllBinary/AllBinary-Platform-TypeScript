@@ -42,15 +42,13 @@
 export interface TwoDimensionalConstraintInterface {
         
 
-    getHeight(): SizeConstraintInterface
+    getHeight(): SizeConstraintInterface;
 
-    getWidth(): SizeConstraintInterface
+    getWidth(): SizeConstraintInterface;
 
-    setHeight(heightSizeConstraintInterface: SizeConstraintInterface)
+    setHeight(heightSizeConstraintInterface: SizeConstraintInterface): void;
 
-    setWidth(widthSizeConstraintInterface: SizeConstraintInterface)
+    setWidth(widthSizeConstraintInterface: SizeConstraintInterface): void;
 
 }
-
-
 

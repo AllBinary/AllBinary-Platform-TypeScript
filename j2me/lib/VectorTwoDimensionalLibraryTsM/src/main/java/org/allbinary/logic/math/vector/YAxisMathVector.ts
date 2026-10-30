@@ -70,7 +70,7 @@ this.calculate();
 
     calculate(){
 
-    var result: number = YAxisMathVectorUtil.calculate(this.getMagnitude()!.getUnscaled(), this.getDirection())!;;
+    let result: number = YAxisMathVectorUtil.calculate(this.getMagnitude()!.getUnscaled(), this.getDirection())!;;
     
 this.resultBasicDecimal= new BasicDecimal(result);
     
@@ -78,6 +78,4 @@ this.resultBasicDecimal= new BasicDecimal(result);
 
 
 }
-
-
 

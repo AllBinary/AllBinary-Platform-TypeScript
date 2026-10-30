@@ -24,9 +24,11 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
@@ -62,7 +64,7 @@ export class DomNodeHelper
 
     public static getFirstChildElement(parentNode: Node): Node{
 
-    var node: Node = parentNode!.getFirstChild()!;;
+    let node: Node = parentNode!.getFirstChild()!;;
     
 
                         if(node != 
@@ -71,14 +73,14 @@ export class DomNodeHelper
                         
                                     {
                                     
-    var nodeList: NodeList = parentNode!.getChildNodes()!;;
+    let nodeList: NodeList = parentNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 node= nodeList!.item(index);
     
@@ -105,10 +107,17 @@ node= nodeList!.item(index);
     
 }
 
+static getTextNodeValue(...args: any[]): any {
+   
+    if (args.length === 1) return this.getTextNodeValue$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.getTextNodeValue$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getTextNodeValue'); }
+  
+    public static getTextNodeValue$overload1(node: Node): string{
 
-    public static getTextNodeValue(node: Node): string{
-
-    var nodeTextNode: Node = node.getFirstChild()!;;
+    let nodeTextNode: Node = node.getFirstChild()!;;
     
 
                         if(nodeTextNode != 
@@ -140,9 +149,9 @@ node= nodeList!.item(index);
 
                 //@Throws(Exception.constructor)
             
-    public static getTextNodeValue(nodeName: string, nodeList: NodeList): string{
+    public static getTextNodeValue$overload2(nodeName: string, nodeList: NodeList): string{
 
-    var node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;;
+    let node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;;
     
 
 
@@ -155,20 +164,20 @@ node= nodeList!.item(index);
 
     public static getTextNodesValue(node: Node): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var nodeList: NodeList = node.getChildNodes()!;;
+    let nodeList: NodeList = node.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var nodeTextNode: Node = nodeList!.item(index)!;;
+    let nodeTextNode: Node = nodeList!.item(index)!;;
     
 
                         if(nodeTextNode!.getNodeType() == Node.TEXT_NODE)
@@ -206,6 +215,4 @@ private constructor (){
 
 
 }
-
-
 

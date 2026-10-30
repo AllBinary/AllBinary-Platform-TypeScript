@@ -50,9 +50,7 @@ export interface GroupItemArrayFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(groupInterface: Group): ABCustomItem[]
+    getInstance(groupInterface: Group): ABCustomItem[];
 
 }
-
-
 

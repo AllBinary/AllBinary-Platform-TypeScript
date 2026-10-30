@@ -88,10 +88,10 @@ this.higher= higher;
 
     public update(){
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;;
+    let gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;;
     
 
                         if(gameAdState!.isShowingAt())
@@ -134,6 +134,4 @@ this.bottom= displayInfo!.getLastHeight() -this.deltaY;
 
 
 }
-
-
 

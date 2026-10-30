@@ -62,9 +62,7 @@ export class ImageCacheFactory
 }
 
 
-}
-
-//JSNI Expose so JSNI can access this class *** 
+}//JSNI Expose so JSNI can access this class *** 
  globalThis.org.allbinary = globalThis.org.allbinary || {}; 
  globalThis.org.allbinary.image = globalThis.org.allbinary.image || {}; 
  globalThis.org.allbinary.image.ImageCacheFactory = ImageCacheFactory; 

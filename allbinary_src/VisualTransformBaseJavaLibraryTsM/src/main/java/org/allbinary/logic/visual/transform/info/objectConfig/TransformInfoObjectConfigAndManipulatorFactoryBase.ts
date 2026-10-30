@@ -35,6 +35,7 @@ import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -68,10 +69,19 @@ export class TransformInfoObjectConfigAndManipulatorFactoryBase
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-
+getInstance(...args: any[]): any {
+   
+    if (args.length === 3) return this.getInstance$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2) return this.getInstance$overload2(args[0], args[1]);
+   
+    if (args.length === 3) return this.getInstance$overload3(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
+    public getInstance$overload1(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
 
 
 
@@ -82,7 +92,7 @@ export class TransformInfoObjectConfigAndManipulatorFactoryBase
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface{
+    public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface{
 
 
 
@@ -93,7 +103,7 @@ export class TransformInfoObjectConfigAndManipulatorFactoryBase
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface{
+    public getInstance$overload3(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface{
 
 
 
@@ -103,6 +113,4 @@ export class TransformInfoObjectConfigAndManipulatorFactoryBase
 
 
 }
-
-
 

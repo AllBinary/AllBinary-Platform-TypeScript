@@ -22,6 +22,7 @@
         
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
@@ -31,9 +32,11 @@ import { VisitorInterface } from '../../../../../../org/allbinary/logic/util/vis
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -72,8 +75,17 @@ PreLogUtil.put("Filter BasicArrayList: " +this.getFilterStringBasicArrayList()!.
     
 }
 
-
-    public visit(anyType: any = {}): any{
+visit(...args: any[]): any {
+   
+    if (args.length === 1) return this.visit$overload1(args[0]);
+   
+    if (args.length === 1) return this.visit$overload2(args[0]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.visit$overload3(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: visit'); }
+  
+    public visit$overload1(anyType: any): any{
 
 
 
@@ -83,22 +95,22 @@ PreLogUtil.put("Filter BasicArrayList: " +this.getFilterStringBasicArrayList()!.
 }
 
 
-    public visit(file: AbFile): Boolean{
+    public visit$overload2(file: AbFile): Boolean{
 
-    var list: BasicArrayList = this.getFilterStringBasicArrayList()!;;
+    let list: BasicArrayList = this.getFilterStringBasicArrayList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var nextFileFilterString: string;;
+    let nextFileFilterString: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 nextFileFilterString= list.get(index) as string;
     
@@ -110,7 +122,7 @@ nextFileFilterString= list.get(index) as string;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -121,7 +133,7 @@ nextFileFilterString= list.get(index) as string;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 }
 
@@ -142,17 +154,15 @@ this.filterStringBasicArrayList= filterStringBasicArrayList;
 }
 
 
-    public visit(file: AbFile, fileNameString: string): Boolean{
+    public visit$overload3(file: AbFile, fileNameString: string): Boolean{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 }
 
 
 }
-
-
 

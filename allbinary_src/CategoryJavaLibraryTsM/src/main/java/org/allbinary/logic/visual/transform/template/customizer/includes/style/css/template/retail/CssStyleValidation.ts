@@ -25,18 +25,22 @@ import { HashMap } from '../../../../../../../../../../../../java/util/HashMap.j
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomNodeInterface } from '../../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Validation } from '../../../../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
 //not GWT import const Validation
@@ -46,6 +50,7 @@ import { ValidationInterface } from '../../../../../../../../../../../../org/all
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StyleData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StyleData.js';
 //not GWT import const StyleData
@@ -114,9 +119,8 @@ public constructor (hashMap: HashMap<any, any>){
 
     public isValid(): Boolean{
 
-        try {
-            
-    var isValid: Boolean = Boolean.TRUE;;
+ try { 
+    let isValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -128,23 +132,23 @@ public constructor (hashMap: HashMap<any, any>){
                                     }
                                 
 
-    var size: number = this.cssStyleElementVector!.size()!;;
+    let size: number = this.cssStyleElementVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var styleValidationInterface: ValidationInterface = this.cssStyleElementVector!.get(i) as ValidationInterface;;
+    let styleValidationInterface: ValidationInterface = this.cssStyleElementVector!.get(i) as ValidationInterface;;
     
 
                         if(!styleValidationInterface!.isValid().valueOf())
                         
                                     {
-                                    isValid= Boolean.FALSE;
+                                    isValid= false;
     
 
                                     }
@@ -166,10 +170,11 @@ public constructor (hashMap: HashMap<any, any>){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -183,18 +188,19 @@ public constructor (hashMap: HashMap<any, any>){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -202,10 +208,11 @@ public constructor (hashMap: HashMap<any, any>){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -221,8 +228,10 @@ public constructor (hashMap: HashMap<any, any>){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -250,25 +259,25 @@ public constructor (hashMap: HashMap<any, any>){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(StylesData.getInstance()!.NAME)!;;
+    let node: Node = document.createElement(StylesData.getInstance()!.NAME)!;;
     
 
-    var styleNode: Node = document.createElement(StyleData.getInstance()!.NAME)!;;
+    let styleNode: Node = document.createElement(StyleData.getInstance()!.NAME)!;;
     
 node.appendChild(styleNode);
     
 
-    var size: number = this.cssStyleElementVector!.size()!;;
+    let size: number = this.cssStyleElementVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = this.cssStyleElementVector!.get(i) as DomNodeInterface;;
+    let styleDomNodeInterface: DomNodeInterface = this.cssStyleElementVector!.get(i) as DomNodeInterface;;
     
 styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));
     
@@ -284,6 +293,4 @@ styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));
 
 
 }
-
-
 

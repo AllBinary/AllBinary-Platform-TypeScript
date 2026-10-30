@@ -27,6 +27,7 @@ import { Method } from '../../../../../java/lang/reflect/Method.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -56,10 +57,10 @@ export class MethodUtil
 
     public static viewAll(myClass: Function, lineBreak: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var method: Method[] = myClass!.getMethods()!;;
+    let method: Method[] = myClass!.getMethods()!;;
     
 stringBuffer!.append("Methods: ");
     
@@ -70,7 +71,7 @@ stringBuffer!.append(lineBreak);
 
 
                         for (
-    var index: number = 0;index < method.length; index++)
+    let index: number = 0;index < method.length; index++)
         {
 stringBuffer!.append(method[index]!.getReturnType()!.getName());
     
@@ -104,6 +105,4 @@ private constructor (){
 
 
 }
-
-
 

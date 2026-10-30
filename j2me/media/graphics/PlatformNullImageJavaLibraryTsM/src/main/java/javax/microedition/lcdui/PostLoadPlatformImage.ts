@@ -56,5 +56,3 @@ export class PostLoadPlatformImage extends PlatformImage {
 
 }
 
-
-

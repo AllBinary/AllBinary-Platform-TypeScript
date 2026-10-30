@@ -37,9 +37,11 @@ import { SelectionHudPaintable } from '../../../../../org/allbinary/game/layer/S
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BasicHudFactory } from '../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
 //not GWT import const BasicHudFactory
@@ -58,6 +60,7 @@ import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFo
 
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+type MathUtil<T = any, U = any> = typeof MathUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MathUtil;
 
 
 
@@ -115,39 +118,38 @@ private constructor (){
 
             super();
         
-    var numberStringHudFactory: NumberStringHudFactory = NumberStringHudFactory.getInstance()!;;
+    let numberStringHudFactory: NumberStringHudFactory = NumberStringHudFactory.getInstance()!;;
     
 
-    var productivityHud: NumberStringHud = numberStringHudFactory!.NULL_NUMBER_STRING_HUD;;
+    let productivityHud: NumberStringHud = numberStringHudFactory!.NULL_NUMBER_STRING_HUD;;
     
 
-    var efficiencyHud: NumberStringHud = numberStringHudFactory!.NULL_NUMBER_STRING_HUD;;
+    let efficiencyHud: NumberStringHud = numberStringHudFactory!.NULL_NUMBER_STRING_HUD;;
     
 
-    var healthHud: NumberStringHud = numberStringHudFactory!.NULL_NUMBER_STRING_HUD;;
+    let healthHud: NumberStringHud = numberStringHudFactory!.NULL_NUMBER_STRING_HUD;;
     
 
-    var maxHealthHud: NumberStringHud = numberStringHudFactory!.NULL_NUMBER_STRING_HUD;;
+    let maxHealthHud: NumberStringHud = numberStringHudFactory!.NULL_NUMBER_STRING_HUD;;
     
 
-        try {
-            
-    var index: number = 0;;
+ try { 
+    let index: number = 0;;
     
 
-    var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;;
+    let basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;;
     
 
-    var basicColor: BasicColor = this.getBasicColorP()!;;
+    let basicColor: BasicColor = this.getBasicColorP()!;;
     
 
-    var textX: number = this.textX;;
+    let textX: number = this.textX;;
     
 
-    var y: number = this.y;;
+    let y: number = this.y;;
     
 
-    var firstIndex: number = index;;
+    let firstIndex: number = index;;
     
 
 //inner=true member= isStatic=
@@ -165,7 +167,7 @@ class ProductivityNumberStringHud extends NumberStringHud {
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.updateMaxWidth= textX;
     
@@ -178,8 +180,6 @@ super.updateMeasurement(graphics);
 
 }
 
-
-
                     //Otherwise - statement - EmptyStmt
 
 productivityHud= new ProductivityNumberStringHud();
@@ -187,7 +187,7 @@ productivityHud= new ProductivityNumberStringHud();
 index++;
     
 
-    var secondIndex: number = index;;
+    let secondIndex: number = index;;
     
 
 //inner=true member= isStatic=
@@ -207,7 +207,7 @@ class EfficiencyNumberStringHud extends NumberStringHud {
 super.updateMeasurement(graphics);
     
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.updateMaxWidth= textX;
     
@@ -218,8 +218,6 @@ this.updateMaxHeight= y +((secondIndex +1) *font.getHeight());
 
 }
 
-
-
                     //Otherwise - statement - EmptyStmt
 
 efficiencyHud= new EfficiencyNumberStringHud();
@@ -227,10 +225,10 @@ efficiencyHud= new EfficiencyNumberStringHud();
 index++;
     
 
-    var HEALTH: string = this.HEALTH;;
+    let HEALTH: string = this.HEALTH;;
     
 
-    var thirdIndex: number = index;;
+    let thirdIndex: number = index;;
     
 
 //inner=true member= isStatic=
@@ -248,7 +246,7 @@ class HealthNumberStringHud extends NumberStringHud {
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.updateMaxWidth= textX;
     
@@ -261,17 +259,15 @@ super.updateMeasurement(graphics);
 
 }
 
-
-
                     //Otherwise - statement - EmptyStmt
 
 
-    var totalLength: number = HEALTH.length +1;;
+    let totalLength: number = HEALTH.length +1;;
     
 healthHud= new HealthNumberStringHud();
     
 
-    var fourthIndex: number = index;;
+    let fourthIndex: number = index;;
     
 
 //inner=true member= isStatic=
@@ -291,7 +287,7 @@ class MaxHealthNumberStringHud extends NumberStringHud {
 super.updateMeasurement(graphics);
     
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.updateMaxWidth= textX +(totalLength *font.getHeight());
     
@@ -302,23 +298,24 @@ this.updateMaxHeight= y +((fourthIndex +1) *font.getHeight());
 
 }
 
-
-
                     //Otherwise - statement - EmptyStmt
 
 maxHealthHud= new MaxHealthNumberStringHud();
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
-}
 
+ }
+   }
+ 
 this.productivityHud= productivityHud;
     
 this.efficiencyHud= efficiencyHud;
@@ -332,10 +329,10 @@ this.maxHealthHud= maxHealthHud;
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 
-    var totalLength: number = this.HEALTH.length +MathUtil.getInstance()!.getTotalDigits(this.currentHealth);;
+    let totalLength: number = this.HEALTH.length +MathUtil.getInstance()!.getTotalDigits(this.currentHealth);;
     
 this.maxHealthHud!.setX(this.textX +MyFontProcessor.defaultStringWidth(font, totalLength));
     
@@ -378,7 +375,7 @@ this.getAnimationInterface()!.paintXY(graphics, this.imageX, this.y);
 
     public updateSelectionInfo(){
 
-    var buildingLayer: BuildingLayer = this.rtsLayer as BuildingLayer;;
+    let buildingLayer: BuildingLayer = this.rtsLayer as BuildingLayer;;
     
 this.setName(buildingLayer!.getName());
     
@@ -406,6 +403,4 @@ this.rtsLayer= rtsLayer;
 
 
 }
-
-
 

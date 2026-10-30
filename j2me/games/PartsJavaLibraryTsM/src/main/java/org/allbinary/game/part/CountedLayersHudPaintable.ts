@@ -111,7 +111,7 @@ this.dropSize= dropSize;
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.height= font.getHeight();
     
@@ -129,7 +129,7 @@ this.height= font.getHeight();
                         
                                     {
                                     
-    var XXString: string = "XX";;
+    let XXString: string = "XX";;
     
 CountedLayersHudPaintable.XXStringWidth= font.stringWidth(XXString);
     
@@ -145,39 +145,39 @@ this.myFontProcessor= MyFontProcessor.getInstance();
 this.myFontProcessor!.process(graphics);
     
 
-    var lastWidth: number = this.displayInfoSingleton!.getLastWidth()!;;
+    let lastWidth: number = this.displayInfoSingleton!.getLastWidth()!;;
     
 
-    var widthEdge: number = lastWidth -this.dropSize;;
+    let widthEdge: number = lastWidth -this.dropSize;;
     
 
-    var size: number = this.partInterfaceArray!.length
+    let size: number = this.partInterfaceArray!.length
                 ;;
     
 
-    var count: number = 0;;
+    let count: number = 0;;
     
 
-    var y: number= 0;;
+    let y: number= 0;;
     
 
-    var countedLayerInterfaceFactory: CountedLayerInterfaceFactoryPart;;
+    let countedLayerInterfaceFactory: CountedLayerInterfaceFactoryPart;;
     
 
-    var pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface;;
+    let pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface;;
     
 
-    var layerInterface: AllBinaryLayer;;
+    let layerInterface: AllBinaryLayer;;
     
 
-    var charArray: string[];;
+    let charArray: string[];;
     
 
 
 
 
                         for (
-    var index: number = this.startIndex;index < size; index++)
+    let index: number = this.startIndex;index < size; index++)
         {
 countedLayerInterfaceFactory= this.partInterfaceArray[index]! as CountedLayerInterfaceFactoryPart;
     
@@ -229,6 +229,4 @@ graphics.drawRect(lastWidth -(CountedLayersHudPaintable.XXStringWidth +this.drop
 
 
 }
-
-
 

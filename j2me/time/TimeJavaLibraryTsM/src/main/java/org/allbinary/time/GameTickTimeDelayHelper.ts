@@ -107,5 +107,3 @@ this.startTime= Date.now();
 
 }
 
-
-

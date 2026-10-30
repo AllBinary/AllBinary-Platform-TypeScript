@@ -52,7 +52,7 @@ export class InputAutomationModuleServiceConsumer extends InputAutomationService
         
 
 public constructor (bundleContext: BundleContext){
-            super(InputAutomationModuleServiceInterface.constructor.toString()!, bundleContext, new InputAutomationModuleOSGIServiceVisitor());
+            super(InputAutomationModuleServiceInterface.toString()!, bundleContext, new InputAutomationModuleOSGIServiceVisitor());
                     
 
                             //For kotlin this is before the body of the constructor.
@@ -61,6 +61,4 @@ public constructor (bundleContext: BundleContext){
 
 
 }
-
-
 

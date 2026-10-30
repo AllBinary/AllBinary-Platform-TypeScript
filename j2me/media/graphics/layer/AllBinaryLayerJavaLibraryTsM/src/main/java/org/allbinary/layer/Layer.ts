@@ -32,15 +32,18 @@ import { CanvasStrings } from '../../../org/allbinary/graphics/displayable/Canva
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -198,10 +201,10 @@ this.visible= visible;
 
     public paint(graphics: Graphics){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;;
+    let canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.NOT_IMPLEMENTED, this, canvasStrings!.PAINT);
     
@@ -249,6 +252,4 @@ this.height= height;
 
 
 }
-
-
 

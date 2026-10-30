@@ -43,11 +43,9 @@ import { UserEmailEventsConfigurationInterface } from '../../../../../../../org/
 export interface UserEmailConfigurationInterface {
         
 
-    getUserEmailEventsConfigurationInterface(): UserEmailEventsConfigurationInterface
+    getUserEmailEventsConfigurationInterface(): UserEmailEventsConfigurationInterface;
 
-    setUserEmailEventsConfigurationInterface(emailEventsConfigurationInterface: UserEmailEventsConfigurationInterface)
+    setUserEmailEventsConfigurationInterface(emailEventsConfigurationInterface: UserEmailEventsConfigurationInterface): void;
 
 }
-
-
 

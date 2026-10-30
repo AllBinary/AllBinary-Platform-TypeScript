@@ -55,7 +55,7 @@ public constructor (){
 
     public append(string: string): StringMaker{
 
-    var stringLength: number = string.length!;;
+    let stringLength: number = string.length!;;
     
 this.ensureCapacity(this.currentLength +stringLength);
     
@@ -101,7 +101,7 @@ this.ensureCapacity(this.currentLength +(end -start));
 
 
                         for (
-    var index: number = start;index < end; index++)
+    let index: number = start;index < end; index++)
         {
 this.charArray[this.currentLength++]= charArray[index]!;
     
@@ -221,7 +221,7 @@ this.charArray[this.currentLength++]= 'e';
 
     public ensureCapacity(minSize: number){
 
-    var oldCapacity: number = this.charArray!.length
+    let oldCapacity: number = this.charArray!.length
                 ;;
     
 
@@ -229,19 +229,19 @@ this.charArray[this.currentLength++]= 'e';
                         
                                     {
                                     
-    var newCapacity: number = oldCapacity *3;;
+    let newCapacity: number = oldCapacity *3;;
     
 
                         if(newCapacity < minSize)
                         newCapacity= minSize
 
-    var copy: string[] = 
+    let copy: string[] = 
                                                         
                                                         new Array(newCapacity)
                                                     ;;
     
 
-    var min: number = this.min(this.charArray!.length, newCapacity)!;;
+    let min: number = this.min(this.charArray!.length, newCapacity)!;;
     
 System.arraycopy(this.charArray, 0, copy, 0, min);
     
@@ -258,12 +258,7 @@ this.charArray= copy;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (value <= value2)
-                        ?       
-                                value
-                                :
-
-                            value2;
+                        return ((value <= value2) ? value : value2);
     
 }
 
@@ -295,12 +290,10 @@ this.currentLength -= (end -start);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.charArray.slice(0, this.currentLength).join('');
+                        return ((data: any[], offset: number, count: number) => data.slice(offset, offset + count).map(value => typeof value === 'number' ? String.fromCharCode(value & 255) : value).join(''))(this.charArray, 0, this.currentLength);
     
 }
 
 
 }
-
-
 

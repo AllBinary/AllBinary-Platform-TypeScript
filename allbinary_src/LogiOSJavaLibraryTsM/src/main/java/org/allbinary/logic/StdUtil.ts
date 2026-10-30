@@ -22,15 +22,19 @@
         
 //not plain js import { ABHashMap } 
 const ABHashMap = globalThis.org.allbinary.util.ABHashMap;
+type ABHashMap<T = any, U = any> = typeof ABHashMap extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashMap;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { ABStack } 
 const ABStack = globalThis.org.allbinary.util.ABStack;
+type ABStack<T = any, U = any> = typeof ABStack extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABStack;
 
 //not plain js import { ABVector } 
 const ABVector = globalThis.org.allbinary.util.ABVector;
+type ABVector<T = any, U = any> = typeof ABVector extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABVector;
 
 
 
@@ -115,6 +119,4 @@ const ABVector = globalThis.org.allbinary.util.ABVector;
 
 
 }
-
-
 

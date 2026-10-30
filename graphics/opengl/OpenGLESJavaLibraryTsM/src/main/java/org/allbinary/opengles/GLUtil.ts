@@ -76,12 +76,12 @@ export class GLUtil
 
     public makeFloatBuffer3(p_a: number, p_b: number, p_c: number): FloatBuffer{
 
-    var b: ByteBuffer = ByteBuffer.allocateDirect(3 *this.BYTES_PER_FLOAT)!;;
+    let b: ByteBuffer = ByteBuffer.allocateDirect(3 *this.BYTES_PER_FLOAT)!;;
     
 b.order(ByteOrder.nativeOrder());
     
 
-    var buffer: FloatBuffer = b.asFloatBuffer()!;;
+    let buffer: FloatBuffer = b.asFloatBuffer()!;;
     
 buffer.put(p_a);
     
@@ -102,12 +102,12 @@ this.position(buffer, 0);
 
     public makeFloatBuffer4(p_a: number, p_b: number, p_c: number, p_d: number): FloatBuffer{
 
-    var b: ByteBuffer = ByteBuffer.allocateDirect(4 *this.BYTES_PER_FLOAT)!;;
+    let b: ByteBuffer = ByteBuffer.allocateDirect(4 *this.BYTES_PER_FLOAT)!;;
     
 b.order(ByteOrder.nativeOrder());
     
 
-    var buffer: FloatBuffer = b.asFloatBuffer()!;;
+    let buffer: FloatBuffer = b.asFloatBuffer()!;;
     
 buffer.put(p_a);
     
@@ -130,18 +130,18 @@ this.position(buffer, 0);
 
     public makeFloatBuffer(byteBuffer: ByteBuffer): FloatBuffer{
 
-    var b: ByteBuffer = ByteBuffer.allocateDirect(byteBuffer!.limit() *this.BYTES_PER_FLOAT)!;;
+    let b: ByteBuffer = ByteBuffer.allocateDirect(byteBuffer!.limit() *this.BYTES_PER_FLOAT)!;;
     
 b.order(ByteOrder.nativeOrder());
     
 
-    var buffer: FloatBuffer = b.asFloatBuffer()!;;
+    let buffer: FloatBuffer = b.asFloatBuffer()!;;
     
 
-    var unsigned: number= 0;;
+    let unsigned: number= 0;;
     
 
-    var v: number= 0.0;;
+    let v: number= 0.0;;
     
 
         while(byteBuffer!.hasRemaining())
@@ -177,38 +177,38 @@ this.position(buffer, 0);
 
     public rotateUVs(uvs: number[], angleDegrees: number, pivotU: number, pivotV: number){
 
-    var angleRad: number = Math.toRadians(angleDegrees)!;;
+    let angleRad: number = Math.toRadians(angleDegrees)!;;
     
 
-    var cosA: number = Math.cos(angleRad)!;;
+    let cosA: number = Math.cos(angleRad)!;;
     
 
-    var sinA: number = Math.sin(angleRad)!;;
+    let sinA: number = Math.sin(angleRad)!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < uvs.length; )
+    let i: number = 0;i < uvs.length; )
         {
 
-    var u: number = uvs[i]!;;
+    let u: number = uvs[i]!;;
     
 
-    var v: number = uvs[i +1]!;;
+    let v: number = uvs[i +1]!;;
     
 
-    var du: number = u -pivotU;;
+    let du: number = u -pivotU;;
     
 
-    var dv: number = v -pivotV;;
+    let dv: number = v -pivotV;;
     
 
-    var ru: number = (du *cosA -dv *sinA) +pivotU;;
+    let ru: number = (du *cosA -dv *sinA) +pivotU;;
     
 
-    var rv: number = (du *sinA +dv *cosA) +pivotV;;
+    let rv: number = (du *sinA +dv *cosA) +pivotV;;
     
 uvs[i]= ru;
     
@@ -220,6 +220,4 @@ uvs[i +1]= rv;
 
 
 }
-
-
 

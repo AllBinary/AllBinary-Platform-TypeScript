@@ -27,9 +27,11 @@ import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -57,10 +59,10 @@ export class ConstructorUtil
 
     public static viewAll(myClass: Function, lineBreak: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var constructor: Constructor[] = myClass!.getConstructors()!;;
+    let constructor: Constructor[] = myClass!.getConstructors()!;;
     
 stringBuffer!.append("Constructors: ");
     
@@ -71,7 +73,7 @@ stringBuffer!.append(lineBreak);
 
 
                         for (
-    var index: number = 0;index < constructor.length; index++)
+    let index: number = 0;index < constructor.length; index++)
         {
 stringBuffer!.append(ConstructorUtil.view(constructor[index]!, lineBreak));
     
@@ -94,22 +96,22 @@ stringBuffer!.append(ConstructorUtil.view(constructor[index]!, lineBreak));
                         
                                     {
                                     
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(constructor.getName());
     
 
-    var classes: Function[] = constructor.getParameterTypes()!;;
+    let classes: Function[] = constructor.getParameterTypes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < classes.length; index++)
+    let index: number = 0;index < classes.length; index++)
         {
 stringBuffer!.append(commonSeps!.SPACE);
     
@@ -145,6 +147,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -79,7 +79,7 @@ public constructor (document: Document){
 
             super();
         
-    var node: Node = DomSearchHelper.getNode(AdvertisementAreaData.getInstance()!.NAME, document.getChildNodes())!;;
+    let node: Node = DomSearchHelper.getNode(AdvertisementAreaData.getInstance()!.NAME, document.getChildNodes())!;;
     
 this.displayInBrowserContraintsInterface= new DisplayInBrowserContraints(node);
     
@@ -93,8 +93,15 @@ this.displayInBrowserContraintsInterface= displayInBrowserContraintsInterface;
     
 }
 
-
-    public getTwoDimensionContraints(twoDimensionConstraintsInterface: TwoDimensionalConstraintInterface){
+getTwoDimensionContraints(...args: any[]): any {
+   
+    if (args.length === 1) return this.getTwoDimensionContraints$overload1(args[0]);
+   
+    if (args.length === 0) return this.getTwoDimensionContraints$overload2();
+   
+   throw new TypeError('No matching overload: getTwoDimensionContraints'); }
+  
+    public getTwoDimensionContraints$overload1(twoDimensionConstraintsInterface: TwoDimensionalConstraintInterface){
 this.twoDimensionConstraintsInterface= twoDimensionConstraintsInterface;
     
 }
@@ -110,7 +117,7 @@ this.twoDimensionConstraintsInterface= twoDimensionConstraintsInterface;
 }
 
 
-    public getTwoDimensionContraints(): TwoDimensionalConstraintInterface{
+    public getTwoDimensionContraints$overload2(): TwoDimensionalConstraintInterface{
 
 
 
@@ -121,6 +128,4 @@ this.twoDimensionConstraintsInterface= twoDimensionConstraintsInterface;
 
 
 }
-
-
 

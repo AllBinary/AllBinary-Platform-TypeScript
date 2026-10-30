@@ -35,15 +35,19 @@ import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMu
 
 //not plain js import { Canvas } 
 const Canvas = globalThis.playn.core.Canvas;
+type Canvas<T = any, U = any> = typeof Canvas extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Canvas;
 
 //not plain js import { CoreImage } 
 const CoreImage = globalThis.playn.core.CoreImage;
+type CoreImage<T = any, U = any> = typeof CoreImage extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CoreImage;
 
 //not plain js import { ImageImpl } 
 const ImageImpl = globalThis.playn.core.ImageImpl;
+type ImageImpl<T = any, U = any> = typeof ImageImpl extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ImageImpl;
 
 //not plain js import { HTMLPlaynUtil } 
 const HTMLPlaynUtil = globalThis.playn.html.HTMLPlaynUtil;
+type HTMLPlaynUtil<T = any, U = any> = typeof HTMLPlaynUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HTMLPlaynUtil;
 
 
 
@@ -97,13 +101,13 @@ private constructor (){
                         
                                     {
                                     
-    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
+    let htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
     
 
-    var canvasImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
+    let canvasImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
     
 
-    var canvas: Canvas = this.playnUtil!.getCanvas(canvasImage)!;;
+    let canvas: Canvas = this.playnUtil!.getCanvas(canvasImage)!;;
     
 canvas.save();
     
@@ -112,7 +116,7 @@ canvas.clear();
 canvas.translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2);
     
 
-    var image2: Image = this.rotateImageCanvasSurface(originalImage, image, canvas, totalAngle)!;;
+    let image2: Image = this.rotateImageCanvasSurface(originalImage, image, canvas, totalAngle)!;;
     
 this.drawImage(originalImage, image, canvas);
     
@@ -204,7 +208,7 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
 
     public drawImage(originalImage: Image, image: Image, canvasSurface: Canvas){
 
-    var originalPlayNImage: CoreImage = 
+    let originalPlayNImage: CoreImage = 
                 null
             ;;
     
@@ -213,7 +217,7 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;;
+    let originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
     
@@ -222,7 +226,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;;
+    let originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
     
@@ -238,10 +242,10 @@ canvasSurface!.draw(originalPlayNImage,  -originalImage!.getWidth() /2,  -origin
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 
-    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
+    let image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
     
 
-    var rotatedImage: Image = this.rotateImage(originalImage, image, rotationInDegrees)!;;
+    let rotatedImage: Image = this.rotateImage(originalImage, image, rotationInDegrees)!;;
     
 
                         if(rotatedImage == 
@@ -267,6 +271,4 @@ canvasSurface!.draw(originalPlayNImage,  -originalImage!.getWidth() /2,  -origin
 
 
 }
-
-
 

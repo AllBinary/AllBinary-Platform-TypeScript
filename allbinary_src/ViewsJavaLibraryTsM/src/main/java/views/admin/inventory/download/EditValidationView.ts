@@ -27,9 +27,11 @@ import { HashMap } from '../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { BasicItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 //not GWT import const BasicItemData
@@ -60,9 +62,11 @@ import { ValidationComponentInterface } from '../../../../org/allbinary/logic/co
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -117,7 +121,7 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;;
+    let hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;;
     
 
                         if(hashMap == 
@@ -153,7 +157,7 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID) as string;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -170,23 +174,23 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;;
+    let downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;;
     
 
                         if(downloadable != 0)
                         
                                     {
                                     
-    var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;;
+    let downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;;
     
 
-    var vector: BasicArrayList = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
+    let vector: BasicArrayList = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
     
 
                         if(vector.size() != 1)
@@ -196,7 +200,7 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -211,7 +215,7 @@ this.downloadableItem= vector.get(0) as DownloadableItem;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                         }
@@ -220,7 +224,7 @@ this.downloadableItem= vector.get(0) as DownloadableItem;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
@@ -249,7 +253,7 @@ this.downloadableItem= vector.get(0) as DownloadableItem;
             
     public validationInfo(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.id == 
@@ -274,7 +278,7 @@ this.downloadableItem= vector.get(0) as DownloadableItem;
                                     }
                                 
 
-    var downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;;
+    let downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;;
     
 
                         if(downloadable != 0)
@@ -310,6 +314,4 @@ this.downloadableItem= vector.get(0) as DownloadableItem;
 
 
 }
-
-
 

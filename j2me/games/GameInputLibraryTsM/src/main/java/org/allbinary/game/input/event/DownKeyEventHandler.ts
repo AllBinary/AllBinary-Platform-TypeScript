@@ -69,7 +69,7 @@ export class DownKeyEventHandler extends DownKeyEventHandlerBase {
 
     public getInstanceForDevice(deviceId: number): DownKeyEventHandlerBase{
 
-    var playerInputId: number = this.playerInputIdFactory!.getPlayerForDevice(deviceId)!;;
+    let playerInputId: number = this.playerInputIdFactory!.getPlayerForDevice(deviceId)!;;
     
 
 
@@ -104,7 +104,7 @@ super.removeAllListeners();
 
 
                         for (
-    var index: number = DownKeyEventHandler.instanceArray!.length -1;index >= 0; index--)
+    let index: number = DownKeyEventHandler.instanceArray!.length -1;index >= 0; index--)
         {
 DownKeyEventHandler.instanceArray[index]!.removeAllListeners();
     
@@ -121,7 +121,7 @@ super.removeListenerSingleThreaded(eventListenerInterface);
 
 
                         for (
-    var index: number = DownKeyEventHandler.instanceArray!.length -1;index >= 0; index--)
+    let index: number = DownKeyEventHandler.instanceArray!.length -1;index >= 0; index--)
         {
 DownKeyEventHandler.instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface);
     
@@ -139,7 +139,7 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = DownKeyEventHandler.instanceArray!.length -1;index >= 0; index--)
+    let index: number = DownKeyEventHandler.instanceArray!.length -1;index >= 0; index--)
         {
 DownKeyEventHandler.instanceArray[index]!.removeListener(eventListenerInterface);
     
@@ -149,6 +149,4 @@ DownKeyEventHandler.instanceArray[index]!.removeListener(eventListenerInterface)
 
 
 }
-
-
 

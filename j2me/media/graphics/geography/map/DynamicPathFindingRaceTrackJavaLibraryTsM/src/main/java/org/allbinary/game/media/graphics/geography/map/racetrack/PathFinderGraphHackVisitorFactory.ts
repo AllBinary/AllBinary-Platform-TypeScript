@@ -81,5 +81,3 @@ this.maxPathWeight= maxPathWeight;
 
 }
 
-
-

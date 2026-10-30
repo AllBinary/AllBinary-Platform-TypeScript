@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AutomaticCacheInterface } from '../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
@@ -39,6 +40,7 @@ import { CacheTypeFactory } from '../../../../org/allbinary/logic/util/cache/Cac
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -74,30 +76,32 @@ export class ColorCacheFactory
                 private static init(): number { 
                     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var STATIC_BLOCK: string = "Static Block";;
+    let STATIC_BLOCK: string = "Static Block";;
     
 
-        try {
-            logUtil!.putF(commonStrings!.START, ColorCacheFactory.constructor, STATIC_BLOCK);
+ try { logUtil!.putF(commonStrings!.START, ColorCacheFactorySTATIC_BLOCK);
     
 ColorCacheFactory.cacheInterface= AutomaticCacheInterfaceFactory.getInstance(new ColorCacheableFactory(), CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX);
     
-logUtil!.putF(commonStrings!.END, ColorCacheFactory.constructor, STATIC_BLOCK);
+logUtil!.putF(commonStrings!.END, ColorCacheFactorySTATIC_BLOCK);
+    
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
+logUtil!.put(commonStrings!.EXCEPTION, ColorCacheFactorySTATIC_BLOCK, e);
     
 
-                //: 
-} catch(e) 
-            {
-logUtil!.put(commonStrings!.EXCEPTION, ColorCacheFactory.constructor, STATIC_BLOCK, e);
-    
-}
-
+ }
+   }
+ 
 
 
                     return 0;
@@ -120,6 +124,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -68,7 +68,7 @@ this.setTotal(this.initTotal);
 
     public add(value: number){
 
-    var max: number = Integer.MAX_VALUE;;
+    let max: number = Integer.MAX_VALUE;;
     
 
                         if(this.getTotal() +value > max)
@@ -124,6 +124,4 @@ this.total= total;
 
 
 }
-
-
 

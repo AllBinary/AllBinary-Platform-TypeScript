@@ -35,12 +35,15 @@ import { MyCommandsFactory } from '../../../../org/allbinary/graphics/displayabl
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -98,11 +101,10 @@ this.startGameMidletEvent= new DemoGameMidletEvent(this, DemoGameMidletStateFact
 
     public run(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
+ try { this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 this.demoGameMidlet!.commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, progressCanvas);
     
@@ -118,18 +120,19 @@ DemoGameMidletEventHandler.getInstance()!.fireEvent(this.startGameMidletEvent);
     
 this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.RUN);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

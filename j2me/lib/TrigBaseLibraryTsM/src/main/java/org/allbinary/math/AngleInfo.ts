@@ -23,12 +23,15 @@
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -90,7 +93,7 @@ private constructor (angleIncrementInfo: AngleIncrementInfo){
 
     public adjustAngle(frame: number){
 
-    var newAngle: number = this.angleIncrementInfo!.getAngleIncrement() *frame -90;;
+    let newAngle: number = this.angleIncrementInfo!.getAngleIncrement() *frame -90;;
     
 this.setAngle(this.frameUtil!.adjustAngleToFrameAngle(newAngle));
     
@@ -125,7 +128,7 @@ this.angle= angle;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(AngleInfo.ANGLE);
     
@@ -145,6 +148,4 @@ stringBuffer!.append(StringUtil.getInstance()!.toString(this.getAngleIncrementIn
 
 
 }
-
-
 

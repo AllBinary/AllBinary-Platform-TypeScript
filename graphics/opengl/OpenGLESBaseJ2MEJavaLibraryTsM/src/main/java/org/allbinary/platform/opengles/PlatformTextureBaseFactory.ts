@@ -28,6 +28,7 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -62,6 +63,4 @@ export class PlatformTextureBaseFactory
 
 
 }
-
-
 

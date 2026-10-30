@@ -27,9 +27,11 @@ import { HashMap } from '../../../../java/util/HashMap.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
@@ -45,6 +47,7 @@ import { BooleanUtil } from '../../../../org/allbinary/logic/java/bool/BooleanUt
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -109,15 +112,21 @@ private constructor (){
             super();
         }
 
-
+set(...args: any[]): any {
+   
+    if (args.length === 0) return this.set$overload1();
+   
+    if (args.length === 1) return this.set$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: set'); }
+  
                 //@Throws(InitException.constructor)
             //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public set(){
+    public set$overload1(){
 
-        try {
-            
-    var initInfoEntity: InitInfoEntity = new InitInfoEntity();;
+ try { 
+    let initInfoEntity: InitInfoEntity = new InitInfoEntity();;
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
@@ -163,10 +172,11 @@ initInfoEntity!.update();
                             
 this.hasRead= false;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -176,25 +186,27 @@ this.hasRead= false;
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public set(hashMap: HashMap<any, any>){
+    public set$overload2(hashMap: HashMap<any, any>){
 
-        try {
-            this.testing= hashMap!.get(this.TESTING) as string;
+ try { this.testing= hashMap!.get(this.TESTING) as string;
     
 this.mainPath= new AbPath(hashMap!.get(this.MAINPATH) as string, StringUtil.getInstance()!.EMPTY_STRING);
     
 this.testHtmlPath= new AbPath(hashMap!.get(this.TESTHTMLPATH) as string, StringUtil.getInstance()!.EMPTY_STRING);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -204,16 +216,17 @@ this.testHtmlPath= new AbPath(hashMap!.get(this.TESTHTMLPATH) as string, StringU
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     get(){
 
-        try {
-            this.testing= 
+ try { this.testing= 
                                         null
                                     ;
     
@@ -226,14 +239,15 @@ this.testHtmlPath=
                                     ;
     
 
-    var initInfoEntity: InitInfoEntity = new InitInfoEntity();;
+    let initInfoEntity: InitInfoEntity = new InitInfoEntity();;
     
 initInfoEntity!.get();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -249,8 +263,10 @@ initInfoEntity!.get();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ;
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
@@ -264,8 +280,7 @@ this.hasRead= value;
 
     updateIfNeeded(){
 
-        try {
-            
+ try { 
                         if(!this.hasRead)
                         
                                     {
@@ -276,10 +291,11 @@ this.get();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -295,15 +311,16 @@ this.get();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public isTesting(): boolean{
 
-        try {
-            this.updateIfNeeded();
+ try { this.updateIfNeeded();
     
 
 
@@ -311,10 +328,11 @@ this.get();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BooleanUtil.getInstance()!.getFromString(this.testing);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -330,8 +348,10 @@ this.get();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -461,7 +481,7 @@ this.mainPath= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(this.TESTING, this.getTesting());
     
@@ -479,6 +499,4 @@ hashMap!.put(this.TESTHTMLPATH, this.getTestHtmlPath());
 
 
 }
-
-
 

@@ -71,5 +71,3 @@ graphics.drawLine(nextPoint!.getX() -tiledLayer!.getXP(), nextPoint!.getY() -til
 
 }
 
-
-

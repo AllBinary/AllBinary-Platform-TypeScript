@@ -114,5 +114,3 @@ this.imageColorResults= imageColorResults;
 
 }
 
-
-

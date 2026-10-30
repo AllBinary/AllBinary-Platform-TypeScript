@@ -70,10 +70,10 @@ private constructor (){
 
     /*actual*/ public getAsString(): string{
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var date: Date = calendar.getTime()!;;
+    let date: Date = calendar.getTime()!;;
     
 
 
@@ -85,6 +85,4 @@ private constructor (){
 
 
 }
-
-
 

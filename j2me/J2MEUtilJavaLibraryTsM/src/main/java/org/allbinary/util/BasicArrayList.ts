@@ -13,12 +13,15 @@
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -67,13 +70,13 @@ public constructor (objectArray: any[]){
 }
 
 
-    public addAt(index: number, element: any = {}){
+    public addAt(index: number, element: any){
 
                         if(index > this.currentIndex || index < 0)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
     
@@ -102,7 +105,7 @@ this.currentIndex++;
 }
 
 
-    public add(anyType: any = {}): boolean{
+    public add(anyType: any): boolean{
 this.ensureCapacity(this.currentIndex +1);
     
 this.objectArray[this.currentIndex++]= anyType;
@@ -122,7 +125,7 @@ this.objectArray[this.currentIndex++]= anyType;
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
     
@@ -141,10 +144,10 @@ stringBuffer!.appendint(this.currentIndex);
                                     }
                                 
 
-    var oldValue: any = this.objectArray[index]!;;
+    let oldValue: any = this.objectArray[index]!;;
     
 
-    var numMoved: number = this.currentIndex -index -1;;
+    let numMoved: number = this.currentIndex -index -1;;
     
 
                         if(numMoved > 0)
@@ -168,7 +171,7 @@ this.objectArray[--this.currentIndex]=
 }
 
 
-    public remove(anyType: any = {}): boolean{
+    public remove(anyType: any): boolean{
 
                         if(anyType == 
                                     null
@@ -180,7 +183,7 @@ this.objectArray[--this.currentIndex]=
 
 
                         for (
-    var index: number = 0;index < this.currentIndex; index++)
+    let index: number = 0;index < this.currentIndex; index++)
         {
 
                         if(this.objectArray[index] == 
@@ -189,7 +192,7 @@ this.objectArray[--this.currentIndex]=
                         
                                     {
                                     
-    var numMoved: number = this.currentIndex -index -1;;
+    let numMoved: number = this.currentIndex -index -1;;
     
 
                         if(numMoved > 0)
@@ -224,14 +227,14 @@ this.objectArray[--this.currentIndex]=
 
 
                         for (
-    var index: number = 0;index < this.currentIndex; index++)
+    let index: number = 0;index < this.currentIndex; index++)
         {
 
-                        if(anyType == this.objectArray[index] || anyType! === this.objectArray[index]!)
+                        if(anyType == this.objectArray[index] || (anyType === this.objectArray[index]))
                         
                                     {
                                     
-    var numMoved: number = this.currentIndex -index -1;;
+    let numMoved: number = this.currentIndex -index -1;;
     
 
                         if(numMoved > 0)
@@ -271,17 +274,17 @@ this.objectArray[--this.currentIndex]=
 
     public removeAll2(list: BasicArrayList): boolean{
 
-    var result: boolean = true;;
+    let result: boolean = true;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(this.remove(list.get(index)))
@@ -311,14 +314,14 @@ this.objectArray[--this.currentIndex]=
 this.ensureCapacity(this.currentIndex +list.currentIndex);
     
 
-    var listSize: number = list.currentIndex;;
+    let listSize: number = list.currentIndex;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < listSize; index++)
+    let index: number = 0;index < listSize; index++)
         {
 this.objectArray[this.currentIndex++]= list.objectArray[index]!;
     
@@ -335,7 +338,7 @@ this.objectArray[this.currentIndex++]= list.objectArray[index]!;
 
     public addAllList(list: BasicArrayList): boolean{
 
-    var newObjectArray: any[] = list.toArray()!;;
+    let newObjectArray: any[] = list.toArray()!;;
     
 
 
@@ -348,7 +351,7 @@ this.objectArray[this.currentIndex++]= list.objectArray[index]!;
 
     public addAll(newObjectArray: any[]): boolean{
 
-    var numSize: number = newObjectArray!.length
+    let numSize: number = newObjectArray!.length
                 ;;
     
 this.ensureCapacity(this.currentIndex +numSize);
@@ -368,7 +371,7 @@ this.currentIndex += numSize;
 
     public ensureCapacity(minSize: number){
 
-    var oldCapacity: number = this.objectArray!.length
+    let oldCapacity: number = this.objectArray!.length
                 ;;
     
 
@@ -376,7 +379,7 @@ this.currentIndex += numSize;
                         
                                     {
                                     
-    var newCapacity: number = ((oldCapacity *3)>>1) +1;;
+    let newCapacity: number = ((oldCapacity *3)>>1) +1;;
     
 
                         if(newCapacity < minSize)
@@ -397,7 +400,7 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
 
     public trimToSize(){
 
-    var oldCapacity: number = this.objectArray!.length
+    let oldCapacity: number = this.objectArray!.length
                 ;;
     
 
@@ -412,7 +415,7 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
 }
 
 
-    public indexOf(anyType: any = {}): number{
+    public indexOf(anyType: any): number{
 
                         if(anyType == 
                                     null
@@ -424,7 +427,7 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
 
 
                         for (
-    var i: number = 0;i < this.currentIndex; i++)
+    let i: number = 0;i < this.currentIndex; i++)
         {
 
                         if(this.objectArray[i] == 
@@ -452,10 +455,10 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
 
 
                         for (
-    var i: number = 0;i < this.currentIndex; i++)
+    let i: number = 0;i < this.currentIndex; i++)
         {
 
-                        if(anyType! === this.objectArray[i]!)
+                        if((anyType === this.objectArray[i]))
                         
                                     {
                                     
@@ -481,7 +484,7 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
 }
 
 
-    public lastIndexOf(anyType: any = {}): number{
+    public lastIndexOf(anyType: any): number{
 
                         if(anyType == 
                                     null
@@ -493,7 +496,7 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
 
 
                         for (
-    var i: number = this.currentIndex -1;i >= 0; i--)
+    let i: number = this.currentIndex -1;i >= 0; i--)
         {
 
                         if(this.objectArray[i] == 
@@ -521,10 +524,10 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
 
 
                         for (
-    var i: number = this.currentIndex -1;i >= 0; i--)
+    let i: number = this.currentIndex -1;i >= 0; i--)
         {
 
-                        if(anyType! === this.objectArray[i]!)
+                        if((anyType === this.objectArray[i]))
                         
                                     {
                                     
@@ -556,7 +559,7 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
     
@@ -583,13 +586,13 @@ stringBuffer!.appendint(this.currentIndex);
 }
 
 
-    public set(index: number, element: any = {}): any{
+    public set(index: number, element: any): any{
 
                         if(index >= this.currentIndex)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
     
@@ -608,7 +611,7 @@ stringBuffer!.appendint(this.currentIndex);
                                     }
                                 
 
-    var oldValue: any = this.objectArray[index]!;;
+    let oldValue: any = this.objectArray[index]!;;
     
 this.objectArray[index]= element;
     
@@ -627,7 +630,7 @@ this.objectArray[index]= element;
 
 
                         for (
-    var i: number = 0;i < this.currentIndex; i++)
+    let i: number = 0;i < this.currentIndex; i++)
         {
 this.objectArray[i]= 
                                         null
@@ -660,7 +663,7 @@ this.currentIndex= 0;
 }
 
 
-    public contains(anyType: any = {}): boolean{
+    public contains(anyType: any): boolean{
 
 
 
@@ -718,20 +721,20 @@ System.arraycopy(this.objectArray, 0, objectArray, 0, this.currentIndex);
 
     public clone(): any{
 
-    var size: number = this.size()!;;
+    let size: number = this.size()!;;
     
 
-    var list: BasicArrayList = new BasicArrayListS(size);;
+    let list: BasicArrayList = new BasicArrayListS(size);;
     
 
-    var anyType: any;;
+    let anyType: any;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 anyType= this.objectArray[index]!;
     
@@ -750,17 +753,17 @@ list.add(anyType);
 
     public toString(): string{
 
-    var COMMA_SEP: string = CommonSeps.getInstance()!.COMMA_SEP;;
+    let COMMA_SEP: string = CommonSeps.getInstance()!.COMMA_SEP;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.currentIndex; index++)
+    let index: number = 0;index < this.currentIndex; index++)
         {
 stringBuffer!.append(this.objectArray[index]!.toString());
     
@@ -778,6 +781,4 @@ stringBuffer!.append(COMMA_SEP);
 
 
 }
-
-
 

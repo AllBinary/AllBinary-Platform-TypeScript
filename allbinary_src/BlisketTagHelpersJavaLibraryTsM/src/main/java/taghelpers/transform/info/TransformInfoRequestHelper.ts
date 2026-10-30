@@ -25,9 +25,11 @@ import { HashMap } from '../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
@@ -40,6 +42,7 @@ import { TransformInfoEntityBuilder } from '../../../org/allbinary/data/tables/t
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { TransformInfoHttpInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
 //not GWT import const TransformInfoHttpInterface
@@ -83,12 +86,11 @@ public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageConte
 
     public update(): string{
 
-        try {
-            
-    var success: string = "Updated Successfully";;
+ try { 
+    let success: string = "Updated Successfully";;
     
 
-    var hashMapData: HashMap<any, any> = this.transformInfoInterface!.toHashMap()!;;
+    let hashMapData: HashMap<any, any> = this.transformInfoInterface!.toHashMap()!;;
     
 TransformInfoEntityBuilder.getInstance()!.update(hashMapData);
     
@@ -107,12 +109,13 @@ TransformInfoEntityBuilder.getInstance()!.update(hashMapData);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to update storefronts table";;
+    let error: string = "Failed to update storefronts table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -129,19 +132,20 @@ TransformInfoEntityBuilder.getInstance()!.update(hashMapData);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public insert(): string{
 
-        try {
-            
-    var success: string = "Added TransformInfo Successfully";;
+ try { 
+    let success: string = "Added TransformInfo Successfully";;
     
 
-    var values: BasicArrayList = this.transformInfoInterface!.toVector()!;;
+    let values: BasicArrayList = this.transformInfoInterface!.toVector()!;;
     
 TransformInfoEntityBuilder.getInstance()!.insert(values);
     
@@ -160,12 +164,13 @@ TransformInfoEntityBuilder.getInstance()!.insert(values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to add storefronts table";;
+    let error: string = "Failed to add storefronts table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -182,16 +187,17 @@ TransformInfoEntityBuilder.getInstance()!.insert(values);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(): string{
 
-        try {
-            
-    var success: string = "Delete Successfully";;
+ try { 
+    let success: string = "Delete Successfully";;
     
 TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.getKey() as string);
     
@@ -210,12 +216,13 @@ TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.ge
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to delete storefronts table";;
+    let error: string = "Failed to delete storefronts table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -232,12 +239,12 @@ TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.ge
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

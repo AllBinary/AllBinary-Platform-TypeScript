@@ -22,6 +22,7 @@
         
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -58,10 +59,10 @@ public constructor (aPath: string){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var pathData: AbPathData = AbPathData.getInstance()!;;
+    let pathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var abPathUtil: PathUtil = PathUtil.getInstance()!;;
+    let abPathUtil: PathUtil = PathUtil.getInstance()!;;
     
 this.schema= this.getSchema(aPath);
     
@@ -73,6 +74,4 @@ this.setPath(abPathUtil!.adjust(this.getPathFromPath(abPathUtil!.removeNameFromP
 
 
 }
-
-
 

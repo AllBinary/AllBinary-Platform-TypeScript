@@ -84,15 +84,15 @@ private constructor (){
                         
                                     {
                                     
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+    let byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var printStream: PrintStream = new PrintStream(byteArrayOutputStream);;
+    let printStream: PrintStream = new PrintStream(byteArrayOutputStream);;
     
 e.printStackTrace(printStream);
     
 
-    var output: string = byteArrayOutputStream!.toString()!;;
+    let output: string = byteArrayOutputStream!.toString()!;;
     
 
                         if(output != 
@@ -122,6 +122,4 @@ e.printStackTrace(printStream);
 
 
 }
-
-
 

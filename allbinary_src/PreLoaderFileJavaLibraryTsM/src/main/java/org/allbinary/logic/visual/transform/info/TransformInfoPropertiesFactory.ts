@@ -30,9 +30,11 @@ import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/D
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 import { Attr } from '../../../../../../org/w3c/dom/Attr.js';
 //not GWT import const Attr
@@ -75,8 +77,15 @@ export class TransformInfoPropertiesFactory
         
 
     private static readonly instance: TransformInfoPropertiesFactory = new TransformInfoPropertiesFactory();
-
-    public static getInstance(): TransformInfoPropertiesFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): TransformInfoPropertiesFactory{
 
 
 
@@ -96,21 +105,21 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(node: Node): TransformInfoProperties{
+    public getInstance$overload2(node: Node): TransformInfoProperties{
 
-    var transformInfoChildNodeList: NodeList = node.getChildNodes()!;;
+    let transformInfoChildNodeList: NodeList = node.getChildNodes()!;;
     
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
+    let transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var attributes: NamedNodeMap = node.getAttributes()!;;
+    let attributes: NamedNodeMap = node.getAttributes()!;;
     
 
-    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME) as Attr;;
+    let attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME) as Attr;;
     
 
-    var name: string = attrNode!.getValue()!;;
+    let name: string = attrNode!.getValue()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -122,10 +131,10 @@ private constructor (){
                                     }
                                 
 
-    var labelNode: Node = DomSearchHelper.getNodeNoThrow(transformInfoData!.LABEL, transformInfoChildNodeList)!;;
+    let labelNode: Node = DomSearchHelper.getNodeNoThrow(transformInfoData!.LABEL, transformInfoChildNodeList)!;;
     
 
-    var label: string = DomNodeHelper.getTextNodesValue(labelNode)!;;
+    let label: string = DomNodeHelper.getTextNodesValue(labelNode)!;;
     
 
                         if(label == 
@@ -139,31 +148,31 @@ private constructor (){
                                     }
                                 
 
-    var descriptionNode: Node = DomSearchHelper.getNode(transformInfoData!.DESCRIPTION, transformInfoChildNodeList)!;;
+    let descriptionNode: Node = DomSearchHelper.getNode(transformInfoData!.DESCRIPTION, transformInfoChildNodeList)!;;
     
 
-    var description: string = DomNodeHelper.getTextNodesValue(descriptionNode)!;;
+    let description: string = DomNodeHelper.getTextNodesValue(descriptionNode)!;;
     
 
-    var objectFileNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTFILENAME, transformInfoChildNodeList)!;;
+    let objectFileNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTFILENAME, transformInfoChildNodeList)!;;
     
 
-    var objectFileName: string = DomNodeHelper.getTextNodeValue(objectFileNode)!;;
+    let objectFileName: string = DomNodeHelper.getTextNodeValue(objectFileNode)!;;
     
 
-    var objectConfigFileNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTCONFIGFILENAME, transformInfoChildNodeList)!;;
+    let objectConfigFileNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTCONFIGFILENAME, transformInfoChildNodeList)!;;
     
 
-    var objectConfigFileName: string = DomNodeHelper.getTextNodeValue(objectConfigFileNode)!;;
+    let objectConfigFileName: string = DomNodeHelper.getTextNodeValue(objectConfigFileNode)!;;
     
 
-    var templateFileNode: Node = DomSearchHelper.getNode(transformInfoData!.TEMPLATEFILENAME, transformInfoChildNodeList)!;;
+    let templateFileNode: Node = DomSearchHelper.getNode(transformInfoData!.TEMPLATEFILENAME, transformInfoChildNodeList)!;;
     
 
-    var templateFileName: string = DomNodeHelper.getTextNodeValue(templateFileNode)!;;
+    let templateFileName: string = DomNodeHelper.getTextNodeValue(templateFileNode)!;;
     
 
-    var transformInfoProperties: TransformInfoProperties = new TransformInfoProperties(name, label, description, objectFileName, objectConfigFileName, templateFileName);;
+    let transformInfoProperties: TransformInfoProperties = new TransformInfoProperties(name, label, description, objectFileName, objectConfigFileName, templateFileName);;
     
 
 
@@ -175,6 +184,4 @@ private constructor (){
 
 
 }
-
-
 

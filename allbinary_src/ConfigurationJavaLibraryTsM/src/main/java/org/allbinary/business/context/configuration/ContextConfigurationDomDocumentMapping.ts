@@ -79,10 +79,10 @@ public constructor (contextConfigurationInterface: ContextConfigurationInterface
             
     public toXmlDoc(): Document{
 
-    var document: Document = DomDocumentHelper.create()!;;
+    let document: Document = DomDocumentHelper.create()!;;
     
 
-    var node: Node = new ContextConfigurationView(this.contextConfigurationInterface).toXmlNode(document)!;;
+    let node: Node = new ContextConfigurationView(this.contextConfigurationInterface).toXmlNode(document)!;;
     
 document.appendChild(node);
     
@@ -108,6 +108,4 @@ document.appendChild(node);
 
 
 }
-
-
 

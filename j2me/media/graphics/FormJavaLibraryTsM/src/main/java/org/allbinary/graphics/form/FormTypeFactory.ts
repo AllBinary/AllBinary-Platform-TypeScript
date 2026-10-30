@@ -25,6 +25,7 @@ import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/display
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -76,10 +77,10 @@ export class FormTypeFactory
 
     public getFormType(): FormType{
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var formType: FormType;;
+    let formType: FormType;;
     
 
                         if(displayInfo!.isPortrait())
@@ -106,6 +107,4 @@ export class FormTypeFactory
 
 
 }
-
-
 

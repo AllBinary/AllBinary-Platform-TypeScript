@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { CategoryHierarchyInterface } from '../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
 //not GWT import const CategoryHierarchyInterface
@@ -63,47 +65,45 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 export interface CategoryInterface extends TableMappingInterface, ValidationInterface {
         
 
-    getChildNodes(): BasicArrayList
+    getChildNodes(): BasicArrayList;
 
-    addChildProperty(categoryPropertiesInterface: CategoryPropertiesInterface): boolean
+    addChildProperty(categoryPropertiesInterface: CategoryPropertiesInterface): boolean;
 
-    addChild(categoryInterface: CategoryInterface): boolean
+    addChild(categoryInterface: CategoryInterface): boolean;
 
-    removeChild(categoryInterface: CategoryInterface): boolean
-
-                //@Throws(Exception.constructor)
-            
-    isLeaf(): boolean
-
-    getProperties(): CategoryPropertiesInterface
-
-    setProperties(categoryPropertiesInterface: CategoryPropertiesInterface)
-
-    getHierarchy(): CategoryHierarchyInterface
-
-    setHierarchy(categoryHierarchyInterface: CategoryHierarchyInterface)
+    removeChild(categoryInterface: CategoryInterface): boolean;
 
                 //@Throws(Exception.constructor)
             
-    getPath(): AbPath
+    isLeaf(): boolean;
+
+    getProperties(): CategoryPropertiesInterface;
+
+    setProperties(categoryPropertiesInterface: CategoryPropertiesInterface): void;
+
+    getHierarchy(): CategoryHierarchyInterface;
+
+    setHierarchy(categoryHierarchyInterface: CategoryHierarchyInterface): void;
 
                 //@Throws(Exception.constructor)
             
-    getFilePath(): AbPath
+    getPath(): AbPath;
 
                 //@Throws(Exception.constructor)
             
-    getWebAppPath(): AbPath
+    getFilePath(): AbPath;
 
                 //@Throws(Exception.constructor)
             
-    getRootFilePath(): AbPath
+    getWebAppPath(): AbPath;
 
                 //@Throws(Exception.constructor)
             
-    log()
+    getRootFilePath(): AbPath;
+
+                //@Throws(Exception.constructor)
+            
+    log(): void;
 
 }
-
-
 

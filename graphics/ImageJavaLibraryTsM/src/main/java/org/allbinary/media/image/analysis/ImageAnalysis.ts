@@ -38,12 +38,15 @@ import { ColorCacheable } from '../../../../../org/allbinary/graphics/color/Colo
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -93,41 +96,41 @@ export class ImageAnalysis
 
                 //@Throws(Exception.constructor)
             
-    public static process(bufferedImage: BufferedImage, colorRangeInterface: ColorRangeInterface): ImageAnalysisResults{
+    public static process$overload2(bufferedImage: BufferedImage, colorRangeInterface: ColorRangeInterface): ImageAnalysisResults{
 
-    var imageAnalysisResults: ImageAnalysisResults = new ImageAnalysisResults();;
+    let imageAnalysisResults: ImageAnalysisResults = new ImageAnalysisResults();;
     
 
-    var redTotal: number = 0;;
+    let redTotal: number = 0;;
     
 
-    var greenTotal: number = 0;;
+    let greenTotal: number = 0;;
     
 
-    var blueTotal: number = 0;;
+    let blueTotal: number = 0;;
     
 
 
 
 
                         for (
-    var indexY: number = 0;indexY < bufferedImage!.getHeight(); indexY++)
+    let indexY: number = 0;indexY < bufferedImage!.getHeight(); indexY++)
         {
 
 
 
 
                         for (
-    var indexX: number = 0;indexX < bufferedImage!.getWidth(); indexX++)
+    let indexX: number = 0;indexX < bufferedImage!.getWidth(); indexX++)
         {
 
-    var keyInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(indexX, indexY))!;;
+    let keyInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(indexX, indexY))!;;
     
 
-    var colorCacheable: ColorCacheable = ColorCacheFactory.getInstance()!.get(keyInteger) as ColorCacheable;;
+    let colorCacheable: ColorCacheable = ColorCacheFactory.getInstance()!.get(keyInteger) as ColorCacheable;;
     
 
-    var color: Color = colorCacheable!.getColor()!;;
+    let color: Color = colorCacheable!.getColor()!;;
     
 ImageAnalysis.processColorRangeResults(imageAnalysisResults, colorRangeInterface, color);
     
@@ -144,10 +147,10 @@ blueTotal += color.getBlue();
 }
 
 
-    var totalPixels: number = imageAnalysisResults!.getImageColorRangeResults()!.getTotalPixelsChecked()!;;
+    let totalPixels: number = imageAnalysisResults!.getImageColorRangeResults()!.getTotalPixelsChecked()!;;
     
 
-    var colorAverage: ColorAverage = imageAnalysisResults!.getImageColorResults()!.getColorAverage()!;;
+    let colorAverage: ColorAverage = imageAnalysisResults!.getImageColorResults()!.getColorAverage()!;;
     
 colorAverage!.setAvgRed(redTotal /totalPixels);
     
@@ -248,24 +251,31 @@ private constructor (){
             super();
         }
 
-
+process(...args: any[]): any {
+   
+    if (args.length === 2) return this.process$overload1(args[0], args[1]);
+   
+    if (args.length === 2) return this.process$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: process'); }
+  
                 //@Throws(Exception.constructor)
             
-    public process(bufferedImageArray: BufferedImage[], colorRangeInterface: ColorRangeInterface): ImageAnalysisResults[]{
+    public process$overload1(bufferedImageArray: BufferedImage[], colorRangeInterface: ColorRangeInterface): ImageAnalysisResults[]{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(CommonLabels.getInstance()!.START +colorRangeInterface!.toString(), this, commonStrings!.PROCESS);
     
 
-    var imageAnalysisResultsArray: ImageAnalysisResults[] = new Array(bufferedImageArray!.length);;
+    let imageAnalysisResultsArray: ImageAnalysisResults[] = new Array(bufferedImageArray!.length);;
     
 
 
 
 
                         for (
-    var index: number = 0;index < bufferedImageArray!.length; index++)
+    let index: number = 0;index < bufferedImageArray!.length; index++)
         {
 imageAnalysisResultsArray[index]= ImageAnalysis.process(bufferedImageArray[index]!, colorRangeInterface);
     
@@ -281,6 +291,4 @@ imageAnalysisResultsArray[index]= ImageAnalysis.process(bufferedImageArray[index
 
 
 }
-
-
 

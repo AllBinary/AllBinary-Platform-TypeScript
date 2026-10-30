@@ -120,7 +120,7 @@ this.value= 0;
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.offset= font.stringWidth(this.prependString) +MyFontProcessor.defaultCharWidth(font);
     
@@ -180,17 +180,17 @@ super.paintDX(graphics, this.PREPEND_STRING, 0, this.PREPEND_STRING.length, this
 this.myFontProcessor!.process(graphics);
     
 
-    var charArray: string[] = this.PREPEND_STRING;;
+    let charArray: string[] = this.PREPEND_STRING;;
     
 
-    var len: number = this.PREPEND_STRING.length
+    let len: number = this.PREPEND_STRING.length
                 ;;
     
 
-    var charArray2: string[] = this.valueString;;
+    let charArray2: string[] = this.valueString;;
     
 
-    var len2: number = this.valueTotalDigits;;
+    let len2: number = this.valueTotalDigits;;
     
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
@@ -206,6 +206,4 @@ graphics.drawChars(charArray2, 0, len2, x -this.offset, y, 0);
 
 
 }
-
-
 

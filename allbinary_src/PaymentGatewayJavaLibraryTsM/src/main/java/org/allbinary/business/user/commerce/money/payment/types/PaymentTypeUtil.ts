@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
@@ -51,9 +53,11 @@ import { URLGLOBALS } from '../../../../../../../../org/allbinary/globals/URLGLO
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CryptFileReader } from '../../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
@@ -63,9 +67,11 @@ import { AbPath } from '../../../../../../../../org/allbinary/logic/io/path/AbPa
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -75,6 +81,7 @@ import { TransformInfoObjectConfigData } from '../../../../../../../../org/allbi
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -149,10 +156,10 @@ private constructor (){
 
             super();
         
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var sep: string = AbPathData.getInstance()!.SEPARATOR;;
+    let sep: string = AbPathData.getInstance()!.SEPARATOR;;
     
 stringBuffer!.append(sep);
     
@@ -195,17 +202,17 @@ this.paymentTypeVector!.add(paymentType);
             
     public get(paymentTypeString: string): PaymentType{
 
-    var size: number = this.paymentTypeVector!.size()!;;
+    let size: number = this.paymentTypeVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var paymentType: PaymentType = this.paymentTypeVector!.get(i) as PaymentType;;
+    let paymentType: PaymentType = this.paymentTypeVector!.get(i) as PaymentType;;
     
 
                         if(paymentType!.getBasicPaymentType()!.getName()!.compareTo(paymentTypeString) == 0)
@@ -247,7 +254,7 @@ this.paymentTypeVector!.add(paymentType);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     
@@ -260,32 +267,32 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(this.PAYMENTGATEWAYFILEPATHSTRING);
     
 
-    var abPath: AbPath = new AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;;
+    let abPath: AbPath = new AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;;
     
 
-    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(abPath)!;;
+    let data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(abPath)!;;
     
 
-    var document: Document = DomDocumentHelper.create(data)!;;
+    let document: Document = DomDocumentHelper.create(data)!;;
     
 
-    var nodeList: NodeList = document.getElementsByTagName(PaymentGatewaysData.NAME)!;;
+    let nodeList: NodeList = document.getElementsByTagName(PaymentGatewaysData.NAME)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var node: Node = nodeList!.item(index)!;;
+    let node: Node = nodeList!.item(index)!;;
     
 
-    var defaultPaymentGatewayNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.DEFAULT, node.getChildNodes())!;;
+    let defaultPaymentGatewayNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.DEFAULT, node.getChildNodes())!;;
     
 
-    var defaultPaymentGatewayNodeValue: string = DomNodeHelper.getTextNodeValue(defaultPaymentGatewayNode)!;;
+    let defaultPaymentGatewayNodeValue: string = DomNodeHelper.getTextNodeValue(defaultPaymentGatewayNode)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
@@ -360,20 +367,20 @@ this.initDefault(storeName);
 
     public difference(a_PaymentTypeVector: BasicArrayList): BasicArrayList{
 
-    var diff: BasicArrayList = new BasicArrayListD();;
+    let diff: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = this.paymentTypeVector!.size()!;;
+    let size: number = this.paymentTypeVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var paymentType: PaymentType = this.paymentTypeVector!.get(i) as PaymentType;;
+    let paymentType: PaymentType = this.paymentTypeVector!.get(i) as PaymentType;;
     
 
                         if(!a_PaymentTypeVector!.contains(paymentType))
@@ -390,6 +397,4 @@ this.initDefault(storeName);
 
 
 }
-
-
 

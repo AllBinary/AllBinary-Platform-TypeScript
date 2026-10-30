@@ -24,6 +24,7 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -57,14 +58,14 @@ export class ParamsUtil
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < params.length; index++)
+    let index: number = 0;index < params.length; index++)
         {
 stringBuffer!.append(" ");
     
@@ -94,6 +95,4 @@ private constructor (){
 
 
 }
-
-
 

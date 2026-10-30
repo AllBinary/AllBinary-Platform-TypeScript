@@ -42,11 +42,9 @@
 export interface ImageProcessorInputCompositeInterface {
         
 
-    getImageProcessorInput(): ImageProcessorInput
+    getImageProcessorInput(): ImageProcessorInput;
 
-    setImageProcessorInput(imageProcessorInput: ImageProcessorInput)
+    setImageProcessorInput(imageProcessorInput: ImageProcessorInput): void;
 
 }
-
-
 

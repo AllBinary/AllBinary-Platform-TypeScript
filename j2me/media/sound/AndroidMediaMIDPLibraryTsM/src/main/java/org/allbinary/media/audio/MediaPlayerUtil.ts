@@ -29,6 +29,7 @@ import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -72,13 +73,13 @@ export class MediaPlayerUtil
             
     public waitForMediaPlayer(mediaPlayer: MediaPlayer){
 
-    var MESSAGE: string = "Not Stopped Waiting";;
+    let MESSAGE: string = "Not Stopped Waiting";;
     
 
-    var METHOD_NAME: string = "wait";;
+    let METHOD_NAME: string = "wait";;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(mediaPlayer!.isPlaying() && index < 50)
@@ -95,6 +96,4 @@ index++;
 
 
 }
-
-
 

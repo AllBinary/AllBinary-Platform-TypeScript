@@ -38,6 +38,7 @@ import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBA
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -69,7 +70,7 @@ export class PrintLicenseInitInfo
             
     public static main(args: string[]){
 
-    var initInfo: PrintLicenseInitInfo = new PrintLicenseInitInfo(args);;
+    let initInfo: PrintLicenseInitInfo = new PrintLicenseInitInfo(args);;
     
 initInfo!.printInitInfo();
     
@@ -88,7 +89,7 @@ public constructor (options: string[]){
             
     public getLicenseInitInfo(): LicenseInitInfo{
 
-    var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;;
+    let licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;;
     
 
                         if(FileFactory.getInstance()!.isFile(licenseInitInfoUtil!.getFilePath()))
@@ -120,43 +121,43 @@ public constructor (options: string[]){
 
     public printInitInfo(){
 
-        try {
-            
-    var licenseInitInfo: LicenseInitInfo = this.getLicenseInitInfo()!;;
+ try { 
+    let licenseInitInfo: LicenseInitInfo = this.getLicenseInitInfo()!;;
     
 console.log("License ID: " +licenseInitInfo!.getLicenseId());
     
 
-    var list: BasicArrayList = licenseInitInfo!.getServerList()!;;
+    let list: BasicArrayList = licenseInitInfo!.getServerList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 console.log("Lic Serv: " +list.get(index));
     
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 console.log("Error: " +e);
     
 e.printStackTrace();
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

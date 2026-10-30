@@ -40,31 +40,29 @@
 export interface PaymentInterface {
         
 
-    setName(value: string)
+    setName(value: string): void;
 
-    setType(value: string)
+    setType(value: string): void;
 
-    setExpiration(value: string)
+    setExpiration(value: string): void;
 
-    setNumber(value: string)
+    setNumber(value: string): void;
 
-    getId(): string
+    getId(): string;
 
-    getName(): string
+    getName(): string;
 
-    getType(): string
+    getType(): string;
 
-    getExpiration(): string
+    getExpiration(): string;
 
-    getEncryption(): string
+    getEncryption(): string;
 
-    getNumber(): string
+    getNumber(): string;
 
-    getLastFour(): string
+    getLastFour(): string;
 
-    isDefault(): boolean
+    isDefault(): boolean;
 
 }
-
-
 

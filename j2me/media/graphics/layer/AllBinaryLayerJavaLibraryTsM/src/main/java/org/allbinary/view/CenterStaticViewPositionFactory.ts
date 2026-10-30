@@ -59,7 +59,7 @@ public constructor (){
 
     public getInstance(z: number): ViewPositionBase{
 
-    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
 
@@ -71,6 +71,4 @@ public constructor (){
 
 
 }
-
-
 

@@ -95,7 +95,7 @@ export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory imp
             
     public static createCWH(image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
 
-    var spriteIndexedAnimationFactory: SpriteIndexedAnimationFactory = new SpriteIndexedAnimationFactory(image, basicColorArray, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);;
+    let spriteIndexedAnimationFactory: SpriteIndexedAnimationFactory = new SpriteIndexedAnimationFactory(image, basicColorArray, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);;
     
 spriteIndexedAnimationFactory!.initHWH();
     
@@ -156,7 +156,7 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
             
     public getInstance(instanceId: number): Animation{
 
-    var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
+    let sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
@@ -197,6 +197,4 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
 
 
 }
-
-
 

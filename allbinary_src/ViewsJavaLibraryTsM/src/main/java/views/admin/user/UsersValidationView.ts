@@ -34,6 +34,7 @@ import { UserEntityFactory } from '../../../org/allbinary/data/tables/user/UserE
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
@@ -83,13 +84,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
+    let httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 
-    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as string;;
+    let role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as string;;
     
 
-    var userRole: UserRole = UserRoleB.getRole(role)!;;
+    let userRole: UserRole = UserRoleB.getRole(role)!;;
     
 this.userVector= UserEntityFactory.getInstance()!.getUsersWithRole(userRole);
     
@@ -98,8 +99,7 @@ this.userVector= UserEntityFactory.getInstance()!.getUsersWithRole(userRole);
 
     public isValid(): Boolean{
 
-        try {
-            
+ try { 
                         if(this.userVector!.size() > 0)
                         
                                     {
@@ -107,7 +107,7 @@ this.userVector= UserEntityFactory.getInstance()!.getUsersWithRole(userRole);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -117,15 +117,16 @@ this.userVector= UserEntityFactory.getInstance()!.getUsersWithRole(userRole);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -139,26 +140,28 @@ this.userVector= UserEntityFactory.getInstance()!.getUsersWithRole(userRole);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "No Users";
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -174,8 +177,10 @@ this.userVector= UserEntityFactory.getInstance()!.getUsersWithRole(userRole);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Getting Validation Info";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -200,6 +205,4 @@ this.userVector= UserEntityFactory.getInstance()!.getUsersWithRole(userRole);
 
 
 }
-
-
 

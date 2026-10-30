@@ -42,9 +42,11 @@ import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/do
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -100,7 +102,7 @@ public constructor (node: Node){
 
             super();
         
-    var propertyNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;;
+    let propertyNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;;
     
 this.propertyName= DomNodeHelper.getTextNodeValue(propertyNode);
     
@@ -114,7 +116,7 @@ this.propertyName= DomNodeHelper.getTextNodeValue(propertyNode);
                                     }
                                 
 
-    var propertyValuesNode: Node = DomSearchHelper.getNode(CssPropertyData.getInstance()!.VALUES, node.getChildNodes())!;;
+    let propertyValuesNode: Node = DomSearchHelper.getNode(CssPropertyData.getInstance()!.VALUES, node.getChildNodes())!;;
     
 this.cssPropertyValues= new CssPropertyValues(propertyValuesNode);
     
@@ -133,7 +135,7 @@ this.cssPropertyValues= new CssPropertyValues(propertyValuesNode);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName);
     
@@ -150,7 +152,7 @@ hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName);
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -162,7 +164,7 @@ hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName);
                                     }
                                 
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, CssPropertyData.getInstance()!.NAME, this.propertyName)!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, CssPropertyData.getInstance()!.NAME, this.propertyName)!;;
     
 node.appendChild(this.cssPropertyValues!.toXmlNode(document));
     
@@ -176,6 +178,4 @@ node.appendChild(this.cssPropertyValues!.toXmlNode(document));
 
 
 }
-
-
 

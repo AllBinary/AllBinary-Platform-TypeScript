@@ -48,6 +48,7 @@ import { ColorCacheable } from '../../../../../org/allbinary/graphics/color/Colo
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AutomaticCacheInterface } from '../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
@@ -99,38 +100,38 @@ public constructor (imageComparatorConstraintsInterface: ImageComparatorConstrai
             
     process(imageComparisonInfo: ImageComparisonResult, point: GPoint){
 
-    var isCollsionWithAvoidRectangles: boolean = this.imageComparatorConstraintsInterface!.isCollisionWithAvoidRectangles(point)!;;
+    let isCollsionWithAvoidRectangles: boolean = this.imageComparatorConstraintsInterface!.isCollisionWithAvoidRectangles(point)!;;
     
 
                         if(!isCollsionWithAvoidRectangles)
                         
                                     {
                                     
-    var rgb1: number = imageComparisonInfo!.getBufferedImages()[0]!.getRGB(point.getX(), point.getY())!;;
+    let rgb1: number = imageComparisonInfo!.getBufferedImages()[0]!.getRGB(point.getX(), point.getY())!;;
     
 
-    var rgb2: number = imageComparisonInfo!.getBufferedImages()[1]!.getRGB(point.getX(), point.getY())!;;
+    let rgb2: number = imageComparisonInfo!.getBufferedImages()[1]!.getRGB(point.getX(), point.getY())!;;
     
 
-    var automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;;
+    let automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;;
     
 
-    var colorInteger: Integer = Integer.valueOf(rgb1)!;;
+    let colorInteger: Integer = Integer.valueOf(rgb1)!;;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;;
+    let colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;;
     
 
-    var color: Color = colorCacheable!.getColor()!;;
+    let color: Color = colorCacheable!.getColor()!;;
     
 
-    var colorInteger2: Integer = Integer.valueOf(rgb2)!;;
+    let colorInteger2: Integer = Integer.valueOf(rgb2)!;;
     
 
-    var colorCacheable2: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;;
+    let colorCacheable2: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;;
     
 
-    var color2: Color = colorCacheable!.getColor()!;;
+    let color2: Color = colorCacheable!.getColor()!;;
     
 
                         if(this.imageComparatorConstraintsInterface!.isColorAllowed(0, point, color) || this.imageComparatorConstraintsInterface!.isColorAllowed(1, point, color2))
@@ -165,10 +166,17 @@ public constructor (imageComparatorConstraintsInterface: ImageComparatorConstrai
                             
 }
 
-
+compare(...args: any[]): any {
+   
+    if (args.length === 5 && typeof args[4] === 'number') return this.compare$overload1(args[0], args[1], args[2], args[3], args[4]);
+   
+    if (args.length === 6 && typeof args[4] === 'number' && typeof args[5] === 'string') return this.compare$overload2(args[0], args[1], args[2], args[3], args[4], args[5]);
+   
+   throw new TypeError('No matching overload: compare'); }
+  
                 //@Throws(Exception.constructor)
             
-    public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number): ImageComparisonResult{
+    public compare$overload1(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number): ImageComparisonResult{
 
 
 
@@ -180,7 +188,7 @@ public constructor (imageComparatorConstraintsInterface: ImageComparatorConstrai
 
                 //@Throws(Exception.constructor)
             
-    public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number, name: string): ImageComparisonResult{
+    public compare$overload2(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number, name: string): ImageComparisonResult{
 
                         if(bufferedImage1 == 
                                     null
@@ -198,21 +206,21 @@ public constructor (imageComparatorConstraintsInterface: ImageComparatorConstrai
                                     }
                                 
 
-    var imageComparisonInfo: ImageComparisonResult = new ImageComparisonResult(name, bufferedImage1, bufferedImage2, frameOne, frameTwo, tolerance);;
+    let imageComparisonInfo: ImageComparisonResult = new ImageComparisonResult(name, bufferedImage1, bufferedImage2, frameOne, frameTwo, tolerance);;
     
 
 
 
 
                         for (
-    var indexY: number = 0;indexY < imageComparisonInfo!.imageHeight; indexY++)
+    let indexY: number = 0;indexY < imageComparisonInfo!.imageHeight; indexY++)
         {
 
 
 
 
                         for (
-    var indexX: number = 0;indexX < imageComparisonInfo!.imageWidth; indexX++)
+    let indexX: number = 0;indexX < imageComparisonInfo!.imageWidth; indexX++)
         {
 this.process(imageComparisonInfo, PointFactory.getInstance()!.createXY(indexX, indexY));
     
@@ -240,6 +248,4 @@ this.process(imageComparisonInfo, PointFactory.getInstance()!.createXY(indexX, i
 
 
 }
-
-
 

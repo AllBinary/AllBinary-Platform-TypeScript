@@ -27,18 +27,23 @@ import { RelativeRelationship } from '../../../../org/allbinary/graphics/Relativ
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -84,7 +89,7 @@ this.setInitialized(true);
             
     public getResourceRelativeRelationshipList(resource: string): BasicArrayList{
 
-    var listCanBeNull: any = this.hashtable.get(resource);;
+    let listCanBeNull: any = this.hashtable.get(resource);;
     
 
                         if(listCanBeNull == 
@@ -114,7 +119,7 @@ this.setInitialized(true);
             
     public addResourceRelativeRelationship(resource: string, hardPoint: RelativeRelationship){
 
-    var list: BasicArrayList = this.getResourceRelativeRelationshipList(resource)!;;
+    let list: BasicArrayList = this.getResourceRelativeRelationshipList(resource)!;;
     
 
                         if(list == this.basicArrayListUtil!.getImmutableInstance())
@@ -169,6 +174,4 @@ this.initialized= initialized;
 
 
 }
-
-
 

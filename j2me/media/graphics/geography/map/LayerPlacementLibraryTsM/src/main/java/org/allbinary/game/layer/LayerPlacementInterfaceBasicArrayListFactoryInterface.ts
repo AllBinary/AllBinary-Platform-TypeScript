@@ -20,6 +20,7 @@
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -43,11 +44,9 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 export interface LayerPlacementInterfaceBasicArrayListFactoryInterface {
         
 
-    getInstance(): BasicArrayList
+    getInstance(): BasicArrayList;
 
-    getOnDemandResources(): number[]
+    getOnDemandResources(): number[];
 
 }
-
-
 

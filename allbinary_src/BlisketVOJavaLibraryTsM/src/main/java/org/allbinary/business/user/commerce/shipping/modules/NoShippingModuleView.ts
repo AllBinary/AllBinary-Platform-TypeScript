@@ -31,6 +31,7 @@ import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/M
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
@@ -111,9 +112,8 @@ public constructor (){
 
     public toXmlNode(document: org.w3c.dom.Document): org.w3c.dom.Node{
 
-        try {
-            
-    var shippingMethodNode: Node = document.createElement(ShippingMethodData.NAME)!;;
+ try { 
+    let shippingMethodNode: Node = document.createElement(ShippingMethodData.NAME)!;;
     
 shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.NAME, this.getName()));
     
@@ -125,10 +125,11 @@ shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, Ship
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return shippingMethodNode;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -144,8 +145,10 @@ shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, Ship
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -170,6 +173,4 @@ shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, Ship
 
 
 }
-
-
 

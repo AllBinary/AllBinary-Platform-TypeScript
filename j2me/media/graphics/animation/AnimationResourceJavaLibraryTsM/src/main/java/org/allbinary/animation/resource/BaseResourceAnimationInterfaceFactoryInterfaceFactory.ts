@@ -42,18 +42,23 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -123,7 +128,7 @@ this.name= name;
             
     public init(level: number){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(new StringMaker().append("Available List of Animations: ")!.append(this.hashtable.toString())!.toString(), this, commonStrings!.INIT);
     
@@ -162,7 +167,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
             
     public getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
 
-    var basicAnimationInterfaceFactoryInterfaceCanBeNull: any = this.hashtable.get(resource);;
+    let basicAnimationInterfaceFactoryInterfaceCanBeNull: any = this.hashtable.get(resource);;
     
 
                         if(basicAnimationInterfaceFactoryInterfaceCanBeNull == 
@@ -192,7 +197,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
             
     public getRectangle(resource: string): Rectangle{
 
-    var rectangleCanBeNull: any = this.rectangleHashtable!.get(resource);;
+    let rectangleCanBeNull: any = this.rectangleHashtable!.get(resource);;
     
 
                         if(rectangleCanBeNull == 
@@ -230,7 +235,7 @@ this.rectangleHashtable!.put(resource, rectangle);
             
     public getRectangleArrayOfArrays(resource: string): Rectangle[][]{
 
-    var valueCanBeNull: any = this.rectangleArrayOfArraysHashtable!.get(resource);;
+    let valueCanBeNull: any = this.rectangleArrayOfArraysHashtable!.get(resource);;
     
 
                         if(valueCanBeNull != 
@@ -239,7 +244,7 @@ this.rectangleHashtable!.put(resource, rectangle);
                         
                                     {
                                     
-    var rectangleArrayOfArrays: Rectangle[][] = valueCanBeNull as Rectangle[][];;
+    let rectangleArrayOfArrays: Rectangle[][] = valueCanBeNull as Rectangle[][];;
     
 
 
@@ -283,7 +288,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 
     public isLoadingLevel(level: number): boolean{
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
+    let resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
@@ -368,6 +373,4 @@ this.initialized= initialized;
 
 
 }
-
-
 

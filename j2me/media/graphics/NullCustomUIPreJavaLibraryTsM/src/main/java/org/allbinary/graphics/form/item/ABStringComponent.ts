@@ -70,5 +70,3 @@ public constructor (backgroundBasicColor: BasicColor, foregroundBasicColor: Basi
 
 }
 
-
-

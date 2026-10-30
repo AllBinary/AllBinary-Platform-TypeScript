@@ -45,6 +45,7 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -463,8 +464,15 @@ this.file.deleteOnExit();
     
 }
 
-
-    public setWritable(writable: boolean, ownerOnly: boolean): boolean{
+setWritable(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'boolean' && typeof args[1] === 'boolean') return this.setWritable$overload1(args[0], args[1]);
+   
+    if (args.length === 1 && typeof args[0] === 'boolean') return this.setWritable$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: setWritable'); }
+  
+    public setWritable$overload1(writable: boolean, ownerOnly: boolean): boolean{
 
 
 
@@ -474,7 +482,7 @@ this.file.deleteOnExit();
 }
 
 
-    public setWritable(writable: boolean): boolean{
+    public setWritable$overload2(writable: boolean): boolean{
 
 
 
@@ -483,8 +491,15 @@ this.file.deleteOnExit();
     
 }
 
-
-    public setReadable(readable: boolean, ownerOnly: boolean): boolean{
+setReadable(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'boolean' && typeof args[1] === 'boolean') return this.setReadable$overload1(args[0], args[1]);
+   
+    if (args.length === 1 && typeof args[0] === 'boolean') return this.setReadable$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: setReadable'); }
+  
+    public setReadable$overload1(readable: boolean, ownerOnly: boolean): boolean{
 
 
 
@@ -494,7 +509,7 @@ this.file.deleteOnExit();
 }
 
 
-    public setReadable(readable: boolean): boolean{
+    public setReadable$overload2(readable: boolean): boolean{
 
 
 
@@ -503,8 +518,15 @@ this.file.deleteOnExit();
     
 }
 
-
-    public setExecutable(executable: boolean, ownerOnly: boolean): boolean{
+setExecutable(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'boolean' && typeof args[1] === 'boolean') return this.setExecutable$overload1(args[0], args[1]);
+   
+    if (args.length === 1 && typeof args[0] === 'boolean') return this.setExecutable$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: setExecutable'); }
+  
+    public setExecutable$overload1(executable: boolean, ownerOnly: boolean): boolean{
 
 
 
@@ -514,7 +536,7 @@ this.file.deleteOnExit();
 }
 
 
-    public setExecutable(executable: boolean): boolean{
+    public setExecutable$overload2(executable: boolean): boolean{
 
 
 
@@ -574,7 +596,7 @@ this.file.deleteOnExit();
 }
 
 
-    public equals(obj: any = {}): boolean{
+    public equals(obj: any): boolean{
 
 
 
@@ -605,6 +627,4 @@ this.file.deleteOnExit();
 
 
 }
-
-
 

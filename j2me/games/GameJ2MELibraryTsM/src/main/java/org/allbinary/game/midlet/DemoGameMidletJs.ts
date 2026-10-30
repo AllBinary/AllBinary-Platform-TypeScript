@@ -47,9 +47,7 @@ export interface DemoGameMidletJs {
 
                 //@Throws(Exception.constructor)
             
-    public createDemoGameCanvasRunnableInterface(): GameCanvasRunnableInterface
+    public createDemoGameCanvasRunnableInterface(): GameCanvasRunnableInterface;
 
 }
-
-
 

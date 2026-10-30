@@ -97,5 +97,3 @@ this.direction= direction;
 
 }
 
-
-

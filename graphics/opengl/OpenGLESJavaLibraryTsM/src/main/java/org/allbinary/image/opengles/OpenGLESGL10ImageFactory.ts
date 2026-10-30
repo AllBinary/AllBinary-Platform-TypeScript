@@ -65,5 +65,3 @@ export class OpenGLESGL10ImageFactory extends OpenGLImageFactory {
 
 }
 
-
-

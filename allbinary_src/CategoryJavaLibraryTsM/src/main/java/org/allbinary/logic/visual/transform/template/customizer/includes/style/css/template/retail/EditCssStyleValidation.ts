@@ -136,27 +136,27 @@ public constructor (hashMap: HashMap<any, any>){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(StylesData.getInstance()!.NAME)!;;
+    let node: Node = document.createElement(StylesData.getInstance()!.NAME)!;;
     
 
-    var styleNode: Node = document.createElement(StyleData.getInstance()!.NAME)!;;
+    let styleNode: Node = document.createElement(StyleData.getInstance()!.NAME)!;;
     
 node.appendChild(styleNode);
     
 styleNode!.appendChild(new ColorsView().toXmlNode(document));
     
 
-    var size: number = this.cssStyleElementVector!.size()!;;
+    let size: number = this.cssStyleElementVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i) as DomNodeInterface;;
+    let styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i) as DomNodeInterface;;
     
 styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));
     
@@ -172,6 +172,4 @@ styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));
 
 
 }
-
-
 

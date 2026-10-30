@@ -25,6 +25,7 @@ import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CryptFileReader } from '../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
@@ -77,8 +78,19 @@ export class TransformInfoObjectConfigAndManipulatorFactory extends TransformInf
         
 
     private static readonly instance: TransformInfoObjectConfigAndManipulatorFactory = new TransformInfoObjectConfigAndManipulatorFactory();
-
-    public static getInstance(): TransformInfoObjectConfigAndManipulatorFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 3) return this.getInstance$overload2(args[0], args[1], args[2]);
+   
+    if (args.length === 2) return this.getInstance$overload3(args[0], args[1]);
+   
+    if (args.length === 3) return this.getInstance$overload4(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): TransformInfoObjectConfigAndManipulatorFactory{
 
 
 
@@ -98,11 +110,10 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
+    public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
 
-        try {
-            
-    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(objectConfigFileAbPath)!;;
+ try { 
+    let data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(objectConfigFileAbPath)!;;
     
 
 
@@ -110,10 +121,11 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(abeClientInformation, transformInfoInterface, DomDocumentHelper.create(data));;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -128,18 +140,19 @@ private constructor (){
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface{
+    public getInstance$overload3(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface{
 
-        try {
-            
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+ try { 
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(transformInfoInterface != 
@@ -166,12 +179,13 @@ private constructor (){
 
                         }
                             
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed To Get Instance: ";;
+    let error: string = "Failed To Get Instance: ";;
     
 
                         if(transformInfoInterface != 
@@ -198,18 +212,19 @@ private constructor (){
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface{
+    public getInstance$overload4(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface{
 
-        try {
-            
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+ try { 
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(transformInfoInterface != 
@@ -236,12 +251,13 @@ private constructor (){
 
                         }
                             
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed To Get Instance: ";;
+    let error: string = "Failed To Get Instance: ";;
     
 
                         if(transformInfoInterface != 
@@ -268,12 +284,12 @@ private constructor (){
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

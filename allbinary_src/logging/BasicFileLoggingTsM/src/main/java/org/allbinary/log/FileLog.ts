@@ -46,15 +46,19 @@ import { RandomAccessFile } from '../../../java/io/RandomAccessFile.js';
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { LogFormatUtil } 
 const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+type LogFormatUtil<T = any, U = any> = typeof LogFormatUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogFormatUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -107,8 +111,7 @@ export class FileLog
 
     public static createLogFile(): boolean{
 
-        try {
-            FileLog.logFile= new File(logPath, fileName);
+ try { FileLog.logFile= new File(logPath, fileName);
     
 
                         if(!FileLog.firstTime)
@@ -123,7 +126,7 @@ export class FileLog
                             FileLog.firstTime= false;
     
 
-    var raFile: RandomAccessFile = new RandomAccessFile(logFile, "rw");;
+    let raFile: RandomAccessFile = new RandomAccessFile(logFile, "rw");;
     
 raFile!.seek(raFile!.length());
     
@@ -133,7 +136,7 @@ FileLog.fileOut= new BufferedWriter(new FileWriter(raFile!.getFD()));
                         }
                             
 
-    var canWrite: boolean = FileLog.logFile!.canWrite()!;;
+    let canWrite: boolean = FileLog.logFile!.canWrite()!;;
     
 
 
@@ -141,10 +144,11 @@ FileLog.fileOut= new BufferedWriter(new FileWriter(raFile!.getFD()));
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return canWrite;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 console.log("Error Creating Log: " +e);
     
 
@@ -153,17 +157,18 @@ console.log("Error Creating Log: " +e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     static createLogFileBackup(): boolean{
 
-        try {
-            
-    var stringMaker: StringMaker = new StringMaker();;
+ try { 
+    let stringMaker: StringMaker = new StringMaker();;
     
 FileLog.logFileBak= new File(logPath, stringMaker!.append(backupFileName)!.append(CommonSeps.getInstance()!.PERIOD)!.appendint(backupIndex)!.toString());
     
@@ -179,13 +184,13 @@ FileLog.logFileBak= new File(logPath, stringMaker!.append(backupFileName)!.appen
 }
 
 
-    var line: string = .toCharArray();;
+    let line: string = .toCharArray();;
     
 
-    var tmpOut: BufferedWriter = new BufferedWriter(new FileWriter(logFileBak));;
+    let tmpOut: BufferedWriter = new BufferedWriter(new FileWriter(logFileBak));;
     
 
-    var tmpIn: BufferedReader = new BufferedReader(new FileReader(logFile));;
+    let tmpIn: BufferedReader = new BufferedReader(new FileReader(logFile));;
     
 
         while((line= tmpIn!.readLine()) != 
@@ -212,10 +217,11 @@ FileLog.logFile!.delete();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 console.log("Error Creating Backup: " +e);
     
 
@@ -224,13 +230,26 @@ console.log("Error Creating Backup: " +e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
+
+ }
+   }
+ 
 }
 
-}
+static put(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[2] === 'string') return this.put$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 4 && typeof args[0] === 'string' && typeof args[2] === 'string') return this.put$overload2(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string') return this.put$overload3(args[0], args[1], args[2]);
+   
+    if (args.length === 4 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string') return this.put$overload4(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: put'); }
+  //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
-
-    public static put(specialMessage: string, anyType: any = {}, functionName: string): string{
+    public static put$overload1(specialMessage: string, anyType: any, functionName: string): string{
 
 
 
@@ -242,10 +261,9 @@ console.log("Error Creating Backup: " +e);
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public static put(specialMessage: string, anyType: any = {}, functionName: string, exception: Throwable): string{
+    public static put$overload2(specialMessage: string, anyType: any, functionName: string, exception: Throwable): string{
 
-        try {
-            
+ try { 
                         if(FileLog.firstTime == true)
                         
                                     {
@@ -268,7 +286,7 @@ console.log("Error Creating Backup: " +e);
                                     }
                                 
 
-    var length: number = FileLog.logFile!.length()!;;
+    let length: number = FileLog.logFile!.length()!;;
     
 
                         if(length > FileLog.logLength)
@@ -291,7 +309,7 @@ console.log("Error Creating Backup: " +e);
                                     }
                                 
 
-    var className: string = NULL_STRING.toCharArray();;
+    let className: string = NULL_STRING.toCharArray();;
     
 
                         if(functionName == 
@@ -309,7 +327,7 @@ console.log("Error Creating Backup: " +e);
                                 )
                         className= anyType!.constructor.name.toString()!
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 FileLog.fileOut!.write(message, 0, message.length);
     
@@ -323,23 +341,26 @@ FileLog.fileOut!.flush();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return .toCharArray();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return .toCharArray();
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public static put(specialMessage: string, className: string, functionName: string): string{
+    public static put$overload3(specialMessage: string, className: string, functionName: string): string{
 
 
 
@@ -351,10 +372,9 @@ FileLog.fileOut!.flush();
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public static put(specialMessage: string, className: string, functionName: string, exception: Exception): string{
+    public static put$overload4(specialMessage: string, className: string, functionName: string, exception: Exception): string{
 
-        try {
-            
+ try { 
                         if(FileLog.firstTime == true)
                         
                                     {
@@ -377,7 +397,7 @@ FileLog.fileOut!.flush();
                                     }
                                 
 
-    var length: number = FileLog.logFile!.length()!;;
+    let length: number = FileLog.logFile!.length()!;;
     
 
                         if(length > FileLog.logLength)
@@ -410,7 +430,7 @@ FileLog.fileOut!.flush();
                                 )
                         specialMessage= NULL_STRING.toCharArray()
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 FileLog.fileOut!.write(message, 0, message.length);
     
@@ -424,18 +444,21 @@ FileLog.fileOut!.flush();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return .toCharArray();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return .toCharArray();
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -456,6 +479,4 @@ private constructor (){
 
 
 }
-
-
 

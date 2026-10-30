@@ -24,15 +24,19 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -91,10 +95,17 @@ private constructor (){
             super();
         }
 
-
+generate(...args: any[]): any {
+   
+    if (args.length === 2) return this.generate$overload1(args[0], args[1]);
+   
+    if (args.length === 3) return this.generate$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: generate'); }
+  
                 //@Throws(Exception.constructor)
             
-    public generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): string{
+    public generate$overload1(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): string{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -105,26 +116,26 @@ private constructor (){
                                     }
                                 
 
-    var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;;
+    let customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;;
     
 
-    var allCustomizedViews: BasicArrayList = customizerUtil!.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;;
+    let allCustomizedViews: BasicArrayList = customizerUtil!.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;;
     
 
-    var size: number = allCustomizedViews!.size()!;;
+    let size: number = allCustomizedViews!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allCustomizedViews!.get(index) as TransformInfo;;
+    let nextTransformInfoInterface: TransformInfo = allCustomizedViews!.get(index) as TransformInfo;;
     
 
-    var allViewsToBeModified: BasicArrayList = customizerUtil!.getTransformInfoObjectConfigComponentNodesToCustomize(transformInfoInterface, nextTransformInfoInterface)!;;
+    let allViewsToBeModified: BasicArrayList = customizerUtil!.getTransformInfoObjectConfigComponentNodesToCustomize(transformInfoInterface, nextTransformInfoInterface)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -150,25 +161,25 @@ this.generate(abeClientInformation, transformInfoInterface, allViewsToBeModified
 
                 //@Throws(Exception.constructor)
             
-    generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, allViewsToBeModifiedVector: BasicArrayList){
+    generate$overload2(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, allViewsToBeModifiedVector: BasicArrayList){
 
-    var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;;
+    let customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;;
     
 
-    var size: number = allViewsToBeModifiedVector!.size()!;;
+    let size: number = allViewsToBeModifiedVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;;
+    let nextTransformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;;
     
 
-    var specifiedTransformInfoInterface: TransformInfoInterface = customizerUtil!.getTransformInfoInterfaceToCustomize(transformInfoInterface, nextTransformInfoInterface)!;;
+    let specifiedTransformInfoInterface: TransformInfoInterface = customizerUtil!.getTransformInfoInterfaceToCustomize(transformInfoInterface, nextTransformInfoInterface)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -187,6 +198,4 @@ TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, nextTransfo
 
 
 }
-
-
 

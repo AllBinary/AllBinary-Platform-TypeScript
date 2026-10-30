@@ -79,7 +79,7 @@ export class DisplaysUtil
 
     public getPrimaryScreenSize(): Rectangle{
 
-    var dimension: Dimension = Toolkit.getDefaultToolkit()!.getScreenSize()!;;
+    let dimension: Dimension = Toolkit.getDefaultToolkit()!.getScreenSize()!;;
     
 
 
@@ -92,33 +92,33 @@ export class DisplaysUtil
 
     public getScreenSizesAsRectangleArray(): Rectangle[]{
 
-    var graphicsEnvironment: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;;
+    let graphicsEnvironment: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;;
     
 
-    var graphicsDeviceArray: GraphicsDevice[] = graphicsEnvironment!.getScreenDevices()!;;
+    let graphicsDeviceArray: GraphicsDevice[] = graphicsEnvironment!.getScreenDevices()!;;
     
 
-    var graphicsDevice: GraphicsDevice;;
+    let graphicsDevice: GraphicsDevice;;
     
 
-    var displayMode: DisplayMode;;
+    let displayMode: DisplayMode;;
     
 
-    var rectangle: Rectangle;;
+    let rectangle: Rectangle;;
     
 
-    var size: number = graphicsDeviceArray!.length
+    let size: number = graphicsDeviceArray!.length
                 ;;
     
 
-    var rectangleArray: Rectangle[] = new Array(size);;
+    let rectangleArray: Rectangle[] = new Array(size);;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 graphicsDevice= graphicsDeviceArray[index]!;
     
@@ -140,6 +140,4 @@ rectangleArray[index]= rectangle;
 
 
 }
-
-
 

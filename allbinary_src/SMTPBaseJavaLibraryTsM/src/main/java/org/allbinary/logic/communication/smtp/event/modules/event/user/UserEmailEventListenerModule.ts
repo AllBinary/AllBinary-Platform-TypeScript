@@ -27,6 +27,7 @@ import { UserInterface } from '../../../../../../../../../org/allbinary/business
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BasicEmail } from '../../../../../../../../../org/allbinary/logic/communication/smtp/BasicEmail.js';
 //not GWT import const BasicEmail
@@ -83,10 +84,10 @@ public constructor (userInterface: UserInterface){
             
     public onEmailSendFailure(emailEvent: EmailEvent){
 
-    var to: string = this.userInterface!.getSecondaryEmail()!;;
+    let to: string = this.userInterface!.getSecondaryEmail()!;;
     
 
-    var email: BasicEmail = new BasicEmail(emailEvent!.getEmailInfo(), to);;
+    let email: BasicEmail = new BasicEmail(emailEvent!.getEmailInfo(), to);;
     
 EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
     
@@ -106,10 +107,10 @@ EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
                                     }
                                 
 
-    var to: string = this.userInterface!.getMainEmail()!;;
+    let to: string = this.userInterface!.getMainEmail()!;;
     
 
-    var email: BasicEmail = new BasicEmail(emailEvent!.getEmailInfo(), to);;
+    let email: BasicEmail = new BasicEmail(emailEvent!.getEmailInfo(), to);;
     
 EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
     
@@ -117,6 +118,4 @@ EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
 
 
 }
-
-
 

@@ -122,16 +122,16 @@ this.update();
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 
-    var fontHeight: number = font.getHeight()!;;
+    let fontHeight: number = font.getHeight()!;;
     
 
-    var imageHeight: number = 0;;
+    let imageHeight: number = 0;;
     
 
-    var image: Image = this.getImage()!;;
+    let image: Image = this.getImage()!;;
     
 
                         if(image != NullImage.NULL_IMAGE)
@@ -181,7 +181,7 @@ this.myFontProcessor!.process(graphics);
 super.paintXY(graphics, x, y);
     
 
-    var xa: number = x +2;;
+    let xa: number = x +2;;
     
 graphics.drawString(this.COST, xa, y +this.adjustedCostLabelY, 0);
     
@@ -197,6 +197,4 @@ graphics.drawChars(this.levelString, 0, this.levelLength, x +this.adjustedLevelX
 
 
 }
-
-
 

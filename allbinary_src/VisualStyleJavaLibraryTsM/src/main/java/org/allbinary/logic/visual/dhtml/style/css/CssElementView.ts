@@ -27,9 +27,11 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomData } from '../../../../../../../org/allbinary/data/tree/dom/DomData.js';
 //not GWT import const DomData
@@ -48,21 +50,26 @@ import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/M
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { CssPropertiesValidationFactory } from '../../../../../../../org/allbinary/logic/visual/dhtml/style/css/property/CssPropertiesValidationFactory.js';
 //not GWT import const CssPropertiesValidationFactory
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -125,7 +132,7 @@ public constructor (){
         this.cssPropertyVector= new BasicArrayListD();
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.title= stringUtil!.EMPTY_STRING;
     
@@ -140,14 +147,13 @@ public constructor (node: Node){
 
             super();
         
-        try {
-            
-    var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;;
+ try { 
+    let valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;;
     
 this.value= DomNodeHelper.getTextNodeValue(valueNode);
     
 
-    var titleValueNode: Node = DomSearchHelper.getNodeNoThrow(this.TITLE, node.getChildNodes())!;;
+    let titleValueNode: Node = DomSearchHelper.getNodeNoThrow(this.TITLE, node.getChildNodes())!;;
     
 
                         if(titleValueNode != 
@@ -162,7 +168,7 @@ this.value= DomNodeHelper.getTextNodeValue(valueNode);
                                 
                         else {
                             
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.title= stringUtil!.EMPTY_STRING;
     
@@ -170,7 +176,7 @@ this.title= stringUtil!.EMPTY_STRING;
                         }
                             
 
-    var descriptionValueNode: Node = DomSearchHelper.getNodeNoThrow(this.DESCRIPTION, node.getChildNodes())!;;
+    let descriptionValueNode: Node = DomSearchHelper.getNodeNoThrow(this.DESCRIPTION, node.getChildNodes())!;;
     
 
                         if(descriptionValueNode != 
@@ -199,7 +205,7 @@ this.title= stringUtil!.EMPTY_STRING;
                                     }
                                 
 
-    var cssElementStyleNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, node.getChildNodes())!;;
+    let cssElementStyleNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, node.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -213,14 +219,15 @@ this.title= stringUtil!.EMPTY_STRING;
 this.cssElementVector= CssElementsValidationFactory.getInstance(cssElementStyleNodeVector);
     
 
-    var nodeList: NodeList = node.getChildNodes()!;;
+    let nodeList: NodeList = node.getChildNodes()!;;
     
 this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -235,8 +242,10 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
 
                             throw new Exception("CssElementView");
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -252,7 +261,7 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(DomData.VALUE, this.value);
     
@@ -273,7 +282,7 @@ hashMap!.put(this.DESCRIPTION, this.description);
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -285,37 +294,37 @@ hashMap!.put(this.DESCRIPTION, this.description);
                                     }
                                 
 
-    var node: Node = ModDomHelper.createNodeWithValueNodes(document, CssElementData.getInstance()!.NAME, hashMap)!;;
+    let node: Node = ModDomHelper.createNodeWithValueNodes(document, CssElementData.getInstance()!.NAME, hashMap)!;;
     
 
-    var size: number = this.cssPropertyVector!.size()!;;
+    let size: number = this.cssPropertyVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var cssPropertyDomNodeInterface: DomNodeInterface = this.cssPropertyVector!.get(index) as DomNodeInterface;;
+    let cssPropertyDomNodeInterface: DomNodeInterface = this.cssPropertyVector!.get(index) as DomNodeInterface;;
     
 node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document));
     
 }
 
 
-    var size2: number = this.cssElementVector!.size()!;;
+    let size2: number = this.cssElementVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size2; index++)
+    let index: number = 0;index < size2; index++)
         {
 
-    var cssElementDomNodeInterface: DomNodeInterface = this.cssElementVector!.get(index) as DomNodeInterface;;
+    let cssElementDomNodeInterface: DomNodeInterface = this.cssElementVector!.get(index) as DomNodeInterface;;
     
 node.appendChild(cssElementDomNodeInterface!.toXmlNode(document));
     
@@ -331,6 +340,4 @@ node.appendChild(cssElementDomNodeInterface!.toXmlNode(document));
 
 
 }
-
-
 

@@ -33,9 +33,11 @@ import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/in
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { FileStreamFactory } from '../../../../../../org/allbinary/logic/io/FileStreamFactory.js';
 //not GWT import const FileStreamFactory
@@ -51,9 +53,11 @@ import { SimpleFileUtil } from '../../../../../../org/allbinary/logic/io/file/Si
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -87,9 +91,8 @@ export class LicenseServerInitFileUtil
 
     public init(){
 
-        try {
-            
-    var filePath: string = LicenseInitInfoUtil.getInstance()!.INITFILENAME;;
+ try { 
+    let filePath: string = LicenseInitInfoUtil.getInstance()!.INITFILENAME;;
     
 LicenseInitInfoUtil.getInstance()!.setFilePath(StringUtil.getInstance()!.EMPTY_STRING);
     
@@ -108,44 +111,46 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(StringUtil.getInstance()!.EMPTY_S
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     write(){
 
-    var fileOutputStream: OutputStream = this.NULL_OUTPUT_STREAM;;
+    let fileOutputStream: OutputStream = this.NULL_OUTPUT_STREAM;;
     
 
-        try {
-            
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
+ try { 
+    let resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var filePath: string = LicenseInitInfoUtil.getInstance()!.INITFILENAME;;
+    let filePath: string = LicenseInitInfoUtil.getInstance()!.INITFILENAME;;
     
 
-    var inputStream: InputStream = resourceUtil!.getResourceAsStream(filePath)!;;
+    let inputStream: InputStream = resourceUtil!.getResourceAsStream(filePath)!;;
     
 this.logUtil!.putF("Writing Default License File", this, this.commonStrings!.INIT);
     
 
-    var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
+    let fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 fileOutputStream= fileStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, filePath);
     
 
-    var b: number= 0;;
+    let b: number= 0;;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(true)
@@ -172,24 +177,21 @@ this.logUtil!.putF("Wrote Bytes: " +index, this, this.commonStrings!.INIT);
     
 fileOutputStream!.flush();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
-}
 
-         finally {
-            StreamUtil.getInstance()!.close(fileOutputStream);
+ }
+   }
+ finally { StreamUtil.getInstance()!.close(fileOutputStream);
     
-
-         }
-        
+ }
 }
 
 
 }
-
-
 

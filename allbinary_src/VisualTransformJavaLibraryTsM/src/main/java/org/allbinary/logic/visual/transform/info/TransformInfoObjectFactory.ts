@@ -26,9 +26,11 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeFactory } from '../../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
 //not GWT import const AbeFactory
@@ -44,6 +46,7 @@ import { TransformInterface } from '../../../../../../org/allbinary/logic/visual
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -72,8 +75,15 @@ export class TransformInfoObjectFactory
         
 
     private static readonly instance: TransformInfoObjectFactory = new TransformInfoObjectFactory();
-
-    public static getInstance(): TransformInfoObjectFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 2) return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): TransformInfoObjectFactory{
 
 
 
@@ -93,15 +103,14 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInterface{
+    public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInterface{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF("Creating View: " +transformInfoInterface!.getName(), this, commonStrings!.GET_INSTANCE);
     
@@ -109,10 +118,10 @@ this.logUtil!.putF("Creating View: " +transformInfoInterface!.getName(), this, c
                                     }
                                 
 
-    var params: any[] = new Array(1);;
+    let params: any[] = new Array(1);;
     
 
-    var classes: Function[] = new Array(1);;
+    let classes: Function[] = new Array(1);;
     
 classes[0]= 
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
@@ -121,7 +130,7 @@ classes[0]=
 params[0]= transformInfoInterface;
     
 
-    var anyType: TransformInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params) as TransformInterface;;
+    let anyType: TransformInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params) as TransformInterface;;
     
 
                         if(anyType == 
@@ -136,7 +145,7 @@ params[0]= transformInfoInterface;
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("\nNo Such View Name: ");
     
@@ -172,12 +181,13 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType;
     
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed To Get Instance: ";;
+    let error: string = "Failed To Get Instance: ";;
     
 
                         if(transformInfoInterface != 
@@ -195,7 +205,7 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
     
@@ -207,13 +217,13 @@ this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed To Get Instance: ";;
+    let error: string = "Failed To Get Instance: ";;
     
 
                         if(transformInfoInterface != 
@@ -231,7 +241,7 @@ this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
     
@@ -243,12 +253,12 @@ this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

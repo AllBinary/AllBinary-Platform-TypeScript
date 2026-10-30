@@ -70,22 +70,22 @@ public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    let ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var x: number = ownerLayerInterface!.getXP()!;;
+    let x: number = ownerLayerInterface!.getXP()!;;
     
 
-    var y: number = ownerLayerInterface!.getYP()!;;
+    let y: number = ownerLayerInterface!.getYP()!;;
     
 
-    var width: number = ownerLayerInterface!.getWidth()!;;
+    let width: number = ownerLayerInterface!.getWidth()!;;
     
 
-    var height: number = ownerLayerInterface!.getHeight()!;;
+    let height: number = ownerLayerInterface!.getHeight()!;;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
                         if(x > displayInfo!.getLastWidth())
@@ -127,6 +127,4 @@ public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
 
 
 }
-
-
 

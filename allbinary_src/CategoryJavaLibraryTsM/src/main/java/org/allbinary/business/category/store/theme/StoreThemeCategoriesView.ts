@@ -76,13 +76,13 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = new StoreThemeCategoryView(this.categoryInterface).toXmlNode(document)!;;
+    let node: Node = new StoreThemeCategoryView(this.categoryInterface).toXmlNode(document)!;;
     
 
-    var childArray: any[] = this.categoryInterface!.getChildNodes()!.toArray()!;;
+    let childArray: any[] = this.categoryInterface!.getChildNodes()!.toArray()!;;
     
 
-    var size: number = childArray!.length
+    let size: number = childArray!.length
                 ;;
     
 
@@ -90,13 +90,13 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var childCategoryInterface: CategoryInterface = childArray[i]! as CategoryInterface;;
+    let childCategoryInterface: CategoryInterface = childArray[i]! as CategoryInterface;;
     
 
-    var childCategoryNode: Node = new StoreThemeCategoriesView(childCategoryInterface as StoreThemeCategoryInterface).toXmlNode(document)!;;
+    let childCategoryNode: Node = new StoreThemeCategoriesView(childCategoryInterface as StoreThemeCategoryInterface).toXmlNode(document)!;;
     
 node.appendChild(childCategoryNode);
     
@@ -112,6 +112,4 @@ node.appendChild(childCategoryNode);
 
 
 }
-
-
 

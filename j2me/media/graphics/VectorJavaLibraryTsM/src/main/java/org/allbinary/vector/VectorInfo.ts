@@ -132,5 +132,3 @@ this.totalFrames= totalFrames;
 
 }
 
-
-

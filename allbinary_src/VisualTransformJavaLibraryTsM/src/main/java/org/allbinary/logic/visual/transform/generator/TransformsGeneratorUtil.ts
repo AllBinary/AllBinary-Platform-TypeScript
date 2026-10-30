@@ -24,15 +24,19 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -91,10 +95,17 @@ private constructor (){
             super();
         }
 
-
+generateComponentsFromObjectConfig(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[2] === 'string') return this.generateComponentsFromObjectConfig$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 4 && typeof args[3] === 'string') return this.generateComponentsFromObjectConfig$overload2(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: generateComponentsFromObjectConfig'); }
+  
                 //@Throws(Exception.constructor)
             
-    public generateComponentsFromObjectConfig(abeClientInformation: Object, transformInfoInterface: Object, group: string): string{
+    public generateComponentsFromObjectConfig$overload1(abeClientInformation: Object, transformInfoInterface: Object, group: string): string{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -105,10 +116,10 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;;
+    let transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;;
     
 
-    var result: string = this.generateComponentsFromObjectConfig(abeClientInformation, transformInfoObjectConfigInterface, transformInfoInterface, group)!;;
+    let result: string = this.generateComponentsFromObjectConfig(abeClientInformation, transformInfoObjectConfigInterface, transformInfoInterface, group)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -130,7 +141,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public generateComponentsFromObjectConfig(abeClientInformation: Object, transformInfoObjectConfigInterface: Object, transformInfoInterface: Object, group: string): string{
+    public generateComponentsFromObjectConfig$overload2(abeClientInformation: Object, transformInfoObjectConfigInterface: Object, transformInfoInterface: Object, group: string): string{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -141,14 +152,14 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoObjectConfigComponentVector: BasicArrayList = transformInfoObjectConfigInterface!.getTransformsGroup(group)!;;
+    let transformInfoObjectConfigComponentVector: BasicArrayList = transformInfoObjectConfigInterface!.getTransformsGroup(group)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Processing ");
     
@@ -176,17 +187,17 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generateComponentsFromObject
                                     }
                                 
 
-    var size: number = transformInfoObjectConfigComponentVector!.size()!;;
+    let size: number = transformInfoObjectConfigComponentVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var transformInfoObjectConfigComponent: TransformInfoDomNode = transformInfoObjectConfigComponentVector!.get(index) as TransformInfoDomNode;;
+    let transformInfoObjectConfigComponent: TransformInfoDomNode = transformInfoObjectConfigComponentVector!.get(index) as TransformInfoDomNode;;
     
 TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, transformInfoObjectConfigComponent, transformInfoInterface);
     
@@ -202,7 +213,7 @@ TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, transformIn
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("<!-- Generated all template views successfully for View: ");
     
@@ -220,6 +231,4 @@ stringBuffer!.append("-->");
 
 
 }
-
-
 

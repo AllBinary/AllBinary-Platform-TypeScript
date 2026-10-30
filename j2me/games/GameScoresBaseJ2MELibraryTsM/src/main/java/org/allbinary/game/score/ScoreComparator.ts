@@ -41,9 +41,11 @@ import { RecordComparator, RecordComparatorI } from '../../../../javax/microedit
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -86,38 +88,32 @@ public constructor (isHighestBest: boolean){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isHighestBest
-                        ?       
-                                Long.MAX_VALUE
-                                :
-
-                            0;
+                        return (this.isHighestBest ? Long.MAX_VALUE : 0);
     
 }
 
 
     public compare(recordOne: number[], recordTwo: number[]): number{
 
-    var byteArrayInputStreamOne: ByteArrayInputStream = new ByteArrayInputStream(recordOne);;
+    let byteArrayInputStreamOne: ByteArrayInputStream = new ByteArrayInputStream(recordOne);;
     
 
-    var inputStreamOne: DataInputStream = new DataInputStream(byteArrayInputStreamOne);;
+    let inputStreamOne: DataInputStream = new DataInputStream(byteArrayInputStreamOne);;
     
 
-    var byteArrayInputStreamTwo: ByteArrayInputStream = new ByteArrayInputStream(recordTwo);;
+    let byteArrayInputStreamTwo: ByteArrayInputStream = new ByteArrayInputStream(recordTwo);;
     
 
-    var inputStreamTwo: DataInputStream = new DataInputStream(byteArrayInputStreamTwo);;
+    let inputStreamTwo: DataInputStream = new DataInputStream(byteArrayInputStreamTwo);;
     
 
-    var scoreOne: number = 0;;
+    let scoreOne: number = 0;;
     
 
-    var scoreTwo: number = 0;;
+    let scoreTwo: number = 0;;
     
 
-        try {
-            inputStreamOne!.readUTF();
+ try { inputStreamOne!.readUTF();
     
 inputStreamTwo!.readUTF();
     
@@ -125,37 +121,40 @@ scoreOne= inputStreamOne!.readLong();
     
 scoreTwo= inputStreamTwo!.readLong();
     
+ }
+ catch (caught: any) {
+ if (caught instanceof EOFException) {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else if (caught instanceof IOException) {
+  const e = caught;
+  
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
     
-}
-*/
-                //: 
-/* catch(e) 
-            {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+ }
+  else {
+  const e = caught;
+  
+
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
     
-}
-*/
+
+ }
+   }
+ 
 
                         if(this.isHighestBest)
                         
@@ -263,6 +262,4 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 
 
 }
-
-
 

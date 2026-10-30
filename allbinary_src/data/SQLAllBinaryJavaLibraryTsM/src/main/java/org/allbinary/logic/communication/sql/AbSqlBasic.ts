@@ -48,21 +48,26 @@ import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SqlConnectionPool } from '../../../../../org/allbinary/logic/communication/sql/connection/pool/SqlConnectionPool.js';
 //not GWT import const SqlConnectionPool
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -160,21 +165,20 @@ this.conn=
             
     public executeSQLStatement(statement: string): ResultSet{
 
-        try {
-            this.initialize();
+ try { this.initialize();
     
 
-    var stmt: Statement = this.conn.createStatement()!;;
+    let stmt: Statement = this.conn.createStatement()!;;
     
 stmt.execute(statement);
     
 
-    var rset: ResultSet = stmt.getResultSet()!;;
+    let rset: ResultSet = stmt.getResultSet()!;;
     
 stmt.close();
     
 
-    var tempConnection: Connection = this.conn;;
+    let tempConnection: Connection = this.conn;;
     
 this.conn= 
                                         null
@@ -188,10 +192,11 @@ this.sqlConnectionPool!.add(this.getDatabaseConnectionInfoInterface()!.getUrl(),
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rset;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof SQLException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -212,15 +217,16 @@ this.conn=
 
                             throw e;
                     
-}
 
+ }
+  else { throw caught; } }
+ 
 }
 
 
     public create(databaseName: string): string{
 
-        try {
-            this.executeSQLStatement(this.sqlStrings!.CREATE_DATABASE +databaseName);
+ try { this.executeSQLStatement(this.sqlStrings!.CREATE_DATABASE +databaseName);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -237,10 +243,11 @@ this.conn=
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return databaseName +this.sqlStrings!.CREATE_RETURN;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -256,20 +263,22 @@ this.conn=
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.DATABASE_CREATION_FAILED_LABEL +databaseName;
     
-}
 
+ }
+   }
+ 
 }
 
 
     createConnection(){
 
-        try {
-            this.conn= this.sqlConnectionPool!.get(this.getDatabaseConnectionInfoInterface()!.getUrl());
+ try { this.conn= this.sqlConnectionPool!.get(this.getDatabaseConnectionInfoInterface()!.getUrl());
     
-
-                //: 
-} catch(se) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof SQLException) {
+  const se = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -280,8 +289,7 @@ this.conn=
                                     }
                                 
 
-        try {
-            Thread.currentThread()!.sleep(2000);
+ try { Thread.currentThread()!.sleep(2000);
     
 
                         if(this.connectAttemptCounter < 10)
@@ -294,10 +302,11 @@ this.initialize();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -307,33 +316,36 @@ this.initialize();
 
                                     }
                                 
-}
 
-}
+ }
+   }
+ 
 
+ }
+  else { throw caught; } }
+ 
 }
 
 
     initialize(){
 
-        try {
-            
+ try { 
 
                             {
                             
-        try {
-            
-    var loader: ClassLoader = Thread.currentThread()!.getContextClassLoader()!;;
+ try { 
+    let loader: ClassLoader = Thread.currentThread()!.getContextClassLoader()!;;
     
 
-    var jdbcDriverClass: Function = loader.loadClass(this.getDatabaseConnectionInfoInterface()!.getJdbcDriver())!;;
+    let jdbcDriverClass: Function = loader.loadClass(this.getDatabaseConnectionInfoInterface()!.getJdbcDriver())!;;
     
 jdbcDriverClass!.newInstance();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -343,17 +355,20 @@ jdbcDriverClass!.newInstance();
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 
                             }
                     
 this.createConnection();
     
-
-                //: 
-} catch(se) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const se = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -363,8 +378,10 @@ this.createConnection();
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -385,6 +402,4 @@ this.databaseConnectionInfoInterface= databaseConnectionInfoInterface;
 
 
 }
-
-
 

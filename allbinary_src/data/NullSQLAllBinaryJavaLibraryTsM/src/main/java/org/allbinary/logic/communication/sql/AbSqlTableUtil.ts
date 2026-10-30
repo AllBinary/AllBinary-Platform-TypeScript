@@ -25,15 +25,19 @@ import { Portion } from '../../../../../org/allbinary/business/installer/Portion
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -88,7 +92,7 @@ export class AbSqlTableUtil
 
     public backupTable(abSqlTable: AbSqlTable): string{
 
-    var tableName: string = abSqlTable!.getTableName()!;;
+    let tableName: string = abSqlTable!.getTableName()!;;
     
 
 
@@ -102,10 +106,10 @@ export class AbSqlTableUtil
 
     public restoreTable(abSqlTable: AbSqlTable, portion: Portion): string{
 
-    var tableName: string = abSqlTable!.getTableName()!;;
+    let tableName: string = abSqlTable!.getTableName()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.TABLE_LABEL);
     
@@ -123,6 +127,4 @@ stringBuffer!.append(" Restoration Failed");
 
 
 }
-
-
 

@@ -31,15 +31,18 @@ import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
 //not GWT import const Validation
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { HtmlMetaAttributeData } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaAttributeData.js';
 //not GWT import const HtmlMetaAttributeData
@@ -52,6 +55,7 @@ import { HtmlMetaData } from '../../../../../../../../../org/allbinary/logic/vis
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -97,7 +101,7 @@ public constructor (htmlMetaAttributeData: HtmlMetaAttributeData, label: string,
         this.label= label;
     
 
-                        if(htmlMetaAttributeData! === HtmlMetaAttributeDataFactory.getInstance()!.HTTP_EQUIV)
+                        if((htmlMetaAttributeData === HtmlMetaAttributeDataFactory.getInstance()!.HTTP_EQUIV))
                         
                                     {
                                     this.httpEquiv= attributeValue;
@@ -106,7 +110,7 @@ public constructor (htmlMetaAttributeData: HtmlMetaAttributeData, label: string,
                                     }
                                 
                              else 
-                        if(htmlMetaAttributeData! === HtmlMetaAttributeDataFactory.getInstance()!.NAME)
+                        if((htmlMetaAttributeData === HtmlMetaAttributeDataFactory.getInstance()!.NAME))
                         
                                     {
                                     this.name= attributeValue;
@@ -132,9 +136,8 @@ public constructor (document: Document){
 
     public isValid(): Boolean{
 
-        try {
-            
-    var valid: Boolean = Boolean.TRUE;;
+ try { 
+    let valid: Boolean = Boolean.TRUE;;
     
 
 
@@ -142,10 +145,11 @@ public constructor (document: Document){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -159,18 +163,19 @@ public constructor (document: Document){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -178,10 +183,11 @@ public constructor (document: Document){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -197,8 +203,10 @@ public constructor (document: Document){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -224,10 +232,10 @@ public constructor (document: Document){
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var htmlMetaAttributeDataFactory: HtmlMetaAttributeDataFactory = HtmlMetaAttributeDataFactory.getInstance()!;;
+    let htmlMetaAttributeDataFactory: HtmlMetaAttributeDataFactory = HtmlMetaAttributeDataFactory.getInstance()!;;
     
 hashMap!.put(HtmlMetaData.getInstance()!.LABEL.toString(), this.label);
     
@@ -250,7 +258,7 @@ hashMap!.put(htmlMetaAttributeDataFactory!.CONTENT.toString(), this.content);
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, HtmlMetaData.getInstance()!.NAME.toString(), this.toHashMap())!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, HtmlMetaData.getInstance()!.NAME.toString(), this.toHashMap())!;;
     
 
 
@@ -262,6 +270,4 @@ hashMap!.put(htmlMetaAttributeDataFactory!.CONTENT.toString(), this.content);
 
 
 }
-
-
 

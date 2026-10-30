@@ -34,12 +34,14 @@ import { DomSearchHelper } from '../../../../../../../../org/allbinary/data/tree
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Validation } from '../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
 //not GWT import const Validation
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TitleData } from '../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
 //not GWT import const TitleData
@@ -91,7 +93,7 @@ public constructor (document: Document){
 
             super();
         
-    var node: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, document.getElementsByTagName(PageData.getInstance()!.NAME))!;;
+    let node: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, document.getElementsByTagName(PageData.getInstance()!.NAME))!;;
     
 this.title= new TitleValidation(node);
     
@@ -114,9 +116,8 @@ this.title= new TitleValidation(hashMap);
 
     public isValid(): Boolean{
 
-        try {
-            
-    var valid: Boolean = Boolean.TRUE;;
+ try { 
+    let valid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -131,7 +132,7 @@ this.title= new TitleValidation(hashMap);
                         if(!this.title.isValid().valueOf())
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -151,10 +152,11 @@ this.title= new TitleValidation(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -168,18 +170,19 @@ this.title= new TitleValidation(hashMap);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(!this.title.isValid().valueOf())
@@ -196,10 +199,11 @@ this.title= new TitleValidation(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -215,8 +219,10 @@ this.title= new TitleValidation(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -244,7 +250,7 @@ this.title= new TitleValidation(hashMap);
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(PageData.getInstance()!.NAME)!;;
+    let node: Node = document.createElement(PageData.getInstance()!.NAME)!;;
     
 node.appendChild(this.title.toXmlNode(document));
     
@@ -258,6 +264,4 @@ node.appendChild(this.title.toXmlNode(document));
 
 
 }
-
-
 

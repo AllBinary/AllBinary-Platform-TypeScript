@@ -25,9 +25,11 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 //not GWT import const PaintableInterface
@@ -40,6 +42,7 @@ import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.j
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -108,7 +111,7 @@ this.halfCellHeight= (cellHeight>>1);
 
     public setCells(mapTwoDArray: number[][]){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Start: r: ");
     
@@ -129,24 +132,24 @@ stringBuffer!.appendint(this.getColumns());
 this.logUtil!.putF(stringBuffer!.toString(), this, "setCells");
     
 
-    var rows: number = this.getRows()!;;
+    let rows: number = this.getRows()!;;
     
 
-    var columns: number = this.getColumns()!;;
+    let columns: number = this.getColumns()!;;
     
 
 
 
 
                         for (
-    var col: number = 0;col < columns; col++)
+    let col: number = 0;col < columns; col++)
         {
 
 
 
 
                         for (
-    var row: number = 0;row < rows; row++)
+    let row: number = 0;row < rows; row++)
         {
 this.setCell(col, row, mapTwoDArray[row]![col]!);
     
@@ -159,24 +162,24 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
     public updateCells(mapTwoDArray: number[][], fromTileId: number, toTileId: number){
 
-    var rows: number = this.getRows()!;;
+    let rows: number = this.getRows()!;;
     
 
-    var columns: number = this.getColumns()!;;
+    let columns: number = this.getColumns()!;;
     
 
 
 
 
                         for (
-    var col: number = 0;col < columns; col++)
+    let col: number = 0;col < columns; col++)
         {
 
 
 
 
                         for (
-    var row: number = 0;row < rows; row++)
+    let row: number = 0;row < rows; row++)
         {
 
                         if(fromTileId == mapTwoDArray[row]![col])
@@ -386,6 +389,4 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
 }
-
-
 

@@ -79,10 +79,10 @@ public constructor (userConfigurationInterface: UserConfigurationInterface){
             
     public toXmlDoc(): Document{
 
-    var document: Document = DomDocumentHelper.create()!;;
+    let document: Document = DomDocumentHelper.create()!;;
     
 
-    var node: Node = new UserConfigurationView(this.userConfigurationInterface).toXmlNode(document)!;;
+    let node: Node = new UserConfigurationView(this.userConfigurationInterface).toXmlNode(document)!;;
     
 document.appendChild(node);
     
@@ -108,6 +108,4 @@ document.appendChild(node);
 
 
 }
-
-
 

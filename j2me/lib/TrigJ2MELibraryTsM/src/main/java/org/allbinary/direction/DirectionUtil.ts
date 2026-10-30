@@ -74,10 +74,10 @@ private constructor (){
 
             super();
         
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
+    let angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
+    let directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 this.directionArray[directionFactory!.LEFT.getValue()]= angleFactory!.LEFT;
     
@@ -119,6 +119,4 @@ this.directionArray2[directionFactory!.DOWN.getValue()]= angleFactory!.DOWN;
 
 
 }
-
-
 

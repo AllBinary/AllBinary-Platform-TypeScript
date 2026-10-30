@@ -29,12 +29,15 @@ import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -82,16 +85,16 @@ this.allowOnEmpty= allowOnEmpty;
 
     public isValid(): Boolean{
 
-    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
+    let booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
-    var result: Boolean = booleanFactory!.TRUE;;
+    let result: Boolean = booleanFactory!.TRUE;;
     
 
-    var string: string = this.textFieldItem!.getString()!;;
+    let string: string = this.textFieldItem!.getString()!;;
     
 
-    var textLength: number = string.length!;;
+    let textLength: number = string.length!;;
     
 
                         if((textLength == 0 && this.allowOnEmpty) || textLength > this.min && textLength < this.max)
@@ -133,13 +136,13 @@ this.allowOnEmpty= allowOnEmpty;
 
     public toList(): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
-    var string: string = this.textFieldItem!.getString()!;;
+    let string: string = this.textFieldItem!.getString()!;;
     
 
-    var textLength: number = string.length!;;
+    let textLength: number = string.length!;;
     
 
                         if(textLength > this.min && textLength < this.max)
@@ -150,10 +153,10 @@ this.allowOnEmpty= allowOnEmpty;
                                 
                         else {
                             
-    var label: string = this.textFieldItem!.getLabel()!;;
+    let label: string = this.textFieldItem!.getLabel()!;;
     
 
-    var name: string = label.substring(0, label.length -2)!;;
+    let name: string = label.substring(0, label.length -2)!;;
     
 
                         if(textLength < this.min)
@@ -186,6 +189,4 @@ this.allowOnEmpty= allowOnEmpty;
 
 
 }
-
-
 

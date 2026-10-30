@@ -82,5 +82,3 @@ public constructor (layerInterface: AllBinaryLayer){
 
 }
 
-
-

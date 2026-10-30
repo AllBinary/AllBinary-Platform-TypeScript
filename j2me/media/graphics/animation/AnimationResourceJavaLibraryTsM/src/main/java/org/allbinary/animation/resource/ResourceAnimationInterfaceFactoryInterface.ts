@@ -47,9 +47,7 @@ export interface ResourceAnimationInterfaceFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface
+    getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface;
 
 }
-
-
 

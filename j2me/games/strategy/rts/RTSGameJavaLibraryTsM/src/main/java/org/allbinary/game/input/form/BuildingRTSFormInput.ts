@@ -54,12 +54,15 @@ import { BuildingSound } from '../../../../../org/allbinary/media/audio/Building
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
@@ -99,6 +102,7 @@ import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { ErrorSound } from '../../../../../org/allbinary/media/audio/ErrorSound.js';
 //not GWT import const ErrorSound
@@ -179,10 +183,10 @@ public constructor (groupInterface: Group[], isUnitProducer: boolean){
 this.isUnitProducer= isUnitProducer;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
+    let basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
     
 this.buildOnPathGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILD_ON_PATH, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
@@ -211,10 +215,10 @@ this.mapEdgeGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.buildOnPathGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
     
@@ -259,10 +263,10 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
 
     isDemoLocked(item: ABCustomItem): boolean{
 
-    var factoryItem: LayerInterfaceFactoryImageItem = item as LayerInterfaceFactoryImageItem;;
+    let factoryItem: LayerInterfaceFactoryImageItem = item as LayerInterfaceFactoryImageItem;;
     
 
-    var layerInterfaceFactoryInterface: DemoLockedWithCostLayerInterfaceFactoryInterface = factoryItem!.getLayerInterfaceFactoryInterface() as DemoLockedWithCostLayerInterfaceFactoryInterface;;
+    let layerInterfaceFactoryInterface: DemoLockedWithCostLayerInterfaceFactoryInterface = factoryItem!.getLayerInterfaceFactoryInterface() as DemoLockedWithCostLayerInterfaceFactoryInterface;;
     
 
                         if(LockedUtil.getInstance()!.isLocked() && layerInterfaceFactoryInterface!.isDemoLocked())
@@ -294,7 +298,7 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
             
     public buildFromMotionInput(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, itemIndex: number){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, "buildFromMotionInput");
     
@@ -313,10 +317,10 @@ this.logUtil!.putF(commonStrings!.START, this, "buildFromMotionInput");
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = layerManager as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = layerManager as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
                         if(this.isDemoLocked(item))
@@ -336,7 +340,7 @@ LockedFeatureNotificationUtil.getInstance()!.fireWithColor(geographicMapInterfac
                                     }
                                 
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.getSelectedGeographicCellPosition()!;;
+    let geographicMapCellPosition: GeographicMapCellPosition = this.getSelectedGeographicCellPosition()!;;
     
 
                         if(geographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
@@ -347,10 +351,10 @@ LockedFeatureNotificationUtil.getInstance()!.fireWithColor(geographicMapInterfac
                         
                                     {
                                     
-    var geographicMapCellType: GeographicMapCellType = geographicMapInterface!.getCellTypeAt(geographicMapCellPosition)!;;
+    let geographicMapCellType: GeographicMapCellType = geographicMapInterface!.getCellTypeAt(geographicMapCellPosition)!;;
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory() as RaceTrackGeographicMapCellTypeFactory;;
+    let raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory() as RaceTrackGeographicMapCellTypeFactory;;
     
 
                         if(!raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellType))
@@ -367,10 +371,10 @@ LockedFeatureNotificationUtil.getInstance()!.fireWithColor(geographicMapInterfac
                                 
                         else {
                             
-    var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;;
+    let rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;;
     
 
-    var cellPoint: GPoint = geographicMapCellPosition!.getPoint()!;;
+    let cellPoint: GPoint = geographicMapCellPosition!.getPoint()!;;
     
 rtsLayer!.setPosition(cellPoint!.getX(), cellPoint!.getY(), cellPoint!.getZ());
     
@@ -380,7 +384,7 @@ rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
                         }
                             
 
-    var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;;
+    let rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;;
     
 this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
     
@@ -447,10 +451,10 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
 this.logUtil!.putF(new StringMaker().append("Layer: ")!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, "attemptBuild");
     
 
-    var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;;
+    let geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;;
     
 
-    var occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;;
+    let occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;;
     
 
                         if(!this.isBuildAttemptValid(rtsPlayerLayerInterface, layerInterface))
@@ -466,25 +470,25 @@ this.logUtil!.putF(new StringMaker().append("Layer: ")!.append(StringUtil.getIns
                                     }
                                 
 
-    var geographicMapCellType: GeographicMapCellType;;
+    let geographicMapCellType: GeographicMapCellType;;
     
 
 
 
 
                         for (
-    var index: number = occupyList!.size() -1;index >= 0; index--)
+    let index: number = occupyList!.size() -1;index >= 0; index--)
         {
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = layerManager as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = layerManager as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 geographicMapCellType= geographicMapInterface!.getCellTypeAt(occupyList!.get(index) as GeographicMapCellPosition);
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory() as RaceTrackGeographicMapCellTypeFactory;;
+    let raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory() as RaceTrackGeographicMapCellTypeFactory;;
     
 
                         if(raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellType))
@@ -513,13 +517,13 @@ geographicMapCellType= geographicMapInterface!.getCellTypeAt(occupyList!.get(ind
 }
 
 
-    var cost: number = layerInterface!.getCost()!;;
+    let cost: number = layerInterface!.getCost()!;;
     
 
-    var capital: Capital = rtsPlayerLayerInterface!.getCapital()!;;
+    let capital: Capital = rtsPlayerLayerInterface!.getCapital()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Trying to Build: ");
     
@@ -584,10 +588,10 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
             
     isBuildAttemptValid(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerInterface: RTSLayer): boolean{
 
-    var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;;
+    let geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;;
     
 
-    var occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;;
+    let occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;;
     
 
                         if(this.dropCellPositionHistory!.anyCellPositionWithDrop(occupyList))
@@ -678,15 +682,15 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
             
     add(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer){
 
-    var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;;
+    let geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;;
     
 
-    var occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;;
+    let occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;;
     
 this.dropCellPositionHistory!.addAll(occupyList, layerInterface);
     
 
-    var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput() as RTSPlayerGameInput;;
+    let rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput() as RTSPlayerGameInput;;
     
 rtsPlayerGameInput!.setSelectedRTSLayer(layerInterface, this.getSelectedGeographicCellPosition());
     
@@ -708,22 +712,22 @@ rtsPlayerLayerInterface!.add(BuildingSound.getInstance());
 
     isSurroundingCellsOffMap(layerInterface: RTSLayer): boolean{
 
-    var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;;
+    let geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;;
     
 
-    var occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;;
+    let occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;;
     
 
-    var surroundList: BasicArrayList = geographicMapCellPositionArea!.getSurroundingGeographicMapCellPositionList()!;;
+    let surroundList: BasicArrayList = geographicMapCellPositionArea!.getSurroundingGeographicMapCellPositionList()!;;
     
 
-    var occupySize: number = occupyList!.size()!;;
+    let occupySize: number = occupyList!.size()!;;
     
 
-    var surroundSize: number = surroundList!.size()!;;
+    let surroundSize: number = surroundList!.size()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("occupySize: ");
     
@@ -740,7 +744,7 @@ stringBuffer!.append(StringUtil.getInstance()!.toString(surroundList));
 this.logUtil!.putF(stringBuffer!.toString(), this, "isSurroundingCellsOffMap");
     
 
-    var isSurroundOffMap: boolean = false;;
+    let isSurroundOffMap: boolean = false;;
     
 
                         if(occupySize == 1 && surroundSize != 8)
@@ -787,6 +791,4 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSurroundingCellsOffMap");
 
 
 }
-
-
 

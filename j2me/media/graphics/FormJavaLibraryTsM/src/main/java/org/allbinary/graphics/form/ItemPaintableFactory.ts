@@ -72,5 +72,3 @@ export class ItemPaintableFactory extends ItemPaintable {
 
 }
 
-
-

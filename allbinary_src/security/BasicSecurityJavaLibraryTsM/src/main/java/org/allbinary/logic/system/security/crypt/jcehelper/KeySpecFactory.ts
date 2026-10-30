@@ -38,9 +38,11 @@ import { TsUtil } from '../../../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -67,8 +69,15 @@ export class KeySpecFactory
         
 
     private static readonly instance: KeySpecFactory = new KeySpecFactory();
-
-    public static getInstance(): KeySpecFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): KeySpecFactory{
 
 
 
@@ -90,11 +99,10 @@ private constructor (){
         }
 
 
-    public getInstance(algorithm: string, keyData: number[]): KeySpec{
+    public getInstance$overload2(algorithm: string, keyData: number[]): KeySpec{
 
-        try {
-            
-    var tsUtil: TsUtil = TsUtil.getInstance()!;;
+ try { 
+    let tsUtil: TsUtil = TsUtil.getInstance()!;;
     
 
                         if(tsUtil!.compareTo(algorithm, this.DES) == 0)
@@ -131,12 +139,13 @@ private constructor (){
 
                         }
                             
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
@@ -145,12 +154,12 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
                             throw new RuntimeException();
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

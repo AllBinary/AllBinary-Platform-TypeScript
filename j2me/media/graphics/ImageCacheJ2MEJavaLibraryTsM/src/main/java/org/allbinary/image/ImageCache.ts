@@ -41,21 +41,26 @@ import { TsUtil } from '../../../org/allbinary/TsUtil.js';
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 import { GDResources } from '../../../org/allbinary/game/gd/resource/GDResources.js';
 //not GWT import const GDResources
 
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+type ABSystemWrapper<T = any, U = any> = typeof ABSystemWrapper extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABSystemWrapper;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Memory } from '../../../org/allbinary/system/Memory.js';
 //not GWT import const Memory
@@ -96,19 +101,19 @@ public constructor (){
         }
 
 
-    public addListener(renderer: any = {}){
+    public addListener(renderer: any){
 }
 
 
-    public getIndex(key: any = {}): number{
+    public getIndex(key: any): number{
 
-    var gdResources: GDResources = GDResources.getInstance()!;;
+    let gdResources: GDResources = GDResources.getInstance()!;;
     
 
-    var resourceStringArray: string[] = gdResources!.resourceStringArray;;
+    let resourceStringArray: string[] = gdResources!.resourceStringArray;;
     
 
-    var size: number = resourceStringArray!.length
+    let size: number = resourceStringArray!.length
                 ;;
     
 
@@ -116,7 +121,7 @@ public constructor (){
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(resourceStringArray[index] == key)
@@ -147,10 +152,10 @@ this.logUtil!.putF(new StringMaker().append("unable to find key: ")!.append(Stri
             
     public get(caller: string, width: number, height: number): Image{
 
-    var foundIndex: number = this.getIndexWH(width, height)!;;
+    let foundIndex: number = this.getIndexWH(width, height)!;;
     
 
-    var image: Image = this.getFromAvailable(foundIndex, width, height)!;;
+    let image: Image = this.getFromAvailable(foundIndex, width, height)!;;
     
 
                         if(image == NullImage.NULL_IMAGE)
@@ -172,7 +177,7 @@ this.volume= 0;
 image= this.createImage(caller, width, height);
     
 
-    var widths: number[] = this.widths;;
+    let widths: number[] = this.widths;;
     
 
                         if(this.nextIndex > widths.length -1)
@@ -212,19 +217,19 @@ this.listOfList[foundIndex]!.add(image);
 
                 //@Throws(Exception.constructor)
             
-    public getWithKey(key: any = {}): Image{
+    public getWithKey(key: any): Image{
 
-    var image: Image = this.getImage(key)!;;
+    let image: Image = this.getImage(key)!;;
     
 
                         if(image == NullImage.NULL_IMAGE)
                         
                                     {
                                     
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
+    let resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var resourceInputStream: InputStream = resourceUtil!.getResourceAsStream(key as string)!;;
+    let resourceInputStream: InputStream = resourceUtil!.getResourceAsStream(key as string)!;;
     
 
                         if(resourceInputStream == 
@@ -241,13 +246,13 @@ this.listOfList[foundIndex]!.add(image);
                                     }
                                 
 
-        try {
-            image= this.createImageFromInputStream(key, resourceInputStream);
+ try { image= this.createImageFromInputStream(key, resourceInputStream);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Exception: Trying Again After GC", this, this.commonStrings!.GET, e);
     
 this.logUtil!.putF(new StringMaker().append("InputStream: ")!.append(StringUtil.getInstance()!.toString(resourceInputStream))!.toString(), this, this.commonStrings!.GET);
@@ -262,8 +267,10 @@ Thread.sleep(100);
     
 image= this.createImageFromInputStream(key, resourceInputStream);
     
-}
 
+ }
+   }
+ 
 
                         if(J2MEUtil.isHTML())
                         
@@ -316,6 +323,4 @@ this.hashtable.put(key, image);
 
 
 }
-
-
 

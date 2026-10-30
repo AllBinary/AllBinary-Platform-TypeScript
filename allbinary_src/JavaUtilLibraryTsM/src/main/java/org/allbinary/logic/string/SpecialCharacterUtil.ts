@@ -25,18 +25,23 @@ import { HashMap } from '../../../../java/util/HashMap.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { MathData } 
 const MathData = globalThis.org.allbinary.logic.math.MathData;
+type MathData<T = any, U = any> = typeof MathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MathData;
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -66,16 +71,16 @@ export class SpecialCharacterUtil
 
     public static getHashMap(): HashMap<any, any>{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
+    let commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put("!", stringUtil!.EMPTY_STRING);
     
@@ -135,6 +140,4 @@ hashMap!.put("`", stringUtil!.EMPTY_STRING);
 
 
 }
-
-
 

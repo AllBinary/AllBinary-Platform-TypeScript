@@ -24,21 +24,26 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -102,17 +107,17 @@ this.eventListenerInterfaceList= new BasicArrayListD();
 
     public addListeners(vector: BasicArrayList){
 
-    var eventListenerInterface: RawKeyEventListener;;
+    let eventListenerInterface: RawKeyEventListener;;
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 eventListenerInterface= vector.get(index) as RawKeyEventListener;
     
@@ -165,31 +170,33 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
             
     public fireEvent(keyCode: number, deviceId: number, repeated: boolean){
 
-    var eventListenerInterface: RawKeyEventListener;;
+    let eventListenerInterface: RawKeyEventListener;;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(index < this.eventListenerInterfaceList!.size())
         {
 
-        try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as RawKeyEventListener;
+ try { eventListenerInterface= this.eventListenerInterfaceList!.get(index) as RawKeyEventListener;
     
 this.process(keyCode, deviceId, repeated, eventListenerInterface);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 index++;
     
 }
@@ -217,40 +224,42 @@ eventListenerInterface!.onEventRaw(keyCode, deviceId, repeated);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(RawKeyEventHandler.TOTAL_LISTENERS);
     
 stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
     
 
-    var eventListenerInterface: RawKeyEventListener;;
+    let eventListenerInterface: RawKeyEventListener;;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(index < this.eventListenerInterfaceList!.size())
         {
 
-        try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as RawKeyEventListener;
+ try { eventListenerInterface= this.eventListenerInterfaceList!.get(index) as RawKeyEventListener;
     
 stringBuffer!.append(RawKeyEventHandler.LISTENER_LABEL);
     
 stringBuffer!.append(eventListenerInterface!.toString());
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
     
-}
 
+ }
+   }
+ 
 index++;
     
 }
@@ -265,6 +274,4 @@ index++;
 
 
 }
-
-
 

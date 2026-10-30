@@ -71,5 +71,3 @@ velocityProperties!.getVelocityYBasicDecimalP()!.addint(customGravity);
 
 }
 
-
-

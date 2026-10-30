@@ -74,7 +74,7 @@ public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as unknown as VelocityInterfaceCompositeInterface;;
+    let velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as unknown as VelocityInterfaceCompositeInterface;;
     
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
     
@@ -87,14 +87,14 @@ this.velocityInterface!.getVelocityYBasicDecimalP()!.setint(0);
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var y: number = this.getOwnerLayerInterface()!.getHeight() *270;;
+    let y: number = this.getOwnerLayerInterface()!.getHeight() *270;;
     
 
                         if(this.index < 5)
                         
                                     {
                                     
-    var basicDecimal: BasicDecimal = this.velocityInterface!.getVelocityYBasicDecimalP()!;;
+    let basicDecimal: BasicDecimal = this.velocityInterface!.getVelocityYBasicDecimalP()!;;
     
 basicDecimal!.setint(0);
     
@@ -110,7 +110,7 @@ this.index++;
                         
                                     {
                                     
-    var basicDecimal: BasicDecimal = this.velocityInterface!.getVelocityYBasicDecimalP()!;;
+    let basicDecimal: BasicDecimal = this.velocityInterface!.getVelocityYBasicDecimalP()!;;
     
 basicDecimal!.setint(0);
     
@@ -133,6 +133,4 @@ this.processAI(allBinaryLayerManager);
 
 
 }
-
-
 

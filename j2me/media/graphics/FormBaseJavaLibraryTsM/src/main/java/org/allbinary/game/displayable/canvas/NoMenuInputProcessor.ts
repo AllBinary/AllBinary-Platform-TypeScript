@@ -29,6 +29,7 @@ import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/ge
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -90,6 +91,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -73,7 +73,7 @@ private constructor (){
             
     public getInstanceXYZ(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, x: number, y: number, z: number): PickedUpLayerInterface{
 
-    var pickupLayer: PickupLayer = this.getNextInstance() as PickupLayer;;
+    let pickupLayer: PickupLayer = this.getNextInstance() as PickupLayer;;
     
 pickupLayer!.initXYZ(x, y, z);
     
@@ -89,6 +89,4 @@ pickupLayer!.init(pickedUpLayerInterfaceFactoryInterface, pickedUpLayerInterface
 
 
 }
-
-
 

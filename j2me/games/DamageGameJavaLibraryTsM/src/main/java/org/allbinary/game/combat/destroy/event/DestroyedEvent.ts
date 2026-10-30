@@ -29,9 +29,11 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -109,7 +111,7 @@ this.allBinaryLayerInterface= allBinaryLayerInterface;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("DestroyedEvent: \n");
     
@@ -131,6 +133,4 @@ stringBuffer!.append(StringUtil.getInstance()!.toString(this.getAllBinaryGameCan
 
 
 }
-
-
 

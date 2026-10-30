@@ -28,6 +28,7 @@ import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.
 
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+type MyRandomFactory<T = any, U = any> = typeof MyRandomFactory extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MyRandomFactory;
 
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
@@ -37,6 +38,7 @@ import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/All
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -113,6 +115,4 @@ this.changedDirection= true;
 
 
 }
-
-
 

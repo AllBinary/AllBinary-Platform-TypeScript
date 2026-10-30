@@ -55,53 +55,51 @@ import { DisplayInBrowserContraintsInterface } from '../../../../org/allbinary/l
 export interface AdvertisementInterface {
         
 
-    getArtist(): string
+    getArtist(): string;
 
-    getArtistLink(): string
+    getArtistLink(): string;
 
-    getTitle(): string
+    getTitle(): string;
 
-    getDateAdded(): string
+    getDateAdded(): string;
 
-    getDirectory(): string
+    getDirectory(): string;
 
-    getFramedLink(): string
+    getFramedLink(): string;
 
-    getListPrice(): Money
+    getListPrice(): Money;
 
-    getOurPrice(): Money
+    getOurPrice(): Money;
 
-    getRank(): number
+    getRank(): number;
 
-    getImage(): AdvertisementImageInterface
+    getImage(): AdvertisementImageInterface;
 
-    getProduct(): AdvertisementProductInterface
+    getProduct(): AdvertisementProductInterface;
 
-    getThumbnail(): AdvertisementThumbnailInterface
+    getThumbnail(): AdvertisementThumbnailInterface;
 
-    getDisplayInBrowserContraintsInterface(): DisplayInBrowserContraintsInterface
+    getDisplayInBrowserContraintsInterface(): DisplayInBrowserContraintsInterface;
 
-    setArtist(artist: string)
+    setArtist(artist: string): void;
 
-    setArtistLink(artistLink: string)
+    setArtistLink(artistLink: string): void;
 
-    setTitle(title: string)
+    setTitle(title: string): void;
 
-    setDateAdded(dateAdded: string)
+    setDateAdded(dateAdded: string): void;
 
-    setDirectory(directory: string)
+    setDirectory(directory: string): void;
 
-    setFramedLink(framedLink: string)
+    setFramedLink(framedLink: string): void;
 
-    setRank(rank: number)
+    setRank(rank: number): void;
 
-    setImage(AdvertisementImageInterface: AdvertisementImageInterface)
+    setImage(AdvertisementImageInterface: AdvertisementImageInterface): void;
 
-    setProduct(AdvertisementProductInterface: AdvertisementProductInterface)
+    setProduct(AdvertisementProductInterface: AdvertisementProductInterface): void;
 
-    setThumbnail(AdvertisementThumbnailInterface: AdvertisementThumbnailInterface)
+    setThumbnail(AdvertisementThumbnailInterface: AdvertisementThumbnailInterface): void;
 
 }
-
-
 

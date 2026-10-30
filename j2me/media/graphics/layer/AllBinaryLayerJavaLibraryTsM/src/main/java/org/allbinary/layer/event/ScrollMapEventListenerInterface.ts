@@ -49,9 +49,7 @@ export interface ScrollMapEventListenerInterface extends EventListenerInterface 
 
                 //@Throws(Exception.constructor)
             
-    onMoveEvent(layerManagerEvent: ScrollMapEvent)
+    onMoveEvent(layerManagerEvent: ScrollMapEvent): void;
 
 }
-
-
 

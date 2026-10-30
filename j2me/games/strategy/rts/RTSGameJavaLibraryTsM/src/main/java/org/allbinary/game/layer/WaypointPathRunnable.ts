@@ -24,9 +24,11 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
@@ -67,14 +69,13 @@ public constructor (){
 
     public run(){
 
-        try {
-            this.pathFindingLayer!.getWaypointRunnableLogHelper()!.start(this.pathFindingLayer);
+ try { this.pathFindingLayer!.getWaypointRunnableLogHelper()!.start(this.pathFindingLayer);
     
 
-    var waypointBehavior: WaypointBehaviorBase = this.pathFindingLayer!.getWaypointBehavior()!;;
+    let waypointBehavior: WaypointBehaviorBase = this.pathFindingLayer!.getWaypointBehavior()!;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.pathFindingLayer!.getCurrentGeographicMapCellPosition()!;;
+    let geographicMapCellPosition: GeographicMapCellPosition = this.pathFindingLayer!.getCurrentGeographicMapCellPosition()!;;
     
 
                         if(geographicMapCellPosition == 
@@ -96,19 +97,22 @@ this.pathFindingLayer!.getWaypointRunnableLogHelper()!.end(this.pathFindingLayer
     
 Thread.sleep(15 +(this.priorityP *2));
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 this.setRunning(false);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -123,6 +127,4 @@ this.setRunning(false);
 
 
 }
-
-
 

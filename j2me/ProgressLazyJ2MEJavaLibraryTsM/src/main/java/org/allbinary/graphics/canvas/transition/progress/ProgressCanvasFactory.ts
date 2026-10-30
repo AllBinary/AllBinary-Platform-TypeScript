@@ -22,6 +22,7 @@
         
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
@@ -31,6 +32,7 @@ import { PaintableInterface } from '../../../../../../org/allbinary/graphics/pai
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -91,9 +93,7 @@ export class ProgressCanvasFactory
 }
 
 
-}
-
-//JSNI Expose so JSNI can access this class *** 
+}//JSNI Expose so JSNI can access this class *** 
  globalThis.org.allbinary = globalThis.org.allbinary || {}; 
  globalThis.org.allbinary.graphics globalThis.org.allbinary.graphics || {}; 
  globalThis.org.allbinary.graphics.canvas = globalThis.org.allbinary.graphics.canvas || {}; 

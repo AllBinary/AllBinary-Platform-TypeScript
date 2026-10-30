@@ -68,5 +68,3 @@ add(this.jColorChooser1, java.awt.BorderLayout.CENTER);
 
 }
 
-
-

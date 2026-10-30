@@ -25,15 +25,18 @@ import { CharacterSet } from '../../../../../org/allbinary/logic/java/character/
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -77,13 +80,13 @@ public constructor (){
 
             super();
         
-    var systemProperties: SystemProperties = SystemProperties.getInstance()!;;
+    let systemProperties: SystemProperties = SystemProperties.getInstance()!;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(stringValidationUtil!.isEmpty(systemProperties!.getName()))
@@ -225,10 +228,10 @@ public constructor (){
 
     public toString(): string{
 
-    var NEW_LINE: string = CommonSeps.getInstance()!.NEW_LINE;;
+    let NEW_LINE: string = CommonSeps.getInstance()!.NEW_LINE;;
     
 
-    var osBuffer: StringMaker = new StringMaker();;
+    let osBuffer: StringMaker = new StringMaker();;
     
 osBuffer!.append("Operating System Info: \n");
     
@@ -258,6 +261,4 @@ osBuffer!.append(NEW_LINE);
 
 
 }
-
-
 

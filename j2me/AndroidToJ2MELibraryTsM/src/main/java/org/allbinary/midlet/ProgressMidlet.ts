@@ -33,6 +33,7 @@ import { Globals } from '../../../org/allbinary/globals/Globals.js';
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -94,42 +95,44 @@ this.abeClientInformation= clientInformationFactory!.getInstance();
 
     exitProgress(isProgress: boolean){
 
-    var processor: Processor = MidletExitProcessorFactory.getInstance()!.getExitInstance(this)!;;
+    let processor: Processor = MidletExitProcessorFactory.getInstance()!.getExitInstance(this)!;;
     
 
-        try {
-            
-    var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;;
+ try { 
+    let primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;;
     
 
-    var runnable: Runnable = new ExitRunnable(this, processor, isProgress);;
+    let runnable: Runnable = new ExitRunnable(this, processor, isProgress);;
     
 primaryThreadPool!.runTask(runnable);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "exit", e);
     
 
-        try {
-            processor.process();
+ try { processor.process();
     
-
-                //: 
-} catch(e2) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e2 = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "exit", e);
     
+
+ }
+   }
+ 
+
+ }
+   }
+ 
 }
 
-}
 
 }
-
-
-}
-
-
 

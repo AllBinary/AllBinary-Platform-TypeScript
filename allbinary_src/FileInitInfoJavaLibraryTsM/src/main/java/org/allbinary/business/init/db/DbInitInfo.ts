@@ -28,9 +28,11 @@ import { URLGLOBALS } from '../../../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { HttpData } 
 const HttpData = globalThis.org.allbinary.logic.communication.http.HttpData;
+type HttpData<T = any, U = any> = typeof HttpData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HttpData;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { LogConfigTypeFactory } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
@@ -64,6 +66,7 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { DatabaseEncoder } from '../../../../../org/allbinary/logic/system/security/crypt/DatabaseEncoder.js';
 //not GWT import const DatabaseEncoder
@@ -73,6 +76,7 @@ import { WeakCrypt } from '../../../../../org/allbinary/logic/system/security/cr
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -140,7 +144,7 @@ this.initFileName= initFileName;
 
     public getUrl(): string{
 
-    var url: string = super.getUrl()!;;
+    let url: string = super.getUrl()!;;
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
@@ -164,45 +168,43 @@ this.initFileName= initFileName;
             
     public write(){
 
-    var PATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, StringUtil.getInstance()!.EMPTY_STRING);;
+    let PATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, StringUtil.getInstance()!.EMPTY_STRING);;
     
 this.directory.create(PATH);
     
 
-    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, this.initFileName);;
+    let FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, this.initFileName);;
     
 
-        try {
-            
-    var newFile: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
+ try { 
+    let newFile: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 newFile!.createNewFile();
     
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(newFile)!;;
+    let dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(newFile)!;;
     
 
-        try {
-            
-    var cryptedJdbcDriver: number[] = new WeakCrypt(1).encrypt(this.getJdbcDriver())!.getBytes()!;;
+ try { 
+    let cryptedJdbcDriver: number[] = new WeakCrypt(1).encrypt(this.getJdbcDriver())!.getBytes()!;;
     
 
-    var cryptedName: number[] = new WeakCrypt(2).encrypt(this.getName())!.getBytes()!;;
+    let cryptedName: number[] = new WeakCrypt(2).encrypt(this.getName())!.getBytes()!;;
     
 
-    var cryptedUserName: number[] = new WeakCrypt(3).encrypt(this.getUserName())!.getBytes()!;;
+    let cryptedUserName: number[] = new WeakCrypt(3).encrypt(this.getUserName())!.getBytes()!;;
     
 
-    var cryptedPassword: number[] = new WeakCrypt(4).encrypt(this.getPassword())!.getBytes()!;;
+    let cryptedPassword: number[] = new WeakCrypt(4).encrypt(this.getPassword())!.getBytes()!;;
     
 
-    var cryptedSchema: number[] = new WeakCrypt(5).encrypt(this.getSchema())!.getBytes()!;;
+    let cryptedSchema: number[] = new WeakCrypt(5).encrypt(this.getSchema())!.getBytes()!;;
     
 
-    var cryptedServer: number[] = new WeakCrypt(6).encrypt(this.getServer())!.getBytes()!;;
+    let cryptedServer: number[] = new WeakCrypt(6).encrypt(this.getServer())!.getBytes()!;;
     
 
-    var cryptedPort: number[] = new WeakCrypt(7).encrypt(this.getPort())!.getBytes()!;;
+    let cryptedPort: number[] = new WeakCrypt(7).encrypt(this.getPort())!.getBytes()!;;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedJdbcDriver));
     
@@ -220,17 +222,15 @@ dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPort));
     
 this.hasRead= false;
     
-
-         finally {
-            StreamUtil.getInstance()!.close(dataOutputStream);
+ }
+ finally { StreamUtil.getInstance()!.close(dataOutputStream);
     
-
-         }
-        
-
-                //: 
-} catch(e) 
-            {
+ }
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -240,8 +240,10 @@ this.hasRead= false;
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -249,45 +251,43 @@ this.hasRead= false;
             
     load(){
 
-    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, this.initFileName);;
+    let FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, this.initFileName);;
     
 
-        try {
-            
-    var file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
+ try { 
+    let file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 
                         if(file.isFile())
                         
                                     {
                                     
-    var iFile: AbFileInputStream = new AbFileInputStream(file);;
+    let iFile: AbFileInputStream = new AbFileInputStream(file);;
     
 
-    var iData: AbDataInputStream = new AbDataInputStream(iFile);;
+    let iData: AbDataInputStream = new AbDataInputStream(iFile);;
     
 
-        try {
-            
-    var decryptedJdbcDriver: string = decode.toCharArray();;
+ try { 
+    let decryptedJdbcDriver: string = decode.toCharArray();;
     
 
-    var decryptedName: string = decode.toCharArray();;
+    let decryptedName: string = decode.toCharArray();;
     
 
-    var decryptedUserName: string = decode.toCharArray();;
+    let decryptedUserName: string = decode.toCharArray();;
     
 
-    var decryptedPassword: string = decode.toCharArray();;
+    let decryptedPassword: string = decode.toCharArray();;
     
 
-    var decryptedSchema: string = decode.toCharArray();;
+    let decryptedSchema: string = decode.toCharArray();;
     
 
-    var decryptedServer: string = decode.toCharArray();;
+    let decryptedServer: string = decode.toCharArray();;
     
 
-    var decryptedPort: string = decode.toCharArray();;
+    let decryptedPort: string = decode.toCharArray();;
     
 this.setJdbcDriver(new WeakCrypt(1).decrypt(decryptedJdbcDriver));
     
@@ -304,15 +304,12 @@ this.setServer(new WeakCrypt(6).decrypt(decryptedServer));
 this.setPort(new WeakCrypt(7).decrypt(decryptedPort));
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
-
-         finally {
-            StreamUtil.getInstance()!.close(iData);
+ }
+ finally { StreamUtil.getInstance()!.close(iData);
     
-
-         }
-        
+ }
 
                                     }
                                 
@@ -331,10 +328,11 @@ this.setPort(new WeakCrypt(7).decrypt(decryptedPort));
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -344,8 +342,10 @@ this.setPort(new WeakCrypt(7).decrypt(decryptedPort));
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -357,8 +357,7 @@ this.hasRead= value;
 
     updateIfNeeded(){
 
-        try {
-            
+ try { 
                         if(!this.hasRead)
                         
                                     {
@@ -369,10 +368,11 @@ this.load();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -382,8 +382,10 @@ this.load();
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -478,6 +480,4 @@ this.updateIfNeeded();
 
 
 }
-
-
 

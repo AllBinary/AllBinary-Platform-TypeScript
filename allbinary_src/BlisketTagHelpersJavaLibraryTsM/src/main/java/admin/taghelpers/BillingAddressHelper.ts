@@ -57,12 +57,14 @@ import { WeblisketSessionData } from '../../org/allbinary/logic/communication/ht
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 //not GWT import const AbSqlTableUtil
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -137,9 +139,8 @@ this.streetAddress= new StreetAddress(this.request);
 
     public drop(): string{
 
-        try {
-            
-    var success: string = new BillingAddressesEntity(this.stringUtil!.EMPTY_STRING).drop()!;;
+ try { 
+    let success: string = new BillingAddressesEntity(this.stringUtil!.EMPTY_STRING).drop()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -156,12 +157,13 @@ this.streetAddress= new StreetAddress(this.request);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to drop Admin table";;
+    let error: string = "Failed to drop Admin table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -178,16 +180,17 @@ this.streetAddress= new StreetAddress(this.request);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public create(): string{
 
-        try {
-            
-    var success: string = new BillingAddressesEntity(this.stringUtil!.EMPTY_STRING).createTable()!;;
+ try { 
+    let success: string = new BillingAddressesEntity(this.stringUtil!.EMPTY_STRING).createTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -204,12 +207,13 @@ this.streetAddress= new StreetAddress(this.request);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to create user table";;
+    let error: string = "Failed to create user table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -226,22 +230,23 @@ this.streetAddress= new StreetAddress(this.request);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public restore(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING);;
+    let billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(billingAddressesEntity, this.portion)!;;
+    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(billingAddressesEntity, this.portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -258,12 +263,13 @@ this.streetAddress= new StreetAddress(this.request);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to restore backup";;
+    let error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -280,19 +286,20 @@ this.streetAddress= new StreetAddress(this.request);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public backup(): string{
 
-        try {
-            
-    var success: string = "Backup Successful";;
+ try { 
+    let success: string = "Backup Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(new BillingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING))!;;
+    let result: string = AbSqlTableUtil.getInstance()!.backupTable(new BillingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING))!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -309,12 +316,13 @@ this.streetAddress= new StreetAddress(this.request);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to make backup";;
+    let error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -331,16 +339,17 @@ this.streetAddress= new StreetAddress(this.request);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public insert(): string{
 
-        try {
-            
-    var success: string = "Successfully Added Billing Address";;
+ try { 
+    let success: string = "Successfully Added Billing Address";;
     
 BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.add(this.streetAddress);
     
@@ -359,12 +368,13 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to add Billing Address";;
+    let error: string = "Failed to add Billing Address";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -381,16 +391,17 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public update(): string{
 
-        try {
-            
-    var success: string = "Successfully Updated Billing Address";;
+ try { 
+    let success: string = "Successfully Updated Billing Address";;
     
 BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.update(this.streetAddress);
     
@@ -409,12 +420,13 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed update of a User Billing Address Table";;
+    let error: string = "Failed update of a User Billing Address Table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -431,19 +443,20 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     setToShippingAddress(): string{
 
-        try {
-            
-    var shippingAddressesEntityFactory: ShippingAddressesEntityFactory = ShippingAddressesEntityFactory.getInstance()!;;
+ try { 
+    let shippingAddressesEntityFactory: ShippingAddressesEntityFactory = ShippingAddressesEntityFactory.getInstance()!;;
     
 
-    var streetAddress: StreetAddress = shippingAddressesEntityFactory!.getInstance(this.weblisketSession!.getUserName())!.getDefault()!;;
+    let streetAddress: StreetAddress = shippingAddressesEntityFactory!.getInstance(this.weblisketSession!.getUserName())!.getDefault()!;;
     
 
                         if(streetAddress != 
@@ -472,12 +485,13 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringUtil.getInstance()!.EMPTY_STRING;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to Set Billing address to Shipping Address";;
+    let error: string = "Failed to Set Billing address to Shipping Address";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -494,16 +508,17 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(): string{
 
-        try {
-            
-    var success: string = "Successfully Removed Billing Address";;
+ try { 
+    let success: string = "Successfully Removed Billing Address";;
     
 BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(new Integer(this.streetAddress!.getId()));
     
@@ -522,12 +537,13 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to remove Billing Address";;
+    let error: string = "Failed to remove Billing Address";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -544,16 +560,17 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public set(): string{
 
-        try {
-            
-    var success: string = "Successfully Set Billing Address";;
+ try { 
+    let success: string = "Successfully Set Billing Address";;
     
 BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.setDefault(this.streetAddress!.getId());
     
@@ -572,12 +589,13 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to set billing Address";;
+    let error: string = "Failed to set billing Address";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -594,12 +612,12 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

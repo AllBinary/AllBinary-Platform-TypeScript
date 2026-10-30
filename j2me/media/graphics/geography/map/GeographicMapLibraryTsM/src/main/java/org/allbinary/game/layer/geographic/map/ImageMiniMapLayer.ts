@@ -80,10 +80,10 @@ public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: Vi
             
     init(){
 
-    var aWidth: number = this.allBinaryTiledLayer!.getWidth()!;;
+    let aWidth: number = this.allBinaryTiledLayer!.getWidth()!;;
     
 
-    var aHeight: number = this.allBinaryTiledLayer!.getHeight()!;;
+    let aHeight: number = this.allBinaryTiledLayer!.getHeight()!;;
     
 this.image= PaintableToImageUtil.getImage(this.allBinaryTiledLayer, aWidth, aHeight);
     
@@ -101,6 +101,4 @@ this.paintDots(graphics);
 
 
 }
-
-
 

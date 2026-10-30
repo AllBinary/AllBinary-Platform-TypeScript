@@ -142,5 +142,3 @@ this.nextChosenOnPathGeographicMapCellPosition= nextChosenOnPathGeographicMapCel
 
 }
 
-
-

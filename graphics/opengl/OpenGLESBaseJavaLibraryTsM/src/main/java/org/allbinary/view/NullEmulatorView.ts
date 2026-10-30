@@ -58,7 +58,7 @@ export class NullEmulatorView
 }
 
 
-    public onEmulatorInitComplete(midletActivity: any = {}){
+    public onEmulatorInitComplete(midletActivity: any){
 }
 
 
@@ -67,6 +67,4 @@ export class NullEmulatorView
 
 
 }
-
-
 

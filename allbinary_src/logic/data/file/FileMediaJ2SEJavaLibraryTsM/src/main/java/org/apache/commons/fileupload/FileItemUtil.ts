@@ -16,6 +16,7 @@ import { InputStream } from '../../../../java/io/InputStream.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
 //not GWT import const StreamUtil
@@ -28,6 +29,7 @@ import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFile
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -72,10 +74,17 @@ export class FileItemUtil
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     public readonly DEFAULT_CHARSET: string = "ISO-8859-1";
-
+getString(...args: any[]): any {
+   
+    if (args.length === 1) return this.getString$overload1(args[0]);
+   
+    if (args.length === 1) return this.getString$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getString'); }
+  
                 //@Throws(Exception.constructor)
             
-    public getString(byteArray: number[]): string{
+    public getString$overload1(byteArray: number[]): string{
 
 
 
@@ -87,7 +96,7 @@ export class FileItemUtil
 
                 //@Throws(Exception.constructor)
             
-    public getString(fileItem: FileItemStream): string{
+    public getString$overload2(fileItem: FileItemStream): string{
 
 
 
@@ -101,21 +110,20 @@ export class FileItemUtil
             
     public getBytes(fileItem: FileItemStream): number[]{
 
-    var streamUtil: StreamUtil = StreamUtil.getInstance()!;;
+    let streamUtil: StreamUtil = StreamUtil.getInstance()!;;
     
 
-    var inputStream: InputStream = 
+    let inputStream: InputStream = 
                 null
             ;;
     
 
-    var outputStream: ByteArrayOutputStream = 
+    let outputStream: ByteArrayOutputStream = 
                 null
             ;;
     
 
-        try {
-            inputStream= fileItem!.openStream();
+ try { inputStream= fileItem!.openStream();
     
 outputStream= new ByteArrayOutputStream();
     
@@ -130,7 +138,7 @@ outputStream= new ByteArrayOutputStream();
                                 
                         else {
                             
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Uploaded File FieldName: ");
     
@@ -153,15 +161,12 @@ outputStream= streamUtil!.get(inputStream, outputStream, new Array(16384)) as By
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return outputStream!.toByteArray();;
     
-
-         finally {
-            streamUtil!.close(outputStream);
+ }
+ finally { streamUtil!.close(outputStream);
     
 streamUtil!.close(inputStream);
     
-
-         }
-        
+ }
 }
 
 
@@ -174,6 +179,4 @@ fileItem!.write(AbFileNativeUtil.get(file));
 
 
 }
-
-
 

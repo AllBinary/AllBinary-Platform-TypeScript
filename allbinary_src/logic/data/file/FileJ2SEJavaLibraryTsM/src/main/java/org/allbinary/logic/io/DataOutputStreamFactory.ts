@@ -56,8 +56,15 @@ export class DataOutputStreamFactory
         
 
     private static readonly instance: DataOutputStreamFactory = new DataOutputStreamFactory();
-
-    public static getInstance(): DataOutputStreamFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): DataOutputStreamFactory{
 
 
 
@@ -71,10 +78,10 @@ export class DataOutputStreamFactory
             
     public getInstanceForAbFile(file: AbFile): AbDataOutputStream{
 
-    var idFileOutputStream: AbFileOutputStream = AbFileOutputStream.createFromAbFile(file)!;;
+    let idFileOutputStream: AbFileOutputStream = AbFileOutputStream.createFromAbFile(file)!;;
     
 
-    var idOutData: AbDataOutputStream = new AbDataOutputStream(idFileOutputStream);;
+    let idOutData: AbDataOutputStream = new AbDataOutputStream(idFileOutputStream);;
     
 
 
@@ -87,15 +94,15 @@ export class DataOutputStreamFactory
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(filePath: string, fileName: string): AbDataOutputStream{
+    public getInstance$overload2(filePath: string, fileName: string): AbDataOutputStream{
 
-    var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
+    let fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var fileOutputStream: AbFileOutputStream = fileStreamFactory!.getFileOutputStreamInstance(filePath, fileName)!;;
+    let fileOutputStream: AbFileOutputStream = fileStreamFactory!.getFileOutputStreamInstance(filePath, fileName)!;;
     
 
-    var idOutData: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);;
+    let idOutData: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);;
     
 
 
@@ -107,6 +114,4 @@ export class DataOutputStreamFactory
 
 
 }
-
-
 

@@ -40,11 +40,9 @@
 export interface SequenceInterface {
         
 
-    setSequence(sequence: number[])
+    setSequence(sequence: number[]): void;
 
-    getSequence(): number[]
+    getSequence(): number[];
 
 }
-
-
 

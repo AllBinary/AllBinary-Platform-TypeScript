@@ -30,9 +30,11 @@ import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontData } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
@@ -72,9 +74,11 @@ import { PaymentGatewayIdGenerator } from '../../../../../../../../../org/allbin
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
@@ -84,6 +88,7 @@ import { SuperCrypt } from '../../../../../../../../../org/allbinary/logic/contr
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -135,8 +140,7 @@ this.setTableName(this.tableName);
 
     public add(paymentGatewayInterface: PaymentGatewayInterface){
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
@@ -146,17 +150,17 @@ this.setTableName(this.tableName);
                                     }
                                 
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 vector.add(new PaymentGatewayIdGenerator().getNext());
     
 vector.addAllList(new PaymentGatewayEncryptedMapping(paymentGatewayInterface).toVector());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 vector.add(time);
     
@@ -173,10 +177,11 @@ super.insert(vector);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -186,24 +191,25 @@ super.insert(vector);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public update(paymentGatewayInterface: PaymentGatewayInterface){
 
-        try {
-            
-    var calendar: Calendar = Calendar.getInstance()!;;
+ try { 
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 paymentGatewayInterface!.setLastModified(time);
     
 
-    var whereKeyValuePairs: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let whereKeyValuePairs: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereKeyValuePairs!.put(StoreFrontData.getInstance()!.NAME.toString(), paymentGatewayInterface!.getStoreName());
     
@@ -224,7 +230,7 @@ whereKeyValuePairs!.put(PaymentGatewayData.NAME.toString(), paymentGatewayInterf
                                     }
                                 
 
-    var updateHashMap: HashMap<any, any> = new PaymentGatewayEncryptedMapping(paymentGatewayInterface).toHashMap()!;;
+    let updateHashMap: HashMap<any, any> = new PaymentGatewayEncryptedMapping(paymentGatewayInterface).toHashMap()!;;
     
 super.updateWhere(whereKeyValuePairs, updateHashMap);
     
@@ -237,10 +243,11 @@ super.updateWhere(whereKeyValuePairs, updateHashMap);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -250,19 +257,20 @@ super.updateWhere(whereKeyValuePairs, updateHashMap);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public getPaymentGatewayInterface(storeName: string, paymentType: BasicPaymentType): PaymentGatewayInterface{
 
-        try {
-            
-    var paymentGatewayHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let paymentGatewayHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var whereKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let whereKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereKeyAndValue!.put(StoreFrontData.getInstance()!.NAME.toString(), storeName);
     
@@ -277,40 +285,40 @@ paymentGatewayHashMap= super.getRow(whereKeyAndValue);
                         
                                     {
                                     
-    var userName: string = paymentGatewayHashMap!.get(UserData.USERNAME.toString()) as string;;
+    let userName: string = paymentGatewayHashMap!.get(UserData.USERNAME.toString()) as string;;
     
 
-    var password: string = paymentGatewayHashMap!.get(UserData.PASSWORD.toString()) as string;;
+    let password: string = paymentGatewayHashMap!.get(UserData.PASSWORD.toString()) as string;;
     
 
-    var special1: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL1.toString()) as string;;
+    let special1: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL1.toString()) as string;;
     
 
-    var special2: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL2.toString()) as string;;
+    let special2: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL2.toString()) as string;;
     
 
-    var special3: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL3.toString()) as string;;
+    let special3: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL3.toString()) as string;;
     
 
-    var special4: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL4.toString()) as string;;
+    let special4: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL4.toString()) as string;;
     
 
-    var special5: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL5.toString()) as string;;
+    let special5: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL5.toString()) as string;;
     
 
-    var special6: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL6.toString()) as string;;
+    let special6: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL6.toString()) as string;;
     
 
-    var special7: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL7.toString()) as string;;
+    let special7: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL7.toString()) as string;;
     
 
-    var special8: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL8.toString()) as string;;
+    let special8: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL8.toString()) as string;;
     
 
-    var special9: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL9.toString()) as string;;
+    let special9: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL9.toString()) as string;;
     
 
-    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
+    let superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
     
 paymentGatewayHashMap!.put(UserData.USERNAME.toString(), superCrypt!.decrypt(userName));
     
@@ -335,7 +343,7 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL8.toString(), superCrypt!.d
 paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.decrypt(special9));
     
 
-    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(paymentGatewayHashMap)!;;
+    let paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(paymentGatewayHashMap)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -365,10 +373,11 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.d
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -384,16 +393,17 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.d
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public findPaymentTypeVectorByStore(storeName: string): BasicArrayList{
 
-        try {
-            
-    var paymentGatewayNameVector: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let paymentGatewayNameVector: BasicArrayList = new BasicArrayListD();;
     
 paymentGatewayNameVector= super.getColumnWhere(PaymentGatewayData.NAME.toString(), StoreFrontData.getInstance()!.NAME.toString(), storeName);
     
@@ -404,23 +414,23 @@ paymentGatewayNameVector= super.getColumnWhere(PaymentGatewayData.NAME.toString(
                         
                                     {
                                     
-    var paymentGatewayVector: BasicArrayList = new BasicArrayListD();;
+    let paymentGatewayVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = paymentGatewayNameVector!.size()!;;
+    let size: number = paymentGatewayNameVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var paymentTypeString: string = paymentGatewayNameVector!.get(i) as string;;
+    let paymentTypeString: string = paymentGatewayNameVector!.get(i) as string;;
     
 
-    var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(paymentTypeString)!;;
+    let paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(paymentTypeString)!;;
     
 paymentGatewayVector!.add(paymentType);
     
@@ -454,10 +464,11 @@ paymentGatewayVector!.add(paymentType);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -473,16 +484,17 @@ paymentGatewayVector!.add(paymentType);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public remove(storeName: string, paymentType: BasicPaymentType){
 
-        try {
-            
-    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(StoreFrontData.getInstance()!.NAME.toString(), storeName);
     
@@ -499,10 +511,11 @@ super.deleteWhere(whereHashMap);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -512,14 +525,16 @@ super.deleteWhere(whereHashMap);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public createTableStatement(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
@@ -703,6 +718,4 @@ stringBuffer!.append(this.sqlStrings!.END);
 
 
 }
-
-
 

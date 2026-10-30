@@ -34,6 +34,7 @@ import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/U
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -81,7 +82,7 @@ this.labelX= x;
 
     public updateMeasurement(graphics: Graphics){
 
-    var labelWidth: number = graphics.getFont()!.stringWidth(this.LABEL) -this.LABEL.length;;
+    let labelWidth: number = graphics.getFont()!.stringWidth(this.LABEL) -this.LABEL.length;;
     
 this.valueX= labelWidth +this.labelX;
     
@@ -116,6 +117,4 @@ graphics.drawString(this.value, this.valueX, y, 0);
 
 
 }
-
-
 

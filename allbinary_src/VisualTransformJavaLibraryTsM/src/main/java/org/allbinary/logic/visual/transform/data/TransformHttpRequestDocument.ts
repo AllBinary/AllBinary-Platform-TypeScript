@@ -42,15 +42,18 @@ import { WeblisketSession } from '../../../../../../org/allbinary/logic/communic
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SearchRequest } from '../../../../../../org/allbinary/logic/control/search/SearchRequest.js';
 //not GWT import const SearchRequest
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -100,20 +103,19 @@ public constructor (pageContext: PageContext, weblisketSession: WeblisketSession
 
             super();
         
-        try {
-            
-    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(pageContext!.getRequest() as HttpServletRequest)!;;
+ try { 
+    let contentType: string = AcceptableResponseGenerator.getInstance()!.get(pageContext!.getRequest() as HttpServletRequest)!;;
     
 this.document= DomDocumentHelper.create();
     
 
-    var contentTypeNode: Node = this.document.createElement(contentType)!;;
+    let contentTypeNode: Node = this.document.createElement(contentType)!;;
     
 
-    var languageTypeNode: Node = this.document.createElement(language)!;;
+    let languageTypeNode: Node = this.document.createElement(language)!;;
     
 
-    var localTypeNode: Node = this.document.createElement(local)!;;
+    let localTypeNode: Node = this.document.createElement(local)!;;
     
 this.baseNode= localTypeNode;
     
@@ -132,10 +134,11 @@ this.document.appendChild(contentTypeNode);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -150,8 +153,10 @@ this.document.appendChild(contentTypeNode);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -159,20 +164,19 @@ public constructor (searchRequest: SearchRequest){
 
             super();
         
-        try {
-            
-    var contentType: string = searchRequest!.getContentType()!;;
+ try { 
+    let contentType: string = searchRequest!.getContentType()!;;
     
 this.document= DomDocumentHelper.create();
     
 
-    var contentTypeNode: Node = this.document.createElement(contentType)!;;
+    let contentTypeNode: Node = this.document.createElement(contentType)!;;
     
 
-    var languageTypeNode: Node = this.document.createElement(language)!;;
+    let languageTypeNode: Node = this.document.createElement(language)!;;
     
 
-    var localTypeNode: Node = this.document.createElement(local)!;;
+    let localTypeNode: Node = this.document.createElement(local)!;;
     
 this.baseNode= localTypeNode;
     
@@ -182,10 +186,11 @@ contentTypeNode!.appendChild(languageTypeNode);
     
 this.document.appendChild(contentTypeNode);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -200,8 +205,10 @@ this.document.appendChild(contentTypeNode);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -229,7 +236,7 @@ this.document.appendChild(contentTypeNode);
             
     public log(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.baseNode != 
@@ -264,6 +271,4 @@ stringBuffer!.append(XmlDocumentHelper.toString(this.document));
 
 
 }
-
-
 

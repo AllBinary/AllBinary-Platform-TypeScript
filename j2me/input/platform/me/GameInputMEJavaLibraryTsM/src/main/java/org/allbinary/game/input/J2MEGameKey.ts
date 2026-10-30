@@ -20,9 +20,11 @@
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -52,7 +54,7 @@ export class J2MEGameKey extends Input {
 
     public static getString(keyCode: number): string{
 
-    var input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;;
+    let input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;;
     
 
                         if(input != 
@@ -89,14 +91,14 @@ protected constructor (key: number, keyName: string){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var id: number = this.getId()!;;
+    let id: number = this.getId()!;;
     
 
                         if(id >= 0)
                         
                                     {
                                     
-    var inputFactory: InputFactory = InputFactory.getInstance()!;;
+    let inputFactory: InputFactory = InputFactory.getInstance()!;;
     
 inputFactory!.add(id, this);
     
@@ -117,6 +119,4 @@ inputFactory!.add(id, this);
 
 
 }
-
-
 

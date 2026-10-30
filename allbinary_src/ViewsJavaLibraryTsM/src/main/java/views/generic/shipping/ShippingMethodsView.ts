@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontFactory } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 //not GWT import const StoreFrontFactory
@@ -75,6 +77,7 @@ import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -133,60 +136,59 @@ this.shippingMethods= new ShippingMethods(this.abeClientInformation, this.storeF
             
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var shippingMethodsNode: Node = document.createElement(ShippingMethodsData.SHIPPINGMETHODSORDERSUMMARIES)!;;
+ try { 
+    let shippingMethodsNode: Node = document.createElement(ShippingMethodsData.SHIPPINGMETHODSORDERSUMMARIES)!;;
     
 
-    var order: OrderInterface = this.getWeblisketSession()!.getOrder()!;;
+    let order: OrderInterface = this.getWeblisketSession()!.getOrder()!;;
     
 
-    var basket: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;;
+    let basket: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;;
     
 
-    var shippingAddressesEntityInterface: StreetAddressesEntityInterface = ShippingAddressesEntityFactory.getInstance()!.getInstance(this.getWeblisketSession()!.getUserName())!;;
+    let shippingAddressesEntityInterface: StreetAddressesEntityInterface = ShippingAddressesEntityFactory.getInstance()!.getInstance(this.getWeblisketSession()!.getUserName())!;;
     
 
-    var streetAddress: StreetAddress = shippingAddressesEntityInterface!.getDefault()!;;
+    let streetAddress: StreetAddress = shippingAddressesEntityInterface!.getDefault()!;;
     
 
-    var shippingVector: BasicArrayList = this.shippingMethods!.get()!;;
+    let shippingVector: BasicArrayList = this.shippingMethods!.get()!;;
     
 
-    var size: number = shippingVector!.size()!;;
+    let size: number = shippingVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var shippingMethodNode: Node = document.createElement(ShippingMethodsData.SHIPPINGMETHODORDERSUMMARY)!;;
+    let shippingMethodNode: Node = document.createElement(ShippingMethodsData.SHIPPINGMETHODORDERSUMMARY)!;;
     
 
-    var shipping: ShippingInterface = shippingVector!.get(index) as ShippingInterface;;
+    let shipping: ShippingInterface = shippingVector!.get(index) as ShippingInterface;;
     
 
-    var shippingView: DomNodeInterface = shipping as DomNodeInterface;;
+    let shippingView: DomNodeInterface = shipping as DomNodeInterface;;
     
 shippingMethodNode!.appendChild(shippingView!.toXmlNode(document));
     
 
-    var shippingCost: Money = shipping.getCost(order)!;;
+    let shippingCost: Money = shipping.getCost(order)!;;
     
 
-    var subTotal: Money = basket.getSubTotal()!;;
+    let subTotal: Money = basket.getSubTotal()!;;
     
 
-    var taxRate: number = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.getTaxRate(streetAddress, storeFrontInterface)!;;
+    let taxRate: number = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.getTaxRate(streetAddress, storeFrontInterface)!;;
     
 
-    var tax: Money = new Money();;
+    let tax: Money = new Money();;
     
 
-    var total: Money = new Money();;
+    let total: Money = new Money();;
     
 total.add(shippingCost!.toString());
     
@@ -220,10 +222,11 @@ shippingMethodsNode!.appendChild(shippingMethodNode);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return shippingMethodsNode;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
@@ -238,8 +241,10 @@ shippingMethodsNode!.appendChild(shippingMethodNode);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -251,8 +256,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -260,12 +264,13 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to view ShippingMethods";;
+    let error: string = "Failed to view ShippingMethods";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
@@ -282,12 +287,12 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

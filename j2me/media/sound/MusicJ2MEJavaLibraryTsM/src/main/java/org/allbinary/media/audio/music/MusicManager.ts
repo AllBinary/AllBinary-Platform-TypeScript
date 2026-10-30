@@ -14,6 +14,7 @@
         
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
 
 import { Player, PlayerI } from '../../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
@@ -27,12 +28,15 @@ import { AvianUtil } from '../../../../../org/allbinary/AvianUtil.js';
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { NoSound } from '../../../../../org/allbinary/media/audio/NoSound.js';
 //not GWT import const NoSound
@@ -45,12 +49,15 @@ import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { GameTickTimeDelayHelper } from '../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 //not GWT import const GameTickTimeDelayHelper
@@ -63,9 +70,11 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -87,31 +96,20 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { MusicManagerPlayerListener } from './MusicManagerPlayerListener.js';
 //not GWT import - same folder const MusicManagerPlayerListener
+type MusicManagerPlayerListener = InstanceType<MusicManager['MusicManagerPlayerListener']>;
 
 export class MusicManager
             extends Object
          {
         
-
-    private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-
-    private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-
-    private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-
-    private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
-
-    private readonly playerStateUtil: PlayerStateUtil = PlayerStateUtil.getInstance()!;
-
-    private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
 //Handle Media ending for Avian
 //inner= member=true isStatic=
-MusicManagerPlayerListener = class
+MusicManagerPlayerListener = (() => { const outer$MusicManager = this; return class
             extends Object
          implements PlayerListener {
         
 
-    public playerUpdate(player: Player, event: string, eventData: any = {}){
+    public playerUpdate(player: Player, event: string, eventData: any){
 PreLogUtil.put(event, this, this.commonStrings!.PROCESS);
     
 
@@ -126,8 +124,18 @@ PreLogUtil.put(event, this, this.commonStrings!.PROCESS);
 }
 
 
-}
+}; })();
+    private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
+    private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
+
+    private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
+
+    private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
+
+    private readonly playerStateUtil: PlayerStateUtil = PlayerStateUtil.getInstance()!;
+
+    private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
 
     private readonly playerListener: PlayerListener = new this.MusicManagerPlayerListener();
 
@@ -173,7 +181,7 @@ public constructor (musicServiceClass: Function, songList: BasicArrayList){
                         
                                     {
                                     
-    var randomSongSound: Sound = this.basicArrayListUtil!.getRandom(this.songList) as Sound;;
+    let randomSongSound: Sound = this.basicArrayListUtil!.getRandom(this.songList) as Sound;;
     
 this.nextSong(randomSongSound, 0, 0);
     
@@ -205,8 +213,7 @@ this.reset= true;
 
     public process(){
 
-        try {
-            
+ try { 
                         if(this.stopped)
                         
                                     {
@@ -241,10 +248,10 @@ this.reset= true;
 this.noDuration= false;
     
 
-    var endingCurrentSongSound: Sound = this.currentSongSound;;
+    let endingCurrentSongSound: Sound = this.currentSongSound;;
     
 
-    var nextSongSound: Sound = this.nextSongSound;;
+    let nextSongSound: Sound = this.nextSongSound;;
     
 this.nextSongSound= NoSound.getInstance();
     
@@ -264,10 +271,10 @@ this.nextSongSound= NoSound.getInstance();
                         }
                             
 
-    var startingCurrentSongSound: Sound = this.currentSongSound;;
+    let startingCurrentSongSound: Sound = this.currentSongSound;;
     
 
-    var duration: number = this.currentSongSound!.getDuration();;
+    let duration: number = this.currentSongSound!.getDuration();;
     
 this.timeDelayHelper!.delay= globalThis.Math.trunc(duration);
     
@@ -276,7 +283,7 @@ this.timeDelayHelper!.delay= globalThis.Math.trunc(duration);
                         
                                     {
                                     
-    var NO_DURATION_FOR: string = "No Duration for: ";;
+    let NO_DURATION_FOR: string = "No Duration for: ";;
     
 PreLogUtil.put(new StringMaker().append(NO_DURATION_FOR)!.append(this.currentSongSound!.getResource())!.toString(), this, this.commonStrings!.PROCESS);
     
@@ -356,12 +363,13 @@ this.currentSongSound!.getPlayerP()!.start();
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var resource: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let resource: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(this.currentSongSound != NoSound.getInstance())
@@ -374,8 +382,10 @@ this.currentSongSound!.getPlayerP()!.start();
                                 
 PreLogUtil.putOE(this.commonStrings!.EXCEPTION_LABEL +resource, this, this.commonStrings!.PROCESS, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -402,9 +412,8 @@ startingCurrentSongSound!.getPlayerP()!.start();
             
     public stop(){
 
-        try {
-            
-    var currentSongSound: Sound = this.currentSongSound;;
+ try { 
+    let currentSongSound: Sound = this.currentSongSound;;
     
 
                         if(currentSongSound != NoSound.getInstance())
@@ -423,12 +432,13 @@ this.timeDelayHelper!.setStartTime(0);
     
 PreLogUtil.put(new StringMaker().append(this.commonStrings!.END)!.append(StringUtil.getInstance()!.toString(currentSongSound))!.toString(), this, this.commonStrings!.END);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var resource: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let resource: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(currentSongSound != NoSound.getInstance())
@@ -441,12 +451,12 @@ PreLogUtil.put(new StringMaker().append(this.commonStrings!.END)!.append(StringU
                                 
 PreLogUtil.putOE(this.commonStrings!.EXCEPTION_LABEL +resource, this, this.commonStrings!.END, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

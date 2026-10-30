@@ -33,6 +33,7 @@ import { ImageColorResults } from '../../../../org/allbinary/media/image/analysi
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 
 
@@ -76,7 +77,7 @@ public constructor (imageAnalysisResultsArray: ImageAnalysisResults[]){
         this.initComponents();
     
 
-    var imageAnalysisResults: ImageAnalysisResults = imageAnalysisResultsArray[0]!;;
+    let imageAnalysisResults: ImageAnalysisResults = imageAnalysisResultsArray[0]!;;
     
 this.updateImageColorRangeResults(imageAnalysisResults);
     
@@ -194,7 +195,7 @@ this.maxGreenJTextField!.setEditable(false);
 this.maxBlueJTextField!.setEditable(false);
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -207,7 +208,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
     updateImageColorRangeResults(imageAnalysisResults: ImageAnalysisResults){
 
-    var imageColorRangeResults: ImageColorRangeResults = imageAnalysisResults!.getImageColorRangeResults()!;;
+    let imageColorRangeResults: ImageColorRangeResults = imageAnalysisResults!.getImageColorRangeResults()!;;
     
 this.matchingPixelsJTextField!.setText(new Long(imageColorRangeResults!.getMatchingPixelsChecked()).toString());
     
@@ -216,7 +217,7 @@ this.totalPixelsJTextField!.setText(new Long(imageColorRangeResults!.getTotalPix
 this.percentMatchingJTextField!.setText(new number(imageColorRangeResults!.getPercent()).toString());
     
 
-    var imageColorResults: ImageColorResults = imageAnalysisResults!.getImageColorResults()!;;
+    let imageColorResults: ImageColorResults = imageAnalysisResults!.getImageColorResults()!;;
     
 this.avgRedJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgRed()).toString());
     
@@ -292,6 +293,4 @@ this.maxBlueJTextField!.setText(new Long(imageColorResults!.getColorRange()!.get
     private totalPixelsJTextField: javax.swing.JTextField;
 
 }
-
-
 

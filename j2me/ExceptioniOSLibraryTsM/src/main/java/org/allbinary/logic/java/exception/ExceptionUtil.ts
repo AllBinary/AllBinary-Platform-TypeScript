@@ -75,12 +75,12 @@ private constructor (){
 
     /*actual*/ public getStackTrace(e: Throwable): string{
 
-    var bs: ByteArrayOutputStream = new ByteArrayOutputStream();;
+    let bs: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 e.printStackTrace();
     
 
-    var output: string = bs.toString()!;;
+    let output: string = bs.toString()!;;
     
 
                         if(output != 
@@ -107,6 +107,4 @@ e.printStackTrace();
 
 
 }
-
-
 

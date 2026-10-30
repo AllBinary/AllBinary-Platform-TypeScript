@@ -40,9 +40,7 @@
 export interface AllBinarySensorListener {
         
 
-    onSensorChange()
+    onSensorChange(): void;
 
 }
-
-
 

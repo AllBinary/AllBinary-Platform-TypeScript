@@ -27,9 +27,11 @@ import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AbCrypt } from '../../../../../../org/allbinary/logic/system/security/crypt/jcehelper/AbCrypt.js';
 //not GWT import const AbCrypt
@@ -39,6 +41,7 @@ import { KeySpecFactory } from '../../../../../../org/allbinary/logic/system/sec
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -82,28 +85,29 @@ public constructor (key: number){
 
             super();
         
-        try {
-            this.abCrypt!.init(WeakCrypt.keys[key]!);
+ try { this.abCrypt!.init(WeakCrypt.keys[key]!);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "SuperCrypt(key)", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public encrypt(value: string): string{
 
-        try {
-            
-    var crypted: number[] = this.abCrypt!.encrypt(this.tsUtil!.getByteArray(value))!;;
+ try { 
+    let crypted: number[] = this.abCrypt!.encrypt(this.tsUtil!.getByteArray(value))!;;
     
 
 
@@ -111,10 +115,11 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "SuperCrypt(key)", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DatabaseEncoder.encode(crypted);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
     
 
@@ -123,16 +128,17 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringUtil.getInstance()!.EMPTY_STRING;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public decrypt(value: string): string{
 
-        try {
-            
-    var decrypted: number[] = this.abCrypt!.decrypt(DatabaseEncoder.decode(value))!;;
+ try { 
+    let decrypted: number[] = this.abCrypt!.decrypt(DatabaseEncoder.decode(value))!;;
     
 
 
@@ -140,10 +146,11 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return String.fromCharCode(...decrypted);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE("decrypt Failed", this, "decrypt", e);
     
 
@@ -152,12 +159,12 @@ PreLogUtil.putOE("decrypt Failed", this, "decrypt", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringUtil.getInstance()!.EMPTY_STRING;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

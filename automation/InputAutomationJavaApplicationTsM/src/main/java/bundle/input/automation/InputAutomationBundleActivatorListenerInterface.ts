@@ -44,13 +44,11 @@ export interface InputAutomationBundleActivatorListenerInterface {
 
                 //@Throws(Exception.constructor)
             
-    registerAsService()
+    registerAsService(): void;
 
                 //@Throws(Exception.constructor)
             
-    useServices()
+    useServices(): void;
 
 }
-
-
 

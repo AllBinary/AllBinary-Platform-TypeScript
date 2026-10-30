@@ -27,12 +27,14 @@ import { AndroidInfoFactory } from '../../../../../../org/allbinary/android/Andr
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 //not GWT import const GenericOperatingSystem
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -70,7 +72,7 @@ public constructor (){
 
             super();
         
-    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
+    let SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
     
 
                         if(SDK_VERSION > 10)
@@ -82,10 +84,10 @@ public constructor (){
                                     }
                                 
 
-    var properties: AndroidSystemProperties = AndroidSystemProperties.getInstance()!;;
+    let properties: AndroidSystemProperties = AndroidSystemProperties.getInstance()!;;
     
 
-    var commonStrings: CommonSeps = CommonSeps.getInstance()!;;
+    let commonStrings: CommonSeps = CommonSeps.getInstance()!;;
     
 this.stringBuffer!.append(this.DEVICE_ID);
     
@@ -214,7 +216,7 @@ this.stringBuffer!.append(commonStrings!.SPACE);
 
     public isOverScan(): boolean{
 
-    var properties: AndroidSystemProperties = AndroidSystemProperties.getInstance()!;;
+    let properties: AndroidSystemProperties = AndroidSystemProperties.getInstance()!;;
     
 
                         if(properties.getDevice()!.toLowerCase()!.indexOf(this.OUYA) >= 0)
@@ -260,7 +262,7 @@ this.stringBuffer!.append(commonStrings!.SPACE);
 
     public toString(): string{
 
-    var osBuffer: StringMaker = new StringMaker();;
+    let osBuffer: StringMaker = new StringMaker();;
     
 osBuffer!.append(super.toString());
     
@@ -280,6 +282,4 @@ osBuffer!.append(this.stringBuffer!.toString());
 
 
 }
-
-
 

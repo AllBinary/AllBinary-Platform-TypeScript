@@ -25,6 +25,7 @@ import { UserEntityFactory } from '../../../org/allbinary/data/tables/user/UserE
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
@@ -77,8 +78,7 @@ this.userVector= UserEntityFactory.getInstance()!.getCustomers();
 
     public isValid(): Boolean{
 
-        try {
-            
+ try { 
                         if(this.userVector!.size() > 0)
                         
                                     {
@@ -86,7 +86,7 @@ this.userVector= UserEntityFactory.getInstance()!.getCustomers();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -96,15 +96,16 @@ this.userVector= UserEntityFactory.getInstance()!.getCustomers();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -118,26 +119,28 @@ this.userVector= UserEntityFactory.getInstance()!.getCustomers();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "No Users";
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -153,8 +156,10 @@ this.userVector= UserEntityFactory.getInstance()!.getCustomers();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Getting Validation Info";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -179,6 +184,4 @@ this.userVector= UserEntityFactory.getInstance()!.getCustomers();
 
 
 }
-
-
 

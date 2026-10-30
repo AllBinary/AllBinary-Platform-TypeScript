@@ -26,30 +26,37 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
 //not GWT import const CellPosition
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
@@ -68,6 +75,7 @@ import { PathData } from '../../../../../../org/allbinary/media/graphics/geograp
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -113,7 +121,7 @@ protected constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public init(geographicMapInterface: any = {}, totalPaths: number){
+    public init(geographicMapInterface: any, totalPaths: number){
 }
 
 
@@ -121,23 +129,23 @@ protected constructor (){
             
     getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory, pathList: BasicArrayList): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = pathList!.size()!;;
+    let size: number = pathList!.size()!;;
     
 
-    var basicGeographicMapCellPosition: CellPosition;;
+    let basicGeographicMapCellPosition: CellPosition;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition;;
+    let geographicMapCellPosition: GeographicMapCellPosition;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 basicGeographicMapCellPosition= pathList!.get(index) as CellPosition;
     
@@ -160,18 +168,17 @@ list.add(geographicMapCellPosition);
             
     public createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-    var pathCacheFactory: PathCacheFactory = PathCacheFactory.getInstance()!;;
+ try { 
+    let pathCacheFactory: PathCacheFactory = PathCacheFactory.getInstance()!;;
     
 
-    var mapIdInteger: Integer = geographicMapInterface!.getAllBinaryTiledLayer()!.getDataId()!;;
+    let mapIdInteger: Integer = geographicMapInterface!.getAllBinaryTiledLayer()!.getDataId()!;;
     
 
-    var list: BasicArrayList = pathCacheFactory!.getOrCreate(mapIdInteger)!;;
+    let list: BasicArrayList = pathCacheFactory!.getOrCreate(mapIdInteger)!;;
     
 
                         if(list == this.basicArrayListUtil!.getImmutableInstance())
@@ -180,29 +187,29 @@ list.add(geographicMapCellPosition);
                                     list= new BasicArrayListD();
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
+    let geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
     
 
-    var id: number = PathData.getInstance()!.OFFSET +mapIdInteger!.intValue();;
+    let id: number = PathData.getInstance()!.OFFSET +mapIdInteger!.intValue();;
     
 
-    var basicList: BasicArrayList = pathCacheFactory!.getOrCreate(smallIntegerSingletonFactory!.getAt(id))!;;
+    let basicList: BasicArrayList = pathCacheFactory!.getOrCreate(smallIntegerSingletonFactory!.getAt(id))!;;
     
 
-    var size: number = basicList!.size()!;;
+    let size: number = basicList!.size()!;;
     
 
-    var pathList: BasicArrayList;;
+    let pathList: BasicArrayList;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 pathList= this.getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory, basicList!.get(index) as BasicArrayList);
     
@@ -225,10 +232,11 @@ this.logUtil!.putF(new StringMaker().append("Using Cached Path(s): ")!.append(St
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return list;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
 
@@ -237,12 +245,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new BasicArrayListD();
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

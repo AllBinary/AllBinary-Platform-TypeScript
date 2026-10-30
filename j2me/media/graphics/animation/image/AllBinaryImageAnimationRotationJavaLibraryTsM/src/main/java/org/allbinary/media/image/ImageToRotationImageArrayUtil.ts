@@ -73,13 +73,13 @@ private constructor (){
             
     public generate(image: Image, angleIncrement: number, totalAngle: number): Image[]{
 
-    var imageRotationUtil: ImageRotationUtil = ImageRotationUtil.getInstance()!;;
+    let imageRotationUtil: ImageRotationUtil = ImageRotationUtil.getInstance()!;;
     
 
-    var totalFrames: number = globalThis.Math.trunc(totalAngle /angleIncrement);;
+    let totalFrames: number = globalThis.Math.trunc(totalAngle /angleIncrement);;
     
 
-    var imageArray: Image[] = new Array(totalFrames);;
+    let imageArray: Image[] = new Array(totalFrames);;
     
 imageArray[0]= image;
     
@@ -88,7 +88,7 @@ imageArray[0]= image;
 
 
                         for (
-    var index: number = 1;index < totalFrames; index++)
+    let index: number = 1;index < totalFrames; index++)
         {
 imageArray[index]= imageRotationUtil!.createRotatedImage(image, index *angleIncrement);
     
@@ -104,6 +104,4 @@ imageArray[index]= imageRotationUtil!.createRotatedImage(image, index *angleIncr
 
 
 }
-
-
 

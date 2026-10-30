@@ -65,5 +65,3 @@ this.setTagRequestHelperFactory(new BasicGroupItemsRequestHelperFactory());
 
 }
 
-
-

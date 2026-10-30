@@ -78,21 +78,26 @@ import { MEUtil } from '../../../../org/allbinary/logic/MEUtil.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HashtableUtil;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -141,7 +146,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
 this.addConfiguration();
     
 
-    var gameFeatureFormUtil: GameFeatureFormUtil = GameFeatureFormUtil.getInstance()!;;
+    let gameFeatureFormUtil: GameFeatureFormUtil = GameFeatureFormUtil.getInstance()!;;
     
 gameFeatureFormUtil!.addChoiceGroup(this, GameFeatureChoiceGroups.getExclusiveInstance()!.get(), ChoiceI.EXCLUSIVE);
     
@@ -168,10 +173,10 @@ this.save(abeClientInformation);
 
     addTextFieldsIfSimulated(){
 
-    var key: string = OrientationData.getInstance()!.ORIENTATION_SENSOR_INPUT;;
+    let key: string = OrientationData.getInstance()!.ORIENTATION_SENSOR_INPUT;;
     
 
-    var hashtable: ABHashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
+    let hashtable: ABHashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
     
 
                         if(hashtable != 
@@ -180,7 +185,7 @@ this.save(abeClientInformation);
                         
                                     {
                                     
-    var listCanBeNull: any = hashtable.get(key);;
+    let listCanBeNull: any = hashtable.get(key);;
     
 
                         if(listCanBeNull != 
@@ -189,7 +194,7 @@ this.save(abeClientInformation);
                         
                                     {
                                     
-    var list: BasicArrayList = listCanBeNull as BasicArrayList;;
+    let list: BasicArrayList = listCanBeNull as BasicArrayList;;
     
 
                         if(list.contains(SensorFeatureFactory.getInstance()!.SIMULATED_ORIENTATION_SENSORS))
@@ -211,26 +216,26 @@ this.save(abeClientInformation);
 
     addTextFields(){
 
-    var hashtable: ABHashtable<any, any> = GameConfigurationTextInput.getHashtable()!;;
+    let hashtable: ABHashtable<any, any> = GameConfigurationTextInput.getHashtable()!;;
     
 
-    var size: number = hashtable.size()!;;
+    let size: number = hashtable.size()!;;
     
 
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
+    let objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
     
 
-    var gameConfigurationTextInput: GameConfigurationTextInput;;
+    let gameConfigurationTextInput: GameConfigurationTextInput;;
     
 
-    var textField: TextField;;
+    let textField: TextField;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 gameConfigurationTextInput= hashtable.get(objectArray[index]!) as GameConfigurationTextInput;
     
@@ -245,35 +250,35 @@ this.meUtil!.appendItem(this, textField);
 
     addConfiguration(){
 
-    var METHOD_NAME: string = "addConfiguration";;
+    let METHOD_NAME: string = "addConfiguration";;
     
 
-    var NAME: string = "Name: ";;
+    let NAME: string = "Name: ";;
     
 
-    var list: BasicArrayList = GameConfigurationSingleton.getInstance()!.getOptionsBasicArrayList()!;;
+    let list: BasicArrayList = GameConfigurationSingleton.getInstance()!.getOptionsBasicArrayList()!;;
     
 
-    var GAUGE_CHANGE: Command = MyCommandsFactory.getInstance()!.GAUGE_CHANGE;;
+    let GAUGE_CHANGE: Command = MyCommandsFactory.getInstance()!.GAUGE_CHANGE;;
     
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var gameConfiguration: GameConfiguration;;
+    let gameConfiguration: GameConfiguration;;
     
 
-    var gauge: GameConfigurationGauge;;
+    let gauge: GameConfigurationGauge;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 gameConfiguration= list.objectArray[index]! as GameConfiguration;
     
@@ -296,7 +301,7 @@ this.meUtil!.appendItem(this, gauge);
 
     public initCommands(cmdListener: CommandListener){
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
+    let gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 this.removeAllCommands();
     
@@ -313,17 +318,17 @@ this.setCommandListener(cmdListener);
             
     public save(abeClientInformation: AbeClientInformationInterface){
 
-    var size: number = this.size()!;;
+    let size: number = this.size()!;;
     
 
-    var item: Item;;
+    let item: Item;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 item= this.get(index);
     
@@ -350,37 +355,37 @@ item= this.get(index);
 GameConfigurationUtil.getInstance()!.updateCompetitionValue();
     
 
-    var hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    let hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
-    var SCALE: GameConfiguration = GameConfigurationCentral.getInstance()!.SCALE;;
+    let SCALE: GameConfiguration = GameConfigurationCentral.getInstance()!.SCALE;;
     
 hashtable.put(SCALE.getName(), SCALE.getValue()!.toString());
     
 
-    var keyValuePersistance: KeyValuePersistance = GameConfigurationPersistanceSingleton.getInstance()!;;
+    let keyValuePersistance: KeyValuePersistance = GameConfigurationPersistanceSingleton.getInstance()!;;
     
 keyValuePersistance!.clear();
     
 keyValuePersistance!.loadAll(abeClientInformation);
     
 
-    var list: BasicArrayList = keyValuePersistance!.getIds()!;;
+    let list: BasicArrayList = keyValuePersistance!.getIds()!;;
     
 keyValuePersistance!.save(abeClientInformation, hashtable);
     
 
-    var size2: number = list.size()!;;
+    let size2: number = list.size()!;;
     
 
-    var integer: Integer;;
+    let integer: Integer;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size2; index++)
+    let index: number = 0;index < size2; index++)
         {
 integer= list.objectArray[index]! as Integer;
     
@@ -392,6 +397,4 @@ keyValuePersistance!.delete(abeClientInformation, integer.intValue());
 
 
 }
-
-
 

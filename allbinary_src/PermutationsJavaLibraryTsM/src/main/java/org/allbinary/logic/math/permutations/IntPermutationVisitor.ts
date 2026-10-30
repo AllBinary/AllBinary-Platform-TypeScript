@@ -8,15 +8,18 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
 //not GWT import const Visitor
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -52,7 +55,7 @@ public constructor (data: number[]){
 
     private stringBuilder: StringMaker = new StringMaker();
 
-    public visit(anyType: any = {}): any{
+    public visit(anyType: any): any{
 this.stringBuilder!.delete(0, this.stringBuilder!.length());
     
 this.print(this.data, stringBuilder);
@@ -65,22 +68,29 @@ this.print(this.data, stringBuilder);
     
 }
 
+print(...args: any[]): any {
+   
+    if (args.length === 1) return this.print$overload1(args[0]);
+   
+    if (args.length === 2) return this.print$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: print'); }
+  
+    public print$overload1(data: number[]){
 
-    public print(data: number[]){
-
-    var stringBuilder: StringMaker = new StringMaker();;
+    let stringBuilder: StringMaker = new StringMaker();;
     
 this.print(data, stringBuilder);
     
 }
 
 
-    public print(data: number[], stringBuilder: StringMaker){
+    public print$overload2(data: number[], stringBuilder: StringMaker){
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var size: number = data.length
+    let size: number = data.length
                 ;;
     
 
@@ -88,7 +98,7 @@ this.print(data, stringBuilder);
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 stringBuilder!.appendint(data[i]!);
     
@@ -102,6 +112,4 @@ console.log(stringBuilder!.toString());
 
 
 }
-
-
 

@@ -107,7 +107,7 @@ private constructor (){
 super.updateMeasurement(graphics);
     
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.charHeight= font.getHeight();
     
@@ -120,7 +120,7 @@ this.charWidth= MyFontProcessor.defaultCharWidth(font);
 super.update();
     
 
-    var commonButtons: CommonButtons = CommonButtons.getInstance()!;;
+    let commonButtons: CommonButtons = CommonButtons.getInstance()!;;
     
 this.costY= (this.y +commonButtons!.STANDARD_BUTTON_SIZE);
     
@@ -129,7 +129,7 @@ this.costY1= (this.y +commonButtons!.STANDARD_BUTTON_SIZE -this.charHeight);
 this.percentCompleteX2= this.imageX +commonButtons!.STANDARD_BUTTON_SIZE -this.charWidth;
     
 
-    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
                         if(displayInfoSingleton!.getLastWidth() > 320)
@@ -151,7 +151,7 @@ this.percentCompleteX2= this.imageX +commonButtons!.STANDARD_BUTTON_SIZE -this.c
 
     public updateSelectionInfo(){
 
-    var rtsLayer: RTSLayer = this.getRtsLayer() as RTSLayer;;
+    let rtsLayer: RTSLayer = this.getRtsLayer() as RTSLayer;;
     
 this.rtsLayerCompositePaintableLateInit!.update(rtsLayer);
     
@@ -172,7 +172,7 @@ this.setName(rtsLayer!.getName());
 
     public updateInfo(){
 
-    var rtsLayer: RTSLayer = this.getRtsLayer() as RTSLayer;;
+    let rtsLayer: RTSLayer = this.getRtsLayer() as RTSLayer;;
     
 this.percentComplete= rtsLayer!.getPercentComplete();
     
@@ -238,6 +238,4 @@ this.rtsLayer= rtsLayer;
 
 
 }
-
-
 

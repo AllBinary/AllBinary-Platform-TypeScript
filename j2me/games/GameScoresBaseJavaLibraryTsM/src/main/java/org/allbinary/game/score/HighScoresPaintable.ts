@@ -59,6 +59,7 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -108,7 +109,7 @@ public constructor (){
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.charHeight= font.getHeight();
     
@@ -119,7 +120,7 @@ this.myFontProcessor= MyFontProcessor.getInstance();
 
     public onEvent(eventObject: AllBinaryEventObject){
 
-    var colorChangeEvent: ColorChangeEvent = eventObject as ColorChangeEvent;;
+    let colorChangeEvent: ColorChangeEvent = eventObject as ColorChangeEvent;;
     
 this.basicColor= colorChangeEvent!.getBasicColorP();
     
@@ -130,51 +131,51 @@ this.basicColor= colorChangeEvent!.getBasicColorP();
 this.myFontProcessor!.process(graphics);
     
 
-    var width: number = this.displayInfoSingleton!.getLastWidth()!;;
+    let width: number = this.displayInfoSingleton!.getLastWidth()!;;
     
 
-    var height: number = this.displayInfoSingleton!.getLastHeight()!;;
+    let height: number = this.displayInfoSingleton!.getLastHeight()!;;
     
 graphics.setColor(this.getBasicColorP()!.intValue());
     
 
-    var heading: string = this.highScores!.getHeading()!;;
+    let heading: string = this.highScores!.getHeading()!;;
     
 
-    var topScoresWidth: number = (graphics.getFont()!.stringWidth(heading)>>1);;
+    let topScoresWidth: number = (graphics.getFont()!.stringWidth(heading)>>1);;
     
 
-    var charHeight: number = this.charHeight;;
+    let charHeight: number = this.charHeight;;
     
 graphics.drawString(heading, (width>>1) -topScoresWidth, charHeight, this.anchor);
     
 graphics.drawString(this.highScores!.getColumnOneHeading(), 10, charHeight *3, this.anchor);
     
 
-    var columnTwoHeading: string = this.highScores!.getColumnTwoHeading()!;;
+    let columnTwoHeading: string = this.highScores!.getColumnTwoHeading()!;;
     
 
-    var columnTwoHeadingWidth: number = graphics.getFont()!.stringWidth(columnTwoHeading)!;;
+    let columnTwoHeadingWidth: number = graphics.getFont()!.stringWidth(columnTwoHeading)!;;
     
 graphics.drawString(columnTwoHeading, width -10 -columnTwoHeadingWidth, charHeight *3, this.anchor);
     
 
-    var index: number = 4;;
+    let index: number = 4;;
     
 
-    var largestSecondColumnWidth: number = columnTwoHeadingWidth;;
+    let largestSecondColumnWidth: number = columnTwoHeadingWidth;;
     
 
-    var list: BasicArrayList = this.highScores!.getList()!;;
+    let list: BasicArrayList = this.highScores!.getList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var vectorIndex: number = 0;;
+    let vectorIndex: number = 0;;
     
 
-    var highScore: HighScore;;
+    let highScore: HighScore;;
     
 
         while(vectorIndex < size && charHeight *index < height -(charHeight *2))
@@ -182,7 +183,7 @@ graphics.drawString(columnTwoHeading, width -10 -columnTwoHeadingWidth, charHeig
 highScore= list.objectArray[vectorIndex]! as HighScore;
     
 
-    var nextScoreWidth: number = graphics.getFont()!.stringWidth(highScore!.getScoreString())!;;
+    let nextScoreWidth: number = graphics.getFont()!.stringWidth(highScore!.getScoreString())!;;
     
 
                         if(nextScoreWidth > largestSecondColumnWidth)
@@ -240,6 +241,4 @@ this.highScores= highScores;
 
 
 }
-
-
 

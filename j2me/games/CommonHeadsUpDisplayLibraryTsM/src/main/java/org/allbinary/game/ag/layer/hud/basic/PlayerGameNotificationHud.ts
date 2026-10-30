@@ -63,15 +63,19 @@ import { UpdateMyFontInterface } from '../../../../../../../org/allbinary/graphi
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { GameTickTimeDelayHelper } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 //not GWT import const GameTickTimeDelayHelper
@@ -84,6 +88,7 @@ import { TimeDelayHelper } from '../../../../../../../org/allbinary/time/TimeDel
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -107,26 +112,14 @@ const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
 //not GWT import - same folder const SetAndRemoveProcessor
 //import { NextUnremoveableProcessor } from './NextUnremoveableProcessor.js';
 //not GWT import - same folder const NextUnremoveableProcessor
+type SetAndRemoveProcessor = InstanceType<PlayerGameNotificationHud['SetAndRemoveProcessor']>;
+type NextUnremoveableProcessor = InstanceType<PlayerGameNotificationHud['NextUnremoveableProcessor']>;
 
 export class PlayerGameNotificationHud extends GameNotificationHud implements UpdateMyFontInterface {
         
 
-    private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
-
-    private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-
-    private readonly displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-
-    private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
-
-    private readonly circularIndexUtil: CircularIndexUtil;
-
-    private readonly gameNotification: GameNotification = new GameNotification();
-
-    private readonly permanentGameNotification: GameNotification = new GameNotification();
-
 //inner= member=true isStatic=
-SetAndRemoveProcessor = class extends Processor {
+SetAndRemoveProcessor = (() => { const outer$PlayerGameNotificationHud = this; return class extends Processor {
         
 
     private readonly updateMeasurementProcessor: PlayerGameNotificationHud;
@@ -147,11 +140,9 @@ this.updateMeasurementProcessor!.setAndRemoveProcess();
 }
 
 
-}
-
-
+}; })();
 //inner= member=true isStatic=
-NextUnremoveableProcessor = class extends Processor {
+NextUnremoveableProcessor = (() => { const outer$PlayerGameNotificationHud = this; return class extends Processor {
         
 
     private readonly updateMeasurementProcessor: PlayerGameNotificationHud;
@@ -172,8 +163,20 @@ this.updateMeasurementProcessor!.setNextUnremoveableProcess();
 }
 
 
-}
+}; })();
+    private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
 
+    private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
+
+    private readonly displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
+
+    private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
+
+    private readonly circularIndexUtil: CircularIndexUtil;
+
+    private readonly gameNotification: GameNotification = new GameNotification();
+
+    private readonly permanentGameNotification: GameNotification = new GameNotification();
 
     private readonly setAndRemoveProcessor: Processor = new this.SetAndRemoveProcessor(this);
 
@@ -200,7 +203,7 @@ public constructor (location: number, direction: number, bufferZone: number, bas
 this.circularIndexUtil= CircularIndexUtil.createInstance(0);
     
 
-    var gameNotificationEventHandler: GameNotificationEventHandler = GameNotificationEventHandler.getInstance()!;;
+    let gameNotificationEventHandler: GameNotificationEventHandler = GameNotificationEventHandler.getInstance()!;;
     
 gameNotificationEventHandler!.removeAllListeners();
     
@@ -211,11 +214,10 @@ gameNotificationEventHandler!.addListenerInterface(this);
 
     public updateMeasurement(graphics: Graphics){
 
-        try {
-            super.updateMeasurement(graphics);
+ try { super.updateMeasurement(graphics);
     
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.width= font.stringWidth(this.string);
     
@@ -223,20 +225,23 @@ this.processor.process();
     
 this.processor= Processor.getInstance();
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -296,7 +301,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
                         
                                     {
                                     
-    var gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;;
+    let gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;;
     
 
                         if(gameAdState!.isShowingAtLocation(this.getLocation()))
@@ -363,10 +368,10 @@ this.point.setX(this.getX());
 this.point.setY(this.getY());
     
 
-    var time: Integer = this.gameNotification!.timeList!.removeAt(0) as Integer;;
+    let time: Integer = this.gameNotification!.timeList!.removeAt(0) as Integer;;
     
 
-    var iTime: number = time.intValue() *1000;;
+    let iTime: number = time.intValue() *1000;;
     
 
                         if(iTime == 0)
@@ -388,7 +393,7 @@ this.setBasicColorP(this.gameNotification!.colorList!.removeAt(0) as BasicColor)
             
     setNextUnremoveable(){
 
-    var index: number = this.circularIndexUtil!.getIndex()!;;
+    let index: number = this.circularIndexUtil!.getIndex()!;;
     
 this.string= this.permanentGameNotification!.stringList!.objectArray[index]! as string;
     
@@ -401,7 +406,7 @@ this.processor= this.nextUnremoveableProcessor;
             
     setNextUnremoveableProcess(){
 
-    var index: number = this.circularIndexUtil!.getIndex()!;;
+    let index: number = this.circularIndexUtil!.getIndex()!;;
     
 this.setX((this.displayInfo!.getLastWidth() -this.width)>>1);
     
@@ -410,7 +415,7 @@ this.point.setX(this.getX());
 this.point.setY(this.getY());
     
 
-    var time: Integer = this.permanentGameNotification!.timeList!.objectArray[index]! as Integer;;
+    let time: Integer = this.permanentGameNotification!.timeList!.objectArray[index]! as Integer;;
     
 this.timeDelayHelper!.delay= time.intValue() *1000;
     
@@ -438,6 +443,4 @@ super.paintString(graphics, this.string);
 
 
 }
-
-
 

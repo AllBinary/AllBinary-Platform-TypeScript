@@ -75,7 +75,7 @@ this.motionGestureRecognizer= new MotionGestureRecognizer(this.id);
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 
-    var point: CustomGPoint = GestureOnlyMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
+    let point: CustomGPoint = GestureOnlyMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
     
 point.setX(x);
     
@@ -90,7 +90,7 @@ this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifie
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 
-    var point: CustomGPoint = GestureOnlyMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
+    let point: CustomGPoint = GestureOnlyMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
     
 point.setX(x);
     
@@ -105,7 +105,7 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 
-    var point: CustomGPoint = GestureOnlyMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
+    let point: CustomGPoint = GestureOnlyMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
     
 point.setX(x);
     
@@ -117,6 +117,4 @@ this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifie
 
 
 }
-
-
 

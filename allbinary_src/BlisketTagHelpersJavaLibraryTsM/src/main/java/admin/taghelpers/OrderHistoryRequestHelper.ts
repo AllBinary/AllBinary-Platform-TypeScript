@@ -52,6 +52,7 @@ import { OrderItemsEntityFactory } from '../../org/allbinary/data/tables/user/co
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -61,6 +62,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/lo
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 
 
@@ -117,11 +119,17 @@ this.status= this.request.getParameter(OrderHistoryData.STATUS);
     
 }
 
+setOrderStatus(...args: any[]): any {
+   
+    if (args.length === 0) return this.setOrderStatus$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.setOrderStatus$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: setOrderStatus'); }
+  
+    public setOrderStatus$overload1(): string{
 
-    public setOrderStatus(): string{
-
-        try {
-            
+ try { 
                         if(this.groupId!.compareTo(CommonPhoneStrings.getInstance()!.ZERO) != 0)
                         
                                     {
@@ -144,7 +152,7 @@ this.status= this.request.getParameter(OrderHistoryData.STATUS);
                                     }
                                 
 
-    var success: string = "Status successfully set to: " +this.status;;
+    let success: string = "Status successfully set to: " +this.status;;
     
 OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, this.status);
     
@@ -163,12 +171,13 @@ OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, this.status);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to set order status";;
+    let error: string = "Failed to set order status";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -185,26 +194,27 @@ OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, this.status);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public setOrderStatus$overload2(newStatus: string): string{
 
-    public setOrderStatus(newStatus: string): string{
-
-        try {
-            
+ try { 
                         if(newStatus == 
                                     null
                                 )
                         newStatus= this.status
 
-    var success: string = "Status successfully set to: " +newStatus;;
+    let success: string = "Status successfully set to: " +newStatus;;
     
 OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, newStatus);
     
 
-    var orderHistory: OrderHistory = OrderHistoryEntityFactory.getInstance()!.getOrder(this.id)!;;
+    let orderHistory: OrderHistory = OrderHistoryEntityFactory.getInstance()!.getOrder(this.id)!;;
     
 new OrderStatusEmail(this.abeClientInformation, orderHistory).process();
     
@@ -223,12 +233,13 @@ new OrderStatusEmail(this.abeClientInformation, orderHistory).process();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to view order table";;
+    let error: string = "Failed to view order table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -245,12 +256,12 @@ new OrderStatusEmail(this.abeClientInformation, orderHistory).process();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

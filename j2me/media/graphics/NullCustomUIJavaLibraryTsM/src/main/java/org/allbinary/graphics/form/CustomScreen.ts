@@ -30,5 +30,3 @@ export class CustomScreen extends CustomDisplayable {
 
 }
 
-
-

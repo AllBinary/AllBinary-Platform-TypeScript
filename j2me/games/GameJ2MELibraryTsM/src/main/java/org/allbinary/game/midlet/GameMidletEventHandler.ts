@@ -75,7 +75,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var gameMidletEventListener: GameMidletEventListener = eventListenerInterface as GameMidletEventListener;;
+    let gameMidletEventListener: GameMidletEventListener = eventListenerInterface as GameMidletEventListener;;
     
 gameMidletEventListener!.onGameEnd(eventObject);
     
@@ -83,6 +83,4 @@ gameMidletEventListener!.onGameEnd(eventObject);
 
 
 }
-
-
 

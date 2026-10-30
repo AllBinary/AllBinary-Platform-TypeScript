@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -63,7 +65,7 @@ protected constructor (){
                 //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    offer(anyType: any = {}): boolean{
+    offer(anyType: any): boolean{
 this.queueVector!.add(anyType);
     
 
@@ -76,7 +78,7 @@ this.queueVector!.add(anyType);
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    remove(anyType: any = {}){
+    remove(anyType: any){
 this.queueVector!.remove(anyType);
     
 }
@@ -85,7 +87,7 @@ this.queueVector!.remove(anyType);
 
     removeLast(): any{
 
-    var anyType: any = this.queueVector!.get(this.queueVector!.size() -1)!;;
+    let anyType: any = this.queueVector!.get(this.queueVector!.size() -1)!;;
     
 this.queueVector!.remove(anyType);
     
@@ -99,6 +101,4 @@ this.queueVector!.remove(anyType);
 
 
 }
-
-
 

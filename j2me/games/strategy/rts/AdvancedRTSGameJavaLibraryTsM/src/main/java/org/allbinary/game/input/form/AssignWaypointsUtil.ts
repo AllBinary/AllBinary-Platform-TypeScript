@@ -45,12 +45,15 @@ import { UnitWaypointBehavior } from '../../../../../org/allbinary/game/layer/un
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -96,22 +99,21 @@ export class AssignWaypointsUtil
 
     public set(unitLayer: UnitLayer, ownerAdvancedRTSGameLayer: AdvancedRTSGameLayer){
 
-        try {
-            
-    var list: BasicArrayList = ownerAdvancedRTSGameLayer!.getWaypointBehavior()!.getOwnedWaypointList()!;;
+ try { 
+    let list: BasicArrayList = ownerAdvancedRTSGameLayer!.getWaypointBehavior()!.getOwnedWaypointList()!;;
     
 
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;;
+    let unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;;
     
 
 
 
 
                         for (
-    var index: number = list.size() -1;index >= 0; index--)
+    let index: number = list.size() -1;index >= 0; index--)
         {
 
-    var waypointLayer: RTSLayer = list.get(index) as RTSLayer;;
+    let waypointLayer: RTSLayer = list.get(index) as RTSLayer;;
     
 this.WAYPOINT_EVENT.setRtsLayer(waypointLayer);
     
@@ -120,7 +122,7 @@ unitWaypointBehavior!.onWaypointEvent(this.WAYPOINT_EVENT);
 }
 
 
-    var waypointLayer: PathFindingLayerInterface = PrimaryWaypointHelper.getInstance()!.getWaypointLayer()!;;
+    let waypointLayer: PathFindingLayerInterface = PrimaryWaypointHelper.getInstance()!.getWaypointLayer()!;;
     
 
                         if(waypointLayer != NullPathFindingLayer.NULL_PATH_FINDING_LAYER)
@@ -133,21 +135,22 @@ unitWaypointBehavior!.onWaypointEvent(this.WAYPOINT_EVENT);
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "set", e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

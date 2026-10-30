@@ -30,9 +30,11 @@ import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { EntryData } from '../../../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
@@ -57,15 +59,18 @@ import { TransactionResultInterface } from '../../../../../../../../../org/allbi
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -108,9 +113,8 @@ this.setTableName(this.tableName);
 
     public remove(userName: string, orderNumber: string){
 
-        try {
-            
-    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(OrderData.ID, orderNumber as string);
     
@@ -127,10 +131,11 @@ super.deleteWhere(whereHashMap);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -140,16 +145,17 @@ super.deleteWhere(whereHashMap);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public add(userName: string, orderNumber: string, transactionResultInterface: TransactionResultInterface){
 
-        try {
-            
-    var values: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let values: BasicArrayList = new BasicArrayListD();;
     
 values.add(orderNumber);
     
@@ -158,10 +164,10 @@ values.add(userName);
 values.addAllList(transactionResultInterface!.getValues());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString()!;;
+    let time: string = new Long(calendar.getTimeInMillis()).toString()!;;
     
 values.add(time);
     
@@ -178,10 +184,11 @@ super.insert(values);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -191,19 +198,20 @@ super.insert(values);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public getTransactionResultInterface(orderNumber: string): TransactionResultInterface{
 
-        try {
-            
-    var resultHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let resultHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var updateKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let updateKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 updateKeyAndValue!.put(OrderData.ID, orderNumber);
     
@@ -216,7 +224,7 @@ resultHashMap= super.getRow(updateKeyAndValue);
                         
                                     {
                                     
-    var transactionResult: TransactionResult = new TransactionResult(resultHashMap);;
+    let transactionResult: TransactionResult = new TransactionResult(resultHashMap);;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -246,10 +254,11 @@ resultHashMap= super.getRow(updateKeyAndValue);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -265,17 +274,19 @@ resultHashMap= super.getRow(updateKeyAndValue);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public createTableStatement(): string{
 
-    var paymentTransactionKeysFactory: PaymentTransactionKeysFactory = PaymentTransactionKeysFactory.getInstance()!;;
+    let paymentTransactionKeysFactory: PaymentTransactionKeysFactory = PaymentTransactionKeysFactory.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(OrderData.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
@@ -327,6 +338,4 @@ stringBuffer!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTran
 
 
 }
-
-
 

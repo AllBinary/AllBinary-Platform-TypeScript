@@ -40,11 +40,9 @@
 export interface GameSkillPropertyInterface {
         
 
-    getName(): string
+    getName(): string;
 
-    getValue(): string
+    getValue(): string;
 
 }
-
-
 

@@ -39,9 +39,11 @@ import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
@@ -57,18 +59,23 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -118,10 +125,10 @@ export class BlisketBackupFactory
             
     getFileBasicArrayList(pathString: string): BasicArrayList{
 
-    var path: AbPath = new AbPath(pathString, this.stringUtil!.EMPTY_STRING);;
+    let path: AbPath = new AbPath(pathString, this.stringUtil!.EMPTY_STRING);;
     
 
-    var file: AbFile = AbFile.createAbFileFromAbPath(path)!;;
+    let file: AbFile = AbFile.createAbFileFromAbPath(path)!;;
     
 
 
@@ -131,83 +138,91 @@ export class BlisketBackupFactory
     
 }
 
+backup(...args: any[]): any {
+   
+    if (args.length === 0) return this.backup$overload1();
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.backup$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: backup'); }
+  
+    public backup$overload1(){
 
-    public backup(){
-
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "backup()");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "backup()");
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
 stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     
 
-    var backupPath: string = stringBuffer!.toString()!;;
+    let backupPath: string = stringBuffer!.toString()!;;
     
 
-    var path: AbPath = new AbPath(backupPath, this.stringUtil!.EMPTY_STRING);;
+    let path: AbPath = new AbPath(backupPath, this.stringUtil!.EMPTY_STRING);;
     
 
-    var fileBasicArrayList: BasicArrayList = this.getFileBasicArrayList(backupPath)!;;
+    let fileBasicArrayList: BasicArrayList = this.getFileBasicArrayList(backupPath)!;;
     
 this.backup(fileBasicArrayList, path.toFileSystemString() +"backup.zip");
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public backupViews(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "backupViews()");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "backupViews()");
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
 stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     
 
-    var backupPath: string = stringBuffer!.toString()!;;
+    let backupPath: string = stringBuffer!.toString()!;;
     
 
-    var path: AbPath = new AbPath(backupPath, this.stringUtil!.EMPTY_STRING);;
+    let path: AbPath = new AbPath(backupPath, this.stringUtil!.EMPTY_STRING);;
     
 
-    var fileBasicArrayList: BasicArrayList = new BasicArrayListD();;
+    let fileBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
-    var storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;;
+    let storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;;
     
 
-    var storeFrontNamesBasicArrayList: BasicArrayList = storeFrontsEntity!.getStoreFrontNames()!;;
+    let storeFrontNamesBasicArrayList: BasicArrayList = storeFrontsEntity!.getStoreFrontNames()!;;
     
 
-    var size: number = storeFrontNamesBasicArrayList!.size()!;;
+    let size: number = storeFrontNamesBasicArrayList!.size()!;;
     
 
-    var nextStore: string;;
+    let nextStore: string;;
     
 
-    var viewsPath: string;;
+    let viewsPath: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 nextStore= storeFrontNamesBasicArrayList!.get(index) as string;
     
@@ -239,62 +254,64 @@ fileBasicArrayList!.addAllList(this.getFileBasicArrayList(viewsPath));
 
 this.backup(fileBasicArrayList, path.toFileSystemString() +"backupViews.zip");
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupViews()", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public backupResources(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "backupResources()");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "backupResources()");
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
 stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     
 
-    var backupPath: string = stringBuffer!.toString()!;;
+    let backupPath: string = stringBuffer!.toString()!;;
     
 
-    var path: AbPath = new AbPath(backupPath, this.stringUtil!.EMPTY_STRING);;
+    let path: AbPath = new AbPath(backupPath, this.stringUtil!.EMPTY_STRING);;
     
 
-    var fileBasicArrayList: BasicArrayList = new BasicArrayListD();;
+    let fileBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
-    var storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;;
+    let storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;;
     
 
-    var storeFrontNamesBasicArrayList: BasicArrayList = storeFrontsEntity!.getStoreFrontNames()!;;
+    let storeFrontNamesBasicArrayList: BasicArrayList = storeFrontsEntity!.getStoreFrontNames()!;;
     
 
-    var size: number = storeFrontNamesBasicArrayList!.size()!;;
+    let size: number = storeFrontNamesBasicArrayList!.size()!;;
     
 
-    var nextStore: string;;
+    let nextStore: string;;
     
 
-    var storeFrontInterface: StoreFrontInterface;;
+    let storeFrontInterface: StoreFrontInterface;;
     
 
-    var resourcesPath: string;;
+    let resourcesPath: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 nextStore= storeFrontNamesBasicArrayList!.get(index) as string;
     
@@ -328,56 +345,58 @@ fileBasicArrayList!.addAllList(this.getFileBasicArrayList(resourcesPath));
 
 this.backup(fileBasicArrayList, path.toFileSystemString() +"backupResources.zip");
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupResources()", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public backupJsps(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "backupJsps()");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "backupJsps()");
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
 stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     
 
-    var backupPath: string = stringBuffer!.toString()!;;
+    let backupPath: string = stringBuffer!.toString()!;;
     
 
-    var path: AbPath = new AbPath(backupPath, this.stringUtil!.EMPTY_STRING);;
+    let path: AbPath = new AbPath(backupPath, this.stringUtil!.EMPTY_STRING);;
     
 
-    var fileBasicArrayList: BasicArrayList = new BasicArrayListD();;
+    let fileBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
-    var storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;;
+    let storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;;
     
 
-    var storeFrontNamesBasicArrayList: BasicArrayList = storeFrontsEntity!.getStoreFrontNames()!;;
+    let storeFrontNamesBasicArrayList: BasicArrayList = storeFrontsEntity!.getStoreFrontNames()!;;
     
 
-    var size: number = storeFrontNamesBasicArrayList!.size()!;;
+    let size: number = storeFrontNamesBasicArrayList!.size()!;;
     
 
-    var nextStore: string;;
+    let nextStore: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 nextStore= storeFrontNamesBasicArrayList!.get(index) as string;
     
@@ -395,22 +414,24 @@ fileBasicArrayList!.addAllList(this.getFileBasicArrayList(stringBuffer!.toString
 
 this.backup(fileBasicArrayList, path.toFileSystemString() +"backupJsps.zip");
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupJsps()", e);
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public backup$overload2(fileBasicArrayList: BasicArrayList, zipFile: string){
 
-    public backup(fileBasicArrayList: BasicArrayList, zipFile: string){
-
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -428,18 +449,19 @@ ZipFileUtil.getInstance()!.create(zipFile, fileBasicArrayList);
     
 this.logUtil!.putF("Created Backup Zip File", this, "backup()");
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

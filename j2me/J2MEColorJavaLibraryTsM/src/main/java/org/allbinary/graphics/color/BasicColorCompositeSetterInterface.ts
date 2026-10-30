@@ -44,9 +44,7 @@
 export interface BasicColorCompositeSetterInterface {
         
 
-    setBasicColorP(basicColor: BasicColor)
+    setBasicColorP(basicColor: BasicColor): void;
 
 }
-
-
 

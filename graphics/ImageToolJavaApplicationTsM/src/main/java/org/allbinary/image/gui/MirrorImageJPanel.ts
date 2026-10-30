@@ -39,6 +39,7 @@ import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
 //not GWT import const ImageProcessorInput
@@ -54,6 +55,7 @@ import { MirrorImageUtil } from '../../../../org/allbinary/media/image/MirrorIma
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -132,44 +134,43 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var imageProcessorInput: ImageProcessorInput = MirrorImageJPanel.prototype.getImageProcessorInput()!;;
+ try { 
+    let imageProcessorInput: ImageProcessorInput = outer$MirrorImageJPanel.getImageProcessorInput()!;;
     
 
-    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
+    let bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < bufferedImageArray!.length; index++)
+    let index: number = 0;index < bufferedImageArray!.length; index++)
         {
-MirrorImageJPanel.prototype.result= MirrorImageUtil.getInstance()!.getImage(bufferedImageArray[index]!, MirrorImageJPanel.prototype.verticleJCheckBox!.isSelected(), MirrorImageJPanel.prototype.horizontalJCheckBox!.isSelected());
+outer$MirrorImageJPanel.result= MirrorImageUtil.getInstance()!.getImage(bufferedImageArray[index]!, outer$MirrorImageJPanel.verticleJCheckBox!.isSelected(), outer$MirrorImageJPanel.horizontalJCheckBox!.isSelected());
     
 
-    var file: File = imageProcessorInput!.getFiles()[index]!;;
+    let file: File = imageProcessorInput!.getFiles()[index]!;;
     
 
-                        if(MirrorImageJPanel.prototype.writeOverOriginalJRadioButton!.isSelected())
+                        if(outer$MirrorImageJPanel.writeOverOriginalJRadioButton!.isSelected())
                         
                                     {
                                     
                                     }
                                 
                              else 
-                        if(MirrorImageJPanel.prototype.renameJRadioButton!.isSelected())
+                        if(outer$MirrorImageJPanel.renameJRadioButton!.isSelected())
                         
                                     {
                                     
-    var filePath: string = file.getAbsolutePath()!;;
+    let filePath: string = file.getAbsolutePath()!;;
     
 
-    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
+    let extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
     
 filePath= filePath!.substring(0, extensionIndex) +"_mirror" +this.imageStrings!.PNG_EXTENSION;
     
@@ -181,22 +182,25 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(MirrorImageJPanel.prototype.result as RenderedImage, this.imageStrings!.PNG, file)!;;
+    let isWritten: boolean = ImageIO.write(outer$MirrorImageJPanel.result as RenderedImage, this.imageStrings!.PNG, file)!;;
     
 logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, this.commonStrings!.RUN);
     
-MirrorImageJPanel.prototype.getParent()!.repaint();
+outer$MirrorImageJPanel.getParent()!.repaint();
     
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -215,13 +219,13 @@ this.jPanel1= new class extends javax.swing.JPanel
                                 
     public paint(graphics: Graphics){
 
-                        if(MirrorImageJPanel.prototype.result != 
+                        if(outer$MirrorImageJPanel.result != 
                                     null
                                 )
                         
                                     {
-                                    graphics.drawImage(MirrorImageJPanel.prototype.result, 0, 0, MirrorImageJPanel.prototype.result.getWidth(
-                            null), MirrorImageJPanel.prototype.result.getHeight(
+                                    graphics.drawImage(outer$MirrorImageJPanel.result, 0, 0, outer$MirrorImageJPanel.result.getWidth(
+                            null), outer$MirrorImageJPanel.result.getHeight(
                             null), 
                             null);
     
@@ -250,7 +254,7 @@ this.jPanel3= new javax.swing.JPanel();
 this.jLabel2= new javax.swing.JLabel();
     
 
-    var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel1);;
+    let jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -297,7 +301,7 @@ renameJRadioButtonActionPerformed(evt);
 this.writeOverOriginalJRadioButton!.setText("Write Over Original");
     
 
-    var jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel2);;
+    let jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel2);;
     
 this.jPanel2!.setLayout(jPanel2Layout);
     
@@ -308,7 +312,7 @@ jPanel2Layout!.setVerticalGroup(jPanel2Layout!.createParallelGroup(org.jdesktop.
 this.jLabel2!.setText("Results:");
     
 
-    var jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel3);;
+    let jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel3);;
     
 this.jPanel3!.setLayout(jPanel3Layout);
     
@@ -317,7 +321,7 @@ jPanel3Layout!.setHorizontalGroup(jPanel3Layout!.createParallelGroup(org.jdeskto
 jPanel3Layout!.setVerticalGroup(jPanel3Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jLabel2));
     
 
-    var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this);;
+    let layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -377,6 +381,4 @@ this.imageProcessorInput= imageProcessorInput;
 
 
 }
-
-
 

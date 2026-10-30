@@ -64,15 +64,19 @@ import { NullRecordStore } from '../../../../org/allbinary/game/configuration/pe
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -82,18 +86,23 @@ import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/Plat
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -128,7 +137,7 @@ export class RecordStoreHighScores extends HighScores {
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, highScoreName: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator): HighScores{
 
-    var highScoresCanBeNull: any = RecordStoreHighScores.hashTable!.get(highScoreName);;
+    let highScoresCanBeNull: any = RecordStoreHighScores.hashTable!.get(highScoreName);;
     
 
                         if(highScoresCanBeNull == 
@@ -137,7 +146,7 @@ export class RecordStoreHighScores extends HighScores {
                         
                                     {
                                     
-    var highScores: HighScores = new RecordStoreHighScores(abeClientInformation, gameInfo, highScoreName, heading, columnTwoHeading, recordComparatorInterface);;
+    let highScores: HighScores = new RecordStoreHighScores(abeClientInformation, gameInfo, highScoreName, heading, columnTwoHeading, recordComparatorInterface);;
     
 RecordStoreHighScores.hashTable!.put(highScores!.getName(), highScores);
     
@@ -207,11 +216,10 @@ this.load();
 
     public addHighScore(newHighScore: HighScore){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
+    let recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
-        try {
-            this.logUtil!.putF(new StringMaker().append("Adding HighScore: ")!.appendlong(newHighScore!.getScore())!.toString(), this, this.commonStrings!.ADD);
+ try { this.logUtil!.putF(new StringMaker().append("Adding HighScore: ")!.appendlong(newHighScore!.getScore())!.toString(), this, this.commonStrings!.ADD);
     
 
                         if(this.isTooManyHighScores())
@@ -227,39 +235,39 @@ this.removeLowestHighScore();
 recordStore= RecordStore.openRecordStore(this.getRecordId(this.abeClientInformation), true);
     
 
-    var highScoreBytes: number[] = newHighScore!.getAsBytes()!;;
+    let highScoreBytes: number[] = newHighScore!.getAsBytes()!;;
     
 
-    var recordId: number = recordStore!.addRecord(highScoreBytes, 0, highScoreBytes!.length)!;;
+    let recordId: number = recordStore!.addRecord(highScoreBytes, 0, highScoreBytes!.length)!;;
     
 this.load();
     
+ }
+ catch (caught: any) {
+ if (caught instanceof RecordStoreException) {
+  const e = caught;
+  
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, e);
+    
 
-                //: 
-} catch(e) 
-            {
+ }
+  else if (caught instanceof IOException) {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, e);
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, e);
     
-}
-*/
-                //: 
-/* catch(e) 
-            {
-this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, e);
-    
-}
-*/
-         finally {
-            
-        try {
-            
+
+ }
+   }
+ finally { 
+ try { 
                         if(recordStore != 
                                     null
                                 )
@@ -272,51 +280,51 @@ recordStore!.closeRecordStore();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof RecordStoreException) {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, e);
     
-}
 
-
-         }
-        
+ }
+  else { throw caught; } }
+ 
+ }
 }
 
 
     removeLowestHighScore(){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
+    let recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
-        try {
-            recordStore= RecordStore.openRecordStore(this.getRecordId(this.abeClientInformation), true);
+ try { recordStore= RecordStore.openRecordStore(this.getRecordId(this.abeClientInformation), true);
     
 
-    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
+    let recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var scoreComparator: ScoreComparator = (this.recordComparatorInterface as ScoreComparator);;
+    let scoreComparator: ScoreComparator = (this.recordComparatorInterface as ScoreComparator);;
     
 
-    var bestHighScore: HighScore = new HighScore( -1, "none", GameInfo.NONE, scoreComparator!.getBestScore());;
+    let bestHighScore: HighScore = new HighScore( -1, "none", GameInfo.NONE, scoreComparator!.getBestScore());;
     
 
-    var recordAsBytes: number[];;
+    let recordAsBytes: number[];;
     
 
-    var byteArrayInputStream: ByteArrayInputStream;;
+    let byteArrayInputStream: ByteArrayInputStream;;
     
 
-    var inputStream: DataInputStream;;
+    let inputStream: DataInputStream;;
     
 
         while(recordEnum!.hasNextElement())
         {
 
-    var id: number = recordEnum!.nextRecordId()!;;
+    let id: number = recordEnum!.nextRecordId()!;;
     
 recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
@@ -331,13 +339,13 @@ recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
 inputStream= new DataInputStream(byteArrayInputStream);
     
 
-    var name: string = inputStream!.readUTF()!;;
+    let name: string = inputStream!.readUTF()!;;
     
 
-    var nextScore: number = inputStream!.readLong()!;;
+    let nextScore: number = inputStream!.readLong()!;;
     
 
-    var nextCurrentHighScore: HighScore = new HighScore(id, name, GameInfo.NONE, nextScore);;
+    let nextCurrentHighScore: HighScore = new HighScore(id, name, GameInfo.NONE, nextScore);;
     
 
                         if(this.recordComparatorInterface!.compare(nextCurrentHighScore!.getAsBytes(), bestHighScore!.getAsBytes()) == RecordComparatorI.FOLLOWS)
@@ -364,25 +372,25 @@ recordStore!.deleteRecord(bestHighScore!.getId());
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof RecordStoreException) {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
     
-}
-*/
-         finally {
-            
-        try {
-            
+
+ }
+   }
+ finally { 
+ try { 
                         if(recordStore != 
                                     null
                                 )
@@ -395,47 +403,47 @@ recordStore!.closeRecordStore();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof RecordStoreException) {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
     
-}
 
-
-         }
-        
+ }
+  else { throw caught; } }
+ 
+ }
 }
 
 
     load(){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
+    let recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
-        try {
-            recordStore= RecordStore.openRecordStore(this.getRecordId(this.abeClientInformation), true);
+ try { recordStore= RecordStore.openRecordStore(this.getRecordId(this.abeClientInformation), true);
     
 this.setList(new BasicArrayListD());
     
 
-    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
+    let recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var recordAsBytes: number[];;
+    let recordAsBytes: number[];;
     
 
-    var byteArrayInputStream: ByteArrayInputStream;;
+    let byteArrayInputStream: ByteArrayInputStream;;
     
 
-    var inputStream: DataInputStream;;
+    let inputStream: DataInputStream;;
     
 
         while(recordEnum!.hasNextElement())
         {
 
-    var id: number = recordEnum!.nextRecordId()!;;
+    let id: number = recordEnum!.nextRecordId()!;;
     
 recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
@@ -450,34 +458,33 @@ recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
 inputStream= new DataInputStream(byteArrayInputStream);
     
 
-        try {
-            
-    var name: string = inputStream!.readUTF()!;;
+ try { 
+    let name: string = inputStream!.readUTF()!;;
     
 
-    var score: number = inputStream!.readLong()!;;
+    let score: number = inputStream!.readLong()!;;
     
 
-    var newHighScore: HighScore = new HighScore(id, name, GameInfo.NONE, score);;
+    let newHighScore: HighScore = new HighScore(id, name, GameInfo.NONE, score);;
     
 
-    var list: BasicArrayList = this.getList()!;;
+    let list: BasicArrayList = this.getList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var lastIndex: number = size;;
+    let lastIndex: number = size;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var highScore: HighScore = list.objectArray[index]! as HighScore;;
+    let highScore: HighScore = list.objectArray[index]! as HighScore;;
     
 
                         if(this.recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparatorI.PRECEDES)
@@ -495,10 +502,11 @@ break;
 
 list.addAt(lastIndex, newHighScore);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof EOFException) {
+  const e = caught;
+  
 this.logUtil!.put("EOF", this, this.commonStrings!.LOAD, e);
     
 
@@ -506,46 +514,48 @@ this.logUtil!.put("EOF", this, this.commonStrings!.LOAD, e);
 
                             throw e;
                     
-}
 
+ }
+  else { throw caught; } }
+ 
 
                                     }
                                 
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof RecordStoreNotFoundException) {
+  const e = caught;
+  
 this.logUtil!.put("No High Scores", this, this.commonStrings!.LOAD, e);
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else if (caught instanceof RecordStoreException) {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.UNKNOWN, this, this.commonStrings!.LOAD, e);
     
-}
-*/
-                //: 
-/* catch(e) 
-            {
+
+ }
+  else if (caught instanceof IOException) {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.UNKNOWN, this, this.commonStrings!.LOAD, e);
     
-}
-*/
-                //: 
-/* catch(e) 
-            {
+
+ }
+  else {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.UNKNOWN, this, this.commonStrings!.LOAD, e);
     
-}
-*/
-         finally {
-            
-        try {
-            
+
+ }
+   }
+ finally { 
+ try { 
                         if(recordStore != 
                                     null
                                 )
@@ -558,17 +568,18 @@ recordStore!.closeRecordStore();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof RecordStoreException) {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.LOAD, e);
     
-}
 
-
-         }
-        
+ }
+  else { throw caught; } }
+ 
+ }
 }
 
 
@@ -608,8 +619,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.LOAD,
 
     public isBestScore(newHighScore: HighScore): boolean{
 
-        try {
-            
+ try { 
                         if(!this.isTooManyHighScores())
                         
                                     {
@@ -626,20 +636,20 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.LOAD,
                                 
                         else {
                             
-    var list: BasicArrayList = this.getList()!;;
+    let list: BasicArrayList = this.getList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var highScore: HighScore = list.objectArray[index]! as HighScore;;
+    let highScore: HighScore = list.objectArray[index]! as HighScore;;
     
 
                         if(this.recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparatorI.FOLLOWS)
@@ -669,10 +679,11 @@ this.logUtil!.putF("Not a High Score", this, "isBestScore");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, e);
     
 
@@ -680,32 +691,34 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toString());
     
 
-    var list: BasicArrayList = this.getList()!;;
+    let list: BasicArrayList = this.getList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var highScore: HighScore = list.objectArray[index]! as HighScore;;
+    let highScore: HighScore = list.objectArray[index]! as HighScore;;
     
 stringBuffer!.append(highScore!.getScoreString());
     
@@ -723,6 +736,4 @@ stringBuffer!.append(CommonSeps.getInstance()!.COMMA_SEP);
 
 
 }
-
-
 

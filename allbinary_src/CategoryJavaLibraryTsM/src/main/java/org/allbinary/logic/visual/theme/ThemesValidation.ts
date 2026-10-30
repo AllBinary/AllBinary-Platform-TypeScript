@@ -25,15 +25,18 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { Validation } from '../../../../../org/allbinary/logic/control/validate/Validation.js';
 //not GWT import const Validation
@@ -95,7 +98,7 @@ public constructor (hashMap: HashMap<any, any>){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
@@ -134,20 +137,20 @@ public constructor (hashMap: HashMap<any, any>){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(ThemesData.getInstance()!.NAME)!;;
+    let node: Node = document.createElement(ThemesData.getInstance()!.NAME)!;;
     
 
-    var size: number = this.themeVector!.size()!;;
+    let size: number = this.themeVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var themeDomNodeInterface: DomNodeInterface = this.themeVector!.get(i) as DomNodeInterface;;
+    let themeDomNodeInterface: DomNodeInterface = this.themeVector!.get(i) as DomNodeInterface;;
     
 node.appendChild(themeDomNodeInterface!.toXmlNode(document));
     
@@ -163,6 +166,4 @@ node.appendChild(themeDomNodeInterface!.toXmlNode(document));
 
 
 }
-
-
 

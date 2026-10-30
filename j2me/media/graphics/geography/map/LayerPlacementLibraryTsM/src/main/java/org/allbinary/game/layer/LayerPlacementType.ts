@@ -72,5 +72,3 @@ this.type= type;
 
 }
 
-
-

@@ -42,9 +42,7 @@
 export interface CategoryPropertiesFactoryInterface {
         
 
-    getInstance(): CategoryPropertiesInterface
+    getInstance(): CategoryPropertiesInterface;
 
 }
-
-
 

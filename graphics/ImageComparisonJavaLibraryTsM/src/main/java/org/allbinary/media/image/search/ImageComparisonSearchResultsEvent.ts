@@ -47,7 +47,7 @@ export class ImageComparisonSearchResultsEvent extends AllBinaryEventObject {
 
     private imageComparisonSearch: ImageComparisonSearch;
 
-public constructor (anyType: any = {}, imageComparisonSearch: ImageComparisonSearch){
+public constructor (anyType: any, imageComparisonSearch: ImageComparisonSearch){
             super(anyType);
                     
 
@@ -75,6 +75,4 @@ this.imageComparisonSearch= imageComparisonSearch;
 
 
 }
-
-
 

@@ -39,15 +39,19 @@ import { CryptServiceFactory } from '../../../../../org/allbinary/bundle/logic/s
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -101,17 +105,17 @@ public constructor (){
             
     public start(context: BundleContext){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "start");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "start");
     
 AllBinaryPreloaderActivator.context= context;
     
 this.registerAsService();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
     
 
@@ -119,8 +123,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -128,13 +134,13 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
             
     public registerAsService(){
 
-    var properties: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    let properties: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
-    var serviceRegistration: ServiceRegistration = AllBinaryPreloaderActivator.context.registerService(CRYPT_REGISTRY_NAME, new CryptServiceFactory(), properties)!;;
+    let serviceRegistration: ServiceRegistration = AllBinaryPreloaderActivator.context.registerService(CRYPT_REGISTRY_NAME, new CryptServiceFactory(), properties)!;;
     
 
-    var serviceReference: ServiceReference = serviceRegistration!.getReference()!;;
+    let serviceReference: ServiceReference = serviceRegistration!.getReference()!;;
     
 serviceReference= AllBinaryPreloaderActivator.context.getServiceReference(CRYPT_REGISTRY_NAME);
     
@@ -157,6 +163,4 @@ this.logUtil!.putF(this.commonStrings!.START, this, "stop");
 
 
 }
-
-
 

@@ -42,12 +42,15 @@ import { InputRobotInterface } from '../../../../../../org/allbinary/input/autom
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -89,22 +92,22 @@ public constructor (){
 this.logUtil!.putF(this.commonStrings!.START, this, "getScreenAsBufferedImages");
     
 
-    var dimScreenSize: Dimension = Toolkit.getDefaultToolkit()!.getScreenSize()!;;
+    let dimScreenSize: Dimension = Toolkit.getDefaultToolkit()!.getScreenSize()!;;
     
 
-    var rectScreenSize: Rectangle = new Rectangle(dimScreenSize);;
+    let rectScreenSize: Rectangle = new Rectangle(dimScreenSize);;
     
 
-    var robotHashtable: ABHashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
+    let robotHashtable: ABHashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
     
 
-    var bufferedImageArray: BufferedImage[] = new Array(1);;
+    let bufferedImageArray: BufferedImage[] = new Array(1);;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var inputRobotInterface: InputRobotInterface = robotHashtable!.get("Java Robot") as InputRobotInterface;;
+    let inputRobotInterface: InputRobotInterface = robotHashtable!.get("Java Robot") as InputRobotInterface;;
     
 bufferedImageArray[index]= inputRobotInterface!.createScreenCapture(rectScreenSize);
     
@@ -120,6 +123,4 @@ this.logUtil!.putF("Finish", this, "getScreenAsBufferedImages");
 
 
 }
-
-
 

@@ -91,5 +91,3 @@ this.basicWeaponPart!.init(sourceLayerInterface, weaponProperties, scoreableInte
 
 }
 
-
-

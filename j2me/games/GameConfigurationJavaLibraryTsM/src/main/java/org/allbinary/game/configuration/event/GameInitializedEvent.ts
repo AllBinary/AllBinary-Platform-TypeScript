@@ -53,7 +53,7 @@ export class GameInitializedEvent extends AllBinaryEventObject {
 
     private level: number= 0;
 
-public constructor (anyType: any = {}){
+public constructor (anyType: any){
             super(anyType);
                     
 
@@ -99,6 +99,4 @@ this.level= this.resourceLoadingLevel!.getLevel();
 
 
 }
-
-
 

@@ -26,9 +26,11 @@ import { TouchScreenTypeFactory } from '../../../../org/allbinary/input/motion/b
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { ActivityFractureUtilAPI1 } from '../../../../org/allbinary/android/api1/ActivityFractureUtilAPI1.js';
 //not GWT import const ActivityFractureUtilAPI1
@@ -78,10 +80,10 @@ export class ActivityFractureUtilAPI5 extends ActivityFractureUtilAPI1 {
 
     public process(activity: Activity){
 
-    var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;;
+    let touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;;
     
 
-    var touchScreenTypeFactory: TouchScreenTypeFactory = TouchScreenTypeFactory.getInstance()!;;
+    let touchScreenTypeFactory: TouchScreenTypeFactory = TouchScreenTypeFactory.getInstance()!;;
     
 touchScreenFactory!.setTouch(this.isTouch(activity));
     
@@ -92,7 +94,7 @@ touchScreenFactory!.setMultiTouchDistinct(this.isMultiTouchDistinct(activity));
 touchScreenTypeFactory!.update(activity);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);
     
@@ -140,6 +142,4 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);
 
 
 }
-
-
 

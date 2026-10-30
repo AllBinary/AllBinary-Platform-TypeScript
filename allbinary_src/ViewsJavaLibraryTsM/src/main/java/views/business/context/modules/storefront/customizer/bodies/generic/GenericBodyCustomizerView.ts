@@ -34,6 +34,7 @@ import { XmlDocumentHelper } from '../../../../../../../../org/allbinary/data/tr
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -113,7 +114,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
             
     public toXmlNode(document: Document): Node{
 
-    var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getWeblisketSession()!.getStoreName())!;;
+    let pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getWeblisketSession()!.getStoreName())!;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(pageName))
@@ -137,14 +138,13 @@ this.addDomNodeInterface(this as DomNodeInterface);
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
-    var success: string = XmlDocumentHelper.toString(this.getDoc())!;;
+    let success: string = XmlDocumentHelper.toString(this.getDoc())!;;
     
 
-    var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
+    let result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
     
 
 
@@ -152,10 +152,11 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringEscapeUtils.unescapeHtml3(result);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -170,12 +171,12 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

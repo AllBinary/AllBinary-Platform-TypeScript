@@ -61,9 +61,8 @@ export class BasicErrorNodeUtil
             
     public static get(document: Document, errorText: string): Node{
 
-        try {
-            
-    var node: Node = document.createElement(ErrorData.getInstance()!.NAME)!;;
+ try { 
+    let node: Node = document.createElement(ErrorData.getInstance()!.NAME)!;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, ErrorData.getInstance()!.TEXT, errorText));
     
@@ -73,17 +72,20 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, ErrorData.getInstan
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw new Exception("Error Node Creation Failure");
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -94,6 +96,4 @@ private constructor (){
 
 
 }
-
-
 

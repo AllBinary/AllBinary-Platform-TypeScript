@@ -40,9 +40,7 @@
 export interface NamedInterface {
         
 
-    getName(): string
+    getName(): string;
 
 }
-
-
 

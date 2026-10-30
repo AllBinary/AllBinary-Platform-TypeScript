@@ -53,7 +53,7 @@ public constructor (id: number, name: string){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var inputFactory: InputFactory = InputFactory.getInstance()!;;
+    let inputFactory: InputFactory = InputFactory.getInstance()!;;
     
 inputFactory!.add(this.getId(), this);
     
@@ -61,6 +61,4 @@ inputFactory!.add(this.getId(), this);
 
 
 }
-
-
 

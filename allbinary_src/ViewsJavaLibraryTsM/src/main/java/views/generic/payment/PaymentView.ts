@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { Payment } from '../../../org/allbinary/business/user/commerce/money/payment/Payment.js';
 //not GWT import const Payment
@@ -40,6 +42,7 @@ import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeIn
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -90,27 +93,26 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var paymentNode: Node = document.createElement(PaymentData.PAYMENT)!;;
+ try { 
+    let paymentNode: Node = document.createElement(PaymentData.PAYMENT)!;;
     
 document.appendChild(paymentNode);
     
 
-    var paymentVector: BasicArrayList = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!.get(this.getWeblisketSession()!.getUserName())!;;
+    let paymentVector: BasicArrayList = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!.get(this.getWeblisketSession()!.getUserName())!;;
     
 
-    var size: number = paymentVector!.size()!;;
+    let size: number = paymentVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var payment: Payment = paymentVector!.get(index) as Payment;;
+    let payment: Payment = paymentVector!.get(index) as Payment;;
     
 paymentNode!.appendChild(payment.toXmlNode(document));
     
@@ -122,10 +124,11 @@ paymentNode!.appendChild(payment.toXmlNode(document));
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return paymentNode;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -140,8 +143,10 @@ paymentNode!.appendChild(payment.toXmlNode(document));
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -153,8 +158,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -162,12 +166,13 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to view Payment";;
+    let error: string = "Failed to view Payment";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
@@ -184,12 +189,12 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

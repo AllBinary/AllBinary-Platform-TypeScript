@@ -40,6 +40,7 @@ import { ImageCacheFactory } from '../../../../../org/allbinary/image/ImageCache
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 
 
@@ -113,7 +114,7 @@ super.init(level);
 
     public isLoadingLevel(level: number): boolean{
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
+    let resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(level == resourceLoadingLevelFactory!.LOAD_TOUCH.getLevel())
@@ -169,6 +170,4 @@ super.init(level);
 
 
 }
-
-
 

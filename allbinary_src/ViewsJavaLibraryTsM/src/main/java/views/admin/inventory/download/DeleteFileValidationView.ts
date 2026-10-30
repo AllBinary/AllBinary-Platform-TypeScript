@@ -25,9 +25,11 @@ import { HashMap } from '../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { BasicItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 //not GWT import const BasicItemData
@@ -55,9 +57,11 @@ import { ValidationComponentInterface } from '../../../../org/allbinary/logic/co
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -112,7 +116,7 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;;
+    let hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;;
     
 
                         if(hashMap == 
@@ -137,8 +141,7 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID) as string;
 
     public isValid(): Boolean{
 
-        try {
-            
+ try { 
                         if(id == 
                                     null
                                  || !StringValidationUtil.getInstance()!.isNumber(this.id))
@@ -148,13 +151,13 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID) as string;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
+    let inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 this.itemInterface= inventoryEntity!.getItem(this.id);
     
@@ -168,16 +171,16 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;;
+    let downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;;
     
 
-    var vector: BasicArrayList = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
+    let vector: BasicArrayList = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
     
 
                         if(vector.size() != 1)
@@ -187,7 +190,7 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -196,20 +199,23 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -235,9 +241,8 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.id == 
@@ -262,10 +267,10 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
                                     }
                                 
 
-    var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;;
+    let downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;;
     
 
-    var vector: BasicArrayList = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
+    let vector: BasicArrayList = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
     
 
                         if(vector.size() == 0)
@@ -291,22 +296,23 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Unkown Validation Error.<br />";
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

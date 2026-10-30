@@ -27,6 +27,7 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -91,6 +92,4 @@ export class NullPlayerGameInputComposite
 
 
 }
-
-
 

@@ -34,6 +34,7 @@ import { WaypointLayerInterface } from '../../../../org/allbinary/game/layer/way
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -65,27 +66,25 @@ export interface PathFindingLayerInterface extends WaypointLayerInterface, GameK
 
                 //@Throws(Exception.constructor)
             
-    getEndGeographicMapCellPositionList(): BasicArrayList
+    getEndGeographicMapCellPositionList(): BasicArrayList;
 
-    shouldHandleStartSameAsEnd(): boolean
+    shouldHandleStartSameAsEnd(): boolean;
 
-    getGeographicMapCellPositionArea(): GeographicMapCellPositionAreaBase
+    getGeographicMapCellPositionArea(): GeographicMapCellPositionAreaBase;
 
-    getHudPaintable(): SelectionHudPaintable
-
-                //@Throws(Exception.constructor)
-            
-    handleCost(ownerLayer: PathFindingLayerInterface)
-
-    getParentLayer(): PathFindingLayerInterface
-
-    getRTSLayer2LogHelper(): RTSLayer2LogHelper
+    getHudPaintable(): SelectionHudPaintable;
 
                 //@Throws(Exception.constructor)
             
-    setTarget(targetGameLayer: PathFindingLayerInterface)
+    handleCost(ownerLayer: PathFindingLayerInterface): void;
+
+    getParentLayer(): PathFindingLayerInterface;
+
+    getRTSLayer2LogHelper(): RTSLayer2LogHelper;
+
+                //@Throws(Exception.constructor)
+            
+    setTarget(targetGameLayer: PathFindingLayerInterface): void;
 
 }
-
-
 

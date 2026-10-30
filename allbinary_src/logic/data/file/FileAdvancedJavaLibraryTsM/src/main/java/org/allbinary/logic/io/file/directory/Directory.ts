@@ -27,6 +27,7 @@ import { FileFilter } from '../../../../../../java/io/FileFilter.js';
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
@@ -42,9 +43,11 @@ import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js'
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -87,8 +90,15 @@ private constructor (){
             super();
         }
 
-
-    public create(directoryAbPath: AbPath): boolean{
+create(...args: any[]): any {
+   
+    if (args.length === 1) return this.create$overload1(args[0]);
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.create$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: create'); }
+  
+    public create$overload1(directoryAbPath: AbPath): boolean{
 
 
 
@@ -97,20 +107,26 @@ private constructor (){
     
 }
 
-
+remove(...args: any[]): any {
+   
+    if (args.length === 1) return this.remove$overload1(args[0]);
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.remove$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: remove'); }
+  
                 //@Throws(Exception.constructor)
             
-    public remove(existingDirectoryAbPath: AbPath){
+    public remove$overload1(existingDirectoryAbPath: AbPath){
 this.remove(existingDirectoryAbPath!.toFileSystemString());
     
 }
 
 
-    create(directory: string): boolean{
+    create$overload2(directory: string): boolean{
 
-        try {
-            
-    var directoryFile: AbFile = FileFactory.getInstance()!.getInstance(directory)!;;
+ try { 
+    let directoryFile: AbFile = FileFactory.getInstance()!.getInstance(directory)!;;
     
 
                         if(!directoryFile!.isDirectory())
@@ -140,10 +156,11 @@ this.remove(existingDirectoryAbPath!.toFileSystemString());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
     
 
@@ -152,16 +169,18 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    remove(existingDirectory: string){
+    remove$overload2(existingDirectory: string){
 
-    var existingDirectoryFile: AbFile = FileFactory.getInstance()!.getInstance(existingDirectory)!;;
+    let existingDirectoryFile: AbFile = FileFactory.getInstance()!.getInstance(existingDirectory)!;;
     
 
                         if(existingDirectoryFile!.isDirectory())
@@ -202,8 +221,27 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
                             
 }
 
-
-    public search(fileFilter: FileFilter, file: AbFile): BasicArrayList{
+search(...args: any[]): any {
+   
+    if (args.length === 2) return this.search$overload1(args[0], args[1]);
+   
+    if (args.length === 3 && typeof args[2] === 'boolean') return this.search$overload2(args[0], args[1], args[2]);
+   
+    if (args.length === 1) return this.search$overload3(args[0]);
+   
+    if (args.length === 2 && typeof args[1] === 'boolean') return this.search$overload4(args[0], args[1]);
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.search$overload5(args[0], args[1]);
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[2] === 'boolean') return this.search$overload6(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.search$overload7(args[0], args[1]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'boolean') return this.search$overload8(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: search'); }
+  
+    public search$overload1(fileFilter: FileFilter, file: AbFile): BasicArrayList{
 
 
 
@@ -213,19 +251,19 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
 }
 
 
-    public search(fileFilter: FileFilter, file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
+    public search$overload2(fileFilter: FileFilter, file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
 
-    var fileList: BasicArrayList = new BasicArrayListD();;
+    let fileList: BasicArrayList = new BasicArrayListD();;
     
 
-    var recursiveFileList: BasicArrayList;;
+    let recursiveFileList: BasicArrayList;;
     
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var fileArray: any[] = file.listFilesFileFilter(fileFilter)!;;
+    let fileArray: any[] = file.listFilesFileFilter(fileFilter)!;;
     
 
                         if(fileArray == 
@@ -243,7 +281,7 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
                                     }
                                 
 
-    var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;;
+    let files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;;
     
 
                         if(files == 
@@ -261,7 +299,7 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
                                     }
                                 
 
-    var size: number = files.length
+    let size: number = files.length
                 ;;
     
 
@@ -269,7 +307,7 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 fileList!.add(files[index]!);
     
@@ -298,7 +336,7 @@ fileList!.addAllList(recursiveFileList);
 }
 
 
-    public search(file: AbFile): BasicArrayList{
+    public search$overload3(file: AbFile): BasicArrayList{
 
 
 
@@ -308,19 +346,19 @@ fileList!.addAllList(recursiveFileList);
 }
 
 
-    public search(file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
+    public search$overload4(file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
 
-    var fileList: BasicArrayList = new BasicArrayListD();;
+    let fileList: BasicArrayList = new BasicArrayListD();;
     
 
-    var recursiveFileList: BasicArrayList;;
+    let recursiveFileList: BasicArrayList;;
     
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var fileArray: any[] = file.listFiles()!;;
+    let fileArray: any[] = file.listFiles()!;;
     
 
                         if(fileArray == 
@@ -338,7 +376,7 @@ fileList!.addAllList(recursiveFileList);
                                     }
                                 
 
-    var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;;
+    let files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;;
     
 
                         if(files == 
@@ -360,7 +398,7 @@ fileList!.addAllList(recursiveFileList);
 
 
                         for (
-    var index: number = 0;index < files.length; index++)
+    let index: number = 0;index < files.length; index++)
         {
 fileList!.add(files[index]!);
     
@@ -389,7 +427,7 @@ fileList!.addAllList(recursiveFileList);
 }
 
 
-    public search(searchValue: string, file: AbFile): BasicArrayList{
+    public search$overload5(searchValue: string, file: AbFile): BasicArrayList{
 
 
 
@@ -399,19 +437,19 @@ fileList!.addAllList(recursiveFileList);
 }
 
 
-    public search(searchValue: string, file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
+    public search$overload6(searchValue: string, file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
 
-    var fileList: BasicArrayList = new BasicArrayListD();;
+    let fileList: BasicArrayList = new BasicArrayListD();;
     
 
-    var recursiveFileList: BasicArrayList;;
+    let recursiveFileList: BasicArrayList;;
     
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var fileArray: any[] = file.listFiles()!;;
+    let fileArray: any[] = file.listFiles()!;;
     
 
                         if(fileArray == 
@@ -429,7 +467,7 @@ fileList!.addAllList(recursiveFileList);
                                     }
                                 
 
-    var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;;
+    let files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;;
     
 
                         if(files == 
@@ -451,7 +489,7 @@ fileList!.addAllList(recursiveFileList);
 
 
                         for (
-    var index: number = 0;index < files.length; index++)
+    let index: number = 0;index < files.length; index++)
         {
 
                         if(files[index]!.getPath()!.indexOf(searchValue) >= 0)
@@ -487,7 +525,7 @@ fileList!.addAllList(recursiveFileList);
 }
 
 
-    public search(level: number, file: AbFile): BasicArrayList{
+    public search$overload7(level: number, file: AbFile): BasicArrayList{
 
 
 
@@ -497,19 +535,19 @@ fileList!.addAllList(recursiveFileList);
 }
 
 
-    public search(level: number, file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
+    public search$overload8(level: number, file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
 
-    var fileList: BasicArrayList = new BasicArrayListD();;
+    let fileList: BasicArrayList = new BasicArrayListD();;
     
 
-    var recursiveFileList: BasicArrayList;;
+    let recursiveFileList: BasicArrayList;;
     
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var fileArray: any[] = file.listFiles()!;;
+    let fileArray: any[] = file.listFiles()!;;
     
 
                         if(fileArray == 
@@ -527,7 +565,7 @@ fileList!.addAllList(recursiveFileList);
                                     }
                                 
 
-    var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;;
+    let files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;;
     
 
                         if(files == 
@@ -549,7 +587,7 @@ fileList!.addAllList(recursiveFileList);
 
 
                         for (
-    var index: number = 0;index < files.length; index++)
+    let index: number = 0;index < files.length; index++)
         {
 fileList!.add(files[index]!);
     
@@ -585,6 +623,4 @@ fileList!.addAllList(recursiveFileList);
 
 
 }
-
-
 

@@ -79,13 +79,11 @@ export class OpenGLVersionValidator
 }
 
 
-    public setShaderComposite(shaderComposite: ShaderComposite, anyType: any = {}){
+    public setShaderComposite(shaderComposite: ShaderComposite, anyType: any){
 }
 
 
     public EGL_CONTEXT_CLIENT_VERSION_VALUE: number =  -1;
 
 }
-
-
 

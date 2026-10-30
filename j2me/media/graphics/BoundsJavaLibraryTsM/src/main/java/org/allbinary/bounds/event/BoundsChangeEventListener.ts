@@ -45,9 +45,7 @@ import { EventListenerInterface } from '../../../../org/allbinary/logic/util/eve
 export interface BoundsChangeEventListener extends EventListenerInterface {
         
 
-    onBoundsChangeEvent(boundsChangeEvent: BoundsChangeEvent)
+    onBoundsChangeEvent(boundsChangeEvent: BoundsChangeEvent): void;
 
 }
-
-
 

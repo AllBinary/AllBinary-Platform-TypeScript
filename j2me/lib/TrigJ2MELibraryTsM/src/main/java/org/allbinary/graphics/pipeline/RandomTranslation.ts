@@ -24,9 +24,11 @@
         
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+type MyRandomFactory<T = any, U = any> = typeof MyRandomFactory extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MyRandomFactory;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -58,16 +60,16 @@ export class RandomTranslation
             
     public static getInstance(vector: BasicArrayList, howMuch: number): BasicArrayList{
 
-    var myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;;
+    let myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;;
     
 
-    var x: number =  -myRandomFactory!.getNextInt(howMuch);;;
+    let x: number =  -myRandomFactory!.getNextInt(howMuch);;;
     
 
-    var y: number = myRandomFactory!.getNextInt(howMuch)!;;
+    let y: number = myRandomFactory!.getNextInt(howMuch)!;;
     
 
-    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(vector);;
+    let graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(vector);;
     
 graphicsPipe!.createMatrix();
     
@@ -83,6 +85,4 @@ graphicsPipe!.translate(x, y);
 
 
 }
-
-
 

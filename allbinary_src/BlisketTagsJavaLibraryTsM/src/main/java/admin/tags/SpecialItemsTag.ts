@@ -60,5 +60,3 @@ this.setTagRequestHelperFactory(new SpecialItemsRequestHelperFactory());
 
 }
 
-
-

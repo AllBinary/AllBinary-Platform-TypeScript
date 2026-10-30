@@ -110,49 +110,47 @@ export interface GL11Ext extends javax.microedition.khronos.opengles.GL {
 
     //Interfaces do not have static fields - public static readonly GL_WEIGHT_ARRAY_TYPE_OES: number = 34473;
 
-    glTexParameterfv(target: number, pname: number, param: number[], offset: number)
+    glTexParameterfv(target: number, pname: number, param: number[], offset: number): void;
 
-    glCurrentPaletteMatrixOES(matrixpaletteindex: number)
+    glCurrentPaletteMatrixOES(matrixpaletteindex: number): void;
 
-    glDrawTexfOES(x: number, y: number, z: number, width: number, height: number)
+    glDrawTexfOES(x: number, y: number, z: number, width: number, height: number): void;
 
-    glDrawTexfvOES(coords: number[], offset: number)
+    glDrawTexfvOES(coords: number[], offset: number): void;
 
-    glDrawTexfvOES(coords: java.nio.FloatBuffer)
+    glDrawTexfvOES(coords: java.nio.FloatBuffer): void;
 
-    glDrawTexiOES(x: number, y: number, z: number, width: number, height: number)
+    glDrawTexiOES(x: number, y: number, z: number, width: number, height: number): void;
 
-    glDrawTexivOES(coords: number[], offset: number)
+    glDrawTexivOES(coords: number[], offset: number): void;
 
-    glDrawTexivOES(coords: java.nio.IntBuffer)
+    glDrawTexivOES(coords: java.nio.IntBuffer): void;
 
-    glDrawTexsOES(x: number, y: number, z: number, width: number, height: number)
+    glDrawTexsOES(x: number, y: number, z: number, width: number, height: number): void;
 
-    glDrawTexsvOES(coords: number[], offset: number)
+    glDrawTexsvOES(coords: number[], offset: number): void;
 
-    glDrawTexsvOES(coords: java.nio.ShortBuffer)
+    glDrawTexsvOES(coords: java.nio.ShortBuffer): void;
 
-    glDrawTexxOES(x: number, y: number, z: number, width: number, height: number)
+    glDrawTexxOES(x: number, y: number, z: number, width: number, height: number): void;
 
-    glDrawTexxvOES(coords: number[], offset: number)
+    glDrawTexxvOES(coords: number[], offset: number): void;
 
-    glDrawTexxvOES(coords: java.nio.IntBuffer)
+    glDrawTexxvOES(coords: java.nio.IntBuffer): void;
 
-    glEnable(cap: number)
+    glEnable(cap: number): void;
 
-    glEnableClientState(array: number)
+    glEnableClientState(array: number): void;
 
-    glLoadPaletteFromModelViewMatrixOES()
+    glLoadPaletteFromModelViewMatrixOES(): void;
 
-    glMatrixIndexPointerOES(size: number, type: number, stride: number, pointer: java.nio.Buffer)
+    glMatrixIndexPointerOES(size: number, type: number, stride: number, pointer: java.nio.Buffer): void;
 
-    glMatrixIndexPointerOES(size: number, type: number, stride: number, offset: number)
+    glMatrixIndexPointerOES(size: number, type: number, stride: number, offset: number): void;
 
-    glWeightPointerOES(size: number, type: number, stride: number, pointer: java.nio.Buffer)
+    glWeightPointerOES(size: number, type: number, stride: number, pointer: java.nio.Buffer): void;
 
-    glWeightPointerOES(size: number, type: number, stride: number, offset: number)
+    glWeightPointerOES(size: number, type: number, stride: number, offset: number): void;
 
 }
-
-
 

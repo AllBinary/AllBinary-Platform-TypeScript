@@ -64,10 +64,10 @@ public constructor (collidable: boolean){
 
     public isCollision(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean{
 
-    var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;;
+    let collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;;
     
 
-    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;;
+    let collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;;
     
 
                         if(collisionType == collisionTypeFactory!.PICKUP)
@@ -129,10 +129,10 @@ public constructor (collidable: boolean){
             
     public collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
 
-    var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;;
+    let collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;;
     
 
-    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;;
+    let collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;;
     
 
                         if(collisionType == collisionTypeFactory!.PICKUP)
@@ -166,6 +166,4 @@ public constructor (collidable: boolean){
 
 
 }
-
-
 

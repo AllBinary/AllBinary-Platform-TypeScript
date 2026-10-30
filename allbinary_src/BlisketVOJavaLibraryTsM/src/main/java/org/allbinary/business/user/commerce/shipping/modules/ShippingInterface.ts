@@ -46,13 +46,11 @@ import { Money } from '../../../../../../../org/allbinary/business/user/commerce
 export interface ShippingInterface {
         
 
-    getCost(order: OrderInterface): Money
+    getCost(order: OrderInterface): Money;
 
-    getName(): string
+    getName(): string;
 
-    getDescription(): string
+    getDescription(): string;
 
 }
-
-
 

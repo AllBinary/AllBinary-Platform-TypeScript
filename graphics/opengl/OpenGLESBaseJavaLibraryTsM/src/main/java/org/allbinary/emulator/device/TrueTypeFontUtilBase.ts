@@ -28,6 +28,7 @@ import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -92,14 +93,14 @@ public constructor (scale: number){
 
             super();
         
-    var shortPattern: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let shortPattern: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(AvianUtil.isAvian())
                         
                                     {
                                     
-    var shortPatterAsByteArray: number[] = [32,48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,46,63,33,36,37,96, -62, -84, -62, -84,34, -62, -93, -62, -93,94,38,42,40,41,95,43,45,61,91,93,123,125,59,39,35,58,64,126,44,47,60,62,92,124, -62, -82, -62, -82, -62, -87, -62, -87];;
+    let shortPatterAsByteArray: number[] = [32,48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,46,63,33,36,37,96, -62, -84, -62, -84,34, -62, -93, -62, -93,94,38,42,40,41,95,43,45,61,91,93,123,125,59,39,35,58,64,126,44,47,60,62,92,124, -62, -82, -62, -82, -62, -87, -62, -87];;
     
 shortPattern= String.fromCharCode(...shortPatterAsByteArray);
     
@@ -108,7 +109,7 @@ shortPattern= String.fromCharCode(...shortPatterAsByteArray);
                                 
                         else {
                             
-    var shortPatterAsByteArray: number[] = [32,48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,46,63,33,36,37,96, -62, -84,34, -62, -93,94,38,42,40,41,95,43,45,61,91,93,123,125,59,39,35,58,64,126,44,47,60,62,92,124, -62, -82, -62, -87];;
+    let shortPatterAsByteArray: number[] = [32,48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,46,63,33,36,37,96, -62, -84,34, -62, -93,94,38,42,40,41,95,43,45,61,91,93,123,125,59,39,35,58,64,126,44,47,60,62,92,124, -62, -82, -62, -87];;
     
 shortPattern= String.fromCharCode(...shortPatterAsByteArray);
     
@@ -255,6 +256,4 @@ this.actualCellsPerRow= globalThis.Math.trunc(this.textureSize /this.cellSize);
 
 
 }
-
-
 

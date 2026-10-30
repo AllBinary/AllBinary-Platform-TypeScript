@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 //not GWT import const StoreFrontFactory
@@ -49,12 +51,14 @@ import { ShippingAddressesEntity } from '../../../../org/allbinary/data/tables/u
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -104,14 +108,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             
     public isValid(): Boolean{
 
-        try {
-            this.streetAddress= new StreetAddress(this.getRequest());
+ try { this.streetAddress= new StreetAddress(this.getRequest());
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;;
     
 
-    var taxInterface: TaxModuleInterface = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!;;
+    let taxInterface: TaxModuleInterface = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!;;
     
 
                         if(taxInterface == 
@@ -123,29 +126,29 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-                        if(taxInterface!.isValid(this.streetAddress, storeFrontInterface) == Boolean.FALSE)
+                        if(taxInterface!.isValid(this.streetAddress, storeFrontInterface) == false)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
+    let billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 
-    var streetAddressList: BasicArrayList = billingAddressesEntity!.get()!;;
+    let streetAddressList: BasicArrayList = billingAddressesEntity!.get()!;;
     
 
                         if(streetAddressList == 
@@ -157,23 +160,23 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var size: number = streetAddressList!.size()!;;
+    let size: number = streetAddressList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
+    let aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
     
 
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
@@ -183,7 +186,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -194,12 +197,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -213,10 +217,12 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -224,15 +230,14 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;;
     
 
-    var taxInterface: TaxModuleInterface = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!;;
+    let taxInterface: TaxModuleInterface = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!;;
     
 
                         if(taxInterface == 
@@ -247,7 +252,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                 
                         else {
                             
-                        if(taxInterface!.isValid(this.streetAddress, storeFrontInterface) == Boolean.FALSE)
+                        if(taxInterface!.isValid(this.streetAddress, storeFrontInterface) == false)
                         
                                     {
                                     stringBuffer!.append("Unable to validate address with Tax Component<br/>");
@@ -259,23 +264,23 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         }
                             
 
-    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
+    let billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 
-    var streetAddressList: BasicArrayList = billingAddressesEntity!.get()!;;
+    let streetAddressList: BasicArrayList = billingAddressesEntity!.get()!;;
     
 
-    var size: number = streetAddressList!.size()!;;
+    let size: number = streetAddressList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
+    let aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
     
 
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
@@ -294,10 +299,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -313,8 +319,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Creating ValidationInfo";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -339,6 +347,4 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
 }
-
-
 

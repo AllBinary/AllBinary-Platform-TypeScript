@@ -25,6 +25,7 @@ import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { LockedFeatureNotificationUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedFeatureNotificationUtil.js';
 //not GWT import const LockedFeatureNotificationUtil
@@ -55,9 +56,11 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { SecondaryPlayerQueueFactory } from '../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
 //not GWT import const SecondaryPlayerQueueFactory
@@ -123,8 +126,7 @@ export class PreGameSelectionGameInputProcessor extends Processor implements Gam
                                 
     public run(){
 
-        try {
-            this.setRunning(true);
+ try { this.setRunning(true);
     
 SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
@@ -134,22 +136,25 @@ GameKeyEventHandler.getInstance()!.removeListener(getPlayerGameInput());
     
 this.setRunning(false);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.setRunning(false);
     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -183,20 +188,20 @@ this.getPlayerGameInput()!.update();
             
     public onInput(list: BasicArrayList){
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var anyType: any = list.get(index)!;;
+    let anyType: any = list.get(index)!;;
     
 
-    var key: number = GameKeyEventUtil.getKey(anyType)!;;
+    let key: number = GameKeyEventUtil.getKey(anyType)!;;
     
 
                         if(key == Canvas.LEFT || key == Canvas.RIGHT || key == Canvas.UP || key == Canvas.DOWN)
@@ -224,7 +229,7 @@ break;
                         
                                     {
                                     
-    var selectedIndex: number = this.preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex()!;;
+    let selectedIndex: number = this.preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex()!;;
     
 
                         if(selectedIndex < this.lockedIndex || !LockedUtil.getInstance()!.isLocked())
@@ -304,6 +309,4 @@ list.clear();
 
 
 }
-
-
 

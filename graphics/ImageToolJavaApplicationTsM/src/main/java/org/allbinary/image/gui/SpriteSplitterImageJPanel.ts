@@ -44,12 +44,15 @@ import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { ImageProcessedVisitor } from '../../../../org/allbinary/media/image/ImageProcessedVisitor.js';
 //not GWT import const ImageProcessedVisitor
@@ -65,12 +68,15 @@ import { SpriteSplitterUtil } from '../../../../org/allbinary/media/image/Sprite
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -149,44 +155,46 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var spriteSplitterUtil: SpriteSplitterUtil = SpriteSplitterUtil.getInstance()!;;
+ try { 
+    let spriteSplitterUtil: SpriteSplitterUtil = SpriteSplitterUtil.getInstance()!;;
     
 
-    var spriteType: string = this.spriteTypeJComboBox!.getSelectedItem() as string;;
+    let spriteType: string = this.spriteTypeJComboBox!.getSelectedItem() as string;;
     
 
-    var totalFrames: Integer = Integer.valueOf(this.totalFramesJComboBox!.getSelectedItem() as string)!;;
+    let totalFrames: Integer = Integer.valueOf(this.totalFramesJComboBox!.getSelectedItem() as string)!;;
     
 
-    var totalAnimations: Integer = Integer.valueOf(this.totalAnimationsJComboBox!.getSelectedItem() as string)!;;
+    let totalAnimations: Integer = Integer.valueOf(this.totalAnimationsJComboBox!.getSelectedItem() as string)!;;
     
 
-    var widthReduction: number = Integer.valueOf(this.widthReductionTextField!.getText())!;;
+    let widthReduction: number = Integer.valueOf(this.widthReductionTextField!.getText())!;;
     
 
-    var heightReduction: number = Integer.valueOf(this.heightReductionTextField!.getText())!;;
+    let heightReduction: number = Integer.valueOf(this.heightReductionTextField!.getText())!;;
     
 
-    var increaseWidth: number = Integer.valueOf(this.increaseWidthTextField!.getText())!;;
+    let increaseWidth: number = Integer.valueOf(this.increaseWidthTextField!.getText())!;;
     
 
-    var increaseHeight: number = Integer.valueOf(this.increaseHeightTextField!.getText())!;;
+    let increaseHeight: number = Integer.valueOf(this.increaseHeightTextField!.getText())!;;
     
-spriteSplitterUtil!.process(SpriteSplitterImageJPanel.prototype.getImageProcessorInput(), totalFrames, totalAnimations, widthReduction, heightReduction, increaseWidth, increaseHeight, spriteType, SpriteSplitterImageJPanel.prototype);
+spriteSplitterUtil!.process(outer$SpriteSplitterImageJPanel.getImageProcessorInput(), totalFrames, totalAnimations, widthReduction, heightReduction, increaseWidth, increaseHeight, spriteType, outer$SpriteSplitterImageJPanel);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -207,13 +215,13 @@ this.jPanel1= new class extends javax.swing.JPanel
                                 
     public paint(graphics: Graphics){
 
-                        if(SpriteSplitterImageJPanel.prototype.result != 
+                        if(outer$SpriteSplitterImageJPanel.result != 
                                     null
                                 )
                         
                                     {
-                                    graphics.drawImage(SpriteSplitterImageJPanel.prototype.result, 0, 0, SpriteSplitterImageJPanel.prototype.result.getWidth(
-                            null), SpriteSplitterImageJPanel.prototype.result.getHeight(
+                                    graphics.drawImage(outer$SpriteSplitterImageJPanel.result, 0, 0, outer$SpriteSplitterImageJPanel.result.getWidth(
+                            null), outer$SpriteSplitterImageJPanel.result.getHeight(
                             null), 
                             null);
     
@@ -240,17 +248,17 @@ this.jLabel1= new javax.swing.JLabel();
 this.totalFramesJComboBox= new javax.swing.JComboBox<>();
     
 
-    var size: number = 70;;
+    let size: number = 70;;
     
 
-    var animationStringArray2: string[] = new Array(size -1);;
+    let animationStringArray2: string[] = new Array(size -1);;
     
 
 
 
 
                         for (
-    var index: number = 1;index < size; index++)
+    let index: number = 1;index < size; index++)
         {
 animationStringArray2[index -1]= index.toString();
     
@@ -263,14 +271,14 @@ this.jLabel2= new javax.swing.JLabel();
 this.totalAnimationsJComboBox= new javax.swing.JComboBox<>();
     
 
-    var animationStringArray: string[] = new Array(size -1);;
+    let animationStringArray: string[] = new Array(size -1);;
     
 
 
 
 
                         for (
-    var index: number = 1;index < size; index++)
+    let index: number = 1;index < size; index++)
         {
 animationStringArray[index -1]= index.toString();
     
@@ -326,7 +334,7 @@ this.jLabel5!.setText("Less Width:");
 this.jLabel4!.setText("Results:");
     
 
-    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
+    let jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -395,7 +403,7 @@ spriteTypeJComboBoxActionPerformed(evt);
                             );
     
 
-    var jPanel2Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel2);;
+    let jPanel2Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel2);;
     
 this.jPanel2!.setLayout(jPanel2Layout);
     
@@ -423,7 +431,7 @@ this.jLabel8!.setText("More Height:");
 this.increaseHeightTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -446,7 +454,7 @@ this.process();
 
     spriteTypeJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
 
-    var spriteSplitterUtil: SpriteSplitterUtil = SpriteSplitterUtil.getInstance()!;;
+    let spriteSplitterUtil: SpriteSplitterUtil = SpriteSplitterUtil.getInstance()!;;
     
 this.jLabel1!.setText(spriteSplitterUtil!.ANIMATIONS_LABELS[this.spriteTypeJComboBox!.getSelectedIndex()]!);
     
@@ -535,17 +543,17 @@ this.result= generatedBufferedImage;
 this.getParent()!.repaint();
     
 
-    var file: File = this.imageProcessorInput!.getFiles()[index]!;;
+    let file: File = this.imageProcessorInput!.getFiles()[index]!;;
     
 
                         if(!this.writeOverOriginalJCheckBox!.isSelected())
                         
                                     {
                                     
-    var filePath: string = file.getAbsolutePath()!;;
+    let filePath: string = file.getAbsolutePath()!;;
     
 
-    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
+    let extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
     
 filePath= new StringMaker().append(filePath!.substring(0, extensionIndex))!.append(this.commonSeps!.UNDERSCORE)!.append(name)!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
@@ -555,7 +563,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(SpriteSplitterImageJPanel.prototype.result as RenderedImage, this.imageStrings!.PNG, file)!;;
+    let isWritten: boolean = ImageIO.write(outer$SpriteSplitterImageJPanel.result as RenderedImage, this.imageStrings!.PNG, file)!;;
     
 this.logUtil!.putF(new StringMaker().append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, this.commonStrings!.RUN);
     
@@ -563,6 +571,4 @@ this.logUtil!.putF(new StringMaker().append("File: ")!.append(StringUtil.getInst
 
 
 }
-
-
 

@@ -95,5 +95,3 @@ super.processAI(allBinaryLayerManager);
 
 }
 
-
-

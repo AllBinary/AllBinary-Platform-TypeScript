@@ -34,6 +34,7 @@ import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
 //not GWT import const ClientInformationFactory
@@ -46,6 +47,7 @@ import { NullGameCanvasRunnable } from '../../../../org/allbinary/game/displayab
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -88,7 +90,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
             
     isContinue(): boolean{
 
-    var hashtable: ABHashtable<any, any> = this.getStartStateHashtable()!;;
+    let hashtable: ABHashtable<any, any> = this.getStartStateHashtable()!;;
     
 
                         if(hashtable != 
@@ -180,7 +182,7 @@ this.logUtil!.putF(this.commonStrings!.NOT_IMPLEMENTED, this, this.commonStrings
 this.logUtil!.putF(this.commonStrings!.START, this, "setDemo");
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.start();
     
@@ -194,17 +196,17 @@ PrimaryThreadPool.getInstance()!.runTask(new DemoRunnable(this));
 
     public createGame(){
 
-    var CREATE_GAME: string = "createGame";;
+    let CREATE_GAME: string = "createGame";;
     
 this.logUtil!.putF(this.commonStrings!.START, this, CREATE_GAME);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.start();
     
 
-    var hashtable: ABHashtable<any, any> = this.getStartStateHashtable()!;;
+    let hashtable: ABHashtable<any, any> = this.getStartStateHashtable()!;;
     
 this.setStartStateHashtable(StdUtil.getInstance()!.NULL_TABLE);
     
@@ -226,6 +228,4 @@ this.logUtil!.putF(this.commonStrings!.END, this, CREATE_GAME);
 
 
 }
-
-
 

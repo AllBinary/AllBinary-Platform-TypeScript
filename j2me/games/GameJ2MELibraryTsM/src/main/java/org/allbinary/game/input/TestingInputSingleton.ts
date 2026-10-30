@@ -46,9 +46,11 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
 //not GWT import const ViewPosition
@@ -118,7 +120,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 
     public initInputProcessorsForTestInput(aTestInputInterface: TestInputInterface){
 
-    var testInputInterface: TestInputInterface = aTestInputInterface;;
+    let testInputInterface: TestInputInterface = aTestInputInterface;;
     
 this.paintable= testInputInterface;
     
@@ -210,20 +212,20 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 
     public processInputList(allbinaryLayerManager: AllBinaryLayerManager, list: BasicArrayList){
 
-    var key: number = 0;;
+    let key: number = 0;;
     
 
-    var gameKeyEvent: GameKeyEvent;;
+    let gameKeyEvent: GameKeyEvent;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 gameKeyEvent= (list.objectArray[index]! as GameKeyEvent);
     
@@ -264,6 +266,4 @@ this.paintable.paint(graphics);
 
 
 }
-
-
 

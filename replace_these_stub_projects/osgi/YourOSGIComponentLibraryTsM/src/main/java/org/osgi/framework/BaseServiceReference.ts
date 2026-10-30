@@ -66,7 +66,7 @@ export class BaseServiceReference
 }
 
 
-    public compareTo(o: any = {}): number{
+    public compareTo(o: any): number{
 
 
 
@@ -76,6 +76,4 @@ export class BaseServiceReference
 
 
 }
-
-
 

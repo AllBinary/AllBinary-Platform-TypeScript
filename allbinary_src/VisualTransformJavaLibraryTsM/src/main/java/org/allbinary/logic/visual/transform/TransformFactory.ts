@@ -36,9 +36,11 @@ import { TransformInfoEntityBuilder } from '../../../../../org/allbinary/data/ta
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -60,6 +62,7 @@ import { TransformInfoObjectFactory } from '../../../../../org/allbinary/logic/v
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -88,8 +91,19 @@ export class TransformFactory
         
 
     private static readonly instance: TransformFactory = new TransformFactory();
-
-    public static getInstance(): TransformFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 3 && typeof args[1] === 'string') return this.getInstance$overload2(args[0], args[1], args[2]);
+   
+    if (args.length === 3) return this.getInstance$overload3(args[0], args[1], args[2]);
+   
+    if (args.length === 2) return this.getInstance$overload4(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): TransformFactory{
 
 
 
@@ -111,10 +125,9 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, viewName: string, ownerTransformInfoInterface: TransformInfoInterface): TransformInterface{
+    public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, viewName: string, ownerTransformInfoInterface: TransformInfoInterface): TransformInterface{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
@@ -124,13 +137,13 @@ private constructor (){
                                     }
                                 
 
-    var ownerTransformInfoHttpInterface: TransformInfoHttpInterface = ownerTransformInfoInterface as TransformInfoHttpInterface;;
+    let ownerTransformInfoHttpInterface: TransformInfoHttpInterface = ownerTransformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
+    let transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(viewName, ownerTransformInfoHttpInterface!.getPropertiesHashMap(), ownerTransformInfoHttpInterface!.getPageContext())!;;
+    let transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(viewName, ownerTransformInfoHttpInterface!.getPropertiesHashMap(), ownerTransformInfoHttpInterface!.getPageContext())!;;
     
 
                         if(transformInfoInterface == 
@@ -149,7 +162,7 @@ private constructor (){
 transformInfoInterface!.setChild();
     
 
-    var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;;
+    let anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
@@ -166,10 +179,11 @@ transformInfoInterface!.setChild();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType as TransformInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
@@ -184,18 +198,19 @@ transformInfoInterface!.setChild();
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInterface{
+    public getInstance$overload3(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInterface{
 
-        try {
-            
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
+ try { 
+    let transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
@@ -207,10 +222,10 @@ transformInfoInterface!.setChild();
                                     }
                                 
 
-    var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
+    let transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(propertiesHashMap!.get(transformInfoData!.NAME) as string, propertiesHashMap, pageContext)!;;
+    let transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(propertiesHashMap!.get(transformInfoData!.NAME) as string, propertiesHashMap, pageContext)!;;
     
 
                         if(transformInfoInterface != 
@@ -230,7 +245,7 @@ transformInfoInterface!.setChild();
                         }
                             
 
-    var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;;
+    let anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
@@ -247,16 +262,17 @@ transformInfoInterface!.setChild();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType as TransformInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failed To Get Instance: ");
     
@@ -274,17 +290,18 @@ this.logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.GET_INSTAN
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInterface{
+    public getInstance$overload4(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInterface{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
@@ -294,7 +311,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.GET_INSTAN
                                     }
                                 
 
-    var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;;
+    let anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
@@ -311,10 +328,11 @@ this.logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.GET_INSTAN
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType as TransformInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
@@ -329,12 +347,12 @@ this.logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.GET_INSTAN
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -110,5 +110,3 @@ this.CRASH_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -crashFrict
 
 }
 
-
-

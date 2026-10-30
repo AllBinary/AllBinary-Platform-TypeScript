@@ -27,12 +27,15 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { ValidationInterface } from '../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
 //not GWT import const ValidationInterface
@@ -65,28 +68,35 @@ export class CssElementsValidationFactory
             extends Object
          {
         
-
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 1) return this.getInstance$overload1(args[0]);
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
-    public static getInstance(cssElementStyleNodeList: BasicArrayList): BasicArrayList{
+    public static getInstance$overload1(cssElementStyleNodeList: BasicArrayList): BasicArrayList{
 
-    var styles: BasicArrayList = new BasicArrayListD();;
+    let styles: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = cssElementStyleNodeList!.size()!;;
+    let size: number = cssElementStyleNodeList!.size()!;;
     
 
-    var cssElementStyleNode: Node;;
+    let cssElementStyleNode: Node;;
     
 
-    var cssValidationInterface: ValidationInterface;;
+    let cssValidationInterface: ValidationInterface;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 cssElementStyleNode= cssElementStyleNodeList!.get(index) as Node;
     
@@ -105,9 +115,9 @@ styles.add(cssValidationInterface);
 }
 
 
-    public static getInstance(hashMap: HashMap<any, any>): BasicArrayList{
+    public static getInstance$overload2(hashMap: HashMap<any, any>): BasicArrayList{
 
-    var styles: BasicArrayList = new BasicArrayListD();;
+    let styles: BasicArrayList = new BasicArrayListD();;
     
 
 
@@ -125,6 +135,4 @@ private constructor (){
 
 
 }
-
-
 

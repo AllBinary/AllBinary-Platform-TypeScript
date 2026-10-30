@@ -91,6 +91,7 @@ import { QuoteRequestEntityFactory } from '../../../../org/allbinary/data/tables
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbDatabaseManagement } from '../../../../org/allbinary/logic/communication/sql/AbDatabaseManagement.js';
 //not GWT import const AbDatabaseManagement
@@ -109,6 +110,7 @@ import { FileFactory } from '../../../../org/allbinary/logic/io/file/FileFactory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -157,8 +159,7 @@ public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInter
 
     public addUsers(): Boolean{
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.METHOD_ADD_USERS);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.METHOD_ADD_USERS);
     
 this.userDbInitInfo= new UserDbInitInfo();
     
@@ -171,13 +172,13 @@ this.staticpagesDbInitInfo= new StaticPagesDbInitInfo();
 this.logDbInitInfo= new LogDbInitInfo();
     
 
-    var CUSTOMERDB: string = this.userDbInitInfo!.getName()!;;
+    let CUSTOMERDB: string = this.userDbInitInfo!.getName()!;;
     
 
-    var CUSTOMERDBUSER: string = this.userDbInitInfo!.getUserName()!;;
+    let CUSTOMERDBUSER: string = this.userDbInitInfo!.getUserName()!;;
     
 
-    var CUSTOMERDBPASSWORD: string = this.userDbInitInfo!.getPassword()!;;
+    let CUSTOMERDBPASSWORD: string = this.userDbInitInfo!.getPassword()!;;
     
 
                         if(!this.addDbUser(CUSTOMERDB, CUSTOMERDBUSER, CUSTOMERDBPASSWORD))
@@ -189,19 +190,19 @@ this.logDbInitInfo= new LogDbInitInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var INVENTORYDB: string = this.inventoryDbInitInfo!.getName()!;;
+    let INVENTORYDB: string = this.inventoryDbInitInfo!.getName()!;;
     
 
-    var INVENTORYDBUSER: string = this.inventoryDbInitInfo!.getUserName()!;;
+    let INVENTORYDBUSER: string = this.inventoryDbInitInfo!.getUserName()!;;
     
 
-    var INVENTORYDBPASSWORD: string = this.inventoryDbInitInfo!.getPassword()!;;
+    let INVENTORYDBPASSWORD: string = this.inventoryDbInitInfo!.getPassword()!;;
     
 
                         if(!this.addDbUser(INVENTORYDB, INVENTORYDBUSER, INVENTORYDBPASSWORD))
@@ -213,19 +214,19 @@ this.logDbInitInfo= new LogDbInitInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var HISTORYDB: string = this.historyDbInitInfo!.getName()!;;
+    let HISTORYDB: string = this.historyDbInitInfo!.getName()!;;
     
 
-    var HISTORYDBUSER: string = this.historyDbInitInfo!.getUserName()!;;
+    let HISTORYDBUSER: string = this.historyDbInitInfo!.getUserName()!;;
     
 
-    var HISTORYDBPASSWORD: string = this.historyDbInitInfo!.getPassword()!;;
+    let HISTORYDBPASSWORD: string = this.historyDbInitInfo!.getPassword()!;;
     
 
                         if(!this.addDbUser(HISTORYDB, HISTORYDBUSER, HISTORYDBPASSWORD))
@@ -237,19 +238,19 @@ this.logDbInitInfo= new LogDbInitInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var STATICPAGESDB: string = this.staticpagesDbInitInfo!.getName()!;;
+    let STATICPAGESDB: string = this.staticpagesDbInitInfo!.getName()!;;
     
 
-    var STATICPAGESDBUSER: string = this.staticpagesDbInitInfo!.getUserName()!;;
+    let STATICPAGESDBUSER: string = this.staticpagesDbInitInfo!.getUserName()!;;
     
 
-    var STATICPAGESDBPASSWORD: string = this.staticpagesDbInitInfo!.getPassword()!;;
+    let STATICPAGESDBPASSWORD: string = this.staticpagesDbInitInfo!.getPassword()!;;
     
 
                         if(!this.addDbUser(STATICPAGESDB, STATICPAGESDBUSER, STATICPAGESDBPASSWORD))
@@ -261,19 +262,19 @@ this.logDbInitInfo= new LogDbInitInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var LOGDB: string = this.logDbInitInfo!.getName()!;;
+    let LOGDB: string = this.logDbInitInfo!.getName()!;;
     
 
-    var LOGDBUSER: string = this.logDbInitInfo!.getUserName()!;;
+    let LOGDBUSER: string = this.logDbInitInfo!.getUserName()!;;
     
 
-    var LOGDBPASSWORD: string = this.logDbInitInfo!.getPassword()!;;
+    let LOGDBPASSWORD: string = this.logDbInitInfo!.getPassword()!;;
     
 
                         if(!this.addDbUser(LOGDB, LOGDBUSER, LOGDBPASSWORD))
@@ -285,7 +286,7 @@ this.logDbInitInfo= new LogDbInitInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -296,29 +297,31 @@ this.logUtil!.putF(this.commonStrings!.END, this, this.METHOD_ADD_USERS);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_USERS, e);
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public addDatabases(): Boolean{
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.METHOD_ADD_DATABASES);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.METHOD_ADD_DATABASES);
     
 this.userDbInitInfo= new UserDbInitInfo();
     
@@ -331,7 +334,7 @@ this.staticpagesDbInitInfo= new StaticPagesDbInitInfo();
 this.logDbInitInfo= new LogDbInitInfo();
     
 
-    var CUSTOMERDB: string = this.userDbInitInfo!.getName()!;;
+    let CUSTOMERDB: string = this.userDbInitInfo!.getName()!;;
     
 
                         if(!this.addDb(CUSTOMERDB))
@@ -343,13 +346,13 @@ this.logDbInitInfo= new LogDbInitInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var INVENTORYDB: string = this.inventoryDbInitInfo!.getName()!;;
+    let INVENTORYDB: string = this.inventoryDbInitInfo!.getName()!;;
     
 
                         if(!this.addDb(INVENTORYDB))
@@ -361,13 +364,13 @@ this.logDbInitInfo= new LogDbInitInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var HISTORYDB: string = this.historyDbInitInfo!.getName()!;;
+    let HISTORYDB: string = this.historyDbInitInfo!.getName()!;;
     
 
                         if(!this.addDb(HISTORYDB))
@@ -379,13 +382,13 @@ this.logDbInitInfo= new LogDbInitInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var STATICPAGESDB: string = this.staticpagesDbInitInfo!.getName()!;;
+    let STATICPAGESDB: string = this.staticpagesDbInitInfo!.getName()!;;
     
 
                         if(!this.addDb(STATICPAGESDB))
@@ -397,13 +400,13 @@ this.logDbInitInfo= new LogDbInitInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var LOGDB: string = this.logDbInitInfo!.getName()!;;
+    let LOGDB: string = this.logDbInitInfo!.getName()!;;
     
 
                         if(!this.addDb(LOGDB))
@@ -415,18 +418,18 @@ this.logDbInitInfo= new LogDbInitInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var file: AbFile = FileFactory.getInstance()!.getInstance(this.SQL_FILE)!;;
+    let file: AbFile = FileFactory.getInstance()!.getInstance(this.SQL_FILE)!;;
     
 file.createNewFile();
     
 
-    var idOutData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(file)!;;
+    let idOutData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(file)!;;
     
 idOutData!.writeBytes(this.sqlCommandLog!.toString());
     
@@ -434,30 +437,32 @@ idOutData!.writeBytes(this.sqlCommandLog!.toString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_DATABASES, e);
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public addTables(): Boolean{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 this.logUtil!.putF(this.commonStrings!.START, this, this.METHOD_ADD_TABLES);
     
@@ -499,26 +504,27 @@ this.logUtil!.putF(ADD_TABLES_RESULTS_LABEL +stringBuffer!.toString(), this, thi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_TABLES, e);
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

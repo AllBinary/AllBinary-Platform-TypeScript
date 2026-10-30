@@ -22,6 +22,7 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -143,7 +144,7 @@ export class InitializerData
 
     public getJdbcDriverSolutionInfo(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("The following describes the possible problems and solutions regarding the Jdbc Driver error(s):<p/>");
     
@@ -173,6 +174,4 @@ stringBuffer!.append("Solution: Use a valid JDBC driver.<p/>");
 
 
 }
-
-
 

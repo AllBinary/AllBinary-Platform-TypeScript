@@ -22,12 +22,15 @@
         
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -69,10 +72,10 @@ private constructor (){
 
             super();
         
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var abPathData: AbPathData = AbPathData.getInstance()!;;
+    let abPathData: AbPathData = AbPathData.getInstance()!;;
     
 stringBuffer!.append("data");
     
@@ -134,6 +137,4 @@ this.VIEWS_PATH= stringBuffer!.toString();
     public readonly BACKUP_PATH: string;
 
 }
-
-
 

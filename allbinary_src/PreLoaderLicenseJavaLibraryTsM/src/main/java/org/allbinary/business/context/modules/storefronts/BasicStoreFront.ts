@@ -39,12 +39,15 @@ import { Tokenizer } from '../../../../../../org/allbinary/logic/string/tokens/T
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -138,7 +141,7 @@ public constructor (storeHashMap: HashMap<any, any>){
 
             super();
         
-    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
+    let storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
     
 this.name= storeHashMap!.get(storeFrontData!.NAME) as string;
     
@@ -211,7 +214,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 
     public getCurrentHostName(): string{
 
-    var location: string = 
+    let location: string = 
                 null
             ;;
     
@@ -241,7 +244,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 
     public getCurrentHostNamePath(): string{
 
-    var location: string = 
+    let location: string = 
                 null
             ;;
     
@@ -271,7 +274,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 
     public getCurrentHomeHostName(): string{
 
-    var location: string = 
+    let location: string = 
                 null
             ;;
     
@@ -301,7 +304,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 
     public getCurrentHomeHostNamePath(): string{
 
-    var location: string = 
+    let location: string = 
                 null
             ;;
     
@@ -473,12 +476,11 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
             
     public getSubStores(): BasicArrayList{
 
-        try {
-            
-    var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SEMICOLON);;
+ try { 
+    let tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SEMICOLON);;
     
 
-    var subStoreVector: BasicArrayList = tokenizer.getTokensFromString(this.subStores, new BasicArrayListD())!;;
+    let subStoreVector: BasicArrayList = tokenizer.getTokensFromString(this.subStores, new BasicArrayListD())!;;
     
 
 
@@ -486,17 +488,20 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return subStoreVector;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -621,6 +626,4 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 
 
 }
-
-
 

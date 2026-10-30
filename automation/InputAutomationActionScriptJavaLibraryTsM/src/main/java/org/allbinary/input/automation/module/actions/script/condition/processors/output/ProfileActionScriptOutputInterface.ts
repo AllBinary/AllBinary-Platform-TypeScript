@@ -45,5 +45,3 @@ export interface ProfileActionScriptOutputInterface extends ProfileActionScriptP
 
 }
 
-
-

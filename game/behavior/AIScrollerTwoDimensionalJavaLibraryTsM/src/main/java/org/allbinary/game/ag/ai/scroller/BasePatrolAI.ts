@@ -42,12 +42,14 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
 
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+type MathUtil<T = any, U = any> = typeof MathUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MathUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -112,10 +114,10 @@ this.changeDirectionIfReachedPacingAreaMax();
 
     updateTotalDistance(){
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;;
+    let velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;;
     
 
-    var velocityProperties: BasicVelocityProperties = velocityInterfaceCompositeInterface!.getVelocityProperties()!;;
+    let velocityProperties: BasicVelocityProperties = velocityInterfaceCompositeInterface!.getVelocityProperties()!;;
     
 this.xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();
     
@@ -124,10 +126,10 @@ this.xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScale
 
     changeDirectionIfReachedPacingAreaMax(){
 
-    var mathUtil: MathUtil = MathUtil.getInstance()!;;
+    let mathUtil: MathUtil = MathUtil.getInstance()!;;
     
 
-    var totalDistance: number = mathUtil!.abs(this.xTotalDistance)!;;
+    let totalDistance: number = mathUtil!.abs(this.xTotalDistance)!;;
     
 
                         if(totalDistance > this.currentDistance)
@@ -176,6 +178,4 @@ this.xTotalDistance= 0;
 
 
 }
-
-
 

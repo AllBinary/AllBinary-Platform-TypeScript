@@ -38,12 +38,14 @@ import { StoreFrontInterface } from '../../org/allbinary/business/context/module
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Replace } from '../../org/allbinary/logic/string/regex/replace/Replace.js';
 //not GWT import const Replace
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -79,7 +81,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
+    let storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(storeName != 
@@ -98,7 +100,7 @@ this.currentHomeLocation= new Replace(CommonSeps.getInstance()!.SPACE, "%20").al
                                 
                         else {
                             
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.storeFrontInterface= new StoreFront();
     
@@ -133,6 +135,4 @@ this.currentHomeLocation= stringUtil!.EMPTY_STRING;
 
 
 }
-
-
 

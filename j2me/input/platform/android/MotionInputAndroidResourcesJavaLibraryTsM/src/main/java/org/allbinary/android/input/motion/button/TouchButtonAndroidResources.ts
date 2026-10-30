@@ -25,6 +25,7 @@ import { AndroidResources } from '../../../../../../org/allbinary/AndroidResourc
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 import { Init } from '../../../../../../org/allbinary/init/Init.js';
 //not GWT import const Init
@@ -89,19 +90,19 @@ export class TouchButtonAndroidResources extends Init {
 
     public init(){
 
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
+    let resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var androidResources: AndroidResources = AndroidResources.getInstance()!;;
+    let androidResources: AndroidResources = AndroidResources.getInstance()!;;
     
 
-    var RESOURCE_STRING_ARRAY: TouchButtonResource[] = 
+    let RESOURCE_STRING_ARRAY: TouchButtonResource[] = 
                                                         [
                                                             TouchButtonBlankResource.getInstance(), TouchButtonGenericActionResource.getInstance(), TouchButtonStartResource.getInstance(), TouchButtonUpResource.getInstance(), TouchButtonDownResource.getInstance(), TouchButtonTurnLeftResource.getInstance(), TouchButtonTurnRightResource.getInstance(), TouchButtonStrafeLeftResource.getInstance(), TouchButtonStrafeRightResource.getInstance()
                                                         ];;
     
 
-    var RESOURCE_ARRAY: number[] = new Array(RESOURCE_STRING_ARRAY.length);;
+    let RESOURCE_ARRAY: number[] = new Array(RESOURCE_STRING_ARRAY.length);;
     
 
                         if(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE == 128)
@@ -164,7 +165,7 @@ RESOURCE_ARRAY[8]= androidResources!.raw.touch_button_strafe_right_arrow_64_by_6
 
 
                         for (
-    var index: number = 0;index < RESOURCE_ARRAY.length; index++)
+    let index: number = 0;index < RESOURCE_ARRAY.length; index++)
         {
 resourceUtil!.addResource(RESOURCE_STRING_ARRAY[index]!.RESOURCE, Integer.valueOf(RESOURCE_ARRAY[index]!));
     
@@ -174,6 +175,4 @@ resourceUtil!.addResource(RESOURCE_STRING_ARRAY[index]!.RESOURCE, Integer.valueO
 
 
 }
-
-
 

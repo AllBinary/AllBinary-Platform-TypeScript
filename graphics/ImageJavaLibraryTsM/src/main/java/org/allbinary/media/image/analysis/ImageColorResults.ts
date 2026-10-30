@@ -108,5 +108,3 @@ this.colorAverage= colorAverage;
 
 }
 
-
-

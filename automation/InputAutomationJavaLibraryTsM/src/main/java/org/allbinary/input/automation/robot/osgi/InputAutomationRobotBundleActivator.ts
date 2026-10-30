@@ -47,12 +47,14 @@ import { InputRobotInterface } from '../../../../../../org/allbinary/input/autom
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { OSGIActivatorUtil } from '../../../../../../org/allbinary/osgi/OSGIActivatorUtil.js';
 //not GWT import const OSGIActivatorUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -112,7 +114,7 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public registerAsService(bundleContext: BundleContext){
-OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationRobotServiceInterface.constructor.toString()!);
+OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationRobotServiceInterface.toString()!);
     
 }
 
@@ -121,7 +123,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
             
     getInputAutomationRobotChangeListener(context: BundleContext): InputAutomationRobotChangeListener{
 
-    var serviceReference: ServiceReference = context.getServiceReference(InputAutomationRobotChangeListener.constructor.toString()!)!;;
+    let serviceReference: ServiceReference = context.getServiceReference(InputAutomationRobotChangeListener.toString()!)!;;
     
 
                         if(serviceReference != 
@@ -130,7 +132,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
                         
                                     {
                                     
-    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = context.getService(serviceReference) as InputAutomationRobotChangeListener;;
+    let inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = context.getService(serviceReference) as InputAutomationRobotChangeListener;;
     
 
                         if(inputAutomationRobotChangeListener == 
@@ -149,7 +151,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
                                     }
                                 
                         else {
-                            this.logUtil!.putF("No ServiceReference: " +InputAutomationRobotChangeListener.constructor.toString()!, this, "getInputAutomationRobotChangeListener");
+                            this.logUtil!.putF("No ServiceReference: " +InputAutomationRobotChangeListener.toString()!, this, "getInputAutomationRobotChangeListener");
     
 
 
@@ -165,11 +167,10 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
 
     addRobots(context: BundleContext){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "addRobots");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "addRobots");
     
 
-    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;;
+    let inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;;
     
 
                         if(inputAutomationRobotChangeListener != 
@@ -182,10 +183,10 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
 
 
                         for (
-    var index: number = 0;index < this.getInputRobotInterface()!.length; index++)
+    let index: number = 0;index < this.getInputRobotInterface()!.length; index++)
         {
 
-    var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = InputAutomationRobotUtil.getChangeEvent(this.getInputRobotInterface()[index]!)!;;
+    let inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = InputAutomationRobotUtil.getChangeEvent(this.getInputRobotInterface()[index]!)!;;
     
 inputAutomationRobotChangeListener!.onAdd(inputAutomationRobotChangeEvent);
     
@@ -194,24 +195,26 @@ inputAutomationRobotChangeListener!.onAdd(inputAutomationRobotChangeEvent);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "addModules");
     
-}
 
+ }
+   }
+ 
 }
 
 
     removeRobots(context: BundleContext){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "removeRobots");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "removeRobots");
     
 
-    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;;
+    let inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;;
     
 
                         if(inputAutomationRobotChangeListener != 
@@ -224,10 +227,10 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "addModules");
 
 
                         for (
-    var index: number = 0;index < this.getInputRobotInterface()!.length; index++)
+    let index: number = 0;index < this.getInputRobotInterface()!.length; index++)
         {
 
-    var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = InputAutomationRobotUtil.getChangeEvent(this.getInputRobotInterface()[index]!)!;;
+    let inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = InputAutomationRobotUtil.getChangeEvent(this.getInputRobotInterface()[index]!)!;;
     
 inputAutomationRobotChangeListener!.onRemove(inputAutomationRobotChangeEvent);
     
@@ -236,14 +239,17 @@ inputAutomationRobotChangeListener!.onRemove(inputAutomationRobotChangeEvent);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "removeRobots");
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -302,6 +308,4 @@ this.inputRobotInterface= inputRobotInterface;
 
 
 }
-
-
 

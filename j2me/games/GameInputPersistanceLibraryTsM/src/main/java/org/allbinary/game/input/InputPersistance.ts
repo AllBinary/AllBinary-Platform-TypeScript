@@ -57,33 +57,41 @@ import { NullRecordStore } from '../../../../org/allbinary/game/configuration/pe
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HashtableUtil;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -130,59 +138,58 @@ public constructor (name: string){
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
+    let recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
-        try {
-            recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+ try { recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
-    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
+    let recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var gameActionInputId: number= 0;;
+    let gameActionInputId: number= 0;;
     
 
-    var inputId: number= 0;;
+    let inputId: number= 0;;
     
 
-    var gameActionInput: Input;;
+    let gameActionInput: Input;;
     
 
-    var input: Input;;
+    let input: Input;;
     
 
-    var hashtable: ABHashtable<any, any>;;
+    let hashtable: ABHashtable<any, any>;;
     
 
-    var gameKeyFactory: GameKeyMappingFactory = GameKeyMappingFactory.getInstance()!;;
+    let gameKeyFactory: GameKeyMappingFactory = GameKeyMappingFactory.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var inputFactory: InputFactory = InputFactory.getInstance()!;;
+    let inputFactory: InputFactory = InputFactory.getInstance()!;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var stdUtil: StdUtil = StdUtil.getInstance()!;;
+    let stdUtil: StdUtil = StdUtil.getInstance()!;;
     
 
-    var recordAsBytes: number[];;
+    let recordAsBytes: number[];;
     
 
-    var byteArrayInputStream: ByteArrayInputStream;;
+    let byteArrayInputStream: ByteArrayInputStream;;
     
 
-    var inputStream: DataInputStream;;
+    let inputStream: DataInputStream;;
     
 
         while(recordEnum!.hasNextElement())
         {
 
-    var id: number = recordEnum!.nextRecordId()!;;
+    let id: number = recordEnum!.nextRecordId()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -203,13 +210,13 @@ inputStream= new DataInputStream(byteArrayInputStream);
 hashtable= stdUtil!.createHashtable();
     
 
-    var value: number= 0;;
+    let value: number= 0;;
     
 
         while(inputStream!.available() > 0)
         {
 
-    var gameActionInputIdAsString: string = inputStream!.readUTF()!;;
+    let gameActionInputIdAsString: string = inputStream!.readUTF()!;;
     
 value= Integer.parseInt(gameActionInputIdAsString);
     
@@ -295,19 +302,20 @@ this.idList!.add(smallIntegerSingletonFactory!.getAt(id));
                             
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-         finally {
-            
+ }
+   }
+ finally { 
                         if(recordStore != 
                                     null
                                 )
@@ -320,9 +328,7 @@ recordStore!.closeRecordStore();
 
                                     }
                                 
-
-         }
-        
+ }
 }
 
 
@@ -330,46 +336,45 @@ recordStore!.closeRecordStore();
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: ABHashtable<any, any>){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
+    let recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 PreLogUtil.put(stringBuffer!.append(this.persistanceStrings!.SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+    let byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);;
+    let outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);;
     
 
-    var gameActionInput: Input;;
+    let gameActionInput: Input;;
     
 
-    var list: BasicArrayList;;
+    let list: BasicArrayList;;
     
 
-    var input: Input;;
+    let input: Input;;
     
 
-    var savedGameBytes: number[];;
+    let savedGameBytes: number[];;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var inputObjectArray: any[] = this.hashtableUtil!.getKeysAsArray(hashtable)!;;
+    let inputObjectArray: any[] = this.hashtableUtil!.getKeysAsArray(hashtable)!;;
     
 
-    var size: number = inputObjectArray!.length
+    let size: number = inputObjectArray!.length
                 ;;
     
 
@@ -377,7 +382,7 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 gameActionInput= inputObjectArray[index]! as Input;
     
@@ -388,10 +393,10 @@ list= hashtable.get(inputObjectArray[index]!) as BasicArrayList;
 
 
                         for (
-    var index2: number = 0;index2 < list.size(); index2++)
+    let index2: number = 0;index2 < list.size(); index2++)
         {
 
-    var gameActionInputIdAsString: string = smallIntegerSingletonFactory!.getAt(gameActionInput!.getId())!.toString()!;;
+    let gameActionInputIdAsString: string = smallIntegerSingletonFactory!.getAt(gameActionInput!.getId())!.toString()!;;
     
 outputStream!.writeUTF(gameActionInputIdAsString);
     
@@ -400,7 +405,7 @@ outputStream!.writeUTF(commonSeps!.EQUALS);
 input= list.objectArray[index2]! as Input;
     
 
-    var inputIdAsString: string = smallIntegerSingletonFactory!.getAt(input.getId())!.toString()!;;
+    let inputIdAsString: string = smallIntegerSingletonFactory!.getAt(input.getId())!.toString()!;;
     
 outputStream!.writeUTF(inputIdAsString);
     
@@ -412,19 +417,20 @@ savedGameBytes= byteArrayOutputStream!.toByteArray();
     
 recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-         finally {
-            
+ }
+   }
+ finally { 
                         if(recordStore != 
                                     null
                                 )
@@ -437,13 +443,9 @@ recordStore!.closeRecordStore();
 
                                     }
                                 
-
-         }
-        
+ }
 }
 
 
 }
-
-
 

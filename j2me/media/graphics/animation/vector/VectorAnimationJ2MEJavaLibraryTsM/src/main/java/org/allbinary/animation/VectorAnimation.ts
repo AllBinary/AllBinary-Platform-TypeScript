@@ -31,12 +31,14 @@ import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js'
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -68,10 +70,10 @@ export class VectorAnimation extends IndexedAnimation implements VectorAnimation
 
     public static createVectorAnimation(currentPoints2: number[][], basicColor: BasicColor, animationBehavior: AnimationBehavior): VectorAnimation{
 
-    var currentPoints: number[][][] = Array.from({ length: 1 }, () => Array.from({ length: currentPoints2!.length }, () => new Array(0).fill(2)));;
+    let currentPoints: number[][][] = Array.from({ length: 1 }, () => Array.from({ length: currentPoints2!.length }, () => new Array(0).fill(2)));;
     
 
-    var size: number = currentPoints2!.length
+    let size: number = currentPoints2!.length
                 ;;
     
 
@@ -79,7 +81,7 @@ export class VectorAnimation extends IndexedAnimation implements VectorAnimation
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 currentPoints[0]![index]![0]= currentPoints2[index]![0]!;
     
@@ -115,7 +117,7 @@ this.setBasicColorP(basicColor);
 
     public setBasicColorP(basicColor: BasicColor){
 
-    var changed: boolean = false;;
+    let changed: boolean = false;;
     
 
                         if(this.getBasicColorP() == 
@@ -144,7 +146,7 @@ super.setBasicColorP(basicColor);
 
     public changeBasicColor(basicColor: BasicColor){
 
-    var changed: boolean = false;;
+    let changed: boolean = false;;
     
 
                         if(this.getChangeBasicColor() == 
@@ -173,7 +175,7 @@ super.changeBasicColor(basicColor);
 
     public setAlpha(alpha: number){
 
-    var changed: boolean = false;;
+    let changed: boolean = false;;
     
 
                         if(this.alphaP != alpha)
@@ -260,28 +262,27 @@ this.circularIndexUtil!.previous();
 
     paintVectors(graphics: Graphics, x: number, y: number){
 
-        try {
-            
-    var nextPointX: number = 0;;
+ try { 
+    let nextPointX: number = 0;;
     
 
-    var nextPointY: number = 0;;
+    let nextPointY: number = 0;;
     
 
-    var nextPoint: number[];;
+    let nextPoint: number[];;
     
 
-    var point: number[];;
+    let point: number[];;
     
 
-    var currentPointsFrame: number[][] = this.currentPoints[this.circularIndexUtil!.getIndex()]!;;
+    let currentPointsFrame: number[][] = this.currentPoints[this.circularIndexUtil!.getIndex()]!;;
     
 
-    var size: number = currentPointsFrame!.length
+    let size: number = currentPointsFrame!.length
                 ;;
     
 
-    var index: number = size -2;;
+    let index: number = size -2;;
     
 
         while(--index >= 0)
@@ -311,14 +312,17 @@ nextPointY= nextPoint[1]!;
                             
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "paintVectors", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -365,6 +369,4 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(currentPoints!.length);
 
 
 }
-
-
 

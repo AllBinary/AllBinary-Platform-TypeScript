@@ -27,9 +27,11 @@ import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/Sta
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -87,19 +89,21 @@ export class ToolFactory
 
     public setSelectedTool(tool: string){
 
-        try {
-            StatusFactory.getInstance()!.setStatus(this.SELECTED_LABEL +tool);
+ try { StatusFactory.getInstance()!.setStatus(this.SELECTED_LABEL +tool);
     
 this.tool= tool;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setSelectionTool", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -139,6 +143,4 @@ this.logUtil!.putF("New Tool: " +this.selectedTool, this, "getSelectedToolFactor
 
 
 }
-
-
 

@@ -68,13 +68,20 @@ public constructor (booleanVisitorInterface: VisitorInterface){
     
 }
 
+accept(...args: any[]): any {
+   
+    if (args.length === 1) return this.accept$overload1(args[0]);
+   
+    if (args.length === 1) return this.accept$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: accept'); }
+  
+    public accept$overload1(file: File): boolean{
 
-    public accept(file: File): boolean{
-
-    var abFile: AbFile = FileWrapperUtil.wrapFile(file)!;;
+    let abFile: AbFile = FileWrapperUtil.wrapFile(file)!;;
     
 
-    var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(abFile)visit as Boolean
+    let isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(abFile)visit as Boolean
 visit.
                     .valueOf()!;;
     
@@ -87,9 +94,9 @@ visit.
 }
 
 
-    public accept(file: AbFile): boolean{
+    public accept$overload2(file: AbFile): boolean{
 
-    var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(file)visit as Boolean
+    let isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(file)visit as Boolean
 visit.
                     .valueOf()!;;
     
@@ -103,6 +110,4 @@ visit.
 
 
 }
-
-
 

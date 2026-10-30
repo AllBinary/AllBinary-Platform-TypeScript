@@ -92,10 +92,10 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
                         
                                     {
                                     
-    var highScoresBase: HighScoresHelperBase = this.gameCanvas!.highScoresHelper as HighScoresHelperBase;;
+    let highScoresBase: HighScoresHelperBase = this.gameCanvas!.highScoresHelper as HighScoresHelperBase;;
     
 
-    var highScores: HighScores = highScoresBase!.getSelectedHighScores()!;;
+    let highScores: HighScores = highScoresBase!.getSelectedHighScores()!;;
     
 
                         if(highScores != NullHighScoresSingletonFactory.getInstance())
@@ -136,6 +136,4 @@ this.gameCanvas!.setHighScoresPaintable(NullPaintable.getInstance());
 
 
 }
-
-
 

@@ -68,5 +68,3 @@ this.midlet.exit();
 
 }
 
-
-

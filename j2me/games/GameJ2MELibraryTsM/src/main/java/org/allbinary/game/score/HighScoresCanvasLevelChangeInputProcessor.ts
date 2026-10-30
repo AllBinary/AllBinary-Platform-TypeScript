@@ -53,6 +53,7 @@ import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/U
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -99,7 +100,7 @@ public constructor (highScoresCanvas: HighScoresCanvas){
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.fontHeight= font.getHeight();
     
@@ -123,23 +124,23 @@ GameKeyEventHandler.getInstance()!.removeListener(this);
 
     public update(){
 
-    var list: BasicArrayList = this.getGameKeyEventList()!;;
+    let list: BasicArrayList = this.getGameKeyEventList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var anyType: any = list.objectArray[index]!;;
+    let anyType: any = list.objectArray[index]!;;
     
 
-    var key: number = GameKeyEventUtil.getKey(anyType)!;;
+    let key: number = GameKeyEventUtil.getKey(anyType)!;;
     
 
                         if(key == Canvas.RIGHT)
@@ -172,10 +173,10 @@ list.clear();
 this.myFontProcessor!.process(graphics);
     
 
-    var width: number = this.displayInfoSingleton!.getLastWidth()!;;
+    let width: number = this.displayInfoSingleton!.getLastWidth()!;;
     
 
-    var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.INSTRUCTIONS)>>1);;
+    let topScoresWidth: number = (graphics.getFont()!.stringWidth(this.INSTRUCTIONS)>>1);;
     
 graphics.drawString(this.INSTRUCTIONS, (width>>1) -topScoresWidth, this.fontHeight *2, this.anchor);
     
@@ -183,6 +184,4 @@ graphics.drawString(this.INSTRUCTIONS, (width>>1) -topScoresWidth, this.fontHeig
 
 
 }
-
-
 

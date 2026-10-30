@@ -32,18 +32,22 @@ import { Set } from '../../../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { ClassUtil } from '../../../../../org/allbinary/logic/java/anyType/clazz/ClassUtil.js';
 //not GWT import const ClassUtil
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -81,10 +85,10 @@ export class ModDomHelper
             
     public static createTextNode(document: Document, name: string, text: string): Node{
 
-    var newValueNode: Node = document.createElement(name)!;;
+    let newValueNode: Node = document.createElement(name)!;;
     
 
-    var newValueTextNode: Node = document.createTextNode(text)!;;
+    let newValueTextNode: Node = document.createTextNode(text)!;;
     
 newValueNode!.appendChild(newValueTextNode);
     
@@ -132,12 +136,25 @@ newValueNode!.appendChild(newValueTextNode);
     
 }
 
-
+static createNameValueNodes(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[1] === 'string' && typeof args[2] === 'string' && typeof args[3] === 'string') return this.createNameValueNodes$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[1] === 'string' && typeof args[2] === 'string') return this.createNameValueNodes$overload2(args[0], args[1], args[2]);
+   
+    if (args.length === 3 && typeof args[1] === 'string') return this.createNameValueNodes$overload3(args[0], args[1], args[2]);
+   
+    if (args.length === 3) return this.createNameValueNodes$overload4(args[0], args[1], args[2]);
+   
+    if (args.length === 4 && typeof args[1] === 'string' && typeof args[2] === 'string') return this.createNameValueNodes$overload5(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: createNameValueNodes'); }
+  
                 //@Throws(Exception.constructor)
             
-    public static createNameValueNodes(document: Document, elementName: string, nameText: string, valueText: string): Node{
+    public static createNameValueNodes$overload1(document: Document, elementName: string, nameText: string, valueText: string): Node{
 
-    var newNode: Node = document.createElement(elementName)!;;
+    let newNode: Node = document.createElement(elementName)!;;
     
 newNode!.appendChild(ModDomHelper.createNameNode(document, nameText));
     
@@ -154,9 +171,9 @@ newNode!.appendChild(ModDomHelper.createValueNode(document, valueText));
 
                 //@Throws(Exception.constructor)
             
-    public static createNameValueNodes(document: Document, elementNameAndNameText: string, valueText: string): Node{
+    public static createNameValueNodes$overload2(document: Document, elementNameAndNameText: string, valueText: string): Node{
 
-    var newNode: Node = ModDomHelper.createNameValueNodes(document, elementNameAndNameText, elementNameAndNameText, valueText)!;;
+    let newNode: Node = ModDomHelper.createNameValueNodes(document, elementNameAndNameText, elementNameAndNameText, valueText)!;;
     
 
 
@@ -166,12 +183,19 @@ newNode!.appendChild(ModDomHelper.createValueNode(document, valueText));
     
 }
 
-
+static createNameValueIndexNodes(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[1] === 'string' && typeof args[2] === 'number' && typeof args[3] === 'string') return this.createNameValueIndexNodes$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 4 && typeof args[1] === 'string' && typeof args[2] === 'string') return this.createNameValueIndexNodes$overload2(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: createNameValueIndexNodes'); }
+  
                 //@Throws(Exception.constructor)
             
-    public static createNameValueIndexNodes(document: Document, elementNameAndNameText: string, index: number, valueText: string): Node{
+    public static createNameValueIndexNodes$overload1(document: Document, elementNameAndNameText: string, index: number, valueText: string): Node{
 
-    var newNode: Node = ModDomHelper.createNameValueNodes(document, elementNameAndNameText, valueText)!;;
+    let newNode: Node = ModDomHelper.createNameValueNodes(document, elementNameAndNameText, valueText)!;;
     
 newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
     
@@ -186,9 +210,9 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
 
                 //@Throws(Exception.constructor)
             
-    public static createNameValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
+    public static createNameValueNodes$overload3(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
 
-    var node: Node = document.createElement(rootNode)!;;
+    let node: Node = document.createElement(rootNode)!;;
     
 
 
@@ -201,18 +225,18 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
 
                 //@Throws(Exception.constructor)
             
-    public static createNameValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
+    public static createNameValueNodes$overload4(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;;
+    let keySet: Set = hashMap!.keys()!;;
     
 
-    var keyArray: any[] = keySet!.()!;;
+    let keyArray: any[] = keySet!.()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
@@ -220,16 +244,16 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var objectKey: any = keyArray[i]!;;
+    let objectKey: any = keyArray[i]!;;
     
 
-    var name: string = objectKey as string;;
+    let name: string = objectKey as string;;
     
 
-    var anyType: any = hashMap!.get(objectKey);;
+    let anyType: any = hashMap!.get(objectKey);;
     
 
                         if(anyType == 
@@ -238,7 +262,7 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
                         
                                     {
                                     
-    var value: string = stringUtil!.EMPTY_STRING;;
+    let value: string = stringUtil!.EMPTY_STRING;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
     
@@ -246,11 +270,11 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                                     }
                                 
                              else 
-                        if(anyType instanceof String)
+                        if(((value: any) => typeof value === 'string' || value instanceof String)(anyType))
                         
                                     {
                                     
-    var value: string = stringUtil!.getNonNull(anyType as string)!;;
+    let value: string = stringUtil!.getNonNull(anyType as string)!;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
     
@@ -288,25 +312,25 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 
                 //@Throws(Exception.constructor)
             
-    public static createNameValueNodes(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: BasicArrayList): Node{
+    public static createNameValueNodes$overload5(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: BasicArrayList): Node{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var node: Node = document.createElement(rootNodeName)!;;
+    let node: Node = document.createElement(rootNodeName)!;;
     
 
-    var size: number = valueVector!.size()!;;
+    let size: number = valueVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var value: string = stringUtil!.getNonNull(valueVector!.get(i) as string)!;;
+    let value: string = stringUtil!.getNonNull(valueVector!.get(i) as string)!;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, value));
     
@@ -323,25 +347,25 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, 
 
                 //@Throws(Exception.constructor)
             
-    public static createNameValueIndexNodes(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: BasicArrayList): Node{
+    public static createNameValueIndexNodes$overload2(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: BasicArrayList): Node{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var node: Node = document.createElement(rootNodeName)!;;
+    let node: Node = document.createElement(rootNodeName)!;;
     
 
-    var size: number = valueVector!.size()!;;
+    let size: number = valueVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var value: string = stringUtil!.getNonNull(valueVector!.get(index) as string)!;;
+    let value: string = stringUtil!.getNonNull(valueVector!.get(index) as string)!;;
     
 node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeName, index, value));
     
@@ -355,12 +379,19 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
     
 }
 
-
+static createNodeWithValueNodes(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[1] === 'string') return this.createNodeWithValueNodes$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 3) return this.createNodeWithValueNodes$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: createNodeWithValueNodes'); }
+  
                 //@Throws(Exception.constructor)
             
-    public static createNodeWithValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
+    public static createNodeWithValueNodes$overload1(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
 
-    var node: Node = document.createElement(rootNode)!;;
+    let node: Node = document.createElement(rootNode)!;;
     
 
 
@@ -373,18 +404,18 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
 
                 //@Throws(Exception.constructor)
             
-    public static createNodeWithValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
+    public static createNodeWithValueNodes$overload2(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;;
+    let keySet: Set = hashMap!.keys()!;;
     
 
-    var keyArray: any[] = keySet!.()!;;
+    let keyArray: any[] = keySet!.()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
@@ -392,16 +423,16 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var name: string = keyArray[i]! as string;;
+    let name: string = keyArray[i]! as string;;
     
 
-    var anyType: any = hashMap!.get(name);;
+    let anyType: any = hashMap!.get(name);;
     
 
-    var value: string = stringUtil!.getNonNull(anyType as string)!;;
+    let value: string = stringUtil!.getNonNull(anyType as string)!;;
     
 node.appendChild(ModDomHelper.createTextNode(document, name, value));
     
@@ -423,6 +454,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -28,6 +28,7 @@ import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/AB
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 //not GWT import const Group
@@ -55,6 +56,7 @@ import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/me
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 
 
@@ -115,13 +117,13 @@ this.rtsFormInputArray[1]= new UnitRTSFormInput(this.groupInterfaceArray);
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
-    var size: number = this.rtsFormInputArray!.length
+    let size: number = this.rtsFormInputArray!.length
                 ;;
     
 
@@ -129,7 +131,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.rtsFormInputArray[index]!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
@@ -142,10 +144,10 @@ this.rtsFormInputArray[index]!.setAllBinaryGameLayerManager(allBinaryGameLayerMa
             
     public processAtPoint(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
 
-    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
+    let scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
     
 
-    var index: number = scrollSelectionForm!.getSelectedIndexForPoint(point)!;;
+    let index: number = scrollSelectionForm!.getSelectedIndexForPoint(point)!;;
     
 
                         if(this.isStickyItemSelected() && associatedRtsLayer == CollidableDestroyableDamageableLayer.getNullInstance())
@@ -179,7 +181,7 @@ this.rtsFormInputArray[index]!.setAllBinaryGameLayerManager(allBinaryGameLayerMa
             
     public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, index: number){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.itemIndex[0], this, commonStrings!.PROCESS);
     
@@ -274,6 +276,4 @@ this.rtsFormInputArray[0]!.setSelectedStickyItem(selectedStickyItem);
 
 
 }
-
-
 

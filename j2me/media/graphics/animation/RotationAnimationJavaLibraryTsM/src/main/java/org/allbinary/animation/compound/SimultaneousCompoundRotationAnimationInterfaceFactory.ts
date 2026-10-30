@@ -32,6 +32,7 @@ import { RotationAnimation } from '../../../../org/allbinary/animation/RotationA
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 
 
@@ -98,6 +99,4 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
 
 
 }
-
-
 

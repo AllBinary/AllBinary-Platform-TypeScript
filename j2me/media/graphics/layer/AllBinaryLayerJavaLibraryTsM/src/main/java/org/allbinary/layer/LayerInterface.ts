@@ -50,43 +50,41 @@ import { PositionInterface } from './PositionInterface.js';
 export interface LayerInterface extends NamedInterface, PaintableInterface, GroupInterfaceCompositeInterface, PositionInterface {
         
 
-    getHeight(): number
+    getHeight(): number;
 
-    getWidth(): number
+    getWidth(): number;
 
-    getHalfHeight(): number
+    getHalfHeight(): number;
 
-    getHalfWidth(): number
+    getHalfWidth(): number;
 
-    getXP(): number
+    getXP(): number;
 
-    getYP(): number
+    getYP(): number;
 
-    getZP(): number
+    getZP(): number;
 
-    getX2(): number
+    getX2(): number;
 
-    getY2(): number
+    getY2(): number;
 
-    getZ2(): number
+    getZ2(): number;
 
-    isVisible(): boolean
+    isVisible(): boolean;
 
-    moveDXYZ(dx: number, dy: number, dz: number)
+    moveDXYZ(dx: number, dy: number, dz: number): void;
 
-    setVisible(visible: boolean)
+    setVisible(visible: boolean): void;
 
-    implmentsTickableInterface(): boolean
+    implmentsTickableInterface(): boolean;
 
-    implmentsCollidableInterface(): boolean
+    implmentsCollidableInterface(): boolean;
 
-    implmentsGameInputInterface(): boolean
+    implmentsGameInputInterface(): boolean;
 
-    implmentsArtificialIntelligenceCompositeInterface(): boolean
+    implmentsArtificialIntelligenceCompositeInterface(): boolean;
 
-    getType(): number
+    getType(): number;
 
 }
-
-
 

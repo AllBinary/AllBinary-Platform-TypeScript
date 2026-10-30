@@ -77,8 +77,7 @@ this.setTagRequestHelperFactory(new DownloadItemsRequestHelperFactory());
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(this.isEnabled())
                         
                                     {
@@ -93,7 +92,7 @@ this.setTagRequestHelperFactory(new DownloadItemsRequestHelperFactory());
                         
                                     {
                                     
-    var parentTag: Tag = this.getParent()!;;
+    let parentTag: Tag = this.getParent()!;;
     
 ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag);
     
@@ -120,10 +119,11 @@ this.getPropertiesHashMap()!.put(AbTagData.PARENT, parentTag);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -132,12 +132,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

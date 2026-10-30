@@ -25,12 +25,14 @@ import { StoreFrontFactory } from '../../../org/allbinary/business/context/modul
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -78,15 +80,14 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
     public isValid(): Boolean{
 
-        try {
-            
-    var valid: Boolean = Boolean.TRUE;;
+ try { 
+    let valid: Boolean = Boolean.TRUE;;
     
 
-                        if(this.newStoreFrontInterface!.isValid() == Boolean.FALSE)
+                        if(this.newStoreFrontInterface!.isValid() == false)
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -97,7 +98,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                 )
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -108,10 +109,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -125,21 +127,22 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-                        if(this.newStoreFrontInterface!.isValid() == Boolean.FALSE)
+                        if(this.newStoreFrontInterface!.isValid() == false)
                         
                                     {
                                     stringBuffer!.append(this.newStoreFrontInterface!.validationInfo());
@@ -164,10 +167,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -183,8 +187,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -209,6 +215,4 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
 }
-
-
 

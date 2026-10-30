@@ -42,12 +42,15 @@ import { NoHighScoresFactory } from '../../../../../org/allbinary/game/score/NoH
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -75,17 +78,17 @@ export class NullGameCanvas extends AllBinaryGameCanvas {
 
     static createNull(): NullGameCanvas{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new NullGameCanvas(AllBinaryGameLayerManager.getNullInstance());
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanvas", CommonStrings.getInstance()!.GET_INSTANCE, e);
     
 
@@ -93,8 +96,10 @@ LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanv
 
                             throw new RuntimeException();
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -123,7 +128,7 @@ LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanv
             
     public static createCanvas(gameLayerManager: AllBinaryGameLayerManager): NullGameCanvas{
 
-    var nullGameCanvas: NullGameCanvas = new NullGameCanvas(gameLayerManager);;
+    let nullGameCanvas: NullGameCanvas = new NullGameCanvas(gameLayerManager);;
     
 nullGameCanvas!.setInitialized(true);
     
@@ -217,19 +222,21 @@ this.setCommandListener(cmdListener);
 
     public run(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
+ try { this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.RUN);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -244,6 +251,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, 
 
 
 }
-
-
 

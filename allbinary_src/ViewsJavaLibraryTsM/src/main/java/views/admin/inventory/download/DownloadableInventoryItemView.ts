@@ -28,9 +28,11 @@ import { HashMap } from '../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -61,6 +63,7 @@ import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { MultipartRequestParams } from '../../../../org/allbinary/logic/communication/http/request/MultipartRequestParams.js';
 //not GWT import const MultipartRequestParams
@@ -70,12 +73,14 @@ import { RequestMapInterface } from '../../../../org/allbinary/logic/communicati
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
 
 //not plain js import { FilePathData } 
 const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+type FilePathData<T = any, U = any> = typeof FilePathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof FilePathData;
 
 import { FileUtil } from '../../../../org/allbinary/logic/io/file/FileUtil.js';
 //not GWT import const FileUtil
@@ -85,6 +90,7 @@ import { ZipFileUtil } from '../../../../org/allbinary/logic/io/file/zip/ZipFile
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -179,7 +185,7 @@ this.id= this.getRequestHashMap()!.get(this.basicItemData!.ID) as string;
 
     public addDomNodeInterfaces(){
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 
                         if(this.downloadableItem != 
@@ -201,8 +207,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -210,10 +215,11 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -228,8 +234,10 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -237,18 +245,18 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
             
     processFile(fileItem: FileItem){
 
-    var fileName: string = fileItem!.getName()!;;
+    let fileName: string = fileItem!.getName()!;;
     
 
-    var fullPath: string = this.getItemFilePath()!;;
+    let fullPath: string = this.getItemFilePath()!;;
     
 
-    var itemResourceFile: AbFile = AbFile.createAbFile(fullPath)!;;
+    let itemResourceFile: AbFile = AbFile.createAbFile(fullPath)!;;
     
 itemResourceFile!.mkdir();
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(fullPath);
     
@@ -257,14 +265,14 @@ stringBuffer!.append(fileName);
 this.logUtil!.putF("FileName: " +fileName, this, "processFile()");
     
 
-    var file: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
+    let file: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
     
 this.logUtil!.putF(file.getPath(), this, "processFiles()");
     
 file.createNewFile();
     
 
-    var byteArray: number[] = fileItem!.get()!;;
+    let byteArray: number[] = fileItem!.get()!;;
     
 FileUtil.getInstance()!.write(new ByteArrayInputStream(byteArray), file);
     
@@ -275,13 +283,13 @@ FileUtil.getInstance()!.write(new ByteArrayInputStream(byteArray), file);
             
     unzip(fileItem: FileItem){
 
-    var fileName: string = fileItem!.getName()!;;
+    let fileName: string = fileItem!.getName()!;;
     
 
-    var fullPath: string = this.getItemFilePath()!;;
+    let fullPath: string = this.getItemFilePath()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(fullPath);
     
@@ -290,7 +298,7 @@ stringBuffer!.append(fileName);
 this.logUtil!.putF("FileName: " +fileName, this, "unzip()");
     
 
-    var file: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
+    let file: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
     
 this.logUtil!.putF(file.getPath(), this, "unzip()");
     
@@ -301,13 +309,13 @@ ZipFileUtil.getInstance()!.unzip(fullPath, file, fileName);
 
     getItemFilePath(): string{
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
     
 
-    var filePathData: FilePathData = FilePathData.getInstance()!;;
+    let filePathData: FilePathData = FilePathData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
@@ -361,6 +369,4 @@ this.requestHashMap= requestHashMap;
 
 
 }
-
-
 

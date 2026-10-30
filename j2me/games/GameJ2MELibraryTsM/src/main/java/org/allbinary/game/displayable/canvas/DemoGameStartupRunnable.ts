@@ -22,9 +22,11 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { ABRunnable } from '../../../../../org/allbinary/thread/ABRunnable.js';
 //not GWT import const ABRunnable
@@ -69,8 +71,7 @@ public constructor (demoCanvas: DemoCanvas){
 
     public run(){
 
-        try {
-            this.setRunning(true);
+ try { this.setRunning(true);
     
 this.demoCanvas!.stopGameDemo();
     
@@ -80,19 +81,22 @@ this.demoCanvas!.start();
     
 this.setRunning(false);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.setRunning(false);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -107,6 +111,4 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
 }
-
-
 

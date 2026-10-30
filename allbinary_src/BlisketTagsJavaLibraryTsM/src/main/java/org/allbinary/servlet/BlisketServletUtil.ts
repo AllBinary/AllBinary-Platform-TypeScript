@@ -31,6 +31,7 @@ import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 import { WebappClassLoaderInfo } from '../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js';
 //not GWT import const WebappClassLoaderInfo
@@ -73,7 +74,7 @@ export class BlisketServletUtil
 
     public init(request: HttpServletRequest){
 
-    var urlGlobals: AppUrlGlobals = new AppUrlGlobals();;
+    let urlGlobals: AppUrlGlobals = new AppUrlGlobals();;
     
 urlGlobals!.setWebappPath(request.getServletContext()!.getRealPath(AbPathData.getInstance()!.SEPARATOR));
     
@@ -85,6 +86,4 @@ WebappClassLoaderInfo.setLoader(constructor.namegetClassLoader());
 
 
 }
-
-
 

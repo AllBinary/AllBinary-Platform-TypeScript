@@ -34,9 +34,11 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -123,23 +125,25 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;--index >= 0; )
+    let index: number = this.list.size()!;--index >= 0; )
         {
 
-        try {
-            
-    var layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;;
+ try { 
+    let layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;;
     
 layerManagerEventListener!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 super.fireEvent(eventObject);
@@ -160,56 +164,60 @@ super.fireEvent(eventObject);
 
 
                         for (
-    var index: number = this.list.size()!;--index >= 0; )
+    let index: number = this.list.size()!;--index >= 0; )
         {
 
-        try {
-            
-    var layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;;
+ try { 
+    let layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;;
     
 layerManagerEventListener!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
+
+ }
+   }
+ 
 }
 
-}
 
-
-    var eventListenerInterfaceList: BasicArrayList = this.eventListenerInterfaceList;;
+    let eventListenerInterfaceList: BasicArrayList = this.eventListenerInterfaceList;;
     
 
-    var eventListenerInterface: EventListenerInterface;;
+    let eventListenerInterface: EventListenerInterface;;
     
 
-    var layerManagerEventListenerInterface: LayerManagerEventListenerInterface;;
+    let layerManagerEventListenerInterface: LayerManagerEventListenerInterface;;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(index < eventListenerInterfaceList!.size())
         {
 
-        try {
-            eventListenerInterface= eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
+ try { eventListenerInterface= eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
     
 layerManagerEventListenerInterface= (eventListenerInterface as LayerManagerEventListenerInterface);
     
 layerManagerEventListenerInterface!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 index++;
     
 }
@@ -221,7 +229,7 @@ index++;
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var layerManagerEventListenerInterface: LayerManagerEventListenerInterface = (eventListenerInterface as LayerManagerEventListenerInterface);;
+    let layerManagerEventListenerInterface: LayerManagerEventListenerInterface = (eventListenerInterface as LayerManagerEventListenerInterface);;
     
 layerManagerEventListenerInterface!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent);
     
@@ -229,6 +237,4 @@ layerManagerEventListenerInterface!.onCreateLayerManagerEvent(eventObject as Lay
 
 
 }
-
-
 

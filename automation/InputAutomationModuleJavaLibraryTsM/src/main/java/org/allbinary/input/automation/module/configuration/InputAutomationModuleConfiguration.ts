@@ -62,6 +62,7 @@ import { InputAutomationModuleFactoryInterface } from '../../../../../../org/all
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeFactory } from '../../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
 //not GWT import const AbeFactory
@@ -71,6 +72,7 @@ import { AbeClientInformationInterface } from '../../../../../../org/allbinary/l
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -150,12 +152,19 @@ this.setClassName(this.inputAutomationModuleInterface!.constructor.name.toString
     
 }
 
-
+init(...args: any[]): any {
+   
+    if (args.length === 2) return this.init$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.init$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: init'); }
+  
                 //@Throws(Exception.constructor)
             
-    public init(abeClientInformation: AbeClientInformationInterface, node: Node){
+    public init$overload1(abeClientInformation: AbeClientInformationInterface, node: Node){
 
-    var nodeList: NodeList = node.getChildNodes()!;;
+    let nodeList: NodeList = node.getChildNodes()!;;
     
 
                         if(nodeList != 
@@ -164,7 +173,7 @@ this.setClassName(this.inputAutomationModuleInterface!.constructor.name.toString
                         
                                     {
                                     
-    var classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, nodeList)!;;
+    let classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, nodeList)!;;
     
 
                         if(classNameNode != 
@@ -197,19 +206,19 @@ this.init(abeClientInformation);
 }
 
 
-    public init(abeClientInformation: AbeClientInformationInterface){
+    public init$overload2(abeClientInformation: AbeClientInformationInterface){
 
-        try {
-            this.logUtil!.putF("Name: " +getName(), this, this.commonStrings!.INIT);
+ try { this.logUtil!.putF("Name: " +getName(), this, this.commonStrings!.INIT);
     
 this.logUtil!.putF("ClassName: " +className, this, this.commonStrings!.INIT);
     
 this.setInputAutomationModuleInterface(AbeFactory.getInstance()!.getInstance()!.getInstance(abeClientInformation, getClassName()) as InputAutomationModuleFactoryInterface);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 
@@ -217,8 +226,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
 
                             throw new RuntimeException();
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -226,10 +237,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
             
     public toDomNode(document: Document): Node{
 
-    var node: Node = document.createElement(InputAutomationModuleData.NAME)!;;
+    let node: Node = document.createElement(InputAutomationModuleData.NAME)!;;
     
 
-    var classNameNode: Node = ModDomHelper.createTextNode(document, DynamicObjectData.NAME, this.getClassName())!;;
+    let classNameNode: Node = ModDomHelper.createTextNode(document, DynamicObjectData.NAME, this.getClassName())!;;
     
 node.appendChild(classNameNode);
     
@@ -299,6 +310,4 @@ this.setName(this.inputAutomationModuleInterface!.getName());
 
 
 }
-
-
 

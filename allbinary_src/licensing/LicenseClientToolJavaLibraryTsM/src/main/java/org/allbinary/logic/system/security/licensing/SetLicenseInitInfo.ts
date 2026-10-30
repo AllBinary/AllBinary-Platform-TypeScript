@@ -53,6 +53,7 @@ import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js'
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -88,7 +89,7 @@ export class SetLicenseInitInfo
             
     public static main(args: string[]){
 
-    var initInfo: SetLicenseInitInfo = new SetLicenseInitInfo(args);;
+    let initInfo: SetLicenseInitInfo = new SetLicenseInitInfo(args);;
     
 initInfo!.createNewLicenseInitInfo(new BasicArrayListD());
     
@@ -107,7 +108,7 @@ public constructor (options: string[]){
 
 
                         for (
-    var index: number = 1;index < options.length; index++)
+    let index: number = 1;index < options.length; index++)
         {
 this.vector.add(options[index]!);
     
@@ -120,7 +121,7 @@ this.vector.add(options[index]!);
             
     public getLicenseInitInfo(): LicenseInitInfo{
 
-    var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;;
+    let licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;;
     
 
                         if(FileFactory.getInstance()!.isFile(licenseInitInfoUtil!.INITFILENAME))
@@ -150,8 +151,7 @@ this.vector.add(options[index]!);
 
     public createNewLicenseInitInfo(licenceServerVector: BasicArrayList){
 
-        try {
-            
+ try { 
                         if(licenceServerVector == 
                                     null
                                 )
@@ -166,26 +166,26 @@ this.vector.add(options[index]!);
                                     }
                                 
 
-    var licenseInitInfo: LicenseInitInfo = this.getLicenseInitInfo()!;;
+    let licenseInitInfo: LicenseInitInfo = this.getLicenseInitInfo()!;;
     
 console.log("License Serv Example: http://www.dartstatistics.com/LicServ/serverssl.php");
     
 licenseInitInfo!.clearServers();
     
 
-    var file: File = new File(PrintLicenseInitInfo.PATH +"licenseservers.txt");;
+    let file: File = new File(PrintLicenseInitInfo.PATH +"licenseservers.txt");;
     
 
-    var reader: FileReader = new FileReader(file);;
+    let reader: FileReader = new FileReader(file);;
     
 
-    var lineNumberReader: LineNumberReader = new LineNumberReader(reader);;
+    let lineNumberReader: LineNumberReader = new LineNumberReader(reader);;
     
 
         while(true)
         {
 
-    var line: string = lineNumberReader!.readLine()!;;
+    let line: string = lineNumberReader!.readLine()!;;
     
 
                         if(line != 
@@ -211,20 +211,21 @@ LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo);
     
 LicenseInitInfoUtil.getInstance()!.read();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 console.log("Error: " +e);
     
 e.printStackTrace();
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -39,6 +39,7 @@ import { VirtualKeyboardEventListenerInterface } from '../../../../../org/allbin
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -97,7 +98,7 @@ this.showVirtualKeyboardRunnable= new ShowVirtualKeyboardRunnable(this.activity)
 this.hideVirtualKeyboardRunnable= new HideVirtualKeyboardRunnable(this.activity);
     
 
-    var virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;;
+    let virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;;
     
 virtualKeyboardEventHandler!.removeAllListeners();
     
@@ -114,7 +115,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     public onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent){
 
-    var isShow: Boolean = virtualKeyboardEvent!.getSource() as Boolean;;
+    let isShow: Boolean = virtualKeyboardEvent!.getSource() as Boolean;;
     
 
                         if(isShow.valueOf())
@@ -170,6 +171,4 @@ this.virtualKeyboard= false;
 
 
 }
-
-
 

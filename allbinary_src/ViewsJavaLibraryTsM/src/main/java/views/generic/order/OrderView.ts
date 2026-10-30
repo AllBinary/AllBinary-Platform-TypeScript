@@ -43,6 +43,7 @@ import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeIn
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -105,7 +106,7 @@ this.getFormData();
             
     getFormData(){
 
-    var id: string = this.request.getParameter(OrderData.ID)!;;
+    let id: string = this.request.getParameter(OrderData.ID)!;;
     
 
                         if(id == 
@@ -127,12 +128,11 @@ this.order.setId(id);
 
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var orderHistoryNode: Node = this.orderHistory!.toXmlNode(document)!;;
+ try { 
+    let orderHistoryNode: Node = this.orderHistory!.toXmlNode(document)!;;
     
 
-    var node: Node = document.createElement(this.orderHistory!.getPaymentMethod())!;;
+    let node: Node = document.createElement(this.orderHistory!.getPaymentMethod())!;;
     
 orderHistoryNode!.appendChild(this.basketReview!.toXmlNode(document));
     
@@ -144,10 +144,11 @@ node.appendChild(orderHistoryNode);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
@@ -163,8 +164,10 @@ node.appendChild(orderHistoryNode);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -178,8 +181,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -187,10 +189,11 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -205,12 +208,12 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

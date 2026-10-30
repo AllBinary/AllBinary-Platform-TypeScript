@@ -51,9 +51,11 @@ import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/Primit
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 
 
@@ -128,7 +130,7 @@ this.basicColorArray= basicColorArray;
 
 
                         for (
-    var index: number = 0;index < this.basicColorArray!.length; index++)
+    let index: number = 0;index < this.basicColorArray!.length; index++)
         {
 
                         if(basicColor == this.basicColorArray[index])
@@ -298,6 +300,4 @@ this.sprite.setFrame(frame);
 
 
 }
-
-
 

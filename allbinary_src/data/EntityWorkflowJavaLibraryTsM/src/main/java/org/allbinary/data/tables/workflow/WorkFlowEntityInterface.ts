@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { BasicDataTableInterface } from '../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
 //not GWT import const BasicDataTableInterface
@@ -60,19 +62,17 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
 export interface WorkFlowEntityInterface extends BasicDataTableInterface {
         
 
-    get(storeName: string): BasicArrayList
+    get(storeName: string): BasicArrayList;
 
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
-    get(name: string, storeName: string): WorkFlowInterface
+    get(name: string, storeName: string): WorkFlowInterface;
 
-    delete(name: string, storeName: string)
+    delete(name: string, storeName: string): void;
 
-    insert(values: BasicArrayList)
+    insert(values: BasicArrayList): void;
 
-    update(updatedValues: HashMap<any, any>)
+    update(updatedValues: HashMap<any, any>): void;
 
 }
-
-
 

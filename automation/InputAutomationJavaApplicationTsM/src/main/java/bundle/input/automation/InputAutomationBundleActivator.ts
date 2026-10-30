@@ -53,12 +53,14 @@ import { InputAutomationRobotServiceConsumer } from '../../../org/allbinary/inpu
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { OSGIActivatorUtil } from '../../../org/allbinary/osgi/OSGIActivatorUtil.js';
 //not GWT import const OSGIActivatorUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -108,8 +110,7 @@ export class InputAutomationBundleActivator
             
     public start(bundleContext: BundleContext){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START);
     
 this.bundleContext= bundleContext;
     
@@ -119,10 +120,11 @@ InputAutomationBundleActivator.moduleManagementThread!.start();
     
 InputAutomationJFrame.create(this);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START, e);
     
 
@@ -130,17 +132,19 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
     public registerAsService(){
-OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationConfigurationModuleChangeListener.constructor.toString()!);
+OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationConfigurationModuleChangeListener.toString()!);
     
-OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationRobotChangeListener.constructor.toString()!);
+OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationRobotChangeListener.toString()!);
     
 }
 
@@ -181,6 +185,4 @@ this.logUtil!.putF(this.commonStrings!.START, this, "stop");
 
 
 }
-
-
 

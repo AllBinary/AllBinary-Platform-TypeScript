@@ -46,9 +46,7 @@ export interface StoreWorkFlowInterface extends WorkFlowInterface {
 
                 //@Throws(Exception.constructor)
             
-    getStoreName(): string
+    getStoreName(): string;
 
 }
-
-
 

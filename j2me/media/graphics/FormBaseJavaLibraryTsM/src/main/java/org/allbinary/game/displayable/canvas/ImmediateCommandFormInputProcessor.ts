@@ -34,6 +34,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -79,8 +80,7 @@ this.gameCommandCanvas= gameCommandCanvas;
 
     public onPressGameKeyEvent(gameKeyEvent: GameKeyEvent){
 
-        try {
-            super.onPressGameKeyEvent(gameKeyEvent);
+ try { super.onPressGameKeyEvent(gameKeyEvent);
     
 
                         if(this.timeHelper!.isTimeTNT())
@@ -93,22 +93,24 @@ this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.ON_PRESS_GAME_KEY, e);
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
 
-        try {
-            super.onDownGameKeyEvent(gameKeyEvent);
+ try { super.onDownGameKeyEvent(gameKeyEvent);
     
 
                         if(this.timeHelper!.isTimeTNT())
@@ -121,22 +123,24 @@ this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.ON_DOWN_GAME_KEY, e);
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
 
-        try {
-            super.onUpGameKeyEvent(gameKeyEvent);
+ try { super.onUpGameKeyEvent(gameKeyEvent);
     
 
                         if(this.timeHelper!.isTimeTNT())
@@ -149,21 +153,23 @@ this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.ON_UP_GAME_KEY, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public onMotionGestureEvent(motionGestureEvent: MotionGestureEvent){
 
-        try {
-            super.onMotionGestureEvent(motionGestureEvent);
+ try { super.onMotionGestureEvent(motionGestureEvent);
     
 
                         if(this.timeHelper!.isTimeTNT())
@@ -176,18 +182,19 @@ this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onMotionGestureEvent", e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

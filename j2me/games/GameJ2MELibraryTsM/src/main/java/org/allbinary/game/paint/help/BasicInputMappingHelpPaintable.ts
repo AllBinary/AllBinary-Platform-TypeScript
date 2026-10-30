@@ -44,12 +44,15 @@ import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/B
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -94,36 +97,36 @@ this.update(this.NONE, this.NONE);
 
     public update(selectedGameKey: GameKey, selectedInput: Input){
 
-    var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;;
+    let gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;;
     
 
-    var EQUAL: string = " = ";;
+    let EQUAL: string = " = ";;
     
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var size: number = this.gameInputMappingArray!.length
+    let size: number = this.gameInputMappingArray!.length
                 ;;
     
 
-    var keyInfo: string[] = new Array(size);;
+    let keyInfo: string[] = new Array(size);;
     
 
-    var gameInputMapping: GameInputMapping;;
+    let gameInputMapping: GameInputMapping;;
     
 
-    var gameKey: GameKey;;
+    let gameKey: GameKey;;
     
 
-    var list: BasicArrayList;;
+    let list: BasicArrayList;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 gameInputMapping= this.gameInputMappingArray[index]!;
     
@@ -144,26 +147,26 @@ super.setInputInfoP(keyInfo);
 
     get(keyList: BasicArrayList): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var AND: string = "and ";;
+    let AND: string = "and ";;
     
 
-    var key: Input;;
+    let key: Input;;
     
 
-    var size: number = keyList!.size()!;;
+    let size: number = keyList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 key= keyList!.objectArray[index]! as Input;
     
@@ -218,6 +221,4 @@ stringBuffer!.append(AND);
 
 
 }
-
-
 

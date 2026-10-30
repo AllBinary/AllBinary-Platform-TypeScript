@@ -48,17 +48,15 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 export interface GenericProfileDataWorkerTypeInterface {
         
 
-    getName(): string
+    getName(): string;
 
-    setName(name: string)
+    setName(name: string): void;
 
-    toString(): string
+    toString(): string;
 
                 //@Throws(Exception.constructor)
             
-    toXmlNode(document: Document): Node
+    toXmlNode(document: Document): Node;
 
 }
-
-
 

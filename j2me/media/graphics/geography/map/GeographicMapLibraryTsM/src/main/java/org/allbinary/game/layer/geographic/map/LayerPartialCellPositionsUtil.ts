@@ -24,6 +24,7 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
@@ -79,16 +80,16 @@ export class LayerPartialCellPositionsUtil
 reusableList!.clear();
     
 
-    var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP(), layerInterface!.getYP())!;;
+    let topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP(), layerInterface!.getYP())!;;
     
 
-    var topRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +layerInterface!.getWidth(), layerInterface!.getYP())!;;
+    let topRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +layerInterface!.getWidth(), layerInterface!.getYP())!;;
     
 
-    var bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP(), layerInterface!.getYP() +layerInterface!.getHeight())!;;
+    let bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP(), layerInterface!.getYP() +layerInterface!.getHeight())!;;
     
 
-    var bottomRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +layerInterface!.getWidth(), layerInterface!.getYP() +layerInterface!.getHeight())!;;
+    let bottomRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +layerInterface!.getWidth(), layerInterface!.getYP() +layerInterface!.getHeight())!;;
     
 
                         if(topLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
@@ -141,16 +142,16 @@ reusableList!.clear();
 reusableList!.clear();
     
 
-    var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +dx, layerInterface!.getYP() +dy)!;;
+    let topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +dx, layerInterface!.getYP() +dy)!;;
     
 
-    var topRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +layerInterface!.getWidth() +dx, layerInterface!.getYP() +dy)!;;
+    let topRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +layerInterface!.getWidth() +dx, layerInterface!.getYP() +dy)!;;
     
 
-    var bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +dx, layerInterface!.getYP() +layerInterface!.getHeight() +dy)!;;
+    let bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +dx, layerInterface!.getYP() +layerInterface!.getHeight() +dy)!;;
     
 
-    var bottomRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +layerInterface!.getWidth() +dx, layerInterface!.getYP() +layerInterface!.getHeight() +dy)!;;
+    let bottomRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +layerInterface!.getWidth() +dx, layerInterface!.getYP() +layerInterface!.getHeight() +dy)!;;
     
 
                         if(topLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
@@ -198,6 +199,4 @@ reusableList!.clear();
 
 
 }
-
-
 

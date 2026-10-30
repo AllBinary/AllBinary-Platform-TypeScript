@@ -32,9 +32,11 @@ import { WaypointBase } from '../../../../org/allbinary/game/layer/waypoint/Wayp
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
 //not GWT import const TickableInterface
@@ -50,6 +52,7 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
 
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+type BasicArrayListS<T = any, U = any> = typeof BasicArrayListS extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListS;
 
 
 
@@ -313,6 +316,4 @@ this.waypoint= waypoint;
     private readonly steeringVisitorList: BasicArrayList = new BasicArrayListD();
 
 }
-
-
 

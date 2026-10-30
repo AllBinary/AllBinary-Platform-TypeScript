@@ -27,9 +27,11 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
@@ -39,6 +41,7 @@ import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js'
 
 //not plain js import { CoreImage } 
 const CoreImage = globalThis.playn.core.CoreImage;
+type CoreImage<T = any, U = any> = typeof CoreImage extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CoreImage;
 
 
 
@@ -90,10 +93,10 @@ export class ImageCompleteUtil
             
     public isReady(image: Image, name: string, timeDelayHelper: TimeDelayHelper): boolean{
 
-    var playnImage: PlaynImage = image as PlaynImage;;
+    let playnImage: PlaynImage = image as PlaynImage;;
     
 
-    var playnCoreImage: CoreImage = playnImage!.getImage() as CoreImage;;
+    let playnCoreImage: CoreImage = playnImage!.getImage() as CoreImage;;
     
 
                         if(!playnCoreImage!.isReady() || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
@@ -129,7 +132,7 @@ export class ImageCompleteUtil
                                     }
                                 
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(this.COMPLETE +image.getName(), this, commonStrings!.SUCCESS);
     
@@ -155,6 +158,4 @@ PreLogUtil.put(this.COMPLETE +image.getName(), this, commonStrings!.SUCCESS);
 
 
 }
-
-
 

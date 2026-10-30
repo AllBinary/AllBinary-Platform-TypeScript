@@ -93,10 +93,10 @@ export class FullScreenUtil
 
     public isScreenChange(isFullScreen: boolean): boolean{
 
-    var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;;
+    let mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;;
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(mainFeatureFactory!.FULL_SCREEN) != isFullScreen)
@@ -131,6 +131,4 @@ export class FullScreenUtil
 
 
 }
-
-
 

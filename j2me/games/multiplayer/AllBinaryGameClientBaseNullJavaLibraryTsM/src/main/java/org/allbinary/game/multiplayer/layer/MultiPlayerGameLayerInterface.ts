@@ -42,9 +42,7 @@
 export interface MultiPlayerGameLayerInterface {
         
 
-    getMultiplayerBehavior(): MultiplayerBehavior
+    getMultiplayerBehavior(): MultiplayerBehavior;
 
 }
-
-
 

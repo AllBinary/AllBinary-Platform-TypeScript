@@ -40,11 +40,9 @@
 export interface BasicDataTableInterface {
         
 
-    createTable(): string
+    createTable(): string;
 
-    dropTable(): string
+    dropTable(): string;
 
 }
-
-
 

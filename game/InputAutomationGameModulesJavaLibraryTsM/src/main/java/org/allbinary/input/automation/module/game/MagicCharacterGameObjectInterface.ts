@@ -44,11 +44,9 @@ import { MagicGameObjectInterface } from './MagicGameObjectInterface.js';
 export interface MagicCharacterGameObjectInterface {
         
 
-    getHitPointGameObjectInterface(): HitPointGameObjectInterface
+    getHitPointGameObjectInterface(): HitPointGameObjectInterface;
 
-    getMagicGameObjectInterface(): MagicGameObjectInterface
+    getMagicGameObjectInterface(): MagicGameObjectInterface;
 
 }
-
-
 

@@ -72,5 +72,3 @@ GyroSensorFactory.allBinaryGyroSensor= new NoGyroSensor();
 
 }
 
-
-

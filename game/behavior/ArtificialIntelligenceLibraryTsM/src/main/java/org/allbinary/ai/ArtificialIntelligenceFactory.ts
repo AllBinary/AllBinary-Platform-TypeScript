@@ -54,7 +54,7 @@ export class ArtificialIntelligenceFactory
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(anyType: any = {}): ArtificialIntelligence{
+    public getInstance(anyType: any): ArtificialIntelligence{
 
 
 
@@ -64,6 +64,4 @@ export class ArtificialIntelligenceFactory
 
 
 }
-
-
 

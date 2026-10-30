@@ -34,18 +34,23 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -149,7 +154,7 @@ private constructor (){
                                 
                         else {
                             
-    var connectionVector: BasicArrayList = this.connectionHashMap!.get(url) as BasicArrayList;;
+    let connectionVector: BasicArrayList = this.connectionHashMap!.get(url) as BasicArrayList;;
     
 
                         if(connectionVector == 
@@ -164,7 +169,7 @@ private constructor (){
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.FIRST);
     
@@ -212,20 +217,20 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET);
                                 
                         else {
                             
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = connectionVector!.size()!;;
+    let size: number = connectionVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var sqlConnection: Connection = connectionVector!.get(i) as Connection;;
+    let sqlConnection: Connection = connectionVector!.get(i) as Connection;;
     
 
                         if(!sqlConnection!.isClosed())
@@ -278,7 +283,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.NEW_CONNECTION_FOR);
     
@@ -309,7 +314,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET);
                         
                                     {
                                     
-    var connectionVector: BasicArrayList;;
+    let connectionVector: BasicArrayList;;
     
 
                         if(this.connectionHashMap == 
@@ -352,7 +357,7 @@ this.connectionHashMap!.put(url, connectionVector);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.NUMBER_OF_SQL_CONNECTIONS_FOR);
     
@@ -385,6 +390,4 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_ADD);
 
 
 }
-
-
 

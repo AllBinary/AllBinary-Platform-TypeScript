@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -48,6 +50,7 @@ import { ModDomHelper } from '../../../../org/allbinary/data/tree/dom/ModDomHelp
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { TransformInfoHttpInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
 //not GWT import const TransformInfoHttpInterface
@@ -99,7 +102,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
+    let httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 this.request= httpTransformInfoInterface!.getPageContext()!.getRequest() as HttpServletRequest;
     
@@ -118,22 +121,21 @@ this.request= httpTransformInfoInterface!.getPageContext()!.getRequest() as Http
 
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var billingAddressesNode: Node = document.createElement(BillingAddressData.MULTIPLE)!;;
+ try { 
+    let billingAddressesNode: Node = document.createElement(BillingAddressData.MULTIPLE)!;;
     
 
-    var size: number = this.streetAddresses!.size()!;;
+    let size: number = this.streetAddresses!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var streetAddress: StreetAddress = this.streetAddresses!.get(index) as StreetAddress;;
+    let streetAddress: StreetAddress = this.streetAddresses!.get(index) as StreetAddress;;
     
 billingAddressesNode!.appendChild(streetAddress!.toXmlNode(document));
     
@@ -147,10 +149,11 @@ billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, St
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return billingAddressesNode;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
@@ -166,8 +169,10 @@ billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, St
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -181,8 +186,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -190,10 +194,11 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -208,12 +213,12 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

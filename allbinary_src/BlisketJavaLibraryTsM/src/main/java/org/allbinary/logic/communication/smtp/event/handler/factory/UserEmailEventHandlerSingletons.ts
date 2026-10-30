@@ -27,18 +27,22 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
 //not GWT import const UserInterface
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { UserEmailEventNameData } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 //not GWT import const UserEmailEventNameData
@@ -57,6 +61,7 @@ import { AbeClientInformationInterface } from '../../../../../../../../org/allbi
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -83,8 +88,15 @@ export class UserEmailEventHandlerSingletons
         
 
     private static readonly instance: UserEmailEventHandlerSingletons = new UserEmailEventHandlerSingletons();
-
-    public static getInstance(): UserEmailEventHandlerSingletons{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 3) return this.getInstance$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): UserEmailEventHandlerSingletons{
 
 
 
@@ -117,7 +129,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventHandler{
+    public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventHandler{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -128,7 +140,7 @@ private constructor (){
                                     }
                                 
 
-    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData) as UserEmailEventHandler;;
+    let userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData) as UserEmailEventHandler;;
     
 
                         if(userEmailEventHandler == 
@@ -146,10 +158,10 @@ private constructor (){
                                     }
                                 
 
-    var newUserEmailEventHandler: UserEmailEventHandler = new UserEmailEventHandler();;
+    let newUserEmailEventHandler: UserEmailEventHandler = new UserEmailEventHandler();;
     
 
-    var vector: BasicArrayList = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;;
+    let vector: BasicArrayList = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;;
     
 newUserEmailEventHandler!.addListener(vector);
     
@@ -189,6 +201,4 @@ this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEvent
 
 
 }
-
-
 

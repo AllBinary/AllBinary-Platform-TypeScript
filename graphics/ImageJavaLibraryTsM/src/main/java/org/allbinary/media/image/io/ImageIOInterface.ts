@@ -46,9 +46,7 @@ export interface ImageIOInterface {
 
                 //@Throws(Exception.constructor)
             
-    save(frame: Long)
+    save(frame: Long): void;
 
 }
-
-
 

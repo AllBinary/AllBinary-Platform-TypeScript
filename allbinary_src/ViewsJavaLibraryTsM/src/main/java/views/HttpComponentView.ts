@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomNodeHelper } from '../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
@@ -37,6 +39,7 @@ import { XmlDocumentHelper } from '../org/allbinary/data/tree/dom/document/XmlDo
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -158,19 +161,18 @@ this.domNodeInterfaceVector!.add(domNodeInterface);
             
     public toXmlDoc(): Document{
 
-        try {
-            
-    var size: number = this.domNodeInterfaceVector!.size()!;;
+ try { 
+    let size: number = this.domNodeInterfaceVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface = this.domNodeInterfaceVector!.get(index) as DomNodeInterface;;
+    let domNodeInterface: DomNodeInterface = this.domNodeInterfaceVector!.get(index) as DomNodeInterface;;
     
 this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc()));
     
@@ -182,10 +184,11 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTransformDocumentInterface()!.getDoc();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -200,8 +203,10 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -209,10 +214,10 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
             
     public getDoc(): Document{
 
-    var document: Document = this.getTransformInfoInterface()!.getDataDocument()!;;
+    let document: Document = this.getTransformInfoInterface()!.getDataDocument()!;;
     
 
-    var node: Node = DomNodeHelper.getFirstChildElement(document)!;;
+    let node: Node = DomNodeHelper.getFirstChildElement(document)!;;
     
 
                         if(node != 
@@ -221,7 +226,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
                         
                                     {
                                     
-    var dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(node, true)!;;
+    let dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(node, true)!;;
     
 
                         if(dataNode != 
@@ -250,14 +255,13 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
             
     public view(): string{
 
-        try {
-            this.toXmlDoc();
+ try { this.toXmlDoc();
     
 
-    var success: string = XmlDocumentHelper.toString(this.getDoc())!;;
+    let success: string = XmlDocumentHelper.toString(this.getDoc())!;;
     
 
-    var result: string = new BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
+    let result: string = new BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
     
 
 
@@ -265,10 +269,11 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -283,12 +288,12 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

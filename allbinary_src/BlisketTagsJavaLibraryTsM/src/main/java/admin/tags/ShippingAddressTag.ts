@@ -39,6 +39,7 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -91,19 +92,18 @@ this.value= value;
             
     set(): string{
 
-        try {
-            
-    var anyType: any = new ShippingAddressHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
+ try { 
+    let anyType: any = new ShippingAddressHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("set", 
+    let method: Method = addressHelperClass!.getMethod("set", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -112,22 +112,23 @@ this.value= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to set Shipping Address";;
+    let error: string = "Failed to set Shipping Address";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -144,8 +145,10 @@ this.value= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -153,19 +156,18 @@ this.value= value;
             
     setToBillingAddress(): string{
 
-        try {
-            
-    var anyType: any = new ShippingAddressHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
+ try { 
+    let anyType: any = new ShippingAddressHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("setToBillingAddress", 
+    let method: Method = addressHelperClass!.getMethod("setToBillingAddress", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -174,22 +176,23 @@ this.value= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed Setting Shipping address to Billing Address";;
+    let error: string = "Failed Setting Shipping address to Billing Address";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -206,8 +209,10 @@ this.value= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -215,8 +220,7 @@ this.value= value;
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(this.isEnabled())
                         
                                     {
@@ -272,10 +276,11 @@ this.value= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -284,11 +289,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -297,12 +302,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

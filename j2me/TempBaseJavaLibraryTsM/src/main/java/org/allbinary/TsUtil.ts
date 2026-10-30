@@ -82,7 +82,7 @@ export class TsUtil
 }
 
 
-    public hashCode(anyType: any = {}): number{
+    public hashCode(anyType: any): number{
 
 
 
@@ -94,9 +94,9 @@ export class TsUtil
 
                 //@Throws(InterruptedException.constructor)
             
-    public waitFor(any: any = {}, timeoutMillis: number){
+    public waitFor(any: any, timeoutMillis: number){
 
-    var anyType: any = any;;
+    let anyType: any = any;;
     
 anyType!.wait(timeoutMillis);
     
@@ -114,6 +114,4 @@ anyType!.wait(timeoutMillis);
 
 
 }
-
-
 

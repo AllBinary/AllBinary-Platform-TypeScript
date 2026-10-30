@@ -42,6 +42,7 @@ import { ExitCloseListener } from '../../../../../../org/allbinary/gui/dialog/Ex
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbCryptUtil } from '../../../../../../org/allbinary/logic/system/security/AbCryptUtil.js';
 //not GWT import const AbCryptUtil
@@ -66,6 +67,7 @@ import { LicensingException } from '../../../../../../org/allbinary/logic/system
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -109,12 +111,11 @@ this.logUtil!.putF("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commo
 
     public getDecryptedInputStream(abeClientInformation: AbeClientInformationInterface, name: string, inputStream: InputStream): InputStream{
 
-        try {
-            
-    var key: string = AbKeys.getInstance()!.getKey(abeClientInformation, name)!;;
+ try { 
+    let key: string = AbKeys.getInstance()!.getKey(abeClientInformation, name)!;;
     
 
-    var decrypted: number[] = this.abCryptUtil!.decrypt(inputStream, key)!;;
+    let decrypted: number[] = this.abCryptUtil!.decrypt(inputStream, key)!;;
     
 
 
@@ -122,21 +123,24 @@ this.logUtil!.putF("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commo
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new ByteArrayInputStream(decrypted);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 this.showLicenseDialog(abeClientInformation, e);
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 this.showLicenseDialog(abeClientInformation, e);
     
-}
-*/
+
+ }
+   }
+ 
 
 
 
@@ -148,16 +152,14 @@ this.showLicenseDialog(abeClientInformation, e);
 
     showLicenseDialog(abeClientInformation: AbeClientInformationInterface, e: Exception){
 
-        try {
-            this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
+ try { this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 
-    var basicTextJDialog: BasicTextJDialog = new BasicTextJDialog(e.message);;
+    let basicTextJDialog: BasicTextJDialog = new BasicTextJDialog(e.message);;
     
 
-        try {
-            
-    var abeLicenseInterface: AbeLicenseInterface = AbeLicenseInterfaceFactory.getInstance()!.getLicenseInstance(abeClientInformation)!;;
+ try { 
+    let abeLicenseInterface: AbeLicenseInterface = AbeLicenseInterfaceFactory.getInstance()!.getLicenseInstance(abeClientInformation)!;;
     
 
                         if(abeLicenseInterface != AbeNoLicense.getInstance())
@@ -175,30 +177,34 @@ this.showLicenseDialog(abeClientInformation, e);
 
                                     }
                                 
-
-                //: 
-} catch(e2) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e2 = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e2);
     
-}
 
+ }
+  else { throw caught; } }
+ 
 basicTextJDialog!.addCloseListener(new ExitCloseListener());
     
 basicTextJDialog!.setVisible(true);
     
-
-                //: 
-} catch(e3) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e3 = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e3);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

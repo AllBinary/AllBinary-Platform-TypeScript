@@ -61,5 +61,3 @@ public constructor (activity: Activity){
 
 }
 
-
-

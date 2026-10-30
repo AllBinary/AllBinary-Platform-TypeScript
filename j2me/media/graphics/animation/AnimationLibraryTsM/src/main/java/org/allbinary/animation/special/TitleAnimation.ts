@@ -43,6 +43,7 @@ import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/display
 
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+type ABSystemWrapper<T = any, U = any> = typeof ABSystemWrapper extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABSystemWrapper;
 
 import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
@@ -136,13 +137,13 @@ this.reset();
 
     public nextFrame(){
 
-    var currentTime: number = this.systemWrapper!.currentTimeMillis()!;;
+    let currentTime: number = this.systemWrapper!.currentTimeMillis()!;;
     
 
-    var totalTimeElapsed: number = currentTime -this.lastFrameStartTime;;
+    let totalTimeElapsed: number = currentTime -this.lastFrameStartTime;;
     
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior() as IndexedAnimationBehavior;;
+    let indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior() as IndexedAnimationBehavior;;
     
 
                         if(totalTimeElapsed > indexedAnimationBehavior!.frameDelayTime)
@@ -169,7 +170,7 @@ this.lastFrameStartTime= currentTime;
 
     public isComplete(): boolean{
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior() as IndexedAnimationBehavior;;
+    let indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior() as IndexedAnimationBehavior;;
     
 
                         if(indexedAnimationBehavior!.loopTotal ==  -1 || indexedAnimationBehavior!.loopIndex < indexedAnimationBehavior!.loopTotal || this.getFrame() != 0)
@@ -237,7 +238,7 @@ this.lastFrameStartTime= currentTime;
 
 
                         for (
-    var index: number = 0;index < this.sizeP; index++)
+    let index: number = 0;index < this.sizeP; index++)
         {
 this.animationInterfaceArray[index]!.setFrame(frame);
     
@@ -256,7 +257,7 @@ this.setFrame(this.getSize() -1);
 this.setLastFrame();
     
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior() as IndexedAnimationBehavior);;
+    let indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior() as IndexedAnimationBehavior);;
     
 indexedAnimationBehavior!.reset();
     
@@ -269,7 +270,7 @@ indexedAnimationBehavior!.reset();
 
 
                         for (
-    var index: number = 0;index < this.sizeP; index++)
+    let index: number = 0;index < this.sizeP; index++)
         {
 this.animationInterfaceArray[index]!.previousFrame();
     
@@ -290,7 +291,7 @@ this.paintXY(graphics, x, y);
 
     public paintXY(graphics: Graphics, ax: number, ay: number){
 
-    var x: number = 0;;
+    let x: number = 0;;
     
 
                         if(this.widthP != Integer.MIN_VALUE)
@@ -302,17 +303,17 @@ this.paintXY(graphics, x, y);
                                     }
                                 
 
-    var deltaX: number= 0;;
+    let deltaX: number= 0;;
     
 
-    var deltaY: number= 0;;
+    let deltaY: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.sizeP; index++)
+    let index: number = 0;index < this.sizeP; index++)
         {
 deltaX= this.dxArray[index] +x;
     
@@ -335,6 +336,4 @@ this.animationInterfaceArray[index]!.paintXY(graphics, deltaX, deltaY);
 
 
 }
-
-
 

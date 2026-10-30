@@ -45,9 +45,7 @@ import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/
 export interface GameInitializedListenerInterface extends EventListenerInterface {
         
 
-    onGameInitialized(gameInitializedEvent: GameInitializedEvent)
+    onGameInitialized(gameInitializedEvent: GameInitializedEvent): void;
 
 }
-
-
 

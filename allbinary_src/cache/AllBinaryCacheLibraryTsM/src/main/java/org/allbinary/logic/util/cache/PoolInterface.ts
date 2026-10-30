@@ -48,9 +48,7 @@ export interface PoolInterface extends CacheInterface {
 
                 //@Throws(Exception.constructor)
             
-    remove(key: any): CacheableInterface
+    remove(key: any): CacheableInterface;
 
 }
-
-
 

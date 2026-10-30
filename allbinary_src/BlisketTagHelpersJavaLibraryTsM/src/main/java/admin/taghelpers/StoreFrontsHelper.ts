@@ -25,9 +25,11 @@ import { HashMap } from '../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
@@ -43,21 +45,25 @@ import { StoreFrontsEntityFactory } from '../../org/allbinary/data/tables/contex
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 //not GWT import const AbSqlTableUtil
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { HtmlSelect } from '../../org/allbinary/logic/visual/dhtml/html/select/HtmlSelect.js';
 //not GWT import const HtmlSelect
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -101,9 +107,8 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
     public drop(): string{
 
-        try {
-            
-    var success: string = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.dropTable()!;;
+ try { 
+    let success: string = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.dropTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -120,12 +125,13 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to drop storefronts table";;
+    let error: string = "Failed to drop storefronts table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -142,16 +148,17 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public create(): string{
 
-        try {
-            
-    var success: string = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.createTable()!;;
+ try { 
+    let success: string = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.createTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -168,12 +175,13 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to create new storefronts table";;
+    let error: string = "Failed to create new storefronts table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -190,19 +198,20 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public restore(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance(), this.portion)!;;
+    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance(), this.portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -219,12 +228,13 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to restore backup";;
+    let error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -241,19 +251,20 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public backup(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance())!;;
+    let result: string = AbSqlTableUtil.getInstance()!.backupTable(StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -270,12 +281,13 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to make backup";;
+    let error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -292,8 +304,10 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -301,30 +315,29 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
     public generateSelect(): string{
 
-        try {
-            
-    var success: string = CommonSeps.getInstance()!.SPACE;;
+ try { 
+    let success: string = CommonSeps.getInstance()!.SPACE;;
     
 
-    var storeNamesVector: BasicArrayList = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.getStoreFrontNames()!;;
+    let storeNamesVector: BasicArrayList = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.getStoreFrontNames()!;;
     
 
-    var storeSelect: HtmlSelect = new HtmlSelect(StringUtil.getInstance()!.EMPTY_STRING, this.commonPhoneStrings!.ONE, StoreFrontData.getInstance()!.SELECTSTORENAME, StringUtil.getInstance()!.EMPTY_STRING);;
+    let storeSelect: HtmlSelect = new HtmlSelect(StringUtil.getInstance()!.EMPTY_STRING, this.commonPhoneStrings!.ONE, StoreFrontData.getInstance()!.SELECTSTORENAME, StringUtil.getInstance()!.EMPTY_STRING);;
     
 storeSelect!.addAttribute(StoreFrontsHelper.CLASS, StoreFrontsHelper.TEXT);
     
 
-    var size: number = storeNamesVector!.size()!;;
+    let size: number = storeNamesVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var storeName: string = storeNamesVector!.get(index) as string;;
+    let storeName: string = storeNamesVector!.get(index) as string;;
     
 storeSelect!.addOption(storeName);
     
@@ -347,12 +360,13 @@ success += storeSelect;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to generate storefronts select";;
+    let error: string = "Failed to generate storefronts select";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -369,12 +383,12 @@ success += storeSelect;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

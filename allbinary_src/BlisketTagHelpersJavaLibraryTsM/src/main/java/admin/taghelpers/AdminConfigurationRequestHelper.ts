@@ -37,6 +37,7 @@ import { AdminConfigurationInterface } from '../../org/allbinary/business/user/m
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -85,8 +86,7 @@ this.request= pageContext!.getRequest() as HttpServletRequest;
 
     public insert(): string{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
@@ -96,10 +96,10 @@ this.request= pageContext!.getRequest() as HttpServletRequest;
                                     }
                                 
 
-    var success: string = "Successfully inserted AdminConfiguration";;
+    let success: string = "Successfully inserted AdminConfiguration";;
     
 
-    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration(this.request) as AdminConfigurationInterface;;
+    let adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration(this.request) as AdminConfigurationInterface;;
     
 adminConfigurationInterface!.write();
     
@@ -118,12 +118,13 @@ adminConfigurationInterface!.write();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to created AdminConfiguration";;
+    let error: string = "Failed to created AdminConfiguration";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -140,16 +141,17 @@ adminConfigurationInterface!.write();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(): string{
 
-        try {
-            
-    var success: string = "Successfully deleted AdminConfiguration";;
+ try { 
+    let success: string = "Successfully deleted AdminConfiguration";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -166,12 +168,13 @@ adminConfigurationInterface!.write();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to delete";;
+    let error: string = "Failed to delete";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -188,19 +191,20 @@ adminConfigurationInterface!.write();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public update(): string{
 
-        try {
-            
-    var success: string = "Updated AdminConfiguration Successful";;
+ try { 
+    let success: string = "Updated AdminConfiguration Successful";;
     
 
-    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration(this.request) as AdminConfigurationInterface;;
+    let adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration(this.request) as AdminConfigurationInterface;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -217,12 +221,13 @@ adminConfigurationInterface!.write();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to update";;
+    let error: string = "Failed to update";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -239,12 +244,12 @@ adminConfigurationInterface!.write();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

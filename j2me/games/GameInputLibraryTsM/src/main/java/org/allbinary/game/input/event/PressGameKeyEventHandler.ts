@@ -25,6 +25,7 @@ import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerG
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -40,9 +41,11 @@ import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -127,23 +130,25 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;--index >= 0; )
+    let index: number = this.list.size()!;--index >= 0; )
         {
 
-        try {
-            
-    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;;
+ try { 
+    let playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;;
     
 playerGameInput!.onPressGameKeyEvent(eventObject as GameKeyEvent);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 super.fireEvent(eventObject);
@@ -155,7 +160,7 @@ super.fireEvent(eventObject);
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var pressGameKeyEventListenerInterface: PressGameKeyEventListenerInterface = (eventListenerInterface as PressGameKeyEventListenerInterface);;
+    let pressGameKeyEventListenerInterface: PressGameKeyEventListenerInterface = (eventListenerInterface as PressGameKeyEventListenerInterface);;
     
 pressGameKeyEventListenerInterface!.onPressGameKeyEvent(eventObject as GameKeyEvent);
     
@@ -163,6 +168,4 @@ pressGameKeyEventListenerInterface!.onPressGameKeyEvent(eventObject as GameKeyEv
 
 
 }
-
-
 

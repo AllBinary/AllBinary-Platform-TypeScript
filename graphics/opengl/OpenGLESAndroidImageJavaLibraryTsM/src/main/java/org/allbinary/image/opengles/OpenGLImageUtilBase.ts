@@ -57,8 +57,15 @@ export class OpenGLImageUtilBase
             extends Object
          {
         
-
-    public paint(alphaBitmap: OpenGLBitmap, originalBitmap: OpenGLBitmap, index: number): OpenGLBitmap{
+paint(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[2] === 'number') return this.paint$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 4 && typeof args[2] === 'number') return this.paint$overload2(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: paint'); }
+  
+    public paint$overload1(alphaBitmap: OpenGLBitmap, originalBitmap: OpenGLBitmap, index: number): OpenGLBitmap{
 
 
 
@@ -67,7 +74,7 @@ export class OpenGLImageUtilBase
 }
 
 
-    public paint(colorBitmap: OpenGLBitmap, originalBitmap: OpenGLBitmap, alpha: number, basicColor: BasicColor): OpenGLBitmap{
+    public paint$overload2(colorBitmap: OpenGLBitmap, originalBitmap: OpenGLBitmap, alpha: number, basicColor: BasicColor): OpenGLBitmap{
 
 
 
@@ -99,6 +106,4 @@ export class OpenGLImageUtilBase
 
 
 }
-
-
 

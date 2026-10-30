@@ -31,6 +31,7 @@ import { Money } from '../../../../../../../org/allbinary/business/user/commerce
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -72,10 +73,10 @@ public constructor (){
 
     public getCost(order: OrderInterface): Money{
 
-    var basket: BasketInterface = order.getBasket()!;;
+    let basket: BasketInterface = order.getBasket()!;;
     
 
-    var money: Money = new Money();;
+    let money: Money = new Money();;
     
 money.add(basket.getTotalWeight());
     
@@ -113,6 +114,4 @@ money.add("3.50");
 
 
 }
-
-
 

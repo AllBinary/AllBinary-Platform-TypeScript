@@ -31,9 +31,11 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -83,17 +85,17 @@ DisplayChangeEventHandler.getInstance()!.addListenerInterface(displayChangeEvent
 
     public clear(){
 
-    var displayChangeEventHandler: BasicEventHandler = DisplayChangeEventHandler.getInstance()!;;
+    let displayChangeEventHandler: BasicEventHandler = DisplayChangeEventHandler.getInstance()!;;
     
 
-    var displayChangeEventListener: DisplayChangeEventListener;;
+    let displayChangeEventListener: DisplayChangeEventListener;;
     
 
 
 
 
                         for (
-    var index: number = this.list.size()!;--index >= 0; )
+    let index: number = this.list.size()!;--index >= 0; )
         {
 displayChangeEventListener= this.list.objectArray[index]! as DisplayChangeEventListener;
     
@@ -107,6 +109,4 @@ this.list.clear();
 
 
 }
-
-
 

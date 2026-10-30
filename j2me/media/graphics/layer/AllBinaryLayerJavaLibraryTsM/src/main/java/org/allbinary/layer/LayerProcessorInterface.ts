@@ -50,17 +50,15 @@ import { AllBinaryLayer } from './AllBinaryLayer.js';
 export interface LayerProcessorInterface extends BasicLayerProcessorInterface {
         
 
-    getLayerManager(): LayerManager
+    getLayerManager(): LayerManager;
 
                 //@Throws(Exception.constructor)
             
-    processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number)
+    processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number): void;
 
                 //@Throws(Exception.constructor)
             
-    isProcessorLayer(layerInterface: AllBinaryLayer): boolean
+    isProcessorLayer(layerInterface: AllBinaryLayer): boolean;
 
 }
-
-
 

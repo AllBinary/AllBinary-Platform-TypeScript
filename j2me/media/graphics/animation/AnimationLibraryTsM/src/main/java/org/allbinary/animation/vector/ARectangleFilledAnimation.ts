@@ -59,5 +59,3 @@ super.paintXY(graphics, this.x, this.y);
 
 }
 
-
-

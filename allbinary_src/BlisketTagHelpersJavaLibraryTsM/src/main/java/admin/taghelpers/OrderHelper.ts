@@ -25,9 +25,11 @@ import { HashMap } from '../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -73,9 +75,11 @@ import { WeblisketSession } from '../../org/allbinary/logic/communication/http/r
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -126,7 +130,7 @@ this.pageContext= pageContext;
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
+    let storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(storeName))
@@ -144,15 +148,14 @@ this.weblisketSession= new WeblisketSession(this.propertiesHashMap, this.pageCon
 
     public setPaymentGateway(): Boolean{
 
-        try {
-            
-    var paymentGatewayBoolean: Boolean = Boolean.FALSE;;
+ try { 
+    let paymentGatewayBoolean: Boolean = Boolean.FALSE;;
     
 
-    var orderInterface: OrderInterface = this.weblisketSession!.getOrder()!;;
+    let orderInterface: OrderInterface = this.weblisketSession!.getOrder()!;;
     
 
-    var requestPaymentGateway: string = this.request.getParameter(PaymentGatewayData.NAME.toString()) as string;;
+    let requestPaymentGateway: string = this.request.getParameter(PaymentGatewayData.NAME.toString()) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(requestPaymentGateway))
@@ -162,35 +165,35 @@ this.weblisketSession= new WeblisketSession(this.propertiesHashMap, this.pageCon
     
 orderInterface!.setPaymentMethod(requestPaymentGateway);
     
-paymentGatewayBoolean= Boolean.TRUE;
+paymentGatewayBoolean= true;
     
 
                                     }
                                 
 
-    var paymentGatewayEntityInterface: PaymentGatewayEntity = PaymentGatewayEntityFactory.getInstance() as PaymentGatewayEntity;;
+    let paymentGatewayEntityInterface: PaymentGatewayEntity = PaymentGatewayEntityFactory.getInstance() as PaymentGatewayEntity;;
     
 
-    var paymentTypeVector: BasicArrayList = paymentGatewayEntityInterface!.findPaymentTypeVectorByStore(this.weblisketSession!.getStoreName())!;;
+    let paymentTypeVector: BasicArrayList = paymentGatewayEntityInterface!.findPaymentTypeVectorByStore(this.weblisketSession!.getStoreName())!;;
     
 
                         if(paymentTypeVector!.size() == 1)
                         
                                     {
                                     
-    var paymentType: BasicPaymentType = paymentTypeVector!.get(0) as BasicPaymentType;;
+    let paymentType: BasicPaymentType = paymentTypeVector!.get(0) as BasicPaymentType;;
     
 
-    var paymentGatewayInterface: PaymentGatewayInterface = paymentGatewayEntityInterface!.getPaymentGatewayInterface(this.weblisketSession!.getStoreName(), paymentType) as PaymentGatewayInterface;;
+    let paymentGatewayInterface: PaymentGatewayInterface = paymentGatewayEntityInterface!.getPaymentGatewayInterface(this.weblisketSession!.getStoreName(), paymentType) as PaymentGatewayInterface;;
     
 
-    var paymentGateway: string = paymentGatewayInterface!.getName()!;;
+    let paymentGateway: string = paymentGatewayInterface!.getName()!;;
     
 this.weblisketSession!.setPaymentMethod(paymentGateway);
     
 orderInterface!.setPaymentMethod(paymentGateway);
     
-paymentGatewayBoolean= Boolean.TRUE;
+paymentGatewayBoolean= true;
     
 
                                     }
@@ -200,7 +203,7 @@ paymentGatewayBoolean= Boolean.TRUE;
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Successfully set PaymentGateway Order: ");
     
@@ -221,23 +224,23 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "setPaymentGateway()");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return paymentGatewayBoolean;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failed to set PaymentGateway for Order: ");
     
 
-        try {
-            
-    var orderInterface: OrderInterface = this.weblisketSession!.getOrder()!;;
+ try { 
+    let orderInterface: OrderInterface = this.weblisketSession!.getOrder()!;;
     
 
                         if(orderInterface != 
@@ -254,14 +257,17 @@ stringBuffer!.append(orderInterface!.getPaymentMethod());
 
                                     }
                                 
-
-                //: 
-} catch(ex) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const ex = caught;
+  
 stringBuffer!.append(" Exception Getting");
     
-}
 
+ }
+   }
+ 
 this.logUtil!.put(stringBuffer!.toString(), this, "setPaymentGateway()", e);
     
 
@@ -271,23 +277,24 @@ this.logUtil!.put(stringBuffer!.toString(), this, "setPaymentGateway()", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public process(): string{
 
-        try {
-            
-    var order: OrderInterface = this.weblisketSession!.getOrder()!;;
+ try { 
+    let order: OrderInterface = this.weblisketSession!.getOrder()!;;
     
 order.setStoreName(this.storeFrontInterface!.getName());
     
 
-    var result: string = OrderProcessorUtil.getInstance()!.process(this.weblisketSession!.getUserName(), order as Order)!;;
+    let result: string = OrderProcessorUtil.getInstance()!.process(this.weblisketSession!.getUserName(), order as Order)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -304,29 +311,32 @@ order.setStoreName(this.storeFrontInterface!.getName());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failed to Process Order: ");
     
 
-        try {
-            stringBuffer!.append(this.weblisketSession!.getOrder()!.getId());
+ try { stringBuffer!.append(this.weblisketSession!.getOrder()!.getId());
     
-
-                //: 
-} catch(ex) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const ex = caught;
+  
 stringBuffer!.append(" Exception Getting Id");
     
-}
 
+ }
+   }
+ 
 
-    var error: string = stringBuffer!.toString()!;;
+    let error: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -343,12 +353,12 @@ stringBuffer!.append(" Exception Getting Id");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

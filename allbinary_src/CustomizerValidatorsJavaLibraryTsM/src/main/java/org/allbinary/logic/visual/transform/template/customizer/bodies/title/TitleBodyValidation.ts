@@ -40,6 +40,7 @@ import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlData } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
 //not GWT import const AbSqlData
@@ -49,9 +50,11 @@ import { Validation } from '../../../../../../../../../org/allbinary/logic/contr
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -115,7 +118,7 @@ public constructor (){
                                     }
                                 
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.body= stringUtil!.EMPTY_STRING;
     
@@ -137,25 +140,25 @@ public constructor (document: Document){
                                     }
                                 
 
-    var nodeList: NodeList = document.getElementsByTagName(BodyData.getInstance()!.NAME)!;;
+    let nodeList: NodeList = document.getElementsByTagName(BodyData.getInstance()!.NAME)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var aBodyNode: Node = nodeList!.item(index)!;;
+    let aBodyNode: Node = nodeList!.item(index)!;;
     
 
-    var aBodyValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, aBodyNode!.getChildNodes())!;;
+    let aBodyValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, aBodyNode!.getChildNodes())!;;
     
 this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode);
     
 
-    var titleNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, aBodyNode!.getChildNodes())!;;
+    let titleNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, aBodyNode!.getChildNodes())!;;
     
 this.titleValidation= new TitleNotRequiredValidation(titleNode);
     
@@ -209,9 +212,8 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
 
     public isValid(): Boolean{
 
-        try {
-            
-    var isValid: Boolean = Boolean.TRUE;;
+ try { 
+    let isValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -226,7 +228,7 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
                         if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB))
                         
                                     {
-                                    isValid= Boolean.FALSE;
+                                    isValid= false;
     
 
                                     }
@@ -235,7 +237,7 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
                         if(!this.titleValidation!.isValid().valueOf())
                         
                                     {
-                                    isValid= Boolean.FALSE;
+                                    isValid= false;
     
 
                                     }
@@ -255,10 +257,11 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -272,18 +275,19 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -305,10 +309,11 @@ stringBuffer!.appendint(AbSqlData.MAXBLOB);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -324,8 +329,10 @@ stringBuffer!.appendint(AbSqlData.MAXBLOB);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -362,7 +369,7 @@ stringBuffer!.appendint(AbSqlData.MAXBLOB);
                                     }
                                 
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, this.body)!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, this.body)!;;
     
 node.appendChild(this.titleValidation!.toXmlNode(document));
     
@@ -376,6 +383,4 @@ node.appendChild(this.titleValidation!.toXmlNode(document));
 
 
 }
-
-
 

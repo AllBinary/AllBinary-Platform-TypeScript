@@ -55,5 +55,3 @@ public constructor (before: string, name: string, value: string, after: string){
 
 }
 
-
-

@@ -25,6 +25,7 @@ import { InputFactory } from '../../../../../org/allbinary/game/input/InputFacto
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -85,7 +86,7 @@ private constructor (){
 
             super();
         
-    var MAX: number = InputFactory.getInstance()!.MAX;;
+    let MAX: number = InputFactory.getInstance()!.MAX;;
     
 this.LEFT= new MotionGestureInput(MAX -26, "L Trackball");
     
@@ -99,6 +100,4 @@ this.DOWN= new MotionGestureInput(MAX -29, "D Trackball");
 
 
 }
-
-
 

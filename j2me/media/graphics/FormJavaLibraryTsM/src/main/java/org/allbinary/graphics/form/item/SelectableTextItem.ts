@@ -73,7 +73,7 @@ public constructor (label: string, layout: number, altText: string, backgroundBa
 this.myFontProcessor!.process(graphics);
     
 
-    var stringComponent: ABStringComponent = this.getLabelStringComponent()!;;
+    let stringComponent: ABStringComponent = this.getLabelStringComponent()!;;
     
 
                         if(stringComponent != 
@@ -92,6 +92,4 @@ graphics.drawString(this.getLabel(), x +2, y, 0);
 
 
 }
-
-
 

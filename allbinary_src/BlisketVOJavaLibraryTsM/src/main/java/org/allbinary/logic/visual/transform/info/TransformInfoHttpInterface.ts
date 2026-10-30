@@ -51,13 +51,11 @@ import { WeblisketSessionInterface } from '../../../../../../org/allbinary/logic
 export interface TransformInfoHttpInterface extends TransformInfoInterface {
         
 
-    getWeblisketSession(): WeblisketSessionInterface
+    getWeblisketSession(): WeblisketSessionInterface;
 
-    getPageContext(): PageContext
+    getPageContext(): PageContext;
 
-    getPropertiesHashMap(): HashMap<any, any>
+    getPropertiesHashMap(): HashMap<any, any>;
 
 }
-
-
 

@@ -121,5 +121,3 @@ this.aggression= aggression;
 
 }
 
-
-

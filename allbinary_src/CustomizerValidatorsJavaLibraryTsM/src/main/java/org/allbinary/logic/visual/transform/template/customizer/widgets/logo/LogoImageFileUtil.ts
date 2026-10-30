@@ -110,7 +110,7 @@ this.imageFileAbPath= imageAbPath;
                                     }
                                 
 
-    var originalImageFile: AbFile = AbFile.createAbFile(this.imageFileAbPath!.toString() +this.fileName)!;;
+    let originalImageFile: AbFile = AbFile.createAbFile(this.imageFileAbPath!.toString() +this.fileName)!;;
     
 originalImageFile!.createNewFile();
     
@@ -120,6 +120,4 @@ FileUtil.getInstance()!.write(new ByteArrayInputStream(fileItem!.get()), origina
 
 
 }
-
-
 

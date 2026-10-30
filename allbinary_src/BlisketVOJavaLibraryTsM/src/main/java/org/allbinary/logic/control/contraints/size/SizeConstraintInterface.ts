@@ -45,5 +45,3 @@ export interface SizeConstraintInterface extends MinMaxIntConstraintInterface {
 
 }
 
-
-

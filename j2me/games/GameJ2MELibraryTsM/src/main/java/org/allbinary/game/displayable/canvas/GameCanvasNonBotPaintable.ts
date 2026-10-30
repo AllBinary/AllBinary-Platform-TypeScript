@@ -66,5 +66,3 @@ this.gameCanvas!.nonBotPaint(graphics);
 
 }
 
-
-

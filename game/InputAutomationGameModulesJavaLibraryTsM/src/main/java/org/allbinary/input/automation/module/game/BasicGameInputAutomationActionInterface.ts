@@ -52,13 +52,11 @@ export interface BasicGameInputAutomationActionInterface extends InputAutomation
 
                 //@Throws(Exception.constructor)
             
-    attack(rectangle: Rectangle)
+    attack(rectangle: Rectangle): void;
 
                 //@Throws(Exception.constructor)
             
-    target(rectangle: Rectangle)
+    target(rectangle: Rectangle): void;
 
 }
-
-
 

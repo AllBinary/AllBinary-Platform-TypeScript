@@ -107,7 +107,7 @@ this.init();
             
     init(){
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
+    let angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 this.angleIncrement= angleFactory!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity();
     
@@ -160,6 +160,4 @@ this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getI
 
 
 }
-
-
 

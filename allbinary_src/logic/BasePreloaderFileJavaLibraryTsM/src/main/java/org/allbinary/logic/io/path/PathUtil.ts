@@ -24,9 +24,11 @@
         
 //not plain js import { FilePathData } 
 const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+type FilePathData<T = any, U = any> = typeof FilePathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof FilePathData;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -131,10 +133,10 @@ private constructor (){
             
     public getWithoutExtension(filePath: string): string{
 
-    var indexOfFileExtensionDelmiter: number = this.abPathData!.getExtensionIndex(filePath)!;;
+    let indexOfFileExtensionDelmiter: number = this.abPathData!.getExtensionIndex(filePath)!;;
     
 
-    var pathWithoutExtension: string = filePath;;
+    let pathWithoutExtension: string = filePath;;
     
 
                         if(indexOfFileExtensionDelmiter >= 0)
@@ -213,7 +215,7 @@ private constructor (){
 
     isValidEnd(path: string): boolean{
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(path))
@@ -294,7 +296,7 @@ private constructor (){
 
     public adjust(path: string): string{
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(path))
@@ -331,7 +333,7 @@ private constructor (){
             
     public removeNameFromPath(path: string): AbPath{
 
-    var endIndex: number = path.lastIndexOf(this.abPathData!.SEPARATOR)!;;
+    let endIndex: number = path.lastIndexOf(this.abPathData!.SEPARATOR)!;;
     
 
                         if(endIndex < 0)
@@ -370,7 +372,7 @@ private constructor (){
                                 
                         else {
                             
-    var pathWithoutName: string = path.substring(0, endIndex)!;;
+    let pathWithoutName: string = path.substring(0, endIndex)!;;
     
 
 
@@ -385,6 +387,4 @@ private constructor (){
 
 
 }
-
-
 

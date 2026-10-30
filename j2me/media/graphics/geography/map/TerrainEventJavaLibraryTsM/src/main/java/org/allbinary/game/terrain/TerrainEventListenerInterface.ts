@@ -49,9 +49,7 @@ export interface TerrainEventListenerInterface extends EventListenerInterface {
 
                 //@Throws(Exception.constructor)
             
-    onTerrainEvent(trackingEvent: TerrainEvent)
+    onTerrainEvent(trackingEvent: TerrainEvent): void;
 
 }
-
-
 

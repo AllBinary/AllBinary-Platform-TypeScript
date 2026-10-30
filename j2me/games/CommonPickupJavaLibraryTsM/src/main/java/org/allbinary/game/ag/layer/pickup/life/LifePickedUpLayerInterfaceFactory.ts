@@ -123,5 +123,3 @@ this.pool.visit(sourceLayerInterface);
 
 }
 
-
-

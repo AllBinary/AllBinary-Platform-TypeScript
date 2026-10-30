@@ -42,11 +42,9 @@
 export interface PickupCompositeInterface {
         
 
-    getPickupBehavior(): PickupBehavior
+    getPickupBehavior(): PickupBehavior;
 
-    setPickupBehavior(pickupBehavior: PickupBehavior)
+    setPickupBehavior(pickupBehavior: PickupBehavior): void;
 
 }
-
-
 

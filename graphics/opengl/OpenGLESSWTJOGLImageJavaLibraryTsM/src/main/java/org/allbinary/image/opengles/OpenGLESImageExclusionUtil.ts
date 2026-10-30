@@ -25,9 +25,11 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -77,10 +79,10 @@ private constructor (){
 
     public isCustomScaling(image: Image): boolean{
 
-    var imageName: string = image.getName()!;;
+    let imageName: string = image.getName()!;;
     
 
-    var isNormalScaling: boolean = this.list.size() == 0 || imageName!.startsWith(this.EXCLUSION);;
+    let isNormalScaling: boolean = this.list.size() == 0 || imageName!.startsWith(this.EXCLUSION);;
     
 
                         if(isNormalScaling)
@@ -97,17 +99,17 @@ private constructor (){
                                 
                         else {
                             
-    var size: number = this.list.size()!;;
+    let size: number = this.list.size()!;;
     
 
-    var name: string;;
+    let name: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 name= this.list.get(index) as string;
     
@@ -152,6 +154,4 @@ name= this.list.get(index) as string;
 
 
 }
-
-
 

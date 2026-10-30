@@ -51,11 +51,9 @@ export interface AnimationInterfaceFactoryInterface extends BasicAnimationInterf
 
                 //@Throws(Exception.constructor)
             
-    getInstance(instanceId: number): Animation
+    getInstance(instanceId: number): Animation;
 
-    setInitialScale(scaleProperties: ScaleProperties)
+    setInitialScale(scaleProperties: ScaleProperties): void;
 
 }
-
-
 

@@ -24,18 +24,22 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 //not GWT import const GenericOperatingSystem
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -68,8 +72,15 @@ export class SystemHardwareFactory
         
 
     private static readonly instance: SystemHardwareFactory = new SystemHardwareFactory();
-
-    public static getInstance(): SystemHardwareFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): SystemHardwareFactory{
 
 
 
@@ -81,10 +92,10 @@ export class SystemHardwareFactory
 
     public static static_toString(): string{
 
-    var systemHardwareFactory: SystemHardwareFactory = SystemHardwareFactory.getInstance()!;;
+    let systemHardwareFactory: SystemHardwareFactory = SystemHardwareFactory.getInstance()!;;
     
 
-    var osBuffer: StringMaker = new StringMaker();;
+    let osBuffer: StringMaker = new StringMaker();;
     
 osBuffer!.append("Hardware Info: \n");
     
@@ -126,10 +137,9 @@ private constructor (){
         }
 
 
-    public getInstance(operatingSystemInterface: GenericOperatingSystem): HardwareInterface{
+    public getInstance$overload2(operatingSystemInterface: GenericOperatingSystem): HardwareInterface{
 
-        try {
-            
+ try { 
                         if(this.hardwareInterface == NoHardware.getInstance())
                         
                                     {
@@ -140,14 +150,17 @@ private constructor (){
                                 
 this.logUtil!.putF("Found Hardware", this, this.commonStrings!.CONSTRUCTOR);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -158,6 +171,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
 
 
 }
-
-
 

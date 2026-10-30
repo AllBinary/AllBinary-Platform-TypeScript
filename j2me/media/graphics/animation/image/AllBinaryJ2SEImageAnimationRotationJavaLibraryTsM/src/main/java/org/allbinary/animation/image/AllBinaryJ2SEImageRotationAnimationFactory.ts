@@ -82,7 +82,7 @@ export class AllBinaryJ2SEImageRotationAnimationFactory extends BaseImageAnimati
             
     public static createDXY(image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean): AllBinaryJ2SEImageRotationAnimationFactory{
 
-    var imageRotationAnimationFactory: AllBinaryJ2SEImageRotationAnimationFactory = new AllBinaryJ2SEImageRotationAnimationFactory(image, width, height, angleIncrement, animationBehaviorFactory, resizeCanvasForRotation);;
+    let imageRotationAnimationFactory: AllBinaryJ2SEImageRotationAnimationFactory = new AllBinaryJ2SEImageRotationAnimationFactory(image, width, height, angleIncrement, animationBehaviorFactory, resizeCanvasForRotation);;
     
 imageRotationAnimationFactory!.animationFactoryInitializationVisitor!.dx= dx;
     
@@ -122,7 +122,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
             
     getCanvasImage(): Image{
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
                         if(this.resizeCanvasForRotation && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
@@ -154,21 +154,21 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
             
     public getInstance(instanceId: number): Animation{
 
-    var imageCopyUtil: ImageCopyUtil = ImageCopyUtil.getInstance()!;;
+    let imageCopyUtil: ImageCopyUtil = ImageCopyUtil.getInstance()!;;
     
 
-    var canvasImage: Image = this.getCanvasImage()!;;
+    let canvasImage: Image = this.getCanvasImage()!;;
     
 
-    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(canvasImage, this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
+    let scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(canvasImage, this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
-    var openGLUtil: OpenGLUtil = OpenGLUtil.getInstance()!;;
+    let openGLUtil: OpenGLUtil = OpenGLUtil.getInstance()!;;
     
 scaledImage= openGLUtil!.addImage(scaledImage);
     
 
-    var copyOfScaledImage: Image = imageCopyUtil!.createImageForRotation(scaledImage)!;;
+    let copyOfScaledImage: Image = imageCopyUtil!.createImageForRotation(scaledImage)!;;
     
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
@@ -209,6 +209,4 @@ scaledImage= openGLUtil!.addImage(scaledImage);
 
 
 }
-
-
 

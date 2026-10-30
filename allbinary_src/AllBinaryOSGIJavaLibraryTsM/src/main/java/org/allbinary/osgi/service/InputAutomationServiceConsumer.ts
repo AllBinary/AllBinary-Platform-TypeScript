@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
 //not GWT import const BundleContext
@@ -36,6 +38,7 @@ import { ServiceReference } from '../../../../org/osgi/framework/ServiceReferenc
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
 //not GWT import const OSGIServiceInterface
@@ -45,6 +48,7 @@ import { OSGIServiceVisitorInterface } from '../../../../org/allbinary/osgi/OSGI
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -102,22 +106,22 @@ this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface);
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS);
     
 
-    var vector: BasicArrayList = this.osgiServiceUtil!.getServicesObjectVector(this.getBundleContext(), this.getServiceReferences())!;;
+    let vector: BasicArrayList = this.osgiServiceUtil!.getServicesObjectVector(this.getBundleContext(), this.getServiceReferences())!;;
     
 this.logUtil!.putF("Processing " +vector.size() +" Services", this, this.commonStrings!.PROCESS);
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
-    var osgiServiceInterface: OSGIServiceInterface;;
+    let osgiServiceInterface: OSGIServiceInterface;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 osgiServiceInterface= vector.get(index) as OSGIServiceInterface;
     
@@ -200,6 +204,4 @@ this.osgiServiceVisitorInterface= osgiServiceVisitorInterface;
 
 
 }
-
-
 

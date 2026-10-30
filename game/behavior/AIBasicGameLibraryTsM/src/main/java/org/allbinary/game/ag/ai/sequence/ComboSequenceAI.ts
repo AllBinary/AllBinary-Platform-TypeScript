@@ -69,10 +69,10 @@ public constructor (artificialIntelligenceInterface: ArtificialIntelligenceInter
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[] = this.getArtificialIntelligenceInterface()!;;
+    let artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[] = this.getArtificialIntelligenceInterface()!;;
     
 
-    var size: number = artificialIntelligenceInterfaceArray!.length
+    let size: number = artificialIntelligenceInterfaceArray!.length
                 ;;
     
 
@@ -80,7 +80,7 @@ public constructor (artificialIntelligenceInterface: ArtificialIntelligenceInter
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.setIndex(index);
     
@@ -92,6 +92,4 @@ super.processAI(allBinaryLayerManager);
 
 
 }
-
-
 

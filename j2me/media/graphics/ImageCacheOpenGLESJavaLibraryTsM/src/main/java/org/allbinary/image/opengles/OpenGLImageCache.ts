@@ -42,9 +42,11 @@ import { AllBinaryRendererBase3 } from '../../../../org/allbinary/graphics/openg
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 //not GWT import const ImageCache
@@ -100,7 +102,7 @@ public constructor (){
         }
 
 
-    public addListener(renderer: any = {}){
+    public addListener(renderer: any){
 this.renderer= renderer as AllBinaryRendererBase3;
     
 }
@@ -123,10 +125,10 @@ this.gl= gl;
 
 
                         for (
-    var index: number = this.list.size() -1;index >= 0; index--)
+    let index: number = this.list.size() -1;index >= 0; index--)
         {
 
-    var openGLESImage: OpenGLESImage = (this.list.objectArray[index]! as OpenGLESImage);;
+    let openGLESImage: OpenGLESImage = (this.list.objectArray[index]! as OpenGLESImage);;
     
 
                         if(openGLESImage != OpenGLESImage.NULL_OPENGL_IMAGE)
@@ -148,7 +150,7 @@ this.gl= gl;
             
     createImage(caller: string, width: number, height: number): Image{
 
-    var textureSize: number = width;;
+    let textureSize: number = width;;
     
 
                         if(height > width)
@@ -171,10 +173,10 @@ width= textureSize;
 height= textureSize;
     
 
-    var image2: Image = this.imageCache!.get(caller, width, height)!;;
+    let image2: Image = this.imageCache!.get(caller, width, height)!;;
     
 
-    var image: Image = this.preResourceImageUtil!.encapsulate(image2)!;;
+    let image: Image = this.preResourceImageUtil!.encapsulate(image2)!;;
     
 
         
@@ -205,12 +207,12 @@ height= textureSize;
 
                 //@Throws(Exception.constructor)
             
-    createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
+    createImageFromInputStream(key: any, inputStream: InputStream): Image{
 
-    var cachedImage: Image = this.imageCache!.getWithKey(key)!;;
+    let cachedImage: Image = this.imageCache!.getWithKey(key)!;;
     
 
-    var image: Image = this.preResourceImageUtil!.encapsulate(cachedImage)!;;
+    let image: Image = this.preResourceImageUtil!.encapsulate(cachedImage)!;;
     
 
         
@@ -251,8 +253,7 @@ height= textureSize;
 
     public init(image: Image){
 
-        try {
-            
+ try { 
         
         //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.lock) 
@@ -277,18 +278,19 @@ this.list.add(image);
 
 this.renderer.add(image);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -94,5 +94,3 @@ public constructor (collidable: boolean){
 
 }
 
-
-

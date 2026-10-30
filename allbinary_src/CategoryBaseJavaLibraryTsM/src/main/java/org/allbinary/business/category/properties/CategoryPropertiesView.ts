@@ -77,10 +77,10 @@ public constructor (categoryPropertiesInterface: CategoryPropertiesInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var categoryNode: Node = document.createElement(CategoryData.getInstance()!.NAME)!;;
+    let categoryNode: Node = document.createElement(CategoryData.getInstance()!.NAME)!;;
     
 
-    var newCategoryNode: Element = categoryNode as Element;;
+    let newCategoryNode: Element = categoryNode as Element;;
     
 newCategoryNode!.setAttribute(CategoryData.getInstance()!.LABEL, this.categoryPropertiesInterface!.getValue());
     
@@ -94,6 +94,4 @@ newCategoryNode!.setAttribute(CategoryData.getInstance()!.LABEL, this.categoryPr
 
 
 }
-
-
 

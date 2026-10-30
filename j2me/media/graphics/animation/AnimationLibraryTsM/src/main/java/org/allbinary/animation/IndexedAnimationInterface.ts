@@ -42,13 +42,11 @@
 export interface IndexedAnimationInterface extends SequentialAnimationInterface {
         
 
-    reset()
+    reset(): void;
 
-    setFrame(index: number)
+    setFrame(index: number): void;
 
-    getFrame(): number
+    getFrame(): number;
 
 }
-
-
 

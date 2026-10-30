@@ -219,7 +219,7 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
 
     setGroupInterfaces(){
 
-    var basicGroupFactory: BasicGroupFactory = BasicGroupFactory.getInstance()!;;
+    let basicGroupFactory: BasicGroupFactory = BasicGroupFactory.getInstance()!;;
     
 
                         if(this.sourceLayerInterface!.getGroupInterface()[0] == basicGroupFactory!.ENEMY)
@@ -251,10 +251,10 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
                         
                                     {
                                     
-    var indexedAnimationInterface: IndexedAnimation = this.getAnimationInterface() as IndexedAnimation;;
+    let indexedAnimationInterface: IndexedAnimation = this.getAnimationInterface() as IndexedAnimation;;
     
 
-    var currentFrame: number = indexedAnimationInterface!.getFrame()!;;
+    let currentFrame: number = indexedAnimationInterface!.getFrame()!;;
     
 
                         if(currentFrame < indexedAnimationInterface!.getAnimationSize() -1)
@@ -276,7 +276,7 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
                                 
                         else {
                             
-    var collidableWeaponBehavior: CollidableWeaponBehavior = this.getCollidableInferface() as CollidableWeaponBehavior;;
+    let collidableWeaponBehavior: CollidableWeaponBehavior = this.getCollidableInferface() as CollidableWeaponBehavior;;
     
 
                         if(collidableWeaponBehavior!.isCollided())
@@ -365,7 +365,7 @@ this.scoreableInterface!.addPoints(GameConfigurationUtil.getInstance()!.getCompe
                         
                                     {
                                     
-    var total: number = this.getInitDamage() -this.totalDamage;;
+    let total: number = this.getInitDamage() -this.totalDamage;;
     
 this.givePoints(total);
     
@@ -474,7 +474,7 @@ this.sourceLayerInterface= sourceLayerInterface;
 
     public paint(graphics: Graphics){
 
-    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
+    let viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 this.animationInterface!.paintXY(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight());
     
@@ -483,7 +483,7 @@ this.animationInterface!.paintXY(graphics, viewPosition!.getX() -this.getHalfWid
 
     public paintThreed(graphics: Graphics){
 
-    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
+    let viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 this.animationInterface!.paintThreedXYZ(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight(), viewPosition!.getZ() -this.getHalfDepth());
     
@@ -561,6 +561,4 @@ this.initAnimationInterface!.set(gl);
 
 
 }
-
-
 

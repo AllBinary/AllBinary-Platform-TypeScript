@@ -69,13 +69,13 @@ public constructor (){
 
             super();
         
-    var openGLConfiguration: OpenGLConfiguration = OpenGLConfiguration.getInstance()!;;
+    let openGLConfiguration: OpenGLConfiguration = OpenGLConfiguration.getInstance()!;;
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 this.anyThreed= openGLConfiguration!.isOpenGL() && (features.isFeature(openGLFeatureFactory!.OPENGL_2D_AND_3D) || features.isFeature(openGLFeatureFactory!.OPENGL_3D));
     
@@ -93,6 +93,4 @@ this.anyThreed= openGLConfiguration!.isOpenGL() && (features.isFeature(openGLFea
 
 
 }
-
-
 

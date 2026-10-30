@@ -32,21 +32,27 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -132,14 +138,14 @@ this.numThreads= numThreads;
 this.taskQueue= new BasicArrayListD();
     
 
-    var pooledThread: PooledThread;;
+    let pooledThread: PooledThread;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < this.numThreads; i++)
+    let i: number = 0;i < this.numThreads; i++)
         {
 pooledThread= new PooledThread(this);
     
@@ -190,20 +196,20 @@ pooledThread!.start();
                         
                                     {
                                     
-    var size: number = this.taskQueue!.size()!;;
+    let size: number = this.taskQueue!.size()!;;
     
 
-    var runnable: PriorityRunnable;;
+    let runnable: PriorityRunnable;;
     
 
-    var lowerPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;;
+    let lowerPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 runnable= this.taskQueue!.get(index) as PriorityRunnable;
     
@@ -232,7 +238,7 @@ break;
                                 
                         else {
                             
-    var index: number = this.taskQueue!.indexOf(lowerPriorityRunnable)!;;
+    let index: number = this.taskQueue!.indexOf(lowerPriorityRunnable)!;;
     
 this.taskQueue!.addAt(index, task);
     
@@ -315,7 +321,7 @@ this.wait();
 }
 
 
-    var runnable: Runnable = this.taskQueue!.removeAt(0) as Runnable;;
+    let runnable: Runnable = this.taskQueue!.removeAt(0) as Runnable;;
     
 
 
@@ -480,6 +486,4 @@ this.taskQueue!.clear();
 
 
 }
-
-
 

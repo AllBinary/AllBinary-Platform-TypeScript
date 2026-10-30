@@ -117,5 +117,3 @@ this.allBinaryGyroSensor= allBinaryGyroSensor;
 
 }
 
-
-

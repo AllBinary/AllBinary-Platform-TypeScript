@@ -55,8 +55,15 @@ public constructor (){
             super();
         }
 
-
-    public visit(anyType: any = {}): any{
+visit(...args: any[]): any {
+   
+    if (args.length === 1) return this.visit$overload1(args[0]);
+   
+    if (args.length === 1) return this.visit$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: visit'); }
+  
+    public visit$overload1(anyType: any): any{
 
 
 
@@ -66,7 +73,7 @@ public constructor (){
 }
 
 
-    public visit(file: AbFile): Boolean{
+    public visit$overload2(file: AbFile): Boolean{
 
                         if(file.isDirectory())
                         
@@ -75,7 +82,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -84,12 +91,10 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 }
 
 
 }
-
-
 

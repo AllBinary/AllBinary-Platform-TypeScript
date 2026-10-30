@@ -24,15 +24,19 @@ import { AndroidServicesUtil } from '../../../../../org/allbinary/android/Androi
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { NoSound } from '../../../../../org/allbinary/media/audio/NoSound.js';
 //not GWT import const NoSound
@@ -42,9 +46,11 @@ import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
 
 //not plain js import { CommonStateStrings } 
 const CommonStateStrings = globalThis.org.allbinary.string.CommonStateStrings;
+type CommonStateStrings<T = any, U = any> = typeof CommonStateStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStateStrings;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { GameTickTimeDelayHelper } from '../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 //not GWT import const GameTickTimeDelayHelper
@@ -57,9 +63,11 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -89,10 +97,10 @@ export class MusicManager
 
     public static pause(activity: Activity, musicServiceClass: Function){
 
-    var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;;
+    let commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;;
     
 
-    var musicPauseIntent: Intent = new Intent(activity as Context, musicServiceClass.prototype.constructor);;
+    let musicPauseIntent: Intent = new Intent(activity as Context, musicServiceClass.prototype.constructor);;
     
 musicPauseIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 1);
     
@@ -107,10 +115,10 @@ activity.startService(musicPauseIntent);
                         
                                     {
                                     
-    var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;;
+    let commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;;
     
 
-    var musicResumeIntent: Intent = new Intent(activity, musicServiceClass.prototype.constructor);;
+    let musicResumeIntent: Intent = new Intent(activity, musicServiceClass.prototype.constructor);;
     
 musicResumeIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 2);
     
@@ -259,13 +267,13 @@ this.timeDelayHelper!.delay= 0;
 
 
                         for (
-    var index: number = this.songList!.size()!;--index >= 0; )
+    let index: number = this.songList!.size()!;--index >= 0; )
         {
 
-    var sound: Sound = this.songList!.get(index) as Sound;;
+    let sound: Sound = this.songList!.get(index) as Sound;;
     
 
-    var duration: number = sound.getDuration();;
+    let duration: number = sound.getDuration();;
     
 PreLogUtil.put(new StringMaker().append(this.PLAY)!.append(sound.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
     
@@ -276,8 +284,7 @@ PreLogUtil.put(new StringMaker().append(this.PLAY)!.append(sound.getResource())!
 
     public startNewSong(){
 
-        try {
-            this.resourceUtil!.getContext()!.stopService(this.currentIntent);
+ try { this.resourceUtil!.getContext()!.stopService(this.currentIntent);
     
 
                         if(this.nextSongSound == NoSound.getInstance())
@@ -297,7 +304,7 @@ this.nextSongSound= NoSound.getInstance();
                         }
                             
 
-    var duration: number = this.currentSongSound!.getDuration();;
+    let duration: number = this.currentSongSound!.getDuration();;
     
 PreLogUtil.put(new StringMaker().append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
     
@@ -311,12 +318,13 @@ this.currentIntent!.putExtra(this.musicStrings!.RIGHT_VOLUME, this.rightVolume);
     
 this.resourceUtil!.getContext()!.startService(this.currentIntent);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var resource: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let resource: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(this.currentSongSound != 
@@ -331,8 +339,10 @@ this.resourceUtil!.getContext()!.startService(this.currentIntent);
                                 
 PreLogUtil.putOE(this.commonStrings!.EXCEPTION_LABEL +resource, this, this.commonStrings!.PROCESS, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -345,6 +355,4 @@ this.resourceUtil!.getContext()!.stopService(this.currentIntent);
 
 
 }
-
-
 

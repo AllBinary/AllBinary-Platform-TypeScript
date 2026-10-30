@@ -22,6 +22,7 @@
         
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -80,6 +81,4 @@ export class MouseStrings
     public readonly MOUSE_MOVED_LABEL: string = "MouseMoved" +CommonSeps.getInstance()!.COLON_SEP;
 
 }
-
-
 

@@ -42,13 +42,11 @@
 export interface MeteredGameObjectInterface {
         
 
-    getRatios(): number[]
+    getRatios(): number[];
 
-    isGood(): boolean
+    isGood(): boolean;
 
-    isDropping(): boolean
+    isDropping(): boolean;
 
 }
-
-
 

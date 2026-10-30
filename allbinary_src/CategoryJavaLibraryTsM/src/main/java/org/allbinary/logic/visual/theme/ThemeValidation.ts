@@ -27,9 +27,11 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
 //not GWT import const CategoryData
@@ -69,9 +71,11 @@ import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/do
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlData } from '../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
 //not GWT import const AbSqlData
@@ -87,15 +91,18 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
 //not GWT import const PathUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -111,6 +118,7 @@ import { CssStyleValidation } from '../../../../../org/allbinary/logic/visual/tr
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -170,10 +178,10 @@ public constructor (transformInfoInterface: TransformInfoInterface, cssStyleVali
         this.transformInfoInterface= transformInfoInterface;
     
 
-    var pathData: AbPathData = AbPathData.getInstance()!;;
+    let pathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var pathUtil: PathUtil = PathUtil.getInstance()!;;
+    let pathUtil: PathUtil = PathUtil.getInstance()!;;
     
 this.categoryAbPath= pathUtil!.removeNameFromPath(categoryThemePath);
     
@@ -192,13 +200,13 @@ public constructor (transformInfoInterface: TransformInfoInterface, hashMap: Has
         this.transformInfoInterface= transformInfoInterface;
     
 
-    var categoryThemeAbPath: AbPath = new AbPath(hashMap!.get(ThemeData.getInstance()!.PATH) as string, StringUtil.getInstance()!.EMPTY_STRING);;
+    let categoryThemeAbPath: AbPath = new AbPath(hashMap!.get(ThemeData.getInstance()!.PATH) as string, StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var pathData: AbPathData = AbPathData.getInstance()!;;
+    let pathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var pathUtil: PathUtil = PathUtil.getInstance()!;;
+    let pathUtil: PathUtil = PathUtil.getInstance()!;;
     
 this.categoryAbPath= pathUtil!.removeNameFromPath(categoryThemeAbPath!.toString());
     
@@ -209,7 +217,7 @@ this.themeName= pathData!.getNameFromPath(categoryThemeAbPath!.toString());
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("CategoryThemePath: ");
     
@@ -241,18 +249,18 @@ public constructor (storeThemeCategoryInterface: StoreThemeCategoryInterface, no
 this.categoryAbPath= storeThemeCategoryInterface!.getPath();
     
 
-    var themeNameNode: Node = DomSearchHelper.getNode(ThemeData.getInstance()!.NAME, node.getChildNodes())!;;
+    let themeNameNode: Node = DomSearchHelper.getNode(ThemeData.getInstance()!.NAME, node.getChildNodes())!;;
     
 
-    var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, themeNameNode!.getChildNodes())!;;
+    let valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, themeNameNode!.getChildNodes())!;;
     
 this.themeName= DomNodeHelper.getTextNodeValue(valueNode);
     
 
-    var previewImageNameNode: Node = DomSearchHelper.getNode(ThemeData.getInstance()!.PREVIEW_IMAGE_NAME, node.getChildNodes())!;;
+    let previewImageNameNode: Node = DomSearchHelper.getNode(ThemeData.getInstance()!.PREVIEW_IMAGE_NAME, node.getChildNodes())!;;
     
 
-    var previewImageNameValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, previewImageNameNode!.getChildNodes())!;;
+    let previewImageNameValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, previewImageNameNode!.getChildNodes())!;;
     
 this.themePreviewImageName= DomNodeHelper.getTextNodeValue(previewImageNameValueNode);
     
@@ -262,18 +270,25 @@ this.init(storeThemeCategoryInterface);
     
 }
 
-
+init(...args: any[]): any {
+   
+    if (args.length === 0) return this.init$overload1();
+   
+    if (args.length === 1) return this.init$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: init'); }
+  
                 //@Throws(Exception.constructor)
             
-    init(){
+    init$overload1(){
 
-    var categoryFactoryInterface: CategoryFactoryInterface = new StoreThemeCategoryFactory(this.getTransformInfoInterface());;
+    let categoryFactoryInterface: CategoryFactoryInterface = new StoreThemeCategoryFactory(this.getTransformInfoInterface());;
     
 
-    var categoryLoaderInterface: CategoryLoaderInterface = CategoryLoaderFactory.getInstance(categoryFactoryInterface)!;;
+    let categoryLoaderInterface: CategoryLoaderInterface = CategoryLoaderFactory.getInstance(categoryFactoryInterface)!;;
     
 
-    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance() as StoreThemeCategoryInterface;;
+    let rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance() as StoreThemeCategoryInterface;;
     
 this.init(rootStoreThemeCategoryInterface);
     
@@ -282,7 +297,7 @@ this.init(rootStoreThemeCategoryInterface);
 
                 //@Throws(Exception.constructor)
             
-    init(storeThemeCategoryInterface: StoreThemeCategoryInterface){
+    init$overload2(storeThemeCategoryInterface: StoreThemeCategoryInterface){
 this.fileAbPath= new AbPath(storeThemeCategoryInterface!.getRootFilePath()!.toString() +this.categoryAbPath!.toString(), StringUtil.getInstance()!.EMPTY_STRING);
     
 this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
@@ -352,13 +367,13 @@ this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
                         
                                     {
                                     
-    var cssStyleFileAbPath: AbPath = new AbPath(this.fileAbPath!.toString(), this.themeName +AbPathData.getInstance()!.EXTENSION_SEP +CategoryData.getInstance()!.UNCRYPTED_EXTENSION);;
+    let cssStyleFileAbPath: AbPath = new AbPath(this.fileAbPath!.toString(), this.themeName +AbPathData.getInstance()!.EXTENSION_SEP +CategoryData.getInstance()!.UNCRYPTED_EXTENSION);;
     
 
-    var cryptFileReader: CryptFileReader = new CryptFileReader(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);;
+    let cryptFileReader: CryptFileReader = new CryptFileReader(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);;
     
 
-    var document: Document = DomDocumentHelper.create(cryptFileReader!.get(cssStyleFileAbPath))!;;
+    let document: Document = DomDocumentHelper.create(cryptFileReader!.get(cssStyleFileAbPath))!;;
     
 this.styleValidationInterface= new CssStyleValidation(document);
     
@@ -376,9 +391,8 @@ this.styleValidationInterface= new CssStyleValidation(document);
 
     public isValid(): Boolean{
 
-        try {
-            
-    var isValid: Boolean = Boolean.TRUE;;
+ try { 
+    let isValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -393,7 +407,7 @@ this.styleValidationInterface= new CssStyleValidation(document);
                         if(!StringValidationUtil.getInstance()!.isValidRequired(this.categoryAbPath!.toString(), AbSqlData.MINSTRING, AbSqlData.MAXSTRING))
                         
                                     {
-                                    isValid= Boolean.FALSE;
+                                    isValid= false;
     
 
                                     }
@@ -402,7 +416,7 @@ this.styleValidationInterface= new CssStyleValidation(document);
                         if(!StringValidationUtil.getInstance()!.isValidRequired(this.themeName, AbSqlData.MINSTRING, AbSqlData.MAXSTRING))
                         
                                     {
-                                    isValid= Boolean.FALSE;
+                                    isValid= false;
     
 
                                     }
@@ -411,7 +425,7 @@ this.styleValidationInterface= new CssStyleValidation(document);
                         if(!this.getCssStyleValidation()!.isValid().valueOf())
                         
                                     {
-                                    isValid= Boolean.FALSE;
+                                    isValid= false;
     
 
                                     }
@@ -431,10 +445,11 @@ this.styleValidationInterface= new CssStyleValidation(document);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -448,18 +463,19 @@ this.styleValidationInterface= new CssStyleValidation(document);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Theme Validation Error");
     
@@ -469,10 +485,11 @@ stringBuffer!.append("Theme Validation Error");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -488,8 +505,10 @@ stringBuffer!.append("Theme Validation Error");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -525,7 +544,7 @@ stringBuffer!.append("Theme Validation Error");
 
     public toVector(): BasicArrayList{
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 vector.add(this.getName());
     
@@ -546,10 +565,10 @@ vector.add(this.getPreviewImagePath());
 
     public toHashMap(): HashMap<any, any>{
 
-    var themeData: ThemeData = ThemeData.getInstance()!;;
+    let themeData: ThemeData = ThemeData.getInstance()!;;
     
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(themeData!.NAME, this.getName());
     
@@ -572,10 +591,10 @@ hashMap!.put(themeData!.PREVIEW_IMAGE_PATH, this.getPreviewImagePath());
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, ThemeData.getInstance()!.NAME, this.toHashMap())!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, ThemeData.getInstance()!.NAME, this.toHashMap())!;;
     
 
-    var domNodeInterface: DomNodeInterface = this.getCssStyleValidation() as DomNodeInterface;;
+    let domNodeInterface: DomNodeInterface = this.getCssStyleValidation() as DomNodeInterface;;
     
 node.appendChild(domNodeInterface!.toXmlNode(document));
     
@@ -589,6 +608,4 @@ node.appendChild(domNodeInterface!.toXmlNode(document));
 
 
 }
-
-
 

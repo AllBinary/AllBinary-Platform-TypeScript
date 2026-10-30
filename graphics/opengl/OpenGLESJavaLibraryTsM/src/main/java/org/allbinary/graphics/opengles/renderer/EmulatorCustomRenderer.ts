@@ -35,12 +35,15 @@ import { InitEmulatorFactory } from '../../../../../org/allbinary/emulator/InitE
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 
 
@@ -78,16 +81,15 @@ export class EmulatorCustomRenderer
 this.logUtil!.putF(this.commonStrings!.START, this, this.renderStrings!.ON_SURFACE_CREATED);
     
 
-    var initEmulatorFactory: InitEmulatorFactory = InitEmulatorFactory.getInstance()!;;
+    let initEmulatorFactory: InitEmulatorFactory = InitEmulatorFactory.getInstance()!;;
     
 
                         if(!initEmulatorFactory!.isInitEmulator())
                         
                                     {
                                     
-        try {
-            
-    var WAIT_FOR_EMULATOR: string = "Waiting on Emulator Initialization";;
+ try { 
+    let WAIT_FOR_EMULATOR: string = "Waiting on Emulator Initialization";;
     
 
         while(!initEmulatorFactory!.isInitEmulator())
@@ -98,14 +100,17 @@ Thread.sleep(180);
     
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
     
-}
 
+ }
+   }
+ 
 
                                     }
                                 
@@ -113,6 +118,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SU
 
 
 }
-
-
 

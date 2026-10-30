@@ -78,7 +78,7 @@ public constructor (animationInterface: Animation, lifeInterface: Life, location
 this.lifeInterface= lifeInterface;
     
 
-    var size: number = globalThis.Math.trunc(this.getLifeInterface()!.getMaxlives());;
+    let size: number = globalThis.Math.trunc(this.getLifeInterface()!.getMaxlives());;
     
 this.xArray= new Array(size);
     
@@ -95,14 +95,14 @@ this.updateMaxHeight= 16;
 super.updateMeasurement(graphics);
     
 
-    var maxLives: number = globalThis.Math.trunc(this.getLifeInterface()!.getMaxlives());;
+    let maxLives: number = globalThis.Math.trunc(this.getLifeInterface()!.getMaxlives());;
     
 
 
 
 
                         for (
-    var index: number = 0;index < maxLives; index++)
+    let index: number = 0;index < maxLives; index++)
         {
 this.xArray[index]= this.getX() +(index *16);
     
@@ -135,7 +135,7 @@ this.myFontProcessor!.process(graphics);
 
 
                         for (
-    var index: number = globalThis.Math.trunc(this.getLifeInterface()!.get());--index >= 0; )
+    let index: number = globalThis.Math.trunc(this.getLifeInterface()!.get());--index >= 0; )
         {
 this.animationInterface!.paintXY(graphics, this.xArray[index]!, this.getY());
     
@@ -159,6 +159,4 @@ this.animationInterface!.paintXY(graphics, this.xArray[index]!, this.getY());
 
 
 }
-
-
 

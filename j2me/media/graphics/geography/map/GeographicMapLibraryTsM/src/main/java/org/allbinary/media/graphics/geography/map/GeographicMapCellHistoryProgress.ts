@@ -20,6 +20,7 @@
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -69,24 +70,24 @@ this.totalVisitedArray= new Array(this.geographicMapCellHistoryArray!.length);
 
     public isAnyProgress(): boolean{
 
-    var isProgressing: boolean = false;;
+    let isProgressing: boolean = false;;
     
 
-    var size: number = this.geographicMapCellHistoryArray!.length
+    let size: number = this.geographicMapCellHistoryArray!.length
                 ;;
     
 
-    var currentTotalVisited: number= 0;;
+    let currentTotalVisited: number= 0;;
     
 
-    var totalVisited: number= 0;;
+    let totalVisited: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 totalVisited= this.geographicMapCellHistoryArray[index]!.getTotalVisited();
     
@@ -115,6 +116,4 @@ this.totalVisitedArray[index]= totalVisited;
 
 
 }
-
-
 

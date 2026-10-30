@@ -34,6 +34,7 @@ import { AbResponseHandler } from '../../../org/allbinary/logic/communication/ht
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { OutputTypeData } from '../../../org/allbinary/logic/io/OutputTypeData.js';
 //not GWT import const OutputTypeData
@@ -232,17 +233,17 @@ this.getPropertiesHashMap()!.put(OutputTypeData.getInstance()!.NAME, this.type);
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -251,12 +252,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

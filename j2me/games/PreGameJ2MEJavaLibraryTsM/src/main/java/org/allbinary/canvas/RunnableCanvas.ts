@@ -36,24 +36,31 @@ import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.j
 
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+type ABSystemWrapper<T = any, U = any> = typeof ABSystemWrapper extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABSystemWrapper;
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { NullThread } from '../../../org/allbinary/thread/NullThread.js';
 //not GWT import const NullThread
@@ -69,6 +76,7 @@ import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js'
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -253,7 +261,7 @@ this.logUtil!.putF(new StringMaker().append(this.IS_RUNNING)!.appendboolean(this
                                 
                         else {
                             
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.THREAD);
     
@@ -341,17 +349,19 @@ this.currentThread= this.thread;
 
     showNotify(){
 
-        try {
-            this.stopWaiting();
+ try { this.stopWaiting();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "showNotify", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -443,7 +453,7 @@ this.runnableCanvasRefreshHelper!.process();
                         
                                     {
                                     
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
                         if(this.isRunning() && !this.isSingleThread())
@@ -452,7 +462,7 @@ this.runnableCanvasRefreshHelper!.process();
                                     stringMaker!.delete(0, stringMaker!.length());
     
 
-    var currentTimeMillis: number = this.systemWrapper!.currentTimeMillis()!;;
+    let currentTimeMillis: number = this.systemWrapper!.currentTimeMillis()!;;
     
 this.logUtil!.putF(stringMaker!.append(this.START_PAUSE)!.appendlong(currentTimeMillis)!.append(this.PAUSE_SLEEP)!.appendlong(this.pauseWait)!.toString(), this, this.PROCESS_LOOP_SLEEP);
     
@@ -487,10 +497,10 @@ this.logUtil!.putF(stringMaker!.append(this.END_PAUSE)!.appendlong(currentTimeMi
                                     }
                                 
 
-    var elapsedTime: number = this.loopTimeHelper!.getElapsedTNT()!;;
+    let elapsedTime: number = this.loopTimeHelper!.getElapsedTNT()!;;
     
 
-    var wait: number = this.loopTimeHelper!.delay;;
+    let wait: number = this.loopTimeHelper!.delay;;
     
 
                         if(elapsedTime > wait)
@@ -543,6 +553,4 @@ this.setCurrentThread();
 
 
 }
-
-
 

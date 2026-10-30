@@ -42,9 +42,7 @@
 export interface DriverCompositeInterface {
         
 
-    getDriver(): Driver
+    getDriver(): Driver;
 
 }
-
-
 

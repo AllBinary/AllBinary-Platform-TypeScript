@@ -24,6 +24,7 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 //not GWT import const Direction
@@ -133,13 +134,13 @@ this.update();
             
     goTowardNextChosenOnPathPosition(currentGeographicMapCellPosition: GeographicMapCellPosition): number{
 
-    var keyDirection: number =  -1;;
+    let keyDirection: number =  -1;;
     
 
-    var goToGeographicMapCellPosition: GeographicMapCellPosition = this.geographicMapCellPathHistoryInfo!.getNextChosenOnPathGeographicMapCellPosition()!;;
+    let goToGeographicMapCellPosition: GeographicMapCellPosition = this.geographicMapCellPathHistoryInfo!.getNextChosenOnPathGeographicMapCellPosition()!;;
     
 
-    var geographicMapDirectionData: Direction = this.geographicMapDirectionUtil!.getDirectionFromCellPositionToAdjacentCellPosition(currentGeographicMapCellPosition, goToGeographicMapCellPosition)!;;
+    let geographicMapDirectionData: Direction = this.geographicMapDirectionUtil!.getDirectionFromCellPositionToAdjacentCellPosition(currentGeographicMapCellPosition, goToGeographicMapCellPosition)!;;
     
 
                         if(geographicMapDirectionData == DirectionFactory.getInstance()!.NOT_BORDERED_WITH)
@@ -173,7 +174,7 @@ this.geographicMapCellPathHistoryInfo!.setNextChosenOnPathGeographicMapCellPosit
             
     public processAI(myManager: AllBinaryLayerManager, currentGeographicMapCellPosition: GeographicMapCellPosition): number{
 
-    var keyDirection: number =  -1;;
+    let keyDirection: number =  -1;;
     
 
                         if(this.geographicMapCellPositionBasicArrayList!.contains(currentGeographicMapCellPosition))
@@ -252,6 +253,4 @@ this.geographicMapCellHistory= geographicMapCellHistory;
 
 
 }
-
-
 

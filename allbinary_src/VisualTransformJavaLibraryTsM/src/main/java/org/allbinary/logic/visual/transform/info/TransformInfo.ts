@@ -32,9 +32,11 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
@@ -56,9 +58,11 @@ import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.j
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Encoder } from '../../../../../../org/allbinary/logic/control/crypt/Encoder.js';
 //not GWT import const Encoder
@@ -77,12 +81,15 @@ import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js'
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -113,9 +120,11 @@ import { TransformInfoObjectData } from '../../../../../../org/allbinary/logic/v
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -210,13 +219,13 @@ this.setDataFile(dataFileName);
             
     public override(hashMap: HashMap<any, any>){
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
+    let transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var aName: string = hashMap!.get(transformInfoData!.NAME) as string;;
+    let aName: string = hashMap!.get(transformInfoData!.NAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aName))
@@ -232,7 +241,7 @@ this.setDataFile(dataFileName);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TransformInfo properties overridden for: ");
     
@@ -248,7 +257,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var aStoreName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
+    let aStoreName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aStoreName))
@@ -260,7 +269,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var aObjectFileName: string = hashMap!.get(transformInfoData!.OBJECTFILENAME) as string;;
+    let aObjectFileName: string = hashMap!.get(transformInfoData!.OBJECTFILENAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aObjectFileName))
@@ -272,7 +281,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     
@@ -283,10 +292,10 @@ stringBuffer!.append(this.storeName);
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var fileAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let fileAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var aObject: string = hashMap!.get(transformInfoData!.OBJECT) as string;;
+    let aObject: string = hashMap!.get(transformInfoData!.OBJECT) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aObject))
@@ -302,7 +311,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     }
                                 
 
-    var fileDataString: string = new CryptFileReader(TransformInfoObjectData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aObject))!;;
+    let fileDataString: string = new CryptFileReader(TransformInfoObjectData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aObject))!;;
     
 
                         if(fileDataString != 
@@ -337,7 +346,7 @@ this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG) as string);
                                     }
                                 
 
-    var objectConfigFileName: string = hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as string;;
+    let objectConfigFileName: string = hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(objectConfigFileName))
@@ -358,7 +367,7 @@ this.setObjectConfigFile(objectConfigFileName);
                                     }
                                 
 
-    var type: string = hashMap!.get(OutputTypeData.getInstance()!.NAME) as string;;
+    let type: string = hashMap!.get(OutputTypeData.getInstance()!.NAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(type))
@@ -381,7 +390,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aTemplateFileName: string = hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as string;;
+    let aTemplateFileName: string = hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aTemplateFileName))
@@ -393,7 +402,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aTemplate: string = hashMap!.get(transformInfoData!.TEMPLATE) as string;;
+    let aTemplate: string = hashMap!.get(transformInfoData!.TEMPLATE) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aTemplate))
@@ -409,7 +418,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var fileDataString: string = new CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aTemplate))!;;
+    let fileDataString: string = new CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aTemplate))!;;
     
 
                         if(!stringValidationUtil!.isEmpty(fileDataString))
@@ -424,7 +433,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aDataFileName: string = hashMap!.get(transformInfoData!.DATAFILENAME) as string;;
+    let aDataFileName: string = hashMap!.get(transformInfoData!.DATAFILENAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aDataFileName))
@@ -436,7 +445,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aData: string = hashMap!.get(transformInfoData!.DATA) as string;;
+    let aData: string = hashMap!.get(transformInfoData!.DATA) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aData))
@@ -452,7 +461,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var fileDataString: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aData))!;;
+    let fileDataString: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aData))!;;
     
 
                         if(!stringValidationUtil!.isEmpty(fileDataString))
@@ -521,7 +530,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "TransformInfoInterface(HashM
 
     public log(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Name: ");
     
@@ -632,7 +641,7 @@ this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.get
             
     setObjectConfig(value: string){
 
-    var document: Document = DomDocumentHelper.create(value)!;;
+    let document: Document = DomDocumentHelper.create(value)!;;
     
 this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(this.abeClientInformation, this, document));
     
@@ -749,19 +758,18 @@ this.data= value;
 
     getData(): string{
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var dataFileString: string = this.getDataFile()!;;
+    let dataFileString: string = this.getDataFile()!;;
     
 
                         if(!stringValidationUtil!.isEmpty(dataFileString))
                         
                                     {
                                     
-        try {
-            
-    var fileData: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).get(this.getDataFilePath())!;;
+ try { 
+    let fileData: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).get(this.getDataFilePath())!;;
     
 
                         if(!stringValidationUtil!.isEmpty(this.data))
@@ -781,10 +789,11 @@ this.data= value;
                                 
 this.data= fileData;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -794,14 +803,15 @@ this.data= fileData;
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 
                                     }
                                 
 
-        try {
-            
+ try { 
                         if(!stringValidationUtil!.isEmpty(this.data))
                         
                                     {
@@ -823,7 +833,7 @@ this.data= fileData;
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Name: ");
     
@@ -852,10 +862,11 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -865,8 +876,10 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 
 
 
@@ -880,10 +893,10 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
             
     public getDataDocument(): Document{
 
-    var localData: string = this.getData()!;;
+    let localData: string = this.getData()!;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(localData))
@@ -909,7 +922,7 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
                                 
                         else {
                             
-    var document: Document = DomDocumentHelper.create(localData)!;;
+    let document: Document = DomDocumentHelper.create(localData)!;;
     
 
 
@@ -935,10 +948,10 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
 
     public toHashMap(): HashMap<any, any>{
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
+    let transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(transformInfoData!.NAME, this.name);
     
@@ -961,10 +974,10 @@ hashMap!.put(transformInfoData!.DATAFILENAME, this.dataFileName);
 hashMap!.put(transformInfoData!.DATA, Encoder.encode(this.data.getBytes()));
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -979,7 +992,7 @@ hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
     public toVector(): BasicArrayList{
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 vector.add(this.name);
     
@@ -1002,10 +1015,10 @@ vector.add(this.dataFileName);
 vector.add(Encoder.encode(this.data.getBytes()));
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 vector.add(time);
     
@@ -1063,6 +1076,4 @@ this.objectConfigInterface= objectConfigInterface;
 
 
 }
-
-
 

@@ -44,12 +44,15 @@ import { ViewCompositeInterface } from '../../../../../org/allbinary/android/act
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -89,15 +92,14 @@ public constructor (activity: Activity){
 
     public run(){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-    var inputMethodManager: InputMethodManager = this.activity.getSystemService(Context.INPUT_METHOD_SERVICE) as unknown as InputMethodManager;;
+ try { 
+    let inputMethodManager: InputMethodManager = this.activity.getSystemService(Context.INPUT_METHOD_SERVICE) as unknown as InputMethodManager;;
     
 
-    var viewCompositeInterface: ViewCompositeInterface = this.activity as unknown as ViewCompositeInterface;;
+    let viewCompositeInterface: ViewCompositeInterface = this.activity as unknown as ViewCompositeInterface;;
     
 
                         if(viewCompositeInterface == 
@@ -111,7 +113,7 @@ public constructor (activity: Activity){
                                     }
                                 
 
-    var view: View = viewCompositeInterface!.getView()!;;
+    let view: View = viewCompositeInterface!.getView()!;;
     
 
                         if(view.getWindowToken() == 
@@ -131,22 +133,23 @@ public constructor (activity: Activity){
                                     }
                                 
 
-    var token: IBinder = view.getWindowToken()!;;
+    let token: IBinder = view.getWindowToken()!;;
     
 inputMethodManager!.hideSoftInputFromWindow(token, 0);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

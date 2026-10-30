@@ -43,11 +43,9 @@ import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
 export interface MyCommandInterface {
         
 
-    addCommand(command: Command)
+    addCommand(command: Command): void;
 
-    removeAllCommands()
+    removeAllCommands(): void;
 
 }
-
-
 

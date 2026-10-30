@@ -74,14 +74,14 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 this.streetAddress= new StreetAddress(this.getRequest());
     
 
-                        if(this.streetAddress!.isValid() == Boolean.FALSE)
+                        if(this.streetAddress!.isValid() == false)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -90,7 +90,7 @@ this.streetAddress= new StreetAddress(this.getRequest());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
@@ -126,6 +126,4 @@ this.streetAddress= new StreetAddress(this.getRequest());
 
 
 }
-
-
 

@@ -51,10 +51,17 @@ export class TimeTypeUtil
     public readonly NIGHT: string = "Night";
 
     public readonly DAY: string = "Day";
+isNight(...args: any[]): any {
+   
+    if (args.length === 0) return this.isNight$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'number') return this.isNight$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: isNight'); }
+  
+    public isNight$overload1(): boolean{
 
-    public isNight(): boolean{
-
-    var hoursOfDay: number = this.getHourOfDay()!;;
+    let hoursOfDay: number = this.getHourOfDay()!;;
     
 
 
@@ -64,10 +71,17 @@ export class TimeTypeUtil
     
 }
 
+getHourOfDay(...args: any[]): any {
+   
+    if (args.length === 0) return this.getHourOfDay$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'number') return this.getHourOfDay$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getHourOfDay'); }
+  
+    public getHourOfDay$overload1(): number{
 
-    public getHourOfDay(): number{
-
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
 
@@ -77,25 +91,27 @@ export class TimeTypeUtil
     
 }
 
-
-    public getNightOrDay(): string{
+getNightOrDay(...args: any[]): any {
+   
+    if (args.length === 0) return this.getNightOrDay$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'number') return this.getNightOrDay$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getNightOrDay'); }
+  
+    public getNightOrDay$overload1(): string{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isNight()
-                        ?       
-                                this.NIGHT
-                                :
-
-                            this.DAY;
+                        return (this.isNight() ? this.NIGHT : this.DAY);
     
 }
 
 
-    public getHourOfDay(timeInMillis: number): number{
+    public getHourOfDay$overload2(timeInMillis: number): number{
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 calendar.setTimeInMillis(timeInMillis);
     
@@ -108,9 +124,9 @@ calendar.setTimeInMillis(timeInMillis);
 }
 
 
-    public isNight(timeInMillis: number): boolean{
+    public isNight$overload2(timeInMillis: number): boolean{
 
-    var hoursOfDay: number = this.getHourOfDay(timeInMillis)!;;
+    let hoursOfDay: number = this.getHourOfDay(timeInMillis)!;;
     
 
 
@@ -121,22 +137,15 @@ calendar.setTimeInMillis(timeInMillis);
 }
 
 
-    public getNightOrDay(timeInMillis: number): string{
+    public getNightOrDay$overload2(timeInMillis: number): string{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isNight(timeInMillis)
-                        ?       
-                                this.NIGHT
-                                :
-
-                            this.DAY;
+                        return (this.isNight(timeInMillis) ? this.NIGHT : this.DAY);
     
 }
 
 
 }
-
-
 

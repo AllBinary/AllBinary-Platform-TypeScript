@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
@@ -46,9 +48,11 @@ import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
@@ -58,6 +62,7 @@ import { Encoder } from '../../../../../../org/allbinary/logic/control/crypt/Enc
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -135,8 +140,7 @@ this.transformInfoFactoryInterface= transformInfoFactoryInterface;
 
     public insert(values: BasicArrayList){
 
-        try {
-            super.insert(values);
+ try { super.insert(values);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -147,10 +151,11 @@ this.transformInfoFactoryInterface= transformInfoFactoryInterface;
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -160,15 +165,16 @@ this.transformInfoFactoryInterface= transformInfoFactoryInterface;
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(value: string){
 
-        try {
-            super.deleteWhere(TransformInfoData.getInstance()!.NAME, value);
+ try { super.deleteWhere(TransformInfoData.getInstance()!.NAME, value);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -179,10 +185,11 @@ this.transformInfoFactoryInterface= transformInfoFactoryInterface;
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -192,8 +199,10 @@ this.transformInfoFactoryInterface= transformInfoFactoryInterface;
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -201,15 +210,15 @@ this.transformInfoFactoryInterface= transformInfoFactoryInterface;
             
     public get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
+    let transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(transformInfoData!.NAME, name);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
+    let hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
                         if(hashMap != 
@@ -218,7 +227,7 @@ keysAndValues!.put(transformInfoData!.NAME, name);
                         
                                     {
                                     
-    var anyType: any = hashMap!.get(transformInfoData!.OBJECTCONFIG)!;;
+    let anyType: any = hashMap!.get(transformInfoData!.OBJECTCONFIG)!;;
     
 
                         if(anyType != 
@@ -227,7 +236,7 @@ keysAndValues!.put(transformInfoData!.NAME, name);
                         
                                     {
                                     
-    var string: string = anyType as string;;
+    let string: string = anyType as string;;
     
 hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
     
@@ -235,7 +244,7 @@ hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
                                     }
                                 
 
-    var objectData: any = hashMap!.get(transformInfoData!.DATA)!;;
+    let objectData: any = hashMap!.get(transformInfoData!.DATA)!;;
     
 
                         if(objectData != 
@@ -244,7 +253,7 @@ hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
                         
                                     {
                                     
-    var string: string = objectData as string;;
+    let string: string = objectData as string;;
     
 hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
     
@@ -277,23 +286,23 @@ hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
             
     public getObjectConfigs(storeName: string): BasicArrayList{
 
-    var objectConfigVector: BasicArrayList = new BasicArrayListD();;
+    let objectConfigVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var objectConfigColumnVector: BasicArrayList = this.getColumnWhere(TransformInfoData.getInstance()!.OBJECTCONFIG, StoreFrontData.getInstance()!.NAME, storeName)!;;
+    let objectConfigColumnVector: BasicArrayList = this.getColumnWhere(TransformInfoData.getInstance()!.OBJECTCONFIG, StoreFrontData.getInstance()!.NAME, storeName)!;;
     
 
-    var size: number = objectConfigColumnVector!.size()!;;
+    let size: number = objectConfigColumnVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var objectConfigString: string = objectConfigColumnVector!.get(i) as string;;
+    let objectConfigString: string = objectConfigColumnVector!.get(i) as string;;
     
 objectConfigString= decode.toCharArray();
     
@@ -314,23 +323,23 @@ objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInter
             
     public getNames(storeName: string): BasicArrayList{
 
-    var viewNameVector: BasicArrayList = new BasicArrayListD();;
+    let viewNameVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var columnVector: BasicArrayList = this.getColumnWhere(TransformInfoData.getInstance()!.NAME, StoreFrontData.getInstance()!.NAME, storeName)!;;
+    let columnVector: BasicArrayList = this.getColumnWhere(TransformInfoData.getInstance()!.NAME, StoreFrontData.getInstance()!.NAME, storeName)!;;
     
 
-    var size: number = columnVector!.size()!;;
+    let size: number = columnVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var viewNameString: string = columnVector!.get(i) as string;;
+    let viewNameString: string = columnVector!.get(i) as string;;
     
 viewNameVector!.add(viewNameString);
     
@@ -347,10 +356,10 @@ viewNameVector!.add(viewNameString);
 
     public createTableStatement(): string{
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
+    let transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
@@ -446,6 +455,4 @@ super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(Tran
 
 
 }
-
-
 

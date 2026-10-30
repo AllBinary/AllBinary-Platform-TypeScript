@@ -71,7 +71,7 @@ System.setProperty("jdk.xml.xpathExprOpLimit", "0");
 System.setProperty("jdk.xml.xpathTotalOpLimit", "0");
     
 
-    var LIMIT: string = "500000";;
+    let LIMIT: string = "500000";;
     
 System.setProperty("jdk.xml.maxGeneralEntitySizeLimit", LIMIT);
     
@@ -79,18 +79,26 @@ System.setProperty("jdk.xml.totalEntitySizeLimit", LIMIT);
     
 }
 
+static create(...args: any[]): any {
+   
+    if (args.length === 0) return this.create$overload1();
+   
+    if (args.length === 1) return this.create$overload2(args[0]);
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.create$overload3(args[0]);
+   
+   throw new TypeError('No matching overload: create'); }
+  
+    public static create$overload1(): Document{
 
-    public static create(): Document{
-
-        try {
-            
-    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
+ try { 
+    let factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
     
 
-    var builder: DocumentBuilder = factory.newDocumentBuilder()!;;
+    let builder: DocumentBuilder = factory.newDocumentBuilder()!;;
     
 
-    var document: Document = builder.newDocument()!;;
+    let document: Document = builder.newDocument()!;;
     
 
 
@@ -98,34 +106,36 @@ System.setProperty("jdk.xml.totalEntitySizeLimit", LIMIT);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return document;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public static create(inputStream: InputStream): Document{
+    public static create$overload2(inputStream: InputStream): Document{
 
-        try {
-            
-    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
+ try { 
+    let factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
     
 
-    var builder: DocumentBuilder = factory.newDocumentBuilder()!;;
+    let builder: DocumentBuilder = factory.newDocumentBuilder()!;;
     
 
-    var document: Document = builder.parse(inputStream)!;;
+    let document: Document = builder.parse(inputStream)!;;
     
 
 
@@ -133,33 +143,35 @@ System.setProperty("jdk.xml.totalEntitySizeLimit", LIMIT);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return document;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public static create(xmlString: string): Document{
+    public static create$overload3(xmlString: string): Document{
 
-        try {
-            
-    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
+ try { 
+    let factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
     
 
-    var builder: DocumentBuilder = factory.newDocumentBuilder()!;;
+    let builder: DocumentBuilder = factory.newDocumentBuilder()!;;
     
 
-    var document: Document = builder.parse(new StringBufferInputStream(xmlString))!;;
+    let document: Document = builder.parse(new StringBufferInputStream(xmlString))!;;
     
 
 
@@ -167,17 +179,20 @@ System.setProperty("jdk.xml.totalEntitySizeLimit", LIMIT);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return document;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -188,6 +203,4 @@ private constructor (){
 
 
 }
-
-
 

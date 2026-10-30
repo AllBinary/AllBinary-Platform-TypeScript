@@ -65,7 +65,7 @@ public constructor (playerInputId: number){
 
     public process(allbinaryLayerManager: AllBinaryLayerManager, analogLocationInputProcessor: AnalogLocationInputProcessor){
 
-    var analogLocationInput: AnalogLocationInput = AnalogLocationInputFactory.getInstance()!.getInstanceForPlayer(this.playerInputId)!;;
+    let analogLocationInput: AnalogLocationInput = AnalogLocationInputFactory.getInstance()!.getInstanceForPlayer(this.playerInputId)!;;
     
 analogLocationInputProcessor!.process(allbinaryLayerManager, analogLocationInput);
     
@@ -73,6 +73,4 @@ analogLocationInputProcessor!.process(allbinaryLayerManager, analogLocationInput
 
 
 }
-
-
 

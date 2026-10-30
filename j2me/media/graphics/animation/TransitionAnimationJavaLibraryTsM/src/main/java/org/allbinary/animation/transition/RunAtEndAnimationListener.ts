@@ -72,5 +72,3 @@ protected constructor (runnable: Runnable){
 
 }
 
-
-

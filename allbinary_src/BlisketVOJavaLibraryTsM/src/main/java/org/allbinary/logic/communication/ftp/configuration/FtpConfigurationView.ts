@@ -83,25 +83,25 @@ public constructor (node: Node){
         this.setFtpConfigurationInterface(new FtpConfiguration() as FtpConfigurationInterface);
     
 
-    var chileNodeList: NodeList = node.getChildNodes()!;;
+    let chileNodeList: NodeList = node.getChildNodes()!;;
     
 
-    var server: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.SERVER, chileNodeList)!;;
+    let server: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.SERVER, chileNodeList)!;;
     
 this.getFtpConfigurationInterface()!.setServer(server);
     
 
-    var userName: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.USERNAME, chileNodeList)!;;
+    let userName: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.USERNAME, chileNodeList)!;;
     
 this.getFtpConfigurationInterface()!.setUserName(userName);
     
 
-    var password: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.PASSWORD, chileNodeList)!;;
+    let password: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.PASSWORD, chileNodeList)!;;
     
 this.getFtpConfigurationInterface()!.setPassword(password);
     
 
-    var path: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.PATH, chileNodeList)!;;
+    let path: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.PATH, chileNodeList)!;;
     
 this.getFtpConfigurationInterface()!.setPath(path);
     
@@ -120,13 +120,13 @@ public constructor (ftpConfigurationInterface: FtpConfigurationInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var ftpConfigurationMapping: FtpConfigurationMapping = new FtpConfigurationMapping(this.getFtpConfigurationInterface());;
+    let ftpConfigurationMapping: FtpConfigurationMapping = new FtpConfigurationMapping(this.getFtpConfigurationInterface());;
     
 
-    var hashMap: HashMap<any, any> = ftpConfigurationMapping!.toHashMap()!;;
+    let hashMap: HashMap<any, any> = ftpConfigurationMapping!.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, FtpConfigurationData.NAME, hashMap)!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, FtpConfigurationData.NAME, hashMap)!;;
     
 
 
@@ -154,6 +154,4 @@ this.ftpConfigurationInterface= ftpConfigurationInterface;
 
 
 }
-
-
 

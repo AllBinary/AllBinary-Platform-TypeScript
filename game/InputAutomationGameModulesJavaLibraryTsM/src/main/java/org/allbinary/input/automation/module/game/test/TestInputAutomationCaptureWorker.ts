@@ -28,9 +28,11 @@ import { Set } from '../../../../../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { AbstractInputAutomationWorker } from '../../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationWorker.js';
 //not GWT import const AbstractInputAutomationWorker
@@ -52,6 +54,7 @@ import { CapturedBufferedImagesCacheSingleton } from '../../../../../../../org/a
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { J2SECacheInterface } from '../../../../../../../org/allbinary/logic/util/cache/J2SECacheInterface.js';
 //not GWT import const J2SECacheInterface
@@ -113,7 +116,7 @@ this.setGenericProfileActions(genericProfileActions);
             
     public processDataWorkerResults(){
 
-    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;;
+    let cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;;
     
 
                         if(cacheInterface!.keySet()!.size() > 0)
@@ -122,19 +125,19 @@ this.setGenericProfileActions(genericProfileActions);
                                     this.logUtil!.putF(this.IMAGE_AVAILABLE_SO_PROCESSING, this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var anyType: any = cacheInterface!.keySet()!.()[0]!;;
+    let anyType: any = cacheInterface!.keySet()!.()[0]!;;
     
 
-    var hashMap: HashMap<any, any> = this.getGenericProfileActions()!.getHashMap()!;;
+    let hashMap: HashMap<any, any> = this.getGenericProfileActions()!.getHashMap()!;;
     
 
-    var set: Set = hashMap!.keys()!;;
+    let set: Set = hashMap!.keys()!;;
     
 
-    var actionNameArray: any[] = set.toArray()!;;
+    let actionNameArray: any[] = set.toArray()!;;
     
 
-    var size: number = actionNameArray!.length
+    let size: number = actionNameArray!.length
                 ;;
     
 
@@ -142,19 +145,19 @@ this.setGenericProfileActions(genericProfileActions);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var actionNameString: string = actionNameArray[index]! as string;;
+    let actionNameString: string = actionNameArray[index]! as string;;
     
 
-    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString) as GenericProfileAction;;
+    let genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString) as GenericProfileAction;;
     
 
-    var genericProfileActionScript: GenericProfileActionScript = genericProfileAction!.getGenericProfileActionScript()!;;
+    let genericProfileActionScript: GenericProfileActionScript = genericProfileAction!.getGenericProfileActionScript()!;;
     
 
-    var vector: BasicArrayList = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;;
+    let vector: BasicArrayList = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;;
     
 }
 
@@ -201,6 +204,4 @@ this.genericProfileActions= genericProfileActions;
 
 
 }
-
-
 

@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { EmailEvent } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
 //not GWT import const EmailEvent
@@ -71,7 +72,7 @@ public constructor (){
                         
                                     {
                                     
-    var message: string = "Logging EmailEvent - Temporary Listener for debugging.\n\n" +userEmailInfoEvent!.toString();;
+    let message: string = "Logging EmailEvent - Temporary Listener for debugging.\n\n" +userEmailInfoEvent!.toString();;
     
 this.logUtil!.putF(message, this, "onEmailSendRequest");
     
@@ -82,6 +83,4 @@ this.logUtil!.putF(message, this, "onEmailSendRequest");
 
 
 }
-
-
 

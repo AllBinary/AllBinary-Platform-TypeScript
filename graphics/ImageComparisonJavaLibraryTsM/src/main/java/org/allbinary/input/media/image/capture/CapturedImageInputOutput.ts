@@ -32,12 +32,14 @@ import { ImageOutputData } from '../../../../../../org/allbinary/input/automatio
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LongUtil } from '../../../../../../org/allbinary/logic/java/number/LongUtil.js';
 //not GWT import const LongUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
@@ -59,6 +61,7 @@ import { ImageIOInterface } from '../../../../../../org/allbinary/media/image/io
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -87,15 +90,22 @@ export class CapturedImageInputOutput
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-
+save(...args: any[]): any {
+   
+    if (args.length === 1) return this.save$overload1(args[0]);
+   
+    if (args.length === 2) return this.save$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: save'); }
+  
                 //@Throws(Exception.constructor)
             
-    public save(frame: Long){
+    public save$overload1(frame: Long){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var capturedBufferedImageCacheable: BufferedImageFrameCacheable = ((getInstance as AutomaticCacheInterface).get(frame) as BufferedImageFrameCacheable);;
+    let capturedBufferedImageCacheable: BufferedImageFrameCacheable = ((getInstance as AutomaticCacheInterface).get(frame) as BufferedImageFrameCacheable);;
     
 this.logUtil!.putF(("Saving: " +capturedBufferedImageCacheable!.toString()), this, commonStrings!.SAVE);
     
@@ -104,15 +114,15 @@ this.save(capturedBufferedImageCacheable!.getBufferedImage(), frame);
 }
 
 
-    public save(bufferedImage: BufferedImage, frame: Long){
+    public save$overload2(bufferedImage: BufferedImage, frame: Long){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var imageUtil: ImageUtil = ImageUtil.getInstance()!;;
+    let imageUtil: ImageUtil = ImageUtil.getInstance()!;;
     
 
-    var filePathStringBuffer: StringMaker = new StringMaker();;
+    let filePathStringBuffer: StringMaker = new StringMaker();;
     
 filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
     
@@ -121,12 +131,12 @@ filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()));
 filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
     
 
-    var filePath: string = filePathStringBuffer!.toString()!;;
+    let filePath: string = filePathStringBuffer!.toString()!;;
     
 this.logUtil!.putF(("Image File Path: " +filePath +imageUtil!.toString(bufferedImage)), this, commonStrings!.SAVE);
     
 
-    var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;;
+    let imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;;
     
 imagePersistanceUtil!.saveWithImageIO(filePath, bufferedImage);
     
@@ -134,6 +144,4 @@ imagePersistanceUtil!.saveWithImageIO(filePath, bufferedImage);
 
 
 }
-
-
 

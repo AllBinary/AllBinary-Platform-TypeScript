@@ -27,24 +27,29 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { UserDbInitInfo } from '../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 //not GWT import const UserDbInitInfo
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -97,12 +102,12 @@ super.setTableName(this.tableName);
             
     public get(name: string): Long{
 
-    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(this.NAME, name);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
+    let hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
                         if((get as string).compareTo(name) != 0)
@@ -117,56 +122,67 @@ keysAndValues!.put(this.NAME, name);
                                     }
                                 
 
-    var value: string = hashMap!.get(this.VALUE) as string;;
+    let value: string = hashMap!.get(this.VALUE) as string;;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Long.parseLong(value);;
+                        return Number(value);;
     
 }
 
 
     public insert(values: BasicArrayList){
 
-        try {
-            super.insert(values);
+ try { super.insert(values);
     
 this.logUtil!.putF(this.commonStrings!.SUCCESS, this, INSERT);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(value: string){
 
-        try {
-            super.deleteWhere(this.NAME, value);
+ try { super.deleteWhere(this.NAME, value);
     
 this.logUtil!.putF(this.commonStrings!.SUCCESS, this, this.commonStrings!.delete);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.FAILURE, this, this.commonStrings!.delete, e);
     
+
+ }
+   }
+ 
 }
 
-}
+update(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.update$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.update$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: update'); }
+  
+    public update$overload1(name: string, value: Long){
 
-
-    public update(name: string, value: Long){
-
-    var map: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let map: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 map.put(this.NAME, name);
     
@@ -177,7 +193,7 @@ this.update(map);
 }
 
 
-    public update(hashMap: HashMap<any, any>){
+    public update$overload2(hashMap: HashMap<any, any>){
 super.updateWhere(this.NAME, hashMap!.get(this.NAME) as string, hashMap);
     
 }
@@ -185,7 +201,7 @@ super.updateWhere(this.NAME, hashMap!.get(this.NAME) as string, hashMap);
 
     public createTable(): string{
 
-    var returnStr: string = super.createTable(tableData)!;;
+    let returnStr: string = super.createTable(tableData)!;;
     
 
 
@@ -207,6 +223,4 @@ super.updateWhere(this.NAME, hashMap!.get(this.NAME) as string, hashMap);
 
 
 }
-
-
 

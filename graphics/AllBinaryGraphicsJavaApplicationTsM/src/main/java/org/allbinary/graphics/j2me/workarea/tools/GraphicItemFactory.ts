@@ -30,9 +30,11 @@ import { LOGGING } from '../../../../../../org/allbinary/log/LOGGING.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
@@ -74,8 +76,17 @@ export class GraphicItemFactory
         
 
     private static readonly instance: GraphicItemFactory = new GraphicItemFactory();
-
-    public static getInstance(): GraphicItemFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);
+   
+    if (args.length === 1) return this.getInstance$overload3(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): GraphicItemFactory{
 
 
 
@@ -99,9 +110,9 @@ this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFac
 }
 
 
-    public getInstance(itemName: string): GraphicsItemInterfaceFactoryInterface{
+    public getInstance$overload2(itemName: string): GraphicsItemInterfaceFactoryInterface{
 
-    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = this.graphicItems!.get(itemName) as GraphicsItemInterfaceFactoryInterface;;
+    let graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = this.graphicItems!.get(itemName) as GraphicsItemInterfaceFactoryInterface;;
     
 
                         if(graphicsItemInterfaceFactoryInterface == 
@@ -125,12 +136,12 @@ this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFac
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(graphicItemNodeList: BasicArrayList): HashMap<any, any>{
+    public getInstance$overload3(graphicItemNodeList: BasicArrayList): HashMap<any, any>{
 
-    var numberOfItems: number = graphicItemNodeList!.size()!;;
+    let numberOfItems: number = graphicItemNodeList!.size()!;;
     
 
-    var graphicItemHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let graphicItemHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
                         if(LOGGING.contains(LOGGING.MENUEVENT))
@@ -144,10 +155,10 @@ this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFac
 
 
                         for (
-    var index: number = 0;index < numberOfItems; index++)
+    let index: number = 0;index < numberOfItems; index++)
         {
 
-    var graphicItem: GraphicItemInterface = GraphicItemBuilder.getInstance(graphicItemNodeList!.get(index) as Node)!;;
+    let graphicItem: GraphicItemInterface = GraphicItemBuilder.getInstance(graphicItemNodeList!.get(index) as Node)!;;
     
 graphicItemHashMap!.put(graphicItem!.getTreeNode(), graphicItem);
     
@@ -163,6 +174,4 @@ graphicItemHashMap!.put(graphicItem!.getTreeNode(), graphicItem);
 
 
 }
-
-
 

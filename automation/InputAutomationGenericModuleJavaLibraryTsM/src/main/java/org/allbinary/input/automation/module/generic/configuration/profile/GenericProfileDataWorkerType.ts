@@ -36,6 +36,7 @@ import { InputImageType } from '../../../../../../../../org/allbinary/input/medi
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -85,7 +86,7 @@ export class GenericProfileDataWorkerType
 
     public static getInstance(node: Node): GenericProfileDataWorkerType{
 
-    var name: string = DomNodeHelper.getTextNodeValue(node)!;;
+    let name: string = DomNodeHelper.getTextNodeValue(node)!;;
     
 
 
@@ -128,7 +129,7 @@ this.name= name;
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createTextNode(document, GenericProfileDataWorkerData.NAME, this.name)!;;
+    let node: Node = ModDomHelper.createTextNode(document, GenericProfileDataWorkerData.NAME, this.name)!;;
     
 
 
@@ -150,6 +151,4 @@ this.name= name;
 
 
 }
-
-
 

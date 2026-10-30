@@ -57,7 +57,7 @@ export class GameInputMotionEventProcessorFactory
 
     public static getInstance(): BaseGameInputMotionEventProcessor{
 
-    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
+    let SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
     
 
                         if(SDK_VERSION <= 4)
@@ -86,6 +86,4 @@ export class GameInputMotionEventProcessorFactory
 
 
 }
-
-
 

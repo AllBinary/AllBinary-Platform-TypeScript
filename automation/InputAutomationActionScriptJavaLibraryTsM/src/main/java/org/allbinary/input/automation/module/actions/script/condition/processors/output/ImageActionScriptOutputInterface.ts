@@ -44,21 +44,19 @@ import { ImageTypes } from './ImageTypes.js';
 export interface ImageActionScriptOutputInterface extends ProfileActionScriptOutputInterface {
         
 
-    getImageTypes(): ImageTypes
+    getImageTypes(): ImageTypes;
 
-    setImageTypes(imageTypes: ImageTypes)
+    setImageTypes(imageTypes: ImageTypes): void;
 
-    isSaved(): boolean
+    isSaved(): boolean;
 
-    setSaved(saved: boolean)
+    setSaved(saved: boolean): void;
 
-    isDisplay(): boolean
+    isDisplay(): boolean;
 
-    setDisplay(display: boolean)
+    setDisplay(display: boolean): void;
 
-    log()
+    log(): void;
 
 }
-
-
 

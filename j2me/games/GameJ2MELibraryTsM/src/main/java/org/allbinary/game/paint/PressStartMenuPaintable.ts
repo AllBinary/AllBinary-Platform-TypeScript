@@ -50,6 +50,7 @@ import { TouchScreenFactory } from '../../../../org/allbinary/input/motion/butto
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
@@ -130,7 +131,7 @@ public constructor (){
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.beginWidth= (graphics.getFont()!.stringWidth(this.startString)>>1);
     
@@ -195,6 +196,4 @@ this.flash= flash;
 
 
 }
-
-
 

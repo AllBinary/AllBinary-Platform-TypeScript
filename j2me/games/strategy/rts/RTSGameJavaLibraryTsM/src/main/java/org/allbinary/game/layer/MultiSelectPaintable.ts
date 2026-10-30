@@ -26,24 +26,30 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 //not GWT import const BasicColorFactory
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -95,7 +101,7 @@ public constructor (){
 super.updateMeasurement(graphics);
     
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.totalWidth= font.stringWidth(this.TOTAL);
     
@@ -108,7 +114,7 @@ this.textLine2Y= (this.y +font.getHeight());
 this.clear();
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size);
     
@@ -117,10 +123,10 @@ this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size);
 
 
                         for (
-    var index: number = list.size() -1;index >= 0; index--)
+    let index: number = list.size() -1;index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = list.get(index) as RTSLayer;;
+    let rtsLayer: RTSLayer = list.get(index) as RTSLayer;;
     
 
                         if(!this.rootNameList!.contains(rtsLayer!.getRootName()))
@@ -134,20 +140,20 @@ this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size);
 }
 
 
-    var COMMA_SEP: string = CommonSeps.getInstance()!.COMMA_SEP;;
+    let COMMA_SEP: string = CommonSeps.getInstance()!.COMMA_SEP;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = this.rootNameList!.size() -1;index >= 0; index--)
+    let index: number = this.rootNameList!.size() -1;index >= 0; index--)
         {
 
-    var rootName: string = this.rootNameList!.get(index) as string;;
+    let rootName: string = this.rootNameList!.get(index) as string;;
     
 stringBuffer!.append(rootName);
     
@@ -190,6 +196,4 @@ graphics.drawString(this.rootNamesString, this.textX, this.textLine2Y, 0);
 
 
 }
-
-
 

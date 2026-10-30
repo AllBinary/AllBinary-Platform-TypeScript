@@ -34,6 +34,7 @@ import { GraphicsFeatureFactory } from '../../../../../../org/allbinary/game/con
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -82,25 +83,25 @@ private constructor (){
 
             super();
         
-    var ROOT: string = "/resource";;
+    let ROOT: string = "/resource";;
     
 
-    var SMALL: string = "_20_by_20.png";;
+    let SMALL: string = "_20_by_20.png";;
     
 
-    var MEDIUM: string = SMALL;;
+    let MEDIUM: string = SMALL;;
     
 
-    var SIZE_FOUR: string = SMALL;;
+    let SIZE_FOUR: string = SMALL;;
     
 
-    var SIZE_FIVE: string = SMALL;;
+    let SIZE_FIVE: string = SMALL;;
     
 
-    var SIZE_SIX: string = SMALL;;
+    let SIZE_SIX: string = SMALL;;
     
 
-    var SIZE: string[] = 
+    let SIZE: string[] = 
                                                         [
                                                             SMALL,MEDIUM,SIZE_FOUR,SIZE_FIVE,SIZE_SIX
                                                         ];;
@@ -148,6 +149,4 @@ super.append(ROOT, sizeString);
 
 
 }
-
-
 

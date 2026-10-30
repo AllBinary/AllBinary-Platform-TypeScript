@@ -99,5 +99,3 @@ this.isEven= true;
 
 }
 
-
-

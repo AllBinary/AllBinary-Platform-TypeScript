@@ -17,6 +17,7 @@ import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.
 
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+type MathUtil<T = any, U = any> = typeof MathUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MathUtil;
 
 import { ScaleFactorFactory } from '../../../../org/allbinary/logic/math/ScaleFactorFactory.js';
 //not GWT import const ScaleFactorFactory
@@ -70,10 +71,10 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
             
     public process(layer: AllBinaryGameLayer){
 
-    var mathUtil: MathUtil = MathUtil.getInstance()!;;
+    let mathUtil: MathUtil = MathUtil.getInstance()!;;
     
 
-    var velocityProperties: BasicVelocityProperties = this.getVelocityProperties()!;;
+    let velocityProperties: BasicVelocityProperties = this.getVelocityProperties()!;;
     
 this.accumulatedX= globalThis.Math.trunc((this.accumulatedX +velocityProperties!.getVelocityXBasicDecimalP()!.getUnscaled()));
     
@@ -114,6 +115,4 @@ layer.moveDXYZ(globalThis.Math.trunc(this.accumulatedX /this.factorValue), globa
 
 
 }
-
-
 

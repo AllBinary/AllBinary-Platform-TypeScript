@@ -48,9 +48,7 @@ export interface AutomaticCacheInterface extends CacheInterface {
 
                 //@Throws(Exception.constructor)
             
-    get(key: any): CacheableInterface
+    get(key: any): CacheableInterface;
 
 }
-
-
 

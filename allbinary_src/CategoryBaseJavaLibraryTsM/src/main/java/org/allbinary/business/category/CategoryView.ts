@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { CategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
 //not GWT import const CategoryPropertiesInterface
@@ -39,12 +41,14 @@ import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNod
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { InterfaceUtil } from '../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
 //not GWT import const InterfaceUtil
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { Document } from '../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -106,10 +110,10 @@ public constructor (categoryInterface: CategoryInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(CategoryData.getInstance()!.NAME)!;;
+    let node: Node = document.createElement(CategoryData.getInstance()!.NAME)!;;
     
 
-    var childCategoryVector: BasicArrayList = this.categoryInterface!.getChildNodes()!;;
+    let childCategoryVector: BasicArrayList = this.categoryInterface!.getChildNodes()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
@@ -121,20 +125,20 @@ public constructor (categoryInterface: CategoryInterface){
                                     }
                                 
 
-    var size: number = childCategoryVector!.size()!;;
+    let size: number = childCategoryVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var anyType: any = childCategoryVector!.get(i)!;;
+    let anyType: any = childCategoryVector!.get(i)!;;
     
 
-    var categoryPropertiesInterface: CategoryPropertiesInterface = 
+    let categoryPropertiesInterface: CategoryPropertiesInterface = 
                 null
             ;;
     
@@ -152,7 +156,7 @@ public constructor (categoryInterface: CategoryInterface){
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface = anyType as CategoryInterface;;
+    let categoryInterface: CategoryInterface = anyType as CategoryInterface;;
     
 categoryPropertiesInterface= categoryInterface!.getProperties();
     
@@ -161,7 +165,7 @@ categoryPropertiesInterface= categoryInterface!.getProperties();
                                 
                         else {
                             
-    var isImpl: string = InterfaceUtil.viewAll(anyType!.constructor, CommonSeps.getInstance()!.NEW_LINE)!;;
+    let isImpl: string = InterfaceUtil.viewAll(anyType!.constructor, CommonSeps.getInstance()!.NEW_LINE)!;;
     
 
 
@@ -172,7 +176,7 @@ categoryPropertiesInterface= categoryInterface!.getProperties();
                         }
                             
 
-    var childCategoryNode: Node = new CategoryPropertiesView(categoryPropertiesInterface).toXmlNode(document)!;;
+    let childCategoryNode: Node = new CategoryPropertiesView(categoryPropertiesInterface).toXmlNode(document)!;;
     
 node.appendChild(childCategoryNode);
     
@@ -188,6 +192,4 @@ node.appendChild(childCategoryNode);
 
 
 }
-
-
 

@@ -73,17 +73,17 @@ export class OrderedObjectArrayPermutationUtil
 
     public static main(args: string[]){
 
-    var TOTAL: number = 7;;
+    let TOTAL: number = 7;;
     
 
-    var data: any[] = new Array(TOTAL);;
+    let data: any[] = new Array(TOTAL);;
     
 
 
 
 
                         for (
-    var i: number = 0;i < TOTAL; i++)
+    let i: number = 0;i < TOTAL; i++)
         {
 data[i]= new ComparableObject();
     
@@ -92,10 +92,10 @@ data[i]= new ComparableObject();
 Arrays.sort(data);
     
 
-    var permutationVisitor: ObjectPermutationVisitor = new ObjectPermutationVisitor(data);;
+    let permutationVisitor: ObjectPermutationVisitor = new ObjectPermutationVisitor(data);;
     
 
-    var ORIGINAL_DATA_LABEL: string = "Original Data: ";;
+    let ORIGINAL_DATA_LABEL: string = "Original Data: ";;
     
 console.log(ORIGINAL_DATA_LABEL);
     
@@ -118,14 +118,14 @@ private constructor (){
 
     public getNext(data: any[]){
 
-    var length: number = data.length
+    let length: number = data.length
                 ;;
     
 
-    var i: number = length -1;;
+    let i: number = length -1;;
     
 
-    var tsUtil: TsUtil = TsUtil.getInstance()!;;
+    let tsUtil: TsUtil = TsUtil.getInstance()!;;
     
 
         while(tsUtil!.hashCode(data[i -1]!) >= tsUtil!.hashCode(data[i]!))
@@ -135,7 +135,7 @@ i= i -1;
 }
 
 
-    var j: number = length;;
+    let j: number = length;;
     
 
         while(tsUtil!.hashCode(data[j -1]!) <= tsUtil!.hashCode(data[i -1]!))
@@ -166,7 +166,7 @@ j--;
 
     public swap(data: any[], a: number, b: number){
 
-    var temp: any = data[a]!;;
+    let temp: any = data[a]!;;
     
 data[a]= data[b]!;
     
@@ -177,7 +177,7 @@ data[b]= temp;
 
     public factorial(dataLength: number): number{
 
-    var temp: number = 1;;
+    let temp: number = 1;;
     
 
                         if(dataLength > 1)
@@ -188,7 +188,7 @@ data[b]= temp;
 
 
                         for (
-    var i: number = 1;i <= dataLength; i++)
+    let i: number = 1;i <= dataLength; i++)
         {
 temp *= i;
     
@@ -208,7 +208,7 @@ temp *= i;
 
     public generate(data: any[], visitor: Visitor){
 
-    var iterations: number = this.factorial(data.length)!;;
+    let iterations: number = this.factorial(data.length)!;;
     
 console.log(this.TOTAL_ITERATIONS_TABLE);
     
@@ -219,7 +219,7 @@ console.log(iterations);
 
 
                         for (
-    var count: number = 0;count < iterations -1; count++)
+    let count: number = 0;count < iterations -1; count++)
         {
 this.getNext(data);
     
@@ -233,6 +233,4 @@ console.log(this.FINISHED);
 
 
 }
-
-
 

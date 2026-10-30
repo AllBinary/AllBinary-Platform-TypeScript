@@ -28,21 +28,26 @@ import { InputStream } from '../../../java/io/InputStream.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DocumentToNode } from '../../../org/allbinary/data/tree/dom/document/DocumentToNode.js';
 //not GWT import const DocumentToNode
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Replace } from '../../../org/allbinary/logic/string/regex/replace/Replace.js';
 //not GWT import const Replace
@@ -76,6 +81,7 @@ import { GenericStoreTransformInfoObjectConfig } from '../../../org/allbinary/lo
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -139,16 +145,16 @@ this.setDocument(this.generate(this.toXmlDoc()));
             
     public get(): string{
 
-    var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;;
+    let storeName: string = this.getTransformInfoInterface()!.getStoreName()!;;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
+    let httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 
-    var templateNameOverride: string = StringUtil.getInstance()!.getNonNull(httpTransformInfoInterface!.getPropertiesHashMap()!.get(TransformInfoData.getInstance()!.PARTIAL) as string)!;;
+    let templateNameOverride: string = StringUtil.getInstance()!.getNonNull(httpTransformInfoInterface!.getPropertiesHashMap()!.get(TransformInfoData.getInstance()!.PARTIAL) as string)!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(storeName);
     
@@ -159,10 +165,10 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
 stringBuffer!.append(RootTransformInfoData.NAME);
     
 
-    var rootComponentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, stringBuffer!.toString(), this.getTransformInfoInterface())!;;
+    let rootComponentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, stringBuffer!.toString(), this.getTransformInfoInterface())!;;
     
 
-    var viewVector: BasicArrayList = this.getTransformDomNodes()!;;
+    let viewVector: BasicArrayList = this.getTransformDomNodes()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -174,35 +180,35 @@ stringBuffer!.append(RootTransformInfoData.NAME);
                                     }
                                 
 
-    var rootView: string = rootComponentInterface!.view()!;;
+    let rootView: string = rootComponentInterface!.view()!;;
     
 
-    var startXMLHeader: string = "<xsl:text disable-output-escaping=\"yes\" ><![CDATA[";;
+    let startXMLHeader: string = "<xsl:text disable-output-escaping=\"yes\" ><![CDATA[";;
     
 
-    var endXMLHeader: string = "]]></xsl:text>";;
+    let endXMLHeader: string = "]]></xsl:text>";;
     
 
-    var size: number = viewVector!.size()!;;
+    let size: number = viewVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var objectConfigTransformInfoDomNode: TransformInfoDomNode = viewVector!.get(index) as TransformInfoDomNode;;
+    let objectConfigTransformInfoDomNode: TransformInfoDomNode = viewVector!.get(index) as TransformInfoDomNode;;
     
 
-    var templateKey: string = objectConfigTransformInfoDomNode!.getReplaceKey()!;;
+    let templateKey: string = objectConfigTransformInfoDomNode!.getReplaceKey()!;;
     
 
-    var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, objectConfigTransformInfoDomNode!.getTransformInfoInterface()!.getName(), this.getTransformInfoInterface())!;;
+    let componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, objectConfigTransformInfoDomNode!.getTransformInfoInterface()!.getName(), this.getTransformInfoInterface())!;;
     
 
-    var replacementViewString: string = componentInterface!.view()!;;
+    let replacementViewString: string = componentInterface!.view()!;;
     
 replacementViewString= DocumentToNode.convertDocumentToNodeString(replacementViewString);
     
@@ -215,7 +221,7 @@ stringBuffer!.append(replacementViewString);
 stringBuffer!.append(endXMLHeader);
     
 
-    var templateValue: string = stringBuffer!.toString()!;;
+    let templateValue: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -237,7 +243,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "get()");
                                     }
                                 
 
-    var replace: Replace = new Replace(templateKey, templateValue);;
+    let replace: Replace = new Replace(templateKey, templateValue);;
     
 rootView= replace.all(rootView);
     
@@ -265,10 +271,10 @@ rootView= replace.all(rootView);
             
     public createInputStream(): InputStream{
 
-    var completeTemplateViewBytes: number[] = this.get()!.getBytes()!;;
+    let completeTemplateViewBytes: number[] = this.get()!.getBytes()!;;
     
 
-    var bais: ByteArrayInputStream = new ByteArrayInputStream(completeTemplateViewBytes);;
+    let bais: ByteArrayInputStream = new ByteArrayInputStream(completeTemplateViewBytes);;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -289,6 +295,4 @@ rootView= replace.all(rootView);
 
 
 }
-
-
 

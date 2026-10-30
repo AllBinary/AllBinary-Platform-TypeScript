@@ -77,7 +77,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var trackingEventListenerInterface: TrackingEventListenerInterface = eventListenerInterface as TrackingEventListenerInterface;;
+    let trackingEventListenerInterface: TrackingEventListenerInterface = eventListenerInterface as TrackingEventListenerInterface;;
     
 trackingEventListenerInterface!.onMovement(eventObject as TrackingEvent);
     
@@ -85,6 +85,4 @@ trackingEventListenerInterface!.onMovement(eventObject as TrackingEvent);
 
 
 }
-
-
 

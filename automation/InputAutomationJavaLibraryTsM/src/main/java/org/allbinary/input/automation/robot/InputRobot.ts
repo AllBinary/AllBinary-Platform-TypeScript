@@ -38,12 +38,15 @@ import { PointHelper } from '../../../../../org/allbinary/input/automation/Point
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -119,7 +122,7 @@ public constructor (graphicsDevice: GraphicsDevice){
 
     public getMousePoint(): Point{
 
-    var point: Point = MouseInfo.getPointerInfo()!.getLocation()!;;
+    let point: Point = MouseInfo.getPointerInfo()!.getLocation()!;;
     
 
 
@@ -129,34 +132,50 @@ public constructor (graphicsDevice: GraphicsDevice){
     
 }
 
-
+mouseMoveToTarget(...args: any[]): any {
+   
+    if (args.length === 3) return this.mouseMoveToTarget$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 1) return this.mouseMoveToTarget$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: mouseMoveToTarget'); }
+  
                 //@Throws(Exception.constructor)
             
-    public mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer){
+    public mouseMoveToTarget$overload1(rectangle: Rectangle, x: Integer, y: Integer){
 
-    var point: Point = PointHelper.getCenterPoint(rectangle)!;;
+    let point: Point = PointHelper.getCenterPoint(rectangle)!;;
     
 this.robot.mouseMove(point.x +x, point.y +y);
     
 
-    var message: string = new StringMaker().append("Moved Mouse To: x: ")!.appendint(point.x)!.append(" y: ")!.appendint(point.y)!.append(" in the middle of: ")!.append(StringUtil.getInstance()!.toString(rectangle))!.toString()!;;
+    let message: string = new StringMaker().append("Moved Mouse To: x: ")!.appendint(point.x)!.append(" y: ")!.appendint(point.y)!.append(" in the middle of: ")!.append(StringUtil.getInstance()!.toString(rectangle))!.toString()!;;
     
 this.logUtil!.putF(message, this, "moveMouseToTarget");
     
 }
 
-
-    public mouseMove(point: Point){
+mouseMove(...args: any[]): any {
+   
+    if (args.length === 1) return this.mouseMove$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.mouseMove$overload2(args[0], args[1]);
+   
+    if (args.length === 2) return this.mouseMove$overload3(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: mouseMove'); }
+  
+    public mouseMove$overload1(point: Point){
 this.mouseMove(point.x, point.y);
     
 }
 
 
-    public mouseMove(x: number, y: number){
+    public mouseMove$overload2(x: number, y: number){
 this.robot.mouseMove(x, y);
     
 
-    var message: string = new StringMaker().append("Moved Mouse To: x: ")!.appendint(x)!.append(" y: ")!.appendint(y)!.toString()!;;
+    let message: string = new StringMaker().append("Moved Mouse To: x: ")!.appendint(x)!.append(" y: ")!.appendint(y)!.toString()!;;
     
 this.logUtil!.putF(message, this, "moveMouse");
     
@@ -165,7 +184,7 @@ this.logUtil!.putF(message, this, "moveMouse");
 
                 //@Throws(Exception.constructor)
             
-    public mouseMoveToTarget(rectangle: Rectangle){
+    public mouseMoveToTarget$overload2(rectangle: Rectangle){
 this.mouseMoveToTarget(rectangle, 0, 0);
     
 }
@@ -229,7 +248,7 @@ this.robot.keyRelease(keycode);
 }
 
 
-    public mouseMove(x: Integer, y: Integer){
+    public mouseMove$overload3(x: Integer, y: Integer){
 this.robot.mouseMove(x, y);
     
 }
@@ -290,6 +309,4 @@ this.robot.waitForIdle();
 
 
 }
-
-
 

@@ -29,9 +29,11 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomData } from '../../../../../../../../org/allbinary/data/tree/dom/DomData.js';
 //not GWT import const DomData
@@ -50,15 +52,19 @@ import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/do
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -110,12 +116,12 @@ public constructor (node: Node){
 
             super();
         
-    var indexPropertyValueHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let indexPropertyValueHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 this.propertyValueVector= new BasicArrayListD();
     
 
-    var cssPropertyNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(CssPropertyValueData.getInstance()!.NAME, node.getChildNodes())!;;
+    let cssPropertyNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(CssPropertyValueData.getInstance()!.NAME, node.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
@@ -127,23 +133,23 @@ this.propertyValueVector= new BasicArrayListD();
                                     }
                                 
 
-    var size: number = cssPropertyNodeVector!.size()!;;
+    let size: number = cssPropertyNodeVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var cssPropertyValueNode: Node = cssPropertyNodeVector!.get(index) as Node;;
+    let cssPropertyValueNode: Node = cssPropertyNodeVector!.get(index) as Node;;
     
 
-    var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, cssPropertyValueNode!.getChildNodes())!;;
+    let valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, cssPropertyValueNode!.getChildNodes())!;;
     
 
-    var propertyValue: string = DomNodeHelper.getTextNodeValue(valueNode)!;;
+    let propertyValue: string = DomNodeHelper.getTextNodeValue(valueNode)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
@@ -155,30 +161,30 @@ this.propertyValueVector= new BasicArrayListD();
                                     }
                                 
 
-    var indexNode: Node = DomSearchHelper.getNode(DomData.INDEX, cssPropertyValueNode!.getChildNodes())!;;
+    let indexNode: Node = DomSearchHelper.getNode(DomData.INDEX, cssPropertyValueNode!.getChildNodes())!;;
     
 
-    var indexValue: string = DomNodeHelper.getTextNodeValue(indexNode)!;;
+    let indexValue: string = DomNodeHelper.getTextNodeValue(indexNode)!;;
     
 indexPropertyValueHashMap!.put(indexValue, propertyValue);
     
 }
 
 
-    var size2: number = indexPropertyValueHashMap!.keys().size()!;;
+    let size2: number = indexPropertyValueHashMap!.keys().size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size2; index++)
+    let index: number = 0;index < size2; index++)
         {
 
-    var indexInt: Integer = new Integer(index);;
+    let indexInt: Integer = new Integer(index);;
     
 
-    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt!.toString()) as string;;
+    let propertyValue: string = indexPropertyValueHashMap!.get(indexInt!.toString()) as string;;
     
 this.propertyValueVector!.add(propertyValue);
     
@@ -189,29 +195,29 @@ this.propertyValueVector!.add(propertyValue);
 
     public toHashMap(): HashMap<any, any>{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var cssPropertyValueData: CssPropertyValueData = CssPropertyValueData.getInstance()!;;
+    let cssPropertyValueData: CssPropertyValueData = CssPropertyValueData.getInstance()!;;
     
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = this.propertyValueVector!.size()!;;
+    let size: number = this.propertyValueVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var value: string = this.propertyValueVector!.get(index) as string;;
+    let value: string = this.propertyValueVector!.get(index) as string;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -246,7 +252,7 @@ index++;
                         
                                     {
                                     
-    var hashMap: HashMap<any, any> = this.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 this.logUtil!.putF("CssPropertyValues HashMap: " +hashMap!.toString(), this, "toXmlNode()");
     
@@ -263,6 +269,4 @@ this.logUtil!.putF("CssPropertyValues HashMap: " +hashMap!.toString(), this, "to
 
 
 }
-
-
 

@@ -71,5 +71,3 @@ this.rtsPlayerGameInput!.left();
 
 }
 
-
-

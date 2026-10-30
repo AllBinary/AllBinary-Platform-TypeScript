@@ -59,7 +59,7 @@ export class GraphicItemBuilder
             
     public static getInstance(node: Node): GraphicItemInterface{
 
-    var graphicItemName: string = node.getNodeName()!;;
+    let graphicItemName: string = node.getNodeName()!;;
     
 
                         if(graphicItemName!.compareTo(PointsDomUtil.getInstance()!.LINES) == 0)
@@ -93,6 +93,4 @@ private constructor (){
 
 
 }
-
-
 

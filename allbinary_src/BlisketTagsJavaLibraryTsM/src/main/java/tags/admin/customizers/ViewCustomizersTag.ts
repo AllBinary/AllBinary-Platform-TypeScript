@@ -61,8 +61,7 @@ public constructor (){
             
     public doStartTag(): number{
 
-        try {
-            this.setName("Add Validation Customizers View");
+ try { this.setName("Add Validation Customizers View");
     
 this.setObjectFile("views.admin.customizers.CustomizersValidationView");
     
@@ -72,10 +71,11 @@ this.setObjectFile("views.admin.customizers.CustomizersValidationView");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -84,12 +84,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

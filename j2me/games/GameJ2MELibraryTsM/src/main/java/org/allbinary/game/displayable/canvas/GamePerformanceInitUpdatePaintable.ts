@@ -79,7 +79,7 @@ export class GamePerformanceInitUpdatePaintable extends InitUpdatePaintable impl
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.defaultStringWidth= MyFontProcessor.defaultStringWidth(font, 2);
     
@@ -106,26 +106,26 @@ this.myFontProcessor!.process(graphics);
 graphics.setColor(this.RED);
     
 
-    var charArray: string[];;
+    let charArray: string[];;
     
 
-    var charArray2: string[];;
+    let charArray2: string[];;
     
 
-    var size2: number= 0;;
+    let size2: number= 0;;
     
 
-    var size3: number= 0;;
+    let size3: number= 0;;
     
 
-    var size: number = this.baseRefreshHelperCharArray!.length -2;;
+    let size: number = this.baseRefreshHelperCharArray!.length -2;;
     
 
 
 
 
                         for (
-    var index: number = size;index >= 0; )
+    let index: number = size;index >= 0; )
         {
 charArray= this.baseRefreshHelperCharArray[index]!;
     
@@ -145,6 +145,4 @@ graphics.drawChars(charArray2, 0, size3, size2 *this.defaultStringWidth, this.yA
 
 
 }
-
-
 

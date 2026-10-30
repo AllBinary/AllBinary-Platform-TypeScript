@@ -108,10 +108,10 @@ this.setPriority();
 
     public setPriority(){
 
-    var pathFindingLayer: AllBinaryLayer = this.pathFindingLayer as AllBinaryLayer;;
+    let pathFindingLayer: AllBinaryLayer = this.pathFindingLayer as AllBinaryLayer;;
     
 
-    var targetLayer: AllBinaryLayer = this.targetPathFindingLayer as AllBinaryLayer;;
+    let targetLayer: AllBinaryLayer = this.targetPathFindingLayer as AllBinaryLayer;;
     
 
                         if(targetLayer != 
@@ -120,10 +120,10 @@ this.setPriority();
                         
                                     {
                                     
-    var distance: number = this.layerDistanceUtil!.getDistance(targetLayer, pathFindingLayer)!;;
+    let distance: number = this.layerDistanceUtil!.getDistance(targetLayer, pathFindingLayer)!;;
     
 
-    var distanceCategory: number = globalThis.Math.trunc(distance /70);;
+    let distanceCategory: number = globalThis.Math.trunc(distance /70);;
     
 this.priorityP= distanceCategory;
     
@@ -178,6 +178,4 @@ this.pathFindingLayer= unitLayer;
 
 
 }
-
-
 

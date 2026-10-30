@@ -58,10 +58,17 @@ export class TransformStoreDocumentFactory
             extends Object
          {
         
-
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 2) return this.getInstance$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
-    public static getInstance(pageContext: PageContext, weblisketSession: WeblisketSession): TransformDocumentInterface{
+    public static getInstance$overload1(pageContext: PageContext, weblisketSession: WeblisketSession): TransformDocumentInterface{
 
 
 
@@ -73,7 +80,7 @@ export class TransformStoreDocumentFactory
 
                 //@Throws(Exception.constructor)
             
-    public static getInstance(searchRequest: SearchRequest): TransformDocumentInterface{
+    public static getInstance$overload2(searchRequest: SearchRequest): TransformDocumentInterface{
 
 
 
@@ -90,6 +97,4 @@ private constructor (){
 
 
 }
-
-
 

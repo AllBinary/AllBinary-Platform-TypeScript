@@ -52,6 +52,7 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -198,7 +199,7 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreedXYZ
 
     public nextAnimation(){
 
-    var frame: number = this.getFrame()!;;
+    let frame: number = this.getFrame()!;;
     
 this.circularIndexUtil!.next();
     
@@ -209,7 +210,7 @@ this.setFrame(frame);
 
     public previousAnimation(){
 
-    var frame: number = this.getFrame()!;;
+    let frame: number = this.getFrame()!;;
     
 this.circularIndexUtil!.previous();
     
@@ -220,7 +221,7 @@ this.setFrame(frame);
 
     public setAnimation(index: number){
 
-    var frame: number = this.getFrame()!;;
+    let frame: number = this.getFrame()!;;
     
 this.circularIndexUtil!.setIndex(index);
     
@@ -287,7 +288,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.set(gl);
@@ -298,6 +299,4 @@ this.animationInterfaceArray[index]!.set(gl);
 
 
 }
-
-
 

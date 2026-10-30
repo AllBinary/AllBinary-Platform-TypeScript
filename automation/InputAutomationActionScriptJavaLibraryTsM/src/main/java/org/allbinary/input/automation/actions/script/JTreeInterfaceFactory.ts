@@ -70,5 +70,3 @@ this.jTreeInterface= jTreeInterface;
 
 }
 
-
-

@@ -46,9 +46,9 @@ export class GameKeyEventUtil
          {
         
 
-    public static getKey(anyType: any = {}): number{
+    public static getKey(anyType: any): number{
 
-    var gameKeyEvent: GameKeyEvent = anyType as GameKeyEvent;;
+    let gameKeyEvent: GameKeyEvent = anyType as GameKeyEvent;;
     
 
 
@@ -66,6 +66,4 @@ private constructor (){
 
 
 }
-
-
 

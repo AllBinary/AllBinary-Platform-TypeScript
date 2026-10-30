@@ -34,6 +34,7 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -63,7 +64,24 @@ export class NullAIFactory
 
     private static NULL_AI: NullAI = new NullAI();
 
-    public static getInstance(): ArtificialIntelligenceInterface{
+    public static getInstance$overload2(): ArtificialIntelligenceInterface{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return NullAIFactory.NULL_AI;
+    
+}
+
+getInstance(...args: any[]): any {
+   
+    if (args.length === 3) return this.getInstance$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 0) return this.getInstance$overload2();
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public getInstance$overload1(hashtable: ABHashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 
 
 
@@ -73,17 +91,5 @@ export class NullAIFactory
 }
 
 
-    public getInstance(hashtable: ABHashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullAIFactory.NULL_AI;
-    
 }
-
-
-}
-
-
 

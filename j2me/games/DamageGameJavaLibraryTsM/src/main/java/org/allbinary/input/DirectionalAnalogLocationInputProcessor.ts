@@ -49,9 +49,11 @@ import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLay
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -99,8 +101,7 @@ public constructor (inputProcessorArray: GameInputProcessor[]){
         this.inputProcessorArray= inputProcessorArray;
     
 
-        try {
-            this.leftGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, this.gameKeyFactory!.LEFT);
+ try { this.leftGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, this.gameKeyFactory!.LEFT);
     
 this.rightGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, this.gameKeyFactory!.RIGHT);
     
@@ -112,39 +113,41 @@ this.leftTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForI
     
 this.rightTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, this.gameKeyFactory!.KEY_NUM5);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public process(allbinaryLayerManager: AllBinaryLayerManager, analogLocationInput: AnalogLocationInput){
 
-        try {
-            
-    var customGPoint: CustomGPoint;;
+ try { 
+    let customGPoint: CustomGPoint;;
     
 customGPoint= analogLocationInput!.getCustomGPoint();
     
 
-    var x: number = customGPoint!.getX()!;;
+    let x: number = customGPoint!.getX()!;;
     
 
-    var y: number = customGPoint!.getY()!;;
+    let y: number = customGPoint!.getY()!;;
     
 
-    var leftTrigger: number = analogLocationInput!.getLeftTrigger()!;;
+    let leftTrigger: number = analogLocationInput!.getLeftTrigger()!;;
     
 
-    var rightTrigger: number = analogLocationInput!.getRightTrigger()!;;
+    let rightTrigger: number = analogLocationInput!.getRightTrigger()!;;
     
 
                         if(x < 0)
@@ -200,17 +203,20 @@ customGPoint= analogLocationInput!.getCustomGPoint();
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put("Unable to process analog input", this, commonStrings!.PROCESS, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -225,6 +231,4 @@ this.logUtil!.put("Unable to process analog input", this, commonStrings!.PROCESS
 
 
 }
-
-
 

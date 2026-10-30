@@ -36,6 +36,7 @@ import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.
 
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+type MyRandomFactory<T = any, U = any> = typeof MyRandomFactory extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MyRandomFactory;
 
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
@@ -104,10 +105,10 @@ this.visitor= visitor;
                                     this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
     
 
-    var repeat: boolean = false;;
+    let repeat: boolean = false;;
     
 
-    var repeatLikelyhoodIntegerArray: Integer[] = this.inputProbability!.getRepeatLikelyhoodIntegerArray()!;;
+    let repeatLikelyhoodIntegerArray: Integer[] = this.inputProbability!.getRepeatLikelyhoodIntegerArray()!;;
     
 
                         if(this.getLastKey() !=  -1 && repeatLikelyhoodIntegerArray[this.getLastKey()]!.intValue() >= this.i_random)
@@ -123,26 +124,26 @@ this.visitor= visitor;
                         
                                     {
                                     
-    var likelyhoodIntegerArray: Integer[][] = this.inputProbability!.getLikelyhoodIntegerArray()!;;
+    let likelyhoodIntegerArray: Integer[][] = this.inputProbability!.getLikelyhoodIntegerArray()!;;
     
 this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
     
 
-    var size: number = this.keyArray!.length
+    let size: number = this.keyArray!.length
                 ;;
     
 
-    var likelyhoodIntegerKeyArray: Integer[];;
+    let likelyhoodIntegerKeyArray: Integer[];;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var key: number = this.keyArray[index]!;;
+    let key: number = this.keyArray[index]!;;
     
 likelyhoodIntegerKeyArray= likelyhoodIntegerArray[key]!;
     
@@ -181,6 +182,4 @@ this.visitor.visit(this);
 
 
 }
-
-
 

@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { Category } from '../../../../../../org/allbinary/business/category/Category.js';
 //not GWT import const Category
@@ -43,6 +45,7 @@ import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/D
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { ThemeData } from '../../../../../../org/allbinary/logic/visual/theme/ThemeData.js';
 //not GWT import const ThemeData
@@ -160,20 +163,20 @@ this.addThemes(node);
             
     public addThemes(node: Node){
 
-    var themesNode: Node = DomSearchHelper.getNode(ThemesData.getInstance()!.NAME, node.getChildNodes())!;;
+    let themesNode: Node = DomSearchHelper.getNode(ThemesData.getInstance()!.NAME, node.getChildNodes())!;;
     
 
-    var nodeList: NodeList = themesNode!.getChildNodes()!;;
+    let nodeList: NodeList = themesNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var themeNode: Node = nodeList!.item(index)!;;
+    let themeNode: Node = nodeList!.item(index)!;;
     
 
                         if(themeNode!.getNodeName()!.compareTo(ThemeData.getInstance()!.NAME) == 0)
@@ -216,7 +219,7 @@ this.themeVector!.add(themeValidation);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -225,7 +228,7 @@ this.themeVector!.add(themeValidation);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
@@ -234,7 +237,7 @@ this.themeVector!.add(themeValidation);
             
     public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<any, any> = super.toHashMap()!;;
+    let categoryHashMap: HashMap<any, any> = super.toHashMap()!;;
     
 categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector);
     
@@ -251,7 +254,7 @@ categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector);
             
     public toVector(): BasicArrayList{
 
-    var categoryVector: BasicArrayList = super.toVector()!;;
+    let categoryVector: BasicArrayList = super.toVector()!;;
     
 
 
@@ -263,6 +266,4 @@ categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector);
 
 
 }
-
-
 

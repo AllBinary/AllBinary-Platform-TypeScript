@@ -78,18 +78,23 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+type PositionStrings<T = any, U = any> = typeof PositionStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PositionStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
@@ -489,20 +494,20 @@ this.partInterfaceArrayP= partInterfaceArray;
 
     public toStringAppend(stringBuffer: StringMaker){
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var positionStrings: PositionStrings = PositionStrings.getInstance()!;;
+    let positionStrings: PositionStrings = PositionStrings.getInstance()!;;
     
 super.toStringAppend(stringBuffer);
     
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
 
-    var groupInterfaceArray: Group[] = this.getGroupInterface()!;;
+    let groupInterfaceArray: Group[] = this.getGroupInterface()!;;
     
 
-    var size: number = groupInterfaceArray!.length
+    let size: number = groupInterfaceArray!.length
                 ;;
     
 
@@ -510,7 +515,7 @@ stringBuffer!.append(commonSeps!.NEW_LINE);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 stringBuffer!.append(groupInterfaceArray[index]!.toString());
     
@@ -519,7 +524,7 @@ stringBuffer!.append(commonSeps!.COMMA);
 }
 
 
-    var pickupBehavior: PickupBehavior = this.getPickupBehavior()!;;
+    let pickupBehavior: PickupBehavior = this.getPickupBehavior()!;;
     
 
                         if(pickupBehavior != 
@@ -563,7 +568,7 @@ stringBuffer!.appendint(this.initZ);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 this.toStringAppend(stringBuffer);
     
@@ -577,6 +582,4 @@ this.toStringAppend(stringBuffer);
 
 
 }
-
-
 

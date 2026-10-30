@@ -45,9 +45,7 @@ import { View } from '../../../../android/view/View.js';
 export interface KeyInputViewCompositeInterface extends ViewCompositeInterface {
         
 
-    setKeyInputView(keyInputView: View)
+    setKeyInputView(keyInputView: View): void;
 
 }
-
-
 

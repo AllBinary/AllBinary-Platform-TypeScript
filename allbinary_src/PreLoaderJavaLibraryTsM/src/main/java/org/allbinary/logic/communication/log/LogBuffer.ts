@@ -22,12 +22,15 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 
 
@@ -77,17 +80,17 @@ this.logEntryVector!.add(log);
 
     public logAll(){
 
-    var size: number = this.logEntryVector!.size()!;;
+    let size: number = this.logEntryVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var log: Log = this.logEntryVector!.get(index) as Log;;
+    let log: Log = this.logEntryVector!.get(index) as Log;;
     
 this.logUtil!.putL(log);
     
@@ -97,6 +100,4 @@ this.logUtil!.putL(log);
 
 
 }
-
-
 

@@ -68,17 +68,15 @@ import { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
 export interface RTSPlayerLayerInterface extends GameNotificationHudCompositeInterface, BuildMenuCompositeInterface, PlayerGameInputCompositeInterface, DestroyedEventListenerInterface, TickableInterface, PathFindingLayerInterface {
         
 
-    getCapital(): Capital
+    getCapital(): Capital;
 
-    getRTSFormInput(): RTSFormInput
+    getRTSFormInput(): RTSFormInput;
 
-    add(sound: Sound)
+    add(sound: Sound): void;
 
-    getPlayerOwnedRTSLayers(): PlayerOwnedRTSLayers
+    getPlayerOwnedRTSLayers(): PlayerOwnedRTSLayers;
 
-    implmentsArtificialIntelligenceCompositeInterface(): boolean
+    implmentsArtificialIntelligenceCompositeInterface(): boolean;
 
 }
-
-
 

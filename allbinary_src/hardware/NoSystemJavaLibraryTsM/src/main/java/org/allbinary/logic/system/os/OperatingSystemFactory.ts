@@ -26,12 +26,15 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -86,25 +89,27 @@ private constructor (){
 
     public getOperatingSystemInstance(): GenericOperatingSystem{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-    var osString: string = new StringMaker().append("OperatingSystem Info: ")!.append(this.genericOperatingSystem!.toString())!.toString()!;;
+ try { 
+    let osString: string = new StringMaker().append("OperatingSystem Info: ")!.append(this.genericOperatingSystem!.toString())!.toString()!;;
     
 console.log(osString);
     
 this.logUtil!.putF(osString, this, commonStrings!.GET_INSTANCE);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -115,6 +120,4 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
 
 }
-
-
 

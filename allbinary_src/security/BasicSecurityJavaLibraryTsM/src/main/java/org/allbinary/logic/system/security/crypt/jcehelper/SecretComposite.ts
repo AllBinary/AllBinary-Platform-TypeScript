@@ -109,10 +109,10 @@ this.cipher.init(Cipher.DECRYPT_MODE, this.secretKey);
 
 
                         for (
-    var index: number = 0;index < this.key.length; index++)
+    let index: number = 0;index < this.key.length; index++)
         {
 
-    var value: number = this.key[index]!;;
+    let value: number = this.key[index]!;;
     
 
                         if(value < 8 && value > 0)
@@ -135,6 +135,4 @@ this.cipher.init(Cipher.DECRYPT_MODE, this.secretKey);
 
 
 }
-
-
 

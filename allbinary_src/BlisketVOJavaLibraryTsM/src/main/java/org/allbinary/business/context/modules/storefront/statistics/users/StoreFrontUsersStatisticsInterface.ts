@@ -45,11 +45,9 @@ import { TableMappingInterface } from '../../../../../../../../org/allbinary/dat
 export interface StoreFrontUsersStatisticsInterface extends TableMappingInterface {
         
 
-    getNumberOfUsers(): Long
+    getNumberOfUsers(): Long;
 
-    getNumberOfUsersByRole(role: string): Long
+    getNumberOfUsersByRole(role: string): Long;
 
 }
-
-
 

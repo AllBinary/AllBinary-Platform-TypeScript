@@ -22,18 +22,22 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { RegistrationConfiguration } from '../../../../../../org/allbinary/logic/system/security/licensing/registration/RegistrationConfiguration.js';
 //not GWT import const RegistrationConfiguration
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -72,10 +76,10 @@ public constructor (name: string, version: string, specialName: string, shortNam
                             //For kotlin this is before the body of the constructor.
                     
 
-    var string: string = this.getSpecialName()!;;
+    let string: string = this.getSpecialName()!;;
     
 
-    var number: string = string.substring(string.length -1)!;;
+    let number: string = string.substring(string.length -1)!;;
     
 
                         if(Integer.getInteger(number) == 
@@ -89,7 +93,7 @@ public constructor (name: string, version: string, specialName: string, shortNam
                                     }
                                 
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(this.isHardSale())
@@ -111,10 +115,10 @@ public constructor (name: string, version: string, specialName: string, shortNam
 
     public toHashtable(): ABHashtable<any, any>{
 
-    var hashtable: ABHashtable<any, any> = super.toHashtable()!;;
+    let hashtable: ABHashtable<any, any> = super.toHashtable()!;;
     
 
-    var registrationConfiguration: RegistrationConfiguration = RegistrationConfiguration.getInstance()!;;
+    let registrationConfiguration: RegistrationConfiguration = RegistrationConfiguration.getInstance()!;;
     
 hashtable.put(registrationConfiguration!.NAME, registrationConfiguration!.getRegistrationCode());
     
@@ -128,6 +132,4 @@ hashtable.put(registrationConfiguration!.NAME, registrationConfiguration!.getReg
 
 
 }
-
-
 

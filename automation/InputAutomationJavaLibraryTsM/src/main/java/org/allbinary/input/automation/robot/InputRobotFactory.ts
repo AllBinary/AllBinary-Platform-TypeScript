@@ -48,9 +48,11 @@ import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
 //not GWT import const JavaHelpSetNotifier
@@ -63,9 +65,11 @@ import { SecuredNativeLibraryInterface } from '../../../../../org/allbinary/logi
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -111,14 +115,14 @@ export class InputRobotFactory
 
                 //@Throws(Exception.constructor)
             
-    public static loadLibraries(collection: Collection){
+    public static loadLibraries$overload2(collection: Collection){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.putF("Loading Libraries", "InputRobotFactory", "loadLibraries");
     
 
-    var iterator: Iterator = collection.iterator()!;;
+    let iterator: Iterator = collection.iterator()!;;
     
 
         while(iterator.hasNext())
@@ -134,16 +138,16 @@ InputRobotFactory.loadLibrary(iterator.next() as InputRobotInterface);
             
     public static loadLibrary(inputRobotInterface: InputRobotInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-                        if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface.constructor, inputRobotInterface))
+                        if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterfaceinputRobotInterface))
                         
                                     {
                                     logUtil!.putF("Loading Library: " +inputRobotInterface!.getName(), "InputRobotFactory", "loadLibraries");
     
 
-    var securedNativeLibraryInterface: SecuredNativeLibraryInterface = inputRobotInterface as SecuredNativeLibraryInterface;;
+    let securedNativeLibraryInterface: SecuredNativeLibraryInterface = inputRobotInterface as SecuredNativeLibraryInterface;;
     
 securedNativeLibraryInterface!.load();
     
@@ -165,22 +169,21 @@ private constructor (){
 
             super();
         
-        try {
-            
-    var graphenv: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;;
+ try { 
+    let graphenv: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;;
     
 
-    var screens: GraphicsDevice[] = graphenv.getScreenDevices()!;;
+    let screens: GraphicsDevice[] = graphenv.getScreenDevices()!;;
     
 
-    var inputRobotInterface: InputRobotInterface;;
+    let inputRobotInterface: InputRobotInterface;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < screens.length; i++)
+    let i: number = 0;i < screens.length; i++)
         {
 inputRobotInterface= new InputRobot(screens[i]!) as InputRobotInterface;
     
@@ -192,14 +195,17 @@ this.get()!.put(inputRobotInterface!.getName(), inputRobotInterface);
 
 this.logUtil!.putF("Number Of Robots: " +this.hashtable.size(), this, "getRobots");
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -217,7 +223,7 @@ this.logUtil!.putF("Adding InputRobotInterface: " +inputRobotInterface!.getName(
 this.get()!.put(inputRobotInterface!.getName(), inputRobotInterface);
     
 
-    var helpSet: HelpSet = inputRobotInterface!.getHelpSet()!;;
+    let helpSet: HelpSet = inputRobotInterface!.getHelpSet()!;;
     
 
                         if(this.helpSetListenerInterface != 
@@ -236,7 +242,7 @@ this.get()!.put(inputRobotInterface!.getName(), inputRobotInterface);
                         
                                     {
                                     
-    var helpSetEvent: HelpSetEvent = new HelpSetEvent(this, helpSet, HelpSetEvent.HELPSET_ADDED);;
+    let helpSetEvent: HelpSetEvent = new HelpSetEvent(this, helpSet, HelpSetEvent.HELPSET_ADDED);;
     
 this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
     
@@ -263,20 +269,27 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
                             
 }
 
-
+loadLibraries(...args: any[]): any {
+   
+    if (args.length === 0) return this.loadLibraries$overload1();
+   
+    if (args.length === 1) return this.loadLibraries$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: loadLibraries'); }
+  
                 //@Throws(Exception.constructor)
             
-    public loadLibraries(){
+    public loadLibraries$overload1(){
 
-    var set: Set = this.get()!.keySet()!;;
+    let set: Set = this.get()!.keySet()!;;
     
 this.logUtil!.putF("Loading Libraries", this, "loadLibraries");
     
 
-    var nameArray: any[] = set.toArray()!;;
+    let nameArray: any[] = set.toArray()!;;
     
 
-    var size: number = nameArray!.length
+    let size: number = nameArray!.length
                 ;;
     
 
@@ -284,10 +297,10 @@ this.logUtil!.putF("Loading Libraries", this, "loadLibraries");
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var inputRobotInterface: InputRobotInterface = InputRobotFactory.getInstance()!.get(nameArray[index]! as string)!;;
+    let inputRobotInterface: InputRobotInterface = InputRobotFactory.getInstance()!.get(nameArray[index]! as string)!;;
     
 InputRobotFactory.loadLibrary(inputRobotInterface);
     
@@ -302,16 +315,16 @@ InputRobotFactory.loadLibrary(inputRobotInterface);
 this.logUtil!.putF("Unloading Libraries", this, "unloadLibraries");
     
 
-    var set: Set = this.get()!.keySet()!;;
+    let set: Set = this.get()!.keySet()!;;
     
 
-    var inputRobotInterface: InputRobotInterface;;
+    let inputRobotInterface: InputRobotInterface;;
     
 
-    var inputRobotArray: any[] = set.toArray()!;;
+    let inputRobotArray: any[] = set.toArray()!;;
     
 
-    var size: number = inputRobotArray!.length
+    let size: number = inputRobotArray!.length
                 ;;
     
 
@@ -319,18 +332,18 @@ this.logUtil!.putF("Unloading Libraries", this, "unloadLibraries");
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 inputRobotInterface= this.get(inputRobotArray[index]! as string);
     
 
-                        if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface.constructor, inputRobotInterface))
+                        if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterfaceinputRobotInterface))
                         
                                     {
                                     this.logUtil!.putF("Unloading Library: " +inputRobotInterface!.getName(), this, "unloadLibraries");
     
 
-    var securedNativeLibraryInterface: SecuredNativeLibraryInterface = inputRobotInterface as SecuredNativeLibraryInterface;;
+    let securedNativeLibraryInterface: SecuredNativeLibraryInterface = inputRobotInterface as SecuredNativeLibraryInterface;;
     
 securedNativeLibraryInterface!.unload();
     
@@ -341,10 +354,17 @@ securedNativeLibraryInterface!.unload();
 
 }
 
-
+get(...args: any[]): any {
+   
+    if (args.length === 0) return this.get$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.get$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: get'); }
+  
                 //@Throws(Exception.constructor)
             
-    public get(): ABHashtable<any, any>{
+    public get$overload1(): ABHashtable<any, any>{
 
 
 
@@ -354,7 +374,7 @@ securedNativeLibraryInterface!.unload();
 }
 
 
-    public get(name: string): InputRobotInterface{
+    public get$overload2(name: string): InputRobotInterface{
 this.logUtil!.putF("Getting Robot: " +name, this, "getRobots");
     
 
@@ -367,6 +387,4 @@ this.logUtil!.putF("Getting Robot: " +name, this, "getRobots");
 
 
 }
-
-
 

@@ -22,6 +22,7 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -70,9 +71,9 @@ this.buffers.clear();
 
                 //@Throws(Exception.constructor)
             
-    public remove(key: any = {}): CacheableInterface{
+    public remove(key: any): CacheableInterface{
 
-    var size: number = this.buffers.size()!;;
+    let size: number = this.buffers.size()!;;
     
 
                         if(size > 0)
@@ -108,10 +109,10 @@ this.buffers.clear();
 
 
                         for (
-    var index: number = usedList!.size()!;--index >= 0; )
+    let index: number = usedList!.size()!;--index >= 0; )
         {
 
-    var anyType: CacheableInterface = usedList!.objectArray[index]! as CacheableInterface;;
+    let anyType: CacheableInterface = usedList!.objectArray[index]! as CacheableInterface;;
     
 this.add(anyType);
     
@@ -130,10 +131,10 @@ usedList!.clear();
 
 
                         for (
-    var index: number = usedList!.size()!;--index >= 0; )
+    let index: number = usedList!.size()!;--index >= 0; )
         {
 
-    var list: BasicArrayListCacheable = usedList!.objectArray[index]! as BasicArrayListCacheable;;
+    let list: BasicArrayListCacheable = usedList!.objectArray[index]! as BasicArrayListCacheable;;
     
 
                         if(list.size() == 0)
@@ -152,6 +153,4 @@ this.add(list);
 
 
 }
-
-
 

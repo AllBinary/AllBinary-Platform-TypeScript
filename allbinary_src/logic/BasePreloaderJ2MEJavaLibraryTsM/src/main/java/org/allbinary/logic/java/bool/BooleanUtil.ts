@@ -27,6 +27,7 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -81,10 +82,10 @@ private constructor (){
             
     public getFromString(booleanString: string): boolean{
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
+    let booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(booleanString))
@@ -100,7 +101,7 @@ private constructor (){
                                     }
                                 
 
-    var booleanStringLowerCase: string = booleanString!.toLowerCase()!;;
+    let booleanStringLowerCase: string = booleanString!.toLowerCase()!;;
     
 
                         if(this.tsUtil!.compareTo(booleanStringLowerCase, booleanFactory!.TRUE_STRING) == 0)
@@ -144,10 +145,10 @@ private constructor (){
             
     public isStringBoolean(booleanString: string): boolean{
 
-    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
+    let booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
-    var booleanStringLowerCase: string = booleanString!.toLowerCase()!;;
+    let booleanStringLowerCase: string = booleanString!.toLowerCase()!;;
     
 
                         if(booleanStringLowerCase!.compareTo(booleanFactory!.TRUE_STRING) == 0 || booleanStringLowerCase!.compareTo(booleanFactory!.FALSE_STRING) == 0)
@@ -173,10 +174,10 @@ private constructor (){
 
     public toStringFromBooleanArray(booleanArray: boolean[]): string{
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var size: number = booleanArray!.length
+    let size: number = booleanArray!.length
                 ;;
     
 
@@ -184,7 +185,7 @@ private constructor (){
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 stringMaker!.appendboolean(booleanArray[index]!);
     
@@ -200,6 +201,4 @@ stringMaker!.appendboolean(booleanArray[index]!);
 
 
 }
-
-
 

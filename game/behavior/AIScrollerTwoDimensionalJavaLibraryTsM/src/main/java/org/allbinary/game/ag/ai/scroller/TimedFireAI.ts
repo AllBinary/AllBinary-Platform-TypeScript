@@ -91,7 +91,7 @@ this.delay= delay;
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var timeFiredInterface: TimeFiredInterface = this.getOwnerLayerInterface() as TimeFiredInterface;;
+    let timeFiredInterface: TimeFiredInterface = this.getOwnerLayerInterface() as TimeFiredInterface;;
     
 
                         if(this.maxFireDelayTimeHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime) && timeFiredInterface!.getLastFireTime() +this.maxFireDelayTimeHelper!.delay < this.maxFireDelayTimeHelper!.getStartTime())
@@ -108,6 +108,4 @@ this.maxFireDelayTimeHelper!.delay= this.delay;
 
 
 }
-
-
 

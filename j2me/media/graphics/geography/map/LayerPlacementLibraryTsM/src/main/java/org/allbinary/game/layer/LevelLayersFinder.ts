@@ -33,15 +33,19 @@ import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/ma
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+type EnumerationUtil<T = any, U = any> = typeof EnumerationUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof EnumerationUtil;
 
 
 
@@ -83,22 +87,22 @@ export class LevelLayersFinder
 
     public get(hashtable: ABHashtable<any, any>): BasicArrayList{
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
-    var enumeration: Enumeration<any> = hashtable.keys()!;;
+    let enumeration: Enumeration<any> = hashtable.keys()!;;
     
 
-    var layerHashtableCanBeNull: ABHashtable<any, any>;;
+    let layerHashtableCanBeNull: ABHashtable<any, any>;;
     
 
-    var integerCanBeNull: Integer;;
+    let integerCanBeNull: Integer;;
     
 
-    var cachedIntegerCanBeNull: Integer;;
+    let cachedIntegerCanBeNull: Integer;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
@@ -130,6 +134,4 @@ cachedIntegerCanBeNull= smallIntegerSingletonFactory!.getAt(integerCanBeNull!.in
 
 
 }
-
-
 

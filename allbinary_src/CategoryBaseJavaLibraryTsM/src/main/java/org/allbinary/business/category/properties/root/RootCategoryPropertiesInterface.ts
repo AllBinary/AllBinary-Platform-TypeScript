@@ -47,13 +47,11 @@ export interface RootCategoryPropertiesInterface {
 
                 //@Throws(Exception.constructor)
             
-    setRootFilePath(value: AbPath)
+    setRootFilePath(value: AbPath): void;
 
                 //@Throws(Exception.constructor)
             
-    getRootFilePath(): AbPath
+    getRootFilePath(): AbPath;
 
 }
-
-
 

@@ -79,16 +79,16 @@ this.angleInfo= angleInfo;
 
     turnAI(frame: number): number{
 
-    var keyDirection: number =  -1;;
+    let keyDirection: number =  -1;;
     
 
-    var directionAngle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame)!;;
+    let directionAngle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame)!;;
     
 
-    var angle: number = this.angleInfo!.getAngle()!;;
+    let angle: number = this.angleInfo!.getAngle()!;;
     
 
-    var degrees: number = Math.abs(directionAngle -angle)!;;
+    let degrees: number = Math.abs(directionAngle -angle)!;;
     
 
                         if(degrees < 180)
@@ -148,7 +148,7 @@ this.angleInfo= angleInfo;
 
     getAIKeyPressed(frame: Integer): number{
 
-    var angle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame.intValue());;
+    let angle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame.intValue());;
     
 
                         if(this.angleInfo!.getAngle() != angle)
@@ -178,13 +178,13 @@ this.angleInfo= angleInfo;
 
     public getAIKeyPressedFromDirection(geographicMapDirectionData: Direction): number{
 
-    var keyDirection: number =  -1;;
+    let keyDirection: number =  -1;;
     
 
-    var angleIncrementInfo: AngleIncrementInfo = this.angleInfo!.getAngleIncrementInfo()!;;
+    let angleIncrementInfo: AngleIncrementInfo = this.angleInfo!.getAngleIncrementInfo()!;;
     
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
+    let directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 
                         if(geographicMapDirectionData == directionFactory!.DOWN)
@@ -252,6 +252,4 @@ this.angleInfo= angleInfo;
 
 
 }
-
-
 

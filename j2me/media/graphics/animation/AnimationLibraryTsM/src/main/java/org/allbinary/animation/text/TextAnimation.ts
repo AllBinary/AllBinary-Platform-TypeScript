@@ -49,15 +49,19 @@ import { SWTJOGLProcessor } from '../../../../org/allbinary/graphics/threed/SWTJ
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -110,19 +114,14 @@ this.setText(text);
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.fontHeight= font.getHeight();
     
 
-    var adjustedFontHeight: number = globalThis.Math.trunc( -(this.fontHeight *2.00));;
+    let adjustedFontHeight: number = globalThis.Math.trunc( -(this.fontHeight *2.00));;
     
-this.offsetY= SWTJOGLProcessor.getInstance()!.isJOGL()
-                        ?       
-                                adjustedFontHeight
-                                :
-
-                            0;
+this.offsetY= (SWTJOGLProcessor.getInstance()!.isJOGL() ? adjustedFontHeight : 0);
     
 this.textChangeListener!.onMeasure();
     
@@ -151,7 +150,7 @@ this.paintXYNoUpdate(graphics, x, y);
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 
-    var size: number = this.textArrayP!.length
+    let size: number = this.textArrayP!.length
                 ;;
     
 
@@ -159,7 +158,7 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.ge
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 graphics.drawString(this.textArrayP[index]!, x, y +this.offsetY +(index *this.fontHeight), this.anchor);
     
@@ -178,7 +177,7 @@ this.textChangeListener= textChangeListener;
 
     public setText(text: string){
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
                         if(text != 
@@ -187,13 +186,13 @@ this.textChangeListener= textChangeListener;
                         
                                     {
                                     
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var startIndex: number = 0;;
+    let startIndex: number = 0;;
     
 
-    var endIndex: number = 0;;
+    let endIndex: number = 0;;
     
 
         while(index >= 0)
@@ -237,17 +236,17 @@ index++;
                         
                                     {
                                     
-    var textArray: string[] = new Array(list.size());;
+    let textArray: string[] = new Array(list.size());;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 textArray[index]= list.get(index) as string;
     
@@ -290,6 +289,4 @@ this.myFontProcessor= this.updateMyFontProcessor;
 
 
 }
-
-
 

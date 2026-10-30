@@ -22,9 +22,11 @@
         
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -66,7 +68,7 @@ export class KeyValueFactory
 
     public get(key: string): string{
 
-    var value: string = this.MAP.get(key) as string;;
+    let value: string = this.MAP.get(key) as string;;
     
 
                         if(value == 
@@ -93,6 +95,4 @@ export class KeyValueFactory
 
 
 }
-
-
 

@@ -43,9 +43,7 @@ import { File } from '../../../../java/io/File.js';
 export interface FileJDialogListenerInterface {
         
 
-    onFiles(files: File[])
+    onFiles(files: File[]): void;
 
 }
-
-
 

@@ -30,9 +30,11 @@ import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/D
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { Attr } from '../../../../../../org/w3c/dom/Attr.js';
 //not GWT import const Attr
@@ -95,19 +97,19 @@ public constructor (node: Node){
                                     }
                                 
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
+    let transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var attributes: NamedNodeMap = node.getAttributes()!;;
+    let attributes: NamedNodeMap = node.getAttributes()!;;
     
 
-    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME) as Attr;;
+    let attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME) as Attr;;
     
 
-    var name: string = attrNode!.getValue()!;;
+    let name: string = attrNode!.getValue()!;;
     
 
-    var nodeList: NodeList = node.getChildNodes()!;;
+    let nodeList: NodeList = node.getChildNodes()!;;
     
 
                         if(nodeList!.getLength() > 1)
@@ -118,7 +120,7 @@ public constructor (node: Node){
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Constructing Complete TransformInfo Node For: ");
     
@@ -136,28 +138,28 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "TransformInfoObjectConfigCom
                                     }
                                 
 
-    var objectFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTFILENAME, nodeList)!;;
+    let objectFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTFILENAME, nodeList)!;;
     
 
-    var objectFileName: string = DomNodeHelper.getTextNodeValue(objectFileNameNode)!;;
+    let objectFileName: string = DomNodeHelper.getTextNodeValue(objectFileNameNode)!;;
     
 
-    var objectConfigFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTCONFIGFILENAME, nodeList)!;;
+    let objectConfigFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTCONFIGFILENAME, nodeList)!;;
     
 
-    var objectConfigFileName: string = DomNodeHelper.getTextNodeValue(objectConfigFileNameNode)!;;
+    let objectConfigFileName: string = DomNodeHelper.getTextNodeValue(objectConfigFileNameNode)!;;
     
 
-    var templateFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.TEMPLATEFILENAME, nodeList)!;;
+    let templateFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.TEMPLATEFILENAME, nodeList)!;;
     
 
-    var templateFileName: string = DomNodeHelper.getTextNodeValue(templateFileNameNode)!;;
+    let templateFileName: string = DomNodeHelper.getTextNodeValue(templateFileNameNode)!;;
     
 
-    var dataFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.DATAFILENAME, nodeList)!;;
+    let dataFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.DATAFILENAME, nodeList)!;;
     
 
-    var dataFileName: string = DomNodeHelper.getTextNodeValue(dataFileNameNode)!;;
+    let dataFileName: string = DomNodeHelper.getTextNodeValue(dataFileNameNode)!;;
     
 this.transformInfoInterface= new TransformInfo(name, objectFileName, objectConfigFileName, templateFileName, dataFileName) as TransformInfoInterface;
     
@@ -170,7 +172,7 @@ this.transformInfoInterface= new TransformInfo(name, objectFileName, objectConfi
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Constructing Partial TransformInfo Node For: ");
     
@@ -193,7 +195,7 @@ this.transformInfoInterface= new TransformInfo(name) as TransformInfoInterface;
                         }
                             
 
-    var templateAttrNode: Attr = attributes.getNamedItem(transformInfoData!.MAPPED) as Attr;;
+    let templateAttrNode: Attr = attributes.getNamedItem(transformInfoData!.MAPPED) as Attr;;
     
 
                         if(templateAttrNode != 
@@ -267,7 +269,7 @@ this.mappedName= mappedName;
 
     public getReplaceKey(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("<transform:component name=\"");
     
@@ -276,7 +278,7 @@ stringBuffer!.append("body");
 stringBuffer!.append("\"/>");
     
 
-    var key: string = stringBuffer!.toString()!;;
+    let key: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -297,6 +299,4 @@ stringBuffer!.append("\"/>");
 
 
 }
-
-
 

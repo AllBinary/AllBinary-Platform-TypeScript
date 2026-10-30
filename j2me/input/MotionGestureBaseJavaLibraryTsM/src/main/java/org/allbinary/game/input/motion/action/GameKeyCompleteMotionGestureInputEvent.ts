@@ -43,6 +43,7 @@ import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -105,22 +106,24 @@ this.update();
 
     public update(){
 
-        try {
-            this.setGameKey(this.inputToGameKeyMapping!.getInstance(this.getMotionGestureInput()!.getId()));
+ try { this.setGameKey(this.inputToGameKeyMapping!.getInstance(this.getMotionGestureInput()!.getId()));
     
 this.setGameKeyEvent(this.gameKeyEventFactory!.getInstanceForInput(this, this.getGameKey()));
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -157,6 +160,4 @@ this.gameKey= gameKey;
 
 
 }
-
-
 

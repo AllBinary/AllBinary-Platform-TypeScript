@@ -55,6 +55,7 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -64,12 +65,15 @@ import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventSt
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
@@ -112,9 +116,7 @@ export class AllBinaryGameLayer extends AllBinaryLayer implements ViewPositionEv
 
     readonly RED: BasicColor = BasicColorFactory.getInstance()!.RED;
 
-    private readonly paintable: Paintable = SWTUtil.isSWT
-                        ?       
-                                new class extends Paintable
+    private readonly paintable: Paintable = (SWTUtil.isSWT ? new class extends Paintable
                                 {
                                 
     private readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
@@ -125,10 +127,7 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.BLACK);
 }
 
                                 }
-                            
-                                :
-
-                            NullPaintable.getInstance();
+                             : NullPaintable.getInstance());
 
     private readonly gameKeyEventList: BasicArrayList = new BasicArrayListD();
 
@@ -231,13 +230,13 @@ this.paintable.paint(graphics);
 
     public paintDebug(graphics: Graphics){
 
-    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
+    let viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 
-    var viewX: number = viewPosition!.getX()!;;
+    let viewX: number = viewPosition!.getX()!;;
     
 
-    var viewY: number = viewPosition!.getY()!;;
+    let viewY: number = viewPosition!.getY()!;;
     
 this.basicSetColorUtil!.setBasicColorP(graphics, this.RED);
     
@@ -263,6 +262,4 @@ this.setHalfHeight(height>>1);
 
 
 }
-
-
 

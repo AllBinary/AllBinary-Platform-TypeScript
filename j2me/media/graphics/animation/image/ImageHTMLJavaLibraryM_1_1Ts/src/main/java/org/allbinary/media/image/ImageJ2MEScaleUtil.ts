@@ -27,6 +27,7 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
 //not GWT import const PlaynImmutableImage
@@ -36,9 +37,11 @@ import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMu
 
 //not plain js import { CanvasImage } 
 const CanvasImage = globalThis.playn.core.CanvasImage;
+type CanvasImage<T = any, U = any> = typeof CanvasImage extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CanvasImage;
 
 //not plain js import { CanvasSurface } 
 const CanvasSurface = globalThis.playn.core.CanvasSurface;
+type CanvasSurface<T = any, U = any> = typeof CanvasSurface extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CanvasSurface;
 
 
 
@@ -88,14 +91,14 @@ private constructor (){
             
     public scaleArray(images: Image[], width: number, height: number): Image[]{
 
-    var scaledImages: Image[] = new Array(images.length);;
+    let scaledImages: Image[] = new Array(images.length);;
     
 
 
 
 
                         for (
-    var index: number = images.length
+    let index: number = images.length
                 ;--index >= 0; )
         {
 scaledImages[index]= this.scale(images[index]!, width, height);
@@ -115,7 +118,7 @@ scaledImages[index]= this.scale(images[index]!, width, height);
             
     public scale(image: Image, width: number, height: number): Image{
 
-    var originalPlayNImage: playn.core.Image = 
+    let originalPlayNImage: playn.core.Image = 
                 null
             ;;
     
@@ -124,7 +127,7 @@ scaledImages[index]= this.scale(images[index]!, width, height);
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage = image as PlaynMutableImage;;
+    let originalHTMLImage: PlaynMutableImage = image as PlaynMutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
@@ -133,7 +136,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage = image as PlaynImmutableImage;;
+    let originalHTMLImage: PlaynImmutableImage = image as PlaynImmutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
@@ -141,16 +144,16 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                         }
                             
 
-    var scaledImage: Image = Image.createImage(width, height)!;;
+    let scaledImage: Image = Image.createImage(width, height)!;;
     
 
-    var htmlImage: PlaynMutableImage = scaledImage as PlaynMutableImage;;
+    let htmlImage: PlaynMutableImage = scaledImage as PlaynMutableImage;;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
+    let canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
     
 
-    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;;
+    let canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;;
     
 canvasSurface!.drawImage(originalPlayNImage, 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight());
     
@@ -164,6 +167,4 @@ canvasSurface!.drawImage(originalPlayNImage, 0, 0, scaledImage!.getWidth(), scal
 
 
 }
-
-
 

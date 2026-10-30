@@ -121,6 +121,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 //not GWT import const AngleInfo
@@ -145,6 +146,7 @@ import { GeographicMapDirectionUtil } from '../../../../org/allbinary/media/grap
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
@@ -191,10 +193,10 @@ export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventList
             
     public static createSimulated(): AdvancedRTSGameLayer{
 
-    var nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;;
+    let nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;;
     
 
-    var nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;;
+    let nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;;
     
 
 
@@ -248,7 +250,7 @@ this.getWaypointBehavior()!.getWaypoint()!.setAllBinaryGameLayerManager(this.all
 
     initVisibility(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 
-    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;;
+    let advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;;
     
 
                         if(advancedRTSPlayerLayerInterface!.isLocalPlayer() || advancedRTSPlayerLayerInterface!.getGameType() == GameTypeFactory.getInstance()!.BOT)
@@ -371,7 +373,7 @@ this.waypointBehaviorBase= unitWaypointHelper;
                         
                                     {
                                     
-    var parentAdvancedRTSGameLayer: AdvancedRTSGameLayer = this.parentLayer as AdvancedRTSGameLayer;;
+    let parentAdvancedRTSGameLayer: AdvancedRTSGameLayer = this.parentLayer as AdvancedRTSGameLayer;;
     
 
                         if(parentAdvancedRTSGameLayer!.getType() != 1)
@@ -425,19 +427,19 @@ this.waypointBehaviorBase= unitWaypointHelper;
             
     public buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean{
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.getCurrentGeographicMapCellPosition()!;;
+    let geographicMapCellPosition: GeographicMapCellPosition = this.getCurrentGeographicMapCellPosition()!;;
     
 
-    var buildingDirection: Direction = GeographicMapDirectionUtil.getInstance()!.getDirectionFromCellPositionToAdjacentCellPosition(geographicMapCellPosition, cellPosition)!;;
+    let buildingDirection: Direction = GeographicMapDirectionUtil.getInstance()!.getDirectionFromCellPositionToAdjacentCellPosition(geographicMapCellPosition, cellPosition)!;;
     
 
-    var angleInfo: AngleInfo = this.getRotationAnimationInterface()!.getAngleInfoP()!;;
+    let angleInfo: AngleInfo = this.getRotationAnimationInterface()!.getAngleInfoP()!;;
     
 
-    var angle: number = FrameUtil.getInstance()!.adjustAngleToFrameAngle(angleInfo!.getAngle() +90)!;;
+    let angle: number = FrameUtil.getInstance()!.adjustAngleToFrameAngle(angleInfo!.getAngle() +90)!;;
     
 
-    var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;;
+    let gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;;
     
 
                         if(buildingDirection == DirectionFactory.getInstance()!.UP)
@@ -678,10 +680,10 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Can
             
     public getSurroundingGeographicMapCellPositionList(): BasicArrayList{
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
     
@@ -732,9 +734,8 @@ this.waypointRunnableLogHelperP= WaypointRunnableLogHelper.getInstance();
 
     public onDestroyed(destroyedEvent: DestroyedEvent){
 
-        try {
-            
-    var layerInterface: AllBinaryLayer = destroyedEvent!.getLayerInterface()!;;
+ try { 
+    let layerInterface: AllBinaryLayer = destroyedEvent!.getLayerInterface()!;;
     
 
                         if(layerInterface == this)
@@ -743,25 +744,26 @@ this.waypointRunnableLogHelperP= WaypointRunnableLogHelper.getInstance();
                                     DestroyedEventHandler.getInstance()!.removeListener(this);
     
 
-    var waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint() as WaypointBase;;
+    let waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint() as WaypointBase;;
     
 waypoint.reset();
     
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onDestroyed", e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

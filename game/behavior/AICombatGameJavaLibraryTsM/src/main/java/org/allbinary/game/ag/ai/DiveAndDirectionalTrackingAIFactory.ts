@@ -45,6 +45,7 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -82,7 +83,7 @@ export class DiveAndDirectionalTrackingAIFactory
             
     public getInstance(hashtable: ABHashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 
-    var visitorCanBeNull: any = hashtable.get(BasicAI.AI_VISITOR);;
+    let visitorCanBeNull: any = hashtable.get(BasicAI.AI_VISITOR);;
     
 
                         if(visitorCanBeNull == 
@@ -96,12 +97,12 @@ export class DiveAndDirectionalTrackingAIFactory
                                     }
                                 
 
-    var hashtable2: ABHashtable<any, any> = new BasicProbabilityAIDataFactory().getInstance()!;;
+    let hashtable2: ABHashtable<any, any> = new BasicProbabilityAIDataFactory().getInstance()!;;
     
 hashtable2.put(BasicAI.AI_VISITOR, LastKeyAIVisitorFactory.getInstance());
     
 
-    var artificialIntelligenceInterface: ArtificialIntelligenceInterface = new BasicRandomAIFactory().getInstance(hashtable2, ownerLayerInterface, gameInput)!;;
+    let artificialIntelligenceInterface: ArtificialIntelligenceInterface = new BasicRandomAIFactory().getInstance(hashtable2, ownerLayerInterface, gameInput)!;;
     
 
 
@@ -113,6 +114,4 @@ hashtable2.put(BasicAI.AI_VISITOR, LastKeyAIVisitorFactory.getInstance());
 
 
 }
-
-
 

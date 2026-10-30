@@ -68,7 +68,7 @@ public constructor (cacheType: CacheType){
 
     public toString(): string{
 
-    var POOL_TYPE: string = "PoolType: ";;
+    let POOL_TYPE: string = "PoolType: ";;
     
 
 
@@ -80,6 +80,4 @@ public constructor (cacheType: CacheType){
 
 
 }
-
-
 

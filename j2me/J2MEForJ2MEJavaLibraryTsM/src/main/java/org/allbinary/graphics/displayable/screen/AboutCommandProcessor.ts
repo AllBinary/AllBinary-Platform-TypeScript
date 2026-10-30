@@ -73,5 +73,3 @@ midletCommandListener!.commandAction(command, canvas);
 
 }
 
-
-

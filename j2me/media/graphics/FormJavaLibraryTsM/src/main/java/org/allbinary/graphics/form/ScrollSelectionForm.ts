@@ -43,27 +43,34 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { RectangleCollisionUtil } from '../../../../org/allbinary/math/RectangleCollisionUtil.js';
 //not GWT import const RectangleCollisionUtil
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -109,14 +116,19 @@ import { FormTypeFactory } from './FormTypeFactory.js';
 //not GWT import - same folder const ScrollSelectionFormHorizontalDx
 import { FormType } from './FormType.js';
 //not GWT import - same folder const FormType
+type ScrollSelectionFormHorizontalPaintable = InstanceType<ScrollSelectionForm['ScrollSelectionFormHorizontalPaintable']>;
+type ScrollSelectionFormVerticalPaintable = InstanceType<ScrollSelectionForm['ScrollSelectionFormVerticalPaintable']>;
+type ScrollSelectionFormTempHorizontalPaintable = InstanceType<ScrollSelectionForm['ScrollSelectionFormTempHorizontalPaintable']>;
+type ScrollSelectionFormHorizontalDx = InstanceType<ScrollSelectionForm['ScrollSelectionFormHorizontalDx']>;
+type ScrollSelectionFormVericalDx = InstanceType<ScrollSelectionForm['ScrollSelectionFormVericalDx']>;
+type ScrollSelectionFormTempHorizontalDx = InstanceType<ScrollSelectionForm['ScrollSelectionFormTempHorizontalDx']>;
 
 export class ScrollSelectionForm extends PaintableForm {
         
 
     static createForm(title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): PaintableForm{
 
-        try {
-            
+ try { 
                         if(formPaintableFactory == ItemPaintableFactory.getInstance())
                         
                                     {
@@ -131,10 +143,10 @@ export class ScrollSelectionForm extends PaintableForm {
                                 
                         else {
                             
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.putF(commonStrings!.EXCEPTION, logUtil, commonStrings!.EXCEPTION);
     
@@ -147,15 +159,16 @@ logUtil!.putF(commonStrings!.EXCEPTION, logUtil, commonStrings!.EXCEPTION);
 
                         }
                             
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, logUtil, commonStrings!.EXCEPTION, e);
     
@@ -165,8 +178,10 @@ logUtil!.put(commonStrings!.EXCEPTION, logUtil, commonStrings!.EXCEPTION, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PaintableForm.getNullPaintableForm();;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -219,7 +234,7 @@ logUtil!.put(commonStrings!.EXCEPTION, logUtil, commonStrings!.EXCEPTION, e);
     private static readonly GET_SELECTED_INDEX: string = "getSelectedIndexForPoint";
 
 //inner= member=true isStatic=
-ScrollSelectionFormHorizontalPaintable = class extends ItemIndexPaintable {
+ScrollSelectionFormHorizontalPaintable = (() => { const outer$ScrollSelectionForm = this; return class extends ItemIndexPaintable {
         
 /*Static stuff is not allowed for TypeScript inner classes*//**/
 
@@ -246,11 +261,9 @@ ScrollSelectionFormHorizontalPaintable = class extends ItemIndexPaintable {
 }
 
 
-}
-
-
+}; })();
 //inner= member=true isStatic=
-ScrollSelectionFormVerticalPaintable = class extends ItemIndexPaintable {
+ScrollSelectionFormVerticalPaintable = (() => { const outer$ScrollSelectionForm = this; return class extends ItemIndexPaintable {
         
 /*Static stuff is not allowed for TypeScript inner classes*//**/
 
@@ -277,11 +290,9 @@ ScrollSelectionFormVerticalPaintable = class extends ItemIndexPaintable {
 }
 
 
-}
-
-
+}; })();
 //inner= member=true isStatic=
-ScrollSelectionFormTempHorizontalPaintable = class extends ItemIndexPaintable {
+ScrollSelectionFormTempHorizontalPaintable = (() => { const outer$ScrollSelectionForm = this; return class extends ItemIndexPaintable {
         
 /*Static stuff is not allowed for TypeScript inner classes*//**/
 
@@ -308,11 +319,9 @@ ScrollSelectionFormTempHorizontalPaintable = class extends ItemIndexPaintable {
 }
 
 
-}
-
-
+}; })();
 //inner= member=true isStatic=
-ScrollSelectionFormHorizontalDx = class extends ItemIndexDx {
+ScrollSelectionFormHorizontalDx = (() => { const outer$ScrollSelectionForm = this; return class extends ItemIndexDx {
         
 /*Static stuff is not allowed for TypeScript inner classes*//**/
 
@@ -339,11 +348,9 @@ ScrollSelectionFormHorizontalDx = class extends ItemIndexDx {
 }
 
 
-}
-
-
+}; })();
 //inner= member=true isStatic=
-ScrollSelectionFormVericalDx = class extends ItemIndexDx {
+ScrollSelectionFormVericalDx = (() => { const outer$ScrollSelectionForm = this; return class extends ItemIndexDx {
         
 /*Static stuff is not allowed for TypeScript inner classes*//**/
 
@@ -370,11 +377,9 @@ ScrollSelectionFormVericalDx = class extends ItemIndexDx {
 }
 
 
-}
-
-
+}; })();
 //inner= member=true isStatic=
-ScrollSelectionFormTempHorizontalDx = class extends ItemIndexDx {
+ScrollSelectionFormTempHorizontalDx = (() => { const outer$ScrollSelectionForm = this; return class extends ItemIndexDx {
         
 /*Static stuff is not allowed for TypeScript inner classes*//**/
 
@@ -401,9 +406,7 @@ ScrollSelectionFormTempHorizontalDx = class extends ItemIndexDx {
 }
 
 
-}
-
-
+}; })();
     private readonly rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;
 
     readonly border: number;
@@ -445,7 +448,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 super.init(rectangle, formType);
     
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
+    let formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 
                         if(formType == formTypeFactory!.HORIZONTAL_FORM)
@@ -501,7 +504,7 @@ this.formTypeItemIndexDx= new this.ScrollSelectionFormTempHorizontalDx(this);
 
     public paintItemHorizontal(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
 
-    var width: number = item.getMinimumWidth()!;;
+    let width: number = item.getMinimumWidth()!;;
     
 
 
@@ -514,7 +517,7 @@ this.formTypeItemIndexDx= new this.ScrollSelectionFormTempHorizontalDx(this);
 
     public paintItemVertical(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
 
-    var height: number = item.getMinimumHeight()!;;
+    let height: number = item.getMinimumHeight()!;;
     
 
 
@@ -579,7 +582,7 @@ this.formTypeItemIndexDx= new this.ScrollSelectionFormTempHorizontalDx(this);
             
     public getSelectedItem(point: GPoint): ABCustomItem{
 
-    var index: number = this.getSelectedIndexForPoint(point)!;;
+    let index: number = this.getSelectedIndexForPoint(point)!;;
     
 
                         if(index !=  -1)
@@ -611,17 +614,17 @@ this.formTypeItemIndexDx= new this.ScrollSelectionFormTempHorizontalDx(this);
             
     public getItemIndex(item: ABCustomItem): number{
 
-    var nextItem: ABCustomItem;;
+    let nextItem: ABCustomItem;;
     
 
-    var size: number = this.size()!;;
+    let size: number = this.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 nextItem= this.get(index) as ABCustomItem;
     
@@ -663,25 +666,25 @@ nextItem= this.get(index) as ABCustomItem;
             
     public getSelectedIndexForPoint(point: GPoint): number{
 
-    var start: number = this.getStartIndex()!;;
+    let start: number = this.getStartIndex()!;;
     
 
-    var size: number = this.size()!;;
+    let size: number = this.size()!;;
     
 
-    var dx: number = this.getDx()!;;
+    let dx: number = this.getDx()!;;
     
 
-    var dy: number = this.getDy()!;;
+    let dy: number = this.getDy()!;;
     
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
+    let formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
+    let commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(commonLabels!.START_LABEL);
     
@@ -696,23 +699,23 @@ stringBuffer!.appendint(size);
 this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELECTED_INDEX);
     
 
-    var item: ABCustomItem;;
+    let item: ABCustomItem;;
     
 
-    var width: number= 0;;
+    let width: number= 0;;
     
 
-    var height: number= 0;;
+    let height: number= 0;;
     
 
-    var diffX: number= 0;;
+    let diffX: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = start;index < size; index++)
+    let index: number = start;index < size; index++)
         {
 item= this.get(index);
     
@@ -818,7 +821,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
             
     public processInputKey(gameKeyCode: number): number{
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
+    let formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 
                         if(this.size() == 0)
@@ -834,7 +837,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
                                     }
                                 
 
-    var index: number = this.getSelectedIndex()!;;
+    let index: number = this.getSelectedIndex()!;;
     
 
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM || this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
@@ -903,7 +906,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
                         }
                             
 
-    var max: number = this.size() -1;;
+    let max: number = this.size() -1;;
     
 
                         if(index < 0)
@@ -969,15 +972,15 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
 item.paintXY(graphics, x, y);
     
 
-    var width: number = item.getMinimumWidth()!;;
+    let width: number = item.getMinimumWidth()!;;
     
 
-    var height: number = item.getMinimumHeight()!;;
+    let height: number = item.getMinimumHeight()!;;
     
 graphics.setColor(this.getButtonBasicColor()!.intValue());
     
 
-    var adjustedBorder: number = 3;;
+    let adjustedBorder: number = 3;;
     
 graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjustedBorder, width +this.border +this.adjustedExtraBorder, height +this.border +this.adjustedExtraBorder);
     
@@ -1053,6 +1056,4 @@ this.buttonBasicColor= buttonBasicColor;
 
 
 }
-
-
 

@@ -32,9 +32,11 @@ import { HashMap } from '../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -53,6 +55,7 @@ import { AuthenticationRequestHelperFactory } from '../../admin/taghelpers/Authe
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
@@ -62,12 +65,15 @@ import { WeblisketSessionData } from '../../org/allbinary/logic/communication/ht
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -115,7 +121,7 @@ public constructor (){
 
             super();
         
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.userName= stringUtil!.EMPTY_STRING;
     
@@ -158,19 +164,18 @@ this.roles= values;
             
     changePassword(): boolean{
 
-        try {
-            
-    var anyType: any = new AuthenticationRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new AuthenticationRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("changePassword", 
+    let method: Method = addressHelperClass!.getMethod("changePassword", 
                             null)!;;
     
 
-    var result: Boolean = method.invoke(anyType, 
+    let result: Boolean = method.invoke(anyType, 
                             null) as Boolean;;
     
 
@@ -179,20 +184,21 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
@@ -208,8 +214,10 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -217,19 +225,18 @@ this.roles= values;
             
     newPassword(): boolean{
 
-        try {
-            
-    var anyType: any = new AuthenticationRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new AuthenticationRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("newPassword", 
+    let method: Method = addressHelperClass!.getMethod("newPassword", 
                             null)!;;
     
 
-    var result: Boolean = method.invoke(anyType, 
+    let result: Boolean = method.invoke(anyType, 
                             null) as Boolean;;
     
 
@@ -238,20 +245,21 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
@@ -267,8 +275,10 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -276,19 +286,18 @@ this.roles= values;
             
     invalidateSession(): number{
 
-        try {
-            
-    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("invalidateSession", 
+    let method: Method = addressHelperClass!.getMethod("invalidateSession", 
                             null)!;;
     
 
-    var resultInteger: Integer = method.invoke(anyType, 
+    let resultInteger: Integer = method.invoke(anyType, 
                             null) as Integer;;
     
 
@@ -297,20 +306,21 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return resultInteger!.intValue();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
@@ -326,8 +336,10 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return TagSupport.SKIP_BODY;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -335,19 +347,18 @@ this.roles= values;
             
     isSessionOld(): boolean{
 
-        try {
-            
-    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;;
+    let helperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod("isSessionOld", 
+    let method: Method = helperClass!.getMethod("isSessionOld", 
                             null)!;;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, 
+    let resultBoolean: Boolean = method.invoke(anyType, 
                             null) as Boolean;;
     
 
@@ -356,20 +367,21 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return resultBoolean.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
@@ -385,8 +397,10 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -394,30 +408,29 @@ this.roles= values;
             
     isRoleValid(): boolean{
 
-        try {
-            
-    var anyType: any = new AuthenticationRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new AuthenticationRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var methodParams: Function[] = 
+    let methodParams: Function[] = 
                                                         [
                                                             this.userName!.constructor, this.password.constructor, this.roles.constructor
                                                         ];;
     
 
-    var method: Method = addressHelperClass!.getMethod("isRoleValid", methodParams)!;;
+    let method: Method = addressHelperClass!.getMethod("isRoleValid", methodParams)!;;
     
 
-    var methodArgs: any[] = 
+    let methodArgs: any[] = 
                                                         [
                                                             this.userName,this.password,this.roles
                                                         ];;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, methodArgs) as Boolean;;
+    let resultBoolean: Boolean = method.invoke(anyType, methodArgs) as Boolean;;
     
 
 
@@ -425,20 +438,21 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return resultBoolean.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
@@ -454,8 +468,10 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -463,19 +479,18 @@ this.roles= values;
             
     validRole(): string{
 
-        try {
-            
-    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("validRole", 
+    let method: Method = addressHelperClass!.getMethod("validRole", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -484,22 +499,23 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to set valid role";;
+    let error: string = "Failed to set valid role";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
@@ -516,8 +532,10 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -525,19 +543,18 @@ this.roles= values;
             
     invalidRole(): string{
 
-        try {
-            
-    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("invalidRole", 
+    let method: Method = addressHelperClass!.getMethod("invalidRole", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -546,22 +563,23 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to set role invalid";;
+    let error: string = "Failed to set role invalid";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
@@ -578,8 +596,10 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -587,30 +607,29 @@ this.roles= values;
             
     isAuthenticationSessionValid(): boolean{
 
-        try {
-            
-    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var methodParams: Function[] = 
+    let methodParams: Function[] = 
                                                         [
                                                             this.roles.constructor
                                                         ];;
     
 
-    var method: Method = addressHelperClass!.getMethod("isAuthenticationSessionValid", methodParams)!;;
+    let method: Method = addressHelperClass!.getMethod("isAuthenticationSessionValid", methodParams)!;;
     
 
-    var methodArgs: any[] = 
+    let methodArgs: any[] = 
                                                         [
                                                             this.roles
                                                         ];;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, methodArgs) as Boolean;;
+    let resultBoolean: Boolean = method.invoke(anyType, methodArgs) as Boolean;;
     
 
 
@@ -618,20 +637,21 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return resultBoolean.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
@@ -647,8 +667,10 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -656,30 +678,29 @@ this.roles= values;
             
     processIfNewLogin(): boolean{
 
-        try {
-            
-    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;;
+    let helperClass: Function = anyType!.constructor!;;
     
 
-    var methodParams: Function[] = 
+    let methodParams: Function[] = 
                                                         [
                                                             this.userName!.constructor, this.password.constructor
                                                         ];;
     
 
-    var method: Method = helperClass!.getMethod("processIfNewLogin", methodParams)!;;
+    let method: Method = helperClass!.getMethod("processIfNewLogin", methodParams)!;;
     
 
-    var methodArgs: any[] = 
+    let methodArgs: any[] = 
                                                         [
                                                             this.userName,this.password
                                                         ];;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, methodArgs) as Boolean;;
+    let resultBoolean: Boolean = method.invoke(anyType, methodArgs) as Boolean;;
     
 
 
@@ -687,20 +708,21 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return resultBoolean.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
@@ -716,8 +738,10 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -725,19 +749,18 @@ this.roles= values;
             
     processInvalidation(): boolean{
 
-        try {
-            
-    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("processInvalidation", 
+    let method: Method = addressHelperClass!.getMethod("processInvalidation", 
                             null)!;;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, 
+    let resultBoolean: Boolean = method.invoke(anyType, 
                             null) as Boolean;;
     
 
@@ -746,20 +769,21 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return resultBoolean.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
@@ -775,8 +799,10 @@ this.roles= values;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -784,19 +810,18 @@ this.roles= values;
             
     public doStartTag(): number{
 
-        try {
-            
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+ try { 
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
                                     
-    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;;
+    let request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(" Request URI: ");
     
@@ -1222,10 +1247,11 @@ pageContext!.getOut()!.print(invalidRole());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -1234,11 +1260,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -1247,12 +1273,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

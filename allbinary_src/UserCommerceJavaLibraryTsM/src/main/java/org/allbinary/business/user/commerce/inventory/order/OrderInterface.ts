@@ -43,43 +43,41 @@ import { BasketInterface } from '../../../../../../../org/allbinary/business/use
 export interface OrderInterface {
         
 
-    setShippingMethod(shippingType: string)
+    setShippingMethod(shippingType: string): void;
 
-    setPaymentMethod(value: string)
+    setPaymentMethod(value: string): void;
 
-    setSpecial(special: string)
+    setSpecial(special: string): void;
 
-    setStoreName(value: string)
+    setStoreName(value: string): void;
 
-    setUserComments(value: string)
+    setUserComments(value: string): void;
 
-    setUserCancelComments(value: string)
+    setUserCancelComments(value: string): void;
 
-    setStoreComments(value: string)
+    setStoreComments(value: string): void;
 
-    setStoreCancelComments(value: string)
+    setStoreCancelComments(value: string): void;
 
-    getBasket(): BasketInterface
+    getBasket(): BasketInterface;
 
-    getShippingMethod(): string
+    getShippingMethod(): string;
 
-    getPaymentMethod(): string
+    getPaymentMethod(): string;
 
-    getSpecial(): string
+    getSpecial(): string;
 
-    getId(): string
+    getId(): string;
 
-    getStoreName(): string
+    getStoreName(): string;
 
-    getUserComments(): string
+    getUserComments(): string;
 
-    getUserCancelComments(): string
+    getUserCancelComments(): string;
 
-    getStoreComments(): string
+    getStoreComments(): string;
 
-    getStoreCancelComments(): string
+    getStoreCancelComments(): string;
 
 }
-
-
 

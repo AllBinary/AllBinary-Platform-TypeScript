@@ -43,15 +43,13 @@ import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/
 export interface AdvertisementProductInterface {
         
 
-    getType(): string
+    getType(): string;
 
-    getLink(): string
+    getLink(): string;
 
-    getNumber(): number
+    getNumber(): number;
 
-    getTwoDimensionalConstraint(): TwoDimensionalConstraintInterface
+    getTwoDimensionalConstraint(): TwoDimensionalConstraintInterface;
 
 }
-
-
 

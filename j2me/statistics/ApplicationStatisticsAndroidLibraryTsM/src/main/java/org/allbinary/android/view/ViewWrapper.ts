@@ -69,5 +69,3 @@ this.view.postInvalidate();
 
 }
 
-
-

@@ -46,15 +46,13 @@
 export interface RunnableInterface extends Runnable {
         
 
-    isRunning(): boolean
+    isRunning(): boolean;
 
-    setRunning(isRunning: boolean)
+    setRunning(isRunning: boolean): void;
 
                 //@Throws(Exception.constructor)
             
-    setThread(thread: Thread)
+    setThread(thread: Thread): void;
 
 }
-
-
 

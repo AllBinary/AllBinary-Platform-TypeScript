@@ -30,9 +30,11 @@ import { HashMap } from '../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -69,6 +71,7 @@ import { WeblisketSession } from '../../org/allbinary/logic/communication/http/r
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BooleanFactory } from '../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
@@ -78,9 +81,11 @@ import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js'
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -168,8 +173,7 @@ this.timeout= this.weblisketSession!.getTimeout();
             
     public invalidateSession(): Integer{
 
-        try {
-            this.weblisketSession!.clear();
+ try { this.weblisketSession!.clear();
     
 
 
@@ -177,10 +181,11 @@ this.timeout= this.weblisketSession!.getTimeout();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Integer(TagSupport.EVAL_BODY_INCLUDE);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
@@ -196,8 +201,10 @@ this.timeout= this.weblisketSession!.getTimeout();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -209,16 +216,16 @@ this.timeout= this.weblisketSession!.getTimeout();
                         
                                     {
                                     
-    var timeCreated: number = this.weblisketSession!.getCreationTime()!;;
+    let timeCreated: number = this.weblisketSession!.getCreationTime()!;;
     
 
-    var sessionTimout: number = this.role.getSessionTimeout()!;;
+    let sessionTimout: number = this.role.getSessionTimeout()!;;
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var timeFirst: number = calendar.getTimeInMillis() -sessionTimout;;
+    let timeFirst: number = calendar.getTimeInMillis() -sessionTimout;;
     
 
                         if(timeFirst > timeCreated)
@@ -229,7 +236,7 @@ this.timeout= this.weblisketSession!.getTimeout();
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Session Is Old - Timeout: ");
     
@@ -252,7 +259,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -290,26 +297,26 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
                         
                                     {
                                     
-    var timeCreated: number = this.weblisketSession!.getCreationTime()!;;
+    let timeCreated: number = this.weblisketSession!.getCreationTime()!;;
     
 
-    var lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;;
+    let lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;;
     
 
-    var inactivityAllowed: number = this.role.getSessionInactivityTimeout()!;;
+    let inactivityAllowed: number = this.role.getSessionInactivityTimeout()!;;
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var timeFirst: number = calendar.getTimeInMillis() -lastAccess;;
+    let timeFirst: number = calendar.getTimeInMillis() -lastAccess;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Session Is Rarely Used - Timeout: ");
     
@@ -348,16 +355,15 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isRarelyUsedSession()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 }
 
 
     public validRole(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Trying New login<p/>");
     
@@ -367,12 +373,13 @@ stringBuffer!.append("Trying New login<p/>");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to set valid role";;
+    let error: string = "Failed to set valid role";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
@@ -389,18 +396,19 @@ stringBuffer!.append("Trying New login<p/>");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public invalidRole(): string{
 
-        try {
-            this.weblisketSession!.setAuthenticated(false);
+ try { this.weblisketSession!.setAuthenticated(false);
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Sorry your username and password is invalid on this page. ");
     
@@ -412,12 +420,13 @@ stringBuffer!.append("Trying New login<p/>");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to set role invalid";;
+    let error: string = "Failed to set role invalid";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
@@ -434,8 +443,10 @@ stringBuffer!.append("Trying New login<p/>");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -470,8 +481,7 @@ stringBuffer!.append("Trying New login<p/>");
 
     public isAuthenticationSessionValid(roles: BasicArrayList): Boolean{
 
-        try {
-            
+ try { 
                         if(this.role != 
                                     null
                                 )
@@ -488,13 +498,13 @@ stringBuffer!.append("Trying New login<p/>");
                         
                                     {
                                     
-    var basicUserRole: BasicUserRole = this.role.getBasicUserRole()!;;
+    let basicUserRole: BasicUserRole = this.role.getBasicUserRole()!;;
     
 
-    var basicUserRoleArray: any[] = roles.toArray()!;;
+    let basicUserRoleArray: any[] = roles.toArray()!;;
     
 
-    var size: number = basicUserRoleArray!.length
+    let size: number = basicUserRoleArray!.length
                 ;;
     
 
@@ -502,24 +512,24 @@ stringBuffer!.append("Trying New login<p/>");
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var mustBeOfRole: BasicUserRole = basicUserRoleArray[index]! as BasicUserRole;;
+    let mustBeOfRole: BasicUserRole = basicUserRoleArray[index]! as BasicUserRole;;
     
 
-                        if(basicUserRole! === mustBeOfRole)
+                        if((basicUserRole === mustBeOfRole))
                         
                                     {
                                     
-                        if(basicUserRole! === UserRoleFactory.getInstance()!.CUSTOMER)
+                        if((basicUserRole === UserRoleFactory.getInstance()!.CUSTOMER))
                         
                                     {
                                     
-    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;;
+    let userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;;
     
 
-    var userInterface: UserInterface = userEntityInterface!.getUser(this.sessionUserName)!;;
+    let userInterface: UserInterface = userEntityInterface!.getUser(this.sessionUserName)!;;
     
 
                         if(!userInterface!.isSessionValid().valueOf())
@@ -529,7 +539,7 @@ stringBuffer!.append("Trying New login<p/>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -541,7 +551,7 @@ stringBuffer!.append("Trying New login<p/>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -555,7 +565,7 @@ stringBuffer!.append("Trying New login<p/>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -580,12 +590,13 @@ stringBuffer!.append("Trying New login<p/>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
@@ -599,10 +610,12 @@ stringBuffer!.append("Trying New login<p/>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -629,8 +642,7 @@ stringBuffer!.append("Trying New login<p/>");
 
     public processIfNewLogin(userName: string, password: string): Boolean{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
@@ -648,10 +660,10 @@ stringBuffer!.append("Trying New login<p/>");
                         
                                     {
                                     
-    var login: string;;
+    let login: string;;
     
 
-    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;;
+    let userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;;
     
 login= userEntityInterface!.login(userName, password);
     
@@ -660,7 +672,7 @@ login= userEntityInterface!.login(userName, password);
                         
                                     {
                                     
-    var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;;
+    let userInterface: UserInterface = userEntityInterface!.getUser(userName)!;;
     
 
                         if(userInterface!.isSessionValid().valueOf())
@@ -672,7 +684,7 @@ login= userEntityInterface!.login(userName, password);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -686,7 +698,7 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -697,12 +709,13 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
@@ -716,17 +729,18 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public processInvalidation(): Boolean{
 
-        try {
-            
+ try { 
                         if(BooleanUtil.getInstance()!.getFromString(this.timeout))
                         
                                     {
@@ -736,7 +750,7 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -750,15 +764,16 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                             }
                     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
@@ -772,27 +787,28 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public outputSessionInfo(): string{
 
-        try {
-            
-    var calendar: Calendar = Calendar.getInstance()!;;
+ try { 
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var timeCreated: number = this.weblisketSession!.getCreationTime()!;;
+    let timeCreated: number = this.weblisketSession!.getCreationTime()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;;
+    let lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;;
     
 stringBuffer!.append("Time Since Last Access: " +(calendar.getTimeInMillis() -lastAccess) +"<br/>\n");
     
@@ -849,18 +865,21 @@ stringBuffer!.append("<br/>\n");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -875,6 +894,4 @@ stringBuffer!.append("<br/>\n");
 
 
 }
-
-
 

@@ -89,5 +89,3 @@ this.setMaxNonMatchingPixelDeltas(.MAX_VALUE());
 
 }
 
-
-

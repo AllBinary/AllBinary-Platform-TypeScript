@@ -120,17 +120,17 @@ private constructor (){
 
     public count(string: string, aChar: string): number{
 
-    var count: number = 0;;
+    let count: number = 0;;
     
 
-    var size: number = string.length!;;
+    let size: number = string.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(string[index] == aChar)
@@ -152,7 +152,7 @@ private constructor (){
 }
 
 
-    public toString(anyType: any = {}): string{
+    public toString(anyType: any): string{
 
                         if(anyType != 
                                     null
@@ -182,6 +182,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -36,12 +36,14 @@ import { CustomLoaderHelperFactory } from '../../admin/taghelpers/CustomLoaderHe
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -101,44 +103,44 @@ this.webappPath= value;
             
     setCustomLoaderWebappPath(){
 
-        try {
-            
-    var anyType: any = new CustomLoaderHelperFactory().getInstance(this.propertiesHashMap, pageContext)!;;
+ try { 
+    let anyType: any = new CustomLoaderHelperFactory().getInstance(this.propertiesHashMap, pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;;
+    let helperClass: Function = anyType!.constructor!;;
     
 
-    var methodParams: Function[] = 
+    let methodParams: Function[] = 
                                                         [
                                                             this.webappPath!.constructor
                                                         ];;
     
 
-    var methodArgs: any[] = 
+    let methodArgs: any[] = 
                                                         [
                                                             this.webappPath
                                                         ];;
     
 
-    var setMethod: Method = helperClass!.getMethod("setWebappPath", methodParams)!;;
+    let setMethod: Method = helperClass!.getMethod("setWebappPath", methodParams)!;;
     
 setMethod!.invoke(anyType, methodArgs);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
@@ -148,8 +150,10 @@ setMethod!.invoke(anyType, methodArgs);
 
                                     }
                                 
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -157,8 +161,7 @@ setMethod!.invoke(anyType, methodArgs);
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
@@ -193,10 +196,11 @@ setMethod!.invoke(anyType, methodArgs);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -205,11 +209,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -218,12 +222,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

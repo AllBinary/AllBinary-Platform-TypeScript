@@ -24,12 +24,15 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -57,7 +60,7 @@ const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormat
          {
         
 
-    /*actual*/ public static put(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public static put(specialMessage: string, anyType: any, functionName: string){
 PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
     
 }
@@ -65,9 +68,9 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
 
     private static readonly LOG_SUCCESS: string = "org.allbinary: ";
 
-    /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public static putOE(specialMessage: string, anyType: any, functionName: string, exception: any){
 
-    var className: string = CommonStrings.getInstance()!.EMPTY;;
+    let className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
                         if(anyType!.constructor.name.toString()! != 
@@ -81,7 +84,7 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 console.log(PreLogUtil.LOG_SUCCESS + message);
     
@@ -94,16 +97,16 @@ PreLogUtil.putSE(specialMessage, className, functionName, NullUtil.getInstance()
 }
 
 
-    /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {}){
+    /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any){
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 console.log(PreLogUtil.LOG_SUCCESS + message);
     
 }
 
 
-    public static getClassName(anyType: any = {}): string{
+    public static getClassName(anyType: any): string{
 
 
 
@@ -120,6 +123,4 @@ public constructor (){
 
 
 }
-
-
 

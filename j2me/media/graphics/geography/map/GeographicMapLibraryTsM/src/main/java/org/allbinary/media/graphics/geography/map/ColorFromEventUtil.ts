@@ -75,13 +75,13 @@ export class ColorFromEventUtil
 
     public getForegroundColor(gameCanvasInterface: AllBinaryGameCanvas): BasicColor{
 
-    var color: BasicColor = this.YELLOW;;
+    let color: BasicColor = this.YELLOW;;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager() as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager() as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
                         if(geographicMapInterface != 
@@ -90,7 +90,7 @@ export class ColorFromEventUtil
                         
                                     {
                                     
-    var foregroundBasicColor: BasicColor = geographicMapInterface!.getForegroundBasicColor()!;;
+    let foregroundBasicColor: BasicColor = geographicMapInterface!.getForegroundBasicColor()!;;
     
 color= foregroundBasicColor;
     
@@ -107,6 +107,4 @@ color= foregroundBasicColor;
 
 
 }
-
-
 

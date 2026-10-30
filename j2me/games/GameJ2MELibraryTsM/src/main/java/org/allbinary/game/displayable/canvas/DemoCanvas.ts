@@ -249,18 +249,22 @@ import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/m
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
 //not GWT import const OperatingSystemFactory
@@ -297,6 +301,7 @@ import { SecondaryPlayerQueueFactory } from '../../../../../org/allbinary/media/
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { NullThread } from '../../../../../org/allbinary/thread/NullThread.js';
 //not GWT import const NullThread
@@ -312,12 +317,15 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -504,11 +512,10 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
 
-        try {
-            this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.displayInfo!.toString())!.toString(), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+ try { this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.displayInfo!.toString())!.toString(), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
     
 
-    var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;;
+    let scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;;
     
 
                         if(scrollSelectionForm != 
@@ -517,10 +524,10 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                         
                                     {
                                     
-    var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
+    let formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
+    let rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 scrollSelectionForm!.init(rectangle, formType);
     
@@ -529,27 +536,30 @@ scrollSelectionForm!.init(rectangle, formType);
                                 
 this.overlayPaintable!.init();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     getCustomCommands(): any[]{
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
+    let gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 
                         if(J2MEUtil.isHTML())
                         
                                     {
                                     
-    var commandArray: any[] = 
+    let commandArray: any[] = 
                                                         [
                                                             gameCommandsFactory!.START_COMMAND,HighScoreCommands.getInstance()!.DISPLAY,GameInputMappingCanvas.DISPLAY,gameCommandsFactory!.DISPLAY_ABOUT
                                                         ];;
@@ -565,19 +575,19 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DI
                                 
                         else {
                             
-    var commandList: BasicArrayList = new BasicArrayListD();;
+    let commandList: BasicArrayList = new BasicArrayListD();;
     
 commandList!.add(gameCommandsFactory!.START_COMMAND);
     
 
-    var inApplicationPurchaseFactory: InApplicationPurchaseFactory = InApplicationPurchaseFactory.getInstance()!;;
+    let inApplicationPurchaseFactory: InApplicationPurchaseFactory = InApplicationPurchaseFactory.getInstance()!;;
     
 
                         if(inApplicationPurchaseFactory!.isEnabled())
                         
                                     {
                                     
-    var list: BasicArrayList = LockableFeatureFactory.getInstance()!.getList()!;;
+    let list: BasicArrayList = LockableFeatureFactory.getInstance()!.getList()!;;
     
 
                         if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(list.get(0) as LockableFeature))
@@ -594,9 +604,8 @@ commandList!.add(gameCommandsFactory!.START_COMMAND);
 commandList!.add(HighScoreCommands.getInstance()!.DISPLAY);
     
 
-        try {
-            
-    var isOverScan: boolean = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan()!;;
+ try { 
+    let isOverScan: boolean = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan()!;;
     
 
                         if(SWTUtil.isSWT)
@@ -620,16 +629,19 @@ commandList!.add(GameInputMappingCanvas.DISPLAY);
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-}
-
+ }
+   }
+ 
 commandList!.add(gameCommandsFactory!.DISPLAY_ABOUT);
     
 
-    var commandArray: any[] = commandList!.toArray()!;;
+    let commandArray: any[] = commandList!.toArray()!;;
     
 
 
@@ -647,10 +659,10 @@ commandList!.add(gameCommandsFactory!.DISPLAY_ABOUT);
 this.removeAllCommands();
     
 
-    var commandArray: any[] = this.getCustomCommands()!;;
+    let commandArray: any[] = this.getCustomCommands()!;;
     
 
-    var size: number = commandArray!.length
+    let size: number = commandArray!.length
                 ;;
     
 
@@ -658,7 +670,7 @@ this.removeAllCommands();
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.addCommand(commandArray[index]! as Command);
     
@@ -697,29 +709,29 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
 this.close();
     
 
-    var commandTextItemArrayFactory: CommandTextItemArrayFactory = DemoLimitedCommandTextItemArrayFactory.getInstance()!.getCommandTextItemArrayFactory()!;;
+    let commandTextItemArrayFactory: CommandTextItemArrayFactory = DemoLimitedCommandTextItemArrayFactory.getInstance()!.getCommandTextItemArrayFactory()!;;
     
 
-    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack(), this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE)!;;
+    let items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack(), this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE)!;;
     
 
-    var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
+    let formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
+    let rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 PreLogUtil.put(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.displayInfo!.toString())!.toString(), this, "initMenu");
     
 
-    var scrollSelectionForm: ScrollSelectionForm = CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 15, true, this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE)!;;
+    let scrollSelectionForm: ScrollSelectionForm = CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 15, true, this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE)!;;
     
 this.setMenuForm(scrollSelectionForm);
     
 
-    var formType2: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
+    let formType2: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle2: Rectangle = this.formUtil!.createFormRectangle()!;;
+    let rectangle2: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 scrollSelectionForm!.init(rectangle2, formType2);
     
@@ -816,16 +828,15 @@ this.removeGameKeyEvent(keyCode, false);
 
     addGameKeyEvent(keyCode: number, repeated: boolean){
 
-        try {
-            
-    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;;
+ try { 
+    let gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;;
     
 
                         if(gameKey != this.NONE)
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;;
+    let gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;;
     
 DownGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
     
@@ -847,29 +858,31 @@ this.logUtil!.putF(new StringMaker().append(this.gameInputStrings!.NO_KEY)!.appe
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     removeGameKeyEvent(keyCode: number, repeated: boolean){
 
-        try {
-            
-    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;;
+ try { 
+    let gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;;
     
 
                         if(gameKey != this.NONE)
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;;
+    let gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;;
     
 UpGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
     
@@ -882,14 +895,17 @@ UpGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
@@ -1033,7 +1049,7 @@ this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");
 
     demoStateChange(){
 
-    var newState: number = this.state +1;;
+    let newState: number = this.state +1;;
     
 
                         if(newState > 2)
@@ -1059,7 +1075,7 @@ this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");
                                 
                         else {
                             
-    var highScores: HighScores = this.highScoresHelper!.getNextHighScores()!;;
+    let highScores: HighScores = this.highScoresHelper!.getNextHighScores()!;;
     
 
                         if(highScores == NullHighScoresSingletonFactory.getInstance())
@@ -1135,7 +1151,7 @@ this.paintedSpecialAnimationInterface= this.getSpecialAnimationInterface();
                                     }
                                 
 
-    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
+    let gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
     
 gameAdState!.processPageAdState();
     
@@ -1183,7 +1199,7 @@ PreLogUtil.put(this.commonStrings!.START, this, "create");
 this.highScoresPaintable= NullPaintable.getInstance();
     
 
-    var randomLevel: number = this.getNextRandom()!;;
+    let randomLevel: number = this.getNextRandom()!;;
     
 this.gameCanvas= this.createRunnable(randomLevel) as AllBinaryGameCanvas;
     
@@ -1194,7 +1210,7 @@ this.getRealHighScoresPaintable()!.setBasicColorP(this.basicColor);
 this.gameCanvas!.setGameCanvasStartListener(this);
     
 
-    var gameInfo: GameInfo = this.gameCanvas!.getLayerManager()!.getGameInfo()!;;
+    let gameInfo: GameInfo = this.gameCanvas!.getLayerManager()!.getGameInfo()!;;
     
 this.getHighScoresFactoryInterface()!.fetchHighScores(gameInfo, this.highScoresHelper);
     
@@ -1205,7 +1221,7 @@ this.getHighScoresFactoryInterface()!.fetchHighScores(gameInfo, this.highScoresH
             
     start(){
 
-    var gameCanvas: AllBinaryGameCanvas = this.gameCanvas;;
+    let gameCanvas: AllBinaryGameCanvas = this.gameCanvas;;
     
 PreLogUtil.put(new StringMaker().append("Game Thread in DemoCanvas: ")!.append(this.stringUtil!.toString(gameCanvas))!.toString(), this, this.commonStrings!.START);
     
@@ -1270,7 +1286,7 @@ this.preDemoProcess();
                         
                                     {
                                     
-    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getSpecialAnimationInterface()!.getAnimationBehavior() as IndexedAnimationBehavior);;
+    let indexedAnimationBehavior: IndexedAnimationBehavior = (this.getSpecialAnimationInterface()!.getAnimationBehavior() as IndexedAnimationBehavior);;
     
 
                         if(indexedAnimationBehavior!.loopIndex < 1)
@@ -1282,7 +1298,7 @@ this.preDemoProcess();
                                     }
                                 
 
-    var demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener() as DemoGameMidlet;;
+    let demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener() as DemoGameMidlet;;
     
 
                         if(this.gameCanvas != NullGameCanvas.getInstance() && this.gameCanvas!.isGameOver())
@@ -1291,10 +1307,10 @@ this.preDemoProcess();
                                     this.stopGameDemo();
     
 
-    var randomLevel: number = this.getNextRandom()!;;
+    let randomLevel: number = this.getNextRandom()!;;
     
 
-    var gameInfo: GameInfo = this.gameCanvas!.getLayerManager()!.getGameInfo()!;;
+    let gameInfo: GameInfo = this.gameCanvas!.getLayerManager()!.getGameInfo()!;;
     
 gameInfo!.setCurrentLevel(randomLevel);
     
@@ -1318,7 +1334,7 @@ this.start();
 this.demoGameRunnable!.setRunning(true);
     
 
-    var thread: Thread = this.threadFactoryUtil!.getInstanceForRunnable(this.demoGameRunnable)!;;
+    let thread: Thread = this.threadFactoryUtil!.getInstanceForRunnable(this.demoGameRunnable)!;;
     
 this.demoGameRunnable!.setThread(thread);
     
@@ -1365,12 +1381,12 @@ ThreadUtil.getInstance()!.join(this.canvasThread);
 
     public showGamePaintable(){
 
-    var METHOD_NAME: string = "showGamePaintable";;
+    let METHOD_NAME: string = "showGamePaintable";;
     
 PreLogUtil.put(this.commonStrings!.START, this, METHOD_NAME);
     
 
-    var isDefault: boolean = J2MEUtil.isHTML()!;;
+    let isDefault: boolean = J2MEUtil.isHTML()!;;
     
 
                         if(this.gameCanvas != NullGameCanvas.getInstance() && (this.gameCanvas!.isRunning() || isDefault || SWTUtil.isSWT) && !(this.gameCanvas!.getType() == NullGameCanvas.TYPE))
@@ -1444,15 +1460,14 @@ this.gameRunnable!.run();
 this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 
-        try {
-            
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+ try { 
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 progressCanvas!.addNormalPortion(50, "Demo Thread");
     
@@ -1499,10 +1514,10 @@ this.processLoopSleep();
 }
 
 
-    var demoGameRunnable: DemoGameRunnable = new DemoGameRunnable(this);;
+    let demoGameRunnable: DemoGameRunnable = new DemoGameRunnable(this);;
     
 
-    var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
+    let currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
     
 currentDisplayableFactory!.setRunnable(demoGameRunnable);
     
@@ -1518,10 +1533,10 @@ OpenGLThreadUtil.getInstance()!.onResume();
                         
                                     {
                                     
-    var demoGameRunnable: DemoGameRunnable = new DemoGameRunnable(this);;
+    let demoGameRunnable: DemoGameRunnable = new DemoGameRunnable(this);;
     
 
-    var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
+    let currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
     
 currentDisplayableFactory!.setRunnable(demoGameRunnable);
     
@@ -1543,14 +1558,17 @@ this.end();
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.RUN);
     
 }
@@ -1572,12 +1590,11 @@ this.processLoopSleep();
 super.setRunning(running);
     
 
-        try {
-            
-    var features: Features = Features.getInstance()!;;
+ try { 
+    let features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
                         if(running)
@@ -1592,7 +1609,7 @@ super.setRunning(running);
                         
                                     {
                                     
-    var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
+    let currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
     
 currentDisplayableFactory!.clearRunnable();
     
@@ -1604,14 +1621,17 @@ this.end();
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.SET_RUNNING, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -1621,10 +1641,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.SET_RUNNING, e);
             
     public end(){
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 this.baseGameStatistics!.add(new StringMaker().append(DemoCanvas.BOT_GAME_STATS)!.append(this.baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
@@ -1676,7 +1696,7 @@ this.stopGameDemo();
 
     public isDemoLoading(): boolean{
 
-    var gameCanvas: AllBinaryGameCanvas = this.gameCanvas;;
+    let gameCanvas: AllBinaryGameCanvas = this.gameCanvas;;
     
 
                         if(gameCanvas == NullGameCanvas.getInstance())
@@ -1907,10 +1927,10 @@ this.tempWait= tempWait;
 
     public isRunningInAnotherThread(): boolean{
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
@@ -1959,6 +1979,4 @@ this.tempWait= tempWait;
 
 
 }
-
-
 

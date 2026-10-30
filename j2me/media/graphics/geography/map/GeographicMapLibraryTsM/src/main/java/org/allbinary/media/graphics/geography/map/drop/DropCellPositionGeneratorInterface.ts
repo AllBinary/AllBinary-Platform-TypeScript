@@ -54,21 +54,19 @@ import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/me
 export interface DropCellPositionGeneratorInterface {
         
 
-    getName(): string
+    getName(): string;
 
                 //@Throws(Exception.constructor)
             
-    update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap)
+    update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap): void;
 
                 //@Throws(Exception.constructor)
             
-    processTick(allBinaryLayerManager: AllBinaryLayerManager)
+    processTick(allBinaryLayerManager: AllBinaryLayerManager): void;
 
                 //@Throws(Exception.constructor)
             
-    isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean
+    isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean;
 
 }
-
-
 

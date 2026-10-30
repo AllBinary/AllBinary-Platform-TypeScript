@@ -45,21 +45,25 @@ import { OpenGLESImageExclusionUtil } from '../../../../org/allbinary/image/open
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { J2SEMath } from '../../../../org/allbinary/logic/math/J2SEMath.js';
 //not GWT import const J2SEMath
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
 //not GWT import const ImageScaleUtil
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -111,23 +115,23 @@ export class AnimationFactorySpriteScaleUtil
             
     public createImage(image: Image, width: number, height: number, scaleWidth: number, scaleHeight: number): Sprite{
 
-    var spriteFactory: SpriteFactory = SpriteFactory.getInstance()!;;
+    let spriteFactory: SpriteFactory = SpriteFactory.getInstance()!;;
     
 
-    var sprite: Sprite;;
+    let sprite: Sprite;;
     
 
-    var scaledImage: Image;;
+    let scaledImage: Image;;
     
 
                         if(scaleWidth != 0 && scaleHeight != 0)
                         
                                     {
                                     
-    var scaleX: number = (scaleWidth) /(width);;
+    let scaleX: number = (scaleWidth) /(width);;
     
 
-    var scaleY: number = (scaleHeight) /(height);;
+    let scaleY: number = (scaleHeight) /(height);;
     
 
                         if((scaleX == 1.0 && scaleY == 1.0) || (scaleX == 0.0 || scaleY == 0.0))
@@ -146,24 +150,24 @@ sprite= spriteFactory!.createSprite(scaledImage, width, height);
                         
                                     {
                                     
-    var width2: number = this.j2seMath!.round((scaleWidth) -0.5)!;;
+    let width2: number = this.j2seMath!.round((scaleWidth) -0.5)!;;
     
 
-    var height2: number = this.j2seMath!.round((scaleHeight) -0.5)!;;
+    let height2: number = this.j2seMath!.round((scaleHeight) -0.5)!;;
     
 
-    var multiplesOf16Width: number = globalThis.Math.trunc(width2 /16);;
+    let multiplesOf16Width: number = globalThis.Math.trunc(width2 /16);;
     
 
-    var by16Width: number = multiplesOf16Width *16;;
+    let by16Width: number = multiplesOf16Width *16;;
     
 scaleX= (by16Width) /width;
     
 
-    var multiplesOf16Height: number = globalThis.Math.trunc(height2 /16);;
+    let multiplesOf16Height: number = globalThis.Math.trunc(height2 /16);;
     
 
-    var by16Height: number = multiplesOf16Height *16;;
+    let by16Height: number = multiplesOf16Height *16;;
     
 scaleY= (by16Height) /height;
     
@@ -216,6 +220,4 @@ sprite= spriteFactory!.createSprite(scaledImage, width, height);
 
 
 }
-
-
 

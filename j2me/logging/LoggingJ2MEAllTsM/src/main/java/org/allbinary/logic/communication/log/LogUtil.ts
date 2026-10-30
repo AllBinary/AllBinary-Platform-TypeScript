@@ -29,12 +29,15 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -86,25 +89,25 @@ private constructor (){
 
     /*actual*/ public putL(log: Log){
 
-    var specialMessage: string = log.getSpecialMessage()!;;
+    let specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;;
+    let anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;;
+    let functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;;
+    let exception: any = log.getThrowable()!;;
     
 this.put(specialMessage, anyType, functionName, exception);
     
 }
 
 
-    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any, functionName: string){
 
-    var className: string = CommonStrings.getInstance()!.EMPTY;;
+    let className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
                         if(anyType!.constructor.name.toString()! != 
@@ -118,7 +121,7 @@ this.put(specialMessage, anyType, functionName, exception);
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
+    let message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 console.log(this.LOG_SUCCESS + message);
     
@@ -127,7 +130,7 @@ console.log(this.LOG_SUCCESS + message);
 
     /*actual*/ public putFS(specialMessage: string, className: string, functionName: string){
 
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
+    let message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 console.log(this.LOG_SUCCESS + message);
     
@@ -136,9 +139,9 @@ console.log(this.LOG_SUCCESS + message);
 
     private readonly LOG_SUCCESS: string = "org.allbinary: ";
 
-    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public put(specialMessage: string, anyType: any, functionName: string, exception: any){
 
-    var className: string = CommonStrings.getInstance()!.EMPTY;;
+    let className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
                         if(anyType!.constructor.name.toString()! != 
@@ -147,10 +150,10 @@ console.log(this.LOG_SUCCESS + message);
                         
                                     {
                                     
-    var hashCodeValue: number = TsUtil.getInstance()!.hashCode(anyType)!;;
+    let hashCodeValue: number = TsUtil.getInstance()!.hashCode(anyType)!;;
     
 
-    var hexString: string = Integer.toHexString(hashCodeValue)!;;
+    let hexString: string = Integer.toHexString(hashCodeValue)!;;
     
 className= new StringMaker().append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(hexString)!.toString();
     
@@ -158,7 +161,7 @@ className= new StringMaker().append(anyType!.constructor.name.toString()!)!.appe
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
     
 console.log(this.LOG_SUCCESS + message);
     
@@ -166,6 +169,4 @@ console.log(this.LOG_SUCCESS + message);
 
 
 }
-
-
 

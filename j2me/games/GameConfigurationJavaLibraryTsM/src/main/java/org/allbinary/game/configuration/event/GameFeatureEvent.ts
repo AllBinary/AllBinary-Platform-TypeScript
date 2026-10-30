@@ -45,7 +45,7 @@ export class GameFeatureEvent extends AllBinaryEventObject {
 
     private readonly whatChanged: string;
 
-public constructor (anyType: any = {}, whatChanged: string){
+public constructor (anyType: any, whatChanged: string){
             super(anyType);
                     
 
@@ -77,6 +77,4 @@ this.whatChanged= whatChanged;
 
 
 }
-
-
 

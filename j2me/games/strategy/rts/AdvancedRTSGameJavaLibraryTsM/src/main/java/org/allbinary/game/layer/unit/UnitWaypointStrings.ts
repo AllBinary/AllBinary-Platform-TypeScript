@@ -22,6 +22,7 @@
         
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 
 
@@ -96,6 +97,4 @@ export class UnitWaypointStrings
     public readonly RETURNING_AS_WAYPOINT_PATH_LIST: string = " returning as waypointPathsList was runningWaypointPathList";
 
 }
-
-
 

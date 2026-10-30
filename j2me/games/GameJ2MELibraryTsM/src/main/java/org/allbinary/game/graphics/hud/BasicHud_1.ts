@@ -63,12 +63,15 @@ import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/fon
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -78,6 +81,7 @@ import { EventStrings } from '../../../../../org/allbinary/logic/util/event/Even
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -161,24 +165,26 @@ this.color= basicColor!.intValue();
 
     public updateMeasurement(graphics: Graphics){
 
-        try {
-            this.hudGraphicsPosition= this.getHudGraphicsPositionWH(this.displayInfo!.getLastWidth(), this.displayInfo!.getLastHeight(), this.updateMaxWidth, this.updateMaxHeight);
+ try { this.hudGraphicsPosition= this.getHudGraphicsPositionWH(this.displayInfo!.getLastWidth(), this.displayInfo!.getLastHeight(), this.updateMaxWidth, this.updateMaxHeight);
     
 this.x= this.hudGraphicsPosition!.getPoint()!.getX();
     
 this.setY(this.hudGraphicsPosition!.getPoint()!.getY());
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 this.myFontProcessor= MyFontProcessor.getInstance();
     
 }
@@ -208,16 +214,16 @@ this.myFontProcessor= MyFontProcessor.getInstance();
             
     getHudGraphicsPositionWH(width: number, height: number, maxWidth: number, maxHeight: number): HudGraphicsPosition{
 
-    var x: number = 0;;
+    let x: number = 0;;
     
 
-    var y: number = 0;;
+    let y: number = 0;;
     
 
-    var anchor: number = 0;;
+    let anchor: number = 0;;
     
 
-    var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;;
+    let basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;;
     
 
                         if(basicHudFactory!.BOTTOMLEFT == this.getLocation())
@@ -467,7 +473,7 @@ this.myFontProcessor!.process(graphics);
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 
-    var y: number = this.getY()!;;
+    let y: number = this.getY()!;;
     
 graphics.drawChars(charArray, offset, len, this.x +xOffset, y, this.hudGraphicsPosition!.getAnchor());
     
@@ -482,7 +488,7 @@ this.myFontProcessor!.process(graphics);
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 
-    var y: number = this.getY()!;;
+    let y: number = this.getY()!;;
     
 graphics.drawChars(charArray, offset, len, this.x, y, this.hudGraphicsPosition!.getAnchor());
     
@@ -497,7 +503,7 @@ this.myFontProcessor!.process(graphics);
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 
-    var y: number = this.getY()!;;
+    let y: number = this.getY()!;;
     
 graphics.drawChars(charArray, offset, len, this.x, y, this.hudGraphicsPosition!.getAnchor());
     
@@ -512,7 +518,7 @@ this.myFontProcessor!.process(graphics);
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 
-    var y: number = this.getY() +this.offsetY;;
+    let y: number = this.getY() +this.offsetY;;
     
 graphics.drawString(string, this.x, y, this.hudGraphicsPosition!.getAnchor());
     
@@ -520,6 +526,4 @@ graphics.drawString(string, this.x, y, this.hudGraphicsPosition!.getAnchor());
 
 
 }
-
-
 

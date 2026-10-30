@@ -17,12 +17,15 @@ import { OpenGLStrings } from '../../../../org/allbinary/image/opengles/OpenGLSt
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 
 
@@ -61,17 +64,24 @@ export class OpenGLLogUtil
 
 
     private readonly MAX_TEXTURE: string = " Max Texture Size: ";
+logError(...args: any[]): any {
+   
+    if (args.length === 1) return this.logError$overload1(args[0]);
+   
+    if (args.length === 2) return this.logError$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: logError'); }
+  
+    public logError$overload1(gl: GL10){
 
-    public logError(gl: GL10){
-
-    var error: number = gl.glGetError()!;;
+    let error: number = gl.glGetError()!;;
     
 
                         if(error != GL10.GL_NO_ERROR)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL);
     
@@ -84,7 +94,7 @@ stringBuffer!.appendint(error);
                                     stringBuffer!.append(this.MAX_TEXTURE);
     
 
-    var maxTextureSize: number[] = new Array(1);;
+    let maxTextureSize: number[] = new Array(1);;
     
 gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0);
     
@@ -118,16 +128,16 @@ stringBuffer!.appendint(maxTextureSize[0]!);
 
     private readonly IMAGE: string = " Image: ";
 
-    public logError(gl: GL10, image: Image){
+    public logError$overload2(gl: GL10, image: Image){
 
-    var error: number = gl.glGetError()!;;
+    let error: number = gl.glGetError()!;;
     
 
                         if(error != GL10.GL_NO_ERROR)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL);
     
@@ -140,7 +150,7 @@ stringBuffer!.appendint(error);
                                     stringBuffer!.append(this.MAX_TEXTURE);
     
 
-    var maxTextureSize: number[] = new Array(1);;
+    let maxTextureSize: number[] = new Array(1);;
     
 gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0);
     
@@ -162,6 +172,4 @@ PreLogUtil.put(stringBuffer!.toString(), this, this.LOG_ERROR);
 
 
 }
-
-
 

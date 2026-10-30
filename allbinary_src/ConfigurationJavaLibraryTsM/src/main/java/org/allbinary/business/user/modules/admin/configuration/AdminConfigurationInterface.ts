@@ -47,13 +47,11 @@ export interface AdminConfigurationInterface {
 
                 //@Throws(Exception.constructor)
             
-    write()
+    write(): void;
 
-    getContextConfigurationInterface(): ContextConfigurationInterface
+    getContextConfigurationInterface(): ContextConfigurationInterface;
 
-    setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface)
+    setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface): void;
 
 }
-
-
 

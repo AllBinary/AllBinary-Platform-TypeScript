@@ -32,13 +32,11 @@ import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
 export interface EmulatorViewInterface {
         
 
-    setMidlet(midlet: MIDlet)
+    setMidlet(midlet: MIDlet): void;
 
-    onEmulatorInitComplete(midletActivity: any)
+    onEmulatorInitComplete(midletActivity: any): void;
 
-    onSetDisplayable(displayable: Displayable)
+    onSetDisplayable(displayable: Displayable): void;
 
 }
-
-
 

@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -57,7 +58,7 @@ export class AllBinaryMediaManagerShutdown
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.putF("No Media Shutdown for Android Process", AllBinaryMediaManagerShutdown.instance, "shutdown");
     
@@ -65,6 +66,4 @@ logUtil!.putF("No Media Shutdown for Android Process", AllBinaryMediaManagerShut
 
 
 }
-
-
 

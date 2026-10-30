@@ -23,6 +23,7 @@
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -59,7 +60,7 @@ export class IndexedBasicArrayListCache extends BaseBasicArrayListCache implemen
             
     public static createCache(size: number): IndexedBasicArrayListCache{
 
-    var indexedBasicArrayListCache: IndexedBasicArrayListCache = new IndexedBasicArrayListCache();;
+    let indexedBasicArrayListCache: IndexedBasicArrayListCache = new IndexedBasicArrayListCache();;
     
 indexedBasicArrayListCache!.init(size);
     
@@ -98,7 +99,7 @@ public constructor (){
 
 
                         for (
-    var index: number = size -1;index >= this.size; index--)
+    let index: number = size -1;index >= this.size; index--)
         {
 this.addDefault();
     
@@ -162,6 +163,4 @@ this.index= 0;
 
 
 }
-
-
 

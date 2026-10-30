@@ -27,18 +27,22 @@ import { ResultSet } from '../../../../../java/sql/ResultSet.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 //not GWT import const DbConnectionInfo
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -87,7 +91,7 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
     public getLargestIntegerInColumnWhere(columnName: string, key: string, value: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT);
     
@@ -108,21 +112,20 @@ stringBuffer!.append(value);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
-        try {
-            
-    var largest: number = 0;;
+ try { 
+    let largest: number = 0;;
     
 
-    var rset: ResultSet = executeSQLStatement(sqlStatement)!;;
+    let rset: ResultSet = executeSQLStatement(sqlStatement)!;;
     
 
         while(rset.next())
         {
 
-    var intValue: number = rset.getInt(columnName)!;;
+    let intValue: number = rset.getInt(columnName)!;;
     
 
                         if(intValue > largest)
@@ -136,7 +139,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var largestAsString: string = new Integer(largest).toString()!;;
+    let largestAsString: string = new Integer(largest).toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -163,10 +166,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_LARGETS_INTEG
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return largestAsString;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -182,17 +186,19 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_LARGETS_INTEG
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.INVALID_RESULT;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getColumn(columnName: string): BasicArrayList{
 
-    var column: BasicArrayList = new BasicArrayListD();;
+    let column: BasicArrayList = new BasicArrayListD();;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT);
     
@@ -203,18 +209,17 @@ stringBuffer!.append(this.sqlStrings!.FROM);
 stringBuffer!.append(this.getTableName());
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
-        try {
-            
-    var rset: ResultSet = executeSQLStatement(sqlStatement)!;;
+ try { 
+    let rset: ResultSet = executeSQLStatement(sqlStatement)!;;
     
 
         while(rset.next())
         {
 
-    var field: string = rset.getObject(columnName)!.toString()!;;
+    let field: string = rset.getObject(columnName)!.toString()!;;
     
 column.add(field);
     
@@ -245,10 +250,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_COLUMN);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return column;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -264,14 +270,16 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_COLUMN);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return column;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getColumnWhere(columnName: string, key: string, value: string): BasicArrayList{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT);
     
@@ -292,20 +300,19 @@ stringBuffer!.append(value);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
-    var column: BasicArrayList = new BasicArrayListD();;
+    let column: BasicArrayList = new BasicArrayListD();;
     
 
-    var rset: ResultSet;;
+    let rset: ResultSet;;
     
 
-    var field: string;;
+    let field: string;;
     
 
-        try {
-            rset= executeSQLStatement(sqlStatement);
+ try { rset= executeSQLStatement(sqlStatement);
     
 
         while(rset.next())
@@ -341,10 +348,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_COLUMN_WHERE)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return column;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -360,12 +368,12 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_COLUMN_WHERE)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return column;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

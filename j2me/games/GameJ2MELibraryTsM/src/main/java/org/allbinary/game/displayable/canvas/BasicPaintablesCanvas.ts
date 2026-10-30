@@ -89,7 +89,7 @@ graphics.setColor(this.foregroundColor);
 
 
                         for (
-    var index: number = this.paintableArray!.length -1;index >= 0; index--)
+    let index: number = this.paintableArray!.length -1;index >= 0; index--)
         {
 this.paintableArray[index]!.paint(graphics);
     
@@ -101,6 +101,4 @@ super.paint(graphics);
 
 
 }
-
-
 

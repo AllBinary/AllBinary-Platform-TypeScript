@@ -112,7 +112,7 @@ public constructor (categoryInterface: CategoryInterface){
             
     public toXmlDoc(): Document{
 
-    var document: Document = DomDocumentHelper.create()!;;
+    let document: Document = DomDocumentHelper.create()!;;
     
 document.appendChild(new CategoryView(this.getCategoryInterface()).toXmlNode(document));
     
@@ -138,6 +138,4 @@ document.appendChild(new CategoryView(this.getCategoryInterface()).toXmlNode(doc
 
 
 }
-
-
 

@@ -65,5 +65,3 @@ export class OpenGLESGL11VBOImageFactory extends OpenGLImageFactory {
 
 }
 
-
-

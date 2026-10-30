@@ -25,6 +25,7 @@ import { Transport } from '../../../../../../javax/mail/Transport.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { EmailInterface } from '../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
 //not GWT import const EmailInterface
@@ -106,16 +107,23 @@ this.post(emailInterface);
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
+remove(...args: any[]): any {
+   
+    if (args.length === 1) return this.remove$overload1(args[0]);
+   
+    if (args.length === 0) return this.remove$overload2();
+   
+   throw new TypeError('No matching overload: remove'); }
+  //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    remove(emailInterface: EmailInterface){
+    remove$overload1(emailInterface: EmailInterface){
 this.remove(emailInterface);
     
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public remove(): EmailInterface{
+    public remove$overload2(): EmailInterface{
 
 
 
@@ -148,17 +156,17 @@ this.processAllUnsent();
 
     processAllUnsent(){
 
-    var size: number = queueVector!.size()!;;
+    let size: number = queueVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var emailInterface: EmailInterface = queueVector!.get(index) as EmailInterface;;
+    let emailInterface: EmailInterface = queueVector!.get(index) as EmailInterface;;
     
 
                         if(this.send(emailInterface))
@@ -179,8 +187,7 @@ this.processAllUnsent();
 
     send(emailInterface: EmailInterface): boolean{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -206,10 +213,11 @@ Transport.send(emailInterface!.getMimeMessage());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -225,12 +233,12 @@ Transport.send(emailInterface!.getMimeMessage());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

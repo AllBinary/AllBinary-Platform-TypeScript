@@ -60,9 +60,9 @@ export class VectorUtil
 }
 
 
-    public getSize(anyType: any = {}): number{
+    public getSize(anyType: any): number{
 
-    var vector: Vector<any> = anyType as Vector<any>;;
+    let vector: Vector<any> = anyType as Vector<any>;;
     
 
 
@@ -73,9 +73,9 @@ export class VectorUtil
 }
 
 
-    public elementAt(anyType: any = {}, index: number): any{
+    public elementAt(anyType: any, index: number): any{
 
-    var vector: Vector<any> = anyType as Vector<any>;;
+    let vector: Vector<any> = anyType as Vector<any>;;
     
 
 
@@ -87,6 +87,4 @@ export class VectorUtil
 
 
 }
-
-
 

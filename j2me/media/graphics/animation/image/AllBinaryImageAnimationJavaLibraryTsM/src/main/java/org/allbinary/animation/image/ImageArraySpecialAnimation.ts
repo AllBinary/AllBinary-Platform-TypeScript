@@ -174,5 +174,3 @@ super.paintXY(graphics, x, y);
 
 }
 
-
-

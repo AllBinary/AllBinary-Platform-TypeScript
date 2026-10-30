@@ -9,6 +9,7 @@ import { KeyEvent } from '../../../../android/view/KeyEvent.js';
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -96,6 +97,4 @@ this.KEYCODE_BUTTON_9= new AndroidGameKey(KeyEvent.KEYCODE_BUTTON_9, "BUTTON 9")
 
 
 }
-
-
 

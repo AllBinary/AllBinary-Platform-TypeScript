@@ -36,6 +36,7 @@ import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFac
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
@@ -133,6 +134,4 @@ this.scaleProperties= scaleProperties;
 
 
 }
-
-
 

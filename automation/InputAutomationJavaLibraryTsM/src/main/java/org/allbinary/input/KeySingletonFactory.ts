@@ -29,15 +29,19 @@ import { KeyEvent } from '../../../java/awt/event/KeyEvent.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -74,38 +78,40 @@ export class KeySingletonFactory
                 private static init(): number { 
                     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var STATIC_BLOCK: string = "Static Block";;
+    let STATIC_BLOCK: string = "Static Block";;
     
 
-        try {
-            
+ try { 
 
 
 
                         for (
-    var index: number = 0;index < keyArray!.length; index++)
+    let index: number = 0;index < keyArray!.length; index++)
         {
 
-    var keyAsString: string = KeyEvent.getKeyText(keyArray[index]!)!;;
+    let keyAsString: string = KeyEvent.getKeyText(keyArray[index]!)!;;
     
 KeySingletonFactory.keyStringHashtable!.put(keyAsString, keyArray[index]!);
     
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(commonStrings!.EXCEPTION, "KeySingleFactory", STATIC_BLOCK, e);
     
-}
 
+ }
+   }
+ 
 
 
                     return 0;
@@ -150,6 +156,4 @@ private constructor (){
 
 
 }
-
-
 

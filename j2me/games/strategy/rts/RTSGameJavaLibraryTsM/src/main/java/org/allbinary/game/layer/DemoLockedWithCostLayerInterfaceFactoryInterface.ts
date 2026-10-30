@@ -42,9 +42,7 @@
 export interface DemoLockedWithCostLayerInterfaceFactoryInterface extends CostLayerInterfaceFactoryInterface {
         
 
-    isDemoLocked(): boolean
+    isDemoLocked(): boolean;
 
 }
-
-
 

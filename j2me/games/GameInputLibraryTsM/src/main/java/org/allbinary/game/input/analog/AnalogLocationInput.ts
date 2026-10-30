@@ -125,5 +125,3 @@ this.leftTrigger= leftTrigger;
 
 }
 
-
-

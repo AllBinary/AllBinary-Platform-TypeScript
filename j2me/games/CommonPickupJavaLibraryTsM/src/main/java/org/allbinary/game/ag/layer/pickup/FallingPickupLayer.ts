@@ -98,5 +98,3 @@ this.setPosition(this.x, this.y +1, this.z);
 
 }
 
-
-

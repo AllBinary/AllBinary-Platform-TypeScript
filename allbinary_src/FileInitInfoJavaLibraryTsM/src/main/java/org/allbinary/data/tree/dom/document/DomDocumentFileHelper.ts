@@ -82,24 +82,26 @@ export class DomDocumentFileHelper
             
     public static createDocument(xmlFile: AbFile): Document{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DomDocumentHelper.create(new AbFileInputStream(xmlFile));;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -107,20 +109,19 @@ export class DomDocumentFileHelper
             
     public static save(file: AbFile, document: Document){
 
-    var dataOutputStream: AbDataOutputStream = 
+    let dataOutputStream: AbDataOutputStream = 
                 null
             ;;
     
 
-        try {
-            
-    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
+ try { 
+    let copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 
-    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
+    let copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
     
 
-    var domSource: DOMSource = new DOMSource(document);;
+    let domSource: DOMSource = new DOMSource(document);;
     
 
                         if(file.isFile())
@@ -136,29 +137,28 @@ file.createNewFile();
 dataOutputStream= DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(file);
     
 
-    var streamResult: StreamResult = new StreamResult(dataOutputStream);;
+    let streamResult: StreamResult = new StreamResult(dataOutputStream);;
     
 copyTransformer!.transform(domSource, streamResult);
     
 dataOutputStream!.flush();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-         finally {
-            StreamUtil.getInstance()!.close(dataOutputStream);
+ }
+   }
+ finally { StreamUtil.getInstance()!.close(dataOutputStream);
     
-
-         }
-        
+ }
 }
 
 
@@ -169,6 +169,4 @@ private constructor (){
 
 
 }
-
-
 

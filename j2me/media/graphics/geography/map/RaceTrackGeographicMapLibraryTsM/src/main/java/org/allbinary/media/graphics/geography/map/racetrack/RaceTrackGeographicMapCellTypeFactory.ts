@@ -88,7 +88,7 @@ public constructor (){
 
             super();
         
-    var raceTrackGeographicMapCellTypes: RaceTrackGeographicMapCellTypes = RaceTrackGeographicMapCellTypes.getInstance()!;;
+    let raceTrackGeographicMapCellTypes: RaceTrackGeographicMapCellTypes = RaceTrackGeographicMapCellTypes.getInstance()!;;
     
 this.BOTTOM_LEFT_TURN_ROAD_CELL_TYPE= raceTrackGeographicMapCellTypes!.BOTTOM_LEFT_TURN_ROAD_CELL_TYPE;
     
@@ -163,6 +163,4 @@ this.DEFAULT_FINISH_LINE_ROAD_CELL_TYPE= raceTrackGeographicMapCellTypes!.DEFAUL
 
 
 }
-
-
 

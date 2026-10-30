@@ -452,95 +452,93 @@ export interface GL11 extends GL10 {
 
     //Interfaces do not have static fields - public static readonly GL_WRITE_ONLY: number = 35001;
 
-    glBindBuffer(target: number, buffer: number)
+    glBindBuffer(target: number, buffer: number): void;
 
-    glBufferData(target: number, size: number, data: Buffer, usage: number)
+    glBufferData(target: number, size: number, data: Buffer, usage: number): void;
 
-    glBufferSubData(target: number, offset: number, size: number, data: Buffer)
+    glBufferSubData(target: number, offset: number, size: number, data: Buffer): void;
 
-    glClipPlanef(plane: number, equation: number[], offset: number)
+    glClipPlanef(plane: number, equation: number[], offset: number): void;
 
-    glClipPlanef(plane: number, equation: FloatBuffer)
+    glClipPlanef(plane: number, equation: FloatBuffer): void;
 
-    glColor4ub(red: number, green: number, blue: number, alpha: number)
+    glColor4ub(red: number, green: number, blue: number, alpha: number): void;
 
-    glColorPointer(size: number, type: number, stride: number, offset: number)
+    glColorPointer(size: number, type: number, stride: number, offset: number): void;
 
-    glDeleteBuffers(n: number, buffers: number[], offset: number)
+    glDeleteBuffers(n: number, buffers: number[], offset: number): void;
 
-    glDeleteBuffers(n: number, buffers: IntBuffer)
+    glDeleteBuffers(n: number, buffers: IntBuffer): void;
 
-    glDrawElements(mode: number, count: number, type: number, offset: number)
+    glDrawElements(mode: number, count: number, type: number, offset: number): void;
 
-    glGenBuffers(n: number, buffers: number[], offset: number)
+    glGenBuffers(n: number, buffers: number[], offset: number): void;
 
-    glGenBuffers(n: number, buffers: IntBuffer)
+    glGenBuffers(n: number, buffers: IntBuffer): void;
 
-    glGetBufferParameteriv(target: number, pname: number, params: number[], offset: number)
+    glGetBufferParameteriv(target: number, pname: number, params: number[], offset: number): void;
 
-    glGetBufferParameteriv(target: number, pname: number, params: IntBuffer)
+    glGetBufferParameteriv(target: number, pname: number, params: IntBuffer): void;
 
-    glGetClipPlanef(pname: number, eqn: number[], offset: number)
+    glGetClipPlanef(pname: number, eqn: number[], offset: number): void;
 
-    glGetClipPlanef(pname: number, eqn: FloatBuffer)
+    glGetClipPlanef(pname: number, eqn: FloatBuffer): void;
 
-    glGetFloatv(pname: number, params: number[], offset: number)
+    glGetFloatv(pname: number, params: number[], offset: number): void;
 
-    glGetFloatv(pname: number, params: FloatBuffer)
+    glGetFloatv(pname: number, params: FloatBuffer): void;
 
-    glGetLightfv(light: number, pname: number, params: number[], offset: number)
+    glGetLightfv(light: number, pname: number, params: number[], offset: number): void;
 
-    glGetLightfv(light: number, pname: number, params: FloatBuffer)
+    glGetLightfv(light: number, pname: number, params: FloatBuffer): void;
 
-    glGetMaterialfv(face: number, pname: number, params: number[], offset: number)
+    glGetMaterialfv(face: number, pname: number, params: number[], offset: number): void;
 
-    glGetMaterialfv(face: number, pname: number, params: FloatBuffer)
+    glGetMaterialfv(face: number, pname: number, params: FloatBuffer): void;
 
-    glGetTexEnviv(env: number, pname: number, params: number[], offset: number)
+    glGetTexEnviv(env: number, pname: number, params: number[], offset: number): void;
 
-    glGetTexEnviv(env: number, pname: number, params: IntBuffer)
+    glGetTexEnviv(env: number, pname: number, params: IntBuffer): void;
 
-    glGetTexParameterfv(target: number, pname: number, params: number[], offset: number)
+    glGetTexParameterfv(target: number, pname: number, params: number[], offset: number): void;
 
-    glGetTexParameterfv(target: number, pname: number, params: FloatBuffer)
+    glGetTexParameterfv(target: number, pname: number, params: FloatBuffer): void;
 
-    glGetTexParameteriv(target: number, pname: number, params: number[], offset: number)
+    glGetTexParameteriv(target: number, pname: number, params: number[], offset: number): void;
 
-    glGetTexParameteriv(target: number, pname: number, params: IntBuffer)
+    glGetTexParameteriv(target: number, pname: number, params: IntBuffer): void;
 
-    glIsBuffer(buffer: number): boolean
+    glIsBuffer(buffer: number): boolean;
 
-    glIsEnabled(cap: number): boolean
+    glIsEnabled(cap: number): boolean;
 
-    glIsTexture(texture: number): boolean
+    glIsTexture(texture: number): boolean;
 
-    glNormalPointer(type: number, stride: number, offset: number)
+    glNormalPointer(type: number, stride: number, offset: number): void;
 
-    glPointParameterf(pname: number, param: number)
+    glPointParameterf(pname: number, param: number): void;
 
-    glPointParameterfv(pname: number, params: number[], offset: number)
+    glPointParameterfv(pname: number, params: number[], offset: number): void;
 
-    glPointParameterfv(pname: number, params: FloatBuffer)
+    glPointParameterfv(pname: number, params: FloatBuffer): void;
 
-    glTexCoordPointer(size: number, type: number, stride: number, offset: number)
+    glTexCoordPointer(size: number, type: number, stride: number, offset: number): void;
 
-    glTexEnvi(target: number, pname: number, param: number)
+    glTexEnvi(target: number, pname: number, param: number): void;
 
-    glTexEnviv(target: number, pname: number, params: number[], offset: number)
+    glTexEnviv(target: number, pname: number, params: number[], offset: number): void;
 
-    glTexEnviv(target: number, pname: number, params: IntBuffer)
+    glTexEnviv(target: number, pname: number, params: IntBuffer): void;
 
-    glTexParameterfv(target: number, pname: number, params: number[], offset: number)
+    glTexParameterfv(target: number, pname: number, params: number[], offset: number): void;
 
-    glTexParameterfv(target: number, pname: number, params: FloatBuffer)
+    glTexParameterfv(target: number, pname: number, params: FloatBuffer): void;
 
-    glTexParameteriv(target: number, pname: number, params: number[], offset: number)
+    glTexParameteriv(target: number, pname: number, params: number[], offset: number): void;
 
-    glTexParameteriv(target: number, pname: number, params: IntBuffer)
+    glTexParameteriv(target: number, pname: number, params: IntBuffer): void;
 
-    glVertexPointer(size: number, type: number, stride: number, offset: number)
+    glVertexPointer(size: number, type: number, stride: number, offset: number): void;
 
 }
-
-
 

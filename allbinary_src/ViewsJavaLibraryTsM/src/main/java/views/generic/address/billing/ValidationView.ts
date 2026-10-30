@@ -70,7 +70,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
     public isValid(): Boolean{
 
-    var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());;
+    let billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 this.streetAddresses= billingAddressesEntity!.get();
     
@@ -84,7 +84,7 @@ this.streetAddresses= billingAddressesEntity!.get();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -97,7 +97,7 @@ this.streetAddresses= billingAddressesEntity!.get();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -106,7 +106,7 @@ this.streetAddresses= billingAddressesEntity!.get();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
@@ -142,6 +142,4 @@ this.streetAddresses= billingAddressesEntity!.get();
 
 
 }
-
-
 

@@ -71,5 +71,3 @@ this.scrollMapPlayerGameInput!.up();
 
 }
 
-
-

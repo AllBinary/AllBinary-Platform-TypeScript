@@ -47,7 +47,7 @@ export class DemoGameMidletEvent extends AllBinaryEventObject {
 
     private demoGameMidletState: DemoGameMidletState;
 
-public constructor (anyType: any = {}, demoGameMidletState: DemoGameMidletState){
+public constructor (anyType: any, demoGameMidletState: DemoGameMidletState){
             super(anyType);
                     
 
@@ -58,7 +58,7 @@ this.demoGameMidletState= demoGameMidletState;
 }
 
 
-    public init(anyType: any = {}){
+    public init(anyType: any){
 this.setSource(anyType);
     
 }
@@ -81,6 +81,4 @@ this.demoGameMidletState= demoGameMidletState;
 
 
 }
-
-
 

@@ -42,9 +42,7 @@
 export interface CacheableInterface {
         
 
-    getKey(): any
+    getKey(): any;
 
 }
-
-
 

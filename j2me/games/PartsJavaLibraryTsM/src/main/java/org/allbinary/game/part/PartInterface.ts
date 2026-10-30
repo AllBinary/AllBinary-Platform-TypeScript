@@ -48,5 +48,3 @@ export interface PartInterface extends PaintableInterface, AnimationInterfaceCom
 
 }
 
-
-

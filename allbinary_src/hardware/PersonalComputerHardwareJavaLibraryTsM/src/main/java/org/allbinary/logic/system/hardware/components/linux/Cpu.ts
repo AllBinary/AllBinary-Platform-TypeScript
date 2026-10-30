@@ -33,9 +33,11 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LogConfigTypeFactory } from '../../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
@@ -48,12 +50,14 @@ import { AbFile } from '../../../../../../../org/allbinary/logic/io/file/AbFile.
 
 //not plain js import { FilePathData } 
 const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+type FilePathData<T = any, U = any> = typeof FilePathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof FilePathData;
 
 import { SubDirectory } from '../../../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
 //not GWT import const SubDirectory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { CpuInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/CpuInterface.js';
 //not GWT import const CpuInterface
@@ -63,15 +67,19 @@ import { HardwareComponentInterface } from '../../../../../../../org/allbinary/l
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -122,23 +130,30 @@ public constructor (){
     
 }
 
-
+init(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.init$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.init$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: init'); }
+  
                 //@Throws(Exception.constructor)
             
-    init(filePath: string){
+    init$overload1(filePath: string){
 
-    var lineNumberReader: LineNumberReader = 
+    let lineNumberReader: LineNumberReader = 
                 null
             ;;
     
 
-        try {
-            this.init(lineNumberReader, filePath);
+ try { this.init(lineNumberReader, filePath);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
@@ -153,18 +168,19 @@ public constructor (){
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    init(lineNumberReader: LineNumberReader, filePath: string){
+    init$overload2(lineNumberReader: LineNumberReader, filePath: string){
 
-        try {
-            
-    var fileReader: FileReader = new FileReader(filePath);;
+ try { 
+    let fileReader: FileReader = new FileReader(filePath);;
     
 lineNumberReader= new LineNumberReader(fileReader);
     
@@ -177,7 +193,7 @@ this.cpuHashMap= StdUtil.getInstance()!.createHashMap();
                         
                                     {
                                     
-    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, AbFile.createAbFile(FilePathData.getInstance()!.PATH_START))!;;
+    let fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, AbFile.createAbFile(FilePathData.getInstance()!.PATH_START))!;;
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
@@ -193,7 +209,7 @@ this.cpuHashMap= StdUtil.getInstance()!.createHashMap();
                         
                                     {
                                     
-    var file: AbFile = fileVector!.get(0) as AbFile;;
+    let file: AbFile = fileVector!.get(0) as AbFile;;
     
 lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
     
@@ -210,7 +226,7 @@ lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
                         
                                     {
                                     
-    var nextLine: string = lineNumberReader!.readLine()!;;
+    let nextLine: string = lineNumberReader!.readLine()!;;
     
 
         while(lineNumberReader != 
@@ -220,20 +236,20 @@ lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
                                 )
         {
 
-    var index: number = nextLine!.indexOf(':')!;;
+    let index: number = nextLine!.indexOf(':')!;;
     
 
                         if(index >= 0)
                         
                                     {
                                     
-    var key: string = nextLine!.substring(0, index)!;;
+    let key: string = nextLine!.substring(0, index)!;;
     
 
-    var valueIndex: number = index +1;;
+    let valueIndex: number = index +1;;
     
 
-    var value: string = nextLine!.substring(valueIndex, nextLine!.length)!;;
+    let value: string = nextLine!.substring(valueIndex, nextLine!.length)!;;
     
 
                         if(key.indexOf(CpuInfo.PROCESSOR.toString()) >= 0)
@@ -269,16 +285,13 @@ nextLine= lineNumberReader!.readLine();
 
                                     }
                                 
-
-         finally {
-            
+ }
+ finally { 
                         if(lineNumberReader != 
                                     null
                                 )
                         lineNumberReader!.close()
-
-         }
-        
+ }
 }
 
 
@@ -361,8 +374,15 @@ nextLine= lineNumberReader!.readLine();
     
 }
 
-
-    public compareTo(cpuInterface: CpuInterface): boolean{
+compareTo(...args: any[]): any {
+   
+    if (args.length === 1) return this.compareTo$overload1(args[0]);
+   
+    if (args.length === 1) return this.compareTo$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: compareTo'); }
+  
+    public compareTo$overload1(cpuInterface: CpuInterface): boolean{
 
 
 
@@ -372,7 +392,7 @@ nextLine= lineNumberReader!.readLine();
 }
 
 
-    public compareTo(componentInterface: HardwareComponentInterface): boolean{
+    public compareTo$overload2(componentInterface: HardwareComponentInterface): boolean{
 
 
 
@@ -384,13 +404,13 @@ nextLine= lineNumberReader!.readLine();
 
     public toString(): string{
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
+    let commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 stringMaker!.append(CpuInfo.PROCESSOR.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getProcessor());
     
@@ -432,6 +452,4 @@ stringMaker!.append(CpuInfo.CACHESIZE.toString())!.append(commonLabels!.COLON_SE
 
 
 }
-
-
 

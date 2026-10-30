@@ -33,9 +33,11 @@ import { URLGLOBALS } from '../../../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { LogConfigTypeFactory } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
@@ -69,21 +71,27 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -131,10 +139,10 @@ export class FileUtil
 
     static getNewDirectory(fromFile: AbFile): string{
 
-    var newDirectory: string = fromFile!.getPath()!;;
+    let newDirectory: string = fromFile!.getPath()!;;
     
 
-    var separatorChar: string = FilePathData.getInstance()!.PATH_START;;
+    let separatorChar: string = FilePathData.getInstance()!.PATH_START;;
     
 
                         if(AbIOSystem.getInstance()!.isType("com.vobject.appengine.java.io"))
@@ -146,7 +154,7 @@ export class FileUtil
                                     }
                                 
 
-    var lastIndex: number = newDirectory!.lastIndexOf(separatorChar)!;;
+    let lastIndex: number = newDirectory!.lastIndexOf(separatorChar)!;;
     
 
                         if(lastIndex >= newDirectory!.length)
@@ -183,12 +191,23 @@ private constructor (){
             super();
         }
 
-
+write(...args: any[]): any {
+   
+    if (args.length === 2) return this.write$overload1(args[0], args[1]);
+   
+    if (args.length === 2) return this.write$overload2(args[0], args[1]);
+   
+    if (args.length === 3) return this.write$overload3(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.write$overload4(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: write'); }
+  
                 //@Throws(Exception.constructor)
             
-    public write(inputStream: InputStream, file: AbFile){
+    public write$overload1(inputStream: InputStream, file: AbFile){
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(file)!;;
+    let dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(file)!;;
     
 this.write(inputStream, dataOutputStream);
     
@@ -197,60 +216,55 @@ this.write(inputStream, dataOutputStream);
 
                 //@Throws(Exception.constructor)
             
-    public write(inputStream: InputStream, dataOutputStream: AbDataOutputStream){
+    public write$overload2(inputStream: InputStream, dataOutputStream: AbDataOutputStream){
 
-        try {
-            dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, new Array(16384)) as AbDataOutputStream;
+ try { dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, new Array(16384)) as AbDataOutputStream;
     
 dataOutputStream!.flush();
     
-
-         finally {
-            StreamUtil.getInstance()!.close(dataOutputStream);
+ }
+ finally { StreamUtil.getInstance()!.close(dataOutputStream);
     
-
-         }
-        
+ }
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public write(inputStream: InputStream, dataOutputStream: AbDataOutputStream, buffer: number[]){
+    public write$overload3(inputStream: InputStream, dataOutputStream: AbDataOutputStream, buffer: number[]){
 
-        try {
-            dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, buffer) as AbDataOutputStream;
+ try { dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, buffer) as AbDataOutputStream;
     
 dataOutputStream!.flush();
     
-
-         finally {
-            StreamUtil.getInstance()!.close(dataOutputStream);
+ }
+ finally { StreamUtil.getInstance()!.close(dataOutputStream);
     
-
-         }
-        
+ }
 }
 
-
+copy(...args: any[]): any {
+   
+    if (args.length === 2) return this.copy$overload1(args[0], args[1]);
+   
+    if (args.length === 2) return this.copy$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: copy'); }
+  
                 //@Throws(Exception.constructor)
             
-    copy(dataInputStream: AbFileInputStream, dataOutputStream: AbDataOutputStream){
+    copy$overload1(dataInputStream: AbFileInputStream, dataOutputStream: AbDataOutputStream){
 
-        try {
-            dataOutputStream= StreamUtil.getInstance()!.get(dataInputStream, dataOutputStream, new Array(16384)) as AbDataOutputStream;
+ try { dataOutputStream= StreamUtil.getInstance()!.get(dataInputStream, dataOutputStream, new Array(16384)) as AbDataOutputStream;
     
 dataOutputStream!.flush();
     
-
-         finally {
-            StreamUtil.getInstance()!.close(dataOutputStream);
+ }
+ finally { StreamUtil.getInstance()!.close(dataOutputStream);
     
 StreamUtil.getInstance()!.close(dataInputStream);
     
-
-         }
-        
+ }
 }
 
 
@@ -258,21 +272,21 @@ StreamUtil.getInstance()!.close(dataInputStream);
             
     fixPath(file: AbFile, path: AbPath, realPath: AbPath, cloud: string): AbPath{
 
-    var beginIndex: number = file.getPath()!.indexOf(cloud) +cloud.length;;
+    let beginIndex: number = file.getPath()!.indexOf(cloud) +cloud.length;;
     
 
-    var endIndex: number = file.getPath()!.indexOf(file.getName())!;;
+    let endIndex: number = file.getPath()!.indexOf(file.getName())!;;
     
 
-    var fixedPathString: string = realPath!.toFileSystemString() +file.getPath()!.substring(beginIndex, endIndex);;
+    let fixedPathString: string = realPath!.toFileSystemString() +file.getPath()!.substring(beginIndex, endIndex);;
     
 
-    var fixedPath: AbPath = new AbPath(fixedPathString, StringUtil.getInstance()!.EMPTY_STRING);;
+    let fixedPath: AbPath = new AbPath(fixedPathString, StringUtil.getInstance()!.EMPTY_STRING);;
     
 this.directory.create(fixedPath);
     
 
-    var string: string = fixedPath!.toFileSystemString()!;;
+    let string: string = fixedPath!.toFileSystemString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.FILE))
@@ -284,7 +298,7 @@ this.directory.create(fixedPath);
                                     }
                                 
 
-    var outPath: AbPath = new AbPath(string, file.getName());;
+    let outPath: AbPath = new AbPath(string, file.getName());;
     
 
 
@@ -294,10 +308,21 @@ this.directory.create(fixedPath);
     
 }
 
-
+copyToCloud(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[3] === 'string') return this.copyToCloud$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 6 && typeof args[3] === 'string' && typeof args[4] === 'boolean' && typeof args[5] === 'boolean') return this.copyToCloud$overload2(args[0], args[1], args[2], args[3], args[4], args[5]);
+   
+    if (args.length === 2) return this.copyToCloud$overload3(args[0], args[1]);
+   
+    if (args.length === 4 && typeof args[2] === 'boolean' && typeof args[3] === 'boolean') return this.copyToCloud$overload4(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: copyToCloud'); }
+  
                 //@Throws(Exception.constructor)
             
-    public copyToCloud(file: AbFile, path: AbPath, realPath: AbPath, cloud: string){
+    public copyToCloud$overload1(file: AbFile, path: AbPath, realPath: AbPath, cloud: string){
 this.copyToCloud(file, path, realPath, cloud, false, false);
     
 }
@@ -305,14 +330,13 @@ this.copyToCloud(file, path, realPath, cloud, false, false);
 
                 //@Throws(Exception.constructor)
             
-    public copyToCloud(file: AbFile, path: AbPath, realPath: AbPath, cloud: string, overwriteNewer: boolean, overwriteAll: boolean){
+    public copyToCloud$overload2(file: AbFile, path: AbPath, realPath: AbPath, cloud: string, overwriteNewer: boolean, overwriteAll: boolean){
 
-        try {
-            
-    var outPath: AbPath = this.fixPath(file, path, realPath, cloud)!;;
+ try { 
+    let outPath: AbPath = this.fixPath(file, path, realPath, cloud)!;;
     
 
-    var outFile: AbFile = AbFile.createAbFileFromAbPath(outPath)!;;
+    let outFile: AbFile = AbFile.createAbFileFromAbPath(outPath)!;;
     
 
                         if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll))
@@ -333,7 +357,7 @@ this.copyToCloud(file, path, realPath, cloud, false, false);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Out File: ");
     
@@ -354,23 +378,24 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyToCloud");
                         }
                             
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(outFile)!;;
+    let dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(outFile)!;;
     
 
-    var fileInputStream: AbFileInputStream = new AbFileLocalInputStream(file);;
+    let fileInputStream: AbFileInputStream = new AbFileLocalInputStream(file);;
     
 this.copy(fileInputStream, dataOutputStream);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.FILEERROR))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error Copying File File: ");
     
@@ -388,14 +413,16 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public copyToCloud(file: AbFile, outFile: AbFile){
+    public copyToCloud$overload3(file: AbFile, outFile: AbFile){
 this.copyToCloud(file, outFile, false, false);
     
 }
@@ -403,11 +430,10 @@ this.copyToCloud(file, outFile, false, false);
 
                 //@Throws(Exception.constructor)
             
-    public copyToCloud(file: AbFile, outFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean){
+    public copyToCloud$overload4(file: AbFile, outFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean){
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll))
@@ -448,23 +474,24 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyToCloud");
                         }
                             
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(outFile)!;;
+    let dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(outFile)!;;
     
 
-    var fileInputStream: AbFileInputStream = new AbFileLocalInputStream(file);;
+    let fileInputStream: AbFileInputStream = new AbFileLocalInputStream(file);;
     
 this.copy(fileInputStream, dataOutputStream);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.FILEERROR))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error Copying File File: ");
     
@@ -482,8 +509,10 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -495,7 +524,7 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(overwriteAll)
@@ -614,10 +643,17 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyFile");
     
 }
 
-
+copyFile(...args: any[]): any {
+   
+    if (args.length === 2) return this.copyFile$overload1(args[0], args[1]);
+   
+    if (args.length === 4 && typeof args[2] === 'boolean' && typeof args[3] === 'boolean') return this.copyFile$overload2(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: copyFile'); }
+  
                 //@Throws(Exception.constructor)
             
-    copyFile(fromFile: AbFile, toFile: AbFile){
+    copyFile$overload1(fromFile: AbFile, toFile: AbFile){
 this.copyFile(fromFile, toFile, false, false);
     
 }
@@ -625,15 +661,14 @@ this.copyFile(fromFile, toFile, false, false);
 
                 //@Throws(Exception.constructor)
             
-    copyFile(fromFile: AbFile, toFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean){
+    copyFile$overload2(fromFile: AbFile, toFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean){
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.FILE))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Copying ");
     
@@ -666,23 +701,24 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyFile");
                                     }
                                 
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(toFile)!;;
+    let dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(toFile)!;;
     
 
-    var fileInputStream: AbFileInputStream = new AbFileInputStream(fromFile);;
+    let fileInputStream: AbFileInputStream = new AbFileInputStream(fromFile);;
     
 this.copy(fileInputStream, dataOutputStream);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.FILEERROR))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error Copying File fromFile: ");
     
@@ -702,8 +738,10 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -711,7 +749,7 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e);
             
     public copyDirectoryPortion(fromDirectoryAbPath: AbPath, toDirectoryAbPath: AbPath, overwriteNewer: boolean, overwriteAll: boolean, current: number, total: number){
 
-    var file: AbFile = AbFile.createAbFileFromAbPath(fromDirectoryAbPath)!;;
+    let file: AbFile = AbFile.createAbFileFromAbPath(fromDirectoryAbPath)!;;
     
 
                         if(!file.isDirectory())
@@ -726,13 +764,13 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e);
                                     }
                                 
 
-    var fileList: BasicArrayList = this.directory.search(file, true)!;;
+    let fileList: BasicArrayList = this.directory.search(file, true)!;;
     
 
-    var size: number = fileList!.size()!;;
+    let size: number = fileList!.size()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Searched: ");
     
@@ -743,13 +781,13 @@ stringBuffer!.append(" Total: ");
 stringBuffer!.appendint(size);
     
 
-    var portion: number = globalThis.Math.trunc(size /total) +1;;
+    let portion: number = globalThis.Math.trunc(size /total) +1;;
     
 
-    var start: number = portion *current;;
+    let start: number = portion *current;;
     
 
-    var end: number = start +portion;;
+    let end: number = start +portion;;
     
 
                         if(end > size)
@@ -778,14 +816,14 @@ stringBuffer!.appendint(end);
                                     }
                                 
 
-    var nextFile: AbFile;;
+    let nextFile: AbFile;;
     
 
 
 
 
                         for (
-    var index: number = start;index < end; index++)
+    let index: number = start;index < end; index++)
         {
 nextFile= fileList!.get(index) as AbFile;
     
@@ -798,10 +836,10 @@ nextFile= fileList!.get(index) as AbFile;
                                 
                         else {
                             
-    var path: string = new AbPath(nextFile!.getPath(), StringUtil.getInstance()!.EMPTY_STRING).getPath()!;;
+    let path: string = new AbPath(nextFile!.getPath(), StringUtil.getInstance()!.EMPTY_STRING).getPath()!;;
     
 
-    var beginIndex: number = fromDirectoryAbPath!.getPath()!.length()!;;
+    let beginIndex: number = fromDirectoryAbPath!.getPath()!.length()!;;
     
 
                         if(path.indexOf(URLGLOBALS.getWebappPath()) < 0)
@@ -813,10 +851,10 @@ nextFile= fileList!.get(index) as AbFile;
                                     }
                                 
 
-    var newPath: string = toDirectoryAbPath!.toFileSystemString() +path.substring(beginIndex);;
+    let newPath: string = toDirectoryAbPath!.toFileSystemString() +path.substring(beginIndex);;
     
 
-    var toFile: AbFile = AbFile.createAbFileFromAbPath(new AbPath(newPath, StringUtil.getInstance()!.EMPTY_STRING))!;;
+    let toFile: AbFile = AbFile.createAbFileFromAbPath(new AbPath(newPath, StringUtil.getInstance()!.EMPTY_STRING))!;;
     
 this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll);
     
@@ -832,13 +870,12 @@ this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll);
             
     copyDirectory(fromFile: AbFile, to: AbFile){
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.FILE))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Copying Directory from: ");
     
@@ -854,10 +891,10 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
                                     }
                                 
 
-    var newDirectory: string = FileUtil.getNewDirectory(fromFile)!;;
+    let newDirectory: string = FileUtil.getNewDirectory(fromFile)!;;
     
 
-    var newDirectoryAbPath: AbPath = new AbPath(to.getPath() +AbPathData.getInstance()!.SEPARATOR +newDirectory, StringUtil.getInstance()!.EMPTY_STRING);;
+    let newDirectoryAbPath: AbPath = new AbPath(to.getPath() +AbPathData.getInstance()!.SEPARATOR +newDirectory, StringUtil.getInstance()!.EMPTY_STRING);;
     
 
                         if(!this.directory.create(newDirectoryAbPath))
@@ -872,10 +909,10 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
                                     }
                                 
 
-    var fileArray: AbFile[] = FileWrapperUtil.wrapFiles(fromFile!.listFiles())!;;
+    let fileArray: AbFile[] = FileWrapperUtil.wrapFiles(fromFile!.listFiles())!;;
     
 
-    var size: number = fileArray!.length
+    let size: number = fileArray!.length
                 ;;
     
 
@@ -883,7 +920,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Copying ");
     
@@ -903,14 +940,14 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
                                     }
                                 
 
-    var file: AbFile;;
+    let file: AbFile;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 file= fileArray[index]!;
     
@@ -943,16 +980,17 @@ file= fileArray[index]!;
                             
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.FILEERROR))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error Copying Directory fromFile: ");
     
@@ -972,26 +1010,27 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory", e);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public copy(fromAbPath: AbPath, to: AbPath): boolean{
+    public copy$overload2(fromAbPath: AbPath, to: AbPath): boolean{
 
-    var COPY: string = "copy";;
+    let COPY: string = "copy";;
     
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.FILE))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Copying AbPaths from: ");
     
@@ -1035,10 +1074,10 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
                                     }
                                 
 
-    var fromLocationFile: AbFile = AbFile.createAbFileFromAbPath(fromAbPath)!;;
+    let fromLocationFile: AbFile = AbFile.createAbFileFromAbPath(fromAbPath)!;;
     
 
-    var toLocationFile: AbFile = AbFile.createAbFileFromAbPath(to)!;;
+    let toLocationFile: AbFile = AbFile.createAbFileFromAbPath(to)!;;
     
 
                         if(fromLocationFile!.isFile())
@@ -1049,7 +1088,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
                         
                                     {
                                     
-    var file: AbFile = AbFile.createAbFileWithChild(toLocationFile, fromLocationFile!.getName())!;;
+    let file: AbFile = AbFile.createAbFileWithChild(toLocationFile, fromLocationFile!.getName())!;;
     
 this.copyFile(fromLocationFile, file);
     
@@ -1058,7 +1097,7 @@ this.copyFile(fromLocationFile, file);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Copied file=");
     
@@ -1088,7 +1127,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Copied file with new name ");
     
@@ -1129,24 +1168,24 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
                                     }
                                 
 
-    var fileArray: AbFile[] = FileWrapperUtil.wrapFiles(fromLocationFile!.listFiles())!;;
+    let fileArray: AbFile[] = FileWrapperUtil.wrapFiles(fromLocationFile!.listFiles())!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < fileArray!.length; index++)
+    let index: number = 0;index < fileArray!.length; index++)
         {
 
-    var file: AbFile = fileArray[index]!;;
+    let file: AbFile = fileArray[index]!;;
     
 
                         if(file.isFile())
                         
                                     {
                                     
-    var aFile: AbFile = AbFile.createAbFileWithChild(toLocationFile, file.getName())!;;
+    let aFile: AbFile = AbFile.createAbFileWithChild(toLocationFile, file.getName())!;;
     
 this.copyFile(file, aFile);
     
@@ -1218,16 +1257,17 @@ this.copyDirectory(fromLocationFile, toLocationFile);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.FILEERROR))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error Copying fromAbPath: ");
     
@@ -1247,25 +1287,27 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), COPY, e);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
     public shouldSkip(file: AbFile, skipFiles: string[]): boolean{
 
-    var size: number = skipFiles!.length
+    let size: number = skipFiles!.length
                 ;;
     
 
-    var skipFile: string;;
+    let skipFile: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 skipFile= skipFiles[index]!;
     
@@ -1301,21 +1343,20 @@ skipFile= skipFiles[index]!;
 
                 //@Throws(Exception.constructor)
             
-    public write(filePath: string, string: string){
+    public write$overload4(filePath: string, string: string){
 
-    var dataOutputStream: AbDataOutputStream = 
+    let dataOutputStream: AbDataOutputStream = 
                 null
             ;;
     
 
-        try {
-            PreLogUtil.put(new StringMaker().append(this.WRITE_LABEL)!.append(filePath)!.append(this.DATA_LABEL)!.append(string)!.toString(), this, this.WRITE_METHOD);
+ try { PreLogUtil.put(new StringMaker().append(this.WRITE_LABEL)!.append(filePath)!.append(this.DATA_LABEL)!.append(string)!.toString(), this, this.WRITE_METHOD);
     
 
-    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
+    let fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, filePath)!;;
+    let fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, filePath)!;;
     
 dataOutputStream= new AbDataOutputStream(fileOutputStream);
     
@@ -1323,13 +1364,10 @@ dataOutputStream!.write(string.getBytes(), 0, string.length);
     
 dataOutputStream!.flush();
     
-
-         finally {
-            StreamUtil.getInstance()!.close(dataOutputStream);
+ }
+ finally { StreamUtil.getInstance()!.close(dataOutputStream);
     
-
-         }
-        
+ }
 }
 
 
@@ -1344,6 +1382,4 @@ dataOutputStream!.flush();
 
 
 }
-
-
 

@@ -40,13 +40,11 @@
 export interface ScoreableInterface {
         
 
-    getPoints(): number
+    getPoints(): number;
 
-    addPoints(points: number)
+    addPoints(points: number): void;
 
-    removePoints(points: number)
+    removePoints(points: number): void;
 
 }
-
-
 

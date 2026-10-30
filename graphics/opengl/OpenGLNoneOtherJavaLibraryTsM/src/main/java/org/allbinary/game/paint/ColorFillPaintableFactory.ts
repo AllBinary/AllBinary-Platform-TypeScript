@@ -60,8 +60,15 @@ export class ColorFillPaintableFactory
         
 
     private static readonly instance: ColorFillPaintableFactory = new ColorFillPaintableFactory();
-
-    public static getInstance(): ColorFillPaintableFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 2 && typeof args[1] === 'boolean') return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): ColorFillPaintableFactory{
 
 
 
@@ -71,9 +78,9 @@ export class ColorFillPaintableFactory
 }
 
 
-    public getInstance(basicColor: BasicColor, forThreedCanvas: boolean): ColorFillBasePaintable{
+    public getInstance$overload2(basicColor: BasicColor, forThreedCanvas: boolean): ColorFillBasePaintable{
 
-    var operatingSystem: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
+    let operatingSystem: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
                         if(operatingSystem!.isOverScan())
@@ -102,6 +109,4 @@ export class ColorFillPaintableFactory
 
 
 }
-
-
 

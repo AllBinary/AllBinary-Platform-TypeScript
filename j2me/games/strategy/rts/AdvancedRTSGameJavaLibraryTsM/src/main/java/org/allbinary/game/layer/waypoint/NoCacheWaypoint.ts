@@ -43,6 +43,7 @@ import { PathFindingInfoFactory } from '../../../../../org/allbinary/game/media/
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -79,9 +80,11 @@ import { PathGenerator } from '../../../../../org/allbinary/media/graphics/geogr
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -160,10 +163,10 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
             
     getEndGeographicMapCellPosition(startGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
 
-    var endList: BasicArrayList = this.ownerLayer!.getEndGeographicMapCellPositionList()!;;
+    let endList: BasicArrayList = this.ownerLayer!.getEndGeographicMapCellPositionList()!;;
     
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition = BasicArrayListUtil.getInstance()!.getRandom(endList) as GeographicMapCellPosition;;
+    let endGeographicMapCellPosition: GeographicMapCellPosition = BasicArrayListUtil.getInstance()!.getRandom(endList) as GeographicMapCellPosition;;
     
 
                         if(startGeographicMapCellPosition == endGeographicMapCellPosition)
@@ -174,7 +177,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 
 
                         for (
-    var index: number = endList!.size() -1;index >= 0; index--)
+    let index: number = endList!.size() -1;index >= 0; index--)
         {
 endGeographicMapCellPosition= endList!.get(index) as GeographicMapCellPosition;
     
@@ -206,7 +209,7 @@ endGeographicMapCellPosition= endList!.get(index) as GeographicMapCellPosition;
             
     createPaths(startGeographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition = this.getEndGeographicMapCellPosition(startGeographicMapCellPosition)!;;
+    let endGeographicMapCellPosition: GeographicMapCellPosition = this.getEndGeographicMapCellPosition(startGeographicMapCellPosition)!;;
     
 
                         if(endGeographicMapCellPosition == 
@@ -253,34 +256,34 @@ endGeographicMapCellPosition= endList!.get(index) as GeographicMapCellPosition;
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
-    var raceTrackGeographicMap: RaceTrackGeographicMap = geographicMapInterface as RaceTrackGeographicMap;;
+    let raceTrackGeographicMap: RaceTrackGeographicMap = geographicMapInterface as RaceTrackGeographicMap;;
     
 
-    var raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = raceTrackGeographicMap!.getGeographicMapCellTypeFactory()!;;
+    let raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = raceTrackGeographicMap!.getGeographicMapCellTypeFactory()!;;
     
 
-    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator() as CustomMapGenerator;;
+    let customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator() as CustomMapGenerator;;
     
 customMapGenerator!.copyMapIntoCustomMap();
     
 
-    var customMapArray: number[][] = customMapGenerator!.getCustomMapArray()!;;
+    let customMapArray: number[][] = customMapGenerator!.getCustomMapArray()!;;
     
 customMapArray[startGeographicMapCellPosition!.getRow()]![startGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getStartType();
     
 customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getEndType();
     
 
-    var pathFindingInfo: PathFindingInfo = PathFindingInfoFactory.getInstance()!.getInstancePathFindingInfo(raceTrackGeographicMap, customMapArray)!;;
+    let pathFindingInfo: PathFindingInfo = PathFindingInfoFactory.getInstance()!.getInstancePathFindingInfo(raceTrackGeographicMap, customMapArray)!;;
     
 
-    var list: BasicArrayList = PathGenerator.getInstance()!.getInstanceNoCache(geographicMapInterface, pathFindingInfo, 2)!;;
+    let list: BasicArrayList = PathGenerator.getInstance()!.getInstanceNoCache(geographicMapInterface, pathFindingInfo, 2)!;;
     
 
                         if(list.size() < 1)
@@ -338,20 +341,20 @@ this.getConnectedWaypointList()!.clear();
                                     }
                                 
 
-    var size: number = this.getConnectedWaypointList()!.size()!;;
+    let size: number = this.getConnectedWaypointList()!.size()!;;
     
 
                         if(size > 0)
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;;
+    let unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;;
     
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
 
-    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0) as CollidableDestroyableDamageableLayer;;
+    let rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0) as CollidableDestroyableDamageableLayer;;
     
 
                         if(rtsLayer!.isDestroyed())
@@ -382,6 +385,4 @@ break;
 
 
 }
-
-
 

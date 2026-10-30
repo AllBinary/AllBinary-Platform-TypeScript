@@ -36,6 +36,7 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -76,6 +77,4 @@ export class RandomPatrolAIFactory
 
 
 }
-
-
 

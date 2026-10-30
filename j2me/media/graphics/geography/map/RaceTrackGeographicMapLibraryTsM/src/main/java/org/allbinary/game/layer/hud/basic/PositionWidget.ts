@@ -27,9 +27,11 @@ import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { BasicHud } from '../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
 //not GWT import const BasicHud
@@ -61,7 +63,7 @@ export class PositionWidget extends BasicHud {
 
     public static toString(position: number): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(position.toString());
     
@@ -149,6 +151,4 @@ super.paintString(graphics, this.positionString);
 
 
 }
-
-
 

@@ -72,75 +72,73 @@ import { KeyEvent } from './KeyEvent.js';
 export interface GraphicItemInterface {
         
 
-    getName(): string
+    getName(): string;
 
-    setColor(color: Color)
+    setColor(color: Color): void;
 
-    getTreeNode(): MutableTreeNode
+    getTreeNode(): MutableTreeNode;
 
-    getPointsInterface(): Points
+    getPointsInterface(): Points;
 
-    setPointsInterface(points: Points)
+    setPointsInterface(points: Points): void;
 
-    isValid(): boolean
+    isValid(): boolean;
 
-    isActive(): boolean
+    isActive(): boolean;
 
-    deactivate()
+    deactivate(): void;
 
-    activate()
+    activate(): void;
 
-    setFulcrumPoint(point: GPoint)
-
-                //@Throws(Exception.constructor)
-            
-    translate(x: number, y: number)
-
-    setRotate(theta: number)
-
-    addRotate(theta: number)
-
-    setAngle(angle: number)
-
-    addAngle(angle: number)
-
-    getAngle(): number
-
-    paint(g: Graphics, canvasAngle: number, dimension: IntegerDimension, x: number, y: number)
+    setFulcrumPoint(point: GPoint): void;
 
                 //@Throws(Exception.constructor)
             
-    toDom(canvasDom: CanvasDom): Node
+    translate(x: number, y: number): void;
 
-    removePoint(): GPoint
+    setRotate(theta: number): void;
 
-    addPoint(point: GPoint)
+    addRotate(theta: number): void;
 
-    mouseClicked(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number)
+    setAngle(angle: number): void;
 
-    mouseEntered(mouseEvent: java.awt.event.MouseEvent)
+    addAngle(angle: number): void;
 
-    mouseExited(mouseEvent: java.awt.event.MouseEvent)
+    getAngle(): number;
 
-    mousePressed(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number)
-
-    mouseReleased(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number)
-
-    mouseDragged(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number)
-
-    mouseMoved(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number)
-
-    keyPressed(keyEvent: java.awt.event.KeyEvent)
-
-    keyReleased(keyEvent: java.awt.event.KeyEvent)
-
-    keyTyped(keyEvent: java.awt.event.KeyEvent)
+    paint(g: Graphics, canvasAngle: number, dimension: IntegerDimension, x: number, y: number): void;
 
                 //@Throws(Exception.constructor)
             
-    duplicate(): GraphicItemInterface
+    toDom(canvasDom: CanvasDom): Node;
+
+    removePoint(): GPoint;
+
+    addPoint(point: GPoint): void;
+
+    mouseClicked(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number): void;
+
+    mouseEntered(mouseEvent: java.awt.event.MouseEvent): void;
+
+    mouseExited(mouseEvent: java.awt.event.MouseEvent): void;
+
+    mousePressed(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number): void;
+
+    mouseReleased(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number): void;
+
+    mouseDragged(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number): void;
+
+    mouseMoved(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number): void;
+
+    keyPressed(keyEvent: java.awt.event.KeyEvent): void;
+
+    keyReleased(keyEvent: java.awt.event.KeyEvent): void;
+
+    keyTyped(keyEvent: java.awt.event.KeyEvent): void;
+
+                //@Throws(Exception.constructor)
+            
+    duplicate(): GraphicItemInterface;
 
 }
-
-
 

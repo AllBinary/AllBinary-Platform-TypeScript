@@ -46,7 +46,7 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
          {
         
 
-    /*actual*/ public static getInstance(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}): Log{
+    /*actual*/ public static getInstance(specialMessage: string, anyType: any, functionName: string, exception: any): Log{
 
 
 
@@ -56,7 +56,7 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
 }
 
 
-    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
+    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any, functionName: string): Log{
 
 
 
@@ -66,7 +66,7 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
 }
 
 
-    /*actual*/ public static getInstanceSE(specialMessage: string, className: string, functionName: string, exception: any = {}): Log{
+    /*actual*/ public static getInstanceSE(specialMessage: string, className: string, functionName: string, exception: any): Log{
 
 
 
@@ -77,6 +77,4 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
 
 
 }
-
-
 

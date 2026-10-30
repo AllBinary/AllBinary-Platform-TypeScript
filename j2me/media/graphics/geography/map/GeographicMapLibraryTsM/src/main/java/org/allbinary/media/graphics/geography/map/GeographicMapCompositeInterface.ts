@@ -44,13 +44,11 @@ import { BasicGeographicMap } from './BasicGeographicMap.js';
 export interface GeographicMapCompositeInterface {
         
 
-    geographicMapCellTypeArray(): GeographicMapCellType[]
+    geographicMapCellTypeArray(): GeographicMapCellType[];
 
-    getGeographicMapInterface(): BasicGeographicMap[]
+    getGeographicMapInterface(): BasicGeographicMap[];
 
-    setGeographicMapInterface(geographicMapInterface: BasicGeographicMap[])
+    setGeographicMapInterface(geographicMapInterface: BasicGeographicMap[]): void;
 
 }
-
-
 

@@ -42,9 +42,7 @@
 export interface LifeVisitorInterface {
         
 
-    visit(lifeInterface: Life)
+    visit(lifeInterface: Life): void;
 
 }
-
-
 

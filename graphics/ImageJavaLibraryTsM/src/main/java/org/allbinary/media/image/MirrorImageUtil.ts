@@ -34,6 +34,7 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -89,25 +90,25 @@ private constructor (){
 this.logUtil!.putF("Starting", this, "getImage");
     
 
-    var newBufferedImage: BufferedImage = this.imageUtil!.create(bufferedImage!.getWidth(
+    let newBufferedImage: BufferedImage = this.imageUtil!.create(bufferedImage!.getWidth(
                             null), bufferedImage!.getHeight(
                             null))!;;
     
 
-    var g: Graphics2D = newBufferedImage!.createGraphics()!;;
+    let g: Graphics2D = newBufferedImage!.createGraphics()!;;
     
 
                         if(verticle)
                         
                                     {
                                     
-    var tx: AffineTransform = AffineTransform.getScaleInstance(1,  -1)!;;
+    let tx: AffineTransform = AffineTransform.getScaleInstance(1,  -1)!;;
     
 tx.translate(0,  -bufferedImage!.getHeight(
                             null));
     
 
-    var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);;
+    let op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);;
     
 bufferedImage= op.filter(bufferedImage, 
                             null);
@@ -120,13 +121,13 @@ bufferedImage= op.filter(bufferedImage,
                         
                                     {
                                     
-    var tx: AffineTransform = AffineTransform.getScaleInstance( -1, 1)!;;
+    let tx: AffineTransform = AffineTransform.getScaleInstance( -1, 1)!;;
     
 tx.translate( -bufferedImage!.getWidth(
                             null), 0);
     
 
-    var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);;
+    let op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);;
     
 bufferedImage= op.filter(bufferedImage, 
                             null);
@@ -152,22 +153,22 @@ g.dispose();
 
     public getImages(bufferedImage: BufferedImage, verticle: boolean, horizontal: boolean): BufferedImage[]{
 
-    var width: number = bufferedImage!.getWidth()!;;
+    let width: number = bufferedImage!.getWidth()!;;
     
 
-    var height: number = bufferedImage!.getHeight()!;;
+    let height: number = bufferedImage!.getHeight()!;;
     
 
-    var cellHeight: number = height;;
+    let cellHeight: number = height;;
     
 
-    var cellWidth: number = height;;
+    let cellWidth: number = height;;
     
 
-    var numberOfFramesPerOrientation: number = globalThis.Math.trunc(width /cellWidth);;
+    let numberOfFramesPerOrientation: number = globalThis.Math.trunc(width /cellWidth);;
     
 
-    var numberOfFrames: number = numberOfFramesPerOrientation;;
+    let numberOfFrames: number = numberOfFramesPerOrientation;;
     
 
                         if(verticle)
@@ -178,20 +179,20 @@ g.dispose();
 this.logUtil!.putF("numberOfFramesPerOrientation: " +numberOfFramesPerOrientation +" numberOfFrames: " +numberOfFrames, this, "getImages");
     
 
-    var bufferedImageArray: BufferedImage[] = new Array(numberOfFrames);;
+    let bufferedImageArray: BufferedImage[] = new Array(numberOfFrames);;
     
 
-    var y: number = 0;;
+    let y: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfFramesPerOrientation; index++)
+    let index: number = 0;index < numberOfFramesPerOrientation; index++)
         {
 
-    var x: number = index *cellWidth;;
+    let x: number = index *cellWidth;;
     
 bufferedImageArray[index]= bufferedImage!.getSubimage(x, y, cellWidth, cellHeight);
     
@@ -202,7 +203,7 @@ bufferedImageArray[index]= bufferedImage!.getSubimage(x, y, cellWidth, cellHeigh
 
 
                         for (
-    var index: number = 0;index < numberOfFramesPerOrientation; index++)
+    let index: number = 0;index < numberOfFramesPerOrientation; index++)
         {
 bufferedImageArray[index +numberOfFramesPerOrientation]= this.getImage(bufferedImageArray[index]!, verticle, horizontal);
     
@@ -218,6 +219,4 @@ bufferedImageArray[index +numberOfFramesPerOrientation]= this.getImage(bufferedI
 
 
 }
-
-
 

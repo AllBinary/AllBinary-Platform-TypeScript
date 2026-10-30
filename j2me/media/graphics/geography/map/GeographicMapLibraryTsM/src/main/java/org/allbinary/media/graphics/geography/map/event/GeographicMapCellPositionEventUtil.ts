@@ -60,7 +60,7 @@ export class GeographicMapCellPositionEventUtil
 
     private readonly geographicMapCellPositionEventHandler: GeographicMapCellPositionEventHandler = GeographicMapCellPositionEventHandler.getInstance()!;
 
-public constructor (anyType: any = {}){
+public constructor (anyType: any){
 
             super();
         this.geographicMapCellPositionEvent= new GeographicMapCellPositionEvent(anyType, CellPositionFactory.getInstance()!.NONE);
@@ -89,6 +89,4 @@ this.geographicMapCellPositionEventHandler!.fireRemoveEvent(this.geographicMapCe
 
 
 }
-
-
 

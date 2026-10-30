@@ -28,11 +28,9 @@
 export interface JTreeInterface {
         
 
-    updateJTree()
+    updateJTree(): void;
 
-    getActionScriptJTree(): javax.swing.JTree
+    getActionScriptJTree(): javax.swing.JTree;
 
 }
-
-
 

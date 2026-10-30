@@ -20,9 +20,11 @@
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { PaymentGatewayInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
 //not GWT import const PaymentGatewayInterface
@@ -55,17 +57,15 @@ import { BasicDataTableInterface } from '../../../../../../../../../org/allbinar
 export interface PaymentGatewayEntityInterface extends BasicDataTableInterface {
         
 
-    getPaymentGatewayInterface(storeName: string, paymentType: BasicPaymentType): PaymentGatewayInterface
+    getPaymentGatewayInterface(storeName: string, paymentType: BasicPaymentType): PaymentGatewayInterface;
 
-    findPaymentTypeVectorByStore(storeName: string): BasicArrayList
+    findPaymentTypeVectorByStore(storeName: string): BasicArrayList;
 
-    remove(storeName: string, paymentType: BasicPaymentType)
+    remove(storeName: string, paymentType: BasicPaymentType): void;
 
-    add(paymentGatewayInterface: PaymentGatewayInterface)
+    add(paymentGatewayInterface: PaymentGatewayInterface): void;
 
-    update(paymentGatewayInterface: PaymentGatewayInterface)
+    update(paymentGatewayInterface: PaymentGatewayInterface): void;
 
 }
-
-
 

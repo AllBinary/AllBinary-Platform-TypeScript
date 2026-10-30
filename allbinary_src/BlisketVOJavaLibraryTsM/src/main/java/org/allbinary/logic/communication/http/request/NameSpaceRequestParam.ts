@@ -29,12 +29,15 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Tokenizer } from '../../../../../../org/allbinary/logic/string/tokens/Tokenizer.js';
 //not GWT import const Tokenizer
@@ -44,9 +47,11 @@ import { HtmlNameMathData } from '../../../../../../org/allbinary/logic/visual/d
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -92,7 +97,7 @@ this.nameSpacePropertiesHashMap= StdUtil.getInstance()!.createHashMap();
 this.value= value;
     
 
-    var beginIndex: number = nameSpace!.indexOf(NameSpaceRequestParamData.NAME)!;;
+    let beginIndex: number = nameSpace!.indexOf(NameSpaceRequestParamData.NAME)!;;
     
 
                         if(beginIndex < 0)
@@ -107,13 +112,13 @@ this.value= value;
                                     }
                                 
 
-    var packages: string = nameSpace!.substring(beginIndex +NameSpaceRequestParamData.NAME.length() +NameSpaceRequestParamData.SEP.length())!;;
+    let packages: string = nameSpace!.substring(beginIndex +NameSpaceRequestParamData.NAME.length() +NameSpaceRequestParamData.SEP.length())!;;
     
 
-    var sepTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.SEP);;
+    let sepTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.SEP);;
     
 
-    var nameSpaceWithPropertiesVector: BasicArrayList = sepTokenizer!.getTokensFromString(packages, new BasicArrayListD())!;;
+    let nameSpaceWithPropertiesVector: BasicArrayList = sepTokenizer!.getTokensFromString(packages, new BasicArrayListD())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
@@ -125,30 +130,30 @@ this.value= value;
                                     }
                                 
 
-    var nameSpaceAndPropertiesTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.PROPERTIES);;
+    let nameSpaceAndPropertiesTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.PROPERTIES);;
     
 
-    var packageIndex: number = 0;;
+    let packageIndex: number = 0;;
     
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var size: number = nameSpaceWithPropertiesVector!.size()!;;
+    let size: number = nameSpaceWithPropertiesVector!.size()!;;
     
 
         while(index < size)
         {
 
-    var nameSpaceWithProperties: string = nameSpaceWithPropertiesVector!.get(index++) as string;;
+    let nameSpaceWithProperties: string = nameSpaceWithPropertiesVector!.get(index++) as string;;
     
 list.clear();
     
 
-    var nameSpaceAndPropertiesVector: BasicArrayList = nameSpaceAndPropertiesTokenizer!.getTokensFromString(nameSpaceWithProperties, list)!;;
+    let nameSpaceAndPropertiesVector: BasicArrayList = nameSpaceAndPropertiesTokenizer!.getTokensFromString(nameSpaceWithProperties, list)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
@@ -164,7 +169,7 @@ list.clear();
                         
                                     {
                                     
-    var packageName: string = nameSpaceAndPropertiesVector!.get(0) as string;;
+    let packageName: string = nameSpaceAndPropertiesVector!.get(0) as string;;
     
 
                         if(packageName == 
@@ -187,10 +192,10 @@ this.nameSpaceVector!.add(packageName);
                         
                                     {
                                     
-    var properties: string = nameSpaceAndPropertiesVector!.get(1) as string;;
+    let properties: string = nameSpaceAndPropertiesVector!.get(1) as string;;
     
 
-    var packagePropertiesHashMap: HashMap<any, any> = this.generatePackagePropertiesHashMap(properties)!;;
+    let packagePropertiesHashMap: HashMap<any, any> = this.generatePackagePropertiesHashMap(properties)!;;
     
 this.nameSpacePropertiesHashMap!.put(packageIndex.toString(), packagePropertiesHashMap);
     
@@ -237,7 +242,7 @@ packageIndex++;
 
     public getPackageProperties(packageIndex: number): HashMap<any, any>{
 
-    var packagePropertiesHashMap: HashMap<any, any> = this.nameSpacePropertiesHashMap!.get(packageIndex.toString()) as HashMap<any, any>;;
+    let packagePropertiesHashMap: HashMap<any, any> = this.nameSpacePropertiesHashMap!.get(packageIndex.toString()) as HashMap<any, any>;;
     
 
                         if(packagePropertiesHashMap == 
@@ -291,52 +296,52 @@ packageIndex++;
             
     generatePackagePropertiesHashMap(properties: string): HashMap<any, any>{
 
-    var propertiesTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.PROPERTIESSEPARATOR);;
+    let propertiesTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.PROPERTIESSEPARATOR);;
     
 
-    var packagePropertiesHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let packagePropertiesHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var propertyVector: BasicArrayList = propertiesTokenizer!.getTokensFromString(properties, new BasicArrayListD())!;;
+    let propertyVector: BasicArrayList = propertiesTokenizer!.getTokensFromString(properties, new BasicArrayListD())!;;
     
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
-    var propertyTokenizer: Tokenizer = new Tokenizer(HtmlNameMathData.getInstance()!.EQUALS);;
+    let propertyTokenizer: Tokenizer = new Tokenizer(HtmlNameMathData.getInstance()!.EQUALS);;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var size: number = propertyVector!.size()!;;
+    let size: number = propertyVector!.size()!;;
     
 
         while(index < size)
         {
 
-    var property: string = propertyVector!.get(index) as string;;
+    let property: string = propertyVector!.get(index) as string;;
     
 list.clear();
     
 
-    var propertyNameValueVector: BasicArrayList = propertyTokenizer!.getTokensFromString(property, list)!;;
+    let propertyNameValueVector: BasicArrayList = propertyTokenizer!.getTokensFromString(property, list)!;;
     
 
-    var index2: number = 0;;
+    let index2: number = 0;;
     
 
         while(index2 < propertyNameValueVector!.size())
         {
 
-    var propertyName: string = propertyNameValueVector!.get(index2++) as string;;
+    let propertyName: string = propertyNameValueVector!.get(index2++) as string;;
     
 
                         if(propertyNameValueVector!.size() > 1)
                         
                                     {
                                     
-    var propertyValue: string = propertyNameValueVector!.get(index2++) as string;;
+    let propertyValue: string = propertyNameValueVector!.get(index2++) as string;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
@@ -372,6 +377,4 @@ packagePropertiesHashMap!.put(propertyName, propertyValue);
 
 
 }
-
-
 

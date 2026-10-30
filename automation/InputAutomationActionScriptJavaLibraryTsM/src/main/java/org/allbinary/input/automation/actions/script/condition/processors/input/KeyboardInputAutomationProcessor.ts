@@ -31,12 +31,15 @@ import { InputRobotInterface } from '../../../../../../../../../org/allbinary/in
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { TimeDelayHelper } from '../../../../../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
@@ -71,18 +74,18 @@ export class KeyboardInputAutomationProcessor
             
     public static process(keyActionScriptInputInterface: KeyboardActionScriptInputInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.toString(), "KeyInputAutomationProcessor", commonStrings!.PROCESS);
     
 
-    var inputRobotInterface: InputRobotInterface = keyActionScriptInputInterface!.getInputRobotInterface()!;;
+    let inputRobotInterface: InputRobotInterface = keyActionScriptInputInterface!.getInputRobotInterface()!;;
     
 
-    var integer: Integer[] = keyActionScriptInputInterface!.getKeyArray()!;;
+    let integer: Integer[] = keyActionScriptInputInterface!.getKeyArray()!;;
     
 
                         if(keyActionScriptInputInterface!.getDelayBetweenKeys() == 0)
@@ -93,7 +96,7 @@ logUtil!.putF(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.
 
 
                         for (
-    var index: number = 0;index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
+    let index: number = 0;index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
         {
 
                         if(keyActionScriptInputInterface!.isPress())
@@ -113,7 +116,7 @@ Thread.sleep(keyActionScriptInputInterface!.getTime());
 
 
                         for (
-    var index: number = keyActionScriptInputInterface!.getKeyArray()!.length -1;index >= 0; index--)
+    let index: number = keyActionScriptInputInterface!.getKeyArray()!.length -1;index >= 0; index--)
         {
 
                         if(keyActionScriptInputInterface!.isRelease())
@@ -135,7 +138,7 @@ Thread.sleep(keyActionScriptInputInterface!.getTime());
 
 
                         for (
-    var index: number = 0;index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
+    let index: number = 0;index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
         {
 
                         if(keyActionScriptInputInterface!.isPress())
@@ -158,10 +161,10 @@ Thread.sleep(keyActionScriptInputInterface!.getTime());
                                     }
                                 
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(keyActionScriptInputInterface!.getDelayBetweenKeys());;
+    let timeHelper: TimeDelayHelper = new TimeDelayHelper(keyActionScriptInputInterface!.getDelayBetweenKeys());;
     
 
-    var toLong: number = 0;;
+    let toLong: number = 0;;
     
 
         while(!timeHelper!.isTimeTNT() || toLong > 6000)
@@ -187,6 +190,4 @@ private constructor (){
 
 
 }
-
-
 

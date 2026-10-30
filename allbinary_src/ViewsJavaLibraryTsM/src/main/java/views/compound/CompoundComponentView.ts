@@ -25,6 +25,7 @@ import { XmlDocumentHelper } from '../../org/allbinary/data/tree/dom/document/Xm
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { TransformInfoInterface } from '../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -71,12 +72,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             
     public view(): string{
 
-        try {
-            
-    var success: string = XmlDocumentHelper.toString(this.getDoc())!;;
+ try { 
+    let success: string = XmlDocumentHelper.toString(this.getDoc())!;;
     
 
-    var result: string = new CompoundTransform(this.getTransformInfoInterface()).translate(success)!;;
+    let result: string = new CompoundTransform(this.getTransformInfoInterface()).translate(success)!;;
     
 
 
@@ -84,10 +84,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -102,12 +103,12 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

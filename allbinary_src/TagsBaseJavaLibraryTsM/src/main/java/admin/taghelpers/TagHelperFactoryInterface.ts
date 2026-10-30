@@ -53,9 +53,7 @@ export interface TagHelperFactoryInterface {
 
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
-    getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any
+    getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any;
 
 }
-
-
 

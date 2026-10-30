@@ -26,6 +26,7 @@
         
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
 
 import { HashMap } from '../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
@@ -35,12 +36,15 @@ import { HashMapJDialogListenerInterface } from '../../../../../org/allbinary/gu
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -98,7 +102,7 @@ java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 
     public run(){
 
-    var dialog: RotateJDialog = new RotateJDialog(new javax.swing.JFrame(), true);;
+    let dialog: RotateJDialog = new RotateJDialog(new javax.swing.JFrame(), true);;
     
 dialog.addWindowListener(new class extends java.awt.event.WindowAdapter
                                 {
@@ -173,7 +177,7 @@ jButton1ActionPerformed(evt);
                             );
     
 
-    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
+    let jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -182,7 +186,7 @@ jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(javax.swing
 jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(jButton1));
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());;
     
 getContentPane()!.setLayout(layout);
     
@@ -197,8 +201,7 @@ pack();
 
     jButton1ActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.hashMap!.put(Integer.valueOf(0)Integer.valueOf(this.angleIncrementJTextField!.getText()));
+ try { this.hashMap!.put(Integer.valueOf(0)Integer.valueOf(this.angleIncrementJTextField!.getText()));
     
 this.hashMap!.put(Integer.valueOf(1)Integer.valueOf(this.totalRotationJTextField!.getText()));
     
@@ -208,17 +211,20 @@ getParent.
     
 this.setVisible(false);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed");
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -235,6 +241,4 @@ this.logUtil!.putF(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed");
     private totalRotationJTextField: javax.swing.JTextField;
 
 }
-
-
 

@@ -46,9 +46,7 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
 export interface LayerPositionFinderInterface {
         
 
-    getLayerInterface(geographicMapCellPosition: GeographicMapCellPosition): AllBinaryLayer
+    getLayerInterface(geographicMapCellPosition: GeographicMapCellPosition): AllBinaryLayer;
 
 }
-
-
 

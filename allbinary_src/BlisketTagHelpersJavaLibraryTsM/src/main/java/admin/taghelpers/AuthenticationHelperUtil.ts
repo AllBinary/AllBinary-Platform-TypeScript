@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { BasicUserRole } from '../../org/allbinary/business/user/role/BasicUserRole.js';
 //not GWT import const BasicUserRole
@@ -45,15 +47,18 @@ import { HttpRequestUtil } from '../../org/allbinary/logic/communication/http/re
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbPath } from '../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 
 
@@ -108,22 +113,22 @@ export class AuthenticationHelperUtil
                                     }
                                 
 
-    var endIndex: number = HttpRequestUtil.getInstance()!.getLastSeparatorIndex(filePath)!;;
+    let endIndex: number = HttpRequestUtil.getInstance()!.getLastSeparatorIndex(filePath)!;;
     
 
-    var fullPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +filePath!.substring(0, endIndex), StringUtil.getInstance()!.EMPTY_STRING);;
+    let fullPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +filePath!.substring(0, endIndex), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var downloadFilePermissions: HttpFilePermissions = new HttpFilePermissions(fullPath);;
+    let downloadFilePermissions: HttpFilePermissions = new HttpFilePermissions(fullPath);;
     
 
-    var userRoles: BasicArrayList = downloadFilePermissions!.getUserRoles()!;;
+    let userRoles: BasicArrayList = downloadFilePermissions!.getUserRoles()!;;
     
 
-    var userRole: UserRole = authenticationHelper!.getRole()!;;
+    let userRole: UserRole = authenticationHelper!.getRole()!;;
     
 
-    var basicUserRole: BasicUserRole = userRole!.getBasicUserRole()!;;
+    let basicUserRole: BasicUserRole = userRole!.getBasicUserRole()!;;
     
 
                         if(userRoles!.contains(basicUserRole))
@@ -170,6 +175,4 @@ export class AuthenticationHelperUtil
 
 
 }
-
-
 

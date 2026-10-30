@@ -51,25 +51,23 @@ import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphi
 export interface TopViewCharacterInterface {
         
 
-    terrainMove(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], x: number, y: number)
+    terrainMove(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], x: number, y: number): void;
 
                 //@Throws(Exception.constructor)
             
-    terrainEvent(x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition)
+    terrainEvent(x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition): void;
 
-    move()
+    move(): void;
 
-    upp()
+    upp(): void;
 
-    leftp()
+    leftp(): void;
 
-    rightp()
+    rightp(): void;
 
                 //@Throws(Exception.constructor)
             
-    reset()
+    reset(): void;
 
 }
-
-
 

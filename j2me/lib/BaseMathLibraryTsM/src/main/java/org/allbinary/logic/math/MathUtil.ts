@@ -45,7 +45,7 @@ export class MathUtil
 
     public getTotalDigits(digits: number): number{
 
-    var total: number = 0;;
+    let total: number = 0;;
     
 
         while(digits > 0)
@@ -80,10 +80,10 @@ total++;
                                     }
                                 
 
-    var accumulated: number = value>>1;;
+    let accumulated: number = value>>1;;
     
 
-    var result: number = (accumulated +(globalThis.Math.trunc(value /accumulated)))>>1;;
+    let result: number = (accumulated +(globalThis.Math.trunc(value /accumulated)))>>1;;
     
 
         do
@@ -135,14 +135,14 @@ result= (accumulated +(globalThis.Math.trunc(value /accumulated)))>>1;
                                     }
                                 
 
-    var result: number = x;;
+    let result: number = x;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.ACCURACY; index++)
+    let index: number = 0;index < this.ACCURACY; index++)
         {
 result= (result +(x /result)) /2;
     
@@ -162,12 +162,7 @@ result= (result +(x /result)) /2;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (value < 0)
-                        ?       
-                                 -value
-                                :
-
-                            value;
+                        return ((value < 0) ?  -value : value);
     
 }
 
@@ -177,12 +172,7 @@ result= (result +(x /result)) /2;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (value < 0)
-                        ?       
-                                 -value
-                                :
-
-                            value;
+                        return ((value < 0) ?  -value : value);
     
 }
 
@@ -192,12 +182,7 @@ result= (result +(x /result)) /2;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (value <= value2)
-                        ?       
-                                value
-                                :
-
-                            value2;
+                        return ((value <= value2) ? value : value2);
     
 }
 
@@ -207,17 +192,10 @@ result= (result +(x /result)) /2;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (value >= value2)
-                        ?       
-                                value
-                                :
-
-                            value2;
+                        return ((value >= value2) ? value : value2);
     
 }
 
 
 }
-
-
 

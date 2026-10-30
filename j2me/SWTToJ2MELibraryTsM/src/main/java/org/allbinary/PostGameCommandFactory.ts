@@ -70,5 +70,3 @@ MultiPlayerGameFeatureFactory.getInstance()!.addCommands(canvas);
 
 }
 
-
-

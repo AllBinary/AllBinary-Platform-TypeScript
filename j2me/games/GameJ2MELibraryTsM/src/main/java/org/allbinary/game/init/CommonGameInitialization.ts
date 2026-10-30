@@ -49,6 +49,7 @@ import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -91,7 +92,7 @@ protected constructor (resourceInitializationArray: ResourceInitialization[], po
 super.init(abeClientInformation, commandListener, level);
     
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
+    let resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(!this.isGameInitialized() && level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
@@ -100,7 +101,7 @@ super.init(abeClientInformation, commandListener, level);
                                     this.setGameInitialized(true);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 SmallIntegerSingletonFactory.getInstance()!.init();
     
@@ -138,6 +139,4 @@ super.resourceInitialization(level);
 
 
 }
-
-
 

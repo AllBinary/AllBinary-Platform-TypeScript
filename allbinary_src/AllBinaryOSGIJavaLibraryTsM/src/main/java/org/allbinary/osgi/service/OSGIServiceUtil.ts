@@ -24,12 +24,15 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
 //not GWT import const BundleContext
@@ -39,6 +42,7 @@ import { ServiceReference } from '../../../../org/osgi/framework/ServiceReferenc
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
 //not GWT import const OSGIServiceInterface
@@ -91,7 +95,7 @@ private constructor (){
             
     public getServicesObjectVector(bundleContext: Object, serviceReferences: ServiceReference[]): BasicArrayList{
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 
                         if(serviceReferences != 
@@ -100,7 +104,7 @@ private constructor (){
                         
                                     {
                                     
-    var size: number = serviceReferences!.length
+    let size: number = serviceReferences!.length
                 ;;
     
 this.logUtil!.putF("Service References: " +size, this, "getServicesObjectVector");
@@ -110,10 +114,10 @@ this.logUtil!.putF("Service References: " +size, this, "getServicesObjectVector"
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var serviceReference: ServiceReference = serviceReferences[index]!;;
+    let serviceReference: ServiceReference = serviceReferences[index]!;;
     
 
                         if(serviceReference != 
@@ -122,7 +126,7 @@ this.logUtil!.putF("Service References: " +size, this, "getServicesObjectVector"
                         
                                     {
                                     
-    var osgiServiceInterface: OSGIServiceInterface = bundleContext!.getService(serviceReference) as OSGIServiceInterface;;
+    let osgiServiceInterface: OSGIServiceInterface = bundleContext!.getService(serviceReference) as OSGIServiceInterface;;
     
 
                         if(osgiServiceInterface == 
@@ -158,6 +162,4 @@ vector.add(osgiServiceInterface);
 
 
 }
-
-
 

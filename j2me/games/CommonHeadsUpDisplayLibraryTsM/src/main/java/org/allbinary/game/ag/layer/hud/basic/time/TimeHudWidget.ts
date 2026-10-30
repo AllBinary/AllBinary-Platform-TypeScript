@@ -103,7 +103,7 @@ this.updateMaxHeight= 14;
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.updateMaxWidth= font.getSize() *5;
     
@@ -147,6 +147,4 @@ super.paintDX(graphics, this.TIME_CHAR_ARRAY, 0, this.TIME_CHAR_ARRAY.length, th
 
 
 }
-
-
 

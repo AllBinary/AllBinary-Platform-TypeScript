@@ -33,24 +33,31 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+type EnumerationUtil<T = any, U = any> = typeof EnumerationUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof EnumerationUtil;
 
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HashtableUtil;
 
 
 
@@ -108,22 +115,22 @@ export class GameFeatureUtil
             
     public setDefault(choiceGroup: ChoiceGroup){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var METHOD_NAME: string = "setDefault";;
+    let METHOD_NAME: string = "setDefault";;
     
 
-    var SELECTED_ARRAY_RETURN: string = "selectedArray_return[";;
+    let SELECTED_ARRAY_RETURN: string = "selectedArray_return[";;
     
 
-    var SELECTED_SEP: string = "] = ";;
+    let SELECTED_SEP: string = "] = ";;
     
 
-    var selectedArray_return: boolean[] = new Array(choiceGroup!.size());;
+    let selectedArray_return: boolean[] = new Array(choiceGroup!.size());;
     
 
-    var total: number = choiceGroup!.getSelectedFlags(selectedArray_return)!;;
+    let total: number = choiceGroup!.getSelectedFlags(selectedArray_return)!;;
     
 stringBuffer!.append("Multiple Total Choices: ");
     
@@ -132,17 +139,17 @@ stringBuffer!.appendint(total);
 this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < selectedArray_return!.length; index++)
+    let index: number = 0;index < selectedArray_return!.length; index++)
         {
 
-    var isSelected: boolean = selectedArray_return[index]!;;
+    let isSelected: boolean = selectedArray_return[index]!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -157,10 +164,10 @@ stringBuffer!.appendboolean(isSelected);
 this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
 
-    var selectedChoiceLabel: string = choiceGroup!.getString(index)!;;
+    let selectedChoiceLabel: string = choiceGroup!.getString(index)!;;
     
 
-    var gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;;
+    let gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;;
     
 
                         if(features.isDefault(gameFeature))
@@ -190,22 +197,22 @@ choiceGroup!.setSelectedIndex(index, false);
             
     public updateMultiple(choiceGroup: ChoiceGroup){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var METHOD_NAME: string = "updateMultiple";;
+    let METHOD_NAME: string = "updateMultiple";;
     
 
-    var SELECTED_ARRAY_RETURN: string = "selectedArray_return[";;
+    let SELECTED_ARRAY_RETURN: string = "selectedArray_return[";;
     
 
-    var SELECTED_SEP: string = "] = ";;
+    let SELECTED_SEP: string = "] = ";;
     
 
-    var selectedArray_return: boolean[] = new Array(choiceGroup!.size());;
+    let selectedArray_return: boolean[] = new Array(choiceGroup!.size());;
     
 
-    var total: number = choiceGroup!.getSelectedFlags(selectedArray_return)!;;
+    let total: number = choiceGroup!.getSelectedFlags(selectedArray_return)!;;
     
 stringBuffer!.append("Multiple Total Choices: ");
     
@@ -214,17 +221,17 @@ stringBuffer!.appendint(total);
 this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < selectedArray_return!.length; index++)
+    let index: number = 0;index < selectedArray_return!.length; index++)
         {
 
-    var isSelected: boolean = selectedArray_return[index]!;;
+    let isSelected: boolean = selectedArray_return[index]!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -239,10 +246,10 @@ stringBuffer!.appendboolean(isSelected);
 this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
 
-    var selectedChoiceLabel: string = choiceGroup!.getString(index)!;;
+    let selectedChoiceLabel: string = choiceGroup!.getString(index)!;;
     
 
-    var gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;;
+    let gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;;
     
 
                         if(!isSelected && features.isFeature(gameFeature))
@@ -271,22 +278,22 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
             
     public updateExclusiveForChoiceGroup(choiceGroup: ChoiceGroup){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var METHOD_NAME: string = "updateExclusive";;
+    let METHOD_NAME: string = "updateExclusive";;
     
 
-    var SELECTED_ARRAY_RETURN: string = "selectedArray_return[";;
+    let SELECTED_ARRAY_RETURN: string = "selectedArray_return[";;
     
 
-    var SELECTED_SEP: string = "] = ";;
+    let SELECTED_SEP: string = "] = ";;
     
 
-    var selectedArray_return: boolean[] = new Array(choiceGroup!.size());;
+    let selectedArray_return: boolean[] = new Array(choiceGroup!.size());;
     
 
-    var total: number = choiceGroup!.getSelectedFlags(selectedArray_return)!;;
+    let total: number = choiceGroup!.getSelectedFlags(selectedArray_return)!;;
     
 stringBuffer!.append("Exclusive Total Choices: 1==");
     
@@ -299,10 +306,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
 
 
                         for (
-    var index: number = 0;index < selectedArray_return!.length; index++)
+    let index: number = 0;index < selectedArray_return!.length; index++)
         {
 
-    var isSelected: boolean = selectedArray_return[index]!;;
+    let isSelected: boolean = selectedArray_return[index]!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -321,7 +328,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
                         
                                     {
                                     
-    var selectedChoiceLabel: string = choiceGroup!.getString(index)!;;
+    let selectedChoiceLabel: string = choiceGroup!.getString(index)!;;
     
 this.updateExclusive(selectedChoiceLabel);
     
@@ -335,10 +342,10 @@ this.updateExclusive(selectedChoiceLabel);
 
     public isExclusive(itemLabel: string): boolean{
 
-    var enumeration: Enumeration<any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.keys()!;;
+    let enumeration: Enumeration<any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.keys()!;;
     
 
-    var name: string;;
+    let name: string;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
@@ -375,22 +382,22 @@ name= this.enumerationUtil!.nextElement(enumeration)! as string;
 this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(selectedChoiceLabel)!.toString(), this, "updateExclusive");
     
 
-    var gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;;
+    let gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;;
     
 
-    var hashtable: ABHashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
+    let hashtable: ABHashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
     
 
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
+    let objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
     
 
-    var basicArrayList: BasicArrayList;;
+    let basicArrayList: BasicArrayList;;
     
 
-    var anyType: any;;
+    let anyType: any;;
     
 
-    var size: number = objectArray!.length
+    let size: number = objectArray!.length
                 ;;
     
 
@@ -398,7 +405,7 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LAB
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 anyType= objectArray[index]!;
     
@@ -419,20 +426,20 @@ this.updateExclusiveList(gameFeature, basicArrayList);
                         
                                     {
                                     
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var addIndex: number = list.indexOf(gameFeature)!;;
+    let addIndex: number = list.indexOf(gameFeature)!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(addIndex != index)
@@ -458,6 +465,4 @@ this.updateExclusiveList(gameFeature, basicArrayList);
 
 
 }
-
-
 

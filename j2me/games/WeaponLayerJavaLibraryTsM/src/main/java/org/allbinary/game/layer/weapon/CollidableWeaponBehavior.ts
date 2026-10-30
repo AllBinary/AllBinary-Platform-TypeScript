@@ -49,6 +49,7 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -166,7 +167,7 @@ this.collided= true;
                         
                                     {
                                     
-    var layerInterface: AllBinaryLayer = collidableInterfaceCompositeInterface as unknown as AllBinaryLayer;;
+    let layerInterface: AllBinaryLayer = collidableInterfaceCompositeInterface as unknown as AllBinaryLayer;;
     
 
                         if(ownerLayer!.getGroupInterface()[0] != layerInterface!.getGroupInterface()[0])
@@ -204,10 +205,10 @@ this.collided= true;
             
     public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 
-    var ownerDamageableInterface: DamageableInterface = ownerLayer as unknown as DamageableInterface;;
+    let ownerDamageableInterface: DamageableInterface = ownerLayer as unknown as DamageableInterface;;
     
 
-    var damageableInterface: DamageableInterface = collidableInterfaceCompositeInterface as unknown as DamageableInterface;;
+    let damageableInterface: DamageableInterface = collidableInterfaceCompositeInterface as unknown as DamageableInterface;;
     
 this.damageUtil!.process(ownerDamageableInterface, damageableInterface);
     
@@ -243,6 +244,4 @@ this.collided= collided;
 
 
 }
-
-
 

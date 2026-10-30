@@ -101,5 +101,3 @@ this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactor
 
 }
 
-
-

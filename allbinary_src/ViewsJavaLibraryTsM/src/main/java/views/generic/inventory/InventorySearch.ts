@@ -27,9 +27,11 @@ import { HashMap } from '../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
@@ -42,6 +44,7 @@ import { StaticPagesEntity } from '../../../org/allbinary/data/tables/staticpage
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SearchParams } from '../../../org/allbinary/logic/control/search/SearchParams.js';
 //not GWT import const SearchParams
@@ -54,9 +57,11 @@ import { InputOutputTypeData } from '../../../org/allbinary/logic/io/InputOutput
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -72,9 +77,11 @@ import { ServiceClientInformationInterfaceFactory } from '../../../org/allbinary
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { InventoryViewSearchInterface } from '../../../views/admin/inventory/listings/InventoryViewSearchInterface.js';
 //not GWT import const InventoryViewSearchInterface
@@ -130,18 +137,17 @@ this.searchRequest= searchRequest;
             
     public searchSingleStaticPage(): string{
 
-        try {
-            
-    var storeFront: StoreFrontInterface = this.searchRequest!.getStoreFront()!;;
+ try { 
+    let storeFront: StoreFrontInterface = this.searchRequest!.getStoreFront()!;;
     
 
-    var searchParams: SearchParams = this.searchRequest!.getParams()!;;
+    let searchParams: SearchParams = this.searchRequest!.getParams()!;;
     
 
-    var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;;
+    let columnValueHashMap: HashMap<any, any> = searchParams!.get()!;;
     
 
-    var file: string = new StaticPagesEntity().getFile(storeFront!.getName(), new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(this.basicItemData!.KEYWORDS) as string))!;;
+    let file: string = new StaticPagesEntity().getFile(storeFront!.getName(), new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(this.basicItemData!.KEYWORDS) as string))!;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(file))
@@ -158,7 +164,7 @@ this.searchRequest= searchRequest;
                                 
                         else {
                             
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(storeFront!.getCurrentHostName());
     
@@ -175,7 +181,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
     
 
-    var filePath: string = new Replace(CommonSeps.getInstance()!.SPACE, "%20").all(stringBuffer!.toString())!;;
+    let filePath: string = new Replace(CommonSeps.getInstance()!.SPACE, "%20").all(stringBuffer!.toString())!;;
     
 
 
@@ -186,10 +192,11 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
@@ -204,8 +211,10 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
                             throw new Exception("Failed retrieve Single Product Page Static");
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -213,9 +222,8 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
             
     public searchSingleDynamicPage(): string{
 
-        try {
-            
-    var str: string[] = this.search()!;;
+ try { 
+    let str: string[] = this.search()!;;
     
 
 
@@ -223,10 +231,11 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return str[this.searchRequest!.getParams()!.getStartPageInt()!.intValue()]!;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGINGERROR))
                         
@@ -241,8 +250,10 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
                             throw new Exception("Failed retrieve Single Product Page Dynamically");
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -250,13 +261,13 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
             
     public search(): string[]{
 
-    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
+    let abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
     
 
-    var inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;;
+    let inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;;
     
 
-    var vector: BasicArrayList = inventorySearchUtil!.getBasicItemIdColumn(this.searchRequest)!;;
+    let vector: BasicArrayList = inventorySearchUtil!.getBasicItemIdColumn(this.searchRequest)!;;
     
 
 
@@ -271,7 +282,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
             
     public getProduct(product: string): string{
 
-    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
+    let abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
     
 
 
@@ -283,6 +294,4 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
 
 }
-
-
 

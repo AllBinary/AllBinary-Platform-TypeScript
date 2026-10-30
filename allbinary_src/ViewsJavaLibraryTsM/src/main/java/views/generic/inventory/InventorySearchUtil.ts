@@ -29,6 +29,7 @@ import { HashMap } from '../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
@@ -62,6 +63,7 @@ import { XmlDocumentHelper } from '../../../org/allbinary/data/tree/dom/document
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SearchData } from '../../../org/allbinary/logic/control/search/SearchData.js';
 //not GWT import const SearchData
@@ -74,6 +76,7 @@ import { SearchRequest } from '../../../org/allbinary/logic/control/search/Searc
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -101,15 +104,19 @@ import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/tran
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -167,16 +174,16 @@ export class InventorySearchUtil
             
     public getBasicItemIdColumn(searchRequest: SearchRequest): BasicArrayList{
 
-    var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
+    let inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var storeFrontInterface: StoreFrontInterface = searchRequest!.getStoreFront()!;;
+    let storeFrontInterface: StoreFrontInterface = searchRequest!.getStoreFront()!;;
     
 
-    var inventorySearchUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;;
+    let inventorySearchUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;;
     
 
-    var column: BasicArrayList = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, storeFrontInterface!.getCategoryPath(), this.basicItemData!.ID)!;;
+    let column: BasicArrayList = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, storeFrontInterface!.getCategoryPath(), this.basicItemData!.ID)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
@@ -188,23 +195,23 @@ export class InventorySearchUtil
                                     }
                                 
 
-    var subStoreVector: BasicArrayList = storeFrontInterface!.getSubStores()!;;
+    let subStoreVector: BasicArrayList = storeFrontInterface!.getSubStores()!;;
     
 
-    var size: number = subStoreVector!.size()!;;
+    let size: number = subStoreVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var subStore: string = subStoreVector!.get(index) as string;;
+    let subStore: string = subStoreVector!.get(index) as string;;
     
 
-    var substoreIdColumn: BasicArrayList = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, subStore, this.basicItemData!.ID)!;;
+    let substoreIdColumn: BasicArrayList = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, subStore, this.basicItemData!.ID)!;;
     
 column.addAllList(substoreIdColumn);
     
@@ -236,7 +243,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
 inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS, this.commonPhoneStrings!.ZERO));
     
 
-    var success: string = XmlDocumentHelper.toString(viewDocumentInterface!.getDoc())!;;
+    let success: string = XmlDocumentHelper.toString(viewDocumentInterface!.getDoc())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
@@ -258,30 +265,29 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
 
     public search(abeClientInformation: AbeClientInformationInterface, searchRequest: SearchRequest, column: BasicArrayList): string[]{
 
-        try {
-            
-    var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
+ try { 
+    let inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var searchParams: SearchParams = searchRequest!.getParams()!;;
+    let searchParams: SearchParams = searchRequest!.getParams()!;;
     
 
-    var startPage: number = searchParams!.getStartPageInt()!.intValue()!;;
+    let startPage: number = searchParams!.getStartPageInt()!.intValue()!;;
     
 
-    var endPage: number = searchParams!.getEndPageInt()!.intValue()!;;
+    let endPage: number = searchParams!.getEndPageInt()!.intValue()!;;
     
 
-    var pageLength: number = searchParams!.getLengthInt()!.intValue()!;;
+    let pageLength: number = searchParams!.getLengthInt()!.intValue()!;;
     
 
-    var savedPagesInRange: number = 0;;
+    let savedPagesInRange: number = 0;;
     
 
-    var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;;
+    let columnValueHashMap: HashMap<any, any> = searchParams!.get()!;;
     
 
-    var keyword: string = new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(this.basicItemData!.KEYWORDS) as string)!;;
+    let keyword: string = new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(this.basicItemData!.KEYWORDS) as string)!;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(keyword))
@@ -297,7 +303,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(startPage >= 0)
@@ -313,33 +319,33 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
                                     }
                                 
 
-    var MAXPAGES: number = 100;;
+    let MAXPAGES: number = 100;;
     
 
-    var productListingPages: string[] = new Array(MAXPAGES);;
+    let productListingPages: string[] = new Array(MAXPAGES);;
     
 
-    var documents: Document[] = new Array(MAXPAGES);;
+    let documents: Document[] = new Array(MAXPAGES);;
     
 
-    var inventoryNodes: Node[] = new Array(MAXPAGES);;
+    let inventoryNodes: Node[] = new Array(MAXPAGES);;
     
 keyword= keyword.toUpperCase();
     
 
-    var lastPage: number =  -1;;
+    let lastPage: number =  -1;;
     
 
-    var numberOfResultsOnCurrentPage: number = 0;;
+    let numberOfResultsOnCurrentPage: number = 0;;
     
 
-    var numberOfResults: number = 0;;
+    let numberOfResults: number = 0;;
     
 
-    var viewDocumentInterface: TransformDocumentInterface = TransformStoreDocumentFactory.getInstance(searchRequest)!;;
+    let viewDocumentInterface: TransformDocumentInterface = TransformStoreDocumentFactory.getInstance(searchRequest)!;;
     
 
-    var inventoryNode: Node = viewDocumentInterface!.getDoc()!.createElement(InventoryData.INVENTORY)!;;
+    let inventoryNode: Node = viewDocumentInterface!.getDoc()!.createElement(InventoryData.INVENTORY)!;;
     
 viewDocumentInterface!.getBaseNode()!.appendChild(inventoryNode);
     
@@ -357,26 +363,26 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
                                     }
                                 
 
-    var currentPage: number =  -1;;
+    let currentPage: number =  -1;;
     
 
-    var size: number = column.size()!;;
+    let size: number = column.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var product: string = .toCharArray();;
+    let product: string = .toCharArray();;
     
 
-    var itemInterface: ItemInterface = inventoryEntityInterface!.getItem(product)!;;
+    let itemInterface: ItemInterface = inventoryEntityInterface!.getItem(product)!;;
     
 
-    var keywords: string = itemInterface!.getKeywords()!;;
+    let keywords: string = itemInterface!.getKeywords()!;;
     
 keywords= keywords.toUpperCase();
     
@@ -389,7 +395,7 @@ keywords= keywords.toUpperCase();
                         
                                     {
                                     
-    var itemNode: Node = new BasicItemView(itemInterface, new BasicArrayListD()).toXmlNode(viewDocumentInterface!.getDoc())!;;
+    let itemNode: Node = new BasicItemView(itemInterface, new BasicArrayListD()).toXmlNode(viewDocumentInterface!.getDoc())!;;
     
 itemNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), BasketData.ITEMTOTALINBASKET, this.commonPhoneStrings!.ONE));
     
@@ -502,14 +508,14 @@ savedPagesInRange++;
 
 
                         for (
-    var index: number = startPage;index <= endPage; index++)
+    let index: number = startPage;index <= endPage; index++)
         {
 
                         if(index <= lastPage)
                         
                                     {
                                     
-    var tempDocument: Document = documents[index]!;;
+    let tempDocument: Document = documents[index]!;;
     
 inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.TOTAL_NUMBER_PAGES, new Integer(lastPage +1).toString()));
     
@@ -520,7 +526,7 @@ inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocumen
 
 
                         for (
-    var pageIndex: number = 0;pageIndex <= lastPage; pageIndex++)
+    let pageIndex: number = 0;pageIndex <= lastPage; pageIndex++)
         {
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -553,7 +559,7 @@ inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocumen
 }
 
 
-    var success: string = XmlDocumentHelper.toString(tempDocument)!;;
+    let success: string = XmlDocumentHelper.toString(tempDocument)!;;
     
 productListingPages[index]= new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).translate(success);
     
@@ -567,7 +573,7 @@ productListingPages[index]= new StoreTransformer(abeClientInformation, new Trans
                         
                                     {
                                     
-    var result: string = this.getNoResults(viewDocumentInterface, inventoryNode)!;;
+    let result: string = this.getNoResults(viewDocumentInterface, inventoryNode)!;;
     
 productListingPages[0]= new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest)).translate(result);
     
@@ -593,10 +599,11 @@ productListingPages[0]= new StoreTransformer(abeClientInformation, new Transform
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGINGERROR))
                         
@@ -612,12 +619,12 @@ productListingPages[0]= new StoreTransformer(abeClientInformation, new Transform
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

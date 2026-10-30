@@ -50,9 +50,7 @@ export interface GameInitializationInterface {
 
                 //@Throws(Exception.constructor)
             
-    init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number)
+    init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number): void;
 
 }
-
-
 

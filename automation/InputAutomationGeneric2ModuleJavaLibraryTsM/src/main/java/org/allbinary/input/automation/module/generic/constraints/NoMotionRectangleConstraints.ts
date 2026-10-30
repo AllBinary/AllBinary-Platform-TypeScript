@@ -83,5 +83,3 @@ this.setMaxMotionRectangles(.MAX_VALUE());
 
 }
 
-
-

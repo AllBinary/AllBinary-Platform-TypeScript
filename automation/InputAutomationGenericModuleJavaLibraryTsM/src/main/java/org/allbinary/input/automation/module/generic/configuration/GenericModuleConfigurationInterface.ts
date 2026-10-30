@@ -43,11 +43,9 @@ import { GenericProfile } from '../../../../../../../org/allbinary/input/automat
 export interface GenericModuleConfigurationInterface {
         
 
-    getSelectedGenericProfile(): GenericProfile
+    getSelectedGenericProfile(): GenericProfile;
 
-    setSelectedGenericProfile(selectedGenericProfile: GenericProfile)
+    setSelectedGenericProfile(selectedGenericProfile: GenericProfile): void;
 
 }
-
-
 

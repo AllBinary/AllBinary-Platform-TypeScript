@@ -45,6 +45,7 @@ import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visua
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -138,23 +139,23 @@ this.transformDocumentInterface= transformDocumentInterface;
             
     public toXmlNode(document: Document): Node{
 
-    var dirNode: Node = document.createElement("dir")!;;
+    let dirNode: Node = document.createElement("dir")!;;
     
 
-    var size: number = this.fileBasicArrayList!.size()!;;
+    let size: number = this.fileBasicArrayList!.size()!;;
     
 
-    var nextFile: AbFile;;
+    let nextFile: AbFile;;
     
 
-    var fileNode: Node;;
+    let fileNode: Node;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 nextFile= this.fileBasicArrayList!.get(index) as AbFile;
     
@@ -189,7 +190,7 @@ dirNode!.appendChild(fileNode);
             
     public view(): string{
 
-    var node: Node = this.toXmlNode(this.getTransformDocumentInterface()!.getDoc())!;;
+    let node: Node = this.toXmlNode(this.getTransformDocumentInterface()!.getDoc())!;;
     
 this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(node);
     
@@ -203,6 +204,4 @@ this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(node);
 
 
 }
-
-
 

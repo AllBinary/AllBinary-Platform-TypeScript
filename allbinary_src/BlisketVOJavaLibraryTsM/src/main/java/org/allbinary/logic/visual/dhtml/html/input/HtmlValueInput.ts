@@ -20,6 +20,7 @@
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -56,7 +57,7 @@ public constructor (before: string, type: string, name: string, value: string, a
                             //For kotlin this is before the body of the constructor.
                     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.value= stringUtil!.EMPTY_STRING;
     
@@ -66,6 +67,4 @@ addAttribute(this.VALUE, value);
 
 
 }
-
-
 

@@ -27,9 +27,11 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
@@ -45,12 +47,14 @@ import { PaymentData } from '../../../../../../../../org/allbinary/business/user
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
 //not GWT import const SuperCrypt
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -160,10 +164,10 @@ public constructor (hashMap: HashMap<any, any>){
 
     public getFormData(hashMap: HashMap<any, any>){
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var empty: string = stringUtil!.EMPTY_STRING;;
+    let empty: string = stringUtil!.EMPTY_STRING;;
     
 this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME.toString()) as string;
     
@@ -909,10 +913,17 @@ this.timeEntered= value;
     
 }
 
-
+toHashMap(...args: any[]): any {
+   
+    if (args.length === 0) return this.toHashMap$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'boolean') return this.toHashMap$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: toHashMap'); }
+  
                 //@Throws(Exception.constructor)
             
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap$overload1(): HashMap<any, any>{
 
 
 
@@ -924,9 +935,9 @@ this.timeEntered= value;
 
                 //@Throws(Exception.constructor)
             
-    public toHashMap(isEncrypted: boolean): HashMap<any, any>{
+    public toHashMap$overload2(isEncrypted: boolean): HashMap<any, any>{
 
-    var paymentGatewayHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let paymentGatewayHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 paymentGatewayHashMap!.put(EntryData.getInstance()!.ENABLE, this.enable);
     
@@ -959,7 +970,7 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SERVERPATH.toString(), this.server
                         
                                     {
                                     
-    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
+    let superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
     
 paymentGatewayHashMap!.put(UserData.USERNAME.toString(), superCrypt!.encrypt(this.userName));
     
@@ -997,7 +1008,7 @@ paymentGatewayHashMap!.put(PaymentGatewayData.PROXYTIMEOUT.toString(), this.prox
                         
                                     {
                                     
-    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
+    let superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
     
 paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL1.toString(), superCrypt!.encrypt(this.special1));
     
@@ -1050,8 +1061,15 @@ paymentGatewayHashMap!.put(EntryData.getInstance()!.LASTMODIFIED.toString(), thi
     
 }
 
-
-    public toVector(): BasicArrayList{
+toVector(...args: any[]): any {
+   
+    if (args.length === 0) return this.toVector$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'boolean') return this.toVector$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: toVector'); }
+  
+    public toVector$overload1(): BasicArrayList{
 
 
 
@@ -1061,9 +1079,9 @@ paymentGatewayHashMap!.put(EntryData.getInstance()!.LASTMODIFIED.toString(), thi
 }
 
 
-    public toVector(isEncrypted: boolean): BasicArrayList{
+    public toVector$overload2(isEncrypted: boolean): BasicArrayList{
 
-    var updateVector: BasicArrayList = new BasicArrayListD();;
+    let updateVector: BasicArrayList = new BasicArrayListD();;
     
 updateVector!.add(this.enable);
     
@@ -1096,7 +1114,7 @@ updateVector!.add(this.serverPath);
                         
                                     {
                                     
-    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
+    let superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
     
 updateVector!.add(superCrypt!.encrypt(this.userName));
     
@@ -1134,7 +1152,7 @@ updateVector!.add(this.proxyTimeout);
                         
                                     {
                                     
-    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
+    let superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
     
 updateVector!.add(superCrypt!.encrypt(this.special1));
     
@@ -1201,6 +1219,4 @@ updateVector!.add(this.special9);
 
 
 }
-
-
 

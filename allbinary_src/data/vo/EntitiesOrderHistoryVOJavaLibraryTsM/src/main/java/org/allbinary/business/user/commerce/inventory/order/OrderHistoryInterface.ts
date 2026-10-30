@@ -49,61 +49,59 @@ import { Payment } from '../../../../../../../org/allbinary/business/user/commer
 export interface OrderHistoryInterface {
         
 
-    setUserName(value: string)
+    setUserName(value: string): void;
 
-    setDefaultShippingAddress(shippingAddress: StreetAddress)
+    setDefaultShippingAddress(shippingAddress: StreetAddress): void;
 
-    setBillingAddress(billingAddress: StreetAddress)
+    setBillingAddress(billingAddress: StreetAddress): void;
 
-    setPaymentInfo(payment: Payment)
+    setPaymentInfo(payment: Payment): void;
 
-    setShipDate(value: string)
+    setShipDate(value: string): void;
 
-    setOrderDate(value: string)
+    setOrderDate(value: string): void;
 
-    setTransDate(value: string)
+    setTransDate(value: string): void;
 
-    setCancelDate(value: string)
+    setCancelDate(value: string): void;
 
-    setStatus(value: string)
+    setStatus(value: string): void;
 
-    setSubTotal(value: Money)
+    setSubTotal(value: Money): void;
 
-    setShippingCost(value: Money)
+    setShippingCost(value: Money): void;
 
-    setTaxes(value: Money)
+    setTaxes(value: Money): void;
 
-    setTotal(value: Money)
+    setTotal(value: Money): void;
 
-    getUserName(): string
+    getUserName(): string;
 
-    getShippingAddress(): StreetAddress
+    getShippingAddress(): StreetAddress;
 
-    getBillingAddress(): StreetAddress
+    getBillingAddress(): StreetAddress;
 
-    getPaymentInfo(): Payment
+    getPaymentInfo(): Payment;
 
-    getShipDate(): string
+    getShipDate(): string;
 
-    getOrderDate(): string
+    getOrderDate(): string;
 
-    getTransDate(): string
+    getTransDate(): string;
 
-    getCancelDate(): string
+    getCancelDate(): string;
 
-    getStatus(): string
+    getStatus(): string;
 
-    getSubTotal(): Money
+    getSubTotal(): Money;
 
-    getShippingCost(): Money
+    getShippingCost(): Money;
 
-    getTaxes(): Money
+    getTaxes(): Money;
 
-    getTotal(): Money
+    getTotal(): Money;
 
-    getPaymentMethod(): string
+    getPaymentMethod(): string;
 
 }
-
-
 

@@ -42,11 +42,9 @@
 export interface GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory {
         
 
-    getInstance(level: number): LayerPlacementInterfaceBasicArrayListFactoryInterface
+    getInstance(level: number): LayerPlacementInterfaceBasicArrayListFactoryInterface;
 
-    size(): number
+    size(): number;
 
 }
-
-
 

@@ -30,6 +30,7 @@ import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicCo
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
@@ -117,6 +118,4 @@ this.basicColor= basicColor;
 
 
 }
-
-
 

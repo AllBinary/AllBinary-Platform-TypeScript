@@ -30,15 +30,18 @@ import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/do
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { LoggingInitInfo } from '../../../../../../../org/allbinary/logic/communication/log/config/LoggingInitInfo.js';
 //not GWT import const LoggingInitInfo
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
@@ -90,16 +93,15 @@ LogConfigTypes.init();
 
     public static init(){
 
-        try {
-            PreLogUtil.put("Initialize LogconfigTypes", "LogConfigTypes", "init()");
+ try { PreLogUtil.put("Initialize LogconfigTypes", "LogConfigTypes", "init()");
     
 LogConfigTypeFactory.getInstance();
     
 
-    var loggingInitInfo: LoggingInitInfo = new LoggingInitInfo();;
+    let loggingInitInfo: LoggingInitInfo = new LoggingInitInfo();;
     
 
-    var logConfigTypeVector: BasicArrayList = loggingInitInfo!.getTypeList()!;;
+    let logConfigTypeVector: BasicArrayList = loggingInitInfo!.getTypeList()!;;
     
 PreLogUtil.put("Number Of Log Configs: " +loggingInitInfo!.getNumberOfLogConfigs(), "LogConfigTypes", "init()");
     
@@ -109,14 +111,17 @@ LogConfigTypes.LOGGING.addAllList(logConfigTypeVector);
     
 LogConfigTypes.LOGGING.add(LogConfigTypeFactory.getInstance()!.NETBEANS_MODULE);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init()", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -124,13 +129,13 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
             
     public static getInstance(node: Node): LogConfigType{
 
-    var nameValueNode: Node = DomSearchHelper.getNode(LogConfigTypeData.getInstance()!.NAME, node.getChildNodes())!;;
+    let nameValueNode: Node = DomSearchHelper.getNode(LogConfigTypeData.getInstance()!.NAME, node.getChildNodes())!;;
     
 
-    var name: string = DomNodeHelper.getTextNodeValue(nameValueNode)!;;
+    let name: string = DomNodeHelper.getTextNodeValue(nameValueNode)!;;
     
 
-    var descriptionValueNode: Node = DomSearchHelper.getNodeNoThrow(LogConfigTypeData.getInstance()!.DESCRIPTION, node.getChildNodes())!;;
+    let descriptionValueNode: Node = DomSearchHelper.getNodeNoThrow(LogConfigTypeData.getInstance()!.DESCRIPTION, node.getChildNodes())!;;
     
 
                         if(descriptionValueNode != 
@@ -139,26 +144,26 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
                         
                                     {
                                     
-    var description: string = DomNodeHelper.getTextNodeValue(descriptionValueNode)!;;
+    let description: string = DomNodeHelper.getTextNodeValue(descriptionValueNode)!;;
     
 
                                     }
                                 
 
-    var availableLogConfigTypes: BasicArrayList = LogConfigType.availableLogConfigTypes;;
+    let availableLogConfigTypes: BasicArrayList = LogConfigType.availableLogConfigTypes;;
     
 
-    var size: number = availableLogConfigTypes!.size()!;;
+    let size: number = availableLogConfigTypes!.size()!;;
     
 
-    var logConfigType: LogConfigType;;
+    let logConfigType: LogConfigType;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 logConfigType= availableLogConfigTypes!.get(index) as LogConfigType;
     
@@ -192,6 +197,4 @@ private constructor (){
 
 
 }
-
-
 

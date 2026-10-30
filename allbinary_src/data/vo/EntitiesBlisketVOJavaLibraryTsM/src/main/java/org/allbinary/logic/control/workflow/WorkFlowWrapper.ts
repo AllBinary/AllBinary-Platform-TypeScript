@@ -31,9 +31,11 @@ import { Method } from '../../../../../java/lang/reflect/Method.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -67,7 +69,7 @@ export class WorkFlowWrapper
 
     private anyType: any;
 
-public constructor (anyType: any = {}){
+public constructor (anyType: any){
 
             super();
         this.anyType= anyType;
@@ -89,16 +91,15 @@ public constructor (anyType: any = {}){
             
     public getName(): string{
 
-        try {
-            
-    var helperClass: Function = this.anyType!.constructor!;;
+ try { 
+    let helperClass: Function = this.anyType!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod("getName", 
+    let method: Method = helperClass!.getMethod("getName", 
                             null)!;;
     
 
-    var result: string = method.invoke(this.anyType, 
+    let result: string = method.invoke(this.anyType, 
                             null) as string;;
     
 
@@ -107,12 +108,13 @@ public constructor (anyType: any = {}){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Reflection Exception";;
+    let error: string = "Reflection Exception";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -128,8 +130,10 @@ public constructor (anyType: any = {}){
 
                             throw new Exception(error);
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -137,16 +141,15 @@ public constructor (anyType: any = {}){
             
     public getStoreName(): string{
 
-        try {
-            
-    var helperClass: Function = this.anyType!.constructor!;;
+ try { 
+    let helperClass: Function = this.anyType!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod("getStoreName", 
+    let method: Method = helperClass!.getMethod("getStoreName", 
                             null)!;;
     
 
-    var result: string = method.invoke(this.anyType, 
+    let result: string = method.invoke(this.anyType, 
                             null) as string;;
     
 
@@ -155,12 +158,13 @@ public constructor (anyType: any = {}){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Reflection Exception";;
+    let error: string = "Reflection Exception";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -176,8 +180,10 @@ public constructor (anyType: any = {}){
 
                             throw new Exception(error);
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -185,16 +191,15 @@ public constructor (anyType: any = {}){
             
     public process(): Integer{
 
-        try {
-            
-    var helperClass: Function = this.anyType!.constructor!;;
+ try { 
+    let helperClass: Function = this.anyType!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod(this.commonStrings!.PROCESS, 
+    let method: Method = helperClass!.getMethod(this.commonStrings!.PROCESS, 
                             null)!;;
     
 
-    var result: Integer = method.invoke(this.anyType, 
+    let result: Integer = method.invoke(this.anyType, 
                             null) as Integer;;
     
 
@@ -203,12 +208,13 @@ public constructor (anyType: any = {}){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Reflection Exception";;
+    let error: string = "Reflection Exception";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -224,12 +230,12 @@ public constructor (anyType: any = {}){
 
                             throw new Exception(error);
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

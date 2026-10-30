@@ -22,15 +22,18 @@
         
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+type MyRandomFactory<T = any, U = any> = typeof MyRandomFactory extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MyRandomFactory;
 
 import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
 //not GWT import const LockedUtil
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -77,17 +80,17 @@ export class Advertisements
 
     public startRandomPage(){
 
-    var size: number = this.pageList!.size()!;;
+    let size: number = this.pageList!.size()!;;
     
 
                         if(size > 0)
                         
                                     {
                                     
-    var random: number = this.myRandomFactory!.getAbsoluteNextInt(size)!;;
+    let random: number = this.myRandomFactory!.getAbsoluteNextInt(size)!;;
     
 
-    var advertisementProcessorInterface: AdvertisementProcessorInterface = this.pageList!.objectArray[random]! as AdvertisementProcessorInterface;;
+    let advertisementProcessorInterface: AdvertisementProcessorInterface = this.pageList!.objectArray[random]! as AdvertisementProcessorInterface;;
     
 advertisementProcessorInterface!.start();
     
@@ -105,17 +108,17 @@ advertisementProcessorInterface!.start();
                         
                                     {
                                     
-    var size: number = this.pageList!.size()!;;
+    let size: number = this.pageList!.size()!;;
     
 
                         if(size > 0)
                         
                                     {
                                     
-    var random: number = this.myRandomFactory!.getAbsoluteNextInt(size)!;;
+    let random: number = this.myRandomFactory!.getAbsoluteNextInt(size)!;;
     
 
-    var advertisementProcessorInterface: AdvertisementProcessorInterface = this.pageList!.objectArray[random]! as AdvertisementProcessorInterface;;
+    let advertisementProcessorInterface: AdvertisementProcessorInterface = this.pageList!.objectArray[random]! as AdvertisementProcessorInterface;;
     
 advertisementProcessorInterface!.process();
     
@@ -134,10 +137,10 @@ advertisementProcessorInterface!.process();
 
 
                         for (
-    var index: number = this.pageList!.size()!;--index >= 0; )
+    let index: number = this.pageList!.size()!;--index >= 0; )
         {
 
-    var advertisementProcessorInterface: AdvertisementProcessorInterface = this.pageList!.objectArray[index]! as AdvertisementProcessorInterface;;
+    let advertisementProcessorInterface: AdvertisementProcessorInterface = this.pageList!.objectArray[index]! as AdvertisementProcessorInterface;;
     
 advertisementProcessorInterface!.stop();
     
@@ -165,10 +168,10 @@ advertisementProcessorInterface!.stop();
 
 
                         for (
-    var index: number = this.bannerList!.size()!;--index >= 0; )
+    let index: number = this.bannerList!.size()!;--index >= 0; )
         {
 
-    var advertisementProcessorInterface: AdvertisementProcessorInterface = this.bannerList!.objectArray[index]! as AdvertisementProcessorInterface;;
+    let advertisementProcessorInterface: AdvertisementProcessorInterface = this.bannerList!.objectArray[index]! as AdvertisementProcessorInterface;;
     
 advertisementProcessorInterface!.start();
     
@@ -183,10 +186,10 @@ advertisementProcessorInterface!.start();
 
 
                         for (
-    var index: number = this.bannerList!.size()!;--index >= 0; )
+    let index: number = this.bannerList!.size()!;--index >= 0; )
         {
 
-    var advertisementProcessorInterface: AdvertisementProcessorInterface = this.bannerList!.objectArray[index]! as AdvertisementProcessorInterface;;
+    let advertisementProcessorInterface: AdvertisementProcessorInterface = this.bannerList!.objectArray[index]! as AdvertisementProcessorInterface;;
     
 advertisementProcessorInterface!.stop();
     
@@ -197,7 +200,7 @@ advertisementProcessorInterface!.stop();
 
     public getBanner(index: number): AdvertisementProcessorInterface{
 
-    var advertisementProcessorInterface: AdvertisementProcessorInterface = this.bannerList!.objectArray[index]! as AdvertisementProcessorInterface;;
+    let advertisementProcessorInterface: AdvertisementProcessorInterface = this.bannerList!.objectArray[index]! as AdvertisementProcessorInterface;;
     
 
 
@@ -217,6 +220,4 @@ this.stopAllPage();
 
 
 }
-
-
 

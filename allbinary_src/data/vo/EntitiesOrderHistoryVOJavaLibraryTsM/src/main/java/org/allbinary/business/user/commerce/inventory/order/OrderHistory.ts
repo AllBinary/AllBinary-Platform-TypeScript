@@ -72,9 +72,11 @@ import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/M
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -443,7 +445,7 @@ this.total= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(UserData.USERNAME, this.userName);
     
@@ -486,30 +488,30 @@ hashMap!.put(OrderHistoryData.TAX, this.taxes.toString());
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;;
+    let keySet: Set = hashMap!.keys()!;;
     
 
-    var keyArray: any[] = keySet!.()!;;
+    let keyArray: any[] = keySet!.()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
-    var node: Node = document.createElement(OrderHistoryData.ORDERHISTORY)!;;
+    let node: Node = document.createElement(OrderHistoryData.ORDERHISTORY)!;;
     
 node.appendChild(super.toXmlNode(document));
     
 
-    var billingAddressNode: Node = document.createElement(BillingAddressData.BILLINGADDRESS)!;;
+    let billingAddressNode: Node = document.createElement(BillingAddressData.BILLINGADDRESS)!;;
     
 billingAddressNode!.appendChild(this.billingAddress!.toXmlNode(document));
     
 
-    var shippingAddressNode: Node = document.createElement(ShippingAddressData.SHIPPINGADDRESS)!;;
+    let shippingAddressNode: Node = document.createElement(ShippingAddressData.SHIPPINGADDRESS)!;;
     
 shippingAddressNode!.appendChild(this.shippingAddress!.toXmlNode(document));
     
@@ -524,13 +526,13 @@ node.appendChild(this.payment.toXmlNode(document));
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var name: string = keyArray[i]! as string;;
+    let name: string = keyArray[i]! as string;;
     
 
-    var value: string = hashMap!.get(name) as string;;
+    let value: string = hashMap!.get(name) as string;;
     
 value= StringUtil.getInstance()!.getNonNull(value);
     
@@ -548,6 +550,4 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 
 
 }
-
-
 

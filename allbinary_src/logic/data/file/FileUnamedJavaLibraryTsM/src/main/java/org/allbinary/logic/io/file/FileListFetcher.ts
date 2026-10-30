@@ -41,9 +41,11 @@ import { VisitorFileFilter } from '../../../../../org/allbinary/logic/io/file/fi
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -84,12 +86,22 @@ export class FileListFetcher
 
 
     private readonly subDirectory: SubDirectory = SubDirectory.getInstance()!;
+getFiles(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getFiles$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.getFiles$overload2(args[0], args[1]);
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.getFiles$overload3(args[0], args[1]);
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string') return this.getFiles$overload4(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: getFiles'); }
+  
+    public getFiles$overload1(path: string): BasicArrayList{
 
-    public getFiles(path: string): BasicArrayList{
-
-        try {
-            
-    var files: BasicArrayList = this.subDirectory!.search(AbFile.createAbFile(path))!;;
+ try { 
+    let files: BasicArrayList = this.subDirectory!.search(AbFile.createAbFile(path))!;;
     
 
 
@@ -97,16 +109,19 @@ export class FileListFetcher
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return files;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 e.printStackTrace();
     
 console.log("Error: " +e +"\nMsg: " +e.message);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -116,14 +131,13 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 }
 
 
-    public getFiles(path: string, includeExtensions: string[]): BasicArrayList{
+    public getFiles$overload2(path: string, includeExtensions: string[]): BasicArrayList{
 
-        try {
-            
-    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = includeExtensions!.length
+    let size: number = includeExtensions!.length
                 ;;
     
 
@@ -131,17 +145,17 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 includeExtensionBasicArrayList!.add(includeExtensions[index]!);
     
 }
 
 
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));;
+    let visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
+    let files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
     
 
 
@@ -149,16 +163,19 @@ includeExtensionBasicArrayList!.add(includeExtensions[index]!);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return files;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 e.printStackTrace();
     
 console.log("Error: " +e +"\nMsg: " +e.message);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -168,19 +185,18 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 }
 
 
-    public getFiles(path: string, includeExtension: string): BasicArrayList{
+    public getFiles$overload3(path: string, includeExtension: string): BasicArrayList{
 
-        try {
-            
-    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 includeExtensionBasicArrayList!.add(includeExtension);
     
 
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));;
+    let visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
+    let files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
     
 
 
@@ -188,16 +204,19 @@ includeExtensionBasicArrayList!.add(includeExtension);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return files;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 e.printStackTrace();
     
 console.log("Error: " +e +"\nMsg: " +e.message);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -207,19 +226,18 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 }
 
 
-    public getFiles(path: string, pathIncludes: string, includeExtension: string): BasicArrayList{
+    public getFiles$overload4(path: string, pathIncludes: string, includeExtension: string): BasicArrayList{
 
-        try {
-            
-    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 includeExtensionBasicArrayList!.add(includeExtension);
     
 
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList, pathIncludes));;
+    let visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList, pathIncludes));;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
+    let files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
     
 
 
@@ -227,16 +245,19 @@ includeExtensionBasicArrayList!.add(includeExtension);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return files;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 e.printStackTrace();
     
 console.log("Error: " +e +"\nMsg: " +e.message);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -245,15 +266,21 @@ console.log("Error: " +e +"\nMsg: " +e.message);
     
 }
 
+getTrackedFiles(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.getTrackedFiles$overload1(args[0], args[1]);
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.getTrackedFiles$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getTrackedFiles'); }
+  
+    public getTrackedFiles$overload1(path: string, includeExtensions: string[]): BasicArrayList{
 
-    public getTrackedFiles(path: string, includeExtensions: string[]): BasicArrayList{
-
-        try {
-            
-    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = includeExtensions!.length
+    let size: number = includeExtensions!.length
                 ;;
     
 
@@ -261,17 +288,17 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 includeExtensionBasicArrayList!.add(includeExtensions[index]!);
     
 }
 
 
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor(includeExtensionBasicArrayList));;
+    let visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor(includeExtensionBasicArrayList));;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
+    let files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
     
 
 
@@ -279,16 +306,19 @@ includeExtensionBasicArrayList!.add(includeExtensions[index]!);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return files;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 e.printStackTrace();
     
 console.log("Error: " +e +"\nMsg: " +e.message);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -298,19 +328,18 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 }
 
 
-    public getTrackedFiles(path: string, includeExtension: string): BasicArrayList{
+    public getTrackedFiles$overload2(path: string, includeExtension: string): BasicArrayList{
 
-        try {
-            
-    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 includeExtensionBasicArrayList!.add(includeExtension);
     
 
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor(includeExtensionBasicArrayList));;
+    let visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor(includeExtensionBasicArrayList));;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
+    let files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
     
 
 
@@ -318,16 +347,19 @@ includeExtensionBasicArrayList!.add(includeExtension);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return files;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 e.printStackTrace();
     
 console.log("Error: " +e +"\nMsg: " +e.message);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -339,12 +371,11 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
     public getDirectories(path: string): BasicArrayList{
 
-        try {
-            
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryBooleanFileVisitor());;
+ try { 
+    let visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryBooleanFileVisitor());;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
+    let files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
     
 
 
@@ -352,16 +383,19 @@ console.log("Error: " +e +"\nMsg: " +e.message);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return files;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 e.printStackTrace();
     
 console.log("Error: " +e +"\nMsg: " +e.message);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -372,6 +406,4 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
 
 }
-
-
 

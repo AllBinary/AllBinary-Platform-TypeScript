@@ -32,30 +32,37 @@ import { KeyValuePersistance } from '../../../../org/allbinary/game/configuratio
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -142,7 +149,7 @@ private constructor (){
 
             super();
         
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 this.SCALE= new GameConfiguration("Scale", smallIntegerSingletonFactory!.getAt(2), smallIntegerSingletonFactory!.getAt(2), smallIntegerSingletonFactory!.getAt(3));
     
@@ -179,35 +186,34 @@ this.MAX_LAYERS= new GameConfiguration("Max Layers", smallIntegerSingletonFactor
 
     public load(abeClientInformation: AbeClientInformationInterface){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+ try { 
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var keyValuePersistance: KeyValuePersistance = GameConfigurationPersistanceSingleton.getInstance()!;;
+    let keyValuePersistance: KeyValuePersistance = GameConfigurationPersistanceSingleton.getInstance()!;;
     
 keyValuePersistance!.clear();
     
 keyValuePersistance!.loadAll(abeClientInformation);
     
 
-    var list: BasicArrayList = keyValuePersistance!.getIds()!;;
+    let list: BasicArrayList = keyValuePersistance!.getIds()!;;
     
 
                         if(list.size() > 0)
                         
                                     {
                                     
-    var hashtable: ABHashtable<any, any> = keyValuePersistance!.get(0)!;;
+    let hashtable: ABHashtable<any, any> = keyValuePersistance!.get(0)!;;
     
 
-    var anyType: any = this.SCALE.getName();;
+    let anyType: any = this.SCALE.getName();;
     
 
-    var value: string = hashtable.get(anyType) as string;;
+    let value: string = hashtable.get(anyType) as string;;
     
 this.SCALE.setValue(smallIntegerSingletonFactory!.getAt(Integer.valueOf(value)!.intValue()));
     
@@ -220,14 +226,17 @@ this.SCALE.setValue(smallIntegerSingletonFactory!.getAt(Integer.valueOf(value)!.
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -249,10 +258,10 @@ this.gameControlFidelity= gameControlFidelity;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonStrings: CommonSeps = CommonSeps.getInstance()!;;
+    let commonStrings: CommonSeps = CommonSeps.getInstance()!;;
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -368,6 +377,4 @@ stringBuffer!.appendint(this.MAX_LAYERS.getValue()!.intValue());
 
 
 }
-
-
 

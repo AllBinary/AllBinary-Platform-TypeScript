@@ -25,9 +25,11 @@ import { HashMap } from '../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
@@ -43,9 +45,11 @@ import { DownloadItemsEntityFactory } from '../../org/allbinary/data/tables/user
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { HelperTag } from '../../tags/HelperTag.js';
 //not GWT import const HelperTag
@@ -87,13 +91,13 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-    var inventoryTag: HelperTag = hashMap!.get(AbTagData.PARENT) as HelperTag;;
+    let inventoryTag: HelperTag = hashMap!.get(AbTagData.PARENT) as HelperTag;;
     
 
-    var inventoryItemViewParentTagHelper: InventoryItemViewParentTagHelper = InventoryItemViewParentTagHelper.getInstance()!;;
+    let inventoryItemViewParentTagHelper: InventoryItemViewParentTagHelper = InventoryItemViewParentTagHelper.getInstance()!;;
     
 
-    var downloadableInventoryItemView: DownloadableInventoryItemView = inventoryItemViewParentTagHelper!.getDownloadableInventoryItemView(inventoryTag)!;;
+    let downloadableInventoryItemView: DownloadableInventoryItemView = inventoryItemViewParentTagHelper!.getDownloadableInventoryItemView(inventoryTag)!;;
     
 this.downloadableItem= downloadableInventoryItemView!.getDownloadableItem();
     
@@ -102,14 +106,13 @@ this.downloadableItem= downloadableInventoryItemView!.getDownloadableItem();
 
     public insert(): string{
 
-        try {
-            
-    var vector: BasicArrayList = this.downloadableItem!.toVector()!;;
+ try { 
+    let vector: BasicArrayList = this.downloadableItem!.toVector()!;;
     
 DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.insert(vector);
     
 
-    var success: string = "Successfully inserted " +this.downloadableItem!.getId() +" into downloaditems table";;
+    let success: string = "Successfully inserted " +this.downloadableItem!.getId() +" into downloaditems table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -126,12 +129,13 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to insert " +this.downloadableItem!.getId() +" into downloaditems table";;
+    let error: string = "Failed to insert " +this.downloadableItem!.getId() +" into downloaditems table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -148,18 +152,19 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(): string{
 
-        try {
-            DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.delete(this.downloadableItem!.getId());
+ try { DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.delete(this.downloadableItem!.getId());
     
 
-    var success: string = "Successfully deleted";;
+    let success: string = "Successfully deleted";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -176,12 +181,13 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to delete";;
+    let error: string = "Failed to delete";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -198,19 +204,20 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public update(): string{
 
-        try {
-            
-    var success: string = "Update Successful";;
+ try { 
+    let success: string = "Update Successful";;
     
 
-    var values: HashMap<any, any> = this.downloadableItem!.toHashMap()!;;
+    let values: HashMap<any, any> = this.downloadableItem!.toHashMap()!;;
     
 DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.update(values);
     
@@ -229,12 +236,13 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.upda
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to update: " +this.downloadableItem!.getId();;
+    let error: string = "Failed to update: " +this.downloadableItem!.getId();;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -251,12 +259,12 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.upda
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

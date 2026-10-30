@@ -27,9 +27,11 @@ import { HashMap } from '../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
@@ -69,6 +71,7 @@ import { WeblisketSession } from '../../org/allbinary/logic/communication/http/r
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { UserEmailEventNameData } from '../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 //not GWT import const UserEmailEventNameData
@@ -99,6 +102,7 @@ import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSq
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -144,7 +148,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
+    let storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(storeName != 
@@ -174,13 +178,13 @@ this.portion= new Portion(hashMap);
             
     emailUser(quoteRequest: QuoteRequest){
 
-    var user: UserInterface = UserEntityFactory.getInstance()!.getUser(quoteRequest!.getUserName())!;;
+    let user: UserInterface = UserEntityFactory.getInstance()!.getUser(quoteRequest!.getUserName())!;;
     
 
-    var userEmailSubject: string = "Quote Request Receipt";;
+    let userEmailSubject: string = "Quote Request Receipt";;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("This is just a verification email. ");
     
@@ -189,16 +193,16 @@ stringBuffer!.append("We usually respond to quote request within 24 hours.");
 stringBuffer!.append("\n\nThank You For Your Business.");
     
 
-    var userEmailTextBody: string = stringBuffer!.toString()!;;
+    let userEmailTextBody: string = stringBuffer!.toString()!;;
     
 
-    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, userEmailSubject, userEmailTextBody) as BasicEmailInfo;;
+    let basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, userEmailSubject, userEmailTextBody) as BasicEmailInfo;;
     
 
-    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
+    let emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
     
 
-    var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.QUOTEREQUEST, user)!;;
+    let userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.QUOTEREQUEST, user)!;;
     
 userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, emailInfo);
     
@@ -209,10 +213,10 @@ userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, ema
             
     emailAdmins(quoteRequest: QuoteRequest){
 
-    var adminEmailSubject: string = "Quote Request";;
+    let adminEmailSubject: string = "Quote Request";;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("\nUserName: ");
     
@@ -239,19 +243,19 @@ stringBuffer!.append("\nComments: \n");
 stringBuffer!.append(quoteRequest!.getComments());
     
 
-    var adminEmailTextBody: string = stringBuffer!.toString()!;;
+    let adminEmailTextBody: string = stringBuffer!.toString()!;;
     
 
-    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
+    let basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
     
 
-    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
+    let emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
     
 
-    var storeAdminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.QUOTEREQUEST)!;;
+    let storeAdminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.QUOTEREQUEST)!;;
     
 
-    var adminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.QUOTEREQUEST, this.abeClientInformation, this.storeFrontInterface)!;;
+    let adminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.QUOTEREQUEST, this.abeClientInformation, this.storeFrontInterface)!;;
     
 storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, emailInfo);
     
@@ -264,31 +268,30 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST
             
     public email(): string{
 
-        try {
-            
-    var quoteRequestEntity: QuoteRequestEntity = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!;;
+ try { 
+    let quoteRequestEntity: QuoteRequestEntity = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!;;
     
 
-    var userName: string = this.weblisketSession!.getUserName()!;;
+    let userName: string = this.weblisketSession!.getUserName()!;;
     
 
-    var vector: BasicArrayList = quoteRequestEntity!.getIds(userName)!;;
+    let vector: BasicArrayList = quoteRequestEntity!.getIds(userName)!;;
     
 
-    var id: number = 0;;
+    let id: number = 0;;
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var nextId: number = (get as Integer).intValue()!;;
+    let nextId: number = (get as Integer).intValue()!;;
     
 
                         if(id < nextId)
@@ -302,7 +305,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST
 }
 
 
-    var quoteRequest: QuoteRequest = quoteRequestEntity!.get(userName, id)!;;
+    let quoteRequest: QuoteRequest = quoteRequestEntity!.get(userName, id)!;;
     
 
                         if(quoteRequest != 
@@ -332,10 +335,11 @@ this.emailAdmins(quoteRequest);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
@@ -351,16 +355,17 @@ this.emailAdmins(quoteRequest);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Thank You For Your Business.<p>";
     
-}
 
+ }
+   }
+ 
 }
 
 
     public drop(): string{
 
-        try {
-            
-    var success: string = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.dropTable()!;;
+ try { 
+    let success: string = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.dropTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -377,12 +382,13 @@ this.emailAdmins(quoteRequest);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to drop QuoteRequest table";;
+    let error: string = "Failed to drop QuoteRequest table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -399,16 +405,17 @@ this.emailAdmins(quoteRequest);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public create(): string{
 
-        try {
-            
-    var success: string = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.createTable()!;;
+ try { 
+    let success: string = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.createTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -425,12 +432,13 @@ this.emailAdmins(quoteRequest);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to create new QuoteRequest table";;
+    let error: string = "Failed to create new QuoteRequest table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -447,19 +455,20 @@ this.emailAdmins(quoteRequest);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public restore(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance(), portion)!;;
+    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance(), portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -476,12 +485,13 @@ this.emailAdmins(quoteRequest);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to restore backup";;
+    let error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -498,19 +508,20 @@ this.emailAdmins(quoteRequest);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public backup(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance())!;;
+    let result: string = AbSqlTableUtil.getInstance()!.backupTable(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -527,12 +538,13 @@ this.emailAdmins(quoteRequest);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to make backup";;
+    let error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -549,12 +561,12 @@ this.emailAdmins(quoteRequest);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

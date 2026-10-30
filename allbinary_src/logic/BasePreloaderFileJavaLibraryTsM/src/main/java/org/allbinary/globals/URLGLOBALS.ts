@@ -102,5 +102,3 @@ URLGLOBALS.urlGlobalsInterface= urlGlobalsInterface;
 
 }
 
-
-

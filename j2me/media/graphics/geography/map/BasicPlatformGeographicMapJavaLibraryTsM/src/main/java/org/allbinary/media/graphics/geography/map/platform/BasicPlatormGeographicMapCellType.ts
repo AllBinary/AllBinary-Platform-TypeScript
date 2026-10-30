@@ -30,9 +30,11 @@ import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+type BasicArrayListS<T = any, U = any> = typeof BasicArrayListS extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListS;
 
 
 
@@ -60,12 +62,12 @@ export class BasicPlatormGeographicMapCellType
 
     public static createType(type: number): BasicPlatormGeographicMapCellType{
 
-    var types: BasicArrayList = new BasicArrayListS(1);;
+    let types: BasicArrayList = new BasicArrayListS(1);;
     
 types.add(SmallIntegerSingletonFactory.getInstance()!.getAt(type));
     
 
-    var basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType = new BasicPlatormGeographicMapCellType(types);;
+    let basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType = new BasicPlatormGeographicMapCellType(types);;
     
 
 
@@ -82,23 +84,23 @@ public constructor (types: BasicArrayList){
 
             super();
         
-    var size: number = types.size()!;;
+    let size: number = types.size()!;;
     
 
-    var typeArray: number[] = new Array(size);;
+    let typeArray: number[] = new Array(size);;
     
 
-    var typeAsInteger: Integer;;
+    let typeAsInteger: Integer;;
     
 
-    var type: number= 0;;
+    let type: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 typeAsInteger= (types.get(index) as Integer);
     
@@ -127,7 +129,7 @@ this.types= typeArray;
 
     public hasType(type: number): boolean{
 
-    var size: number = this.types.length
+    let size: number = this.types.length
                 ;;
     
 
@@ -135,7 +137,7 @@ this.types= typeArray;
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(this.types[index] == type)
@@ -162,6 +164,4 @@ this.types= typeArray;
 
 
 }
-
-
 

@@ -34,9 +34,11 @@ import { XmlRpcException } from '../../../../../org/apache/xmlrpc/XmlRpcExceptio
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -46,12 +48,14 @@ import { SpecialMessageUtil } from '../../../../../org/allbinary/canvas/SpecialM
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -128,23 +132,23 @@ private constructor (){
                                     }
                                 
 
-    var specialMessage: string = log.getSpecialMessage()!;;
+    let specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;;
+    let anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;;
+    let functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;;
+    let exception: any = log.getThrowable()!;;
     
 this.put(specialMessage, anyType, functionName, exception);
     
 }
 
 
-    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any, functionName: string){
 }
 
 
@@ -152,7 +156,7 @@ this.put(specialMessage, anyType, functionName, exception);
 }
 
 
-    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public put(specialMessage: string, anyType: any, functionName: string, exception: any){
 
                         if(exception != 
                                     null
@@ -160,7 +164,7 @@ this.put(specialMessage, anyType, functionName, exception);
                         
                                     {
                                     
-                        if(exception.constructor.name.toString()!.compareTo(XmlRpcException.constructor.toString()!) == 0)
+                        if(exception.constructor.name.toString()!.compareTo(XmlRpcException.toString()!) == 0)
                         
                                     {
                                     
@@ -173,7 +177,7 @@ this.put(specialMessage, anyType, functionName, exception);
                                     }
                                 
 
-                        if(exception.constructor.name.toString()!.compareTo(IOException.constructor.toString()!) == 0)
+                        if(exception.constructor.name.toString()!.compareTo(IOException.toString()!) == 0)
                         
                                     {
                                     
@@ -190,7 +194,7 @@ this.put(specialMessage, anyType, functionName, exception);
                         
                                     {
                                     
-    var className: string = CommonStrings.getInstance()!.EMPTY;;
+    let className: string = CommonStrings.getInstance()!.EMPTY;;
     
 this.isFirstException= false;
     
@@ -208,11 +212,10 @@ this.isFirstException= false;
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 
-        try {
-            console.log("Eeeek");
+ try { console.log("Eeeek");
     
 
                         if(this.abeClientInformation == 
@@ -229,7 +232,7 @@ this.isFirstException= false;
                                     }
                                 
 
-    var hashtable: ABHashtable<any, any> = this.abeClientInformation!.toHashtable()!;;
+    let hashtable: ABHashtable<any, any> = this.abeClientInformation!.toHashtable()!;;
     
 this.stringBuffer!.delete(0, this.stringBuffer!.length());
     
@@ -243,16 +246,19 @@ hashtable.put(this.MESSAGE, this.stringBuffer!.toString());
     
 new XmlRpcRemoteLogClient(this.abeClientInformation).get(hashtable);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 console.log("Exception");
     
 e.printStackTrace();
     
-}
 
+ }
+   }
+ 
 
                                     }
                                 
@@ -263,6 +269,4 @@ e.printStackTrace();
 
 
 }
-
-
 

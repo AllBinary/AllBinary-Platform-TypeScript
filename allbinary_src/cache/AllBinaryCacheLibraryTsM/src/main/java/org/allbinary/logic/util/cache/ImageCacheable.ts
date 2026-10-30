@@ -22,6 +22,7 @@
         
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -49,7 +50,7 @@ export class ImageCacheable
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
 
-public constructor (name: string, anyType: any = {}){
+public constructor (name: string, anyType: any){
 
             super();
         }
@@ -76,6 +77,4 @@ public constructor (name: string, anyType: any = {}){
 
 
 }
-
-
 

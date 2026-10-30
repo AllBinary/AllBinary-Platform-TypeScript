@@ -64,7 +64,7 @@ export class ActivityFractureInputUtilFactory
 
     public static getInstance(): ActivityFractureUtil{
 
-    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
+    let SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
     
 
                         if(SDK_VERSION <= 4)
@@ -119,6 +119,4 @@ export class ActivityFractureInputUtilFactory
 
 
 }
-
-
 

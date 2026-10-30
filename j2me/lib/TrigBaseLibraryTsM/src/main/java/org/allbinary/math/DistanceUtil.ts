@@ -22,6 +22,7 @@
         
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+type MathUtil<T = any, U = any> = typeof MathUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MathUtil;
 
 
 
@@ -63,10 +64,10 @@ export class DistanceUtil
 
     public getDistance(x1: number, y1: number, x2: number, y2: number): number{
 
-    var dx: number = x1 -x2;;
+    let dx: number = x1 -x2;;
     
 
-    var dy: number = y1 -y2;;
+    let dy: number = y1 -y2;;
     
 
 
@@ -78,6 +79,4 @@ export class DistanceUtil
 
 
 }
-
-
 

@@ -35,15 +35,18 @@ import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 
 
@@ -79,7 +82,7 @@ export class MotionGestureEvent extends AllBinaryEventObject {
 
     private currentPoint: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
 
-public constructor (source: any = {}, id: number, motionGesture: MotionGestureInput){
+public constructor (source: any, id: number, motionGesture: MotionGestureInput){
             super(source);
                     
 
@@ -144,10 +147,10 @@ this.currentPoint= currentPoint;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 stringBuffer!.append(stringUtil!.toString(this.motionGesture));
     
@@ -183,6 +186,4 @@ stringBuffer!.appendint(TsUtil.getInstance()!.hashCode(this));
 
 
 }
-
-
 

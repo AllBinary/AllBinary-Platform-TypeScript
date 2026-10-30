@@ -40,15 +40,19 @@ import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.j
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 //not GWT import const LogConfigTypes
@@ -79,22 +83,21 @@ export class Replace
 
     public static main(args: string[]){
 
-        try {
-            
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+ try { 
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();;
+    let appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();;
     
 appUrlGlobals!.setWebappPath("G:/mnt/bc/mydev/work/allbinary_src/ToolsJavaLibrary/tools");
     
 URLGLOBALS.init(appUrlGlobals);
     
 
-    var testString: string = "\"super gun\" big tank \"goodgunriflegun";;
+    let testString: string = "\"super gun\" big tank \"goodgunriflegun";;
     
 
-    var replace: Replace = new Replace("gun", "abcdefghijklmnopqrstuxwxyzabcdefghijklmnopqrstuxwxyz");;
+    let replace: Replace = new Replace("gun", "abcdefghijklmnopqrstuxwxyzabcdefghijklmnopqrstuxwxyz");;
     
 console.log("Old String: " +testString);
     
@@ -103,18 +106,21 @@ testString= replace.all(testString);
 console.log("New String: " +testString);
     
 
-    var replaceCat: Replace = new Replace("abcdefghijklmnopqrstuxwxyzabcdefghijklmnopqrstuxwxyz", stringUtil!.EMPTY_STRING);;
+    let replaceCat: Replace = new Replace("abcdefghijklmnopqrstuxwxyzabcdefghijklmnopqrstuxwxyz", stringUtil!.EMPTY_STRING);;
     
 testString= replaceCat!.all(testString);
     
 console.log("New String: " +testString);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-}
-
+ }
+   }
+ 
 }
 
 
@@ -176,22 +182,22 @@ public constructor (hashMap: HashMap<any, any>){
 
     public upTo(replace: string, total: number): string{
 
-    var newStringBuffer: StringMaker = new StringMaker();;
+    let newStringBuffer: StringMaker = new StringMaker();;
     
 
-    var totalNumberOfReplaces: number = 0;;
+    let totalNumberOfReplaces: number = 0;;
     
 
-    var keys: string[];;
+    let keys: string[];;
     
 
-    var values: string[];;
+    let values: string[];;
     
 
-    var keyArray: any[] = this.j2seUtil!.getHashMapAsArray(this.hashMap)!;;
+    let keyArray: any[] = this.j2seUtil!.getHashMapAsArray(this.hashMap)!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
@@ -199,35 +205,35 @@ public constructor (hashMap: HashMap<any, any>){
 
 
                         for (
-    var index2: number = 0;index2 < size; index2++)
+    let index2: number = 0;index2 < size; index2++)
         {
 keys= keyArray[index2]! as string[];
     
 values= this.hashMap!.get(keys) as string[];
     
 
-    var foundTotal: number = 0;;
+    let foundTotal: number = 0;;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var nextKey: string;;
+    let nextKey: string;;
     
 
-    var end: number= 0;;
+    let end: number= 0;;
     
 
-    var nextSecondKey: string;;
+    let nextSecondKey: string;;
     
 
-    var begin2: number= 0;;
+    let begin2: number= 0;;
     
 
         while(index < replace.length)
         {
 
-    var begin: number = replace.indexOf(keys[0]!, index)!;;
+    let begin: number = replace.indexOf(keys[0]!, index)!;;
     
 
                         if(begin !=  -1)
@@ -273,7 +279,7 @@ begin2= replace.indexOf(nextSecondKey, index);
                         
                                     {
                                     
-    var end2: number = begin2 +nextSecondKey!.length;;
+    let end2: number = begin2 +nextSecondKey!.length;;
     
 newStringBuffer!.delete(0, newStringBuffer!.length());
     
@@ -346,22 +352,22 @@ totalNumberOfReplaces++;
 
     public line(replace: string): string{
 
-    var newStringBuffer: StringMaker = new StringMaker();;
+    let newStringBuffer: StringMaker = new StringMaker();;
     
 
-    var totalNumberOfReplaces: number = 0;;
+    let totalNumberOfReplaces: number = 0;;
     
 
-    var key: string;;
+    let key: string;;
     
 
-    var value: string;;
+    let value: string;;
     
 
-    var keyArray: any[] = this.j2seUtil!.getHashMapAsArray(this.hashMap)!;;
+    let keyArray: any[] = this.j2seUtil!.getHashMapAsArray(this.hashMap)!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
@@ -369,14 +375,14 @@ totalNumberOfReplaces++;
 
 
                         for (
-    var index2: number = 0;index2 < size; index2++)
+    let index2: number = 0;index2 < size; index2++)
         {
 key= keyArray[index2]! as string;
     
 value= this.hashMap!.get(key) as string;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(index < replace.length)
@@ -384,7 +390,7 @@ value= this.hashMap!.get(key) as string;
 newStringBuffer!.delete(0, newStringBuffer!.length());
     
 
-    var begin: number = replace.indexOf(key, index)!;;
+    let begin: number = replace.indexOf(key, index)!;;
     
 
                         if(begin !=  -1)
@@ -393,7 +399,7 @@ newStringBuffer!.delete(0, newStringBuffer!.length());
                                     console.log(this.FOUND_KEY);
     
 
-    var end: number = replace.indexOf('\n', begin +key.length) +1;;
+    let end: number = replace.indexOf('\n', begin +key.length) +1;;
     
 
                         if(end >= 0)
@@ -445,6 +451,4 @@ totalNumberOfReplaces++;
 
 
 }
-
-
 

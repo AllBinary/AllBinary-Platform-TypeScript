@@ -284,6 +284,7 @@ import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/lay
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
 //not GWT import const BasicDecimal
@@ -341,18 +342,23 @@ import { RaceTrackGeographicMap } from '../../../../../org/allbinary/media/graph
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+type BasicArrayListS<T = any, U = any> = typeof BasicArrayListS extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListS;
 
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
@@ -552,7 +558,7 @@ this.initPathAnimation!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
 
-    var hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    let hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 hashtable.put(this.groupCommonFactory!.ID, this.getGroupInterface());
     
@@ -563,15 +569,10 @@ hashtable.put(AllBinaryGameLayerManager.ID, this.allBinaryGameLayerManagerP);
 this.setWaypointBehavior(new UnitWaypointBehavior2(this, this.waypointLayerInterfaceFactoryInterface!.getNextInstance(hashtable, this.x, this.y, this.z) as AdvancedRTSGameLayer));
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var waypoint: WaypointBase = J2MEUtil.isHTML()
-                        ?       
-                                new MultipassNoCacheWaypoint(this, AttackSound.getInstance())
-                                :
-
-                            new NoCacheWaypoint(this, AttackSound.getInstance());;
+    let waypoint: WaypointBase = (J2MEUtil.isHTML() ? new MultipassNoCacheWaypoint(this, AttackSound.getInstance()) : new NoCacheWaypoint(this, AttackSound.getInstance()));;
     
 this.getWaypointBehavior()!.setWaypoint(waypoint);
     
@@ -612,41 +613,41 @@ this.getUnitWaypointBehavior()!.setLastPathGeographicMapCellPosition(this.getUni
                         
                                     {
                                     
-    var currentGeographicMapCellPosition: GeographicMapCellPosition = this.getCurrentGeographicMapCellPosition()!;;
+    let currentGeographicMapCellPosition: GeographicMapCellPosition = this.getCurrentGeographicMapCellPosition()!;;
     
 this.sensorGeographicMapCellPositionList!.clear();
     
 this.sensorGeographicMapCellPositionList!.add(currentGeographicMapCellPosition);
     
 
-    var sensorRange: number = this.weaponRange *UnitLayer.SENSOR_RANGE_MULTIPLIER;;
+    let sensorRange: number = this.weaponRange *UnitLayer.SENSOR_RANGE_MULTIPLIER;;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
+    let tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var totalCells: number = (sensorRange /tiledLayer!.getCellHeight()) /2;;
+    let totalCells: number = (sensorRange /tiledLayer!.getCellHeight()) /2;;
     
 
-    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
+    let geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
     
 
-    var column: number = currentGeographicMapCellPosition!.getColumn()!;;
+    let column: number = currentGeographicMapCellPosition!.getColumn()!;;
     
 
-    var row: number = currentGeographicMapCellPosition!.getRow()!;;
+    let row: number = currentGeographicMapCellPosition!.getRow()!;;
     
 
-    var lastColumn: number = column +totalCells;;
+    let lastColumn: number = column +totalCells;;
     
 
-    var lastRow: number = row +totalCells;;
+    let lastRow: number = row +totalCells;;
     
 
                         if(lastColumn > tiledLayer!.getColumns())
@@ -667,10 +668,10 @@ this.sensorGeographicMapCellPositionList!.add(currentGeographicMapCellPosition);
                                     }
                                 
 
-    var firstColumn: number = column -totalCells;;
+    let firstColumn: number = column -totalCells;;
     
 
-    var firstRow: number = row -totalCells;;
+    let firstRow: number = row -totalCells;;
     
 
                         if(firstColumn < 0)
@@ -695,17 +696,17 @@ this.sensorGeographicMapCellPositionList!.add(currentGeographicMapCellPosition);
 
 
                         for (
-    var index: number = lastColumn -1;index >= firstColumn; index--)
+    let index: number = lastColumn -1;index >= firstColumn; index--)
         {
 
 
 
 
                         for (
-    var index2: number = lastRow -1;index2 >= firstRow; index2--)
+    let index2: number = lastRow -1;index2 >= firstRow; index2--)
         {
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getAt(index, index2)!;;
+    let geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getAt(index, index2)!;;
     
 
                         if(!this.sensorGeographicMapCellPositionList!.contains(geographicMapCellPosition))
@@ -797,26 +798,26 @@ this.rtsLayer2LogHelper= RTSLayer2LogHelper.getInstance();
 this.rtsLogHelper!.setClosestGeographicMapCellHistory(this, pathsList);
     
 
-    var closestIndex: number =  -1;;
+    let closestIndex: number =  -1;;
     
 
-    var shortestDistance: number = Integer.MAX_VALUE;;
+    let shortestDistance: number = Integer.MAX_VALUE;;
     
 
-    var currentDistance: number = Integer.MAX_VALUE;;
+    let currentDistance: number = Integer.MAX_VALUE;;
     
 
 
 
 
                         for (
-    var index: number = pathsList!.size() -1;index >= 0; index--)
+    let index: number = pathsList!.size() -1;index >= 0; index--)
         {
 
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = pathsList!.get(index) as BasicArrayList;;
+    let geographicMapCellPositionBasicArrayList: BasicArrayList = pathsList!.get(index) as BasicArrayList;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition;;
+    let geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition;;
     
 currentDistance= this.layerDistanceUtil!.getDistanceAt(this, geographicMapCellPosition!.getMidPoint());
     
@@ -838,10 +839,10 @@ closestIndex= index;
                         
                                     {
                                     
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = pathsList!.get(closestIndex) as BasicArrayList;;
+    let geographicMapCellPositionBasicArrayList: BasicArrayList = pathsList!.get(closestIndex) as BasicArrayList;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionBasicArrayList!.get(0) as GeographicMapCellPosition;;
+    let geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionBasicArrayList!.get(0) as GeographicMapCellPosition;;
     
 this.teleportTo(geographicMapCellPosition);
     
@@ -861,9 +862,8 @@ geographicMapCellHistory!.trackAll(geographicMapCellPositionBasicArrayList);
 
     public onMovement(trackingEvent: TrackingEvent){
 
-        try {
-            
-    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;;
+ try { 
+    let layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;;
     
 
                         if(layerInterface!.getGroupInterface()[0] != this.getGroupInterface()[0])
@@ -876,14 +876,17 @@ layerInterface!.onMovementFound(this.getTrackingEvent());
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onMovement", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -891,7 +894,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onMovement", e);
             
     public onMovementFound(trackingEvent: TrackingEvent){
 
-    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;;
+    let layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;;
     
 
                         if(layerInterface!.getGroupInterface()[0] != this.getGroupInterface()[0])
@@ -907,17 +910,17 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onMovement", e);
 
     public initRangeHack(){
 
-    var basicWeaponPart: BasicWeaponPart = this.getPartInterfaceArray()[0]! as BasicWeaponPart;;
+    let basicWeaponPart: BasicWeaponPart = this.getPartInterfaceArray()[0]! as BasicWeaponPart;;
     
 
-    var weaponProperties: WeaponProperties = basicWeaponPart!.getWeaponProperties()!;;
+    let weaponProperties: WeaponProperties = basicWeaponPart!.getWeaponProperties()!;;
     
 this.weaponRange= weaponProperties!.getRange();
     
 this.initRangeAnimation= AdjustedCircleAnimation.createW(this.weaponRange, this.weaponRange, this.getWidth(), this.basicColorFactory!.GREEN);
     
 
-    var sensorRange: number = this.weaponRange *UnitLayer.SENSOR_RANGE_MULTIPLIER;;
+    let sensorRange: number = this.weaponRange *UnitLayer.SENSOR_RANGE_MULTIPLIER;;
     
 this.initSensorRangeAnimation= AdjustedCircleAnimation.createW(sensorRange, sensorRange, this.getWidth(), this.basicColorFactory!.RED);
     
@@ -940,10 +943,10 @@ this.fireTimeHelper!.delay= (globalThis.Math.trunc(weaponProperties!.getReloadTi
                         
                                     {
                                     
-    var currentFrame: number = this.destroyAnimationInterface!.getFrame()!;;
+    let currentFrame: number = this.destroyAnimationInterface!.getFrame()!;;
     
 
-    var size: number = this.destroyAnimationInterface!.getSize() -1;;
+    let size: number = this.destroyAnimationInterface!.getSize() -1;;
     
 
                         if(currentFrame == size)
@@ -1002,7 +1005,7 @@ this.getUnitWaypointBehavior()!.processTick(allBinaryLayerManager);
 
     public teleportTo(geographicMapCellPosition: GeographicMapCellPosition){
 
-    var point: GPoint = geographicMapCellPosition!.getMidPoint()!;;
+    let point: GPoint = geographicMapCellPosition!.getMidPoint()!;;
     
 this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHeight(), this.z);
     
@@ -1013,16 +1016,16 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
             
     public getCurrentGeographicMapCellPosition(): GeographicMapCellPosition{
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXY(this.x +this.getHalfWidth(), this.y +this.getHalfHeight())!;;
+    let geographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXY(this.x +this.getHalfWidth(), this.y +this.getHalfHeight())!;;
     
 
-    var raceTrackGeographicMap: RaceTrackGeographicMap = geographicMapInterface as RaceTrackGeographicMap;;
+    let raceTrackGeographicMap: RaceTrackGeographicMap = geographicMapInterface as RaceTrackGeographicMap;;
     
 
                         if(!raceTrackGeographicMap!.isValid(geographicMapCellPosition))
@@ -1092,7 +1095,7 @@ this.rotationAnimationInterfaceP!.nextRotation();
 
     public down(){
 
-    var velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;;
+    let velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;;
     
 
                         if(!velocityProperties!.isOverXYMaxForwardVelocity())
@@ -1108,7 +1111,7 @@ this.rotationAnimationInterfaceP!.nextRotation();
 
     public up(){
 
-    var velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;;
+    let velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;;
     
 
                         if(!velocityProperties!.isOverXYMaxForwardVelocity())
@@ -1144,23 +1147,23 @@ super.initInputProcessors();
             
     public processInput(layerManager: AllBinaryLayerManager){
 
-    var list: BasicArrayList = this.getGameKeyEventList()!;;
+    let list: BasicArrayList = this.getGameKeyEventList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var anyType: any = list.get(index)!;;
+    let anyType: any = list.get(index)!;;
     
 
-    var key: number = GameKeyEventUtil.getKey(anyType)!;;
+    let key: number = GameKeyEventUtil.getKey(anyType)!;;
     
 this.inputProcessorArray[key]!.processEvent(layerManager, GameKeyEvent.NONE);
     
@@ -1185,15 +1188,15 @@ this.getVehicleProperties()!.getVelocityProperties()!.addVelocityi(accelerate.ge
             
     fireAll(layerManager: AllBinaryLayerManager){
 
-    var angleInfo: AngleInfo = this.rotationAnimationInterfaceP!.getAngleInfoP()!;;
+    let angleInfo: AngleInfo = this.rotationAnimationInterfaceP!.getAngleInfoP()!;;
     
 
-    var angle: number = globalThis.Math.trunc((angleInfo!.getAngle() +this.slightAngle));;
+    let angle: number = globalThis.Math.trunc((angleInfo!.getAngle() +this.slightAngle));;
     
 this.hashtable.put(SmallIntegerSingletonFactory.getInstance()!.getAt(1), SmallIntegerSingletonFactory.getInstance()!.getAt(globalThis.Math.trunc(AngleFactory.getInstance()!.getAt(angle)!.getValue())));
     
 
-    var salvoInterface: SalvoInterface = this.getPartInterfaceArray()[0]! as SalvoInterface;;
+    let salvoInterface: SalvoInterface = this.getPartInterfaceArray()[0]! as SalvoInterface;;
     
 salvoInterface!.process(layerManager, angle, 90);
     
@@ -1223,7 +1226,7 @@ this.initRangeHack();
 
     groundFriction(){
 
-    var vehicleFrictionProperties: VehicleFrictionProperties = this.getVehicleProperties()!.getVehicleFrictionProperties()!;;
+    let vehicleFrictionProperties: VehicleFrictionProperties = this.getVehicleProperties()!.getVehicleFrictionProperties()!;;
     
 this.getVehicleProperties()!.getVehicleFrictionProperties()!.friction(this.getVehicleProperties()!.getVelocityProperties(), vehicleFrictionProperties!.getTireFrictionNominator());
     
@@ -1234,19 +1237,19 @@ this.getVehicleProperties()!.getVehicleFrictionProperties()!.friction(this.getVe
             
     public trackTo(reason: string){
 
-    var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;;
+    let waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;;
     
 
-    var nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;;
+    let nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;;
     
 
-    var point: GPoint = nextUnvisitedPathGeographicMapCellPosition!.getMidPoint()!;;
+    let point: GPoint = nextUnvisitedPathGeographicMapCellPosition!.getMidPoint()!;;
     
 
-    var dx: number = (this.getXP() +this.getHalfWidth()) -point.getX();;
+    let dx: number = (this.getXP() +this.getHalfWidth()) -point.getX();;
     
 
-    var dy: number = (this.getYP() +this.getHalfHeight()) -point.getY();;
+    let dy: number = (this.getYP() +this.getHalfHeight()) -point.getY();;
     
 this.rtsLogHelper!.trackTo(this, nextUnvisitedPathGeographicMapCellPosition, dx, dy, reason);
     
@@ -1259,7 +1262,7 @@ this.trackToDXY(dx, dy);
             
     public trackToDXY(dx: number, dy: number){
 
-    var angleOfTarget: number = 0;;
+    let angleOfTarget: number = 0;;
     
 this.trackToDXYTargetAngle(dx, dy, angleOfTarget);
     
@@ -1270,13 +1273,13 @@ this.trackToDXYTargetAngle(dx, dy, angleOfTarget);
             
     turnTo(dx: number, dy: number, targetAngle: number): boolean{
 
-    var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;;
+    let waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;;
     
 
-    var nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;;
+    let nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;;
     
 
-    var evading: boolean = false;;
+    let evading: boolean = false;;
     
 
                         if(this.getUnitWaypointBehavior()!.getSensorAction() == SensorActionFactory.getInstance()!.EVADE)
@@ -1292,15 +1295,15 @@ targetAngle += 180;
                                     }
                                 
 
-    var angleInfo: AngleInfo = this.rotationAnimationInterfaceP!.getAngleInfoP()!;;
+    let angleInfo: AngleInfo = this.rotationAnimationInterfaceP!.getAngleInfoP()!;;
     
 
-    var angle: number = FrameUtil.getInstance()!.adjustAngleToFrameAngle(angleInfo!.getAngle() -270)!;;
+    let angle: number = FrameUtil.getInstance()!.adjustAngleToFrameAngle(angleInfo!.getAngle() -270)!;;
     
 this.rtsLogHelper!.turnTo(this, dx, dy, angleInfo, angle, this.movementAngle, evading, targetAngle);
     
 
-    var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;;
+    let gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;;
     
 
                         if(dx == 0 && dy == 0)
@@ -1447,7 +1450,7 @@ this.rtsLogHelper!.currentMoveEnded(this);
                                     }
                                 
 
-    var deltaAngle2: number = this.movementAngle!.getValue() -angle;;
+    let deltaAngle2: number = this.movementAngle!.getValue() -angle;;
     
 
                         if(deltaAngle2 > 0)
@@ -1497,10 +1500,10 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Can
 
     handleDeltalX(dx: number, dy: number){
 
-    var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;;
+    let waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;;
     
 
-    var nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;;
+    let nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;;
     
 
                         if(dx > 0)
@@ -1528,10 +1531,10 @@ this.rtsLogHelper!.handle(this, this.movementAngle);
 
     handleDeltalY(dx: number, dy: number){
 
-    var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;;
+    let waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;;
     
 
-    var nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;;
+    let nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;;
     
 
                         if(dy > 0)
@@ -1561,7 +1564,7 @@ this.rtsLogHelper!.handle(this, this.movementAngle);
             
     trackToDXYTargetAngle(dx: number, dy: number, targetAngle: number){
 
-    var list: BasicArrayList = this.getUnitWaypointBehavior()!.getSteeringVisitorList()!;;
+    let list: BasicArrayList = this.getUnitWaypointBehavior()!.getSteeringVisitorList()!;;
     
 
                         if(list.size() > 0)
@@ -1572,13 +1575,13 @@ this.rtsLogHelper!.handle(this, this.movementAngle);
 
 
                         for (
-    var index: number = list.size() -1;index >= 0; index--)
+    let index: number = list.size() -1;index >= 0; index--)
         {
 
-    var steeringVisitor: SteeringVisitor = list.get(index) as SteeringVisitor;;
+    let steeringVisitor: SteeringVisitor = list.get(index) as SteeringVisitor;;
     
 
-    var anyType: any = steeringVisitor!.visit(this)!;;
+    let anyType: any = steeringVisitor!.visit(this)!;;
     
 
                         if(anyType == 
@@ -1614,7 +1617,7 @@ this.fireOrMove();
             
     fireOrMove(){
 
-    var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;;
+    let gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;;
     
 
                         if(this.getUnitWaypointBehavior()!.needToMove())
@@ -1655,15 +1658,14 @@ TrackingEventHandler.getInstance()!.fireEvent(this.getTrackingEvent());
 
     public move(){
 
-        try {
-            
-    var velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;;
+ try { 
+    let velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;;
     
 
-    var velocityXScaled: number = velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();;
+    let velocityXScaled: number = velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();;
     
 
-    var velocityYScaled: number = velocityProperties!.getVelocityYBasicDecimalP()!.getScaled();;
+    let velocityYScaled: number = velocityProperties!.getVelocityYBasicDecimalP()!.getScaled();;
     
 this.getUnitWaypointBehavior()!.move();
     
@@ -1674,31 +1676,31 @@ this.getUnitWaypointBehavior()!.move();
                                     this.getUnitWaypointBehavior()!.setMoving(true);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.layerPartialCellPositionsUtil!.getAllDXY(geographicMapInterface, this, globalThis.Math.trunc(velocityXScaled), globalThis.Math.trunc(velocityYScaled), UnitLayer.getPartialpositionlist());
     
 
-    var cellPosition: GeographicMapCellPosition = DropCellPositionHistory.getInstance()!.getCellPositionWithDrop(UnitLayer.getPartialpositionlist()) as GeographicMapCellPosition;;
+    let cellPosition: GeographicMapCellPosition = DropCellPositionHistory.getInstance()!.getCellPositionWithDrop(UnitLayer.getPartialpositionlist()) as GeographicMapCellPosition;;
     
 
                         if(cellPosition == this.cellPositionFactory!.NONE)
                         
                                     {
                                     
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
+    let tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var tiledLayerUtil: TiledLayerUtil = TiledLayerUtil.getInstance()!;;
+    let tiledLayerUtil: TiledLayerUtil = TiledLayerUtil.getInstance()!;;
     
 
-    var x: number = this.x +globalThis.Math.trunc(velocityXScaled);;
+    let x: number = this.x +globalThis.Math.trunc(velocityXScaled);;
     
 
-    var y: number = this.y +globalThis.Math.trunc(velocityYScaled);;
+    let y: number = this.y +globalThis.Math.trunc(velocityYScaled);;
     
 x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.getWidth());
     
@@ -1711,7 +1713,7 @@ this.setPosition(x, y, this.z);
                                 
                         else {
                             
-    var allbinaryLayer: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(cellPosition)!;;
+    let allbinaryLayer: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(cellPosition)!;;
     
 this.getUnitWaypointBehavior()!.setMovingFromStopped(false);
     
@@ -1747,20 +1749,23 @@ this.getUnitWaypointBehavior()!.addBuildingChase(allbinaryLayer, cellPosition);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "move", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public allStop(){
 
-    var velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;;
+    let velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;;
     
 velocityProperties!.getVelocityXBasicDecimalP()!.setint(0);
     
@@ -1777,13 +1782,13 @@ velocityProperties!.getVelocityYBasicDecimalP()!.setint(0);
                                     super.paint(graphics);
     
 
-    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
+    let viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 
-    var viewX: number = viewPosition!.getX()!;;
+    let viewX: number = viewPosition!.getX()!;;
     
 
-    var viewY: number = viewPosition!.getY()!;;
+    let viewY: number = viewPosition!.getY()!;;
     
 this.decalAnimation!.paintXY(graphics, viewX, viewY);
     
@@ -1811,7 +1816,7 @@ this.resourceAnimation!.paintXY(graphics, viewX, viewY);
             
     public onBuildingEvent(event: RTSLayerEvent){
 
-    var buildingLayer: BuildingLayer = event.getRtsLayer() as BuildingLayer;;
+    let buildingLayer: BuildingLayer = event.getRtsLayer() as BuildingLayer;;
     
 this.getUnitWaypointBehavior()!.moveAwayFromBuilding(buildingLayer);
     
@@ -1881,7 +1886,7 @@ BuildingEventHandler.getInstance()!.removeListener(this);
                         
                                     {
                                     
-    var damage: number = this.getHealthInterface()!.getMaxHealth()!;;
+    let damage: number = this.getHealthInterface()!.getMaxHealth()!;;
     
 
                         if(damage > 10)
@@ -2004,7 +2009,7 @@ this.setLoad(0);
 
     public createHudPaintable(): SelectionHudPaintable{
 
-    var rtsLayerHudPaintable: RTSLayerHudPaintable = RTSLayerHudPaintable.getInstance()!;;
+    let rtsLayerHudPaintable: RTSLayerHudPaintable = RTSLayerHudPaintable.getInstance()!;;
     
 rtsLayerHudPaintable!.setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor());
     
@@ -2021,7 +2026,7 @@ rtsLayerHudPaintable!.setRtsLayer(this);
 
     public getHudPaintable(): SelectionHudPaintable{
 
-    var rtsLayerHudPaintable: RTSLayerHudPaintable = RTSLayerHudPaintable.getInstance()!;;
+    let rtsLayerHudPaintable: RTSLayerHudPaintable = RTSLayerHudPaintable.getInstance()!;;
     
 
 
@@ -2093,6 +2098,4 @@ rtsLayerHudPaintable!.setRtsLayer(this);
 
 
 }
-
-
 

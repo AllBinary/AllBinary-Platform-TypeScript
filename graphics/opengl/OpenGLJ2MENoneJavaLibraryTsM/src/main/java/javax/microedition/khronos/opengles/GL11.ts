@@ -30,5 +30,3 @@ export interface GL11 extends GL10 {
 
 }
 
-
-

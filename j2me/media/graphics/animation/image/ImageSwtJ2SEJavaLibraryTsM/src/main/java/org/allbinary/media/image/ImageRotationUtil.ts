@@ -36,6 +36,7 @@ import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLES
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
 //not GWT import const GC
@@ -96,7 +97,7 @@ private constructor (){
 
     public rotateImage(originalImage: Image, image: Image, totalAngle: number){
 
-    var originalImage2: Image = originalImage;;
+    let originalImage2: Image = originalImage;;
     
 
                         if(this.features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
@@ -107,7 +108,7 @@ private constructor (){
                         
                                     {
                                     
-    var openGLESImage: OpenGLESImage = (image as OpenGLESImage);;
+    let openGLESImage: OpenGLESImage = (image as OpenGLESImage);;
     
 openGLESImage!.openGLESImageProperties!.angle= totalAngle;
     
@@ -130,15 +131,15 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle;
                                     }
                                 
 
-    var originalSwtImage: org.eclipse.swt.graphics.Image = (originalImage2!.getImage() as org.eclipse.swt.graphics.Image);;
+    let originalSwtImage: org.eclipse.swt.graphics.Image = (originalImage2!.getImage() as org.eclipse.swt.graphics.Image);;
     
 
-    var gc: GC = 
+    let gc: GC = 
                 null
             ;;
     
 
-    var copySwtImage: org.eclipse.swt.graphics.Image = 
+    let copySwtImage: org.eclipse.swt.graphics.Image = 
                 null
             ;;
     
@@ -147,7 +148,7 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle;
                         
                                     {
                                     
-    var swtImage: SwtMutableImage = image as SwtMutableImage;;
+    let swtImage: SwtMutableImage = image as SwtMutableImage;;
     
 copySwtImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image;
     
@@ -180,6 +181,4 @@ this.imageSwtRotationUtil!.rotateImage(originalSwtImage, copySwtImage, gc, total
 
 
 }
-
-
 

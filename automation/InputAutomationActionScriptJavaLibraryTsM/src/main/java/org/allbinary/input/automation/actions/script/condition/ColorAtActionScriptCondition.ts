@@ -56,12 +56,15 @@ import { CapturedBufferedImagesCacheSingleton } from '../../../../../../../org/a
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AutomaticCacheInterface } from '../../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
@@ -77,6 +80,7 @@ import { BufferedImageFrameCacheable } from '../../../../../../../org/allbinary/
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -136,7 +140,7 @@ public constructor (node: Node){
 this.point= new Point(0, 0);
     
 
-    var actionNode: Node = DomSearchHelper.getNode(ColorAtActionScriptConditionData.NAME, node.getChildNodes())!;;
+    let actionNode: Node = DomSearchHelper.getNode(ColorAtActionScriptConditionData.NAME, node.getChildNodes())!;;
     
 
                         if(actionNode != 
@@ -145,24 +149,24 @@ this.point= new Point(0, 0);
                         
                                     {
                                     
-    var nodeList: NodeList = actionNode!.getChildNodes()!;;
+    let nodeList: NodeList = actionNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var childNode: Node = nodeList!.item(index)!;;
+    let childNode: Node = nodeList!.item(index)!;;
     
 
                         if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.LOCATION_X) == 0)
                         
                                     {
                                     
-    var locationX: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let locationX: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.point.x= Integer.valueOf(locationX);
     
@@ -174,7 +178,7 @@ this.point.x= Integer.valueOf(locationX);
                         
                                     {
                                     
-    var locationY: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let locationY: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.point.y= Integer.valueOf(locationY);
     
@@ -186,7 +190,7 @@ this.point.y= Integer.valueOf(locationY);
                         
                                     {
                                     
-    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getColorRangeInterface()!.setMinRed(string.valueOf());
     
@@ -198,7 +202,7 @@ this.getColorRangeInterface()!.setMinRed(string.valueOf());
                         
                                     {
                                     
-    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getColorRangeInterface()!.setMaxRed(string.valueOf());
     
@@ -210,7 +214,7 @@ this.getColorRangeInterface()!.setMaxRed(string.valueOf());
                         
                                     {
                                     
-    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getColorRangeInterface()!.setMinGreen(string.valueOf());
     
@@ -222,7 +226,7 @@ this.getColorRangeInterface()!.setMinGreen(string.valueOf());
                         
                                     {
                                     
-    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getColorRangeInterface()!.setMaxGreen(string.valueOf());
     
@@ -234,7 +238,7 @@ this.getColorRangeInterface()!.setMaxGreen(string.valueOf());
                         
                                     {
                                     
-    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getColorRangeInterface()!.setMinBlue(string.valueOf());
     
@@ -246,7 +250,7 @@ this.getColorRangeInterface()!.setMinBlue(string.valueOf());
                         
                                     {
                                     
-    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getColorRangeInterface()!.setMaxBlue(string.valueOf());
     
@@ -315,7 +319,7 @@ this.colorAtActionScriptConditionJPanel!.getColorAtActionJDialog()!.setVisible(t
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(ColorAtActionScriptConditionData.LOCATION_X, Integer.toString(this.getPoint()!.x));
     
@@ -348,7 +352,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = super.toXmlNode(document)!;;
+    let node: Node = super.toXmlNode(document)!;;
     
 node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionScriptConditionData.NAME, this.toHashMap()));
     
@@ -365,22 +369,22 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionSc
             
     public shouldProcess(frame: number): boolean{
 
-    var capturedBufferedImageCacheable: BufferedImageFrameCacheable = (getInstance as AutomaticCacheInterface).get((frame).toLong()) as BufferedImageFrameCacheable;;
+    let capturedBufferedImageCacheable: BufferedImageFrameCacheable = (getInstance as AutomaticCacheInterface).get(Number(frame)) as BufferedImageFrameCacheable;;
     
 
-    var bufferedImage: BufferedImage = capturedBufferedImageCacheable!.getBufferedImage()!;;
+    let bufferedImage: BufferedImage = capturedBufferedImageCacheable!.getBufferedImage()!;;
     
 
-    var automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;;
+    let automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;;
     
 
-    var colorInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(this.getPoint()!.x, this.getPoint()!.y))!;;
+    let colorInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(this.getPoint()!.x, this.getPoint()!.y))!;;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;;
+    let colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;;
     
 
-    var color: Color = colorCacheable!.getColor()!;;
+    let color: Color = colorCacheable!.getColor()!;;
     
 
                         if(this.colorRangeInterface!.isInRange(color))
@@ -406,7 +410,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionSc
 
     public log(){
 
-    var message: string = new StringMaker().append("getPoint(): ")!.append(this.getPoint()!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.append(this.getColorRangeInterface()!.toString())!.toString()!;;
+    let message: string = new StringMaker().append("getPoint(): ")!.append(this.getPoint()!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.append(this.getColorRangeInterface()!.toString())!.toString()!;;
     
 this.logUtil!.putF(message, this, "log");
     
@@ -430,6 +434,4 @@ this.colorRangeInterface= colorRangeInterface;
 
 
 }
-
-
 

@@ -46,13 +46,11 @@ import { BasicDataTableInterface } from '../../../../../../../../../org/allbinar
 export interface TransactionResultEntityInterface extends BasicDataTableInterface {
         
 
-    getTransactionResultInterface(orderNumber: string): TransactionResultInterface
+    getTransactionResultInterface(orderNumber: string): TransactionResultInterface;
 
-    remove(userName: string, orderNumber: string)
+    remove(userName: string, orderNumber: string): void;
 
-    add(userName: string, orderNumber: string, resultInterface: TransactionResultInterface)
+    add(userName: string, orderNumber: string, resultInterface: TransactionResultInterface): void;
 
 }
-
-
 

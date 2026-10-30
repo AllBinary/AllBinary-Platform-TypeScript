@@ -30,6 +30,7 @@ import { FileUploadData } from '../../../../org/allbinary/logic/communication/ht
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbIOSystem } from '../../../../org/allbinary/logic/io/AbIOSystem.js';
 //not GWT import const AbIOSystem
@@ -45,12 +46,15 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -86,29 +90,28 @@ public constructor (){
 
     public delete(prePath: string, current: number, total: number): boolean{
 
-        try {
-            
+ try { 
                         if(AbIOSystem.getInstance()!.isType("com.vobject.appengine.java.io"))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
 stringBuffer!.append(prePath);
     
 
-    var path: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let path: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var file: AbFile = AbFile.createAbFileFromAbPath(path)!;;
+    let file: AbFile = AbFile.createAbFileFromAbPath(path)!;;
     
 
-    var fileBasicArrayList: BasicArrayList = Directory.getInstance()!.search(file, true)!;;
+    let fileBasicArrayList: BasicArrayList = Directory.getInstance()!.search(file, true)!;;
     
 
-    var size: number = fileBasicArrayList!.size()!;;
+    let size: number = fileBasicArrayList!.size()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -121,13 +124,13 @@ stringBuffer!.append(" BasicArrayList: ");
 stringBuffer!.appendint(size);
     
 
-    var portion: number = globalThis.Math.trunc(size /total) +1;;
+    let portion: number = globalThis.Math.trunc(size /total) +1;;
     
 
-    var start: number = portion *current;;
+    let start: number = portion *current;;
     
 
-    var end: number = start +portion;;
+    let end: number = start +portion;;
     
 
                         if(end > size)
@@ -149,20 +152,19 @@ stringBuffer!.appendint(end);
 this.logUtil!.putF(stringBuffer!.toString(), this, "initialize()");
     
 
-    var nextFile: AbFile;;
+    let nextFile: AbFile;;
     
 
 
 
 
                         for (
-    var index: number = start;index < end; index++)
+    let index: number = start;index < end; index++)
         {
 nextFile= fileBasicArrayList!.get(index) as AbFile;
     
 
-        try {
-            
+ try { 
                         if(nextFile!.getPath()!.indexOf(FileUploadData.getInstance()!.FILE) < 0)
                         
                                     {
@@ -171,12 +173,15 @@ nextFile= fileBasicArrayList!.get(index) as AbFile;
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-}
-
+ }
+   }
+ 
 }
 
 this.logUtil!.putF("Deleted Files From Cloud", this, "initialize()");
@@ -190,10 +195,11 @@ this.logUtil!.putF("Deleted Files From Cloud", this, "initialize()");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Unable to copy installer files into cloud", this, "initialize()", e);
     
 
@@ -202,12 +208,12 @@ this.logUtil!.put("Unable to copy installer files into cloud", this, "initialize
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

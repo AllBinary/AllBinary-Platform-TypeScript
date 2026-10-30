@@ -27,6 +27,7 @@ import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerG
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 //not GWT import const EventListenerInterface
@@ -39,9 +40,11 @@ import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -127,48 +130,52 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;--index >= 0; )
+    let index: number = this.list.size()!;--index >= 0; )
         {
 
-        try {
-            
-    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;;
+ try { 
+    let playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;;
     
 playerGameInput!.onDownKey(eventObject);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
+
+ }
+   }
+ 
 }
 
-}
 
-
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var eventListenerInterface: EventListenerInterface;;
+    let eventListenerInterface: EventListenerInterface;;
     
 
         while(index < this.eventListenerInterfaceList!.size())
         {
 
-        try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface;
+ try { eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface;
     
 this.processI(eventObject, eventListenerInterface);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 index++;
     
 }
@@ -180,55 +187,59 @@ index++;
             
     public fireEventForGameKeyEvent(eventObject: GameKeyEvent){
 
-    var size: number = this.list.size()!;;
+    let size: number = this.list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = size;--index >= 0; )
+    let index: number = size;--index >= 0; )
         {
 
-        try {
-            
-    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;;
+ try { 
+    let playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;;
     
 playerGameInput!.onDownKeyEvent(eventObject);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
+
+ }
+   }
+ 
 }
 
-}
 
-
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var eventListenerInterface: EventListenerInterface;;
+    let eventListenerInterface: EventListenerInterface;;
     
 
         while(index < this.eventListenerInterfaceList!.size())
         {
 
-        try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface;
+ try { eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface;
     
 this.processEvent(eventObject, eventListenerInterface);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 index++;
     
 }
@@ -240,7 +251,7 @@ index++;
             
     processI(eventObject: Integer, eventListenerInterface: EventListenerInterface){
 
-    var downKeyEventListenerInterface: DownKeyEventListenerInterface = eventListenerInterface as DownKeyEventListenerInterface;;
+    let downKeyEventListenerInterface: DownKeyEventListenerInterface = eventListenerInterface as DownKeyEventListenerInterface;;
     
 downKeyEventListenerInterface!.onDownKey(eventObject);
     
@@ -251,7 +262,7 @@ downKeyEventListenerInterface!.onDownKey(eventObject);
             
     processEvent(eventObject: GameKeyEvent, eventListenerInterface: EventListenerInterface){
 
-    var downKeyEventListenerInterface: DownKeyEventListenerInterface = eventListenerInterface as DownKeyEventListenerInterface;;
+    let downKeyEventListenerInterface: DownKeyEventListenerInterface = eventListenerInterface as DownKeyEventListenerInterface;;
     
 downKeyEventListenerInterface!.onDownKeyEvent(eventObject);
     
@@ -260,7 +271,7 @@ downKeyEventListenerInterface!.onDownKeyEvent(eventObject);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toString());
     
@@ -269,31 +280,33 @@ stringBuffer!.append(DownKeyEventHandlerBase.TOTAL_LISTENERS);
 stringBuffer!.appendint(this.list.size());
     
 
-    var eventListenerInterface: EventListenerInterface;;
+    let eventListenerInterface: EventListenerInterface;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.list.size(); index++)
+    let index: number = 0;index < this.list.size(); index++)
         {
 
-        try {
-            eventListenerInterface= this.list.get(index) as EventListenerInterface;
+ try { eventListenerInterface= this.list.get(index) as EventListenerInterface;
     
 stringBuffer!.append(DownKeyEventHandlerBase.LISTENER_LABEL);
     
 stringBuffer!.append(eventListenerInterface!.toString());
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.TOSTRING, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -306,6 +319,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.TOSTR
 
 
 }
-
-
 

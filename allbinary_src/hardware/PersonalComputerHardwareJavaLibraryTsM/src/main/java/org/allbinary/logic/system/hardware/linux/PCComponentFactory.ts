@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
@@ -63,6 +64,7 @@ import { Video } from '../../../../../../org/allbinary/logic/system/hardware/com
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -89,8 +91,15 @@ export class PCComponentFactory
         
 
     private static readonly instance: PCComponentFactory = new PCComponentFactory();
-
-    public static getInstance(): PCComponentFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): PCComponentFactory{
 
 
 
@@ -110,10 +119,9 @@ private constructor (){
         }
 
 
-    public getInstance(component: string, componentData: string): HardwareComponentInterface{
+    public getInstance$overload2(component: string, componentData: string): HardwareComponentInterface{
 
-        try {
-            
+ try { 
                         if(component != 
                                     null
                                 )
@@ -232,12 +240,13 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Unknown(componentData) as HardwareComponentInterface;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
@@ -254,8 +263,10 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Unknown(commonStrings!.EXCEPTION);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -374,6 +385,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -56,5 +56,3 @@ public constructor (textFieldItem: ABTextFieldItem, min: number, max: number, al
 
 }
 
-
-

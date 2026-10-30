@@ -60,12 +60,15 @@ import { GenericProfileActionData } from '../../../../../../../../org/allbinary/
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -134,25 +137,25 @@ this.hashMap= StdUtil.getInstance()!.createHashMap();
                         
                                     {
                                     
-    var bytes: number[] = new Array(100000);;
+    let bytes: number[] = new Array(100000);;
     
 
-    var idFile: FileInputStream = new FileInputStream(fileName);;
+    let idFile: FileInputStream = new FileInputStream(fileName);;
     
 
-    var length: number = idFile!.read(bytes)!;;
+    let length: number = idFile!.read(bytes)!;;
     
 
-    var data: string = String.fromCharCode(...bytes);;
+    let data: string = String.fromCharCode(...bytes);;
     
 
-    var endIndex: number = data.lastIndexOf('>')!;;
+    let endIndex: number = data.lastIndexOf('>')!;;
     
 
-    var document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;;
+    let document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;;
     
 
-    var nodeList: NodeList = document.getElementsByTagName(GenericProfilesData.NAME)!;;
+    let nodeList: NodeList = document.getElementsByTagName(GenericProfilesData.NAME)!;;
     
 this.logUtil!.putF("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Contructor");
     
@@ -196,24 +199,24 @@ this.getDefaultListModelHelper()!.initDefaultModelList();
             
     initProfiles(node: Node){
 
-    var nodeList: NodeList = node.getChildNodes()!;;
+    let nodeList: NodeList = node.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var profileNameNode: Node = nodeList!.item(index)!;;
+    let profileNameNode: Node = nodeList!.item(index)!;;
     
 
                         if(profileNameNode!.getNodeName()!.compareTo(GenericProfileData.NAME) == 0)
                         
                                     {
                                     
-    var genericProfile: GenericProfile = new GenericProfile(profileNameNode);;
+    let genericProfile: GenericProfile = new GenericProfile(profileNameNode);;
     
 this.hashMap!.put(genericProfile!.getName(), genericProfile);
     
@@ -241,7 +244,7 @@ this.getDefaultListModelHelper()!.add(genericProfile!.getName());
             
     public get(name: string): GenericProfile{
 
-    var genericProfile: GenericProfile = this.hashMap!.get(name) as GenericProfile;;
+    let genericProfile: GenericProfile = this.hashMap!.get(name) as GenericProfile;;
     
 
                         if(genericProfile == 
@@ -250,7 +253,7 @@ this.getDefaultListModelHelper()!.add(genericProfile!.getName());
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF("No Generic Profile Named: " +name +" availability was: " +this.hashMap, this, commonStrings!.GET);
     
@@ -298,16 +301,16 @@ this.save();
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(GenericProfilesData.NAME)!;;
+    let node: Node = document.createElement(GenericProfilesData.NAME)!;;
     
 
-    var set: Set = this.hashMap!.keys()!;;
+    let set: Set = this.hashMap!.keys()!;;
     
 
-    var nameArray: any[] = set.toArray()!;;
+    let nameArray: any[] = set.toArray()!;;
     
 
-    var size: number = nameArray!.length
+    let size: number = nameArray!.length
                 ;;
     
 
@@ -315,10 +318,10 @@ this.save();
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var genericProfile: GenericProfile = this.hashMap!.get(nameArray[index]! as string) as GenericProfile;;
+    let genericProfile: GenericProfile = this.hashMap!.get(nameArray[index]! as string) as GenericProfile;;
     
 node.appendChild(genericProfile!.toXmlNode(document));
     
@@ -337,10 +340,10 @@ node.appendChild(genericProfile!.toXmlNode(document));
             
     public toXmlDoc(): Document{
 
-    var document: Document = DomDocumentHelper.create()!;;
+    let document: Document = DomDocumentHelper.create()!;;
     
 
-    var node: Node = this.toXmlNode(document)!;;
+    let node: Node = this.toXmlNode(document)!;;
     
 document.appendChild(node);
     
@@ -357,13 +360,13 @@ document.appendChild(node);
             
     public save(){
 
-    var idFile: FileOutputStream = new FileOutputStream(this.fileName);;
+    let idFile: FileOutputStream = new FileOutputStream(this.fileName);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
+    let idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 
-    var documentString: string = XmlDocumentHelper.toString(this.toXmlDoc())!;;
+    let documentString: string = XmlDocumentHelper.toString(this.toXmlDoc())!;;
     
 idOutData!.writeBytes(documentString);
     
@@ -371,6 +374,4 @@ idOutData!.writeBytes(documentString);
 
 
 }
-
-
 

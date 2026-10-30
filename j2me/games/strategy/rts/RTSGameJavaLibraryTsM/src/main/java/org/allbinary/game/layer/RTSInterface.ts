@@ -40,31 +40,29 @@
 export interface RTSInterface {
         
 
-    isSelfUpgradeable(): boolean
+    isSelfUpgradeable(): boolean;
 
-    isCompleted(): boolean
+    isCompleted(): boolean;
 
-    getPercentComplete(): number
+    getPercentComplete(): number;
 
-    getLevel(): number
+    getLevel(): number;
 
-    getMaxLevel(): number
+    getMaxLevel(): number;
 
-    getCost(): number
+    getCost(): number;
 
-    downgrade()
+    downgrade(): void;
 
-    getDowngradeCost(): number
+    getDowngradeCost(): number;
 
-    isDowngradeable(): boolean
+    isDowngradeable(): boolean;
 
-    getUpgradeCost(): number
+    getUpgradeCost(): number;
 
-    isUpgradeable(): boolean
+    isUpgradeable(): boolean;
 
-    upgrade()
+    upgrade(): void;
 
 }
-
-
 

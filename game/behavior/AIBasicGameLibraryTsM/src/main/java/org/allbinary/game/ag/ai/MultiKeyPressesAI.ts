@@ -42,6 +42,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -92,13 +93,13 @@ this.update();
             
     update(){
 
-    var gameInput: GameInput = this.getGameInput()!;;
+    let gameInput: GameInput = this.getGameInput()!;;
     
 
-    var keys: Integer[] = this.keys;;
+    let keys: Integer[] = this.keys;;
     
 
-    var size: number = keys.length
+    let size: number = keys.length
                 ;;
     
 
@@ -110,10 +111,10 @@ this.update();
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var key: number = keys[index]!.intValue()!;;
+    let key: number = keys[index]!.intValue()!;;
     
 
                         if(key !=  -1)
@@ -135,10 +136,10 @@ this.update();
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var key: number = keys[index]!.intValue()!;;
+    let key: number = keys[index]!.intValue()!;;
     
 
                         if(key !=  -1)
@@ -209,6 +210,4 @@ this.update();
 
 
 }
-
-
 

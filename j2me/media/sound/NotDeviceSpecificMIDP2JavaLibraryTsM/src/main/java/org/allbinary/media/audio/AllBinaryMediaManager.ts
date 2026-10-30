@@ -42,6 +42,7 @@ import { AudioContentTypeDataFactory } from '../../../../org/allbinary/audio/Aud
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
@@ -54,9 +55,11 @@ import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -118,10 +121,10 @@ export class AllBinaryMediaManager
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;;
+    let commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INIT);
     
@@ -166,7 +169,7 @@ TsUtil.getInstance()!.gc();
                                 
                         else {
                             
-    var inputStream: InputStream = ResourceUtil.getInstance()!.getResourceAsStream(resource)!;;
+    let inputStream: InputStream = ResourceUtil.getInstance()!.getResourceAsStream(resource)!;;
     
 
 
@@ -216,6 +219,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -55,12 +55,14 @@ import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { RectangleCollisionPointUtil } from '../../../../../../org/allbinary/math/RectangleCollisionPointUtil.js';
 //not GWT import const RectangleCollisionPointUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
@@ -229,25 +231,25 @@ public constructor (canvasJPanel: CanvasJPanel){
 
     makeSelection(){
 
-    var xRect: number = this.getXRect()!;;
+    let xRect: number = this.getXRect()!;;
     
 
-    var xRect2: number = Math.abs(this.endPoint!.getX() -this.startPoint!.getX()) +xRect;;
+    let xRect2: number = Math.abs(this.endPoint!.getX() -this.startPoint!.getX()) +xRect;;
     
 
-    var yRect: number = this.getYRect()!;;
+    let yRect: number = this.getYRect()!;;
     
 
-    var yRect2: number = Math.abs(this.endPoint!.getY() -this.startPoint!.getY()) +yRect;;
+    let yRect2: number = Math.abs(this.endPoint!.getY() -this.startPoint!.getY()) +yRect;;
     
 
-    var hashMap: HashMap<any, any> = this.canvasJPanel!.getGraphicItemHashMap()!;;
+    let hashMap: HashMap<any, any> = this.canvasJPanel!.getGraphicItemHashMap()!;;
     
 
-    var graphicItemArray: any[] = hashMap!.keys().()!;;
+    let graphicItemArray: any[] = hashMap!.keys().()!;;
     
 
-    var size: number = graphicItemArray!.length
+    let size: number = graphicItemArray!.length
                 ;;
     
 
@@ -255,10 +257,10 @@ public constructor (canvasJPanel: CanvasJPanel){
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;;
+    let item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;;
     
 
                         if(item.getName() == LinesGraphicItem.getStaticName())
@@ -298,10 +300,10 @@ item.deactivate();
 
     public getXRect(): number{
 
-    var xDiff: number = this.endPoint!.getX() -this.startPoint!.getX();;
+    let xDiff: number = this.endPoint!.getX() -this.startPoint!.getX();;
     
 
-    var xRect: number = this.startPoint!.getX()!;;
+    let xRect: number = this.startPoint!.getX()!;;
     
 
                         if(xDiff < 0)
@@ -323,10 +325,10 @@ item.deactivate();
 
     public getYRect(): number{
 
-    var yDiff: number = this.endPoint!.getY() -this.startPoint!.getY();;
+    let yDiff: number = this.endPoint!.getY() -this.startPoint!.getY();;
     
 
-    var yRect: number = this.startPoint!.getY()!;;
+    let yRect: number = this.startPoint!.getY()!;;
     
 
                         if(yDiff < 0)
@@ -350,16 +352,16 @@ item.deactivate();
 g.setColor(this.rectColor);
     
 
-    var xRect: number = this.getXRect()!;;
+    let xRect: number = this.getXRect()!;;
     
 
-    var width: number = Math.abs(this.endPoint!.getX() -this.startPoint!.getX())!;;
+    let width: number = Math.abs(this.endPoint!.getX() -this.startPoint!.getX())!;;
     
 
-    var yRect: number = this.getYRect()!;;
+    let yRect: number = this.getYRect()!;;
     
 
-    var height: number = Math.abs(this.endPoint!.getY() -this.startPoint!.getY())!;;
+    let height: number = Math.abs(this.endPoint!.getY() -this.startPoint!.getY())!;;
     
 g.drawRect(xRect, yRect, width, height);
     
@@ -493,6 +495,4 @@ this.endPoint= PointFactory.getInstance()!.createXY(mouseEvent!.getX(), mouseEve
 
 
 }
-
-
 

@@ -30,21 +30,27 @@ import { CountedPickedUpLayerInterfaceFactoryPool } from '../../../../org/allbin
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -100,27 +106,27 @@ this.list= new BasicArrayListD();
 
 
                         for (
-    var index: number = 0;index < partInterfaceArray!.length; index++)
+    let index: number = 0;index < partInterfaceArray!.length; index++)
         {
 this.list.add(partInterfaceArray[index]!);
     
 }
 
 
-    var countedBasicArrayList: BasicArrayList = CountedPickedUpLayerInterfaceFactoryPool.getInstance()!.getList()!;;
+    let countedBasicArrayList: BasicArrayList = CountedPickedUpLayerInterfaceFactoryPool.getInstance()!.getList()!;;
     
 
-    var layerInterfaceFactoryInterface: CountedPickedUpLayerInterfaceFactory;;
+    let layerInterfaceFactoryInterface: CountedPickedUpLayerInterfaceFactory;;
     
 
-    var size: number = countedBasicArrayList!.size()!;;
+    let size: number = countedBasicArrayList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 layerInterfaceFactoryInterface= countedBasicArrayList!.objectArray[index]! as CountedPickedUpLayerInterfaceFactory;
     
@@ -129,7 +135,7 @@ this.list.add(new CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInter
 }
 
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Total Parts: ");
     
@@ -140,15 +146,15 @@ stringBuffer!.append(" Counted: ");
 stringBuffer!.appendint(countedBasicArrayList!.size());
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
-    var newPartInterfaceArray: PartInterface[] = new Array(this.list.size());;
+    let newPartInterfaceArray: PartInterface[] = new Array(this.list.size());;
     
 
-    var newSize: number = newPartInterfaceArray!.length
+    let newSize: number = newPartInterfaceArray!.length
                 ;;
     
 
@@ -156,7 +162,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
 
 
                         for (
-    var index: number = 0;index < newSize; index++)
+    let index: number = 0;index < newSize; index++)
         {
 newPartInterfaceArray[index]= this.list.get(index) as PartInterface;
     
@@ -172,6 +178,4 @@ newPartInterfaceArray[index]= this.list.get(index) as PartInterface;
 
 
 }
-
-
 

@@ -52,9 +52,7 @@ export interface PaymentProcessorInterfaceFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(transformInfoInterface: TransformInfoInterface, paymentTransactionInterface: PaymentTransactionInterface): PaymentProcessorInterface
+    getInstance(transformInfoInterface: TransformInfoInterface, paymentTransactionInterface: PaymentTransactionInterface): PaymentProcessorInterface;
 
 }
-
-
 

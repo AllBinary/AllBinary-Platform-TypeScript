@@ -28,6 +28,7 @@ import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js'
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 //not GWT import const PrimitiveIntUtil
@@ -37,6 +38,7 @@ import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -149,28 +151,27 @@ this.circularIndexUtil!.previous();
 this.basicSetColorUtil!.setBasicColorP(graphics, this.basicColor);
     
 
-        try {
-            
-    var nextPointX: number = 0;;
+ try { 
+    let nextPointX: number = 0;;
     
 
-    var nextPointY: number = 0;;
+    let nextPointY: number = 0;;
     
 
-    var nextPoint: number[];;
+    let nextPoint: number[];;
     
 
-    var point: number[];;
+    let point: number[];;
     
 
-    var currentPointsFrame: number[][] = this.currentPoints[this.circularIndexUtil!.getIndex()]!;;
+    let currentPointsFrame: number[][] = this.currentPoints[this.circularIndexUtil!.getIndex()]!;;
     
 
-    var size: number = currentPointsFrame!.length
+    let size: number = currentPointsFrame!.length
                 ;;
     
 
-    var index: number = size -2;;
+    let index: number = size -2;;
     
 
         while(--index >= 0)
@@ -200,14 +201,17 @@ nextPointY= nextPoint[1]!;
                             
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "paintVectors", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -230,6 +234,4 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(this.currentPoints!.len
 
 
 }
-
-
 

@@ -27,12 +27,15 @@ import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapp
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -87,16 +90,15 @@ export class PlatformFormInputMappingFactory
 
     public getOrCreate(): InputToGameKeyMapping{
 
-        try {
-            
+ try { 
                         if(this.inputToGameKeyMapping == InputToGameKeyMapping.getNullInstance())
                         
                                     {
                                     
-    var inputToGameKeyMapping: InputToGameKeyMapping = new InputToGameKeyMapping();;
+    let inputToGameKeyMapping: InputToGameKeyMapping = new InputToGameKeyMapping();;
     
 
-    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;;
+    let gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.UP, gameKeyFactory!.UP);
     
@@ -113,17 +115,20 @@ this.inputToGameKeyMapping= inputToGameKeyMapping;
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -134,6 +139,4 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
 
 }
-
-
 

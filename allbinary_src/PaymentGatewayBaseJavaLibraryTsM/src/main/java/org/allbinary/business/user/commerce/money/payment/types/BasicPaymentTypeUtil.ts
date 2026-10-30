@@ -24,12 +24,15 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 
 
@@ -95,17 +98,17 @@ this.paymentTypeVector!.add(paymentType);
             
     public get(paymentTypeString: string): BasicPaymentType{
 
-    var size: number = this.paymentTypeVector!.size()!;;
+    let size: number = this.paymentTypeVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i) as BasicPaymentType;;
+    let paymentType: BasicPaymentType = this.paymentTypeVector!.get(i) as BasicPaymentType;;
     
 
                         if(paymentType!.getName()!.compareTo(paymentTypeString) == 0)
@@ -142,20 +145,20 @@ this.paymentTypeVector!.add(paymentType);
 
     public difference(a_PaymentTypeVector: BasicArrayList): BasicArrayList{
 
-    var diff: BasicArrayList = new BasicArrayListD();;
+    let diff: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = this.paymentTypeVector!.size()!;;
+    let size: number = this.paymentTypeVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i) as BasicPaymentType;;
+    let paymentType: BasicPaymentType = this.paymentTypeVector!.get(i) as BasicPaymentType;;
     
 
                         if(!a_PaymentTypeVector!.contains(paymentType))
@@ -172,6 +175,4 @@ this.paymentTypeVector!.add(paymentType);
 
 
 }
-
-
 

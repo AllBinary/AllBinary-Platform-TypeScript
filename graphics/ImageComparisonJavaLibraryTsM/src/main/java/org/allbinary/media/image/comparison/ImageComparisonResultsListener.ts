@@ -45,9 +45,7 @@ import { BasicEventListenerInterface } from '../../../../../org/allbinary/logic/
 export interface ImageComparisonResultsListener extends BasicEventListenerInterface {
         
 
-    onImageComparisonResultsEvent(imageComparisonResultsEvent: ImageComparisonResultsEvent)
+    onImageComparisonResultsEvent(imageComparisonResultsEvent: ImageComparisonResultsEvent): void;
 
 }
-
-
 

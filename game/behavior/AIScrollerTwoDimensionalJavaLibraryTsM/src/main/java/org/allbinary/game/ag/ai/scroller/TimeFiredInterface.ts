@@ -40,9 +40,7 @@
 export interface TimeFiredInterface {
         
 
-    getLastFireTime(): number
+    getLastFireTime(): number;
 
 }
-
-
 

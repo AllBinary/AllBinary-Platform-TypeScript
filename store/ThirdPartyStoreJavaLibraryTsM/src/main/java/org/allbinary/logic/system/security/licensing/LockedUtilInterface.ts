@@ -42,11 +42,9 @@
 export interface LockedUtilInterface {
         
 
-    isLocked(): boolean
+    isLocked(): boolean;
 
-    isLockedFeature(lockableFeatrue: LockableFeature): boolean
+    isLockedFeature(lockableFeatrue: LockableFeature): boolean;
 
 }
-
-
 

@@ -25,9 +25,11 @@
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { PlayN } 
 const PlayN = globalThis.playn.core.PlayN;
+type PlayN<T = any, U = any> = typeof PlayN extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PlayN;
 
 
 
@@ -100,25 +102,25 @@ private constructor (){
                                     }
                                 
 
-    var specialMessage: string = log.getSpecialMessage()!;;
+    let specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;;
+    let anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;;
+    let functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;;
+    let exception: any = log.getThrowable()!;;
     
 this.put(specialMessage, anyType, functionName, exception);
     
 }
 
 
-    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any, functionName: string){
 
-    var className: string = PreLogUtil.getClassName(anyType)!;;
+    let className: string = PreLogUtil.getClassName(anyType)!;;
     
 
                         if(className == 
@@ -132,10 +134,10 @@ this.put(specialMessage, anyType, functionName, exception);
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
+    let message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 
-    var playN: PlayN = PlayN.getInstance()!;;
+    let playN: PlayN = PlayN.getInstance()!;;
     
 playN!.log()!.debug(this.LOG_SUCCESS +message);
     
@@ -144,19 +146,19 @@ playN!.log()!.debug(this.LOG_SUCCESS +message);
 
     /*actual*/ public putFS(specialMessage: string, className: string, functionName: string){
 
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
+    let message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 
-    var playN: PlayN = PlayN.getInstance()!;;
+    let playN: PlayN = PlayN.getInstance()!;;
     
 playN!.log()!.debug(this.LOG_SUCCESS +message);
     
 }
 
 
-    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public put(specialMessage: string, anyType: any, functionName: string, exception: any){
 
-    var className: string = PreLogUtil.getClassName(anyType)!;;
+    let className: string = PreLogUtil.getClassName(anyType)!;;
     
 
                         if(className == 
@@ -170,10 +172,10 @@ playN!.log()!.debug(this.LOG_SUCCESS +message);
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
     
 
-    var playN: PlayN = PlayN.getInstance()!;;
+    let playN: PlayN = PlayN.getInstance()!;;
     
 
                         if(exception != 
@@ -196,6 +198,4 @@ playN!.log()!.debug(this.LOG_SUCCESS +message);
 
 
 }
-
-
 

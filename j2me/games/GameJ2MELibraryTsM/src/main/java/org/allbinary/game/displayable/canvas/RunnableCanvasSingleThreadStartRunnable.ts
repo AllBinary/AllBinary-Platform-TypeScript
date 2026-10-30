@@ -25,9 +25,11 @@ import { RunnableCanvas } from '../../../../../org/allbinary/canvas/RunnableCanv
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -67,20 +69,22 @@ public constructor (demoCanvas: RunnableCanvas){
 
     public run(){
 
-        try {
-            this.runnableCanvas!.run();
+ try { this.runnableCanvas!.run();
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -93,6 +97,4 @@ this.runnableCanvas!.processLoopSleep();
 
 
 }
-
-
 

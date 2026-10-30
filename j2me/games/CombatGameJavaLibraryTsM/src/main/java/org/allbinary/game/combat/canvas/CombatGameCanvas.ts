@@ -122,10 +122,10 @@ DestroyedLayerProcessor.init();
 ProgressCanvasFactory.getInstance()!.addNormalPortion(portion, "Basic Processors");
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
+    let gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
     
 
                         if(features.isFeature(gameFeatureFactory!.DROPPED_ITEMS) && features.isFeature(gameFeatureFactory!.DROPPED_ITEMS_FROM_DEATH))
@@ -161,7 +161,7 @@ super.processPlayingGame();
 
 
                         for (
-    var index: number = CombatGameCanvas.basicLayerProcessor!.length
+    let index: number = CombatGameCanvas.basicLayerProcessor!.length
                 ;--index >= 0; )
         {
 CombatGameCanvas.basicLayerProcessor[index]!.process(this.gameLayerManager);
@@ -181,7 +181,7 @@ super.cleanupGame();
 
 
                         for (
-    var index: number = CombatGameCanvas.basicLayerProcessor!.length
+    let index: number = CombatGameCanvas.basicLayerProcessor!.length
                 ;--index >= 0; )
         {
 CombatGameCanvas.basicLayerProcessor[index]!.getList()!.clear();
@@ -208,6 +208,4 @@ this.gameLayerManager!.cleanup();
 
 
 }
-
-
 

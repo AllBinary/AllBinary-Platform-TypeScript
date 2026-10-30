@@ -51,6 +51,7 @@ import { GameFeatureImageCacheFactory } from '../../../../../org/allbinary/image
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
@@ -117,10 +118,10 @@ protected constructor (resources: BasicGameResources[]){
             
     createFlagItem(flagResources: FlagGameResources, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): ABCustomItem{
 
-    var name: string = flagResources!.NAME;;
+    let name: string = flagResources!.NAME;;
     
 
-    var index: number = name.indexOf(this.commonSeps!.SPACE)!;;
+    let index: number = name.indexOf(this.commonSeps!.SPACE)!;;
     
 
                         if(index >= 0)
@@ -144,13 +145,13 @@ protected constructor (resources: BasicGameResources[]){
             
     createNamedFlagItem(flagResources: FlagGameResources, name: string, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): ABCustomItem{
 
-    var IMAGE_CACHE: ImageCache = GameFeatureImageCacheFactory.getInstance()!;;
+    let IMAGE_CACHE: ImageCache = GameFeatureImageCacheFactory.getInstance()!;;
     
 
-    var image: Image = IMAGE_CACHE.getWithKey(flagResources!.RESOURCE_ICON)!;;
+    let image: Image = IMAGE_CACHE.getWithKey(flagResources!.RESOURCE_ICON)!;;
     
 
-    var item: ABCustomItem = new LayerInterfaceFactoryImageItem(name, image, ImageItem.LAYOUT_DEFAULT, flagResources!.NAME, this.basicColor, 
+    let item: ABCustomItem = new LayerInterfaceFactoryImageItem(name, image, ImageItem.LAYOUT_DEFAULT, flagResources!.NAME, this.basicColor, 
                                                 [
                                                     new RTSLayerTextAnimation(RTSGameStrings.getInstance()!.DRAGGABLE, image)
                                                 ], layerInterfaceFactoryInterface);;
@@ -192,7 +193,7 @@ protected constructor (resources: BasicGameResources[]){
 
 
                         for (
-    var index: number = this.resources.length -1;index >= 0; index--)
+    let index: number = this.resources.length -1;index >= 0; index--)
         {
 
                         if(this.resources[index] == basicGameResources)
@@ -219,6 +220,4 @@ protected constructor (resources: BasicGameResources[]){
 
 
 }
-
-
 

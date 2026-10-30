@@ -24,6 +24,7 @@
         
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
@@ -33,6 +34,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -124,7 +126,7 @@ this.timeDelayHelper= timeDelayHelper;
 
     public toHashtable(): ABHashtable<any, any>{
 
-    var hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    let hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 hashtable.put(InputProbability.INPUT_PROBABILITY, this);
     
@@ -138,6 +140,4 @@ hashtable.put(InputProbability.INPUT_PROBABILITY, this);
 
 
 }
-
-
 

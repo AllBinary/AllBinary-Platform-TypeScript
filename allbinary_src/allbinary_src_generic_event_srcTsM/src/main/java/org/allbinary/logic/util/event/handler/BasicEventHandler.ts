@@ -24,12 +24,15 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -42,12 +45,15 @@ import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/E
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -91,43 +97,45 @@ public constructor (){
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var LISTENER: string = " Listener: ";;
+    let LISTENER: string = " Listener: ";;
     
 stringBuffer!.append("Total Listeners: ");
     
 stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
     
 
-    var eventListenerInterface: EventListenerInterface;;
+    let eventListenerInterface: EventListenerInterface;;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(index < this.eventListenerInterfaceList!.size())
         {
 
-        try {
-            eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
+ try { eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
     
 stringBuffer!.append(LISTENER);
     
 stringBuffer!.append(StringUtil.getInstance()!.toString(eventListenerInterface));
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
     
-}
 
+ }
+   }
+ 
 index++;
     
 }
@@ -193,31 +201,33 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
 
     public fireEvent(eventObject: AllBinaryEventObject){
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var eventListenerInterface: EventListenerInterface;;
+    let eventListenerInterface: EventListenerInterface;;
     
 
         while(index < this.eventListenerInterfaceList!.size())
         {
 
-        try {
-            eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
+ try { eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
     
 this.process(eventObject, eventListenerInterface);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 index++;
     
 }
@@ -244,6 +254,4 @@ eventListenerInterface!.onEvent(eventObject);
 
 
 }
-
-
 

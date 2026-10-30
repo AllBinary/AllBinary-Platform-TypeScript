@@ -24,6 +24,7 @@
         
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Replace } from '../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 //not GWT import const Replace
@@ -72,7 +73,7 @@ documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTS
 documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTENDSTART, DocumentToNode.XMLEND);
     
 
-    var replaceXmlRoot: Replace = new Replace(XMLROOT, StringUtil.getInstance()!.EMPTY_STRING);;
+    let replaceXmlRoot: Replace = new Replace(XMLROOT, StringUtil.getInstance()!.EMPTY_STRING);;
     
 
 
@@ -95,7 +96,7 @@ documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTE
 
     public static remove(documentString: string, start: string, end: string): string{
 
-    var startIndex: number= 0;;
+    let startIndex: number= 0;;
     
 
         while((startIndex= documentString!.indexOf(start)) !=  -1)
@@ -105,17 +106,17 @@ documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTE
                         
                                     {
                                     
-    var endIndex: number = documentString!.indexOf(end, startIndex)!;;
+    let endIndex: number = documentString!.indexOf(end, startIndex)!;;
     
 
                         if(endIndex >= 0)
                         
                                     {
                                     
-    var startString: string = documentString!.substring(0, startIndex)!;;
+    let startString: string = documentString!.substring(0, startIndex)!;;
     
 
-    var resultString: string = documentString!.substring(endIndex +1)!;;
+    let resultString: string = documentString!.substring(endIndex +1)!;;
     
 
 
@@ -147,6 +148,4 @@ private constructor (){
 
 
 }
-
-
 

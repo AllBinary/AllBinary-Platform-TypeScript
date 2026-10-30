@@ -31,9 +31,11 @@ import { Set } from '../../../../../../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
@@ -46,6 +48,7 @@ import { HistoryDbInitInfo } from '../../../../../../../../org/allbinary/busines
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { UserData } from '../../../../../../../../org/allbinary/business/user/UserData.js';
 //not GWT import const UserData
@@ -94,15 +97,18 @@ import { InventoryEntityFactory } from '../../../../../../../../org/allbinary/da
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -147,30 +153,29 @@ this.setTableName(this.tableName);
 
     public insert(userName: string, order: OrderInterface){
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 
-        try {
-            
-    var basket: BasketInterface = order.getBasket()!;;
+ try { 
+    let basket: BasketInterface = order.getBasket()!;;
     
 
-    var items: Set = basket.getIds()!;;
+    let items: Set = basket.getIds()!;;
     
 
-    var ZERO_STRING: string = TableDataFactory.getInstance()!.ZERO_STRING;;
+    let ZERO_STRING: string = TableDataFactory.getInstance()!.ZERO_STRING;;
     
 
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
-    var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
+    let inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var itemsArray: any[] = items.toArray()!;;
+    let itemsArray: any[] = items.toArray()!;;
     
 
-    var itemsSize: number = itemsArray!.length
+    let itemsSize: number = itemsArray!.length
                 ;;
     
 
@@ -178,13 +183,13 @@ this.setTableName(this.tableName);
 
 
                         for (
-    var i: number = 0;i < itemsSize; i++)
+    let i: number = 0;i < itemsSize; i++)
         {
 
-    var item: string = itemsArray[i]! as string;;
+    let item: string = itemsArray[i]! as string;;
     
 
-    var itemInterface: ItemInterface = inventoryEntity!.getItem(item)!;;
+    let itemInterface: ItemInterface = inventoryEntity!.getItem(item)!;;
     
 vector= new BasicArrayListD();
     
@@ -287,10 +292,11 @@ this.insert(vector);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -300,19 +306,20 @@ this.insert(vector);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public setStatus(orderId: string, groupId: string, status: string){
 
-        try {
-            
-    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var updateHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let updateHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(OrderData.ID, orderId);
     
@@ -322,10 +329,11 @@ updateHashMap!.put(OrderHistoryData.STATUS, status);
     
 super.updateWhere(whereHashMap, updateHashMap);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -335,29 +343,30 @@ super.updateWhere(whereHashMap, updateHashMap);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public isEverythingShipped(orderId: string): boolean{
 
-        try {
-            
-    var itemStatusVector: BasicArrayList = super.getColumnWhere(OrderHistoryData.STATUS, OrderData.ID, orderId)!;;
+ try { 
+    let itemStatusVector: BasicArrayList = super.getColumnWhere(OrderHistoryData.STATUS, OrderData.ID, orderId)!;;
     
 
-    var size: number = itemStatusVector!.size()!;;
+    let size: number = itemStatusVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var status: string = itemStatusVector!.get(index) as string;;
+    let status: string = itemStatusVector!.get(index) as string;;
     
 
                         if(status.compareTo(OrderHistoryData.SHIPPED) != 0)
@@ -380,10 +389,11 @@ super.updateWhere(whereHashMap, updateHashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -399,27 +409,28 @@ super.updateWhere(whereHashMap, updateHashMap);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getBasketReview(orderId: string): BasketReview{
 
-        try {
-            
-    var basketReview: BasketReview = new BasketReview();;
+ try { 
+    let basketReview: BasketReview = new BasketReview();;
     
 
-    var keyValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keyValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keyValues!.put(OrderData.ID, orderId);
     
 
-    var items: BasicArrayList = super.getRows(keyValues)!;;
+    let items: BasicArrayList = super.getRows(keyValues)!;;
     
 
-    var entryData: EntryData = EntryData.getInstance()!;;
+    let entryData: EntryData = EntryData.getInstance()!;;
     
 
                         if(items != 
@@ -428,13 +439,13 @@ keyValues!.put(OrderData.ID, orderId);
                         
                                     {
                                     
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
-    var itemsArray: any[] = items.toArray()!;;
+    let itemsArray: any[] = items.toArray()!;;
     
 
-    var itemsSize: number = itemsArray!.length
+    let itemsSize: number = itemsArray!.length
                 ;;
     
 
@@ -442,10 +453,10 @@ keyValues!.put(OrderData.ID, orderId);
 
 
                         for (
-    var i: number = 0;i < itemsSize; i++)
+    let i: number = 0;i < itemsSize; i++)
         {
 
-    var itemHashMap: HashMap<any, any> = itemsArray[i]! as HashMap<any, any>;;
+    let itemHashMap: HashMap<any, any> = itemsArray[i]! as HashMap<any, any>;;
     
 itemHashMap!.put(this.basicItemData!.INBASKETS, EMPTY_STRING);
     
@@ -464,7 +475,7 @@ itemHashMap!.put(this.basicItemData!.PERMISSIONS, EMPTY_STRING);
 itemHashMap!.put(this.basicItemData!.SPECIALS, EMPTY_STRING);
     
 
-    var item: Item = new Item(itemHashMap);;
+    let item: Item = new Item(itemHashMap);;
     
 basketReview!.addItem(item);
     
@@ -489,10 +500,11 @@ basketReview!.addItem(item);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -508,17 +520,19 @@ basketReview!.addItem(item);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public createTableStatement(): string{
 
-    var entryData: EntryData = EntryData.getInstance()!;;
+    let entryData: EntryData = EntryData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("CREATE TABLE ");
     
@@ -734,6 +748,4 @@ stringBuffer!.append(") )");
 
 
 }
-
-
 

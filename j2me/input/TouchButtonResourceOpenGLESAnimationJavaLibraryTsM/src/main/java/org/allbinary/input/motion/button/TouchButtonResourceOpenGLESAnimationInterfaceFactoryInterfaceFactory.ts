@@ -99,5 +99,3 @@ super.initImageCache(OpenGLImageCacheFactory.getInstance(), level);
 
 }
 
-
-

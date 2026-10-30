@@ -28,9 +28,11 @@ import { Set } from '../../../../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -58,18 +60,23 @@ import { XmlDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -165,16 +172,16 @@ public constructor (pageContext: PageContext){
             
     createPackageNode(document: Document, packageName: string, packagePropertiesHashMap: HashMap<any, any>): Node{
 
-    var node: Node = document.createElement(packageName)!;;
+    let node: Node = document.createElement(packageName)!;;
     
 
-    var propertyKeySet: Set = packagePropertiesHashMap!.keys()!;;
+    let propertyKeySet: Set = packagePropertiesHashMap!.keys()!;;
     
 
-    var propertyKeySetArray: any[] = propertyKeySet!.toArray()!;;
+    let propertyKeySetArray: any[] = propertyKeySet!.toArray()!;;
     
 
-    var size: number = propertyKeySetArray!.length
+    let size: number = propertyKeySetArray!.length
                 ;;
     
 
@@ -182,16 +189,16 @@ public constructor (pageContext: PageContext){
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var propertyName: string = propertyKeySetArray[index]! as string;;
+    let propertyName: string = propertyKeySetArray[index]! as string;;
     
 
-    var propertyValue: string = packagePropertiesHashMap!.get(propertyName) as string;;
+    let propertyValue: string = packagePropertiesHashMap!.get(propertyName) as string;;
     
 
-    var propertyNode: Node = ModDomHelper.createTextNode(document, propertyName, propertyValue)!;;
+    let propertyNode: Node = ModDomHelper.createTextNode(document, propertyName, propertyValue)!;;
     
 node.appendChild(propertyNode);
     
@@ -210,19 +217,19 @@ node.appendChild(propertyNode);
             
     createPackageMultiNode(document: Document, nameSpaceRequestParam: NameSpaceRequestParam, packageName: string, packagePropertiesHashMap: HashMap<any, any>): Node{
 
-    var beginIndex: number = packageName!.indexOf('[')!;;
+    let beginIndex: number = packageName!.indexOf('[')!;;
     
 
-    var indexValue: string = packageName!.substring(beginIndex +1, packageName!.length -1)!;;
+    let indexValue: string = packageName!.substring(beginIndex +1, packageName!.length -1)!;;
     
 
-    var multiElementPackage: string = packageName!.substring(0, beginIndex)!;;
+    let multiElementPackage: string = packageName!.substring(0, beginIndex)!;;
     
 
-    var selectedValue: string = nameSpaceRequestParam!.getValue()!;;
+    let selectedValue: string = nameSpaceRequestParam!.getValue()!;;
     
 
-    var propertyValue: string = packagePropertiesHashMap!.get(DomData.VALUE) as string;;
+    let propertyValue: string = packagePropertiesHashMap!.get(DomData.VALUE) as string;;
     
 
                         if(propertyValue!.compareTo(NameSpaceRequestParamData.VALUE) != 0)
@@ -243,10 +250,10 @@ node.appendChild(propertyNode);
                                     }
                                 
 
-    var nextNode: Node = ModDomHelper.createNameValueNodes(document, multiElementPackage, selectedValue)!;;
+    let nextNode: Node = ModDomHelper.createNameValueNodes(document, multiElementPackage, selectedValue)!;;
     
 
-    var indexNode: Node = ModDomHelper.createTextNode(document, DomData.INDEX, indexValue)!;;
+    let indexNode: Node = ModDomHelper.createTextNode(document, DomData.INDEX, indexValue)!;;
     
 nextNode!.appendChild(indexNode);
     
@@ -263,7 +270,7 @@ nextNode!.appendChild(indexNode);
             
     getRootNode(rootElementPackage: string, packagePropertiesHashMap: HashMap<any, any>, document: Document): Node{
 
-    var rootNode: Node = DomSearchHelper.getNodeNoThrow(rootElementPackage, document.getChildNodes())!;;
+    let rootNode: Node = DomSearchHelper.getNodeNoThrow(rootElementPackage, document.getChildNodes())!;;
     
 
                         if(rootNode == 
@@ -281,7 +288,7 @@ nextNode!.appendChild(indexNode);
                                     }
                                 
 
-    var node: Node = this.createPackageNode(document, rootElementPackage, packagePropertiesHashMap)!;;
+    let node: Node = this.createPackageNode(document, rootElementPackage, packagePropertiesHashMap)!;;
     
 document.appendChild(node);
     
@@ -338,13 +345,13 @@ document.appendChild(node);
                                     }
                                 
 
-    var propertyNameSet: Set = nextPackagePropertiesHashMap!.keys()!;;
+    let propertyNameSet: Set = nextPackagePropertiesHashMap!.keys()!;;
     
 
-    var propertyNameSetArray: any[] = propertyNameSet!.toArray()!;;
+    let propertyNameSetArray: any[] = propertyNameSet!.toArray()!;;
     
 
-    var size: number = propertyNameSetArray!.length
+    let size: number = propertyNameSetArray!.length
                 ;;
     
 
@@ -352,16 +359,16 @@ document.appendChild(node);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var nextPropertyName: string = propertyNameSetArray[index]! as string;;
+    let nextPropertyName: string = propertyNameSetArray[index]! as string;;
     
 
-    var propertyValue: string = StringUtil.getInstance()!.getNonNull(nextPackagePropertiesHashMap!.get(nextPropertyName) as string)!;;
+    let propertyValue: string = StringUtil.getInstance()!.getNonNull(nextPackagePropertiesHashMap!.get(nextPropertyName) as string)!;;
     
 
-    var valueNode: Node = DomSearchHelper.getNodeNoThrow(nextPropertyName, node.getChildNodes())!;;
+    let valueNode: Node = DomSearchHelper.getNodeNoThrow(nextPropertyName, node.getChildNodes())!;;
     
 
                         if(valueNode != 
@@ -370,7 +377,7 @@ document.appendChild(node);
                         
                                     {
                                     
-    var existingElementNodeTextNodeValue: string = DomNodeHelper.getTextNodeValue(valueNode)!;;
+    let existingElementNodeTextNodeValue: string = DomNodeHelper.getTextNodeValue(valueNode)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
@@ -416,7 +423,7 @@ document.appendChild(node);
                                     }
                                 
 
-    var newPropertyNode: Node = ModDomHelper.createTextNode(document, nextPropertyName, propertyValue)!;;
+    let newPropertyNode: Node = ModDomHelper.createTextNode(document, nextPropertyName, propertyValue)!;;
     
 node.appendChild(newPropertyNode);
     
@@ -447,10 +454,10 @@ node.appendChild(newPropertyNode);
                                     }
                                 
 
-    var propertyValue: string = nextPackagePropertiesHashMap!.get(DomData.VALUE) as string;;
+    let propertyValue: string = nextPackagePropertiesHashMap!.get(DomData.VALUE) as string;;
     
 
-    var valueNode: Node = DomSearchHelper.getNodeNoThrow(DomData.VALUE, node.getChildNodes())!;;
+    let valueNode: Node = DomSearchHelper.getNodeNoThrow(DomData.VALUE, node.getChildNodes())!;;
     
 
                         if(valueNode != 
@@ -459,7 +466,7 @@ node.appendChild(newPropertyNode);
                         
                                     {
                                     
-    var existingElementNodeTextNodeValue: string = DomNodeHelper.getTextNodeValue(valueNode)!;;
+    let existingElementNodeTextNodeValue: string = DomNodeHelper.getTextNodeValue(valueNode)!;;
     
 
                         if(propertyValue!.compareTo(existingElementNodeTextNodeValue) == 0)
@@ -518,17 +525,17 @@ node.appendChild(newPropertyNode);
                                     }
                                 
 
-    var size: number = elementNodeVector!.size()!;;
+    let size: number = elementNodeVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var existingElementNode: Node = elementNodeVector!.get(index) as Node;;
+    let existingElementNode: Node = elementNodeVector!.get(index) as Node;;
     
 
                         if(this.isElementValueTextNodeEqual(nextPackagePropertiesHashMap, existingElementNode))
@@ -558,23 +565,23 @@ node.appendChild(newPropertyNode);
             
     addChildren(document: Document, rootNode: Node, nameSpaceRequestParam: NameSpaceRequestParam): Document{
 
-    var node: Node = rootNode;;
+    let node: Node = rootNode;;
     
 
-    var packageVector: BasicArrayList = nameSpaceRequestParam!.getPackages()!;;
+    let packageVector: BasicArrayList = nameSpaceRequestParam!.getPackages()!;;
     
 
-    var size: number = packageVector!.size()!;;
+    let size: number = packageVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 1;index < size; index++)
+    let index: number = 1;index < size; index++)
         {
 
-    var nextPackageName: string = packageVector!.get(index) as string;;
+    let nextPackageName: string = packageVector!.get(index) as string;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
@@ -586,10 +593,10 @@ node.appendChild(newPropertyNode);
                                     }
                                 
 
-    var nextPackagePropertiesHashMap: HashMap<any, any> = nameSpaceRequestParam!.getPackageProperties(index)!;;
+    let nextPackagePropertiesHashMap: HashMap<any, any> = nameSpaceRequestParam!.getPackageProperties(index)!;;
     
 
-    var elementNodeVector: BasicArrayList = DomSearchHelper.getAllNodesNoThrow(nextPackageName, node.getChildNodes())!;;
+    let elementNodeVector: BasicArrayList = DomSearchHelper.getAllNodesNoThrow(nextPackageName, node.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
@@ -601,14 +608,14 @@ node.appendChild(newPropertyNode);
                                     }
                                 
 
-    var isElementValueTextNodeUniqueIndex: number = this.isElementValueTextNodeUnique(nextPackagePropertiesHashMap, elementNodeVector)!;;
+    let isElementValueTextNodeUniqueIndex: number = this.isElementValueTextNodeUnique(nextPackagePropertiesHashMap, elementNodeVector)!;;
     
 
                         if((elementNodeVector!.size() == 0 || isElementValueTextNodeUniqueIndex ==  -1) && !nextPackageName!.endsWith(CommonSeps.getInstance()!.BRACKET_CLOSE))
                         
                                     {
                                     
-    var nextNode: Node = this.createPackageNode(document, nextPackageName, nextPackagePropertiesHashMap)!;;
+    let nextNode: Node = this.createPackageNode(document, nextPackageName, nextPackagePropertiesHashMap)!;;
     
 node.appendChild(nextNode);
     
@@ -642,7 +649,7 @@ this.logUtil!.putF("\nAppended Document Created: " +XmlDocumentHelper.toString(d
                                     }
                                 
 
-    var nextNode: Node = this.createPackageMultiNode(document, nameSpaceRequestParam, nextPackageName, nextPackagePropertiesHashMap)!;;
+    let nextNode: Node = this.createPackageMultiNode(document, nameSpaceRequestParam, nextPackageName, nextPackagePropertiesHashMap)!;;
     
 node.appendChild(nextNode);
     
@@ -671,7 +678,7 @@ node= nextNode;
                                     }
                                 
 
-    var nodeNameDuplicateNode: Node = elementNodeVector!.get(isElementValueTextNodeUniqueIndex) as Node;;
+    let nodeNameDuplicateNode: Node = elementNodeVector!.get(isElementValueTextNodeUniqueIndex) as Node;;
     
 node= this.addNewProperties(document, nodeNameDuplicateNode, nextPackagePropertiesHashMap);
     
@@ -711,29 +718,29 @@ node= this.addNewProperties(document, nodeNameDuplicateNode, nextPackageProperti
                                     }
                                 
 
-    var nameSpaceRequestParam: NameSpaceRequestParam = new NameSpaceRequestParam(key, value);;
+    let nameSpaceRequestParam: NameSpaceRequestParam = new NameSpaceRequestParam(key, value);;
     
 
-    var packageVector: BasicArrayList = nameSpaceRequestParam!.getPackages()!;;
+    let packageVector: BasicArrayList = nameSpaceRequestParam!.getPackages()!;;
     
 
-    var size: number = packageVector!.size()!;;
+    let size: number = packageVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var packageName: string = packageVector!.get(index) as string;;
+    let packageName: string = packageVector!.get(index) as string;;
     
 
-    var packagePropertiesHashMap: HashMap<any, any> = nameSpaceRequestParam!.getPackageProperties(packageVector!.indexOf(packageName))!;;
+    let packagePropertiesHashMap: HashMap<any, any> = nameSpaceRequestParam!.getPackageProperties(packageVector!.indexOf(packageName))!;;
     
 
-    var rootNode: Node = this.getRootNode(packageName, packagePropertiesHashMap, document)!;;
+    let rootNode: Node = this.getRootNode(packageName, packagePropertiesHashMap, document)!;;
     
 
                         if(index < size -1)
@@ -763,19 +770,19 @@ node= this.addNewProperties(document, nodeNameDuplicateNode, nextPackageProperti
             
     public toHashMap(): HashMap<any, any>{
 
-    var document: Document = DomDocumentHelper.create()!;;
+    let document: Document = DomDocumentHelper.create()!;;
     
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var keys: Set = this.getMap()!.keySet()!;;
+    let keys: Set = this.getMap()!.keySet()!;;
     
 
-    var keyArray: any[] = keys.toArray()!;;
+    let keyArray: any[] = keys.toArray()!;;
     
 
-    var keySize: number = keyArray!.length
+    let keySize: number = keyArray!.length
                 ;;
     
 
@@ -792,16 +799,16 @@ node= this.addNewProperties(document, nodeNameDuplicateNode, nextPackageProperti
 
 
                         for (
-    var i: number = 0;i < keySize; i++)
+    let i: number = 0;i < keySize; i++)
         {
 
-    var key: string = keyArray[i]! as string;;
+    let key: string = keyArray[i]! as string;;
     
 
-    var anyType: any = this.getMap()!.get(key)!;;
+    let anyType: any = this.getMap()!.get(key)!;;
     
 
-    var className: string = anyType!.constructor.name.toString()! as string;;
+    let className: string = anyType!.constructor.name.toString()! as string;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
@@ -813,11 +820,11 @@ node= this.addNewProperties(document, nodeNameDuplicateNode, nextPackageProperti
                                     }
                                 
 
-                        if(this.getMap()!.get(key) instanceof String)
+                        if(((value: any) => typeof value === 'string' || value instanceof String)(this.getMap()!.get(key)))
                         
                                     {
                                     
-    var value: string = this.getMap()!.get(key) as string;;
+    let value: string = this.getMap()!.get(key) as string;;
     
 
                         if(key.indexOf(NameSpaceRequestParamData.NAME) < 0)
@@ -847,11 +854,11 @@ hashMap!.put(key.toCharArray().slice(0, ).join(''), value.toCharArray().slice(0,
                                     }
                                 
                              else 
-                        if(this.getMap()!.get(key) instanceof )
+                        if(((value: any) => Array.isArray(value))(this.getMap()!.get(key)))
                         
                                     {
                                     
-    var values: string[] = this.getMap()!.get(key) as string[];;
+    let values: string[] = this.getMap()!.get(key) as string[];;
     
 
                         if(key.indexOf(NameSpaceRequestParamData.NAME) < 0)
@@ -903,6 +910,4 @@ hashMap!.put(NameSpaceRequestParamData.DOCUMENT, document);
 
 
 }
-
-
 

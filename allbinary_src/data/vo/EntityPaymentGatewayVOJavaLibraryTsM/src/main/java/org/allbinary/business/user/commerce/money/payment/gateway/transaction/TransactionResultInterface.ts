@@ -20,9 +20,11 @@
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -46,53 +48,51 @@ const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 export interface TransactionResultInterface {
         
 
-    toString(): string
+    toString(): string;
 
-    getValues(): BasicArrayList
+    getValues(): BasicArrayList;
 
-    getResult(): string
+    getResult(): string;
 
-    getPnRef(): string
+    getPnRef(): string;
 
-    getRespMsg(): string
+    getRespMsg(): string;
 
-    getAvsAddr(): string
+    getAvsAddr(): string;
 
-    getAvsZip(): string
+    getAvsZip(): string;
 
-    getOrigResult(): string
+    getOrigResult(): string;
 
-    getStatus(): string
+    getStatus(): string;
 
-    getFraudCode(): string
+    getFraudCode(): string;
 
-    getFraudMsg(): string
+    getFraudMsg(): string;
 
-    getErrCode(): string
+    getErrCode(): string;
 
-    getScore(): string
+    getScore(): string;
 
-    getReason1(): string
+    getReason1(): string;
 
-    getReason2(): string
+    getReason2(): string;
 
-    getReason3(): string
+    getReason3(): string;
 
-    getException1(): string
+    getException1(): string;
 
-    getException2(): string
+    getException2(): string;
 
-    getException3(): string
+    getException3(): string;
 
-    getException4(): string
+    getException4(): string;
 
-    getException5(): string
+    getException5(): string;
 
-    getException6(): string
+    getException6(): string;
 
-    getException7(): string
+    getException7(): string;
 
 }
-
-
 

@@ -77,7 +77,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var gameInitializedListenerInterface: GameInitializedListenerInterface = (eventListenerInterface as GameInitializedListenerInterface);;
+    let gameInitializedListenerInterface: GameInitializedListenerInterface = (eventListenerInterface as GameInitializedListenerInterface);;
     
 gameInitializedListenerInterface!.onGameInitialized(eventObject as GameInitializedEvent);
     
@@ -85,6 +85,4 @@ gameInitializedListenerInterface!.onGameInitialized(eventObject as GameInitializ
 
 
 }
-
-
 

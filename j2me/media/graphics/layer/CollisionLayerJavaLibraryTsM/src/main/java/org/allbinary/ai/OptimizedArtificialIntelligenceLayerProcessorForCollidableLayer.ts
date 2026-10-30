@@ -69,7 +69,7 @@ public constructor (){
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 
-    var artificialIntelligenceCompositeInterface: CollidableCompositeLayer = layerInterface as CollidableCompositeLayer;;
+    let artificialIntelligenceCompositeInterface: CollidableCompositeLayer = layerInterface as CollidableCompositeLayer;;
     
 artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.processAI(allBinaryLayerManager);
     
@@ -106,6 +106,4 @@ artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.
 
 
 }
-
-
 

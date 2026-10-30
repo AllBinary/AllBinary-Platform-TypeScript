@@ -34,6 +34,7 @@ import { GraphicsFeatureFactory } from '../../../../../org/allbinary/game/config
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -87,7 +88,7 @@ protected constructor (){
 super.append(ROOT, sizeString);
     
 
-    var string: string = GameGraphicsResourceUtil.getInstance()!.getName()!;;
+    let string: string = GameGraphicsResourceUtil.getInstance()!.getName()!;;
     
 BasicGameResources.stringBuffer!.delete(0, BasicGameResources.stringBuffer!.length());
     
@@ -166,6 +167,4 @@ this.RESOURCE_ICON_BUILD= BasicGameResources.stringBuffer!.toString();
 
 
 }
-
-
 

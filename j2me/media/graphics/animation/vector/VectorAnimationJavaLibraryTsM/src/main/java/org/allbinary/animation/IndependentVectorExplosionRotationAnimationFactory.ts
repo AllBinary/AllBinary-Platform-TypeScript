@@ -27,6 +27,7 @@ import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js'
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
 //not GWT import const VectorInfo
@@ -103,7 +104,7 @@ this.framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vector
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
 
-    var frame: number = 0;;
+    let frame: number = 0;;
     
 
                         if(animationInterface != 
@@ -112,7 +113,7 @@ this.framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vector
                         
                                     {
                                     
-    var rotationAnimationInterface: IndexedAnimation = animationInterface as IndexedAnimation;;
+    let rotationAnimationInterface: IndexedAnimation = animationInterface as IndexedAnimation;;
     
 frame= rotationAnimationInterface!.getFrame();
     
@@ -120,7 +121,7 @@ frame= rotationAnimationInterface!.getFrame();
                                     }
                                 
 
-    var points: number[][][] = this.vectorExplosionGenerator!.getInstance(this.framePoints[frame]!, 6, this.vectorExplosionGenerator!.ROTATION)!;;
+    let points: number[][][] = this.vectorExplosionGenerator!.getInstance(this.framePoints[frame]!, 6, this.vectorExplosionGenerator!.ROTATION)!;;
     
 
 
@@ -132,6 +133,4 @@ frame= rotationAnimationInterface!.getFrame();
 
 
 }
-
-
 

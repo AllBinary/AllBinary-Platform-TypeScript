@@ -76,5 +76,3 @@ this.form.paint(graphics);
 
 }
 
-
-

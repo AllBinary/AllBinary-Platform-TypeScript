@@ -33,18 +33,23 @@ import { Uri } from '../../../android/net/Uri.js';
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -94,35 +99,37 @@ this.hashtable.put(command, url);
 
     public process(command: Command){
 
-        try {
-            
-    var intent: Intent = this.getIntent(command)!;;
+ try { 
+    let intent: Intent = this.getIntent(command)!;;
     
 ResourceUtil.getInstance()!.getContext()!.startActivity(intent);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getIntent(command: Command): Intent{
 
-    var url: string = this.hashtable.get(command) as string;;
+    let url: string = this.hashtable.get(command) as string;;
     
 
-    var uri: Uri = Uri.parse(url)!;;
+    let uri: Uri = Uri.parse(url)!;;
     
 
-    var intent: Intent = new Intent(Intent.ACTION_VIEW, uri);;
+    let intent: Intent = new Intent(Intent.ACTION_VIEW, uri);;
     
 
 
@@ -134,6 +141,4 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
 
 
 }
-
-
 

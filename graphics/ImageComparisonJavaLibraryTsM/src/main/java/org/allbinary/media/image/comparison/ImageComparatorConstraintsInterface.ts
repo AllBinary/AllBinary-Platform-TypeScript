@@ -55,21 +55,19 @@ import { Color } from './Color.js';
 export interface ImageComparatorConstraintsInterface {
         
 
-    getMaxNonMatchingPixelDeltas(): number
+    getMaxNonMatchingPixelDeltas(): number;
 
-    isCollisionWithAvoidRectangles(rectangle: Rectangle): boolean
+    isCollisionWithAvoidRectangles(rectangle: Rectangle): boolean;
 
-    isCollisionWithAvoidRectangles(point: GPoint): boolean
+    isCollisionWithAvoidRectangles(point: GPoint): boolean;
 
-    isColorAllowed(frame: number, point: GPoint, color: Color): boolean
+    isColorAllowed(frame: number, point: GPoint, color: Color): boolean;
 
                 //@Throws(Exception.constructor)
             
-    isImageValid(bufferedImage: BufferedImage): boolean
+    isImageValid(bufferedImage: BufferedImage): boolean;
 
-    isFrameAllowed(frame: number): boolean
+    isFrameAllowed(frame: number): boolean;
 
 }
-
-
 

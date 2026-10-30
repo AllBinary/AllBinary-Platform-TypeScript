@@ -25,6 +25,7 @@ import { TextNotificationUtil } from '../../../../../../org/allbinary/game/input
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
@@ -37,6 +38,7 @@ import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visi
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -68,19 +70,19 @@ public constructor (){
         }
 
 
-    public visit(anyType: any = {}): any{
+    public visit(anyType: any): any{
 
-    var value: string = anyType as string;;
+    let value: string = anyType as string;;
     
 
                         if(value.length < 2)
                         
                                     {
                                     
-    var charValue: string = value[0]!;;
+    let charValue: string = value[0]!;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isNumber(value))
@@ -110,20 +112,22 @@ public constructor (){
                                 
                         else {
                             
-        try {
-            TextNotificationUtil.getInstance()!.fireError("Only Letters & Numbers Allowed");
+ try { TextNotificationUtil.getInstance()!.fireError("Only Letters & Numbers Allowed");
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -151,7 +155,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
 
     public isLetter(charValue: string): boolean{
 
-    var value: number = globalThis.Math.trunc(charValue);;
+    let value: number = globalThis.Math.trunc(charValue.charCodeAt(0));;
     
 
 
@@ -163,6 +167,4 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
 
 
 }
-
-
 

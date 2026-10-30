@@ -104,18 +104,18 @@ public constructor (name: string){
             
     public toXmlNode(document: Document): Node{
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
+    let transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var subViewNode: Node = document.createElement(transformInfoData!.NAME)!;;
+    let subViewNode: Node = document.createElement(transformInfoData!.NAME)!;;
     
 
-    var viewNameAttr: Attr = document.createAttribute(transformInfoData!.NAME)!;;
+    let viewNameAttr: Attr = document.createAttribute(transformInfoData!.NAME)!;;
     
 viewNameAttr!.setValue(this.getTransformInfoInterface()!.getName());
     
 
-    var componentNodeAttributes: NamedNodeMap = subViewNode!.getAttributes()!;;
+    let componentNodeAttributes: NamedNodeMap = subViewNode!.getAttributes()!;;
     
 componentNodeAttributes!.setNamedItem(viewNameAttr);
     
@@ -126,7 +126,7 @@ componentNodeAttributes!.setNamedItem(viewNameAttr);
                         
                                     {
                                     
-    var mappedNameAttr: Attr = document.createAttribute(transformInfoData!.MAPPED)!;;
+    let mappedNameAttr: Attr = document.createAttribute(transformInfoData!.MAPPED)!;;
     
 mappedNameAttr!.setValue(this.getMappedName());
     
@@ -145,6 +145,4 @@ componentNodeAttributes!.setNamedItem(mappedNameAttr);
 
 
 }
-
-
 

@@ -85,5 +85,3 @@ this.setObjectConfigInterface(TransformInfoObjectConfigNoManipulationFactory.get
 
 }
 
-
-

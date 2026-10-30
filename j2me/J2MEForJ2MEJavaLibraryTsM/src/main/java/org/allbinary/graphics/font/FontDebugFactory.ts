@@ -70,5 +70,3 @@ graphics.setFont(font);
 
 }
 
-
-

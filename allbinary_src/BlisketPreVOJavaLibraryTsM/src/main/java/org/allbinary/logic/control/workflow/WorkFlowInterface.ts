@@ -46,13 +46,11 @@ export interface WorkFlowInterface {
 
                 //@Throws(Exception.constructor)
             
-    getName(): string
+    getName(): string;
 
                 //@Throws(Exception.constructor)
             
-    process(): Integer
+    process(): Integer;
 
 }
-
-
 

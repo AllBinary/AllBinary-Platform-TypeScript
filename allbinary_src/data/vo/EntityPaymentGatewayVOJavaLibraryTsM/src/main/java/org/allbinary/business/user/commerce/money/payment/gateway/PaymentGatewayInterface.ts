@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { TableMappingInterface } from '../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 //not GWT import const TableMappingInterface
@@ -54,149 +56,147 @@ import { TableMappingInterface } from '../../../../../../../../org/allbinary/dat
 export interface PaymentGatewayInterface extends TableMappingInterface {
         
 
-    getEnable(): string
+    getEnable(): string;
 
-    getStoreName(): string
+    getStoreName(): string;
 
-    getName(): string
+    getName(): string;
 
-    getPaymentMethod(): string
+    getPaymentMethod(): string;
 
-    getMode(): string
+    getMode(): string;
 
-    getTestProtocol(): string
+    getTestProtocol(): string;
 
-    getTestServer(): string
+    getTestServer(): string;
 
-    getTestPort(): string
+    getTestPort(): string;
 
-    getTestPath(): string
+    getTestPath(): string;
 
-    getServerProtocol(): string
+    getServerProtocol(): string;
 
-    getServer(): string
+    getServer(): string;
 
-    getServerPort(): string
+    getServerPort(): string;
 
-    getServerPath(): string
+    getServerPath(): string;
 
-    getUserName(): string
+    getUserName(): string;
 
-    getPassword(): string
+    getPassword(): string;
 
-    getProxyProtocol(): string
+    getProxyProtocol(): string;
 
-    getProxyServer(): string
+    getProxyServer(): string;
 
-    getProxyPath(): string
+    getProxyPath(): string;
 
-    getProxyPort(): string
+    getProxyPort(): string;
 
-    getProxyUserName(): string
+    getProxyUserName(): string;
 
-    getProxyPassword(): string
+    getProxyPassword(): string;
 
-    getTimeout(): string
+    getTimeout(): string;
 
-    getProxyTimeout(): string
+    getProxyTimeout(): string;
 
-    getSpecial1(): string
+    getSpecial1(): string;
 
-    getSpecial2(): string
+    getSpecial2(): string;
 
-    getSpecial3(): string
+    getSpecial3(): string;
 
-    getSpecial4(): string
+    getSpecial4(): string;
 
-    getSpecial5(): string
+    getSpecial5(): string;
 
-    getSpecial6(): string
+    getSpecial6(): string;
 
-    getSpecial7(): string
+    getSpecial7(): string;
 
-    getSpecial8(): string
+    getSpecial8(): string;
 
-    getSpecial9(): string
+    getSpecial9(): string;
 
-    getLastModified(): string
+    getLastModified(): string;
 
-    getTimeEntered(): string
+    getTimeEntered(): string;
 
-    setEnable(value: string)
+    setEnable(value: string): void;
 
-    setStoreName(value: string)
+    setStoreName(value: string): void;
 
-    setName(value: string)
+    setName(value: string): void;
 
-    setPaymentMethod(value: string)
+    setPaymentMethod(value: string): void;
 
-    setMode(value: string)
+    setMode(value: string): void;
 
-    setTestProtocol(value: string)
+    setTestProtocol(value: string): void;
 
-    setTestServer(value: string)
+    setTestServer(value: string): void;
 
-    setTestPort(value: string)
+    setTestPort(value: string): void;
 
-    setTestPath(value: string)
+    setTestPath(value: string): void;
 
-    setServerProtocol(value: string)
+    setServerProtocol(value: string): void;
 
-    setServer(value: string)
+    setServer(value: string): void;
 
-    setServerPort(value: string)
+    setServerPort(value: string): void;
 
-    setServerPath(value: string)
+    setServerPath(value: string): void;
 
-    setUserName(value: string)
+    setUserName(value: string): void;
 
-    setPassword(value: string)
+    setPassword(value: string): void;
 
-    setProxyProtocol(value: string)
+    setProxyProtocol(value: string): void;
 
-    setProxyServer(value: string)
+    setProxyServer(value: string): void;
 
-    setProxyPath(value: string)
+    setProxyPath(value: string): void;
 
-    setProxyPort(value: string)
+    setProxyPort(value: string): void;
 
-    setProxyUserName(value: string)
+    setProxyUserName(value: string): void;
 
-    setProxyPassword(value: string)
+    setProxyPassword(value: string): void;
 
-    setTimeout(value: string)
+    setTimeout(value: string): void;
 
-    setProxyTimeout(value: string)
+    setProxyTimeout(value: string): void;
 
-    setSpecial1(value: string)
+    setSpecial1(value: string): void;
 
-    setSpecial2(value: string)
+    setSpecial2(value: string): void;
 
-    setSpecial3(value: string)
+    setSpecial3(value: string): void;
 
-    setSpecial4(value: string)
+    setSpecial4(value: string): void;
 
-    setSpecial5(value: string)
+    setSpecial5(value: string): void;
 
-    setSpecial6(value: string)
+    setSpecial6(value: string): void;
 
-    setSpecial7(value: string)
+    setSpecial7(value: string): void;
 
-    setSpecial8(value: string)
+    setSpecial8(value: string): void;
 
-    setSpecial9(value: string)
+    setSpecial9(value: string): void;
 
-    setLastModified(value: string)
+    setLastModified(value: string): void;
 
-    setTimeEntered(value: string)
+    setTimeEntered(value: string): void;
 
                 //@Throws(Exception.constructor)
             
-    toHashMap(isEncrypted: boolean): HashMap<any, any>
+    toHashMap(isEncrypted: boolean): HashMap<any, any>;
 
-    toVector(isEncrypted: boolean): BasicArrayList
+    toVector(isEncrypted: boolean): BasicArrayList;
 
 }
-
-
 

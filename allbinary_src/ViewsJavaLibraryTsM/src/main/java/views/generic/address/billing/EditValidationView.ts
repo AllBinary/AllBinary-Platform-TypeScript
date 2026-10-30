@@ -88,13 +88,13 @@ this.value= this.getPageContext()!.getRequest()!.getParameter(StreetAddressData.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());;
+    let billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
     
@@ -108,7 +108,7 @@ this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -153,6 +153,4 @@ this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
 
 
 }
-
-
 

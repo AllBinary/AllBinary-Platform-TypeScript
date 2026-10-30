@@ -82,5 +82,3 @@ public constructor (algorithm: string, key: string){
 
 }
 
-
-

@@ -22,6 +22,7 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -49,7 +50,7 @@ export class LogFactory
          {
         
 
-    /*actual*/ public static getInstance(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}): Log{
+    /*actual*/ public static getInstance(specialMessage: string, anyType: any, functionName: string, exception: any): Log{
 
 
 
@@ -59,7 +60,7 @@ export class LogFactory
 }
 
 
-    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
+    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any, functionName: string): Log{
 
 
 
@@ -70,6 +71,4 @@ export class LogFactory
 
 
 }
-
-
 

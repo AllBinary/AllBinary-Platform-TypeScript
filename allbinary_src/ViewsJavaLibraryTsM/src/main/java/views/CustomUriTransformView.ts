@@ -27,6 +27,7 @@ import { XmlDocumentHelper } from '../org/allbinary/data/tree/dom/document/XmlDo
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -51,6 +52,7 @@ import { TransformInfoInterface } from '../org/allbinary/logic/visual/transform/
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -169,10 +171,10 @@ this.transformDocumentInterface= transformDocumentInterface;
             
     public getDoc(): Document{
 
-    var document: Document = this.getTransformInfoInterface()!.getDataDocument()!;;
+    let document: Document = this.getTransformInfoInterface()!.getDataDocument()!;;
     
 
-    var dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(document.getFirstChild(), true)!;;
+    let dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(document.getFirstChild(), true)!;;
     
 
                         if(dataNode != 
@@ -198,12 +200,11 @@ this.transformDocumentInterface= transformDocumentInterface;
             
     public view(): string{
 
-        try {
-            
-    var success: string = XmlDocumentHelper.toString(this.getDoc())!;;
+ try { 
+    let success: string = XmlDocumentHelper.toString(this.getDoc())!;;
     
 
-    var result: string = new TransformInfoCustomUriTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
+    let result: string = new TransformInfoCustomUriTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
     
 
 
@@ -211,10 +212,11 @@ this.transformDocumentInterface= transformDocumentInterface;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -229,12 +231,12 @@ this.transformDocumentInterface= transformDocumentInterface;
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -27,6 +27,7 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 
 
@@ -62,7 +63,7 @@ export class MediaData
             
     public static get(a_Name: string): MediaData{
 
-    var mediaData: MediaData = MediaData.hashMap!.get(a_Name) as MediaData;;
+    let mediaData: MediaData = MediaData.hashMap!.get(a_Name) as MediaData;;
     
 
                         if(mediaData != 
@@ -195,6 +196,4 @@ MediaData.hashMap!.put(a_Name, this);
 
 
 }
-
-
 

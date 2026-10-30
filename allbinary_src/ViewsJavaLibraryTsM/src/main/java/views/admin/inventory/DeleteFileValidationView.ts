@@ -37,9 +37,11 @@ import { ValidationComponentInterface } from '../../../org/allbinary/logic/contr
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -94,7 +96,7 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;;
+    let hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;;
     
 
                         if(hashMap == 
@@ -110,8 +112,7 @@ this.id= hashMap!.get(basicItemData!.ID) as string;
 
     public isValid(): Boolean{
 
-        try {
-            
+ try { 
                         if(this.id == 
                                     null
                                  || !StringValidationUtil.getInstance()!.isNumber(this.id))
@@ -121,7 +122,7 @@ this.id= hashMap!.get(basicItemData!.ID) as string;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -136,26 +137,29 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -181,9 +185,8 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.id == 
@@ -213,22 +216,23 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Unkown Validation Error.<br />";
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

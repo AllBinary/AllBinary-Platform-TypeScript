@@ -57,5 +57,3 @@ this.setTagRequestHelperFactory(new PaymentTransactionResultHelperFactory());
 
 }
 
-
-

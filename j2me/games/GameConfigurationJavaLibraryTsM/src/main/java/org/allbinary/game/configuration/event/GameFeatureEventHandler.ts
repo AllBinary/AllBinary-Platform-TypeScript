@@ -77,7 +77,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var gameFeatureListenerInterface: GameFeatureListenerInterface = (eventListenerInterface as GameFeatureListenerInterface);;
+    let gameFeatureListenerInterface: GameFeatureListenerInterface = (eventListenerInterface as GameFeatureListenerInterface);;
     
 gameFeatureListenerInterface!.onGameFeatureChange(eventObject as GameFeatureEvent);
     
@@ -85,6 +85,4 @@ gameFeatureListenerInterface!.onGameFeatureChange(eventObject as GameFeatureEven
 
 
 }
-
-
 

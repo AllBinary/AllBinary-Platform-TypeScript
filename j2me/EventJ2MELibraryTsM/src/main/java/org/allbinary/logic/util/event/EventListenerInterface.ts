@@ -44,9 +44,7 @@
 export interface EventListenerInterface {
         
 
-    onEvent(eventObject: AllBinaryEventObject)
+    onEvent(eventObject: AllBinaryEventObject): void;
 
 }
-
-
 

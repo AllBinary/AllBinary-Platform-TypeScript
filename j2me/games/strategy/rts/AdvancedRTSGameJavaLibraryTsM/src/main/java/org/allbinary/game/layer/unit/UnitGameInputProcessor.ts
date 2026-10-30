@@ -57,5 +57,3 @@ public constructor (unitLayer: UnitLayer){
 
 }
 
-
-

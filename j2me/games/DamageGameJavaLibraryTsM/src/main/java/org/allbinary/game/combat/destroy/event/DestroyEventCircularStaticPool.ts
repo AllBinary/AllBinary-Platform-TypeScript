@@ -89,7 +89,7 @@ this.EVENT_POOL.initAllBinaryEventCircularPool(new DestroyEventFactory(combatGam
             
     public getInstanceForLayer(layerInterface: AllBinaryLayer): DestroyedEvent{
 
-    var destroyedEvent: DestroyedEvent = this.EVENT_POOL.getNextInstance() as DestroyedEvent;;
+    let destroyedEvent: DestroyedEvent = this.EVENT_POOL.getNextInstance() as DestroyedEvent;;
     
 destroyedEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);
     
@@ -103,6 +103,4 @@ destroyedEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);
 
 
 }
-
-
 

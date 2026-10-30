@@ -36,9 +36,11 @@ import { BasicColor } from '../../../../../../org/allbinary/graphics/color/Basic
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -68,12 +70,16 @@ const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 //not GWT import - same folder const TitleProgressBarPortionSetProgressRunnable
 //import { TitleProgressBarSetProgressRunnable } from './TitleProgressBarSetProgressRunnable.js';
 //not GWT import - same folder const TitleProgressBarSetProgressRunnable
+type TitleProgressBarSetProgressRunnable = InstanceType<AndroidTitleProgressBar['TitleProgressBarSetProgressRunnable']>;
+type TitleProgressBarPortionSetProgressRunnable = InstanceType<AndroidTitleProgressBar['TitleProgressBarPortionSetProgressRunnable']>;
+type ShowTitleProgressBarRunnable = InstanceType<AndroidTitleProgressBar['ShowTitleProgressBarRunnable']>;
+type DismissTitleProgressBarRunnable = InstanceType<AndroidTitleProgressBar['DismissTitleProgressBarRunnable']>;
 
 export class AndroidTitleProgressBar extends ProgressCanvas {
         
 
 //inner= member=true isStatic=
-TitleProgressBarSetProgressRunnable = class
+TitleProgressBarSetProgressRunnable = (() => { const outer$AndroidTitleProgressBar = this; return class
             extends Object
          implements Runnable {
         
@@ -90,34 +96,34 @@ TitleProgressBarSetProgressRunnable = class
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-    var value: number = globalThis.Math.trunc(this.androidTitleProgressBar!.getValue());;
+ try { 
+    let value: number = globalThis.Math.trunc(this.androidTitleProgressBar!.getValue());;
     
 this.androidTitleProgressBar!.progressActivity!.onTitleProgressBarSetProgress(value);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
 
-
-}
-
-
+}; })();
 //inner= member=true isStatic=
-TitleProgressBarPortionSetProgressRunnable = class
+TitleProgressBarPortionSetProgressRunnable = (() => { const outer$AndroidTitleProgressBar = this; return class
             extends Object
          implements Runnable {
         
@@ -134,34 +140,34 @@ TitleProgressBarPortionSetProgressRunnable = class
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-    var value: number = globalThis.Math.trunc((this.androidTitleProgressBar!.getValue() +this.androidTitleProgressBar!.getMaxValue() /this.androidTitleProgressBar!.portion));;
+ try { 
+    let value: number = globalThis.Math.trunc((this.androidTitleProgressBar!.getValue() +this.androidTitleProgressBar!.getMaxValue() /this.androidTitleProgressBar!.portion));;
     
 this.androidTitleProgressBar!.progressActivity!.onTitleProgressBarSetProgress(value);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
 
-
-}
-
-
+}; })();
 //inner= member=true isStatic=
-ShowTitleProgressBarRunnable = class
+ShowTitleProgressBarRunnable = (() => { const outer$AndroidTitleProgressBar = this; return class
             extends Object
          implements Runnable {
         
@@ -178,34 +184,34 @@ ShowTitleProgressBarRunnable = class
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-    var maxValue: number = globalThis.Math.trunc(this.androidTitleProgressBar!.getMaxValue());;
+ try { 
+    let maxValue: number = globalThis.Math.trunc(this.androidTitleProgressBar!.getMaxValue());;
     
 this.androidTitleProgressBar!.progressActivity!.onShowTitleProgressBar(maxValue, false);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
 
-
-}
-
-
+}; })();
 //inner= member=true isStatic=
-DismissTitleProgressBarRunnable = class
+DismissTitleProgressBarRunnable = (() => { const outer$AndroidTitleProgressBar = this; return class
             extends Object
          implements Runnable {
         
@@ -222,29 +228,29 @@ DismissTitleProgressBarRunnable = class
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            this.androidTitleProgressBar!.progressActivity!.onDismissTitleProgressBar();
+ try { this.androidTitleProgressBar!.progressActivity!.onDismissTitleProgressBar();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
 
-
-}
-
-
+}; })();
     private showTitleProgressBarRunnable = new this.ShowTitleProgressBarRunnable(this);
 
     private dismissTitleProgressBarRunnable = new this.DismissTitleProgressBarRunnable(this);
@@ -301,99 +307,109 @@ this.progressActivity= activity;
 
     public start(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START_METHOD_NAME);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START_METHOD_NAME);
     
 super.start();
     
 this.progressActivity!.runOnUiThread(this.showTitleProgressBarRunnable);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START_METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public end(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.END_METHOD_NAME);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.END_METHOD_NAME);
     
 this.progressActivity!.runOnUiThread(this.dismissTitleProgressBarRunnable);
     
 super.end();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.END_METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public addPortion(value: number, text: string, index: number){
 
-        try {
-            super.addPortion(value, text, index);
+ try { super.addPortion(value, text, index);
     
 this.portion= value;
     
 this.progressActivity!.runOnUiThread(this.progressDialogPortionSetProgressRunnable);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public addNormalPortion(value: number, text: string){
 
-        try {
-            super.addNormalPortion(value, text);
+ try { super.addNormalPortion(value, text);
     
 this.portion= value;
     
 this.progressActivity!.runOnUiThread(this.progressDialogPortionSetProgressRunnable);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     setValue(value: number){
 
-        try {
-            super.setValue(value);
+ try { super.setValue(value);
     
 this.progressActivity!.runOnUiThread(this.progressDialogSetProgressRunnable);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -406,6 +422,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
 
 
 }
-
-
 

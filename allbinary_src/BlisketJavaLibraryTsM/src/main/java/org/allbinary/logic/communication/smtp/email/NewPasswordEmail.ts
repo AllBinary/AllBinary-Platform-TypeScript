@@ -27,6 +27,7 @@ import { UserInterface } from '../../../../../../org/allbinary/business/user/Use
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { UserEmailEventNameData } from '../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 //not GWT import const UserEmailEventNameData
@@ -54,6 +55,7 @@ import { AbeClientInformationInterface } from '../../../../../../org/allbinary/l
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -115,8 +117,7 @@ this.notifyUser();
             
     notifyStoreAdmin(){
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -126,26 +127,27 @@ this.notifyUser();
                                     }
                                 
 
-    var emailSubject: string = "New Password For User: " +this.userInterface!.getUserName();;
+    let emailSubject: string = "New Password For User: " +this.userInterface!.getUserName();;
     
 
-    var emailBody: string = "New Password: " +this.newPassword;;
+    let emailBody: string = "New Password: " +this.newPassword;;
     
 
-    var basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(emailSubject, emailBody) as BasicEmailInfo;;
+    let basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(emailSubject, emailBody) as BasicEmailInfo;;
     
 
-    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
+    let emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
     
 
-    var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.NEWPASSWORD)!;;
+    let adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.NEWPASSWORD)!;;
     
 adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
@@ -155,8 +157,10 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -164,8 +168,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
             
     notifyUser(){
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -175,26 +178,27 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
                                     }
                                 
 
-    var subject: string = "New Password";;
+    let subject: string = "New Password";;
     
 
-    var body: string = "New Password: " +this.newPassword;;
+    let body: string = "New Password: " +this.newPassword;;
     
 
-    var basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(subject, body) as BasicEmailInfo;;
+    let basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(subject, body) as BasicEmailInfo;;
     
 
-    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
+    let emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
     
 
-    var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.NEWPASSWORD, this.userInterface)!;;
+    let userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.NEWPASSWORD, this.userInterface)!;;
     
 userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
@@ -209,12 +213,12 @@ userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emai
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

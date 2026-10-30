@@ -47,7 +47,7 @@ export class ScrollMapEvent extends AllBinaryEventObject {
 
     private dy: number= 0;
 
-public constructor (anyType: any = {}){
+public constructor (anyType: any){
             super(anyType);
                     
 
@@ -97,6 +97,4 @@ this.dy= dy;
 
 
 }
-
-
 

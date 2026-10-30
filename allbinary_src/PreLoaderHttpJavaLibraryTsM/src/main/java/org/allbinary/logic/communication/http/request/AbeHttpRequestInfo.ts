@@ -30,24 +30,30 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -97,7 +103,7 @@ public constructor (hashMap: HashMap<any, any>){
 
             super();
         
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.httpUserAgent= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.HTTP_USER_AGENT) as string);
     
@@ -118,21 +124,21 @@ public constructor (httpServletRequest: HttpServletRequest){
 
             super();
         
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.httpUserAgent= stringUtil!.EMPTY_STRING;
     
 
-    var enumuration: Enumeration<any> = httpServletRequest!.getHeaderNames()!;;
+    let enumuration: Enumeration<any> = httpServletRequest!.getHeaderNames()!;;
     
 
         while(enumuration.hasMoreElements())
         {
 
-    var key: string = enumuration.nextElement()! as string;;
+    let key: string = enumuration.nextElement()! as string;;
     
 
-    var value: string = httpServletRequest!.getHeader(key)!;;
+    let value: string = httpServletRequest!.getHeader(key)!;;
     
 
                         if(key.indexOf("user") >= 0)
@@ -154,7 +160,7 @@ this.remotePort= Integer.toString(httpServletRequest!.getRemotePort());
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(this.abeHttpRequestInfoData!.HTTP_USER_AGENT, this.httpUserAgent);
     
@@ -179,7 +185,7 @@ hashMap!.put(this.abeHttpRequestInfoData!.REQUEST_FILE_PATH, this.requestedFileP
 
     public toVector(): BasicArrayList{
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 vector.add(this.httpUserAgent);
     
@@ -213,6 +219,4 @@ vector.add(this.requestedFilePath);
 
 
 }
-
-
 

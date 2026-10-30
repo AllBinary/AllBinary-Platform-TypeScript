@@ -40,15 +40,13 @@
 export interface ScalableListener {
         
 
-    getRatio(ratio: number): number
+    getRatio(ratio: number): number;
 
-    getLeft(xOffset: number): number
+    getLeft(xOffset: number): number;
 
-    getTop(yOffset: number): number
+    getTop(yOffset: number): number;
 
-    scale(ratio: number)
+    scale(ratio: number): void;
 
 }
-
-
 

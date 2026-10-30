@@ -72,5 +72,3 @@ public constructor (scale: number){
 
 }
 
-
-

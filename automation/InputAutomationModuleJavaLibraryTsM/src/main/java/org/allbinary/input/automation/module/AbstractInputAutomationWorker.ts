@@ -31,6 +31,7 @@ import { CaptureWorkerInterface } from '../../../../../org/allbinary/input/media
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonWorker.js';
 //not GWT import const ImageComparisonWorker
@@ -40,9 +41,11 @@ import { MotionRectanglesWorker } from '../../../../../org/allbinary/media/image
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
 //not GWT import const RunnableInterface
@@ -207,13 +210,12 @@ this.getCaptureWorker()!.setRunning(false);
 
     public run(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
     
 this.setRunning(true);
     
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
+    let timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
     
 
         while(this.isRunning())
@@ -234,14 +236,17 @@ this.waitForDataWorkers();
     
 this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -310,6 +315,4 @@ this.motionRectanglesWorker= motionRectanglesWorker;
 
 
 }
-
-
 

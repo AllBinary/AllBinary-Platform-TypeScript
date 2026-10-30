@@ -22,6 +22,7 @@
         
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -47,17 +48,15 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 export interface LayerPlacementInterface {
         
 
-    getWidth(): number
+    getWidth(): number;
 
-    getHeight(): number
+    getHeight(): number;
 
-    getLayerType(): LayerPlacementType
+    getLayerType(): LayerPlacementType;
 
                 //@Throws(Exception.constructor)
             
-    getInstance(): ABHashtable<any, any>
+    getInstance(): ABHashtable<any, any>;
 
 }
-
-
 

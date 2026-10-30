@@ -36,6 +36,7 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -85,10 +86,10 @@ export class BasicCryptUtil
             
     public getDecryptedInputStream(inputStream: InputStream, cryptInterface: CryptInterface): InputStream{
 
-    var buffer: ByteArrayOutputStream = new ByteArrayOutputStream();;
+    let buffer: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var ch: number= 0;;
+    let ch: number= 0;;
     
 
         while(true)
@@ -110,13 +111,13 @@ buffer.write(ch);
 }
 
 
-    var decrypted: number[] = cryptInterface!.decrypt(buffer.toByteArray())!;;
+    let decrypted: number[] = cryptInterface!.decrypt(buffer.toByteArray())!;;
     
 
-    var decryptedString: string = String.fromCharCode(...decrypted);;
+    let decryptedString: string = String.fromCharCode(...decrypted);;
     
 
-    var index: number = decryptedString!.indexOf(this.XML_START)!;;
+    let index: number = decryptedString!.indexOf(this.XML_START)!;;
     
 
                         if(index > 0)
@@ -137,6 +138,4 @@ buffer.write(ch);
 
 
 }
-
-
 

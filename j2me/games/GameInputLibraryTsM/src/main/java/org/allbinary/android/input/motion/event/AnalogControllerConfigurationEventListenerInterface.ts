@@ -49,9 +49,7 @@ export interface AnalogControllerConfigurationEventListenerInterface extends Eve
 
                 //@Throws(Exception.constructor)
             
-    onAnalogControllerConfigurationEvent(analogControllerConfigurationEvent: AnalogControllerConfigurationEvent)
+    onAnalogControllerConfigurationEvent(analogControllerConfigurationEvent: AnalogControllerConfigurationEvent): void;
 
 }
-
-
 

@@ -71,14 +71,14 @@ private constructor (){
             
     public scaleArray(images: Image[], width: number, height: number): Image[]{
 
-    var scaledImages: Image[] = new Array(images.length);;
+    let scaledImages: Image[] = new Array(images.length);;
     
 
 
 
 
                         for (
-    var index: number = images.length
+    let index: number = images.length
                 ;--index >= 0; )
         {
 scaledImages[index]= this.scale(images[index]!, width, height);
@@ -98,40 +98,40 @@ scaledImages[index]= this.scale(images[index]!, width, height);
             
     public scale(image: Image, width: number, height: number): Image{
 
-    var sourceWidth: number = image.getWidth()!;;
+    let sourceWidth: number = image.getWidth()!;;
     
 
-    var sourceHeight: number = image.getHeight()!;;
+    let sourceHeight: number = image.getHeight()!;;
     
 
-    var originalData: number[] = new Array(image.getWidth() *image.getHeight());;
+    let originalData: number[] = new Array(image.getWidth() *image.getHeight());;
     
 image.getRGB(originalData, 0, image.getWidth(), 0, 0, image.getWidth(), image.getHeight());
     
 
-    var scaledData: number[] = new Array(width *height);;
+    let scaledData: number[] = new Array(width *height);;
     
 
-    var heightRatioFactor: number = globalThis.Math.trunc((8 *sourceHeight) /height);;
+    let heightRatioFactor: number = globalThis.Math.trunc((8 *sourceHeight) /height);;
     
 
-    var widthRatioFactor: number = globalThis.Math.trunc((8 *sourceWidth) /width);;
+    let widthRatioFactor: number = globalThis.Math.trunc((8 *sourceWidth) /width);;
     
 
-    var scaledIndex: number = scaledData!.length -1;;
+    let scaledIndex: number = scaledData!.length -1;;
     
 
-    var dx: number= 0;;
+    let dx: number= 0;;
     
 
-    var dy: number= 0;;
+    let dy: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = height;--index >= 0; )
+    let index: number = height;--index >= 0; )
         {
 dy= (index *heightRatioFactor)>>3;
     
@@ -140,7 +140,7 @@ dy= (index *heightRatioFactor)>>3;
 
 
                         for (
-    var index2: number = width;--index2 >= 0; )
+    let index2: number = width;--index2 >= 0; )
         {
 dx= (index2 *widthRatioFactor)>>3;
     
@@ -151,7 +151,7 @@ scaledData[scaledIndex--]= originalData[(sourceWidth *dy) +dx]!;
 }
 
 
-    var scaledImage: Image = Image.createRGBImage(scaledData, width, height, true)!;;
+    let scaledImage: Image = Image.createRGBImage(scaledData, width, height, true)!;;
     
 
 
@@ -163,6 +163,4 @@ scaledData[scaledIndex--]= originalData[(sourceWidth *dy) +dx]!;
 
 
 }
-
-
 

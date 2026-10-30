@@ -24,9 +24,11 @@
         
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -85,7 +87,7 @@ this.hashtable.put(new Integer(basicDefaultColor!.intValue()), basicDefaultColor
 
     public getAndOrCreate(integer: Integer): BasicColor{
 
-    var basicColor: BasicColor = this.hashtable.get(integer) as BasicColor;;
+    let basicColor: BasicColor = this.hashtable.get(integer) as BasicColor;;
     
 
                         if(basicColor == 
@@ -110,6 +112,4 @@ this.hashtable.put(integer, basicColor);
 
 
 }
-
-
 

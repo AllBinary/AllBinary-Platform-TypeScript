@@ -34,9 +34,11 @@ import { IncludeFileExtensionsBooleanFileVisitor } from '../../../../../../org/a
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -64,18 +66,18 @@ export class DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor extends
 
     public static main(args: string[]){
 
-    var commonFileStrings: CommonDataFileStrings = CommonDataFileStrings.getInstance()!;;
+    let commonFileStrings: CommonDataFileStrings = CommonDataFileStrings.getInstance()!;;
     
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 list.add(commonFileStrings!.JAVA);
     
 
-    var filePath: string = "G:\\mnt\\bc\\mydev\\games\\ZeptoRacer\\platform\\j2se\\ZeptoRacerStaticPathsJ2SEM\\target\\dependency\\org\\allbinary\\logic\\system\\security\\licensing\\ZeptoRacerPCClientInformation.java";;
+    let filePath: string = "G:\\mnt\\bc\\mydev\\games\\ZeptoRacer\\platform\\j2se\\ZeptoRacerStaticPathsJ2SEM\\target\\dependency\\org\\allbinary\\logic\\system\\security\\licensing\\ZeptoRacerPCClientInformation.java";;
     
 
-    var result: boolean = new DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor(list).visit(AbFile.createAbFileFromRawPath(filePath))!;;
+    let result: boolean = new DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor(list).visit(AbFile.createAbFileFromRawPath(filePath))!;;
     
 console.log(filePath +" is Tracked: " +result);
     
@@ -111,8 +113,15 @@ this.includesString= includesString;
     
 }
 
-
-    public visit(file: AbFile): Boolean{
+visit(...args: any[]): any {
+   
+    if (args.length === 1) return this.visit$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.visit$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: visit'); }
+  
+    public visit$overload1(file: AbFile): Boolean{
 
                         if(file.isDirectory())
                         
@@ -121,7 +130,7 @@ this.includesString= includesString;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -146,7 +155,7 @@ this.includesString= includesString;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                         }
@@ -154,9 +163,9 @@ this.includesString= includesString;
 }
 
 
-    public visit(file: AbFile, fileNameString: string): Boolean{
+    public visit$overload2(file: AbFile, fileNameString: string): Boolean{
 
-    var filePath: string = file.getPath()!;;
+    let filePath: string = file.getPath()!;;
     
 
                         if(super.visit(file, fileNameString))
@@ -178,7 +187,7 @@ this.includesString= includesString;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -208,12 +217,10 @@ this.includesString= includesString;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 }
 
 
 }
-
-
 

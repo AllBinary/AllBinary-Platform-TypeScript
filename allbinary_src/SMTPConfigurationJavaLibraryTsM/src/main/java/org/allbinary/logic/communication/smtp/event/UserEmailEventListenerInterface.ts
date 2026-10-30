@@ -49,9 +49,7 @@ export interface UserEmailEventListenerInterface extends EventListener {
 
                 //@Throws(Exception.constructor)
             
-    onEmailSendRequest(userEmailInfoEvent: EmailEvent)
+    onEmailSendRequest(userEmailInfoEvent: EmailEvent): void;
 
 }
-
-
 

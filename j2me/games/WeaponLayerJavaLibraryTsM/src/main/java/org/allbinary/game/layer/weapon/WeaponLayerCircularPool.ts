@@ -66,7 +66,7 @@ public constructor (){
             
     public getInstanceWeaponLayer(sourceLayerInterface: AllBinaryLayer, x: number, y: number, z: number, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreable: ScoreableInterface): WeaponLayer{
 
-    var weaponLayer: WeaponLayer = super.getNextInstance() as WeaponLayer;;
+    let weaponLayer: WeaponLayer = super.getNextInstance() as WeaponLayer;;
     
 weaponLayer!.initXYZ(x, y, z);
     
@@ -82,6 +82,4 @@ weaponLayer!.init(sourceLayerInterface, angle, otherAngle, weaponProperties, sco
 
 
 }
-
-
 

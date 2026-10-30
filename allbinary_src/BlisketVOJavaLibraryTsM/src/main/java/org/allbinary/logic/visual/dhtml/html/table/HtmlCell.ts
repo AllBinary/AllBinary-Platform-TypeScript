@@ -20,6 +20,7 @@
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
 //not GWT import const HtmlTag
@@ -92,16 +93,16 @@ this.body= body;
 
     public toString(): string{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var result: string = stringUtil!.EMPTY_STRING;;
+    let result: string = stringUtil!.EMPTY_STRING;;
     
 
-    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;;
+    let attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;;
     
 
-    var attributeSize: number = attributeKeys!.length
+    let attributeSize: number = attributeKeys!.length
                 ;;
     
 result= this.before;
@@ -115,13 +116,13 @@ result += " ";
 
 
                         for (
-    var i: number = 0;i < attributeSize; i++)
+    let i: number = 0;i < attributeSize; i++)
         {
 
-    var key: string = attributeKeys[i]! as string;;
+    let key: string = attributeKeys[i]! as string;;
     
 
-    var value: string = otherAttributes!.get(key) as string;;
+    let value: string = otherAttributes!.get(key) as string;;
     
 
                         if(value != 
@@ -160,6 +161,4 @@ result += this.after;
 
 
 }
-
-
 

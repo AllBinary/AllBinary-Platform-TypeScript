@@ -30,9 +30,11 @@ import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -71,29 +73,29 @@ public constructor (points: BasicArrayList){
             
     public rotateTheta(aTheta: number){
 
-    var newVector: BasicArrayList = new BasicArrayListD();;
+    let newVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = this.pointBasicArrayList!.size()!;;
+    let size: number = this.pointBasicArrayList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var secondPoint: GPoint = pointBasicArrayList!.get(index) as GPoint;;
+    let secondPoint: GPoint = pointBasicArrayList!.get(index) as GPoint;;
     
 
-    var secondX: number = (secondPoint!.getX() *Math.cos(aTheta)) -(secondPoint!.getY() *Math.sin(aTheta));;
+    let secondX: number = (secondPoint!.getX() *Math.cos(aTheta)) -(secondPoint!.getY() *Math.sin(aTheta));;
     
 
-    var secondY: number = (secondPoint!.getX() *Math.sin(aTheta)) +(secondPoint!.getY() *Math.cos(aTheta));;
+    let secondY: number = (secondPoint!.getX() *Math.sin(aTheta)) +(secondPoint!.getY() *Math.cos(aTheta));;
     
 
-    var point: GPoint = PointFactory.getInstance()!.createXY((globalThis.Math.trunc(secondX)), (globalThis.Math.trunc(secondY)))!;;
+    let point: GPoint = PointFactory.getInstance()!.createXY((globalThis.Math.trunc(secondX)), (globalThis.Math.trunc(secondY)))!;;
     
 newVector!.add(point);
     
@@ -105,6 +107,4 @@ this.pointBasicArrayList= newVector;
 
 
 }
-
-
 

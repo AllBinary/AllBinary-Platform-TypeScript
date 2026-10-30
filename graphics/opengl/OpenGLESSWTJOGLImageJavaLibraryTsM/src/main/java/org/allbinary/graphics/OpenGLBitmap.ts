@@ -43,7 +43,7 @@ export class OpenGLBitmap extends PlatformBitmapBase {
 
     public readonly image: Image;
 
-public constructor (bitmap: any = {}){
+public constructor (bitmap: any){
 
             super();
         this.image= bitmap as Image;
@@ -67,7 +67,7 @@ public constructor (bitmap: any = {}){
                         
                                     {
                                     
-    var mutableImage: SwtMutableImage = this.image as SwtMutableImage;;
+    let mutableImage: SwtMutableImage = this.image as SwtMutableImage;;
     
 
 
@@ -80,7 +80,7 @@ public constructor (bitmap: any = {}){
                                 
                         else {
                             
-    var immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;;
+    let immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;;
     
 
 
@@ -100,7 +100,7 @@ public constructor (bitmap: any = {}){
                         
                                     {
                                     
-    var mutableImage: SwtMutableImage = this.image as SwtMutableImage;;
+    let mutableImage: SwtMutableImage = this.image as SwtMutableImage;;
     
 mutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
     
@@ -109,7 +109,7 @@ mutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
                                 
                         else {
                             
-    var immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;;
+    let immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;;
     
 immutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
     
@@ -152,6 +152,4 @@ DisposalUtil.getInstance()!.disposeImage(this.image);
 
 
 }
-
-
 

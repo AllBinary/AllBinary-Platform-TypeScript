@@ -23,6 +23,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -53,7 +54,7 @@ export class TrackingEvent extends AllBinaryEventObject {
 
     private layerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
 
-public constructor (allBinaryLayerInterface: any = {}){
+public constructor (allBinaryLayerInterface: any){
             super(allBinaryLayerInterface);
                     
 
@@ -71,7 +72,7 @@ public constructor (allBinaryLayerInterface: any = {}){
 }
 
 
-    public init(anyType: any = {}){
+    public init(anyType: any){
 this.setSource(anyType);
     
 }
@@ -101,7 +102,7 @@ this.layerInterface= layerInterface;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TrackingEvent: \n");
     
@@ -119,6 +120,4 @@ stringBuffer!.append(this.layerInterface!.toString());
 
 
 }
-
-
 

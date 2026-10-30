@@ -37,9 +37,11 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -91,7 +93,7 @@ export class SimulatedBuildingPropertiesFactory extends BuildingPropertiesFactor
 
     public getDamageFloaters(buildingLayer: BuildingLayer): DamageFloaters{
 
-    var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;;
+    let damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;;
     
 this.damageFloatersPaintableInterface= damageFloaters;
     
@@ -137,6 +139,4 @@ this.damageFloatersPaintableInterface= damageFloaters;
 
 
 }
-
-
 

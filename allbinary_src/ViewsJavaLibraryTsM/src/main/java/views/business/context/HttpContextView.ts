@@ -25,6 +25,7 @@ import { XmlDocumentHelper } from '../../../org/allbinary/data/tree/dom/document
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ContextTransformer } from '../../../org/allbinary/logic/visual/transform/ContextTransformer.js';
 //not GWT import const ContextTransformer
@@ -37,6 +38,7 @@ import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/tran
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { HttpComponentView } from '../../../views/HttpComponentView.js';
 //not GWT import const HttpComponentView
@@ -91,14 +93,13 @@ this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstan
             
     public view(): string{
 
-        try {
-            this.toXmlDoc();
+ try { this.toXmlDoc();
     
 
-    var success: string = XmlDocumentHelper.toString(this.getDoc())!;;
+    let success: string = XmlDocumentHelper.toString(this.getDoc())!;;
     
 
-    var result: string = new ContextTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
+    let result: string = new ContextTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
     
 
 
@@ -106,10 +107,11 @@ this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstan
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -124,12 +126,12 @@ this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstan
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

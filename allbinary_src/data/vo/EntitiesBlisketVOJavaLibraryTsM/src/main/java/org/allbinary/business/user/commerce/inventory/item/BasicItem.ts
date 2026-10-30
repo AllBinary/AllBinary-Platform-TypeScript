@@ -34,9 +34,11 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
@@ -52,21 +54,26 @@ import { ProductIdGenerator } from '../../../../../../../org/allbinary/data/gene
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -248,7 +255,7 @@ public constructor (){
                                     }
                                 
 
-    var EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 this.itemId= new ProductIdGenerator().getNext();
     
@@ -457,7 +464,7 @@ this.downloads= value;
                         
                                     {
                                     
-    var downloadInteger: Integer = Integer.valueOf(this.downloads)!;;
+    let downloadInteger: Integer = Integer.valueOf(this.downloads)!;;
     
 
                         if(downloadInteger!.intValue() != 0)
@@ -812,7 +819,7 @@ this.downloadable= downloadable;
 
     public getTotal(): Money{
 
-    var itemTotal: Money = new Money(this.price);;
+    let itemTotal: Money = new Money(this.price);;
     
 itemTotal!.multiply(new Integer(this.number).intValue());
     
@@ -836,7 +843,7 @@ itemTotal!.multiply(new Integer(this.number).intValue());
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(this.basicItemData!.ID, this.itemId);
     
@@ -877,10 +884,10 @@ hashMap!.put(this.basicItemData!.MEDIUMIMAGE, this.mediumImage);
 hashMap!.put(this.basicItemData!.LARGEIMAGE, this.largeImage);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString()!;;
+    let time: string = new Long(calendar.getTimeInMillis()).toString()!;;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -920,7 +927,7 @@ hashMap!.put(this.basicItemData!.SPECIALS, this.specials);
                                     }
                                 
 
-    var values: BasicArrayList = new BasicArrayListD();;
+    let values: BasicArrayList = new BasicArrayListD();;
     
 values.add(this.itemId);
     
@@ -961,10 +968,10 @@ values.add(this.getMediumImage());
 values.add(this.getLargeImage());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString()!;;
+    let time: string = new Long(calendar.getTimeInMillis()).toString()!;;
     
 values.add(time);
     
@@ -1008,6 +1015,4 @@ values.add(this.specials);
 
 
 }
-
-
 

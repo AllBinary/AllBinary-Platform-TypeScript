@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontFactory } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 //not GWT import const StoreFrontFactory
@@ -54,6 +56,7 @@ import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SearchData } from '../../../org/allbinary/logic/control/search/SearchData.js';
 //not GWT import const SearchData
@@ -107,8 +110,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             
     public toXmlNode(document: Document): Node{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -118,28 +120,28 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
+    let inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var inventoryNode: Node = document.createElement(InventoryData.INVENTORY)!;;
+    let inventoryNode: Node = document.createElement(InventoryData.INVENTORY)!;;
     
 
-    var itemVector: BasicArrayList = inventoryEntityInterface!.getItems(StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName()))!;;
+    let itemVector: BasicArrayList = inventoryEntityInterface!.getItems(StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName()))!;;
     
 inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, new Integer(itemVector!.size()).toString()));
     
 
-    var size: number = itemVector!.size()!;;
+    let size: number = itemVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var itemInterface: ItemInterface = itemVector!.get(index) as ItemInterface;;
+    let itemInterface: ItemInterface = itemVector!.get(index) as ItemInterface;;
     
 
                         if(itemInterface != 
@@ -148,7 +150,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchDat
                         
                                     {
                                     
-    var node: Node = new BasicItemView(itemInterface, new BasicArrayListD()).toXmlNode(document)!;;
+    let node: Node = new BasicItemView(itemInterface, new BasicArrayListD()).toXmlNode(document)!;;
     
 inventoryNode!.appendChild(node);
     
@@ -169,10 +171,11 @@ inventoryNode!.appendChild(node);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return inventoryNode;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -187,8 +190,10 @@ inventoryNode!.appendChild(node);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -200,8 +205,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -209,12 +213,13 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to view Inventory";;
+    let error: string = "Failed to view Inventory";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
@@ -231,12 +236,12 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

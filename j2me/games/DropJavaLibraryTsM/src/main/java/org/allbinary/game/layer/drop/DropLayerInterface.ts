@@ -50,9 +50,7 @@ export interface DropLayerInterface extends LayerInterface {
 
                 //@Throws(Exception.constructor)
             
-    getDroppedLayer(): PickedUpLayerInterface
+    getDroppedLayer(): PickedUpLayerInterface;
 
 }
-
-
 

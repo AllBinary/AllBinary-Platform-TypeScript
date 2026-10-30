@@ -25,12 +25,15 @@ import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -64,10 +67,10 @@ export class GameConfigurationTextInput
 
     public static update(textField: TextField){
 
-    var anyType: any = textField!.getLabel();;
+    let anyType: any = textField!.getLabel();;
     
 
-    var gameConfigurationTextInput: GameConfigurationTextInput = GameConfigurationTextInput.hashtable.get(anyType) as GameConfigurationTextInput;;
+    let gameConfigurationTextInput: GameConfigurationTextInput = GameConfigurationTextInput.hashtable.get(anyType) as GameConfigurationTextInput;;
     
 gameConfigurationTextInput!.setText(textField!.getString());
     
@@ -133,6 +136,4 @@ this.label= label;
 
 
 }
-
-
 

@@ -40,19 +40,17 @@
 export interface BoundsVisitorInterface {
         
 
-    getX(): number
+    getX(): number;
 
-    getY(): number
+    getY(): number;
 
-    maxX()
+    maxX(): void;
 
-    maxY()
+    maxY(): void;
 
-    minX()
+    minX(): void;
 
-    minY()
+    minY(): void;
 
 }
-
-
 

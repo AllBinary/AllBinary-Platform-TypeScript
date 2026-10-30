@@ -33,6 +33,7 @@ import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -76,12 +77,12 @@ public constructor (){
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(UrlGlobalsData.WEBAPPPATH, org.allbinary.globals.URLGLOBALS.getWebappPath());
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, UrlGlobalsData.NAME, hashMap)!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, UrlGlobalsData.NAME, hashMap)!;;
     
 
 
@@ -93,6 +94,4 @@ hashMap!.put(UrlGlobalsData.WEBAPPPATH, org.allbinary.globals.URLGLOBALS.getWeba
 
 
 }
-
-
 

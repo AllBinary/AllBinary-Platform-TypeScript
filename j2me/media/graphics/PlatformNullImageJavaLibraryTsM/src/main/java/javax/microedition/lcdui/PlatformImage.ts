@@ -24,6 +24,7 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -55,7 +56,7 @@ export class PlatformImage
          {
         
 
-    public getImage(graphicsSurface2: any = {}): any{
+    public getImage(graphicsSurface2: any): any{
 
 
 
@@ -65,7 +66,7 @@ export class PlatformImage
 }
 
 
-    public getSurfaceWidth(graphicsSurface2: any = {}, width: number): number{
+    public getSurfaceWidth(graphicsSurface2: any, width: number): number{
 
 
 
@@ -75,7 +76,7 @@ export class PlatformImage
 }
 
 
-    public getSurfaceHeight(graphicsSurface2: any = {}, height: number): number{
+    public getSurfaceHeight(graphicsSurface2: any, height: number): number{
 
 
 
@@ -105,7 +106,7 @@ export class PlatformImage
 }
 
 
-    public getGraphics(graphicsSurface: any = {}, width: number, height: number, image: Image): javax.microedition.lcdui.Graphics{
+    public getGraphics(graphicsSurface: any, width: number, height: number, image: Image): javax.microedition.lcdui.Graphics{
 
 
 
@@ -114,7 +115,7 @@ export class PlatformImage
 }
 
 
-    public drawImage(image: Image, x: number, y: number, anchor: number, g2: javax.microedition.lcdui.Graphics, g: any = {}){
+    public drawImage(image: Image, x: number, y: number, anchor: number, g2: javax.microedition.lcdui.Graphics, g: any){
 }
 
 
@@ -141,6 +142,4 @@ export class PlatformImage
 
 
 }
-
-
 

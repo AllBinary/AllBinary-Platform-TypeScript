@@ -145,7 +145,7 @@ this.contentType= value;
             
     public getXslFile(): string{
 
-    var path: string = URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.xslFile;;
+    let path: string = URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.xslFile;;
     
 
 
@@ -189,6 +189,4 @@ this.contentType= value;
 
 
 }
-
-
 

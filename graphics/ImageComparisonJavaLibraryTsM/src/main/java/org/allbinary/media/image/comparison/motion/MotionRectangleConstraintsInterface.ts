@@ -54,25 +54,23 @@ import { Rectangle } from './Rectangle.js';
 export interface MotionRectangleConstraintsInterface {
         
 
-    getMaxMotionRectangles(): number
+    getMaxMotionRectangles(): number;
 
-    getMinDimension(): Dimension
+    getMinDimension(): Dimension;
 
-    getMinArea(): number
+    getMinArea(): number;
 
-    getMaxDimension(): Dimension
+    getMaxDimension(): Dimension;
 
-    isTooSmall(rectangle: Rectangle): boolean
+    isTooSmall(rectangle: Rectangle): boolean;
 
-    isAreaTooSmall(rectangle: Rectangle): boolean
+    isAreaTooSmall(rectangle: Rectangle): boolean;
 
-    isTooBig(rectangle: Rectangle): boolean
+    isTooBig(rectangle: Rectangle): boolean;
 
                 //@Throws(Exception.constructor)
             
-    isValid(frame: Long, bufferedImage: BufferedImage, rectangle: Rectangle): boolean
+    isValid(frame: Long, bufferedImage: BufferedImage, rectangle: Rectangle): boolean;
 
 }
-
-
 

@@ -46,9 +46,7 @@ import { BasicColor } from './BasicColor.js';
 export interface ColorCompositeInterface extends BasicColorCompositeSetterInterface {
         
 
-    getBasicColorP(): BasicColor
+    getBasicColorP(): BasicColor;
 
 }
-
-
 

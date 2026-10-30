@@ -43,27 +43,33 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HashtableUtil;
 
 
 
@@ -118,44 +124,43 @@ this.loadAllSize(abeClientInformation, 1);
             
     public loadAllSize(abeClientInformation: AbeClientInformationInterface, size: number){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
+    let recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
-        try {
-            recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+ try { recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
-    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
+    let recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var hashtable: ABHashtable<string, string>;;
+    let hashtable: ABHashtable<string, string>;;
     
 
-    var name: string;;
+    let name: string;;
     
 
-    var value: string;;
+    let value: string;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var recordAsBytes: number[];;
+    let recordAsBytes: number[];;
     
 
-    var byteArrayInputStream: ByteArrayInputStream;;
+    let byteArrayInputStream: ByteArrayInputStream;;
     
 
-    var inputStream: DataInputStream;;
+    let inputStream: DataInputStream;;
     
 
         while(recordEnum!.hasNextElement())
         {
 
-    var id: number = recordEnum!.nextRecordId()!;;
+    let id: number = recordEnum!.nextRecordId()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -180,7 +185,7 @@ hashtable= new ABHashtable<string, string>();
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 name= inputStream!.readUTF();
     
@@ -201,19 +206,20 @@ this.idList!.add(smallIntegerSingletonFactory!.getAt(id));
                                 
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-         finally {
-            
+ }
+   }
+ finally { 
                         if(recordStore != 
                                     null
                                 )
@@ -226,9 +232,7 @@ recordStore!.closeRecordStore();
 
                                     }
                                 
-
-         }
-        
+ }
 }
 
 
@@ -236,34 +240,33 @@ recordStore!.closeRecordStore();
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: ABHashtable<any, any>){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
+    let recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
-        try {
-            this.logUtil!.putF(new StringMaker().append(this.persistanceStrings!.SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
+ try { this.logUtil!.putF(new StringMaker().append(this.persistanceStrings!.SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+    let byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);;
+    let outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);;
     
 
-    var value: string;;
+    let value: string;;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
+    let objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
     
 
-    var anyType: any;;
+    let anyType: any;;
     
 
-    var size: number = objectArray!.length
+    let size: number = objectArray!.length
                 ;;
     
 
@@ -271,7 +274,7 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 outputStream!.writeUTF(objectArray[index]! as string);
     
@@ -286,26 +289,27 @@ outputStream!.writeUTF(value);
 }
 
 
-    var tsUtil: TsUtil = TsUtil.getInstance()!;;
+    let tsUtil: TsUtil = TsUtil.getInstance()!;;
     
 
-    var savedGameBytes: number[] = tsUtil!.getByteArray(byteArrayOutputStream!.toString())!;;
+    let savedGameBytes: number[] = tsUtil!.getByteArray(byteArrayOutputStream!.toString())!;;
     
 recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-         finally {
-            
+ }
+   }
+ finally { 
                         if(recordStore != 
                                     null
                                 )
@@ -318,15 +322,13 @@ recordStore!.closeRecordStore();
 
                                     }
                                 
-
-         }
-        
+ }
 }
 
 
     public get(index: number): ABHashtable<any, any>{
 
-    var hashtable: ABHashtable<any, any> = this.valueList!.objectArray[index]! as ABHashtable<any, any>;;
+    let hashtable: ABHashtable<any, any> = this.valueList!.objectArray[index]! as ABHashtable<any, any>;;
     
 
 
@@ -338,6 +340,4 @@ recordStore!.closeRecordStore();
 
 
 }
-
-
 

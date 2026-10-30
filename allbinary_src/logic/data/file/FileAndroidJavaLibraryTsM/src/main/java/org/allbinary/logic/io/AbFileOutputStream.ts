@@ -134,10 +134,19 @@ this.fileOutputStream!.close();
     
 }
 
-
+write(...args: any[]): any {
+   
+    if (args.length === 1) return this.write$overload1(args[0]);
+   
+    if (args.length === 3 && typeof args[1] === 'number' && typeof args[2] === 'number') return this.write$overload2(args[0], args[1], args[2]);
+   
+    if (args.length === 1 && typeof args[0] === 'number') return this.write$overload3(args[0]);
+   
+   throw new TypeError('No matching overload: write'); }
+  
                 //@Throws(IOException.constructor)
             
-    public write(buffer: number[]){
+    public write$overload1(buffer: number[]){
 this.fileOutputStream!.write(buffer);
     
 }
@@ -145,7 +154,7 @@ this.fileOutputStream!.write(buffer);
 
                 //@Throws(IOException.constructor)
             
-    public write(buffer: number[], offset: number, count: number){
+    public write$overload2(buffer: number[], offset: number, count: number){
 this.fileOutputStream!.write(buffer, offset, count);
     
 }
@@ -153,13 +162,11 @@ this.fileOutputStream!.write(buffer, offset, count);
 
                 //@Throws(IOException.constructor)
             
-    public write(b: number){
+    public write$overload3(b: number){
 this.fileOutputStream!.write(b);
     
 }
 
 
 }
-
-
 

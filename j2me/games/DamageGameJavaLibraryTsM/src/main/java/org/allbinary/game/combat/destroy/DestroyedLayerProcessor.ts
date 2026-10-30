@@ -40,15 +40,19 @@ import { BasicLayerProcessor } from '../../../../../org/allbinary/layer/BasicLay
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -100,32 +104,32 @@ private constructor (){
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var list: BasicArrayList = this.getList()!;;
+    let list: BasicArrayList = this.getList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var destroyedEventHandler: DestroyedEventHandler = DestroyedEventHandler.getInstance()!;;
+    let destroyedEventHandler: DestroyedEventHandler = DestroyedEventHandler.getInstance()!;;
     
 
-    var destroyEventCircularStaticPool: DestroyEventCircularStaticPool = DestroyEventCircularStaticPool.getInstance()!;;
+    let destroyEventCircularStaticPool: DestroyEventCircularStaticPool = DestroyEventCircularStaticPool.getInstance()!;;
     
 
-    var destroyedEvent: DestroyedEvent;;
+    let destroyedEvent: DestroyedEvent;;
     
 
-    var layerInterface: AllBinaryLayer;;
+    let layerInterface: AllBinaryLayer;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var layerInterfaceCanBeNull: any = list.objectArray[index];;
+    let layerInterfaceCanBeNull: any = list.objectArray[index];;
     
 
                         if(layerInterfaceCanBeNull != 
@@ -146,7 +150,7 @@ destroyedEventHandler!.fireEvent(destroyedEvent);
                                 
                         else {
                             
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         }
@@ -159,6 +163,4 @@ list.clear();
 
 
 }
-
-
 

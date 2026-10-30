@@ -9,9 +9,11 @@ import { BaseBasicArrayListCache } from '../../../../../../org/allbinary/logic/u
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+type BasicArrayListS<T = any, U = any> = typeof BasicArrayListS extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListS;
 
 
 
@@ -67,7 +69,7 @@ private constructor (){
 
 
                         for (
-    var index: number = maxConcurrentPaths;index >= this.maxConcurrentPaths; index--)
+    let index: number = maxConcurrentPaths;index >= this.maxConcurrentPaths; index--)
         {
 this.list.add(new BasicArrayListS(maxPaths));
     
@@ -119,6 +121,4 @@ this.list.add(list);
 
 
 }
-
-
 

@@ -45,6 +45,7 @@ import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js'
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -85,12 +86,21 @@ export class UserConfigurationInterfaceFactory
         
 
     private static readonly configurationName: string = "DefaultUserConfiguration";
-
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 1) return this.getInstance$overload1(args[0]);
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+    if (args.length === 0) return this.getInstance$overload3();
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
-    public static getInstance(document: Document): UserConfigurationInterface{
+    public static getInstance$overload1(document: Document): UserConfigurationInterface{
 
-    var configurationNode: Node = DomSearchHelper.getNode(UserConfigurationData.NAME, document.getChildNodes())!;;
+    let configurationNode: Node = DomSearchHelper.getNode(UserConfigurationData.NAME, document.getChildNodes())!;;
     
 
 
@@ -103,15 +113,15 @@ export class UserConfigurationInterfaceFactory
 
                 //@Throws(Exception.constructor)
             
-    public static getInstance(userRole: UserRole): UserConfigurationInterface{
+    public static getInstance$overload2(userRole: UserRole): UserConfigurationInterface{
 
-    var abPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.USERCONFIGURATIONPATH, UserConfigurationInterfaceFactory.configurationName +userRole!.toString() +AbPathData.getInstance()!.EXTENSION_SEP +UserConfigurationData.UNCRYPTED_EXTENSION);;
+    let abPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.USERCONFIGURATIONPATH, UserConfigurationInterfaceFactory.configurationName +userRole!.toString() +AbPathData.getInstance()!.EXTENSION_SEP +UserConfigurationData.UNCRYPTED_EXTENSION);;
     
 
-    var documentString: string = new CryptFileReader(UserConfigurationData.UNCRYPTED_EXTENSION, UserConfigurationData.ENCRYPTED_EXTENSION).get(abPath)!;;
+    let documentString: string = new CryptFileReader(UserConfigurationData.UNCRYPTED_EXTENSION, UserConfigurationData.ENCRYPTED_EXTENSION).get(abPath)!;;
     
 
-    var document: Document = DomDocumentHelper.create(documentString)!;;
+    let document: Document = DomDocumentHelper.create(documentString)!;;
     
 
 
@@ -124,7 +134,7 @@ export class UserConfigurationInterfaceFactory
 
                 //@Throws(Exception.constructor)
             
-    public static getInstance(): UserConfigurationInterface{
+    public static getInstance$overload3(): UserConfigurationInterface{
 
 
 
@@ -141,6 +151,4 @@ private constructor (){
 
 
 }
-
-
 

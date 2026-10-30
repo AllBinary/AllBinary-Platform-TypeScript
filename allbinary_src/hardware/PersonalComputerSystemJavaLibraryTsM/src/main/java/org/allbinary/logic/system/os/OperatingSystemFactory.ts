@@ -26,12 +26,15 @@
         
 //not plain js import { Log } 
 const Log = globalThis.org.allbinary.logic.communication.log.Log;
+type Log<T = any, U = any> = typeof Log extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Log;
 
 //not plain js import { LogFactory } 
 const LogFactory = globalThis.org.allbinary.logic.communication.log.LogFactory;
+type LogFactory<T = any, U = any> = typeof LogFactory extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogFactory;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LogConfigTypeFactory } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
@@ -41,9 +44,11 @@ import { LogConfigTypes } from '../../../../../org/allbinary/logic/communication
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { LinuxOperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/linux/LinuxOperatingSystemFactory.js';
 //not GWT import const LinuxOperatingSystemFactory
@@ -56,6 +61,7 @@ import { WindowsOperatingSystemFactory } from '../../../../../org/allbinary/logi
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -118,21 +124,20 @@ private constructor (){
 
     public getOperatingSystemInstance(): GenericOperatingSystem{
 
-        try {
-            
-    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
+ try { 
+    let operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
     
 
-    var systemProperties: SystemProperties = SystemProperties.getInstance()!;;
+    let systemProperties: SystemProperties = SystemProperties.getInstance()!;;
     
 
-    var osName: string = systemProperties!.getName()!;;
+    let osName: string = systemProperties!.getName()!;;
     
 
-    var osArch: string = systemProperties!.getArch()!;;
+    let osArch: string = systemProperties!.getArch()!;;
     
 
-    var osVersion: string = systemProperties!.getVersion()!;;
+    let osVersion: string = systemProperties!.getVersion()!;;
     
 
                         if(!this.hasDetected)
@@ -206,7 +211,7 @@ this.genericOperatingSystem= SolarisOperatingSystemFactory.getInstance()!.getOpe
                         }
                             
 
-    var log: Log = LogFactory.getInstanceF(new StringMaker().append("OperatingSystem Info: ")!.append(StringUtil.getInstance()!.toString(this.genericOperatingSystem))!.toString(), this, this.commonStrings!.GET_INSTANCE)!;;
+    let log: Log = LogFactory.getInstanceF(new StringMaker().append("OperatingSystem Info: ")!.append(StringUtil.getInstance()!.toString(this.genericOperatingSystem))!.toString(), this, this.commonStrings!.GET_INSTANCE)!;;
     
 console.log(log.toString());
     
@@ -221,10 +226,11 @@ this.logUtil!.putL(log);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.genericOperatingSystem;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
@@ -240,12 +246,12 @@ this.logUtil!.putL(log);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NoOperatingSystem.NO_OPERATING_SYSTEM;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

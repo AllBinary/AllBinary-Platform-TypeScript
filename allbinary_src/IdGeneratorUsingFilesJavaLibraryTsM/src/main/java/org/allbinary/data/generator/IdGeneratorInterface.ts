@@ -45,9 +45,7 @@ export interface IdGeneratorInterface {
 
                 //@Throws(IOException.constructor)
             
-    getNext(): string
+    getNext(): string;
 
 }
-
-
 

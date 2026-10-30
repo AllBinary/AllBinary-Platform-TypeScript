@@ -34,9 +34,11 @@ import { Set } from '../../../../../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { Item } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/Item.js';
 //not GWT import const Item
@@ -46,6 +48,7 @@ import { ItemView } from '../../../../../../../org/allbinary/business/user/comme
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -92,7 +95,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
@@ -115,10 +118,10 @@ this.items.add(item);
 
     public removeItem(id: string){
 
-    var itemArray: any[] = this.items.toArray()!;;
+    let itemArray: any[] = this.items.toArray()!;;
     
 
-    var size: number = itemArray!.length
+    let size: number = itemArray!.length
                 ;;
     
 
@@ -126,10 +129,10 @@ this.items.add(item);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;;
+    let item: Item = itemArray[index]! as Item;;
     
 
                         if(item.getId()!.compareTo(id) == 0)
@@ -147,10 +150,10 @@ this.items.add(item);
 
     public adjustItem(id: string, num: string){
 
-    var itemArray: any[] = this.items.toArray()!;;
+    let itemArray: any[] = this.items.toArray()!;;
     
 
-    var size: number = itemArray!.length
+    let size: number = itemArray!.length
                 ;;
     
 
@@ -158,10 +161,10 @@ this.items.add(item);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;;
+    let item: Item = itemArray[index]! as Item;;
     
 
                         if(item.getId()!.compareTo(id) == 0)
@@ -179,13 +182,13 @@ this.items.add(item);
 
     public getTotalWeight(): string{
 
-    var weightFloat: number = 0;;
+    let weightFloat: number = 0;;
     
 
-    var itemArray: any[] = this.items.toArray()!;;
+    let itemArray: any[] = this.items.toArray()!;;
     
 
-    var size: number = itemArray!.length
+    let size: number = itemArray!.length
                 ;;
     
 
@@ -193,10 +196,10 @@ this.items.add(item);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;;
+    let item: Item = itemArray[index]! as Item;;
     
 weightFloat += new number(item.getWeight());
     
@@ -223,13 +226,13 @@ weightFloat += new number(item.getWeight());
 
     public getIds(): Set{
 
-    var idSet: HashSet = new HashSet();;
+    let idSet: HashSet = new HashSet();;
     
 
-    var itemArray: any[] = this.items.toArray()!;;
+    let itemArray: any[] = this.items.toArray()!;;
     
 
-    var size: number = itemArray!.length
+    let size: number = itemArray!.length
                 ;;
     
 
@@ -237,10 +240,10 @@ weightFloat += new number(item.getWeight());
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;;
+    let item: Item = itemArray[index]! as Item;;
     
 idSet!.add(item.getId());
     
@@ -257,10 +260,10 @@ idSet!.add(item.getId());
 
     public getNumberOf(id: string): Integer{
 
-    var itemArray: any[] = this.items.toArray()!;;
+    let itemArray: any[] = this.items.toArray()!;;
     
 
-    var size: number = itemArray!.length
+    let size: number = itemArray!.length
                 ;;
     
 
@@ -268,10 +271,10 @@ idSet!.add(item.getId());
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;;
+    let item: Item = itemArray[index]! as Item;;
     
 
                         if(item.getId()!.compareTo(id) == 0)
@@ -301,13 +304,13 @@ idSet!.add(item.getId());
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(BasketData.BASKET)!;;
+    let node: Node = document.createElement(BasketData.BASKET)!;;
     
 
-    var itemArray: any[] = this.items.toArray()!;;
+    let itemArray: any[] = this.items.toArray()!;;
     
 
-    var size: number = itemArray!.length
+    let size: number = itemArray!.length
                 ;;
     
 
@@ -315,10 +318,10 @@ idSet!.add(item.getId());
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;;
+    let item: Item = itemArray[index]! as Item;;
     
 node.appendChild(new ItemView(item, new BasicArrayListD()).toXmlNode(document));
     
@@ -334,6 +337,4 @@ node.appendChild(new ItemView(item, new BasicArrayListD()).toXmlNode(document));
 
 
 }
-
-
 

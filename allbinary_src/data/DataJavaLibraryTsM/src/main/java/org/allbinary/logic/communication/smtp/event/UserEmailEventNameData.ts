@@ -30,6 +30,7 @@ import { OrderHistoryData } from '../../../../../../org/allbinary/business/user/
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 
 
@@ -112,7 +113,7 @@ export class UserEmailEventNameData
 
     public static getInstance(userEmailEventNameString: string): UserEmailEventNameData{
 
-    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString) as UserEmailEventNameData;;
+    let userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString) as UserEmailEventNameData;;
     
 
                         if(userEmailEventNameData == 
@@ -187,6 +188,4 @@ UserEmailEventNameData.nextId++;
 
 
 }
-
-
 

@@ -42,31 +42,29 @@
 export interface ThirdPartyInApplicationPurchaseInterface {
         
 
-    isPurchased(lockableFeature: LockableFeature): boolean
+    isPurchased(lockableFeature: LockableFeature): boolean;
 
-    onCreate(anyType: any, stateObject: any)
+    onCreate(anyType: any, stateObject: any): void;
 
-    onDestroy()
+    onDestroy(): void;
 
-    onStart()
+    onStart(): void;
 
-    onActivityResult(requestCode: number, resultCode: number, dataObject: any)
+    onActivityResult(requestCode: number, resultCode: number, dataObject: any): void;
 
-    onSaveInstanceState(anyType: any)
+    onSaveInstanceState(anyType: any): void;
 
-    onStop()
+    onStop(): void;
 
-    requestPurchase(lockableFeature: LockableFeature)
+    requestPurchase(lockableFeature: LockableFeature): void;
 
-    requestReceipts()
+    requestReceipts(): void;
 
-    add(lockableFeature: LockableFeature)
+    add(lockableFeature: LockableFeature): void;
 
-    getUserName(): string
+    getUserName(): string;
 
-    isEnabled(): boolean
+    isEnabled(): boolean;
 
 }
-
-
 

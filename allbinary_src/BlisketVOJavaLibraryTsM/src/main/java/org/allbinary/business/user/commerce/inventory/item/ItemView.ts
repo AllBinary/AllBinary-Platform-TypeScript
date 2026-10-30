@@ -30,9 +30,11 @@ import { Set } from '../../../../../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StreetAddressData } from '../../../../../../../org/allbinary/business/user/address/StreetAddressData.js';
 //not GWT import const StreetAddressData
@@ -42,6 +44,7 @@ import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/M
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -97,27 +100,27 @@ this.vector= vector;
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;;
+    let keySet: Set = hashMap!.keys()!;;
     
 
-    var node: Node = document.createElement(ItemData.ITEM)!;;
+    let node: Node = document.createElement(ItemData.ITEM)!;;
     
 
-    var basicItemView: BasicItemView = new BasicItemView(this.itemInterface, this.vector);;
+    let basicItemView: BasicItemView = new BasicItemView(this.itemInterface, this.vector);;
     
 node.appendChild(basicItemView!.toXmlNode(document));
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var nameArray: any[] = keySet!.()!;;
+    let nameArray: any[] = keySet!.()!;;
     
 
-    var size: number = nameArray!.length
+    let size: number = nameArray!.length
                 ;;
     
 
@@ -125,13 +128,13 @@ node.appendChild(basicItemView!.toXmlNode(document));
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var name: string = nameArray[index]! as string;;
+    let name: string = nameArray[index]! as string;;
     
 
-    var value: string = hashMap!.get(name) as string;;
+    let value: string = hashMap!.get(name) as string;;
     
 value= stringUtil!.getNonNull(value);
     
@@ -140,7 +143,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 }
 
 
-    var shippingAddressNode: Node = document.createElement(StreetAddressData.NAME)!;;
+    let shippingAddressNode: Node = document.createElement(StreetAddressData.NAME)!;;
     
 shippingAddressNode!.appendChild(this.itemInterface!.getShippingAddress()!.toXmlNode(document));
     
@@ -154,6 +157,4 @@ shippingAddressNode!.appendChild(this.itemInterface!.getShippingAddress()!.toXml
 
 
 }
-
-
 

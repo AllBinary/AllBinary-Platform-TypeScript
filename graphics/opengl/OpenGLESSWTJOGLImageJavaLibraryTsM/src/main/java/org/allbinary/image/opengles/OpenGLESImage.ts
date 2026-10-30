@@ -43,9 +43,11 @@ import { GraphicsStrings } from '../../../../org/allbinary/graphics/GraphicsStri
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { PlatformBitmapBase } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
 //not GWT import const PlatformBitmapBase
@@ -58,12 +60,15 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -173,7 +178,7 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
                                     OpenGLESImage.texture2dList!.add(this);
     
 
-    var textures: number[] = new Array(1);;
+    let textures: number[] = new Array(1);;
     
 gl.glEnable(GL10.GL_TEXTURE_2D);
     
@@ -238,7 +243,7 @@ gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_T, GL10.GL_CLAMP_TO_
 
     public toString(): string{
 
-    var graphicsStrings: GraphicsStrings = GraphicsStrings.getInstance()!;;
+    let graphicsStrings: GraphicsStrings = GraphicsStrings.getInstance()!;;
     
 
 
@@ -250,6 +255,4 @@ gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_T, GL10.GL_CLAMP_TO_
 
 
 }
-
-
 

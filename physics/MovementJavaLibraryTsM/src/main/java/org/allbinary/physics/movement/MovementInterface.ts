@@ -48,15 +48,13 @@ import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.
 export interface MovementInterface {
         
 
-    init(speedBasicDecimal: BasicDecimal, angle: number, otherAngle: number)
+    init(speedBasicDecimal: BasicDecimal, angle: number, otherAngle: number): void;
 
                 //@Throws(Exception.constructor)
             
-    process(layer: AllBinaryGameLayer)
+    process(layer: AllBinaryGameLayer): void;
 
-    stop()
+    stop(): void;
 
 }
-
-
 

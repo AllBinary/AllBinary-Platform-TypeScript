@@ -28,9 +28,11 @@ import { Set } from '../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -64,6 +66,7 @@ import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SearchData } from '../../../org/allbinary/logic/control/search/SearchData.js';
 //not GWT import const SearchData
@@ -121,30 +124,29 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
             
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
+ try { 
+    let inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var basketInterface: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;;
+    let basketInterface: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;;
     
 
-    var basketNode: Node = document.createElement(BasketData.BASKET)!;;
+    let basketNode: Node = document.createElement(BasketData.BASKET)!;;
     
 
-    var itemsAndNumberInBasket: HashMap<any, any> = basketInterface!.getItems()!;;
+    let itemsAndNumberInBasket: HashMap<any, any> = basketInterface!.getItems()!;;
     
 
-    var numberOfResults: number = 1;;
+    let numberOfResults: number = 1;;
     
 
-    var items: Set = itemsAndNumberInBasket!.keySet()!;;
+    let items: Set = itemsAndNumberInBasket!.keySet()!;;
     
 
-    var productArray: any[] = items.toArray()!;;
+    let productArray: any[] = items.toArray()!;;
     
 
-    var size: number = productArray!.length
+    let size: number = productArray!.length
                 ;;
     
 
@@ -152,13 +154,13 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var product: string = .toCharArray();;
+    let product: string = .toCharArray();;
     
 
-    var itemInterface: ItemInterface = inventoryEntity!.getItem(product)!;;
+    let itemInterface: ItemInterface = inventoryEntity!.getItem(product)!;;
     
 
                         if(itemInterface != 
@@ -167,21 +169,21 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
                         
                                     {
                                     
-    var basicItemView: BasicItemView = new BasicItemView(itemInterface, new BasicArrayListD());;
+    let basicItemView: BasicItemView = new BasicItemView(itemInterface, new BasicArrayListD());;
     
 
-    var node: Node = basicItemView!.toXmlNode(document)!;;
+    let node: Node = basicItemView!.toXmlNode(document)!;;
     
 
-    var numberInBasket: string = basketInterface!.getNumberOf(product)!.toString()!;;
+    let numberInBasket: string = basketInterface!.getNumberOf(product)!.toString()!;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTALINBASKET, numberInBasket));
     
 
-    var itemPrice: Money = itemInterface!.getPrice()!;;
+    let itemPrice: Money = itemInterface!.getPrice()!;;
     
 
-    var itemTotal: Money = new Money(itemPrice);;
+    let itemTotal: Money = new Money(itemPrice);;
     
 itemTotal!.multiply(basketInterface!.getNumberOf(product)!.intValue());
     
@@ -203,26 +205,26 @@ numberOfResults++;
 }
 
 
-    var totalNumberNode: Node = document.createElement(SearchData.TOTAL_NUMBER_ITEMS)!;;
+    let totalNumberNode: Node = document.createElement(SearchData.TOTAL_NUMBER_ITEMS)!;;
     
 
-    var totalNumberTextNode: Node = document.createTextNode(basketInterface!.getNumberOfItems()!.toString())!;;
+    let totalNumberTextNode: Node = document.createTextNode(basketInterface!.getNumberOfItems()!.toString())!;;
     
 totalNumberNode!.appendChild(totalNumberTextNode);
     
 
-    var totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;;
+    let totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;;
     
 
-    var totalWeightTextNode: Node = document.createTextNode(basketInterface!.getTotalWeight()!.toString())!;;
+    let totalWeightTextNode: Node = document.createTextNode(basketInterface!.getTotalWeight()!.toString())!;;
     
 totalWeightNode!.appendChild(totalWeightTextNode);
     
 
-    var subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;;
+    let subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;;
     
 
-    var subTotalTextNode: Node = document.createTextNode(basketInterface!.getSubTotal()!.toString())!;;
+    let subTotalTextNode: Node = document.createTextNode(basketInterface!.getSubTotal()!.toString())!;;
     
 subTotalNode!.appendChild(subTotalTextNode);
     
@@ -238,10 +240,11 @@ basketNode!.appendChild(subTotalNode);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return basketNode;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
@@ -256,8 +259,10 @@ basketNode!.appendChild(subTotalNode);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -271,8 +276,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -280,10 +284,11 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -298,12 +303,12 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -25,6 +25,7 @@ import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosit
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -69,13 +70,13 @@ protected constructor (geographicMapInterface: BasicGeographicMap){
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
 
-    var hashtable: ABHashtable<any, any> = GeographicMapCellPositionFactory.getHashtable()!;;
+    let hashtable: ABHashtable<any, any> = GeographicMapCellPositionFactory.getHashtable()!;;
     
 
-    var cellPositionKey: string = CellPosition.toStringColRow(i_column, i_row)!;;
+    let cellPositionKey: string = CellPosition.toStringColRow(i_column, i_row)!;;
     
 
-    var cellPositionCanBeNull: any = hashtable.get(cellPositionKey);;
+    let cellPositionCanBeNull: any = hashtable.get(cellPositionKey);;
     
 
                         if(cellPositionCanBeNull == 
@@ -102,6 +103,4 @@ hashtable.put(cellPositionKey, cellPositionCanBeNull);
 
 
 }
-
-
 

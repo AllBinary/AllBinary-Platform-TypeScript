@@ -60,6 +60,7 @@ import { IndexedAnimationBehavior } from './IndexedAnimationBehavior.js';
 //not GWT import - same folder const NullIndexedAnimationInner
 import { Animation } from './Animation.js';
 //not GWT import - same folder const Animation
+type NullIndexedAnimationInner = InstanceType<NullIndexedAnimationFactory['NullIndexedAnimationInner']>;
 
 export class NullIndexedAnimationFactory
             extends Object
@@ -81,7 +82,7 @@ export class NullIndexedAnimationFactory
 
 
 //inner= member=true isStatic=
-NullIndexedAnimationInner = class extends NullIndexedAnimation {
+NullIndexedAnimationInner = (() => { const outer$NullIndexedAnimationFactory = this; return class extends NullIndexedAnimation {
         
 /*Static stuff is not allowed for TypeScript inner classes*//**/
 
@@ -99,9 +100,7 @@ NullIndexedAnimationInner = class extends NullIndexedAnimation {
 }
 
 
-}
-
-
+}; })();
     private readonly NULL_ANIMATION: Animation = new this.NullIndexedAnimationInner();
 
 private constructor (){
@@ -139,6 +138,4 @@ private constructor (){
 
 
 }
-
-
 

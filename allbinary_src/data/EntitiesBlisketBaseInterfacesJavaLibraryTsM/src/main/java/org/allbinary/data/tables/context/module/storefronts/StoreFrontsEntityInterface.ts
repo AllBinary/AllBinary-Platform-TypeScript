@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
@@ -59,17 +61,15 @@ export interface StoreFrontsEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(Exception.constructor)
             
-    getStoreFrontInterface(name: string): StoreFrontInterface
+    getStoreFrontInterface(name: string): StoreFrontInterface;
 
-    getStoreFrontNames(): BasicArrayList
+    getStoreFrontNames(): BasicArrayList;
 
-    delete(value: string)
+    delete(value: string): void;
 
-    insert(values: BasicArrayList)
+    insert(values: BasicArrayList): void;
 
-    update(updatedValues: HashMap<any, any>)
+    update(updatedValues: HashMap<any, any>): void;
 
 }
-
-
 

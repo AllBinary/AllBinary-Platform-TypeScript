@@ -44,33 +44,43 @@ import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HashtableUtil;
 
 
 
@@ -152,7 +162,7 @@ this.context= aContext;
 
     public getResourceId(resource: string): Integer{
 
-    var value: Integer = this.hashMap!.get(resource) as Integer;;
+    let value: Integer = this.hashMap!.get(resource) as Integer;;
     
 
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
@@ -198,18 +208,18 @@ this.hashMap!.put(resource, value);
 
     containsDuplicate(resource: string, value: Integer): boolean{
 
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(this.hashMap)!;;
+    let objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(this.hashMap)!;;
     
 
 
 
 
                         for (
-    var index: number = objectArray!.length
+    let index: number = objectArray!.length
                 ;--index >= 0; )
         {
 
-    var integer: Integer = this.hashMap!.get(objectArray[index]!) as Integer;;
+    let integer: Integer = this.hashMap!.get(objectArray[index]!) as Integer;;
     
 
                         if(resource != objectArray[index])
@@ -261,16 +271,16 @@ this.resources= resources;
             
     public getResourceAsStream(resource: string): InputStream{
 
-    var integer: Integer = this.hashMap!.get(resource) as Integer;;
+    let integer: Integer = this.hashMap!.get(resource) as Integer;;
     
 
-    var id: number = integer.intValue()!;;
+    let id: number = integer.intValue()!;;
     
 
-    var resources: Resources = (this.resources as Resources);;
+    let resources: Resources = (this.resources as Resources);;
     
 
-    var inputStream: InputStream = resources.openRawResource(id)!;;
+    let inputStream: InputStream = resources.openRawResource(id)!;;
     
 
                         if(inputStream != 
@@ -297,6 +307,4 @@ this.resources= resources;
 
 
 }
-
-
 

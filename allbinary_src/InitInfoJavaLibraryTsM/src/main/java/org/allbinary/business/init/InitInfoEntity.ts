@@ -25,18 +25,22 @@ import { HashMap } from '../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { UserDbInitInfo } from '../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 //not GWT import const UserDbInitInfo
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
@@ -46,9 +50,11 @@ import { LogConfigTypes } from '../../../../org/allbinary/logic/communication/lo
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -103,7 +109,7 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
@@ -142,14 +148,13 @@ this.setTable(this.tableName);
 
     public get(): boolean{
 
-        try {
-            
-    var keyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let keyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keyAndValue!.put(this.NOTHING, this.NOTHING);
     
 
-    var hashMap: HashMap<any, any> = getRow(keyAndValue)!;;
+    let hashMap: HashMap<any, any> = getRow(keyAndValue)!;;
     
 
                         if(hashMap != 
@@ -187,10 +192,11 @@ keyAndValue!.put(this.NOTHING, this.NOTHING);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -206,21 +212,22 @@ keyAndValue!.put(this.NOTHING, this.NOTHING);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public is(): boolean{
 
-        try {
-            
-    var keyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let keyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keyAndValue!.put(this.NOTHING, this.NOTHING);
     
 
-    var hashMap: HashMap<any, any> = getRow(keyAndValue)!;;
+    let hashMap: HashMap<any, any> = getRow(keyAndValue)!;;
     
 
                         if(hashMap != 
@@ -256,10 +263,11 @@ keyAndValue!.put(this.NOTHING, this.NOTHING);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -275,8 +283,10 @@ keyAndValue!.put(this.NOTHING, this.NOTHING);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -288,9 +298,8 @@ updateWhere(NOTHING, NOTHING, InitInfo.getInstance()!.toHashMap());
 
     public add(){
 
-        try {
-            
-    var values: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let values: BasicArrayList = new BasicArrayListD();;
     
 values.add(this.NOTHING);
     
@@ -302,10 +311,11 @@ values.add(InitInfo.getInstance()!.getMainPath());
     
 insert(values);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -315,8 +325,10 @@ insert(values);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -336,7 +348,7 @@ insert(values);
                                 
                         else {
                             
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.FAILED_TO_CREATE);
     
@@ -357,6 +369,4 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 
 
 }
-
-
 

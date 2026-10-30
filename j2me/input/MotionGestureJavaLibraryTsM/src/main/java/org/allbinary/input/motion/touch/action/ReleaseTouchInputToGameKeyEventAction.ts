@@ -40,9 +40,11 @@ import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -96,22 +98,24 @@ private constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 
-        try {
-            this.setGameKey(this.NONE);
+ try { this.setGameKey(this.NONE);
     
 this.setGameKeyEvent(GameKeyEventFactory.getInstance()!.getInstanceForInput(this, this.NONE));
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -120,6 +124,4 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
 }
-
-
 

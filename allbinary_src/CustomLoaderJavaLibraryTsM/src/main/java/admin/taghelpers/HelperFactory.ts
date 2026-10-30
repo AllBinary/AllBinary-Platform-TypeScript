@@ -35,6 +35,7 @@ import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeFactory } from '../../org/allbinary/logic/system/loader/AbeFactory.js';
 //not GWT import const AbeFactory
@@ -47,6 +48,7 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -71,23 +73,33 @@ export class HelperFactory
             extends Object
          {
         
-
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 5 && typeof args[1] === 'string' && typeof args[2] === 'string') return this.getInstance$overload1(args[0], args[1], args[2], args[3], args[4]);
+   
+    if (args.length === 5 && typeof args[1] === 'string' && typeof args[2] === 'string') return this.getInstance$overload2(args[0], args[1], args[2], args[3], args[4]);
+   
+    if (args.length === 6 && typeof args[1] === 'string' && typeof args[2] === 'string') return this.getInstance$overload3(args[0], args[1], args[2], args[3], args[4], args[5]);
+   
+    if (args.length === 3 && typeof args[1] === 'string' && typeof args[2] === 'string') return this.getInstance$overload4(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(LicensingException.constructor)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): any{
+    public static getInstance$overload1(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): any{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var params: any[] = new Array(2);;
+ try { 
+    let params: any[] = new Array(2);;
     
 
-    var classes: Function[] = new Array(2);;
+    let classes: Function[] = new Array(2);;
     
 
-    var abeFactory: AbeFactory = AbeFactory.getInstance()!;;
+    let abeFactory: AbeFactory = AbeFactory.getInstance()!;;
     
 classes[0]= hashMap!.constructor;
     
@@ -98,7 +110,7 @@ params[0]= hashMap;
 params[1]= httpServletRequest;
     
 
-    var anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;;
+    let anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;;
     
 
 
@@ -106,12 +118,13 @@ params[1]= httpServletRequest;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType;
     
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed To Get Instance Args: HashMap=" +hashMap!.toString() +" HttpServletRequest=" +httpServletRequest;;
+    let error: string = "Failed To Get Instance Args: HashMap=" +hashMap!.toString() +" HttpServletRequest=" +httpServletRequest;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -127,13 +140,13 @@ params[1]= httpServletRequest;
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed To Get Instance";;
+    let error: string = "Failed To Get Instance";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -150,27 +163,28 @@ params[1]= httpServletRequest;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
                 //@Throws(LicensingException.constructor)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, pageContext: PageContext): any{
+    public static getInstance$overload2(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, pageContext: PageContext): any{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var params: any[] = new Array(2);;
+ try { 
+    let params: any[] = new Array(2);;
     
 
-    var classes: Function[] = new Array(2);;
+    let classes: Function[] = new Array(2);;
     
 
-    var abeFactory: AbeFactory = AbeFactory.getInstance()!;;
+    let abeFactory: AbeFactory = AbeFactory.getInstance()!;;
     
 classes[0]= hashMap!.constructor;
     
@@ -181,7 +195,7 @@ params[0]= hashMap;
 params[1]= pageContext;
     
 
-    var anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;;
+    let anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;;
     
 
 
@@ -189,16 +203,17 @@ params[1]= pageContext;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var error: string = "Failed To Get Instance Args: HashMap=" +hashMap!.toString() +" PageContext=" +pageContext;;
+    let error: string = "Failed To Get Instance Args: HashMap=" +hashMap!.toString() +" PageContext=" +pageContext;;
     
 logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
     
@@ -210,17 +225,17 @@ logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String,
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
     
@@ -233,27 +248,28 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
                 //@Throws(LicensingException.constructor)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, specialhashMap: HashMap<any, any>, pageContext: PageContext): any{
+    public static getInstance$overload3(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, specialhashMap: HashMap<any, any>, pageContext: PageContext): any{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var params: any[] = new Array(3);;
+ try { 
+    let params: any[] = new Array(3);;
     
 
-    var classes: Function[] = new Array(3);;
+    let classes: Function[] = new Array(3);;
     
 
-    var abeFactory: AbeFactory = AbeFactory.getInstance()!;;
+    let abeFactory: AbeFactory = AbeFactory.getInstance()!;;
     
 classes[0]= hashMap!.constructor;
     
@@ -268,7 +284,7 @@ params[1]= specialhashMap;
 params[2]= pageContext;
     
 
-    var anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;;
+    let anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;;
     
 
 
@@ -276,16 +292,17 @@ params[2]= pageContext;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var error: string = "Failed To Get Instance Args: HashMap=" +hashMap!.toString() +" PageContext=" +pageContext;;
+    let error: string = "Failed To Get Instance Args: HashMap=" +hashMap!.toString() +" PageContext=" +pageContext;;
     
 logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
     
@@ -297,17 +314,17 @@ logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String,
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
     
@@ -320,21 +337,22 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
                 //@Throws(LicensingException.constructor)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string): any{
+    public static getInstance$overload4(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string): any{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className)!;;
+ try { 
+    let anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className)!;;
     
 
 
@@ -342,16 +360,17 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
     
@@ -363,17 +382,17 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
     
@@ -386,8 +405,10 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -400,6 +421,4 @@ public constructor (){
 
 
 }
-
-
 

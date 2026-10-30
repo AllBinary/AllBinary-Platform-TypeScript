@@ -50,15 +50,19 @@ import { Processor } from '../../../org/allbinary/canvas/Processor.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 import { ABToGBUtil } from '../../../org/allbinary/game/canvas/ABToGBUtil.js';
 //not GWT import const ABToGBUtil
@@ -80,9 +84,11 @@ import { ProgressCanvasFactory } from '../../../org/allbinary/graphics/canvas/tr
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Memory } from '../../../org/allbinary/system/Memory.js';
 //not GWT import const Memory
@@ -98,12 +104,15 @@ import { SynchObject } from '../../../org/allbinary/thread/SynchObject.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+type ABSystemWrapper<T = any, U = any> = typeof ABSystemWrapper extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABSystemWrapper;
 
 
 
@@ -135,12 +144,101 @@ const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
 //not GWT import - same folder const HTMLEndProcessor
 import { ImageFactory } from './ImageFactory.js';
 //not GWT import - same folder const ImageFactory
+type NotHTMLProcessor = InstanceType<ImageCache['NotHTMLProcessor']>;
+type NotHTMLEndProcessor = InstanceType<ImageCache['NotHTMLEndProcessor']>;
+type HTMLEndProcessor = InstanceType<ImageCache['HTMLEndProcessor']>;
+type FirstProcessor = InstanceType<ImageCache['FirstProcessor']>;
 
 export class ImageCache extends ImageCacheBase {
         
 
     public static readonly NULL_IMAGE_CACHE: ImageCache = new ImageCache();
 
+//inner= member=true isStatic=
+NotHTMLProcessor = (() => { const outer$ImageCache = this; return class extends Processor {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
+
+
+    public process(){
+this.concurrentImageLoadingProcessor!.runTask();
+    
+}
+
+
+}; })();
+//inner= member=true isStatic=
+NotHTMLEndProcessor = (() => { const outer$ImageCache = this; return class extends Processor {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
+
+
+    public process(){
+
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    
+progressCanvas!.endIfPaintedSinceStart();
+    
+}
+
+
+}; })();
+//inner= member=true isStatic=
+HTMLEndProcessor = (() => { const outer$ImageCache = this; return class extends Processor {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
+
+
+    public process(){
+
+    let size: number = this.gdResources!.currentLayoutRequiredTotal;;
+    
+
+                    //Otherwise - statement - EmptyStmt
+
+
+                        if(size == 0)
+                        
+                                    {
+                                    
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    
+progressCanvas!.endIfPaintedSinceStart();
+    
+
+                                    }
+                                
+                             else 
+                        if(totalLoaded > globalThis.Math.trunc(size /12))
+                        
+                                    {
+                                    
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    
+progressCanvas!.endIfPaintedSinceStart();
+    
+endProcessor= new outer$ImageCache.NotHTMLEndProcessor();
+    
+
+                                    }
+                                
+}
+
+
+}; })();
+//inner= member=true isStatic=
+FirstProcessor = (() => { const outer$ImageCache = this; return class extends Processor {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
+
+
+    public process(){
+outer$ImageCache.firstProcess();
+    
+}
+
+
+}; })();
     private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
     private readonly concurrentImageLoadingProcessor: BaseImageLoadingProcessor = new ConcurrentImageLoadingProcessor(this);
@@ -173,99 +271,6 @@ export class ImageCache extends ImageCacheBase {
 
     public hasAnyLazyAnimationFactories: boolean = false;
 
-//inner= member=true isStatic=
-NotHTMLProcessor = class extends Processor {
-        
-/*Static stuff is not allowed for TypeScript inner classes*//**/
-
-
-    public process(){
-this.concurrentImageLoadingProcessor!.runTask();
-    
-}
-
-
-}
-
-
-//inner= member=true isStatic=
-NotHTMLEndProcessor = class extends Processor {
-        
-/*Static stuff is not allowed for TypeScript inner classes*//**/
-
-
-    public process(){
-
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
-    
-progressCanvas!.endIfPaintedSinceStart();
-    
-}
-
-
-}
-
-
-//inner= member=true isStatic=
-HTMLEndProcessor = class extends Processor {
-        
-/*Static stuff is not allowed for TypeScript inner classes*//**/
-
-
-    public process(){
-
-    var size: number = this.gdResources!.currentLayoutRequiredTotal;;
-    
-
-                    //Otherwise - statement - EmptyStmt
-
-
-                        if(size == 0)
-                        
-                                    {
-                                    
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
-    
-progressCanvas!.endIfPaintedSinceStart();
-    
-
-                                    }
-                                
-                             else 
-                        if(totalLoaded > globalThis.Math.trunc(size /12))
-                        
-                                    {
-                                    
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
-    
-progressCanvas!.endIfPaintedSinceStart();
-    
-endProcessor= new this.NotHTMLEndProcessor();
-    
-
-                                    }
-                                
-}
-
-
-}
-
-
-//inner= member=true isStatic=
-FirstProcessor = class extends Processor {
-        
-/*Static stuff is not allowed for TypeScript inner classes*//**/
-
-
-    public process(){
-ImageCache.prototype.firstProcess();
-    
-}
-
-
-}
-
-
     private processor: Processor = new this.FirstProcessor();
 
     private endProcessor: Processor = Processor.getInstance()!;
@@ -278,10 +283,10 @@ public constructor (){
 
     public firstProcess(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var isHTML: boolean = J2MEUtil.isHTML()!;;
+    let isHTML: boolean = J2MEUtil.isHTML()!;;
     
 
                         if(isHTML)
@@ -300,24 +305,26 @@ this.endProcessor= new this.HTMLEndProcessor();
 this.endProcessor= new this.NotHTMLEndProcessor();
     
 
-        try {
-            this.runTask();
+ try { this.runTask();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.putF(this.commonStrings!.EXCEPTION, this, this.commonStrings!.END_METHOD_NAME);
     
-}
 
+ }
+   }
+ 
 
                         }
                             
 }
 
 
-    public addListener(renderer: any = {}){
+    public addListener(renderer: any){
 }
 
 
@@ -329,10 +336,10 @@ logUtil!.putF(this.commonStrings!.EXCEPTION, this, this.commonStrings!.END_METHO
                         
                                     {
                                     
-    var abToGBUtil: ABToGBUtil = ABToGBUtil.getInstance()!;;
+    let abToGBUtil: ABToGBUtil = ABToGBUtil.getInstance()!;;
     
 
-    var abCanvas: AllBinaryGameCanvas = abToGBUtil!.abCanvas as AllBinaryGameCanvas;;
+    let abCanvas: AllBinaryGameCanvas = abToGBUtil!.abCanvas as AllBinaryGameCanvas;;
     
 
         while(this.loadNowList!.isEmpty() && (!abCanvas!.isInitialized() || (abCanvas!.isInitialized() && this.hasAnyLazyAnimationFactories)) && !this.progressEnded)
@@ -355,7 +362,7 @@ this.firstTime= false;
             
     public loadImageForAnimation(){
 
-    var lazyImageRotationAnimation: LazyImageRotationAnimation = 
+    let lazyImageRotationAnimation: LazyImageRotationAnimation = 
                 null
             ;;
     
@@ -475,7 +482,7 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
                         
                                     {
                                     
-    var list: BasicArrayList = this.getAssociated(lazyImageRotationAnimation)!;;
+    let list: BasicArrayList = this.getAssociated(lazyImageRotationAnimation)!;;
     
 
         
@@ -485,7 +492,7 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
         //mutex.withLock
         
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
                         if(size > 0)
@@ -502,10 +509,10 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
                                     }
                                 
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 
-    var isHTML: boolean = J2MEUtil.isHTML()!;;
+    let isHTML: boolean = J2MEUtil.isHTML()!;;
     
 
                         if(this.loadNowList!.isEmpty() && (!isHTML || this.firstTime))
@@ -577,7 +584,7 @@ this.loadImageForAnimation();
 }
 
 
-    var lazyImageRotationAnimation: LazyImageRotationAnimation = 
+    let lazyImageRotationAnimation: LazyImageRotationAnimation = 
                 null
             ;;
     
@@ -613,7 +620,7 @@ this.loadImageForAnimation();
             
     loadImageForLazyAnimation(lazyImageRotationAnimation: LazyImageRotationAnimation): boolean{
 
-    var image: Image = lazyImageRotationAnimation!.animationInterfaceFactoryInterface!.getImage()!;;
+    let image: Image = lazyImageRotationAnimation!.animationInterfaceFactoryInterface!.getImage()!;;
     
 
                         if(this.loadImage(image))
@@ -643,7 +650,7 @@ this.loadImageForAnimation();
             
     loadNextImage(){
 
-    var image: Image = 
+    let image: Image = 
                 null
             ;;
     
@@ -726,10 +733,10 @@ this.loadImage(image);
                                 
                         else {
                             
-    var key: string = image.getName()!;;
+    let key: string = image.getName()!;;
     
 
-    var image2: Image = this.creatImage(key)!;;
+    let image2: Image = this.creatImage(key)!;;
     
 
                         if(image2.isReady())
@@ -779,10 +786,10 @@ image.init(image2.getImage());
             
     creatImage(key: string): Image{
 
-    var inputStream: InputStream = this.resourceUtil!.getResourceAsStream(key)!;;
+    let inputStream: InputStream = this.resourceUtil!.getResourceAsStream(key)!;;
     
 
-    var image: Image = ImageFactory.getInstance()!.createImageFromInputStream(inputStream)!;;
+    let image: Image = ImageFactory.getInstance()!.createImageFromInputStream(inputStream)!;;
     
 image.setName(key);
     
@@ -799,10 +806,10 @@ image.setName(key);
             
     public get(caller: string, width: number, height: number): Image{
 
-    var foundIndex: number = this.getIndexWH(width, height)!;;
+    let foundIndex: number = this.getIndexWH(width, height)!;;
     
 
-    var image: Image = this.getFromAvailable(foundIndex, width, height)!;;
+    let image: Image = this.getFromAvailable(foundIndex, width, height)!;;
     
 
                         if(image == NullImage.NULL_IMAGE)
@@ -861,27 +868,27 @@ this.listOfList[foundIndex]!.add(image);
 
                 //@Throws(Exception.constructor)
             
-    public getWithKey(key: any = {}): Image{
+    public getWithKey(key: any): Image{
 
-    var image: Image = this.getImage(key)!;;
+    let image: Image = this.getImage(key)!;;
     
 
                         if(image == NullImage.NULL_IMAGE)
                         
                                     {
                                     
-    var inputStream: InputStream = 
+    let inputStream: InputStream = 
                 null
             ;;
     
 
-        try {
-            image= this.createImageFromInputStream(key, inputStream);
+ try { image= this.createImageFromInputStream(key, inputStream);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Exception: Trying Again After GC", this, this.commonStrings!.GET, e);
     
 this.logUtil!.putF(new StringMaker().append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, this.commonStrings!.GET);
@@ -896,8 +903,10 @@ Thread.sleep(100);
     
 image= this.createImageFromInputStream(key, inputStream);
     
-}
 
+ }
+   }
+ 
 this.hashtable.put(key, image);
     
 
@@ -912,15 +921,15 @@ this.hashtable.put(key, image);
 }
 
 
-    public getIndex(key: any = {}): number{
+    public getIndex(key: any): number{
 
-    var gdResources: GDResources = GDResources.getInstance()!;;
+    let gdResources: GDResources = GDResources.getInstance()!;;
     
 
-    var resourceStringArray: string[] = gdResources!.resourceStringArray;;
+    let resourceStringArray: string[] = gdResources!.resourceStringArray;;
     
 
-    var size: number = resourceStringArray!.length
+    let size: number = resourceStringArray!.length
                 ;;
     
 
@@ -928,7 +937,7 @@ this.hashtable.put(key, image);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(resourceStringArray[index] == key)
@@ -957,15 +966,15 @@ this.logUtil!.putF(new StringMaker().append("unable to find key: ")!.append(Stri
 
                 //@Throws(Exception.constructor)
             
-    createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
+    createImageFromInputStream(key: any, inputStream: InputStream): Image{
 
-    var gdLazyResources: GDLazyResources = GDLazyResources.getInstance()!;;
+    let gdLazyResources: GDLazyResources = GDLazyResources.getInstance()!;;
     
 
-    var resourceStringArray: string[] = gdLazyResources!.requiredResourcesBeforeLoadingArray;;
+    let resourceStringArray: string[] = gdLazyResources!.requiredResourcesBeforeLoadingArray;;
     
 
-    var size: number = resourceStringArray!.length
+    let size: number = resourceStringArray!.length
                 ;;
     
 
@@ -973,7 +982,7 @@ this.logUtil!.putF(new StringMaker().append("unable to find key: ")!.append(Stri
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(key == resourceStringArray[index])
@@ -993,16 +1002,16 @@ this.logUtil!.putF(new StringMaker().append("unable to find key: ")!.append(Stri
 this.runTask();
     
 
-    var index: number = this.getIndex(key)!;;
+    let index: number = this.getIndex(key)!;;
     
 
-    var width: number = gdLazyResources!.imageResourceWidthArray[index]!;;
+    let width: number = gdLazyResources!.imageResourceWidthArray[index]!;;
     
 
-    var height: number = gdLazyResources!.imageResourceHeightArray[index]!;;
+    let height: number = gdLazyResources!.imageResourceHeightArray[index]!;;
     
 
-    var image: Image = this.createImageLater(key as string, width, height)!;;
+    let image: Image = this.createImageLater(key as string, width, height)!;;
     
 
         
@@ -1038,7 +1047,7 @@ this.loadList!.add(image);
 
     public getAssociated(lazyImageRotationAnimation: LazyImageRotationAnimation): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
         
@@ -1048,19 +1057,19 @@ this.loadList!.add(image);
         //mutex.withLock
         
 
-    var lazyImageRotationAnimation2: LazyImageRotationAnimation = 
+    let lazyImageRotationAnimation2: LazyImageRotationAnimation = 
                 null
             ;;
     
 
-    var size: number = this.loadAfterList!.size()!;;
+    let size: number = this.loadAfterList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 lazyImageRotationAnimation2= this.loadAfterList!.get(index) as LazyImageRotationAnimation;
     
@@ -1076,14 +1085,14 @@ lazyImageRotationAnimation2= this.loadAfterList!.get(index) as LazyImageRotation
 }
 
 
-    var size2: number = list.size()!;;
+    let size2: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size2; index++)
+    let index: number = 0;index < size2; index++)
         {
 this.loadAfterList!.remove(list.get(index));
     
@@ -1185,6 +1194,4 @@ this.processor.process();
 
 
 }
-
-
 

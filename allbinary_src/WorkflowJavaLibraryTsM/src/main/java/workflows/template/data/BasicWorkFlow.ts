@@ -35,6 +35,7 @@ import { TagSupport } from '../../../javax/servlet/jsp/tagext/TagSupport.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
@@ -56,6 +57,7 @@ import { TransformFactory } from '../../../org/allbinary/logic/visual/transform/
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -189,6 +191,4 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(thi
 
 
 }
-
-
 

@@ -104,7 +104,7 @@ private constructor (){
 
     public readAgain(initializeCounter: number): LicenseInitInfo{
 
-    var licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();;
+    let licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();;
     
 licenseInitInfo!.clearServers();
     
@@ -120,6 +120,4 @@ licenseInitInfo!.addServer(this.OFFICIAL_ALLBINARY_SERVICES_SERVER);
 
 
 }
-
-
 

@@ -27,6 +27,7 @@ import { LicenseInitInfoUtil } from '../../org/allbinary/business/init/LicenseIn
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 import { PartnerIdentifierFileUtil } from '../../org/allbinary/logic/system/security/licensing/PartnerIdentifierFileUtil.js';
 //not GWT import const PartnerIdentifierFileUtil
@@ -59,13 +60,13 @@ export class AllBinaryAndroidGameInitializationUtil
 
     public static init(){
 
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
+    let resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var androidResources: AndroidResources = AndroidResources.getInstance()!;;
+    let androidResources: AndroidResources = AndroidResources.getInstance()!;;
     
 
-    var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;;
+    let licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;;
     
 resourceUtil!.addResource(licenseInitInfoUtil!.INITFILENAME, Integer.valueOf(androidResources!.raw.licenseinitdata));
     
@@ -75,6 +76,4 @@ resourceUtil!.addResource(PartnerIdentifierFileUtil.getInstance()!.FILE_NAME, In
 
 
 }
-
-
 

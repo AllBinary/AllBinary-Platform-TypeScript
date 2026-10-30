@@ -39,15 +39,18 @@ import { TempInputRobotNames } from '../../../../../../../../../org/allbinary/in
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -123,7 +126,7 @@ this.initComponents();
 this.keyActionScriptInputInterface= keyActionScriptInputInterface;
     
 
-    var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();;
+    let defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();;
     
 defaultComboBoxModel!.addElement(TempInputRobotNames.DX_NAME);
     
@@ -181,7 +184,7 @@ this.set();
 
     set(){
 
-    var inputTypeComboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;;
+    let inputTypeComboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;;
     
 inputTypeComboBoxModel!.setSelectedItem(this.keyActionScriptInputInterface!.getInputRobotInterface()!.getName());
     
@@ -200,10 +203,10 @@ this.keyActionScriptInputInterface!.log();
             
     updateInputType(){
 
-    var comboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;;
+    let comboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem() as string;;
+    let selectedItem: string = comboBoxModel!.getSelectedItem() as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem))
@@ -219,10 +222,10 @@ this.keyActionScriptInputInterface!.log();
 
     getSelectedKey(): Integer{
 
-    var comboBoxModel: ComboBoxModel = this.keyNameJComboBox!.getModel()!;;
+    let comboBoxModel: ComboBoxModel = this.keyNameJComboBox!.getModel()!;;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem() as string;;
+    let selectedItem: string = comboBoxModel!.getSelectedItem() as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem))
@@ -248,7 +251,7 @@ this.keyActionScriptInputInterface!.log();
 
     updateKeys(){
 
-    var text: string = this.textJTextField!.getText()!;;
+    let text: string = this.textJTextField!.getText()!;;
     
 this.keyActionScriptInputInterface!.setText(text);
     
@@ -481,7 +484,7 @@ keyIntegerJComboBoxActionPerformed(evt);
                             );
     
 
-    var keyActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.keyActionJDialog!.getContentPane());;
+    let keyActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.keyActionJDialog!.getContentPane());;
     
 this.keyActionJDialog!.getContentPane()!.setLayout(keyActionJDialogLayout);
     
@@ -507,7 +510,7 @@ keyActionJButtonActionPerformed(evt);
 this.jLabel1!.setText("Key:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -526,7 +529,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
                         
                                     {
                                     
-    var newKey: string = "&#" +integer.toString() +";";;
+    let newKey: string = "&#" +integer.toString() +";";;
     
 this.textJTextField!.setText(newKey +this.textJTextField!.getText());
     
@@ -576,7 +579,7 @@ this.sequenceJRadioButton!.setSelected(false);
 
     keyNameJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
 
-    var integer: Integer = this.getSelectedKey()!;;
+    let integer: Integer = this.getSelectedKey()!;;
     
 this.prependText(integer);
     
@@ -587,19 +590,21 @@ this.keyIntegerJComboBox!.setSelectedIndex(this.keyNameJComboBox!.getSelectedInd
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.update();
+ try { this.update();
     
 this.getKeyActionJDialog()!.setVisible(false);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okButtonActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -709,6 +714,4 @@ this.normalJRadioButton!.setSelected(false);
     private titleJLabel: javax.swing.JLabel;
 
 }
-
-
 

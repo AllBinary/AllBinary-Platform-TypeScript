@@ -46,6 +46,7 @@ import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/Pr
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -96,7 +97,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
 
     public process(){
 
-    var myCanvas: MyCanvas = (this.gameCanvas as MyCanvas);;
+    let myCanvas: MyCanvas = (this.gameCanvas as MyCanvas);;
     
 myCanvas!.draw(this.offScreenImage[this.circularIndexUtil!.getIndex()]!.getGraphics());
     
@@ -118,6 +119,4 @@ graphics.drawImage(this.previousImage, 0, 0, this.anchor);
 
 
 }
-
-
 

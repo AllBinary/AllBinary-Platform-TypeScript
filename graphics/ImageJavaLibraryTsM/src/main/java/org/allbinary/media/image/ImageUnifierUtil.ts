@@ -28,9 +28,11 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 
 
@@ -92,10 +94,10 @@ private constructor (){
 
     public getDefaultConfiguration(): GraphicsConfiguration{
 
-    var ge: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;;
+    let ge: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;;
     
 
-    var gd: GraphicsDevice = ge.getDefaultScreenDevice()!;;
+    let gd: GraphicsDevice = ge.getDefaultScreenDevice()!;;
     
 
 
@@ -108,34 +110,34 @@ private constructor (){
 
     public getImage(bufferedImageArray: BufferedImage[], imageUnifierProperties: ImageUnifierProperties): BufferedImage{
 
-    var newBufferedImage: BufferedImage = this.imageUtil!.create(imageUnifierProperties!.getWidth(), imageUnifierProperties!.getHeight())!;;
+    let newBufferedImage: BufferedImage = this.imageUtil!.create(imageUnifierProperties!.getWidth(), imageUnifierProperties!.getHeight())!;;
     
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
+    let commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 this.logUtil!.putF("Setting Image - " +commonLabels!.WIDTH_LABEL +newBufferedImage!.getWidth() +commonLabels!.HEIGHT_LABEL +newBufferedImage!.getHeight(), this, "getImage");
     
 
-    var g: Graphics2D = newBufferedImage!.createGraphics()!;;
+    let g: Graphics2D = newBufferedImage!.createGraphics()!;;
     
 
-    var columnIndex: number = 0;;
+    let columnIndex: number = 0;;
     
 
-    var rowIndex: number = 0;;
+    let rowIndex: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < bufferedImageArray!.length; index++)
+    let index: number = 0;index < bufferedImageArray!.length; index++)
         {
 
-    var x: number = imageUnifierProperties!.getImageUnifierCell()!.getWidth()!.intValue() *columnIndex++;;
+    let x: number = imageUnifierProperties!.getImageUnifierCell()!.getWidth()!.intValue() *columnIndex++;;
     
 
-    var y: number = imageUnifierProperties!.getImageUnifierCell()!.getHeight()!.intValue() *rowIndex;;
+    let y: number = imageUnifierProperties!.getImageUnifierCell()!.getHeight()!.intValue() *rowIndex;;
     
 this.logUtil!.putF("Adding Image: " +index +" x: " +x +" y: " +y, this, "getImage");
     
@@ -143,7 +145,7 @@ g.drawImage(bufferedImageArray[index]!, x, y, imageUnifierProperties!.getImageUn
                             null);
     
 
-    var totalColumnsMinusOne: number = (imageUnifierProperties!.getColumns()!.intValue() -1);;
+    let totalColumnsMinusOne: number = (imageUnifierProperties!.getColumns()!.intValue() -1);;
     
 
                         if(columnIndex > totalColumnsMinusOne)
@@ -170,6 +172,4 @@ g.dispose();
 
 
 }
-
-
 

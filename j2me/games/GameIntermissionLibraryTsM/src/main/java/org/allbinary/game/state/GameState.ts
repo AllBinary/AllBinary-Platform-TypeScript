@@ -66,5 +66,3 @@ public constructor (name: string, state: number){
 
 }
 
-
-

@@ -22,18 +22,23 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -83,7 +88,7 @@ export class GroupFactory
 
     public getNextGroup(): Group{
 
-    var group: Group = this.list.objectArray[this.index]! as Group;;
+    let group: Group = this.list.objectArray[this.index]! as Group;;
     
 this.index++;
     
@@ -98,7 +103,7 @@ this.index++;
 
     public getNextGroupByName(name: string): Group{
 
-    var group: Group = this.getNextGroup()!;;
+    let group: Group = this.getNextGroup()!;;
     
 group.setName(name);
     
@@ -113,23 +118,23 @@ group.setName(name);
 
     public init(groups: number, nameArray: string[]){
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var TEAM: string = "Team ";;
+    let TEAM: string = "Team ";;
     
 this.list.clear();
     
 this.index= 0;
     
 
-    var size: number = this.list.size()!;;
+    let size: number = this.list.size()!;;
     
 
-    var name: string;;
+    let name: string;;
     
 
         while(size < groups)
@@ -163,6 +168,4 @@ size++;
 
 
 }
-
-
 

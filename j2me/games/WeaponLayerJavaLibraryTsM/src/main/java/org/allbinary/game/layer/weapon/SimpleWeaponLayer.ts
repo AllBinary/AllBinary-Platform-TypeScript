@@ -95,5 +95,3 @@ this.setCollidableInferface(new CollidableWeaponBehavior(true));
 
 }
 
-
-

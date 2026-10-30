@@ -30,18 +30,23 @@ import { BasicGraphicsPipeline } from '../../../org/allbinary/graphics/pipeline/
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+type BasicArrayListS<T = any, U = any> = typeof BasicArrayListS extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListS;
 
 
 
@@ -70,8 +75,17 @@ export class VectorMirrorGenerator
         
 
     private static readonly instance: VectorMirrorGenerator = new VectorMirrorGenerator();
-
-    public static getInstance(): VectorMirrorGenerator{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 2 && typeof args[1] === 'number') return this.getInstance$overload2(args[0], args[1]);
+   
+    if (args.length === 2 && typeof args[1] === 'number') return this.getInstance$overload3(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): VectorMirrorGenerator{
 
 
 
@@ -91,34 +105,33 @@ private constructor (){
         }
 
 
-    public getInstance(points: number[][][], width: number): number[][][]{
+    public getInstance$overload2(points: number[][][], width: number): number[][][]{
 
-        try {
-            
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+ try { 
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var pointBasicArrayList: BasicArrayList;;
+    let pointBasicArrayList: BasicArrayList;;
     
 
-    var nextPoints: number[][];;
+    let nextPoints: number[][];;
     
 
-    var size2: number= 0;;
+    let size2: number= 0;;
     
 
-    var size: number = points.length
+    let size: number = points.length
                 ;;
     
 
-    var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(size);;
+    let pointsBasicArrayList: BasicArrayList = new BasicArrayListS(size);;
     
 
 
 
 
                         for (
-    var frame: number = 0;frame < size; frame++)
+    let frame: number = 0;frame < size; frame++)
         {
 nextPoints= points[frame]!;
     
@@ -131,7 +144,7 @@ pointBasicArrayList= new BasicArrayListS(size2);
 
 
                         for (
-    var index: number = 0;index < size2; index++)
+    let index: number = 0;index < size2; index++)
         {
 pointBasicArrayList!.add(pointFactory!.createXY(nextPoints[index]![0]!, nextPoints[index]![1]!));
     
@@ -146,14 +159,14 @@ pointsBasicArrayList!.add(pointBasicArrayList);
 
 
                         for (
-    var index: number = 0;index < points.length; index++)
+    let index: number = 0;index < points.length; index++)
         {
 pointsBasicArrayList!.add(this.getInstance(pointsBasicArrayList!.objectArray[index]! as BasicArrayList, width));
     
 }
 
 
-    var newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromListOfPointList(pointsBasicArrayList)!;;
+    let newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromListOfPointList(pointsBasicArrayList)!;;
     
 
 
@@ -161,12 +174,13 @@ pointsBasicArrayList!.add(this.getInstance(pointsBasicArrayList!.objectArray[ind
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return newPoints;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
@@ -176,16 +190,18 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(pointBasicArrayList: BasicArrayList, width: number): BasicArrayList{
+    public getInstance$overload3(pointBasicArrayList: BasicArrayList, width: number): BasicArrayList{
 
-    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(pointBasicArrayList);;
+    let graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(pointBasicArrayList);;
     
 graphicsPipe!.createMatrix();
     
@@ -201,6 +217,4 @@ graphicsPipe!.mirror(width);
 
 
 }
-
-
 

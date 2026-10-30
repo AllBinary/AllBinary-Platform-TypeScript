@@ -54,6 +54,7 @@ import { SmallIntegerSingletonFactory } from '../../../../../../../org/allbinary
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -130,13 +131,13 @@ private constructor (){
             
     public getNextInstance(hashtable: ABHashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 
-    var sourceLayerInterface: AllBinaryLayer = hashtable.get(this.smallIntegerSingletonFactory!.getAt(0)) as AllBinaryLayer;;
+    let sourceLayerInterface: AllBinaryLayer = hashtable.get(this.smallIntegerSingletonFactory!.getAt(0)) as AllBinaryLayer;;
     
 
-    var angle: Integer = hashtable.get(this.smallIntegerSingletonFactory!.getAt(1)) as Integer;;
+    let angle: Integer = hashtable.get(this.smallIntegerSingletonFactory!.getAt(1)) as Integer;;
     
 
-    var scoreableInterface: ScoreableInterface = sourceLayerInterface as unknown as ScoreableInterface;;
+    let scoreableInterface: ScoreableInterface = sourceLayerInterface as unknown as ScoreableInterface;;
     
 
 
@@ -148,6 +149,4 @@ private constructor (){
 
 
 }
-
-
 

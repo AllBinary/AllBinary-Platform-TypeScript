@@ -49,9 +49,7 @@ export interface GeographicMapCellPositionFactoryInitVisitorInterface {
 
                 //@Throws(Exception.constructor)
             
-    visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition)
+    visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition): void;
 
 }
-
-
 

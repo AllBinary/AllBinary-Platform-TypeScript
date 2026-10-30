@@ -78,5 +78,3 @@ LogConfigTypes.LOGGING.add(this.FACTORYERROR);
 
 }
 
-
-

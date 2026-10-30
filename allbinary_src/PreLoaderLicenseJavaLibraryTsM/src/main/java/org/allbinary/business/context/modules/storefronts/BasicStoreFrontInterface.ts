@@ -22,6 +22,7 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -45,73 +46,71 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 export interface BasicStoreFrontInterface {
         
 
-    getTestHtmlPath(): string
+    getTestHtmlPath(): string;
 
-    getCurrentHostName(): string
+    getCurrentHostName(): string;
 
-    getCurrentHostNamePath(): string
+    getCurrentHostNamePath(): string;
 
-    getCurrentHomeHostName(): string
+    getCurrentHomeHostName(): string;
 
-    getCurrentHomeHostNamePath(): string
+    getCurrentHomeHostNamePath(): string;
 
-    getName(): string
+    getName(): string;
 
-    getUserName(): string
+    getUserName(): string;
 
-    getBasketName(): string
+    getBasketName(): string;
 
-    getHomeHostName(): string
+    getHomeHostName(): string;
 
-    getHomeHostNamePath(): string
+    getHomeHostNamePath(): string;
 
-    getHostName(): string
+    getHostName(): string;
 
-    getHostNamePath(): string
+    getHostNamePath(): string;
 
-    getTestHomeHostName(): string
+    getTestHomeHostName(): string;
 
-    getTestHomeHostNamePath(): string
+    getTestHomeHostNamePath(): string;
 
-    getTestHostName(): string
+    getTestHostName(): string;
 
-    getTestHostNamePath(): string
+    getTestHostNamePath(): string;
 
-    getStaticPath(): string
+    getStaticPath(): string;
 
-    getCategoryPath(): string
+    getCategoryPath(): string;
 
                 //@Throws(Exception.constructor)
             
-    getSubStores(): BasicArrayList
+    getSubStores(): BasicArrayList;
 
-    getTagLocation(): string
+    getTagLocation(): string;
 
-    getPackageLocation(): string
+    getPackageLocation(): string;
 
-    getInventoryControl(): string
+    getInventoryControl(): string;
 
-    getFtp(): string
+    getFtp(): string;
 
-    getFtpPath(): string
+    getFtpPath(): string;
 
-    getFtpUserName(): string
+    getFtpUserName(): string;
 
-    getFtpPassword(): string
+    getFtpPassword(): string;
 
-    getTestFtp(): string
+    getTestFtp(): string;
 
-    getTestFtpPath(): string
+    getTestFtpPath(): string;
 
-    getTestFtpUserName(): string
+    getTestFtpUserName(): string;
 
-    getTestFtpPassword(): string
+    getTestFtpPassword(): string;
 
-    getTimeCreated(): string
+    getTimeCreated(): string;
 
-    getLastModified(): string
+    getLastModified(): string;
 
 }
-
-
 

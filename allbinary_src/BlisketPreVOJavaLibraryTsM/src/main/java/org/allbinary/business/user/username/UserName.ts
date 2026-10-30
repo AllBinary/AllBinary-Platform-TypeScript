@@ -30,18 +30,21 @@ import { UserData } from '../../../../../org/allbinary/business/user/UserData.js
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -119,20 +122,27 @@ public constructor (hashMap: HashMap<any, any>){
     
 }
 
+isValid(...args: any[]): any {
+   
+    if (args.length === 0) return this.isValid$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.isValid$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: isValid'); }
+  
+    public isValid$overload1(): Boolean{
 
-    public isValid(): Boolean{
-
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isValid(this.userName);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -146,10 +156,12 @@ public constructor (hashMap: HashMap<any, any>){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -163,17 +175,16 @@ public constructor (hashMap: HashMap<any, any>){
 }
 
 
-    public isValid(aUserName: string): Boolean{
+    public isValid$overload2(aUserName: string): Boolean{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
+ try { 
+    let booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
-    var valid: Boolean = booleanFactory!.TRUE;;
+    let valid: Boolean = booleanFactory!.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATION))
@@ -208,10 +219,11 @@ valid= booleanFactory!.FALSE;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -225,14 +237,14 @@ valid= booleanFactory!.FALSE;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

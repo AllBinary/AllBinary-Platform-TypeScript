@@ -40,6 +40,7 @@ import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/gr
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -71,67 +72,65 @@ export interface WaypointLayerInterface {
 
                 //@Throws(Exception.constructor)
             
-    init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList)
+    init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList): void;
 
-    getMoveOutOfBuildAreaPath(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList
-
-                //@Throws(Exception.constructor)
-            
-    setClosestGeographicMapCellHistory(pathsList: BasicArrayList)
-
-    teleportTo(geographicMapCellPosition: GeographicMapCellPosition)
+    getMoveOutOfBuildAreaPath(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    setLoad(resource: number)
+    setClosestGeographicMapCellHistory(pathsList: BasicArrayList): void;
+
+    teleportTo(geographicMapCellPosition: GeographicMapCellPosition): void;
 
                 //@Throws(Exception.constructor)
             
-    getSurroundingGeographicMapCellPositionList(): BasicArrayList
-
-    isSelected(): boolean
-
-    shouldAddWaypointFromBuilding(): boolean
-
-    isShowMoreCaptionStates(): boolean
+    setLoad(resource: number): void;
 
                 //@Throws(Exception.constructor)
             
-    trackTo(reason: string)
+    getSurroundingGeographicMapCellPositionList(): BasicArrayList;
+
+    isSelected(): boolean;
+
+    shouldAddWaypointFromBuilding(): boolean;
+
+    isShowMoreCaptionStates(): boolean;
 
                 //@Throws(Exception.constructor)
             
-    trackToDXY(dx: number, dy: number)
+    trackTo(reason: string): void;
 
                 //@Throws(Exception.constructor)
             
-    buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean
-
-    getTrackingEvent(): TrackingEvent
-
-    allStop()
-
-    isWaypointListEmptyOrOnlyTargets(): boolean
+    trackToDXY(dx: number, dy: number): void;
 
                 //@Throws(Exception.constructor)
             
-    getCurrentGeographicMapCellPosition(): GeographicMapCellPosition
+    buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean;
+
+    getTrackingEvent(): TrackingEvent;
+
+    allStop(): void;
+
+    isWaypointListEmptyOrOnlyTargets(): boolean;
 
                 //@Throws(Exception.constructor)
             
-    getTopLeftGeographicMapCellPosition(): GeographicMapCellPosition
+    getCurrentGeographicMapCellPosition(): GeographicMapCellPosition;
 
-    getCaptionAnimationHelper(): CaptionAnimationHelperBase
+                //@Throws(Exception.constructor)
+            
+    getTopLeftGeographicMapCellPosition(): GeographicMapCellPosition;
 
-    getWaypointBehavior(): WaypointBehaviorBase
+    getCaptionAnimationHelper(): CaptionAnimationHelperBase;
 
-    getWaypointLogHelper(): WaypointLogHelper
+    getWaypointBehavior(): WaypointBehaviorBase;
 
-    getWaypoint2LogHelper(): Waypoint2LogHelper
+    getWaypointLogHelper(): WaypointLogHelper;
 
-    getWaypointRunnableLogHelper(): WaypointRunnableLogHelper
+    getWaypoint2LogHelper(): Waypoint2LogHelper;
+
+    getWaypointRunnableLogHelper(): WaypointRunnableLogHelper;
 
 }
-
-
 

@@ -40,12 +40,14 @@ import { GroupData } from '../../../../../../org/allbinary/business/user/group/G
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -88,8 +90,7 @@ this.setTableName(this.tableName);
 
     public delete(value: string){
 
-        try {
-            super.deleteWhere(StoreFrontData.getInstance()!.NAME, value);
+ try { super.deleteWhere(StoreFrontData.getInstance()!.NAME, value);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -100,10 +101,11 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -113,17 +115,19 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public createTableStatement(): string{
 
-    var entryData: EntryData = EntryData.getInstance()!;;
+    let entryData: EntryData = EntryData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
@@ -144,7 +148,7 @@ stringBuffer!.append(entryData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNS
 
     public createTable(): string{
 
-    var returnStr: string = super.createTable(this.createTableStatement())!;;
+    let returnStr: string = super.createTable(this.createTableStatement())!;;
     
 
 
@@ -172,6 +176,4 @@ super.updateWhere(EntryData.getInstance()!.ID, updatedValues!.get(EntryData.getI
 
 
 }
-
-
 

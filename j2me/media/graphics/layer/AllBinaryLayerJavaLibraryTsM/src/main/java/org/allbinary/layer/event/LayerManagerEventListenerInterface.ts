@@ -49,13 +49,11 @@ export interface LayerManagerEventListenerInterface extends EventListenerInterfa
 
                 //@Throws(Exception.constructor)
             
-    onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent)
+    onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent): void;
 
                 //@Throws(Exception.constructor)
             
-    onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent)
+    onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent): void;
 
 }
-
-
 

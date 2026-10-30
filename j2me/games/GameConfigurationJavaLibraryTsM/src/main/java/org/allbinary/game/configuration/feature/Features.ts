@@ -30,15 +30,19 @@ import { GameFeatureEventHandler } from '../../../../../org/allbinary/game/confi
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 //not GWT import const GenericOperatingSystem
@@ -48,15 +52,19 @@ import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/syste
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -204,18 +212,17 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(gameFeatur
 
     init(){
 
-        try {
-            
-    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
+ try { 
+    let gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
     
 
-    var inputFeatureFactory: InputFeatureFactory = InputFeatureFactory.getInstance()!;;
+    let inputFeatureFactory: InputFeatureFactory = InputFeatureFactory.getInstance()!;;
     
 
-    var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;;
+    let sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;;
     
 
-    var touchFeatureFactory: TouchFeatureFactory = TouchFeatureFactory.getInstance()!;;
+    let touchFeatureFactory: TouchFeatureFactory = TouchFeatureFactory.getInstance()!;;
     
 this.addDefault(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR);
     
@@ -234,7 +241,7 @@ this.addDefault(gameFeatureFactory!.SCREEN_SHAKE);
 this.addDefault(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
     
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
+    let operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
                         if(operatingSystemInterface!.isOverScan())
@@ -261,14 +268,17 @@ this.addDefault(MainFeatureFactory.getInstance()!.FULL_SCREEN);
     
 this.addDefault(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -314,6 +324,4 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, 
 
 
 }
-
-
 

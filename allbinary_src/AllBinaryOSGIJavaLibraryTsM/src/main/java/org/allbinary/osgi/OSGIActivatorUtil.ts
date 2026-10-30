@@ -24,9 +24,11 @@
         
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 import { BundleContext } from '../../../org/osgi/framework/BundleContext.js';
 //not GWT import const BundleContext
@@ -63,10 +65,17 @@ export class OSGIActivatorUtil
             extends Object
          {
         
-
+static registerAsService(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[2] === 'string') return this.registerAsService$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 4 && typeof args[2] === 'string') return this.registerAsService$overload2(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: registerAsService'); }
+  
                 //@Throws(Exception.constructor)
             
-    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string){
+    public static registerAsService$overload1(bundleContext: BundleContext, anyType: any, serviceName: string){
 OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, StdUtil.getInstance()!.createHashtable());
     
 }
@@ -74,12 +83,12 @@ OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, StdUtil
 
                 //@Throws(Exception.constructor)
             
-    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: ABHashtable<any, any>){
+    public static registerAsService$overload2(bundleContext: BundleContext, anyType: any, serviceName: string, properties: ABHashtable<any, any>){
 
-    var serviceRegistration: ServiceRegistration = bundleContext!.registerService(serviceName, anyType, properties)!;;
+    let serviceRegistration: ServiceRegistration = bundleContext!.registerService(serviceName, anyType, properties)!;;
     
 
-    var serviceReference: ServiceReference = serviceRegistration!.getReference()!;;
+    let serviceReference: ServiceReference = serviceRegistration!.getReference()!;;
     
 serviceReference= bundleContext!.getServiceReference(serviceName);
     
@@ -105,6 +114,4 @@ private constructor (){
 
 
 }
-
-
 

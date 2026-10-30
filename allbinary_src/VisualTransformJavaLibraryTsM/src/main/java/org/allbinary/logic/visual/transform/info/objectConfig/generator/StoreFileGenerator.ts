@@ -34,12 +34,14 @@ import { URLGLOBALS } from '../../../../../../../../org/allbinary/globals/URLGLO
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { WeblisketSession } from '../../../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 //not GWT import const WeblisketSession
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { InputOutputTypeData } from '../../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
 //not GWT import const InputOutputTypeData
@@ -55,12 +57,15 @@ import { AbPath } from '../../../../../../../../org/allbinary/logic/io/path/AbPa
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -82,9 +87,11 @@ import { TransformInfosData } from '../../../../../../../../org/allbinary/logic/
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -124,13 +131,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
         
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
+    let httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var weblisketSession: WeblisketSession = new WeblisketSession(httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext());;
+    let weblisketSession: WeblisketSession = new WeblisketSession(httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext());;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
@@ -139,25 +146,25 @@ stringBuffer!.append(weblisketSession!.getStoreName());
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var abPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let abPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var fileName: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE) as string;;
+    let fileName: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE) as string;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(fileName))
                         
                                     {
                                     
-    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = transformInfoInterface as TransformInfoHttpStoreInterface;;
+    let transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = transformInfoInterface as TransformInfoHttpStoreInterface;;
     
 fileName= transformInfoInterface!.getName()!.substring(transformInfoHttpStoreInterface!.getStoreName()!.length() +1);
     
 
-    var outputMappingHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let outputMappingHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 outputMappingHashMap!.put(TransformInfosData.getInstance()!.PREVIEW, "Preview");
     
@@ -166,7 +173,7 @@ outputMappingHashMap!.put(TransformInfosData.getInstance()!.SMALL_PREVIEW, "Smal
 outputMappingHashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING);
     
 
-    var replace: Replace = new Replace(outputMappingHashMap);;
+    let replace: Replace = new Replace(outputMappingHashMap);;
     
 fileName= replace.all(fileName);
     
@@ -186,7 +193,7 @@ fileName= replace.all(fileName);
                                     }
                                 
 
-    var tempOutput: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.NAME) as string;;
+    let tempOutput: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.NAME) as string;;
     
 
                         if(stringValidationUtil!.isEmpty(tempOutput))
@@ -263,7 +270,7 @@ this.file= AbFile.createAbFileFromAbPath(this.fileAbPath);
                         
                                     {
                                     
-    var inputStream: InputStream = new ByteArrayInputStream(input.getBytes());;
+    let inputStream: InputStream = new ByteArrayInputStream(input.getBytes());;
     
 FileUtil.getInstance()!.write(inputStream, this.file);
     
@@ -298,6 +305,4 @@ FileUtil.getInstance()!.write(inputStream, this.file);
 
 
 }
-
-
 

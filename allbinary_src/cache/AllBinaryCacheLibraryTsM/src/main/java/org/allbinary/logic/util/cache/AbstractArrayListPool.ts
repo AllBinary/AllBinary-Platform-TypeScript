@@ -24,12 +24,15 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -88,7 +91,7 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
 
                 //@Throws(Exception.constructor)
             
-    public remove(key: any = {}): CacheableInterface{
+    public remove(key: any): CacheableInterface{
 
 
 
@@ -113,7 +116,7 @@ this.buffers.add(cacheableInterface);
 
 
                         for (
-    var index: number = 0;index < cacheableInterfaces!.length; index++)
+    let index: number = 0;index < cacheableInterfaces!.length; index++)
         {
 this.buffers.add(cacheableInterfaces[index]!);
     
@@ -123,6 +126,4 @@ this.buffers.add(cacheableInterfaces[index]!);
 
 
 }
-
-
 

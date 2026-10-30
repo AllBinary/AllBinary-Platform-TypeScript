@@ -71,15 +71,15 @@ visit.
 }
 
 
-    public visit(anyType: any = {}): any{
+    public visit(anyType: any): any{
 
-    var file: File = anyType as File;;
+    let file: File = anyType as File;;
     
 
-    var index: number = 1;;
+    let index: number = 1;;
     
 
-    var aFile: File = file.getParentFile()!;;
+    let aFile: File = file.getParentFile()!;;
     
 
         while((aFile= aFile!.getParentFile()) != 
@@ -98,7 +98,7 @@ index++;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -107,12 +107,10 @@ index++;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 }
 
 
 }
-
-
 

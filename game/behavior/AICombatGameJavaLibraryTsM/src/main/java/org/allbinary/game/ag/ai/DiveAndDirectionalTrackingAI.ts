@@ -76,15 +76,19 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+type MathUtil<T = any, U = any> = typeof MathUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MathUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -106,9 +110,11 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -175,12 +181,12 @@ this.aiVistor= visitor;
 this.artificialIntelligenceInterface= artificialIntelligenceInterface;
     
 
-    var directionalCompositeInterface: DirectionalCompositeInterface = this.getOwnerLayerInterface() as unknown as DirectionalCompositeInterface;;
+    let directionalCompositeInterface: DirectionalCompositeInterface = this.getOwnerLayerInterface() as unknown as DirectionalCompositeInterface;;
     
 this.directionalInterface= directionalCompositeInterface!.getDirectionalInterface();
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as unknown as VelocityInterfaceCompositeInterface;;
+    let velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as unknown as VelocityInterfaceCompositeInterface;;
     
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
     
@@ -254,15 +260,15 @@ TrackingEventHandler.getInstance()!.addListenerInterface(this);
                                     }
                                 
 
-    var lastTrackingEvent: TrackingEvent = this.list.removeAt(0) as TrackingEvent;;
+    let lastTrackingEvent: TrackingEvent = this.list.removeAt(0) as TrackingEvent;;
     
 this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
     
 
-    var layerInterface: AllBinaryLayer = this.lastTrackingLayerInterface;;
+    let layerInterface: AllBinaryLayer = this.lastTrackingLayerInterface;;
     
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    let ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
                         if(layerInterface!.getGroupInterface() == ownerLayerInterface!.getGroupInterface())
@@ -278,19 +284,19 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
                                     }
                                 
 
-    var x: number = this.lastTrackingLayerInterface!.getXP()!;;
+    let x: number = this.lastTrackingLayerInterface!.getXP()!;;
     
 
-    var y: number = this.lastTrackingLayerInterface!.getYP()!;;
+    let y: number = this.lastTrackingLayerInterface!.getYP()!;;
     
 
-    var yDistance: number = ownerLayerInterface!.getYP() -y -ownerLayerInterface!.getHeight();;
+    let yDistance: number = ownerLayerInterface!.getYP() -y -ownerLayerInterface!.getHeight();;
     
 
-    var xDistance: number = ownerLayerInterface!.getXP() -x -ownerLayerInterface!.getWidth();;
+    let xDistance: number = ownerLayerInterface!.getXP() -x -ownerLayerInterface!.getWidth();;
     
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
+    let directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 
                         if(this.mathUtil!.abs(yDistance) > this.mathUtil!.abs(xDistance))
@@ -386,7 +392,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
             
     verticalTargeting(x: number){
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    let ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
                         if(ownerLayerInterface!.getXP() < x)
@@ -422,7 +428,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
             
     horizontalTargeting(y: number){
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    let ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
                         if(ownerLayerInterface!.getYP() < y)
@@ -712,7 +718,7 @@ DestroyedEventHandler.getInstance()!.removeListener(this);
 this.lastDirection= lastDirection;
     
 
-    var value: number = this.getLastDirection()!.getValue()!;;
+    let value: number = this.getLastDirection()!.getValue()!;;
     
 
                         if(value < 4)
@@ -780,7 +786,7 @@ super.setLastKey(lastKey);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toString());
     
@@ -798,6 +804,4 @@ stringBuffer!.append(StringUtil.getInstance()!.toString(this.getLastDirection())
 
 
 }
-
-
 

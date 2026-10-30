@@ -49,12 +49,14 @@ import { WeblisketSession } from '../../org/allbinary/logic/communication/http/r
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 //not GWT import const AbSqlTableUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -92,17 +94,17 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-        try {
-            this.weblisketSession= new WeblisketSession(hashMap, pageContext);
+ try { this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
 this.httpServletRequest= pageContext!.getRequest() as HttpServletRequest;
     
 this.portion= new Portion(hashMap);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
@@ -117,23 +119,24 @@ this.portion= new Portion(hashMap);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
     public insert(): string{
 
-        try {
-            
-    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(this.httpServletRequest)!;;
+ try { 
+    let paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(this.httpServletRequest)!;;
     
 paymentGatewayInterface!.setStoreName(this.weblisketSession!.getStoreName());
     
 PaymentGatewayEntityFactory.getInstance()!.add(paymentGatewayInterface);
     
 
-    var success: string = "Successfully Added New Payment Gateway";;
+    let success: string = "Successfully Added New Payment Gateway";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -150,12 +153,13 @@ PaymentGatewayEntityFactory.getInstance()!.add(paymentGatewayInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success +"<br/>";
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to add";;
+    let error: string = "Failed to add";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -172,16 +176,17 @@ PaymentGatewayEntityFactory.getInstance()!.add(paymentGatewayInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error +"<br>" +"Exception: " +e +"<br>";
     
-}
 
+ }
+   }
+ 
 }
 
 
     public update(): string{
 
-        try {
-            
-    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(this.httpServletRequest)!;;
+ try { 
+    let paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(this.httpServletRequest)!;;
     
 paymentGatewayInterface!.setStoreName(this.weblisketSession!.getStoreName());
     
@@ -190,7 +195,7 @@ paymentGatewayInterface!.setStoreName(this.weblisketSession!.getStoreName());
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Gateway Name: ");
     
@@ -208,7 +213,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "update()");
 PaymentGatewayEntityFactory.getInstance()!.update(paymentGatewayInterface);
     
 
-    var success: string = "Successfully Updated Payment Gateway information";;
+    let success: string = "Successfully Updated Payment Gateway information";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -225,12 +230,13 @@ PaymentGatewayEntityFactory.getInstance()!.update(paymentGatewayInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success +"<br/>";
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to update payment gateway information";;
+    let error: string = "Failed to update payment gateway information";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -247,29 +253,30 @@ PaymentGatewayEntityFactory.getInstance()!.update(paymentGatewayInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error +"<br/>" +"Exception: " +e +"<br/>";
     
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(): string{
 
-        try {
-            
-    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(this.httpServletRequest)!;;
+ try { 
+    let paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(this.httpServletRequest)!;;
     
 paymentGatewayInterface!.setStoreName(this.weblisketSession!.getStoreName());
     
 
-    var storeName: string = paymentGatewayInterface!.getStoreName()!;;
+    let storeName: string = paymentGatewayInterface!.getStoreName()!;;
     
 
-    var gatewayName: string = paymentGatewayInterface!.getName()!;;
+    let gatewayName: string = paymentGatewayInterface!.getName()!;;
     
 PaymentGatewayEntityFactory.getInstance()!.remove(storeName, BasicPaymentTypeUtil.getInstance()!.get(gatewayName));
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Successfully Removed payment gateway where store name=");
     
@@ -280,7 +287,7 @@ stringBuffer!.append(" and gateway name=");
 stringBuffer!.append(gatewayName);
     
 
-    var success: string = stringBuffer!.toString()!;;
+    let success: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -297,12 +304,13 @@ stringBuffer!.append(gatewayName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success +"<br/>";
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to remove payment gateway from table";;
+    let error: string = "Failed to remove payment gateway from table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -319,16 +327,17 @@ stringBuffer!.append(gatewayName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error +"<br/>" +"Exception: " +e +"<br>";
     
-}
 
+ }
+   }
+ 
 }
 
 
     public drop(): string{
 
-        try {
-            
-    var success: string = PaymentGatewayEntityFactory.getInstance()!.dropTable()!;;
+ try { 
+    let success: string = PaymentGatewayEntityFactory.getInstance()!.dropTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -345,12 +354,13 @@ stringBuffer!.append(gatewayName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to drop payment transaction result table";;
+    let error: string = "Failed to drop payment transaction result table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -367,16 +377,17 @@ stringBuffer!.append(gatewayName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public create(): string{
 
-        try {
-            
-    var success: string = PaymentGatewayEntityFactory.getInstance()!.createTable()!;;
+ try { 
+    let success: string = PaymentGatewayEntityFactory.getInstance()!.createTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -393,12 +404,13 @@ stringBuffer!.append(gatewayName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to create payment transaction result table";;
+    let error: string = "Failed to create payment transaction result table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -415,19 +427,20 @@ stringBuffer!.append(gatewayName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public restore(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(PaymentGatewayEntityFactory.getInstance(), this.portion)!;;
+    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(PaymentGatewayEntityFactory.getInstance(), this.portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -444,12 +457,13 @@ stringBuffer!.append(gatewayName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to restore backup";;
+    let error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -466,19 +480,20 @@ stringBuffer!.append(gatewayName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public backup(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(PaymentGatewayEntityFactory.getInstance())!;;
+    let result: string = AbSqlTableUtil.getInstance()!.backupTable(PaymentGatewayEntityFactory.getInstance())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -495,12 +510,13 @@ stringBuffer!.append(gatewayName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to make backup";;
+    let error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -517,12 +533,12 @@ stringBuffer!.append(gatewayName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

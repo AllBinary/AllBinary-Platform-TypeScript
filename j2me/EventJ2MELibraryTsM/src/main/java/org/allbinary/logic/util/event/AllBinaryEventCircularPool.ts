@@ -23,6 +23,7 @@ import { BaseCircularPool } from '../../../../../org/allbinary/logic/util/cache/
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -62,14 +63,14 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(max);
 this.circularIndexUtil!.setIndex(0);
     
 
-    var size: number = this.circularIndexUtil!.getSize()!;;
+    let size: number = this.circularIndexUtil!.getSize()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.OBJECT_ARRAY[index]= allBinaryEventObjectFactoryInterface!.getInstance();
     
@@ -79,6 +80,4 @@ this.OBJECT_ARRAY[index]= allBinaryEventObjectFactoryInterface!.getInstance();
 
 
 }
-
-
 

@@ -20,9 +20,11 @@
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -49,7 +51,7 @@ import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/ev
 export class GameKeyEvent extends AllBinaryEventObject {
         
 
-    public static createEvent(anyType: any = {}, sourceId: number, key: number): GameKeyEvent{
+    public static createEvent(anyType: any, sourceId: number, key: number): GameKeyEvent{
 
 
 
@@ -71,7 +73,7 @@ export class GameKeyEvent extends AllBinaryEventObject {
 
     private originalKey: number= 0;
 
-public constructor (anyType: any = {}, sourceId: number, originalKey: number, gameActionKey: number, key: number, repeated: boolean){
+public constructor (anyType: any, sourceId: number, originalKey: number, gameActionKey: number, key: number, repeated: boolean){
             super(anyType);
                     
 
@@ -90,7 +92,7 @@ this.setRepeatEvents(repeated);
 }
 
 
-    public init(anyType: any = {}){
+    public init(anyType: any){
 this.setSource(anyType);
     
 }
@@ -124,7 +126,7 @@ this.repeated= repeated;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("\nKey: ");
     
@@ -182,6 +184,4 @@ this.gameActionKey= gameActionKey;
 
 
 }
-
-
 

@@ -47,15 +47,13 @@ import { RaceTrackData } from './RaceTrackData.js';
 export interface RaceTrackGeographicMapInterface extends GeographicMapInterface {
         
 
-    getRaceTrackInfo(): RaceTrackInfo
+    getRaceTrackInfo(): RaceTrackInfo;
 
-    setRaceTrackInfo(aRaceTrackInfo: RaceTrackInfo)
+    setRaceTrackInfo(aRaceTrackInfo: RaceTrackInfo): void;
 
-    getRaceTrackData(): RaceTrackData
+    getRaceTrackData(): RaceTrackData;
 
-    setRaceTrackData(raceTrackData: RaceTrackData)
+    setRaceTrackData(raceTrackData: RaceTrackData): void;
 
 }
-
-
 

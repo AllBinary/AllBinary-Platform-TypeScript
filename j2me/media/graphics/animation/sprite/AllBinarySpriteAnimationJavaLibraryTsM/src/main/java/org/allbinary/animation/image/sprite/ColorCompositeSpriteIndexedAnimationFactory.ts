@@ -90,7 +90,7 @@ this.basicColorArray= basicColorArray;
             
     public getInstance(instanceId: number): Animation{
 
-    var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
+    let sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
 
@@ -114,6 +114,4 @@ this.basicColorArray= basicColorArray;
 
 
 }
-
-
 

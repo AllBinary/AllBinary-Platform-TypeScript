@@ -27,9 +27,11 @@ import { Method } from '../../../../../java/lang/reflect/Method.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -57,7 +59,7 @@ export class StoreWorkFlowWrapper extends WorkFlowWrapper {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-public constructor (anyType: any = {}){
+public constructor (anyType: any){
             super(anyType);
                     
 
@@ -70,16 +72,15 @@ public constructor (anyType: any = {}){
             
     public getStoreName(): string{
 
-        try {
-            
-    var helperClass: Function = this.getWorkFlowObject()!.constructor!;;
+ try { 
+    let helperClass: Function = this.getWorkFlowObject()!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod("getStoreName", 
+    let method: Method = helperClass!.getMethod("getStoreName", 
                             null)!;;
     
 
-    var result: string = method.invoke(this.getWorkFlowObject(), 
+    let result: string = method.invoke(this.getWorkFlowObject(), 
                             null) as string;;
     
 
@@ -88,19 +89,20 @@ public constructor (anyType: any = {}){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Reflection Exception";;
+    let error: string = "Reflection Exception";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e);
     
@@ -112,12 +114,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e);
 
                             throw new Exception(error);
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

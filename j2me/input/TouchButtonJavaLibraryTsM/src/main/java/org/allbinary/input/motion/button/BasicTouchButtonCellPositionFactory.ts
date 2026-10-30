@@ -28,9 +28,11 @@ import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellP
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -110,10 +112,10 @@ public constructor (){
         this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();;
+    let touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();;
     
 
-    var cellPositionFactory: CellPositionFactory = CellPositionFactory.getInstance()!;;
+    let cellPositionFactory: CellPositionFactory = CellPositionFactory.getInstance()!;;
     
 cellPositionFactory!.init(touchButtonLocationHelper!.getTotalColumns(), touchButtonLocationHelper!.getTotalRows());
     
@@ -218,6 +220,4 @@ this.TOP_SECOND_FROM_RIGHT= cellPositionFactory!.NONE;
 
 
 }
-
-
 

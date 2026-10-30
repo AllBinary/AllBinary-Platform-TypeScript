@@ -73,13 +73,13 @@ public constructor (categoryInterface: CategoryInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = new CategoryView(this.categoryInterface).toXmlNode(document)!;;
+    let node: Node = new CategoryView(this.categoryInterface).toXmlNode(document)!;;
     
 
-    var childArray: any[] = this.categoryInterface!.getChildNodes()!.toArray()!;;
+    let childArray: any[] = this.categoryInterface!.getChildNodes()!.toArray()!;;
     
 
-    var size: number = childArray!.length
+    let size: number = childArray!.length
                 ;;
     
 
@@ -87,13 +87,13 @@ public constructor (categoryInterface: CategoryInterface){
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var childCategoryInterface: CategoryInterface = childArray[i]! as CategoryInterface;;
+    let childCategoryInterface: CategoryInterface = childArray[i]! as CategoryInterface;;
     
 
-    var childCategoryNode: Node = new CategoriesView(childCategoryInterface).toXmlNode(document)!;;
+    let childCategoryNode: Node = new CategoriesView(childCategoryInterface).toXmlNode(document)!;;
     
 node.appendChild(childCategoryNode);
     
@@ -109,6 +109,4 @@ node.appendChild(childCategoryNode);
 
 
 }
-
-
 

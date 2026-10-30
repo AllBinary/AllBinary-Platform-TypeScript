@@ -38,6 +38,7 @@ import { GenericProfileActionScriptJPanel } from '../../../../../../../../../org
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -99,7 +100,7 @@ public constructor (){
 this.blankProfileActionScriptJPanel!.removeAll();
     
 
-    var genericProfileActionScriptJPanel: GenericProfileActionScriptJPanel = new GenericProfileActionScriptJPanel();;
+    let genericProfileActionScriptJPanel: GenericProfileActionScriptJPanel = new GenericProfileActionScriptJPanel();;
     
 JTreeInterfaceFactory.getInstance()!.set(genericProfileActionScriptJPanel);
     
@@ -110,7 +111,7 @@ this.getGenericProfileActionScriptJPanel()!.setGenericProfileActionScript(this.g
 this.getGenericProfileActionScriptJPanel()!.updateJTree();
     
 
-    var layout: javax.swing.GroupLayout = this.blankProfileActionScriptJPanel!.getLayout() as javax.swing.GroupLayout;;
+    let layout: javax.swing.GroupLayout = this.blankProfileActionScriptJPanel!.getLayout() as javax.swing.GroupLayout;;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionScriptJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
     
@@ -175,7 +176,7 @@ this.genericProfileActionScriptJScrollPane!.setPreferredSize(new java.awt.Dimens
 this.blankProfileActionScriptJPanel!.setMinimumSize(new java.awt.Dimension(400, 200));
     
 
-    var blankProfileActionScriptJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankProfileActionScriptJPanel);;
+    let blankProfileActionScriptJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankProfileActionScriptJPanel);;
     
 this.blankProfileActionScriptJPanel!.setLayout(blankProfileActionScriptJPanelLayout);
     
@@ -227,7 +228,7 @@ newAlwaysJButtonActionPerformed(evt);
                             );
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -281,6 +282,4 @@ this.updateProfileActionUI();
     private newTimeIntervalJButton: javax.swing.JButton;
 
 }
-
-
 

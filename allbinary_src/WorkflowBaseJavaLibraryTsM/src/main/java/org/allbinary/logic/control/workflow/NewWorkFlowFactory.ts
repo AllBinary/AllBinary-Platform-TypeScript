@@ -35,9 +35,11 @@ import { DynamicObjectData } from '../../../../../org/allbinary/business/Dynamic
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AbeFactory } from '../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
 //not GWT import const AbeFactory
@@ -50,6 +52,7 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -80,8 +83,17 @@ export class NewWorkFlowFactory
         
 
     private static readonly instance: NewWorkFlowFactory = new NewWorkFlowFactory();
-
-    public static getInstance(): NewWorkFlowFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 3) return this.getInstance$overload2(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.getInstance$overload3(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): NewWorkFlowFactory{
 
 
 
@@ -101,17 +113,16 @@ private constructor (){
 
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
+    public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
 
-        try {
-            
-    var className: string = hashMap!.get(DynamicObjectData.NAME) as string;;
+ try { 
+    let className: string = hashMap!.get(DynamicObjectData.NAME) as string;;
     
 
-    var params: any[] = new Array(2);;
+    let params: any[] = new Array(2);;
     
 
-    var classes: Function[] = new Array(2);;
+    let classes: Function[] = new Array(2);;
     
 classes[0]= hashMap!.constructor;
     
@@ -122,7 +133,7 @@ params[0]= hashMap;
 params[1]= pageContext;
     
 
-    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;;
+    let anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;;
     
 
 
@@ -130,16 +141,17 @@ params[1]= pageContext;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new WorkFlowWrapper(anyType) as WorkFlowInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
     
@@ -151,17 +163,17 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
     
@@ -173,18 +185,19 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
                             throw e;
                     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, className: string): WorkFlowInterface{
+    public getInstance$overload3(abeClientInformation: AbeClientInformationInterface, className: string): WorkFlowInterface{
 
-        try {
-            
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+ try { 
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
                         if(className != 
@@ -193,7 +206,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
                         
                                     {
                                     
-    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, 
+    let anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, 
                             null, 
                             null)!;;
     
@@ -209,16 +222,17 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
                              else 
                         if()
                         
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
@@ -230,17 +244,17 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
@@ -252,12 +266,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

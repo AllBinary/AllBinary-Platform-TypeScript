@@ -59,15 +59,13 @@ import { AbeClientInformationInterface } from '../../../../../../../../org/allbi
 export interface UserEmailEventsConfigurationInterface {
         
 
-    getEventConfigurationHashMap(): HashMap<any, any>
+    getEventConfigurationHashMap(): HashMap<any, any>;
 
-    addUserEmailEventConfiguration(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface)
+    addUserEmailEventConfiguration(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface): void;
 
                 //@Throws(Exception.constructor)
             
-    getEventListener(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventListenerInterface
+    getEventListener(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventListenerInterface;
 
 }
-
-
 

@@ -38,6 +38,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 //not GWT import const GameTickTimeDelayHelperFactory
@@ -146,6 +147,4 @@ this.animation.paintXY(graphics, x, y);
 
 
 }
-
-
 

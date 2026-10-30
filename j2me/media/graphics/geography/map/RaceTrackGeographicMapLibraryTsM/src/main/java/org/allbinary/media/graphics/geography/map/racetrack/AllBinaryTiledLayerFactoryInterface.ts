@@ -37,13 +37,11 @@ export interface AllBinaryTiledLayerFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer
+    getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer;
 
                 //@Throws(Exception.constructor)
             
-    getMiniInstance(raceTrackData: RaceTrackData): AllBinaryTiledLayer
+    getMiniInstance(raceTrackData: RaceTrackData): AllBinaryTiledLayer;
 
 }
-
-
 

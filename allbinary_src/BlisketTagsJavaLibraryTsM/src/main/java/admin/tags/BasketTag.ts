@@ -43,12 +43,14 @@ import { BasketData } from '../../org/allbinary/business/user/commerce/inventory
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -108,16 +110,15 @@ this.storeName= value;
             
     isBasketEmpty(): boolean{
 
-        try {
-            
-    var anyType: any = new BasketHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new BasketHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var method: Method = anyType!.constructor.name.getMethod("isBasketEmpty", 
+    let method: Method = anyType!.constructor.name.getMethod("isBasketEmpty", 
                             null)!;;
     
 
-    var emptyBoolean: Boolean = method.invoke(anyType, 
+    let emptyBoolean: Boolean = method.invoke(anyType, 
                             null) as Boolean;;
     
 
@@ -126,20 +127,21 @@ this.storeName= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return emptyBoolean.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -155,8 +157,10 @@ this.storeName= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -164,16 +168,15 @@ this.storeName= value;
             
     addItemToBasket(): boolean{
 
-        try {
-            
-    var anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var method: Method = anyType!.constructor.name.getMethod("addItemToBasket", 
+    let method: Method = anyType!.constructor.name.getMethod("addItemToBasket", 
                             null)!;;
     
 
-    var emptyBoolean: Boolean = method.invoke(anyType, 
+    let emptyBoolean: Boolean = method.invoke(anyType, 
                             null) as Boolean;;
     
 
@@ -182,22 +185,23 @@ this.storeName= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return emptyBoolean.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to add item from Basket";;
+    let error: string = "Failed to add item from Basket";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -214,8 +218,10 @@ this.storeName= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -223,16 +229,15 @@ this.storeName= value;
             
     removeItemFromBasket(): boolean{
 
-        try {
-            
-    var anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var method: Method = anyType!.constructor.name.getMethod("removeItemFromBasket", 
+    let method: Method = anyType!.constructor.name.getMethod("removeItemFromBasket", 
                             null)!;;
     
 
-    var emptyBoolean: Boolean = method.invoke(anyType, 
+    let emptyBoolean: Boolean = method.invoke(anyType, 
                             null) as Boolean;;
     
 
@@ -241,22 +246,23 @@ this.storeName= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return emptyBoolean.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to remove item from Basket";;
+    let error: string = "Failed to remove item from Basket";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -273,8 +279,10 @@ this.storeName= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -282,16 +290,15 @@ this.storeName= value;
             
     adjustBasket(): boolean{
 
-        try {
-            
-    var anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var method: Method = anyType!.constructor.name.getMethod("adjustBasket", 
+    let method: Method = anyType!.constructor.name.getMethod("adjustBasket", 
                             null)!;;
     
 
-    var emptyBoolean: Boolean = method.invoke(anyType, 
+    let emptyBoolean: Boolean = method.invoke(anyType, 
                             null) as Boolean;;
     
 
@@ -300,22 +307,23 @@ this.storeName= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return emptyBoolean.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to Adjust Basket";;
+    let error: string = "Failed to Adjust Basket";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -332,8 +340,10 @@ this.storeName= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -341,8 +351,7 @@ this.storeName= value;
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(this.command != 
                                     null
                                 )
@@ -413,10 +422,11 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -425,11 +435,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -438,12 +448,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

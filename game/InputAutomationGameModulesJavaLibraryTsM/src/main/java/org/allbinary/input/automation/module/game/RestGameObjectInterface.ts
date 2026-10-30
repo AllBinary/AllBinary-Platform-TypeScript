@@ -40,11 +40,9 @@
 export interface RestGameObjectInterface {
         
 
-    isRestNeeded(): boolean
+    isRestNeeded(): boolean;
 
-    isAGoodTimeToRest(): boolean
+    isAGoodTimeToRest(): boolean;
 
 }
-
-
 

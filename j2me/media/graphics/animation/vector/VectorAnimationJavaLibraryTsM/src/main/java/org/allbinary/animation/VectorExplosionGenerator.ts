@@ -36,12 +36,15 @@ import { RandomTranslation } from '../../../org/allbinary/graphics/pipeline/Rand
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+type BasicArrayListS<T = any, U = any> = typeof BasicArrayListS extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListS;
 
 
 
@@ -72,8 +75,15 @@ export class VectorExplosionGenerator
         
 
     private static readonly instance: VectorExplosionGenerator = new VectorExplosionGenerator();
-
-    public static getInstance(): VectorExplosionGenerator{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 3 && typeof args[1] === 'number') return this.getInstance$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): VectorExplosionGenerator{
 
 
 
@@ -99,20 +109,20 @@ private constructor (){
             
     public createList(list: BasicArrayList, howMuch: number, type: VectorExplosionType): BasicArrayList{
 
-    var point: GPoint;;
+    let point: GPoint;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var points: number[][] = new Array(size).fill(null).map(() => new Array(2).fill(null));;
+    let points: number[][] = new Array(size).fill(null).map(() => new Array(2).fill(null));;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 point= list.objectArray[index]! as GPoint;
     
@@ -133,15 +143,15 @@ points[index]![1]= point.getY();
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(points: number[][], howMuch: number, type: VectorExplosionType): number[][][]{
+    public getInstance$overload2(points: number[][], howMuch: number, type: VectorExplosionType): number[][][]{
 
-    var pointsBasicArrayList: BasicArrayList = this.getInstanceStartFrame(points, howMuch, type, true)!;;
+    let pointsBasicArrayList: BasicArrayList = this.getInstanceStartFrame(points, howMuch, type, true)!;;
     
 
-    var tempBasicArrayList: BasicArrayList = pointsBasicArrayList!.objectArray[0]! as BasicArrayList;;
+    let tempBasicArrayList: BasicArrayList = pointsBasicArrayList!.objectArray[0]! as BasicArrayList;;
     
 
-    var newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromListOfPointListWithPointsPerFrame(pointsBasicArrayList, tempBasicArrayList!.size())!;;
+    let newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromListOfPointListWithPointsPerFrame(pointsBasicArrayList, tempBasicArrayList!.size())!;;
     
 
 
@@ -156,20 +166,19 @@ points[index]![1]= point.getY();
             
     public getInstanceStartFrame(points: number[][], howMuch: number, type: VectorExplosionType, startFrame: boolean): BasicArrayList{
 
-        try {
-            
-    var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(howMuch);;
+ try { 
+    let pointsBasicArrayList: BasicArrayList = new BasicArrayListS(howMuch);;
     
 pointsBasicArrayList!.add(this.createPointsBasicArrayList(points));
     
 
-    var frameIndex: number = 0;;
+    let frameIndex: number = 0;;
     
 
-    var tempBasicArrayList: BasicArrayList;;
+    let tempBasicArrayList: BasicArrayList;;
     
 
-    var pointBasicArrayList: BasicArrayList;;
+    let pointBasicArrayList: BasicArrayList;;
     
 
         while(frameIndex < howMuch)
@@ -199,17 +208,20 @@ frameIndex++;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return pointsBasicArrayList;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -219,13 +231,13 @@ frameIndex++;
             
     createListFromPoints(tempBasicArrayList: BasicArrayList, points: number[][], howMuch: number, type: VectorExplosionType): BasicArrayList{
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var pointBasicArrayList: BasicArrayList = new BasicArrayListD();;
+    let pointBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
-    var sectionBasicArrayList: BasicArrayList;;
+    let sectionBasicArrayList: BasicArrayList;;
     
 
         while(index < points.length)
@@ -263,14 +275,14 @@ sectionBasicArrayList= RandomTranslation.getInstance(sectionBasicArrayList, howM
                                     }
                                 
 
-    var size: number = sectionBasicArrayList!.size()!;;
+    let size: number = sectionBasicArrayList!.size()!;;
     
 
 
 
 
                         for (
-    var index2: number = 0;index2 < size; index2++)
+    let index2: number = 0;index2 < size; index2++)
         {
 pointBasicArrayList!.add(sectionBasicArrayList!.objectArray[index2]!);
     
@@ -324,17 +336,17 @@ index++;
                                     }
                                 
 
-    var firstPointBasicArrayList: BasicArrayList = new BasicArrayListS(points.length);;
+    let firstPointBasicArrayList: BasicArrayList = new BasicArrayListS(points.length);;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < points.length; index++)
+    let index: number = 0;index < points.length; index++)
         {
 firstPointBasicArrayList!.add(pointFactory!.createXY(points[index]![0]!, points[index]![1]!));
     
@@ -350,6 +362,4 @@ firstPointBasicArrayList!.add(pointFactory!.createXY(points[index]![0]!, points[
 
 
 }
-
-
 

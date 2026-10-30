@@ -33,9 +33,11 @@ import { OpenGLESImage } from '../../../../../org/allbinary/image/opengles/OpenG
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -70,7 +72,7 @@ export class AllBinaryRendererBase3
         while(this.list.size() > 0)
         {
 
-    var openGLESImage: OpenGLESImage = this.list.removeAt(0) as OpenGLESImage;;
+    let openGLESImage: OpenGLESImage = this.list.removeAt(0) as OpenGLESImage;;
     
 
                         if(openGLESImage != 
@@ -95,6 +97,4 @@ this.list.add(image);
 
 
 }
-
-
 

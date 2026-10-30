@@ -118,14 +118,14 @@ this.developersBeginWidth= new Array(this.developers.length);
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.charHeight= font.getHeight();
     
 this.aboutBeginWidth= (font.stringWidth(this.ABOUT)>>1);
     
 
-    var infoSize: number = this.info.length
+    let infoSize: number = this.info.length
                 ;;
     
 
@@ -133,14 +133,14 @@ this.aboutBeginWidth= (font.stringWidth(this.ABOUT)>>1);
 
 
                         for (
-    var index: number = 0;index < infoSize; index++)
+    let index: number = 0;index < infoSize; index++)
         {
 this.infoBeginWidth[index]= (font.stringWidth(this.info[index]!)>>1);
     
 }
 
 
-    var size: number = this.developers.length
+    let size: number = this.developers.length
                 ;;
     
 
@@ -148,7 +148,7 @@ this.infoBeginWidth[index]= (font.stringWidth(this.info[index]!)>>1);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.developersBeginWidth[index]= (font.stringWidth(this.developers[index]!)>>1);
     
@@ -173,12 +173,12 @@ this.myFontProcessor= MyFontProcessor.getInstance();
 this.myFontProcessor!.process(graphics);
     
 
-    var halfWidth: number = this.displayInfoSingleton!.getLastHalfWidth()!;;
+    let halfWidth: number = this.displayInfoSingleton!.getLastHalfWidth()!;;
     
 graphics.drawString(this.ABOUT, halfWidth -this.aboutBeginWidth, 2 *this.charHeight, this.anchor);
     
 
-    var infoSize: number = this.info.length
+    let infoSize: number = this.info.length
                 ;;
     
 
@@ -186,14 +186,14 @@ graphics.drawString(this.ABOUT, halfWidth -this.aboutBeginWidth, 2 *this.charHei
 
 
                         for (
-    var index: number = 0;index < infoSize; index++)
+    let index: number = 0;index < infoSize; index++)
         {
 graphics.drawString(this.info[index]!, halfWidth -this.infoBeginWidth[index], (4 +index) *this.charHeight, this.anchor);
     
 }
 
 
-    var size: number = this.developers.length
+    let size: number = this.developers.length
                 ;;
     
 
@@ -201,7 +201,7 @@ graphics.drawString(this.info[index]!, halfWidth -this.infoBeginWidth[index], (4
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 graphics.drawString(this.developers[index]!, halfWidth -this.developersBeginWidth[index], (5 +infoSize +index) *this.charHeight, this.anchor);
     
@@ -211,6 +211,4 @@ graphics.drawString(this.developers[index]!, halfWidth -this.developersBeginWidt
 
 
 }
-
-
 

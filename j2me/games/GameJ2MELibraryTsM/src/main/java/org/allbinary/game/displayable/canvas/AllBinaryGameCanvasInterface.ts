@@ -46,9 +46,7 @@ import { DisplayableInterface } from '../../../../../org/allbinary/graphics/disp
 export interface AllBinaryGameCanvasInterface extends DisplayableInterface {
         
 
-    getLayerManager(): AllBinaryGameLayerManager
+    getLayerManager(): AllBinaryGameLayerManager;
 
 }
-
-
 

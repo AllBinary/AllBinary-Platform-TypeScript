@@ -56,12 +56,15 @@ import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -139,7 +142,7 @@ this.font= font;
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.fontHeightP= font.getHeight();
     
@@ -152,24 +155,24 @@ this.myFontProcessor= MyFontProcessor.getInstance();
 this.myFontProcessor!.process(graphics);
     
 
-    var existingFont: Font = graphics.getFont()!;;
+    let existingFont: Font = graphics.getFont()!;;
     
 this.fontDebugFactory!.setFont(this.font, graphics);
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.basicColor, this.color);
     
 
-    var beginWidth: number= 0;;
+    let beginWidth: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = this.lineYOffsetArray!.length -1;index >= 0; index--)
+    let index: number = this.lineYOffsetArray!.length -1;index >= 0; index--)
         {
 
                         if(this.hasChanged)
@@ -199,7 +202,7 @@ this.fontDebugFactory!.setFont(existingFont, graphics);
 
     public update(){
 
-    var level: number = this.gameCanvas!.getLayerManager()!.getGameInfo()!.getCurrentLevel()!;;
+    let level: number = this.gameCanvas!.getLayerManager()!.getGameInfo()!.getCurrentLevel()!;;
     
 this.stringArray[0]= new StringMaker().append(this.BEGIN_LEVEL)!.appendint(level)!.toString();
     
@@ -208,7 +211,7 @@ this.stringArray[0]= new StringMaker().append(this.BEGIN_LEVEL)!.appendint(level
 
 
                         for (
-    var index: number = this.stringArray!.length -1;index >= 1; index--)
+    let index: number = this.stringArray!.length -1;index >= 1; index--)
         {
 this.stringArray[index]= this.EMPTY_STRING;
     
@@ -234,6 +237,4 @@ this.basicColor= basicColor;
 
 
 }
-
-
 

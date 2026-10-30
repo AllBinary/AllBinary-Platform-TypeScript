@@ -83,7 +83,7 @@ export class ResourceLoadingLevelFactory
 
 
                         for (
-    var index: number = 0;index < this.RESOURCE_LOADING_LEVEL_ARRAY.length; index++)
+    let index: number = 0;index < this.RESOURCE_LOADING_LEVEL_ARRAY.length; index++)
         {
 
                         if(level == this.RESOURCE_LOADING_LEVEL_ARRAY[index]!.getLevel())
@@ -110,6 +110,4 @@ export class ResourceLoadingLevelFactory
 
 
 }
-
-
 

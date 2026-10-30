@@ -99,17 +99,29 @@ private constructor (){
             super();
         }
 
-
+translate(...args: any[]): any {
+   
+    if (args.length === 3) return this.translate$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 4) return this.translate$overload2(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 2) return this.translate$overload3(args[0], args[1]);
+   
+    if (args.length === 2) return this.translate$overload4(args[0], args[1]);
+   
+    if (args.length === 3) return this.translate$overload5(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: translate'); }
+  
                 //@Throws(Exception.constructor)
             
-    public translate(xsltStreamSource: StreamSource, xmlStreamSource: StreamSource, streamResult: StreamResult): OutputStream{
+    public translate$overload1(xsltStreamSource: StreamSource, xmlStreamSource: StreamSource, streamResult: StreamResult): OutputStream{
 
-        try {
-            
-    var transformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
+ try { 
+    let transformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 
-    var transformer: Transformer = transformerFactory!.newTransformer(xsltStreamSource)!;;
+    let transformer: Transformer = transformerFactory!.newTransformer(xsltStreamSource)!;;
     
 transformer.transform(xmlStreamSource, streamResult);
     
@@ -119,32 +131,34 @@ transformer.transform(xmlStreamSource, streamResult);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return streamResult!.getOutputStream();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public translate(resolver: URIResolver, xsltStreamSource: StreamSource, xmlStreamSource: StreamSource, streamResult: StreamResult): OutputStream{
+    public translate$overload2(resolver: URIResolver, xsltStreamSource: StreamSource, xmlStreamSource: StreamSource, streamResult: StreamResult): OutputStream{
 
-        try {
-            
-    var tFactory: TransformerFactory = TransformerFactory.newInstance()!;;
+ try { 
+    let tFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 tFactory!.setURIResolver(resolver);
     
 
-    var transformer: Transformer = tFactory!.newTransformer(xsltStreamSource)!;;
+    let transformer: Transformer = tFactory!.newTransformer(xsltStreamSource)!;;
     
 transformer.transform(xmlStreamSource, streamResult);
     
@@ -154,17 +168,20 @@ transformer.transform(xmlStreamSource, streamResult);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return streamResult!.getOutputStream();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -172,12 +189,11 @@ transformer.transform(xmlStreamSource, streamResult);
             
     public translateTemplate(templates: Templates, xmlStreamSource: StreamSource): string{
 
-        try {
-            
-    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+ try { 
+    let outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var streamResult: StreamResult = new StreamResult(outputStream);;
+    let streamResult: StreamResult = new StreamResult(outputStream);;
     
 templates.newTransformer()!.transform(xmlStreamSource, streamResult);
     
@@ -187,27 +203,29 @@ templates.newTransformer()!.transform(xmlStreamSource, streamResult);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return streamResult!.getOutputStream()!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public translate(xsltStreamSource: StreamSource, xmlDocument: Document): string{
+    public translate$overload3(xsltStreamSource: StreamSource, xmlDocument: Document): string{
 
-        try {
-            
-    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+ try { 
+    let outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
 
@@ -215,27 +233,29 @@ templates.newTransformer()!.transform(xmlStreamSource, streamResult);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.translate(xsltStreamSource, new StreamSource(new StringBufferInputStream(XmlDocumentHelper.toString(xmlDocument))), new StreamResult(outputStream))!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public translate(xsltStreamSource: StreamSource, xmlStreamSource: StreamSource): string{
+    public translate$overload4(xsltStreamSource: StreamSource, xmlStreamSource: StreamSource): string{
 
-        try {
-            
-    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+ try { 
+    let outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
 
@@ -243,27 +263,29 @@ templates.newTransformer()!.transform(xmlStreamSource, streamResult);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.translate(xsltStreamSource, xmlStreamSource, new StreamResult(outputStream))!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public translate(resolver: URIResolver, xsltStreamSource: StreamSource, xmlStreamSource: StreamSource): string{
+    public translate$overload5(resolver: URIResolver, xsltStreamSource: StreamSource, xmlStreamSource: StreamSource): string{
 
-        try {
-            
-    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+ try { 
+    let outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
 
@@ -271,17 +293,20 @@ templates.newTransformer()!.transform(xmlStreamSource, streamResult);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.translate(resolver, xsltStreamSource, xmlStreamSource, new StreamResult(outputStream))!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -289,26 +314,26 @@ templates.newTransformer()!.transform(xmlStreamSource, streamResult);
             
     public export(outputFile: File, xsltFilePath: string, xmlDocument: Document){
 
-        try {
-            outputFile!.createNewFile();
+ try { outputFile!.createNewFile();
     
 this.translate(new StreamSource(xsltFilePath), new StreamSource(new StringBufferInputStream(XmlDocumentHelper.toString(xmlDocument))), new StreamResult(outputFile));
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

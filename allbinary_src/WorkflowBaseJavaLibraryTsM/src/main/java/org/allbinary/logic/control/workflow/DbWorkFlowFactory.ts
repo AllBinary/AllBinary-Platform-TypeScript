@@ -32,6 +32,7 @@ import { DynamicObjectData } from '../../../../../org/allbinary/business/Dynamic
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeFactory } from '../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
 //not GWT import const AbeFactory
@@ -44,6 +45,7 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -74,8 +76,15 @@ export class DbWorkFlowFactory
         
 
     private static readonly instance: DbWorkFlowFactory = new DbWorkFlowFactory();
-
-    public static getInstance(): DbWorkFlowFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 2) return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): DbWorkFlowFactory{
 
 
 
@@ -95,24 +104,23 @@ private constructor (){
 
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>): WorkFlowInterface{
+    public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>): WorkFlowInterface{
 
-        try {
-            
-    var className: string = hashMap!.get(DynamicObjectData.NAME) as string;;
+ try { 
+    let className: string = hashMap!.get(DynamicObjectData.NAME) as string;;
     
 
-    var params: any[] = new Array(1);;
+    let params: any[] = new Array(1);;
     
 
-    var classes: Function[] = new Array(1);;
+    let classes: Function[] = new Array(1);;
     
 classes[0]= hashMap!.constructor;
     
 params[0]= hashMap;
     
 
-    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;;
+    let anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;;
     
 
 
@@ -120,16 +128,17 @@ params[0]= hashMap;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new WorkFlowWrapper(anyType) as WorkFlowInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
     
@@ -141,17 +150,17 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
     
@@ -163,12 +172,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

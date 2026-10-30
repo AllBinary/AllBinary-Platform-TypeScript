@@ -79,16 +79,16 @@ private constructor (){
 
     /*actual*/ public putL(log: Log){
 
-    var specialMessage: string = log.getSpecialMessage()!;;
+    let specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;;
+    let anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;;
+    let functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;;
+    let exception: any = log.getThrowable()!;;
     
 
                         if(log != 
@@ -104,7 +104,7 @@ private constructor (){
 }
 
 
-    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any, functionName: string){
 }
 
 
@@ -112,14 +112,14 @@ private constructor (){
 }
 
 
-    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public put(specialMessage: string, anyType: any, functionName: string, exception: any){
 
-    var className: string = this.LABEL;;
+    let className: string = this.LABEL;;
     
 className= anyType!.constructor.name.toString()!;
     
 
-    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
     
 android.util.Log.i(this.LABEL, this.LOG_SUCCESS +message);
     
@@ -127,6 +127,4 @@ android.util.Log.i(this.LABEL, this.LOG_SUCCESS +message);
 
 
 }
-
-
 

@@ -45,15 +45,13 @@ import { Angle } from '../../../org/allbinary/math/Angle.js';
 export interface DirectionalInterface {
         
 
-    setFrameByDirection(direction: Direction)
+    setFrameByDirection(direction: Direction): void;
 
-    setFrameToAngle(angle: Angle)
+    setFrameToAngle(angle: Angle): void;
 
-    adjustFrameToAngle(newAngle: Angle)
+    adjustFrameToAngle(newAngle: Angle): void;
 
-    adjustFrame(angle: number)
+    adjustFrame(angle: number): void;
 
 }
-
-
 

@@ -27,9 +27,11 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
@@ -42,6 +44,7 @@ import { NameSpaceRequestParamData } from '../../../../../../org/allbinary/logic
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CssElementData } from '../../../../../../org/allbinary/logic/visual/dhtml/style/css/CssElementData.js';
 //not GWT import const CssElementData
@@ -51,6 +54,7 @@ import { CssElementsValidationFactory } from '../../../../../../org/allbinary/lo
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -90,8 +94,17 @@ export class StylesValidationFactory
         
 
     private static readonly instance: StylesValidationFactory = new StylesValidationFactory();
-
-    public static getInstance(): StylesValidationFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+    if (args.length === 1) return this.getInstance$overload3(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): StylesValidationFactory{
 
 
 
@@ -103,9 +116,9 @@ export class StylesValidationFactory
 
                 //@Throws(Exception.constructor)
             
-    public static getInstance(hashMap: HashMap<any, any>): BasicArrayList{
+    public static getInstance$overload3(hashMap: HashMap<any, any>): BasicArrayList{
 
-    var stylesDocument: Document = hashMap!.get(NameSpaceRequestParamData.DOCUMENT) as Document;;
+    let stylesDocument: Document = hashMap!.get(NameSpaceRequestParamData.DOCUMENT) as Document;;
     
 
 
@@ -126,12 +139,12 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(document: Document): BasicArrayList{
+    public getInstance$overload2(document: Document): BasicArrayList{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var nodeList: NodeList = document.getElementsByTagName(StylesData.getInstance()!.NAME)!;;
+    let nodeList: NodeList = document.getElementsByTagName(StylesData.getInstance()!.NAME)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -156,13 +169,13 @@ private constructor (){
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var stylesNode: Node = nodeList!.item(index)!;;
+    let stylesNode: Node = nodeList!.item(index)!;;
     
 
-    var styleNodeList: BasicArrayList = DomSearchHelper.getAllNodes(StyleData.getInstance()!.NAME, stylesNode!.getChildNodes())!;;
+    let styleNodeList: BasicArrayList = DomSearchHelper.getAllNodes(StyleData.getInstance()!.NAME, stylesNode!.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -178,13 +191,13 @@ private constructor (){
 
 
                         for (
-    var styleNodesIndex: number = 0;styleNodesIndex < styleNodeList!.size(); styleNodesIndex++)
+    let styleNodesIndex: number = 0;styleNodesIndex < styleNodeList!.size(); styleNodesIndex++)
         {
 
-    var styleNode: Node = styleNodeList!.get(styleNodesIndex) as Node;;
+    let styleNode: Node = styleNodeList!.get(styleNodesIndex) as Node;;
     
 
-    var cssElementStyleNodeList: BasicArrayList = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, styleNode!.getChildNodes())!;;
+    let cssElementStyleNodeList: BasicArrayList = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, styleNode!.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -224,6 +237,4 @@ private constructor (){
 
 
 }
-
-
 

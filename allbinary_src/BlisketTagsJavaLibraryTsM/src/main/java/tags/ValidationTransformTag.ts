@@ -36,9 +36,11 @@ import { AbResponseHandler } from '../org/allbinary/logic/communication/http/req
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -105,16 +107,15 @@ this.logic= logic;
             
     isValid(): boolean{
 
-        try {
-            
-    var helperClass: Function = this.getHelper()!.constructor!;;
+ try { 
+    let helperClass: Function = this.getHelper()!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod(commonStrings!.IS_VALID, 
+    let method: Method = helperClass!.getMethod(commonStrings!.IS_VALID, 
                             null)!;;
     
 
-    var result: Boolean = method.invoke(this.getHelper(), 
+    let result: Boolean = method.invoke(this.getHelper(), 
                             null) as Boolean;;
     
 
@@ -123,10 +124,11 @@ this.logic= logic;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -141,8 +143,10 @@ this.logic= logic;
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -150,16 +154,15 @@ this.logic= logic;
             
     validationInfo(): string{
 
-        try {
-            
-    var addressHelperClass: Function = this.getHelper()!.constructor!;;
+ try { 
+    let addressHelperClass: Function = this.getHelper()!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("validationInfo", 
+    let method: Method = addressHelperClass!.getMethod("validationInfo", 
                             null)!;;
     
 
-    var result: string = method.invoke(this.getHelper(), 
+    let result: string = method.invoke(this.getHelper(), 
                             null) as string;;
     
 
@@ -168,10 +171,11 @@ this.logic= logic;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -186,8 +190,10 @@ this.logic= logic;
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -195,16 +201,15 @@ this.logic= logic;
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;;
+    let request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;;
     
 stringBuffer!.append("ValidationViewTag Start For: ");
     
@@ -236,7 +241,7 @@ this.setHelper();
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("View File: ");
     
@@ -285,7 +290,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("View File: ");
     
@@ -328,10 +333,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -340,11 +346,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -353,8 +359,10 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -380,6 +388,4 @@ this.logic= true;
 
 
 }
-
-
 

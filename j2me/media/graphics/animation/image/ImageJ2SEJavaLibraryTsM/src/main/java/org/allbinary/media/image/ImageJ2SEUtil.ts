@@ -63,5 +63,3 @@ export class ImageJ2SEUtil
 
 }
 
-
-

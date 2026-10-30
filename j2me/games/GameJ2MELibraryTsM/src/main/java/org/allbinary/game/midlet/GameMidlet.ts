@@ -228,15 +228,18 @@ import { BasicMotionGesturesHandler } from '../../../../org/allbinary/input/moti
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
 //not GWT import const ClientInformationFactory
@@ -279,15 +282,19 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+type EnumerationUtil<T = any, U = any> = typeof EnumerationUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof EnumerationUtil;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -384,7 +391,7 @@ SmallIntegerSingletonFactory.getInstance()!.initWithRange(0x291, 6);
 this.loadGameForm= CommandForm.getNullCommandForm();
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.init(this);
     
@@ -444,7 +451,7 @@ this.init();
 this.pauseAppBackground(true);
     
 
-    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
+    let gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
     
 gameAdState!.getAdvertisements()!.stopAll();
     
@@ -478,7 +485,7 @@ AllBinarySensorManager.getInstance()!.shutdown();
 this.unPauseAppBackground(true);
     
 
-    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
+    let gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
     
 gameAdState!.getAdvertisements()!.startAll();
     
@@ -491,7 +498,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.UN_PAUSE_APP_BACKGROUND
 AllBinarySensorManager.getInstance()!.init();
     
 
-    var gameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;;
+    let gameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;;
     
 
                         if(gameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
@@ -513,7 +520,7 @@ AllBinarySensorManager.getInstance()!.init();
 
     destroyAppInRunnable(unconditional: boolean, isProgress: boolean){
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 
                         if(isProgress)
@@ -542,14 +549,13 @@ this.destroyApp(unconditional);
 
     destroyApp(unconditional: boolean){
 
-    var METHOD_NAME: string = "GameMidlet::destroyApp";;
+    let METHOD_NAME: string = "GameMidlet::destroyApp";;
     
 
-        try {
-            PreLogUtil.put(GameStatisticsFactory.getInstance()!.toString(), this, METHOD_NAME);
+ try { PreLogUtil.put(GameStatisticsFactory.getInstance()!.toString(), this, METHOD_NAME);
     
 
-    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
+    let gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
     
 gameAdState!.getAdvertisements()!.stopAll();
     
@@ -576,14 +582,17 @@ super.destroyApp(true);
     
 PreLogUtil.put(this.commonStrings!.END, this, METHOD_NAME);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 this.logUtil!.putF(this.commonStrings!.END, this, METHOD_NAME);
     
 }
@@ -593,19 +602,18 @@ this.logUtil!.putF(this.commonStrings!.END, this, METHOD_NAME);
             
     startApp(){
 
-        try {
-            
-    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
+ try { 
+    let gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
     
 gameAdState!.getAdvertisements()!.startAll();
     
 
-    var START_APP: string = "startApp";;
+    let START_APP: string = "startApp";;
     
 this.logUtil!.putF(this.commonStrings!.START, this, START_APP);
     
 
-    var gameCanvasRunnableInterface: any = this.allbinaryGameCanvasRunnableInterface;;
+    let gameCanvasRunnableInterface: any = this.allbinaryGameCanvasRunnableInterface;;
     
 
                         if(gameCanvasRunnableInterface == NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
@@ -639,27 +647,29 @@ this.setDemo();
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "startApp", e);
     
 this.destroyApp(false);
     
 this.notifyDestroyed();
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public commandAction(command: Command, displayable: Displayable){
 
-        try {
-            
-    var displayableAsString: string = this.NO_DISPLAYABLE;;
+ try { 
+    let displayableAsString: string = this.NO_DISPLAYABLE;;
     
 
                         if(displayable != 
@@ -673,7 +683,7 @@ this.notifyDestroyed();
                                     }
                                 
 
-    var label: string = this.NO_COMMAND;;
+    let label: string = this.NO_COMMAND;;
     
 
                         if(command != 
@@ -689,13 +699,13 @@ this.notifyDestroyed();
 PreLogUtil.put(new StringMaker().append(this.COMMAND_NAME)!.append(label)!.append(this.DISPLAYABLE)!.append(displayableAsString)!.toString(), this, this.COMMAND_ACTION);
     
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
+    let gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 
-    var allbinaryGameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;;
+    let allbinaryGameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;;
     
 
-    var gameCanvasRunnableInterface: any = allbinaryGameCanvasRunnableInterface;;
+    let gameCanvasRunnableInterface: any = allbinaryGameCanvasRunnableInterface;;
     
 
                         if(command == gameCommandsFactory!.SHOW_GAME_CANVAS)
@@ -720,7 +730,7 @@ this.unPauseAppBackground(false);
                         
                                     {
                                     
-    var menuListener: MenuListener = displayable as unknown as MenuListener;;
+    let menuListener: MenuListener = displayable as unknown as MenuListener;;
     
 menuListener!.close();
     
@@ -815,13 +825,13 @@ this.gameMidletStateFactory!.setCurrentGameState(this.gameStateFactory!.PLAYING_
                         
                                     {
                                     
-    var inApplicationPurchaseFactory: InApplicationPurchaseFactory = InApplicationPurchaseFactory.getInstance()!;;
+    let inApplicationPurchaseFactory: InApplicationPurchaseFactory = InApplicationPurchaseFactory.getInstance()!;;
     
 
-    var list: BasicArrayList = LockableFeatureFactory.getInstance()!.getList()!;;
+    let list: BasicArrayList = LockableFeatureFactory.getInstance()!.getList()!;;
     
 
-    var lockableFeature: LockableFeature = list.get(0) as LockableFeature;;
+    let lockableFeature: LockableFeature = list.get(0) as LockableFeature;;
     
 
                         if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(lockableFeature))
@@ -854,7 +864,7 @@ this.gameMidletStateFactory!.setCurrentGameState(this.gameStateFactory!.PLAYING_
                         
                                     {
                                     
-    var menuListener: MenuListener = displayable as unknown as MenuListener;;
+    let menuListener: MenuListener = displayable as unknown as MenuListener;;
     
 menuListener!.close();
     
@@ -909,7 +919,7 @@ this.setDisplay(displayable);
                                     this.pauseAppBackground(false);
     
 
-    var menuListener: MenuListener = displayable as unknown as MenuListener;;
+    let menuListener: MenuListener = displayable as unknown as MenuListener;;
     
 menuListener!.open();
     
@@ -925,7 +935,7 @@ this.setDisplay(displayable);
                                     this.debugInterface!.start();
     
 
-    var gameCanvas: AllBinaryGameCanvas = allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;;
+    let gameCanvas: AllBinaryGameCanvas = allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;;
     
 gameCanvas!.addCommand(gameCommandsFactory!.STOP_TRACE);
     
@@ -945,7 +955,7 @@ this.debugInterface!.stop();
 this.unPauseAppBackground(false);
     
 
-    var gameCanvas: AllBinaryGameCanvas = allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;;
+    let gameCanvas: AllBinaryGameCanvas = allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;;
     
 gameCanvas!.addCommand(gameCommandsFactory!.START_TRACE);
     
@@ -959,7 +969,7 @@ gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE);
                         
                                     {
                                     
-    var tempDisplayable: Displayable = displayable;;
+    let tempDisplayable: Displayable = displayable;;
     
 
                         if(tempDisplayable instanceof GameOptionsForm)
@@ -978,14 +988,14 @@ gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE);
                         
                                     {
                                     
-    var tempDisplayable: Displayable = displayable;;
+    let tempDisplayable: Displayable = displayable;;
     
 
                         if(tempDisplayable instanceof GameInputMappingCanvas)
                         
                                     {
                                     
-    var gameInputMappingCanvas: GameInputMappingCanvas = tempDisplayable as GameInputMappingCanvas;;
+    let gameInputMappingCanvas: GameInputMappingCanvas = tempDisplayable as GameInputMappingCanvas;;
     
 gameInputMappingCanvas!.update();
     
@@ -1002,14 +1012,14 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
                         
                                     {
                                     
-    var tempDisplayable: Displayable = displayable;;
+    let tempDisplayable: Displayable = displayable;;
     
 
                         if(tempDisplayable instanceof HighScoresCanvas)
                         
                                     {
                                     
-    var highScoresCanvas: HighScoresCanvas = tempDisplayable as HighScoresCanvas;;
+    let highScoresCanvas: HighScoresCanvas = tempDisplayable as HighScoresCanvas;;
     
 highScoresCanvas!.updateCommand(command);
     
@@ -1033,7 +1043,7 @@ highScoresCanvas!.updateCommand(command);
                         
                                     {
                                     
-    var menuListener: MenuListener = displayable as unknown as MenuListener;;
+    let menuListener: MenuListener = displayable as unknown as MenuListener;;
     
 menuListener!.close();
     
@@ -1065,14 +1075,14 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
                         
                                     {
                                     
-    var tempDisplayable: Displayable = displayable;;
+    let tempDisplayable: Displayable = displayable;;
     
 
                         if(tempDisplayable instanceof GameInputMappingCanvas)
                         
                                     {
                                     
-    var gameInputMappingCanvas: GameInputMappingCanvas = tempDisplayable as GameInputMappingCanvas;;
+    let gameInputMappingCanvas: GameInputMappingCanvas = tempDisplayable as GameInputMappingCanvas;;
     
 gameInputMappingCanvas!.setDefault();
     
@@ -1089,20 +1099,20 @@ gameInputMappingCanvas!.setDefault();
                                     this.pauseAppBackground(false);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.addNormalPortion(50, "In Game Options");
     
 
-    var layerManager: AllBinaryGameLayerManager = this.createGameLayerManager()!;;
+    let layerManager: AllBinaryGameLayerManager = this.createGameLayerManager()!;;
     
 
-    var inGameOptionsFormFactory: InGameOptionsFormFactory = InGameOptionsFormFactory.getInstance()!;;
+    let inGameOptionsFormFactory: InGameOptionsFormFactory = InGameOptionsFormFactory.getInstance()!;;
     
 inGameOptionsFormFactory!.init(this, new InGameFeatures(), "Options In Game", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor());
     
 
-    var inGameOptionsForm: CommandForm = inGameOptionsFormFactory!.get()!;;
+    let inGameOptionsForm: CommandForm = inGameOptionsFormFactory!.get()!;;
     
 inGameOptionsForm!.setItemStateListener(allbinaryGameCanvasRunnableInterface);
     
@@ -1116,7 +1126,7 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, inGameOptionsForm)
                         
                                     {
                                     
-    var inGameOptionsForm: InGameOptionsForm = InGameOptionsFormFactory.getInstance()!.get() as InGameOptionsForm;;
+    let inGameOptionsForm: InGameOptionsForm = InGameOptionsFormFactory.getInstance()!.get() as InGameOptionsForm;;
     
 GameFeatureFormUtil.getInstance()!.setDefault(inGameOptionsForm);
     
@@ -1132,7 +1142,7 @@ GameFeatureFormUtil.getInstance()!.setDefault(inGameOptionsForm);
 this.stopAll();
     
 
-    var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;;
+    let mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;;
     
 this.isFullScreen= this.features.isFeature(mainFeatureFactory!.FULL_SCREEN);
     
@@ -1154,7 +1164,7 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getGameOption
 this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable);
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Close isFullScreen/change: ");
     
@@ -1189,7 +1199,7 @@ AllBinaryMediaManager.setMuted(false);
                                     this.pauseAppBackground(false);
     
 
-    var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;;
+    let keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;;
     
 keyValuePersistance!.clear();
     
@@ -1200,7 +1210,7 @@ keyValuePersistance!.loadAll(this.abeClientInformation);
                         
                                     {
                                     
-    var layerManager: AllBinaryGameLayerManager = this.createGameLayerManager()!;;
+    let layerManager: AllBinaryGameLayerManager = this.createGameLayerManager()!;;
     
 this.setLoadGameForm(new LoadGameForm(this, "Load Game", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor()));
     
@@ -1223,22 +1233,22 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getLoadGameFo
                         
                                     {
                                     
-    var loadGameForm: LoadGameForm = this.getLoadGameForm() as LoadGameForm;;
+    let loadGameForm: LoadGameForm = this.getLoadGameForm() as LoadGameForm;;
     
 
-    var index: number = loadGameForm!.getSelectedId()!;;
+    let index: number = loadGameForm!.getSelectedId()!;;
     
 
                         if(index !=  -1)
                         
                                     {
                                     
-    var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;;
+    let keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;;
     
 this.setStartStateHashtable(keyValuePersistance!.get(index));
     
 
-    var menuListener: MenuListener = this.getLoadGameForm()!;;
+    let menuListener: MenuListener = this.getLoadGameForm()!;;
     
 menuListener!.close();
     
@@ -1259,17 +1269,17 @@ PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, this.
                         
                                     {
                                     
-    var loadGameForm: LoadGameForm = this.getLoadGameForm() as LoadGameForm;;
+    let loadGameForm: LoadGameForm = this.getLoadGameForm() as LoadGameForm;;
     
 
-    var index: number = loadGameForm!.getSelectedText()!;;
+    let index: number = loadGameForm!.getSelectedText()!;;
     
 
                         if(index !=  -1)
                         
                                     {
                                     
-    var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;;
+    let keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;;
     
 keyValuePersistance!.delete(this.abeClientInformation, index);
     
@@ -1290,7 +1300,7 @@ this.getLoadGameForm()!.update();
                         
                                     {
                                     
-    var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;;
+    let keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;;
     
 this.pauseAppBackground(false);
     
@@ -1312,7 +1322,7 @@ this.unPauseAppBackground(false);
                         
                                     {
                                     
-    var highScoreTextBox: HighScoreTextBox = displayable as unknown as HighScoreTextBox;;
+    let highScoreTextBox: HighScoreTextBox = displayable as unknown as HighScoreTextBox;;
     
 highScoreTextBox!.submitted= true;
     
@@ -1349,7 +1359,7 @@ this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable)
                         
                                     {
                                     
-    var virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;;
+    let virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;;
     
 virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
     
@@ -1361,10 +1371,10 @@ virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
                         
                                     {
                                     
-    var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;;
+    let mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;;
     
 
-    var isFullScreen: boolean = this.features.isFeature(mainFeatureFactory!.FULL_SCREEN)!;;
+    let isFullScreen: boolean = this.features.isFeature(mainFeatureFactory!.FULL_SCREEN)!;;
     
 
                         if(isFullScreen)
@@ -1386,10 +1396,11 @@ this.updateFullScreen();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(new StringMaker().append(this.commonStrings!.EXCEPTION_LABEL)!.append(command.getLabel())!.toString(), this, this.midletStrings!.COMMAND_ACTION, e);
     
 
@@ -1401,27 +1412,29 @@ this.logUtil!.put(new StringMaker().append(this.commonStrings!.EXCEPTION_LABEL)!
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     updateFullScreen(){
 
-    var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;;
+    let mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;;
     
 
-    var isFullScreen: boolean = this.features.isFeature(mainFeatureFactory!.FULL_SCREEN)!;;
+    let isFullScreen: boolean = this.features.isFeature(mainFeatureFactory!.FULL_SCREEN)!;;
     
 
-    var displayable: Displayable = this.getDisplay()!.getCurrent()!;;
+    let displayable: Displayable = this.getDisplay()!.getCurrent()!;;
     
 
                         if(displayable instanceof Canvas)
                         
                                     {
                                     
-    var canvas: Canvas = displayable as unknown as Canvas;;
+    let canvas: Canvas = displayable as unknown as Canvas;;
     
 canvas.setFullScreenMode(isFullScreen);
     
@@ -1499,7 +1512,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
             
     public startGameCanvasRunnableInterface(){
 
-    var threadFactoryUtil: ThreadFactoryUtil = ThreadFactoryUtil.getInstance()!;;
+    let threadFactoryUtil: ThreadFactoryUtil = ThreadFactoryUtil.getInstance()!;;
     
 this.thread= threadFactoryUtil!.getInstanceGameCanvasRunnable(this.allbinaryGameCanvasRunnableInterface);
     
@@ -1524,7 +1537,7 @@ ColorChangeEventHandler.getInstance()!.removeAllListeners();
 GameEventHandlerUtil.removeAllListeners();
     
 
-    var gameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;;
+    let gameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;;
     
 
                         if(gameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
@@ -1546,7 +1559,7 @@ gameCanvasRunnableInterface!.setRunning(false);
 ThreadUtil.getInstance()!.join(this.thread);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 
                         if(this.features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ALL))
@@ -1586,7 +1599,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 
     createGameLayerManager(): AllBinaryGameLayerManager{
 
-    var gameInfo: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.SINGLE_PLAYER, GameMode.SERVER, PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE, 1, 1);;
+    let gameInfo: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.SINGLE_PLAYER, GameMode.SERVER, PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE, 1, 1);;
     
 
 
@@ -1599,7 +1612,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 
     getGameOptionsForm(): CommandForm{
 
-    var layerManager: AllBinaryGameLayerManager = this.createGameLayerManager()!;;
+    let layerManager: AllBinaryGameLayerManager = this.createGameLayerManager()!;;
     
 
 
@@ -1616,7 +1629,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.SAVE);
     
 
-    var hashtable: ABHashtable<any, any> = this.getCurrentStateHashtable()!;;
+    let hashtable: ABHashtable<any, any> = this.getCurrentStateHashtable()!;;
     
 GamePersistanceSingleton.getInstance()!.save(this.abeClientInformation, hashtable);
     
@@ -1629,20 +1642,20 @@ GamePersistanceSingleton.getInstance()!.save(this.abeClientInformation, hashtabl
 this.logUtil!.putF(this.commonStrings!.START, this, "getCurrentStateHashtable");
     
 
-    var hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    let hashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
                         if(this.allbinaryGameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
                                     
-    var currentHashtable: ABHashtable<any, any> = this.allbinaryGameCanvasRunnableInterface!.getCurrentStateHashtable()!;;
+    let currentHashtable: ABHashtable<any, any> = this.allbinaryGameCanvasRunnableInterface!.getCurrentStateHashtable()!;;
     
 
-    var enumeration: Enumeration<any> = currentHashtable!.keys()!;;
+    let enumeration: Enumeration<any> = currentHashtable!.keys()!;;
     
 
-    var key: any;;
+    let key: any;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
@@ -1714,14 +1727,14 @@ this.resized= resized;
                                     }
                                 
 
-    var displayable: Displayable = this.getDisplay()!.getCurrent()!;;
+    let displayable: Displayable = this.getDisplay()!.getCurrent()!;;
     
 
                         if(displayable instanceof DemoCanvas)
                         
                                     {
                                     
-    var demoCanvas: DemoCanvas = displayable as unknown as DemoCanvas;;
+    let demoCanvas: DemoCanvas = displayable as unknown as DemoCanvas;;
     
 
                         if(demoCanvas!.isDemoLoading())
@@ -1749,6 +1762,4 @@ this.resized= resized;
 
 
 }
-
-
 

@@ -29,6 +29,7 @@ import { IOException } from '../../../../java/io/IOException.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbDataInputStream } from '../../../../org/allbinary/logic/io/AbDataInputStream.js';
 //not GWT import const AbDataInputStream
@@ -53,6 +54,7 @@ import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -96,32 +98,34 @@ public constructor (){
 
     public initialize(value: number){
 
-        try {
-            this.newFile!.createNewFile();
+ try { this.newFile!.createNewFile();
     
 
-    var idData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(this.newFile)!;;
+    let idData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(this.newFile)!;;
     
 idData!.writeLong(value);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
     
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -139,33 +143,32 @@ this.newFile= AbFile.createAbFile(filePathName);
 
     public getNext(): string{
 
-    var idData: AbDataInputStream = 
+    let idData: AbDataInputStream = 
                 null
             ;;
     
 
-    var idOutData: AbDataOutputStream = 
+    let idOutData: AbDataOutputStream = 
                 null
             ;;
     
 
-        try {
-            
-    var idFile: AbFileInputStream = new AbFileInputStream(this.newFile);;
+ try { 
+    let idFile: AbFileInputStream = new AbFileInputStream(this.newFile);;
     
 idData= new AbDataInputStream(idFile);
     
 this.id= idData!.readLong();
     
 
-    var idOutFile: AbFileOutputStream = AbFileOutputStream.createFromAbFile(this.newFile)!;;
+    let idOutFile: AbFileOutputStream = AbFileOutputStream.createFromAbFile(this.newFile)!;;
     
 idOutData= new AbDataOutputStream(idOutFile);
     
 idOutData!.writeLong(this.id +1);
     
 
-    var idLong: Long = new Long(this.id);;
+    let idLong: Long = new Long(this.id);;
     
 
 
@@ -173,16 +176,17 @@ idOutData!.writeLong(this.id +1);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return idLong!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e);
     
@@ -195,20 +199,16 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error";
     
-}
 
-         finally {
-            StreamUtil.getInstance()!.close(idData);
+ }
+   }
+ finally { StreamUtil.getInstance()!.close(idData);
     
 StreamUtil.getInstance()!.close(idOutData);
     
-
-         }
-        
+ }
 }
 
 
 }
-
-
 

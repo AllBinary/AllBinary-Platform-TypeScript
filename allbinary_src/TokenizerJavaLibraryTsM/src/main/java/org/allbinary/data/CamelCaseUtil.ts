@@ -26,9 +26,11 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -38,12 +40,15 @@ import { Tokenizer } from '../../../org/allbinary/logic/string/tokens/Tokenizer.
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -102,39 +107,34 @@ export class CamelCaseUtil
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 stringBuilder!.delete(0, stringBuilder!.length());
     
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
-    var tokenizer: Tokenizer = new Tokenizer(this.commonSeps!.UNDERSCORE);;
+    let tokenizer: Tokenizer = new Tokenizer(this.commonSeps!.UNDERSCORE);;
     
 tokenizer.getTokensFromString(string, list);
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var word: string;;
+    let word: string;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 word= list.get(i) as string;
     
-word= stringValidationUtil!.isEmpty(word)
-                        ?       
-                                word
-                                :
-
-                            new StringMaker().appendchar(Character.toUpperCase(word[0]))!.append(word.substring(1)!.toLowerCase())!.toString();
+word= (stringValidationUtil!.isEmpty(word) ? word : new StringMaker().appendchar(Character.toUpperCase(word[0]))!.append(word.substring(1)!.toLowerCase())!.toString());
     
 stringBuilder!.append(word);
     
@@ -150,6 +150,4 @@ stringBuilder!.append(word);
 
 
 }
-
-
 

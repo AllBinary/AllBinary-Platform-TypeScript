@@ -29,12 +29,15 @@ import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js'
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 //not GWT import const ProgressCanvas
@@ -44,6 +47,7 @@ import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
@@ -100,37 +104,37 @@ public constructor (soundsFactoryInterface: SoundsFactoryInterface){
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.INIT);
     
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
+    let commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 this.soundsFactoryInterface!.init();
     
 
-    var soundInterfaceArray: Sound[] = this.soundsFactoryInterface!.getSoundInterfaceArray()!;;
+    let soundInterfaceArray: Sound[] = this.soundsFactoryInterface!.getSoundInterfaceArray()!;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var indexInteger: Integer;;
+    let indexInteger: Integer;;
     
 
-    var indexString: string;;
+    let indexString: string;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var i: number = 0;i < soundInterfaceArray!.length; i++)
+    let i: number = 0;i < soundInterfaceArray!.length; i++)
         {
 
-    var soundInterfaceCanBeNull: Sound = soundInterfaceArray[i];;
+    let soundInterfaceCanBeNull: Sound = soundInterfaceArray[i];;
     
 
                         if(soundInterfaceCanBeNull != 
@@ -176,20 +180,20 @@ this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.INIT);
 this.logUtil!.putF(this.commonStrings!.START, this, this.soundStrings!.STOP_ALL);
     
 
-    var soundInterfaceArray: Sound[] = this.soundsFactoryInterface!.getSoundInterfaceArray()!;;
+    let soundInterfaceArray: Sound[] = this.soundsFactoryInterface!.getSoundInterfaceArray()!;;
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 
-    var player: Player;;
+    let player: Player;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < soundInterfaceArray!.length; index++)
+    let index: number = 0;index < soundInterfaceArray!.length; index++)
         {
 
                         if(soundInterfaceArray[index] != 
@@ -226,20 +230,20 @@ progressCanvas!.addPortion(100, this.soundStrings!.STOPPING_SOUND, index);
 this.logUtil!.putF(this.commonStrings!.START, this, this.soundStrings!.CLOSE_ALL);
     
 
-    var soundInterfaceArray: Sound[] = this.soundsFactoryInterface!.getSoundInterfaceArray()!;;
+    let soundInterfaceArray: Sound[] = this.soundsFactoryInterface!.getSoundInterfaceArray()!;;
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 
-    var player: Player;;
+    let player: Player;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < soundInterfaceArray!.length; index++)
+    let index: number = 0;index < soundInterfaceArray!.length; index++)
         {
 
                         if(soundInterfaceArray[index] != 
@@ -271,6 +275,4 @@ progressCanvas!.addPortion(100, this.soundStrings!.CLOSING_SOUND, index);
 
 
 }
-
-
 

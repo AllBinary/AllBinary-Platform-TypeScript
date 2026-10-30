@@ -96,5 +96,3 @@ this.offsetY= offsetY;
 
 }
 
-
-

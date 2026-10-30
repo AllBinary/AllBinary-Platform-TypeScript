@@ -40,13 +40,11 @@
 export interface AnimationListenerInterface {
         
 
-    onPlatformAnimationStart()
+    onPlatformAnimationStart(): void;
 
-    onPlatformAnimationEnd()
+    onPlatformAnimationEnd(): void;
 
-    onPlatformAnimationRepeat()
+    onPlatformAnimationRepeat(): void;
 
 }
-
-
 

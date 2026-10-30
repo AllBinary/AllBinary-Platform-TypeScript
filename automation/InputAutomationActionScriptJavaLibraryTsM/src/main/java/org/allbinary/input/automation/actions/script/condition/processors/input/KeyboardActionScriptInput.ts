@@ -32,9 +32,11 @@ import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomNodeHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
@@ -53,15 +55,19 @@ import { KeyUtil } from '../../../../../../../../../org/allbinary/input/KeyUtil.
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -106,18 +112,18 @@ export class KeyboardActionScriptInput extends BasicProfileActionScriptInput imp
 
     private static readonly NAME: string = "Keyboard";
 
-    static getText(integerArray: Integer[]): string{
+    static getText$overload2(integerArray: Integer[]): string{
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
         while(index < integerArray!.length)
         {
 
-    var nextInteger: Integer = integerArray[index]!;;
+    let nextInteger: Integer = integerArray[index]!;;
     
 
                         if(KeyUtil.isNormallyDisplayed(nextInteger))
@@ -171,7 +177,7 @@ public constructor (node: Node){
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var actionNode: Node = DomSearchHelper.getNode(KeyboardActionScriptInputData.NAME, node.getChildNodes())!;;
+    let actionNode: Node = DomSearchHelper.getNode(KeyboardActionScriptInputData.NAME, node.getChildNodes())!;;
     
 
                         if(actionNode != 
@@ -180,27 +186,27 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
                         
                                     {
                                     
-    var nodeList: NodeList = actionNode!.getChildNodes()!;;
+    let nodeList: NodeList = actionNode!.getChildNodes()!;;
     
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var childNode: Node = nodeList!.item(index)!;;
+    let childNode: Node = nodeList!.item(index)!;;
     
 
                         if(childNode!.getNodeName()!.startsWith(KeyboardActionScriptInputData.KEY))
                         
                                     {
                                     
-    var keyString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let keyString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 vector.add(keyString.valueOf());
     
@@ -212,7 +218,7 @@ vector.add(keyString.valueOf());
                         
                                     {
                                     
-    var time: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let time: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.setDelayBetweenKeys(Integer.valueOf(time)!.intValue());
     
@@ -224,7 +230,7 @@ this.setDelayBetweenKeys(Integer.valueOf(time)!.intValue());
                         
                                     {
                                     
-    var value: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let value: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.setPress(value.slice(, ).join(''));
     
@@ -236,7 +242,7 @@ this.setPress(value.slice(, ).join(''));
                         
                                     {
                                     
-    var value: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let value: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.setRelease(value.slice(, ).join(''));
     
@@ -400,8 +406,15 @@ this.keyboardActionScriptInputJPanel!.getKeyActionJDialog()!.setVisible(true);
     
 }
 
-
-    public getText(): string{
+getText(...args: any[]): any {
+   
+    if (args.length === 0) return this.getText$overload1();
+   
+    if (args.length === 1) return this.getText$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getText'); }
+  
+    public getText$overload1(): string{
 
 
 
@@ -415,7 +428,7 @@ this.keyboardActionScriptInputJPanel!.getKeyActionJDialog()!.setVisible(true);
 this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "setText");
     
 
-    var integerArray: Integer[] = this.integerArrayValue(text)!;;
+    let integerArray: Integer[] = this.integerArrayValue(text)!;;
     
 this.setKeyArray(integerArray);
     
@@ -426,16 +439,16 @@ this.setKeyArray(integerArray);
 this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "integerArrayValue");
     
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(index < text.length)
         {
 
-    var aChar: string = text[index]!;;
+    let aChar: string = text[index]!;;
     
 
                         if(aChar == '&'.charCodeAt(0))
@@ -446,14 +459,14 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "integerArrayV
                         
                                     {
                                     
-    var endIndex: number = text.indexOf(';', index +1)!;;
+    let endIndex: number = text.indexOf(';', index +1)!;;
     
 
                         if(endIndex !=  -1)
                         
                                     {
                                     
-    var nextCharString: string = text.substring(index +2, endIndex)!;;
+    let nextCharString: string = text.substring(index +2, endIndex)!;;
     
 this.logUtil!.putF(CommonLabels.getInstance()!.NEXT +" Char String: " +nextCharString, this, "integerArrayValue");
     
@@ -481,7 +494,7 @@ index++;
 }
 
 
-    var integerArray: Integer[] = vector.toArrayType(new Array(vector.size())) as Integer[];;
+    let integerArray: Integer[] = vector.toArrayType(new Array(vector.size())) as Integer[];;
     
 
 
@@ -494,14 +507,14 @@ index++;
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.getKeyArray()!.length; index++)
+    let index: number = 0;index < this.getKeyArray()!.length; index++)
         {
 hashMap!.put(KeyboardActionScriptInputData.KEY +index, Integer.toString(this.getKeyArray()[index]!));
     
@@ -528,7 +541,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = super.toXmlNode(document)!;;
+    let node: Node = super.toXmlNode(document)!;;
     
 node.appendChild(ModDomHelper.createNodeWithValueNodes(document, KeyboardActionScriptInputData.NAME, this.toHashMap()));
     
@@ -557,7 +570,7 @@ this.logUtil!.putF(this.toString(), this, "log");
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toString());
     
@@ -587,6 +600,4 @@ stringBuffer!.appendint(this.getDelayBetweenKeys());
 
 
 }
-
-
 

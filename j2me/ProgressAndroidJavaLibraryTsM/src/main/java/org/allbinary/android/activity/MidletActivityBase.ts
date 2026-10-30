@@ -138,5 +138,3 @@ export class MidletActivityBase extends Activity implements GameFeatureListenerI
 
 }
 
-
-

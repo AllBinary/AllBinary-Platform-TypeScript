@@ -61,45 +61,43 @@ import { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPo
 export interface GeographicMapInterface {
         
 
-    getId(): Integer
+    getId(): Integer;
 
-    getName(): string
+    getName(): string;
 
-    reset()
+    reset(): void;
 
-    getAllBinaryTiledLayer(): AllBinaryTiledLayer
-
-                //@Throws(Exception.constructor)
-            
-    getCellPositionsAt(layer: Layer, currentCellPositionArray: GeographicMapCellPosition[][], cellPositionArray: GeographicMapCellPosition[][]): boolean
+    getAllBinaryTiledLayer(): AllBinaryTiledLayer;
 
                 //@Throws(Exception.constructor)
             
-    getCellPositionAtXY(x: number, y: number): GeographicMapCellPosition
+    getCellPositionsAt(layer: Layer, currentCellPositionArray: GeographicMapCellPosition[][], cellPositionArray: GeographicMapCellPosition[][]): boolean;
 
                 //@Throws(Exception.constructor)
             
-    getCellPositionAtXYNoThrow(x: number, y: number): GeographicMapCellPosition
-
-    getCellTypeFromMapCellTypeInt(cellTypeId: number): number
+    getCellPositionAtXY(x: number, y: number): GeographicMapCellPosition;
 
                 //@Throws(Exception.constructor)
             
-    getCellTypeAtXY(x: number, y: number): GeographicMapCellType
+    getCellPositionAtXYNoThrow(x: number, y: number): GeographicMapCellPosition;
+
+    getCellTypeFromMapCellTypeInt(cellTypeId: number): number;
 
                 //@Throws(Exception.constructor)
             
-    getCellTypeAt(geographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellType
+    getCellTypeAtXY(x: number, y: number): GeographicMapCellType;
 
-    getGeographicMapCellPositionFactory(): BasicGeographicMapCellPositionFactory
+                //@Throws(Exception.constructor)
+            
+    getCellTypeAt(geographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellType;
 
-    getGeographicMapCellPositionFactoryInterface(): GeographicMapCellPositionFactoryInterface
+    getGeographicMapCellPositionFactory(): BasicGeographicMapCellPositionFactory;
 
-    getForegroundBasicColor(): BasicColor
+    getGeographicMapCellPositionFactoryInterface(): GeographicMapCellPositionFactoryInterface;
 
-    getBackgroundBasicColor(): BasicColor
+    getForegroundBasicColor(): BasicColor;
+
+    getBackgroundBasicColor(): BasicColor;
 
 }
-
-
 

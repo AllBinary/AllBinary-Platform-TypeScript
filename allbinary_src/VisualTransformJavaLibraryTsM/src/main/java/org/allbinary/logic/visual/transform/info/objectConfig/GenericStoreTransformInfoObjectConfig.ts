@@ -34,15 +34,19 @@ import { XmlDocumentHelper } from '../../../../../../../org/allbinary/data/tree/
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Replace } from '../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 //not GWT import const Replace
@@ -73,6 +77,7 @@ import { TransformTemplateCustomizerUtil } from '../../../../../../../org/allbin
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -143,16 +148,23 @@ this.setDocument(this.generate(this.toXmlDoc()));
     
 }
 
-
+generate(...args: any[]): any {
+   
+    if (args.length === 1) return this.generate$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.generate$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: generate'); }
+  
                 //@Throws(Exception.constructor)
             
-    generate(objectConfigDocument: Document): Document{
+    generate$overload1(objectConfigDocument: Document): Document{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TransformInfo: ");
     
@@ -179,13 +191,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
                                     }
                                 
 
-    var transformInfoHttpStoreInterface: TransformInfoHttp = this.getTransformInfoInterface() as TransformInfoHttp;;
+    let transformInfoHttpStoreInterface: TransformInfoHttp = this.getTransformInfoInterface() as TransformInfoHttp;;
     
 
-    var objectConfigDocumentString: string = XmlDocumentHelper.toString(objectConfigDocument)!;;
+    let objectConfigDocumentString: string = XmlDocumentHelper.toString(objectConfigDocument)!;;
     
 
-    var replaceHashMap: HashMap<any, any> = this.createReplaceHashMap(transformInfoHttpStoreInterface, objectConfigDocumentString)!;;
+    let replaceHashMap: HashMap<any, any> = this.createReplaceHashMap(transformInfoHttpStoreInterface, objectConfigDocumentString)!;;
     
 
 
@@ -200,18 +212,18 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
             
     createReplaceHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<any, any>{
 
-    var storeName: string = transformInfoHttpStoreInterface!.getStoreName()!;;
+    let storeName: string = transformInfoHttpStoreInterface!.getStoreName()!;;
     
 
-    var hashMap: HashMap<any, any> = this.createHashMap(transformInfoHttpStoreInterface, objectConfigDocumentString)!;;
+    let hashMap: HashMap<any, any> = this.createHashMap(transformInfoHttpStoreInterface, objectConfigDocumentString)!;;
     
 
-    var transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;;
+    let transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;;
     
 hashMap!.put(transformInfoObjectConfigData!.VARKEY +StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), storeName)!;;
+    let pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), storeName)!;;
     
 hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName);
     
@@ -228,16 +240,16 @@ hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstanc
             
     createHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var storeName: string = transformInfoHttpStoreInterface!.getStoreName()!;;
+    let storeName: string = transformInfoHttpStoreInterface!.getStoreName()!;;
     
 
-    var propertiesHashMap: HashMap<any, any> = transformInfoHttpStoreInterface!.getPropertiesHashMap()!;;
+    let propertiesHashMap: HashMap<any, any> = transformInfoHttpStoreInterface!.getPropertiesHashMap()!;;
     
 
-    var templateNameOverride: string = StringUtil.getInstance()!.getNonNull(propertiesHashMap!.get(TransformInfoData.getInstance()!.PARTIAL) as string)!;;
+    let templateNameOverride: string = StringUtil.getInstance()!.getNonNull(propertiesHashMap!.get(TransformInfoData.getInstance()!.PARTIAL) as string)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -249,7 +261,7 @@ hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstanc
                                     }
                                 
 
-    var templateNameStringBuffer: StringMaker = new StringMaker();;
+    let templateNameStringBuffer: StringMaker = new StringMaker();;
     
 templateNameStringBuffer!.append(storeName);
     
@@ -260,17 +272,17 @@ templateNameStringBuffer!.append(CommonSeps.getInstance()!.SPACE);
 templateNameStringBuffer!.append(RootTransformInfoData.NAME);
     
 
-    var templateNameKey: string = TransformInfoObjectConfigData.getInstance()!.VARKEY +TransformInfoData.getInstance()!.OWNER;;
+    let templateNameKey: string = TransformInfoObjectConfigData.getInstance()!.VARKEY +TransformInfoData.getInstance()!.OWNER;;
     
 
                         if(objectConfigDocumentString!.indexOf(templateNameKey) !=  -1)
                         
                                     {
                                     
-    var templateInterface: TransformTemplateInterface = TransformTemplateFactory.getInstance()!.getInstance(this.abeClientInformation, templateNameStringBuffer!.toString(), transformInfoHttpStoreInterface!.getPropertiesHashMap(), transformInfoHttpStoreInterface!.getPageContext())!;;
+    let templateInterface: TransformTemplateInterface = TransformTemplateFactory.getInstance()!.getInstance(this.abeClientInformation, templateNameStringBuffer!.toString(), transformInfoHttpStoreInterface!.getPropertiesHashMap(), transformInfoHttpStoreInterface!.getPageContext())!;;
     
 
-    var selectedTemplate: string = templateInterface!.getName()!;;
+    let selectedTemplate: string = templateInterface!.getName()!;;
     
 hashMap!.put(templateNameKey, selectedTemplate);
     
@@ -288,12 +300,12 @@ hashMap!.put(templateNameKey, selectedTemplate);
 
                 //@Throws(Exception.constructor)
             
-    generate(objectConfigDocumentString: string, hashMap: HashMap<any, any>): Document{
+    generate$overload2(objectConfigDocumentString: string, hashMap: HashMap<any, any>): Document{
 
-    var replace: Replace = new Replace(hashMap);;
+    let replace: Replace = new Replace(hashMap);;
     
 
-    var newObjectConfigDocument: Document = DomDocumentHelper.create(replace.all(objectConfigDocumentString))!;;
+    let newObjectConfigDocument: Document = DomDocumentHelper.create(replace.all(objectConfigDocumentString))!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -314,6 +326,4 @@ hashMap!.put(templateNameKey, selectedTemplate);
 
 
 }
-
-
 

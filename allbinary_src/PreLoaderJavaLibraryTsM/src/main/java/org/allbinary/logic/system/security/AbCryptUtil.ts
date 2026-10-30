@@ -85,16 +85,15 @@ private constructor (){
             
     public decrypt(inputStream: InputStream, key: string): number[]{
 
-    var outputStream: ByteArrayOutputStream = 
+    let outputStream: ByteArrayOutputStream = 
                 null
             ;;
     
 
-        try {
-            outputStream= this.streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384)) as ByteArrayOutputStream;
+ try { outputStream= this.streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384)) as ByteArrayOutputStream;
     
 
-    var abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.getInstance()!.DESEDE);;
+    let abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.getInstance()!.DESEDE);;
     
 abCrypt!.init(key);
     
@@ -104,19 +103,14 @@ abCrypt!.init(key);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return abCrypt!.decrypt(outputStream!.toByteArray());;
     
-
-         finally {
-            this.streamUtil!.close(outputStream);
+ }
+ finally { this.streamUtil!.close(outputStream);
     
 this.streamUtil!.close(inputStream);
     
-
-         }
-        
+ }
 }
 
 
 }
-
-
 

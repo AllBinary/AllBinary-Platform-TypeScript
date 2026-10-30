@@ -51,18 +51,23 @@ import { FileFactory } from '../../../../org/allbinary/logic/io/file/FileFactory
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { ChangedGameFeatureListener } from '../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
 //not GWT import const ChangedGameFeatureListener
@@ -78,6 +83,7 @@ import { MainFeatureFactory } from '../../../../org/allbinary/game/configuration
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { NullCloseable } from '../../../../org/allbinary/logic/io/NullCloseable.js';
 //not GWT import const NullCloseable
@@ -153,8 +159,7 @@ private constructor (){
 
             super();
         
-        try {
-            
+ try { 
                         if(FileFactory.getInstance()!.isFile(this.FILE))
                         
                                     {
@@ -169,14 +174,17 @@ private constructor (){
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -184,19 +192,19 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
             
     read(){
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
-    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
+    let fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;;
+    let fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;;
     
 
-    var dataInputStream: DataInputStream = new DataInputStream(fileInputStream);;
+    let dataInputStream: DataInputStream = new DataInputStream(fileInputStream);;
     
 
-    var openGLValue: number = dataInputStream!.readInt()!;;
+    let openGLValue: number = dataInputStream!.readInt()!;;
     
 
                         if(openGLValue == 0)
@@ -226,7 +234,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                         }
                             
 
-    var version: string = dataInputStream!.readUTF()!;;
+    let version: string = dataInputStream!.readUTF()!;;
     
 
                         if(this.tsUtil!.compareTo(version, openGLFeatureFactory!.OPENGL_AUTO_SELECT.getName()) == 0)
@@ -256,7 +264,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                         }
                             
 
-    var type: string = dataInputStream!.readUTF()!;;
+    let type: string = dataInputStream!.readUTF()!;;
     
 
                         if(this.tsUtil!.compareTo(type, openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName()) == 0)
@@ -286,7 +294,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                         }
                             
 
-    var imageColor: string = dataInputStream!.readUTF()!;;
+    let imageColor: string = dataInputStream!.readUTF()!;;
     
 
                         if(this.tsUtil!.compareTo(imageColor, openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
@@ -325,7 +333,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                         }
                             
 
-    var color: string = dataInputStream!.readUTF()!;;
+    let color: string = dataInputStream!.readUTF()!;;
     
 
                         if(this.tsUtil!.compareTo(color, openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444.getName()) == 0)
@@ -372,20 +380,19 @@ PreLogUtil.put("Read Configuration: " +this.toString(), this, "read");
             
     public write(){
 
-    var closeable: Closeable = NullCloseable.NULL_CLOSEABLE;;
+    let closeable: Closeable = NullCloseable.NULL_CLOSEABLE;;
     
 
-        try {
-            PreLogUtil.put("Write Configuration: " +this.toString(), this, "write");
+ try { PreLogUtil.put("Write Configuration: " +this.toString(), this, "write");
     
 
-    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
+    let fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;;
+    let fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;;
     
 
-    var dataOutputStream: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);;
+    let dataOutputStream: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);;
     
 closeable= dataOutputStream;
     
@@ -414,23 +421,22 @@ dataOutputStream!.writeUTF(this.getColor()!.getName());
     
 dataOutputStream!.flush();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-         finally {
-            StreamUtil.getInstance()!.close(closeable);
+ }
+   }
+ finally { StreamUtil.getInstance()!.close(closeable);
     
-
-         }
-        
+ }
 }
 
 
@@ -438,14 +444,14 @@ dataOutputStream!.flush();
             
     public init(){
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
                         if(ChangedGameFeatureListener.getInstance()!.isChangedFeature(MainFeatureFactory.getInstance()!.STATIC))
                         
                                     {
                                     
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
                         if(this.isOpenGL())
@@ -525,13 +531,13 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT);
             
     public update(gameFeature: Feature, colorLocked: boolean){
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
-    var modified: boolean = false;;
+    let modified: boolean = false;;
     
 
                         if(gameFeature == openGLFeatureFactory!.OPENGL)
@@ -794,10 +800,10 @@ this.type= type;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 stringBuffer!.append(" isOpenGL: ");
     
@@ -829,6 +835,4 @@ stringBuffer!.append(stringUtil!.toString(this.getColor()));
 
 
 }
-
-
 

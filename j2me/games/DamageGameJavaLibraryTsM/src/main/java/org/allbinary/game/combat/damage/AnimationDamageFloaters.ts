@@ -34,12 +34,15 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
 //not GWT import const ViewPosition
@@ -93,7 +96,7 @@ public constructor (layerInterface: AllBinaryLayer, animationInterfaceArray: Ind
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length -1;index >= 0; index--)
+    let index: number = this.animationInterfaceArray!.length -1;index >= 0; index--)
         {
 this.animationInterfaceArray[index]!.setFrame(this.animationInterfaceArray[index]!.getSize() -1);
     
@@ -112,7 +115,7 @@ this.dy= dy;
 
     public add(damage: number){
 
-    var i: number = this.circularIndexUtil!.getIndex()!;;
+    let i: number = this.circularIndexUtil!.getIndex()!;;
     
 this.animationInterfaceArray[i]!.setFrame(0);
     
@@ -123,32 +126,31 @@ this.circularIndexUtil!.next();
 
     public paint(graphics: Graphics){
 
-        try {
-            
-    var viewPosition: ViewPositionBase = this.layerInterface!.getViewPosition()!;;
+ try { 
+    let viewPosition: ViewPositionBase = this.layerInterface!.getViewPosition()!;;
     
 
-    var x: number = viewPosition!.getX()!;;
+    let x: number = viewPosition!.getX()!;;
     
 
-    var y: number = viewPosition!.getY()!;;
+    let y: number = viewPosition!.getY()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.animationInterfaceArray!.length; index++)
+    let index: number = 0;index < this.animationInterfaceArray!.length; index++)
         {
 
-    var animationInterface: IndexedAnimation = this.animationInterfaceArray[index]!;;
+    let animationInterface: IndexedAnimation = this.animationInterfaceArray[index]!;;
     
 
                         if(animationInterface!.getFrame() < animationInterface!.getAnimationSize() -1)
                         
                                     {
                                     
-    var delta: number = animationInterface!.getFrame() *20;;
+    let delta: number = animationInterface!.getFrame() *20;;
     
 animationInterface!.paintXY(graphics, x +this.dx, y -delta +this.dy);
     
@@ -159,24 +161,25 @@ animationInterface!.nextFrame();
                                 
 }
 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;;
+    let canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

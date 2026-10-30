@@ -54,7 +54,7 @@ export class InterfaceCastProxy
          implements java.lang.reflect.InvocationHandler {
         
 
-    public static newInstance(anyType: any = {}): any{
+    public static newInstance(anyType: any): any{
 
 
 
@@ -66,7 +66,7 @@ export class InterfaceCastProxy
 
     private anyType: any;
 
-private constructor (anyType: any = {}){
+private constructor (anyType: any){
 
             super();
         this.anyType= anyType;
@@ -76,12 +76,12 @@ private constructor (anyType: any = {}){
 
                 //@Throws(Throwable.constructor)
             
-    public invoke(proxyObject: any = {}, proxyMethod: Method, proxyArgs: any[]): any{
+    public invoke(proxyObject: any, proxyMethod: Method, proxyArgs: any[]): any{
 
-    var methodName: string = proxyMethod!.getName()!;;
+    let methodName: string = proxyMethod!.getName()!;;
     
 
-    var realMethod: Method = this.anyType!.constructor.name.getMethod(methodName, proxyMethod!.getParameterTypes())!;;
+    let realMethod: Method = this.anyType!.constructor.name.getMethod(methodName, proxyMethod!.getParameterTypes())!;;
     
 
                         if(!realMethod!.isAccessible())
@@ -96,6 +96,4 @@ private constructor (anyType: any = {}){
 
 
 }
-
-
 

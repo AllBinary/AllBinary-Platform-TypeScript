@@ -51,9 +51,11 @@ import { swing } from '../../../../../javax/swing.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -101,18 +103,20 @@ export class JavaHelpUtil
 
     public static main(args: string[]){
 
-        try {
-            
-    var javaHelpUtil: JavaHelpUtil = JavaHelpUtil.getInstance()!;;
+ try { 
+    let javaHelpUtil: JavaHelpUtil = JavaHelpUtil.getInstance()!;;
     
 javaHelpUtil!.show(javaHelpUtil!.getHelpSet("G:/mnt/bc/mydev/working/automation/InputAutomationJavaApplication/AllBinaryInputAutomationHelp/AllBinaryInputAutomation.hs"));
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-}
-
+ }
+   }
+ 
 }
 
 
@@ -132,15 +136,21 @@ private constructor (){
             super();
         }
 
+getHelpSet(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getHelpSet$overload1(args[0]);
+   
+    if (args.length === 1) return this.getHelpSet$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getHelpSet'); }
+  
+    public getHelpSet$overload1(filePath: string): HelpSet{
 
-    public getHelpSet(filePath: string): HelpSet{
-
-        try {
-            
-    var helpSetURI: URI = new File(filePath).toURI()!;;
+ try { 
+    let helpSetURI: URI = new File(filePath).toURI()!;;
     
 
-    var helpSetURL: URL = helpSetURI!.toURL()!;;
+    let helpSetURL: URL = helpSetURI!.toURL()!;;
     
 
 
@@ -148,10 +158,11 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getHelpSet(helpSetURL);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
     
 
@@ -160,25 +171,27 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getHelpSet$overload2(url: URL): HelpSet{
 
-    public getHelpSet(url: URL): HelpSet{
-
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new HelpSet(
                             null, url);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
     
 
@@ -187,16 +200,17 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public show(helpSet: HelpSet){
 
-        try {
-            
-    var helpBroker: HelpBroker = helpSet!.createHelpBroker()!;;
+ try { 
+    let helpBroker: HelpBroker = helpSet!.createHelpBroker()!;;
     
 helpBroker!.setLocation(this.point);
     
@@ -206,18 +220,19 @@ new CSH.DisplayHelpFromSource(helpBroker).actionPerformed(this.contextSensitiveH
     
 this.logUtil!.putF("CSH Action", getInstance(), "show");
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "show", e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

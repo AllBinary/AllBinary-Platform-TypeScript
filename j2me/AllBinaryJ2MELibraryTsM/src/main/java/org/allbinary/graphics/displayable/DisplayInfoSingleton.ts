@@ -48,12 +48,15 @@ import { SWTJOGLProcessor } from '../../../../org/allbinary/graphics/threed/SWTJ
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { GenericOperatingSystem } from '../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 //not GWT import const GenericOperatingSystem
@@ -63,18 +66,23 @@ import { OperatingSystemFactory } from '../../../../org/allbinary/logic/system/o
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -164,7 +172,7 @@ private constructor (){
 
             super();
         
-    var size: number = this.last.length
+    let size: number = this.last.length
                 ;;
     
 
@@ -172,7 +180,7 @@ private constructor (){
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.last[index]= 0;
     
@@ -275,22 +283,22 @@ this.scaleLargestTo= scaleLargestTo;
 
     setLastSizeForce(aLastWidth: number, aLastHeight: number, reason: string){
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.toString(), this, this.SET_LAST_SIZE_METHOD_NAME);
     
 
-    var aFullWidth: number = aLastWidth;;
+    let aFullWidth: number = aLastWidth;;
     
 
-    var aFullHeight: number = aLastHeight;;
+    let aFullHeight: number = aLastHeight;;
     
 stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(this.FULL_WIDTH)!.appendint(aFullWidth)!.append(this.FULL_HEIGHT)!.appendint(aFullHeight)!.append(this.toString())!.toString(), this, this.SET_LAST_SIZE_METHOD_NAME);
     
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
+    let operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
                         if(operatingSystemInterface!.isOverScan())
@@ -459,7 +467,7 @@ this.add(this.SET_LAST_SIZE_METHOD_NAME);
 
     public add(reason: string){
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 this.logUtil!.putF(stringMaker!.append(this.REASON)!.append(reason)!.toString(), this, this.FIRE_METHOD_NAME);
     
@@ -474,8 +482,7 @@ this.list.add(reason);
 
     public process(){
 
-        try {
-            
+ try { 
                         if(this.list.size() > 0)
                         
                                     {
@@ -486,22 +493,24 @@ this.list.add(reason);
                                 
 this.list.clear();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.FIRE_METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public processForced(){
 
-        try {
-            
-    var swtJOGLProcessor: SWTJOGLProcessor = SWTJOGLProcessor.getInstance()!;;
+ try { 
+    let swtJOGLProcessor: SWTJOGLProcessor = SWTJOGLProcessor.getInstance()!;;
     
 swtJOGLProcessor!.clear();
     
@@ -511,32 +520,35 @@ LastDisplayChangeEventHandler.getInstance()!.fireEvent(this.displayChangeEvent);
     
 swtJOGLProcessor!.onSurfaceChanged();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.FIRE_METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public update(displayable: Displayable, reason: string){
 
-    var aLastWidth: number = displayable.getWidth()!;;
+    let aLastWidth: number = displayable.getWidth()!;;
     
 
-    var aLastHeight: number = displayable.getHeight()!;;
+    let aLastHeight: number = displayable.getHeight()!;;
     
 
-    var aFullWidth: number = aLastWidth;;
+    let aFullWidth: number = aLastWidth;;
     
 
-    var aFullHeight: number = aLastHeight;;
+    let aFullHeight: number = aLastHeight;;
     
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.append(this.LAST_WIDTH)!.appendint(aLastWidth)!.append(this.LAST_HEIGHT)!.appendint(aLastHeight)!.append(this.commonSeps!.SPACE)!.append(this.toString())!.toString(), this, this.commonStrings!.UPDATE);
     
@@ -545,10 +557,10 @@ this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!
                         
                                     {
                                     
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
                         if(!features.isDefault(openGLFeatureFactory!.OPENGL) || this.last[this.WIDTH] != aLastWidth || this.last[this.HEIGHT] != aLastHeight)
@@ -559,7 +571,7 @@ this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!
 this.logUtil!.putF(stringMaker!.append(this.UPDATE_FROM_ORIENTATION_CHANGE)!.toString(), this, this.commonStrings!.UPDATE);
     
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
+    let operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
                         if(operatingSystemInterface!.isOverScan())
@@ -695,7 +707,7 @@ this.add(this.commonStrings!.UPDATE);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -757,12 +769,7 @@ stringBuffer!.appendint(this.lastHalf[this.HEIGHT]!);
     
 stringBuffer!.append(this.commonSeps!.SPACE);
     
-stringBuffer!.append(this.isPortrait()
-                        ?       
-                                this.PORTRAIT
-                                :
-
-                            this.LANDSCAPE);
+stringBuffer!.append((this.isPortrait() ? this.PORTRAIT : this.LANDSCAPE));
     
 
 
@@ -948,6 +955,4 @@ this.left= left;
 
 
 }
-
-
 

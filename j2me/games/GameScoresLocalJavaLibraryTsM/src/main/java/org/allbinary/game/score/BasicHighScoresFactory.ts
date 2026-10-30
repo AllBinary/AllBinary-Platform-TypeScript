@@ -11,6 +11,7 @@ import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
 //not GWT import const SoftwareInformation
@@ -109,19 +110,21 @@ this.fetchHighScoresPreload(gameInfo, highScoresResultsListener, true);
 
     public fetchHighScoresPreload(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean){
 
-        try {
-            this.highScoresArray[0]= RecordStoreHighScores.getInstance(this.abeClientInformation, gameInfo, this.TOP, this.PERSONAL_HIGH_SCORES, this.SCORES, new ScoreComparator(true));
+ try { this.highScoresArray[0]= RecordStoreHighScores.getInstance(this.abeClientInformation, gameInfo, this.TOP, this.PERSONAL_HIGH_SCORES, this.SCORES, new ScoreComparator(true));
     
 highScoresResultsListener!.setHighScoresArray(this.highScoresArray);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.FETCH, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -136,6 +139,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.FETCH, e);
 
 
 }
-
-
 

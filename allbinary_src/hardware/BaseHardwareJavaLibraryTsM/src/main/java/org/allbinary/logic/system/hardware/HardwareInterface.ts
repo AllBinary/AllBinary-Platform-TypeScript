@@ -23,6 +23,7 @@ import { HardwareComponentInterface } from '../../../../../org/allbinary/logic/s
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -46,15 +47,13 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 export interface HardwareInterface {
         
 
-    getComponent(index: number): HardwareComponentInterface
+    getComponent(index: number): HardwareComponentInterface;
 
-    toString(): string
+    toString(): string;
 
-    compareTo(hardwareInterface: HardwareInterface): boolean
+    compareTo(hardwareInterface: HardwareInterface): boolean;
 
-    difference(hardwareInterface: HardwareInterface): ABHashtable<any, any>
+    difference(hardwareInterface: HardwareInterface): ABHashtable<any, any>;
 
 }
-
-
 

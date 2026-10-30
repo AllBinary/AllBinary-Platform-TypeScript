@@ -51,6 +51,7 @@ import { WeblisketSession } from '../../org/allbinary/logic/communication/http/r
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 //not GWT import const AbSqlTableUtil
@@ -114,15 +115,14 @@ this.value= this.request.getParameter("VALUE");
 
     public insert(): string{
 
-        try {
-            
-    var success: string = "Successfully Added Payment";;
+ try { 
+    let success: string = "Successfully Added Payment";;
     
 
-    var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;;
+    let paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;;
     
 
-    var paymentInterface: PaymentInterface = PaymentFactory.getInstance(this.request)!;;
+    let paymentInterface: PaymentInterface = PaymentFactory.getInstance(this.request)!;;
     
 paymentEntity!.add(this.weblisketSession!.getUserName(), paymentInterface);
     
@@ -143,12 +143,13 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(paym
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to add Payment";;
+    let error: string = "Failed to add Payment";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -165,19 +166,20 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(paym
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public select(): string{
 
-        try {
-            
-    var success: string = "Successfully Selected Payment";;
+ try { 
+    let success: string = "Successfully Selected Payment";;
     
 
-    var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;;
+    let paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;;
     
 paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(this.value));
     
@@ -196,12 +198,13 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(this
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to select Payment";;
+    let error: string = "Failed to select Payment";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -218,24 +221,25 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(this
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(): string{
 
-        try {
-            
-    var success: string = "Successfully Removed Payment";;
+ try { 
+    let success: string = "Successfully Removed Payment";;
     
 
-    var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;;
+    let paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;;
     
 paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.value));
     
 
-    var paymentInterface: PaymentInterface = paymentEntity!.getDefault(this.weblisketSession!.getUserName())!;;
+    let paymentInterface: PaymentInterface = paymentEntity!.getDefault(this.weblisketSession!.getUserName())!;;
     
 
                         if(paymentInterface == 
@@ -263,12 +267,13 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to remove Payment";;
+    let error: string = "Failed to remove Payment";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -285,19 +290,20 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public drop(): string{
 
-        try {
-            
-    var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;;
+ try { 
+    let paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;;
     
 
-    var success: string = paymentEntity!.dropTable()!;;
+    let success: string = paymentEntity!.dropTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -314,12 +320,13 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to drop Admin table";;
+    let error: string = "Failed to drop Admin table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -336,19 +343,20 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public create(): string{
 
-        try {
-            
-    var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;;
+ try { 
+    let paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;;
     
 
-    var success: string = paymentEntity!.createTable()!;;
+    let success: string = paymentEntity!.createTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -365,12 +373,13 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to create user table";;
+    let error: string = "Failed to create user table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -387,19 +396,20 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public restore(): string{
 
-        try {
-            
-    var success: string = "Restore Successful";;
+ try { 
+    let success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(PaymentEntityFactory.getInstance()!.getPaymentEntityInstance(), portion)!;;
+    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(PaymentEntityFactory.getInstance()!.getPaymentEntityInstance(), portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -416,12 +426,13 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to restore backup";;
+    let error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -438,19 +449,20 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public backup(): string{
 
-        try {
-            
-    var success: string = "Backup Successful";;
+ try { 
+    let success: string = "Backup Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(PaymentEntityFactory.getInstance()!.getPaymentEntityInstance())!;;
+    let result: string = AbSqlTableUtil.getInstance()!.backupTable(PaymentEntityFactory.getInstance()!.getPaymentEntityInstance())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -467,12 +479,13 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to make backup";;
+    let error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -489,8 +502,10 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -507,6 +522,4 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
 
 
 }
-
-
 

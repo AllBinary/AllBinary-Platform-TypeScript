@@ -82,5 +82,3 @@ this.screenListenerInterface!.onFullScreenDisplay();
 
 }
 
-
-

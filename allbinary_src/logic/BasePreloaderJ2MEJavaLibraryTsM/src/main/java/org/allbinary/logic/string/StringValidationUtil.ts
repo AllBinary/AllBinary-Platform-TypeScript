@@ -96,17 +96,17 @@ private constructor (){
 
     public isNumber(value: string): boolean{
 
-    var numberOfDecimalPoints: number = 0;;
+    let numberOfDecimalPoints: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < value.length; index++)
+    let index: number = 0;index < value.length; index++)
         {
 
-    var digit: string = value[index]!;;
+    let digit: string = value[index]!;;
     
 
                         if(!this.isNumberFromChar(digit) && digit != '.'.charCodeAt(0))
@@ -345,6 +345,4 @@ private constructor (){
 
 
 }
-
-
 

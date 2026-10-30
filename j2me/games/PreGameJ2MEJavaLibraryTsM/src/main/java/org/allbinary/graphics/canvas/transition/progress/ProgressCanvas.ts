@@ -73,15 +73,18 @@ import { PaintableInterface } from '../../../../../../org/allbinary/graphics/pai
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AllBinaryMidlet } from '../../../../../../org/allbinary/midlet/AllBinaryMidlet.js';
 //not GWT import const AllBinaryMidlet
@@ -114,16 +117,13 @@ import { ThreadPool } from '../../../../../../org/allbinary/thread/ThreadPool.js
 //not GWT import - same folder const ProgressPaintable
 import { ProgressEndListener } from './ProgressEndListener.js';
 //not GWT import - same folder const ProgressEndListener
+type ProgressPaintable = InstanceType<ProgressCanvas['ProgressPaintable']>;
 
 export class ProgressCanvas extends RunnableCanvas implements PaintableInterface, UpdateMyFontInterface {
         
 
-    hasPainted: boolean= false;
-
-    private readonly backgroundBasicColor: BasicColor;
-
 //inner= member=true isStatic=
-ProgressPaintable = class extends Paintable {
+ProgressPaintable = (() => { const outer$ProgressCanvas = this; return class extends Paintable {
         
 
     readonly progressCanvas: ProgressCanvas;
@@ -142,8 +142,10 @@ this.progressCanvas!.paint2(graphics);
 }
 
 
-}
+}; })();
+    hasPainted: boolean= false;
 
+    private readonly backgroundBasicColor: BasicColor;
 
     public readonly GAUGE_PAINTABLE: Paintable = new this.ProgressPaintable(this);
 
@@ -202,7 +204,7 @@ this.gauge= new ABCustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, global
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.gauge.setHeight(font.getHeight() +2);
     
@@ -464,6 +466,4 @@ this.background= background;
 
 
 }
-
-
 

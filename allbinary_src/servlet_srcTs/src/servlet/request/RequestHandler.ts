@@ -37,6 +37,7 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { WorkFlowInterface } from '../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
 //not GWT import const WorkFlowInterface
@@ -98,14 +99,13 @@ super.init(config);
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
 
-        try {
-            response.setContentType("text/html");
+ try { response.setContentType("text/html");
     
 
-    var out: PrintWriter = response.getWriter()!;;
+    let out: PrintWriter = response.getWriter()!;;
     
 
-    var workflowInterface: WorkFlowInterface = RequestWorkFlowFactory.getInstance(request as ServletRequest, response as ServletResponse, this.getServletConfig(), this.getServletContext())!;;
+    let workflowInterface: WorkFlowInterface = RequestWorkFlowFactory.getInstance(request as ServletRequest, response as ServletResponse, this.getServletConfig(), this.getServletContext())!;;
     
 
                         if(workflowInterface != 
@@ -122,10 +122,11 @@ out.flush();
     
 out.close();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SERVLETERROR))
                         
@@ -137,11 +138,11 @@ out.close();
                                 
 response.sendRedirect(abcs.globals.URLGLOBALS.LICENSEERRORPAGE);
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SERVLETERROR))
                         
@@ -153,8 +154,10 @@ response.sendRedirect(abcs.globals.URLGLOBALS.LICENSEERRORPAGE);
                                 
 response.sendRedirect(abcs.globals.URLGLOBALS.ERRORPAGE);
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -185,6 +188,4 @@ this.processRequest(request, response);
 
 
 }
-
-
 

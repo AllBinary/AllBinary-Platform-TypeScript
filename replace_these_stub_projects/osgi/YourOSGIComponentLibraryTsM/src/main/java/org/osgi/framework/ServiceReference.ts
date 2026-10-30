@@ -28,11 +28,9 @@
 export interface ServiceReference extends Comparable {
         
 
-    getProperty(key: string): any
+    getProperty(key: string): any;
 
-    getPropertyKeys(): string[]
+    getPropertyKeys(): string[];
 
 }
-
-
 

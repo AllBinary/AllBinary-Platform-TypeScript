@@ -49,9 +49,7 @@ export interface TrackingEventListenerInterface extends EventListenerInterface {
 
                 //@Throws(Exception.constructor)
             
-    onMovement(trackingEvent: TrackingEvent)
+    onMovement(trackingEvent: TrackingEvent): void;
 
 }
-
-
 

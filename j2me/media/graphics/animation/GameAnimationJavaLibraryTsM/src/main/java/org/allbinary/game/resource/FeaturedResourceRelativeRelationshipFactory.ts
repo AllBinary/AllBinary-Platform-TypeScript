@@ -34,15 +34,19 @@ import { RelativeLayerRelationship } from '../../../../org/allbinary/layer/relat
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -94,27 +98,27 @@ private constructor (){
             
     public getRelativeRelationshipList(resource: string, layer: AllBinaryLayer): BasicArrayList{
 
-    var featureReleaseList: BasicArrayList = this.getList()!;;
+    let featureReleaseList: BasicArrayList = this.getList()!;;
     
 
-    var size: number = this.getList()!.size()!;;
+    let size: number = this.getList()!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var featureInterface: ResourceRelativeRelationshipFactoryInterface = featureReleaseList!.objectArray[index]! as ResourceRelativeRelationshipFactoryInterface;;
+    let featureInterface: ResourceRelativeRelationshipFactoryInterface = featureReleaseList!.objectArray[index]! as ResourceRelativeRelationshipFactoryInterface;;
     
 
                         if(featureInterface!.isFeature())
                         
                                     {
                                     
-    var list: BasicArrayList = featureInterface!.getResourceRelativeRelationshipList(resource)!;;
+    let list: BasicArrayList = featureInterface!.getResourceRelativeRelationshipList(resource)!;;
     
 
                         if(list != this.basicArrayListUtil!.getImmutableInstance())
@@ -146,23 +150,23 @@ private constructor (){
             
     duplicate(list: BasicArrayList, layer: AllBinaryLayer): BasicArrayList{
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var newList: BasicArrayList = new BasicArrayListD();;
+    let newList: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var relativeRelationship: RelativeRelationship = list.objectArray[index]! as RelativeRelationship;;
+    let relativeRelationship: RelativeRelationship = list.objectArray[index]! as RelativeRelationship;;
     
 newList!.add(new RelativeLayerRelationship(layer, pointFactory!.createXY(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()));
     
@@ -178,6 +182,4 @@ newList!.add(new RelativeLayerRelationship(layer, pointFactory!.createXY(relativ
 
 
 }
-
-
 

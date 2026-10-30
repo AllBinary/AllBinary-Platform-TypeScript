@@ -42,6 +42,7 @@ import { URLGLOBALS } from '../../../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CryptFileReader } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
@@ -54,9 +55,11 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js';
 //not GWT import const TransformInfoTemplateData
@@ -111,9 +114,8 @@ this.basicURIResolver= basicURIResolver;
             
     public resolve(href: string, base: string): Source{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.path);
     
@@ -122,7 +124,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(href);
     
 
-    var fileAbPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;;
+    let fileAbPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
@@ -161,27 +163,30 @@ stringBuffer!.append(this.basicURIResolver!.getExtension());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StreamSource(new CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).getInputStream(fileAbPath));
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof TransformerException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
 
 
                             throw new TransformerException(e);
                     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -196,6 +201,4 @@ stringBuffer!.append(this.basicURIResolver!.getExtension());
 
 
 }
-
-
 

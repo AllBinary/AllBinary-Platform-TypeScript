@@ -42,12 +42,15 @@ import { LayerInterfaceVisitor } from '../../../../org/allbinary/layer/LayerInte
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+type EnumerationUtil<T = any, U = any> = typeof EnumerationUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof EnumerationUtil;
 
 
 
@@ -99,17 +102,17 @@ this.dimension= dimension;
             
     public processList(list: BasicArrayList){
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var layerPlacementInterface: LayerPlacementInterface;;
+    let layerPlacementInterface: LayerPlacementInterface;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 layerPlacementInterface= list.objectArray[index]! as LayerPlacementInterface;
     
@@ -124,34 +127,34 @@ this.process(layerPlacementInterface);
             
     public process(layerPlacementInterface: LayerPlacementInterface){
 
-    var relativePoint: GPoint = this.getPoint(layerPlacementInterface)!;;
+    let relativePoint: GPoint = this.getPoint(layerPlacementInterface)!;;
     
 
-    var layerInterfaceFactory: LayerInterfaceFactory = LayerInterfaceFactory.getInstance()!;;
+    let layerInterfaceFactory: LayerInterfaceFactory = LayerInterfaceFactory.getInstance()!;;
     
 
-    var hashtable: ABHashtable<any, any> = layerPlacementInterface!.getInstance()!;;
+    let hashtable: ABHashtable<any, any> = layerPlacementInterface!.getInstance()!;;
     
 
-    var enumeration: Enumeration<any> = hashtable.keys()!;;
+    let enumeration: Enumeration<any> = hashtable.keys()!;;
     
 
-    var point: GPoint;;
+    let point: GPoint;;
     
 
-    var layerHashtable: ABHashtable<any, any>;;
+    let layerHashtable: ABHashtable<any, any>;;
     
 
-    var x: number= 0;;
+    let x: number= 0;;
     
 
-    var y: number= 0;;
+    let y: number= 0;;
     
 
-    var z: number= 0;;
+    let z: number= 0;;
     
 
-    var layerInterface: AllBinaryLayer;;
+    let layerInterface: AllBinaryLayer;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
@@ -179,26 +182,26 @@ this.layerInterfaceVisitor!.visit(layerInterface);
             
     public getPoint(layerPlacementInterface: LayerPlacementInterface): GPoint{
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var layerPlacementType: LayerPlacementType = layerPlacementInterface!.getLayerType()!;;
+    let layerPlacementType: LayerPlacementType = layerPlacementInterface!.getLayerType()!;;
     
 
                         if(layerPlacementType == LayerPlacementTypeFactory.getInstance()!.MAP)
                         
                                     {
                                     
-    var width: number = layerPlacementInterface!.getWidth()!;;
+    let width: number = layerPlacementInterface!.getWidth()!;;
     
 
-    var height: number = layerPlacementInterface!.getHeight()!;;
+    let height: number = layerPlacementInterface!.getHeight()!;;
     
 
-    var x: number = ((this.dimension.getX() -width) /2);;
+    let x: number = ((this.dimension.getX() -width) /2);;
     
 
-    var y: number = ((this.dimension.getY() -height) /2);;
+    let y: number = ((this.dimension.getY() -height) /2);;
     
 
 
@@ -214,16 +217,16 @@ this.layerInterfaceVisitor!.visit(layerInterface);
                         
                                     {
                                     
-    var width: number = layerPlacementInterface!.getWidth()!;;
+    let width: number = layerPlacementInterface!.getWidth()!;;
     
 
-    var height: number = layerPlacementInterface!.getHeight()!;;
+    let height: number = layerPlacementInterface!.getHeight()!;;
     
 
-    var x: number = ((this.dimension.getX() -width) /2);;
+    let x: number = ((this.dimension.getX() -width) /2);;
     
 
-    var y: number =  -height;;
+    let y: number =  -height;;
     
 
 
@@ -247,6 +250,4 @@ this.layerInterfaceVisitor!.visit(layerInterface);
 
 
 }
-
-
 

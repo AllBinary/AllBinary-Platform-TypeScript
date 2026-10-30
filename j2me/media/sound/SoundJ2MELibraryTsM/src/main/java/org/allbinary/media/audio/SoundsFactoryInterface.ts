@@ -44,17 +44,15 @@
 export interface SoundsFactoryInterface {
         
 
-    init()
+    init(): void;
 
                 //@Throws(Exception.constructor)
             
-    getSoundInterfaceArray(): Sound[]
+    getSoundInterfaceArray(): Sound[];
 
-    setInitialized(initialized: boolean)
+    setInitialized(initialized: boolean): void;
 
-    isInitialized(): boolean
+    isInitialized(): boolean;
 
 }
-
-
 

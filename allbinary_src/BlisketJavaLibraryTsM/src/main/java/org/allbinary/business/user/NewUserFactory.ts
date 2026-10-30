@@ -70,10 +70,19 @@ export class NewUserFactory
             extends Object
          {
         
-
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+    if (args.length === 2) return this.getInstance$overload3(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
-    public static getInstance(): UserInterface{
+    public static getInstance$overload1(): UserInterface{
 
 
 
@@ -85,18 +94,18 @@ export class NewUserFactory
 
                 //@Throws(Exception.constructor)
             
-    public static getInstance(transformInfoInterface: TransformInfoInterface): UserInterface{
+    public static getInstance$overload2(transformInfoInterface: TransformInfoInterface): UserInterface{
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
+    let httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var httpServletRequest: HttpServletRequest = httpTransformInfoInterface!.getPageContext()!.getRequest() as HttpServletRequest;;
+    let httpServletRequest: HttpServletRequest = httpTransformInfoInterface!.getPageContext()!.getRequest() as HttpServletRequest;;
     
 
-    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;;
+    let hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;;
     
 
-    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as string;;
+    let role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as string;;
     
 hashMap!.put(UserRoleData.NAME.toString(), role);
     
@@ -111,7 +120,7 @@ hashMap!.put(UserRoleData.NAME.toString(), role);
 
                 //@Throws(Exception.constructor)
             
-    public static getInstance(httpServletRequest: HttpServletRequest, propertiesHashMap: HashMap<any, any>): UserInterface{
+    public static getInstance$overload3(httpServletRequest: HttpServletRequest, propertiesHashMap: HashMap<any, any>): UserInterface{
 
                         if(propertiesHashMap != 
                                     null
@@ -119,10 +128,10 @@ hashMap!.put(UserRoleData.NAME.toString(), role);
                         
                                     {
                                     
-    var requestHashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;;
+    let requestHashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;;
     
 
-    var roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString()) as string;;
+    let roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString()) as string;;
     
 requestHashMap!.put(UserRoleData.NAME.toString(), roleString);
     
@@ -154,6 +163,4 @@ private constructor (){
 
 
 }
-
-
 

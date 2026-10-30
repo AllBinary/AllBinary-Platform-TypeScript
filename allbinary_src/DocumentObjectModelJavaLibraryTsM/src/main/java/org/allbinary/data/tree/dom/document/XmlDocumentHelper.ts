@@ -54,6 +54,7 @@ import { StreamResult } from '../../../../../../javax/xml/transform/stream/Strea
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
@@ -63,6 +64,7 @@ import { CharacterSetData } from '../../../../../../org/allbinary/logic/java/cha
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -110,21 +112,20 @@ export class XmlDocumentHelper
             
     public static toString(document: Document): string{
 
-        try {
-            
-    var domSource: DOMSource = new DOMSource(document);;
+ try { 
+    let domSource: DOMSource = new DOMSource(document);;
     
 
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+    let byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var streamResult: StreamResult = new StreamResult(byteArrayOutputStream);;
+    let streamResult: StreamResult = new StreamResult(byteArrayOutputStream);;
     
 
-    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
+    let copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 
-    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
+    let copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
     
 copyTransformer!.transform(domSource, streamResult);
     
@@ -134,17 +135,20 @@ copyTransformer!.transform(domSource, streamResult);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return byteArrayOutputStream!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -164,12 +168,11 @@ private constructor (){
 
     public init(indent: number, ignoreDeclaration: boolean){
 
-        try {
-            
-    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
+ try { 
+    let booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
-    var transformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
+    let transformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 transformerFactory!.setAttribute(this.INDENT_NUMBER, indent);
     
@@ -177,26 +180,24 @@ this.transformer= transformerFactory!.newTransformer();
     
 this.transformer.setOutputProperty(OutputKeys.ENCODING, CharacterSetData.getInstance()!.UTF_8);
     
-this.transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, ignoreDeclaration
-                        ?       
-                                booleanFactory!.YES
-                                :
-
-                            booleanFactory!.NO);
+this.transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, (ignoreDeclaration ? booleanFactory!.YES : booleanFactory!.NO));
     
 this.transformer.setOutputProperty(OutputKeys.INDENT, booleanFactory!.YES);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -204,13 +205,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
             
     public format(xmlString: string): string{
 
-    var src: InputSource = new InputSource(new StringReader(xmlString));;
+    let src: InputSource = new InputSource(new StringReader(xmlString));;
     
 
-    var document: Document = DocumentBuilderFactory.newInstance()!.newDocumentBuilder()!.parse(src)!;;
+    let document: Document = DocumentBuilderFactory.newInstance()!.newDocumentBuilder()!.parse(src)!;;
     
 
-    var out: Writer = new StringWriter();;
+    let out: Writer = new StringWriter();;
     
 this.transformer.transform(new DOMSource(document), new StreamResult(out));
     
@@ -224,6 +225,4 @@ this.transformer.transform(new DOMSource(document), new StreamResult(out));
 
 
 }
-
-
 

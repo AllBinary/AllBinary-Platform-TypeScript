@@ -44,9 +44,7 @@ import { PlayerGameInput } from './PlayerGameInput.js';
 export interface PlayerGameInputCompositeInterface extends GameInputInterface {
         
 
-    getPlayerGameInput(): PlayerGameInput
+    getPlayerGameInput(): PlayerGameInput;
 
 }
-
-
 

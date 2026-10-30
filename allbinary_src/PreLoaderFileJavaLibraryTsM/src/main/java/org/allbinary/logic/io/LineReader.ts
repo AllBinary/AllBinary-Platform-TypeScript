@@ -27,12 +27,15 @@ import { DataInputStream } from '../../../../java/io/DataInputStream.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -78,9 +81,8 @@ public constructor (fileName: string){
 
             super();
         
-        try {
-            
-    var bytes: number[] = new Array(100000);;
+ try { 
+    let bytes: number[] = new Array(100000);;
     
 this.fileName= fileName;
     
@@ -90,10 +92,11 @@ this.idFile!.read(bytes);
     
 this.string= String.fromCharCode(...bytes);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("File: " +fileName, this, "LineReader", e);
     
 
@@ -102,16 +105,17 @@ this.logUtil!.put("File: " +fileName, this, "LineReader", e);
                             
                             }
                     
-}
 
+ }
+   }
+ 
 }
 
 
     public hasNext(): boolean{
 
-        try {
-            
-    var nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;;
+ try { 
+    let nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;;
     
 
                         if(nextIndex ==  -1)
@@ -132,10 +136,11 @@ this.logUtil!.put("File: " +fileName, this, "LineReader", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "hasNext", e);
     
 
@@ -150,8 +155,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "hasNext", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -159,9 +166,8 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "hasNext", e);
             
     public next(): string{
 
-        try {
-            
-    var nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;;
+ try { 
+    let nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;;
     
 
                         if(nextIndex ==  -1)
@@ -176,7 +182,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "hasNext", e);
                                     }
                                 
 
-    var temp: string = this.string.substring(index, nextIndex)!;;
+    let temp: string = this.string.substring(index, nextIndex)!;;
     
 index= nextIndex +1;
     
@@ -186,10 +192,11 @@ index= nextIndex +1;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return temp;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "next", e);
     
 
@@ -203,12 +210,12 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "next", e);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

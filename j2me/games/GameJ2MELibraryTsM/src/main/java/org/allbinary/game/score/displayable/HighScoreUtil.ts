@@ -54,18 +54,22 @@ import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCa
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -151,7 +155,7 @@ this.highScore!.setName(name);
 this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(StringUtil.getInstance()!.toString(this.highScore))!.toString(), this, "saveHighScore");
     
 
-    var size: number = this.highScoresArray!.length
+    let size: number = this.highScoresArray!.length
                 ;;
     
 
@@ -172,17 +176,17 @@ this.highScoresFactoryInterface!.fetchHighScores(this.gameInfo, this);
                                     }
                                 
 
-    var highScores: HighScores;;
+    let highScores: HighScores;;
     
 
-    var highScoresAsString: string;;
+    let highScoresAsString: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 highScores= this.highScoresArray[index]!;
     
@@ -201,7 +205,7 @@ this.highScoresHelper!.setHighScoresArray(this.highScoresArray);
 
     public submit(myCanvas: MyCanvas){
 
-    var commandListener: CommandListener = myCanvas!.getCustomCommandListener()!;;
+    let commandListener: CommandListener = myCanvas!.getCustomCommandListener()!;;
     
 commandListener!.commandAction(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND, myCanvas);
     
@@ -209,6 +213,4 @@ commandListener!.commandAction(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND, myCanvas);
 
 
 }
-
-
 

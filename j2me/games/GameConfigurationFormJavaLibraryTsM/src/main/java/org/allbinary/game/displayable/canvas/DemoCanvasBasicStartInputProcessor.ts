@@ -37,12 +37,15 @@ import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/Game
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -81,20 +84,20 @@ public constructor (gameKeyEventList: BasicArrayList, gameCanvas: RunnableCanvas
             
     public processInputList(): number{
 
-    var list: BasicArrayList = this.getGameKeyEventList()!;;
+    let list: BasicArrayList = this.getGameKeyEventList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var gameKeyEvent: GameKeyEvent;;
+    let gameKeyEvent: GameKeyEvent;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     
@@ -114,6 +117,4 @@ this.getCanvas()!.getCustomCommandListener()!.commandAction(GameCommandsFactory.
 
 
 }
-
-
 

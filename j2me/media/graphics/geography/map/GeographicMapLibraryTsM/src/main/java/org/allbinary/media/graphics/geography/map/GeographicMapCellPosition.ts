@@ -60,13 +60,13 @@ public constructor (column: number, row: number, columns: number, rows: number, 
                             //For kotlin this is before the body of the constructor.
                     
 
-    var x: number = this.getColumn() *width;;
+    let x: number = this.getColumn() *width;;
     
 
-    var y: number = this.getRow() *height;;
+    let y: number = this.getRow() *height;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 this.point= pointFactory!.createXY(x, y);
     
@@ -102,6 +102,4 @@ this.midPoint= midPoint;
 
 
 }
-
-
 

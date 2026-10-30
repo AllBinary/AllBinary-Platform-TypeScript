@@ -22,6 +22,7 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -50,8 +51,15 @@ export class LicenseTypeFactory
         
 
     private static readonly instance: LicenseTypeFactory = new LicenseTypeFactory();
-
-    public static getInstance(): LicenseTypeFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): LicenseTypeFactory{
 
 
 
@@ -67,7 +75,7 @@ export class LicenseTypeFactory
 
     public readonly NORMAL: LicenseType = new LicenseType("Normal");
 
-    public getInstance(name: string): LicenseType{
+    public getInstance$overload2(name: string): LicenseType{
 
                         if(this.DEMO.getName()!.compareTo(name) == 0)
                         
@@ -104,6 +112,4 @@ export class LicenseTypeFactory
 
 
 }
-
-
 

@@ -32,9 +32,11 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -77,6 +79,7 @@ import { UserName } from '../../../../../org/allbinary/business/user/username/Us
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { RequestParams } from '../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 //not GWT import const RequestParams
@@ -89,18 +92,22 @@ import { WeblisketSessionInterface } from '../../../../../org/allbinary/logic/co
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -216,13 +223,13 @@ this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(t
 this.userName= new UserName(userHashMap).get();
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var passwordString: string = stringUtil!.getNonNull(userHashMap!.get(UserData.PASSWORD) as string)!;;
+    let passwordString: string = stringUtil!.getNonNull(userHashMap!.get(UserData.PASSWORD) as string)!;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(this.userName) && stringValidationUtil!.isEmpty(passwordString))
@@ -236,10 +243,10 @@ passwordString= stringUtil!.getNonNull(userHashMap!.get(WeblisketSessionData.REM
                                     }
                                 
 
-    var encryption: string = stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.ENCRYPTION) as string)!;;
+    let encryption: string = stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.ENCRYPTION) as string)!;;
     
 
-    var secret: string = stringUtil!.getNonNull(userHashMap!.get(UserData.SECRET) as string)!;;
+    let secret: string = stringUtil!.getNonNull(userHashMap!.get(UserData.SECRET) as string)!;;
     
 this.password= new Password(passwordString);
     
@@ -298,15 +305,14 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
 
     public isValid(): Boolean{
 
-        try {
-            
-    var valid: Boolean = Boolean.TRUE;;
+ try { 
+    let valid: Boolean = Boolean.TRUE;;
     
 
                         if(!UserName.getInstance()!.isValid(this.userName).valueOf())
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -315,19 +321,19 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
                         if(!this.password.isValid().valueOf())
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.firstName, 1, UserData.MAXLEN))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -336,7 +342,7 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
                         if(!stringValidationUtil!.isValidRequired(this.lastName, 1, UserData.MAXLEN))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -345,7 +351,7 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
                         if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN) || this.mainEmail!.indexOf("@") ==  -1)
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -356,16 +362,17 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATIONERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
     
@@ -376,21 +383,22 @@ this.logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+ try { 
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(UserName.getValidationInfo(this.userName));
     
@@ -429,10 +437,11 @@ stringBuffer!.append(this.password.getValidationInfo());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -448,8 +457,10 @@ stringBuffer!.append(this.password.getValidationInfo());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -811,7 +822,7 @@ this.enable= enable;
             
     public toVector(): BasicArrayList{
 
-    var values: BasicArrayList = new BasicArrayListD();;
+    let values: BasicArrayList = new BasicArrayListD();;
     
 values.add(this.userName);
     
@@ -848,7 +859,7 @@ values.add(this.fax);
 values.add(this.getRole()!.toString());
     
 
-    var userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());;
+    let userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());;
     
 values.add(userConfigurationDomDocumentMapping!.toDomDocumentString());
     
@@ -859,10 +870,10 @@ values.addAllList(this.password.toVector(this.secret));
 values.add(this.enable);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.add(time);
     
@@ -881,7 +892,7 @@ values.add(time);
             
     public toHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 values.put(UserData.USERNAME, userName);
     
@@ -927,7 +938,7 @@ values.put(UserData.FAX, fax);
                                     }
                                 
 
-    var userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());;
+    let userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());;
     
 values.put(UserData.CONFIGURATION, userConfigurationDomDocumentMapping!.toDomDocumentString());
     
@@ -938,10 +949,10 @@ values.putAll(this.password.toHashMap(this.secret));
 values.put(EntryData.getInstance()!.ENABLE, this.enable);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -983,7 +994,7 @@ weblisketSession!.setUserName(this.getUserName());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
@@ -1037,6 +1048,4 @@ this.userConfigurationInterface= userConfigurationInterface;
 
 
 }
-
-
 

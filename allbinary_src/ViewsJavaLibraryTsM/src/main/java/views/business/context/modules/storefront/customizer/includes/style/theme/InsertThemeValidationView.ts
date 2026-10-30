@@ -31,12 +31,14 @@ import { NameSpaceRequestParams } from '../../../../../../../../../org/allbinary
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { ThemeValidation } from '../../../../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
 //not GWT import const ThemeValidation
@@ -127,9 +129,8 @@ this.requestHashMap= new NameSpaceRequestParams(this.getPageContext()).toHashMap
 
     public isValid(): Boolean{
 
-        try {
-            
-    var isValid: Boolean = Boolean.TRUE;;
+ try { 
+    let isValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -141,13 +142,13 @@ this.requestHashMap= new NameSpaceRequestParams(this.getPageContext()).toHashMap
                                     }
                                 
 
-    var themeValidation: ThemeValidation = new ThemeValidation(this.getTransformInfoInterface(), this.requestHashMap);;
+    let themeValidation: ThemeValidation = new ThemeValidation(this.getTransformInfoInterface(), this.requestHashMap);;
     
 
-                        if(themeValidation!.isValid() == Boolean.FALSE)
+                        if(themeValidation!.isValid() == false)
                         
                                     {
-                                    isValid= Boolean.FALSE;
+                                    isValid= false;
     
 
                                     }
@@ -157,7 +158,7 @@ this.validationInterface= themeValidation!.getCssStyleValidation();
 isValid= this.validationInterface!.isValid();
     
 
-                        if(isValid == Boolean.TRUE)
+                        if(isValid == true)
                         
                                     {
                                     CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.validationInterface as DomNodeInterface);
@@ -171,10 +172,11 @@ isValid= this.validationInterface!.isValid();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -188,18 +190,19 @@ isValid= this.validationInterface!.isValid();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -207,10 +210,11 @@ isValid= this.validationInterface!.isValid();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -226,8 +230,10 @@ isValid= this.validationInterface!.isValid();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Getting Validation Info";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -255,17 +261,17 @@ isValid= this.validationInterface!.isValid();
             
     public view(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StoreCustomizerComponentUtil.getInstance()!.generate(this.abeClientInformation, this.getTransformInfoInterface());;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -280,12 +286,12 @@ isValid= this.validationInterface!.isValid();
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

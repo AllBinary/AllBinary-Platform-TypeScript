@@ -42,17 +42,15 @@
 export interface TextInterface {
         
 
-    setTextWithOnMeasure(text: string, textChangeListener: TextChangeListener)
+    setTextWithOnMeasure(text: string, textChangeListener: TextChangeListener): void;
 
-    getText(): string
+    getText(): string;
 
-    setText(text: string)
+    setText(text: string): void;
 
-    getFontHeight(): number
+    getFontHeight(): number;
 
-    getWidth(): number
+    getWidth(): number;
 
 }
-
-
 

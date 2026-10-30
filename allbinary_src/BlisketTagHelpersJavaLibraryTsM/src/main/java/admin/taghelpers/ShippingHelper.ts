@@ -49,6 +49,7 @@ import { WeblisketSession } from '../../org/allbinary/logic/communication/http/r
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -96,7 +97,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
+    let storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(storeName != 
@@ -124,12 +125,11 @@ this.shippingType= this.request.getParameter(ShippingMethodData.NAME);
 
     public setShippingType(): string{
 
-        try {
-            
-    var success: string = "Successfully Set Shipping Type";;
+ try { 
+    let success: string = "Successfully Set Shipping Type";;
     
 
-    var order: OrderInterface = this.weblisketSession!.getOrder()!;;
+    let order: OrderInterface = this.weblisketSession!.getOrder()!;;
     
 order.setShippingMethod(this.shippingType);
     
@@ -148,12 +148,13 @@ order.setShippingMethod(this.shippingType);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to view Shipping Type";;
+    let error: string = "Failed to view Shipping Type";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -170,12 +171,12 @@ order.setShippingMethod(this.shippingType);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

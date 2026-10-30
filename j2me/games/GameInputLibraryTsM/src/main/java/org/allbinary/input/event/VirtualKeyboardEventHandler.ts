@@ -86,7 +86,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var virtualKeyboardEventListenerInterface: VirtualKeyboardEventListenerInterface = eventListenerInterface as unknown as VirtualKeyboardEventListenerInterface;;
+    let virtualKeyboardEventListenerInterface: VirtualKeyboardEventListenerInterface = eventListenerInterface as unknown as VirtualKeyboardEventListenerInterface;;
     
 virtualKeyboardEventListenerInterface!.onVirtualKeyboardEvent(eventObject as VirtualKeyboardEvent);
     
@@ -95,41 +95,43 @@ virtualKeyboardEventListenerInterface!.onVirtualKeyboardEvent(eventObject as Vir
 
     public open(){
 
-        try {
-            Thread.sleep(120);
+ try { Thread.sleep(120);
     
 this.fireEvent(this.SHOW_EVENT);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "open", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public close(){
 
-        try {
-            Thread.sleep(120);
+ try { Thread.sleep(120);
     
 this.fireEvent(this.HIDE_EVENT);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CLOSE, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

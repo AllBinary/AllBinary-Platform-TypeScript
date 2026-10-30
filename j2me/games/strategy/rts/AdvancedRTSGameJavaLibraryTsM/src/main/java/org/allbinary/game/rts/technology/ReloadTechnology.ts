@@ -176,7 +176,7 @@ public constructor (maxLevel: number){
 this.level++;
     
 
-    var unitTechnologySingletonFactory: UnitTechnologySingletonFactory = UnitTechnologySingletonFactory.getInstance()!;;
+    let unitTechnologySingletonFactory: UnitTechnologySingletonFactory = UnitTechnologySingletonFactory.getInstance()!;;
     
 unitTechnologySingletonFactory!.setReload(unitTechnologySingletonFactory!.getReload() +(this.getLevel() *10));
     
@@ -194,6 +194,4 @@ unitTechnologySingletonFactory!.setReload(unitTechnologySingletonFactory!.getRel
 
 
 }
-
-
 

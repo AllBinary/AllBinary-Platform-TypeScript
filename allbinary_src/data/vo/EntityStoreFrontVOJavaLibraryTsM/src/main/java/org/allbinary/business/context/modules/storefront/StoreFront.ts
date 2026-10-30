@@ -32,9 +32,11 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -68,12 +70,14 @@ import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.j
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { RequestParams } from '../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 //not GWT import const RequestParams
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
@@ -89,6 +93,7 @@ import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js'
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 import { AbPathUtil } from '../../../../../../org/allbinary/logic/io/path/AbPathUtil.js';
 //not GWT import const AbPathUtil
@@ -98,9 +103,11 @@ import { SpecialCharacterUtil } from '../../../../../../org/allbinary/logic/stri
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -113,15 +120,19 @@ import { Tokenizer } from '../../../../../../org/allbinary/logic/string/tokens/T
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StringEscapeUtils } from '../../../../../../org/apache/commons/lang3/StringEscapeUtils.js';
 //not GWT import const StringEscapeUtils
@@ -268,7 +279,7 @@ public constructor (hashMap: HashMap<any, any>){
         this.getFormData(hashMap);
     
 
-    var domDocumentString: string = hashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION) as string;;
+    let domDocumentString: string = hashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION) as string;;
     
 
                         if(domDocumentString == 
@@ -277,7 +288,7 @@ public constructor (hashMap: HashMap<any, any>){
                         
                                     {
                                     
-    var document: Document = DomDocumentHelper.create(domDocumentString)!;;
+    let document: Document = DomDocumentHelper.create(domDocumentString)!;;
     
 this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getInstance()!.getInstance(document));
     
@@ -313,10 +324,17 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
                             
 }
 
-
+createPath(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.createPath$overload1(args[0], args[1]);
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.createPath$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: createPath'); }
+  
                 //@Throws(Exception.constructor)
             
-    createPath(key: string, hashMap: HashMap<any, any>): AbPath{
+    createPath$overload1(key: string, hashMap: HashMap<any, any>): AbPath{
 
 
 
@@ -328,7 +346,7 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
 
                 //@Throws(Exception.constructor)
             
-    createPath(append: string, key: string, hashMap: HashMap<any, any>): AbPath{
+    createPath$overload2(append: string, key: string, hashMap: HashMap<any, any>): AbPath{
 
 
 
@@ -350,7 +368,7 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
 
     create(append: string, key: string, hashMap: HashMap<any, any>): string{
 
-    var path: string = hashMap!.get(key) as string;;
+    let path: string = hashMap!.get(key) as string;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(path))
@@ -399,7 +417,7 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
             
     getFormData(storeHashMap: HashMap<any, any>){
 
-    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
+    let storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
     
 this.name= storeHashMap!.get(storeFrontData!.NAME) as string;
     
@@ -467,17 +485,17 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
                         else {
                             
-    var isEscapedCharactersContained: boolean = false;;
+    let isEscapedCharactersContained: boolean = false;;
     
 
-    var storeNameEscaped: string = StringEscapeUtils.escapeHtml3(this.name)!;;
+    let storeNameEscaped: string = StringEscapeUtils.escapeHtml3(this.name)!;;
     
 
                         if(this.name.compareTo(storeNameEscaped) != 0)
@@ -489,10 +507,10 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var isSpacesContained: boolean = false;;
+    let isSpacesContained: boolean = false;;
     
 
                         if(stringValidationUtil!.containsSpaces(this.name))
@@ -508,7 +526,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
                         
                                     {
                                     
-    var hashMap: HashMap<any, any> = SpecialCharacterUtil.getHashMap()!;;
+    let hashMap: HashMap<any, any> = SpecialCharacterUtil.getHashMap()!;;
     
 hashMap!.put(
                                                 [
@@ -527,25 +545,25 @@ this.name= new Replace(hashMap).all(this.name);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
 
     public isValid(): Boolean{
 
-    var valid: Boolean = Boolean.TRUE;;
+    let valid: Boolean = Boolean.TRUE;;
     
 valid= this.isNameValid();
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.basketName, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -554,7 +572,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidRequired(this.homeHostName, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -563,7 +581,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.homeHostNamePath!.toString(), this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -572,7 +590,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidRequired(this.hostName, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -581,7 +599,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidRequired(this.hostNamePath!.toString(), this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -590,7 +608,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostName, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -599,7 +617,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostNamePath!.toString(), this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -608,7 +626,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.testHostName, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -617,7 +635,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.testHostNamePath!.toString(), this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -626,7 +644,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidRequired(this.imagePath!.toString(), this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -635,7 +653,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidRequired(this.staticPath!.toString(), this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -644,7 +662,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidRequired(this.categoryPath!.toString(), this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -653,7 +671,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidRequired(this.inventoryControl, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -662,7 +680,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.subStores, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -671,7 +689,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.tagLocation, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -680,7 +698,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidRequired(this.packageLocation, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -689,7 +707,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.ftp, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -698,7 +716,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.ftpPath!.toString(), this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -707,7 +725,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.ftpUserName, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -716,7 +734,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.ftpPassword, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -725,7 +743,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.testFtp, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -734,7 +752,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.testFtpPath!.toString(), this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -743,7 +761,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.testFtpUserName, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -752,7 +770,7 @@ valid= this.isNameValid();
                         if(!stringValidationUtil!.isValidNotRequired(this.testFtpPassword, this.MINCHAR, this.MAXCHAR))
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -765,7 +783,7 @@ valid= this.isNameValid();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -775,7 +793,7 @@ valid= this.isNameValid();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                         }
@@ -785,14 +803,14 @@ valid= this.isNameValid();
 
     public nameValidationInfo(): string{
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.name, this.MINCHAR, this.MAXCHAR))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Name is invalid. Must be < ");
     
@@ -820,12 +838,11 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+ try { 
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.nameValidationInfo());
     
@@ -1071,10 +1088,11 @@ stringBuffer!.append(" and > 0 characters.<br>");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -1090,8 +1108,10 @@ stringBuffer!.append(" and > 0 characters.<br>");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -1107,7 +1127,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
     public getCurrentHostName(): string{
 
-    var location: string = this.EMPTY_STRING;;
+    let location: string = this.EMPTY_STRING;;
     
 
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
@@ -1135,7 +1155,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
     public getCurrentHostNamePath(): string{
 
-    var location: string = this.EMPTY_STRING;;
+    let location: string = this.EMPTY_STRING;;
     
 
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
@@ -1163,7 +1183,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
     public getCurrentHomeHostName(): string{
 
-    var location: string = this.EMPTY_STRING;;
+    let location: string = this.EMPTY_STRING;;
     
 
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
@@ -1191,7 +1211,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
     public getCurrentHomeHostNamePath(): string{
 
-    var location: string = this.EMPTY_STRING;;
+    let location: string = this.EMPTY_STRING;;
     
 
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
@@ -1351,12 +1371,11 @@ stringBuffer!.append(" and > 0 characters.<br>");
             
     public getSubStores(): BasicArrayList{
 
-        try {
-            
-    var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SEMICOLON);;
+ try { 
+    let tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SEMICOLON);;
     
 
-    var subStoreVector: BasicArrayList = tokenizer.getTokensFromString(this.subStores, new BasicArrayListD())!;;
+    let subStoreVector: BasicArrayList = tokenizer.getTokensFromString(this.subStores, new BasicArrayListD())!;;
     
 
 
@@ -1364,17 +1383,20 @@ stringBuffer!.append(" and > 0 characters.<br>");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return subStoreVector;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -1387,8 +1409,15 @@ stringBuffer!.append(" and > 0 characters.<br>");
     
 }
 
-
-    public getPackageLocation(): string{
+getPackageLocation(...args: any[]): any {
+   
+    if (args.length === 0) return this.getPackageLocation$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getPackageLocation$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getPackageLocation'); }
+  
+    public getPackageLocation$overload1(): string{
 
 
 
@@ -1614,7 +1643,7 @@ this.inventoryControl= value;
 }
 
 
-    public getPackageLocation(value: string){
+    public getPackageLocation$overload2(value: string){
 this.packageLocation= value;
     
 }
@@ -1688,7 +1717,7 @@ this.testFtpPath= new AbPath(value, StringUtil.getInstance()!.EMPTY_STRING);
             
     createDirectories(): boolean{
 
-    var storeAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.getCurrentHomeHostNamePath(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let storeAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.getCurrentHomeHostNamePath(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
                         if(!this.directory.create(storeAbPath))
@@ -1742,8 +1771,7 @@ this.testFtpPath= new AbPath(value, StringUtil.getInstance()!.EMPTY_STRING);
             
     public install(current: number, total: number){
 
-        try {
-            
+ try { 
                         if(!this.createDirectories())
                         
                                     {
@@ -1756,7 +1784,7 @@ this.testFtpPath= new AbPath(value, StringUtil.getInstance()!.EMPTY_STRING);
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1765,7 +1793,7 @@ stringBuffer!.append(URLGLOBALS.getMainPath());
 stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
     
 
-    var viewPath: string = stringBuffer!.toString()!;;
+    let viewPath: string = stringBuffer!.toString()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1774,7 +1802,7 @@ stringBuffer!.append(viewPath);
 stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH);
     
 
-    var fromDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let fromDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1785,7 +1813,7 @@ stringBuffer!.append("special");
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var fromSpecialDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let fromSpecialDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1796,7 +1824,7 @@ stringBuffer!.append(this.getName());
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var toDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let toDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
                         if(current == 0)
@@ -1818,24 +1846,24 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     }
                                 
 
-    var viewTotal: number = globalThis.Math.trunc((total *85) /100);;
+    let viewTotal: number = globalThis.Math.trunc((total *85) /100);;
     
 
-    var installTotal: number = globalThis.Math.trunc((total *93) /100);;
+    let installTotal: number = globalThis.Math.trunc((total *93) /100);;
     
 
                         if(current < viewTotal)
                         
                                     {
                                     
-    var file: AbFile = AbFile.createAbFileFromAbPath(fromSpecialDirectoryAbPath)!;;
+    let file: AbFile = AbFile.createAbFileFromAbPath(fromSpecialDirectoryAbPath)!;;
     
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var halfViewTotal: number = globalThis.Math.trunc(viewTotal /2);;
+    let halfViewTotal: number = globalThis.Math.trunc(viewTotal /2);;
     
 
                         if(current < halfViewTotal)
@@ -1882,10 +1910,11 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -1900,8 +1929,10 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -1917,7 +1948,7 @@ FileUtil.getInstance()!.copyDirectoryPortion(fromDirectoryAbPath, toDirectoryAbP
             
     installResources(fromDirectoryAbPath: AbPath, current: number, total: number){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(fromDirectoryAbPath!.toString());
     
@@ -1928,7 +1959,7 @@ stringBuffer!.append("Resources");
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var installCategoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let installCategoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1941,7 +1972,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(this.getCategoryPath());
     
 
-    var categoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let categoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 FileUtil.getInstance()!.copyDirectoryPortion(installCategoryAbPath, categoryAbPath, true, false, current, total);
     
@@ -1952,7 +1983,7 @@ FileUtil.getInstance()!.copyDirectoryPortion(installCategoryAbPath, categoryAbPa
             
     installMedia(fromDirectoryAbPath: AbPath, current: number, total: number){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(fromDirectoryAbPath!.toString());
     
@@ -1965,10 +1996,10 @@ stringBuffer!.append("images");
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var viewStoreImagesDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let viewStoreImagesDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var storeAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.getCurrentHomeHostNamePath(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let storeAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.getCurrentHomeHostNamePath(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 FileUtil.getInstance()!.copyDirectoryPortion(viewStoreImagesDirectoryAbPath, storeAbPath, true, false, current, total);
     
@@ -1979,7 +2010,7 @@ FileUtil.getInstance()!.copyDirectoryPortion(viewStoreImagesDirectoryAbPath, sto
             
     public toVector(): BasicArrayList{
 
-    var dataVector: BasicArrayList = new BasicArrayListD();;
+    let dataVector: BasicArrayList = new BasicArrayListD();;
     
 dataVector!.add(this.name);
     
@@ -2008,7 +2039,7 @@ dataVector!.add(this.categoryPath!.toString());
 dataVector!.add(this.inventoryControl);
     
 
-    var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());;
+    let contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());;
     
 dataVector!.add(contextConfigurationDomDocumentMapping!.toDomDocumentString());
     
@@ -2035,10 +2066,10 @@ dataVector!.add(this.testFtpUserName);
 dataVector!.add(this.testFtpPassword);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 dataVector!.add(time);
     
@@ -2057,10 +2088,10 @@ dataVector!.add(time);
             
     public toHashMap(): HashMap<any, any>{
 
-    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
+    let storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
     
 
-    var dataHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let dataHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 dataHashMap!.put(storeFrontData!.NAME, this.name);
     
@@ -2089,7 +2120,7 @@ dataHashMap!.put(storeFrontData!.CATEGORYPATH, this.categoryPath!.toString());
 dataHashMap!.put(storeFrontData!.INVENTORYCONTROL, this.inventoryControl);
     
 
-    var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());;
+    let contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());;
     
 dataHashMap!.put(storeFrontData!.CONFIGURATION, contextConfigurationDomDocumentMapping!.toDomDocumentString());
     
@@ -2116,10 +2147,10 @@ dataHashMap!.put(storeFrontData!.TESTFTPUSERNAME, this.testFtpUserName);
 dataHashMap!.put(storeFrontData!.TESTFTPPASSWORD, this.testFtpPassword);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 dataHashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -2159,6 +2190,4 @@ this.contextConfigurationInterface= contextConfigurationInterface;
 
 
 }
-
-
 

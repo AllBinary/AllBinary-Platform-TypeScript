@@ -51,19 +51,17 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
 export interface CategoryFactoryInterface {
         
 
-    getRootInstance(): CategoryInterface
+    getRootInstance(): CategoryInterface;
 
-    getRootInstance(categoryPath: AbPath): CategoryInterface
+    getRootInstance(categoryPath: AbPath): CategoryInterface;
 
-    getRootInstanceFromNode(node: Node): CategoryInterface
+    getRootInstanceFromNode(node: Node): CategoryInterface;
 
-    getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, name: string): CategoryInterface
+    getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, name: string): CategoryInterface;
 
-    getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, node: Node): CategoryInterface
+    getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, node: Node): CategoryInterface;
 
-    getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface
+    getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface;
 
 }
-
-
 

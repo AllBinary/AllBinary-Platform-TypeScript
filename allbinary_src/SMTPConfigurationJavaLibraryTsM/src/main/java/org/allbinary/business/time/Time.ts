@@ -96,5 +96,3 @@ public constructor (time: number){
 
 }
 
-
-

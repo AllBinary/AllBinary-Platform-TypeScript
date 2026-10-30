@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { QuoteRequest } from '../../../../../../org/allbinary/business/user/quoterequest/QuoteRequest.js';
 //not GWT import const QuoteRequest
@@ -59,17 +61,15 @@ export interface QuoteRequestEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(Exception.constructor)
             
-    get(userName: string, id: number): QuoteRequest
+    get(userName: string, id: number): QuoteRequest;
 
-    getIds(userName: string): BasicArrayList
+    getIds(userName: string): BasicArrayList;
 
-    deleteWhere(key: string, value: string)
+    deleteWhere(key: string, value: string): void;
 
-    insert(values: BasicArrayList)
+    insert(values: BasicArrayList): void;
 
-    update(userName: string, updatedValues: HashMap<any, any>)
+    update(userName: string, updatedValues: HashMap<any, any>): void;
 
 }
-
-
 

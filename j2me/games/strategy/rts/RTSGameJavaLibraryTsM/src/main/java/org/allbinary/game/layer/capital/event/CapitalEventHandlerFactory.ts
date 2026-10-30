@@ -59,7 +59,7 @@ export class CapitalEventHandlerFactory
 
 
                         for (
-    var index: number = CapitalEventHandlerFactory.capitalEventHandlerArray!.length -1;index >= 0; index--)
+    let index: number = CapitalEventHandlerFactory.capitalEventHandlerArray!.length -1;index >= 0; index--)
         {
 CapitalEventHandlerFactory.capitalEventHandlerArray[index]= new CapitalEventHandler();
     
@@ -72,7 +72,7 @@ CapitalEventHandlerFactory.capitalEventHandlerArray[index]= new CapitalEventHand
             
     public static getInstance(groupInterface: Group): CapitalEventHandler{
 
-    var groupId: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
+    let groupId: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
     
 
 
@@ -89,7 +89,7 @@ CapitalEventHandlerFactory.capitalEventHandlerArray[index]= new CapitalEventHand
 
 
                         for (
-    var index: number = CapitalEventHandlerFactory.capitalEventHandlerArray!.length -1;index >= 0; index--)
+    let index: number = CapitalEventHandlerFactory.capitalEventHandlerArray!.length -1;index >= 0; index--)
         {
 CapitalEventHandlerFactory.capitalEventHandlerArray[index]!.removeAllListeners();
     
@@ -99,6 +99,4 @@ CapitalEventHandlerFactory.capitalEventHandlerArray[index]!.removeAllListeners()
 
 
 }
-
-
 

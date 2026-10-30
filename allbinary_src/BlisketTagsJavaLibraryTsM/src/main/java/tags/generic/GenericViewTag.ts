@@ -20,6 +20,7 @@
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { InputOutputTypeData } from '../../org/allbinary/logic/io/InputOutputTypeData.js';
 //not GWT import const InputOutputTypeData
@@ -87,6 +88,4 @@ this.getPropertiesHashMap()!.put(InputOutputTypeData.getInstance()!.FILE, this.f
 
 
 }
-
-
 

@@ -65,5 +65,3 @@ gl.glColor4f(red, green, blue, alpha);
 
 }
 
-
-

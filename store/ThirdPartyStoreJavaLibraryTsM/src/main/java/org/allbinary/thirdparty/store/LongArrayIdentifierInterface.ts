@@ -40,9 +40,7 @@
 export interface LongArrayIdentifierInterface {
         
 
-    getLongArrayIdentifier(): number[]
+    getLongArrayIdentifier(): number[];
 
 }
-
-
 

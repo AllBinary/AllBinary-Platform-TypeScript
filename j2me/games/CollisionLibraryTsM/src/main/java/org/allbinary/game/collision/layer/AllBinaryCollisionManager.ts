@@ -80,17 +80,17 @@ private constructor (){
             
     public process(layerManager: LayerManager, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface, startIndex: number){
 
-    var size: number = layerManager!.getSize()!;;
+    let size: number = layerManager!.getSize()!;;
     
 
 
 
 
                         for (
-    var index: number = startIndex +1;index < size; index++)
+    let index: number = startIndex +1;index < size; index++)
         {
 
-    var collidableInterfaceCompositeInterface2: CollidableInterfaceCompositeInterface = layerManager!.getLayerAt(index) as CollidableInterfaceCompositeInterface;;
+    let collidableInterfaceCompositeInterface2: CollidableInterfaceCompositeInterface = layerManager!.getLayerAt(index) as CollidableInterfaceCompositeInterface;;
     
 this.collide(layerManager, collidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2);
     
@@ -103,10 +103,10 @@ this.collide(layerManager, collidableInterfaceCompositeInterface, collidableInte
             
     collide(layerManager: LayerManager, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2: CollidableInterfaceCompositeInterface){
 
-    var collidableBase2: CollidableBaseBehavior = collidableInterfaceCompositeInterface2!.getCollidableInferface()!;;
+    let collidableBase2: CollidableBaseBehavior = collidableInterfaceCompositeInterface2!.getCollidableInferface()!;;
     
 
-    var collidableBase: CollidableBaseBehavior = collidableInterfaceCompositeInterface!.getCollidableInferface()!;;
+    let collidableBase: CollidableBaseBehavior = collidableInterfaceCompositeInterface!.getCollidableInferface()!;;
     
 
                         if(collidableBase2!.isCollidable(collidableInterfaceCompositeInterface as CollidableCompositeLayer))
@@ -130,6 +130,4 @@ collidableBase2!.collideInterface(collidableInterfaceCompositeInterface as Colli
 
 
 }
-
-
 

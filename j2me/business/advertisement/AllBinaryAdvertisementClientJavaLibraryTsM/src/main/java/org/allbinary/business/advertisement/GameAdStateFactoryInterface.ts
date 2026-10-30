@@ -49,9 +49,7 @@ export interface GameAdStateFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstanceForApp(softwareInformation: SoftwareInformation): GameAdStateBase
+    getInstanceForApp(softwareInformation: SoftwareInformation): GameAdStateBase;
 
 }
-
-
 

@@ -27,6 +27,7 @@ import { InputStream } from '../../../../java/io/InputStream.js';
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 
 
@@ -68,10 +69,10 @@ export class PlatformAssetManager
             
     public getResourceAsStream(resource: string): InputStream{
 
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
+    let resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var inputStream: InputStream = resourceUtil!.getResourceAsStream(resource)!;;
+    let inputStream: InputStream = resourceUtil!.getResourceAsStream(resource)!;;
     
 
 
@@ -83,6 +84,4 @@ export class PlatformAssetManager
 
 
 }
-
-
 

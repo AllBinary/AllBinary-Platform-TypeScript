@@ -69,5 +69,3 @@ export class ChangedGameFeatureListener extends BaseChangedGameFeatureListener {
 
 }
 
-
-

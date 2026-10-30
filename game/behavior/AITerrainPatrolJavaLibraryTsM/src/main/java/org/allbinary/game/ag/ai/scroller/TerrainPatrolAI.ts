@@ -49,9 +49,11 @@ import { AngleFactory } from '../../../../../../org/allbinary/math/AngleFactory.
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -106,26 +108,26 @@ this.changeDirectionIfCliffReached();
 
     changeDirectionIfCliffReached(){
 
-    var list: BasicArrayList = this.terrainEventListener!.getList()!;;
+    let list: BasicArrayList = this.terrainEventListener!.getList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var terrainEvent: TerrainEvent = list.removeAt(index) as TerrainEvent;;
+    let terrainEvent: TerrainEvent = list.removeAt(index) as TerrainEvent;;
     
 
-    var basicTerrainInfo: BasicTerrainInfo = terrainEvent!.getBasicTerrainInfo()!;;
+    let basicTerrainInfo: BasicTerrainInfo = terrainEvent!.getBasicTerrainInfo()!;;
     
 
-    var angle: Angle = basicTerrainInfo!.getAngle()!;;
+    let angle: Angle = basicTerrainInfo!.getAngle()!;;
     
 
                         if(angle == this.DOWN)
@@ -153,6 +155,4 @@ this.isFollowLimitedByTerrain= true;
 
 
 }
-
-
 

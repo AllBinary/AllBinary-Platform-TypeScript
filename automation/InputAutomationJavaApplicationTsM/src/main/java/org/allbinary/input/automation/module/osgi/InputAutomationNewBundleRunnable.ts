@@ -64,9 +64,11 @@ import { InputAutomationBundleActivator } from '../../../../../../bundle/input/a
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { FileWrapperUtil } from '../../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
 //not GWT import const FileWrapperUtil
@@ -79,9 +81,11 @@ import { BasicFileFilterUtil } from '../../../../../../org/allbinary/logic/io/fi
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
 //not GWT import const RunnableInterface
@@ -91,9 +95,11 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -177,20 +183,20 @@ this.running= running;
 this.logUtil!.putF(this.commonStrings!.START, this, "updateModules");
     
 
-    var list: BasicArrayList = this.findNewModules()!;;
+    let list: BasicArrayList = this.findNewModules()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var bundle: Bundle;;
+    let bundle: Bundle;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 bundle= this.install(list.get(index) as URL);
     
@@ -216,25 +222,25 @@ bundle= this.install(list.get(index) as URL);
 this.logUtil!.putF(this.commonStrings!.START, this, "getAllJarSymbolicNameHashMap");
     
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var jarFileBasicArrayList: BasicArrayList = this.getJarModuleFileBasicArrayList()!;;
+    let jarFileBasicArrayList: BasicArrayList = this.getJarModuleFileBasicArrayList()!;;
     
 this.logUtil!.putF("Jar Module Files: " +jarFileBasicArrayList, this, "getAllJarSymbolicNameHashMap");
     
 
-    var size: number = jarFileBasicArrayList!.size()!;;
+    let size: number = jarFileBasicArrayList!.size()!;;
     
 
-    var file: File;;
+    let file: File;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 file= jarFileBasicArrayList!.get(index) as File;
     
@@ -243,13 +249,13 @@ file= jarFileBasicArrayList!.get(index) as File;
                         
                                     {
                                     
-    var fileInputStream: FileInputStream = new FileInputStream(file);;
+    let fileInputStream: FileInputStream = new FileInputStream(file);;
     
 
-    var jarInputStream: JarInputStream = new JarInputStream(fileInputStream);;
+    let jarInputStream: JarInputStream = new JarInputStream(fileInputStream);;
     
 
-    var manifest: Manifest = jarInputStream!.getManifest()!;;
+    let manifest: Manifest = jarInputStream!.getManifest()!;;
     
 
                         if(manifest == 
@@ -262,7 +268,7 @@ file= jarFileBasicArrayList!.get(index) as File;
                                 
                         else {
                             
-    var symbolicName: string = manifest.getMainAttributes()!.getValue(Constants.BUNDLE_SYMBOLICNAME)!;;
+    let symbolicName: string = manifest.getMainAttributes()!.getValue(Constants.BUNDLE_SYMBOLICNAME)!;;
     
 
                         if(symbolicName != 
@@ -290,7 +296,7 @@ file= jarFileBasicArrayList!.get(index) as File;
 this.logUtil!.putF(this.commonStrings!.START, this, "getJarModuleFileBasicArrayList");
     
 
-    var baseJarPath: string = System.getProperty(JAR_DIR_PROP)!;;
+    let baseJarPath: string = System.getProperty(JAR_DIR_PROP)!;;
     
 
                         if(baseJarPath!.startsWith(InputAutomationNewBundleRunnable.FILE))
@@ -302,15 +308,15 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getJarModuleFileBasicArrayL
                                     }
                                 
 
-    var jarFileFilter: FileFilter = BasicFileFilterUtil.getInstance(".jar")!;;
+    let jarFileFilter: FileFilter = BasicFileFilterUtil.getInstance(".jar")!;;
     
 
-    var path: string = baseJarPath +InputAutomationNewBundleRunnable.INPUT_AUTMATION_MODULE_BUNDLE_JAR_PATH;;
+    let path: string = baseJarPath +InputAutomationNewBundleRunnable.INPUT_AUTMATION_MODULE_BUNDLE_JAR_PATH;;
     
 this.logUtil!.putF("Path: " +path, this, "getJarModuleFileBasicArrayList");
     
 
-    var file: File = new File(path);;
+    let file: File = new File(path);;
     
 this.logUtil!.putF("File: " +file.getAbsolutePath() +" isDirectory: " +file.isDirectory(), this, "getJarModuleFileBasicArrayList");
     
@@ -329,13 +335,13 @@ this.logUtil!.putF("File: " +file.getAbsolutePath() +" isDirectory: " +file.isDi
 this.logUtil!.putF(this.commonStrings!.START, this, "getInstalledJarSymbolicNameBasicArrayList");
     
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 
-    var bundleContext: BundleContext = InputAutomationBundleActivator.getBundleContext()!;;
+    let bundleContext: BundleContext = InputAutomationBundleActivator.getBundleContext()!;;
     
 
-    var bundleArray: Bundle[] = bundleContext!.getBundles()!;;
+    let bundleArray: Bundle[] = bundleContext!.getBundles()!;;
     
 
                         if(bundleArray != 
@@ -350,10 +356,10 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getInstalledJarSymbolicName
 
 
                         for (
-    var index: number = 0;index < bundleArray!.length; index++)
+    let index: number = 0;index < bundleArray!.length; index++)
         {
 
-    var bundle: Bundle = bundleArray[index]!;;
+    let bundle: Bundle = bundleArray[index]!;;
     
 vector.add(bundle.getSymbolicName());
     
@@ -377,20 +383,20 @@ vector.add(bundle.getSymbolicName());
 this.logUtil!.putF(CommonLabels.getInstance()!.START +symbolicName, this, "isInstalled");
     
 
-    var list: BasicArrayList = this.getInstalledJarSymbolicNameBasicArrayList()!;;
+    let list: BasicArrayList = this.getInstalledJarSymbolicNameBasicArrayList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var nextSymbolicName: string;;
+    let nextSymbolicName: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 nextSymbolicName= list.get(index) as string;
     
@@ -424,21 +430,21 @@ nextSymbolicName= list.get(index) as string;
 this.logUtil!.putF(this.commonStrings!.START, this, "findNewModules");
     
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 
-    var hashMap: HashMap<any, any> = this.getAllJarSymbolicNameHashMap()!;;
+    let hashMap: HashMap<any, any> = this.getAllJarSymbolicNameHashMap()!;;
     
 this.logUtil!.putF("All: " +hashMap, this, "findNewModules");
     
 
-    var set: Set = hashMap!.keys()!;;
+    let set: Set = hashMap!.keys()!;;
     
 
-    var symbolicNameArray: any[] = set.toArray()!;;
+    let symbolicNameArray: any[] = set.toArray()!;;
     
 
-    var size: number = symbolicNameArray!.length
+    let size: number = symbolicNameArray!.length
                 ;;
     
 
@@ -446,10 +452,10 @@ this.logUtil!.putF("All: " +hashMap, this, "findNewModules");
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var symbolicName: string = symbolicNameArray[index]! as string;;
+    let symbolicName: string = symbolicNameArray[index]! as string;;
     
 
                         if(!this.isInstalled(symbolicName))
@@ -477,7 +483,7 @@ this.logUtil!.putF("All: " +hashMap, this, "findNewModules");
 this.logUtil!.putF(CommonLabels.getInstance()!.START +url, this, "install");
     
 
-    var bundleContext: BundleContext = InputAutomationBundleActivator.getBundleContext()!;;
+    let bundleContext: BundleContext = InputAutomationBundleActivator.getBundleContext()!;;
     
 
 
@@ -490,13 +496,12 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +url, this, "install");
 
     public run(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
     
 this.setRunning(true);
     
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
+    let timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
     
 
         while(this.isRunning())
@@ -514,18 +519,19 @@ break;
 
 this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

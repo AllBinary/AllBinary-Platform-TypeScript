@@ -44,18 +44,23 @@ import { RunnableCanvasSingleThreadStartRunnable } from '../../../org/allbinary/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -123,7 +128,7 @@ export class ThreadFactoryUtil
 
     getInstanceType(runnable: Runnable, type: number): Thread{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(J2MEUtil.isHTML())
@@ -134,12 +139,12 @@ export class ThreadFactoryUtil
                         
                                     {
                                     
-    var demoGameSingleThreadStartRunnable: RunnableCanvasSingleThreadStartRunnable = new RunnableCanvasSingleThreadStartRunnable(runnable as RunnableCanvas);;
+    let demoGameSingleThreadStartRunnable: RunnableCanvasSingleThreadStartRunnable = new RunnableCanvasSingleThreadStartRunnable(runnable as RunnableCanvas);;
     
 PreLogUtil.put(new StringMaker().append("Using Pseudo Thread for DemoCanvas/AllBinaryGameCanvas under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 
-    var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;;
+    let primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;;
     
 primaryThreadPool!.runTask(demoGameSingleThreadStartRunnable);
     
@@ -150,7 +155,7 @@ primaryThreadPool!.runTask(demoGameSingleThreadStartRunnable);
                             PreLogUtil.put(new StringMaker().append("Using Pseudo Thread for Runnable under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 
-    var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;;
+    let primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;;
     
 primaryThreadPool!.runTask(runnable);
     
@@ -161,7 +166,7 @@ primaryThreadPool!.runTask(runnable);
                                     }
                                 
 
-    var thread: Thread = new Thread(runnable, runnable.toString());;
+    let thread: Thread = new Thread(runnable, runnable.toString());;
     
 this.logUtil!.putF(thread.toString(), this, commonStrings!.CONSTRUCTOR);
     
@@ -181,6 +186,4 @@ thread.start();
 
 
 }
-
-
 

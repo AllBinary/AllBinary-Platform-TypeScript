@@ -32,9 +32,11 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
@@ -56,18 +58,22 @@ import { TableDataFactory } from '../../../../../../org/allbinary/data/tables/Ta
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -119,9 +125,8 @@ this.userName= userName;
 
     public remove(index: Integer){
 
-        try {
-            
-    var whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let whereHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereHashMap!.put(UserData.USERNAME, this.userName);
     
@@ -138,10 +143,11 @@ super.deleteWhere(whereHashMap);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -151,22 +157,30 @@ super.deleteWhere(whereHashMap);
 
                                     }
                                 
+
+ }
+   }
+ 
 }
 
-}
-
-
-    public add(address: StreetAddress){
+add(...args: any[]): any {
+   
+    if (args.length === 1) return this.add$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.add$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: add'); }
+  
+    public add$overload1(address: StreetAddress){
 this.add(address, TableDataFactory.getInstance()!.INTEGER_MAX_VALUE_STRING);
     
 }
 
 
-    add(address: StreetAddress, index: string){
+    add$overload2(address: StreetAddress, index: string){
 
-        try {
-            
-    var values: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let values: BasicArrayList = new BasicArrayListD();;
     
 values.add(index);
     
@@ -187,10 +201,10 @@ values.add(address.getCode());
 values.add(address.getCountry());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.add(time);
     
@@ -207,10 +221,11 @@ this.setDefault(getLastId());
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -220,19 +235,20 @@ this.setDefault(getLastId());
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public update(address: StreetAddress){
 
-        try {
-            
-    var addressHashMap: HashMap<any, any> = address.toHashMap()!;;
+ try { 
+    let addressHashMap: HashMap<any, any> = address.toHashMap()!;;
     
 
-    var whereKeyValuePairs: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let whereKeyValuePairs: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereKeyValuePairs!.put(StreetAddressData.ID, address.getId());
     
@@ -251,10 +267,11 @@ this.setDefault(address.getId());
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -264,8 +281,10 @@ this.setDefault(address.getId());
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -278,36 +297,42 @@ this.setDefault(address.getId());
     
 }
 
+get(...args: any[]): any {
+   
+    if (args.length === 0) return this.get$overload1();
+   
+    if (args.length === 1) return this.get$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: get'); }
+  
+    public get$overload1(): BasicArrayList{
 
-    public get(): BasicArrayList{
-
-        try {
-            
-    var streetAddressVector: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let streetAddressVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var keyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keyAndValue!.put(UserData.USERNAME, this.userName);
     
 
-    var addressList: BasicArrayList = super.getRows(keyAndValue)!;;
+    let addressList: BasicArrayList = super.getRows(keyAndValue)!;;
     
 
-    var size: number = addressList!.size()!;;
+    let size: number = addressList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var addressHashMap: HashMap<any, any> = addressList!.get(index) as HashMap<any, any>;;
+    let addressHashMap: HashMap<any, any> = addressList!.get(index) as HashMap<any, any>;;
     
 
-    var streetAddress: StreetAddress = new StreetAddress(addressHashMap);;
+    let streetAddress: StreetAddress = new StreetAddress(addressHashMap);;
     
 
                         if(streetAddress != 
@@ -328,10 +353,11 @@ keyAndValue!.put(UserData.USERNAME, this.userName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return streetAddressVector;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -347,23 +373,24 @@ keyAndValue!.put(UserData.USERNAME, this.userName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public get$overload2(index: Integer): StreetAddress{
 
-    public get(index: Integer): StreetAddress{
-
-        try {
-            
-    var keyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let keyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keyAndValue!.put(UserData.USERNAME, this.userName);
     
 keyAndValue!.put(StreetAddressData.ID, index.toString());
     
 
-    var addressHashMap: HashMap<any, any> = super.getRow(keyAndValue)!;;
+    let addressHashMap: HashMap<any, any> = super.getRow(keyAndValue)!;;
     
 
                         if(addressHashMap != 
@@ -390,10 +417,11 @@ keyAndValue!.put(StreetAddressData.ID, index.toString());
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -409,19 +437,20 @@ keyAndValue!.put(StreetAddressData.ID, index.toString());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getDefault(): StreetAddress{
 
-        try {
-            
-    var addressHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let addressHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var updateKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let updateKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 updateKeyAndValue!.put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT);
     
@@ -436,7 +465,7 @@ addressHashMap= super.getRow(updateKeyAndValue);
                         
                                     {
                                     
-    var streetAddress: StreetAddress = new StreetAddress(addressHashMap);;
+    let streetAddress: StreetAddress = new StreetAddress(addressHashMap);;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -475,10 +504,11 @@ addressHashMap= super.getRow(updateKeyAndValue);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -494,24 +524,25 @@ addressHashMap= super.getRow(updateKeyAndValue);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public setDefault(value: string){
 
-        try {
-            
-    var updateKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let updateKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var whereKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let whereKeyAndValue: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 whereKeyAndValue!.put(UserData.USERNAME, this.userName);
     
 
-    var streetAddress: StreetAddress = this.getDefault()!;;
+    let streetAddress: StreetAddress = this.getDefault()!;;
     
 
                         if(streetAddress != 
@@ -543,10 +574,11 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -556,8 +588,10 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -573,7 +607,7 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue);
 
     public createTableStatement(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.getTableName())!.append(this.sqlStrings!.START)!.append(StreetAddressData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_AUTO_INCREMENT_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.DEFAULT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.STREET)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.CITY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.STATE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.CODE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.COUNTRY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(StreetAddressData.ID)!.append(this.sqlStrings!.END);
     
@@ -607,6 +641,4 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.getTableName())
 
 
 }
-
-
 

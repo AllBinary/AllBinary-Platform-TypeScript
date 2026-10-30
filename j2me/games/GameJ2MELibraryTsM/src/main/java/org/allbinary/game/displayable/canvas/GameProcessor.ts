@@ -67,5 +67,3 @@ this.gameCanvas!.processPlayingGame();
 
 }
 
-
-

@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SearchRequest } from '../../../../org/allbinary/logic/control/search/SearchRequest.js';
 //not GWT import const SearchRequest
@@ -33,6 +34,7 @@ import { LicensingException } from '../../../../org/allbinary/logic/system/secur
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { InventorySearch } from '../../../../views/generic/inventory/InventorySearch.js';
 //not GWT import const InventorySearch
@@ -67,26 +69,26 @@ export class InventoryViewFactory
             
     public static getInstance(searchRequest: SearchRequest): InventoryViewSearchInterface{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new InventorySearch(searchRequest);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, "InventoryViewFactory", "getInstance(SearchRequest)", e);
     
@@ -99,8 +101,10 @@ logUtil!.put(commonStrings!.EXCEPTION, "InventoryViewFactory", "getInstance(Sear
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -111,6 +115,4 @@ private constructor (){
 
 
 }
-
-
 

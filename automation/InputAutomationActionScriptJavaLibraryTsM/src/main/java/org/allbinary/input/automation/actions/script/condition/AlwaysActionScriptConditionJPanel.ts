@@ -20,9 +20,11 @@
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -188,7 +190,7 @@ this.alwaysJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 ]));
     
 
-    var alwaysActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.alwaysActionJDialog!.getContentPane());;
+    let alwaysActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.alwaysActionJDialog!.getContentPane());;
     
 this.alwaysActionJDialog!.getContentPane()!.setLayout(alwaysActionJDialogLayout);
     
@@ -214,7 +216,7 @@ alwaysActionJButtonActionPerformed(evt);
 this.jLabel1!.setText("Always:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -254,6 +256,4 @@ this.getAlwaysActionJDialog()!.setVisible(true);
     private titleJLabel: javax.swing.JLabel;
 
 }
-
-
 

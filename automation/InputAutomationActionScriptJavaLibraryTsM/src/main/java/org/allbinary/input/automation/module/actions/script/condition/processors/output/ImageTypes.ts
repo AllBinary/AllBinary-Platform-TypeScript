@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomNodeHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 //not GWT import const DomNodeHelper
@@ -39,9 +41,11 @@ import { InputImageType } from '../../../../../../../../../../org/allbinary/inpu
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { Document } from '../../../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -80,17 +84,17 @@ export class ImageTypes
 
     public static valueOf(anyType: any[]): ImageTypes{
 
-    var imageTypes: ImageTypes = new ImageTypes();;
+    let imageTypes: ImageTypes = new ImageTypes();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < anyType!.length; index++)
+    let index: number = 0;index < anyType!.length; index++)
         {
 
-    var imageType: InputImageType = InputImageType.getInstance(anyType[index]! as string)!;;
+    let imageType: InputImageType = InputImageType.getInstance(anyType[index]! as string)!;;
     
 imageTypes!.getVector()!.add(imageType);
     
@@ -117,24 +121,24 @@ public constructor (node: Node){
 
             super();
         
-    var nodeList: NodeList = node.getChildNodes()!;;
+    let nodeList: NodeList = node.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var childNode: Node = nodeList!.item(index)!;;
+    let childNode: Node = nodeList!.item(index)!;;
     
 
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.TYPE) == 0)
                         
                                     {
                                     
-    var nextImageTypeString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let nextImageTypeString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
     
@@ -169,20 +173,20 @@ this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
             
     public toXmlNode(document: Document): Node{
 
-    var newNode: Node = document.createElement(ImageActionScriptOutputData.TYPES)!;;
+    let newNode: Node = document.createElement(ImageActionScriptOutputData.TYPES)!;;
     
 
-    var size: number = this.vector.size()!;;
+    let size: number = this.vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var imageType: InputImageType = this.vector.get(index) as InputImageType;;
+    let imageType: InputImageType = this.vector.get(index) as InputImageType;;
     
 newNode!.appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutputData.TYPE, imageType!.getName()));
     
@@ -199,22 +203,22 @@ newNode!.appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutp
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("ImageTypes: ");
     
 
-    var size: number = this.vector.size()!;;
+    let size: number = this.vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var imageType: InputImageType = this.vector.get(index) as InputImageType;;
+    let imageType: InputImageType = this.vector.get(index) as InputImageType;;
     
 stringBuffer!.append(imageType!.getName());
     
@@ -233,6 +237,4 @@ stringBuffer!.append(imageType!.getName());
 
 
 }
-
-
 

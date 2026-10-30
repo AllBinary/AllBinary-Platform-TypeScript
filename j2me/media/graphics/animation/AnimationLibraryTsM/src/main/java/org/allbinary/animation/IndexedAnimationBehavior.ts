@@ -68,5 +68,3 @@ this.loopIndex= 0;
 
 }
 
-
-

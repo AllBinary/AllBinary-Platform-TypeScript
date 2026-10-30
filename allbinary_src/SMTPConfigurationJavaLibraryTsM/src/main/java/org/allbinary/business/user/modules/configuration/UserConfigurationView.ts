@@ -93,32 +93,32 @@ public constructor (node: Node){
         this.userConfigurationInterface= new UserConfiguration() as UserConfigurationInterface;
     
 
-    var childNodeList: NodeList = node.getChildNodes()!;;
+    let childNodeList: NodeList = node.getChildNodes()!;;
     
 
-    var emailConfigurationNode: Node = DomSearchHelper.getNode(UserEmailConfigurationData.NAME, childNodeList)!;;
+    let emailConfigurationNode: Node = DomSearchHelper.getNode(UserEmailConfigurationData.NAME, childNodeList)!;;
     
 
-    var userEmailConfigurationView: UserEmailConfigurationView = new UserEmailConfigurationView(emailConfigurationNode);;
+    let userEmailConfigurationView: UserEmailConfigurationView = new UserEmailConfigurationView(emailConfigurationNode);;
     
 
-    var userEmailConfigurationInterface: UserEmailConfigurationInterface = userEmailConfigurationView!.getEmailConfigurationInterface() as UserEmailConfigurationInterface;;
+    let userEmailConfigurationInterface: UserEmailConfigurationInterface = userEmailConfigurationView!.getEmailConfigurationInterface() as UserEmailConfigurationInterface;;
     
 this.userConfigurationInterface!.setUserEmailConfigurationInterface(userEmailConfigurationInterface);
     
 
-    var timeCreatedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.TIMECREATED, childNodeList)!;;
+    let timeCreatedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.TIMECREATED, childNodeList)!;;
     
 
-    var timeCreatedView: TimeCreatedView = new TimeCreatedView(timeCreatedNode);;
+    let timeCreatedView: TimeCreatedView = new TimeCreatedView(timeCreatedNode);;
     
 this.userConfigurationInterface!.setTimeCreated(timeCreatedView!.getTimeCreated());
     
 
-    var timeLastModifiedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.LASTMODIFIED, childNodeList)!;;
+    let timeLastModifiedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.LASTMODIFIED, childNodeList)!;;
     
 
-    var timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(timeLastModifiedNode);;
+    let timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(timeLastModifiedNode);;
     
 this.userConfigurationInterface!.setTimeLastModified(timeLastModifiedView!.getTimeLastModified());
     
@@ -147,20 +147,20 @@ public constructor (userConfigurationInterface: UserConfigurationInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(UserConfigurationData.NAME)!;;
+    let node: Node = document.createElement(UserConfigurationData.NAME)!;;
     
 
-    var userEmailConfigurationView: UserEmailConfigurationView = new UserEmailConfigurationView(this.userConfigurationInterface!.getUserEmailConfigurationInterface());;
+    let userEmailConfigurationView: UserEmailConfigurationView = new UserEmailConfigurationView(this.userConfigurationInterface!.getUserEmailConfigurationInterface());;
     
 node.appendChild(userEmailConfigurationView!.toXmlNode(document));
     
 
-    var timeCreatedView: TimeCreatedView = new TimeCreatedView(this.userConfigurationInterface!.getTimeCreated());;
+    let timeCreatedView: TimeCreatedView = new TimeCreatedView(this.userConfigurationInterface!.getTimeCreated());;
     
 node.appendChild(timeCreatedView!.toXmlNode(document));
     
 
-    var timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(this.userConfigurationInterface!.getTimeLastModified());;
+    let timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(this.userConfigurationInterface!.getTimeLastModified());;
     
 node.appendChild(timeLastModifiedView!.toXmlNode(document));
     
@@ -174,6 +174,4 @@ node.appendChild(timeLastModifiedView!.toXmlNode(document));
 
 
 }
-
-
 

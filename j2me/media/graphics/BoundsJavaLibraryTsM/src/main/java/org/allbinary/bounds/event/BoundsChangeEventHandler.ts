@@ -77,7 +77,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var boundsChangeEventListener: BoundsChangeEventListener = eventListenerInterface as BoundsChangeEventListener;;
+    let boundsChangeEventListener: BoundsChangeEventListener = eventListenerInterface as BoundsChangeEventListener;;
     
 boundsChangeEventListener!.onBoundsChangeEvent(eventObject as BoundsChangeEvent);
     
@@ -85,6 +85,4 @@ boundsChangeEventListener!.onBoundsChangeEvent(eventObject as BoundsChangeEvent)
 
 
 }
-
-
 

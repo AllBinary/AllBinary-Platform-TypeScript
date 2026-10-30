@@ -35,9 +35,11 @@ import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -123,10 +125,10 @@ this.scoreString= (this.score).toString();
             
     public getAsBytes(): number[]{
 
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+    let byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);;
+    let outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);;
     
 outputStream!.writeUTF(this.getName());
     
@@ -169,7 +171,7 @@ this.name= name;
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
 
@@ -181,6 +183,4 @@ this.name= name;
 
 
 }
-
-
 

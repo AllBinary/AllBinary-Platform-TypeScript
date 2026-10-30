@@ -28,6 +28,7 @@
         
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
 
 import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
 //not GWT import const ByteArrayInputStream
@@ -65,15 +66,19 @@ import { LineListener } from '../../../../javax/sound/sampled/LineListener.js';
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { MusicThreadPool } from '../../../../org/allbinary/thread/MusicThreadPool.js';
 //not GWT import const MusicThreadPool
@@ -118,14 +123,13 @@ public constructor (inputStream: InputStream){
 
             super();
         
-    var audioInputStream: AudioInputStream = new AudioInputStream(new ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), NullAudioFormat.NULL_AUDIO_FORMAT, 0);;
+    let audioInputStream: AudioInputStream = new AudioInputStream(new ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), NullAudioFormat.NULL_AUDIO_FORMAT, 0);;
     
 
-    var clip: Clip = new NullClip();;
+    let clip: Clip = new NullClip();;
     
 
-        try {
-            audioInputStream= AudioSystem.getAudioInputStream(inputStream);
+ try { audioInputStream= AudioSystem.getAudioInputStream(inputStream);
     
 clip= this.create(audioInputStream);
     
@@ -145,14 +149,17 @@ clip= this.create(audioInputStream);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
     
-}
 
+ }
+   }
+ 
 this.audioInputStream= audioInputStream;
     
 this.clip= clip;
@@ -166,17 +173,19 @@ MusicThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 
     public run(){
 
-        try {
-            close2();
+ try { close2();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -216,17 +225,19 @@ MusicThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 
     public run(){
 
-        try {
-            start2();
+ try { start2();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -253,7 +264,7 @@ super.start();
             
     create(audioInputStream: AudioInputStream): Clip{
 
-    var clip: Clip = AudioSystem.getClip()!;;
+    let clip: Clip = AudioSystem.getClip()!;;
     
 clip.addLineListener(this);
     
@@ -277,17 +288,19 @@ MusicThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 
     public run(){
 
-        try {
-            stop2();
+ try { stop2();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -334,7 +347,7 @@ this.setVolumeF((leftVolume) /100.0);
 
     getVolume(): number{
 
-    var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;;
+    let masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;;
     
 
 
@@ -359,7 +372,7 @@ this.setVolumeF((leftVolume) /100.0);
                                     }
                                 
 
-    var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;;
+    let masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;;
     
 masterGainFloatControl!.setValue(20 *Math.log10(volume));
     
@@ -378,21 +391,21 @@ masterGainFloatControl!.setValue(20 *Math.log10(volume));
 
     public update(event: LineEvent){
 
-                        if(event.getType()! === LineEvent.Type.STOP)
+                        if((event.getType() === LineEvent.Type.STOP))
                         
                                     {
                                     
-    var size: number = this.listenersList!.size()!;;
+    let size: number = this.listenersList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var listener: PlayerListener = this.listenersList!.get(size) as PlayerListener;;
+    let listener: PlayerListener = this.listenersList!.get(size) as PlayerListener;;
     
 listener.playerUpdate(this, PlayerListener.END_OF_MEDIA, 
                             null);
@@ -406,6 +419,4 @@ listener.playerUpdate(this, PlayerListener.END_OF_MEDIA,
 
 
 }
-
-
 

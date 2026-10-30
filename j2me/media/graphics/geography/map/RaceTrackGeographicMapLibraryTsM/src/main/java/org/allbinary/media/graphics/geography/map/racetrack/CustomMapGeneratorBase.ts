@@ -24,6 +24,7 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -78,6 +79,4 @@ export class CustomMapGeneratorBase
 
 
 }
-
-
 

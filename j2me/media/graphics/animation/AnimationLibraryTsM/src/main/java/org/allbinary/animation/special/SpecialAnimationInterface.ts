@@ -43,11 +43,9 @@ import { IndexedAnimationInterface } from '../../../../org/allbinary/animation/I
 export interface SpecialAnimationInterface extends IndexedAnimationInterface {
         
 
-    setLastFrame()
+    setLastFrame(): void;
 
-    isComplete(): boolean
+    isComplete(): boolean;
 
 }
-
-
 

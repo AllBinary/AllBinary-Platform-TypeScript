@@ -72,12 +72,19 @@ public constructor (){
             super();
         }
 
-
+getInstance(...args: any[]): any {
+   
+    if (args.length === 2) return this.getInstance$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(LicensingException.constructor)
             
-    public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
+    public getInstance$overload1(hashMap: HashMap<any, any>, pageContext: PageContext): any{
 
-    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
+    let abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
     
 
 
@@ -90,7 +97,7 @@ public constructor (){
 
                 //@Throws(LicensingException.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface): any{
+    public getInstance$overload2(abeClientInformation: AbeClientInformationInterface): any{
 
 
 
@@ -101,6 +108,4 @@ public constructor (){
 
 
 }
-
-
 

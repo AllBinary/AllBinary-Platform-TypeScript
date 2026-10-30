@@ -29,6 +29,7 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -58,17 +59,17 @@ export class AllAnalogControllerVisitor extends AnalogControllerVisitor {
 
     public process(allbinaryLayerManager: AllBinaryLayerManager, analogLocationInputProcessor: AnalogLocationInputProcessor){
 
-    var analogLocationInputList: BasicArrayList = AnalogLocationInputFactory.getInstance()!.getList()!;;
+    let analogLocationInputList: BasicArrayList = AnalogLocationInputFactory.getInstance()!.getList()!;;
     
 
-    var analogLocationInput: AnalogLocationInput;;
+    let analogLocationInput: AnalogLocationInput;;
     
 
 
 
 
                         for (
-    var index: number = analogLocationInputList!.size() -1;index >= 0; index--)
+    let index: number = analogLocationInputList!.size() -1;index >= 0; index--)
         {
 analogLocationInput= analogLocationInputList!.get(index) as AnalogLocationInput;
     
@@ -80,6 +81,4 @@ analogLocationInputProcessor!.process(allbinaryLayerManager, analogLocationInput
 
 
 }
-
-
 

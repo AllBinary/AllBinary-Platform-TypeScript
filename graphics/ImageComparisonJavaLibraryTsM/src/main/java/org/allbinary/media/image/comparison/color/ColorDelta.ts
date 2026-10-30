@@ -24,15 +24,18 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
 //not GWT import const CacheableInterface
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -58,7 +61,7 @@ export class ColorDelta
          implements CacheableInterface {
         
 
-    public static getKey(rgb1: number, rgb2: number): any{
+    public static getKey$overload2(rgb1: number, rgb2: number): any{
 
 
 
@@ -85,8 +88,15 @@ this.key= ColorDelta.getKey(rgb1, rgb2);
     
 }
 
-
-    public getKey(): any{
+getKey(...args: any[]): any {
+   
+    if (args.length === 0) return this.getKey$overload1();
+   
+    if (args.length === 2 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.getKey$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getKey'); }
+  
+    public getKey$overload1(): any{
 
 
 
@@ -139,6 +149,4 @@ this.rgb2= rgb2;
 
 
 }
-
-
 

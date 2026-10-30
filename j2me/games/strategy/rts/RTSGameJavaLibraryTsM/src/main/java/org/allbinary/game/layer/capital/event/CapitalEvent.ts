@@ -19,6 +19,7 @@
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -47,7 +48,7 @@ export class CapitalEvent extends AllBinaryEventObject {
 
     private value: number= 0;
 
-public constructor (anyType: any = {}){
+public constructor (anyType: any){
             super(anyType);
                     
 
@@ -58,7 +59,7 @@ public constructor (anyType: any = {}){
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("CapitalEvent: Value: \n");
     
@@ -90,6 +91,4 @@ this.value= value;
 
 
 }
-
-
 

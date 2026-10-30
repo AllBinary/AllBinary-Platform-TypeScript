@@ -25,9 +25,11 @@ import { AnalogLocationInputFactory } from '../../../../org/allbinary/game/input
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -87,7 +89,7 @@ private constructor (){
 
 
                         for (
-    var index: number = this.deviceIdToplayerId!.length -1;index >= 0; index--)
+    let index: number = this.deviceIdToplayerId!.length -1;index >= 0; index--)
         {
 this.deviceIdToplayerId[index]=  -1;
     
@@ -108,14 +110,14 @@ this.deviceIdToplayerId[index]=  -1;
 
     public getPlayerForDevice(deviceId: number): number{
 
-    var index: number= 0;;
+    let index: number= 0;;
     
 
                         if(deviceId < this.MAX_FAST_DEVICEID)
                         
                                     {
                                     
-    var playerInputId: number = this.deviceIdToplayerId[deviceId]!;;
+    let playerInputId: number = this.deviceIdToplayerId[deviceId]!;;
     
 
                         if(playerInputId !=  -1)
@@ -195,14 +197,14 @@ this.logUtil!.putF(new StringMaker().append("Added DeviceId: ")!.appendint(devic
 
     public getTotalDevicesInPlay(): number{
 
-    var total: number = 0;;
+    let total: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = this.totalDevicesMapped -1;index >= 0; index--)
+    let index: number = this.totalDevicesMapped -1;index >= 0; index--)
         {
 
                         if(this.playersInPlay[index] == true)
@@ -261,6 +263,4 @@ this.playersInPlay[playerInputId]= false;
 
 
 }
-
-
 

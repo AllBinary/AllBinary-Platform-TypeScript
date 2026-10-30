@@ -42,15 +42,19 @@ import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModD
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -140,21 +144,20 @@ this.map= map;
 
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var node: Node = document.createElement(RequestData.REQUEST)!;;
+ try { 
+    let node: Node = document.createElement(RequestData.REQUEST)!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var keys: Set = this.map.keySet()!;;
+    let keys: Set = this.map.keySet()!;;
     
 
-    var keyArray: any[] = keys.toArray()!;;
+    let keyArray: any[] = keys.toArray()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
@@ -162,13 +165,13 @@ this.map= map;
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var key: string = keyArray[i]! as string;;
+    let key: string = keyArray[i]! as string;;
     
 
-    var values: string[] = this.map.get(key) as string[];;
+    let values: string[] = this.map.get(key) as string[];;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -192,10 +195,11 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, RequestData.PARAMET
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode(document)", e);
     
 
@@ -204,8 +208,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -213,33 +219,33 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
             
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var keys: Set = this.map.keySet()!;;
+    let keys: Set = this.map.keySet()!;;
     
 
-    var keyArray: any[] = keys.toArray()!;;
+    let keyArray: any[] = keys.toArray()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var key: string = keyArray[i]! as string;;
+    let key: string = keyArray[i]! as string;;
     
 
-    var values: string[] = this.map.get(key) as string[];;
+    let values: string[] = this.map.get(key) as string[];;
     
 hashMap!.put(key.toCharArray().slice(0, ).join(''), .toCharArray());
     
@@ -267,6 +273,4 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "toHashMap()");
 
 
 }
-
-
 

@@ -30,6 +30,7 @@ import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -73,7 +74,7 @@ protected constructor (HIGH_SCORE_COMMANDS: Command[]){
 
 
                         for (
-    var index: number = this.HIGH_SCORE_COMMANDS.length -1;index >= 0; index--)
+    let index: number = this.HIGH_SCORE_COMMANDS.length -1;index >= 0; index--)
         {
 
                         if(command == this.HIGH_SCORE_COMMANDS[index])
@@ -107,7 +108,7 @@ protected constructor (HIGH_SCORE_COMMANDS: Command[]){
 
 
                         for (
-    var index: number = this.HIGH_SCORE_COMMANDS.length -1;index >= 0; index--)
+    let index: number = this.HIGH_SCORE_COMMANDS.length -1;index >= 0; index--)
         {
 
                         if(command == this.HIGH_SCORE_COMMANDS[index])
@@ -133,6 +134,4 @@ protected constructor (HIGH_SCORE_COMMANDS: Command[]){
 
 
 }
-
-
 

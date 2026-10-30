@@ -29,6 +29,7 @@ import { Command } from '../../../javax/microedition/lcdui/Command.js';
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 import { TsUtil } from '../../../org/allbinary/TsUtil.js';
 //not GWT import const TsUtil
@@ -85,19 +86,19 @@ export class NotificationUtil
 
     public notify(command: Command, resource: string, message: string){
 
-    var context: Context = ResourceUtil.getInstance()!.getContext()!;;
+    let context: Context = ResourceUtil.getInstance()!.getContext()!;;
     
 
-    var intent: Intent = CommandUriAction.getInstance()!.getIntent(command)!;;
+    let intent: Intent = CommandUriAction.getInstance()!.getIntent(command)!;;
     
 
-    var integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;;
+    let integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;;
     
 
-    var notification: Notification = new Notification(integer.intValue(), message, Date.now());;
+    let notification: Notification = new Notification(integer.intValue(), message, Date.now());;
     
 
-    var pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, 0)!;;
+    let pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, 0)!;;
     
 notification.setLatestEventInfo(context, command.getLabel(), message, pendingIntent);
     
@@ -107,6 +108,4 @@ this.notificationManager!.notify(TsUtil.getInstance()!.hashCode(command), notifi
 
 
 }
-
-
 

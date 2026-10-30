@@ -46,13 +46,11 @@ import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
 export interface TimeBaseInterface {
         
 
-    getTimeBase(): TimeBase
+    getTimeBase(): TimeBase;
 
                 //@Throws(MediaException.constructor)
             
-    setTimeBase(timeBase: TimeBase)
+    setTimeBase(timeBase: TimeBase): void;
 
 }
-
-
 

@@ -36,6 +36,7 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -80,19 +81,18 @@ this.setTagRequestHelperFactory(new PaymentGatewayHelperFactory());
             
     public process(): string{
 
-        try {
-            
-    var anyType: any = new PaymentGatewayHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
+ try { 
+    let anyType: any = new PaymentGatewayHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;;
+    let helperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
+    let method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -101,10 +101,11 @@ this.setTagRequestHelperFactory(new PaymentGatewayHelperFactory());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 this.logUtil!.put("LicensingException", this, this.commonStrings!.PROCESS, e);
     
 
@@ -112,11 +113,11 @@ this.logUtil!.put("LicensingException", this, this.commonStrings!.PROCESS, e);
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -131,8 +132,10 @@ this.logUtil!.put("LicensingException", this, this.commonStrings!.PROCESS, e);
 
                             throw e;
                     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -140,8 +143,7 @@ this.logUtil!.put("LicensingException", this, this.commonStrings!.PROCESS, e);
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(this.isEnabled())
                         
                                     {
@@ -150,7 +152,7 @@ this.logUtil!.put("LicensingException", this, this.commonStrings!.PROCESS, e);
                         
                                     {
                                     
-    var output: string = this.process()!;;
+    let output: string = this.process()!;;
     
 
 
@@ -205,10 +207,11 @@ this.logUtil!.put("LicensingException", this, this.commonStrings!.PROCESS, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -217,12 +220,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

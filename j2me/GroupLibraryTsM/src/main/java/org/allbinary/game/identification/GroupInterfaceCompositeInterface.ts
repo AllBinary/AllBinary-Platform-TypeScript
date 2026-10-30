@@ -42,9 +42,7 @@
 export interface GroupInterfaceCompositeInterface {
         
 
-    getGroupInterface(): Group[]
+    getGroupInterface(): Group[];
 
 }
-
-
 

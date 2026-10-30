@@ -40,9 +40,7 @@
 export interface ResizableListenerInterface {
         
 
-    onResizable(isResizable: boolean)
+    onResizable(isResizable: boolean): void;
 
 }
-
-
 

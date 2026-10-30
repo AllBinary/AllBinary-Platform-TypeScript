@@ -43,9 +43,7 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 export interface UpdateMyFontInterface {
         
 
-    public updateMeasurement(graphics: Graphics)
+    public updateMeasurement(graphics: Graphics): void;
 
 }
-
-
 

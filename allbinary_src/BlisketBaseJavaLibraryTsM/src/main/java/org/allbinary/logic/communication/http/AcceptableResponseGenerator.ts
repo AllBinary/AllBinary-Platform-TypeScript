@@ -27,9 +27,11 @@ import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServle
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -81,18 +83,17 @@ private constructor (){
             
     public get(httpServletRequest: HttpServletRequest): string{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-    var acceptableResponseUtil: AcceptableResponseUtil = AcceptableResponseUtil.getInstance()!;;
+ try { 
+    let acceptableResponseUtil: AcceptableResponseUtil = AcceptableResponseUtil.getInstance()!;;
     
 
-    var acceptable: string = httpServletRequest!.getHeader("accept")!;;
+    let acceptable: string = httpServletRequest!.getHeader("accept")!;;
     
 
-    var result: string = acceptableResponseUtil!.getTagName(0)!;;
+    let result: string = acceptableResponseUtil!.getTagName(0)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTP))
@@ -110,14 +111,14 @@ private constructor (){
                         
                                     {
                                     
-    var size: number = acceptableResponseUtil!.size()!;;
+    let size: number = acceptableResponseUtil!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(acceptable.compareTo(acceptableResponseUtil!.get(index)) == 0)
@@ -148,10 +149,11 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
                         
@@ -166,12 +168,12 @@ private constructor (){
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

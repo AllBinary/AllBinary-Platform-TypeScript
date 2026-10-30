@@ -64,13 +64,13 @@ export class AngleIncrementInfoFactory
 
     public getAt(angleIncrement: number): AngleIncrementInfo{
 
-    var halfAngleIncrement: number = (globalThis.Math.trunc(angleIncrement)>>1);;
+    let halfAngleIncrement: number = (globalThis.Math.trunc(angleIncrement)>>1);;
     
 
-    var angleIncrementInfo: AngleIncrementInfo;;
+    let angleIncrementInfo: AngleIncrementInfo;;
     
 
-    var angleIncrementInfoCanBeNull: AngleIncrementInfo = this.angleIncrementInfo[halfAngleIncrement];;
+    let angleIncrementInfoCanBeNull: AngleIncrementInfo = this.angleIncrementInfo[halfAngleIncrement];;
     
 
                         if(angleIncrementInfoCanBeNull == 
@@ -107,6 +107,4 @@ this.angleIncrementInfo[halfAngleIncrement]= angleIncrementInfo;
 
 
 }
-
-
 

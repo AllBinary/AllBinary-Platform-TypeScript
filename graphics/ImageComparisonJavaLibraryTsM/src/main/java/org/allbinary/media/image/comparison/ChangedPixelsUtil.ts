@@ -29,9 +29,11 @@ import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
 //not GWT import const PoolInterface
@@ -91,28 +93,28 @@ export class ChangedPixelsUtil
             
     public static generateBufferedImageChacheables(imageComparisonInfo: ImageComparisonResult): BufferedImageCacheable[]{
 
-    var bufferedImageCacheables: BufferedImageCacheable[];;
+    let bufferedImageCacheables: BufferedImageCacheable[];;
     
 
-    var originalBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[0]!;;
+    let originalBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[0]!;;
     
 bufferedImageCacheables= new Array(2);
     
 
-    var bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.getInstance(imageComparisonInfo!.imageWidth, imageComparisonInfo!.imageHeight, originalBufferedImage!.getType())!;;
+    let bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.getInstance(imageComparisonInfo!.imageWidth, imageComparisonInfo!.imageHeight, originalBufferedImage!.getType())!;;
     
 
-    var poolInterface: PoolInterface = BufferedImagePoolSingleton.getInstance()!;;
+    let poolInterface: PoolInterface = BufferedImagePoolSingleton.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < bufferedImageCacheables!.length; index++)
+    let index: number = 0;index < bufferedImageCacheables!.length; index++)
         {
 
-    var bufferedImageCacheable: BufferedImageCacheable = poolInterface!.remove(bufferedImageInfo) as BufferedImageCacheable;;
+    let bufferedImageCacheable: BufferedImageCacheable = poolInterface!.remove(bufferedImageInfo) as BufferedImageCacheable;;
     
 bufferedImageCacheables[index]= bufferedImageCacheable;
     
@@ -121,20 +123,20 @@ bufferedImageCacheables[index]!.getBufferedImage()!.setRGB(ChangedPixelsUtil.STA
 }
 
 
-    var vector: BasicArrayList = imageComparisonInfo!.getNonMatchingPixelVector()!;;
+    let vector: BasicArrayList = imageComparisonInfo!.getNonMatchingPixelVector()!;;
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var pixelDelta: PixelDelta = vector.get(index) as PixelDelta;;
+    let pixelDelta: PixelDelta = vector.get(index) as PixelDelta;;
     
 
                         if(pixelDelta!.getColorDelta() == 
@@ -171,6 +173,4 @@ private constructor (){
 
 
 }
-
-
 

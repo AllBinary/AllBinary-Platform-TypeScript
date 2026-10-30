@@ -70,5 +70,3 @@ ScreenRepaintUtil.repaint(this.displayable);
 
 }
 
-
-

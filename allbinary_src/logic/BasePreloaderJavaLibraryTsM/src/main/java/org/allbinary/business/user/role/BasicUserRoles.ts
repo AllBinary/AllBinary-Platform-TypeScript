@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -72,20 +74,20 @@ export class BasicUserRoles
             
     public getRole(role: string): BasicUserRole{
 
-    var roleVector: BasicArrayList = this.getAll()!;;
+    let roleVector: BasicArrayList = this.getAll()!;;
     
 
-    var size: number = roleVector!.size()!;;
+    let size: number = roleVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var userRole: BasicUserRole = roleVector!.get(index) as BasicUserRole;;
+    let userRole: BasicUserRole = roleVector!.get(index) as BasicUserRole;;
     
 
                         if(role.compareTo(userRole!.toString()) == 0)
@@ -121,6 +123,4 @@ export class BasicUserRoles
 
 
 }
-
-
 

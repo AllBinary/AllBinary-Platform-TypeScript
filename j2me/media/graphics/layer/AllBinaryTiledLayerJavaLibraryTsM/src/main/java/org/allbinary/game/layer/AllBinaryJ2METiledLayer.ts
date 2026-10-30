@@ -31,9 +31,11 @@ import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -88,54 +90,54 @@ this.tiledLayerP!.paint(graphics);
 
     public paintDebug(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 graphics.setFont(this.font2);
     
 graphics.setColor(this.debugColor);
     
 
-    var x: number = this.tiledLayerP!.getX()!;;
+    let x: number = this.tiledLayerP!.getX()!;;
     
 
-    var y: number = this.tiledLayerP!.getY()!;;
+    let y: number = this.tiledLayerP!.getY()!;;
     
 
-    var firstColumn: number = 0;;
+    let firstColumn: number = 0;;
     
 
-    var firstRow: number = 0;;
+    let firstRow: number = 0;;
     
 
-    var totalColumns: number = this.tiledLayerP!.getColumns()!;;
+    let totalColumns: number = this.tiledLayerP!.getColumns()!;;
     
 
-    var totalRows: number = this.tiledLayerP!.getRows()!;;
+    let totalRows: number = this.tiledLayerP!.getRows()!;;
     
 
-    var x0: number = x;;
+    let x0: number = x;;
     
 
-    var tile: number = 0;;
+    let tile: number = 0;;
     
 
-    var tileHeight: number = this.tiledLayerP!.getCellHeight()!;;
+    let tileHeight: number = this.tiledLayerP!.getCellHeight()!;;
     
 
-    var tileWidth: number = this.tiledLayerP!.getCellWidth()!;;
+    let tileWidth: number = this.tiledLayerP!.getCellWidth()!;;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var rowIndex: number = firstRow;rowIndex < totalRows; rowIndex++)
+    let rowIndex: number = firstRow;rowIndex < totalRows; rowIndex++)
         {
 x= x0;
     
@@ -144,7 +146,7 @@ x= x0;
 
 
                         for (
-    var columnIndex: number = firstColumn;columnIndex < totalColumns; columnIndex++)
+    let columnIndex: number = firstColumn;columnIndex < totalColumns; columnIndex++)
         {
 tile= this.tiledLayerP!.getCell(columnIndex, rowIndex);
     
@@ -276,6 +278,4 @@ this.tiledLayerP!.setCell(col, row, index);
 
 
 }
-
-
 

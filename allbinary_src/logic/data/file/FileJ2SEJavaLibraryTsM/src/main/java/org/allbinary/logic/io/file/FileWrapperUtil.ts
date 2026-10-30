@@ -27,6 +27,7 @@ import { File } from '../../../../../java/io/File.js';
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 
 
@@ -56,16 +57,15 @@ export class FileWrapperUtil
 
     public static wrapFiles(files: any[]): AbFile[]{
 
-        try {
-            
-    var abFileArray: AbFile[] = new Array(files.length);;
+ try { 
+    let abFileArray: AbFile[] = new Array(files.length);;
     
 
 
 
 
                         for (
-    var index: number = files.length -1;index >= 0; index--)
+    let index: number = files.length -1;index >= 0; index--)
         {
 abFileArray[index]= new AbFile(files[index]! as File);
     
@@ -77,10 +77,11 @@ abFileArray[index]= new AbFile(files[index]! as File);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return abFileArray;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putSE("Exception Wrapping Files", "FileWrapperUtil", "wrapFiles", e);
     
 
@@ -89,24 +90,26 @@ PreLogUtil.putSE("Exception Wrapping Files", "FileWrapperUtil", "wrapFiles", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return [];
     
-}
 
+ }
+   }
+ 
 }
 
 
     public static wrapFile(file: File): AbFile{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new AbFile(file);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putSE("Exception Wrapping File", "FileWrapperUtil", "wrapFile", e);
     
 
@@ -115,12 +118,12 @@ PreLogUtil.putSE("Exception Wrapping File", "FileWrapperUtil", "wrapFile", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return AbFile.NULL_FILE;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

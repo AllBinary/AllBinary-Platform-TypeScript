@@ -45,33 +45,31 @@ import { awt } from '../../../../../java/awt.js';
 export interface ColorRangeInterface {
         
 
-    getMinRed(): number
+    getMinRed(): number;
 
-    setMinRed(minRed: number)
+    setMinRed(minRed: number): void;
 
-    getMaxRed(): number
+    getMaxRed(): number;
 
-    setMaxRed(maxRed: number)
+    setMaxRed(maxRed: number): void;
 
-    getMinGreen(): number
+    getMinGreen(): number;
 
-    setMinGreen(minGreen: number)
+    setMinGreen(minGreen: number): void;
 
-    getMaxGreen(): number
+    getMaxGreen(): number;
 
-    setMaxGreen(maxGreen: number)
+    setMaxGreen(maxGreen: number): void;
 
-    getMinBlue(): number
+    getMinBlue(): number;
 
-    setMinBlue(minBlue: number)
+    setMinBlue(minBlue: number): void;
 
-    getMaxBlue(): number
+    getMaxBlue(): number;
 
-    setMaxBlue(maxBlue: number)
+    setMaxBlue(maxBlue: number): void;
 
-    isInRange(color: Color): boolean
+    isInRange(color: Color): boolean;
 
 }
-
-
 

@@ -28,9 +28,11 @@ import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { SWT } from '../../../../org/eclipse/swt/SWT.js';
 //not GWT import const SWT
@@ -171,13 +173,13 @@ private constructor (){
 
     public getRotatedImages(bufferedImage: org.eclipse.swt.graphics.Image, numberOfFrames: number, totalAngle: number): org.eclipse.swt.graphics.Image[]{
 
-    var bufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(numberOfFrames);;
+    let bufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(numberOfFrames);;
     
 
-    var angle: number= 0;;
+    let angle: number= 0;;
     
 
-    var size: number = bufferedImageArray!.length
+    let size: number = bufferedImageArray!.length
                 ;;
     
 
@@ -185,7 +187,7 @@ private constructor (){
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 angle= (globalThis.Math.trunc(totalAngle /size)) *index;
     
@@ -204,13 +206,13 @@ bufferedImageArray[index]= this.getRotatedImage(bufferedImage, angle);
 
     public createSpriteImage(bufferedImageArray: org.eclipse.swt.graphics.Image[]): org.eclipse.swt.graphics.Image{
 
-    var columns: number = 9;;
+    let columns: number = 9;;
     
 
-    var rows: number = 0;;
+    let rows: number = 0;;
     
 
-    var size: number = bufferedImageArray!.length
+    let size: number = bufferedImageArray!.length
                 ;;
     
 
@@ -234,36 +236,36 @@ rows= (globalThis.Math.trunc(size /columns));
                                     }
                                 
 
-    var firstBufferedImage: org.eclipse.swt.graphics.Image = bufferedImageArray[0]!;;
+    let firstBufferedImage: org.eclipse.swt.graphics.Image = bufferedImageArray[0]!;;
     
 
-    var imageData: ImageData = firstBufferedImage!.getImageData()!;;
+    let imageData: ImageData = firstBufferedImage!.getImageData()!;;
     
 
-    var bufferedImage: org.eclipse.swt.graphics.Image = this.imageUtil!.create(imageData!.width *columns, imageData!.height *rows)!;;
+    let bufferedImage: org.eclipse.swt.graphics.Image = this.imageUtil!.create(imageData!.width *columns, imageData!.height *rows)!;;
     
 
-    var gc: GC = new GC(bufferedImage);;
+    let gc: GC = new GC(bufferedImage);;
     
 gc.setAntialias(SWT.ON);
     
 gc.setInterpolation(SWT.HIGH);
     
 
-    var columnIndex: number = 0;;
+    let columnIndex: number = 0;;
     
 
-    var rowIndex: number = 0;;
+    let rowIndex: number = 0;;
     
 
-    var nextBufferedImage: org.eclipse.swt.graphics.Image;;
+    let nextBufferedImage: org.eclipse.swt.graphics.Image;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(globalThis.Math.trunc(index /9) != 0 && index % 9 == 0)
@@ -298,6 +300,4 @@ gc.dispose();
 
 
 }
-
-
 

@@ -53,53 +53,51 @@ export interface SpecialGameInputInterface extends PaintableInterface {
 
                 //@Throws(Exception.constructor)
             
-    up()
+    up(): void;
 
                 //@Throws(Exception.constructor)
             
-    down()
+    down(): void;
 
                 //@Throws(Exception.constructor)
             
-    right()
+    right(): void;
 
                 //@Throws(Exception.constructor)
             
-    left()
+    left(): void;
 
                 //@Throws(Exception.constructor)
             
-    strafeLeft()
+    strafeLeft(): void;
 
                 //@Throws(Exception.constructor)
             
-    strafeRight()
+    strafeRight(): void;
 
                 //@Throws(Exception.constructor)
             
-    fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
+    fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent): void;
 
                 //@Throws(Exception.constructor)
             
-    special1(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
+    special1(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent): void;
 
                 //@Throws(Exception.constructor)
             
-    special2(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
+    special2(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent): void;
 
                 //@Throws(Exception.constructor)
             
-    special3(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
+    special3(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent): void;
 
                 //@Throws(Exception.constructor)
             
-    special4(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
+    special4(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent): void;
 
                 //@Throws(Exception.constructor)
             
-    special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
+    special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent): void;
 
 }
-
-
 

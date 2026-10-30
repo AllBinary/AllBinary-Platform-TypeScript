@@ -27,6 +27,7 @@ import { InputStream } from '../../../../java/io/InputStream.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
@@ -77,10 +78,10 @@ export class CloudStreamUtil
             
     public getFile(file: AbFile): InputStream{
 
-    var inputStream: InputStream = new AbFileInputStream(file);;
+    let inputStream: InputStream = new AbFileInputStream(file);;
     
 
-    var available: number = inputStream!.available()!;;
+    let available: number = inputStream!.available()!;;
     
 
                         if(available > 0)
@@ -111,10 +112,10 @@ export class CloudStreamUtil
             
     public getFileAnyWhere(file: AbFile): InputStream{
 
-    var inputStream: InputStream = new AbFileLocalInputStream(file);;
+    let inputStream: InputStream = new AbFileLocalInputStream(file);;
     
 
-    var available: number = inputStream!.available()!;;
+    let available: number = inputStream!.available()!;;
     
 
                         if(available > 0)
@@ -169,10 +170,10 @@ available= inputStream!.available();
             
     public getFileLocal(file: AbFile): InputStream{
 
-    var inputStream: InputStream = new AbFileLocalInputStream(file);;
+    let inputStream: InputStream = new AbFileLocalInputStream(file);;
     
 
-    var available: number = inputStream!.available()!;;
+    let available: number = inputStream!.available()!;;
     
 
                         if(available > 0)
@@ -200,6 +201,4 @@ available= inputStream!.available();
 
 
 }
-
-
 

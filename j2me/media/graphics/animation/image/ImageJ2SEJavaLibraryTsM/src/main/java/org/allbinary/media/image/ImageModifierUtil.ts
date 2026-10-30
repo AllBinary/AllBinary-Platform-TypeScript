@@ -42,9 +42,11 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -96,54 +98,54 @@ export class ImageModifierUtil
 
     public setColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
 
-    var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;;
+    let newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;;
     
 
-    var r: number = basicColor!.red;;
+    let r: number = basicColor!.red;;
     
 
-    var g: number = basicColor!.green;;
+    let g: number = basicColor!.green;;
     
 
-    var b: number = basicColor!.blue;;
+    let b: number = basicColor!.blue;;
     
 
-    var width: number = image.getWidth()!;;
+    let width: number = image.getWidth()!;;
     
 
-    var height: number = image.getHeight()!;;
+    let height: number = image.getHeight()!;;
     
 
-    var colorModel: ColorModel;;
+    let colorModel: ColorModel;;
     
 
-    var dataElements: any;;
+    let dataElements: any;;
     
 
-    var ax: number= 0;;
+    let ax: number= 0;;
     
 
-    var rx: number= 0;;
+    let rx: number= 0;;
     
 
-    var gx: number= 0;;
+    let gx: number= 0;;
     
 
-    var bx: number= 0;;
+    let bx: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < width; index++)
+    let index: number = 0;index < width; index++)
         {
 
 
 
 
                         for (
-    var index2: number = 0;index2 < height; index2++)
+    let index2: number = 0;index2 < height; index2++)
         {
 colorModel= newBufferedImage!.getColorModel();
     
@@ -176,57 +178,57 @@ bx= colorModel!.getBlue(dataElements);
 
     public changeColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
 
-    var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;;
+    let newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;;
     
 
-    var MAX: number = 255;;
+    let MAX: number = 255;;
     
 
-    var r: number = (basicColor!.red) /MAX;;
+    let r: number = (basicColor!.red) /MAX;;
     
 
-    var g: number = (basicColor!.green) /MAX;;
+    let g: number = (basicColor!.green) /MAX;;
     
 
-    var b: number = (basicColor!.blue) /MAX;;
+    let b: number = (basicColor!.blue) /MAX;;
     
 
-    var width: number = image.getWidth()!;;
+    let width: number = image.getWidth()!;;
     
 
-    var height: number = image.getHeight()!;;
+    let height: number = image.getHeight()!;;
     
 
-    var colorModel: ColorModel;;
+    let colorModel: ColorModel;;
     
 
-    var dataElements: any;;
+    let dataElements: any;;
     
 
-    var ax: number= 0;;
+    let ax: number= 0;;
     
 
-    var rx: number= 0;;
+    let rx: number= 0;;
     
 
-    var gx: number= 0;;
+    let gx: number= 0;;
     
 
-    var bx: number= 0;;
+    let bx: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < width; index++)
+    let index: number = 0;index < width; index++)
         {
 
 
 
 
                         for (
-    var index2: number = 0;index2 < height; index2++)
+    let index2: number = 0;index2 < height; index2++)
         {
 colorModel= newBufferedImage!.getColorModel();
     
@@ -258,33 +260,33 @@ newBufferedImage!.setRGB(index, index2, (ax<<24) | (rx<<16) | (gx<<8) | (bx));
 
     public setAlpha(unusedOriginalImage: Image, image: Image, imageIndex: number, alphaInt: number){
 
-    var alpha: number = ((alphaInt) << 24 >> 24);;
+    let alpha: number = ((alphaInt) << 24 >> 24);;
     
 
-    var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;;
+    let newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;;
     
 
-    var width: number = image.getWidth()!;;
+    let width: number = image.getWidth()!;;
     
 
-    var height: number = image.getHeight()!;;
+    let height: number = image.getHeight()!;;
     
 
-    var raster: WritableRaster = newBufferedImage!.getAlphaRaster()!;;
+    let raster: WritableRaster = newBufferedImage!.getAlphaRaster()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < width; index++)
+    let index: number = 0;index < width; index++)
         {
 
 
 
 
                         for (
-    var index2: number = 0;index2 < height; index2++)
+    let index2: number = 0;index2 < height; index2++)
         {
 raster.getPixel(index, index2, this.colorArray);
     
@@ -301,28 +303,27 @@ raster.setPixel(index, index2, this.colorArray);
 
     public getImageArray(originalImageArray: Image[]): Image[]{
 
-        try {
-            
-    var newImageArray: Image[] = new Array(originalImageArray!.length);;
+ try { 
+    let newImageArray: Image[] = new Array(originalImageArray!.length);;
     
 
-    var size: number = newImageArray!.length
+    let size: number = newImageArray!.length
                 ;;
     
 
-    var originalImage: Image;;
+    let originalImage: Image;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 originalImage= originalImageArray[index]!;
     
 
-    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
+    let image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
     
 image.getGraphics()!.drawImage(originalImage, 0, 0, Anchor.TOP_LEFT);
     
@@ -336,12 +337,13 @@ newImageArray[index]= image;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return newImageArray;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "getImageArray", e);
     
@@ -351,8 +353,10 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "getImageArray", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return originalImageArray;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -365,6 +369,4 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "getImageArray", e);
 
 
 }
-
-
 

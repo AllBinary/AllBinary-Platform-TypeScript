@@ -27,6 +27,7 @@ import { Globals } from '../../../../../org/allbinary/globals/Globals.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -70,10 +71,10 @@ public constructor (){
         Globals.getInstance()!.init(this.constructor.namegetClassLoader(), TestRemoteLogUtil.PATH);
     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", new Exception("Pretend Exception"));
     
@@ -81,6 +82,4 @@ logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", new Exception("Prete
 
 
 }
-
-
 

@@ -68,5 +68,3 @@ export class NoMagneticFieldSensor extends AllBinaryMagneticFieldSensor implemen
 
 }
 
-
-

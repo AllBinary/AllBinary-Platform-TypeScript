@@ -43,6 +43,7 @@ import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/do
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CryptFileReader } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
@@ -111,8 +112,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
 
     public getDoc(categoryInterface: CategoryInterface): Document{
 
-        try {
-            
+ try { 
                         if(categoryInterface!.getProperties()!.getPath(categoryInterface!.getHierarchy()) != 
                                     null
                                 )
@@ -123,7 +123,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
                         
                                     {
                                     
-    var rootAbFile: AbFile = AbFile.createAbFileFromAbPath(categoryInterface!.getRootFilePath())!;;
+    let rootAbFile: AbFile = AbFile.createAbFileFromAbPath(categoryInterface!.getRootFilePath())!;;
     
 
                         if(!rootAbFile!.isDirectory())
@@ -152,13 +152,13 @@ this.save(categoryInterface);
                                     }
                                 
 
-    var fileAbPath: AbPath = categoryInterface!.getFilePath()!;;
+    let fileAbPath: AbPath = categoryInterface!.getFilePath()!;;
     
 
-    var cryptFileReader: CryptFileReader = new CryptFileReader(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);;
+    let cryptFileReader: CryptFileReader = new CryptFileReader(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);;
     
 
-    var document: Document = DomDocumentHelper.create(cryptFileReader!.get(fileAbPath))!;;
+    let document: Document = DomDocumentHelper.create(cryptFileReader!.get(fileAbPath))!;;
     
 
 
@@ -178,26 +178,29 @@ this.save(categoryInterface);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
                                     
-        try {
-            categoryInterface!.log();
+ try { categoryInterface!.log();
     
-
-                //: 
-} catch(e2) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e2 = caught;
+  
 this.logUtil!.put("Could Not Log Category", this, "getDoc", e);
     
-}
 
+ }
+   }
+ 
 this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
     
 
@@ -209,20 +212,28 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
+get(...args: any[]): any {
+   
+    if (args.length === 1) return this.get$overload1(args[0]);
+   
+    if (args.length === 1) return this.get$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: get'); }
+  //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
+    public get$overload1(categoryInterface: CategoryInterface): CategoryInterface{
 
-    public get(categoryInterface: CategoryInterface): CategoryInterface{
-
-        try {
-            
-    var document: Document = this.getDoc(categoryInterface)!;;
+ try { 
+    let document: Document = this.getDoc(categoryInterface)!;;
     
 
-    var categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;;
+    let categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;;
     
 
 
@@ -230,10 +241,11 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.addProperties(categoryInterface, categoryNode!.getChildNodes());;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -249,20 +261,21 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public get(document: Document): CategoryInterface{
+    public get$overload2(document: Document): CategoryInterface{
 
-        try {
-            
-    var categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;;
+ try { 
+    let categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;;
     
 
-    var loadedCategoryInterface: CategoryInterface = this.categoryFactoryInterface!.getRootInstanceFromNode(categoryNode)!;;
+    let loadedCategoryInterface: CategoryInterface = this.categoryFactoryInterface!.getRootInstanceFromNode(categoryNode)!;;
     
 
 
@@ -270,10 +283,11 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.addProperties(loadedCategoryInterface, categoryNode!.getChildNodes());;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -289,17 +303,27 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
+getAll(...args: any[]): any {
+   
+    if (args.length === 1) return this.getAll$overload1(args[0]);
+   
+    if (args.length === 1) return this.getAll$overload2(args[0]);
+   
+    if (args.length === 2) return this.getAll$overload3(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getAll'); }
+  //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
+    public getAll$overload1(categoryInterface: CategoryInterface): CategoryInterface{
 
-    public getAll(categoryInterface: CategoryInterface): CategoryInterface{
-
-        try {
-            
-    var document: Document = this.getDoc(categoryInterface)!;;
+ try { 
+    let document: Document = this.getDoc(categoryInterface)!;;
     
 
 
@@ -307,10 +331,11 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getAll(document);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -326,20 +351,21 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    getAll(document: Document): CategoryInterface{
+    getAll$overload2(document: Document): CategoryInterface{
 
-        try {
-            
-    var categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;;
+ try { 
+    let categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;;
     
 
-    var loadedCategoryInterface: CategoryInterface = this.categoryFactoryInterface!.getRootInstanceFromNode(categoryNode)!;;
+    let loadedCategoryInterface: CategoryInterface = this.categoryFactoryInterface!.getRootInstanceFromNode(categoryNode)!;;
     
 
 
@@ -347,10 +373,11 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.addProperties(loadedCategoryInterface, categoryNode!.getChildNodes());;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -366,16 +393,17 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    getAll(parentCategoryInterface: CategoryInterface, categoryNodeList: NodeList): CategoryInterface{
+    getAll$overload3(parentCategoryInterface: CategoryInterface, categoryNodeList: NodeList): CategoryInterface{
 
-        try {
-            
+ try { 
                         if(categoryNodeList != 
                                     null
                                 )
@@ -386,10 +414,10 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
 
                         for (
-    var index: number = 0;index < categoryNodeList!.getLength(); index++)
+    let index: number = 0;index < categoryNodeList!.getLength(); index++)
         {
 
-    var categoryNode: Node = categoryNodeList!.item(index)!;;
+    let categoryNode: Node = categoryNodeList!.item(index)!;;
     
 
                         if(categoryNode != 
@@ -398,7 +426,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface = this.categoryFactoryInterface!.getInstance(parentCategoryInterface!.getHierarchy()!.getRoot(), parentCategoryInterface, categoryNode) as CategoryInterface;;
+    let categoryInterface: CategoryInterface = this.categoryFactoryInterface!.getInstance(parentCategoryInterface!.getHierarchy()!.getRoot(), parentCategoryInterface, categoryNode) as CategoryInterface;;
     
 parentCategoryInterface!.addChild(categoryInterface);
     
@@ -416,10 +444,11 @@ parentCategoryInterface!.addChild(categoryInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return parentCategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -435,16 +464,17 @@ parentCategoryInterface!.addChild(categoryInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     addProperties(loadedCategoryInterface: CategoryInterface, categoryNodeList: NodeList): CategoryInterface{
 
-        try {
-            
+ try { 
                         if(categoryNodeList != 
                                     null
                                 )
@@ -455,10 +485,10 @@ parentCategoryInterface!.addChild(categoryInterface);
 
 
                         for (
-    var index: number = 0;index < categoryNodeList!.getLength(); index++)
+    let index: number = 0;index < categoryNodeList!.getLength(); index++)
         {
 
-    var categoryNode: Node = categoryNodeList!.item(index)!;;
+    let categoryNode: Node = categoryNodeList!.item(index)!;;
     
 
                         if(categoryNode != 
@@ -467,7 +497,7 @@ parentCategoryInterface!.addChild(categoryInterface);
                         
                                     {
                                     
-    var categoryPropertiesInterface: CategoryPropertiesInterface = new CategoryProperties(categoryNode) as CategoryPropertiesInterface;;
+    let categoryPropertiesInterface: CategoryPropertiesInterface = new CategoryProperties(categoryNode) as CategoryPropertiesInterface;;
     
 loadedCategoryInterface!.addChildProperty(categoryPropertiesInterface);
     
@@ -485,10 +515,11 @@ loadedCategoryInterface!.addChildProperty(categoryPropertiesInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return loadedCategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -504,12 +535,12 @@ loadedCategoryInterface!.addChildProperty(categoryPropertiesInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

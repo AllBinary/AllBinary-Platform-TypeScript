@@ -27,9 +27,11 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 //not GWT import const DomSearchHelper
@@ -39,9 +41,11 @@ import { DomDocumentFileHelper } from '../../../../../../../org/allbinary/data/t
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFile } from '../../../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
@@ -60,6 +64,7 @@ import { TransformInfosData } from '../../../../../../../org/allbinary/logic/vis
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -102,7 +107,7 @@ public constructor (filePath: string){
 
             super();
         
-    var xmlFile: AbFile = AbFile.createAbFile(filePath)!;;
+    let xmlFile: AbFile = AbFile.createAbFile(filePath)!;;
     
 this.document= DomDocumentFileHelper.createDocument(xmlFile);
     
@@ -111,18 +116,17 @@ this.document= DomDocumentFileHelper.createDocument(xmlFile);
 
     public toTransformInfoPropertiesHashMap(): HashMap<any, any>{
 
-        try {
-            
-    var transformInfoPropertiesHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let transformInfoPropertiesHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var transformInfosNode: Node = this.document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!.item(0)!;;
+    let transformInfosNode: Node = this.document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!.item(0)!;;
     
 
-    var transformInfosChildNodeList: NodeList = transformInfosNode!.getChildNodes()!;;
+    let transformInfosChildNodeList: NodeList = transformInfosNode!.getChildNodes()!;;
     
 
-    var transformInfoNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, transformInfosChildNodeList)!;;
+    let transformInfoNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, transformInfosChildNodeList)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -134,20 +138,20 @@ this.document= DomDocumentFileHelper.createDocument(xmlFile);
                                     }
                                 
 
-    var size: number = transformInfoNodeVector!.size()!;;
+    let size: number = transformInfoNodeVector!.size()!;;
     
 
-    var node: Node;;
+    let node: Node;;
     
 
-    var transformInfoProperties: TransformInfoProperties;;
+    let transformInfoProperties: TransformInfoProperties;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 node= transformInfoNodeVector!.get(index) as Node;
     
@@ -163,16 +167,17 @@ transformInfoPropertiesHashMap!.put(transformInfoProperties!.getName(), transfor
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return transformInfoPropertiesHashMap;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "toTransformInfoPropertiesHashMap()", e);
     
@@ -185,12 +190,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "toTransformInfoPropertiesHash
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

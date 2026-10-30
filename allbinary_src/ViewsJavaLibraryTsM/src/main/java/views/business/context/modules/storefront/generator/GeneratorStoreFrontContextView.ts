@@ -22,9 +22,11 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { TransformsGeneratorUtil } from '../../../../../../org/allbinary/logic/visual/transform/generator/TransformsGeneratorUtil.js';
 //not GWT import const TransformsGeneratorUtil
@@ -79,12 +81,19 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                 
 }
 
-
+view(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.view$overload1(args[0]);
+   
+    if (args.length === 0) return this.view$overload2();
+   
+   throw new TypeError('No matching overload: view'); }
+  
                 //@Throws(Exception.constructor)
             
-    view(group: string): string{
+    view$overload1(group: string): string{
 
-    var result: string = TransformsGeneratorUtil.getInstance()!.generateComponentsFromObjectConfig(this.abeClientInformation, this.getTransformInfoInterface(), group)!;;
+    let result: string = TransformsGeneratorUtil.getInstance()!.generateComponentsFromObjectConfig(this.abeClientInformation, this.getTransformInfoInterface(), group)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPEXTRAOUTPUT))
@@ -114,19 +123,19 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                 //@Throws(Exception.constructor)
             
-    public view(): string{
+    public view$overload2(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.view(TransformInfosData.getInstance()!.ALL);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -141,12 +150,12 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

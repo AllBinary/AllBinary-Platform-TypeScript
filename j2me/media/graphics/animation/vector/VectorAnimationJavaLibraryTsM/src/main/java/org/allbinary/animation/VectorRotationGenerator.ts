@@ -30,9 +30,11 @@ import { BasicGraphicsPipeline } from '../../../org/allbinary/graphics/pipeline/
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Angle } from '../../../org/allbinary/math/Angle.js';
 //not GWT import const Angle
@@ -42,12 +44,15 @@ import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+type BasicArrayListS<T = any, U = any> = typeof BasicArrayListS extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListS;
 
 import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
 //not GWT import const VectorInfo
@@ -79,8 +84,15 @@ export class VectorRotationGenerator
         
 
     private static readonly instance: VectorRotationGenerator = new VectorRotationGenerator();
-
-    public static getInstance(): VectorRotationGenerator{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): VectorRotationGenerator{
 
 
 
@@ -100,7 +112,7 @@ private constructor (){
         }
 
 
-    public getInstance(vectorRotationInfo: VectorInfo): number[][][]{
+    public getInstance$overload2(vectorRotationInfo: VectorInfo): number[][][]{
 
 
 
@@ -114,24 +126,23 @@ private constructor (){
 
     public getInstanceFrames(width: number, height: number, points: number[][], frames: number): number[][][]{
 
-        try {
-            
-    var totalAngle: number = this.angleFactory!.TOTAL_ANGLE;;
+ try { 
+    let totalAngle: number = this.angleFactory!.TOTAL_ANGLE;;
     
 
-    var angleIncrement: number = globalThis.Math.trunc(totalAngle /frames);;
+    let angleIncrement: number = globalThis.Math.trunc(totalAngle /frames);;
     
 
-    var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(globalThis.Math.trunc(totalAngle /angleIncrement));;
+    let pointsBasicArrayList: BasicArrayList = new BasicArrayListS(globalThis.Math.trunc(totalAngle /angleIncrement));;
     
 
-    var pointBasicArrayList: BasicArrayList = new BasicArrayListS(points.length);;
+    let pointBasicArrayList: BasicArrayList = new BasicArrayListS(points.length);;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var size: number = points.length
+    let size: number = points.length
                 ;;
     
 
@@ -139,14 +150,14 @@ private constructor (){
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 pointBasicArrayList!.add(pointFactory!.createXY(points[index]![0]!, points[index]![1]!));
     
 }
 
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(index < totalAngle)
@@ -158,7 +169,7 @@ index += angleIncrement;
 }
 
 
-    var newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromListOfPointListWithPointsPerFrame(pointsBasicArrayList, pointBasicArrayList!.size())!;;
+    let newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromListOfPointListWithPointsPerFrame(pointsBasicArrayList, pointBasicArrayList!.size())!;;
     
 
 
@@ -166,12 +177,13 @@ index += angleIncrement;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return newPoints;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
@@ -181,8 +193,10 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -190,7 +204,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
             
     public getListAtAngle(width: number, height: number, pointBasicArrayList: BasicArrayList, angle: Angle): BasicArrayList{
 
-    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(pointBasicArrayList);;
+    let graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(pointBasicArrayList);;
     
 graphicsPipe!.createMatrix();
     
@@ -210,6 +224,4 @@ graphicsPipe!.translate((width>>1), (height>>1));
 
 
 }
-
-
 

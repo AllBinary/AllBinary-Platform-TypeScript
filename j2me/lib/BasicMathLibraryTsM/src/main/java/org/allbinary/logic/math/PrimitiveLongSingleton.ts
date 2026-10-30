@@ -24,6 +24,7 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -81,7 +82,7 @@ export class PrimitiveLongSingleton
             
     public getNumberFromChar(numberAsChar: string): number{
 
-    var size: number = this.NUMBER_CHAR_ARRAY.length
+    let size: number = this.NUMBER_CHAR_ARRAY.length
                 ;;
     
 
@@ -89,7 +90,7 @@ export class PrimitiveLongSingleton
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(this.NUMBER_CHAR_ARRAY[index] == numberAsChar)
@@ -115,6 +116,4 @@ export class PrimitiveLongSingleton
 
 
 }
-
-
 

@@ -47,9 +47,7 @@ export interface HashMapJDialogListenerInterface {
 
                 //@Throws(Exception.constructor)
             
-    onHashMap(hashMap: HashMap<any, any>)
+    onHashMap(hashMap: HashMap<any, any>): void;
 
 }
-
-
 

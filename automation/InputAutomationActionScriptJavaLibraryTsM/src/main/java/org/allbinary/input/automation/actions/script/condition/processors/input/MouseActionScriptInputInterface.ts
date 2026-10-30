@@ -47,17 +47,15 @@ import { Point } from './Point.js';
 export interface MouseActionScriptInputInterface extends ProfileActionScriptInputInterface {
         
 
-    setPoint(point: Point)
+    setPoint(point: Point): void;
 
-    getPoint(): Point
+    getPoint(): Point;
 
-    getButtonClicks(): number
+    getButtonClicks(): number;
 
-    setButtonClicks(buttons: number)
+    setButtonClicks(buttons: number): void;
 
-    log()
+    log(): void;
 
 }
-
-
 

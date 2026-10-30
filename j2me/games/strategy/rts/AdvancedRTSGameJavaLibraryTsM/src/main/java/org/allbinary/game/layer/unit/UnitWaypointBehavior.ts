@@ -57,12 +57,15 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -81,18 +84,22 @@ import { SimpleGeographicMapCellPositionFactory } from '../../../../../org/allbi
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -192,7 +199,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
             
     public onWaypointEvent(event: RTSLayerEvent){
 
-    var advancedRTSGameLayer: AdvancedRTSGameLayer = event.getRtsLayer() as AdvancedRTSGameLayer;;
+    let advancedRTSGameLayer: AdvancedRTSGameLayer = event.getRtsLayer() as AdvancedRTSGameLayer;;
     
 this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.associatedAdvancedRTSGameLayer, advancedRTSGameLayer);
     
@@ -339,7 +346,7 @@ this.setMoving(false);
             
     setRandomGeographicMapCellHistory(pathsList: BasicArrayList){
 
-    var size: number = pathsList!.size()!;;
+    let size: number = pathsList!.size()!;;
     
 this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.setRandomGeographicMapCellHistoryList(this.associatedAdvancedRTSGameLayer, pathsList);
     
@@ -348,7 +355,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.setRandomGeographicMapC
                         
                                     {
                                     
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = BasicArrayListUtil.getInstance()!.getRandom(pathsList) as BasicArrayList;;
+    let geographicMapCellPositionBasicArrayList: BasicArrayList = BasicArrayListUtil.getInstance()!.getRandom(pathsList) as BasicArrayList;;
     
 this.setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList);
     
@@ -427,10 +434,10 @@ this.getCompleteTimeDelayHelper()!.setStartTimeTNT();
             
     moveAwayFromBuilding(buildingLayer: BuildingLayer){
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.associatedAdvancedRTSGameLayer!.getCurrentGeographicMapCellPosition()!;;
+    let geographicMapCellPosition: GeographicMapCellPosition = this.associatedAdvancedRTSGameLayer!.getCurrentGeographicMapCellPosition()!;;
     
 
-    var list: BasicArrayList = buildingLayer!.geographicMapCellPositionAreaBase!.getOccupyingGeographicMapCellPositionList()!;;
+    let list: BasicArrayList = buildingLayer!.geographicMapCellPositionAreaBase!.getOccupyingGeographicMapCellPositionList()!;;
     
 
                         if(list.contains(geographicMapCellPosition))
@@ -445,7 +452,7 @@ this.getCompleteTimeDelayHelper()!.setStartTimeTNT();
 this.setCurrentTargetLayerInterface(this.FAKE_WAYPOINT_LAYER as CollidableDestroyableDamageableLayer);
     
 
-    var pathsList: BasicArrayList = buildingLayer!.getMoveOutOfBuildAreaPath(geographicMapCellPosition)!;;
+    let pathsList: BasicArrayList = buildingLayer!.getMoveOutOfBuildAreaPath(geographicMapCellPosition)!;;
     
 this.associatedAdvancedRTSGameLayer!.setClosestGeographicMapCellHistory(pathsList);
     
@@ -483,7 +490,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.needToMove(this.associa
                         
                                     {
                                     
-    var message: string = "Repeating too long: " +this.getMovementLogicAsString();;
+    let message: string = "Repeating too long: " +this.getMovementLogicAsString();;
     
 ForcedLogUtil.log(message, this.associatedAdvancedRTSGameLayer);
     
@@ -501,7 +508,7 @@ ForcedLogUtil.log(message, this.associatedAdvancedRTSGameLayer);
 
     public getMovementLogicAsString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("isTrackingWaypoint: ");
     
@@ -714,6 +721,4 @@ this.trackingWaypoint= trackingWaypoint;
 
 
 }
-
-
 

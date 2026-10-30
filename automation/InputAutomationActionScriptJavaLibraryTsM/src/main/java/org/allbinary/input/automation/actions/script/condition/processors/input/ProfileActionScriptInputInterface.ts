@@ -46,15 +46,13 @@ import { InputRobotInterface } from '../../../../../../../../../org/allbinary/in
 export interface ProfileActionScriptInputInterface extends ProfileActionScriptProcessorInterface {
         
 
-    setInputRobotInterface(inputRobotInterface: InputRobotInterface)
+    setInputRobotInterface(inputRobotInterface: InputRobotInterface): void;
 
-    getInputRobotInterface(): InputRobotInterface
+    getInputRobotInterface(): InputRobotInterface;
 
-    getTime(): number
+    getTime(): number;
 
-    setTime(time: number)
+    setTime(time: number): void;
 
 }
-
-
 

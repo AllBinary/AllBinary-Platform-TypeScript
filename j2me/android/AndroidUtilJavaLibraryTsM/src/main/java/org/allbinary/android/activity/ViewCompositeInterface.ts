@@ -45,13 +45,11 @@ import { View } from '../../../../android/view/View.js';
 export interface ViewCompositeInterface {
         
 
-    getRootView(): View
+    getRootView(): View;
 
-    getView(): View
+    getView(): View;
 
-    runOnUiThread(action: Runnable)
+    runOnUiThread(action: Runnable): void;
 
 }
-
-
 

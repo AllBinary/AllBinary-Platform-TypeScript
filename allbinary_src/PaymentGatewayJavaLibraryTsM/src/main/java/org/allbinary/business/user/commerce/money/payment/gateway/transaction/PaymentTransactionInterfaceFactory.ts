@@ -33,9 +33,11 @@ import { PaymentTypeUtil } from '../../../../../../../../../org/allbinary/busine
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -66,8 +68,15 @@ export class PaymentTransactionInterfaceFactory
         
 
     private static readonly instance: PaymentTransactionInterfaceFactory = new PaymentTransactionInterfaceFactory();
-
-    public static getInstance(): PaymentTransactionInterfaceFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): PaymentTransactionInterfaceFactory{
 
 
 
@@ -87,11 +96,10 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(orderReview: OrderHistory): PaymentTransactionInterface{
+    public getInstance$overload2(orderReview: OrderHistory): PaymentTransactionInterface{
 
-        try {
-            
-    var gatewayName: string = orderReview!.getPaymentMethod()!;;
+ try { 
+    let gatewayName: string = orderReview!.getPaymentMethod()!;;
     
 
                         if(gatewayName != 
@@ -100,13 +108,13 @@ private constructor (){
                         
                                     {
                                     
-    var paymentType: PaymentType = PaymentTypeUtil.getInstance()!.get(gatewayName)!;;
+    let paymentType: PaymentType = PaymentTypeUtil.getInstance()!.get(gatewayName)!;;
     
 
-    var paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface = paymentType!.getPaymentTransactionInterfaceFactoryInterface()!;;
+    let paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface = paymentType!.getPaymentTransactionInterfaceFactoryInterface()!;;
     
 
-    var paymentTransactionInterface: PaymentTransactionInterface = paymentTransactionInterfaceFactoryInterface!.getInstance(orderReview)!;;
+    let paymentTransactionInterface: PaymentTransactionInterface = paymentTransactionInterfaceFactoryInterface!.getInstance(orderReview)!;;
     
 
 
@@ -122,16 +130,17 @@ private constructor (){
 
                             throw new Exception("Failed to create PaymentTransactionInterface: " +"GatewayName is: " +gatewayName);
                     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put("Failed to generate test data", this, commonStrings!.GET_INSTANCE, e);
     
@@ -143,12 +152,12 @@ this.logUtil!.put("Failed to generate test data", this, commonStrings!.GET_INSTA
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

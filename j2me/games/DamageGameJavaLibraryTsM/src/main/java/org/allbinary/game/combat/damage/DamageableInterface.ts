@@ -47,13 +47,11 @@ export interface DamageableInterface extends NamedInterface {
 
                 //@Throws(Exception.constructor)
             
-    damage(damage: number, damageType: number)
+    damage(damage: number, damageType: number): void;
 
                 //@Throws(Exception.constructor)
             
-    getDamage(damageType: number): number
+    getDamage(damageType: number): number;
 
 }
-
-
 

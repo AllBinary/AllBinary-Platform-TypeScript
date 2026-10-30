@@ -40,17 +40,15 @@
 export interface DebugInterface {
         
 
-    start()
+    start(): void;
 
-    stop()
+    stop(): void;
 
-    getStartTime(): number
+    getStartTime(): number;
 
-    getMaxTime(): number
+    getMaxTime(): number;
 
-    isRunning(): boolean
+    isRunning(): boolean;
 
 }
-
-
 

@@ -34,9 +34,11 @@ import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -76,10 +78,17 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
                     
 }
 
+getField(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string') return this.getField$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.getField$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getField'); }
+  
+    public getField$overload1(key: string, value: string, requestedField: string): string{
 
-    public getField(key: string, value: string, requestedField: string): string{
-
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT);
     
@@ -100,15 +109,14 @@ stringBuffer!.append(value);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
-        try {
-            
-    var field: string = this.stringUtil!.EMPTY_STRING;;
+ try { 
+    let field: string = this.stringUtil!.EMPTY_STRING;;
     
 
-    var rset: ResultSet = executeSQLStatement(sqlStatement)!;;
+    let rset: ResultSet = executeSQLStatement(sqlStatement)!;;
     
 
         while(rset.next())
@@ -148,10 +156,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_FIELD);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -167,14 +176,16 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_FIELD);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.FAILED_SQL_STATEMENT +sqlStatement;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getField$overload2(keysAndValues: HashMap<any, any>, requestedField: string): string{
 
-    public getField(keysAndValues: HashMap<any, any>, requestedField: string): string{
-
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT);
     
@@ -187,32 +198,31 @@ stringBuffer!.append(this.getTableName());
 stringBuffer!.append(this.sqlStrings!.WHERE);
     
 
-        try {
-            
-    var field: string = this.stringUtil!.EMPTY_STRING;;
+ try { 
+    let field: string = this.stringUtil!.EMPTY_STRING;;
     
 
-    var set: Set = keysAndValues!.keySet()!;;
+    let set: Set = keysAndValues!.keySet()!;;
     
 
-    var keyArray: any[] = set.toArray()!;;
+    let keyArray: any[] = set.toArray()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
-    var key: string;;
+    let key: string;;
     
 
-    var value: string;;
+    let value: string;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 key= keyArray[i]! as string;
     
@@ -238,10 +248,10 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
-    var rset: ResultSet = executeSQLStatement(sqlStatement)!;;
+    let rset: ResultSet = executeSQLStatement(sqlStatement)!;;
     
 
         while(rset.next())
@@ -281,12 +291,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_FIELD);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
@@ -303,24 +314,25 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_FIELD);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.FAILED_SQL_STATEMENT +sqlStatement;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public isSubsetOfEntry(key: string, value: string, columnsAndValues: HashMap<any, any>): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT);
     
 
-        try {
-            
-    var keyArray: any[] = columnsAndValues!.keySet()!.()!;;
+ try { 
+    let keyArray: any[] = columnsAndValues!.keySet()!.()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 stringBuffer!.append(this.commonSeps!.SPACE);
@@ -332,7 +344,7 @@ stringBuffer!.append(key);
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 stringBuffer!.append(this.commonSeps!.SPACE);
     
@@ -355,25 +367,25 @@ stringBuffer!.append(value);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
-    var rset: ResultSet = executeSQLStatement(sqlStatement)!;;
+    let rset: ResultSet = executeSQLStatement(sqlStatement)!;;
     
 
-    var columnName: string;;
+    let columnName: string;;
     
 
-    var field: string;;
+    let field: string;;
     
 
         while(rset.next())
         {
 
-    var keyArray2: any[] = columnsAndValues!.keySet()!.()!;;
+    let keyArray2: any[] = columnsAndValues!.keySet()!.()!;;
     
 
-    var size2: number = keyArray2!.length
+    let size2: number = keyArray2!.length
                 ;;
     
 
@@ -381,7 +393,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 
 
                         for (
-    var i: number = 0;i < size2; i++)
+    let i: number = 0;i < size2; i++)
         {
 columnName= keyArray2[i]!.toString();
     
@@ -427,12 +439,13 @@ field= rset.getObject(columnName)!.toString();
 
                         }
                             
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
@@ -449,12 +462,12 @@ field= rset.getObject(columnName)!.toString();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.FAILED_SQL_STATEMENT +sqlStatement;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

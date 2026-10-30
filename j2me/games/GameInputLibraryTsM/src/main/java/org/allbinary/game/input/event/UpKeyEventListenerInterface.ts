@@ -49,9 +49,7 @@ export interface UpKeyEventListenerInterface extends EventListenerInterface {
 
                 //@Throws(Exception.constructor)
             
-    onUpKeyEvent(keyAsInteger: Integer)
+    onUpKeyEvent(keyAsInteger: Integer): void;
 
 }
-
-
 

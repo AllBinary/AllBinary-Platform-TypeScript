@@ -94,7 +94,7 @@ private constructor (){
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.Y= 4 *font.getHeight();
     
@@ -109,10 +109,10 @@ this.myFontProcessor= MyFontProcessor.getInstance();
 this.myFontProcessor!.process(graphics);
     
 
-    var halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
+    let halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
     
 
-    var height: number = this.displayInfo!.getLastHeight()!;;
+    let height: number = this.displayInfo!.getLastHeight()!;;
     
 graphics.drawString(this.FULLSCREEN_TEXT, halfWidth -this.beginWidth, height -this.Y, this.anchor);
     
@@ -120,6 +120,4 @@ graphics.drawString(this.FULLSCREEN_TEXT, halfWidth -this.beginWidth, height -th
 
 
 }
-
-
 

@@ -70,10 +70,10 @@ private constructor (){
 
     public getAsString(): string{
 
-    var simpleDataFormat: DateTimeFormat = DateTimeFormat.getFormat("yyyy-MM-dd HH:mm:ss.SSS")!;;
+    let simpleDataFormat: DateTimeFormat = DateTimeFormat.getFormat("yyyy-MM-dd HH:mm:ss.SSS")!;;
     
 
-    var date: Date = new Date();;
+    let date: Date = new Date();;
     
 
 
@@ -85,6 +85,4 @@ private constructor (){
 
 
 }
-
-
 

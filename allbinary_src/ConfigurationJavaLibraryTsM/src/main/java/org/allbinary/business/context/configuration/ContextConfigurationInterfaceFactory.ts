@@ -73,8 +73,17 @@ export class ContextConfigurationInterfaceFactory
         
 
     private static readonly instance: ContextConfigurationInterfaceFactory = new ContextConfigurationInterfaceFactory();
-
-    public static getInstance(): ContextConfigurationInterfaceFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload3(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): ContextConfigurationInterfaceFactory{
 
 
 
@@ -92,12 +101,12 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(document: Document): ContextConfigurationInterface{
+    public getInstance$overload2(document: Document): ContextConfigurationInterface{
 
-    var contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;;
+    let contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;;
     
 
-    var contextConfigurationNode: Node = DomSearchHelper.getNode(contextConfigurationData!.NAME, document.getChildNodes())!;;
+    let contextConfigurationNode: Node = DomSearchHelper.getNode(contextConfigurationData!.NAME, document.getChildNodes())!;;
     
 
 
@@ -110,18 +119,18 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(contextName: string): ContextConfigurationInterface{
+    public getInstance$overload3(contextName: string): ContextConfigurationInterface{
 
-    var abPath: AbPath = ContextConfigurationPathUtil.getAbPath(contextName)!;;
+    let abPath: AbPath = ContextConfigurationPathUtil.getAbPath(contextName)!;;
     
 
-    var contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;;
+    let contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;;
     
 
-    var documentString: string = new CryptFileReader(contextConfigurationData!.UNCRYPTED_EXTENSION, contextConfigurationData!.ENCRYPTED_EXTENSION).get(abPath)!;;
+    let documentString: string = new CryptFileReader(contextConfigurationData!.UNCRYPTED_EXTENSION, contextConfigurationData!.ENCRYPTED_EXTENSION).get(abPath)!;;
     
 
-    var document: Document = DomDocumentHelper.create(documentString)!;;
+    let document: Document = DomDocumentHelper.create(documentString)!;;
     
 
 
@@ -133,6 +142,4 @@ private constructor (){
 
 
 }
-
-
 

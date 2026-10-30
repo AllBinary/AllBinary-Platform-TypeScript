@@ -79,5 +79,3 @@ public constructor (data: string){
 
 }
 
-
-

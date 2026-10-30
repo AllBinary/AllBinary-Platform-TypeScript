@@ -35,9 +35,11 @@ import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCa
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -85,31 +87,31 @@ this.command= command;
 
     public run(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
+ try { this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 
-    var canvas: MyCanvas = this.commandFormInputProcessor!.getCanvas()!;;
+    let canvas: MyCanvas = this.commandFormInputProcessor!.getCanvas()!;;
     
 
-    var commandListener: CommandListener = canvas.getCustomCommandListener()!;;
+    let commandListener: CommandListener = canvas.getCustomCommandListener()!;;
     
 commandListener!.commandAction(this.command, canvas);
     
 this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.RUN);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -46,9 +46,7 @@ export interface ProfileActionScriptItemInterface {
 
                 //@Throws(Exception.constructor)
             
-    process(frame: Long)
+    process(frame: Long): void;
 
 }
-
-
 

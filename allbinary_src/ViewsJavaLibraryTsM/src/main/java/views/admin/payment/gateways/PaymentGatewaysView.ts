@@ -25,9 +25,11 @@ import { HashMap } from '../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { EntryData } from '../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
@@ -52,6 +54,7 @@ import { ModDomHelper } from '../../../../org/allbinary/data/tree/dom/ModDomHelp
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -106,33 +109,32 @@ this.paymentGatewayVector= gatewayVector;
             
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;;
+ try { 
+    let storeName: string = this.getTransformInfoInterface()!.getStoreName()!;;
     
 
-    var paymentGatewaysNode: Node = document.createElement(PaymentGatewaysData.NAME)!;;
+    let paymentGatewaysNode: Node = document.createElement(PaymentGatewaysData.NAME)!;;
     
 
-    var size: number = this.paymentGatewayVector!.size()!;;
+    let size: number = this.paymentGatewayVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentGatewayVector!.get(index) as BasicPaymentType;;
+    let paymentType: BasicPaymentType = this.paymentGatewayVector!.get(index) as BasicPaymentType;;
     
 
-    var hashMap: HashMap<any, any> = paymentType!.toHashMap()!;;
+    let hashMap: HashMap<any, any> = paymentType!.toHashMap()!;;
     
 hashMap!.put(EntryData.getInstance()!.DEFAULT, PaymentTypeUtil.getInstance()!.getDefault(storeName)!.getBasicPaymentType()!.getName());
     
 
-    var paymentGatewayNode: Node = ModDomHelper.createNodeWithValueNodes(document, PaymentGatewayData.NAME.toString(), hashMap)!;;
+    let paymentGatewayNode: Node = ModDomHelper.createNodeWithValueNodes(document, PaymentGatewayData.NAME.toString(), hashMap)!;;
     
 paymentGatewaysNode!.appendChild(paymentGatewayNode);
     
@@ -144,10 +146,11 @@ paymentGatewaysNode!.appendChild(paymentGatewayNode);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return paymentGatewaysNode;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
@@ -162,8 +165,10 @@ paymentGatewaysNode!.appendChild(paymentGatewayNode);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -175,8 +180,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -184,12 +188,13 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to view payment gateways";;
+    let error: string = "Failed to view payment gateways";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
@@ -206,12 +211,12 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

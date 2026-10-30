@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
@@ -42,6 +43,7 @@ import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cac
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -85,33 +87,35 @@ export class CapturedBufferedImagesCacheSingleton
                 private static init(): number { 
                     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var STATIC_BLOCK: string = "Static Block";;
+    let STATIC_BLOCK: string = "Static Block";;
     
 
-    var instance: string = "CapturedBufferedImagesCacheSingleton";;
+    let instance: string = "CapturedBufferedImagesCacheSingleton";;
     
 
-        try {
-            logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
+ try { logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
     
 CapturedBufferedImagesCacheSingleton.cacheInterface= CacheInterfaceFactory.getInstance((), ()) as AutomaticCacheInterface;
     
 logUtil!.putF(commonStrings!.END, instance, STATIC_BLOCK);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
     
-}
 
+ }
+   }
+ 
 
 
                     return 0;
@@ -126,6 +130,4 @@ private constructor (){
 
 
 }
-
-
 

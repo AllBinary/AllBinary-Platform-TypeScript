@@ -55,12 +55,15 @@ import { TextItemVisitor } from '../../../../../org/allbinary/graphics/form/item
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -95,10 +98,10 @@ public constructor (cmdListener: CommandListener, label: string, text: string, m
                             //For kotlin this is before the body of the constructor.
                     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var textFieldItem: ABTextFieldItem = new ABTextFieldItem(this, new TextItemVisitor(), stringUtil!.EMPTY_STRING, stringUtil!.EMPTY_STRING, maxSize, 0, stringUtil!.EMPTY_STRING, font, backgroundBasicColor, foregroundBasicColor);;
+    let textFieldItem: ABTextFieldItem = new ABTextFieldItem(this, new TextItemVisitor(), stringUtil!.EMPTY_STRING, stringUtil!.EMPTY_STRING, maxSize, 0, stringUtil!.EMPTY_STRING, font, backgroundBasicColor, foregroundBasicColor);;
     
 textFieldItem!.setString(text);
     
@@ -143,14 +146,13 @@ this.keyRepeatedByDevice(keyCode, 0);
 
     public keyPressedByDevice(keyCode: number, deviceId: number){
 
-        try {
-            this.logUtil!.putF(new StringMaker().append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
+ try { this.logUtil!.putF(new StringMaker().append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
     
 
-    var platformKeyFactory: PlatformKeyFactory = PlatformKeyFactory.getInstance()!;;
+    let platformKeyFactory: PlatformKeyFactory = PlatformKeyFactory.getInstance()!;;
     
 
-    var input: Input = this.inputFactory!.getInstanceById(keyCode)!;;
+    let input: Input = this.inputFactory!.getInstanceById(keyCode)!;;
     
 
                         if(platformKeyFactory!.isSubmission(input))
@@ -167,14 +169,17 @@ this.keyRepeatedByDevice(keyCode, 0);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.KEY_PRESSED, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -222,6 +227,4 @@ this.textFieldItem!.paintXY(graphics, x, y);
 
 
 }
-
-
 

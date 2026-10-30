@@ -24,6 +24,7 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 //not GWT import const AllBinaryLayer
@@ -79,7 +80,7 @@ export class LayerCoveringCellPositionsUtil
             
     public getAllXY(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, x: number, y: number, reusableList: BasicArrayList): BasicArrayList{
 
-    var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXY(x, y)!;;
+    let topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXY(x, y)!;;
     
 
 
@@ -96,10 +97,10 @@ export class LayerCoveringCellPositionsUtil
 reusableList!.clear();
     
 
-    var columns: number = layerInterface!.getWidth() /geographicMapInterface!.getAllBinaryTiledLayer()!.getCellWidth();;
+    let columns: number = layerInterface!.getWidth() /geographicMapInterface!.getAllBinaryTiledLayer()!.getCellWidth();;
     
 
-    var rows: number = layerInterface!.getHeight() /geographicMapInterface!.getAllBinaryTiledLayer()!.getCellHeight();;
+    let rows: number = layerInterface!.getHeight() /geographicMapInterface!.getAllBinaryTiledLayer()!.getCellHeight();;
     
 
                         if(columns == 0)
@@ -117,6 +118,4 @@ reusableList!.clear();
 
 
 }
-
-
 

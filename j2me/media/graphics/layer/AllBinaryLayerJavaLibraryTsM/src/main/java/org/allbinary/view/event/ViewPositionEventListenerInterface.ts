@@ -49,9 +49,7 @@ export interface ViewPositionEventListenerInterface extends EventListenerInterfa
 
                 //@Throws(Exception.constructor)
             
-    onChangeEvent(layerManagerEvent: ViewPositionEvent)
+    onChangeEvent(layerManagerEvent: ViewPositionEvent): void;
 
 }
-
-
 

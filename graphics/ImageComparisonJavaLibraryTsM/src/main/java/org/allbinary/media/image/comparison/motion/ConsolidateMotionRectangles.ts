@@ -25,15 +25,19 @@ import { awt } from '../../../../../../java/awt.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -74,20 +78,20 @@ public constructor (motionRectangles: MotionRectangles){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var vector: BasicArrayList = motionRectangles!.getVector()!;;
+    let vector: BasicArrayList = motionRectangles!.getVector()!;;
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector.get(index) as MotionRectangle;;
+    let motionRectangle: MotionRectangle = vector.get(index) as MotionRectangle;;
     
 vector.add(motionRectangle!.clone());
     
@@ -100,53 +104,53 @@ this.consolidateMotionRectangles();
 
     consolidateMotionRectangles(){
 
-    var vector: BasicArrayList = this.getVector()!;;
+    let vector: BasicArrayList = this.getVector()!;;
     
 this.logUtil!.putF("Start - Size Before: " +vector.size(), this, "consolidateMotionRectangleConstraints");
     
 
-    var removeVector: BasicArrayList = new BasicArrayListD();;
+    let removeVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = vector.size()!;;
-    
-
-
-
-
-                        for (
-    var index: number = 0;index < size; index++)
-        {
-
-    var motionRectangle: MotionRectangle = vector.get(index) as MotionRectangle;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var i: number = index +1;i < vector.size(); i++)
+    let index: number = 0;index < size; index++)
         {
 
-    var motionRectangle2: MotionRectangle = vector.get(i) as MotionRectangle;;
+    let motionRectangle: MotionRectangle = vector.get(index) as MotionRectangle;;
     
 
-    var rectangle: Rectangle = motionRectangle!.getRectangle()!;;
+
+
+
+                        for (
+    let i: number = index +1;i < vector.size(); i++)
+        {
+
+    let motionRectangle2: MotionRectangle = vector.get(i) as MotionRectangle;;
     
 
-    var rectangle2: Rectangle = motionRectangle2!.getRectangle()!;;
+    let rectangle: Rectangle = motionRectangle!.getRectangle()!;;
     
 
-    var x2: number = rectangle.x +rectangle.width;;
+    let rectangle2: Rectangle = motionRectangle2!.getRectangle()!;;
     
 
-    var y2: number = rectangle.y +rectangle.height;;
+    let x2: number = rectangle.x +rectangle.width;;
     
 
-    var rightX: number = rectangle2.x +rectangle2.width;;
+    let y2: number = rectangle.y +rectangle.height;;
     
 
-    var bottomY: number = rectangle2.y +rectangle2.height;;
+    let rightX: number = rectangle2.x +rectangle2.width;;
+    
+
+    let bottomY: number = rectangle2.y +rectangle2.height;;
     
 
                         if(rectangle.x <= rectangle2.x && rectangle.y <= rectangle2.y && x2 >= rightX && y2 >= bottomY)
@@ -168,17 +172,17 @@ this.remove(removeVector);
 
     remove(removeVector: BasicArrayList){
 
-    var vector: BasicArrayList = this.getVector()!;;
+    let vector: BasicArrayList = this.getVector()!;;
     
 
-    var size: number = removeVector!.size()!;;
+    let size: number = removeVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 vector.remove(removeVector!.get(index));
     
@@ -188,6 +192,4 @@ vector.remove(removeVector!.get(index));
 
 
 }
-
-
 

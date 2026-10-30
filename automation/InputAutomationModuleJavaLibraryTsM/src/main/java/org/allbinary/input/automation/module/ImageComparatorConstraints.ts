@@ -35,9 +35,11 @@ import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { RectangleCollisionUtil } from '../../../../../org/allbinary/collision/RectangleCollisionUtil.js';
 //not GWT import const RectangleCollisionUtil
@@ -47,6 +49,7 @@ import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ImageComparatorConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
 //not GWT import const ImageComparatorConstraintsInterface
@@ -111,26 +114,33 @@ this.setAvoidVector(new BasicArrayListD());
                     
 }
 
+isCollisionWithAvoidRectangles(...args: any[]): any {
+   
+    if (args.length === 1) return this.isCollisionWithAvoidRectangles$overload1(args[0]);
+   
+    if (args.length === 1) return this.isCollisionWithAvoidRectangles$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: isCollisionWithAvoidRectangles'); }
+  
+    public isCollisionWithAvoidRectangles$overload1(rectangle: Rectangle): boolean{
 
-    public isCollisionWithAvoidRectangles(rectangle: Rectangle): boolean{
-
-    var isCollsionWithAvoidRectangles: boolean = false;;
+    let isCollsionWithAvoidRectangles: boolean = false;;
     
 
-    var avoidVector: BasicArrayList = this.getAvoidVector()!;;
+    let avoidVector: BasicArrayList = this.getAvoidVector()!;;
     
 
-    var size: number = avoidVector!.size()!;;
+    let size: number = avoidVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var avoidRectangle: Rectangle = avoidVector!.get(index) as Rectangle;;
+    let avoidRectangle: Rectangle = avoidVector!.get(index) as Rectangle;;
     
 
                         if(RectangleCollisionUtil.isCollision(avoidRectangle, rectangle))
@@ -152,25 +162,25 @@ this.setAvoidVector(new BasicArrayListD());
 }
 
 
-    public isCollisionWithAvoidRectangles(point: GPoint): boolean{
+    public isCollisionWithAvoidRectangles$overload2(point: GPoint): boolean{
 
-    var isCollsionWithAvoidRectangles: boolean = false;;
+    let isCollsionWithAvoidRectangles: boolean = false;;
     
 
-    var avoidVector: BasicArrayList = this.getAvoidVector()!;;
+    let avoidVector: BasicArrayList = this.getAvoidVector()!;;
     
 
-    var size: number = avoidVector!.size()!;;
+    let size: number = avoidVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var avoidRectangle: Rectangle = avoidVector!.get(index) as Rectangle;;
+    let avoidRectangle: Rectangle = avoidVector!.get(index) as Rectangle;;
     
 
                         if(RectangleCollisionUtil.isCollision(avoidRectangle, point))
@@ -219,7 +229,7 @@ this.maxNonMatchingPixelDeltas= maxNonMatchingPixelDeltas;
 
     public isFrameAllowed(frame: number): boolean{
 
-    var remainder: number = ((frame +1) % this.doImageComparisonEveryNthFrame);;
+    let remainder: number = ((frame +1) % this.doImageComparisonEveryNthFrame);;
     
 this.logUtil!.putF(" Frame: " +frame +" remainder: " +remainder +" this.doImageComparisonEveryNthFrame: " +this.doImageComparisonEveryNthFrame, this, "isCollisionWithAvoidRectangles");
     
@@ -262,20 +272,20 @@ this.logUtil!.putF(" Frame: " +frame +" remainder: " +remainder +" this.doImageC
 
     public log(){
 
-    var avoidVector: BasicArrayList = this.getAvoidVector()!;;
+    let avoidVector: BasicArrayList = this.getAvoidVector()!;;
     
 
-    var size: number = avoidVector!.size()!;;
+    let size: number = avoidVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var avoidRectangle: Rectangle = avoidVector!.get(index) as Rectangle;;
+    let avoidRectangle: Rectangle = avoidVector!.get(index) as Rectangle;;
     
 this.logUtil!.putF("Avoid Rectangle: " +avoidRectangle, this, "log");
     
@@ -285,6 +295,4 @@ this.logUtil!.putF("Avoid Rectangle: " +avoidRectangle, this, "log");
 
 
 }
-
-
 

@@ -30,12 +30,14 @@ import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullP
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -131,7 +133,7 @@ allBinaryGameCanvas!.setTouchPaintableP(NullPaintable.getInstance());
             
     public run(allBinaryGameCanvas: AllBinaryGameCanvas){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(GameTypeFactory.getInstance()!.BOT.toString(), this, commonStrings!.RUN);
     
@@ -145,6 +147,4 @@ this.logUtil!.putF(GameTypeFactory.getInstance()!.BOT.toString(), this, commonSt
 
 
 }
-
-
 

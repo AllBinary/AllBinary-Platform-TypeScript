@@ -36,6 +36,7 @@ import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAn
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
@@ -82,18 +83,18 @@ this.animationBehaviorFactory= animationBehaviorFactory;
             
     public getInstance(instanceId: number): Animation{
 
-    var size: number = this.basicAnimationInterfaceFactoryInterfaceArrayP!.length
+    let size: number = this.basicAnimationInterfaceFactoryInterfaceArrayP!.length
                 ;;
     
 
-    var animationInterfaceArray: Animation[] = this.createArray(size)!;;
+    let animationInterfaceArray: Animation[] = this.createArray(size)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArrayP[index]!.getInstance(instanceId);
     
@@ -140,7 +141,7 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
     public setInitialScale(scaleProperties: ScaleProperties){
 
-    var size: number = this.basicAnimationInterfaceFactoryInterfaceArrayP!.length
+    let size: number = this.basicAnimationInterfaceFactoryInterfaceArrayP!.length
                 ;;
     
 
@@ -148,7 +149,7 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.basicAnimationInterfaceFactoryInterfaceArrayP[index]!.setInitialScale(scaleProperties);
     
@@ -158,6 +159,4 @@ this.basicAnimationInterfaceFactoryInterfaceArrayP[index]!.setInitialScale(scale
 
 
 }
-
-
 

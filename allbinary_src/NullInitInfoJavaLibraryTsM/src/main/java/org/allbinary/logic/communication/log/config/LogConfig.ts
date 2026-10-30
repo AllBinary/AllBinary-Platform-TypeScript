@@ -36,9 +36,11 @@ import { BooleanUtil } from '../../../../../../org/allbinary/logic/java/bool/Boo
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
@@ -99,28 +101,28 @@ public constructor (node: Node){
 
             super();
         
-    var enabledValueNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.ENABLE, node.getChildNodes())!;;
+    let enabledValueNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.ENABLE, node.getChildNodes())!;;
     
 
-    var isEnabledString: string = DomNodeHelper.getTextNodeValue(enabledValueNode)!;;
+    let isEnabledString: string = DomNodeHelper.getTextNodeValue(enabledValueNode)!;;
     
 this.isEnabled= BooleanUtil.getInstance()!.getFromString(isEnabledString);
     
 
-    var logConfigData: LogConfigData = LogConfigData.getInstance()!;;
+    let logConfigData: LogConfigData = LogConfigData.getInstance()!;;
     
 
-    var nameValueNode: Node = DomSearchHelper.getNode(logConfigData!.NAME, node.getChildNodes())!;;
+    let nameValueNode: Node = DomSearchHelper.getNode(logConfigData!.NAME, node.getChildNodes())!;;
     
 this.name= DomNodeHelper.getTextNodeValue(nameValueNode);
     
 
-    var descriptionValueNode: Node = DomSearchHelper.getNode(logConfigData!.DESCRIPTION, node.getChildNodes())!;;
+    let descriptionValueNode: Node = DomSearchHelper.getNode(logConfigData!.DESCRIPTION, node.getChildNodes())!;;
     
 this.description= DomNodeHelper.getTextNodeValue(descriptionValueNode);
     
 
-    var fileValueNode: Node = DomSearchHelper.getNode(logConfigData!.FILE, node.getChildNodes())!;;
+    let fileValueNode: Node = DomSearchHelper.getNode(logConfigData!.FILE, node.getChildNodes())!;;
     
 this.fileName= DomNodeHelper.getTextNodeValue(fileValueNode);
     
@@ -207,7 +209,7 @@ this.fileName= value;
             
     public getTypeVector(): BasicArrayList{
 
-    var logKeyVector: BasicArrayList = new BasicArrayListD();;
+    let logKeyVector: BasicArrayList = new BasicArrayListD();;
     
 
 
@@ -219,6 +221,4 @@ this.fileName= value;
 
 
 }
-
-
 

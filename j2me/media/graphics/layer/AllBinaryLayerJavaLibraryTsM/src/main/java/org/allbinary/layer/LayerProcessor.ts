@@ -24,6 +24,7 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -105,17 +106,17 @@ public constructor (layerManager: LayerManager){
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var layerManager: LayerManager = this.getLayerManager()!;;
+    let layerManager: LayerManager = this.getLayerManager()!;;
     
 
-    var size: number = layerManager!.getSize()!;;
+    let size: number = layerManager!.getSize()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.processAt(allBinaryLayerManager, layerManager!.getLayerAt(index) as AllBinaryLayer, index);
     
@@ -125,6 +126,4 @@ this.processAt(allBinaryLayerManager, layerManager!.getLayerAt(index) as AllBina
 
 
 }
-
-
 

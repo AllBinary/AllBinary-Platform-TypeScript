@@ -41,15 +41,19 @@ import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbC
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -59,6 +63,7 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -116,19 +121,19 @@ public constructor (abeClientInformation: AbeClientInformationInterface, map: Ma
 
             super();
         
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var keys: Set = map.keySet()!;;
+    let keys: Set = map.keySet()!;;
     
 
-    var keyArray: any[] = keys.toArray()!;;
+    let keyArray: any[] = keys.toArray()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
@@ -136,13 +141,13 @@ public constructor (abeClientInformation: AbeClientInformationInterface, map: Ma
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var key: string = keyArray[index]! as string;;
+    let key: string = keyArray[index]! as string;;
     
 
-    var values: string[] = map.get(key) as string[];;
+    let values: string[] = map.get(key) as string[];;
     
 hashMap!.put(key.toCharArray().slice(0, ).join(''), .toCharArray());
     
@@ -175,9 +180,8 @@ public constructor (abeClientInformation: AbeClientInformationInterface, initHas
 
     public getFormData(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>){
 
-        try {
-            
-    var initializerData: InitializerData = InitializerData.getInstance()!;;
+ try { 
+    let initializerData: InitializerData = InitializerData.getInstance()!;;
     
 this.setAdminDbUserName(hashMap!.get(initializerData!.DBUSER) as string);
     
@@ -192,10 +196,10 @@ this.setAdminServer(hashMap!.get(initializerData!.ADMINSERVER) as string);
 this.setAdminPort(hashMap!.get(initializerData!.ADMINPORT) as string);
     
 
-    var dbConnectionInfo: DbConnectionInfo = new DbConnectionInfo();;
+    let dbConnectionInfo: DbConnectionInfo = new DbConnectionInfo();;
     
 
-    var adminDbName: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let adminDbName: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 dbConnectionInfo!.setJdbcDriver(getAdminJdbcDriver());
     
@@ -213,21 +217,23 @@ dbConnectionInfo!.setPort(getAdminPort());
     
 this.initDb= new DynamicInitDb(abeClientInformation, dbConnectionInfo as DatabaseConnectionInfoInterface);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Unable to get form data", this, "getFormData()", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     isJdbcDriverValid(jdbcDriverClassPathString: string): boolean{
 
-        try {
-            Class.forName(jdbcDriverClassPathString)!.newInstance();
+ try { Class.forName(jdbcDriverClassPathString)!.newInstance();
     
 
 
@@ -235,16 +241,17 @@ this.logUtil!.put("Unable to get form data", this, "getFormData()", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
     
@@ -257,14 +264,16 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public isValid(): boolean{
 
-    var isValid: boolean = true;;
+    let isValid: boolean = true;;
     
 
                         if(!this.isJdbcDriverValid(this.adminJdbcDriver))
@@ -276,7 +285,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, InitializerDatabase.MIN, InitializerDatabase.MAX))
@@ -307,7 +316,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 
     getJdbcDriverValidationInfo(jdbcDriver: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("The JDBC driver (");
     
@@ -326,13 +335,13 @@ stringBuffer!.append(") you have provided is not valid.<br/>");
 
     public getInvalidInfo(): string{
 
-    var isValid: boolean = true;;
+    let isValid: boolean = true;;
     
 
-    var isJdbcDriversValid: boolean = true;;
+    let isJdbcDriversValid: boolean = true;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(!this.isJdbcDriverValid(this.adminJdbcDriver))
@@ -346,7 +355,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, InitializerDatabase.MIN, InitializerDatabase.MAX))
@@ -386,8 +395,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
 
     public createUsers(): boolean{
 
-        try {
-            this.initDb!.addUsers();
+ try { this.initDb!.addUsers();
     
 
 
@@ -395,10 +403,11 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Unable to Create Users", this, "createUsers()", e);
     
 
@@ -407,15 +416,16 @@ this.logUtil!.put("Unable to Create Users", this, "createUsers()", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public createDatabases(): boolean{
 
-        try {
-            this.initDb!.addDatabases();
+ try { this.initDb!.addDatabases();
     
 
 
@@ -423,10 +433,11 @@ this.logUtil!.put("Unable to Create Users", this, "createUsers()", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Unable to Create Databases", this, "createDatabases()", e);
     
 
@@ -435,15 +446,16 @@ this.logUtil!.put("Unable to Create Databases", this, "createDatabases()", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public createTables(): boolean{
 
-        try {
-            this.initDb!.addTables();
+ try { this.initDb!.addTables();
     
 
 
@@ -451,10 +463,11 @@ this.logUtil!.put("Unable to Create Databases", this, "createDatabases()", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Unable to Create Tables", this, "createTables()", e);
     
 
@@ -463,8 +476,10 @@ this.logUtil!.put("Unable to Create Tables", this, "createTables()", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -565,6 +580,4 @@ this.adminPort= adminPort;
 
 
 }
-
-
 

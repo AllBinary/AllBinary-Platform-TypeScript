@@ -55,33 +55,31 @@ import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/
 export interface AdvertisementSearchInterface {
         
 
-    getWebSite(): AdvertisementWebsiteInterface
+    getWebSite(): AdvertisementWebsiteInterface;
 
-    getCategory(): AdvertisementCategoryInterface
+    getCategory(): AdvertisementCategoryInterface;
 
-    getSizeConstraints(): TwoDimensionalConstraintInterface
+    getSizeConstraints(): TwoDimensionalConstraintInterface;
 
-    getPricingConstraints(): PriceConstraintInterface
+    getPricingConstraints(): PriceConstraintInterface;
 
-    getPageNumber(): number
+    getPageNumber(): number;
 
-    getProductsPerPage(): number
+    getProductsPerPage(): number;
 
-    getSearchParams(): HashMap<any, any>
+    getSearchParams(): HashMap<any, any>;
 
-    setCategory(advertisementCategoryInterface: AdvertisementCategoryInterface)
+    setCategory(advertisementCategoryInterface: AdvertisementCategoryInterface): void;
 
-    setSizeConstraints(twoDimensionConstraintsInterface: TwoDimensionalConstraintInterface)
+    setSizeConstraints(twoDimensionConstraintsInterface: TwoDimensionalConstraintInterface): void;
 
-    setPricingConstraints(priceConstraintInterface: PriceConstraintInterface)
+    setPricingConstraints(priceConstraintInterface: PriceConstraintInterface): void;
 
-    setPageNumber(pageNumber: number)
+    setPageNumber(pageNumber: number): void;
 
-    setProductsPerPage(productsPerPage: number)
+    setProductsPerPage(productsPerPage: number): void;
 
-    setSearchParams(columnAndKeywordHashMap: HashMap<any, any>)
+    setSearchParams(columnAndKeywordHashMap: HashMap<any, any>): void;
 
 }
-
-
 

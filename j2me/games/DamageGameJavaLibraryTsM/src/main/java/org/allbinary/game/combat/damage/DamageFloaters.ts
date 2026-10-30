@@ -61,5 +61,3 @@ export class DamageFloaters extends Paintable {
 
 }
 
-
-

@@ -45,12 +45,15 @@ import { AndroidInfoFactory } from '../../../org/allbinary/android/AndroidInfoFa
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -104,7 +107,7 @@ private constructor (){
 
             super();
         
-    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
+    let SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
     
 
                         if(SDK_VERSION > 22)
@@ -126,27 +129,22 @@ private constructor (){
 
     public notify(command: Command, resource: string, message: string){
 
-    var context: Context = ResourceUtil.getInstance()!.getContext()!;;
+    let context: Context = ResourceUtil.getInstance()!.getContext()!;;
     
 
-    var intent: Intent = CommandUriAction.getInstance()!.getIntent(command)!;;
+    let intent: Intent = CommandUriAction.getInstance()!.getIntent(command)!;;
     
 
-    var integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;;
+    let integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;;
     
 
-    var FLAG_IMMUTABLE: number = 1<<26;;
+    let FLAG_IMMUTABLE: number = 1<<26;;
     
 
-    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
+    let SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
     
 
-    var pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, SDK_VERSION > 22
-                        ?       
-                                FLAG_IMMUTABLE
-                                :
-
-                            0)!;;
+    let pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, (SDK_VERSION > 22 ? FLAG_IMMUTABLE : 0))!;;
     
 
                         if(this.notificationBuilder == 
@@ -155,7 +153,7 @@ private constructor (){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.NOT_IMPLEMENTED);
     
@@ -174,6 +172,4 @@ this.notificationBuilder!.build(context, command, message, integer, pendingInten
 
 
 }
-
-
 

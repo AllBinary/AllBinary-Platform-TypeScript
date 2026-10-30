@@ -30,6 +30,7 @@ import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbDataInputStream } from '../../../../org/allbinary/logic/io/AbDataInputStream.js';
 //not GWT import const AbDataInputStream
@@ -51,6 +52,7 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { DatabaseEncoder } from '../../../../org/allbinary/logic/system/security/crypt/DatabaseEncoder.js';
 //not GWT import const DatabaseEncoder
@@ -114,23 +116,22 @@ public constructor (){
 
     public write(){
 
-    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +InstallerInfo.PACKAGE, InstallerInfo.INITFILENAME);;
+    let FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +InstallerInfo.PACKAGE, InstallerInfo.INITFILENAME);;
     
 
-        try {
-            
-    var newFile: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
+ try { 
+    let newFile: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 newFile!.createNewFile();
     
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(newFile)!;;
+    let dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(newFile)!;;
     
 
-    var cryptedUserName: number[] = new WeakCrypt(1).encrypt(this.getUserName())!.getBytes()!;;
+    let cryptedUserName: number[] = new WeakCrypt(1).encrypt(this.getUserName())!.getBytes()!;;
     
 
-    var cryptedPassword: number[] = new WeakCrypt(2).encrypt(this.getPassword())!.getBytes()!;;
+    let cryptedPassword: number[] = new WeakCrypt(2).encrypt(this.getPassword())!.getBytes()!;;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName));
     
@@ -138,10 +139,11 @@ dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPassword));
     
 InstallerInfo.hasRead= false;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -156,8 +158,10 @@ InstallerInfo.hasRead= false;
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -166,28 +170,27 @@ InstallerInfo.hasRead= false;
 
     read(){
 
-    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +InstallerInfo.PACKAGE, InstallerInfo.INITFILENAME);;
+    let FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +InstallerInfo.PACKAGE, InstallerInfo.INITFILENAME);;
     
 
-        try {
-            
-    var file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
+ try { 
+    let file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 
                         if(file.isFile())
                         
                                     {
                                     
-    var iFile: AbFileLocalInputStream = new AbFileLocalInputStream(file);;
+    let iFile: AbFileLocalInputStream = new AbFileLocalInputStream(file);;
     
 
-    var iData: AbDataInputStream = new AbDataInputStream(iFile);;
+    let iData: AbDataInputStream = new AbDataInputStream(iFile);;
     
 
-    var decryptedUserName: string = decode.toCharArray();;
+    let decryptedUserName: string = decode.toCharArray();;
     
 
-    var decryptedPassword: string = decode.toCharArray();;
+    let decryptedPassword: string = decode.toCharArray();;
     
 this.setUserName(new WeakCrypt(1).decrypt(decryptedUserName));
     
@@ -209,10 +212,11 @@ this.setPassword(new WeakCrypt(2).decrypt(decryptedPassword));
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
@@ -222,8 +226,10 @@ this.setPassword(new WeakCrypt(2).decrypt(decryptedPassword));
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -337,6 +343,4 @@ this.updateIfNeeded();
 
 
 }
-
-
 

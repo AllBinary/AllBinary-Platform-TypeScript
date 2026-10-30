@@ -50,9 +50,7 @@ export interface ImageProcessedVisitor extends ImageProcessorInputCompositeInter
 
                 //@Throws(IOException.constructor)
             
-    visit(generatedBufferedImage: BufferedImage, nameEnding: string, index: number)
+    visit(generatedBufferedImage: BufferedImage, nameEnding: string, index: number): void;
 
 }
-
-
 

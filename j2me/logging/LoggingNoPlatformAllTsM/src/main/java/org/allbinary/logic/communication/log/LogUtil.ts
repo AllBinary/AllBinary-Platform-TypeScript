@@ -68,16 +68,16 @@ private constructor (){
 
     public putL(log: Log){
 
-    var specialMessage: string = log.getSpecialMessage()!;;
+    let specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;;
+    let anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;;
+    let functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;;
+    let exception: any = log.getThrowable()!;;
     
 
 
@@ -87,7 +87,7 @@ private constructor (){
 }
 
 
-    public putF(specialMessage: string, anyType: any = {}, functionName: string){
+    public putF(specialMessage: string, anyType: any, functionName: string){
 
 
 
@@ -105,7 +105,7 @@ private constructor (){
 }
 
 
-    public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    public put(specialMessage: string, anyType: any, functionName: string, exception: any){
 
 
 
@@ -115,6 +115,4 @@ private constructor (){
 
 
 }
-
-
 

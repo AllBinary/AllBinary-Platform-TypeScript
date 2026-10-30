@@ -43,9 +43,7 @@ import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecim
 export interface AccelerateableInterface {
         
 
-    accelerate(accelerate: BasicDecimal)
+    accelerate(accelerate: BasicDecimal): void;
 
 }
-
-
 

@@ -46,9 +46,7 @@ import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
 export interface SpriteFactoryInterface {
         
 
-    createSprite(image: Image, frameWidth: number, frameHeight: number): Sprite
+    createSprite(image: Image, frameWidth: number, frameHeight: number): Sprite;
 
 }
-
-
 

@@ -46,9 +46,7 @@ import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/Scr
 export interface RTSLayerFormFactoryInterface {
         
 
-    getInstance(rtsLayer: RTSLayer): ScrollSelectionForm
+    getInstance(rtsLayer: RTSLayer): ScrollSelectionForm;
 
 }
-
-
 

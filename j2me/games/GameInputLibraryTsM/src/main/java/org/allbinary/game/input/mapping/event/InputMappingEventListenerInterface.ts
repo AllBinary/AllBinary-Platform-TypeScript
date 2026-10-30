@@ -49,9 +49,7 @@ export interface InputMappingEventListenerInterface extends EventListenerInterfa
 
                 //@Throws(Exception.constructor)
             
-    onInputMappingEvent(inputMappingEvent: InputMappingEvent)
+    onInputMappingEvent(inputMappingEvent: InputMappingEvent): void;
 
 }
-
-
 

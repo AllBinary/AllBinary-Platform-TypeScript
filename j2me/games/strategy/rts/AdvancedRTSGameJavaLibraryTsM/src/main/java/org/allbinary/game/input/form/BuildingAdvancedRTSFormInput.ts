@@ -115,7 +115,7 @@ public constructor (groupInterface: Group[], isUnitProducer: boolean){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
+    let basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
     
 this.atLeastOneHouseGameNotificationEvent= new GameNotificationEvent(this, "Build At Least One House First", SmallIntegerSingletonFactory.getInstance()!.getAt(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
@@ -128,10 +128,10 @@ this.atLeastOneHouseGameNotificationEvent= new GameNotificationEvent(this, "Buil
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.atLeastOneHouseGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
     
@@ -169,13 +169,13 @@ this.atLeastOneHouseGameNotificationEvent!.setBasicColorP(geographicMapInterface
             
     isBuildAttemptValid(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerInterface: RTSLayer): boolean{
 
-    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;;
+    let advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;;
     
 
-    var advancedPlayerOwnedRTSLayers: AdvancedPlayerOwnedRTSLayers = advancedRTSPlayerLayerInterface!.getAdvancedPlayerOwnedRTSLayers()!;;
+    let advancedPlayerOwnedRTSLayers: AdvancedPlayerOwnedRTSLayers = advancedRTSPlayerLayerInterface!.getAdvancedPlayerOwnedRTSLayers()!;;
     
 
-    var totalHouses: number = advancedPlayerOwnedRTSLayers!.getHouseList()!.size()!;;
+    let totalHouses: number = advancedPlayerOwnedRTSLayers!.getHouseList()!.size()!;;
     
 
                         if(totalHouses < 1 && layerInterface!.getName()!.indexOf(" House") < 0)
@@ -234,6 +234,4 @@ super.add(rtsPlayerLayerInterface, layerManager, layerInterface);
 
 
 }
-
-
 

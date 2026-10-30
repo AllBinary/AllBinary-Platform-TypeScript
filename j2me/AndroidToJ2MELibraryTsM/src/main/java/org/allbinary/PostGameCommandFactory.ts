@@ -73,10 +73,10 @@ export class PostGameCommandFactory
 
     public addCommands(canvas: MyCanvas){
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
+    let operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
+    let gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 
                         if(!operatingSystemInterface!.isOverScan())
@@ -93,6 +93,4 @@ MultiPlayerGameFeatureFactory.getInstance()!.addCommands(canvas);
 
 
 }
-
-
 

@@ -33,9 +33,7 @@ export interface OpenGLSurfaceChangedInterface {
 
                 //@Throws(Exception.constructor)
             
-    set(gl: GL)
+    set(gl: GL): void;
 
 }
-
-
 

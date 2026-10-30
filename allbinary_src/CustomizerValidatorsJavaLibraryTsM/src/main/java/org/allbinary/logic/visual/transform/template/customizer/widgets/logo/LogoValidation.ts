@@ -34,12 +34,14 @@ import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { HttpRequestUtil } from '../../../../../../../../../org/allbinary/logic/communication/http/request/HttpRequestUtil.js';
 //not GWT import const HttpRequestUtil
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
 //not GWT import const Validation
@@ -52,9 +54,11 @@ import { AbPath } from '../../../../../../../../../org/allbinary/logic/io/path/A
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -165,7 +169,7 @@ this.logoAbPath= new AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH) as s
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("HashMap: ");
     
@@ -185,12 +189,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
 
     public isValid(): Boolean{
 
-        try {
-            
-    var valid: Boolean = Boolean.TRUE;;
+ try { 
+    let valid: Boolean = Boolean.TRUE;;
     
 
-    var fileData: FileData = FileData.getInstance()!;;
+    let fileData: FileData = FileData.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -218,7 +221,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -240,7 +243,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -259,7 +262,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -281,7 +284,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -304,10 +307,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -321,18 +325,19 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Logo is not valid.");
     
@@ -342,10 +347,11 @@ stringBuffer!.append("Logo is not valid.");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -361,8 +367,10 @@ stringBuffer!.append("Logo is not valid.");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -388,10 +396,10 @@ stringBuffer!.append("Logo is not valid.");
 
     public toHashMap(): HashMap<any, any>{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(LogoData.getInstance()!.IMAGE, stringUtil!.EMPTY_STRING);
     
@@ -430,7 +438,7 @@ hashMap!.put(LogoData.getInstance()!.IMAGEFILENAME, this.logoFile);
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
 
@@ -449,7 +457,7 @@ hashMap!.put(LogoData.getInstance()!.IMAGEFILENAME, this.logoFile);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Processing logoFile: ");
     
@@ -468,6 +476,4 @@ new LogoImageFileUtil(this.logoAbPath, this.logoFile).saveFiles(this.logoFileIte
 
 
 }
-
-
 

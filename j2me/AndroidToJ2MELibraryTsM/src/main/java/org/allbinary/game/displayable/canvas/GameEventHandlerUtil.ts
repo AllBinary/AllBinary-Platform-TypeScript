@@ -65,5 +65,3 @@ GameInputMotionEventProcessorFactory.getInstance()!.addListener();
 
 }
 
-
-

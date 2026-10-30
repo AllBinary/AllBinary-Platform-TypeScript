@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CacheInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheInterface.js';
 //not GWT import const CacheInterface
@@ -39,6 +40,7 @@ import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cac
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -72,33 +74,35 @@ export class AllMotionRectanglesResultsCacheSingleton
                 private static init(): number { 
                     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var STATIC_BLOCK: string = "Static Block";;
+    let STATIC_BLOCK: string = "Static Block";;
     
 
-    var instance: string = "MotionRectanglesResultsCacheSingleton";;
+    let instance: string = "MotionRectanglesResultsCacheSingleton";;
     
 
-        try {
-            logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
+ try { logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
     
 AllMotionRectanglesResultsCacheSingleton.cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.ONE_MINUTE_FIVE_MAX);
     
 logUtil!.putF(commonStrings!.END, instance, STATIC_BLOCK);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
     
-}
 
+ }
+   }
+ 
 
 
                     return 0;
@@ -123,6 +127,4 @@ private constructor (){
 
 
 }
-
-
 

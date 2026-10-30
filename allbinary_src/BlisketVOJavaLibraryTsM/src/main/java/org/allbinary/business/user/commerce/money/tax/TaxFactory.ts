@@ -54,6 +54,7 @@ import { URLGLOBALS } from '../../../../../../../org/allbinary/globals/URLGLOBAL
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CryptFileReader } from '../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
@@ -63,9 +64,11 @@ import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbeFactory } from '../../../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
 //not GWT import const AbeFactory
@@ -78,6 +81,7 @@ import { TransformInfoObjectConfigData } from '../../../../../../../org/allbinar
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -113,8 +117,15 @@ export class TaxFactory
         
 
     private static readonly instance: TaxFactory = new TaxFactory();
-
-    public static getInstance(): TaxFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 2) return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): TaxFactory{
 
 
 
@@ -138,9 +149,9 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface): TaxModuleInterface{
+    public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface): TaxModuleInterface{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     
@@ -159,32 +170,32 @@ stringBuffer!.append("taxes");
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var abPath: AbPath = new AbPath(stringBuffer!.toString(), TAXATIONFILENAME);;
+    let abPath: AbPath = new AbPath(stringBuffer!.toString(), TAXATIONFILENAME);;
     
 
-    var transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;;
+    let transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;;
     
 
-    var data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.ENCRYPTED_EXTENSION).get(abPath)!;;
+    let data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.ENCRYPTED_EXTENSION).get(abPath)!;;
     
 
-    var document: Document = DomDocumentHelper.create(data)!;;
+    let document: Document = DomDocumentHelper.create(data)!;;
     
 
-    var taxNameNodeList: NodeList = document.getElementsByTagName(TaxData.NAME)!;;
+    let taxNameNodeList: NodeList = document.getElementsByTagName(TaxData.NAME)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < taxNameNodeList!.getLength(); index++)
+    let index: number = 0;index < taxNameNodeList!.getLength(); index++)
         {
 
-    var node: Node = taxNameNodeList!.item(index)!;;
+    let node: Node = taxNameNodeList!.item(index)!;;
     
 
-    var nodeList: NodeList = node.getChildNodes()!;;
+    let nodeList: NodeList = node.getChildNodes()!;;
     
 
                         if(nodeList != 
@@ -193,7 +204,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                         
                                     {
                                     
-    var classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, nodeList)!;;
+    let classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, nodeList)!;;
     
 
                         if(classNameNode != 
@@ -202,7 +213,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                         
                                     {
                                     
-    var className: string = DomNodeHelper.getTextNodeValue(classNameNode)!;;
+    let className: string = DomNodeHelper.getTextNodeValue(classNameNode)!;;
     
 
 
@@ -254,6 +265,4 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
 
 }
-
-
 

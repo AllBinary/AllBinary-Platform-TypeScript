@@ -68,7 +68,7 @@ AndroidNumberKeyToJ2MECanvasNumberKey.androidtoJavaMicroEditionKeyMap[KeyEvent.K
                         
                                     {
                                     
-    var value: number = AndroidNumberKeyToJ2MECanvasNumberKey.androidtoJavaMicroEditionKeyMap[key]!;;
+    let value: number = AndroidNumberKeyToJ2MECanvasNumberKey.androidtoJavaMicroEditionKeyMap[key]!;;
     
 
                         if(value != 0)
@@ -102,6 +102,4 @@ private constructor (){
 
 
 }
-
-
 

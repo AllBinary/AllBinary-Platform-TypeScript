@@ -53,5 +53,3 @@ export class SensorFeature extends Feature {
 
 }
 
-
-

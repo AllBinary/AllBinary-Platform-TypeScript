@@ -43,9 +43,7 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
 export interface TrackListenerInterface {
         
 
-    finished(layerInterface: AllBinaryLayer)
+    finished(layerInterface: AllBinaryLayer): void;
 
 }
-
-
 

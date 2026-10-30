@@ -63,12 +63,15 @@ import { BooleanUtil } from '../../../../../../org/allbinary/logic/java/bool/Boo
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -135,28 +138,28 @@ public constructor (node: Node){
 
             super();
         
-    var enabledValueNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.ENABLE, node.getChildNodes())!;;
+    let enabledValueNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.ENABLE, node.getChildNodes())!;;
     
 
-    var isEnabledString: string = DomNodeHelper.getTextNodeValue(enabledValueNode)!;;
+    let isEnabledString: string = DomNodeHelper.getTextNodeValue(enabledValueNode)!;;
     
 this.isEnabled= BooleanUtil.getInstance()!.getFromString(isEnabledString);
     
 
-    var logConfigData: LogConfigData = LogConfigData.getInstance()!;;
+    let logConfigData: LogConfigData = LogConfigData.getInstance()!;;
     
 
-    var nameValueNode: Node = DomSearchHelper.getNode(logConfigData!.NAME, node.getChildNodes())!;;
+    let nameValueNode: Node = DomSearchHelper.getNode(logConfigData!.NAME, node.getChildNodes())!;;
     
 this.name= DomNodeHelper.getTextNodeValue(nameValueNode);
     
 
-    var descriptionValueNode: Node = DomSearchHelper.getNode(logConfigData!.DESCRIPTION, node.getChildNodes())!;;
+    let descriptionValueNode: Node = DomSearchHelper.getNode(logConfigData!.DESCRIPTION, node.getChildNodes())!;;
     
 this.description= DomNodeHelper.getTextNodeValue(descriptionValueNode);
     
 
-    var fileValueNode: Node = DomSearchHelper.getNode(logConfigData!.FILE, node.getChildNodes())!;;
+    let fileValueNode: Node = DomSearchHelper.getNode(logConfigData!.FILE, node.getChildNodes())!;;
     
 this.fileName= DomNodeHelper.getTextNodeValue(fileValueNode);
     
@@ -243,7 +246,7 @@ this.fileName= value;
             
     getDoc(): Document{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
@@ -252,10 +255,10 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.INIT_PATH);
 stringBuffer!.append(this.getFileName());
     
 
-    var file: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
+    let file: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
     
 
-    var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(file))!;;
+    let document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(file))!;;
     
 
 
@@ -270,35 +273,35 @@ stringBuffer!.append(this.getFileName());
             
     public getTypeVector(): BasicArrayList{
 
-    var logKeyVector: BasicArrayList = new BasicArrayListD();;
+    let logKeyVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var document: Document = this.getDoc()!;;
+    let document: Document = this.getDoc()!;;
     
 
-    var logConfigTypesNodeList: NodeList = document.getElementsByTagName(LogConfigTypesData.getInstance()!.NAME)!;;
+    let logConfigTypesNodeList: NodeList = document.getElementsByTagName(LogConfigTypesData.getInstance()!.NAME)!;;
     
 
-    var logConfigTypesNode: Node = logConfigTypesNodeList!.item(0)!;;
+    let logConfigTypesNode: Node = logConfigTypesNodeList!.item(0)!;;
     
 
-    var logConfigTypeNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(LogConfigTypeData.getInstance()!.NAME, logConfigTypesNode!.getChildNodes())!;;
+    let logConfigTypeNodeVector: BasicArrayList = DomSearchHelper.getAllNodes(LogConfigTypeData.getInstance()!.NAME, logConfigTypesNode!.getChildNodes())!;;
     
 
-    var size: number = logConfigTypeNodeVector!.size()!;;
+    let size: number = logConfigTypeNodeVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var node: Node = logConfigTypeNodeVector!.get(i) as Node;;
+    let node: Node = logConfigTypeNodeVector!.get(i) as Node;;
     
 
-    var logType: LogConfigType = LogConfigTypes.getInstance(node)!;;
+    let logType: LogConfigType = LogConfigTypes.getInstance(node)!;;
     
 logKeyVector!.add(logType);
     
@@ -314,6 +317,4 @@ logKeyVector!.add(logType);
 
 
 }
-
-
 

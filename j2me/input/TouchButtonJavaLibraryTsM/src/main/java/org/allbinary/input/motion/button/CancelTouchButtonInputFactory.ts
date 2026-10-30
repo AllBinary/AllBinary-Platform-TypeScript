@@ -25,6 +25,7 @@ import { InputFactory } from '../../../../../org/allbinary/game/input/InputFacto
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -81,14 +82,14 @@ private constructor (){
 
             super();
         
-    var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;;
+    let basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = this.cancelInputArray!.length -1;index >= 0; index--)
+    let index: number = this.cancelInputArray!.length -1;index >= 0; index--)
         {
 this.cancelInputArray[index]= basicTouchInputFactory!.NONE;
     
@@ -116,6 +117,4 @@ this.cancelInputArray[basicTouchInputFactory!.RIGHT.getSourceId()]= basicTouchIn
 
 
 }
-
-
 

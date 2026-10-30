@@ -95,5 +95,3 @@ this.widthSizeConstraintInterface= widthSizeConstraintInterface;
 
 }
 
-
-

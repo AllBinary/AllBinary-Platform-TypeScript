@@ -48,13 +48,11 @@ export interface RaceTrackGeographicMapInterfaceFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getLevelInstance(id: Integer): RaceTrackGeographicMap
+    getLevelInstance(id: Integer): RaceTrackGeographicMap;
 
                 //@Throws(Exception.constructor)
             
-    getTrackInstance(id: Integer): RaceTrackGeographicMap
+    getTrackInstance(id: Integer): RaceTrackGeographicMap;
 
 }
-
-
 

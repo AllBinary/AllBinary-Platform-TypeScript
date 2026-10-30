@@ -23,6 +23,7 @@ import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+type MyRandomFactory<T = any, U = any> = typeof MyRandomFactory extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MyRandomFactory;
 
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 //not GWT import const BasicColor
@@ -47,6 +48,7 @@ import { PrimitiveLongUtil } from '../../../../../org/allbinary/logic/math/Primi
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
 //not GWT import const ViewPosition
@@ -105,14 +107,14 @@ public constructor (layerInterface: AllBinaryLayer){
 this.layerInterface= layerInterface;
     
 
-    var CHAR_ARRAY: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;;
+    let CHAR_ARRAY: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;;
     
 
 
 
 
                         for (
-    var index: number = this.lastDamageString!.length -1;index >= 0; index--)
+    let index: number = this.lastDamageString!.length -1;index >= 0; index--)
         {
 this.lastDamageString[index]= CHAR_ARRAY;
     
@@ -123,7 +125,7 @@ this.lastDamageString[index]= CHAR_ARRAY;
 
     public add(damage: number){
 
-    var index: number = this.circularIndexUtil!.getIndex()!;;
+    let index: number = this.circularIndexUtil!.getIndex()!;;
     
 this.lastDamage[index]= damage;
     
@@ -140,27 +142,27 @@ this.circularIndexUtil!.next();
 
     public paint(graphics: Graphics){
 
-    var viewPosition: ViewPositionBase = this.layerInterface!.getViewPosition()!;;
+    let viewPosition: ViewPositionBase = this.layerInterface!.getViewPosition()!;;
     
 
-    var x: number = viewPosition!.getX()!;;
+    let x: number = viewPosition!.getX()!;;
     
 
-    var y: number = viewPosition!.getY()!;;
+    let y: number = viewPosition!.getY()!;;
     
 
 
 
 
                         for (
-    var index: number = this.lastDamage!.length -1;index >= 0; index--)
+    let index: number = this.lastDamage!.length -1;index >= 0; index--)
         {
 
                         if(this.lastDamage[index] != 0)
                         
                                     {
                                     
-    var delta: number = 10 *(index +2);;
+    let delta: number = 10 *(index +2);;
     
 this.basicSetColorUtil!.setBasicColorP(graphics, PtsDamageFloaters.basicColorArrayIndexer!.get());
     
@@ -179,6 +181,4 @@ this.lastDamage[index]= 0;
 
 
 }
-
-
 

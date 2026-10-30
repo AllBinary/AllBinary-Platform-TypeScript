@@ -25,9 +25,11 @@ import { URL } from '../../../../../java/net/URL.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
 //not GWT import const HelpSet
@@ -70,26 +72,26 @@ export class JavaHelpSetNotifier
 
     public static isNotified(helpSet: HelpSet): boolean{
 
-    var isNotified: boolean = false;;
+    let isNotified: boolean = false;;
     
 
-    var url: URL = helpSet!.getHelpSetURL()!;;
+    let url: URL = helpSet!.getHelpSetURL()!;;
     
 
-    var size: number = JavaHelpSetNotifier.vector.size()!;;
+    let size: number = JavaHelpSetNotifier.vector.size()!;;
     
 
-    var urlArray: any[] = JavaHelpSetNotifier.vector.toArray()!;;
+    let urlArray: any[] = JavaHelpSetNotifier.vector.toArray()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var nextURL: URL = urlArray[i]! as URL;;
+    let nextURL: URL = urlArray[i]! as URL;;
     
 
                         if(url.toString()!.compareTo(nextURL!.toString()) == 0)
@@ -120,6 +122,4 @@ private constructor (){
 
 
 }
-
-
 

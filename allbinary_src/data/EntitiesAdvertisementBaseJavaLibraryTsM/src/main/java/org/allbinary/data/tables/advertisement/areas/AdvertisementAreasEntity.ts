@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { AdvertisementArea } from '../../../../../../org/allbinary/business/advertisement/area/AdvertisementArea.js';
 //not GWT import const AdvertisementArea
@@ -52,15 +54,18 @@ import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -103,8 +108,7 @@ this.setTableName(this.tableName);
 
     public delete(value: string){
 
-        try {
-            super.deleteWhere(EntryData.getInstance()!.ID, value);
+ try { super.deleteWhere(EntryData.getInstance()!.ID, value);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -115,10 +119,11 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -128,37 +133,46 @@ this.setTableName(this.tableName);
 
                                     }
                                 
+
+ }
+   }
+ 
 }
 
-}
-
-
+get(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.get$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.get$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: get'); }
+  
                 //@Throws(Exception.constructor)
             
-    public get(storeName: string): BasicArrayList{
+    public get$overload1(storeName: string): BasicArrayList{
 
-    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
+    let hashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = hashMapVector!.size()!;;
+    let size: number = hashMapVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = hashMapVector!.get(index) as HashMap<any, any>;;
+    let hashMap: HashMap<any, any> = hashMapVector!.get(index) as HashMap<any, any>;;
     
 
                         if(hashMap != 
@@ -184,16 +198,16 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
                 //@Throws(Exception.constructor)
             
-    public get(storeName: string, advertisementAreaName: string): AdvertisementAreaInterface{
+    public get$overload2(storeName: string, advertisementAreaName: string): AdvertisementAreaInterface{
 
-    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 keysAndValues!.put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaName);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
+    let hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
                         if(hashMap != 
@@ -225,10 +239,10 @@ keysAndValues!.put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaN
 
     public createTableStatement(): string{
 
-    var advertisementAreaData: AdvertisementAreaData = AdvertisementAreaData.getInstance()!;;
+    let advertisementAreaData: AdvertisementAreaData = AdvertisementAreaData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
@@ -249,7 +263,7 @@ stringBuffer!.append(advertisementAreaData!.NAME)!.append(this.sqlTypeStrings!.M
 
     public createTable(): string{
 
-    var returnStr: string = super.createTable(this.createTableStatement())!;;
+    let returnStr: string = super.createTable(this.createTableStatement())!;;
     
 
 
@@ -277,6 +291,4 @@ super.updateWhere(AdvertisementAreaData.getInstance()!.NAME, updatedValues!.get(
 
 
 }
-
-
 

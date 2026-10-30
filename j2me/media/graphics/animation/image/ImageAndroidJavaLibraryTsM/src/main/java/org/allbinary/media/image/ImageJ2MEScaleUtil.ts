@@ -80,10 +80,10 @@ private constructor (){
 
 
                         for (
-    var index: number = 0;index < images.length; index++)
+    let index: number = 0;index < images.length; index++)
         {
 
-    var image: Image = images[index]!;;
+    let image: Image = images[index]!;;
     
 images[index]= ImageScaleUtil.getInstance()!.createImage2(GameFeatureImageCacheFactory.getInstance(), image, width /2, image.getWidth(), height, image.getHeight(), false);
     
@@ -111,6 +111,4 @@ images[index]= ImageScaleUtil.getInstance()!.createImage2(GameFeatureImageCacheF
 
 
 }
-
-
 

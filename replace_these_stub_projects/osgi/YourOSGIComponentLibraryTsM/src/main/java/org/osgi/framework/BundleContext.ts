@@ -35,23 +35,21 @@ import { ServiceReference } from './ServiceReference.js';
 export interface BundleContext {
         
 
-    getBundles(): Bundle[]
+    getBundles(): Bundle[];
 
                 //@Throws(BundleException.constructor)
             
-    installBundle(location: string): Bundle
+    installBundle(location: string): Bundle;
 
-    registerService(clazz: string, service: any, properties: Dictionary): ServiceRegistration
+    registerService(clazz: string, service: any, properties: Dictionary): ServiceRegistration;
 
-    getService(reference: ServiceReference): any
+    getService(reference: ServiceReference): any;
 
                 //@Throws(InvalidSyntaxException.constructor)
             
-    getServiceReferences(clazz: string, filter: string): ServiceReference[]
+    getServiceReferences(clazz: string, filter: string): ServiceReference[];
 
-    getServiceReference(clazz: string): ServiceReference
+    getServiceReference(clazz: string): ServiceReference;
 
 }
-
-
 

@@ -46,11 +46,9 @@ import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/
 export interface ProfileActionScriptNodeInterface extends DomNodeInterface, MutableTreeNode {
         
 
-    addCondition(profileActionConditionInterface: ProfileActionScriptNodeInterface)
+    addCondition(profileActionConditionInterface: ProfileActionScriptNodeInterface): void;
 
-    removeCondition(profileActionConditionInterface: ProfileActionScriptNodeInterface)
+    removeCondition(profileActionConditionInterface: ProfileActionScriptNodeInterface): void;
 
 }
-
-
 

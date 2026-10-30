@@ -26,6 +26,7 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
 //not GWT import const AndroidUtil
@@ -97,7 +98,7 @@ private constructor (){
 super.updateMeasurement(graphics);
     
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.fontHeight= font.getHeight();
     
@@ -125,7 +126,7 @@ this.costY1= (this.y +((this.weaponProperties!.length +1) *this.fontHeight));
 this.setName(this.getRtsLayer()!.getName());
     
 
-    var partInterface: BasicWeaponPart = this.getRtsLayer()!.getPartInterfaceArray()[0]! as BasicWeaponPart;;
+    let partInterface: BasicWeaponPart = this.getRtsLayer()!.getPartInterfaceArray()[0]! as BasicWeaponPart;;
     
 this.weaponProperties= partInterface!.getWeaponProperties()!.toStringArray();
     
@@ -138,7 +139,7 @@ this.myFontProcessor= this.updateMyFontProcessor;
 super.paint(graphics);
     
 
-    var size: number = this.weaponProperties!.length
+    let size: number = this.weaponProperties!.length
                 ;;
     
 
@@ -146,7 +147,7 @@ super.paint(graphics);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 graphics.drawString(this.weaponProperties[index]!, this.textX, this.y +((index +1) *this.fontHeight), 0);
     
@@ -172,6 +173,4 @@ this.rtsLayer= rtsLayer;
 
 
 }
-
-
 

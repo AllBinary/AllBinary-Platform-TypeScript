@@ -24,9 +24,11 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -54,10 +56,10 @@ export class InterfaceUtil
 
     public static viewAll(myClass: Function, lineBreak: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var interfaces: Function[] = myClass!.getInterfaces()!;;
+    let interfaces: Function[] = myClass!.getInterfaces()!;;
     
 stringBuffer!.append(lineBreak);
     
@@ -70,7 +72,7 @@ stringBuffer!.append(lineBreak);
 
 
                         for (
-    var index: number = 0;index < interfaces.length; index++)
+    let index: number = 0;index < interfaces.length; index++)
         {
 stringBuffer!.append("Interface: ");
     
@@ -103,7 +105,7 @@ stringBuffer!.append(lineBreak);
 
 
                         for (
-    var index: number = 0;index < interfaces.length; index++)
+    let index: number = 0;index < interfaces.length; index++)
         {
 
                         if(interfaces[index]!.getName()!.indexOf(interfaceName) >= 0)
@@ -131,17 +133,24 @@ stringBuffer!.append(lineBreak);
     
 }
 
+static isImplemented(...args: any[]): any {
+   
+    if (args.length === 2) return this.isImplemented$overload1(args[0], args[1]);
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.isImplemented$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: isImplemented'); }
+  
+    public static isImplemented$overload1(clazz: Function, anyType: any): boolean{
 
-    public static isImplemented(clazz: Function, anyType: any = {}): boolean{
-
-    var classes: Function[] = anyType!.constructor.name.getInterfaces()!;;
+    let classes: Function[] = anyType!.constructor.name.getInterfaces()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < classes.length; index++)
+    let index: number = 0;index < classes.length; index++)
         {
 
                         if(clazz.toString()!.compareTo(classes[index]!.getName()) == 0)
@@ -162,16 +171,16 @@ stringBuffer!.append(lineBreak);
 }
 
 
-    public static isImplemented(className: string, anyType: any = {}): boolean{
+    public static isImplemented$overload2(className: string, anyType: any): boolean{
 
-    var classes: Function[] = anyType!.constructor.name.getInterfaces()!;;
+    let classes: Function[] = anyType!.constructor.name.getInterfaces()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < classes.length; index++)
+    let index: number = 0;index < classes.length; index++)
         {
 
                         if(classes[index]!.getName()!.indexOf(className) == 0)
@@ -197,12 +206,12 @@ stringBuffer!.append(lineBreak);
 }
 
 
-    public static isImplementedView(clazz: Function, anyType: any = {}): string{
+    public static isImplementedView(clazz: Function, anyType: any): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var classes: Function[] = anyType!.constructor.name.getInterfaces()!;;
+    let classes: Function[] = anyType!.constructor.name.getInterfaces()!;;
     
 stringBuffer!.append("isImplementedView: \n");
     
@@ -211,7 +220,7 @@ stringBuffer!.append("isImplementedView: \n");
 
 
                         for (
-    var index: number = 0;index < classes.length; index++)
+    let index: number = 0;index < classes.length; index++)
         {
 stringBuffer!.append(clazz.toString()!);
     
@@ -241,6 +250,4 @@ private constructor (){
 
 
 }
-
-
 

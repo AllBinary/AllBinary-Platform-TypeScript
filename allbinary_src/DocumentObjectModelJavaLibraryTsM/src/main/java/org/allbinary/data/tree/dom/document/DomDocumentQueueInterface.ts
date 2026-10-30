@@ -47,13 +47,11 @@ export interface DomDocumentQueueInterface {
 
                 //@Throws(Exception.constructor)
             
-    offer(domDocumentMappingInterface: DomDocumentMappingInterface): boolean
+    offer(domDocumentMappingInterface: DomDocumentMappingInterface): boolean;
 
                 //@Throws(Exception.constructor)
             
-    remove(): DomDocumentMappingInterface
+    remove(): DomDocumentMappingInterface;
 
 }
-
-
 

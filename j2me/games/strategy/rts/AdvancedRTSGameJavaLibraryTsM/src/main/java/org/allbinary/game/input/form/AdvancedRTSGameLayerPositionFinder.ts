@@ -79,7 +79,7 @@ private constructor (){
 
     public getLayerInterface(geographicMapCellPosition: GeographicMapCellPosition): AllBinaryLayer{
 
-    var layerInterface: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(geographicMapCellPosition)!;;
+    let layerInterface: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(geographicMapCellPosition)!;;
     
 
                         if(layerInterface == AllBinaryLayer.NULL_ALLBINARY_LAYER)
@@ -100,6 +100,4 @@ private constructor (){
 
 
 }
-
-
 

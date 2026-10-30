@@ -61,8 +61,15 @@ export class HardwareFactory
         
 
     private static readonly instance: HardwareFactory = new HardwareFactory();
-
-    public static getInstance(): HardwareFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): HardwareFactory{
 
 
 
@@ -74,11 +81,10 @@ export class HardwareFactory
 
                 //@Throws(Exception.constructor)
             
-    public static getInstance(os: GenericOperatingSystem): HardwareInterface{
+    public static getInstance$overload2(os: GenericOperatingSystem): HardwareInterface{
 
-        try {
-            
-    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
+ try { 
+    let operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
     
 
                         if(os.getName()!.compareTo(operatingSystems!.LINUX) == 0)
@@ -111,17 +117,20 @@ export class HardwareFactory
 
                             throw new Exception("No Hardware Imp for: " +os.getName());
                     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -132,6 +141,4 @@ private constructor (){
 
 
 }
-
-
 

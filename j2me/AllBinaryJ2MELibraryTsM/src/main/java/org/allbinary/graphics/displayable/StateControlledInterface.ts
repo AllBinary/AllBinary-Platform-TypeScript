@@ -40,9 +40,7 @@
 export interface StateControlledInterface {
         
 
-    setState(state: number)
+    setState(state: number): void;
 
 }
-
-
 

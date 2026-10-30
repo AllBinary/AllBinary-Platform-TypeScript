@@ -70,6 +70,7 @@ import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/ge
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { PrimaryPlayerQueueFactory } from '../../../../../org/allbinary/media/audio/PrimaryPlayerQueueFactory.js';
 //not GWT import const PrimaryPlayerQueueFactory
@@ -85,6 +86,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -187,18 +189,18 @@ this.form.processInputKey(key);
 
     processCommand(): number{
 
-    var commandCurrentSelectionForm: CommandCurrentSelectionForm = this.form as CommandCurrentSelectionForm;;
+    let commandCurrentSelectionForm: CommandCurrentSelectionForm = this.form as CommandCurrentSelectionForm;;
     
 
-    var command: Command = commandCurrentSelectionForm!.getSelectedCommand()!;;
+    let command: Command = commandCurrentSelectionForm!.getSelectedCommand()!;;
     
 this.logUtil!.putF(command.toString(), this, this.PROCESS_COMMAND);
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
                         if(SWTUtil.isSWT && features.isFeature(openGLFeatureFactory!.OPENGL) && command != GameCommandsFactory.getInstance()!.EXIT_COMMAND)
@@ -245,28 +247,27 @@ this.logUtil!.putF(command.toString(), this, this.PROCESS_COMMAND);
             
     public processInputList(): number{
 
-        try {
-            
-    var motionInputsIndex: number = this.processMotionInputs()!;;
+ try { 
+    let motionInputsIndex: number = this.processMotionInputs()!;;
     
 
-    var list: BasicArrayList = this.getGameKeyEventList()!;;
+    let list: BasicArrayList = this.getGameKeyEventList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var key: number = 0;;
+    let key: number = 0;;
     
 
-    var gameKeyEvent: GameKeyEvent;;
+    let gameKeyEvent: GameKeyEvent;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     
@@ -316,10 +317,11 @@ this.clear();
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPUT, e);
     
 
@@ -328,8 +330,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PR
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return  -1;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -337,14 +341,14 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PR
             
     public processMotionInputs(): number{
 
-    var lastIndex: number = this.motionGestureEventList!.size() -1;;
+    let lastIndex: number = this.motionGestureEventList!.size() -1;;
     
 
                         if(lastIndex >= 0)
                         
                                     {
                                     
-    var motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;;
+    let motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;;
     
 this.processMotionInput(motionGestureEvent);
     
@@ -366,24 +370,24 @@ this.motionGestureEventList!.clear();
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
 
-    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
+    let touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
     
 
-    var motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;;
+    let motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;;
     
 
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
                         
                                     {
                                     
-    var point: GPoint = motionGestureEvent!.getCurrentPoint()!;;
+    let point: GPoint = motionGestureEvent!.getCurrentPoint()!;;
     
 
                         if(this.form.isInForm(point))
                         
                                     {
                                     
-    var index: number = this.form.getSelectedIndexForPoint(point)!;;
+    let index: number = this.form.getSelectedIndexForPoint(point)!;;
     
 
                         if(index !=  -1)
@@ -477,6 +481,4 @@ this.hasPressed= true;
 
 
 }
-
-
 

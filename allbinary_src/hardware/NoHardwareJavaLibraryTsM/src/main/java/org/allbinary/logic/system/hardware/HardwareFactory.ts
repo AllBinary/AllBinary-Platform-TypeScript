@@ -54,8 +54,15 @@ export class HardwareFactory
         
 
     private static readonly instance: HardwareFactory = new HardwareFactory();
-
-    public static getInstance(): HardwareFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): HardwareFactory{
 
 
 
@@ -75,30 +82,30 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(os: OperatingSystemInterface): HardwareInterface{
+    public getInstance$overload2(os: OperatingSystemInterface): HardwareInterface{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.SINGLETON;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

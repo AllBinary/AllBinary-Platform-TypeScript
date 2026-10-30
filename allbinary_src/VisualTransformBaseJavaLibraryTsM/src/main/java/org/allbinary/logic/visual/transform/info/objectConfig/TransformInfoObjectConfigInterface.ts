@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomDocumentMappingInterface } from '../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
 //not GWT import const DomDocumentMappingInterface
@@ -54,49 +56,47 @@ import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic
 export interface TransformInfoObjectConfigInterface extends DomDocumentMappingInterface {
         
 
-    containsView(transformInfoInterface: TransformInfoInterface): boolean
+    containsView(transformInfoInterface: TransformInfoInterface): boolean;
 
                 //@Throws(Exception.constructor)
             
-    getName(): string
+    getName(): string;
 
                 //@Throws(Exception.constructor)
             
-    getTransformsGroup(group: string): BasicArrayList
+    getTransformsGroup(group: string): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    getTransforms(): BasicArrayList
+    getTransforms(): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    getParentTransforms(): BasicArrayList
+    getParentTransforms(): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    getGroupTransforms(): BasicArrayList
+    getGroupTransforms(): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    getOutputTypeName(): string
+    getOutputTypeName(): string;
 
-    setOutputTypeName(value: string)
-
-                //@Throws(Exception.constructor)
-            
-    getInputOutputTypeName(): string
+    setOutputTypeName(value: string): void;
 
                 //@Throws(Exception.constructor)
             
-    getInputOutputTypeFile(): string
+    getInputOutputTypeName(): string;
 
                 //@Throws(Exception.constructor)
             
-    getImportUriPath(): string
+    getInputOutputTypeFile(): string;
 
-    toString(): string
+                //@Throws(Exception.constructor)
+            
+    getImportUriPath(): string;
+
+    toString(): string;
 
 }
-
-
 

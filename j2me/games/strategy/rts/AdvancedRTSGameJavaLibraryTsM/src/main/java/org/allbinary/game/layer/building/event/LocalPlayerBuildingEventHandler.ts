@@ -77,7 +77,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var buildingEventListenerInterface: BuildingEventListenerInterface = (eventListenerInterface as BuildingEventListenerInterface);;
+    let buildingEventListenerInterface: BuildingEventListenerInterface = (eventListenerInterface as BuildingEventListenerInterface);;
     
 buildingEventListenerInterface!.onBuildingEvent(eventObject as RTSLayerEvent);
     
@@ -85,6 +85,4 @@ buildingEventListenerInterface!.onBuildingEvent(eventObject as RTSLayerEvent);
 
 
 }
-
-
 

@@ -45,21 +45,27 @@ import { MEUtil } from '../../../../../org/allbinary/logic/MEUtil.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HashtableUtil;
 
 
 
@@ -109,35 +115,35 @@ export class GameFeatureFormUtil
 
     public getChoiceGroup(hashtable: ABHashtable<any, any>, name: string, option: number): ChoiceGroup{
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullImage.NULL_IMAGE_ARRAY);;
+    let choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullImage.NULL_IMAGE_ARRAY);;
     
 
-    var list: BasicArrayList = hashtable.get(name) as BasicArrayList;;
+    let list: BasicArrayList = hashtable.get(name) as BasicArrayList;;
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var ADD_CHOICE: string = ": Adding Choice: ";;
+    let ADD_CHOICE: string = ": Adding Choice: ";;
     
 
-    var GET_CHOICE_GROUP: string = "getChoiceGroup";;
+    let GET_CHOICE_GROUP: string = "getChoiceGroup";;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var gameFeature: Feature = list.objectArray[index]! as Feature;;
+    let gameFeature: Feature = list.objectArray[index]! as Feature;;
     
 stringMaker!.delete(0, stringMaker!.length());
     
@@ -167,29 +173,29 @@ choiceGroup!.append(gameFeature!.toString(), NullImage.NULL_IMAGE);
 
     public addChoiceGroup(form: CommandForm, hashtable: ABHashtable<any, any>, option: number){
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var ADDING_CHOICE_GROUP: string = "Adding Choice Group: ";;
+    let ADDING_CHOICE_GROUP: string = "Adding Choice Group: ";;
     
 
-    var ADD_CHOICE_GROUP: string = "addChoiceGroup";;
+    let ADD_CHOICE_GROUP: string = "addChoiceGroup";;
     
 
-    var size: number = hashtable.size()!;;
+    let size: number = hashtable.size()!;;
     
 
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
+    let objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
     
 
-    var name: string;;
+    let name: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 name= objectArray[index]! as string;
     
@@ -208,17 +214,17 @@ this.meUtil!.appendItem(form, this.getChoiceGroup(hashtable, name, option));
             
     public setDefault(form: CommandForm){
 
-    var size: number = form.size()!;;
+    let size: number = form.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var item: Item = form.get(index)!;;
+    let item: Item = form.get(index)!;;
     
 
                         if(item instanceof GameConfigurationGauge)
@@ -244,6 +250,4 @@ this.meUtil!.appendItem(form, this.getChoiceGroup(hashtable, name, option));
 
 
 }
-
-
 

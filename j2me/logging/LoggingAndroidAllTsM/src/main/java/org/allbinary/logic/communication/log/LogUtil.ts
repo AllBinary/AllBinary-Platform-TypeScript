@@ -26,15 +26,18 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 //not GWT import const TsUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -93,23 +96,23 @@ private constructor (){
 
     /*actual*/ public putL(log: Log){
 
-    var specialMessage: string = log.getSpecialMessage()!;;
+    let specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;;
+    let anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;;
+    let functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;;
+    let exception: any = log.getThrowable()!;;
     
 this.put(specialMessage, anyType, functionName, exception);
     
 }
 
 
-    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any, functionName: string){
 this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
     
 }
@@ -121,28 +124,28 @@ this.putS(specialMessage, string, functionName, NullUtil.getInstance()!.NULL_OBJ
 }
 
 
-    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public put(specialMessage: string, anyType: any, functionName: string, exception: any){
 
-    var className: string = this.LABEL;;
+    let className: string = this.LABEL;;
     
 className= new StringMaker().append(anyType!.constructor.name.toString()!)!.append(this.commonSeps!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
     
 
-    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
     
 hilog.info(0x0000, className, LogUtil.PUBLIC, message);
     
 }
 
 
-    /*actual*/ public putS(specialMessage: string, string: string, functionName: string, exception: any = {}){
+    /*actual*/ public putS(specialMessage: string, string: string, functionName: string, exception: any){
 
-    var className: string = this.LABEL;;
+    let className: string = this.LABEL;;
     
 className= new StringMaker().append(string)!.append(this.commonSeps!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(string)))!.toString();
     
 
-    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
     
 hilog.info(0x0000, className, LogUtil.PUBLIC, message);
     
@@ -150,6 +153,4 @@ hilog.info(0x0000, className, LogUtil.PUBLIC, message);
 
 
 }
-
-
 

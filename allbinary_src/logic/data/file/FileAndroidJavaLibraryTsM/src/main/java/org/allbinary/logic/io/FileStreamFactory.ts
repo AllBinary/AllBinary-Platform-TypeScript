@@ -27,9 +27,11 @@ import { Context } from '../../../../android/content/Context.js';
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -106,7 +108,7 @@ private constructor (context: Context){
             
     public getFileOutputStreamInstance(path: string, fileName: string): AbFileOutputStream{
 
-    var context: Context = this.getContext()!;;
+    let context: Context = this.getContext()!;;
     
 context.deleteFile(fileName);
     
@@ -138,6 +140,4 @@ this.getContext()!.deleteFile(fileName);
 
 
 }
-
-
 

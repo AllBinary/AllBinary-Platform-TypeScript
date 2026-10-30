@@ -28,6 +28,7 @@ import { DirectionUtil } from '../../../../../org/allbinary/direction/DirectionU
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
 //not GWT import const BasicDecimal
@@ -37,18 +38,22 @@ import { AxisMathVectorUtil } from '../../../../../org/allbinary/logic/math/vect
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Angle } from '../../../../../org/allbinary/math/Angle.js';
 //not GWT import const Angle
 
 //not plain js import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+type PositionStrings<T = any, U = any> = typeof PositionStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PositionStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -142,10 +147,10 @@ this.velocityZBasicDecimal!.setint(0);
 
     public setVelocityWithBigDecimalAndDirection(magnitudeBasicDecimal: BasicDecimal, direction: Direction, otherDirection: Direction){
 
-    var angle: Angle = this.directionUtil!.getAngle(direction)!;;
+    let angle: Angle = this.directionUtil!.getAngle(direction)!;;
     
 
-    var otherAngle: Angle = this.directionUtil!.getAngle(otherDirection)!;;
+    let otherAngle: Angle = this.directionUtil!.getAngle(otherDirection)!;;
     
 this.setVelocityWithBigDecimal(magnitudeBasicDecimal, angle, otherAngle);
     
@@ -154,10 +159,10 @@ this.setVelocityWithBigDecimal(magnitudeBasicDecimal, angle, otherAngle);
 
     public setVelocityWithDirection(magnitude: number, direction: Direction, otherDirection: Direction){
 
-    var angle: Angle = this.directionUtil!.getAngle(direction)!;;
+    let angle: Angle = this.directionUtil!.getAngle(direction)!;;
     
 
-    var otherAngle: Angle = this.directionUtil!.getAngle(otherDirection)!;;
+    let otherAngle: Angle = this.directionUtil!.getAngle(otherDirection)!;;
     
 this.setVelocity(magnitude, angle, otherAngle);
     
@@ -166,10 +171,10 @@ this.setVelocity(magnitude, angle, otherAngle);
 
     public addVelocityWithBigDecimalAndDirection(magnitudeBasicDecimal: BasicDecimal, direction: Direction, otherDirection: Direction){
 
-    var angle: Angle = this.directionUtil!.getAngle(direction)!;;
+    let angle: Angle = this.directionUtil!.getAngle(direction)!;;
     
 
-    var otherAngle: Angle = this.directionUtil!.getAngle(otherDirection)!;;
+    let otherAngle: Angle = this.directionUtil!.getAngle(otherDirection)!;;
     
 this.addVelocityWithBigDecimal(magnitudeBasicDecimal, angle, otherAngle);
     
@@ -178,10 +183,10 @@ this.addVelocityWithBigDecimal(magnitudeBasicDecimal, angle, otherAngle);
 
     public addVelocityWithDirection(magnitude: number, direction: Direction, otherDirection: Direction){
 
-    var angle: Angle = this.directionUtil!.getAngle(direction)!;;
+    let angle: Angle = this.directionUtil!.getAngle(direction)!;;
     
 
-    var otherAngle: Angle = this.directionUtil!.getAngle(otherDirection)!;;
+    let otherAngle: Angle = this.directionUtil!.getAngle(otherDirection)!;;
     
 this.addVelocity(magnitude, angle, otherAngle);
     
@@ -190,7 +195,7 @@ this.addVelocity(magnitude, angle, otherAngle);
 
     public setVelocityWithBigDecimal(magnitudeBasicDecimal: BasicDecimal, angle: Angle, otherAngle: Angle){
 
-    var magnitude: number = magnitudeBasicDecimal!.getUnscaled()!;;
+    let magnitude: number = magnitudeBasicDecimal!.getUnscaled()!;;
     
 this.setVelocity(magnitude, angle, otherAngle);
     
@@ -199,7 +204,7 @@ this.setVelocity(magnitude, angle, otherAngle);
 
     public addVelocityWithBigDecimal(magnitudeBasicDecimal: BasicDecimal, angle: Angle, otherAngle: Angle){
 
-    var magnitude: number = magnitudeBasicDecimal!.getUnscaled()!;;
+    let magnitude: number = magnitudeBasicDecimal!.getUnscaled()!;;
     
 this.addVelocity(magnitude, angle, otherAngle);
     
@@ -220,13 +225,13 @@ this.addVelocityi(magnitude, globalThis.Math.trunc(angle.getValue()), globalThis
 
     public setVelocityi(magnitude: number, angle: number, otherAngle: number){
 
-    var xVector: number = (this.axisMathVectorUtil!.calculateX(magnitude, angle) /this.velocityXBasicDecimal!.getScaledFactorValue());;
+    let xVector: number = (this.axisMathVectorUtil!.calculateX(magnitude, angle) /this.velocityXBasicDecimal!.getScaledFactorValue());;
     
 
-    var yVector: number = (this.axisMathVectorUtil!.calculateY(magnitude, angle) /this.velocityYBasicDecimal!.getScaledFactorValue());;
+    let yVector: number = (this.axisMathVectorUtil!.calculateY(magnitude, angle) /this.velocityYBasicDecimal!.getScaledFactorValue());;
     
 
-    var zVector: number = (this.axisMathVectorUtil!.calculateZ(magnitude, otherAngle) /this.velocityZBasicDecimal!.getScaledFactorValue());;
+    let zVector: number = (this.axisMathVectorUtil!.calculateZ(magnitude, otherAngle) /this.velocityZBasicDecimal!.getScaledFactorValue());;
     
 this.velocityXBasicDecimal!.setlong(xVector);
     
@@ -239,13 +244,13 @@ this.velocityZBasicDecimal!.setlong(zVector);
 
     public addVelocityi(magnitude: number, angle: number, otherAngle: number){
 
-    var xVector: number = (this.axisMathVectorUtil!.calculateX(magnitude, angle) /this.velocityXBasicDecimal!.getScaledFactorValue());;
+    let xVector: number = (this.axisMathVectorUtil!.calculateX(magnitude, angle) /this.velocityXBasicDecimal!.getScaledFactorValue());;
     
 
-    var yVector: number = (this.axisMathVectorUtil!.calculateY(magnitude, angle) /this.velocityYBasicDecimal!.getScaledFactorValue());;
+    let yVector: number = (this.axisMathVectorUtil!.calculateY(magnitude, angle) /this.velocityYBasicDecimal!.getScaledFactorValue());;
     
 
-    var zVector: number = (this.axisMathVectorUtil!.calculateZ(magnitude, otherAngle) /this.velocityZBasicDecimal!.getScaledFactorValue());;
+    let zVector: number = (this.axisMathVectorUtil!.calculateZ(magnitude, otherAngle) /this.velocityZBasicDecimal!.getScaledFactorValue());;
     
 this.velocityXBasicDecimal!.addlong(xVector);
     
@@ -258,16 +263,16 @@ this.velocityZBasicDecimal!.addlong(zVector);
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var positionStrings: PositionStrings = PositionStrings.getInstance()!;;
+    let positionStrings: PositionStrings = PositionStrings.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 stringBuffer!.append("Velocity ");
     
@@ -297,6 +302,4 @@ stringBuffer!.append(stringUtil!.toString(this.velocityZBasicDecimal));
 
 
 }
-
-
 

@@ -58,107 +58,105 @@ import { ValidationInterface } from '../../../../org/allbinary/logic/control/val
 export interface UserInterface extends TableMappingInterface, ValidationInterface {
         
 
-    setUserName(value: string)
+    setUserName(value: string): void;
 
-    setPrefixName(value: string)
+    setPrefixName(value: string): void;
 
-    setFirstName(value: string)
+    setFirstName(value: string): void;
 
-    setLastName(value: string)
+    setLastName(value: string): void;
 
-    setMiddleName(value: string)
+    setMiddleName(value: string): void;
 
-    setSuffixName(value: string)
+    setSuffixName(value: string): void;
 
-    setCompany(value: string)
+    setCompany(value: string): void;
 
-    setPositionAtCompany(value: string)
+    setPositionAtCompany(value: string): void;
 
-    setMainEmail(value: string)
+    setMainEmail(value: string): void;
 
-    setSecondaryEmail(value: string)
+    setSecondaryEmail(value: string): void;
 
-    setHomePhone(value: string)
+    setHomePhone(value: string): void;
 
-    setCellPhone(value: string)
+    setCellPhone(value: string): void;
 
-    setWorkPhone(value: string)
+    setWorkPhone(value: string): void;
 
-    setOtherContact(value: string)
+    setOtherContact(value: string): void;
 
-    setElectronicContact(value: string)
+    setElectronicContact(value: string): void;
 
-    setFax(value: string)
+    setFax(value: string): void;
 
-    setRole(aRole: UserRole)
+    setRole(aRole: UserRole): void;
 
-    setEncryption(value: string)
+    setEncryption(value: string): void;
 
-    setSecret(value: string)
+    setSecret(value: string): void;
 
-    setPassword(value: string)
+    setPassword(value: string): void;
 
-    setPermissions(value: string)
+    setPermissions(value: string): void;
 
-    enable()
+    enable(): void;
 
-    setEnable(enable: string)
+    setEnable(enable: string): void;
 
-    getUserName(): string
+    getUserName(): string;
 
-    getPrefixName(): string
+    getPrefixName(): string;
 
-    getFirstName(): string
+    getFirstName(): string;
 
-    getLastName(): string
+    getLastName(): string;
 
-    getMiddleName(): string
+    getMiddleName(): string;
 
-    getSuffixName(): string
+    getSuffixName(): string;
 
-    getCompany(): string
+    getCompany(): string;
 
-    getPositionAtCompany(): string
+    getPositionAtCompany(): string;
 
-    getMainEmail(): string
+    getMainEmail(): string;
 
-    getSecondaryEmail(): string
+    getSecondaryEmail(): string;
 
-    getHomePhone(): string
+    getHomePhone(): string;
 
-    getCellPhone(): string
+    getCellPhone(): string;
 
-    getWorkPhone(): string
+    getWorkPhone(): string;
 
-    getOtherContact(): string
+    getOtherContact(): string;
 
-    getElectronicContact(): string
+    getElectronicContact(): string;
 
-    getFax(): string
+    getFax(): string;
 
-    getRole(): UserRole
+    getRole(): UserRole;
 
-    getEncryption(): string
+    getEncryption(): string;
 
-    getSecret(): string
+    getSecret(): string;
 
-    getPassword(): string
+    getPassword(): string;
 
-    getPermissions(): string
+    getPermissions(): string;
 
-    getUserConfigurationInterface(): UserConfigurationInterface
+    getUserConfigurationInterface(): UserConfigurationInterface;
 
-    setUserConfigurationInterface(userConfigurationInterface: UserConfigurationInterface)
+    setUserConfigurationInterface(userConfigurationInterface: UserConfigurationInterface): void;
 
-    toPasswordHashMap(): HashMap<any, any>
+    toPasswordHashMap(): HashMap<any, any>;
 
-    validateSession(weblisketSession: WeblisketSessionInterface)
+    validateSession(weblisketSession: WeblisketSessionInterface): void;
 
-    updateSession(weblisketSession: WeblisketSessionInterface)
+    updateSession(weblisketSession: WeblisketSessionInterface): void;
 
-    isSessionValid(): Boolean
+    isSessionValid(): Boolean;
 
 }
-
-
 

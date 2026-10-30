@@ -27,9 +27,11 @@ import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../o
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -77,12 +79,12 @@ export class FeatureResourceInitializationUtil
             
     public init(level: number){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
     
 
-    var featuredResourceFactory: FeaturedResourceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;;
+    let featuredResourceFactory: FeaturedResourceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;;
     
 featuredResourceFactory!.init(level);
     
@@ -92,6 +94,4 @@ FeaturedResourceRelativeRelationshipFactory.getInstance()!.init(level);
 
 
 }
-
-
 

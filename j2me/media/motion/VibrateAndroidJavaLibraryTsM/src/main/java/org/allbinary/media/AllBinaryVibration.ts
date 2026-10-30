@@ -26,6 +26,7 @@ import { Vibrator } from '../../../android/os/Vibrator.js';
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
 //not GWT import const GameConfigurationCentral
@@ -102,6 +103,4 @@ this.vibrator.vibrate(duration);
 
 
 }
-
-
 

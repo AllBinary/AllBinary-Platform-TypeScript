@@ -28,12 +28,15 @@ import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js'
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -75,23 +78,23 @@ export class SubDirectory
 
     public static toString(files: BasicArrayList): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var NEW_LINE: string = CommonSeps.getInstance()!.NEW_LINE;;
+    let NEW_LINE: string = CommonSeps.getInstance()!.NEW_LINE;;
     
 
-    var size: number = files.size()!;;
+    let size: number = files.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var file: AbFile = files.get(index) as AbFile;;
+    let file: AbFile = files.get(index) as AbFile;;
     
 stringBuffer!.append(file.getPath());
     
@@ -115,8 +118,19 @@ private constructor (){
             super();
         }
 
-
-    public search(fileFilter: FileFilter, file: AbFile): BasicArrayList{
+search(...args: any[]): any {
+   
+    if (args.length === 2) return this.search$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.search$overload2(args[0]);
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.search$overload3(args[0], args[1]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.search$overload4(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: search'); }
+  
+    public search$overload1(fileFilter: FileFilter, file: AbFile): BasicArrayList{
 
 
 
@@ -126,7 +140,7 @@ private constructor (){
 }
 
 
-    public search(file: AbFile): BasicArrayList{
+    public search$overload2(file: AbFile): BasicArrayList{
 
 
 
@@ -136,7 +150,7 @@ private constructor (){
 }
 
 
-    public search(searchValue: string, file: AbFile): BasicArrayList{
+    public search$overload3(searchValue: string, file: AbFile): BasicArrayList{
 
 
 
@@ -146,7 +160,7 @@ private constructor (){
 }
 
 
-    public search(level: number, file: AbFile): BasicArrayList{
+    public search$overload4(level: number, file: AbFile): BasicArrayList{
 
 
 
@@ -157,6 +171,4 @@ private constructor (){
 
 
 }
-
-
 

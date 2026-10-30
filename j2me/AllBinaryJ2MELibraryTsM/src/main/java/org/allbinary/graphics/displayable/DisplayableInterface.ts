@@ -46,17 +46,15 @@ import { CommandListener } from '../../../../javax/microedition/lcdui/CommandLis
 export interface DisplayableInterface {
         
 
-    addCommand(cmd: Command)
+    addCommand(cmd: Command): void;
 
-    getHeight(): number
+    getHeight(): number;
 
-    getWidth(): number
+    getWidth(): number;
 
-    removeCommand(cmd: Command)
+    removeCommand(cmd: Command): void;
 
-    setCommandListener(l: CommandListener)
+    setCommandListener(l: CommandListener): void;
 
 }
-
-
 

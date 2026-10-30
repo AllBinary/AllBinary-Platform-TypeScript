@@ -22,18 +22,23 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -91,10 +96,10 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LA
 
 
                         for (
-    var index: number = this.eventList!.size() -1;index >= 0; index--)
+    let index: number = this.eventList!.size() -1;index >= 0; index--)
         {
 
-    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = this.eventList!.objectArray[index]! as GameKeyCompleteMotionGestureInputEvent;;
+    let gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = this.eventList!.objectArray[index]! as GameKeyCompleteMotionGestureInputEvent;;
     
 gameKeyCompleteMotionGestureInputEvent!.update();
     
@@ -104,6 +109,4 @@ gameKeyCompleteMotionGestureInputEvent!.update();
 
 
 }
-
-
 

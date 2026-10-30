@@ -33,6 +33,7 @@ import { AbResponseHandler } from '../../../org/allbinary/logic/communication/ht
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LicensingException } from '../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -80,39 +81,39 @@ public constructor (){
             
     search(){
 
-        try {
-            
-    var anyType: any = new InventoryHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
+ try { 
+    let anyType: any = new InventoryHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("search", 
+    let method: Method = addressHelperClass!.getMethod("search", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 pageContext!.getOut()!.print(result);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to search Inventory by keyword";;
+    let error: string = "Failed to search Inventory by keyword";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -124,15 +125,15 @@ pageContext!.getOut()!.print(result);
                                     }
                                 
 
-        try {
-            pageContext!.getOut()!.print(error +"<br>");
+ try { pageContext!.getOut()!.print(error +"<br>");
     
 pageContext!.getOut()!.print("Exception: " +e +"<br>");
     
-
-                //: 
-} catch(e2) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e2 = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
@@ -142,10 +143,14 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
 
                                     }
                                 
-}
 
-}
-*/
+ }
+   }
+ 
+
+ }
+   }
+ 
 }
 
 
@@ -153,39 +158,39 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
             
     viewSummary(){
 
-        try {
-            
-    var anyType: any = new InventoryHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
+ try { 
+    let anyType: any = new InventoryHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;;
+    let helperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod("viewSummary", 
+    let method: Method = helperClass!.getMethod("viewSummary", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 pageContext!.getOut()!.print(result);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to View Summary";;
+    let error: string = "Failed to View Summary";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -197,15 +202,15 @@ pageContext!.getOut()!.print(result);
                                     }
                                 
 
-        try {
-            pageContext!.getOut()!.print(error +"<br>");
+ try { pageContext!.getOut()!.print(error +"<br>");
     
 pageContext!.getOut()!.print("Exception: " +e +"<br>");
     
-
-                //: 
-} catch(e2) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e2 = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
@@ -215,10 +220,14 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
 
                                     }
                                 
-}
 
-}
-*/
+ }
+   }
+ 
+
+ }
+   }
+ 
 }
 
 
@@ -226,8 +235,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(this.getCommand() != 
                                     null
                                 )
@@ -305,10 +313,11 @@ this.setObjectFile("views.generic.inventory.AutoValidationInventoryView");
 
                             throw new Exception("Command Null");
                     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -317,11 +326,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -330,12 +339,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

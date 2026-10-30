@@ -77,7 +77,7 @@ protected constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var baseMotionGestureEventListener: BaseMotionGestureEventListener = eventListenerInterface as BaseMotionGestureEventListener;;
+    let baseMotionGestureEventListener: BaseMotionGestureEventListener = eventListenerInterface as BaseMotionGestureEventListener;;
     
 baseMotionGestureEventListener!.onScrolledMotionGestureEvent(eventObject as MotionGestureEvent);
     
@@ -85,6 +85,4 @@ baseMotionGestureEventListener!.onScrolledMotionGestureEvent(eventObject as Moti
 
 
 }
-
-
 

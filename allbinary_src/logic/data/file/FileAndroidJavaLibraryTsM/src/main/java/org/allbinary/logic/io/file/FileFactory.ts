@@ -30,6 +30,7 @@ import { Context } from '../../../../../android/content/Context.js';
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 
 
@@ -58,8 +59,15 @@ export class FileFactory
         
 
     private static readonly SINGLETON: FileFactory = new FileFactory(ResourceUtil.getInstance()!.getContext());
-
-    public static getInstance(): FileFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): FileFactory{
 
 
 
@@ -83,8 +91,7 @@ private constructor (context: Context){
             
     public isFile(path: string): boolean{
 
-        try {
-            this.context.openFileInput(path);
+ try { this.context.openFileInput(path);
     
 
 
@@ -92,18 +99,21 @@ private constructor (context: Context){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof FileNotFoundException) {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+  else { throw caught; } }
+ 
 }
 
 
@@ -131,7 +141,7 @@ private constructor (context: Context){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(file: AbFile, childFilePath: string): AbFile{
+    public getInstance$overload2(file: AbFile, childFilePath: string): AbFile{
 
 
 
@@ -142,6 +152,4 @@ private constructor (context: Context){
 
 
 }
-
-
 

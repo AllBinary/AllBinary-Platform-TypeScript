@@ -43,9 +43,11 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StaticViewPosition } from '../../../../org/allbinary/view/StaticViewPosition.js';
 //not GWT import const StaticViewPosition
@@ -85,7 +87,7 @@ public constructor (playerInputId: number){
 this.playerGameInput= new PlayerGameInput(this.getGameKeyEventList(), new BasicArrayListD(), playerInputId);
     
 
-    var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;;
+    let canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;;
     
 this.logUtil!.putF("Danger Danger Danger: Should Not Be Called Except For Testing Input", this, canvasStrings!.PAINT);
     
@@ -117,6 +119,4 @@ this.logUtil!.putF("Danger Danger Danger: Should Not Be Called Except For Testin
 
 
 }
-
-
 

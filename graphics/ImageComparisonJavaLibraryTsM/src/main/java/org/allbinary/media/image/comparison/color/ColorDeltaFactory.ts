@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
@@ -39,6 +40,7 @@ import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cac
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -74,33 +76,35 @@ export class ColorDeltaFactory
                 private static init(): number { 
                     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var STATIC_BLOCK: string = "Static Block";;
+    let STATIC_BLOCK: string = "Static Block";;
     
 
-    var instance: string = "ColorDeltaFactory";;
+    let instance: string = "ColorDeltaFactory";;
     
 
-        try {
-            logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
+ try { logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
     
 ColorDeltaFactory.cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX) as AutomaticCacheInterface;
     
 logUtil!.putF(commonStrings!.END, instance, STATIC_BLOCK);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
     
-}
 
+ }
+   }
+ 
 
 
                     return 0;
@@ -110,7 +114,7 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
             
     public static getInstance(rgb1: number, rgb2: number): ColorDelta{
 
-    var colorDelta: ColorDelta = ColorDeltaFactory.cacheInterface!.get(ColorDelta.getKey(rgb1, rgb2)) as ColorDelta;;
+    let colorDelta: ColorDelta = ColorDeltaFactory.cacheInterface!.get(ColorDelta.getKey(rgb1, rgb2)) as ColorDelta;;
     
 
                         if(colorDelta == 
@@ -141,6 +145,4 @@ private constructor (){
 
 
 }
-
-
 

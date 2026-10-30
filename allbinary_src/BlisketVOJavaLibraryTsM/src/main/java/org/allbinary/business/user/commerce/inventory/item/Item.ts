@@ -46,6 +46,7 @@ import { ShippingMethodData } from '../../../../../../../org/allbinary/business/
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -102,7 +103,7 @@ public constructor (){
 
             super();
         
-    var EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 this.group= EMPTY;
     
@@ -243,7 +244,7 @@ this.special= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = super.toHashMap()!;;
+    let hashMap: HashMap<any, any> = super.toHashMap()!;;
     
 hashMap!.put(ShippingMethodData.GROUP, this.group);
     
@@ -267,6 +268,4 @@ hashMap!.put(EntryData.getInstance()!.SPECIAL, this.special);
 
 
 }
-
-
 

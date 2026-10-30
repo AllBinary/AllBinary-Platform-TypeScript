@@ -22,6 +22,7 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -47,17 +48,15 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 export interface HighScoresInterface {
         
 
-    getList(): BasicArrayList
+    getList(): BasicArrayList;
 
-    addHighScore(newHighScore: HighScore)
+    addHighScore(newHighScore: HighScore): void;
 
-    getTotal(): number
+    getTotal(): number;
 
                 //@Throws(Exception.constructor)
             
-    isBestScore(newHighScore: HighScore): boolean
+    isBestScore(newHighScore: HighScore): boolean;
 
 }
-
-
 

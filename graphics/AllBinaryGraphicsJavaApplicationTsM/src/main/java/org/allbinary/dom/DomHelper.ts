@@ -48,12 +48,15 @@ import { StreamResult } from '../../../javax/xml/transform/stream/StreamResult.j
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -107,18 +110,24 @@ private constructor (){
             super();
         }
 
+createDocument(...args: any[]): any {
+   
+    if (args.length === 0) return this.createDocument$overload1();
+   
+    if (args.length === 1) return this.createDocument$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: createDocument'); }
+  
+    public createDocument$overload1(): Document{
 
-    public createDocument(): Document{
-
-        try {
-            
-    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
+ try { 
+    let factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
     
 
-    var builder: DocumentBuilder = factory.newDocumentBuilder()!;;
+    let builder: DocumentBuilder = factory.newDocumentBuilder()!;;
     
 
-    var document: Document = builder.newDocument()!;;
+    let document: Document = builder.newDocument()!;;
     
 
 
@@ -126,34 +135,36 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return document;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public createDocument(xmlFile: File): Document{
+    public createDocument$overload2(xmlFile: File): Document{
 
-        try {
-            
-    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
+ try { 
+    let factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
     
 
-    var builder: DocumentBuilder = factory.newDocumentBuilder()!;;
+    let builder: DocumentBuilder = factory.newDocumentBuilder()!;;
     
 
-    var document: Document = builder.parse(xmlFile)!;;
+    let document: Document = builder.parse(xmlFile)!;;
     
 
 
@@ -161,17 +172,20 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return document;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -179,21 +193,20 @@ private constructor (){
             
     public toString(document: Document): string{
 
-        try {
-            
-    var domSource: DOMSource = new DOMSource(document);;
+ try { 
+    let domSource: DOMSource = new DOMSource(document);;
     
 
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+    let byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var streamResult: StreamResult = new StreamResult(byteArrayOutputStream);;
+    let streamResult: StreamResult = new StreamResult(byteArrayOutputStream);;
     
 
-    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
+    let copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 
-    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
+    let copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
     
 copyTransformer!.transform(domSource, streamResult);
     
@@ -203,17 +216,20 @@ copyTransformer!.transform(domSource, streamResult);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return byteArrayOutputStream!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -221,34 +237,36 @@ copyTransformer!.transform(domSource, streamResult);
             
     public save(file: File, document: Document){
 
-        try {
-            
-    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
+ try { 
+    let copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 
-    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
+    let copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
     
 
-    var domSource: DOMSource = new DOMSource(document);;
+    let domSource: DOMSource = new DOMSource(document);;
     
 file.createNewFile();
     
 
-    var streamResult: StreamResult = new StreamResult(file);;
+    let streamResult: StreamResult = new StreamResult(file);;
     
 copyTransformer!.transform(domSource, streamResult);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -256,17 +274,17 @@ copyTransformer!.transform(domSource, streamResult);
             
     public getChildNodeList(nodeName: string, nodeList: NodeList): NodeList{
 
-    var numberOfNodes: number = nodeList!.getLength()!;;
+    let numberOfNodes: number = nodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfNodes; index++)
+    let index: number = 0;index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.item(index)!;;
+    let node: Node = nodeList!.item(index)!;;
     
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
@@ -295,23 +313,23 @@ copyTransformer!.transform(domSource, streamResult);
             
     public getChildrenWithoutTextNodes(nodeName: string, nodeList: NodeList): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
-    var childNodeList: NodeList = this.getChildNodeList(nodeName, nodeList)!;;
+    let childNodeList: NodeList = this.getChildNodeList(nodeName, nodeList)!;;
     
 
-    var numberOfChildren: number = childNodeList!.getLength()!;;
+    let numberOfChildren: number = childNodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfChildren; index++)
+    let index: number = 0;index < numberOfChildren; index++)
         {
 
-    var node: Node = childNodeList!.item(index)!;;
+    let node: Node = childNodeList!.item(index)!;;
     
 
                         if(node.getNodeType() != Node.TEXT_NODE)
@@ -337,20 +355,20 @@ copyTransformer!.transform(domSource, streamResult);
             
     public getWithoutTextNodes(nodeList: NodeList): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
-    var numberOfChildren: number = nodeList!.getLength()!;;
+    let numberOfChildren: number = nodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfChildren; index++)
+    let index: number = 0;index < numberOfChildren; index++)
         {
 
-    var node: Node = nodeList!.item(index)!;;
+    let node: Node = nodeList!.item(index)!;;
     
 
                         if(node.getNodeType() != Node.TEXT_NODE)
@@ -371,22 +389,29 @@ copyTransformer!.transform(domSource, streamResult);
     
 }
 
-
+searchNodeList(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.searchNodeList$overload1(args[0], args[1]);
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.searchNodeList$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: searchNodeList'); }
+  
                 //@Throws(Exception.constructor)
             
-    public searchNodeList(nodeName: string, nodeList: NodeList): Node{
+    public searchNodeList$overload1(nodeName: string, nodeList: NodeList): Node{
 
-    var numberOfNodes: number = nodeList!.getLength()!;;
+    let numberOfNodes: number = nodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfNodes; index++)
+    let index: number = 0;index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.item(index)!;;
+    let node: Node = nodeList!.item(index)!;;
     
 this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
     
@@ -415,19 +440,19 @@ this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
 
                 //@Throws(Exception.constructor)
             
-    public searchNodeList(nodeName: string, nodeList: BasicArrayList): Node{
+    public searchNodeList$overload2(nodeName: string, nodeList: BasicArrayList): Node{
 
-    var numberOfNodes: number = nodeList!.size()!;;
+    let numberOfNodes: number = nodeList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfNodes; index++)
+    let index: number = 0;index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.get(index) as Node;;
+    let node: Node = nodeList!.get(index) as Node;;
     
 this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
     
@@ -455,6 +480,4 @@ this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
 
 
 }
-
-
 

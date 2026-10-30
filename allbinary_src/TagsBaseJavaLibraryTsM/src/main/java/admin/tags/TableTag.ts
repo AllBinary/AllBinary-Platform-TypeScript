@@ -41,6 +41,7 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SqlStrings } from '../../org/allbinary/logic/communication/sql/SqlStrings.js';
 //not GWT import const SqlStrings
@@ -50,6 +51,7 @@ import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js'
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -217,19 +219,18 @@ this.total= total;
             
     public drop(): string{
 
-        try {
-            
-    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
+ try { 
+    let anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("drop", 
+    let method: Method = addressHelperClass!.getMethod("drop", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -238,12 +239,13 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to drop table";;
+    let error: string = "Failed to drop table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -260,8 +262,10 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -269,19 +273,18 @@ this.total= total;
             
     public create(): string{
 
-        try {
-            
-    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
+ try { 
+    let anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("create", 
+    let method: Method = addressHelperClass!.getMethod("create", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -290,12 +293,13 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to create table";;
+    let error: string = "Failed to create table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -312,8 +316,10 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -321,19 +327,18 @@ this.total= total;
             
     public restore(): string{
 
-        try {
-            
-    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
+ try { 
+    let anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("restore", 
+    let method: Method = addressHelperClass!.getMethod("restore", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -342,12 +347,13 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to restore backup";;
+    let error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -364,8 +370,10 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -373,19 +381,18 @@ this.total= total;
             
     public backup(): string{
 
-        try {
-            
-    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
+ try { 
+    let anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("backup", 
+    let method: Method = addressHelperClass!.getMethod("backup", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -394,12 +401,13 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to make backup";;
+    let error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -416,8 +424,10 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -425,16 +435,15 @@ this.total= total;
             
     public insert(): string{
 
-        try {
-            
-    var helperClass: Function = this.requestObject!.constructor!;;
+ try { 
+    let helperClass: Function = this.requestObject!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod("insert", 
+    let method: Method = helperClass!.getMethod("insert", 
                             null)!;;
     
 
-    var result: string = method.invoke(this.requestObject, 
+    let result: string = method.invoke(this.requestObject, 
                             null) as string;;
     
 
@@ -443,12 +452,13 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to insert";;
+    let error: string = "Failed to insert";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -465,8 +475,10 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -474,16 +486,15 @@ this.total= total;
             
     public delete(): string{
 
-        try {
-            
-    var helperClass: Function = this.requestObject!.constructor!;;
+ try { 
+    let helperClass: Function = this.requestObject!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod(commonStrings!.delete, 
+    let method: Method = helperClass!.getMethod(commonStrings!.delete, 
                             null)!;;
     
 
-    var result: string = method.invoke(this.requestObject, 
+    let result: string = method.invoke(this.requestObject, 
                             null) as string;;
     
 
@@ -492,12 +503,13 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to delete";;
+    let error: string = "Failed to delete";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -514,8 +526,10 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -523,16 +537,15 @@ this.total= total;
             
     public update(): string{
 
-        try {
-            
-    var helperClass: Function = this.requestObject!.constructor!;;
+ try { 
+    let helperClass: Function = this.requestObject!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod("update", 
+    let method: Method = helperClass!.getMethod("update", 
                             null)!;;
     
 
-    var result: string = method.invoke(this.requestObject, 
+    let result: string = method.invoke(this.requestObject, 
                             null) as string;;
     
 
@@ -541,12 +554,13 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to update";;
+    let error: string = "Failed to update";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -563,8 +577,10 @@ this.total= total;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -572,16 +588,15 @@ this.total= total;
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
                                     
-    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;;
+    let request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TableTag Helper: ");
     
@@ -687,7 +702,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.tagStrings!.DO_START_TAG
                         
                                     {
                                     
-    var output: string = this.backup()!;;
+    let output: string = this.backup()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -716,7 +731,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.tagStrings!.DO_START_TAG
 this.getPropertiesHashMap()!.put("total", this.getTotal());
     
 
-    var output: string = this.restore()!;;
+    let output: string = this.restore()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -741,7 +756,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                         
                                     {
                                     
-    var output: string = this.drop()!;;
+    let output: string = this.drop()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -766,7 +781,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                         
                                     {
                                     
-    var output: string = this.create()!;;
+    let output: string = this.create()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -791,7 +806,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                         
                                     {
                                     
-    var output: string = this.insert()!;;
+    let output: string = this.insert()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -810,7 +825,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                         
                                     {
                                     
-    var output: string = this.delete()!;;
+    let output: string = this.delete()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -829,7 +844,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                         
                                     {
                                     
-    var output: string = this.update()!;;
+    let output: string = this.update()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -855,10 +870,11 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return EVAL_BODY_INCLUDE;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -867,11 +883,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -880,12 +896,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

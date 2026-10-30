@@ -63,9 +63,9 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
 
                 //@Throws(Exception.constructor)
             
-    public remove(key: any = {}): CacheableInterface{
+    public remove(key: any): CacheableInterface{
 
-    var size: number = this.buffers.size()!;;
+    let size: number = this.buffers.size()!;;
     
 
                         if(size > 0)
@@ -94,6 +94,4 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
 
 
 }
-
-
 

@@ -54,5 +54,3 @@ expect export class GameStatisticsFactory extends BaseGameStatistics {
 
 }
 
-
-

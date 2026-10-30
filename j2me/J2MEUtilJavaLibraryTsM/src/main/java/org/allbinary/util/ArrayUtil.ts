@@ -13,15 +13,19 @@
 
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+type MathUtil<T = any, U = any> = typeof MathUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MathUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -74,7 +78,7 @@ export class ArrayUtil
 
     public copyOfType(original: any[], newLength: number, newType: Function): any[]{
 
-    var copy: any[] = new Array(newLength);;
+    let copy: any[] = new Array(newLength);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -89,7 +93,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOfbyte(original: number[], newLength: number): number[]{
 
-    var copy: number[] = new Array(newLength);;
+    let copy: number[] = new Array(newLength);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -104,7 +108,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOfshort(original: number[], newLength: number): number[]{
 
-    var copy: number[] = new Array(newLength);;
+    let copy: number[] = new Array(newLength);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -119,7 +123,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOfint(original: number[], newLength: number): number[]{
 
-    var copy: number[] = new Array(newLength);;
+    let copy: number[] = new Array(newLength);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -134,7 +138,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOflong(original: number[], newLength: number): number[]{
 
-    var copy: number[] = new Array(newLength);;
+    let copy: number[] = new Array(newLength);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -149,7 +153,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOfchar(original: string[], newLength: number): string[]{
 
-    var copy: string[] = 
+    let copy: string[] = 
                                                         
                                                         new Array(newLength)
                                                     ;;
@@ -167,7 +171,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOffloat(original: number[], newLength: number): number[]{
 
-    var copy: number[] = new Array(newLength);;
+    let copy: number[] = new Array(newLength);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -182,7 +186,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOfdouble(original: number[], newLength: number): number[]{
 
-    var copy: number[] = new Array(newLength);;
+    let copy: number[] = new Array(newLength);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -197,7 +201,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOfboolean(original: boolean[], newLength: number): boolean[]{
 
-    var copy: boolean[] = new Array(newLength);;
+    let copy: boolean[] = new Array(newLength);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -212,20 +216,20 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public reverse(intArray: number[]){
 
-    var length: number = intArray!.length -1;;
+    let length: number = intArray!.length -1;;
     
 
-    var temp: number= 0;;
+    let temp: number= 0;;
     
 
-    var size: number = globalThis.Math.trunc(length /2);;
+    let size: number = globalThis.Math.trunc(length /2);;
     
 
 
 
 
                         for (
-    var index: number = 0;index <= size; index++)
+    let index: number = 0;index <= size; index++)
         {
 temp= intArray[index]!;
     
@@ -240,30 +244,30 @@ intArray[length -index]= temp;
 
     public flip(intArray: number[], width: number, height: number){
 
-    var length: number = height -1;;
+    let length: number = height -1;;
     
 
-    var temp: number= 0;;
+    let temp: number= 0;;
     
 
-    var index: number= 0;;
+    let index: number= 0;;
     
 
-    var rowIndex: number= 0;;
+    let rowIndex: number= 0;;
     
 
 
 
 
                         for (
-    var y: number = 0;y <= globalThis.Math.trunc(length /2); y++)
+    let y: number = 0;y <= globalThis.Math.trunc(length /2); y++)
         {
 
 
 
 
                         for (
-    var x: number = 0;x < width; x++)
+    let x: number = 0;x < width; x++)
         {
 rowIndex= ((length -y) *width);
     
@@ -284,17 +288,17 @@ intArray[rowIndex +x]= temp;
 
     public toStringFromTwoDimensionaArray(twoDimensionalIntArray: number[][]): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var endIndex: number = twoDimensionalIntArray!.length
+    let endIndex: number = twoDimensionalIntArray!.length
                 ;;
     
 
-    var endIndex2: number = twoDimensionalIntArray[0]!.length
+    let endIndex2: number = twoDimensionalIntArray[0]!.length
                 ;;
     
 
@@ -302,7 +306,7 @@ intArray[rowIndex +x]= temp;
 
 
                         for (
-    var index: number = 0;index < endIndex; index++)
+    let index: number = 0;index < endIndex; index++)
         {
 stringBuffer!.append(commonSeps!.BRACE_OPEN);
     
@@ -311,7 +315,7 @@ stringBuffer!.append(commonSeps!.BRACE_OPEN);
 
 
                         for (
-    var index2: number = 0;index2 < endIndex2; index2++)
+    let index2: number = 0;index2 < endIndex2; index2++)
         {
 stringBuffer!.appendint(twoDimensionalIntArray[index]![index2]!);
     
@@ -336,17 +340,17 @@ stringBuffer!.append(commonSeps!.NEW_LINE);
 
     public toStringFromObjectArray(objectArray: any[]): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < objectArray!.length; index++)
+    let index: number = 0;index < objectArray!.length; index++)
         {
 stringBuffer!.append(StringUtil.getInstance()!.toString(objectArray[index]!));
     
@@ -365,17 +369,17 @@ stringBuffer!.append(commonSeps!.COMMA_SEP);
 
     public toStringFromByteArray(byteArray: number[]): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < byteArray!.length; index++)
+    let index: number = 0;index < byteArray!.length; index++)
         {
 stringBuffer!.appendbyte(byteArray[index]!);
     
@@ -393,6 +397,4 @@ stringBuffer!.append(commonSeps!.COMMA_SEP);
 
 
 }
-
-
 

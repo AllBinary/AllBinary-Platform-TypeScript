@@ -54,6 +54,7 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
@@ -181,13 +182,13 @@ this.animationInterface= animationInterface;
 
     public paint(graphics: Graphics){
 
-    var viewPosition: ViewPositionBase = this.getOwnerLayerInterface()!.getViewPosition()!;;
+    let viewPosition: ViewPositionBase = this.getOwnerLayerInterface()!.getViewPosition()!;;
     
 
-    var viewX: number = viewPosition!.getX()!;;
+    let viewX: number = viewPosition!.getX()!;;
     
 
-    var viewY: number = viewPosition!.getY()!;;
+    let viewY: number = viewPosition!.getY()!;;
     
 this.animationInterface!.paintXY(graphics, viewX, viewY);
     
@@ -215,6 +216,4 @@ this.weaponProperties= weaponProperties;
 
 
 }
-
-
 

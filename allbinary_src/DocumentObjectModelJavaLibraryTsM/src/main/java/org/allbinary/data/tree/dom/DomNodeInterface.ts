@@ -50,9 +50,7 @@ export interface DomNodeInterface {
 
                 //@Throws(Exception.constructor)
             
-    toXmlNode(document: Document): Node
+    toXmlNode(document: Document): Node;
 
 }
-
-
 

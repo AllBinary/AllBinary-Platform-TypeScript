@@ -42,9 +42,7 @@
 export interface DirectionCompositeInterface {
         
 
-    getDirection(): Direction
+    getDirection(): Direction;
 
 }
-
-
 

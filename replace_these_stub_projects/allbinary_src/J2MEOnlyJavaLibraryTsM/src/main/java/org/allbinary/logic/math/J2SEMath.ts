@@ -71,12 +71,7 @@ export class J2SEMath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (value < 0)
-                        ?       
-                                 -value
-                                :
-
-                            value;
+                        return ((value < 0) ?  -value : value);
     
 }
 
@@ -86,17 +81,10 @@ export class J2SEMath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (value < 0)
-                        ?       
-                                 -value
-                                :
-
-                            value;
+                        return ((value < 0) ?  -value : value);
     
 }
 
 
 }
-
-
 

@@ -76,7 +76,7 @@ public constructor (emailInfo: EmailInfo, to: string){
 
             super();
         
-    var basicEmailInfo: BasicEmailInfo = emailInfo!.getBasicEmailInfo()!;;
+    let basicEmailInfo: BasicEmailInfo = emailInfo!.getBasicEmailInfo()!;;
     
 this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.getSmtpServer(), basicEmailInfo!.getEmailServerConfigurationInterface()!.getAccountName(), to, basicEmailInfo!.getSubject(), basicEmailInfo!.getTextBody(), emailInfo!.getHtmlAttachment(), emailInfo!.getContentBase());
     
@@ -162,6 +162,4 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 
 
 }
-
-
 

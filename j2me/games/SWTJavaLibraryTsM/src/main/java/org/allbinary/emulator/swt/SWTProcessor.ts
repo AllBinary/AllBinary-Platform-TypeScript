@@ -24,6 +24,7 @@
         
 //not plain js import { NullRunnable } 
 const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
+type NullRunnable<T = any, U = any> = typeof NullRunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullRunnable;
 
 import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
 //not GWT import const Display
@@ -79,6 +80,4 @@ display.sleep();
 
 
 }
-
-
 

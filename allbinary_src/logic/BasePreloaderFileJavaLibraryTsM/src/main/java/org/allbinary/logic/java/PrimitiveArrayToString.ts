@@ -22,6 +22,7 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -49,14 +50,14 @@ export class PrimitiveArrayToString
 
     public static toString(floats: number[]): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < floats.length; index++)
+    let index: number = 0;index < floats.length; index++)
         {
 stringBuffer!.appendfloat(floats[index]!);
     
@@ -72,6 +73,4 @@ stringBuffer!.appendfloat(floats[index]!);
 
 
 }
-
-
 

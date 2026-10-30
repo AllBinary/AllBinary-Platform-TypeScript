@@ -70,5 +70,3 @@ this.gameCanvas!.draw(graphics);
 
 }
 
-
-

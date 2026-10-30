@@ -50,59 +50,57 @@ import { UserRole } from '../../../../../../../org/allbinary/business/user/role/
 export interface WeblisketSessionInterface {
         
 
-    clear()
+    clear(): void;
 
-    getAttempts(): Integer
+    getAttempts(): Integer;
 
-    getAuthentication(): string
+    getAuthentication(): string;
 
-    getCreationTime(): number
+    getCreationTime(): number;
 
-    getId(): string
+    getId(): string;
 
-    getLastAccessedTime(): number
-
-                //@Throws(Exception.constructor)
-            
-    getOrder(): OrderInterface
-
-    getPassword(): string
-
-    getPaymentMethod(): string
+    getLastAccessedTime(): number;
 
                 //@Throws(Exception.constructor)
             
-    getRole(): UserRole
+    getOrder(): OrderInterface;
 
-    getStoreName(): string
+    getPassword(): string;
 
-    getTimeout(): string
+    getPaymentMethod(): string;
 
-    getUserName(): string
+                //@Throws(Exception.constructor)
+            
+    getRole(): UserRole;
 
-    getWebAppPath(): string
+    getStoreName(): string;
 
-    removeBasket()
+    getTimeout(): string;
 
-    setAttempts(value: Integer)
+    getUserName(): string;
 
-    setAuthenticated()
+    getWebAppPath(): string;
 
-    setAuthenticated(value: boolean)
+    removeBasket(): void;
 
-    setPassword(password: string)
+    setAttempts(value: Integer): void;
 
-    setPaymentMethod(value: string)
+    setAuthenticated(): void;
 
-    setRole(aRole: UserRole)
+    setAuthenticated(value: boolean): void;
 
-    setStoreName(value: string)
+    setPassword(password: string): void;
 
-    setTimeout(value: string)
+    setPaymentMethod(value: string): void;
 
-    setUserName(userName: string)
+    setRole(aRole: UserRole): void;
+
+    setStoreName(value: string): void;
+
+    setTimeout(value: string): void;
+
+    setUserName(userName: string): void;
 
 }
-
-
 

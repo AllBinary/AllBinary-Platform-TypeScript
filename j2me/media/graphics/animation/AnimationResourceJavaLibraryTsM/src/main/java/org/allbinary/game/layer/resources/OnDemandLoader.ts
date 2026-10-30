@@ -45,12 +45,15 @@ import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -102,7 +105,7 @@ this.resourceAnimationInterfaceFactoryInterfaceFactory= resourceAnimationInterfa
             
     public init(imageCache: ImageCache, level: number, loadingString: string){
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
+    let resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(Features.getInstance()!.isFeature(MainFeatureFactory.getInstance()!.LOAD_ALL))
@@ -131,7 +134,7 @@ this.initAll(imageCache, loadingString);
                         
                                     {
                                     
-    var layerPlacementInterfaceBasicArrayListFactoryInterface: LayerPlacementInterfaceBasicArrayListFactoryInterface = this.gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory!.getInstance(level)!;;
+    let layerPlacementInterfaceBasicArrayListFactoryInterface: LayerPlacementInterfaceBasicArrayListFactoryInterface = this.gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory!.getInstance(level)!;;
     
 this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache, level, loadingString);
     
@@ -145,20 +148,20 @@ this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache
             
     initAll(imageCache: ImageCache, loadingString: string){
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var portion: number = 120;;
+    let portion: number = 120;;
     
 
-    var onDemandResources: OnDemandResources;;
+    let onDemandResources: OnDemandResources;;
     
 
 
 
 
                         for (
-    var onDemandIndex: number = this.onDemandResourcesFactory!.size()!;--onDemandIndex >= 0; )
+    let onDemandIndex: number = this.onDemandResourcesFactory!.size()!;--onDemandIndex >= 0; )
         {
 onDemandResources= this.onDemandResourcesFactory!.remove(onDemandIndex);
     
@@ -180,28 +183,28 @@ onDemandResources= this.onDemandResourcesFactory!.remove(onDemandIndex);
             
     initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface: LayerPlacementInterfaceBasicArrayListFactoryInterface, imageCache: ImageCache, level: number, loadingString: string){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var portion: number = 120;;
+    let portion: number = 120;;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var onDemandArray: number[] = layerPlacementInterfaceBasicArrayListFactoryInterface!.getOnDemandResources()!;;
+    let onDemandArray: number[] = layerPlacementInterfaceBasicArrayListFactoryInterface!.getOnDemandResources()!;;
     
 PreLogUtil.put(new StringMaker().append(commonStrings!.START)!.appendint(onDemandArray!.length)!.toString(), this, "initLevel");
     
 
-    var onDemandResources: OnDemandResources;;
+    let onDemandResources: OnDemandResources;;
     
 
 
 
 
                         for (
-    var onDemandIndex: number = onDemandArray!.length
+    let onDemandIndex: number = onDemandArray!.length
                 ;--onDemandIndex >= 0; )
         {
 onDemandResources= this.onDemandResourcesFactory!.remove(onDemandArray[onDemandIndex]!);
@@ -221,6 +224,4 @@ onDemandResources= this.onDemandResourcesFactory!.remove(onDemandArray[onDemandI
 
 
 }
-
-
 

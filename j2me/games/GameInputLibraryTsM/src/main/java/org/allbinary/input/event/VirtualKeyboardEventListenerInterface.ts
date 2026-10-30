@@ -49,9 +49,7 @@ export interface VirtualKeyboardEventListenerInterface extends EventListenerInte
 
                 //@Throws(Exception.constructor)
             
-    onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent)
+    onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent): void;
 
 }
-
-
 

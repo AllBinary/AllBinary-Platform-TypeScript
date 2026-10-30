@@ -39,6 +39,7 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SearchData } from '../../org/allbinary/logic/control/search/SearchData.js';
 //not GWT import const SearchData
@@ -97,19 +98,18 @@ this.xslFile= value;
             
     public generateStaticPages(): string{
 
-        try {
-            
-    var anyType: any = new StaticPagesRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
+ try { 
+    let anyType: any = new StaticPagesRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;;
+    let helperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod("generateStaticPages", 
+    let method: Method = helperClass!.getMethod("generateStaticPages", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -118,22 +118,23 @@ this.xslFile= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to generate staticpages table";;
+    let error: string = "Failed to generate staticpages table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -150,8 +151,10 @@ this.xslFile= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -159,19 +162,18 @@ this.xslFile= value;
             
     public makePublic(): string{
 
-        try {
-            
-    var anyType: any = new StaticPagesRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
+ try { 
+    let anyType: any = new StaticPagesRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;;
+    let helperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod("makePublic", 
+    let method: Method = helperClass!.getMethod("makePublic", 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -180,22 +182,23 @@ this.xslFile= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to makePublic";;
+    let error: string = "Failed to makePublic";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -212,8 +215,10 @@ this.xslFile= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -221,8 +226,7 @@ this.xslFile= value;
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(this.isEnabled())
                         
                                     {
@@ -239,7 +243,7 @@ this.xslFile= value;
                                     this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.xslFile);
     
 
-    var output: string = this.generateStaticPages()!;;
+    let output: string = this.generateStaticPages()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -258,7 +262,7 @@ this.xslFile= value;
                         
                                     {
                                     
-    var output: string = this.makePublic()!;;
+    let output: string = this.makePublic()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -294,10 +298,11 @@ this.xslFile= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -306,11 +311,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -319,12 +324,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

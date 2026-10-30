@@ -30,12 +30,15 @@ import { XmlDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -81,11 +84,10 @@ public constructor (){
 
             super();
         
-        try {
-            this.document= DomDocumentHelper.create();
+ try { this.document= DomDocumentHelper.create();
     
 
-    var allbinaryNode: Node = this.document.createElement("allbinary")!;;
+    let allbinaryNode: Node = this.document.createElement("allbinary")!;;
     
 this.baseNode= allbinaryNode;
     
@@ -100,10 +102,11 @@ this.document.appendChild(this.baseNode);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -118,8 +121,10 @@ this.document.appendChild(this.baseNode);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -147,7 +152,7 @@ this.document.appendChild(this.baseNode);
             
     public log(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.baseNode != 
@@ -182,6 +187,4 @@ stringBuffer!.append(XmlDocumentHelper.toString(this.document));
 
 
 }
-
-
 

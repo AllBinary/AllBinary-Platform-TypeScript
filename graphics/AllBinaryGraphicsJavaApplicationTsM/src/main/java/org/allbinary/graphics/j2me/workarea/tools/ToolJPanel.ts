@@ -520,5 +520,3 @@ ToolFactory.getInstance()!.setSelectedTool(this.lineJButton!.getText());
 
 }
 
-
-

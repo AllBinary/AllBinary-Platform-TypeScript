@@ -25,6 +25,7 @@ import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -70,23 +71,23 @@ private constructor (){
 
     public toAnimationArrayFromListOfPointListWithPointsPerFrame(vector: BasicArrayList, pointsPerFrame: number): number[][][]{
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
-    var points: number[][][] = Array.from({ length: size }, () => Array.from({ length: pointsPerFrame }, () => new Array(0).fill(2)));;
+    let points: number[][][] = Array.from({ length: size }, () => Array.from({ length: pointsPerFrame }, () => new Array(0).fill(2)));;
     
 
-    var nextBasicArrayList: BasicArrayList;;
+    let nextBasicArrayList: BasicArrayList;;
     
 
-    var framePoints: number[][];;
+    let framePoints: number[][];;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 nextBasicArrayList= vector.objectArray[index]! as BasicArrayList;
     
@@ -97,7 +98,7 @@ framePoints= this.toFrameArrayFromPointBasicArrayList(nextBasicArrayList);
 
 
                         for (
-    var pointIndex: number = 0;pointIndex < framePoints!.length; pointIndex++)
+    let pointIndex: number = 0;pointIndex < framePoints!.length; pointIndex++)
         {
 points[index]![pointIndex]![0]= framePoints[pointIndex]![0]!;
     
@@ -118,23 +119,23 @@ points[index]![pointIndex]![1]= framePoints[pointIndex]![1]!;
 
     public toAnimationArrayFromListOfPointList(vector: BasicArrayList): number[][][]{
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
-    var points: number[][][] = Array.from({ length: size }, () => Array.from({ length: 0 }, () => new Array(0).fill(0)));;
+    let points: number[][][] = Array.from({ length: size }, () => Array.from({ length: 0 }, () => new Array(0).fill(0)));;
     
 
-    var nextBasicArrayList: BasicArrayList;;
+    let nextBasicArrayList: BasicArrayList;;
     
 
-    var framePoints: number[][];;
+    let framePoints: number[][];;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 nextBasicArrayList= vector.objectArray[index]! as BasicArrayList;
     
@@ -147,7 +148,7 @@ points[index]= new Array(framePoints!.length).fill(null).map(() => new Array(2).
 
 
                         for (
-    var pointIndex: number = 0;pointIndex < framePoints!.length; pointIndex++)
+    let pointIndex: number = 0;pointIndex < framePoints!.length; pointIndex++)
         {
 points[index]![pointIndex]![0]= framePoints[pointIndex]![0]!;
     
@@ -168,20 +169,20 @@ points[index]![pointIndex]![1]= framePoints[pointIndex]![1]!;
 
     public toFrameArrayFromPointBasicArrayList(list: BasicArrayList): number[][]{
 
-    var points: number[][] = new Array(list.size()).fill(null).map(() => new Array(2).fill(null));;
+    let points: number[][] = new Array(list.size()).fill(null).map(() => new Array(2).fill(null));;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var nextPoint: GPoint = list.objectArray[index]! as GPoint;;
+    let nextPoint: GPoint = list.objectArray[index]! as GPoint;;
     
 points[index]![0]= nextPoint!.getX();
     
@@ -199,6 +200,4 @@ points[index]![1]= nextPoint!.getY();
 
 
 }
-
-
 

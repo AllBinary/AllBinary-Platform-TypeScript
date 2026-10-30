@@ -85,7 +85,7 @@ public constructor (pageContext: PageContext){
         this.pageContext= pageContext;
     
 
-    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
+    let request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
     
 this.session= request.getSession(true);
     
@@ -125,8 +125,15 @@ this.session.setAttribute(PaymentGatewayData.NAME.toString(), value);
     
 }
 
-
-    public setAuthenticated(){
+setAuthenticated(...args: any[]): any {
+   
+    if (args.length === 0) return this.setAuthenticated$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'boolean') return this.setAuthenticated$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: setAuthenticated'); }
+  
+    public setAuthenticated$overload1(){
 this.session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.TRUE_STRING);
     
 }
@@ -230,7 +237,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 }
 
 
-    public setAuthenticated(value: boolean){
+    public setAuthenticated$overload2(value: boolean){
 this.session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.FALSE_STRING);
     
 }
@@ -260,7 +267,7 @@ this.session.removeAttribute(UserData.USERNAME);
 
     public getLastAccessedTime(): number{
 
-    var lastAccessedTime: number = this.session.getLastAccessedTime()!;;
+    let lastAccessedTime: number = this.session.getLastAccessedTime()!;;
     
 
 
@@ -272,6 +279,4 @@ this.session.removeAttribute(UserData.USERNAME);
 
 
 }
-
-
 

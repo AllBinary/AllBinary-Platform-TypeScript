@@ -43,9 +43,11 @@ import { InputToGameKeyMapping } from '../../../../../org/allbinary/game/input/m
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -84,7 +86,7 @@ public constructor (id: number, name: string){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var inputFactory: InputFactory = InputFactory.getInstance()!;;
+    let inputFactory: InputFactory = InputFactory.getInstance()!;;
     
 inputFactory!.add(this.getId(), this);
     
@@ -93,23 +95,25 @@ inputFactory!.add(this.getId(), this);
 
     public update(inputToGameKeyMapping: InputToGameKeyMapping){
 
-        try {
-            
-    var gameKey: GameKey = inputToGameKeyMapping!.getInstance(this.getId())!;;
+ try { 
+    let gameKey: GameKey = inputToGameKeyMapping!.getInstance(this.getId())!;;
     
 this.gameKeyEvent= this.gameKeyEventFactory!.getInstanceForInput(this, gameKey);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -134,6 +138,4 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
 
 
 }
-
-
 

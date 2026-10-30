@@ -91,5 +91,3 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
 
 }
 
-
-

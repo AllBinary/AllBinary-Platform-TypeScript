@@ -71,5 +71,3 @@ this.collidableDestroyableDamageableLayer!.leftTrigger(allbinaryLayerManager, ga
 
 }
 
-
-

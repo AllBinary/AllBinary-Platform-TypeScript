@@ -36,6 +36,7 @@ import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/M
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { UserEmailEventsConfigurationData } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationData.js';
 //not GWT import const UserEmailEventsConfigurationData
@@ -48,6 +49,7 @@ import { UserEmailEventsConfigurationView } from '../../../../../../../org/allbi
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -111,13 +113,13 @@ public constructor (node: Node){
 this.userEmailConfigurationInterface= new UserEmailConfiguration() as UserEmailConfigurationInterface;
     
 
-    var childNodeList: NodeList = node.getChildNodes()!;;
+    let childNodeList: NodeList = node.getChildNodes()!;;
     
 
-    var userEmailEventsConfigurationNode: Node = DomSearchHelper.getNodeNoThrow(UserEmailEventsConfigurationData.NAME, childNodeList)!;;
+    let userEmailEventsConfigurationNode: Node = DomSearchHelper.getNodeNoThrow(UserEmailEventsConfigurationData.NAME, childNodeList)!;;
     
 
-    var userEmailEventsConfigurationView: UserEmailEventsConfigurationView = new UserEmailEventsConfigurationView(userEmailEventsConfigurationNode);;
+    let userEmailEventsConfigurationView: UserEmailEventsConfigurationView = new UserEmailEventsConfigurationView(userEmailEventsConfigurationNode);;
     
 this.userEmailConfigurationInterface!.setUserEmailEventsConfigurationInterface(userEmailEventsConfigurationView!.getUserEmailEventsConfigurationInterface());
     
@@ -146,22 +148,22 @@ public constructor (userEmailConfigurationInterface: UserEmailConfigurationInter
             
     public toXmlNode(document: Document): Node{
 
-    var emailConfigurationMapping: UserEmailConfigurationMapping = new UserEmailConfigurationMapping(this.userEmailConfigurationInterface);;
+    let emailConfigurationMapping: UserEmailConfigurationMapping = new UserEmailConfigurationMapping(this.userEmailConfigurationInterface);;
     
 
-    var hashMap: HashMap<any, any> = emailConfigurationMapping!.toHashMap()!;;
+    let hashMap: HashMap<any, any> = emailConfigurationMapping!.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, UserEmailConfigurationData.NAME, hashMap)!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, UserEmailConfigurationData.NAME, hashMap)!;;
     
 
-    var userEmailConfigurationInterface: UserEmailConfigurationInterface = this.getEmailConfigurationInterface()!;;
+    let userEmailConfigurationInterface: UserEmailConfigurationInterface = this.getEmailConfigurationInterface()!;;
     
 
-    var userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface = userEmailConfigurationInterface!.getUserEmailEventsConfigurationInterface()!;;
+    let userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface = userEmailConfigurationInterface!.getUserEmailEventsConfigurationInterface()!;;
     
 
-    var userEmailEventsConfigurationView: UserEmailEventsConfigurationView = new UserEmailEventsConfigurationView(userEmailEventsConfigurationInterface);;
+    let userEmailEventsConfigurationView: UserEmailEventsConfigurationView = new UserEmailEventsConfigurationView(userEmailEventsConfigurationInterface);;
     
 node.appendChild(userEmailEventsConfigurationView!.toXmlNode(document));
     
@@ -175,6 +177,4 @@ node.appendChild(userEmailEventsConfigurationView!.toXmlNode(document));
 
 
 }
-
-
 

@@ -40,11 +40,9 @@
 export interface VectorInterface {
         
 
-    getPoints(frame: number): number[][]
+    getPoints(frame: number): number[][];
 
-    setPoints(currentPoints: number[][][])
+    setPoints(currentPoints: number[][][]): void;
 
 }
-
-
 

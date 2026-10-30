@@ -38,9 +38,11 @@ import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/Defau
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
@@ -133,10 +135,10 @@ this.logUtil!.putF("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
 this.setJPopupMenu(new JPopupMenu());
     
 
-    var jMenuItemEdit: JMenuItem = new JMenuItem(EDIT);;
+    let jMenuItemEdit: JMenuItem = new JMenuItem(EDIT);;
     
 
-    var jMenuItemDelete: JMenuItem = new JMenuItem(DELETE);;
+    let jMenuItemDelete: JMenuItem = new JMenuItem(DELETE);;
     
 jMenuItemEdit!.addActionListener(this);
     
@@ -199,6 +201,4 @@ this.jPopupMenu= jPopupMenu;
 
 
 }
-
-
 

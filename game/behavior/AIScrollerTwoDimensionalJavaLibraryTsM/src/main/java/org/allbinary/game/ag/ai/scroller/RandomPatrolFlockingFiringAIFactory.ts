@@ -39,6 +39,7 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -72,7 +73,7 @@ export class RandomPatrolFlockingFiringAIFactory
             
     public getInstance(hashtable: ABHashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 
-    var artificialIntelligenceInterface: ArtificialIntelligenceInterface[] = new Array(2);;
+    let artificialIntelligenceInterface: ArtificialIntelligenceInterface[] = new Array(2);;
     
 artificialIntelligenceInterface[0]= new RandomPatrolAI(hashtable, ownerLayerInterface, gameInput);
     
@@ -88,6 +89,4 @@ artificialIntelligenceInterface[1]= new TimedFireAI(1800, ownerLayerInterface, g
 
 
 }
-
-
 

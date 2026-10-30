@@ -75,5 +75,3 @@ new LicenseServerInitFileUtil().init();
 
 }
 
-
-

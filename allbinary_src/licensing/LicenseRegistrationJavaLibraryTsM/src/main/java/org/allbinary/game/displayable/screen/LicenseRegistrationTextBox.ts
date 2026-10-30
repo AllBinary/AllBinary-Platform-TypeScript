@@ -37,12 +37,15 @@ import { TextField } from '../../../../../javax/microedition/lcdui/TextField.js'
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 //not GWT import const GameCommandsFactory
@@ -125,20 +128,22 @@ this.setCommandListener(cmdListener);
 
     public open(){
 
-        try {
-            
-    var virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;;
+ try { 
+    let virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;;
     
 virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "open", e);
     
-}
 
+ }
+   }
+ 
 super.open();
     
 this.paintable= NullPaintable.getInstance();
@@ -150,20 +155,22 @@ this.repaint();
 
     public close(){
 
-        try {
-            
-    var virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;;
+ try { 
+    let virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;;
     
 virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.HIDE_EVENT);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "open", e);
     
-}
 
+ }
+   }
+ 
 this.paintable= this.pleaseWaitPaintable;
     
 this.repaint();
@@ -183,7 +190,7 @@ this.paintable.paint(graphics);
 
     public submit(){
 
-    var commandListener: CommandListener = this.getCustomCommandListener()!;;
+    let commandListener: CommandListener = this.getCustomCommandListener()!;;
     
 commandListener!.commandAction(SUBMIT_COMMAND, this);
     
@@ -191,6 +198,4 @@ commandListener!.commandAction(SUBMIT_COMMAND, this);
 
 
 }
-
-
 

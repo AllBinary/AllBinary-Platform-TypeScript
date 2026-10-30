@@ -59,7 +59,7 @@ export class ImageArrayRotationAnimationCacheableInterfaceFactory
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(key: any = {}): CacheableInterface{
+    public getInstance(key: any): CacheableInterface{
 
 
 
@@ -70,6 +70,4 @@ export class ImageArrayRotationAnimationCacheableInterfaceFactory
 
 
 }
-
-
 

@@ -76,12 +76,15 @@ import { LOGGING } from '../../../../../org/allbinary/log/LOGGING.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -165,8 +168,7 @@ public constructor (name: string, dimension: Dimension, x: number, y: number){
 
             super();
         
-        try {
-            this.initComponents();
+ try { this.initComponents();
     
 this.name= name;
     
@@ -175,7 +177,7 @@ this.initMyComponents(dimension);
 this.workAreaJTreeJPanel= new WorkAreaJTreeJPanel(this.name);
     
 
-    var canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), x, y);;
+    let canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), x, y);;
     
 this.canvasJPanelList!.add(canvasJPanel);
     
@@ -185,17 +187,20 @@ this.propertiesJPanel!.set(this.workAreaJTreeJPanel);
     
 this.canvasHolderJPanel!.add(canvasJPanel as Component);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -203,31 +208,30 @@ public constructor (workAreaDom: WorkAreaDom, dimension: Dimension){
 
             super();
         
-        try {
-            this.initComponents();
+ try { this.initComponents();
     
 this.name= workAreaDom!.getName();
     
 this.initMyComponents(dimension);
     
 
-    var canvasNodeList: BasicArrayList = workAreaDom!.getCanvasNodes()!;;
+    let canvasNodeList: BasicArrayList = workAreaDom!.getCanvasNodes()!;;
     
 
-    var numberOfFrames: number = canvasNodeList!.size()!;;
+    let numberOfFrames: number = canvasNodeList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfFrames; index++)
+    let index: number = 0;index < numberOfFrames; index++)
         {
 
-    var node: Node = canvasNodeList!.get(index) as Node;;
+    let node: Node = canvasNodeList!.get(index) as Node;;
     
 
-    var canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), new CanvasDom(node));;
+    let canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), new CanvasDom(node));;
     
 this.canvasJPanelList!.add(canvasJPanel);
     
@@ -239,10 +243,11 @@ this.canvasHolderJPanel!.add(this.getCurrentFrame() as Component);
     
 this.propertiesJPanel!.set(this.workAreaJTreeJPanel);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LOGGING.contains(LOGGING.LOADINGERROR))
                         
@@ -257,8 +262,10 @@ this.propertiesJPanel!.set(this.workAreaJTreeJPanel);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -276,10 +283,10 @@ this.setSize(dimension);
 this.canvasJPanelList= new LinkedList();
     
 
-    var gridBagLayout: GridBagLayout = new GridBagLayout();;
+    let gridBagLayout: GridBagLayout = new GridBagLayout();;
     
 
-    var gridBagConstraints: GridBagConstraints = new GridBagConstraints();;
+    let gridBagConstraints: GridBagConstraints = new GridBagConstraints();;
     
 this.innerJPanel!.setLayout(gridBagLayout);
     
@@ -296,7 +303,7 @@ gridBagConstraints!.weightx= .05;
 gridBagConstraints!.weighty= .05;
     
 
-    var toolJPanel: ToolJPanel = new ToolJPanel();;
+    let toolJPanel: ToolJPanel = new ToolJPanel();;
     
 gridBagLayout!.setConstraints(toolJPanel, gridBagConstraints);
     
@@ -347,20 +354,20 @@ MyCanvasEventService.addListener(this as MyCanvasEventListener);
 
     getCanvasHashMap(): HashMap<any, any>{
 
-    var canvasJPanelHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let canvasJPanelHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var size: number = this.canvasJPanelList!.size()!;;
+    let size: number = this.canvasJPanelList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;;
+    let canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;;
     
 canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), new Integer(index));
     
@@ -433,8 +440,19 @@ super.setVisible(false);
     
 }
 
-
-    public select(){
+select(...args: any[]): any {
+   
+    if (args.length === 0) return this.select$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'number') return this.select$overload2(args[0]);
+   
+    if (args.length === 1) return this.select$overload3(args[0]);
+   
+    if (args.length === 1) return this.select$overload4(args[0]);
+   
+   throw new TypeError('No matching overload: select'); }
+  
+    public select$overload1(){
 super.setVisible(true);
     
 
@@ -442,7 +460,7 @@ super.setVisible(true);
                         
                                     {
                                     
-    var component: Component = this.canvasHolderJPanel!.getComponent(0)!;;
+    let component: Component = this.canvasHolderJPanel!.getComponent(0)!;;
     
 
                         if(component != 
@@ -463,17 +481,17 @@ super.setVisible(true);
 
     public changeZoom(factor: number){
 
-    var size: number = this.canvasJPanelList!.size()!;;
+    let size: number = this.canvasJPanelList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;;
+    let canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;;
     
 canvasJPanel!.getGrid()!.setZoom(canvasJPanel!.getGrid()!.getZoom() +factor);
     
@@ -508,22 +526,29 @@ this.select(this.canvasJPanelList!.size() -1);
                                 
 }
 
-
+duplicate(...args: any[]): any {
+   
+    if (args.length === 1) return this.duplicate$overload1(args[0]);
+   
+    if (args.length === 1) return this.duplicate$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: duplicate'); }
+  
                 //@Throws(Exception.constructor)
             
-    duplicate(treeNode: MutableTreeNode){
+    duplicate$overload1(treeNode: MutableTreeNode){
 
-    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;;
+    let canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;;
     
 
                         if(canvasJPanelHashMap!.containsKey(treeNode))
                         
                                     {
                                     
-    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode) as Integer;;
+    let frameInteger: Integer = canvasJPanelHashMap!.get(treeNode) as Integer;;
     
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInteger!.intValue()) as CanvasJPanel;;
+    let canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInteger!.intValue()) as CanvasJPanel;;
     
 this.initDuplicate(canvasJPanel!.duplicate());
     
@@ -537,20 +562,20 @@ this.initDuplicate(canvasJPanel!.duplicate());
             
     public autoRotate(increments: number, totalAngle: number){
 
-    var incrementAngle: number = globalThis.Math.trunc((globalThis.Math.trunc(totalAngle /increments)));;
+    let incrementAngle: number = globalThis.Math.trunc((globalThis.Math.trunc(totalAngle /increments)));;
     
 
 
 
 
                         for (
-    var index: number = 1;index < increments; index++)
+    let index: number = 1;index < increments; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
+    let canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
     
 
-    var newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;;
+    let newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;;
     
 newCanvasJPanel!.setAngle(incrementAngle *index);
     
@@ -563,28 +588,35 @@ this.initDuplicate(newCanvasJPanel);
 
     public explodeAll(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
+    let canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
     
 canvasJPanel!.explodeAll();
     
 }
 
-
+autoExplode(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.autoExplode$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.autoExplode$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: autoExplode'); }
+  
                 //@Throws(Exception.constructor)
             
-    public autoExplode(numberOfFrames: number, explodeType: number){
+    public autoExplode$overload1(numberOfFrames: number, explodeType: number){
 
 
 
 
                         for (
-    var index: number = 1;index < numberOfFrames; index++)
+    let index: number = 1;index < numberOfFrames; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
+    let canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
     
 
-    var newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;;
+    let newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;;
     
 newCanvasJPanel!.explode(index +1, explodeType);
     
@@ -599,10 +631,10 @@ this.initDuplicate(newCanvasJPanel);
             
     public autoMirror(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
+    let canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
     
 
-    var newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;;
+    let newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;;
     
 newCanvasJPanel!.mirror();
     
@@ -612,13 +644,13 @@ this.initDuplicate(newCanvasJPanel);
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    select(index: number){
+    select$overload2(index: number){
 
                         if(index < this.canvasJPanelList!.size())
                         
                                     {
                                     
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;;
+    let canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;;
     
 
                         if(canvasJPanel != 
@@ -647,12 +679,12 @@ canvasJPanel!.repaint();
 }
 
 
-    select(treeNode: MutableTreeNode){
+    select$overload3(treeNode: MutableTreeNode){
 
-    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;;
+    let canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;;
     
 
-    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode) as Integer;;
+    let frameInteger: Integer = canvasJPanelHashMap!.get(treeNode) as Integer;;
     
 
                         if(frameInteger != 
@@ -674,31 +706,31 @@ canvasJPanel!.repaint();
 WorkAreaJPanel.document= DomHelper.getInstance()!.createDocument();
     
 
-    var workAreaNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.WORKAREA)!;;
+    let workAreaNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.WORKAREA)!;;
     
 
-    var nameNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.NAME)!;;
+    let nameNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.NAME)!;;
     
 
-    var nameTextNode: Node = WorkAreaJPanel.document.createTextNode(this.name)!;;
+    let nameTextNode: Node = WorkAreaJPanel.document.createTextNode(this.name)!;;
     
 nameNode!.appendChild(nameTextNode);
     
 
-    var framesNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.FRAMES)!;;
+    let framesNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.FRAMES)!;;
     
 
-    var size: number = this.canvasJPanelList!.size()!;;
+    let size: number = this.canvasJPanelList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;;
+    let canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;;
     
 framesNode!.appendChild(canvasJPanel!.toDom());
     
@@ -784,7 +816,7 @@ this.getCurrentFrame()!.keyPressed(keyEvent);
 
     public delete(evt: MyCanvasEvent){
 
-    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;;
+    let canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;;
     
 
                         if(canvasJPanelHashMap!.containsKey(evt.getTreeNode()))
@@ -793,7 +825,7 @@ this.getCurrentFrame()!.keyPressed(keyEvent);
                                     this.canvasHolderJPanel!.removeAll();
     
 
-    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;;
+    let frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;;
     
 this.canvasJPanelList!.remove(frameInt!.intValue());
     
@@ -807,13 +839,13 @@ this.select(frameInt!.intValue());
 
                 //@Throws(Exception.constructor)
             
-    public duplicate(evt: MyCanvasEvent){
+    public duplicate$overload2(evt: MyCanvasEvent){
 this.duplicate(evt.getTreeNode());
     
 }
 
 
-    public select(evt: MyCanvasEvent){
+    public select$overload4(evt: MyCanvasEvent){
 this.select(evt.getTreeNode());
     
 StatusFactory.getInstance()!.setStatus("Frame Selected");
@@ -823,16 +855,16 @@ StatusFactory.getInstance()!.setStatus("Frame Selected");
 
     public rotate(evt: MyCanvasEvent){
 
-    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;;
+    let canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;;
     
 
-    var treeNode: MutableTreeNode = evt.getTreeNode()!;;
+    let treeNode: MutableTreeNode = evt.getTreeNode()!;;
     
 
-    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;;
+    let frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;;
     
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInt!.intValue()) as CanvasJPanel;;
+    let canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInt!.intValue()) as CanvasJPanel;;
     
 
                         if(canvasJPanel != 
@@ -860,17 +892,24 @@ this.explodeAll();
 
                 //@Throws(Exception.constructor)
             
-    public autoExplode(evt: MyCanvasEvent){
+    public autoExplode$overload2(evt: MyCanvasEvent){
 this.autoExplode(10, 0);
     
 }
 
-
+center(...args: any[]): any {
+   
+    if (args.length === 0) return this.center$overload1();
+   
+    if (args.length === 1) return this.center$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: center'); }
+  
                 //@Throws(Exception.constructor)
             
-    public center(){
+    public center$overload1(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
+    let canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
     
 canvasJPanel!.center();
     
@@ -879,7 +918,7 @@ canvasJPanel!.center();
 
                 //@Throws(Exception.constructor)
             
-    public center(evt: MyCanvasEvent){
+    public center$overload2(evt: MyCanvasEvent){
 this.center();
     
 }
@@ -887,8 +926,7 @@ this.center();
 
     public run(){
 
-        try {
-            
+ try { 
         while(true)
         {
 
@@ -896,14 +934,14 @@ this.center();
                         
                                     {
                                     
-    var size: number = this.canvasJPanelList!.size()!;;
+    let size: number = this.canvasJPanelList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(!this.isPlaying())
@@ -934,18 +972,19 @@ Thread.sleep(250);
     
 }
 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-}
-
+ }
+   }
+ 
 }
 
 
     private innerJPanel: javax.swing.JPanel;
 
 }
-
-
 

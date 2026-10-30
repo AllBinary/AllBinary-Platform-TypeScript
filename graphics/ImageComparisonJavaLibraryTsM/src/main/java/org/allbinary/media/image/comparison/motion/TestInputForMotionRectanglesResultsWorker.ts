@@ -35,9 +35,11 @@ import { KeyEvent } from '../../../../../../java/awt/event/KeyEvent.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { InputRobotFactory } from '../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
 //not GWT import const InputRobotFactory
@@ -50,21 +52,25 @@ import { TempInputRobotNames } from '../../../../../../org/allbinary/input/autom
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -158,37 +164,36 @@ this.running= running;
 
     public run(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
     
 this.setRunning(true);
     
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
+    let timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
     
 timeHelper!.setStartTimeTNT();
     
 
-    var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0) as MotionRectangles;;
+    let motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0) as MotionRectangles;;
     
 
-    var motionRectangleVector: BasicArrayList = motionRectangles!.getVector()!;;
+    let motionRectangleVector: BasicArrayList = motionRectangles!.getVector()!;;
     
 
                         if(motionRectangleVector!.size() > 0)
                         
                                     {
                                     
-    var rectangle: Rectangle = motionRectangleVector!.get(0) as Rectangle;;
+    let rectangle: Rectangle = motionRectangleVector!.get(0) as Rectangle;;
     
 
-    var robotHashtable: ABHashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
+    let robotHashtable: ABHashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
     
 
-    var inputTypeNameArray: any[] = robotHashtable!.keys().()!;;
+    let inputTypeNameArray: any[] = robotHashtable!.keys().()!;;
     
 
-    var size: number = inputTypeNameArray!.length
+    let size: number = inputTypeNameArray!.length
                 ;;
     
 
@@ -196,13 +201,13 @@ timeHelper!.setStartTimeTNT();
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var inputTypeNameString: string = inputTypeNameArray[index]! as string;;
+    let inputTypeNameString: string = inputTypeNameArray[index]! as string;;
     
 
-    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString) as InputRobotInterface;;
+    let inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString) as InputRobotInterface;;
     
 inputRobotInterface!.mouseMoveToTarget(rectangle);
     
@@ -274,18 +279,19 @@ this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsedTN
     
 this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

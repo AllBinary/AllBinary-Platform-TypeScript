@@ -34,12 +34,15 @@ import { Random } from '../../../../java/util/Random.js';
 
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+type MathUtil<T = any, U = any> = typeof MathUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MathUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -79,23 +82,23 @@ export class MyRandomFactory
 
     public static main(args: string[]){
 
-    var randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;;
+    let randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;;
     
 
-    var stringBuilder: StringMaker = new StringMaker();;
+    let stringBuilder: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var size2: number = 100;;
+    let size2: number = 100;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size2; index++)
+    let index: number = 0;index < size2; index++)
         {
 stringBuilder!.appendint(randomFactory!.getAbsoluteNextInt(3))!.append(commonSeps!.COMMA);
     
@@ -106,13 +109,13 @@ console.log(stringBuilder!.toString());
 stringBuilder!.delete(0, stringBuilder!.length());
     
 
-    var intArray: number[] = new Array(52);;
+    let intArray: number[] = new Array(52);;
     
 
-    var intArray2: number[] = new Array(52);;
+    let intArray2: number[] = new Array(52);;
     
 
-    var size: number = intArray!.length
+    let size: number = intArray!.length
                 ;;
     
 
@@ -120,7 +123,7 @@ stringBuilder!.delete(0, stringBuilder!.length());
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 intArray[index]= index;
     
@@ -135,7 +138,7 @@ randomFactory!.shuffle2(intArray, intArray2);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 stringBuilder!.appendint(intArray[index]!)!.append(commonSeps!.COMMA);
     
@@ -150,7 +153,7 @@ stringBuilder!.delete(0, stringBuilder!.length());
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 stringBuilder!.appendint(intArray2[index]!)!.append(commonSeps!.COMMA);
     
@@ -159,14 +162,14 @@ stringBuilder!.appendint(intArray2[index]!)!.append(commonSeps!.COMMA);
 console.log(stringBuilder!.toString());
     
 
-    var found: boolean= false;;
+    let found: boolean= false;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 found= false;
     
@@ -175,7 +178,7 @@ found= false;
 
 
                         for (
-    var index2: number = 0;index2 < size; index2++)
+    let index2: number = 0;index2 < size; index2++)
         {
 
                         if(intArray[index2] == index)
@@ -218,7 +221,7 @@ this.rand= new Random(seed);
 
     public getNextInt(range: number): number{
 
-    var div: number = (Integer.MAX_VALUE /range) +1;;
+    let div: number = (Integer.MAX_VALUE /range) +1;;
     
 
 
@@ -274,24 +277,24 @@ this.shuffleTotal(intArray, intArray!.length *7);
 
     public shuffleTotal(intArray: number[], shuffleTotal: number){
 
-    var size: number = intArray!.length
+    let size: number = intArray!.length
                 ;;
     
 
-    var randomIndex: number= 0;;
+    let randomIndex: number= 0;;
     
 
-    var randomIndex2: number= 0;;
+    let randomIndex2: number= 0;;
     
 
-    var value: number= 0;;
+    let value: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < shuffleTotal; index++)
+    let index: number = 0;index < shuffleTotal; index++)
         {
 randomIndex= this.getAbsoluteNextIntAllowZero(size);
     
@@ -316,27 +319,27 @@ this.shuffle2Total(intArray, intArray2, intArray!.length *7);
 
     public shuffle2Total(intArray: number[], intArray2: number[], shuffleTotal: number){
 
-    var size: number = intArray!.length
+    let size: number = intArray!.length
                 ;;
     
 
-    var randomIndex: number= 0;;
+    let randomIndex: number= 0;;
     
 
-    var randomIndex2: number= 0;;
+    let randomIndex2: number= 0;;
     
 
-    var value: number= 0;;
+    let value: number= 0;;
     
 
-    var value2: number= 0;;
+    let value2: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < shuffleTotal; index++)
+    let index: number = 0;index < shuffleTotal; index++)
         {
 randomIndex= this.getAbsoluteNextIntAllowZero(size);
     
@@ -360,6 +363,4 @@ intArray2[randomIndex2]= value2;
 
 
 }
-
-
 

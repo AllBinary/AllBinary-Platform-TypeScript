@@ -24,9 +24,11 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 //not GWT import const GeographicMapCellType
@@ -39,12 +41,15 @@ import { RaceTrackGeographicMapCellType } from '../../../../../../../org/allbina
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListS } 
 const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+type BasicArrayListS<T = any, U = any> = typeof BasicArrayListS extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListS;
 
 
 
@@ -72,7 +77,7 @@ export class BasicTopViewGeographicMapCellType
 
     public static createType(name: string, type: number, cost: number): BasicTopViewGeographicMapCellType{
 
-    var types: BasicArrayList = new BasicArrayListS(1);;
+    let types: BasicArrayList = new BasicArrayListS(1);;
     
 types.add(type);
     
@@ -97,23 +102,23 @@ public constructor (name: string, types: BasicArrayList, cost: number){
 
             super();
         
-    var size: number = types.size()!;;
+    let size: number = types.size()!;;
     
 
-    var typeArray: number[] = new Array(size);;
+    let typeArray: number[] = new Array(size);;
     
 
-    var typeAsInteger: Integer;;
+    let typeAsInteger: Integer;;
     
 
-    var type: number= 0;;
+    let type: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 typeAsInteger= (types.get(index) as Integer);
     
@@ -159,7 +164,7 @@ this.types= typeArray;
 
     public hasType(type: number): boolean{
 
-    var size: number = this.types.length
+    let size: number = this.types.length
                 ;;
     
 
@@ -167,7 +172,7 @@ this.types= typeArray;
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(this.types[index] == type)
@@ -205,10 +210,10 @@ this.types= typeArray;
 
     public toString(): string{
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var size: number = this.types.length
+    let size: number = this.types.length
                 ;;
     
 
@@ -216,7 +221,7 @@ this.types= typeArray;
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 stringMaker!.appendint(this.types[index]!)!.append(CommonSeps.getInstance()!.COMMA);
     
@@ -232,6 +237,4 @@ stringMaker!.appendint(this.types[index]!)!.append(CommonSeps.getInstance()!.COM
 
 
 }
-
-
 

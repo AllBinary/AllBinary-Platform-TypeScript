@@ -46,6 +46,7 @@ import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CloudStreamUtil } from '../../../org/allbinary/logic/io/CloudStreamUtil.js';
 //not GWT import const CloudStreamUtil
@@ -58,6 +59,7 @@ import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -91,36 +93,36 @@ export class MagicalImageServlet extends HttpServlet {
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
 
-    var inputStream: InputStream = 
+    let inputStream: InputStream = 
                 null
             ;;
     
 
-        try {
-            BlisketServletUtil.getInstance()!.init(request);
+ try { BlisketServletUtil.getInstance()!.init(request);
     
 
-    var requestURI: string = request.getRequestURI()!;;
+    let requestURI: string = request.getRequestURI()!;;
     
 
-    var file: AbFile = AbFile.createAbFile(URLGLOBALS.getWebappPath() +requestURI)!;;
+    let file: AbFile = AbFile.createAbFile(URLGLOBALS.getWebappPath() +requestURI)!;;
     
 inputStream= CloudStreamUtil.getInstance()!.getFileAnyWhere(file);
     
 
-    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream(8000);;
+    let outputStream: ByteArrayOutputStream = new ByteArrayOutputStream(8000);;
     
 
-    var byteArray: number[] = StreamUtil.getInstance()!.getByteArray(inputStream, outputStream, new Array(16384))!;;
+    let byteArray: number[] = StreamUtil.getInstance()!.getByteArray(inputStream, outputStream, new Array(16384))!;;
     
 response.setContentType("image/jpeg;charset=utf-8");
     
 response.getOutputStream()!.write(byteArray);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -130,10 +132,10 @@ response.getOutputStream()!.write(byteArray);
 
                                     }
                                 
-}
 
-         finally {
-            StreamUtil.getInstance()!.close(response.getOutputStream());
+ }
+   }
+ finally { StreamUtil.getInstance()!.close(response.getOutputStream());
     
 
                         if(!StreamUtil.getInstance()!.close(inputStream))
@@ -144,9 +146,7 @@ response.getOutputStream()!.write(byteArray);
 
                                     }
                                 
-
-         }
-        
+ }
 }
 
 
@@ -177,6 +177,4 @@ this.processRequest(request, response);
 
 
 }
-
-
 

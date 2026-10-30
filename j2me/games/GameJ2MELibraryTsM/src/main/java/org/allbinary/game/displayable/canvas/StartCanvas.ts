@@ -223,15 +223,18 @@ import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/m
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
 //not GWT import const OperatingSystemFactory
@@ -262,18 +265,22 @@ import { EarlySoundsFactory } from '../../../../../org/allbinary/media/audio/Ear
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -428,9 +435,8 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
 
-        try {
-            
-    var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;;
+ try { 
+    let scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;;
     
 
                         if(scrollSelectionForm != 
@@ -439,10 +445,10 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                         
                                     {
                                     
-    var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
+    let formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
+    let rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 scrollSelectionForm!.init(rectangle, formType);
     
@@ -451,27 +457,30 @@ scrollSelectionForm!.init(rectangle, formType);
                                 
 this.overlayPaintable!.init();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     getCustomCommands(): any[]{
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
+    let gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 
                         if(J2MEUtil.isHTML())
                         
                                     {
                                     
-    var commandArray: any[] = 
+    let commandArray: any[] = 
                                                         [
                                                             gameCommandsFactory!.START_COMMAND,HighScoreCommands.getInstance()!.DISPLAY,GameInputMappingCanvas.DISPLAY,gameCommandsFactory!.DISPLAY_ABOUT
                                                         ];;
@@ -487,19 +496,19 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DI
                                 
                         else {
                             
-    var commandList: BasicArrayList = new BasicArrayListD();;
+    let commandList: BasicArrayList = new BasicArrayListD();;
     
 commandList!.add(gameCommandsFactory!.START_COMMAND);
     
 
-    var inApplicationPurchaseFactory: InApplicationPurchaseFactory = InApplicationPurchaseFactory.getInstance()!;;
+    let inApplicationPurchaseFactory: InApplicationPurchaseFactory = InApplicationPurchaseFactory.getInstance()!;;
     
 
                         if(inApplicationPurchaseFactory!.isEnabled())
                         
                                     {
                                     
-    var list: BasicArrayList = LockableFeatureFactory.getInstance()!.getList()!;;
+    let list: BasicArrayList = LockableFeatureFactory.getInstance()!.getList()!;;
     
 
                         if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(list.get(0) as LockableFeature))
@@ -516,9 +525,8 @@ commandList!.add(gameCommandsFactory!.START_COMMAND);
 commandList!.add(HighScoreCommands.getInstance()!.DISPLAY);
     
 
-        try {
-            
-    var isOverScan: boolean = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan()!;;
+ try { 
+    let isOverScan: boolean = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan()!;;
     
 
                         if(SWTUtil.isSWT)
@@ -542,16 +550,19 @@ commandList!.add(GameInputMappingCanvas.DISPLAY);
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-}
-
+ }
+   }
+ 
 commandList!.add(gameCommandsFactory!.DISPLAY_ABOUT);
     
 
-    var commandArray: any[] = commandList!.toArray()!;;
+    let commandArray: any[] = commandList!.toArray()!;;
     
 
 
@@ -569,10 +580,10 @@ commandList!.add(gameCommandsFactory!.DISPLAY_ABOUT);
 this.removeAllCommands();
     
 
-    var commandArray: any[] = this.getCustomCommands()!;;
+    let commandArray: any[] = this.getCustomCommands()!;;
     
 
-    var size: number = commandArray!.length
+    let size: number = commandArray!.length
                 ;;
     
 
@@ -580,7 +591,7 @@ this.removeAllCommands();
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.addCommand(commandArray[index]! as Command);
     
@@ -700,16 +711,15 @@ this.removeGameKeyEvent(keyCode, false);
 
     addGameKeyEvent(keyCode: number, repeated: boolean){
 
-        try {
-            
-    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;;
+ try { 
+    let gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;;
     
 
                         if(gameKey != this.NONE)
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;;
+    let gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;;
     
 DownGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
     
@@ -722,29 +732,31 @@ DownGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     removeGameKeyEvent(keyCode: number, repeated: boolean){
 
-        try {
-            
-    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;;
+ try { 
+    let gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;;
     
 
                         if(gameKey != this.NONE)
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;;
+    let gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;;
     
 UpGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
     
@@ -757,14 +769,17 @@ UpGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
@@ -898,7 +913,7 @@ this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");
 
     demoStateChange(){
 
-    var newState: number = this.state +1;;
+    let newState: number = this.state +1;;
     
 
                         if(newState > 2)
@@ -924,7 +939,7 @@ this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");
                                 
                         else {
                             
-    var highScores: HighScores = this.highScoresHelper!.getNextHighScores()!;;
+    let highScores: HighScores = this.highScoresHelper!.getNextHighScores()!;;
     
 
                         if(highScores == NullHighScoresSingletonFactory.getInstance())
@@ -993,7 +1008,7 @@ this.getSpecialAnimationInterface()!.reset();
                                     }
                                 
 
-    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
+    let gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
     
 gameAdState!.processPageAdState();
     
@@ -1039,7 +1054,7 @@ gameAdState!.processPageAdState();
 this.highScoresPaintable= NullPaintable.getInstance();
     
 
-    var randomLevel: number = this.getNextRandom()!;;
+    let randomLevel: number = this.getNextRandom()!;;
     
 }
 
@@ -1068,7 +1083,7 @@ this.preDemoProcess();
                         
                                     {
                                     
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getSpecialAnimationInterface()!.getAnimationBehavior() as IndexedAnimationBehavior;;
+    let indexedAnimationBehavior: IndexedAnimationBehavior = this.getSpecialAnimationInterface()!.getAnimationBehavior() as IndexedAnimationBehavior;;
     
 
                         if(indexedAnimationBehavior!.loopIndex < 1)
@@ -1080,7 +1095,7 @@ this.preDemoProcess();
                                     }
                                 
 
-    var demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener() as DemoGameMidlet;;
+    let demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener() as DemoGameMidlet;;
     
 
                                     }
@@ -1110,9 +1125,8 @@ this.process();
 this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 
-        try {
-            
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+ try { 
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.addNormalPortion(50, "Demo Thread");
     
@@ -1176,14 +1190,17 @@ this.end();
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.RUN);
     
 }
@@ -1193,13 +1210,12 @@ this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.R
 super.setRunning(running);
     
 
-        try {
-            
+ try { 
                         if((this.features.isDefault(this.openGLFeatureFactory!.OPENGL) || J2MEUtil.isHTML()) && !running)
                         
                                     {
                                     
-    var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
+    let currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
     
 currentDisplayableFactory!.clearRunnable();
     
@@ -1208,14 +1224,17 @@ this.end();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.SET_RUNNING, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -1225,7 +1244,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.SET_RUNNING, e);
             
     public end(){
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 this.baseGameStatistics!.add(new StringMaker().append(StartCanvas.BOT_GAME_STATS)!.append(this.baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
@@ -1457,10 +1476,10 @@ this.tempWait= tempWait;
 
     public isRunningInAnotherThread(): boolean{
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
@@ -1499,6 +1518,4 @@ this.tempWait= tempWait;
 
 
 }
-
-
 

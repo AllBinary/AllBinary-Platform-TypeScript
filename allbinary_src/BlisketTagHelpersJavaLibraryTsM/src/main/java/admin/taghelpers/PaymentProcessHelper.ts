@@ -65,7 +65,7 @@ public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageConte
 
             super();
         
-    var transformInfoInterface: TransformInfoHttpInterface = TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext) as TransformInfoHttpInterface;;
+    let transformInfoInterface: TransformInfoHttpInterface = TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext) as TransformInfoHttpInterface;;
     
 this.paymentProcessorComponent= new PaymentProcessorComponent(transformInfoInterface);
     
@@ -85,6 +85,4 @@ this.paymentProcessorComponent= new PaymentProcessorComponent(transformInfoInter
 
 
 }
-
-
 

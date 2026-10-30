@@ -45,13 +45,11 @@ import { EventListenerInterface } from '../../../../org/allbinary/logic/util/eve
 export interface DemoGameMidletEventListener extends EventListenerInterface {
         
 
-    onDemoStart()
+    onDemoStart(): void;
 
-    onGameStart()
+    onGameStart(): void;
 
-    onDemoGameMidletEvent(demoGameMidletEvent: DemoGameMidletEvent)
+    onDemoGameMidletEvent(demoGameMidletEvent: DemoGameMidletEvent): void;
 
 }
-
-
 

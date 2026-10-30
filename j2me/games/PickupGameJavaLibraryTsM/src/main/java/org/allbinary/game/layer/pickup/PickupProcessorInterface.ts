@@ -47,9 +47,7 @@ export interface PickupProcessorInterface {
 
                 //@Throws(Exception.constructor)
             
-    process(sourceLayerInterface: AllBinaryLayer)
+    process(sourceLayerInterface: AllBinaryLayer): void;
 
 }
-
-
 

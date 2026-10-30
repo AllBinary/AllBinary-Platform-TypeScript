@@ -51,8 +51,17 @@ export class RectangleCollisionUtil
             extends Object
          {
         
-
-    public static isCollision(rectangle: Rectangle, point: GPoint): boolean{
+static isCollision(...args: any[]): any {
+   
+    if (args.length === 2) return this.isCollision$overload1(args[0], args[1]);
+   
+    if (args.length === 2) return this.isCollision$overload2(args[0], args[1]);
+   
+    if (args.length === 8 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[2] === 'number' && typeof args[3] === 'number' && typeof args[4] === 'number' && typeof args[5] === 'number' && typeof args[6] === 'number' && typeof args[7] === 'number') return this.isCollision$overload3(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7]);
+   
+   throw new TypeError('No matching overload: isCollision'); }
+  
+    public static isCollision$overload1(rectangle: Rectangle, point: GPoint): boolean{
 
                         if(point.getX() > (globalThis.Math.trunc(rectangle.x) +rectangle.getWidth()) || point.getY() > (globalThis.Math.trunc(rectangle.y) +rectangle.getHeight()) || point.getX() < rectangle.x || point.getY() < rectangle.y)
                         
@@ -79,7 +88,7 @@ export class RectangleCollisionUtil
 }
 
 
-    public static isCollision(rectangle1: Rectangle, rectangle2: Rectangle): boolean{
+    public static isCollision$overload2(rectangle1: Rectangle, rectangle2: Rectangle): boolean{
 
 
 
@@ -89,7 +98,7 @@ export class RectangleCollisionUtil
 }
 
 
-    static isCollision(rectX1: number, rectY1: number, rectX2: number, rectY2: number, rect2X1: number, rect2Y1: number, rect2X2: number, rect2Y2: number): boolean{
+    static isCollision$overload3(rectX1: number, rectY1: number, rectX2: number, rectY2: number, rect2X1: number, rect2Y1: number, rect2X2: number, rect2Y2: number): boolean{
 
                         if(rect2X1 >= rectX2 || rect2Y1 >= rectY2 || rect2X2 <= rectX1 || rect2Y2 <= rectY1)
                         
@@ -123,6 +132,4 @@ private constructor (){
 
 
 }
-
-
 

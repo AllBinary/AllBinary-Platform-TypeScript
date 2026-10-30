@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { InputOutputTypeData } from '../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
 //not GWT import const InputOutputTypeData
@@ -92,13 +93,19 @@ private constructor (){
             super();
         }
 
-
+generate(...args: any[]): any {
+   
+    if (args.length === 3) return this.generate$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 3) return this.generate$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: generate'); }
+  
                 //@Throws(Exception.constructor)
             
-    public generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, ownerTransformInfoInterface: TransformInfoInterface){
+    public generate$overload1(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, ownerTransformInfoInterface: TransformInfoInterface){
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -108,16 +115,16 @@ private constructor (){
                                     }
                                 
 
-    var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getName(), ownerTransformInfoInterface)!;;
+    let componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getName(), ownerTransformInfoInterface)!;;
     
 
-    var result: string = componentInterface!.view()!;;
+    let result: string = componentInterface!.view()!;;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = componentInterface!.getTransformInfoInterface() as TransformInfoHttpInterface;;
+    let httpTransformInfoInterface: TransformInfoHttpInterface = componentInterface!.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 
-    var inputOutputTypeData: InputOutputTypeData = InputOutputTypeData.getInstance()!;;
+    let inputOutputTypeData: InputOutputTypeData = InputOutputTypeData.getInstance()!;;
     
 
                         if(result.indexOf("<HTML>") >= 0)
@@ -136,10 +143,11 @@ private constructor (){
                             
 new StoreFileGenerator(componentInterface!.getTransformInfoInterface()).process(result);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -154,20 +162,20 @@ new StoreFileGenerator(componentInterface!.getTransformInfoInterface()).process(
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public generate(abeClientInformation: AbeClientInformationInterface, transformInfoDomNode: TransformInfoDomNode, ownerTransformInfoInterface: TransformInfoInterface){
+    public generate$overload2(abeClientInformation: AbeClientInformationInterface, transformInfoDomNode: TransformInfoDomNode, ownerTransformInfoInterface: TransformInfoInterface){
 this.generate(abeClientInformation, transformInfoDomNode!.getTransformInfoInterface(), ownerTransformInfoInterface);
     
 }
 
 
 }
-
-
 

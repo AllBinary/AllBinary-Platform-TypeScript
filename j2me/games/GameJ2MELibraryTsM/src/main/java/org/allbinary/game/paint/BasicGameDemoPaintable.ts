@@ -146,5 +146,3 @@ this.currentStatePaintable= currentStatePaintable;
 
 }
 
-
-

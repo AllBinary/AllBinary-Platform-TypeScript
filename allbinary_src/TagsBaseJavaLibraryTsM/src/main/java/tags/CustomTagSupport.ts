@@ -23,6 +23,7 @@ import { TagSupport } from '../javax/servlet/jsp/tagext/TagSupport.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -53,6 +54,4 @@ export class CustomTagSupport extends TagSupport {
     readonly tagStrings: TagStrings = TagStrings.getInstance()!;
 
 }
-
-
 

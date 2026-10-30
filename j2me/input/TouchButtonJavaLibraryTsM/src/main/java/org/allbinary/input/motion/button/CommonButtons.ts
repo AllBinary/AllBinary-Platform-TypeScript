@@ -75,22 +75,22 @@ private constructor (){
 
             super();
         
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var commonButtonSize: number = 128;;
+    let commonButtonSize: number = 128;;
     
 
         while(commonButtonSize > 64)
         {
 
-    var totalColumns: number = displayInfo!.getLastWidth() /commonButtonSize;;
+    let totalColumns: number = displayInfo!.getLastWidth() /commonButtonSize;;
     
 
-    var totalRows: number = displayInfo!.getLastHeight() /commonButtonSize;;
+    let totalRows: number = displayInfo!.getLastHeight() /commonButtonSize;;
     
 
-    var max: number = totalColumns;;
+    let max: number = totalColumns;;
     
 
                         if(totalRows > max)
@@ -125,6 +125,4 @@ this.LARGE_BUTTON= new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, this.STA
 
 
 }
-
-
 

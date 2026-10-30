@@ -26,6 +26,7 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -53,7 +54,7 @@ export class PathFinderGraphVisitorBase
 
                 //@Throws(Exception.constructor)
             
-    public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
+    public visit(graph: any, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
 
 
 
@@ -73,7 +74,7 @@ export class PathFinderGraphVisitorBase
 }
 
 
-    public isValid(graphPath: any = {}): boolean{
+    public isValid(graphPath: any): boolean{
 
 
 
@@ -82,7 +83,7 @@ export class PathFinderGraphVisitorBase
 }
 
 
-    public getInvalidReason(graphPath: any = {}): string{
+    public getInvalidReason(graphPath: any): string{
 
 
 
@@ -92,6 +93,4 @@ export class PathFinderGraphVisitorBase
 
 
 }
-
-
 

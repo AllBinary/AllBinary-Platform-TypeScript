@@ -43,27 +43,25 @@ import { CharacterSet } from '../../../../../org/allbinary/logic/java/character/
 export interface OperatingSystemInterface {
         
 
-    getName(): string
+    getName(): string;
 
-    getVersion(): string
+    getVersion(): string;
 
-    getArch(): string
+    getArch(): string;
 
-    getCharacterSet(): CharacterSet
+    getCharacterSet(): CharacterSet;
 
-    isOverScan(): boolean
+    isOverScan(): boolean;
 
-    getOverScanXPercent(): number
+    getOverScanXPercent(): number;
 
-    getOverScanYPercent(): number
+    getOverScanYPercent(): number;
 
-    isScalable(): boolean
+    isScalable(): boolean;
 
-    isAutoHide(): boolean
+    isAutoHide(): boolean;
 
-    toString(): string
+    toString(): string;
 
 }
-
-
 

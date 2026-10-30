@@ -29,9 +29,11 @@ import { IOException } from '../../../../java/io/IOException.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { IdGeneratorEntity } from '../../../../org/allbinary/data/tables/generator/IdGeneratorEntity.js';
 //not GWT import const IdGeneratorEntity
@@ -41,12 +43,15 @@ import { IdGeneratorEntityFactory } from '../../../../org/allbinary/data/tables/
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -92,9 +97,8 @@ public constructor (){
 
     public initialize(value: number){
 
-        try {
-            
-    var vector: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 vector.add(this.name);
     
@@ -102,24 +106,27 @@ vector.add(Long.valueOf(value)!.toString());
     
 this.idGeneratorEntity!.insert(vector);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
     
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -137,12 +144,11 @@ this.name= name;
 
     public getNext(): string{
 
-        try {
-            
-    var idLong: Long = this.idGeneratorEntity!.get(this.name)!;;
+ try { 
+    let idLong: Long = this.idGeneratorEntity!.get(this.name)!;;
     
 
-    var newValue: Long = (idLong!.longValue() +1).toLong()!;;
+    let newValue: Long = Number(idLong!.longValue() +1)!;;
     
 this.idGeneratorEntity!.update(this.name, newValue);
     
@@ -152,16 +158,17 @@ this.idGeneratorEntity!.update(this.name, newValue);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return idLong!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e);
     
@@ -174,12 +181,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error";
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

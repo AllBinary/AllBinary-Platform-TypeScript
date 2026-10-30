@@ -26,6 +26,7 @@ import { DirectionUtil } from '../../../org/allbinary/direction/DirectionUtil.js
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { Angle } from '../../../org/allbinary/math/Angle.js';
 //not GWT import const Angle
@@ -38,6 +39,7 @@ import { FrameUtil } from '../../../org/allbinary/math/FrameUtil.js';
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -120,7 +122,7 @@ this.angleInfo!.adjustAngle(this.circularIndexUtil!.previous());
 this.circularIndexUtil!.setIndex(index);
     
 
-    var newFrame: number = this.circularIndexUtil!.getIndex()!;;
+    let newFrame: number = this.circularIndexUtil!.getIndex()!;;
     
 this.angleInfo!.adjustAngle(newFrame);
     
@@ -129,7 +131,7 @@ this.angleInfo!.adjustAngle(newFrame);
 
     public setFrameByDirection(direction: Direction){
 
-    var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;;
+    let angle: Angle = this.directionUtil!.getFrameAngle(direction)!;;
     
 this.adjustFrameToAngle(angle);
     
@@ -195,6 +197,4 @@ this.setFrame(this.frameUtil!.getFrameForAngle(angle, globalThis.Math.trunc(this
 
 
 }
-
-
 

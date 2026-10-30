@@ -25,9 +25,11 @@ import { Arrays } from '../../../java/util/Arrays.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { TransformInfoEntityBuilder } from '../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
 //not GWT import const TransformInfoEntityBuilder
@@ -43,9 +45,11 @@ import { GLOBALS2 } from '../../../org/allbinary/globals/GLOBALS2.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StringComparator } from '../../../org/allbinary/logic/control/sort/StringComparator.js';
 //not GWT import const StringComparator
@@ -73,6 +77,7 @@ import { TransformTemplateCustomizerUtil } from '../../../org/allbinary/logic/vi
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -124,25 +129,24 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
 
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var node: Node = document.createElement(TransformTemplateCustomizersData.NAME)!;;
+ try { 
+    let node: Node = document.createElement(TransformTemplateCustomizersData.NAME)!;;
     
 
-    var unsortedCustomizerViewVector: BasicArrayList = new BasicArrayListD();;
+    let unsortedCustomizerViewVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = this.customizersVector!.size()!;;
+    let size: number = this.customizersVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var viewName: string = this.customizersVector!.get(index) as string;;
+    let viewName: string = this.customizersVector!.get(index) as string;;
     
 
                         if(viewName!.indexOf(CustomizerTransformInfoData.NAME) > 0 && viewName!.indexOf(GLOBALS2.EDIT) > 0 && viewName!.indexOf(BodyData.getInstance()!.VIEWNAMEKEY) > 0 && viewName!.indexOf(TitleData.getInstance()!.VIEWNAMEKEY) > 0)
@@ -156,7 +160,7 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
 }
 
 
-    var objectArray: any[] = unsortedCustomizerViewVector!.toArray() as any[];;
+    let objectArray: any[] = unsortedCustomizerViewVector!.toArray() as any[];;
     
 Arrays.sort(objectArray, new StringComparator());
     
@@ -165,13 +169,13 @@ Arrays.sort(objectArray, new StringComparator());
 
 
                         for (
-    var index: number = 0;index < objectArray!.length; index++)
+    let index: number = 0;index < objectArray!.length; index++)
         {
 
-    var viewName: string = objectArray[index]! as string;;
+    let viewName: string = objectArray[index]! as string;;
     
 
-    var viewNameNode: Node = ModDomHelper.createNameValueNodes(document, TransformTemplateCustomizerData.NAME, viewName, TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(viewName, this.getWeblisketSession()!.getStoreName()))!;;
+    let viewNameNode: Node = ModDomHelper.createNameValueNodes(document, TransformTemplateCustomizerData.NAME, viewName, TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(viewName, this.getWeblisketSession()!.getStoreName()))!;;
     
 node.appendChild(viewNameNode);
     
@@ -183,10 +187,11 @@ node.appendChild(viewNameNode);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
@@ -202,8 +207,10 @@ node.appendChild(viewNameNode);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -217,8 +224,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -226,10 +232,11 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -244,12 +251,12 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

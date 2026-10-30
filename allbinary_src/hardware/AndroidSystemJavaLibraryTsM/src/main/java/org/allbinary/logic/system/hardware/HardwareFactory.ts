@@ -27,6 +27,7 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AndroidHardware } from '../../../../../org/allbinary/logic/system/hardware/android/AndroidHardware.js';
 //not GWT import const AndroidHardware
@@ -39,6 +40,7 @@ import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/O
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -69,8 +71,15 @@ export class HardwareFactory
         
 
     private static readonly instance: HardwareFactory = new HardwareFactory();
-
-    public static getInstance(): HardwareFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): HardwareFactory{
 
 
 
@@ -92,11 +101,10 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(os: GenericOperatingSystem): HardwareInterface{
+    public getInstance$overload2(os: GenericOperatingSystem): HardwareInterface{
 
-        try {
-            
-    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
+ try { 
+    let operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
     
 
                         if(this.tsUtil!.compareTo(os.getName(), operatingSystems!.ANDROID) == 0)
@@ -129,12 +137,13 @@ private constructor (){
 
                             throw new Exception("No Hardware Imp for: " +os.getName());
                     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put("Ignoring Exception Returning NoHardware", this, commonStrings!.GET_INSTANCE, e);
     
@@ -144,12 +153,12 @@ this.logUtil!.put("Ignoring Exception Returning NoHardware", this, commonStrings
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new NoHardware();
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

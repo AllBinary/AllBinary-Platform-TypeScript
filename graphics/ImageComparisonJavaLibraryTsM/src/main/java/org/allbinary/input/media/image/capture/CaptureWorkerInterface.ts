@@ -48,5 +48,3 @@ export interface CaptureWorkerInterface extends RunnableInterface, BasicEventHan
 
 }
 
-
-

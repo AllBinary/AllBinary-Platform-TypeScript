@@ -44,27 +44,25 @@
 export interface MyCanvasEventListener {
         
 
-    delete(evt: MyCanvasEvent)
+    delete(evt: MyCanvasEvent): void;
 
                 //@Throws(Exception.constructor)
             
-    duplicate(evt: MyCanvasEvent)
+    duplicate(evt: MyCanvasEvent): void;
 
-    select(evt: MyCanvasEvent)
+    select(evt: MyCanvasEvent): void;
 
-    rotate(evt: MyCanvasEvent)
+    rotate(evt: MyCanvasEvent): void;
 
-    explode(evt: MyCanvasEvent)
-
-                //@Throws(Exception.constructor)
-            
-    autoExplode(evt: MyCanvasEvent)
+    explode(evt: MyCanvasEvent): void;
 
                 //@Throws(Exception.constructor)
             
-    center(evt: MyCanvasEvent)
+    autoExplode(evt: MyCanvasEvent): void;
+
+                //@Throws(Exception.constructor)
+            
+    center(evt: MyCanvasEvent): void;
 
 }
-
-
 

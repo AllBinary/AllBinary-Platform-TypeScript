@@ -40,9 +40,7 @@
 export interface CloseJDialogListenerInterface {
         
 
-    onClose()
+    onClose(): void;
 
 }
-
-
 

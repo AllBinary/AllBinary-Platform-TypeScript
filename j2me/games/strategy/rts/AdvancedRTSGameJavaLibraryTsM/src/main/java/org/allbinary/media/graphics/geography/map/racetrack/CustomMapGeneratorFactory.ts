@@ -64,5 +64,3 @@ export class CustomMapGeneratorFactory extends CustomMapGeneratorBaseFactory {
 
 }
 
-
-

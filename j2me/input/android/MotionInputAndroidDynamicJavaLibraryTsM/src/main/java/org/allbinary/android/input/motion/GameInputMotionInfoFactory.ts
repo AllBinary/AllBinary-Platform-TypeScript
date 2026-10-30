@@ -57,7 +57,7 @@ export class GameInputMotionInfoFactory
 
     public static getInstance(): GameInputMotionInfo{
 
-    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
+    let SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
     
 
                         if(SDK_VERSION <= 4)
@@ -86,6 +86,4 @@ export class GameInputMotionInfoFactory
 
 
 }
-
-
 

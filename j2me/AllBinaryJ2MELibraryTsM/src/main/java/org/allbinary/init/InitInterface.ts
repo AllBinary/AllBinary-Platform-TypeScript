@@ -44,9 +44,7 @@ export interface InitInterface {
 
                 //@Throws(Exception.constructor)
             
-    init()
+    init(): void;
 
 }
-
-
 

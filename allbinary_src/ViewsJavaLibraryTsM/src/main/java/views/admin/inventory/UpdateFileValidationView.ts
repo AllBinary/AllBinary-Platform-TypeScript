@@ -52,6 +52,7 @@ import { HttpFileUploadUtil } from '../../../org/allbinary/logic/communication/h
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
@@ -64,6 +65,7 @@ import { FileData } from '../../../org/allbinary/logic/io/file/FileData.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -73,9 +75,11 @@ import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/tran
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { FileItem } from '../../../org/apache/commons/fileupload/FileItem.js';
 //not GWT import const FileItem
@@ -122,12 +126,18 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                     
 }
 
+isValid(...args: any[]): any {
+   
+    if (args.length === 0) return this.isValid$overload1();
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'number') return this.isValid$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: isValid'); }
+  
+    public isValid$overload1(): Boolean{
 
-    public isValid(): Boolean{
-
-        try {
-            
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;;
+ try { 
+    let command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;;
     
 
                         if(command == 
@@ -148,13 +158,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-                        if(new BasicItemValidation(this.itemInterface).isValid() == Boolean.FALSE)
+                        if(new BasicItemValidation(this.itemInterface).isValid() == false)
                         
                                     {
                                     
@@ -170,16 +180,16 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
@@ -188,10 +198,10 @@ stringBuffer!.append(storeFrontInterface!.getCurrentHostNamePath());
 stringBuffer!.append(this.itemInterface!.getCategory());
     
 
-    var fullCategory: string = stringBuffer!.toString()!;;
+    let fullCategory: string = stringBuffer!.toString()!;;
     
 
-    var categoryFile: AbFile = AbFile.createAbFile(fullCategory)!;;
+    let categoryFile: AbFile = AbFile.createAbFile(fullCategory)!;;
     
 
                         if(!categoryFile!.isDirectory())
@@ -210,13 +220,13 @@ stringBuffer!.append(this.itemInterface!.getCategory());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
+    let inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
                         if(inventoryEntity!.getItem(this.itemInterface!.getId()) == 
@@ -228,38 +238,38 @@ stringBuffer!.append(this.itemInterface!.getCategory());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var anyType: any = this.getRequestHashMap()!.get(basicItemData!.IMAGE)!;;
+    let anyType: any = this.getRequestHashMap()!.get(basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(anyType))
                         
                                     {
                                     
-    var fileItem: FileItem = anyType as FileItem;;
+    let fileItem: FileItem = anyType as FileItem;;
     
 
-    var size: number = fileItem!.getSize()!;;
+    let size: number = fileItem!.getSize()!;;
     
 
-    var fileName: string = fileItem!.getName()!;;
+    let fileName: string = fileItem!.getName()!;;
     
 HttpFileUploadUtil.log(fileItem);
     
 
-                        if(this.isValid(fileName, size) == Boolean.FALSE)
+                        if(this.isValid(fileName, size) == false)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -271,12 +281,13 @@ HttpFileUploadUtil.log(fileItem);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -290,10 +301,12 @@ HttpFileUploadUtil.log(fileItem);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -316,15 +329,22 @@ HttpFileUploadUtil.log(fileItem);
     
 }
 
-
+validationInfo(...args: any[]): any {
+   
+    if (args.length === 0) return this.validationInfo$overload1();
+   
+    if (args.length === 4 && typeof args[1] === 'string' && typeof args[2] === 'string' && typeof args[3] === 'number') return this.validationInfo$overload2(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: validationInfo'); }
+  
                 //@Throws(Exception.constructor)
             
-    public validationInfo(): string{
+    public validationInfo$overload1(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;;
+    let command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;;
     
 
                         if(command == 
@@ -344,10 +364,10 @@ HttpFileUploadUtil.log(fileItem);
 stringBuffer!.append(new BasicItemValidation(this.itemInterface).validationInfo());
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
     
 
-    var fullCategory: string = URLGLOBALS.getWebappPath() as string +storeFrontInterface!.getCurrentHostNamePath() +this.itemInterface!.getCategory();;
+    let fullCategory: string = URLGLOBALS.getWebappPath() as string +storeFrontInterface!.getCurrentHostNamePath() +this.itemInterface!.getCategory();;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -359,8 +379,7 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).validationInfo(
                                     }
                                 
 
-        try {
-            
+ try { 
                         if(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(this.itemInterface!.getId()) == 
                                     null
                                 )
@@ -371,10 +390,11 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).validationInfo(
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof MoneyException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -384,26 +404,28 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).validationInfo(
 
                                     }
                                 
-}
 
+ }
+  else { throw caught; } }
+ 
 
-    var anyType: any = this.getRequestHashMap()!.get(basicItemData!.IMAGE)!;;
+    let anyType: any = this.getRequestHashMap()!.get(basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(anyType))
                         
                                     {
                                     
-    var fileItem: FileItem = anyType as FileItem;;
+    let fileItem: FileItem = anyType as FileItem;;
     
 
-    var size: number = fileItem!.getSize()!;;
+    let size: number = fileItem!.getSize()!;;
     
 
-    var fileName: string = fileItem!.getName()!;;
+    let fileName: string = fileItem!.getName()!;;
     
 
-    var fileItemFieldName: string = fileItem!.getFieldName()!;;
+    let fileItemFieldName: string = fileItem!.getFieldName()!;;
     
 this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
     
@@ -421,9 +443,9 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
 
                 //@Throws(Exception.constructor)
             
-    isValid(fileName: string, size: number): Boolean{
+    isValid$overload2(fileName: string, size: number): Boolean{
 
-    var fileData: FileData = FileData.getInstance()!;;
+    let fileData: FileData = FileData.getInstance()!;;
     
 
                         if(size > fileData!.MINIMAGEFILESIZE)
@@ -441,7 +463,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -455,7 +477,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("File Size To Large: ");
     
@@ -474,7 +496,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                         }
@@ -488,14 +510,14 @@ this.processImageFiles();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
 
-    validationInfo(stringBuffer: StringMaker, fileName: string, fileItemFieldName: string, size: number){
+    validationInfo$overload2(stringBuffer: StringMaker, fileName: string, fileItemFieldName: string, size: number){
 
-    var fileData: FileData = FileData.getInstance()!;;
+    let fileData: FileData = FileData.getInstance()!;;
     
 
                         if(size > fileData!.MINIMAGEFILESIZE)
@@ -553,6 +575,4 @@ stringBuffer!.append("<br />");
 
 
 }
-
-
 

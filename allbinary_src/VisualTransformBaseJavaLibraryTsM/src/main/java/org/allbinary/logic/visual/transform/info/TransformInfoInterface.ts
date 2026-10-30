@@ -57,67 +57,65 @@ import { Document } from '../../../../../../org/w3c/dom/Document.js';
 export interface TransformInfoInterface extends TableMappingInterface {
         
 
-    log(): string
+    log(): string;
 
                 //@Throws(Exception.constructor)
             
-    override(hashMap: HashMap<any, any>)
+    override(hashMap: HashMap<any, any>): void;
 
-    getName(): string
+    getName(): string;
 
-    setStoreName(value: string)
+    setStoreName(value: string): void;
 
-    getStoreName(): string
+    getStoreName(): string;
 
-    getObjectFile(): string
+    getObjectFile(): string;
 
-    getObject(): any
-
-                //@Throws(Exception.constructor)
-            
-    getTemplateFilePath(): AbPath
-
-    getTemplateFile(): string
-
-    getTemplate(): string
+    getObject(): any;
 
                 //@Throws(Exception.constructor)
             
-    getDataFilePath(): AbPath
+    getTemplateFilePath(): AbPath;
 
-    getDataFile(): string
+    getTemplateFile(): string;
 
-                //@Throws(Exception.constructor)
-            
-    getDataDocument(): Document
-
-    setName(value: string)
-
-    setObjectFile(value: string)
-
-    setObject(anyType: Object)
+    getTemplate(): string;
 
                 //@Throws(Exception.constructor)
             
-    setObjectConfigInterface(transformInfoObjectConfigInterface: Object)
+    getDataFilePath(): AbPath;
+
+    getDataFile(): string;
 
                 //@Throws(Exception.constructor)
             
-    getObjectConfigInterface(): TransformInfoObjectConfigInterface
+    getDataDocument(): Document;
 
-    setTemplateFile(value: string)
+    setName(value: string): void;
 
-    setTemplate(value: string)
+    setObjectFile(value: string): void;
 
-    setDataFile(value: string)
+    setObject(anyType: Object): void;
 
-    setData(value: string)
+                //@Throws(Exception.constructor)
+            
+    setObjectConfigInterface(transformInfoObjectConfigInterface: Object): void;
 
-    setChild()
+                //@Throws(Exception.constructor)
+            
+    getObjectConfigInterface(): TransformInfoObjectConfigInterface;
 
-    isChild(): boolean
+    setTemplateFile(value: string): void;
+
+    setTemplate(value: string): void;
+
+    setDataFile(value: string): void;
+
+    setData(value: string): void;
+
+    setChild(): void;
+
+    isChild(): boolean;
 
 }
-
-
 

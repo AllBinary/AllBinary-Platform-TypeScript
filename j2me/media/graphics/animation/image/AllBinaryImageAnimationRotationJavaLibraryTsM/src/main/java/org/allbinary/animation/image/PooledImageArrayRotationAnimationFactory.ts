@@ -39,6 +39,7 @@ import { GameConfigurationCentral } from '../../../../org/allbinary/game/configu
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
@@ -81,10 +82,10 @@ export class PooledImageArrayRotationAnimationFactory
             
     public static createFactory(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
 
-    var totalAngle: number = globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE);;
+    let totalAngle: number = globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE);;
     
 
-    var angleIncrement: number = (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity());;
+    let angleIncrement: number = (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity());;
     
 
 
@@ -99,10 +100,10 @@ export class PooledImageArrayRotationAnimationFactory
             
     public static createDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
 
-    var totalAngle: number = globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE);;
+    let totalAngle: number = globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE);;
     
 
-    var angleIncrement: number = (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity());;
+    let angleIncrement: number = (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity());;
     
 
 
@@ -123,10 +124,10 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
         this.animationBehaviorFactory= animationBehaviorFactory;
     
 
-    var totalAngle: number = globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE);;
+    let totalAngle: number = globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE);;
     
 
-    var imageArray: Image[] = ImageToRotationImageArrayUtil.getInstance()!.generate(image, angleIncrement, totalAngle)!;;
+    let imageArray: Image[] = ImageToRotationImageArrayUtil.getInstance()!.generate(image, angleIncrement, totalAngle)!;;
     
 this.allBinaryImageRotationAnimationInfo= new ImageArrayRotationAnimationInfo(imageArray, angleIncrement, totalAngle, dx, dy);
     
@@ -150,6 +151,4 @@ this.allBinaryImageRotationAnimationInfo= new ImageArrayRotationAnimationInfo(im
 
 
 }
-
-
 

@@ -68,7 +68,7 @@ public constructor (){
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 
-    var tickableInterface: TickableInterface = layerInterface as TickableInterface;;
+    let tickableInterface: TickableInterface = layerInterface as TickableInterface;;
     
 tickableInterface!.processTick(allBinaryLayerManager);
     
@@ -103,6 +103,4 @@ tickableInterface!.processTick(allBinaryLayerManager);
 
 
 }
-
-
 

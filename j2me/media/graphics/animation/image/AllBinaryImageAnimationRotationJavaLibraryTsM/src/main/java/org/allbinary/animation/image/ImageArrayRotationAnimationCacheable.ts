@@ -25,9 +25,11 @@ import { AnimationBehavior } from '../../../../org/allbinary/animation/Animation
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
 //not GWT import const CacheableInterface
@@ -58,7 +60,7 @@ import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationIn
 export class ImageArrayRotationAnimationCacheable extends AdjustedImageArrayRotationAnimation implements CacheableInterface {
         
 
-public constructor (anyType: any = {}, animationBehavior: AnimationBehavior){
+public constructor (anyType: any, animationBehavior: AnimationBehavior){
             super((anyType as ImageArrayRotationAnimationInfo).getImageArray(), (anyType as ImageArrayRotationAnimationInfo).getAngleInfoP(), (anyType as ImageArrayRotationAnimationInfo).getTotalAngle(), (anyType as ImageArrayRotationAnimationInfo).getDx(), (anyType as ImageArrayRotationAnimationInfo).getDy(), animationBehavior);
                     
 
@@ -88,6 +90,4 @@ public constructor (anyType: any = {}, animationBehavior: AnimationBehavior){
 
 
 }
-
-
 

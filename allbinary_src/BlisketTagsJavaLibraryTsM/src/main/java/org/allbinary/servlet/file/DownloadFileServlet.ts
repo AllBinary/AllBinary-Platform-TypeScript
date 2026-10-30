@@ -55,9 +55,11 @@ import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CloudStreamUtil } from '../../../../org/allbinary/logic/io/CloudStreamUtil.js';
 //not GWT import const CloudStreamUtil
@@ -70,18 +72,22 @@ import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { BlisketServletUtil } from '../../../../org/allbinary/servlet/BlisketServletUtil.js';
 //not GWT import const BlisketServletUtil
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -117,16 +123,15 @@ export class DownloadFileServlet extends HttpServlet {
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
 
-    var inputStream: InputStream = 
+    let inputStream: InputStream = 
                 null
             ;;
     
 
-        try {
-            BlisketServletUtil.getInstance()!.init(request);
+ try { BlisketServletUtil.getInstance()!.init(request);
     
 
-    var requestPath: string = request.getRequestURI()!;;
+    let requestPath: string = request.getRequestURI()!;;
     
 
                         if(requestPath == 
@@ -146,10 +151,10 @@ export class DownloadFileServlet extends HttpServlet {
                                     }
                                 
 
-    var beginIndex: number = requestPath!.indexOf(this.DOWNLOAD)!;;
+    let beginIndex: number = requestPath!.indexOf(this.DOWNLOAD)!;;
     
 
-    var filePath: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let filePath: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(beginIndex >= 0)
@@ -167,7 +172,7 @@ export class DownloadFileServlet extends HttpServlet {
                         }
                             
 
-    var file: AbFile = AbFile.createAbFile(URLGLOBALS.getWebappPath() +filePath)!;;
+    let file: AbFile = AbFile.createAbFile(URLGLOBALS.getWebappPath() +filePath)!;;
     
 
                         if(!file.exists())
@@ -185,10 +190,10 @@ export class DownloadFileServlet extends HttpServlet {
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().getInstance(hashMap, request) as AuthenticationHelper;;
+    let authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().getInstance(hashMap, request) as AuthenticationHelper;;
     
 
                         if(authenticationHelper!.isAuthenticated())
@@ -201,7 +206,7 @@ export class DownloadFileServlet extends HttpServlet {
                                     inputStream= CloudStreamUtil.getInstance()!.getFile(file);
     
 
-    var contentType: string = getServletContext()!.getMimeType(file.getName())!;;
+    let contentType: string = getServletContext()!.getMimeType(file.getName())!;;
     
 
                         if(contentType == 
@@ -223,7 +228,7 @@ response.setContentType(contentType);
 response.setHeader("Content-Length", length.slice(, ).join(''));
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("attachment; filename=\"");
     
@@ -253,10 +258,11 @@ StreamUtil.getInstance()!.get(inputStream, response.getOutputStream(), new Array
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -268,10 +274,10 @@ StreamUtil.getInstance()!.get(inputStream, response.getOutputStream(), new Array
                                 
 response.sendError(HttpServletResponse.SC_NOT_FOUND);
     
-}
 
-         finally {
-            StreamUtil.getInstance()!.close(response.getOutputStream());
+ }
+   }
+ finally { StreamUtil.getInstance()!.close(response.getOutputStream());
     
 
                         if(!StreamUtil.getInstance()!.close(inputStream))
@@ -280,9 +286,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
                                     
                                     }
                                 
-
-         }
-        
+ }
 }
 
 
@@ -313,6 +317,4 @@ this.processRequest(request, response);
 
 
 }
-
-
 

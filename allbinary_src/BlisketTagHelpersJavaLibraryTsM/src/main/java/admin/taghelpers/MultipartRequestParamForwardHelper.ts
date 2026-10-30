@@ -27,9 +27,11 @@ import { HashMap } from '../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
@@ -42,18 +44,22 @@ import { RequestMapInterface } from '../../org/allbinary/logic/communication/htt
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { HelperTag } from '../../tags/HelperTag.js';
 //not GWT import const HelperTag
@@ -116,16 +122,15 @@ this.requestMapInterface= InventoryItemViewParentTagHelper.getInstance()!.getReq
             
     public forward(){
 
-        try {
-            
+ try { 
                         if(this.shouldForward())
                         
                                     {
                                     
-    var params: string = this.getParams()!;;
+    let params: string = this.getParams()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.page);
     
@@ -136,12 +141,13 @@ this.pageContext!.forward(stringBuffer!.toString());
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -152,45 +158,47 @@ this.pageContext!.forward(stringBuffer!.toString());
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     getParams(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var AMP: string = commonSeps!.AMPERSAND;;
+    let AMP: string = commonSeps!.AMPERSAND;;
     
 
-    var QUESTION: string = commonSeps!.QUESTION;;
+    let QUESTION: string = commonSeps!.QUESTION;;
     
 
-    var EQUALS: string = commonSeps!.EQUALS;;
+    let EQUALS: string = commonSeps!.EQUALS;;
     
 
-    var hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;;
+    let hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = this.paramVector!.size()!;;
+    let size: number = this.paramVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var key: string = this.paramVector!.get(index) as string;;
+    let key: string = this.paramVector!.get(index) as string;;
     
 
-    var value: string = hashMap!.get(key) as string;;
+    let value: string = hashMap!.get(key) as string;;
     
 
                         if(index != 0)
@@ -226,10 +234,10 @@ stringBuffer!.append(value);
 
     shouldForward(): boolean{
 
-    var hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;;
+    let hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;;
     
 
-    var requestCommand: string = hashMap!.get(GLOBALS2.ADMINCOMMAND) as string;;
+    let requestCommand: string = hashMap!.get(GLOBALS2.ADMINCOMMAND) as string;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand) && this.command.compareTo(requestCommand) == 0))
@@ -254,6 +262,4 @@ stringBuffer!.append(value);
 
 
 }
-
-
 

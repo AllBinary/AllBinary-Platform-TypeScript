@@ -82,15 +82,15 @@ public constructor (node: Node){
 
             super();
         
-    var childNodeList: NodeList = node.getChildNodes()!;;
+    let childNodeList: NodeList = node.getChildNodes()!;;
     
 this.contextConfigurationInterface= new ContextConfiguration();
     
 
-    var emailConfigurationNode: Node = DomSearchHelper.getNode(EmailServerConfigurationData.NAME, childNodeList)!;;
+    let emailConfigurationNode: Node = DomSearchHelper.getNode(EmailServerConfigurationData.NAME, childNodeList)!;;
     
 
-    var emailServerConfigurationView: EmailServerConfigurationView = new EmailServerConfigurationView(emailConfigurationNode);;
+    let emailServerConfigurationView: EmailServerConfigurationView = new EmailServerConfigurationView(emailConfigurationNode);;
     
 this.contextConfigurationInterface!.setEmailServerConfigurationInterface(emailServerConfigurationView!.getEmailConfigurationInterface() as EmailServerConfigurationInterface);
     
@@ -119,10 +119,10 @@ public constructor (contextConfigurationInterface: ContextConfigurationInterface
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(ContextConfigurationData.getInstance()!.NAME)!;;
+    let node: Node = document.createElement(ContextConfigurationData.getInstance()!.NAME)!;;
     
 
-    var emailServerConfigurationView: EmailServerConfigurationView = new EmailServerConfigurationView(this.getContextConfigurationInterface()!.getEmailServerConfigurationInterface());;
+    let emailServerConfigurationView: EmailServerConfigurationView = new EmailServerConfigurationView(this.getContextConfigurationInterface()!.getEmailServerConfigurationInterface());;
     
 node.appendChild(emailServerConfigurationView!.toXmlNode(document));
     
@@ -136,6 +136,4 @@ node.appendChild(emailServerConfigurationView!.toXmlNode(document));
 
 
 }
-
-
 

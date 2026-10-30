@@ -121,5 +121,3 @@ this.getVelocityProperties()!.getVelocityXBasicDecimalP()!.subtractint(2000);
 
 }
 
-
-

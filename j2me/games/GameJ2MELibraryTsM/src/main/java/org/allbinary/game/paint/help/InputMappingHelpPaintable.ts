@@ -53,27 +53,35 @@ import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/Basi
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -97,6 +105,7 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 //not GWT import - same folder const HelpPaintable
 //import { UpdateMyFontProperties } from './UpdateMyFontProperties.js';
 //not GWT import - same folder const UpdateMyFontProperties
+type UpdateMyFontProperties = InstanceType<InputMappingHelpPaintable['UpdateMyFontProperties']>;
 
 export class InputMappingHelpPaintable extends HelpPaintable {
         
@@ -107,6 +116,30 @@ export class InputMappingHelpPaintable extends HelpPaintable {
 
     private static readonly MORE_THAN_TWO_IN_LIST_AND: string = ", and ";
 
+//inner= member=true isStatic=
+UpdateMyFontProperties = (() => { const outer$InputMappingHelpPaintable = this; return class
+            extends Object
+         {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
+
+
+    actionStringArray: string[] = StringUtil.getInstance()!.getArrayInstance()!;
+
+    keymappingBeginWidthArray: number[] = NullUtil.getInstance()!.NULL_INT_ARRAY;
+
+    actionStringDeltaXArray: number[] = NullUtil.getInstance()!.NULL_INT_ARRAY;
+
+    inputDeltaXArray: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
+
+    sepArray: string[][] = new Array(0).fill(null).map(() => new Array(0).fill(null))
+                                                            ;
+
+    sepWidthArray: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
+
+    charHeight: number= 0;
+
+}; })();
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
@@ -131,32 +164,6 @@ export class InputMappingHelpPaintable extends HelpPaintable {
                                                             ;
 
     private selectedBasicColor: BasicColor;
-
-//inner= member=true isStatic=
-UpdateMyFontProperties = class
-            extends Object
-         {
-        
-/*Static stuff is not allowed for TypeScript inner classes*//**/
-
-
-    actionStringArray: string[] = StringUtil.getInstance()!.getArrayInstance()!;
-
-    keymappingBeginWidthArray: number[] = NullUtil.getInstance()!.NULL_INT_ARRAY;
-
-    actionStringDeltaXArray: number[] = NullUtil.getInstance()!.NULL_INT_ARRAY;
-
-    inputDeltaXArray: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
-
-    sepArray: string[][] = new Array(0).fill(null).map(() => new Array(0).fill(null))
-                                                            ;
-
-    sepWidthArray: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
-
-    charHeight: number= 0;
-
-}
-
 
     private updateMyFontProperties = new this.UpdateMyFontProperties();
 
@@ -190,21 +197,21 @@ this.update(this.NONE, this.NONE);
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 
-    var updateMyFontProperties = new this.UpdateMyFontProperties();;
+    let updateMyFontProperties = new this.UpdateMyFontProperties();;
     
 updateMyFontProperties!.charHeight= font.getHeight();
     
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var inputInfo: string[] = this.inputInfo;;
+    let inputInfo: string[] = this.inputInfo;;
     
 
-    var size: number = inputInfo!.length
+    let size: number = inputInfo!.length
                 ;;
     
 updateMyFontProperties!.actionStringArray= new Array(size);
@@ -221,26 +228,26 @@ updateMyFontProperties!.sepArray= new Array(size).fill(null).map(() => new Array
 updateMyFontProperties!.sepWidthArray= new Array(size).fill(null).map(() => new Array(0).fill(null));
     
 
-    var list: BasicArrayList;;
+    let list: BasicArrayList;;
     
 
-    var keyMappings: string;;
+    let keyMappings: string;;
     
 
-    var actionString: string;;
+    let actionString: string;;
     
 
-    var input: Input;;
+    let input: Input;;
     
 
-    var size2: number = 0;;
+    let size2: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 list= this.keyMappingArray[index]!;
     
@@ -271,7 +278,7 @@ updateMyFontProperties!.sepWidthArray[index]= new Array(size2);
 
 
                         for (
-    var index2: number = 0;index2 < size2; index2++)
+    let index2: number = 0;index2 < size2; index2++)
         {
 input= list.objectArray[index2]! as Input;
     
@@ -336,45 +343,45 @@ super.updateMeasurement(graphics);
 
     public update(selectedGameKey: GameKey, selectedInput: Input){
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append("selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.append(" Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, this.commonStrings!.UPDATE);
     
 
-    var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;;
+    let gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;;
     
 
-    var size: number = this.gameInputMappingArray!.length
+    let size: number = this.gameInputMappingArray!.length
                 ;;
     
 
-    var keyInfo: string[] = new Array(size);;
+    let keyInfo: string[] = new Array(size);;
     
 
-    var keyMappingArray: BasicArrayList[] = new Array(size);;
+    let keyMappingArray: BasicArrayList[] = new Array(size);;
     
 
-    var actionBasicColor: BasicColor[] = new Array(size);;
+    let actionBasicColor: BasicColor[] = new Array(size);;
     
 
-    var inputBasicColorArray: BasicColor[][] = new Array(size)
+    let inputBasicColorArray: BasicColor[][] = new Array(size)
                                                             ;;
     
 
-    var gameInputMapping: GameInputMapping;;
+    let gameInputMapping: GameInputMapping;;
     
 
-    var gameKey: GameKey;;
+    let gameKey: GameKey;;
     
 
-    var list: BasicArrayList;;
+    let list: BasicArrayList;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 gameInputMapping= this.gameInputMappingArray[index]!;
     
@@ -383,7 +390,7 @@ gameKey= gameInputMapping!.getGameKey();
 list= gameKeyMapping!.getInputMapping()!.getMappedInput(gameKey);
     
 
-    var size2: number = list.size()!;;
+    let size2: number = list.size()!;;
     
 inputBasicColorArray[index]= new Array(size2);
     
@@ -392,7 +399,7 @@ inputBasicColorArray[index]= new Array(size2);
 
 
                         for (
-    var index2: number = 0;index2 < size2; index2++)
+    let index2: number = 0;index2 < size2; index2++)
         {
 inputBasicColorArray[index]![index2]= this.basicColor;
     
@@ -409,7 +416,7 @@ this.logUtil!.putF(stringMaker!.append("Found: selected GameKey: ")!.append(this
 actionBasicColor[index]= this.selectedBasicColor;
     
 
-    var indexOfSelectedInput: number = list.indexOf(selectedInput)!;;
+    let indexOfSelectedInput: number = list.indexOf(selectedInput)!;;
     
 
                         if(indexOfSelectedInput >= 0)
@@ -454,20 +461,20 @@ this.myFontProcessor= this.updateMyFontProcessor;
 
     get(keyList: BasicArrayList): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var key: Input;;
+    let key: Input;;
     
 
-    var size: number = keyList!.size()!;;
+    let size: number = keyList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 key= keyList!.objectArray[index]! as Input;
     
@@ -523,49 +530,49 @@ stringBuffer!.append(key.getName());
 this.myFontProcessor!.process(graphics);
     
 
-    var halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
+    let halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
     
 graphics.setColor(this.basicColor!.intValue());
     
 graphics.drawString(this.title, halfWidth -this.titleBeginWidth, this.updateMyFontProperties!.charHeight, this.anchor);
     
 
-    var inputInfo: string[] = this.inputInfo;;
+    let inputInfo: string[] = this.inputInfo;;
     
 
-    var size: number = inputInfo!.length
+    let size: number = inputInfo!.length
                 ;;
     
 
-    var y: number = 0;;
+    let y: number = 0;;
     
 
-    var deltaX: number = 0;;
+    let deltaX: number = 0;;
     
 
-    var size2: number = 0;;
+    let size2: number = 0;;
     
 
-    var actionString: string;;
+    let actionString: string;;
     
 
-    var input: Input;;
+    let input: Input;;
     
 
-    var list: BasicArrayList;;
+    let list: BasicArrayList;;
     
 
-    var sep: string;;
+    let sep: string;;
     
 
-    var beginWidth: number= 0;;
+    let beginWidth: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 y= (index +3) *this.updateMyFontProperties!.charHeight;
     
@@ -590,7 +597,7 @@ deltaX += this.updateMyFontProperties!.actionStringDeltaXArray[index]!;
 
 
                         for (
-    var index2: number = 0;index2 < size2; index2++)
+    let index2: number = 0;index2 < size2; index2++)
         {
 input= list.objectArray[index2]! as Input;
     
@@ -616,6 +623,4 @@ deltaX += this.updateMyFontProperties!.sepWidthArray[index]![index2]!;
 
 
 }
-
-
 

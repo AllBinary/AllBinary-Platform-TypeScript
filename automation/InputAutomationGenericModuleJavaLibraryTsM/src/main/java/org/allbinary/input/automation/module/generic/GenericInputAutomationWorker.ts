@@ -30,9 +30,11 @@ import { Set } from '../../../../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { AbstractInputAutomationWorker } from '../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationWorker.js';
 //not GWT import const AbstractInputAutomationWorker
@@ -57,6 +59,7 @@ import { CapturedBufferedImagesCacheSingleton } from '../../../../../../org/allb
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { J2SECacheInterface } from '../../../../../../org/allbinary/logic/util/cache/J2SECacheInterface.js';
 //not GWT import const J2SECacheInterface
@@ -128,20 +131,20 @@ this.setMotionRectanglesWorker(new MotionRectanglesWorker(motionRectangleConstra
 this.setGenericProfile(genericProfile);
     
 
-    var vector: BasicArrayList = this.getGenericProfile()!.getGenericProfileDataWorkerTypeVector()!;;
+    let vector: BasicArrayList = this.getGenericProfile()!.getGenericProfileDataWorkerTypeVector()!;;
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;;
+    let genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;;
     
 this.logUtil!.putF("Adding Listener: " +genericProfileDataWorkerType, this, this.commonStrings!.CONSTRUCTOR);
     
@@ -176,10 +179,10 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.PROCESS_DATA_WORKER_RES
 this.waitForDataWorkers();
     
 
-    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;;
+    let cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;;
     
 
-    var keyArray: any[] = cacheInterface!.keySet()!.()!;;
+    let keyArray: any[] = cacheInterface!.keySet()!.()!;;
     
 
                         if(keyArray!.length > 0)
@@ -196,18 +199,18 @@ this.setFrame(keyArray[keyArray!.length -1]! as Long);
                                     this.logUtil!.putF("Processing new frame: " +getFrame(), this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var hashMap: HashMap<any, any> = this.getGenericProfile()!.getGenericProfileActions()!.getHashMap()!;;
+    let hashMap: HashMap<any, any> = this.getGenericProfile()!.getGenericProfileActions()!.getHashMap()!;;
     
 
-    var set: Set = hashMap!.keys()!;;
+    let set: Set = hashMap!.keys()!;;
     
 this.logUtil!.putF("Processing " +set.size() +"Actions", this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var actionNameArray: any[] = set.toArray()!;;
+    let actionNameArray: any[] = set.toArray()!;;
     
 
-    var size: number = actionNameArray!.length
+    let size: number = actionNameArray!.length
                 ;;
     
 
@@ -215,21 +218,21 @@ this.logUtil!.putF("Processing " +set.size() +"Actions", this, this.PROCESS_DATA
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var actionNameString: string = actionNameArray[index]! as string;;
+    let actionNameString: string = actionNameArray[index]! as string;;
     
 this.logUtil!.putF("Processing Action: " +actionNameString, this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString) as GenericProfileAction;;
+    let genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString) as GenericProfileAction;;
     
 
-    var genericProfileActionScript: GenericProfileActionScript = genericProfileAction!.getGenericProfileActionScript()!;;
+    let genericProfileActionScript: GenericProfileActionScript = genericProfileAction!.getGenericProfileActionScript()!;;
     
 
-    var vector: BasicArrayList = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;;
+    let vector: BasicArrayList = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;;
     
 CaptureWorkerUtil.processProfileActionConditions(vector, getFrame());
     
@@ -297,6 +300,4 @@ this.frame= frame;
 
 
 }
-
-
 

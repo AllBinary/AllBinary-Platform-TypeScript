@@ -93,5 +93,3 @@ super.processTick(allBinaryLayerManager);
 
 }
 
-
-

@@ -28,9 +28,11 @@ import { GameFeatureChoiceGroups } from '../../../../org/allbinary/game/configur
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -60,21 +62,21 @@ export class OpenGLOptions
 
     public init(){
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
                         if(Features.getInstance()!.isFeature(openGLFeatureFactory!.OPENGL_OPTIONS))
                         
                                     {
                                     
-    var openGLMultipleList: BasicArrayList = new BasicArrayListD();;
+    let openGLMultipleList: BasicArrayList = new BasicArrayListD();;
     
 openGLMultipleList!.add(openGLFeatureFactory!.OPENGL);
     
 GameFeatureChoiceGroups.getMultipleInstance()!.add("OpenGL (Complete Restart)", openGLMultipleList);
     
 
-    var openGLVersionSelectorMultipleList: BasicArrayList = new BasicArrayListD();;
+    let openGLVersionSelectorMultipleList: BasicArrayList = new BasicArrayListD();;
     
 openGLVersionSelectorMultipleList!.add(openGLFeatureFactory!.OPENGL_AUTO_SELECT);
     
@@ -83,7 +85,7 @@ openGLVersionSelectorMultipleList!.add(openGLFeatureFactory!.OPENGL_MINIMUM);
 GameFeatureChoiceGroups.getExclusiveInstance()!.add("OpenGL Version Selector", openGLVersionSelectorMultipleList);
     
 
-    var openGLImageColorMultipleList: BasicArrayList = new BasicArrayListD();;
+    let openGLImageColorMultipleList: BasicArrayList = new BasicArrayListD();;
     
 openGLImageColorMultipleList!.add(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444);
     
@@ -98,6 +100,4 @@ GameFeatureChoiceGroups.getExclusiveInstance()!.add("OpenGL Image Color RGBA", o
 
 
 }
-
-
 

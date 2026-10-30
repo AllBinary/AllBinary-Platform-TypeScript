@@ -70,7 +70,7 @@ export class ABHashMap extends HashMap<K, V> {
 }
 
 
-    public get(key: any = {}): V{
+    public get(key: any): V{
 
 
 
@@ -80,7 +80,7 @@ export class ABHashMap extends HashMap<K, V> {
 }
 
 
-    public containsKey(key: any = {}): boolean{
+    public containsKey(key: any): boolean{
 
 
 
@@ -110,7 +110,7 @@ super.putAll(map);
 }
 
 
-    public remove(key: any = {}): V{
+    public remove(key: any): V{
 
 
 
@@ -126,7 +126,7 @@ super.clear();
 }
 
 
-    public containsValue(value: any = {}): boolean{
+    public containsValue(value: any): boolean{
 
 
 
@@ -156,7 +156,7 @@ super.clear();
 }
 
 
-    public getOrDefault(key: any = {}, defaultValue: V): V{
+    public getOrDefault(key: any, defaultValue: V): V{
 
 
 
@@ -187,6 +187,4 @@ super.clear();
 
 
 }
-
-
 

@@ -26,6 +26,7 @@ import { IncludeFileExtensionsBooleanFileVisitor } from '../../../../../../org/a
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -84,7 +85,7 @@ this.includesString= includesString;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -109,7 +110,7 @@ this.includesString= includesString;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                         }
@@ -118,6 +119,4 @@ this.includesString= includesString;
 
 
 }
-
-
 

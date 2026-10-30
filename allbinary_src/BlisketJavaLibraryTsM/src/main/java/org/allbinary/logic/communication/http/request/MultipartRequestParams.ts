@@ -34,12 +34,14 @@ import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js'
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { AbFileUploadFactory } from '../../../../../../org/allbinary/logic/communication/http/file/upload/AbFileUploadFactory.js';
 //not GWT import const AbFileUploadFactory
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -108,12 +110,11 @@ this.special= true;
 
     processMultipartRequest(request: HttpServletRequest){
 
-        try {
-            
-    var specialRequest: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let specialRequest: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var multipartRequestList: List = AbFileUploadFactory.getInstance()!.getFileItemStreamList(request)!;;
+    let multipartRequestList: List = AbFileUploadFactory.getInstance()!.getFileItemStreamList(request)!;;
     
 
                         if(multipartRequestList != 
@@ -131,10 +132,10 @@ this.special= true;
                                     }
                                 
 
-    var fileItemArray: any[] = multipartRequestList!.toArray()!;;
+    let fileItemArray: any[] = multipartRequestList!.toArray()!;;
     
 
-    var size: number = fileItemArray!.length
+    let size: number = fileItemArray!.length
                 ;;
     
 
@@ -142,13 +143,13 @@ this.special= true;
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var fileItem: FileItem = fileItemArray[index]! as FileItem;;
+    let fileItem: FileItem = fileItemArray[index]! as FileItem;;
     
 
-    var name: string = fileItem!.getName()!;;
+    let name: string = fileItem!.getName()!;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(name))
@@ -183,10 +184,11 @@ this.setMap(specialRequest);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof InvalidContentTypeException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
@@ -198,11 +200,11 @@ this.setMap(specialRequest);
                                 
 super.setMap(request.getParameterMap());
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUESTERROR))
                         
@@ -214,8 +216,10 @@ super.setMap(request.getParameterMap());
                                 
 super.setMap(request.getParameterMap());
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -249,6 +253,4 @@ super.setMap(request.getParameterMap());
 
 
 }
-
-
 

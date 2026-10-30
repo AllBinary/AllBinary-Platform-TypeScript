@@ -58,7 +58,7 @@ export class CustomGameMenuUtil
 
     public static add(canvas: MyCanvas){
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
+    let gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 
                         if(AppletUtil.isAppletLoader(canvas))
@@ -84,6 +84,4 @@ export class CustomGameMenuUtil
 
 
 }
-
-
 

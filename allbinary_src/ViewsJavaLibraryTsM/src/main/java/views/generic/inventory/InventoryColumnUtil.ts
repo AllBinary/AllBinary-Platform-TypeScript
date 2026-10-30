@@ -25,9 +25,11 @@ import { HashMap } from '../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 //not GWT import const BasicItemData
@@ -37,6 +39,7 @@ import { InventoryEntity } from '../../../org/allbinary/data/tables/user/commerc
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -85,26 +88,26 @@ export class InventoryColumnUtil
 this.logUtil!.putF("Start Category: " +category, this, "getKeywords");
     
 
-    var keywords: BasicArrayList = new BasicArrayListD();;
+    let keywords: BasicArrayList = new BasicArrayListD();;
     
 
-    var vectorOfHashMaps: BasicArrayList = inventoryEntity!.getAllRows()!;;
+    let vectorOfHashMaps: BasicArrayList = inventoryEntity!.getAllRows()!;;
     
 
-    var size: number = vectorOfHashMaps!.size()!;;
+    let size: number = vectorOfHashMaps!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = vectorOfHashMaps!.get(index) as HashMap<any, any>;;
+    let hashMap: HashMap<any, any> = vectorOfHashMaps!.get(index) as HashMap<any, any>;;
     
 
-    var categoryName: string = hashMap!.get(this.basicItemData!.CATEGORY) as string;;
+    let categoryName: string = hashMap!.get(this.basicItemData!.CATEGORY) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(categoryName) && categoryName!.startsWith(category))
@@ -127,6 +130,4 @@ this.logUtil!.putF("Start Category: " +category, this, "getKeywords");
 
 
 }
-
-
 

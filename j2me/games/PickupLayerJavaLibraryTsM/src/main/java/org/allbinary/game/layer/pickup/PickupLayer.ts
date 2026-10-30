@@ -127,13 +127,13 @@ this.setPosition(x, y, z);
 
     public paint(graphics: Graphics){
 
-    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
+    let viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 
-    var viewX: number = viewPosition!.getX()!;;
+    let viewX: number = viewPosition!.getX()!;;
     
 
-    var viewY: number = viewPosition!.getY()!;;
+    let viewY: number = viewPosition!.getY()!;;
     
 this.animationInterface!.paintXY(graphics, viewX, viewY);
     
@@ -142,13 +142,13 @@ this.animationInterface!.paintXY(graphics, viewX, viewY);
 
     public paintThreed(graphics: Graphics){
 
-    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
+    let viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 
-    var viewX: number = viewPosition!.getX()!;;
+    let viewX: number = viewPosition!.getX()!;;
     
 
-    var viewY: number = viewPosition!.getY()!;;
+    let viewY: number = viewPosition!.getY()!;;
     
 this.animationInterface!.paintThreedXYZ(graphics, viewX, viewY, 3);
     
@@ -214,7 +214,7 @@ this.destroyed= destroyed;
             
     public set(gl: GL){
 
-    var openGLSurfaceChangedInterface: OpenGLSurfaceChangedInterface = this.animationInterface as OpenGLSurfaceChangedInterface;;
+    let openGLSurfaceChangedInterface: OpenGLSurfaceChangedInterface = this.animationInterface as OpenGLSurfaceChangedInterface;;
     
 openGLSurfaceChangedInterface!.set(gl);
     
@@ -222,6 +222,4 @@ openGLSurfaceChangedInterface!.set(gl);
 
 
 }
-
-
 

@@ -39,6 +39,7 @@ import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/AB
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
 //not GWT import const DirectionFactory
@@ -66,12 +67,15 @@ import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/lay
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
@@ -81,6 +85,7 @@ import { SimpleGeographicMapCellPositionFactory } from '../../../../../org/allbi
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -128,7 +133,7 @@ public constructor (groupInterfaceArray: Group[]){
 
             super();
         
-    var size: number = this.newUnconstructedRTSLayerInterfaceArray!.length
+    let size: number = this.newUnconstructedRTSLayerInterfaceArray!.length
                 ;;
     
 
@@ -136,7 +141,7 @@ public constructor (groupInterfaceArray: Group[]){
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.newUnconstructedRTSLayerInterfaceArray[index]= CollidableDestroyableDamageableLayer.getNullInstance();
     
@@ -170,7 +175,7 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getIns
             
     public processAtPoint(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
 
-    var index: number = this.getIndexAt(rtsPlayerLayerInterface, point)!;;
+    let index: number = this.getIndexAt(rtsPlayerLayerInterface, point)!;;
     
 
                         if(index < 0)
@@ -186,10 +191,10 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getIns
                                     }
                                 
 
-    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
+    let scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
     
 
-    var item: ABCustomItem = scrollSelectionForm!.get(index)!;;
+    let item: ABCustomItem = scrollSelectionForm!.get(index)!;;
     
 
                         if(item == 
@@ -229,7 +234,7 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager);
             
     public processSticky(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint): boolean{
 
-    var index: number = this.getIndexAt(rtsPlayerLayerInterface, point)!;;
+    let index: number = this.getIndexAt(rtsPlayerLayerInterface, point)!;;
     
 
                         if(index < 0)
@@ -245,10 +250,10 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager);
                                     }
                                 
 
-    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
+    let scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
     
 
-    var item: ABCustomItem = scrollSelectionForm!.get(index)!;;
+    let item: ABCustomItem = scrollSelectionForm!.get(index)!;;
     
 
                         if(item == 
@@ -288,7 +293,7 @@ this.processStickyGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, laye
 this.logUtil!.putF(new StringMaker().append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
     
 
-    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
+    let scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
     
 
 
@@ -305,7 +310,7 @@ this.logUtil!.putF(new StringMaker().append("Point: ")!.append(StringUtil.getIns
 this.logUtil!.putF(new StringMaker().append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
     
 
-    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
+    let scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
     
 
 
@@ -320,13 +325,13 @@ this.logUtil!.putF(new StringMaker().append("Point: ")!.append(StringUtil.getIns
             
     getInstance(layerManager: AllBinaryLayerManager, aItem: ABCustomItem, geographicMapCellPosition: GeographicMapCellPosition): CollidableDestroyableDamageableLayer{
 
-    var item: LayerInterfaceFactoryImageItem = aItem as LayerInterfaceFactoryImageItem;;
+    let item: LayerInterfaceFactoryImageItem = aItem as LayerInterfaceFactoryImageItem;;
     
 
-    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = item.getLayerInterfaceFactoryInterface()!;;
+    let layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = item.getLayerInterfaceFactoryInterface()!;;
     
 
-    var cellPoint: GPoint = geographicMapCellPosition!.getPoint()!;;
+    let cellPoint: GPoint = geographicMapCellPosition!.getPoint()!;;
     
 
                         if(layerInterfaceFactoryInterface != 
@@ -431,6 +436,4 @@ this.selectedStickyItemIndex= selectedStickyItemIndex;
 
 
 }
-
-
 

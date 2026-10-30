@@ -62,7 +62,7 @@ export class VirtualKeyboardFactory
 
     public static init(activity: Activity){
 
-    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
+    let SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
     
 
                         if(SDK_VERSION <= 2)
@@ -93,6 +93,4 @@ export class VirtualKeyboardFactory
 
 
 }
-
-
 

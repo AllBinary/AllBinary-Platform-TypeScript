@@ -45,5 +45,3 @@ export interface PriceConstraintInterface extends MinMaxDoubleConstraintInterfac
 
 }
 
-
-

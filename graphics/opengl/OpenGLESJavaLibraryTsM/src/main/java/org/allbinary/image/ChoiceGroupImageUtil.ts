@@ -78,23 +78,23 @@ export class ChoiceGroupImageUtil
 
     public init(){
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;;
+    let choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;;
     
 
-    var imageArray: Image[] = choiceGroupFactory!.getImageArray()!;;
+    let imageArray: Image[] = choiceGroupFactory!.getImageArray()!;;
     
 
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
-    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
+    let preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
     
 
-    var size: number = imageArray!.length
+    let size: number = imageArray!.length
                 ;;
     
 
@@ -102,7 +102,7 @@ export class ChoiceGroupImageUtil
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 imageArray[index]= preResourceImageUtil!.encapsulate(imageArray[index]!);
     
@@ -115,26 +115,33 @@ choiceGroupFactory!.init(imageArray);
                                 
 }
 
+update(...args: any[]): any {
+   
+    if (args.length === 1) return this.update$overload1(args[0]);
+   
+    if (args.length === 1) return this.update$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: update'); }
+  
+    public update$overload1(gl: GL){
 
-    public update(gl: GL){
-
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;;
+    let choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;;
     
 
-    var imageArray: Image[] = choiceGroupFactory!.getImageArray()!;;
+    let imageArray: Image[] = choiceGroupFactory!.getImageArray()!;;
     
 
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
-    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
+    let preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
     
 
-    var size: number = imageArray!.length
+    let size: number = imageArray!.length
                 ;;
     
 
@@ -142,7 +149,7 @@ choiceGroupFactory!.init(imageArray);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 preResourceImageUtil!.updateGL(gl, imageArray[index]!);
     
@@ -156,25 +163,25 @@ choiceGroupFactory!.init(imageArray);
 }
 
 
-    public update(graphics: Graphics){
+    public update$overload2(graphics: Graphics){
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
-    var choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;;
+    let choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;;
     
 
-    var imageArray: Image[] = choiceGroupFactory!.getImageArray()!;;
+    let imageArray: Image[] = choiceGroupFactory!.getImageArray()!;;
     
 
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
-    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
+    let preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
     
 
-    var size: number = imageArray!.length
+    let size: number = imageArray!.length
                 ;;
     
 
@@ -182,7 +189,7 @@ choiceGroupFactory!.init(imageArray);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 preResourceImageUtil!.update(graphics, imageArray[index]!);
     
@@ -197,6 +204,4 @@ choiceGroupFactory!.init(imageArray);
 
 
 }
-
-
 

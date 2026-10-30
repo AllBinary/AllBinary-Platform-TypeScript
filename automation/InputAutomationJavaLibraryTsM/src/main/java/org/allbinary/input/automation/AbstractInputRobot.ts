@@ -34,6 +34,7 @@ import { HelpSet } from '../../../../javax/help/HelpSet.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -86,20 +87,34 @@ public constructor (helpSet: HelpSet){
     
 }
 
-
-    public mouseMove(point: Point){
+mouseMove(...args: any[]): any {
+   
+    if (args.length === 1) return this.mouseMove$overload1(args[0]);
+   
+    if (args.length === 2) return this.mouseMove$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: mouseMove'); }
+  
+    public mouseMove$overload1(point: Point){
 this.mouseMove(point.x, point.y);
     
 this.logUtil!.putF("Moved Mouse To: x: " +point.x +" y: " +point.y, this, "moveMouse");
     
 }
 
-
+mouseMoveToTarget(...args: any[]): any {
+   
+    if (args.length === 3) return this.mouseMoveToTarget$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 1) return this.mouseMoveToTarget$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: mouseMoveToTarget'); }
+  
                 //@Throws(Exception.constructor)
             
-    public mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer){
+    public mouseMoveToTarget$overload1(rectangle: Rectangle, x: Integer, y: Integer){
 
-    var point: Point = PointHelper.getCenterPoint(rectangle)!;;
+    let point: Point = PointHelper.getCenterPoint(rectangle)!;;
     
 this.mouseMove(point.x +x, point.y +y);
     
@@ -110,13 +125,13 @@ this.logUtil!.putF("Moved Mouse To: x: " +point.x +" y: " +point.y +" in the mid
 
                 //@Throws(Exception.constructor)
             
-    public mouseMoveToTarget(rectangle: Rectangle){
+    public mouseMoveToTarget$overload2(rectangle: Rectangle){
 this.mouseMoveToTarget(rectangle, 0, 0);
     
 }
 
 
-    public mouseMove(x: Integer, y: Integer){
+    public mouseMove$overload2(x: Integer, y: Integer){
 
 
 
@@ -132,6 +147,4 @@ this.helpSet= helpSet;
 
 
 }
-
-
 

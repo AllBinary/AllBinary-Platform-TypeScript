@@ -42,11 +42,9 @@
 export interface BasicCompositeEventHandlerInterface {
         
 
-    getEventHandler(): BasicEventHandlerInterface
+    getEventHandler(): BasicEventHandlerInterface;
 
-    setEventHandler(basicEventHandlerInterface: BasicEventHandlerInterface)
+    setEventHandler(basicEventHandlerInterface: BasicEventHandlerInterface): void;
 
 }
-
-
 

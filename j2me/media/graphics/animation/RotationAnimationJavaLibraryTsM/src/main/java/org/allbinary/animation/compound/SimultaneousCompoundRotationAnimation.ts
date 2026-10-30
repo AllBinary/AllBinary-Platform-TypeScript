@@ -49,6 +49,7 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -91,7 +92,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.setFrame(frameIndex);
@@ -139,7 +140,7 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex);
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.previousFrame();
@@ -157,7 +158,7 @@ this.animationInterfaceArray[index]!.previousFrame();
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.nextFrame();
@@ -173,7 +174,7 @@ this.animationInterfaceArray[index]!.nextFrame();
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.previousRotation();
@@ -189,7 +190,7 @@ this.animationInterfaceArray[index]!.previousRotation();
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.nextRotation();
@@ -219,7 +220,7 @@ this.animationInterfaceArray[index]!.nextRotation();
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
@@ -235,7 +236,7 @@ this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.paintThreedXYZ(graphics, x, y, z);
@@ -251,7 +252,7 @@ this.animationInterfaceArray[index]!.paintThreedXYZ(graphics, x, y, z);
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.setFrameByDirection(direction);
@@ -267,7 +268,7 @@ this.animationInterfaceArray[index]!.setFrameByDirection(direction);
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.setFrameToAngle(angle);
@@ -289,7 +290,7 @@ this.adjustFrame(newAngle!.getValue());
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.adjustFrame(angle);
@@ -333,7 +334,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length
+    let index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.set(gl);
@@ -344,6 +345,4 @@ this.animationInterfaceArray[index]!.set(gl);
 
 
 }
-
-
 

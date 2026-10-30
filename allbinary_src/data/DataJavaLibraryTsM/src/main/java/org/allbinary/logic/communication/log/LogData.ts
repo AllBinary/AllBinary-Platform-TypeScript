@@ -22,6 +22,7 @@
         
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 
 
@@ -60,6 +61,4 @@ export class LogData
     public readonly DESCRIPTION: string = "LOG_DESCRIPTION";
 
 }
-
-
 

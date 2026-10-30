@@ -39,18 +39,22 @@ import { TempInputRobotNames } from '../../../../../../../../../org/allbinary/in
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -122,7 +126,7 @@ this.initComponents();
 this.mouseActionScriptInputInterface= mouseActionScriptInputInterface;
     
 
-    var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();;
+    let defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();;
     
 defaultComboBoxModel!.addElement(TempInputRobotNames.LOW_NAME);
     
@@ -139,7 +143,7 @@ this.set();
 
     set(){
 
-    var inputTypeComboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;;
+    let inputTypeComboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;;
     
 inputTypeComboBoxModel!.setSelectedItem(this.mouseActionScriptInputInterface!.getInputRobotInterface()!.getName());
     
@@ -188,10 +192,10 @@ this.mouseActionScriptInputInterface!.log();
             
     updateInputType(){
 
-    var comboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;;
+    let comboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem() as string;;
+    let selectedItem: string = comboBoxModel!.getSelectedItem() as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem))
@@ -281,7 +285,7 @@ this.logUtil!.putF("Button 2 Deselected: " +this.mouseActionScriptInputInterface
                         }
                             
 
-    var mouseXString: string = this.mouseXJTextField!.getText()!;;
+    let mouseXString: string = this.mouseXJTextField!.getText()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(mouseXString) && StringValidationUtil.getInstance()!.isNumber(mouseXString))
@@ -293,7 +297,7 @@ this.logUtil!.putF("Button 2 Deselected: " +this.mouseActionScriptInputInterface
                                     }
                                 
 
-    var mouseYString: string = this.mouseYJTextField!.getText()!;;
+    let mouseYString: string = this.mouseYJTextField!.getText()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(mouseYString) && StringValidationUtil.getInstance()!.isNumber(mouseYString))
@@ -419,7 +423,7 @@ this.jLabel6!.setText("Delay:");
 this.mouseDelayJTextField!.setText("100");
     
 
-    var mouseActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.mouseActionJDialog!.getContentPane());;
+    let mouseActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.mouseActionJDialog!.getContentPane());;
     
 this.mouseActionJDialog!.getContentPane()!.setLayout(mouseActionJDialogLayout);
     
@@ -445,7 +449,7 @@ mouseActionJButtonActionPerformed(evt);
 this.jLabel1!.setText("Mouse:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -462,19 +466,21 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.update();
+ try { this.update();
     
 this.getMouseActionJDialog()!.setVisible(false);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okButtonActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -519,6 +525,4 @@ this.getMouseActionJDialog()!.setVisible(true);
     private titleJLabel: javax.swing.JLabel;
 
 }
-
-
 

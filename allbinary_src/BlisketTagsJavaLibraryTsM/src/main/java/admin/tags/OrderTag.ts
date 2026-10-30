@@ -45,12 +45,14 @@ import { PaymentGatewayData } from '../../org/allbinary/business/user/commerce/m
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -110,19 +112,18 @@ this.storeName= value;
             
     process(): string{
 
-        try {
-            
-    var anyType: any = new OrderHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new OrderHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;;
+    let helperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
+    let method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
                             null)!;;
     
 
-    var result: string = method.invoke(anyType, 
+    let result: string = method.invoke(anyType, 
                             null) as string;;
     
 
@@ -131,22 +132,23 @@ this.storeName= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to Process Order: ";;
+    let error: string = "Failed to Process Order: ";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -163,8 +165,10 @@ this.storeName= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -172,19 +176,18 @@ this.storeName= value;
             
     setPaymentGateway(): Boolean{
 
-        try {
-            
-    var anyType: any = new OrderHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
+ try { 
+    let anyType: any = new OrderHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;;
+    let addressHelperClass: Function = anyType!.constructor!;;
     
 
-    var method: Method = addressHelperClass!.getMethod("setPaymentGateway", 
+    let method: Method = addressHelperClass!.getMethod("setPaymentGateway", 
                             null)!;;
     
 
-    var result: Boolean = method.invoke(anyType, 
+    let result: Boolean = method.invoke(anyType, 
                             null) as Boolean;;
     
 
@@ -193,22 +196,23 @@ this.storeName= value;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
-    var error: string = "Failed to setPaymentGateway for Order";;
+    let error: string = "Failed to setPaymentGateway for Order";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -223,10 +227,12 @@ this.storeName= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -234,8 +240,7 @@ this.storeName= value;
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(this.command != 
                                     null
                                 )
@@ -259,7 +264,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                         
                                     {
                                     
-                        if(this.setPaymentGateway() == Boolean.TRUE)
+                        if(this.setPaymentGateway() == true)
                         
                                     {
                                     
@@ -283,10 +288,11 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return TagSupport.SKIP_BODY;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -295,11 +301,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -308,12 +314,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

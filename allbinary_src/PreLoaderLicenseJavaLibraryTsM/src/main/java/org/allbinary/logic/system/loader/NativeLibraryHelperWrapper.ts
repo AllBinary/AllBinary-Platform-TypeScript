@@ -36,6 +36,7 @@ import { Method } from '../../../../../java/lang/reflect/Method.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -81,30 +82,30 @@ public constructor (libraryName: string){
             
     public load(){
 
-    var params: any[] = new Array(1);;
+    let params: any[] = new Array(1);;
     
 params[0]= this.getLibraryName();
     
 
-    var classes: Function[] = new Array(1);;
+    let classes: Function[] = new Array(1);;
     
 classes[0]= this.getLibraryName()!.constructor;
     
 this.loader= new NativeLibraryClassLoader(this.constructor.namegetClassLoader());
     
 
-    var myClass: Function = this.loader.loadClass("dynamic.NativeLibraryHelper")!;;
+    let myClass: Function = this.loader.loadClass("dynamic.NativeLibraryHelper")!;;
     
 
-    var constructor: Constructor = myClass!.getConstructor(classes)!;;
+    let constructor: Constructor = myClass!.getConstructor(classes)!;;
     
 this.anyType= constructor.newInstance(params);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var method: Method = this.anyType!.constructor.name.getMethod(commonStrings!.LOAD, 
+    let method: Method = this.anyType!.constructor.name.getMethod(commonStrings!.LOAD, 
                             null)!;;
     
 method.invoke(this.anyType, 
@@ -156,6 +157,4 @@ this.libraryName= libraryName;
 
 
 }
-
-
 

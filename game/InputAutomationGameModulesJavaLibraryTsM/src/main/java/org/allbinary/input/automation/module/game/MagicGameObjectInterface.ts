@@ -44,5 +44,3 @@ export interface MagicGameObjectInterface extends MeteredGameObjectInterface {
 
 }
 
-
-

@@ -57,9 +57,11 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -113,7 +115,7 @@ export class BuildingPropertiesFactory
 
     public getDamageFloaters(buildingLayer: BuildingLayer): DamageFloaters{
 
-    var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;;
+    let damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;;
     
 
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.DAMAGE_FLOATERS))
@@ -145,7 +147,7 @@ this.damageFloatersPaintableInterface= damageFloaters;
             
     public getHealthBar(buildingLayer: BuildingLayer): Paintable{
 
-    var healthBar: Paintable = NullPaintable.getInstance()!;;
+    let healthBar: Paintable = NullPaintable.getInstance()!;;
     
 
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.HEALTH_BARS))
@@ -186,6 +188,4 @@ this.damageFloatersPaintableInterface= damageFloaters;
 
 
 }
-
-
 

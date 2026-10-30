@@ -27,15 +27,19 @@ import { Command } from '../../../javax/microedition/lcdui/Command.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -89,21 +93,23 @@ this.hashtable.put(command, url);
 
     public process(command: Command){
 
-        try {
-            
-                //: 
-} catch(e) 
-            {
+ try {  }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getIntent(command: Command): Intent{
 
-    var url: string = this.hashtable.get(command) as string;;
+    let url: string = this.hashtable.get(command) as string;;
     
 
 
@@ -115,6 +121,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCE
 
 
 }
-
-
 

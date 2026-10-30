@@ -45,6 +45,7 @@ import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/Primitive
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -165,13 +166,13 @@ this.circularIndexUtil!.setIndex(index);
 
     public paintXY(graphics: Graphics, x: number, y: number){
 
-    var frame: number = this.getFrame()!;;
+    let frame: number = this.getFrame()!;;
     
 
-    var currentX: number = this.dx *frame;;
+    let currentX: number = this.dx *frame;;
     
 
-    var currentY: number = this.dy *frame;;
+    let currentY: number = this.dy *frame;;
     
 graphics.drawImage(this.image, x +currentX, y +currentY, this.anchor);
     
@@ -193,6 +194,4 @@ DisposalUtil.getInstance()!.disposeImage(this.image);
 
 
 }
-
-
 

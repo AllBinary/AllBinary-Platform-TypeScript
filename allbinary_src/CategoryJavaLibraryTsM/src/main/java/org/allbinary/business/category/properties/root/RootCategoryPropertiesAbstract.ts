@@ -29,9 +29,11 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { CategoryData } from '../../../../../../org/allbinary/business/category/CategoryData.js';
 //not GWT import const CategoryData
@@ -41,12 +43,14 @@ import { CategoryHierarchyInterface } from '../../../../../../org/allbinary/busi
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -120,10 +124,17 @@ public constructor (){
                     
 }
 
-
+setRootFilePath(...args: any[]): any {
+   
+    if (args.length === 1) return this.setRootFilePath$overload1(args[0]);
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.setRootFilePath$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: setRootFilePath'); }
+  
                 //@Throws(Exception.constructor)
             
-    public setRootFilePath(value: AbPath){
+    public setRootFilePath$overload1(value: AbPath){
 
 
 
@@ -134,7 +145,7 @@ public constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public setRootFilePath(value: string){
+    public setRootFilePath$overload2(value: string){
 
 
 
@@ -212,14 +223,14 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
 
     public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let categoryHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
     
@@ -234,7 +245,7 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
 
     public toVector(): BasicArrayList{
 
-    var categoryVector: BasicArrayList = new BasicArrayListD();;
+    let categoryVector: BasicArrayList = new BasicArrayListD();;
     
 categoryVector!.add(this.category);
     
@@ -284,6 +295,4 @@ categoryVector!.add(this.category);
 
 
 }
-
-
 

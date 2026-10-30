@@ -89,20 +89,19 @@ public constructor (touchButtonInput: TouchButtonInput, animationInterface: Anim
 
     updateRectangle(){
 
-        try {
-            
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+ try { 
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var x: number = this.rawRectangle!.getWidth() *this.cellPositionP!.getColumn();;
+    let x: number = this.rawRectangle!.getWidth() *this.cellPositionP!.getColumn();;
     
 
-    var y: number = this.rawRectangle!.getHeight() *this.cellPositionP!.getRow();;
+    let y: number = this.rawRectangle!.getHeight() *this.cellPositionP!.getRow();;
     
 this.rectangleP= new Rectangle(pointFactory!.createXY(x, y), this.rawRectangle!.getWidth() +(2 *this.xBorder), this.rawRectangle!.getHeight() +(2 *this.yBorder));
     
 
-    var point: GPoint = this.rectangleP!.getPoint()!;;
+    let point: GPoint = this.rectangleP!.getPoint()!;;
     
 this.animationX= point.getX() +this.xBorder;
     
@@ -110,18 +109,19 @@ this.animationY= point.getY() +this.yBorder;
     
 this.hintAnimationY= this.animationY -this.rectangleP!.getHeight()>>1;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

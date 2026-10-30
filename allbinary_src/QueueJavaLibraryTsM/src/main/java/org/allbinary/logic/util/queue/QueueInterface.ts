@@ -44,17 +44,15 @@ export interface QueueInterface {
 
                 //@Throws(Exception.constructor)
             
-    offer(anyType: any): boolean
+    offer(anyType: any): boolean;
 
                 //@Throws(Exception.constructor)
             
-    remove(anyType: any)
+    remove(anyType: any): void;
 
                 //@Throws(Exception.constructor)
             
-    remove(): any
+    remove(): any;
 
 }
-
-
 

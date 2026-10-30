@@ -52,9 +52,7 @@ export interface PartFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(sourceLayerInterface: AllBinaryLayer, relativeRelationship: RelativeRelationship): PartInterface
+    getInstance(sourceLayerInterface: AllBinaryLayer, relativeRelationship: RelativeRelationship): PartInterface;
 
 }
-
-
 

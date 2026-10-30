@@ -40,9 +40,7 @@
 export interface AdvertisementWebsiteInterface {
         
 
-    toString(): string
+    toString(): string;
 
 }
-
-
 

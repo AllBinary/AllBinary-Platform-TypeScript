@@ -32,9 +32,7 @@
 export interface ChallengerInterface {
         
 
-    setWinner(isWinner: boolean)
+    setWinner(isWinner: boolean): void;
 
 }
-
-
 

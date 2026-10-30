@@ -22,9 +22,11 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -82,10 +84,10 @@ public constructor (location: string, paymentMethod: string){
 
             super();
         
-    var paymentMethodString: string = PaymentGatewayPageData.NAME +paymentMethod;;
+    let paymentMethodString: string = PaymentGatewayPageData.NAME +paymentMethod;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(location);
     
@@ -179,6 +181,4 @@ FINISH= stringBuffer!.toString();
 
 
 }
-
-
 

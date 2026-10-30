@@ -52,5 +52,3 @@ public constructor (decryptedExtension: string, encryptedExtension: string){
 
 }
 
-
-

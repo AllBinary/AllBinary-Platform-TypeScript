@@ -27,15 +27,18 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 //not GWT import const TableMappingInterface
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
@@ -45,6 +48,7 @@ import { FileData } from '../../../../../org/allbinary/logic/io/file/FileData.js
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
 //not GWT import const PathUtil
@@ -99,7 +103,7 @@ public constructor (file: AbFile){
             
     public toVector(): BasicArrayList{
 
-    var filePropertyVector: BasicArrayList = new BasicArrayListD();;
+    let filePropertyVector: BasicArrayList = new BasicArrayListD();;
     
 filePropertyVector!.add(this.file.getAbsolutePath());
     
@@ -124,19 +128,19 @@ filePropertyVector!.add(this.file.getPath());
             
     public toHashMap(): HashMap<any, any>{
 
-    var filePropertyHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let filePropertyHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var pathData: AbPathData = AbPathData.getInstance()!;;
+    let pathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var pathUtil: PathUtil = PathUtil.getInstance()!;;
+    let pathUtil: PathUtil = PathUtil.getInstance()!;;
     
 
-    var rootFileName: string = pathData!.getNameFromPath(pathUtil!.getWithoutExtension(this.file.getPath()))!;;
+    let rootFileName: string = pathData!.getNameFromPath(pathUtil!.getWithoutExtension(this.file.getPath()))!;;
     
 
-    var fileData: FileData = FileData.getInstance()!;;
+    let fileData: FileData = FileData.getInstance()!;;
     
 filePropertyHashMap!.put(fileData!.ROOT_NAME, rootFileName);
     
@@ -168,6 +172,4 @@ filePropertyHashMap!.put(fileData!.PATH, this.file.getPath());
 
 
 }
-
-
 

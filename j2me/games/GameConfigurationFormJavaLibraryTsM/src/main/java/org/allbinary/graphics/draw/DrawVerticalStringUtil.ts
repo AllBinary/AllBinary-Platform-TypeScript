@@ -42,15 +42,19 @@ import { OpenGLFeatureUtil } from '../../../../org/allbinary/graphics/opengles/O
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -100,10 +104,10 @@ export class DrawVerticalStringUtil
 
     public updateMeasurement(graphics: Graphics, string: string){
 
-    var openGLFeatureUtil: OpenGLFeatureUtil = OpenGLFeatureUtil.getInstance()!;;
+    let openGLFeatureUtil: OpenGLFeatureUtil = OpenGLFeatureUtil.getInstance()!;;
     
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.charHeight= font.getHeight();
     
@@ -141,20 +145,20 @@ this.offsetY= 0;
                                     }
                                 
 
-    var size: number = string.length!;;
+    let size: number = string.length!;;
     
 
-    var aChar: string;;
+    let aChar: string;;
     
 
-    var offsetXArray: number[] = new Array(size);;
+    let offsetXArray: number[] = new Array(size);;
     
 
 
 
 
                         for (
-    var index: number = size -1;index >= 0; index--)
+    let index: number = size -1;index >= 0; index--)
         {
 aChar= string[index];
     
@@ -176,17 +180,17 @@ this.offsetXArray= offsetXArray;
 
     public paintVerticle(graphics: Graphics, string: string, x: number, y: number, anchor: number){
 
-    var size: number = string.length!;;
+    let size: number = string.length!;;
     
 
-    var aChar: string;;
+    let aChar: string;;
     
 
 
 
 
                         for (
-    var index: number = size -1;index >= 0; index--)
+    let index: number = size -1;index >= 0; index--)
         {
 aChar= string[index];
     
@@ -199,46 +203,48 @@ graphics.drawChar(aChar, x +this.offsetXArray[index], y +(this.charHeight *index
 
     public drawCenterString(graphics: Graphics, string: string, offset: number, length: number, x: number, y: number){
 
-    var width: number = (graphics.getFont()!.substringWidth(string, offset, length)>>1);;
+    let width: number = (graphics.getFont()!.substringWidth(string, offset, length)>>1);;
     
 
-        try {
-            graphics.drawSubstring(string, offset, length, x -width, y, this.anchor);
+ try { graphics.drawSubstring(string, offset, length, x -width, y, this.anchor);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.put(new StringMaker().append("Exception: stringLength: ")!.appendint(string.length)!.append(" offset: ")!.appendint(offset)!.append(" currentLength: ")!.appendint(length)!.toString(), this, "drawCenterString");
     
-}
 
+ }
+   }
+ 
 }
 
 
     public drawCenterStrings(graphics: Graphics, stringArray: string[], maxWidth: number, x: number, y: number){
 
-    var extraLines: number = 0;;
+    let extraLines: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < stringArray!.length; index++)
+    let index: number = 0;index < stringArray!.length; index++)
         {
 
-    var string: string = stringArray[index]!;;
+    let string: string = stringArray[index]!;;
     
 
                         if(string != this.EMPTY_STRING)
                         
                                     {
                                     
-    var width: number = graphics.getFont()!.stringWidth(string)!;;
+    let width: number = graphics.getFont()!.stringWidth(string)!;;
     
 
-    var minTotalLines: number = 1;;
+    let minTotalLines: number = 1;;
     
 
                         if(width > maxWidth)
@@ -250,16 +256,16 @@ PreLogUtil.put(new StringMaker().append("Exception: stringLength: ")!.appendint(
                                     }
                                 
 
-    var linePortion: number = string.length /minTotalLines;;
+    let linePortion: number = string.length /minTotalLines;;
     
 
-    var offset: number = 0;;
+    let offset: number = 0;;
     
 
-    var currentLength: number = linePortion;;
+    let currentLength: number = linePortion;;
     
 
-    var size: number = string.length!;;
+    let size: number = string.length!;;
     
 
         while(offset < size)
@@ -315,6 +321,4 @@ extraLines--;
 
 
 }
-
-
 

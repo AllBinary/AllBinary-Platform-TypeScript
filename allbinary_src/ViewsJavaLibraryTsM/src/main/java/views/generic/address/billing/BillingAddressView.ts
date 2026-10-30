@@ -34,6 +34,7 @@ import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNod
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 //not GWT import const TransformInfoInterface
@@ -103,9 +104,8 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
             
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var formNode: Node = document.createElement(StreetAddressData.FORM)!;;
+ try { 
+    let formNode: Node = document.createElement(StreetAddressData.FORM)!;;
     
 formNode!.appendChild(this.streetAddress!.toXmlNode(document));
     
@@ -115,10 +115,11 @@ formNode!.appendChild(this.streetAddress!.toXmlNode(document));
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return formNode;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
@@ -133,8 +134,10 @@ formNode!.appendChild(this.streetAddress!.toXmlNode(document));
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -150,8 +153,7 @@ this.addDomNodeInterface(new StatesView() as DomNodeInterface);
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -159,10 +161,11 @@ this.addDomNodeInterface(new StatesView() as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -177,12 +180,12 @@ this.addDomNodeInterface(new StatesView() as DomNodeInterface);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

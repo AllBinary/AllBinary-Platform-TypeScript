@@ -56,5 +56,3 @@ export class NullLocationPaintable extends LocationPaintable {
 
 }
 
-
-

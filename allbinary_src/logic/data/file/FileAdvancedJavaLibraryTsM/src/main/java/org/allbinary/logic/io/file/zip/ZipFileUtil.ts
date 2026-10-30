@@ -33,6 +33,7 @@ import { ZipOutputStream } from '../../../../../../java/util/zip/ZipOutputStream
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbDataOutputStream } from '../../../../../../org/allbinary/logic/io/AbDataOutputStream.js';
 //not GWT import const AbDataOutputStream
@@ -57,12 +58,15 @@ import { FileUtil } from '../../../../../../org/allbinary/logic/io/file/FileUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -106,9 +110,8 @@ export class ZipFileUtil
 
     public create(outFilename: string, fileBasicArrayList: BasicArrayList){
 
-        try {
-            
-    var zipFile: AbFile = AbFile.createAbFile(outFilename)!;;
+ try { 
+    let zipFile: AbFile = AbFile.createAbFile(outFilename)!;;
     
 
                         if(zipFile!.exists())
@@ -122,35 +125,35 @@ export class ZipFileUtil
 zipFile!.createNewFile();
     
 
-    var outputStream: ZipOutputStream = new ZipOutputStream(AbFileOutputStream.createFromAbFile(zipFile));;
+    let outputStream: ZipOutputStream = new ZipOutputStream(AbFileOutputStream.createFromAbFile(zipFile));;
     
 
-    var streamUtil: StreamUtil = StreamUtil.getInstance()!;;
+    let streamUtil: StreamUtil = StreamUtil.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var byteArray: number[] = new Array(16384);;
+    let byteArray: number[] = new Array(16384);;
     
 
-    var fileInputStream: AbFileInputStream;;
+    let fileInputStream: AbFileInputStream;;
     
 
-    var size: number = fileBasicArrayList!.size()!;;
+    let size: number = fileBasicArrayList!.size()!;;
     
 
-    var current: number = 0;;
+    let current: number = 0;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var file: AbFile = fileBasicArrayList!.get(i) as AbFile;;
+    let file: AbFile = fileBasicArrayList!.get(i) as AbFile;;
     
 
                         if(file.isDirectory())
@@ -174,8 +177,7 @@ stringBuffer!.append(file.getPath());
 this.logUtil!.putF(stringBuffer!.toString(), this, "create()");
     
 
-        try {
-            fileInputStream= new AbFileInputStream(file);
+ try { fileInputStream= new AbFileInputStream(file);
     
 outputStream!.putNextEntry(new ZipEntry(file.getPath()));
     
@@ -185,14 +187,17 @@ outputStream!.closeEntry();
     
 streamUtil!.close(fileInputStream);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.putF("Skipping File (Probably Local): " +file.getPath(), this, "create()");
     
-}
 
+ }
+   }
+ 
 
                                     }
                                 
@@ -202,14 +207,17 @@ current++;
 
 streamUtil!.close(outputStream);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -217,25 +225,24 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
             
     public unzip(path: string, zipFile: AbFile, fileName: string){
 
-    var buffer: number[] = new Array(16384);;
+    let buffer: number[] = new Array(16384);;
     
 
-    var inputStream: ZipInputStream = 
+    let inputStream: ZipInputStream = 
                 null
             ;;
     
 
-        try {
-            inputStream= new ZipInputStream(new AbFileInputStream(zipFile));
+ try { inputStream= new ZipInputStream(new AbFileInputStream(zipFile));
     
 
-    var zipEntry: ZipEntry;;
+    let zipEntry: ZipEntry;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var fileUtil: FileUtil = FileUtil.getInstance()!;;
+    let fileUtil: FileUtil = FileUtil.getInstance()!;;
     
 
         while((zipEntry= inputStream!.getNextEntry()) != 
@@ -243,7 +250,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
                                 )
         {
 
-    var entryName: string = zipEntry!.getName()!;;
+    let entryName: string = zipEntry!.getName()!;;
     
 
                         if(zipEntry!.isDirectory())
@@ -254,7 +261,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
                                 
                         else {
                             
-    var entryFile: AbFile = AbFile.createAbFile(path +entryName)!;;
+    let entryFile: AbFile = AbFile.createAbFile(path +entryName)!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -277,7 +284,7 @@ stringBuffer!.append(entryFile!.getParent());
 this.logUtil!.putF(stringBuffer!.toString(), this, "unzip");
     
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(entryFile)!;;
+    let dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(entryFile)!;;
     
 fileUtil!.write(inputStream, dataOutputStream, buffer);
     
@@ -288,17 +295,12 @@ inputStream!.closeEntry();
     
 }
 
-
-         finally {
-            StreamUtil.getInstance()!.close(inputStream);
+ }
+ finally { StreamUtil.getInstance()!.close(inputStream);
     
-
-         }
-        
+ }
 }
 
 
 }
-
-
 

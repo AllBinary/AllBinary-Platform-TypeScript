@@ -50,21 +50,19 @@ export interface ValidationInterface {
 
                 //@Throws(Exception.constructor)
             
-    isValid(): Boolean
+    isValid(): Boolean;
 
                 //@Throws(Exception.constructor)
             
-    toValidationInfoNode(document: Document): Node
+    toValidationInfoNode(document: Document): Node;
 
                 //@Throws(Exception.constructor)
             
-    toValidationInfoDoc(): Document
+    toValidationInfoDoc(): Document;
 
                 //@Throws(Exception.constructor)
             
-    validationInfo(): string
+    validationInfo(): string;
 
 }
-
-
 

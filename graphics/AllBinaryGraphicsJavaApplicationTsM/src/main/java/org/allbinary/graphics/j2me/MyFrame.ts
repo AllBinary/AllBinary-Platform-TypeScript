@@ -87,6 +87,7 @@ import { GuiLog } from '../../../../org/allbinary/logic/communication/log/GuiLog
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
@@ -96,9 +97,11 @@ import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -179,25 +182,27 @@ export class MyFrame extends javax.swing.JFrame implements FileJDialogListenerIn
 
     public static main(args: string[]){
 
-        try {
-            AngleFactory.getInstance();
+ try { AngleFactory.getInstance();
     
 SmallIntegerSingletonFactory.getInstance()!.init();
     
 new MyFrame().show();
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.put(CommonStrings.getInstance()!.EXCEPTION, 
                             null, "main", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -769,35 +774,39 @@ pack();
 
     explodeAllJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
 
-        try {
-            MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.EXPLODE, 
+ try { MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.EXPLODE, 
                             null)));
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "explodeAllJMenuItemMousePressed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     autoExplodeJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
 
-        try {
-            MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.AUTOEXPLODE, 
+ try { MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.AUTOEXPLODE, 
                             null)));
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "autoExplodeJMenuItemMousePressed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -895,18 +904,20 @@ this.newGraphics();
 
     centerJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.CENTER, 
+ try { MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.CENTER, 
                             null)));
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -924,37 +935,38 @@ this.export();
 
     jMenuItem1ActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.getSelectedWorkArea()!.autoMirror();
+ try { this.getSelectedWorkArea()!.autoMirror();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public onFiles(files: File[]){
 
-        try {
-            this.logUtil!.putF("Reading: " +files, this, "onFiles");
+ try { this.logUtil!.putF("Reading: " +files, this, "onFiles");
     
 
 
 
 
                         for (
-    var index: number = 0;index < files.length; index++)
+    let index: number = 0;index < files.length; index++)
         {
 
-    var document: Document = DomHelper.getInstance()!.createDocument(files[index]!)!;;
+    let document: Document = DomHelper.getInstance()!.createDocument(files[index]!)!;;
     
 
-    var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(new WorkAreaDom(document), this.getSize());;
+    let workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(new WorkAreaDom(document), this.getSize());;
     
 workAreaJPanel!.setLayout(new GridLayout(1, 1));
     
@@ -964,33 +976,36 @@ this.add(workAreaJPanel as WorkAreaJPanelInterface);
 
 this.fileJDialog!.setVisible(false);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onFiles", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     newGraphics(){
 
-        try {
-            
-    var newName: string = "graphic" +MyFrame.numberOfWorkAreas;;
+ try { 
+    let newName: string = "graphic" +MyFrame.numberOfWorkAreas;;
     
 
-    var dim: Dimension = this.getSize()!;;
+    let dim: Dimension = this.getSize()!;;
     
 
-    var newDialog: NewWorkAreaJDialog = new NewWorkAreaJDialog(this, false, dim, newName);;
+    let newDialog: NewWorkAreaJDialog = new NewWorkAreaJDialog(this, false, dim, newName);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
@@ -1000,22 +1015,24 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onFiles", e);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     openGraphics(){
 
-        try {
-            this.logUtil!.putF("Starting", this, "openImageJMenuItemActionPerformed");
+ try { this.logUtil!.putF("Starting", this, "openImageJMenuItemActionPerformed");
     
 this.fileJDialog!.setVisible(true);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
@@ -1025,31 +1042,33 @@ this.fileJDialog!.setVisible(true);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     export(){
 
-        try {
-            
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;;
+ try { 
+    let workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;;
     
 
-    var file: File = new File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +this.JAVAEXTENSION);;
+    let file: File = new File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +this.JAVAEXTENSION);;
     
 
-    var document: Document = workAreaJPanel!.toDocument()!;;
+    let document: Document = workAreaJPanel!.toDocument()!;;
     
 this.logUtil!.putF("Export: " +DomHelper.getInstance()!.toString(document), this, "exportJMenuItem1ActionPerformed");
     
 this.xslHelper!.export(file, MyFrame.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE, document);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
@@ -1059,23 +1078,25 @@ this.xslHelper!.export(file, MyFrame.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLA
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     save(){
 
-        try {
-            
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;;
+ try { 
+    let workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;;
     
 DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +this.SAVEEXTENSION), workAreaJPanel!.toDocument());
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
@@ -1085,8 +1106,10 @@ DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getN
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -1094,10 +1117,10 @@ DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getN
             
     public onHashMap(hashMap: HashMap<any, any>){
 
-    var angleIncrementInteger: Integer = hashMap!.get(Integer.valueOf(0)) as Integer;;
+    let angleIncrementInteger: Integer = hashMap!.get(Integer.valueOf(0)) as Integer;;
     
 
-    var totalRotationInteger: Integer = hashMap!.get(Integer.valueOf(1)) as Integer;;
+    let totalRotationInteger: Integer = hashMap!.get(Integer.valueOf(1)) as Integer;;
     
 this.getSelectedWorkArea()!.autoRotate(angleIncrementInteger!.intValue(), totalRotationInteger!.intValue());
     
@@ -1116,24 +1139,24 @@ this.getSelectedWorkArea()!.autoRotate(angleIncrementInteger!.intValue(), totalR
 
     public updateSelectedWorkArea(){
 
-    var numberOfTabs: number = this.jTabbedPane!.getTabCount()!;;
+    let numberOfTabs: number = this.jTabbedPane!.getTabCount()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfTabs; index++)
+    let index: number = 0;index < numberOfTabs; index++)
         {
 
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getComponentAt(index) as WorkAreaJPanelInterface;;
+    let workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getComponentAt(index) as WorkAreaJPanelInterface;;
     
 workAreaJPanel!.deselect();
     
 }
 
 
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;;
+    let workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;;
     
 
                         if(workAreaJPanel != 
@@ -1153,8 +1176,7 @@ workAreaJPanel!.deselect();
             
     public add(newCanvasInterface: WorkAreaJPanelInterface){
 
-        try {
-            this.numberOfWorkAreas++;
+ try { this.numberOfWorkAreas++;
     
 
                         if(this.numberOfWorkAreas == MyFrame.MAXWORKAREAS)
@@ -1173,16 +1195,17 @@ this.jTabbedPane!.addTab(newCanvasInterface!.getName(), newCanvasInterface as JP
 this.jTabbedPane!.setSelectedComponent(newCanvasInterface as JPanel);
     
 
-    var animationThread: Thread = new Thread(newCanvasInterface as Runnable);;
+    let animationThread: Thread = new Thread(newCanvasInterface as Runnable);;
     
 animationThread!.start();
     
 this.updateSelectedWorkArea();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LOGGING.contains(LOGGING.GRAPHICSCREATION))
                         
@@ -1192,8 +1215,10 @@ this.updateSelectedWorkArea();
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -1304,6 +1329,4 @@ this.getSelectedWorkArea()!.keyPressed(keyEvent);
     private zoomOutJMenuItem: javax.swing.JMenuItem;
 
 }
-
-
 

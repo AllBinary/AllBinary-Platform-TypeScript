@@ -62,5 +62,3 @@ public constructor (label: string, image: Image, layout: number, altText: string
 
 }
 
-
-

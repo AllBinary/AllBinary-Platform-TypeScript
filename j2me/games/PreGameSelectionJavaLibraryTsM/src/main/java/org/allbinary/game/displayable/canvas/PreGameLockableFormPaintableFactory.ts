@@ -80,5 +80,3 @@ public constructor (lockedIndex: number){
 
 }
 
-
-

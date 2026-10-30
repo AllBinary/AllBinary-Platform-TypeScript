@@ -101,5 +101,3 @@ this.tiledLayer= tiledLayer;
 
 }
 
-
-

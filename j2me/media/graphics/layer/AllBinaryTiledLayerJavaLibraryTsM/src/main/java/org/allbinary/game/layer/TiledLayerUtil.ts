@@ -60,10 +60,10 @@ export class TiledLayerUtil
 
     public keepOnBorderdMapX(terrainTiledLayer: AllBinaryTiledLayer, x: number, width: number, mapBorderBufferWidth: number): number{
 
-    var newX: number = x;;
+    let newX: number = x;;
     
 
-    var maxRight: number = terrainTiledLayer!.getWidth() -width -mapBorderBufferWidth;;
+    let maxRight: number = terrainTiledLayer!.getWidth() -width -mapBorderBufferWidth;;
     
 
                         if(x +width > maxRight)
@@ -94,10 +94,10 @@ export class TiledLayerUtil
 
     public keepOnBorderdMapY(terrainTiledLayer: AllBinaryTiledLayer, y: number, height: number, mapBorderBufferHeight: number): number{
 
-    var newY: number = y;;
+    let newY: number = y;;
     
 
-    var maxBottom: number = terrainTiledLayer!.getHeight() -height -mapBorderBufferHeight;;
+    let maxBottom: number = terrainTiledLayer!.getHeight() -height -mapBorderBufferHeight;;
     
 
                         if(y +height > maxBottom)
@@ -128,10 +128,10 @@ export class TiledLayerUtil
 
     public keepOnMapX(terrainTiledLayer: AllBinaryTiledLayer, x: number, width: number): number{
 
-    var newX: number = x;;
+    let newX: number = x;;
     
 
-    var maxRight: number = terrainTiledLayer!.getWidth() -width;;
+    let maxRight: number = terrainTiledLayer!.getWidth() -width;;
     
 
                         if(x >= maxRight)
@@ -162,10 +162,10 @@ export class TiledLayerUtil
 
     public keepOnMapY(terrainTiledLayer: AllBinaryTiledLayer, y: number, height: number): number{
 
-    var newY: number = y;;
+    let newY: number = y;;
     
 
-    var maxBottom: number = terrainTiledLayer!.getHeight() -height;;
+    let maxBottom: number = terrainTiledLayer!.getHeight() -height;;
     
 
                         if(y >= maxBottom)
@@ -195,6 +195,4 @@ export class TiledLayerUtil
 
 
 }
-
-
 

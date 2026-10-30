@@ -29,6 +29,7 @@ import { EventListenerInterface } from '../../../../../../org/allbinary/logic/ut
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -53,19 +54,17 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 export interface BasicEventHandlerInterface {
         
 
-    addListenerInterface(eventListenerInterface: EventListenerInterface)
+    addListenerInterface(eventListenerInterface: EventListenerInterface): void;
 
-    addListeners(basicArrayList: BasicArrayList)
+    addListeners(basicArrayList: BasicArrayList): void;
 
                 //@Throws(Exception.constructor)
             
-    fireEvent(eventObject: AllBinaryEventObject)
+    fireEvent(eventObject: AllBinaryEventObject): void;
 
-    removeAllListeners()
+    removeAllListeners(): void;
 
-    removeListener(eventListenerInterface: EventListenerInterface)
+    removeListener(eventListenerInterface: EventListenerInterface): void;
 
 }
-
-
 

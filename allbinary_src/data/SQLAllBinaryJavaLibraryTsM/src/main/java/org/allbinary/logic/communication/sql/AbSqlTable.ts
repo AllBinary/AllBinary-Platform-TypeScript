@@ -25,6 +25,7 @@ import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -90,8 +91,7 @@ this.tableName= tableName;
 
     public createTable(data: string): string{
 
-        try {
-            this.executeSQLStatement(data);
+ try { this.executeSQLStatement(data);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -108,10 +108,11 @@ this.tableName= tableName;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tableName +this.sqlStrings!.CREATE_RETURN;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -127,19 +128,20 @@ this.tableName= tableName;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Failed to Create " +this.tableName +" table.";
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public dropTable(): string{
 
-    var sqlStatement: string = this.sqlStrings!.DROP_TABLE +this.tableName;;
+    let sqlStatement: string = this.sqlStrings!.DROP_TABLE +this.tableName;;
     
 
-        try {
-            this.executeSQLStatement(sqlStatement);
+ try { this.executeSQLStatement(sqlStatement);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -156,10 +158,11 @@ this.tableName= tableName;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return tableName +this.DROPPED_SUCCESS;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -175,12 +178,12 @@ this.tableName= tableName;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Failed to Drop " +tableName +" table.";
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

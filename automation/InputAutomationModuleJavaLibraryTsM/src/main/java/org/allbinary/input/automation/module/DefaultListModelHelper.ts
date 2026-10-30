@@ -24,15 +24,18 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { swing } from '../../../../../javax/swing.js';
 //not GWT import const swing
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 
 
@@ -80,17 +83,17 @@ this.defaultListModel= new DefaultListModel();
 this.defaultListModel= new DefaultListModel();
     
 
-    var size: number = this.vector.size()!;;
+    let size: number = this.vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var moduleName: string = this.vector.get(index) as string;;
+    let moduleName: string = this.vector.get(index) as string;;
     
 this.defaultListModel!.addElement(moduleName);
     
@@ -122,6 +125,4 @@ this.vector.remove(string);
 
 
 }
-
-
 

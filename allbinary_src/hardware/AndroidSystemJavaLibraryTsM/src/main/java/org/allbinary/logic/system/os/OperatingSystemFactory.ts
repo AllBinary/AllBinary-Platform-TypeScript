@@ -27,12 +27,15 @@ import { AndroidOperatingSystemFactory } from '../../../../../org/allbinary/logi
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -93,15 +96,14 @@ private constructor (){
 
     public getOperatingSystemInstance(): GenericOperatingSystem{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-    var systemProperties: SystemProperties = SystemProperties.getInstance()!;;
+ try { 
+    let systemProperties: SystemProperties = SystemProperties.getInstance()!;;
     
 
-    var osName: string = systemProperties!.getName()!;;
+    let osName: string = systemProperties!.getName()!;;
     
 
                         if(!this.hasDetected)
@@ -147,16 +149,19 @@ this.logUtil!.putF(new StringMaker().append("Operating System Info: ")!.append(t
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.genericOperatingSystem= NoOperatingSystem.NO_OPERATING_SYSTEM;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -167,6 +172,4 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
 
 }
-
-
 

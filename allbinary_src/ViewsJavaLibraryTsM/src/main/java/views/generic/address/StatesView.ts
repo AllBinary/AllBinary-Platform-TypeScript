@@ -39,12 +39,14 @@ import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LineReader } from '../../../org/allbinary/logic/io/LineReader.js';
 //not GWT import const LineReader
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -88,21 +90,20 @@ public constructor (){
 
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var node: Node = document.createElement(StreetAddressData.STATES)!;;
+ try { 
+    let node: Node = document.createElement(StreetAddressData.STATES)!;;
     
 
-    var statesFile: string = URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.LINEDATAPATH +"states.txt";;
+    let statesFile: string = URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.LINEDATAPATH +"states.txt";;
     
 
-    var lineReader: LineReader = new LineReader(statesFile);;
+    let lineReader: LineReader = new LineReader(statesFile);;
     
 
         while(lineReader!.hasNext())
         {
 
-    var option: string = lineReader!.next()!;;
+    let option: string = lineReader!.next()!;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.STATE, option));
     
@@ -114,10 +115,11 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.S
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -133,12 +135,12 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.S
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

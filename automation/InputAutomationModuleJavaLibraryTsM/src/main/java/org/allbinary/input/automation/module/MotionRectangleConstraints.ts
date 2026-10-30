@@ -235,5 +235,3 @@ this.minArea= minArea;
 
 }
 
-
-

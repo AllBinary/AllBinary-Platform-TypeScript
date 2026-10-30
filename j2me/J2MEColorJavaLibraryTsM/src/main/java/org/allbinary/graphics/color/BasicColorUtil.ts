@@ -68,7 +68,7 @@ export class BasicColorUtil
 
     public getRGB(red: number, green: number, blue: number): number{
 
-    var value: number = 0;;
+    let value: number = 0;;
     
 
                         if(this.isAlpha)
@@ -132,6 +132,4 @@ value= blue | value;
 
 
 }
-
-
 

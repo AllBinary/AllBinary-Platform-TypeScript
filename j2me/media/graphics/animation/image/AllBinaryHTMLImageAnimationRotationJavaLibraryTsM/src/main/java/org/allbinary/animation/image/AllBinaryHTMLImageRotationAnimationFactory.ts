@@ -76,7 +76,7 @@ export class AllBinaryHTMLImageRotationAnimationFactory extends BaseImageAnimati
             
     public static createFactoryADXY(image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryHTMLImageRotationAnimationFactory{
 
-    var htmlImageRotationAnimationFactory: AllBinaryHTMLImageRotationAnimationFactory = new AllBinaryHTMLImageRotationAnimationFactory(image, width, height, angleIncrement, animationBehaviorFactory);;
+    let htmlImageRotationAnimationFactory: AllBinaryHTMLImageRotationAnimationFactory = new AllBinaryHTMLImageRotationAnimationFactory(image, width, height, angleIncrement, animationBehaviorFactory);;
     
 htmlImageRotationAnimationFactory!.init(dx, dy);
     
@@ -118,10 +118,10 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
             
     public getInstance(instanceId: number): Animation{
 
-    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
+    let scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
-    var copyOfScaledImage: Image = ImageCopyUtil.getInstance()!.createImage(scaledImage)!;;
+    let copyOfScaledImage: Image = ImageCopyUtil.getInstance()!.createImage(scaledImage)!;;
     
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
@@ -162,6 +162,4 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
 
 
 }
-
-
 

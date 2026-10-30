@@ -81,7 +81,7 @@ TsUtil.getInstance()!.waitFor(anyType, delay);
 
     public processThread(runnable: Runnable){
 
-    var thread: Thread = new Thread(runnable);;
+    let thread: Thread = new Thread(runnable);;
     
 thread.start();
     
@@ -89,6 +89,4 @@ thread.start();
 
 
 }
-
-
 

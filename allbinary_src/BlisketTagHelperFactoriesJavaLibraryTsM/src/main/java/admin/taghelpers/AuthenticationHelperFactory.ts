@@ -31,6 +31,7 @@ import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 //not GWT import const LicensingException
@@ -68,22 +69,29 @@ public constructor (){
             super();
         }
 
-
+getInstance(...args: any[]): any {
+   
+    if (args.length === 2) return this.getInstance$overload1(args[0], args[1]);
+   
+    if (args.length === 2) return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(LicensingException.constructor)
             
-    public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
+    public getInstance$overload1(hashMap: HashMap<any, any>, pageContext: PageContext): any{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new AuthenticationHelper(hashMap, pageContext);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
@@ -99,26 +107,28 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(LicensingException.constructor)
             
-    public getInstance(hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): any{
+    public getInstance$overload2(hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): any{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new AuthenticationHelper(hashMap, httpServletRequest);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
@@ -134,12 +144,12 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

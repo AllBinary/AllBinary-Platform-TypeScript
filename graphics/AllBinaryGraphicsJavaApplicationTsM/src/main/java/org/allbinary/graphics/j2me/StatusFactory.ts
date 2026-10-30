@@ -22,6 +22,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -82,6 +83,4 @@ this.logUtil!.putF(this.STATUS_LABEL +status, this, this.SETSTATUS);
 
 
 }
-
-
 

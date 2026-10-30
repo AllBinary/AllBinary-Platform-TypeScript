@@ -48,15 +48,19 @@ import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas
 
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+type ABSystemWrapper<T = any, U = any> = typeof ABSystemWrapper extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABSystemWrapper;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -128,10 +132,10 @@ export class AllBinaryMediaManager
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;;
+    let commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INIT);
     
@@ -152,10 +156,10 @@ logUtil!.putF(commonString!.END, AllBinaryMediaManager.THIS, commonString!.INIT)
             
     static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;;
+    let commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "shutdown");
     
@@ -166,23 +170,23 @@ logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "shutdown");
                                     new Sounds(soundsFactoryInterface).stopAll();
     
 
-    var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;;
+    let soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;;
     
 
-    var player: Player;;
+    let player: Player;;
     
 
-    var player2: Player;;
+    let player2: Player;;
     
 
-    var androidMediaPlayerWrapper: AndroidMediaPlayerWrapper;;
+    let androidMediaPlayerWrapper: AndroidMediaPlayerWrapper;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < soundInterfaceArray!.length; i++)
+    let i: number = 0;i < soundInterfaceArray!.length; i++)
         {
 
                         if(soundInterfaceArray[i] != 
@@ -250,24 +254,24 @@ logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "shutdown");
 AllBinaryMediaManager.mostUsedTotal++;
     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.SOUND))
                         
                                     {
                                     
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new AndroidMediaPlayerWrapper(resource);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put("Could not create AndroidMediaPlayerWrapper using NoPlayer at " +CommonLabels.getInstance()!.TOTAL_LABEL +AllBinaryMediaManager.mostUsedTotal, AllBinaryMediaManager.THIS, "createPlayer", e);
     
 
@@ -276,8 +280,10 @@ logUtil!.put("Could not create AndroidMediaPlayerWrapper using NoPlayer at " +Co
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NoPlayer.NO_PLAYER;
     
-}
 
+ }
+   }
+ 
 
                                     }
                                 
@@ -334,6 +340,4 @@ private constructor (){
 
 
 }
-
-
 

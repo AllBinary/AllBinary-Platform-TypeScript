@@ -58,6 +58,7 @@ import { WeblisketSession } from '../../org/allbinary/logic/communication/http/r
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -113,7 +114,7 @@ this.pageContext= pageContext;
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
+    let storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(storeName != 
@@ -149,8 +150,7 @@ this.num= this.request.getParameter(BasketData.ITEMTOTALINBASKET);
 
     public addItemToBasket(): Boolean{
 
-        try {
-            
+ try { 
                         if(this.id != 
                                     null
                                  && this.num != 
@@ -159,7 +159,7 @@ this.num= this.request.getParameter(BasketData.ITEMTOTALINBASKET);
                         
                                     {
                                     
-    var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;;
+    let basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;;
     
 
                         if(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(this.id) == 
@@ -171,7 +171,7 @@ this.num= this.request.getParameter(BasketData.ITEMTOTALINBASKET);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -194,12 +194,13 @@ basket.addItem(this.id, num);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -213,24 +214,25 @@ basket.addItem(this.id, num);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public removeItemFromBasket(): Boolean{
 
-        try {
-            
+ try { 
                         if(this.id != 
                                     null
                                 )
                         
                                     {
                                     
-    var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;;
+    let basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;;
     
 basket.removeItem(this.id);
     
@@ -250,12 +252,13 @@ basket.removeItem(this.id);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -269,18 +272,19 @@ basket.removeItem(this.id);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public adjustBasket(): Boolean{
 
-        try {
-            
-    var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;;
+ try { 
+    let basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;;
     
 
                         if(this.id != 
@@ -302,12 +306,13 @@ basket.removeItem(this.id);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -321,14 +326,14 @@ basket.removeItem(this.id);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

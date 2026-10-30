@@ -49,18 +49,23 @@ import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMu
 
 //not plain js import { Canvas } 
 const Canvas = globalThis.playn.core.Canvas;
+type Canvas<T = any, U = any> = typeof Canvas extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Canvas;
 
 //not plain js import { ImageImpl } 
 const ImageImpl = globalThis.playn.core.ImageImpl;
+type ImageImpl<T = any, U = any> = typeof ImageImpl extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ImageImpl;
 
 //not plain js import { PlayN } 
 const PlayN = globalThis.playn.core.PlayN;
+type PlayN<T = any, U = any> = typeof PlayN extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PlayN;
 
 //not plain js import { HtmlGraphics } 
 const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
+type HtmlGraphics<T = any, U = any> = typeof HtmlGraphics extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HtmlGraphics;
 
 //not plain js import { HtmlImage } 
 const HtmlImage = globalThis.playn.html.HtmlImage;
+type HtmlImage<T = any, U = any> = typeof HtmlImage extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HtmlImage;
 
 
 
@@ -129,16 +134,16 @@ this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!);
 
     public getCanvasSurface(image: Image): Canvas{
 
-    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
+    let htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
     
 
-    var canvasImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
+    let canvasImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
     
 
-    var playN: PlayN = PlayN.getInstance()!;;
+    let playN: PlayN = PlayN.getInstance()!;;
     
 
-    var canvas: Canvas = (graphics as HtmlGraphics).get(canvasImage as HtmlImage)!;;
+    let canvas: Canvas = (graphics as HtmlGraphics).get(canvasImage as HtmlImage)!;;
     
 canvas.translate(this.originalImage!.getWidth() /2, this.originalImage!.getHeight() /2);
     
@@ -153,7 +158,7 @@ canvas.translate(this.originalImage!.getWidth() /2, this.originalImage!.getHeigh
 
     public setBasicColorP(basicColor: BasicColor){
 
-    var changed: boolean = false;;
+    let changed: boolean = false;;
     
 
                         if(this.getBasicColorP() == 
@@ -182,7 +187,7 @@ super.setBasicColorP(basicColor);
 
     public setAlpha(alpha: number){
 
-    var changed: boolean = false;;
+    let changed: boolean = false;;
     
 
                         if(this.alphaP != alpha)
@@ -227,7 +232,7 @@ this.updateImage();
 
     updateImage(){
 
-    var canvasSurface: Canvas = this.canvasSurfaceArray[this.bufferedImageIndex]!;;
+    let canvasSurface: Canvas = this.canvasSurfaceArray[this.bufferedImageIndex]!;;
     
 canvasSurface!.save();
     
@@ -280,6 +285,4 @@ graphics.drawImage(this.imageToShow, x, y, this.anchor);
 
 
 }
-
-
 

@@ -46,29 +46,27 @@ import { MotionGestureEvent } from './MotionGestureEvent.js';
 export interface MotionGestureEventListener extends BaseMotionGestureEventListener {
         
 
-    onPressedMotionGestureEvent(ev: MotionGestureEvent)
+    onPressedMotionGestureEvent(ev: MotionGestureEvent): void;
 
-    onUpMotionGestureEvent(ev: MotionGestureEvent)
+    onUpMotionGestureEvent(ev: MotionGestureEvent): void;
 
-    onDownMotionGestureEvent(ev: MotionGestureEvent)
+    onDownMotionGestureEvent(ev: MotionGestureEvent): void;
 
-    onLeftMotionGestureEvent(ev: MotionGestureEvent)
+    onLeftMotionGestureEvent(ev: MotionGestureEvent): void;
 
-    onRightMotionGestureEvent(ev: MotionGestureEvent)
+    onRightMotionGestureEvent(ev: MotionGestureEvent): void;
 
-    onDiagonalDownRightMotionGestureEvent(ev: MotionGestureEvent)
+    onDiagonalDownRightMotionGestureEvent(ev: MotionGestureEvent): void;
 
-    onDiagonalDownLeftMotionGestureEvent(ev: MotionGestureEvent)
+    onDiagonalDownLeftMotionGestureEvent(ev: MotionGestureEvent): void;
 
-    onDiagonalUpRightMotionGestureEvent(ev: MotionGestureEvent)
+    onDiagonalUpRightMotionGestureEvent(ev: MotionGestureEvent): void;
 
-    onDiagonalUpLeftMotionGestureEvent(ev: MotionGestureEvent)
+    onDiagonalUpLeftMotionGestureEvent(ev: MotionGestureEvent): void;
 
                 //@Throws(Exception.constructor)
             
-    released(ev: MotionGestureEvent)
+    released(ev: MotionGestureEvent): void;
 
 }
-
-
 

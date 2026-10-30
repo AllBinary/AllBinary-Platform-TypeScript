@@ -45,6 +45,7 @@ import { WorkSound } from '../../../../../org/allbinary/media/audio/WorkSound.js
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
@@ -103,30 +104,30 @@ public constructor (ownerLayer: PathFindingLayerInterface){
                                     }
                                 
 
-    var size: number = this.getConnectedWaypointList()!.size()!;;
+    let size: number = this.getConnectedWaypointList()!.size()!;;
     
 
                         if(size > 0)
                         
                                     {
                                     
-    var occupyList: BasicArrayList = this.ownerLayer!.getGeographicMapCellPositionArea()!.getOccupyingGeographicMapCellPositionList()!;;
+    let occupyList: BasicArrayList = this.ownerLayer!.getGeographicMapCellPositionArea()!.getOccupyingGeographicMapCellPositionList()!;;
     
 
-    var outOfResources: boolean = true;;
+    let outOfResources: boolean = true;;
     
 
-    var geologicalGeographicMapCellPosition: GeologicalGeographicMapCellPosition;;
+    let geologicalGeographicMapCellPosition: GeologicalGeographicMapCellPosition;;
     
 
-    var geologicalResource: GeologicalResource;;
+    let geologicalResource: GeologicalResource;;
     
 
 
 
 
                         for (
-    var index: number = occupyList!.size()!;--index >= 0; )
+    let index: number = occupyList!.size()!;--index >= 0; )
         {
 geologicalGeographicMapCellPosition= occupyList!.get(index) as GeologicalGeographicMapCellPosition;
     
@@ -139,7 +140,7 @@ geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource()
                                     outOfResources= false;
     
 
-    var maxResourceLoad: number = globalThis.Math.trunc(unitLayer!.getMaxResourceLoad());;
+    let maxResourceLoad: number = globalThis.Math.trunc(unitLayer!.getMaxResourceLoad());;
     
 geologicalResource!.remove(maxResourceLoad);
     
@@ -151,7 +152,7 @@ unitLayer!.setLoad(maxResourceLoad);
 }
 
 
-    var waypointInfoHudPaintable: WaypointInfoHudPaintable = this.ownerLayer!.getHudPaintable() as WaypointInfoHudPaintable;;
+    let waypointInfoHudPaintable: WaypointInfoHudPaintable = this.ownerLayer!.getHudPaintable() as WaypointInfoHudPaintable;;
     
 
                         if(this.ownerLayer == waypointInfoHudPaintable!.getRtsLayer())
@@ -167,10 +168,10 @@ unitLayer!.setLoad(maxResourceLoad);
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;;
+    let unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;;
     
 
-    var rtsLayer: RTSLayer;;
+    let rtsLayer: RTSLayer;;
     
 
         while(this.getConnectedWaypointList()!.size() > 0)
@@ -217,6 +218,4 @@ break;
 
 
 }
-
-
 

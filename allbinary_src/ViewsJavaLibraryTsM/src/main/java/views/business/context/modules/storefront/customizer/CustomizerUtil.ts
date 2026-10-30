@@ -24,6 +24,7 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { TransformInfoEntity } from '../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js';
 //not GWT import const TransformInfoEntity
@@ -42,9 +43,11 @@ import { XmlDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TransformInfo } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfo.js';
 //not GWT import const TransformInfo
@@ -118,16 +121,16 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
+    let transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var viewName: string = transformInfoInterface!.getName()!;;
+    let viewName: string = transformInfoInterface!.getName()!;;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;;
+    let httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var customizedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewName, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
+    let customizedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewName, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
     
 
 
@@ -151,16 +154,16 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
+    let transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var viewName: string = transformInfoInterface!.getName()!;;
+    let viewName: string = transformInfoInterface!.getName()!;;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;;
+    let httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var customizedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewName, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
+    let customizedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewName, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
     
 
 
@@ -184,7 +187,7 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;;
+    let transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;;
     
 
 
@@ -208,7 +211,7 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;;
+    let transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;;
     
 
 
@@ -232,21 +235,21 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
+    let transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var allViewsToBeModified: BasicArrayList = this.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;;
+    let allViewsToBeModified: BasicArrayList = this.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;;
     
 
-    var document: Document = DomDocumentHelper.create()!;;
+    let document: Document = DomDocumentHelper.create()!;;
     
 document.appendChild(domNodeInterface!.toXmlNode(document));
     
 
-    var documentString: string = XmlDocumentHelper.toString(document)!;;
+    let documentString: string = XmlDocumentHelper.toString(document)!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -268,20 +271,20 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
 transformInfoInterface!.setData(documentString);
     
 
-    var size: number = allViewsToBeModified!.size()!;;
+    let size: number = allViewsToBeModified!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var transformInfo: TransformInfo = allViewsToBeModified!.get(index) as TransformInfo;;
+    let transformInfo: TransformInfo = allViewsToBeModified!.get(index) as TransformInfo;;
     
 
-    var viewNameOfViewToBeModified: string = transformInfo!.getName()!;;
+    let viewNameOfViewToBeModified: string = transformInfo!.getName()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -301,10 +304,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     }
                                 
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
+    let httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
+    let specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
     
 
                         if(specifiedTransformInfoInterface == 
@@ -388,7 +391,7 @@ this.write(specifiedTransformInfoInterface, documentString);
                                     }
                                 
 
-    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
+    let transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 specifiedTransformInfoInterface!.setData(documentString);
     
@@ -410,35 +413,35 @@ transformInfoEntityInterface!.update(specifiedTransformInfoInterface!.toHashMap(
                                     }
                                 
 
-    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;;
+    let transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;;
     
 
-    var allViewsToBeModified: BasicArrayList = transformInfoObjectConfigInterface!.getGroupTransforms()!;;
+    let allViewsToBeModified: BasicArrayList = transformInfoObjectConfigInterface!.getGroupTransforms()!;;
     
 
-    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
+    let transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var size: number = allViewsToBeModified!.size()!;;
+    let size: number = allViewsToBeModified!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allViewsToBeModified!.get(index) as TransformInfo;;
+    let nextTransformInfoInterface: TransformInfo = allViewsToBeModified!.get(index) as TransformInfo;;
     
 
-    var viewNameOfViewToBeModified: string = nextTransformInfoInterface!.getName()!;;
+    let viewNameOfViewToBeModified: string = nextTransformInfoInterface!.getName()!;;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
+    let httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
+    let specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
     
 
 
@@ -457,6 +460,4 @@ transformInfoEntityInterface!.update(specifiedTransformInfoInterface!.toHashMap(
 
 
 }
-
-
 

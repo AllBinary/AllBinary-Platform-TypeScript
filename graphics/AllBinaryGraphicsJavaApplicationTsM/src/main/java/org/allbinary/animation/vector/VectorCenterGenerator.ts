@@ -44,18 +44,23 @@ import { BasicGraphicsPipeline } from '../../../../org/allbinary/graphics/pipeli
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -85,7 +90,7 @@ export class VectorCenterGenerator
             
     public static translate(list: BasicArrayList, x: number, y: number): BasicArrayList{
 
-    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(list);;
+    let graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(list);;
     
 graphicsPipe!.createMatrix();
     
@@ -130,10 +135,10 @@ public constructor (){
             
     public calculate(hashMap: HashMap<any, any>){
 
-    var graphicItemArray: any[] = hashMap!.keys().()!;;
+    let graphicItemArray: any[] = hashMap!.keys().()!;;
     
 
-    var size: number = graphicItemArray!.length
+    let size: number = graphicItemArray!.length
                 ;;
     
 
@@ -141,10 +146,10 @@ public constructor (){
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;;
+    let item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;;
     
 
                         if(item.getName() == LinesGraphicItem.getStaticName())
@@ -164,7 +169,7 @@ this.setWidth(this.maxX -this.minX);
 this.setHeight(this.maxY -this.minY);
     
 
-    var max: number = this.getWidth()!;;
+    let max: number = this.getWidth()!;;
     
 
                         if(getHeight() > max)
@@ -176,21 +181,21 @@ this.setHeight(this.maxY -this.minY);
                                     }
                                 
 
-    var middle: number = globalThis.Math.trunc(max /2);;
+    let middle: number = globalThis.Math.trunc(max /2);;
     
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
+    let commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var s: string = new StringMaker().append(commonLabels!.WIDTH_LABEL)!.appendint(getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(getHeight())!.append(" max: ")!.appendint(max)!.append(" middle: ")!.appendint(middle)!.toString()!;;
+    let s: string = new StringMaker().append(commonLabels!.WIDTH_LABEL)!.appendint(getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(getHeight())!.append(" max: ")!.appendint(max)!.append(" middle: ")!.appendint(middle)!.toString()!;;
     
 this.logUtil!.putF(s, this, this.commonStrings!.GET_INSTANCE);
     
 
-    var currentMiddleX: number = this.minX +this.getWidth() /2;;
+    let currentMiddleX: number = this.minX +this.getWidth() /2;;
     
 
-    var currentMiddleY: number = this.minY +this.getHeight() /2;;
+    let currentMiddleY: number = this.minY +this.getHeight() /2;;
     
 this.dx= middle -currentMiddleX;
     
@@ -207,10 +212,10 @@ this.calculate(hashMap);
 this.logUtil!.putF(new StringMaker().append(" dx: ")!.appendint(this.dx)!.append(" dy: ")!.appendint(this.dy)!.toString(), this, this.commonStrings!.GET_INSTANCE);
     
 
-    var graphicItemArray: any[] = hashMap!.keys().()!;;
+    let graphicItemArray: any[] = hashMap!.keys().()!;;
     
 
-    var size: number = graphicItemArray!.length
+    let size: number = graphicItemArray!.length
                 ;;
     
 
@@ -218,16 +223,16 @@ this.logUtil!.putF(new StringMaker().append(" dx: ")!.appendint(this.dx)!.append
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;;
+    let item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;;
     
 
-    var list: BasicArrayList = VectorCenterGenerator.translate(item.getPointsInterface()!.getPoints(), dx, dy)!;;
+    let list: BasicArrayList = VectorCenterGenerator.translate(item.getPointsInterface()!.getPoints(), dx, dy)!;;
     
 
-    var newPoints: Points = new Points();;
+    let newPoints: Points = new Points();;
     
 newPoints!.addPoints(list);
     
@@ -242,19 +247,18 @@ item.setPointsInterface(newPoints);
             
     getInstance(pointVector: BasicArrayList){
 
-        try {
-            
-    var size: number = pointVector!.size()!;;
+ try { 
+    let size: number = pointVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var point: GPoint = pointVector!.get(index) as GPoint;;
+    let point: GPoint = pointVector!.get(index) as GPoint;;
     
 
                         if(point.getX() < this.minX)
@@ -294,10 +298,11 @@ item.setPointsInterface(newPoints);
                                 
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.GET_INSTANCE, e);
     
 
@@ -305,8 +310,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.GET_I
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -343,6 +350,4 @@ this.height= height;
 
 
 }
-
-
 

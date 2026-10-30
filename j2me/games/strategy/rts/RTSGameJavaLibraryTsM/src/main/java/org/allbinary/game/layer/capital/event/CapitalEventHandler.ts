@@ -64,7 +64,7 @@ public constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var capitalEventListenerInterface: CapitalEventListenerInterface = (eventListenerInterface as CapitalEventListenerInterface);;
+    let capitalEventListenerInterface: CapitalEventListenerInterface = (eventListenerInterface as CapitalEventListenerInterface);;
     
 capitalEventListenerInterface!.onCapitalChangeEvent(eventObject as CapitalEvent);
     
@@ -72,6 +72,4 @@ capitalEventListenerInterface!.onCapitalChangeEvent(eventObject as CapitalEvent)
 
 
 }
-
-
 

@@ -32,6 +32,7 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -79,19 +80,19 @@ this.foregroundColor= basicColor!.intValue();
 
     public paint(graphics: Graphics){
 
-    var list: BasicArrayList = this.touchButtonFactory!.getList()!;;
+    let list: BasicArrayList = this.touchButtonFactory!.getList()!;;
     
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.foregroundBasicColor, this.foregroundColor);
     
 
-    var touchButton: TouchButton;;
+    let touchButton: TouchButton;;
     
 
 
 
 
                         for (
-    var index: number = list.size()!;--index >= 0; )
+    let index: number = list.size()!;--index >= 0; )
         {
 touchButton= list.objectArray[index]! as TouchButton;
     
@@ -104,7 +105,7 @@ touchButton!.paint(graphics);
 
 
                         for (
-    var index: number = list.size()!;--index >= 0; )
+    let index: number = list.size()!;--index >= 0; )
         {
 touchButton= list.objectArray[index]! as TouchButton;
     
@@ -116,6 +117,4 @@ touchButton!.paintHint(graphics);
 
 
 }
-
-
 

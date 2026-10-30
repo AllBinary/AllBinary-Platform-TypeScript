@@ -46,15 +46,19 @@ import { UpgradeSound } from '../../../../org/allbinary/media/audio/UpgradeSound
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
@@ -176,10 +180,10 @@ this.list= list;
 this.selectRTSLayerVisitorInterface= selectRTSLayerVisitorFactoryInterface!.create(this);
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
+    let basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
     
 this.upgradeGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.UPGRADE, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
@@ -194,10 +198,10 @@ this.downgradeGameNotificationEvent= new GameNotificationEvent(this, RTSGameStri
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.upgradeGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
     
@@ -239,27 +243,27 @@ this.downgradeGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getF
             
     upgrade(){
 
-    var anyChanged: boolean = false;;
+    let anyChanged: boolean = false;;
     
 
 
 
 
                         for (
-    var index: number = this.selectedRTSLayersList!.size() -1;index >= 0; index--)
+    let index: number = this.selectedRTSLayersList!.size() -1;index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = this.selectedRTSLayersList!.get(index) as RTSLayer;;
+    let rtsLayer: RTSLayer = this.selectedRTSLayersList!.get(index) as RTSLayer;;
     
 
                         if(rtsLayer!.isUpgradeable())
                         
                                     {
                                     
-    var capital: Capital = this.rtsPlayerLayerInterface!.getCapital()!;;
+    let capital: Capital = this.rtsPlayerLayerInterface!.getCapital()!;;
     
 
-    var upgradeCost: number = rtsLayer!.getUpgradeCost()!;;
+    let upgradeCost: number = rtsLayer!.getUpgradeCost()!;;
     
 
                         if(upgradeCost <= capital.getTotalMoney())
@@ -310,7 +314,7 @@ capital.removeMoney(upgradeCost);
                         
                                     {
                                     
-    var rtsPlayerGameInput: RTSPlayerGameInput = (this.rtsPlayerLayerInterface!.getPlayerGameInput() as RTSPlayerGameInput);;
+    let rtsPlayerGameInput: RTSPlayerGameInput = (this.rtsPlayerLayerInterface!.getPlayerGameInput() as RTSPlayerGameInput);;
     
 rtsPlayerGameInput!.updatePaintable();
     
@@ -324,17 +328,17 @@ rtsPlayerGameInput!.updatePaintable();
             
     downgrade(){
 
-    var anyChanged: boolean = false;;
+    let anyChanged: boolean = false;;
     
 
 
 
 
                         for (
-    var index: number = this.selectedRTSLayersList!.size()!;--index >= 0; )
+    let index: number = this.selectedRTSLayersList!.size()!;--index >= 0; )
         {
 
-    var rtsLayer: RTSLayer = this.selectedRTSLayersList!.get(index) as RTSLayer;;
+    let rtsLayer: RTSLayer = this.selectedRTSLayersList!.get(index) as RTSLayer;;
     
 
                         if(rtsLayer!.isDowngradeable())
@@ -345,12 +349,12 @@ rtsPlayerGameInput!.updatePaintable();
 this.rtsPlayerLayerInterface!.add(DowngradeSound.getInstance());
     
 
-    var downgradeCost: number = rtsLayer!.getDowngradeCost()!;;
+    let downgradeCost: number = rtsLayer!.getDowngradeCost()!;;
     
 rtsLayer!.downgrade();
     
 
-    var capital: Capital = this.rtsPlayerLayerInterface!.getCapital()!;;
+    let capital: Capital = this.rtsPlayerLayerInterface!.getCapital()!;;
     
 capital.addMoney(downgradeCost);
     
@@ -373,7 +377,7 @@ capital.addMoney(downgradeCost);
                         
                                     {
                                     
-    var rtsPlayerGameInput: RTSPlayerGameInput = (this.rtsPlayerLayerInterface!.getPlayerGameInput() as RTSPlayerGameInput);;
+    let rtsPlayerGameInput: RTSPlayerGameInput = (this.rtsPlayerLayerInterface!.getPlayerGameInput() as RTSPlayerGameInput);;
     
 rtsPlayerGameInput!.updatePaintable();
     
@@ -414,22 +418,21 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
             
     public processInput(layerManager: AllBinaryLayerManager){
 
-        try {
-            
-    var size: number = this.list.size()!;;
+ try { 
+    let size: number = this.list.size()!;;
     
 
-    var key: number = 0;;
+    let key: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent = this.list.get(index) as GameKeyEvent;;
+    let gameKeyEvent: GameKeyEvent = this.list.get(index) as GameKeyEvent;;
     
 key= gameKeyEvent!.getKey();
     
@@ -452,14 +455,17 @@ this.processInputKey(key);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPUT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -507,7 +513,7 @@ this.paintSelectedRTSLayersList= this.selectedRTSLayersList;
 
     public setSelectedRTSLayer(selectedLayer: CollidableDestroyableDamageableLayer){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Selected Layer: ");
     
@@ -537,7 +543,7 @@ this.deselectAll();
                                     this.getPreSelectedRTSLayersList()!.clear();
     
 
-    var tempList: BasicArrayList = this.getPreSelectedRTSLayersList()!;;
+    let tempList: BasicArrayList = this.getPreSelectedRTSLayersList()!;;
     
 this.preSelectedRTSLayersList= this.selectedRTSLayersList;
     
@@ -591,7 +597,7 @@ this.paintSelectedRTSLayersList= this.selectedRTSLayersList;
 
     public selectAllPreselected(){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Select all Preselected: ");
     
@@ -604,10 +610,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selectAllPreselected");
 
 
                         for (
-    var index: number = this.preSelectedRTSLayersList!.size() -1;index >= 0; index--)
+    let index: number = this.preSelectedRTSLayersList!.size() -1;index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = this.preSelectedRTSLayersList!.get(index) as RTSLayer;;
+    let rtsLayer: RTSLayer = this.preSelectedRTSLayersList!.get(index) as RTSLayer;;
     
 rtsLayer!.select();
     
@@ -618,7 +624,7 @@ rtsLayer!.select();
 
     public deselectAllPreselected(){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Deselect all Preselected: ");
     
@@ -631,10 +637,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "deselectAllPreselected");
 
 
                         for (
-    var index: number = this.preSelectedRTSLayersList!.size() -1;index >= 0; index--)
+    let index: number = this.preSelectedRTSLayersList!.size() -1;index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = this.preSelectedRTSLayersList!.get(index) as RTSLayer;;
+    let rtsLayer: RTSLayer = this.preSelectedRTSLayersList!.get(index) as RTSLayer;;
     
 rtsLayer!.deselect();
     
@@ -651,10 +657,10 @@ this.preSelectedRTSLayersList!.clear();
 
 
                         for (
-    var index: number = this.selectedRTSLayersList!.size() -1;index >= 0; index--)
+    let index: number = this.selectedRTSLayersList!.size() -1;index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = this.selectedRTSLayersList!.get(index) as RTSLayer;;
+    let rtsLayer: RTSLayer = this.selectedRTSLayersList!.get(index) as RTSLayer;;
     
 rtsLayer!.deselect();
     
@@ -707,6 +713,4 @@ rtsLayer!.deselect();
 
 
 }
-
-
 

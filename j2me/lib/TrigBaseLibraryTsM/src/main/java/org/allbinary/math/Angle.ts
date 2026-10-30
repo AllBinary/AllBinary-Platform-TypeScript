@@ -69,5 +69,3 @@ public constructor (angle: number){
 
 }
 
-
-

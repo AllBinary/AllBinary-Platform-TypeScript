@@ -40,11 +40,9 @@
 export interface ScreenListenerInterface {
         
 
-    onFullScreen(isFullScreen: boolean)
+    onFullScreen(isFullScreen: boolean): void;
 
-    onFullScreenDisplay()
+    onFullScreenDisplay(): void;
 
 }
-
-
 

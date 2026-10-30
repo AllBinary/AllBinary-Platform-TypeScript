@@ -24,6 +24,7 @@
         
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 
 
@@ -69,7 +70,7 @@ private constructor (){
 
     public getLastSeparatorIndex(requestPath: string): number{
 
-    var beginIndex: number = requestPath!.lastIndexOf(AbPathData.getInstance()!.SEPARATOR)!;;
+    let beginIndex: number = requestPath!.lastIndexOf(AbPathData.getInstance()!.SEPARATOR)!;;
     
 
                         if(beginIndex < 0)
@@ -93,7 +94,7 @@ private constructor (){
             
     public generateFileName(requestPath: string): string{
 
-    var beginIndex: number = this.getLastSeparatorIndex(requestPath)!;;
+    let beginIndex: number = this.getLastSeparatorIndex(requestPath)!;;
     
 
                         if(beginIndex < 0)
@@ -122,6 +123,4 @@ private constructor (){
 
 
 }
-
-
 

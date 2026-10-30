@@ -28,12 +28,14 @@ import { StoreFrontInterface } from '../../../../../../org/allbinary/business/co
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { EmailServerConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
 //not GWT import const EmailServerConfigurationInterface
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -74,7 +76,7 @@ public constructor (storeFrontInterface: StoreFrontInterface, subject: string, t
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
@@ -92,10 +94,10 @@ this.init();
             
     init(){
 
-    var contextConfigurationInterface: ContextConfigurationInterface = this.storeFrontInterface!.getContextConfigurationInterface()!;;
+    let contextConfigurationInterface: ContextConfigurationInterface = this.storeFrontInterface!.getContextConfigurationInterface()!;;
     
 
-    var emailServerConfigurationInterface: EmailServerConfigurationInterface = contextConfigurationInterface!.getEmailServerConfigurationInterface()!;;
+    let emailServerConfigurationInterface: EmailServerConfigurationInterface = contextConfigurationInterface!.getEmailServerConfigurationInterface()!;;
     
 this.setEmailServerConfigurationInterface(emailServerConfigurationInterface);
     
@@ -103,6 +105,4 @@ this.setEmailServerConfigurationInterface(emailServerConfigurationInterface);
 
 
 }
-
-
 

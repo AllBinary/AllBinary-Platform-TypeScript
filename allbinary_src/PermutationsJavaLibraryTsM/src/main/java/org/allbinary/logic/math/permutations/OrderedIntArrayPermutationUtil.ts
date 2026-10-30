@@ -65,27 +65,27 @@ export class OrderedIntArrayPermutationUtil
 
     public static main(args: string[]){
 
-    var TOTAL: number = 3;;
+    let TOTAL: number = 3;;
     
 
-    var data: number[] = new Array(TOTAL);;
+    let data: number[] = new Array(TOTAL);;
     
 
 
 
 
                         for (
-    var i: number = 0;i < TOTAL; i++)
+    let i: number = 0;i < TOTAL; i++)
         {
 data[i]= i;
     
 }
 
 
-    var permutationVisitor: IntPermutationVisitor = new IntPermutationVisitor(data);;
+    let permutationVisitor: IntPermutationVisitor = new IntPermutationVisitor(data);;
     
 
-    var ORIGINAL_DATA_LABEL: string = "Original Data: ";;
+    let ORIGINAL_DATA_LABEL: string = "Original Data: ";;
     
 console.log(ORIGINAL_DATA_LABEL);
     
@@ -108,11 +108,11 @@ private constructor (){
 
     public getNext(data: number[]){
 
-    var length: number = data.length
+    let length: number = data.length
                 ;;
     
 
-    var i: number = length -1;;
+    let i: number = length -1;;
     
 
         while(data[i -1] >= data[i])
@@ -122,7 +122,7 @@ i= i -1;
 }
 
 
-    var j: number = length;;
+    let j: number = length;;
     
 
         while(data[j -1] <= data[i -1])
@@ -153,7 +153,7 @@ j--;
 
     public swap(data: number[], a: number, b: number){
 
-    var temp: number = data[a]!;;
+    let temp: number = data[a]!;;
     
 data[a]= data[b]!;
     
@@ -164,7 +164,7 @@ data[b]= temp;
 
     public factorial(dataLength: number): number{
 
-    var temp: number = 1;;
+    let temp: number = 1;;
     
 
                         if(dataLength > 1)
@@ -175,7 +175,7 @@ data[b]= temp;
 
 
                         for (
-    var i: number = 1;i <= dataLength; i++)
+    let i: number = 1;i <= dataLength; i++)
         {
 temp *= i;
     
@@ -195,7 +195,7 @@ temp *= i;
 
     public generate(data: number[], visitor: Visitor){
 
-    var iterations: number = this.factorial(data.length)!;;
+    let iterations: number = this.factorial(data.length)!;;
     
 console.log(this.TOTAL_ITERATIONS_TABLE);
     
@@ -206,7 +206,7 @@ console.log(iterations);
 
 
                         for (
-    var count: number = 0;count < iterations -1; count++)
+    let count: number = 0;count < iterations -1; count++)
         {
 this.getNext(data);
     
@@ -220,6 +220,4 @@ console.log(this.FINISHED);
 
 
 }
-
-
 

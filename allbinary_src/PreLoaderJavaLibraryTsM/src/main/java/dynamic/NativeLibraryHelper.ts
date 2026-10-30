@@ -64,5 +64,3 @@ System.loadLibrary(this.library);
 
 }
 
-
-

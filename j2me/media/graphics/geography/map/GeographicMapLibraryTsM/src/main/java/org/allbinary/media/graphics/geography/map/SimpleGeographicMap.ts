@@ -35,6 +35,7 @@ import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/colo
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -138,13 +139,13 @@ this.setForegroundBasicColor(foregroundBasicColor);
             
     public getCellTypeAt(cellPosition: GeographicMapCellPosition): GeographicMapCellType{
 
-    var i_column: number = cellPosition!.getColumn()!;;
+    let i_column: number = cellPosition!.getColumn()!;;
     
 
-    var i_row: number = cellPosition!.getRow()!;;
+    let i_row: number = cellPosition!.getRow()!;;
     
 
-    var cellTypeId: number = this.tiledLayer!.getCell(i_column, i_row)!;;
+    let cellTypeId: number = this.tiledLayer!.getCell(i_column, i_row)!;;
     
 
                         if(cellTypeId < 0)
@@ -207,6 +208,4 @@ this.backgroundBasicColor= backgroundBasicColor;
 
 
 }
-
-
 

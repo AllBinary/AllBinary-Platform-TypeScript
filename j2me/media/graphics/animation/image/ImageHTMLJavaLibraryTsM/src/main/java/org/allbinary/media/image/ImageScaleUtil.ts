@@ -33,6 +33,7 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
 //not GWT import const PlaynImmutableImage
@@ -42,9 +43,11 @@ import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMu
 
 //not plain js import { CanvasImage } 
 const CanvasImage = globalThis.playn.core.CanvasImage;
+type CanvasImage<T = any, U = any> = typeof CanvasImage extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CanvasImage;
 
 //not plain js import { CanvasSurface } 
 const CanvasSurface = globalThis.playn.core.CanvasSurface;
+type CanvasSurface<T = any, U = any> = typeof CanvasSurface extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CanvasSurface;
 
 
 
@@ -106,10 +109,10 @@ private constructor (){
             
     public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
 
-    var scaleX: number = scaleNominatorX /scaleDenominatorX;;
+    let scaleX: number = scaleNominatorX /scaleDenominatorX;;
     
 
-    var scaleY: number = scaleNominatorY /scaleDenominatorY;;
+    let scaleY: number = scaleNominatorY /scaleDenominatorY;;
     
 
 
@@ -136,14 +139,14 @@ private constructor (){
             
     public createImageInternal(originalImage: Image, scaleX: number, scaleY: number): Image{
 
-    var image: Image = ImageCreationUtil.getInstance()!.getInstance(globalThis.Math.trunc((originalImage!.getWidth() *scaleX)), globalThis.Math.trunc((originalImage!.getHeight() *scaleY)))!;;
+    let image: Image = ImageCreationUtil.getInstance()!.getInstance(globalThis.Math.trunc((originalImage!.getWidth() *scaleX)), globalThis.Math.trunc((originalImage!.getHeight() *scaleY)))!;;
     
 
                         if(image.isMutable())
                         
                                     {
                                     
-    var originalPlayNImage: playn.core.Image = 
+    let originalPlayNImage: playn.core.Image = 
                 null
             ;;
     
@@ -152,7 +155,7 @@ private constructor (){
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;;
+    let originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
@@ -161,7 +164,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;;
+    let originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
@@ -169,13 +172,13 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                         }
                             
 
-    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
+    let htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
+    let canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
     
 
-    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;;
+    let canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;;
     
 canvasSurface!.drawImage(originalPlayNImage, 0, 0, image.getWidth(), image.getHeight(), 0, 0, originalPlayNImage!.width(), originalPlayNImage!.height());
     
@@ -201,6 +204,4 @@ canvasSurface!.drawImage(originalPlayNImage, 0, 0, image.getWidth(), image.getHe
 
 
 }
-
-
 

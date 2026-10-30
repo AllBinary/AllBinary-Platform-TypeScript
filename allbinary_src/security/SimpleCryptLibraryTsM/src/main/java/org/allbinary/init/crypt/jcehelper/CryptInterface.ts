@@ -40,11 +40,9 @@
 export interface CryptInterface {
         
 
-    encrypt(array: number[]): number[]
+    encrypt(array: number[]): number[];
 
-    decrypt(array: number[]): number[]
+    decrypt(array: number[]): number[];
 
 }
-
-
 

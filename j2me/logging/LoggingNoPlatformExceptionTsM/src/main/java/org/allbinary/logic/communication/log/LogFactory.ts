@@ -24,9 +24,11 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -56,11 +58,9 @@ expect export class LogFactory
 
     public static readonly LOG: Log
 
-    public static getInstance(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}): Log
+    public static getInstance(specialMessage: string, anyType: any, functionName: string, exception: any): Log
 
-    public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log
+    public static getInstanceF(specialMessage: string, anyType: any, functionName: string): Log
 
 }
-
-
 

@@ -52,6 +52,7 @@ import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFac
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
@@ -61,15 +62,18 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 //not GWT import const ScaleProperties
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -124,7 +128,7 @@ this.instanceId= instanceId;
 this.animationInterfaceFactoryInterface= animationInterfaceFactoryInterface;
     
 
-    var imageCache: ImageCache = ImageCacheFactory.getInstance()!;;
+    let imageCache: ImageCache = ImageCacheFactory.getInstance()!;;
     
 imageCache!.add(this);
     
@@ -170,49 +174,51 @@ this.index= index;
 
     public paintXY(graphics: Graphics, x: number, y: number){
 
-        try {
-            ImageCacheFactory.getInstance()!.insertFirst(LazyImageRotationAnimation.prototype);
+ try { ImageCacheFactory.getInstance()!.insertFirst(outer$LazyImageRotationAnimation);
     
 this.lazyImageRotationAnimation!.animation= this.lazyImageRotationAnimation!.NULL_INDEX_ANIMATION;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number){
 
-        try {
-            ImageCacheFactory.getInstance()!.insertFirst(LazyImageRotationAnimation.prototype);
+ try { ImageCacheFactory.getInstance()!.insertFirst(outer$LazyImageRotationAnimation);
     
 this.lazyImageRotationAnimation!.animation= this.lazyImageRotationAnimation!.NULL_INDEX_ANIMATION;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 
                     //Otherwise - statement - EmptyStmt
 
@@ -223,9 +229,8 @@ this.animation= new ActualRotationAnimation(this);
 
     public setRealAnimation(){
 
-        try {
-            
-    var animation: IndexedAnimation = this.animation;;
+ try { 
+    let animation: IndexedAnimation = this.animation;;
     
 this.animationInterfaceFactoryInterface!.setInitialScale(this.scaleProperties);
     
@@ -233,14 +238,17 @@ this.animation= this.animationInterfaceFactoryInterface!.getInstance(this.instan
     
 this.animation.setState(animation);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, LazyImageRotationAnimation.SET_REAL_ANIMATION, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -294,7 +302,7 @@ this.animation.setMaxScale(maxScaleX, maxScaleY);
 
     public nextRotation(){
 
-    var rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
+    let rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
     
 rotationAnimation!.nextRotation();
     
@@ -303,7 +311,7 @@ rotationAnimation!.nextRotation();
 
     public previousRotation(){
 
-    var rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
+    let rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
     
 rotationAnimation!.previousRotation();
     
@@ -312,7 +320,7 @@ rotationAnimation!.previousRotation();
 
     public nextRotationX(){
 
-    var rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
+    let rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
     
 rotationAnimation!.nextRotationX();
     
@@ -321,7 +329,7 @@ rotationAnimation!.nextRotationX();
 
     public previousRotationX(){
 
-    var rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
+    let rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
     
 rotationAnimation!.previousRotationX();
     
@@ -330,7 +338,7 @@ rotationAnimation!.previousRotationX();
 
     public nextRotationZ(){
 
-    var rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
+    let rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
     
 rotationAnimation!.nextRotationZ();
     
@@ -339,7 +347,7 @@ rotationAnimation!.nextRotationZ();
 
     public previousRotationZ(){
 
-    var rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
+    let rotationAnimation: RotationAnimation = (this.animation as RotationAnimation);;
     
 rotationAnimation!.previousRotationZ();
     
@@ -518,42 +526,46 @@ this.animation.setSequence(sequence);
 
     public paintXY(graphics: Graphics, x: number, y: number){
 
-        try {
-            this.animation.paintXY(graphics, x, y);
+ try { this.animation.paintXY(graphics, x, y);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number){
 
-        try {
-            this.animation.paintThreedXYZ(graphics, x, y, z);
+ try { this.animation.paintThreedXYZ(graphics, x, y, z);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var image: Image = this.animationInterfaceFactoryInterface!.getImage()!;;
+    let image: Image = this.animationInterfaceFactoryInterface!.getImage()!;;
     
 
 
@@ -565,6 +577,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCE
 
 
 }
-
-
 

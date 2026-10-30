@@ -92,7 +92,7 @@ this.angleInfo!.adjustAngle(this.sprite.getFrame());
 
     public setFrameByDirection(direction: Direction){
 
-    var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;;
+    let angle: Angle = this.directionUtil!.getFrameAngle(direction)!;;
     
 this.adjustFrameToAngle(angle);
     
@@ -126,6 +126,4 @@ this.setFrame(this.frameUtil!.getFrameForAngle(angle, globalThis.Math.trunc(this
 
 
 }
-
-
 

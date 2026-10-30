@@ -30,9 +30,11 @@ import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbina
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -94,17 +96,17 @@ damageableInterface!.damage(damageableInterface2!.getDamage(0), 0);
             
     public debugDamage(collidableInterfaceCompositeInterface1: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
 
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = collidableInterfaceCompositeInterface as CollidableDestroyableDamageableLayer;;
+    let collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = collidableInterfaceCompositeInterface as CollidableDestroyableDamageableLayer;;
     
 
-    var damage: number = collidableDestroyableDamageableLayer!.getDamage(0)!;;
+    let damage: number = collidableDestroyableDamageableLayer!.getDamage(0)!;;
     
 
                         if(damage > 20000)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Collision ");
     
@@ -127,6 +129,4 @@ this.logUtil!.putF(stringBuffer!.toString(), collidableInterfaceCompositeInterfa
 
 
 }
-
-
 

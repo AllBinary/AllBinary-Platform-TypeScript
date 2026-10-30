@@ -45,5 +45,3 @@ export class ABVector extends Vector<E> {
 
 }
 
-
-

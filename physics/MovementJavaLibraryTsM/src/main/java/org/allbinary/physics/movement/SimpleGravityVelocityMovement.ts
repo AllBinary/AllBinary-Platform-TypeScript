@@ -79,5 +79,3 @@ super.process(layer);
 
 }
 
-
-

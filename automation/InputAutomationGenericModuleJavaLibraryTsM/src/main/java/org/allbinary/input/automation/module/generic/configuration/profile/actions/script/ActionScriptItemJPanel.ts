@@ -152,7 +152,7 @@ this.removeJPanel= new javax.swing.JPanel();
 this.newActionScriptInputJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     
 
-    var childActionScriptConditionJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.childActionScriptConditionJPanel);;
+    let childActionScriptConditionJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.childActionScriptConditionJPanel);;
     
 this.childActionScriptConditionJPanel!.setLayout(childActionScriptConditionJPanelLayout);
     
@@ -169,7 +169,7 @@ this.removeJPanel!.setLayout(new java.awt.GridLayout(1, 1));
 this.removeJPanel!.setMinimumSize(new java.awt.Dimension(30, 20));
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -191,6 +191,4 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
     private scriptItemJPanel: javax.swing.JPanel;
 
 }
-
-
 

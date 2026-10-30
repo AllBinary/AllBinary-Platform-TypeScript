@@ -22,12 +22,15 @@
         
 //not plain js import { FilePathData } 
 const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+type FilePathData<T = any, U = any> = typeof FilePathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof FilePathData;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -79,10 +82,10 @@ private constructor (){
 
     public getExtensionIndex(filePath: string): number{
 
-    var indexOfFileExtensionDelmiter: number = filePath!.lastIndexOf(this.EXTENSION_SEP)!;;
+    let indexOfFileExtensionDelmiter: number = filePath!.lastIndexOf(this.EXTENSION_SEP)!;;
     
 
-    var indexOfLatDelimiter: number = filePath!.lastIndexOf(this.SEPARATORCHAR)!;;
+    let indexOfLatDelimiter: number = filePath!.lastIndexOf(this.SEPARATORCHAR)!;;
     
 
                         if(indexOfFileExtensionDelmiter < 0)
@@ -121,10 +124,10 @@ private constructor (){
 
     public getExtensionWithDot(filePath: string): string{
 
-    var indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;;
+    let indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;;
     
 
-    var extension: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let extension: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(indexOfFileExtensionDelmiter >= 0)
@@ -146,10 +149,10 @@ private constructor (){
 
     public getExtension(filePath: string): string{
 
-    var indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;;
+    let indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;;
     
 
-    var extension: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let extension: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(indexOfFileExtensionDelmiter >= 0)
@@ -171,7 +174,7 @@ private constructor (){
 
     public getNameFromPath(path: string): string{
 
-    var endIndex: number = path.lastIndexOf(this.SEPARATORCHAR)!;;
+    let endIndex: number = path.lastIndexOf(this.SEPARATORCHAR)!;;
     
 
                         if(endIndex < 0)
@@ -200,7 +203,7 @@ private constructor (){
                         
                                     {
                                     
-    var categoryName: string = path.substring(0, endIndex)!;;
+    let categoryName: string = path.substring(0, endIndex)!;;
     
 
 
@@ -213,7 +216,7 @@ private constructor (){
                                 
                         else {
                             
-    var categoryName: string = path.substring(endIndex +1)!;;
+    let categoryName: string = path.substring(endIndex +1)!;;
     
 
 
@@ -229,7 +232,7 @@ private constructor (){
 
     public removeNameFromPath(path: string): string{
 
-    var endIndex: number = path.lastIndexOf(this.SEPARATORCHAR)!;;
+    let endIndex: number = path.lastIndexOf(this.SEPARATORCHAR)!;;
     
 
                         if(endIndex < 0)
@@ -268,7 +271,7 @@ private constructor (){
                                 
                         else {
                             
-    var pathWithoutName: string = path.substring(0, endIndex)!;;
+    let pathWithoutName: string = path.substring(0, endIndex)!;;
     
 
 
@@ -283,6 +286,4 @@ private constructor (){
 
 
 }
-
-
 

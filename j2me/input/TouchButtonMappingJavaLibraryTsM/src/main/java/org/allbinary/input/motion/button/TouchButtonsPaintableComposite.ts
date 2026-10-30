@@ -52,15 +52,19 @@ import { TouchMotionGestureFactory } from '../../../../../org/allbinary/input/mo
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -70,6 +74,7 @@ import { EventStrings } from '../../../../../org/allbinary/logic/util/event/Even
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
@@ -138,20 +143,19 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     public onCompleteMotionGestureInputEvent(completeMotionGestureInputEvent: CompleteMotionGestureInputEvent){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "onCompleteMotionGestureInputEvent");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "onCompleteMotionGestureInputEvent");
     
 
-    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
+    let touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
     
 
-    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = completeMotionGestureInputEvent as GameKeyCompleteMotionGestureInputEvent;;
+    let gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = completeMotionGestureInputEvent as GameKeyCompleteMotionGestureInputEvent;;
     
 
-    var gameKey: GameKey = gameKeyCompleteMotionGestureInputEvent!.getGameKey()!;;
+    let gameKey: GameKey = gameKeyCompleteMotionGestureInputEvent!.getGameKey()!;;
     
 
-    var motionGestureInput: MotionGestureInput = completeMotionGestureInputEvent!.getMotionGestureInput()!;;
+    let motionGestureInput: MotionGestureInput = completeMotionGestureInputEvent!.getMotionGestureInput()!;;
     
 
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
@@ -206,14 +210,17 @@ this.logUtil!.putF(new StringMaker().append("GameKey: ")!.append(StringUtil.getI
     
 this.inputMappingInterface!.processInputMapping(gameKey, motionGestureInput);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -224,6 +231,4 @@ CompleteMotionGestureInputEventHandler.getInstance()!.removeListener(this);
 
 
 }
-
-
 

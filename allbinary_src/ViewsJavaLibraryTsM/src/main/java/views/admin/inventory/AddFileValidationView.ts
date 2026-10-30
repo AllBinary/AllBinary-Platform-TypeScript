@@ -52,6 +52,7 @@ import { UploadMediaSingleton } from '../../../org/allbinary/logic/communication
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 //not GWT import const ValidationComponentInterface
@@ -64,12 +65,15 @@ import { FileData } from '../../../org/allbinary/logic/io/file/FileData.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -79,6 +83,7 @@ import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/tran
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 import { FileItem } from '../../../org/apache/commons/fileupload/FileItem.js';
 //not GWT import const FileItem
@@ -129,12 +134,18 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                     
 }
 
+isValid(...args: any[]): any {
+   
+    if (args.length === 0) return this.isValid$overload1();
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'number') return this.isValid$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: isValid'); }
+  
+    public isValid$overload1(): Boolean{
 
-    public isValid(): Boolean{
-
-        try {
-            
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;;
+ try { 
+    let command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(AddFileValidationView.ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
@@ -145,7 +156,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Invalid AdminCommand: ");
     
@@ -168,16 +179,16 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);;
+    let basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);;
     
 
-                        if(basicItemValidation!.isValid() == Boolean.FALSE)
+                        if(basicItemValidation!.isValid() == false)
                         
                                     {
                                     
@@ -193,21 +204,21 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
     
 this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.itemInterface!.getCategory());
     
 
-    var fullCategory: string = new StringMaker().append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;;
+    let fullCategory: string = new StringMaker().append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;;
     
 
-    var categoryFile: AbFile = AbFile.createAbFile(fullCategory)!;;
+    let categoryFile: AbFile = AbFile.createAbFile(fullCategory)!;;
     
 
                         if(!categoryFile!.isDirectory())
@@ -226,7 +237,7 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -250,38 +261,38 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var imageFileItemObject: any = this.getRequestHashMap()!.get(this.basicItemData!.IMAGE)!;;
+    let imageFileItemObject: any = this.getRequestHashMap()!.get(this.basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(imageFileItemObject))
                         
                                     {
                                     
-    var fileItem: FileItem = imageFileItemObject as FileItem;;
+    let fileItem: FileItem = imageFileItemObject as FileItem;;
     
 
-    var fileName: string = fileItem!.getName()!;;
+    let fileName: string = fileItem!.getName()!;;
     
 
-    var size: number = fileItem!.getSize()!;;
+    let size: number = fileItem!.getSize()!;;
     
 HttpFileUploadUtil.log(fileItem);
     
 
-                        if(this.isValid(fileName, size) == Boolean.FALSE)
+                        if(this.isValid(fileName, size) == false)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -293,12 +304,13 @@ HttpFileUploadUtil.log(fileItem);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -312,10 +324,12 @@ HttpFileUploadUtil.log(fileItem);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -338,15 +352,21 @@ HttpFileUploadUtil.log(fileItem);
     
 }
 
+validationInfo(...args: any[]): any {
+   
+    if (args.length === 0) return this.validationInfo$overload1();
+   
+    if (args.length === 4 && typeof args[1] === 'string' && typeof args[2] === 'string' && typeof args[3] === 'number') return this.validationInfo$overload2(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: validationInfo'); }
+  
+    public validationInfo$overload1(): string{
 
-    public validationInfo(): string{
-
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;;
+    let command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(AddFileValidationView.ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
@@ -362,10 +382,10 @@ HttpFileUploadUtil.log(fileItem);
                                     }
                                 
 
-    var basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);;
+    let basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);;
     
 
-                        if(basicItemValidation!.isValid() == Boolean.FALSE)
+                        if(basicItemValidation!.isValid() == false)
                         
                                     {
                                     stringBuffer!.append(basicItemValidation!.validationInfo());
@@ -376,10 +396,10 @@ stringBuffer!.append("<br/>");
                                     }
                                 
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
     
 
-    var fullCategory: string = new StringMaker().append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;;
+    let fullCategory: string = new StringMaker().append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -391,7 +411,7 @@ stringBuffer!.append("<br/>");
                                     }
                                 
 
-    var categoryFile: AbFile = AbFile.createAbFile(fullCategory)!;;
+    let categoryFile: AbFile = AbFile.createAbFile(fullCategory)!;;
     
 
                         if(!categoryFile!.isDirectory())
@@ -407,8 +427,7 @@ stringBuffer!.append(" does not exist.<br />");
                                     }
                                 
 
-        try {
-            
+ try { 
                         if(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(this.itemInterface!.getId()) != 
                                     null
                                 )
@@ -419,10 +438,11 @@ stringBuffer!.append(" does not exist.<br />");
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof MoneyException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -432,26 +452,28 @@ stringBuffer!.append(" does not exist.<br />");
 
                                     }
                                 
-}
 
+ }
+  else { throw caught; } }
+ 
 
-    var anyType: any = this.getRequestHashMap()!.get(this.basicItemData!.IMAGE)!;;
+    let anyType: any = this.getRequestHashMap()!.get(this.basicItemData!.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(anyType))
                         
                                     {
                                     
-    var fileItem: FileItem = anyType as FileItem;;
+    let fileItem: FileItem = anyType as FileItem;;
     
 
-    var fileName: string = fileItem!.getName()!;;
+    let fileName: string = fileItem!.getName()!;;
     
 
-    var fileItemFieldName: string = fileItem!.getFieldName()!;;
+    let fileItemFieldName: string = fileItem!.getFieldName()!;;
     
 
-    var size: number = fileItem!.getSize()!;;
+    let size: number = fileItem!.getSize()!;;
     
 this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
     
@@ -464,10 +486,11 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -483,16 +506,18 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Getting Validation Info";
     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    isValid(fileName: string, size: number): Boolean{
+    isValid$overload2(fileName: string, size: number): Boolean{
 
-    var fileData: FileData = FileData.getInstance()!;;
+    let fileData: FileData = FileData.getInstance()!;;
     
 
                         if(size > fileData!.MINIMAGEFILESIZE)
@@ -510,20 +535,20 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
                         else {
                             
-    var pathData: AbPathData = AbPathData.getInstance()!;;
+    let pathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var extension: string = pathData!.getExtension(fileName)!;;
+    let extension: string = pathData!.getExtension(fileName)!;;
     
 
-    var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;;
+    let uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;;
     
 
                         if(!uploadMedia!.isWriterSupported(extension) && !uploadMedia!.isReaderSupported(extension))
@@ -533,7 +558,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -550,7 +575,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("File Size To Large: ");
     
@@ -569,7 +594,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                         }
@@ -585,7 +610,7 @@ this.processImageFiles();
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("File Size To Small: ");
     
@@ -604,7 +629,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                         }
@@ -613,14 +638,14 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
 
-    validationInfo(stringBuffer: StringMaker, fileName: string, fileItemFieldName: string, size: number){
+    validationInfo$overload2(stringBuffer: StringMaker, fileName: string, fileItemFieldName: string, size: number){
 
-    var fileData: FileData = FileData.getInstance()!;;
+    let fileData: FileData = FileData.getInstance()!;;
     
 
                         if(size > fileData!.MINIMAGEFILESIZE)
@@ -653,13 +678,13 @@ stringBuffer!.append("<br/>");
                                 
                         else {
                             
-    var pathData: AbPathData = AbPathData.getInstance()!;;
+    let pathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var extension: string = pathData!.getExtension(fileName)!;;
+    let extension: string = pathData!.getExtension(fileName)!;;
     
 
-    var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;;
+    let uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;;
     
 
                         if(!uploadMedia!.isWriterSupported(extension) && !uploadMedia!.isReaderSupported(extension))
@@ -718,6 +743,4 @@ stringBuffer!.append("<br/>");
 
 
 }
-
-
 

@@ -111,5 +111,3 @@ public constructor (name: string, append: boolean){
 
 }
 
-
-

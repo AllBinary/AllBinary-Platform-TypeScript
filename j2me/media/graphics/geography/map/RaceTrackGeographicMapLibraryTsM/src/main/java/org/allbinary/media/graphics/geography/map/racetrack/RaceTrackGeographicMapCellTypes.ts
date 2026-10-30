@@ -98,5 +98,3 @@ this.DEFAULT_FINISH_LINE_ROAD_CELL_TYPE= new RaceTrackGeographicMapCellType("Fin
 
 }
 
-
-

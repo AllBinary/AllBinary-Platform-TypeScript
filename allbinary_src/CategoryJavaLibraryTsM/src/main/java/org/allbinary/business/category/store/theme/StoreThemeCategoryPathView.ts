@@ -78,16 +78,16 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = super.toXmlNode(document)!;;
+    let node: Node = super.toXmlNode(document)!;;
     
 
-    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface() as StoreThemeCategoryInterface;;
+    let storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface() as StoreThemeCategoryInterface;;
     
 
-    var themeArray: any[] = storeThemeCategoryInterface!.getThemes()!.toArray()!;;
+    let themeArray: any[] = storeThemeCategoryInterface!.getThemes()!.toArray()!;;
     
 
-    var size: number = themeArray!.length
+    let size: number = themeArray!.length
                 ;;
     
 
@@ -95,13 +95,13 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var themeValidation: ThemeValidation = themeArray[i]! as ThemeValidation;;
+    let themeValidation: ThemeValidation = themeArray[i]! as ThemeValidation;;
     
 
-    var domNodeInterface: DomNodeInterface = new ThemePropertiesView(themeValidation as ThemeInterface) as DomNodeInterface;;
+    let domNodeInterface: DomNodeInterface = new ThemePropertiesView(themeValidation as ThemeInterface) as DomNodeInterface;;
     
 node.appendChild(domNodeInterface!.toXmlNode(document));
     
@@ -117,6 +117,4 @@ node.appendChild(domNodeInterface!.toXmlNode(document));
 
 
 }
-
-
 

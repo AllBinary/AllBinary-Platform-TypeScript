@@ -24,9 +24,11 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { FilePathData } 
 const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+type FilePathData<T = any, U = any> = typeof FilePathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof FilePathData;
 
 import { AbFilePath } from '../../../../../../org/allbinary/logic/io/path/AbFilePath.js';
 //not GWT import const AbFilePath
@@ -36,9 +38,11 @@ import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js'
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -92,10 +96,19 @@ private constructor (){
             super();
         }
 
-
+getExtension(...args: any[]): any {
+   
+    if (args.length === 1) return this.getExtension$overload1(args[0]);
+   
+    if (args.length === 1) return this.getExtension$overload2(args[0]);
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getExtension$overload3(args[0]);
+   
+   throw new TypeError('No matching overload: getExtension'); }
+  
                 //@Throws(Exception.constructor)
             
-    public getExtension(abFilePath: AbFilePath): string{
+    public getExtension$overload1(abFilePath: AbFilePath): string{
 
 
 
@@ -107,7 +120,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getExtension(abPath: AbPath): string{
+    public getExtension$overload2(abPath: AbPath): string{
 
 
 
@@ -119,7 +132,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getExtension(filePath: string): string{
+    public getExtension$overload3(filePath: string): string{
 
                         if(filePath!.length < AbPathUtilOld.MIN)
                         
@@ -133,10 +146,10 @@ private constructor (){
                                     }
                                 
 
-    var beginIndex: number = filePath!.length -AbPathUtilOld.MIN;;
+    let beginIndex: number = filePath!.length -AbPathUtilOld.MIN;;
     
 
-    var extension: string = filePath!.substring(beginIndex +1)!;;
+    let extension: string = filePath!.substring(beginIndex +1)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -155,10 +168,19 @@ private constructor (){
     
 }
 
-
+getWithoutExtension(...args: any[]): any {
+   
+    if (args.length === 1) return this.getWithoutExtension$overload1(args[0]);
+   
+    if (args.length === 1) return this.getWithoutExtension$overload2(args[0]);
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getWithoutExtension$overload3(args[0]);
+   
+   throw new TypeError('No matching overload: getWithoutExtension'); }
+  
                 //@Throws(Exception.constructor)
             
-    public getWithoutExtension(abFilePath: AbFilePath): string{
+    public getWithoutExtension$overload1(abFilePath: AbFilePath): string{
 
 
 
@@ -170,7 +192,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getWithoutExtension(abPath: AbPath): string{
+    public getWithoutExtension$overload2(abPath: AbPath): string{
 
 
 
@@ -182,7 +204,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getWithoutExtension(filePath: string): string{
+    public getWithoutExtension$overload3(filePath: string): string{
 
                         if(filePath!.length < AbPathUtilOld.MIN)
                         
@@ -196,10 +218,10 @@ private constructor (){
                                     }
                                 
 
-    var endIndex: number = filePath!.length -AbPathUtilOld.MIN;;
+    let endIndex: number = filePath!.length -AbPathUtilOld.MIN;;
     
 
-    var pathWithoutExtension: string = filePath!.substring(0, endIndex)!;;
+    let pathWithoutExtension: string = filePath!.substring(0, endIndex)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -389,7 +411,7 @@ private constructor (){
 
     public getNameFromPath(categoryPath: string): string{
 
-    var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;;
+    let endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;;
     
 
                         if(endIndex < 0)
@@ -413,7 +435,7 @@ private constructor (){
                         
                                     {
                                     
-    var categoryName: string = categoryPath!.substring(0, endIndex)!;;
+    let categoryName: string = categoryPath!.substring(0, endIndex)!;;
     
 
 
@@ -426,7 +448,7 @@ private constructor (){
                                 
                         else {
                             
-    var categoryName: string = categoryPath!.substring(endIndex +1)!;;
+    let categoryName: string = categoryPath!.substring(endIndex +1)!;;
     
 
 
@@ -445,7 +467,7 @@ private constructor (){
 
     public removeNameFromPath(categoryPath: string): AbPath{
 
-    var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;;
+    let endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;;
     
 
                         if(endIndex < 0)
@@ -484,7 +506,7 @@ private constructor (){
                                 
                         else {
                             
-    var categoryName: string = categoryPath!.substring(0, endIndex)!;;
+    let categoryName: string = categoryPath!.substring(0, endIndex)!;;
     
 
 
@@ -499,6 +521,4 @@ private constructor (){
 
 
 }
-
-
 

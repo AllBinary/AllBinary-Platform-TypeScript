@@ -107,47 +107,47 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
 
-    var sourceLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    let sourceLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var reducedWidth: number = (sourceLayerInterface!.getWidth() *8 /10);;
+    let reducedWidth: number = (sourceLayerInterface!.getWidth() *8 /10);;
     
 
-    var halfWidth: number = (reducedWidth>>1);;
+    let halfWidth: number = (reducedWidth>>1);;
     
 
-    var x: number = this.relativeRelationship!.getX()!;;
+    let x: number = this.relativeRelationship!.getX()!;;
     
 
-    var y: number = this.relativeRelationship!.getY()!;;
+    let y: number = this.relativeRelationship!.getY()!;;
     
 
-    var sine: number= 0;;
+    let sine: number= 0;;
     
 
-    var beamX: number= 0;;
+    let beamX: number= 0;;
     
 
-    var cosine: number= 0;;
+    let cosine: number= 0;;
     
 
-    var beamY: number= 0;;
+    let beamY: number= 0;;
     
 
-    var weaponLayer: WeaponLayer;;
+    let weaponLayer: WeaponLayer;;
     
 
-    var increment: number = globalThis.Math.trunc(reducedWidth /(this.total -1));;
+    let increment: number = globalThis.Math.trunc(reducedWidth /(this.total -1));;
     
 
-    var next: number =  -halfWidth;;
+    let next: number =  -halfWidth;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.total; index++)
+    let index: number = 0;index < this.total; index++)
         {
 sine= (next *this.noDecimalTrigTable!.sin(globalThis.Math.trunc(angle)));
     
@@ -169,6 +169,4 @@ next += increment;
 
 
 }
-
-
 

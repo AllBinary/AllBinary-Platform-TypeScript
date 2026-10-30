@@ -27,9 +27,11 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -60,21 +62,26 @@ import { URLGLOBALS } from '../../../../../../../org/allbinary/globals/URLGLOBAL
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -182,7 +189,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
         this.transformInfoInterface= transformInfoInterface;
     
 
-    var categoryPath: string = CategoryUtil.getNameFromNode(node)!;;
+    let categoryPath: string = CategoryUtil.getNameFromNode(node)!;;
     
 this.abPath= new AbPath(categoryPath, StringUtil.getInstance()!.EMPTY_STRING);
     
@@ -212,7 +219,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, categoryProp
         this.transformInfoInterface= transformInfoInterface;
     
 
-    var categoryPath: string = .toCharArray();;
+    let categoryPath: string = .toCharArray();;
     
 this.abPath= new AbPath(categoryPath, StringUtil.getInstance()!.EMPTY_STRING);
     
@@ -240,16 +247,16 @@ this.log();
             
     initPath(){
 
-    var transformInfoHttpStoreInterface: TransformInfoHttpInterface = this.transformInfoInterface as TransformInfoHttpInterface;;
+    let transformInfoHttpStoreInterface: TransformInfoHttpInterface = this.transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(transformInfoHttpStoreInterface!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(transformInfoHttpStoreInterface!.getStoreName())!;;
     
 
-    var postPath: string = storeFrontInterface!.getCurrentHostNamePath() +storeFrontInterface!.getCategoryPath();;
+    let postPath: string = storeFrontInterface!.getCurrentHostNamePath() +storeFrontInterface!.getCategoryPath();;
     
 
-    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest() as HttpServletRequest;;
+    let httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest() as HttpServletRequest;;
     
 this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +postPath, StringUtil.getInstance()!.EMPTY_STRING);
     
@@ -363,14 +370,14 @@ this.category= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
 
     public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let categoryHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue());
     
@@ -385,7 +392,7 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue());
 
     public toVector(): BasicArrayList{
 
-    var categoryVector: BasicArrayList = new BasicArrayListD();;
+    let categoryVector: BasicArrayList = new BasicArrayListD();;
     
 categoryVector!.add(this.getValue());
     
@@ -448,6 +455,4 @@ categoryVector!.add(this.getValue());
 
 
 }
-
-
 

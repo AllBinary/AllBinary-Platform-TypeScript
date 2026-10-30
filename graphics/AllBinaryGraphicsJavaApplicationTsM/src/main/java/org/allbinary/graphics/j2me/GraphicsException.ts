@@ -25,6 +25,7 @@ import { GuiLog } from '../../../../org/allbinary/logic/communication/log/GuiLog
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -52,24 +53,26 @@ export class GraphicsException extends java.lang.Exception {
 
     private readonly guiLog: GuiLog = GuiLog.getInstance()!;
 
-public constructor (msg: string, obj: any = {}, method: string){
+public constructor (msg: string, obj: any, method: string){
             super(msg);
                     
 
                             //For kotlin this is before the body of the constructor.
                     
 
-        try {
-            this.guiLog!.showDialog(msg);
+ try { this.guiLog!.showDialog(msg);
     
 this.logUtil!.put(msg, obj, method, this);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-}
-
+ }
+   }
+ 
 }
 
 
@@ -80,21 +83,21 @@ public constructor (msg: string, className: string, method: string){
                             //For kotlin this is before the body of the constructor.
                     
 
-        try {
-            this.guiLog!.showDialog(msg);
+ try { this.guiLog!.showDialog(msg);
     
 this.logUtil!.put(msg, className, method, this);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

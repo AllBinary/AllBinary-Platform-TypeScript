@@ -32,9 +32,11 @@ import { Random } from '../../../../../java/util/Random.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
@@ -44,21 +46,25 @@ import { UserData } from '../../../../../org/allbinary/business/user/UserData.js
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SuperCrypt } from '../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
 //not GWT import const SuperCrypt
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -114,12 +120,11 @@ this.password= value;
 
     public isValid(): Boolean{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-        try {
-            
-    var valid: Boolean = Boolean.TRUE;;
+ try { 
+    let valid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATION))
@@ -143,7 +148,7 @@ this.password= value;
 
                                     }
                                 
-valid= Boolean.FALSE;
+valid= false;
     
 
                                     }
@@ -154,10 +159,11 @@ valid= Boolean.FALSE;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATIONERROR))
                         
@@ -171,10 +177,12 @@ valid= Boolean.FALSE;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -193,7 +201,7 @@ valid= Boolean.FALSE;
                                     }
                                 
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
 
@@ -208,10 +216,10 @@ valid= Boolean.FALSE;
 this.password= StringUtil.getInstance()!.getNonNull(this.password);
     
 
-    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;;
+    let random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;;
     
 
-    var vector: BasicArrayList = new BasicArrayListD();;
+    let vector: BasicArrayList = new BasicArrayListD();;
     
 vector.add(new Integer(random).toString());
     
@@ -232,10 +240,10 @@ vector.add(new SuperCrypt(random).encrypt(this.password));
 this.password= StringUtil.getInstance()!.getNonNull(this.password);
     
 
-    var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;;
+    let random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;;
     
 values.put(EntryData.getInstance()!.ENCRYPTION, new Integer(random).toString());
     
@@ -253,6 +261,4 @@ values.put(UserData.PASSWORD, new SuperCrypt(random).encrypt(this.password));
 
 
 }
-
-
 

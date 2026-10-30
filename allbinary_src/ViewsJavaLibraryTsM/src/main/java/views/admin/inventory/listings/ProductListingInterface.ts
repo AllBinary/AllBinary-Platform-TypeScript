@@ -44,13 +44,11 @@ export interface ProductListingInterface {
 
                 //@Throws(Exception.constructor)
             
-    generateAll(): string
+    generateAll(): string;
 
                 //@Throws(Exception.constructor)
             
-    generateAll(storeName: string): string
+    generateAll(storeName: string): string;
 
 }
-
-
 

@@ -35,15 +35,18 @@ import { swing } from '../../../../javax/swing.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { FileWrapperUtil } from '../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
 //not GWT import const FileWrapperUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
 //not GWT import const ImagePersistanceUtil
@@ -74,12 +77,15 @@ import { ImagesRatioUtil } from '../../../../org/allbinary/media/image/ImagesRat
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -171,42 +177,41 @@ this.setImageProcessorInput(imageProcessorInput);
 
     public init(){
 
-        try {
-            
-    var imageProcessorInput: ImageProcessorInput = this.getImageProcessorInput()!;;
+ try { 
+    let imageProcessorInput: ImageProcessorInput = this.getImageProcessorInput()!;;
     
 
-    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
+    let bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
     
 this.icon= new Array(bufferedImageArray!.length);
     
 
-    var defaultListModel: DefaultListModel = new DefaultListModel();;
+    let defaultListModel: DefaultListModel = new DefaultListModel();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < bufferedImageArray!.length; index++)
+    let index: number = 0;index < bufferedImageArray!.length; index++)
         {
 
-    var width: number = bufferedImageArray[index]!.getWidth()!;;
+    let width: number = bufferedImageArray[index]!.getWidth()!;;
     
 
-    var height: number = bufferedImageArray[index]!.getHeight()!;;
+    let height: number = bufferedImageArray[index]!.getHeight()!;;
     
 
-    var newWidth: number = 52;;
+    let newWidth: number = 52;;
     
 
-    var oldRatio: number = width /height;;
+    let oldRatio: number = width /height;;
     
 
-    var newHeight: number = globalThis.Math.trunc((newWidth /oldRatio));;
+    let newHeight: number = globalThis.Math.trunc((newWidth /oldRatio));;
     
 
-    var iconBufferedImage: BufferedImage = ImageUtil.getInstance()!.createBufferedImage(bufferedImageArray[index]!, newWidth, newHeight, true)!;;
+    let iconBufferedImage: BufferedImage = ImageUtil.getInstance()!.createBufferedImage(bufferedImageArray[index]!, newWidth, newHeight, true)!;;
     
 this.icon[index]= new ImageIconUnique(iconBufferedImage, index);
     
@@ -218,51 +223,60 @@ this.imageJList!.setModel(defaultListModel);
     
 this.updateOnPropertiesChange();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
+
+ }
+   }
+ 
 }
 
-}
+updateImage(...args: any[]): any {
+   
+    if (args.length === 0) return this.updateImage$overload1();
+   
+    if (args.length === 1) return this.updateImage$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: updateImage'); }
+  
+    updateImage$overload1(){
 
-
-    updateImage(){
-
-        try {
-            
-    var bufferedImageArray: BufferedImage[] = this.getImageProcessorInput()!.getBufferedImageArray()!;;
+ try { 
+    let bufferedImageArray: BufferedImage[] = this.getImageProcessorInput()!.getBufferedImageArray()!;;
     
 
-    var tempBufferedImageArray: BufferedImage[] = new Array(bufferedImageArray!.length);;
+    let tempBufferedImageArray: BufferedImage[] = new Array(bufferedImageArray!.length);;
     
 
 
 
 
                         for (
-    var index: number = 0;index < bufferedImageArray!.length; index++)
+    let index: number = 0;index < bufferedImageArray!.length; index++)
         {
 
-    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index) as ImageIconUnique;;
+    let indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index) as ImageIconUnique;;
     
 
-    var bufferedImage: BufferedImage = ImageUtil.getInstance()!.createBufferedImage(bufferedImageArray[indexedImageIcon!.getId()]!, this.imageUnifierProperties!.getImageUnifierCell()!.getWidth(), this.imageUnifierProperties!.getImageUnifierCell()!.getHeight(), false)!;;
+    let bufferedImage: BufferedImage = ImageUtil.getInstance()!.createBufferedImage(bufferedImageArray[indexedImageIcon!.getId()]!, this.imageUnifierProperties!.getImageUnifierCell()!.getWidth(), this.imageUnifierProperties!.getImageUnifierCell()!.getHeight(), false)!;;
     
 tempBufferedImageArray[index]= bufferedImage;
     
 }
 
 
-    var totalImages: number = this.imageUnifierProperties!.getRows() *this.imageUnifierProperties!.getColumns();;
+    let totalImages: number = this.imageUnifierProperties!.getRows() *this.imageUnifierProperties!.getColumns();;
     
 
-    var averageRatio: number = this.imagesRatioUtil!.getAverage(tempBufferedImageArray, totalImages)!;;
+    let averageRatio: number = this.imagesRatioUtil!.getAverage(tempBufferedImageArray, totalImages)!;;
     
 
-    var averageRatioString: string = new number(averageRatio).toString()!;;
+    let averageRatioString: string = new number(averageRatio).toString()!;;
     
 
                         if(averageRatioString!.length > 4)
@@ -295,73 +309,78 @@ this.fudgeItJButton!.setEnabled(false);
                                 
 this.updateImage(tempBufferedImageArray);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateImage", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     updateImageWithFudgedImages(){
 
-        try {
-            
-    var bufferedImageArray: BufferedImage[] = this.getImageProcessorInput()!.getBufferedImageArray()!;;
+ try { 
+    let bufferedImageArray: BufferedImage[] = this.getImageProcessorInput()!.getBufferedImageArray()!;;
     
 
-    var tempBufferedImageArray: BufferedImage[] = new Array(bufferedImageArray!.length);;
+    let tempBufferedImageArray: BufferedImage[] = new Array(bufferedImageArray!.length);;
     
 
 
 
 
                         for (
-    var index: number = 0;index < bufferedImageArray!.length; index++)
+    let index: number = 0;index < bufferedImageArray!.length; index++)
         {
 
-    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index) as ImageIconUnique;;
+    let indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index) as ImageIconUnique;;
     
 
-    var bufferedImage: BufferedImage = ImageUtil.getInstance()!.createBufferedImage(bufferedImageArray[indexedImageIcon!.getId()]!, this.imageUnifierProperties!.getImageUnifierCell()!.getWidth(), this.imageUnifierProperties!.getImageUnifierCell()!.getHeight(), false)!;;
+    let bufferedImage: BufferedImage = ImageUtil.getInstance()!.createBufferedImage(bufferedImageArray[indexedImageIcon!.getId()]!, this.imageUnifierProperties!.getImageUnifierCell()!.getWidth(), this.imageUnifierProperties!.getImageUnifierCell()!.getHeight(), false)!;;
     
 tempBufferedImageArray[index]= bufferedImage;
     
 }
 
 
-    var totalImages: number = this.imageUnifierProperties!.getRows() *this.imageUnifierProperties!.getColumns();;
+    let totalImages: number = this.imageUnifierProperties!.getRows() *this.imageUnifierProperties!.getColumns();;
     
 
-    var averageRatio: number = this.imagesRatioUtil!.getAverage(tempBufferedImageArray, totalImages)!;;
+    let averageRatio: number = this.imagesRatioUtil!.getAverage(tempBufferedImageArray, totalImages)!;;
     
 
-    var fudgedBufferedImageArray: BufferedImage[] = this.imagesRatioUtil!.fudge(tempBufferedImageArray, totalImages, averageRatio)!;;
+    let fudgedBufferedImageArray: BufferedImage[] = this.imagesRatioUtil!.fudge(tempBufferedImageArray, totalImages, averageRatio)!;;
     
 this.updateImage(fudgedBufferedImageArray);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateImageWithFudgedImages", e);
     
+
+ }
+   }
+ 
 }
 
-}
 
-
-    updateImage(tempBufferedImageArray: BufferedImage[]){
+    updateImage$overload2(tempBufferedImageArray: BufferedImage[]){
 this.result= ImageUnifierUtil.getInstance()!.getImage(tempBufferedImageArray, this.imageUnifierProperties);
     
 
-    var image: Icon = new ImageIcon(this.result);;
+    let image: Icon = new ImageIcon(this.result);;
     
 
-    var label: JLabel = new JLabel(image);;
+    let label: JLabel = new JLabel(image);;
     
 this.jScrollPane2!.getViewport()!.add(label);
     
@@ -382,15 +401,15 @@ this.imageUnifierProperties!.setRows(new Integer(this.rowsJTextField!.getText())
 this.imageUnifierProperties!.setColumns(new Integer(this.columnsJTextField!.getText()));
     
 
-    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(new Integer(this.cellWidthJTextField!.getText()), new Integer(this.cellHeightJTextField!.getText()));;
+    let imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(new Integer(this.cellWidthJTextField!.getText()), new Integer(this.cellHeightJTextField!.getText()));;
     
 this.imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
     
 
-    var cellRatio: number = (imageUnifierCell!.getWidth() /imageUnifierCell!.getHeight());;
+    let cellRatio: number = (imageUnifierCell!.getWidth() /imageUnifierCell!.getHeight());;
     
 
-    var cellRatioString: string = new number(cellRatio).toString()!;;
+    let cellRatioString: string = new number(cellRatio).toString()!;;
     
 
                         if(cellRatioString!.length > 4)
@@ -413,7 +432,7 @@ this.updateImage();
 
     initComponents(){
 
-    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
+    let commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 this.jScrollPane1= new javax.swing.JScrollPane();
     
@@ -641,7 +660,7 @@ jButtonOrderActionPerformed(evt);
                             );
     
 
-    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
+    let jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -650,7 +669,7 @@ jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(javax.swing
 jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addContainerGap()!.addComponent(jButton1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(upJButton)!.addComponent(downJButton))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jButtonOrder)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(fudgeItJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel2)!.addComponent(columnsJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(rowsJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel3)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(cellWidthJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel4)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(cellHeightJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jButton2)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel5)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(cellRatioJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGap(7, 7, 7)!.addComponent(jLabel6)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(avgRatioJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGap(66, 66, 66)));
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -711,52 +730,54 @@ this.updateOnPropertiesChange();
 
     jButton1ActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            
-    var fileArray: File[] = this.imageProcessorInput!.getFiles()!;;
+ try { 
+    let fileArray: File[] = this.imageProcessorInput!.getFiles()!;;
     
 
-    var file: File = fileArray[0]!;;
+    let file: File = fileArray[0]!;;
     
 
-    var filePath: string = file.getAbsolutePath()!;;
+    let filePath: string = file.getAbsolutePath()!;;
     
 
-    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
+    let extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
     
 filePath= new StringMaker().append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.appendint(this.imageUnifierProperties!.getColumns())!.append("_By_")!.appendint(this.imageUnifierProperties!.getRows())!.append("_Unified")!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
 this.logUtil!.putF("New File Path: " +filePath, this, StringUtil.getInstance()!.EMPTY_STRING);
     
 
-    var outputFile: File = new File(filePath);;
+    let outputFile: File = new File(filePath);;
     
 ImagePersistanceUtil.getInstance()!.saveWithBatik(FileWrapperUtil.wrapFile(outputFile), this.result);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "jButton1ActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     downJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 
-    var index: number = this.imageJList!.getSelectedIndex()!;;
+    let index: number = this.imageJList!.getSelectedIndex()!;;
     
 
-    var defaultListModel: DefaultListModel = this.imageJList!.getModel() as DefaultListModel;;
+    let defaultListModel: DefaultListModel = this.imageJList!.getModel() as DefaultListModel;;
     
 
                         if(index >= 0 && index +1 < defaultListModel!.size())
                         
                                     {
                                     
-    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index) as ImageIconUnique;;
+    let indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index) as ImageIconUnique;;
     
 defaultListModel!.insertElementAt(indexedImageIcon, index +1);
     
@@ -772,17 +793,17 @@ this.updateImage();
 
     upJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 
-    var index: number = this.imageJList!.getSelectedIndex()!;;
+    let index: number = this.imageJList!.getSelectedIndex()!;;
     
 
                         if(index > 0)
                         
                                     {
                                     
-    var defaultListModel: DefaultListModel = this.imageJList!.getModel() as DefaultListModel;;
+    let defaultListModel: DefaultListModel = this.imageJList!.getModel() as DefaultListModel;;
     
 
-    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index) as ImageIconUnique;;
+    let indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index) as ImageIconUnique;;
     
 defaultListModel!.insertElementAt(indexedImageIcon, index -1);
     
@@ -798,23 +819,23 @@ this.updateImage();
 
     jButtonOrderActionPerformed(evt: java.awt.event.ActionEvent){
 
-    var defaultListModel: DefaultListModel = this.imageJList!.getModel() as DefaultListModel;;
+    let defaultListModel: DefaultListModel = this.imageJList!.getModel() as DefaultListModel;;
     
 
-    var size: number = defaultListModel!.size()!;;
+    let size: number = defaultListModel!.size()!;;
     
 
-    var last: number = size -1;;
+    let last: number = size -1;;
     
 
 
 
 
                         for (
-    var index: number = last;index >= 0; index--)
+    let index: number = last;index >= 0; index--)
         {
 
-    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(last) as ImageIconUnique;;
+    let indexedImageIcon: ImageIconUnique = defaultListModel!.remove(last) as ImageIconUnique;;
     
 defaultListModel!.insertElementAt(indexedImageIcon, last -index);
     
@@ -897,6 +918,4 @@ this.init();
 
 
 }
-
-
 

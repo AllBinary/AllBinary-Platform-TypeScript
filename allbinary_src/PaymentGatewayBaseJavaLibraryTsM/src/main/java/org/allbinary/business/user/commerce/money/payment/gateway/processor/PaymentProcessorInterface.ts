@@ -50,9 +50,7 @@ export interface PaymentProcessorInterface extends DomNodeInterface {
 
                 //@Throws(PaymentException.constructor, Exception.constructor)
             
-    process()
+    process(): void;
 
 }
-
-
 

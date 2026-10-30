@@ -47,10 +47,10 @@ Assertions.assertEquals(2, 1 +1);
 
     testStringEquality(){
 
-    var expected: string = "Hello World!";;
+    let expected: string = "Hello World!";;
     
 
-    var actual: string = "Hello World!";;
+    let actual: string = "Hello World!";;
     
 Assertions.assertEquals(expected, actual);
     
@@ -66,6 +66,4 @@ Assertions.assertFalse(false);
 
 
 }
-
-
 

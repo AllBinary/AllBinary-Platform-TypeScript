@@ -37,13 +37,11 @@ import { MidletCompositeInterface } from '../../../org/allbinary/midlet/MidletCo
 export interface AllBinaryMidletViewInterface extends MidletCompositeInterface, EmulatorViewInterface, DemoGameMidletEventListener, GameInitializedListenerInterface {
         
 
-    onResume()
+    onResume(): void;
 
-    onPause()
+    onPause(): void;
 
-    onDestroy()
+    onDestroy(): void;
 
 }
-
-
 

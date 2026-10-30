@@ -44,13 +44,11 @@ export interface GameFeatureControlledInterface {
 
                 //@Throws(Exception.constructor)
             
-    init(level: number)
+    init(level: number): void;
 
-    isFeature(): boolean
+    isFeature(): boolean;
 
-    isLoadingLevel(level: number): boolean
+    isLoadingLevel(level: number): boolean;
 
 }
-
-
 

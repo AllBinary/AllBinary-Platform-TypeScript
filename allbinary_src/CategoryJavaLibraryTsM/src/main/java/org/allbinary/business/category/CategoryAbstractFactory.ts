@@ -35,12 +35,14 @@ import { CategoryPropertiesFactoryInterface } from '../../../../org/allbinary/bu
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 //not GWT import const AbPath
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Node } from '../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
@@ -84,8 +86,15 @@ public constructor (){
             super();
         }
 
-
-    public getRootInstance(): CategoryInterface{
+getRootInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getRootInstance$overload1();
+   
+    if (args.length === 1) return this.getRootInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getRootInstance'); }
+  
+    public getRootInstance$overload1(): CategoryInterface{
 
 
 
@@ -94,7 +103,7 @@ public constructor (){
 }
 
 
-    public getRootInstance(categoryAbPath: AbPath): CategoryInterface{
+    public getRootInstance$overload2(categoryAbPath: AbPath): CategoryInterface{
 
 
 
@@ -111,11 +120,23 @@ public constructor (){
                     
 }
 
+getInstance(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload1(args[0]);
+   
+    if (args.length === 3 && typeof args[2] === 'string') return this.getInstance$overload2(args[0], args[1], args[2]);
+   
+    if (args.length === 1) return this.getInstance$overload3(args[0]);
+   
+    if (args.length === 3) return this.getInstance$overload4(args[0], args[1], args[2]);
+   
+    if (args.length === 3) return this.getInstance$overload5(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public getInstance$overload1(categoryName: string): CategoryInterface{
 
-    public getInstance(categoryName: string): CategoryInterface{
-
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -125,7 +146,7 @@ public constructor (){
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;;
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -133,10 +154,11 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Category(categoryPropertiesFactoryInterface) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -152,15 +174,16 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getInstance$overload2(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryName: string): CategoryInterface{
 
-    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryName: string): CategoryInterface{
-
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -170,7 +193,7 @@ public constructor (){
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;;
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -178,10 +201,11 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -197,15 +221,16 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getInstance$overload3(node: Node): CategoryInterface{
 
-    public getInstance(node: Node): CategoryInterface{
-
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -215,7 +240,7 @@ public constructor (){
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;;
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -223,10 +248,11 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Category(categoryPropertiesFactoryInterface) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -242,15 +268,16 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getInstance$overload4(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, node: Node): CategoryInterface{
 
-    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, node: Node): CategoryInterface{
-
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -260,7 +287,7 @@ public constructor (){
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;;
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -268,10 +295,11 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
@@ -287,15 +315,16 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getInstance$overload5(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface{
 
-    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface{
-
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -305,7 +334,7 @@ public constructor (){
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;;
+    let categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -313,10 +342,11 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORYERROR))
                         
@@ -332,12 +362,12 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

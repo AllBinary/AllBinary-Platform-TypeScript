@@ -31,12 +31,14 @@ import { AdminConfigurationInterface } from '../../../../../../org/allbinary/bus
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { EmailServerConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
 //not GWT import const EmailServerConfigurationInterface
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -75,7 +77,7 @@ public constructor (subject: string, textBody: string){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
@@ -91,13 +93,13 @@ this.init();
             
     init(){
 
-    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration() as AdminConfigurationInterface;;
+    let adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration() as AdminConfigurationInterface;;
     
 
-    var contextConfigurationInterface: ContextConfigurationInterface = adminConfigurationInterface!.getContextConfigurationInterface()!;;
+    let contextConfigurationInterface: ContextConfigurationInterface = adminConfigurationInterface!.getContextConfigurationInterface()!;;
     
 
-    var emailServerConfigurationInterface: EmailServerConfigurationInterface = contextConfigurationInterface!.getEmailServerConfigurationInterface()!;;
+    let emailServerConfigurationInterface: EmailServerConfigurationInterface = contextConfigurationInterface!.getEmailServerConfigurationInterface()!;;
     
 this.setEmailServerConfigurationInterface(emailServerConfigurationInterface);
     
@@ -105,6 +107,4 @@ this.setEmailServerConfigurationInterface(emailServerConfigurationInterface);
 
 
 }
-
-
 

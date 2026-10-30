@@ -42,23 +42,21 @@
 export interface VelocityInterface extends BasicVelocityInterface {
         
 
-    getMaxForwardVelocity(): number
+    getMaxForwardVelocity(): number;
 
-    getMaxReverseVelocity(): number
+    getMaxReverseVelocity(): number;
 
-    limitMaxXYForwardVelocity()
+    limitMaxXYForwardVelocity(): void;
 
-    limitMaxXYReverseVelocity()
+    limitMaxXYReverseVelocity(): void;
 
-    limitXYToForwardAndReverseMaxVelocity()
+    limitXYToForwardAndReverseMaxVelocity(): void;
 
-    limitMaxXYVelocity(maxVelocity: number)
+    limitMaxXYVelocity(maxVelocity: number): void;
 
-    setMaxForwardVelocity(maxForwardVelocity: number)
+    setMaxForwardVelocity(maxForwardVelocity: number): void;
 
-    setMaxReverseVelocity(maxReverseVelocity: number)
+    setMaxReverseVelocity(maxReverseVelocity: number): void;
 
 }
-
-
 

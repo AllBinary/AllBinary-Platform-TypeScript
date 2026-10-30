@@ -29,9 +29,11 @@ import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js'
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -117,24 +119,24 @@ this.player= player;
 
     public run(){
 
-        try {
-            this.player.start();
+ try { this.player.start();
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

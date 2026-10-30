@@ -44,11 +44,9 @@ import { RotationAnimation } from './RotationAnimation.js';
 export interface RotationAnimationInterfaceCompositeInterface extends IndexedAnimationInterfaceCompositeInterface {
         
 
-    getRotationAnimationInterface(): RotationAnimation
+    getRotationAnimationInterface(): RotationAnimation;
 
-    setFrame(index: number)
+    setFrame(index: number): void;
 
 }
-
-
 

@@ -43,11 +43,9 @@ import { InputAutomationRobotChangeEvent } from '../../../../org/allbinary/input
 export interface InputAutomationRobotChangeListener {
         
 
-    onAdd(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent)
+    onAdd(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent): void;
 
-    onRemove(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent)
+    onRemove(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent): void;
 
 }
-
-
 

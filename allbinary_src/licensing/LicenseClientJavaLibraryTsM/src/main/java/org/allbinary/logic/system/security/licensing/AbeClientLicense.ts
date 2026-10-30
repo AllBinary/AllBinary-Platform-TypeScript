@@ -22,24 +22,30 @@
         
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -75,7 +81,7 @@ export class AbeClientLicense
 
     public static hasRequiredKeys(resultHashtable: ABHashtable<any, any>): boolean{
 
-    var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;;
+    let abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;;
     
 
                         if(resultHashtable!.containsKey(abeClientInformationData!.LICENSEID) && resultHashtable!.containsKey(abeClientInformationData!.LICENSESERVERS) && resultHashtable!.containsKey(abeClientInformationData!.KEY) && resultHashtable!.containsKey(abeClientInformationData!.LICENSE_TYPE))
@@ -119,10 +125,10 @@ public constructor (hashtable: ABHashtable<any, any>){
         this.hashtable= StdUtil.getInstance()!.createHashtable();
     
 
-    var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;;
+    let abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;;
     
 
-    var keyValue: any = hashtable.get(abeClientInformationData!.KEY)!;;
+    let keyValue: any = hashtable.get(abeClientInformationData!.KEY)!;;
     
 
                         if(keyValue != 
@@ -131,7 +137,7 @@ public constructor (hashtable: ABHashtable<any, any>){
                         
                                     {
                                     
-                        if(keyValue instanceof String)
+                        if(((value: any) => typeof value === 'string' || value instanceof String)(keyValue))
                         
                                     {
                                     this.hashtable.put(abeClientInformationData!.KEY, keyValue);
@@ -145,31 +151,31 @@ public constructor (hashtable: ABHashtable<any, any>){
 this.id= hashtable.get(abeClientInformationData!.LICENSEID) as string;
     
 
-    var vector: BasicArrayList = hashtable.get(abeClientInformationData!.LICENSESERVERS) as BasicArrayList;;
+    let vector: BasicArrayList = hashtable.get(abeClientInformationData!.LICENSESERVERS) as BasicArrayList;;
     
 this.servers= new BasicArrayListD();
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.servers.add(vector.get(index));
     
 }
 
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.setSpecial(stringUtil!.getNonNull(hashtable.get(abeClientInformationData!.SPECIAL) as string));
     
 
-    var licenseTypeString: string = stringUtil!.getNonNull(hashtable.get(abeClientInformationData!.LICENSE_TYPE) as string)!;;
+    let licenseTypeString: string = stringUtil!.getNonNull(hashtable.get(abeClientInformationData!.LICENSE_TYPE) as string)!;;
     
 this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeString);
     
@@ -218,7 +224,7 @@ this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeStrin
 
     public isValid(): boolean{
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isEmpty(this.getKey(AbeClientInformationData.getInstance()!.KEY)))
@@ -244,10 +250,10 @@ this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeStrin
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var BREAK: string = "<br/>";;
+    let BREAK: string = "<br/>";;
     
 stringBuffer!.append("License Id: ");
     
@@ -268,20 +274,20 @@ stringBuffer!.append(this.hashtable.toString());
 stringBuffer!.append(BREAK);
     
 
-    var serverVector: BasicArrayList = this.getServers()!;;
+    let serverVector: BasicArrayList = this.getServers()!;;
     
 
-    var size: number = serverVector!.size()!;;
+    let size: number = serverVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var nextServerString: string = serverVector!.get(index) as string;;
+    let nextServerString: string = serverVector!.get(index) as string;;
     
 stringBuffer!.append("Server: ");
     
@@ -327,6 +333,4 @@ this.special= special;
 
 
 }
-
-
 

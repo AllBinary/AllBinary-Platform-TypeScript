@@ -27,6 +27,7 @@ import { Enumeration } from '../../../../../java/util/Enumeration.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
 //not GWT import const GameInfo
@@ -42,12 +43,15 @@ import { RemoteErrorHighScoresSingletonFactory } from '../../../../../org/allbin
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { SoftwareInformation } from '../../../../../org/allbinary/logic/system/SoftwareInformation.js';
 //not GWT import const SoftwareInformation
@@ -57,15 +61,19 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+type EnumerationUtil<T = any, U = any> = typeof EnumerationUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof EnumerationUtil;
 
 
 
@@ -111,12 +119,11 @@ export class RemoteHighScores extends HighScores {
 
     public static getInstancePreload(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean, preload: boolean): HighScores{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var highScores: HighScores = RemoteHighScores.hashTable!.get(gameInfo) as HighScores;;
+ try { 
+    let highScores: HighScores = RemoteHighScores.hashTable!.get(gameInfo) as HighScores;;
     
 
                         if(highScores == 
@@ -137,12 +144,13 @@ RemoteHighScores.hashTable!.put(gameInfo, highScores);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return highScores;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.getInstance(), commonStrings!.GET_INSTANCE, e);
     
@@ -152,8 +160,10 @@ logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.get
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return RemoteErrorHighScoresSingletonFactory.getInstance();;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -203,7 +213,7 @@ RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abe
 this.getList()!.clear();
     
 
-    var vector: BasicArrayList = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES) as BasicArrayList;;
+    let vector: BasicArrayList = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES) as BasicArrayList;;
     
 
                         if(vector != 
@@ -212,29 +222,29 @@ this.getList()!.clear();
                         
                                     {
                                     
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var highScoreVector: BasicArrayList = vector.get(index) as BasicArrayList;;
+    let highScoreVector: BasicArrayList = vector.get(index) as BasicArrayList;;
     
 
-    var displayName: string = highScoreVector!.get(0) as string;;
+    let displayName: string = highScoreVector!.get(0) as string;;
     
 
-    var score: string = highScoreVector!.get(1) as string;;
+    let score: string = highScoreVector!.get(1) as string;;
     
 
-    var longScore: number = Long.parseLong(score)!;;
+    let longScore: number = Number(score)!;;
     
 
-    var highScore: HighScore = new HighScore( -1, displayName, 
+    let highScore: HighScore = new HighScore( -1, displayName, 
                             null, longScore);;
     
 this.getList()!.add(highScore);
@@ -246,16 +256,16 @@ this.getList()!.add(highScore);
                                 
                         else {
                             
-    var NEXT_ELEMENT: string = new StringMaker().append(CommonLabels.getInstance()!.NEXT)!.append("Element: ")!.toString()!;;
+    let NEXT_ELEMENT: string = new StringMaker().append(CommonLabels.getInstance()!.NEXT)!.append("Element: ")!.toString()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var enumeration: Enumeration<any> = hashtable.elements()!;;
+    let enumeration: Enumeration<any> = hashtable.elements()!;;
     
 
-    var nextElement: any;;
+    let nextElement: any;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
@@ -299,6 +309,4 @@ this.ascending= ascending;
 
 
 }
-
-
 

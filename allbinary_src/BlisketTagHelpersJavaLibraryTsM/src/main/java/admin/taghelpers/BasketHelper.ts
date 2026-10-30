@@ -43,6 +43,7 @@ import { WeblisketSession } from '../../org/allbinary/logic/communication/http/r
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -88,7 +89,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 this.pageContext= pageContext;
     
 
-    var storeName: string = this.propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
+    let storeName: string = this.propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(storeName != 
@@ -108,9 +109,8 @@ this.weblisketSession= new WeblisketSession(hashMap, pageContext);
 
     public isBasketEmpty(): Boolean{
 
-        try {
-            
-    var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;;
+ try { 
+    let basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;;
     
 
                         if(basket.getNumberOfItems()!.intValue() <= 0)
@@ -120,7 +120,7 @@ this.weblisketSession= new WeblisketSession(hashMap, pageContext);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -130,15 +130,16 @@ this.weblisketSession= new WeblisketSession(hashMap, pageContext);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -152,14 +153,14 @@ this.weblisketSession= new WeblisketSession(hashMap, pageContext);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

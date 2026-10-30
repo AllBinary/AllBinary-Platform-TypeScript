@@ -25,9 +25,11 @@ import { HashMap } from '../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -55,6 +57,7 @@ import { WeblisketSession } from '../../org/allbinary/logic/communication/http/r
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -92,14 +95,14 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
+    let request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
     
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
 this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), request);
     
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
+    let storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(storeName != 
@@ -137,14 +140,13 @@ this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), reques
 
     public insert(): string{
 
-        try {
-            
-    var values: BasicArrayList = this.quoteRequest!.toVector()!;;
+ try { 
+    let values: BasicArrayList = this.quoteRequest!.toVector()!;;
     
 QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert(values);
     
 
-    var success: string = "New QuoteRequest Successfully added to the QuoteRequest Table";;
+    let success: string = "New QuoteRequest Successfully added to the QuoteRequest Table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -161,12 +163,13 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to add QuoteRequest";;
+    let error: string = "Failed to add QuoteRequest";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -183,21 +186,22 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public update(): string{
 
-        try {
-            
-    var values: HashMap<any, any> = this.quoteRequest!.toHashMap()!;;
+ try { 
+    let values: HashMap<any, any> = this.quoteRequest!.toHashMap()!;;
     
 QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update(this.quoteRequest!.getUserName(), values);
     
 
-    var success: string = "New QuoteRequest Successfully updated";;
+    let success: string = "New QuoteRequest Successfully updated";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -214,12 +218,13 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to update QuoteRequest";;
+    let error: string = "Failed to update QuoteRequest";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -236,8 +241,10 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -252,6 +259,4 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update
 
 
 }
-
-
 

@@ -27,30 +27,39 @@ import { Input } from '../../../../../org/allbinary/game/input/Input.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -132,10 +141,10 @@ this.mappedList!.clear();
 
     public remove(input: Input, mappedToInput: Input){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 stringBuffer!.append(CommonLabels.getInstance()!.START_LABEL);
     
@@ -148,7 +157,7 @@ stringBuffer!.append(stringUtil!.toString(mappedToInput));
 this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
     
 
-    var list: BasicArrayList = this.getMappedInput(input)!;;
+    let list: BasicArrayList = this.getMappedInput(input)!;;
     
 
                         if(list.contains(mappedToInput))
@@ -205,7 +214,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
 
     public add(input: Input, mappedToInput: Input){
 
-    var list: BasicArrayList = this.getMappedInput(input)!;;
+    let list: BasicArrayList = this.getMappedInput(input)!;;
     
 
                         if(!list.contains(mappedToInput))
@@ -233,7 +242,7 @@ this.mappedList!.add(mappedToInput);
 
     public getMappedInput(id: Input): BasicArrayList{
 
-    var mappingInputCanBeNullList: any = this.hashtable.get(id);;
+    let mappingInputCanBeNullList: any = this.hashtable.get(id);;
     
 
                         if(mappingInputCanBeNullList == 
@@ -242,7 +251,7 @@ this.mappedList!.add(mappedToInput);
                         
                                     {
                                     
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 this.hashtable.put(id, list);
     
@@ -275,6 +284,4 @@ this.hashtable.put(id, list);
 
 
 }
-
-
 

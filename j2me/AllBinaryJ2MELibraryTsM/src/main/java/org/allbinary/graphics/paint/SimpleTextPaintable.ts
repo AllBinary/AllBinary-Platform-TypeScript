@@ -94,7 +94,7 @@ this.basicColor= basicColor;
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.topScoresWidth= (font.stringWidth(this.text)>>1);
     
@@ -109,7 +109,7 @@ this.myFontProcessor= MyFontProcessor.getInstance();
 this.myFontProcessor!.process(graphics);
     
 
-    var width: number = this.displayInfoSingleton!.getLast()[this.displayInfoSingleton!.WIDTH]!;;
+    let width: number = this.displayInfoSingleton!.getLast()[this.displayInfoSingleton!.WIDTH]!;;
     
 graphics.setColor(this.getBasicColorP()!.intValue());
     
@@ -153,6 +153,4 @@ this.myFontProcessor= this.updateMyFontProcessor;
 
 
 }
-
-
 

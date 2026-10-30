@@ -42,9 +42,7 @@
 export interface ScoreableInterfaceCompositeInterface {
         
 
-    getScoreableInterface(): Scoreable
+    getScoreableInterface(): Scoreable;
 
 }
-
-
 

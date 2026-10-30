@@ -27,27 +27,34 @@ import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Tokenizer } from '../../../../../../../../../org/allbinary/logic/string/tokens/Tokenizer.js';
 //not GWT import const Tokenizer
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -89,34 +96,36 @@ public constructor (result: string){
 
             super();
         
-        try {
-            this.result= result;
+ try { this.result= result;
     
 
-    var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.AMPERSAND);;
+    let tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.AMPERSAND);;
     
 
-    var tokens: BasicArrayList = tokenizer.getTokensFromString(result, new BasicArrayListD())!;;
+    let tokens: BasicArrayList = tokenizer.getTokensFromString(result, new BasicArrayListD())!;;
     
 
-    var tokenizer2: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.EQUALS);;
+    let tokenizer2: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.EQUALS);;
     
 
-    var hashtable: ABHashtable<any, any> = tokenizer2.getTokens(tokens)!;;
+    let hashtable: ABHashtable<any, any> = tokenizer2.getTokens(tokens)!;;
     
 this.keyValuePairs!.putAll(hashtable);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var exceptionMessage: string = "TransactionResult Constructor Failed";;
+    let exceptionMessage: string = "TransactionResult Constructor Failed";;
     
 this.logUtil!.putF(exceptionMessage, this, this.commonStrings!.CONSTRUCTOR);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -152,10 +161,10 @@ this.result= "Needs to have the hashmap converted to string for other constructo
 
     getAllPossibleKeys(): BasicArrayList{
 
-    var paymentTransactionKeysFactory: PaymentTransactionKeysFactory = PaymentTransactionKeysFactory.getInstance()!;;
+    let paymentTransactionKeysFactory: PaymentTransactionKeysFactory = PaymentTransactionKeysFactory.getInstance()!;;
     
 
-    var verisignResponseKeys: BasicArrayList = new BasicArrayListD();;
+    let verisignResponseKeys: BasicArrayList = new BasicArrayListD();;
     
 verisignResponseKeys!.add(paymentTransactionKeysFactory!.RESULT.toString());
     
@@ -212,23 +221,23 @@ verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION7.toString());
 
     public getValues(): BasicArrayList{
 
-    var keyVector: BasicArrayList = this.getAllPossibleKeys()!;;
+    let keyVector: BasicArrayList = this.getAllPossibleKeys()!;;
     
 
-    var valueVector: BasicArrayList = new BasicArrayListD();;
+    let valueVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = keyVector!.size()!;;
+    let size: number = keyVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var key: string = keyVector!.get(i) as string;;
+    let key: string = keyVector!.get(i) as string;;
     
 
                         if(this.keyValuePairs!.containsKey(key))
@@ -241,7 +250,7 @@ verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION7.toString());
                                 
                         else {
                             
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 valueVector!.add(stringUtil!.EMPTY_STRING);
     
@@ -470,6 +479,4 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
 }
-
-
 

@@ -33,9 +33,11 @@ import { InputFactory } from '../../../../../org/allbinary/game/input/InputFacto
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -103,24 +105,24 @@ private constructor (){
 
     public init(){
 
-    var nullUtil: NullUtil = NullUtil.getInstance()!;;
+    let nullUtil: NullUtil = NullUtil.getInstance()!;;
     
 
-    var size: number = InputFactory.getInstance()!.MAX;;
+    let size: number = InputFactory.getInstance()!.MAX;;
     
 
 
 
 
                         for (
-    var index: number = this.MAX_SOURCES;--index >= 0; )
+    let index: number = this.MAX_SOURCES;--index >= 0; )
         {
 
 
 
 
                         for (
-    var index2: number = size;--index2 >= 0; )
+    let index2: number = size;--index2 >= 0; )
         {
 this.ARRAY[index]![index2]= GameKeyEvent.createEvent(nullUtil!.NULL_OBJECT, index, index2);
     
@@ -135,7 +137,7 @@ this.ARRAY[index]![index2]= GameKeyEvent.createEvent(nullUtil!.NULL_OBJECT, inde
             
     public getInstanceForKey(anyType: GameKeyEventSourceInterface, key: number): GameKeyEvent{
 
-    var gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![key]!;;
+    let gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![key]!;;
     
 
 
@@ -150,7 +152,7 @@ this.ARRAY[index]![index2]= GameKeyEvent.createEvent(nullUtil!.NULL_OBJECT, inde
             
     public getInstanceForInput(anyType: GameKeyEventSourceInterface, input: Input): GameKeyEvent{
 
-    var gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![input.getId()]!;;
+    let gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![input.getId()]!;;
     
 
 
@@ -162,6 +164,4 @@ this.ARRAY[index]![index2]= GameKeyEvent.createEvent(nullUtil!.NULL_OBJECT, inde
 
 
 }
-
-
 

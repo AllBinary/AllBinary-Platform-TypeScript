@@ -88,5 +88,3 @@ public constructor (basicColor: BasicColor){
 
 }
 
-
-

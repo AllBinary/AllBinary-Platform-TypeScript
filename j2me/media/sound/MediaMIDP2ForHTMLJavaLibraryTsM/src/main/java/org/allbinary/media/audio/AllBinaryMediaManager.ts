@@ -45,9 +45,11 @@ import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -109,10 +111,10 @@ export class AllBinaryMediaManager
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;;
+    let commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INIT);
     
@@ -204,6 +206,4 @@ private constructor (){
 
 
 }
-
-
 

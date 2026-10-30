@@ -49,21 +49,27 @@ import { MyCommandInterface } from '../../../../../org/allbinary/graphics/displa
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABStack } 
 const ABStack = globalThis.org.allbinary.util.ABStack;
+type ABStack<T = any, U = any> = typeof ABStack extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABStack;
 
 
 
@@ -127,17 +133,19 @@ public constructor (commandListener: CommandListener, formTitle: string, backgro
 this.commandStack= StdUtil.getInstance()!.createStack();
     
 
-        try {
-            this.repaintProcessor!.process();
+ try { this.repaintProcessor!.process();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -185,14 +193,14 @@ super.addCommand(command);
 
     public removeAllCommands(){
 
-    var size: number = this.commandStack!.size()!;;
+    let size: number = this.commandStack!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 super.removeCommand(this.commandStack!.pop() as Command);
     
@@ -202,6 +210,4 @@ super.removeCommand(this.commandStack!.pop() as Command);
 
 
 }
-
-
 

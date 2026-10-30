@@ -33,6 +33,7 @@ import { MethodUtil } from '../../../../../../org/allbinary/logic/java/anyType/M
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -57,8 +58,15 @@ export class ClassUtil
             extends Object
          {
         
-
-    public static viewAll(anyType: any = {}, lineBreak: string): string{
+static viewAll(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.viewAll$overload1(args[0], args[1]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.viewAll$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: viewAll'); }
+  
+    public static viewAll$overload1(anyType: any, lineBreak: string): string{
 
                         if(anyType != 
                                     null
@@ -80,7 +88,7 @@ export class ClassUtil
 }
 
 
-    public static viewAll(myClass: Function, lineBreak: string): string{
+    public static viewAll$overload2(myClass: Function, lineBreak: string): string{
 
                         if(myClass != 
                                     null
@@ -88,10 +96,10 @@ export class ClassUtil
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var classes: Function[] = myClass!.getClasses()!;;
+    let classes: Function[] = myClass!.getClasses()!;;
     
 stringBuffer!.append(lineBreak);
     
@@ -118,7 +126,7 @@ stringBuffer!.append(lineBreak);
 
 
                         for (
-    var index: number = 0;index < classes.length; index++)
+    let index: number = 0;index < classes.length; index++)
         {
 stringBuffer!.append("Class: ");
     
@@ -160,6 +168,4 @@ private constructor (){
 
 
 }
-
-
 

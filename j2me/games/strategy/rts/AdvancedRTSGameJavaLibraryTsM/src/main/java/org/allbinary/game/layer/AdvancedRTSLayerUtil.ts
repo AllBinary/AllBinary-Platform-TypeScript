@@ -30,6 +30,7 @@ import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/grap
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -71,7 +72,7 @@ export class AdvancedRTSLayerUtil
 
     public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): ABHashtable<any, any>{
 
-    var hashtable: ABHashtable<any, any> = RTSLayerUtil.getInstance()!.createFakeRTSLayerHashtable(baseRaceTrackGeographicMap)!;;
+    let hashtable: ABHashtable<any, any> = RTSLayerUtil.getInstance()!.createFakeRTSLayerHashtable(baseRaceTrackGeographicMap)!;;
     
 hashtable.put(WorkWaypoint.ID, SmallIntegerSingletonFactory.getInstance()!.getAt(50));
     
@@ -85,6 +86,4 @@ hashtable.put(WorkWaypoint.ID, SmallIntegerSingletonFactory.getInstance()!.getAt
 
 
 }
-
-
 

@@ -44,29 +44,27 @@
 export interface KeyboardActionScriptInputInterface extends ProfileActionScriptInputInterface {
         
 
-    getDelayBetweenKeys(): number
+    getDelayBetweenKeys(): number;
 
-    getKeyArray(): Integer[]
+    getKeyArray(): Integer[];
 
-    isPress(): boolean
+    isPress(): boolean;
 
-    isRelease(): boolean
+    isRelease(): boolean;
 
-    isNormal(): boolean
+    isNormal(): boolean;
 
-    setPress(press: boolean)
+    setPress(press: boolean): void;
 
-    setRelease(release: boolean)
+    setRelease(release: boolean): void;
 
-    setNormal()
+    setNormal(): void;
 
-    getText(): string
+    getText(): string;
 
-    setText(text: string)
+    setText(text: string): void;
 
-    log()
+    log(): void;
 
 }
-
-
 

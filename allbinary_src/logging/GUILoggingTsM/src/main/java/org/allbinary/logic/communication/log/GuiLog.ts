@@ -32,6 +32,7 @@ import { swing } from '../../../../../javax/swing.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -96,13 +97,13 @@ private constructor (){
 
     public showDialog(msg: string){
 
-    var error: JDialog = new JDialog();;
+    let error: JDialog = new JDialog();;
     
 
-    var size: number = msg.length *9;;
+    let size: number = msg.length *9;;
     
 
-    var x: number = size;;
+    let x: number = size;;
     
 
                         if(x > 550)
@@ -114,7 +115,7 @@ error.getContentPane()!.setLayout(new GridLayout(1, 1));
                         
                                     {
                                     
-    var y: number = 550;;
+    let y: number = 550;;
     
 error.setSize(x, y);
     
@@ -128,7 +129,7 @@ error.getContentPane()!.add(new javax.swing.JScrollPane(new javax.swing.JTextAre
                         
                                     {
                                     
-    var y: number = 50;;
+    let y: number = 50;;
     
 error.setSize(x, y);
     
@@ -141,9 +142,20 @@ error.show();
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
+put(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[2] === 'string') return this.put$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 4 && typeof args[0] === 'string' && typeof args[2] === 'string') return this.put$overload2(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string') return this.put$overload3(args[0], args[1], args[2]);
+   
+    if (args.length === 4 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string') return this.put$overload4(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: put'); }
+  //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public put(specialMessage: string, anyType: any = {}, functionName: string): string{
+    public put$overload1(specialMessage: string, anyType: any, functionName: string): string{
 
 
 
@@ -155,11 +167,10 @@ error.show();
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public put(specialMessage: string, anyType: any = {}, functionName: string, exception: Exception): string{
+    public put$overload2(specialMessage: string, anyType: any, functionName: string, exception: Exception): string{
 
-        try {
-            
-    var data: string = this.logFormatUtil!.get(specialMessage, anyType!.constructor.name.toString()!, functionName, exception)!;;
+ try { 
+    let data: string = this.logFormatUtil!.get(specialMessage, anyType!.constructor.name.toString()!, functionName, exception)!;;
     
 this.showDialog(data);
     
@@ -171,10 +182,11 @@ console.log(data);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return data;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, "put", e);
     
 
@@ -183,13 +195,15 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, "put", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Logging Error";
     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public put(specialMessage: string, className: string, functionName: string): string{
+    public put$overload3(specialMessage: string, className: string, functionName: string): string{
 
 
 
@@ -201,11 +215,10 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, "put", e);
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public put(specialMessage: string, className: string, functionName: string, exception: Exception): string{
+    public put$overload4(specialMessage: string, className: string, functionName: string, exception: Exception): string{
 
-        try {
-            
-    var data: string = this.logFormatUtil!.get(specialMessage, className, functionName, exception)!;;
+ try { 
+    let data: string = this.logFormatUtil!.get(specialMessage, className, functionName, exception)!;;
     
 this.showDialog(data);
     
@@ -217,10 +230,11 @@ console.log(data);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return data;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, "put", e);
     
 
@@ -229,12 +243,12 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, "put", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Logging Error";
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

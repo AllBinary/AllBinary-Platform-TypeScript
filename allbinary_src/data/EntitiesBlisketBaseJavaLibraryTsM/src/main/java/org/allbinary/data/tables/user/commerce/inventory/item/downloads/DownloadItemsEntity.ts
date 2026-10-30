@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { EntryData } from '../../../../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
@@ -46,15 +48,18 @@ import { DownloadableItem } from '../../../../../../../../../org/allbinary/busin
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -99,8 +104,7 @@ this.setTableName(this.tableName);
 
     public insert(values: BasicArrayList){
 
-        try {
-            super.insert(values);
+ try { super.insert(values);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -111,10 +115,11 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -124,15 +129,16 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(value: string){
 
-        try {
-            super.deleteWhere(DownloadItemData.ID, value);
+ try { super.deleteWhere(DownloadItemData.ID, value);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -143,10 +149,11 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -156,8 +163,10 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -166,31 +175,38 @@ super.updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID) a
     
 }
 
+getForItem(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getForItem$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.getForItem$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getForItem'); }
+  
+    public getForItem$overload1(id: string): BasicArrayList{
 
-    public getForItem(id: string): BasicArrayList{
-
-    var returnVector: BasicArrayList = new BasicArrayListD();;
+    let returnVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(this.basicItemData!.ID, id);
     
 
-    var vector: BasicArrayList = super.getRows(keysAndValues)!;;
+    let vector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = vector.get(index) as HashMap<any, any>;;
+    let hashMap: HashMap<any, any> = vector.get(index) as HashMap<any, any>;;
     
 returnVector!.add(new DownloadableItem(hashMap));
     
@@ -214,32 +230,32 @@ returnVector!.add(new DownloadableItem(hashMap));
 }
 
 
-    public getForItem(id: string, downloadItemId: string): BasicArrayList{
+    public getForItem$overload2(id: string, downloadItemId: string): BasicArrayList{
 
-    var returnVector: BasicArrayList = new BasicArrayListD();;
+    let returnVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 keysAndValues!.put(this.basicItemData!.ID, id);
     
 keysAndValues!.put(DownloadItemData.ID, downloadItemId);
     
 
-    var vector: BasicArrayList = super.getRows(keysAndValues)!;;
+    let vector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = vector.get(index) as HashMap<any, any>;;
+    let hashMap: HashMap<any, any> = vector.get(index) as HashMap<any, any>;;
     
 returnVector!.add(new DownloadableItem(hashMap));
     
@@ -265,7 +281,7 @@ returnVector!.add(new DownloadableItem(hashMap));
 
     public createTableStatement(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(DownloadItemData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.basicItemData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.ENABLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.SPECIAL_NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.VERSION)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.CHANGES)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(DownloadItemData.SYSTEM)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.PLATFORM)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.LICENSE_FILE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
@@ -301,6 +317,4 @@ stringBuffer!.append(DownloadItemData.FILE)!.append(this.sqlTypeStrings!.MAX_CHA
 
 
 }
-
-
 

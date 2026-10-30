@@ -48,9 +48,7 @@ export interface CapitalEventListenerInterface extends EventListenerInterface {
 
                 //@Throws(Exception.constructor)
             
-    onCapitalChangeEvent(event: CapitalEvent)
+    onCapitalChangeEvent(event: CapitalEvent): void;
 
 }
-
-
 

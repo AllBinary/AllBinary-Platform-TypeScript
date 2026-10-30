@@ -45,31 +45,29 @@ import { StreetAddress } from '../../../../../../../org/allbinary/business/user/
 export interface OrderItemInterface extends ItemInterface {
         
 
-    setGroup(value: string)
+    setGroup(value: string): void;
 
-    setTax(value: string)
+    setTax(value: string): void;
 
-    setShippingType(value: string)
+    setShippingType(value: string): void;
 
-    setShippingCost(value: string)
+    setShippingCost(value: string): void;
 
-    setShippingAddress(value: StreetAddress)
+    setShippingAddress(value: StreetAddress): void;
 
-    setSpecial(value: string)
+    setSpecial(value: string): void;
 
-    getGroup(): string
+    getGroup(): string;
 
-    getTax(): string
+    getTax(): string;
 
-    getShippingType(): string
+    getShippingType(): string;
 
-    getShippingCost(): string
+    getShippingCost(): string;
 
-    getShippingAddress(): StreetAddress
+    getShippingAddress(): StreetAddress;
 
-    getSpecial(): string
+    getSpecial(): string;
 
 }
-
-
 

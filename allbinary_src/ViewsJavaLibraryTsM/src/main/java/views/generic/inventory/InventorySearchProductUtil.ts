@@ -24,6 +24,7 @@
         
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { BasicItemView } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js';
 //not GWT import const BasicItemView
@@ -42,6 +43,7 @@ import { XmlDocumentHelper } from '../../../org/allbinary/data/tree/dom/document
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SearchRequest } from '../../../org/allbinary/logic/control/search/SearchRequest.js';
 //not GWT import const SearchRequest
@@ -66,6 +68,7 @@ import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/tran
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -113,12 +116,11 @@ export class InventorySearchProductUtil
             
     public getProduct(abeClientInformation: AbeClientInformationInterface, searchRequest: SearchRequest, product: string): string{
 
-        try {
-            
-    var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
+ try { 
+    let inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var itemInterface: ItemInterface = inventoryEntityInterface!.getItem(product)!;;
+    let itemInterface: ItemInterface = inventoryEntityInterface!.getItem(product)!;;
     
 
                         if(itemInterface != 
@@ -127,15 +129,15 @@ export class InventorySearchProductUtil
                         
                                     {
                                     
-    var viewDocumentInterface: TransformDocumentInterface = TransformStoreDocumentFactory.getInstance(searchRequest)!;;
+    let viewDocumentInterface: TransformDocumentInterface = TransformStoreDocumentFactory.getInstance(searchRequest)!;;
     
 viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterface, new BasicArrayListD()).toXmlNode(viewDocumentInterface!.getDoc()));
     
 
-    var success: string = XmlDocumentHelper.toString(viewDocumentInterface!.getDoc())!;;
+    let success: string = XmlDocumentHelper.toString(viewDocumentInterface!.getDoc())!;;
     
 
-    var outputStr: string = new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).translate(success)!;;
+    let outputStr: string = new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).translate(success)!;;
     
 
 
@@ -156,10 +158,11 @@ viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterfac
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGINGERROR))
                         
@@ -174,12 +177,12 @@ viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterfac
 
                             throw new Exception("Failed to getProduct");
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

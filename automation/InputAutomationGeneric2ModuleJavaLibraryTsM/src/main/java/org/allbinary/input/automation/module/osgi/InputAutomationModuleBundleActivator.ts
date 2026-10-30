@@ -53,12 +53,14 @@ import { InputAutomationModuleFactoryInterface } from '../../../../../../org/all
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { OSGIActivatorUtil } from '../../../../../../org/allbinary/osgi/OSGIActivatorUtil.js';
 //not GWT import const OSGIActivatorUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -115,7 +117,7 @@ public constructor (){
             
     getInputAutomationConfigurationModuleChangeListener(context: BundleContext): InputAutomationConfigurationModuleChangeListener{
 
-    var serviceReference: ServiceReference = context.getServiceReference(InputAutomationConfigurationModuleChangeListener.constructor.toString()!)!;;
+    let serviceReference: ServiceReference = context.getServiceReference(InputAutomationConfigurationModuleChangeListener.toString()!)!;;
     
 
                         if(serviceReference != 
@@ -124,7 +126,7 @@ public constructor (){
                         
                                     {
                                     
-    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = context.getService(serviceReference) as InputAutomationConfigurationModuleChangeListener;;
+    let inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = context.getService(serviceReference) as InputAutomationConfigurationModuleChangeListener;;
     
 
                         if(inputAutomationConfigurationModuleChangeListener == 
@@ -143,7 +145,7 @@ public constructor (){
                                     }
                                 
                         else {
-                            this.logUtil!.putF("No ServiceReference: " +InputAutomationConfigurationModuleChangeListener.constructor.toString()!, this, "addModules");
+                            this.logUtil!.putF("No ServiceReference: " +InputAutomationConfigurationModuleChangeListener.toString()!, this, "addModules");
     
 
 
@@ -159,11 +161,10 @@ public constructor (){
 
     addModules(context: BundleContext){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "addModules");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "addModules");
     
 
-    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;;
+    let inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;;
     
 
                         if(inputAutomationConfigurationModuleChangeListener != 
@@ -176,10 +177,10 @@ public constructor (){
 
 
                         for (
-    var index: number = 0;index < this.getInputAutomationModuleInterface()!.length; index++)
+    let index: number = 0;index < this.getInputAutomationModuleInterface()!.length; index++)
         {
 
-    var inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = InputAutomationConfigurationUtil.getChangeEvent(this.getInputAutomationModuleInterface()[index]!)!;;
+    let inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = InputAutomationConfigurationUtil.getChangeEvent(this.getInputAutomationModuleInterface()[index]!)!;;
     
 inputAutomationConfigurationModuleChangeListener!.onAdd(inputAutomationConfigurationModuleChangeEvent);
     
@@ -188,32 +189,34 @@ inputAutomationConfigurationModuleChangeListener!.onAdd(inputAutomationConfigura
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "addModules");
     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
     public registerAsService(bundleContext: BundleContext){
-OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationModuleServiceInterface.constructor.toString()!);
+OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationModuleServiceInterface.toString()!);
     
 }
 
 
     removeModules(context: BundleContext){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "removeModules");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "removeModules");
     
 
-    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;;
+    let inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;;
     
 
                         if(inputAutomationConfigurationModuleChangeListener != 
@@ -226,10 +229,10 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
 
 
                         for (
-    var index: number = 0;index < this.getInputAutomationModuleInterface()!.length; index++)
+    let index: number = 0;index < this.getInputAutomationModuleInterface()!.length; index++)
         {
 
-    var inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = InputAutomationConfigurationUtil.getChangeEvent(this.getInputAutomationModuleInterface()[index]!)!;;
+    let inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = InputAutomationConfigurationUtil.getChangeEvent(this.getInputAutomationModuleInterface()[index]!)!;;
     
 inputAutomationConfigurationModuleChangeListener!.onRemove(inputAutomationConfigurationModuleChangeEvent);
     
@@ -238,14 +241,17 @@ inputAutomationConfigurationModuleChangeListener!.onRemove(inputAutomationConfig
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "removeModules");
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -304,6 +310,4 @@ this.serviceFactory= serviceObject;
 
 
 }
-
-
 

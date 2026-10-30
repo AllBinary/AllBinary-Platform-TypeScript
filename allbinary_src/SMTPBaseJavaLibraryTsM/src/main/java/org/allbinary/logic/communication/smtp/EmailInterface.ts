@@ -51,15 +51,13 @@ import { DomDocumentMappingInterface } from '../../../../../org/allbinary/data/t
 export interface EmailInterface extends DomNodeInterface, DomDocumentMappingInterface {
         
 
-    getDebugInfo(): string
+    getDebugInfo(): string;
 
-    getMimeMessage(): MimeMessage
+    getMimeMessage(): MimeMessage;
 
                 //@Throws(Exception.constructor)
             
-    log(): string
+    log(): string;
 
 }
-
-
 

@@ -45,9 +45,7 @@ import { EventListenerInterface } from '../../../../../../org/allbinary/logic/ut
 export interface TechEventListenerInterface extends EventListenerInterface {
         
 
-    onTechEvent(event: AllBinaryEventObject)
+    onTechEvent(event: AllBinaryEventObject): void;
 
 }
-
-
 

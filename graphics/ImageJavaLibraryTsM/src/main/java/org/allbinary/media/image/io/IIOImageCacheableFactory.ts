@@ -58,7 +58,7 @@ public constructor (){
         }
 
 
-    public getInstance(key: any = {}): CacheableInterface{
+    public getInstance(key: any): CacheableInterface{
 
 
 
@@ -69,6 +69,4 @@ public constructor (){
 
 
 }
-
-
 

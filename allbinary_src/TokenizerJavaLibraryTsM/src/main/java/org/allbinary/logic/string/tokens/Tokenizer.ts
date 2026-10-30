@@ -27,18 +27,23 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -104,13 +109,13 @@ this.endSep= endSep;
 
     public getInsideSep(string: string): BasicArrayList{
 
-    var tokenList: BasicArrayList = new BasicArrayListD();;
+    let tokenList: BasicArrayList = new BasicArrayListD();;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var size: number = string.length!;;
+    let size: number = string.length!;;
     
 
         while(index < size)
@@ -122,7 +127,7 @@ index= string.indexOf(this.sep, index);
                         
                                     {
                                     
-    var end: number = string.indexOf(this.endSep, index +this.sep.length)!;;
+    let end: number = string.indexOf(this.endSep, index +this.sep.length)!;;
     
 
                         if(end !=  -1)
@@ -162,10 +167,10 @@ index= end +this.endSep!.length;
 
     public getTokensFromString(string: string, tokenVector: BasicArrayList): BasicArrayList{
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var end: number = 0;;
+    let end: number = 0;;
     
 
         while(index < string.length)
@@ -205,23 +210,23 @@ break;
 
     public getTokens(stringVector: BasicArrayList): ABHashtable<any, any>{
 
-    var tokenHashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    let tokenHashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 
-    var string: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let string: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
-    var end: number = 0;;
+    let end: number = 0;;
     
 
-    var size: number = stringVector!.size()!;;
+    let size: number = stringVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 string= stringVector!.objectArray[index]! as string;
     
@@ -248,6 +253,4 @@ end= string.indexOf(this.sep);
 
 
 }
-
-
 

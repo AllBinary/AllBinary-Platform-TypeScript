@@ -30,9 +30,11 @@ import { Set } from '../../../../../../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
@@ -42,9 +44,11 @@ import { DomSearchHelper } from '../../../../../../../../org/allbinary/data/tree
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -105,26 +109,26 @@ public constructor (node: Node){
         this.userEmailEventsConfigurationInterface= new UserEmailEventsConfiguration() as UserEmailEventsConfigurationInterface;
     
 
-    var childNodeList: NodeList = node.getChildNodes()!;;
+    let childNodeList: NodeList = node.getChildNodes()!;;
     
 
-    var emailEventConfigurationNodeVector: BasicArrayList = DomSearchHelper.getAllNodesNoThrow(UserEmailEventConfigurationData.NAME, childNodeList)!;;
+    let emailEventConfigurationNodeVector: BasicArrayList = DomSearchHelper.getAllNodesNoThrow(UserEmailEventConfigurationData.NAME, childNodeList)!;;
     
 
-    var size: number = emailEventConfigurationNodeVector!.size()!;;
+    let size: number = emailEventConfigurationNodeVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var userEmailConfigurationNode: Node = emailEventConfigurationNodeVector!.get(index) as Node;;
+    let userEmailConfigurationNode: Node = emailEventConfigurationNodeVector!.get(index) as Node;;
     
 
-    var userEmailEventConfigurationView: UserEmailEventConfigurationView = new UserEmailEventConfigurationView(userEmailConfigurationNode);;
+    let userEmailEventConfigurationView: UserEmailEventConfigurationView = new UserEmailEventConfigurationView(userEmailConfigurationNode);;
     
 this.userEmailEventsConfigurationInterface!.addUserEmailEventConfiguration(userEmailEventConfigurationView!.getUserEmailEventConfigurationInterface());
     
@@ -155,16 +159,16 @@ public constructor (userEmailEventsConfigurationInterface: UserEmailEventsConfig
             
     public toXmlNode(document: Document): Node{
 
-    var userEmailConfigurationMapping: UserEmailEventsConfigurationMapping = new UserEmailEventsConfigurationMapping(this.userEmailEventsConfigurationInterface);;
+    let userEmailConfigurationMapping: UserEmailEventsConfigurationMapping = new UserEmailEventsConfigurationMapping(this.userEmailEventsConfigurationInterface);;
     
 
-    var node: Node = document.createElement(UserEmailEventsConfigurationData.NAME)!;;
+    let node: Node = document.createElement(UserEmailEventsConfigurationData.NAME)!;;
     
 
-    var emailEventHashMap: HashMap<any, any> = this.getUserEmailEventsConfigurationInterface()!.getEventConfigurationHashMap()!;;
+    let emailEventHashMap: HashMap<any, any> = this.getUserEmailEventsConfigurationInterface()!.getEventConfigurationHashMap()!;;
     
 
-    var set: Set = emailEventHashMap!.keys()!;;
+    let set: Set = emailEventHashMap!.keys()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
@@ -176,10 +180,10 @@ public constructor (userEmailEventsConfigurationInterface: UserEmailEventsConfig
                                     }
                                 
 
-    var eventNameArray: any[] = set.toArray()!;;
+    let eventNameArray: any[] = set.toArray()!;;
     
 
-    var size: number = eventNameArray!.length
+    let size: number = eventNameArray!.length
                 ;;
     
 
@@ -187,16 +191,16 @@ public constructor (userEmailEventsConfigurationInterface: UserEmailEventsConfig
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var eventName: string = eventNameArray[index]! as string;;
+    let eventName: string = eventNameArray[index]! as string;;
     
 
-    var userEmailEventsConfigurationInterface: UserEmailEventConfigurationInterface = emailEventHashMap!.get(eventName) as UserEmailEventConfigurationInterface;;
+    let userEmailEventsConfigurationInterface: UserEmailEventConfigurationInterface = emailEventHashMap!.get(eventName) as UserEmailEventConfigurationInterface;;
     
 
-    var userEmailEventConfigurationView: UserEmailEventConfigurationView = new UserEmailEventConfigurationView(userEmailEventsConfigurationInterface);;
+    let userEmailEventConfigurationView: UserEmailEventConfigurationView = new UserEmailEventConfigurationView(userEmailEventsConfigurationInterface);;
     
 node.appendChild(userEmailEventConfigurationView!.toXmlNode(document));
     
@@ -212,6 +216,4 @@ node.appendChild(userEmailEventConfigurationView!.toXmlNode(document));
 
 
 }
-
-
 

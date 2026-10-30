@@ -31,8 +31,15 @@ export class Objects
             extends Object
          {
         
-
-    public static <T> requireNonNull(value: T): T{
+static requireNonNull(...args: any[]): any {
+   
+    if (args.length === 1) return this.requireNonNull$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.requireNonNull$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: requireNonNull'); }
+  
+    public static <T> requireNonNull$overload1(value: T): T{
 
                         if(value == 
                                     null
@@ -60,7 +67,7 @@ export class Objects
 }
 
 
-    public static <T> requireNonNull(value: T, message: string): T{
+    public static <T> requireNonNull$overload2(value: T, message: string): T{
 
                         if(value == 
                                     null
@@ -89,6 +96,4 @@ export class Objects
 
 
 }
-
-
 

@@ -68,7 +68,7 @@ public constructor (){
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 
-    var artificialIntelligenceCompositeInterface: ArtificialIntelligenceCompositeInterface = layerInterface as ArtificialIntelligenceCompositeInterface;;
+    let artificialIntelligenceCompositeInterface: ArtificialIntelligenceCompositeInterface = layerInterface as ArtificialIntelligenceCompositeInterface;;
     
 artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.processAI(allBinaryLayerManager);
     
@@ -105,6 +105,4 @@ artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.
 
 
 }
-
-
 

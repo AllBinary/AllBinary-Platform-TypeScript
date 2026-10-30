@@ -23,9 +23,11 @@ import { V } from '../../../org/allbinary/graph/V.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -61,10 +63,10 @@ export class CellPosition extends V {
 
     public static toStringColRow(i_column: number, i_row: number): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 stringBuffer!.append(commonSeps!.PARENTHESIS_OPEN);
     
@@ -144,6 +146,4 @@ this.id= (row *columns) +column;
 
 
 }
-
-
 

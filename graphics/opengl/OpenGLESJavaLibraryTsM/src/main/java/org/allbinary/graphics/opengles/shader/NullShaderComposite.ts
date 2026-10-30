@@ -94,5 +94,3 @@ this.useProgramShaderOpenGLProcessor= NullOpenGLProcessorFactory.getInstance();
 
 }
 
-
-

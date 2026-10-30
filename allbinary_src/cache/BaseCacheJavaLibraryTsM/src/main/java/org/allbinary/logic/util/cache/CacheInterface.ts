@@ -48,17 +48,15 @@ export interface CacheInterface {
 
                 //@Throws(Exception.constructor)
             
-    add(cacheableInterface: CacheableInterface)
+    add(cacheableInterface: CacheableInterface): void;
 
                 //@Throws(Exception.constructor)
             
-    addArray(cacheableInterfaces: CacheableInterface[])
+    addArray(cacheableInterfaces: CacheableInterface[]): void;
 
                 //@Throws(Exception.constructor)
             
-    clear()
+    clear(): void;
 
 }
-
-
 

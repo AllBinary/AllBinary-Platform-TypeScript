@@ -24,6 +24,7 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { GPoint } from '../../../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
@@ -71,16 +72,16 @@ export class RaceTrackStartPointUtil
             
     public static get(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, index: number): GPoint{
 
-    var list: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;;
+    let list: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;;
     
 
-    var startPathFindingNode: PathFindingNode = list.get(index) as PathFindingNode;;
+    let startPathFindingNode: PathFindingNode = list.get(index) as PathFindingNode;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = startPathFindingNode!.geographicMapCellPosition;;
+    let geographicMapCellPosition: GeographicMapCellPosition = startPathFindingNode!.geographicMapCellPosition;;
     
 
-    var point: GPoint = geographicMapCellPosition!.getPoint()!;;
+    let point: GPoint = geographicMapCellPosition!.getPoint()!;;
     
 
 
@@ -92,6 +93,4 @@ export class RaceTrackStartPointUtil
 
 
 }
-
-
 

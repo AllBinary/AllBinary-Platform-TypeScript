@@ -25,9 +25,11 @@ import { XmlDocumentHelper } from '../../../org/allbinary/data/tree/dom/document
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { TransformFactory } from '../../../org/allbinary/logic/visual/transform/TransformFactory.js';
 //not GWT import const TransformFactory
@@ -58,6 +60,7 @@ import { TransformTemplateInterface } from '../../../org/allbinary/logic/visual/
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { Document } from '../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -111,8 +114,7 @@ public constructor (transformInfoInterface: Object){
             
     public view(): string{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -122,17 +124,17 @@ public constructor (transformInfoInterface: Object){
                                     }
                                 
 
-    var rootTransformInfoInterface: TransformInfoInterface = new TransformInfoHttp(this.getTransformInfoInterface() as TransformInfoHttp) as TransformInfoInterface;;
+    let rootTransformInfoInterface: TransformInfoInterface = new TransformInfoHttp(this.getTransformInfoInterface() as TransformInfoHttp) as TransformInfoInterface;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.getTransformInfoInterface()!.getStoreName());
     
 stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
 
-    var nameStart: string = stringBuffer!.toString()!;;
+    let nameStart: string = stringBuffer!.toString()!;;
     
 
                         if(this.getTransformInfoInterface()!.getName()!.indexOf(GeneratorTransformInfoData.NAME) > 0)
@@ -162,7 +164,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
                         }
                             
 
-    var overrideObjectConfigDocument: Document = this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc()!;;
+    let overrideObjectConfigDocument: Document = this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -174,19 +176,19 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
                                     }
                                 
 
-    var transformFactory: TransformFactory = TransformFactory.getInstance()!;;
+    let transformFactory: TransformFactory = TransformFactory.getInstance()!;;
     
 
-    var rootComponentInterface: TransformInterface = transformFactory!.getInstance(this.abeClientInformation, rootTransformInfoInterface!.getName(), rootTransformInfoInterface)!;;
+    let rootComponentInterface: TransformInterface = transformFactory!.getInstance(this.abeClientInformation, rootTransformInfoInterface!.getName(), rootTransformInfoInterface)!;;
     
 
-    var transformTemplateInterface: TransformTemplateInterface = rootComponentInterface as TransformTemplateInterface;;
+    let transformTemplateInterface: TransformTemplateInterface = rootComponentInterface as TransformTemplateInterface;;
     
 
-    var componentInterface: TransformInterface = transformFactory!.getInstance(this.abeClientInformation, transformTemplateInterface!.getName(), rootComponentInterface!.getTransformInfoInterface())!;;
+    let componentInterface: TransformInterface = transformFactory!.getInstance(this.abeClientInformation, transformTemplateInterface!.getName(), rootComponentInterface!.getTransformInfoInterface())!;;
     
 
-    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(this.abeClientInformation, componentInterface!.getTransformInfoInterface(), overrideObjectConfigDocument)!;;
+    let transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(this.abeClientInformation, componentInterface!.getTransformInfoInterface(), overrideObjectConfigDocument)!;;
     
 componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(transformInfoObjectConfigInterface);
     
@@ -205,10 +207,11 @@ componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(transf
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return componentInterface!.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -223,12 +226,12 @@ componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(transf
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

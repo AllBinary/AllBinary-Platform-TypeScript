@@ -46,9 +46,7 @@ import { EventListenerInterface } from '../../../../org/allbinary/logic/util/eve
 export interface GameMidletEventListener extends EventListenerInterface {
         
 
-    onGameEnd(eventObject: AllBinaryEventObject)
+    onGameEnd(eventObject: AllBinaryEventObject): void;
 
 }
-
-
 

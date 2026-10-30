@@ -28,15 +28,19 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -94,30 +98,32 @@ this.threadPool!.threadStarted();
         while(true)
         {
 
-    var task2: Runnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;;
+    let task2: Runnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;;
     
 
-        try {
-            task2= this.threadPool!.getTask();
+ try { task2= this.threadPool!.getTask();
     
 this.threadPool!.runningTask= true;
     
 this.threadPool!.startTask(task2);
     
+ }
+ catch (caught: any) {
+ if (caught instanceof InterruptedException) {
+  const ex = caught;
+  
 
-                //: 
-} catch(ex) 
-            {
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.putF(this.INTERRUPT_EXCEPTION, this, this.commonStrings!.RUN);
     
 break;
 
                     
-}
 
+ }
+  else { throw caught; } }
+ 
 
                         if(task2 == this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE)
                         
@@ -129,24 +135,26 @@ break;
                                     }
                                 
 
-        try {
-            task2.run();
+ try { task2.run();
     
 this.threadPool!.completedTask(task2);
     
 this.threadPool!.runningTask= false;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.put(new StringMaker().append(this.commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(task2))!.toString(), this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
 this.threadPool!.threadStopped();
@@ -155,6 +163,4 @@ this.threadPool!.threadStopped();
 
 
 }
-
-
 

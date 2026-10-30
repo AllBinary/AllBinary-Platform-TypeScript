@@ -41,12 +41,15 @@ import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/do
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -109,51 +112,51 @@ public constructor (downloadableItem: DownloadableItem){
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = this.downloadableItem!.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.downloadableItem!.toHashMap()!;;
     
 
-    var totalTime: number = this.downloadableItem!.getValidTime()!.longValue()!;;
+    let totalTime: number = this.downloadableItem!.getValidTime()!.longValue()!;;
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var year: number = calendar.get(Calendar.YEAR)!;;
+    let year: number = calendar.get(Calendar.YEAR)!;;
     
 
-    var month: number = calendar.get(Calendar.MONTH)!;;
+    let month: number = calendar.get(Calendar.MONTH)!;;
     
 
-    var day: number = calendar.get(Calendar.DAY_OF_MONTH)!;;
+    let day: number = calendar.get(Calendar.DAY_OF_MONTH)!;;
     
 
-    var hour: number = calendar.get(Calendar.HOUR)!;;
+    let hour: number = calendar.get(Calendar.HOUR)!;;
     
 
-    var minute: number = calendar.get(Calendar.MINUTE)!;;
+    let minute: number = calendar.get(Calendar.MINUTE)!;;
     
 
-    var second: number = calendar.get(Calendar.SECOND)!;;
+    let second: number = calendar.get(Calendar.SECOND)!;;
     
 calendar.setTimeInMillis(calendar.getTimeInMillis() +totalTime);
     
 
-    var yearDelta: number = calendar.get(Calendar.YEAR)!;;
+    let yearDelta: number = calendar.get(Calendar.YEAR)!;;
     
 
-    var monthDelta: number = calendar.get(Calendar.MONTH)!;;
+    let monthDelta: number = calendar.get(Calendar.MONTH)!;;
     
 
-    var dayDelta: number = calendar.get(Calendar.DAY_OF_MONTH)!;;
+    let dayDelta: number = calendar.get(Calendar.DAY_OF_MONTH)!;;
     
 
-    var hourDelta: number = calendar.get(Calendar.HOUR)!;;
+    let hourDelta: number = calendar.get(Calendar.HOUR)!;;
     
 
-    var minuteDelta: number = calendar.get(Calendar.MINUTE)!;;
+    let minuteDelta: number = calendar.get(Calendar.MINUTE)!;;
     
 
-    var secondDelta: number = calendar.get(Calendar.SECOND)!;;
+    let secondDelta: number = calendar.get(Calendar.SECOND)!;;
     
 hashMap!.put(DownloadItemData.VALID_TIME_YEARS, Integer.valueOf(yearDelta -year));
     
@@ -168,19 +171,19 @@ hashMap!.put(DownloadItemData.VALID_TIME_MINUTES, Integer.valueOf(minuteDelta -m
 hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer.valueOf(secondDelta -second));
     
 
-    var keySet: Set = hashMap!.keys()!;;
+    let keySet: Set = hashMap!.keys()!;;
     
 
-    var node: Node = document.createElement(DownloadItemData.NAME)!;;
+    let node: Node = document.createElement(DownloadItemData.NAME)!;;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var nameArray: any[] = keySet!.()!;;
+    let nameArray: any[] = keySet!.()!;;
     
 
-    var size: number = nameArray!.length
+    let size: number = nameArray!.length
                 ;;
     
 
@@ -188,13 +191,13 @@ hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer.valueOf(secondDelta -s
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var name: string = nameArray[index]! as string;;
+    let name: string = nameArray[index]! as string;;
     
 
-    var value: string = hashMap!.get(name) as string;;
+    let value: string = hashMap!.get(name) as string;;
     
 value= stringUtil!.getNonNull(value);
     
@@ -232,6 +235,4 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 
 
 }
-
-
 

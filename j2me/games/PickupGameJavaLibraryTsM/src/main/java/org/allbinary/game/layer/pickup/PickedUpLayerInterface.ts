@@ -45,11 +45,9 @@ import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterfac
 export interface PickedUpLayerInterface extends LayerInterface {
         
 
-    getPickedUpLayerInterfaceFactoryInterface(): PickedUpLayerInterfaceFactoryInterface
+    getPickedUpLayerInterfaceFactoryInterface(): PickedUpLayerInterfaceFactoryInterface;
 
-    setPickedUp()
+    setPickedUp(): void;
 
 }
-
-
 

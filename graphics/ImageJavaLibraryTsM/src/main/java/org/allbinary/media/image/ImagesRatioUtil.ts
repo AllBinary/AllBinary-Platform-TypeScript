@@ -30,9 +30,11 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 
 
@@ -88,20 +90,20 @@ private constructor (){
 
     public isEqual(bufferedImageArray: BufferedImage[], totalImages: number): boolean{
 
-    var end: number = totalImages;;
+    let end: number = totalImages;;
     
 
                         if(bufferedImageArray!.length < totalImages)
                         end= bufferedImageArray!.length
 
-    var ratio: number = (bufferedImageArray[0]!.getWidth() /bufferedImageArray[0]!.getHeight());;
+    let ratio: number = (bufferedImageArray[0]!.getWidth() /bufferedImageArray[0]!.getHeight());;
     
 
 
 
 
                         for (
-    var index: number = 1;index < end; index++)
+    let index: number = 1;index < end; index++)
         {
 
                         if(ratio != (bufferedImageArray[index]!.getWidth() /bufferedImageArray[index]!.getHeight()))
@@ -129,10 +131,10 @@ private constructor (){
 
     public getAverage(bufferedImageArray: BufferedImage[], totalImages: number): number{
 
-    var ratio: number = 0;;
+    let ratio: number = 0;;
     
 
-    var end: number = totalImages;;
+    let end: number = totalImages;;
     
 
                         if(bufferedImageArray!.length < totalImages)
@@ -142,7 +144,7 @@ private constructor (){
 
 
                         for (
-    var index: number = 0;index < end; index++)
+    let index: number = 0;index < end; index++)
         {
 ratio += (bufferedImageArray[index]!.getWidth() /bufferedImageArray[index]!.getHeight());
     
@@ -156,21 +158,28 @@ ratio += (bufferedImageArray[index]!.getWidth() /bufferedImageArray[index]!.getH
     
 }
 
-
+fudge(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[1] === 'number') return this.fudge$overload1(args[0], args[1]);
+   
+    if (args.length === 3 && typeof args[1] === 'number' && typeof args[2] === 'number') return this.fudge$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: fudge'); }
+  
                 //@Throws(Exception.constructor)
             
-    public fudge(bufferedImage: BufferedImage, ratio: number): BufferedImage{
+    public fudge$overload1(bufferedImage: BufferedImage, ratio: number): BufferedImage{
 
-    var imageRatio: number = (bufferedImage!.getWidth() /bufferedImage!.getHeight());;
+    let imageRatio: number = (bufferedImage!.getWidth() /bufferedImage!.getHeight());;
     
 
-    var point: Point = new Point();;
+    let point: Point = new Point();;
     
 
-    var newHeight: number = bufferedImage!.getHeight()!;;
+    let newHeight: number = bufferedImage!.getHeight()!;;
     
 
-    var newWidth: number = bufferedImage!.getWidth()!;;
+    let newWidth: number = bufferedImage!.getWidth()!;;
     
 
                         if(ratio > imageRatio)
@@ -192,25 +201,25 @@ point.y= (newHeight -bufferedImage!.getHeight()) /2;
                         }
                             
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
+    let commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 this.logUtil!.putF(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: " +newWidth +commonLabels!.HEIGHT_LABEL +bufferedImage!.getHeight() +" newHeight: " +newHeight +" needed ratio: " +(newWidth /newHeight), this, "fudge");
     
 
-    var newBufferedImage: BufferedImage = this.imageUtil!.create(newWidth, newHeight)!;;
+    let newBufferedImage: BufferedImage = this.imageUtil!.create(newWidth, newHeight)!;;
     
 
-    var g: Graphics2D = newBufferedImage!.createGraphics()!;;
+    let g: Graphics2D = newBufferedImage!.createGraphics()!;;
     
 
                         if(point.x > 0)
                         
                                     {
                                     
-    var firstColumnBufferedImage: BufferedImage = bufferedImage!.getSubimage(0, 0, 1, bufferedImage!.getHeight())!;;
+    let firstColumnBufferedImage: BufferedImage = bufferedImage!.getSubimage(0, 0, 1, bufferedImage!.getHeight())!;;
     
 
-    var lastColumnBufferedImage: BufferedImage = bufferedImage!.getSubimage(bufferedImage!.getWidth() -1, 0, 1, bufferedImage!.getHeight())!;;
+    let lastColumnBufferedImage: BufferedImage = bufferedImage!.getSubimage(bufferedImage!.getWidth() -1, 0, 1, bufferedImage!.getHeight())!;;
     
 this.logUtil!.putF("Draw some columns to fill in gap", this, "fudge");
     
@@ -219,7 +228,7 @@ this.logUtil!.putF("Draw some columns to fill in gap", this, "fudge");
 
 
                         for (
-    var index: number = 0;index < point.x; index++)
+    let index: number = 0;index < point.x; index++)
         {
 g.drawImage(firstColumnBufferedImage, index, 0, 
                             null);
@@ -237,10 +246,10 @@ g.drawImage(lastColumnBufferedImage, newWidth -index, 0,
                         
                                     {
                                     
-    var firstRowBufferedImage: BufferedImage = bufferedImage!.getSubimage(0, 0, bufferedImage!.getWidth(), 1)!;;
+    let firstRowBufferedImage: BufferedImage = bufferedImage!.getSubimage(0, 0, bufferedImage!.getWidth(), 1)!;;
     
 
-    var lastRowBufferedImage: BufferedImage = bufferedImage!.getSubimage(0, bufferedImage!.getHeight() -1, bufferedImage!.getWidth(), 1)!;;
+    let lastRowBufferedImage: BufferedImage = bufferedImage!.getSubimage(0, bufferedImage!.getHeight() -1, bufferedImage!.getWidth(), 1)!;;
     
 this.logUtil!.putF("Draw some rows to fill in gap", this, "fudge");
     
@@ -249,7 +258,7 @@ this.logUtil!.putF("Draw some rows to fill in gap", this, "fudge");
 
 
                         for (
-    var index: number = 0;index < point.y; index++)
+    let index: number = 0;index < point.y; index++)
         {
 g.drawImage(firstRowBufferedImage, 0, index, 
                             null);
@@ -276,22 +285,22 @@ g.drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), buffered
 
                 //@Throws(Exception.constructor)
             
-    public fudge(bufferedImageArray: BufferedImage[], totalImages: number, ratio: number): BufferedImage[]{
+    public fudge$overload2(bufferedImageArray: BufferedImage[], totalImages: number, ratio: number): BufferedImage[]{
 
-    var end: number = totalImages;;
+    let end: number = totalImages;;
     
 
                         if(bufferedImageArray!.length < totalImages)
                         end= bufferedImageArray!.length
 
-    var fudgedBufferedImageArray: BufferedImage[] = new Array(end);;
+    let fudgedBufferedImageArray: BufferedImage[] = new Array(end);;
     
 
 
 
 
                         for (
-    var index: number = 0;index < end; index++)
+    let index: number = 0;index < end; index++)
         {
 fudgedBufferedImageArray[index]= fudge(bufferedImageArray[index]!, ratio);
     
@@ -307,6 +316,4 @@ fudgedBufferedImageArray[index]= fudge(bufferedImageArray[index]!, ratio);
 
 
 }
-
-
 

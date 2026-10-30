@@ -31,18 +31,23 @@ import { NullAndroidCanvas } from '../../../../../org/allbinary/android/NullAndr
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStateStrings } 
 const CommonStateStrings = globalThis.org.allbinary.string.CommonStateStrings;
+type CommonStateStrings<T = any, U = any> = typeof CommonStateStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStateStrings;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
 
 
 
@@ -191,7 +196,7 @@ this.onStartCommandIntent(intent);
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStateStrings!.ON_START_COMMAND);
     
 
-    var musicStrings: MusicStrings = MusicStrings.getInstance()!;;
+    let musicStrings: MusicStrings = MusicStrings.getInstance()!;;
     
 
                         if(intent != 
@@ -200,7 +205,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStateStrings!.ON_
                         
                                     {
                                     
-    var command: number = intent.getIntExtra(this.commonStateStrings!.ON_START_COMMAND,  -1)!;;
+    let command: number = intent.getIntExtra(this.commonStateStrings!.ON_START_COMMAND,  -1)!;;
     
 this.logUtil!.putF(CommonLabels.getInstance()!.COMMAND_LABEL +command, this, this.commonStateStrings!.ON_START_COMMAND);
     
@@ -267,7 +272,7 @@ this.rightVolume= intent.getIntExtra(musicStrings!.RIGHT_VOLUME,  -1);
                         
                                     {
                                     
-    var player: MediaPlayer = this.player;;
+    let player: MediaPlayer = this.player;;
     
 this.logUtil!.putF(this.ALREADY_PLAYING, this, this.commonStateStrings!.ON_START_COMMAND);
     
@@ -288,17 +293,16 @@ class MusicRunnable extends ARunnable {
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;;
+    let commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;;
     
 
-        try {
-            
+ try { 
         while(this.player.isPlaying())
         {
 logUtil!.putF(this.baseMusicService!.WAITING_FOR_MUSIC_TO_END, this, commonStateStrings!.ON_START_COMMAND);
@@ -309,28 +313,29 @@ Thread.sleep(1200);
 
 this.baseMusicService!.onStartCommandIntent(intent);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStateStrings!.ON_START_COMMAND, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 
                     //Otherwise - statement - EmptyStmt
 
 
-    var runnable: Runnable = new MusicRunnable(this);;
+    let runnable: Runnable = new MusicRunnable(this);;
     
 
-    var thread: Thread = new Thread(runnable);;
+    let thread: Thread = new Thread(runnable);;
     
 thread.start();
     
@@ -352,6 +357,4 @@ this.start();
 
 
 }
-
-
 

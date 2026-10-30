@@ -27,6 +27,7 @@ import { Image } from '../../javax/microedition/lcdui/Image.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
 //not GWT import const Resource
@@ -93,7 +94,7 @@ export class DisposalUtil
                         
                                     {
                                     
-    var mutableImage: SwtMutableImage = image as SwtMutableImage;;
+    let mutableImage: SwtMutableImage = image as SwtMutableImage;;
     
 this.disposeResource(mutableImage!.getImage() as Resource);
     
@@ -123,6 +124,4 @@ resource.dispose();
 
 
 }
-
-
 

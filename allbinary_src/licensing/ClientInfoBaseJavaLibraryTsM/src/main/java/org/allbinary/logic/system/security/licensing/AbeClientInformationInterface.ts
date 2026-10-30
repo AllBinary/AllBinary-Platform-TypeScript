@@ -23,9 +23,11 @@ import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/sy
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -49,35 +51,33 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 export interface AbeClientInformationInterface {
         
 
-    init()
+    init(): void;
 
-    getOperatingSystemInterface(): GenericOperatingSystem
+    getOperatingSystemInterface(): GenericOperatingSystem;
 
-    getName(): string
+    getName(): string;
 
-    getSpecialName(): string
+    getSpecialName(): string;
 
-    getVersion(): string
+    getVersion(): string;
 
-    getLicenseId(): string
+    getLicenseId(): string;
 
-    getLicenseServers(): BasicArrayList
+    getLicenseServers(): BasicArrayList;
 
-    getLicenseServer(index: number): string
+    getLicenseServer(index: number): string;
 
-    getNumberOfLicenseServers(): number
+    getNumberOfLicenseServers(): number;
 
-    toHashtable(): ABHashtable<any, any>
+    toHashtable(): ABHashtable<any, any>;
 
-    isSameId(alicenseId: string): boolean
+    isSameId(alicenseId: string): boolean;
 
-    isLargerOrDifferentServerList(vector: BasicArrayList): boolean
+    isLargerOrDifferentServerList(vector: BasicArrayList): boolean;
 
-    isHardSale(): boolean
+    isHardSale(): boolean;
 
-    toShortString(): string
+    toShortString(): string;
 
 }
-
-
 

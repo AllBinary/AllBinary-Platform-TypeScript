@@ -81,5 +81,3 @@ public constructor (viewPositionFactoryInterface: ViewPositionFactoryInterface){
 
 }
 
-
-

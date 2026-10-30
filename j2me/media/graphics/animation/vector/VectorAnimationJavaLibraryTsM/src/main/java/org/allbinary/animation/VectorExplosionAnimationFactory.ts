@@ -84,16 +84,16 @@ this.setBasicColorP(basicColor);
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
 
-    var vectorRotationAnimationInterface: VectorAnimationInterface = animationInterface as unknown as VectorAnimationInterface;;
+    let vectorRotationAnimationInterface: VectorAnimationInterface = animationInterface as unknown as VectorAnimationInterface;;
     
 
-    var frame: number = vectorRotationAnimationInterface!.getFrame()!;;
+    let frame: number = vectorRotationAnimationInterface!.getFrame()!;;
     
 
-    var framePoints: number[][] = vectorRotationAnimationInterface!.getPoints(frame)!;;
+    let framePoints: number[][] = vectorRotationAnimationInterface!.getPoints(frame)!;;
     
 
-    var points: number[][][] = this.vectorExplosionGenerator!.getInstance(framePoints, 6, this.vectorExplosionGenerator!.ROTATION)!;;
+    let points: number[][][] = this.vectorExplosionGenerator!.getInstance(framePoints, 6, this.vectorExplosionGenerator!.ROTATION)!;;
     
 
 
@@ -121,6 +121,4 @@ this.basicColor= basicColor;
 
 
 }
-
-
 

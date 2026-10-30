@@ -56,14 +56,14 @@ export class BufferedImageUtil2
 
     public createSpriteImage(bufferedImageArray: BufferedImage[]): BufferedImage{
 
-    var columns: number = bufferedImageArray!.length
+    let columns: number = bufferedImageArray!.length
                 ;;
     
 
-    var max: number = columns;;
+    let max: number = columns;;
     
 
-    var rows: number = 0;;
+    let rows: number = 0;;
     
 
                         if(bufferedImageArray!.length < columns)
@@ -86,25 +86,25 @@ rows= (globalThis.Math.trunc(bufferedImageArray!.length /columns));
                                     }
                                 
 
-    var bufferedImage: BufferedImage = this.imageUtil!.create(bufferedImageArray[0]!.getWidth(
+    let bufferedImage: BufferedImage = this.imageUtil!.create(bufferedImageArray[0]!.getWidth(
                             null) *columns, bufferedImageArray[0]!.getHeight(
                             null) *rows)!;;
     
 
-    var g: Graphics2D = bufferedImage!.createGraphics()!;;
+    let g: Graphics2D = bufferedImage!.createGraphics()!;;
     
 
-    var columnIndex: number = 0;;
+    let columnIndex: number = 0;;
     
 
-    var rowIndex: number = 0;;
+    let rowIndex: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < bufferedImageArray!.length; index++)
+    let index: number = 0;index < bufferedImageArray!.length; index++)
         {
 
                         if(globalThis.Math.trunc(index /max) != 0 && index % max == 0)
@@ -140,6 +140,4 @@ g.dispose();
 
 
 }
-
-
 

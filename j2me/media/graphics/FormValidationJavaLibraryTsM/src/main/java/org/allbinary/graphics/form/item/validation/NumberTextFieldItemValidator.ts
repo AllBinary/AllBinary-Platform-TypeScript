@@ -36,12 +36,15 @@ import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/lo
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -109,30 +112,32 @@ this.maxChars= maxChars;
 
     public isValid(): Boolean{
 
-    var result: Boolean = BooleanFactory.getInstance()!.TRUE;;
+    let result: Boolean = BooleanFactory.getInstance()!.TRUE;;
     
 
-    var string: string = this.textFieldItem!.getString()!;;
+    let string: string = this.textFieldItem!.getString()!;;
     
 
-    var textLength: number = string.length!;;
+    let textLength: number = string.length!;;
     
 
                         if(textLength > 0 && textLength < this.maxChars)
                         
                                     {
                                     
-        try {
-            Integer.parseInt(this.textFieldItem!.getString());
+ try { Integer.parseInt(this.textFieldItem!.getString());
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof NumberFormatException) {
+  const e = caught;
+  
 result= BooleanFactory.getInstance()!.FALSE;
     
-}
 
+ }
+  else { throw caught; } }
+ 
 
                                     }
                                 
@@ -169,34 +174,33 @@ result= BooleanFactory.getInstance()!.FALSE;
 
     public toList(): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
-    var string: string = this.textFieldItem!.getString()!;;
+    let string: string = this.textFieldItem!.getString()!;;
     
 
-    var textLength: number = string.length!;;
+    let textLength: number = string.length!;;
     
 
-    var label: string = this.textFieldItem!.getLabel()!;;
+    let label: string = this.textFieldItem!.getLabel()!;;
     
 
-    var name: string = label.substring(0, label.length -2)!;;
+    let name: string = label.substring(0, label.length -2)!;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
                         if(textLength > 0 && textLength < this.maxChars)
                         
                                     {
                                     
-        try {
-            
-    var number: Integer = smallIntegerSingletonFactory!.createInstance(Integer.parseInt(this.textFieldItem!.getString()))!;;
+ try { 
+    let number: Integer = smallIntegerSingletonFactory!.createInstance(Integer.parseInt(this.textFieldItem!.getString()))!;;
     
 
                         if(number.intValue() > this.min)
@@ -220,16 +224,19 @@ list.add(stringMaker!.append(name)!.append(" is to large")!.toString());
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof NumberFormatException) {
+  const e = caught;
+  
 stringMaker!.delete(0, stringMaker!.length());
     
 list.add(stringMaker!.append(name)!.append(" is not a number")!.toString());
     
-}
 
+ }
+  else { throw caught; } }
+ 
 
                                     }
                                 
@@ -269,6 +276,4 @@ list.add(stringMaker!.append(name)!.append(" is to long")!.toString());
 
 
 }
-
-
 

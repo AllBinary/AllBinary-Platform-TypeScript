@@ -38,9 +38,11 @@ import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/M
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { TimeDelayHelper } from '../../../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
@@ -99,7 +101,7 @@ public constructor (node: Node){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var actionNode: Node = DomSearchHelper.getNode(TimeIntervalActionScriptConditionData.NAME, node.getChildNodes())!;;
+    let actionNode: Node = DomSearchHelper.getNode(TimeIntervalActionScriptConditionData.NAME, node.getChildNodes())!;;
     
 
                         if(actionNode != 
@@ -108,24 +110,24 @@ public constructor (node: Node){
                         
                                     {
                                     
-    var nodeList: NodeList = actionNode!.getChildNodes()!;;
+    let nodeList: NodeList = actionNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var childNode: Node = nodeList!.item(index)!;;
+    let childNode: Node = nodeList!.item(index)!;;
     
 
                         if(childNode!.getNodeName()!.compareTo(TimeIntervalActionScriptConditionData.TIME) == 0)
                         
                                     {
                                     
-    var interval: string = DomNodeHelper.getTextNodeValue(childNode)!;;
+    let interval: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.setTimeDelayHelper(new TimeDelayHelper(Integer.valueOf(interval)));
     
@@ -187,7 +189,7 @@ this.timeIntervalActionScriptConditionJPanel!.getTimeIntervalActionJDialog()!.se
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(TimeIntervalActionScriptConditionData.TIME, Integer.toString(this.timeHelper!.delay));
     
@@ -206,7 +208,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = super.toXmlNode(document)!;;
+    let node: Node = super.toXmlNode(document)!;;
     
 node.appendChild(ModDomHelper.createNodeWithValueNodes(document, TimeIntervalActionScriptConditionData.NAME, this.toHashMap()));
     
@@ -245,7 +247,7 @@ this.timeHelper= timeHelper;
             
     public shouldProcess(frame: Long): boolean{
 
-    var timeHelper: TimeDelayHelper = this.getTimeDelayHelper()!;;
+    let timeHelper: TimeDelayHelper = this.getTimeDelayHelper()!;;
     
 
                         if(timeHelper!.isTimeTNT())
@@ -272,6 +274,4 @@ this.timeHelper= timeHelper;
 
 
 }
-
-
 

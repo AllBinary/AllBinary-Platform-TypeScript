@@ -63,5 +63,3 @@ this.runnableCanvas!.repaint();
 
 }
 
-
-

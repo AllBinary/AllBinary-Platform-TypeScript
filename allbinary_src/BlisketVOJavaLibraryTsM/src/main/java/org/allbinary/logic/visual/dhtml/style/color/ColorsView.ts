@@ -32,9 +32,11 @@ import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/M
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -88,7 +90,7 @@ public constructor (){
             
     public getColorNode(document: Document, redIndex: number, greenIndex: number, blueIndex: number): Node{
 
-    var hexColorStringBuffer: StringMaker = new StringMaker();;
+    let hexColorStringBuffer: StringMaker = new StringMaker();;
     
 
                         if(redIndex < this.HEXRADIX)
@@ -124,7 +126,7 @@ hexColorStringBuffer!.append(greenIndex, HEXRADIX.toString());
 hexColorStringBuffer!.append(blueIndex, HEXRADIX.toString());
     
 
-    var colorNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, hexColorStringBuffer!.toString())!;;
+    let colorNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, hexColorStringBuffer!.toString())!;;
     
 
 
@@ -139,10 +141,10 @@ hexColorStringBuffer!.append(blueIndex, HEXRADIX.toString());
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, ColorsData.getInstance()!.NAME, "RGB Colors In Hex")!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, ColorsData.getInstance()!.NAME, "RGB Colors In Hex")!;;
     
 
-    var blackNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, "000000")!;;
+    let blackNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, "000000")!;;
     
 node.appendChild(blackNode);
     
@@ -151,10 +153,10 @@ node.appendChild(blackNode);
 
 
                         for (
-    var index: number = 0;index < this.MAX; )
+    let index: number = 0;index < this.MAX; )
         {
 
-    var hexColorStringBuffer: StringMaker = new StringMaker();;
+    let hexColorStringBuffer: StringMaker = new StringMaker();;
     
 
                         if(index < this.HEXRADIX)
@@ -190,14 +192,14 @@ hexColorStringBuffer!.append(index, HEXRADIX.toString());
 hexColorStringBuffer!.append(index, HEXRADIX.toString());
     
 
-    var colorNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, hexColorStringBuffer!.toString())!;;
+    let colorNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, hexColorStringBuffer!.toString())!;;
     
 node.appendChild(colorNode);
     
 }
 
 
-    var whiteNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, "FFFFFF")!;;
+    let whiteNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, "FFFFFF")!;;
     
 node.appendChild(whiteNode);
     
@@ -206,50 +208,21 @@ node.appendChild(whiteNode);
 
 
                         for (
-    var blueIndex: number = globalThis.Math.trunc(this.MAX /2);blueIndex < this.MAX; )
+    let blueIndex: number = globalThis.Math.trunc(this.MAX /2);blueIndex < this.MAX; )
         {
 
 
 
 
                         for (
-    var greenIndex: number = 0;greenIndex < globalThis.Math.trunc(this.MAX /2); )
+    let greenIndex: number = 0;greenIndex < globalThis.Math.trunc(this.MAX /2); )
         {
 
 
 
 
                         for (
-    var redIndex: number = 0;redIndex < globalThis.Math.trunc(this.MAX /2); )
-        {
-node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
-    
-}
-
-}
-
-}
-
-
-
-
-
-                        for (
-    var redIndex: number = globalThis.Math.trunc(this.MAX /2);redIndex < this.MAX; )
-        {
-
-
-
-
-                        for (
-    var greenIndex: number = 0;greenIndex < globalThis.Math.trunc(this.MAX /2); )
-        {
-
-
-
-
-                        for (
-    var blueIndex: number = 0;blueIndex < globalThis.Math.trunc(this.MAX /2); )
+    let redIndex: number = 0;redIndex < globalThis.Math.trunc(this.MAX /2); )
         {
 node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     
@@ -264,21 +237,21 @@ node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
 
 
                         for (
-    var greenIndex: number = globalThis.Math.trunc(this.MAX /2);greenIndex < this.MAX; )
+    let redIndex: number = globalThis.Math.trunc(this.MAX /2);redIndex < this.MAX; )
         {
 
 
 
 
                         for (
-    var redIndex: number = 0;redIndex < globalThis.Math.trunc(this.MAX /2); )
+    let greenIndex: number = 0;greenIndex < globalThis.Math.trunc(this.MAX /2); )
         {
 
 
 
 
                         for (
-    var blueIndex: number = 0;blueIndex < globalThis.Math.trunc(this.MAX /2); )
+    let blueIndex: number = 0;blueIndex < globalThis.Math.trunc(this.MAX /2); )
         {
 node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     
@@ -293,21 +266,50 @@ node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
 
 
                         for (
-    var greenIndex: number = 0;greenIndex < this.MAX; )
+    let greenIndex: number = globalThis.Math.trunc(this.MAX /2);greenIndex < this.MAX; )
         {
 
 
 
 
                         for (
-    var redIndex: number = 0;redIndex < this.MAX; )
+    let redIndex: number = 0;redIndex < globalThis.Math.trunc(this.MAX /2); )
         {
 
 
 
 
                         for (
-    var blueIndex: number = 0;blueIndex < this.MAX; )
+    let blueIndex: number = 0;blueIndex < globalThis.Math.trunc(this.MAX /2); )
+        {
+node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
+    
+}
+
+}
+
+}
+
+
+
+
+
+                        for (
+    let greenIndex: number = 0;greenIndex < this.MAX; )
+        {
+
+
+
+
+                        for (
+    let redIndex: number = 0;redIndex < this.MAX; )
+        {
+
+
+
+
+                        for (
+    let blueIndex: number = 0;blueIndex < this.MAX; )
         {
 node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     
@@ -327,6 +329,4 @@ node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
 
 
 }
-
-
 

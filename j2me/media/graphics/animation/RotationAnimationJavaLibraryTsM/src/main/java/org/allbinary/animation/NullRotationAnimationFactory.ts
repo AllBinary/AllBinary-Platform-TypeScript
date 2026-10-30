@@ -36,6 +36,7 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -69,6 +70,7 @@ import { IndexedAnimationBehavior } from './IndexedAnimationBehavior.js';
 //not GWT import - same folder const NullRotationAnimation2
 import { Animation } from './Animation.js';
 //not GWT import - same folder const Animation
+type NullRotationAnimation2 = InstanceType<NullRotationAnimationFactory['NullRotationAnimation2']>;
 
 export class NullRotationAnimationFactory
             extends Object
@@ -87,10 +89,8 @@ export class NullRotationAnimationFactory
 }
 
 
-    public readonly NULL_ROTATION_ANIMATION_ARRAY: RotationAnimation[] = [];
-
 //inner= member=true isStatic=
-NullRotationAnimation2 = class extends NullRotationAnimation {
+NullRotationAnimation2 = (() => { const outer$NullRotationAnimationFactory = this; return class extends NullRotationAnimation {
         
 /*Static stuff is not allowed for TypeScript inner classes*//**/
 
@@ -108,8 +108,8 @@ NullRotationAnimation2 = class extends NullRotationAnimation {
 }
 
 
-}
-
+}; })();
+    public readonly NULL_ROTATION_ANIMATION_ARRAY: RotationAnimation[] = [];
 
     private readonly NULL_ANIMATION: Animation = new this.NullRotationAnimation2();
 
@@ -146,6 +146,4 @@ private constructor (){
 
 
 }
-
-
 

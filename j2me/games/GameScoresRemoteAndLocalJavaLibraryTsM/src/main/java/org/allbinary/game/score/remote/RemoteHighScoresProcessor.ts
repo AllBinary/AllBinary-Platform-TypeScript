@@ -36,6 +36,7 @@ import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/disp
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { XmlRpcAbeClient } from '../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
 //not GWT import const XmlRpcAbeClient
@@ -51,12 +52,15 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { HashtableUtil } 
 const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof HashtableUtil;
 
 
 
@@ -109,10 +113,10 @@ public constructor (){
 this.logUtil!.putF("Begin Remote HighScores Retrieval", this, this.commonStrings!.PROCESS);
     
 
-    var gameInfoData: GameInfoData = GameInfoData.getInstance()!;;
+    let gameInfoData: GameInfoData = GameInfoData.getInstance()!;;
     
 
-    var hashtable: ABHashtable<any, any> = abeClientInformation!.toHashtable()!;;
+    let hashtable: ABHashtable<any, any> = abeClientInformation!.toHashtable()!;;
     
 HashtableUtil.getInstance()!.putAll(gameInfo!.toHashtable(), hashtable);
     
@@ -121,7 +125,7 @@ hashtable.put(gameInfoData!.SOFTWARE_INFORMATION, remoteHighScores!.getSoftwareI
 hashtable.put(remoteHighScores!.ASCENDING, remoteHighScores!.getAscending()!.toString());
     
 
-    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 hashtable.put(displayInfoSingleton!.ORIENTATION, BooleanFactory.getInstance()!.toStringb(displayInfoSingleton!.isPortrait()));
     
@@ -132,7 +136,7 @@ hashtable.put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfig
                         
                                     {
                                     
-    var resultHashtable: ABHashtable<any, any> = new XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresservicessl.php", "HighScoresService.process").get(hashtable, this.noCrypt) as ABHashtable<any, any>;;
+    let resultHashtable: ABHashtable<any, any> = new XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresservicessl.php", "HighScoresService.process").get(hashtable, this.noCrypt) as ABHashtable<any, any>;;
     
 remoteHighScores!.update(resultHashtable);
     
@@ -143,6 +147,4 @@ remoteHighScores!.update(resultHashtable);
 
 
 }
-
-
 

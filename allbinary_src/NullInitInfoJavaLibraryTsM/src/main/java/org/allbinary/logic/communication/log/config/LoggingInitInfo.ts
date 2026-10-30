@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -65,20 +67,22 @@ export class LoggingInitInfo
 
     public static write(){
 
-        try {
-            LoggingInitInfo.hasRead= false;
+ try { LoggingInitInfo.hasRead= false;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -87,18 +91,20 @@ export class LoggingInitInfo
 
     static read(){
 
-        try {
-            
-                //: 
-} catch(e) 
-            {
+ try {  }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
@@ -168,23 +174,23 @@ LoggingInitInfo.updateIfNeeded();
 LoggingInitInfo.updateIfNeeded();
     
 
-    var allLogTypeVector: BasicArrayList = new BasicArrayListD();;
+    let allLogTypeVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = LoggingInitInfo.logConfigInfoList!.size()!;;
+    let size: number = LoggingInitInfo.logConfigInfoList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;;
+    let logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;;
     
 
-    var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;;
+    let logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;;
     
 
                         if(logConfigInfo!.isEnabled())
@@ -214,25 +220,27 @@ public constructor (){
 
     public isValid(): boolean{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -250,29 +258,29 @@ public constructor (){
 
     public toString(): string{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error";
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

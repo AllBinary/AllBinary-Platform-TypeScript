@@ -44,12 +44,15 @@ import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { CanvasExpandUtil } from '../../../../org/allbinary/media/image/CanvasExpandUtil.js';
 //not GWT import const CanvasExpandUtil
@@ -68,12 +71,15 @@ import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -148,51 +154,53 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var canvasTrimUtil: CanvasTrimUtil = CanvasTrimUtil.getInstance()!;;
+ try { 
+    let canvasTrimUtil: CanvasTrimUtil = CanvasTrimUtil.getInstance()!;;
     
 
-    var canvasExpandUtil: CanvasExpandUtil = CanvasExpandUtil.getInstance()!;;
+    let canvasExpandUtil: CanvasExpandUtil = CanvasExpandUtil.getInstance()!;;
     
 
-    var leftReduction: number = Integer.valueOf(this.widthReductionTextField1!.getText())!;;
+    let leftReduction: number = Integer.valueOf(this.widthReductionTextField1!.getText())!;;
     
 
-    var topReduction: number = Integer.valueOf(this.heightReductionTextField1!.getText())!;;
+    let topReduction: number = Integer.valueOf(this.heightReductionTextField1!.getText())!;;
     
 
-    var widthReduction: number = Integer.valueOf(this.widthReductionTextField!.getText())!;;
+    let widthReduction: number = Integer.valueOf(this.widthReductionTextField!.getText())!;;
     
 
-    var heightReduction: number = Integer.valueOf(this.heightReductionTextField!.getText())!;;
+    let heightReduction: number = Integer.valueOf(this.heightReductionTextField!.getText())!;;
     
 
                         if(leftReduction <= 0 || topReduction <= 0 || widthReduction <= 0 || heightReduction <= 0)
                         
                                     {
-                                    canvasTrimUtil!.process(CanvasImageJPanel.prototype.getImageProcessorInput(),  -leftReduction,  -topReduction,  -widthReduction,  -heightReduction, CanvasImageJPanel.prototype);
+                                    canvasTrimUtil!.process(outer$CanvasImageJPanel.getImageProcessorInput(),  -leftReduction,  -topReduction,  -widthReduction,  -heightReduction, outer$CanvasImageJPanel);
     
 
                                     }
                                 
                         else {
-                            canvasExpandUtil!.process(CanvasImageJPanel.prototype.getImageProcessorInput(), leftReduction, topReduction, CanvasImageJPanel.prototype);
+                            canvasExpandUtil!.process(outer$CanvasImageJPanel.getImageProcessorInput(), leftReduction, topReduction, outer$CanvasImageJPanel);
     
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
-}
 
+ }
+   }
+ 
 }
 
                                 }
@@ -209,13 +217,13 @@ this.jPanel1= new class extends javax.swing.JPanel
                                 
     public paint(graphics: Graphics){
 
-                        if(CanvasImageJPanel.prototype.result != 
+                        if(outer$CanvasImageJPanel.result != 
                                     null
                                 )
                         
                                     {
-                                    graphics.drawImage(CanvasImageJPanel.prototype.result, 0, 0, CanvasImageJPanel.prototype.result.getWidth(
-                            null), CanvasImageJPanel.prototype.result.getHeight(
+                                    graphics.drawImage(outer$CanvasImageJPanel.result, 0, 0, outer$CanvasImageJPanel.result.getWidth(
+                            null), outer$CanvasImageJPanel.result.getHeight(
                             null), 
                             null);
     
@@ -265,7 +273,7 @@ writeOverOriginalJCheckBoxActionPerformed(evt);
                             );
     
 
-    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
+    let jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -327,7 +335,7 @@ this.jLabel8!.setText("Left:");
 this.heightReductionTextField1!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 
-    var jPanel2Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel2);;
+    let jPanel2Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel2);;
     
 this.jPanel2!.setLayout(jPanel2Layout);
     
@@ -336,7 +344,7 @@ jPanel2Layout!.setHorizontalGroup(jPanel2Layout!.createParallelGroup(javax.swing
 jPanel2Layout!.setVerticalGroup(jPanel2Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout!.createSequentialGroup()!.addGap(0, 16, Short.MAX_VALUE)!.addGroup(jPanel2Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel2Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel6)!.addComponent(heightReductionTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addGroup(jPanel2Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel8)!.addComponent(widthReductionTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(jLabel7)!.addComponent(heightReductionTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addGroup(jPanel2Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel5)!.addComponent(widthReductionTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))));
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -417,17 +425,17 @@ this.result= generatedBufferedImage;
 this.getParent()!.repaint();
     
 
-    var file: File = this.imageProcessorInput!.getFiles()[index]!;;
+    let file: File = this.imageProcessorInput!.getFiles()[index]!;;
     
 
                         if(!this.writeOverOriginalJCheckBox!.isSelected())
                         
                                     {
                                     
-    var filePath: string = file.getAbsolutePath()!;;
+    let filePath: string = file.getAbsolutePath()!;;
     
 
-    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
+    let extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
     
 filePath= new StringMaker().append(filePath!.substring(0, extensionIndex))!.append(this.commonSeps!.UNDERSCORE)!.append(name)!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
@@ -437,7 +445,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(CanvasImageJPanel.prototype.result as RenderedImage, this.imageStrings!.PNG, file)!;;
+    let isWritten: boolean = ImageIO.write(outer$CanvasImageJPanel.result as RenderedImage, this.imageStrings!.PNG, file)!;;
     
 this.logUtil!.putF(new StringMaker().append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, this.commonStrings!.RUN);
     
@@ -445,6 +453,4 @@ this.logUtil!.putF(new StringMaker().append("File: ")!.append(StringUtil.getInst
 
 
 }
-
-
 

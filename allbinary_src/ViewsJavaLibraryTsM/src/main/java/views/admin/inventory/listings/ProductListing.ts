@@ -35,9 +35,11 @@ import { Set } from '../../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
@@ -62,9 +64,11 @@ import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { SearchParams } from '../../../../org/allbinary/logic/control/search/SearchParams.js';
 //not GWT import const SearchParams
@@ -95,15 +99,18 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 import { SpecialCharacterUtil } from '../../../../org/allbinary/logic/string/SpecialCharacterUtil.js';
 //not GWT import const SpecialCharacterUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Replace } from '../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 //not GWT import const Replace
@@ -119,12 +126,15 @@ import { ServiceClientInformationInterfaceFactory } from '../../../../org/allbin
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { InventoryColumnUtil } from '../../../../views/generic/inventory/InventoryColumnUtil.js';
 //not GWT import const InventoryColumnUtil
@@ -192,39 +202,39 @@ this.inventory= new InventoryEntity();
             
     getHashSet(storeFront: StoreFrontInterface): HashSet{
 
-    var inventoryColumnUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;;
+    let inventoryColumnUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;;
     
 
-    var keywords: BasicArrayList = inventoryColumnUtil!.getColumnWhereLike(this.inventory, storeFront!.getCategoryPath(), this.basicItemData!.KEYWORDS)!;;
+    let keywords: BasicArrayList = inventoryColumnUtil!.getColumnWhereLike(this.inventory, storeFront!.getCategoryPath(), this.basicItemData!.KEYWORDS)!;;
     
 
-    var subStoreVector: BasicArrayList = storeFront!.getSubStores()!;;
+    let subStoreVector: BasicArrayList = storeFront!.getSubStores()!;;
     
 
-    var size: number = subStoreVector!.size()!;;
+    let size: number = subStoreVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var subStore: string = subStoreVector!.get(index) as string;;
+    let subStore: string = subStoreVector!.get(index) as string;;
     
 
-    var substoreKeywords: BasicArrayList = inventoryColumnUtil!.getColumnWhereLike(this.inventory, AbPathData.getInstance()!.SEPARATOR +subStore, this.basicItemData!.CATEGORY)!;;
+    let substoreKeywords: BasicArrayList = inventoryColumnUtil!.getColumnWhereLike(this.inventory, AbPathData.getInstance()!.SEPARATOR +subStore, this.basicItemData!.CATEGORY)!;;
     
 keywords.addAllList(substoreKeywords);
     
 }
 
 
-    var uniqueTokens: UniqueTokens = new UniqueTokens();;
+    let uniqueTokens: UniqueTokens = new UniqueTokens();;
     
 
-    var keywordHashSet: HashSet = uniqueTokens!.getWhithoutDashesAndSkipNumberOnlyTokens(keywords)!;;
+    let keywordHashSet: HashSet = uniqueTokens!.getWhithoutDashesAndSkipNumberOnlyTokens(keywords)!;;
     
 
 
@@ -248,7 +258,7 @@ keywords.addAllList(substoreKeywords);
                                     }
                                 
 
-    var newFile: AbFile = AbFile.createAbFile(file)!;;
+    let newFile: AbFile = AbFile.createAbFile(file)!;;
     
 
                         if(newFile!.exists())
@@ -266,7 +276,7 @@ newFile!.createNewFile();
                         
                                     {
                                     
-    var idOutData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(newFile)!;;
+    let idOutData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(newFile)!;;
     
 idOutData!.writeBytes(data);
     
@@ -302,18 +312,18 @@ StreamUtil.getInstance()!.close(idOutData);
             
     create(keywordData: string, keywordFilenameHashMap: HashMap<any, any>, vector: BasicArrayList, staticPath: AbPath){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var hashMap: HashMap<any, any> = SpecialCharacterUtil.getHashMap()!;;
+    let hashMap: HashMap<any, any> = SpecialCharacterUtil.getHashMap()!;;
     
 hashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING);
     
 
-    var pageName: string = new Replace(hashMap).all(keywordData)!;;
+    let pageName: string = new Replace(hashMap).all(keywordData)!;;
     
 
-    var searchParams: SearchParams = this.searchRequest!.getParams()!;;
+    let searchParams: SearchParams = this.searchRequest!.getParams()!;;
     
 searchParams!.add(this.basicItemData!.KEYWORDS, keywordData);
     
@@ -324,20 +334,20 @@ this.searchRequest!.setParams(searchParams);
 this.searchRequest!.setFileBaseName(pageName);
     
 
-    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
+    let abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
     
 
-    var inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;;
+    let inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;;
     
 
-    var productListingPages: string[] = inventorySearchUtil!.search(abeClientInformation, searchRequest, vector)!;;
+    let productListingPages: string[] = inventorySearchUtil!.search(abeClientInformation, searchRequest, vector)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < productListingPages!.length; index++)
+    let index: number = 0;index < productListingPages!.length; index++)
         {
 
                         if(productListingPages[index] == 
@@ -361,7 +371,7 @@ this.searchRequest!.setFileBaseName(pageName);
                                     }
                                 
 
-    var indexStr: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let indexStr: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(index > 0)
@@ -387,7 +397,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
     
 
-    var file: string = stringBuffer!.toString()!;;
+    let file: string = stringBuffer!.toString()!;;
     
 
                         if(!this.directory.create(staticPath))
@@ -410,13 +420,13 @@ this.savePage(file, productListingPages[index]!);
 
     addStaticPageInfoToDatabase(storeFront: StoreFrontInterface, keywordFilenameHashMap: HashMap<any, any>){
 
-    var keywordHashSet: Set = keywordFilenameHashMap!.keys()!;;
+    let keywordHashSet: Set = keywordFilenameHashMap!.keys()!;;
     
 
-    var keywordArray: any[] = keywordHashSet!.toArray()!;;
+    let keywordArray: any[] = keywordHashSet!.toArray()!;;
     
 
-    var size: number = keywordArray!.length
+    let size: number = keywordArray!.length
                 ;;
     
 
@@ -424,16 +434,16 @@ this.savePage(file, productListingPages[index]!);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var insertVector: BasicArrayList = new BasicArrayListD();;
+    let insertVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var keywordData: string = keywordArray[index]! as string;;
+    let keywordData: string = keywordArray[index]! as string;;
     
 
-    var fileName: string = keywordFilenameHashMap!.get(keywordData) as string;;
+    let fileName: string = keywordFilenameHashMap!.get(keywordData) as string;;
     
 insertVector!.add(storeFront!.getName());
     
@@ -447,17 +457,23 @@ this.staticPages!.insert(insertVector);
 
 }
 
-
+generateAll(...args: any[]): any {
+   
+    if (args.length === 0) return this.generateAll$overload1();
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.generateAll$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: generateAll'); }
+  
                 //@Throws(Exception.constructor)
             
-    public generateAll(): string{
+    public generateAll$overload1(): string{
 
-        try {
-            
-    var storeFront: StoreFrontInterface = this.searchRequest!.getStoreFront()!;;
+ try { 
+    let storeFront: StoreFrontInterface = this.searchRequest!.getStoreFront()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
@@ -468,7 +484,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(storeFront!.getStaticPath());
     
 
-    var staticPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let staticPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STATICPAGEGENERATIONLOGGING))
@@ -480,17 +496,17 @@ stringBuffer!.append(storeFront!.getStaticPath());
                                     }
                                 
 
-    var keywordHashSet: HashSet = this.getHashSet(storeFront)!;;
+    let keywordHashSet: HashSet = this.getHashSet(storeFront)!;;
     
 
-    var keywordArray: any[] = keywordHashSet!.toArray()!;;
+    let keywordArray: any[] = keywordHashSet!.toArray()!;;
     
 
-    var size: number = keywordArray!.length
+    let size: number = keywordArray!.length
                 ;;
     
 
-    var keywordFilenameHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keywordFilenameHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
                         if(size == 0)
@@ -514,20 +530,20 @@ stringBuffer!.append(" Store Not Found");
                                     }
                                 
 
-    var inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;;
+    let inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;;
     
 
-    var vector: BasicArrayList = inventorySearchUtil!.getBasicItemIdColumn(this.searchRequest)!;;
+    let vector: BasicArrayList = inventorySearchUtil!.getBasicItemIdColumn(this.searchRequest)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var keywordData: string = keywordArray[index]! as string;;
+    let keywordData: string = keywordArray[index]! as string;;
     
 
                         if(keywordData!.length > 1)
@@ -560,27 +576,29 @@ stringBuffer!.append(this.INVENTORY);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public generateAll(storeName: string): string{
+    public generateAll$overload2(storeName: string): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(storeName != 
@@ -603,17 +621,17 @@ stringBuffer!.append("<br />");
                                 
                         else {
                             
-    var storeFrontVector: BasicArrayList = this.storeFronts!.getStoreFrontNames()!;;
+    let storeFrontVector: BasicArrayList = this.storeFronts!.getStoreFrontNames()!;;
     
 
-    var size: number = storeFrontVector!.size()!;;
+    let size: number = storeFrontVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 storeName= storeFrontVector!.get(index) as string;
     
@@ -649,21 +667,22 @@ stringBuffer!.append("All Static Pages Generated<br/>");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

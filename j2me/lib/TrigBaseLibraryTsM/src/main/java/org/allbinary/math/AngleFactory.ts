@@ -25,18 +25,23 @@
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -85,17 +90,17 @@ export class AngleFactory
 
     public static main(args: string[]){
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
+    let angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < 360; index++)
+    let index: number = 0;index < 360; index++)
         {
 stringMaker!.appendint(index)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.appendshort(angleFactory!.getClosestDirection(index)!.getValue())!.append(CommonSeps.getInstance()!.NEW_LINE);
     
@@ -130,10 +135,10 @@ public constructor (){
 
             super();
         
-    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
+    let commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 
-    var total: number = this.angleArray!.length;;
+    let total: number = this.angleArray!.length;;
     
 this.UP= new NamedAngle(0, commonPhoneStrings!.UP);
     
@@ -144,7 +149,7 @@ this.angleArray[0]= this.UP;
 
 
                         for (
-    var index: number = 1;index < 90; index++)
+    let index: number = 1;index < 90; index++)
         {
 this.angleArray[index]= new Angle(index);
     
@@ -159,7 +164,7 @@ this.angleArray[90]= this.RIGHT;
 
 
                         for (
-    var index: number = 91;index < 180; index++)
+    let index: number = 91;index < 180; index++)
         {
 this.angleArray[index]= new Angle(index);
     
@@ -174,7 +179,7 @@ this.angleArray[180]= this.DOWN;
 
 
                         for (
-    var index: number = 181;index < 270; index++)
+    let index: number = 181;index < 270; index++)
         {
 this.angleArray[index]= new Angle(index);
     
@@ -189,7 +194,7 @@ this.angleArray[270]= this.LEFT;
 
 
                         for (
-    var index: number = 271;index < total; index++)
+    let index: number = 271;index < total; index++)
         {
 this.angleArray[index]= new Angle(index);
     
@@ -202,7 +207,7 @@ this.angleArray[index]= new Angle(index);
 
     public getAt(index: number): Angle{
 
-    var adjustedIndex: number = globalThis.Math.trunc(this.frameUtil!.adjustAngleToFrameAngle(index));;
+    let adjustedIndex: number = globalThis.Math.trunc(this.frameUtil!.adjustAngleToFrameAngle(index));;
     
 
 
@@ -285,6 +290,4 @@ this.angleArray[index]= new Angle(index);
 
 
 }
-
-
 

@@ -33,6 +33,7 @@ import { CategoryInterface } from '../../../../../org/allbinary/business/categor
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -94,7 +95,7 @@ public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInte
 
             super();
         
-    var levelString: string = StringUtil.getInstance()!.getNonNull(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL) as string)!;;
+    let levelString: string = StringUtil.getInstance()!.getNonNull(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL) as string)!;;
     
 this.level= Integer.valueOf(levelString)!.intValue();
     
@@ -164,6 +165,4 @@ this.rootCategoryInterface= categoryInterface;
 
 
 }
-
-
 

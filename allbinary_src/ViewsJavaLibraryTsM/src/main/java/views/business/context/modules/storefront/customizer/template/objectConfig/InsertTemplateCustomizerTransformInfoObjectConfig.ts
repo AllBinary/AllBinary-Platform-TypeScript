@@ -22,6 +22,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { TransformInfoDomNodeView } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoDomNodeView.js';
 //not GWT import const TransformInfoDomNodeView
@@ -114,10 +115,10 @@ this.setDocument(this.generate(this.toXmlDoc()));
                                     }
                                 
 
-    var document: Document = this.toXmlDoc()!;;
+    let document: Document = this.toXmlDoc()!;;
     
 
-    var parentComponentsNodeList: NodeList = document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!;;
+    let parentComponentsNodeList: NodeList = document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!;;
     
 
                         if(parentComponentsNodeList != 
@@ -135,7 +136,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
                                     }
                                 
 
-    var componentNode: Node = parentComponentsNodeList!.item(0)!.getChildNodes()!.item(0)!;;
+    let componentNode: Node = parentComponentsNodeList!.item(0)!.getChildNodes()!.item(0)!;;
     
 
                         if(componentNode != 
@@ -164,15 +165,15 @@ parentComponentsNodeList!.item(0)!.appendChild(new TransformInfoDomNodeView(aPar
                                     }
                                 
 
-    var objectConfigNode: Node = document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
+    let objectConfigNode: Node = document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
     
 
-    var parentComponentsNode: Node = document.createElement(TransformInfosData.getInstance()!.NAME)!;;
+    let parentComponentsNode: Node = document.createElement(TransformInfosData.getInstance()!.NAME)!;;
     
 objectConfigNode!.appendChild(parentComponentsNode);
     
 
-    var transformInfoDomNodeView: TransformInfoDomNodeView = new TransformInfoDomNodeView(aParentViewName);;
+    let transformInfoDomNodeView: TransformInfoDomNodeView = new TransformInfoDomNodeView(aParentViewName);;
     
 parentComponentsNode!.appendChild(transformInfoDomNodeView!.toXmlNode(document));
     
@@ -183,6 +184,4 @@ parentComponentsNode!.appendChild(transformInfoDomNodeView!.toXmlNode(document))
 
 
 }
-
-
 

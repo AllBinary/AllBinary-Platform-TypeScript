@@ -49,61 +49,59 @@ import { URI } from '../../../../../java/net/URI.js';
 export interface AbFileInterface {
         
 
-    canRead(): boolean
+    canRead(): boolean;
 
-    canWrite(): boolean
-
-                //@Throws(IOException.constructor)
-            
-    createNewFile(): boolean
+    canWrite(): boolean;
 
                 //@Throws(IOException.constructor)
             
-    delete(): boolean
-
-    deleteOnExit()
-
-    exists(): boolean
-
-    getAbsolutePath(): string
+    createNewFile(): boolean;
 
                 //@Throws(IOException.constructor)
             
-    getCanonicalPath(): string
+    delete(): boolean;
 
-    getParent(): string
+    deleteOnExit(): void;
 
-    getPath(): string
+    exists(): boolean;
 
-    isAbsolute(): boolean
+    getAbsolutePath(): string;
 
-    isDirectory(): boolean
+                //@Throws(IOException.constructor)
+            
+    getCanonicalPath(): string;
 
-    isFile(): boolean
+    getParent(): string;
 
-    isHidden(): boolean
+    getPath(): string;
 
-    lastModified(): number
+    isAbsolute(): boolean;
 
-    length(): number
+    isDirectory(): boolean;
 
-    list(): string[]
+    isFile(): boolean;
 
-    listWithFilter(filter: FilenameFilter): string[]
+    isHidden(): boolean;
 
-    mkdir(): boolean
+    lastModified(): number;
 
-    mkdirs(): boolean
+    length(): number;
 
-    setLastModified(time: number): boolean
+    list(): string[];
 
-    setReadOnly(): boolean
+    listWithFilter(filter: FilenameFilter): string[];
 
-    toString(): string
+    mkdir(): boolean;
 
-    toURI(): URI
+    mkdirs(): boolean;
+
+    setLastModified(time: number): boolean;
+
+    setReadOnly(): boolean;
+
+    toString(): string;
+
+    toURI(): URI;
 
 }
-
-
 

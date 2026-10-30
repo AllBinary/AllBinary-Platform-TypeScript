@@ -79,7 +79,7 @@ public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterfa
 
     public createHudPaintable(): SelectionHudPaintable{
 
-    var rtsLayerHudPaintable: WaypointInfoHudPaintable = WaypointInfoHudPaintableSingleton.getInstance()!;;
+    let rtsLayerHudPaintable: WaypointInfoHudPaintable = WaypointInfoHudPaintableSingleton.getInstance()!;;
     
 rtsLayerHudPaintable!.setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor());
     
@@ -96,7 +96,7 @@ rtsLayerHudPaintable!.setRtsLayer(this);
 
     public getHudPaintable(): SelectionHudPaintable{
 
-    var rtsLayerHudPaintable: WaypointInfoHudPaintable = WaypointInfoHudPaintableSingleton.getInstance()!;;
+    let rtsLayerHudPaintable: WaypointInfoHudPaintable = WaypointInfoHudPaintableSingleton.getInstance()!;;
     
 
 
@@ -108,6 +108,4 @@ rtsLayerHudPaintable!.setRtsLayer(this);
 
 
 }
-
-
 

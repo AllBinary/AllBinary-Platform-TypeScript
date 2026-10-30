@@ -23,12 +23,15 @@ import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -114,9 +117,8 @@ public constructor (connectionInfo: DbConnectionInfo){
 
     getHostName(): string{
 
-        try {
-            
-    var addr: InetAddress = InetAddress.getLocalHost()!;;
+ try { 
+    let addr: InetAddress = InetAddress.getLocalHost()!;;
     
 
 
@@ -124,10 +126,11 @@ public constructor (connectionInfo: DbConnectionInfo){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return addr.getHostName();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.FAILED, this, GET_HOST_NAME, e);
     
 
@@ -136,16 +139,25 @@ this.logUtil!.put(this.FAILED, this, GET_HOST_NAME, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
-
+addDbUser(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string' && typeof args[3] === 'string') return this.addDbUser$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string') return this.addDbUser$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: addDbUser'); }
+  
                 //@Throws(Exception.constructor)
             
-    addDbUser(hostName: string, db: string, userName: string, password: string): boolean{
+    addDbUser$overload1(hostName: string, db: string, userName: string, password: string): boolean{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.GRANT_ALL);
     
@@ -166,7 +178,7 @@ stringBuffer!.append(password);
 stringBuffer!.append(this.WITH_GRANT_OPTION);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 this.sqlCommandLog!.append(sqlStatement);
     
@@ -183,13 +195,12 @@ super.executeSQLStatement(sqlStatement);
 }
 
 
-    addDbUser(db: string, userName: string, password: string): boolean{
+    addDbUser$overload2(db: string, userName: string, password: string): boolean{
 
-        try {
-            this.addDbUser(this.AT_LOCALHOST, db, userName, password);
+ try { this.addDbUser(this.AT_LOCALHOST, db, userName, password);
     
 
-    var hostName: string = this.getHostName()!;;
+    let hostName: string = this.getHostName()!;;
     
 
                         if(hostName != 
@@ -208,10 +219,11 @@ super.executeSQLStatement(sqlStatement);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.UNABLE_TO_CREATE_USER +userName, this, this.METHOD_ADD_USER, e);
     
 
@@ -220,16 +232,17 @@ this.logUtil!.put(this.UNABLE_TO_CREATE_USER +userName, this, this.METHOD_ADD_US
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     addDb(db: string): Boolean{
 
-        try {
-            
-    var sqlStatement: string = this.sqlStrings!.CREATE_DATABASE +db;;
+ try { 
+    let sqlStatement: string = this.sqlStrings!.CREATE_DATABASE +db;;
     
 this.sqlCommandLog!.append(sqlStatement);
     
@@ -241,26 +254,27 @@ super.executeSQLStatement(sqlStatement);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +db, this, this.METHOD_ADD_DB, e);
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

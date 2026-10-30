@@ -46,9 +46,7 @@ export interface ArtificialIntelligenceCompositeInterface {
 
                 //@Throws(Exception.constructor)
             
-    getArtificialIntelligenceInterface(): ArtificialIntelligenceInterface
+    getArtificialIntelligenceInterface(): ArtificialIntelligenceInterface;
 
 }
-
-
 

@@ -57,9 +57,9 @@ export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation
 
                 //@Throws(Exception.constructor)
             
-    static createAnimation(anyType: any = {}, animationBehavior: AnimationBehavior): ImageArrayRotationAnimation{
+    static createAnimation(anyType: any, animationBehavior: AnimationBehavior): ImageArrayRotationAnimation{
 
-    var imageRotationAnimationInfo: ImageArrayRotationAnimationInfo = anyType as ImageArrayRotationAnimationInfo;;
+    let imageRotationAnimationInfo: ImageArrayRotationAnimationInfo = anyType as ImageArrayRotationAnimationInfo;;
     
 
 
@@ -114,6 +114,4 @@ this.angleInfo!.adjustAngle(0);
 
 
 }
-
-
 

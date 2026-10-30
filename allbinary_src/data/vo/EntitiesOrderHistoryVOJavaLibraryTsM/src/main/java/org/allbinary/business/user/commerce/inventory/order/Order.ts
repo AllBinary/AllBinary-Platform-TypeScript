@@ -54,9 +54,11 @@ import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/M
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -160,7 +162,7 @@ this.paymentMethod= paymentMethod;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -169,7 +171,7 @@ this.paymentMethod= paymentMethod;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
@@ -179,14 +181,14 @@ this.paymentMethod= paymentMethod;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
 
     public getIdValidationInfo(): string{
 
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(this.getId() == 
@@ -398,7 +400,7 @@ this.storeCancelComment= value;
 
     public toHashMapOrder(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(PaymentData.METHOD, this.paymentMethod);
     
@@ -431,33 +433,33 @@ hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment);
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMapOrder()!;;
+    let hashMap: HashMap<any, any> = this.toHashMapOrder()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;;
+    let keySet: Set = hashMap!.keys()!;;
     
 
-    var keyArray: any[] = keySet!.()!;;
+    let keyArray: any[] = keySet!.()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
-    var node: Node = document.createElement(OrderData.ORDER)!;;
+    let node: Node = document.createElement(OrderData.ORDER)!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var name: string = keyArray[i]! as string;;
+    let name: string = keyArray[i]! as string;;
     
 
-    var value: string = hashMap!.get(name) as string;;
+    let value: string = hashMap!.get(name) as string;;
     
 value= StringUtil.getInstance()!.getNonNull(value);
     
@@ -475,6 +477,4 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 
 
 }
-
-
 

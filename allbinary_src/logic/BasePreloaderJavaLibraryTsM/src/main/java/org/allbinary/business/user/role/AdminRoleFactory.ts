@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -90,7 +92,7 @@ private constructor (){
 
             super();
         
-    var basicUserRoleFactory: BasicUserRoleFactory = BasicUserRoleFactory.getInstance()!;;
+    let basicUserRoleFactory: BasicUserRoleFactory = BasicUserRoleFactory.getInstance()!;;
     
 this.adminRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
     
@@ -276,6 +278,4 @@ this.webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
 
 
 }
-
-
 

@@ -20,15 +20,19 @@
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
 //not GWT import const HtmlTag
@@ -103,20 +107,20 @@ this.numberOfColumns++;
 
     public toString(): string{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var result: string = stringUtil!.EMPTY_STRING;;
+    let result: string = stringUtil!.EMPTY_STRING;;
     
 
-    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;;
+    let attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;;
     
 
-    var attributeSize: number = attributeKeys!.length
+    let attributeSize: number = attributeKeys!.length
                 ;;
     
 
-    var cellSize: number = this.htmlCellsVector!.size()!;;
+    let cellSize: number = this.htmlCellsVector!.size()!;;
     
 result= this.before;
     
@@ -129,13 +133,13 @@ result += " ";
 
 
                         for (
-    var i: number = 0;i < attributeSize; i++)
+    let i: number = 0;i < attributeSize; i++)
         {
 
-    var key: string = attributeKeys[i]! as string;;
+    let key: string = attributeKeys[i]! as string;;
     
 
-    var value: string = otherAttributes!.get(key) as string;;
+    let value: string = otherAttributes!.get(key) as string;;
     
 
                         if(value != 
@@ -163,7 +167,7 @@ result += this.END;
 
 
                         for (
-    var i: number = 0;i < cellSize; i++)
+    let i: number = 0;i < cellSize; i++)
         {
 result += this.htmlCellsVector!.get(i)!.toString();
     
@@ -185,6 +189,4 @@ result += this.after;
 
 
 }
-
-
 

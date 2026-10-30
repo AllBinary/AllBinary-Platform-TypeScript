@@ -39,12 +39,14 @@ import { WeblisketSession } from '../../../../../../org/allbinary/logic/communic
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -80,19 +82,18 @@ export class TransformInfoHttpFactory
             
     public static getInstance(propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);;
+ try { 
+    let weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(weblisketSession!.getStoreName()))
                         
                                     {
                                     
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;;
     
 
                         if(storeFrontInterface != 
@@ -131,16 +132,17 @@ export class TransformInfoHttpFactory
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, "TransformInfoFactory", commonStrings!.GET_INSTANCE, e);
     
@@ -152,8 +154,10 @@ logUtil!.put(commonStrings!.EXCEPTION, "TransformInfoFactory", commonStrings!.GE
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -164,6 +168,4 @@ private constructor (){
 
 
 }
-
-
 

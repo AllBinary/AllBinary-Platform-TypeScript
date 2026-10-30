@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
 //not GWT import const GenericProfile
@@ -73,20 +75,20 @@ export class GenericProfileCaptureWorkerFactory
             
     public static getInstance(genericProfile: GenericProfile): CaptureWorkerInterface{
 
-    var vector: BasicArrayList = genericProfile!.getGenericProfileDataWorkerTypeVector()!;;
+    let vector: BasicArrayList = genericProfile!.getGenericProfileDataWorkerTypeVector()!;;
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;;
+    let genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;;
     
 
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.SCREEN_CAPTURE)
@@ -131,6 +133,4 @@ private constructor (){
 
 
 }
-
-
 

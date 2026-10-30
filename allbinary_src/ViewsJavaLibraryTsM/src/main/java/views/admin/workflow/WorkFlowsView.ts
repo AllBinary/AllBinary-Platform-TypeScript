@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { WorkFlowEntityFactory } from '../../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
 //not GWT import const WorkFlowEntityFactory
@@ -34,6 +36,7 @@ import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeIn
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { WorkFlowData } from '../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
 //not GWT import const WorkFlowData
@@ -103,8 +106,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
             
     public view(): string{
 
-        try {
-            this.addDomNodeInterfaces();
+ try { this.addDomNodeInterfaces();
     
 
 
@@ -112,10 +114,11 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -130,29 +133,30 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
     public toXmlNode(document: Document): Node{
 
-        try {
-            
-    var node: Node = document.createElement(WorkFlowData.getInstance()!.WORKFLOWS)!;;
+ try { 
+    let node: Node = document.createElement(WorkFlowData.getInstance()!.WORKFLOWS)!;;
     
 
-    var size: number = this.workFlowsVector!.size()!;;
+    let size: number = this.workFlowsVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var workFlowInterface: WorkFlowInterface = this.workFlowsVector!.get(index) as WorkFlowInterface;;
+    let workFlowInterface: WorkFlowInterface = this.workFlowsVector!.get(index) as WorkFlowInterface;;
     
 }
 
@@ -162,10 +166,11 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -181,12 +186,12 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

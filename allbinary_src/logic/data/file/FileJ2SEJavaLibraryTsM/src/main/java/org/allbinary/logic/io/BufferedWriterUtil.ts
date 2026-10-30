@@ -30,6 +30,7 @@ import { FileWriter } from '../../../../java/io/FileWriter.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
@@ -39,15 +40,19 @@ import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFile
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -92,12 +97,19 @@ export class BufferedWriterUtil
     private readonly commonLabels: CommonLabels = CommonLabels.getInstance()!;
 
     private readonly REMOVING_OLD: string = "Remove old for overwriting: ";
-
+overwrite(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.overwrite$overload1(args[0], args[1]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.overwrite$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: overwrite'); }
+  
                 //@Throws(Exception.constructor)
             
-    public overwrite(path: string, data: string){
+    public overwrite$overload1(path: string, data: string){
 
-    var abFile: AbFile = AbFile.createAbFile(path)!;;
+    let abFile: AbFile = AbFile.createAbFile(path)!;;
     
 
                         if(abFile!.exists())
@@ -112,10 +124,10 @@ abFile!.delete();
                                 
                         else {
                             
-    var name: string = AbPathData.getInstance()!.removeNameFromPath(path)!;;
+    let name: string = AbPathData.getInstance()!.removeNameFromPath(path)!;;
     
 
-    var abFileDirectory: AbFile = AbFile.createAbFile(name)!;;
+    let abFileDirectory: AbFile = AbFile.createAbFile(name)!;;
     
 
                         if(abFileDirectory!.exists())
@@ -126,12 +138,12 @@ abFile!.delete();
                                 
                         else {
                             
-    var stringBuilder: StringMaker = new StringMaker();;
+    let stringBuilder: StringMaker = new StringMaker();;
     
 this.logUtil!.putF(stringBuilder!.append(this.commonStrings!.CREATE)!.append(this.commonLabels!.COLON_SEP)!.append(name)!.toString(), this, this.commonStrings!.CREATE);
     
 
-    var result: boolean = abFileDirectory!.mkdirs()!;;
+    let result: boolean = abFileDirectory!.mkdirs()!;;
     
 stringBuilder!.delete(0, stringBuilder!.length());
     
@@ -150,7 +162,7 @@ this.write(abFile, data);
 
                 //@Throws(Exception.constructor)
             
-    public overwrite(abFile: AbFile, data: string){
+    public overwrite$overload2(abFile: AbFile, data: string){
 
                         if(abFile!.exists())
                         
@@ -164,10 +176,10 @@ abFile!.delete();
                                 
                         else {
                             
-    var name: string = AbPathData.getInstance()!.removeNameFromPath(abFile!.getAbsolutePath())!;;
+    let name: string = AbPathData.getInstance()!.removeNameFromPath(abFile!.getAbsolutePath())!;;
     
 
-    var abFileDirectory: AbFile = AbFile.createAbFile(name)!;;
+    let abFileDirectory: AbFile = AbFile.createAbFile(name)!;;
     
 
                         if(abFileDirectory!.exists())
@@ -178,12 +190,12 @@ abFile!.delete();
                                 
                         else {
                             
-    var stringBuilder: StringMaker = new StringMaker();;
+    let stringBuilder: StringMaker = new StringMaker();;
     
 this.logUtil!.putF(stringBuilder!.append(this.commonStrings!.CREATE)!.append(this.commonLabels!.COLON_SEP)!.append(name)!.toString(), this, this.commonStrings!.CREATE);
     
 
-    var result: boolean = abFileDirectory!.mkdirs()!;;
+    let result: boolean = abFileDirectory!.mkdirs()!;;
     
 stringBuilder!.delete(0, stringBuilder!.length());
     
@@ -204,7 +216,7 @@ this.write(abFile, data);
             
     public write(abFile: AbFile, data: string){
 
-    var fileOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(abFile)));;
+    let fileOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(abFile)));;
     
 fileOut!.write(data, 0, data.length);
     
@@ -216,6 +228,4 @@ fileOut!.flush();
 
 
 }
-
-
 

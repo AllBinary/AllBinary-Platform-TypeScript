@@ -60,9 +60,11 @@ import { GenericProfiles } from '../../../../../../../../../org/allbinary/input/
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CommonDataFileStrings } from '../../../../../../../../../org/allbinary/logic/io/file/CommonDataFileStrings.js';
 //not GWT import const CommonDataFileStrings
@@ -177,10 +179,10 @@ this.setHashMap(new HashMap<any, any>());
             
     public save(){
 
-    var idFile: FileOutputStream = new FileOutputStream(GenericProfileActions.DEFAULT_PROFILE_ACTIONS_PATH +getName() +this.commonFileStrings!._XML);;
+    let idFile: FileOutputStream = new FileOutputStream(GenericProfileActions.DEFAULT_PROFILE_ACTIONS_PATH +getName() +this.commonFileStrings!._XML);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
+    let idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 idOutData!.writeBytes(XmlDocumentHelper.toString(this.toXmlDoc()));
     
@@ -189,7 +191,7 @@ idOutData!.writeBytes(XmlDocumentHelper.toString(this.toXmlDoc()));
 
     public getFile(name: string): File{
 
-    var fileName: string = DEFAULT_PROFILE_ACTIONS_PATH +name +this.commonFileStrings!._XML;;
+    let fileName: string = DEFAULT_PROFILE_ACTIONS_PATH +name +this.commonFileStrings!._XML;;
     
 
 
@@ -204,14 +206,14 @@ idOutData!.writeBytes(XmlDocumentHelper.toString(this.toXmlDoc()));
             
     load(){
 
-    var file: File = this.getFile(getName())!;;
+    let file: File = this.getFile(getName())!;;
     
 
                         if(file.isFile())
                         
                                     {
                                     
-    var idFile: FileInputStream = new FileInputStream(file);;
+    let idFile: FileInputStream = new FileInputStream(file);;
     
 this.fileInit(idFile);
     
@@ -231,22 +233,22 @@ this.fileInit(idFile);
             
     fileInit(fileInputStream: FileInputStream){
 
-    var bytes: number[] = new Array(100000);;
+    let bytes: number[] = new Array(100000);;
     
 
-    var length: number = fileInputStream!.read(bytes)!;;
+    let length: number = fileInputStream!.read(bytes)!;;
     
 
-    var data: string = String.fromCharCode(...bytes);;
+    let data: string = String.fromCharCode(...bytes);;
     
 
-    var endIndex: number = data.lastIndexOf('>')!;;
+    let endIndex: number = data.lastIndexOf('>')!;;
     
 
-    var document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;;
+    let document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;;
     
 
-    var nameNodeList: NodeList = document.getElementsByTagName(GenericProfileActionsData.NAME)!;;
+    let nameNodeList: NodeList = document.getElementsByTagName(GenericProfileActionsData.NAME)!;;
     
 this.logUtil!.putF("Number Of Profiles Specified: " +nameNodeList!.getLength(), this, "Contructor");
     
@@ -255,13 +257,13 @@ this.logUtil!.putF("Number Of Profiles Specified: " +nameNodeList!.getLength(), 
 
 
                         for (
-    var index: number = 0;index < nameNodeList!.getLength(); index++)
+    let index: number = 0;index < nameNodeList!.getLength(); index++)
         {
 
-    var node: Node = nameNodeList!.item(index)!;;
+    let node: Node = nameNodeList!.item(index)!;;
     
 
-    var nodeList: NodeList = node.getChildNodes()!;;
+    let nodeList: NodeList = node.getChildNodes()!;;
     
 
                         if(nodeList != 
@@ -300,10 +302,10 @@ this.getDefaultListModelHelper()!.initDefaultModelList();
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var actionNode: Node = nodeList!.item(index)!;;
+    let actionNode: Node = nodeList!.item(index)!;;
     
 
                         if(actionNode != 
@@ -312,7 +314,7 @@ this.getDefaultListModelHelper()!.initDefaultModelList();
                         
                                     {
                                     
-    var genericConfigurationProfileAction: GenericProfileAction = new GenericProfileAction(this.getGenericProfileActionsJPanel()!.getGenericProfileActionJPanel(), actionNode);;
+    let genericConfigurationProfileAction: GenericProfileAction = new GenericProfileAction(this.getGenericProfileActionsJPanel()!.getGenericProfileActionJPanel(), actionNode);;
     
 this.getHashMap()!.put(genericConfigurationProfileAction!.getName(), genericConfigurationProfileAction);
     
@@ -359,7 +361,7 @@ this.getDefaultListModelHelper()!.add(genericConfigurationProfileAction!.getName
             
     public add(name: string){
 
-    var genericProfileAction: GenericProfileAction = new GenericProfileAction(name);;
+    let genericProfileAction: GenericProfileAction = new GenericProfileAction(name);;
     
 this.getHashMap()!.put(genericProfileAction!.getName(), genericProfileAction);
     
@@ -388,7 +390,7 @@ this.save();
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
     
@@ -405,16 +407,16 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(GenericProfileActionsData.NAME)!;;
+    let node: Node = document.createElement(GenericProfileActionsData.NAME)!;;
     
 
-    var set: Set = this.getHashMap()!.keys()!;;
+    let set: Set = this.getHashMap()!.keys()!;;
     
 
-    var actionNameArray: any[] = set.toArray()!;;
+    let actionNameArray: any[] = set.toArray()!;;
     
 
-    var size: number = actionNameArray!.length
+    let size: number = actionNameArray!.length
                 ;;
     
 
@@ -422,13 +424,13 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var nextActionName: string = actionNameArray[index]! as string;;
+    let nextActionName: string = actionNameArray[index]! as string;;
     
 
-    var nextGenericProfileAction: GenericProfileAction = this.getAction(nextActionName) as GenericProfileAction;;
+    let nextGenericProfileAction: GenericProfileAction = this.getAction(nextActionName) as GenericProfileAction;;
     
 node.appendChild(nextGenericProfileAction!.toXmlNode(document));
     
@@ -447,10 +449,10 @@ node.appendChild(nextGenericProfileAction!.toXmlNode(document));
             
     public toXmlDoc(): Document{
 
-    var document: Document = DomDocumentHelper.create()!;;
+    let document: Document = DomDocumentHelper.create()!;;
     
 
-    var node: Node = this.toXmlNode(document)!;;
+    let node: Node = this.toXmlNode(document)!;;
     
 document.appendChild(node);
     
@@ -512,6 +514,4 @@ this.name= name;
 
 
 }
-
-
 

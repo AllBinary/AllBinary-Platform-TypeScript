@@ -70,7 +70,7 @@ export class ProfileActionScriptConditionFactory
             
     public static getInstance(node: Node): ProfileActionScriptConditionInterface{
 
-    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = 
+    let profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = 
                 null
             ;;
     
@@ -123,6 +123,4 @@ private constructor (){
 
 
 }
-
-
 

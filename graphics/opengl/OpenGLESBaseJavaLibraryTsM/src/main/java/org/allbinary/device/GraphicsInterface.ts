@@ -46,9 +46,7 @@ import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBas
 export interface GraphicsInterface {
         
 
-    setFontDebug(font: Font, fontDebug: FontDebugBase)
+    setFontDebug(font: Font, fontDebug: FontDebugBase): void;
 
 }
-
-
 

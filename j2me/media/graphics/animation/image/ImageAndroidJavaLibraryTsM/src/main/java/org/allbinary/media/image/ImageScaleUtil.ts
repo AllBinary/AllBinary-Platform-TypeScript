@@ -47,15 +47,19 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
 //not GWT import const AndroidImageInterface
@@ -132,10 +136,10 @@ private constructor (){
             
     public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
 
-    var scaleX: number = scaleNominatorX /scaleDenominatorX;;
+    let scaleX: number = scaleNominatorX /scaleDenominatorX;;
     
 
-    var scaleY: number = scaleNominatorY /scaleDenominatorY;;
+    let scaleY: number = scaleNominatorY /scaleDenominatorY;;
     
 
 
@@ -150,38 +154,38 @@ private constructor (){
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleX: number, scaleY: number, cached: boolean): Image{
 
-    var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;;
+    let originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;;
     
 
-    var originalBitmap: Bitmap = originalAndroidImage!.getBitmap()!;;
+    let originalBitmap: Bitmap = originalAndroidImage!.getBitmap()!;;
     
 
-    var width: number = globalThis.Math.trunc((originalBitmap!.getWidth() *scaleX));;
+    let width: number = globalThis.Math.trunc((originalBitmap!.getWidth() *scaleX));;
     
 
-    var height: number = globalThis.Math.trunc((originalBitmap!.getHeight() *scaleY));;
+    let height: number = globalThis.Math.trunc((originalBitmap!.getHeight() *scaleY));;
     
 
-    var index: number = this.imageBasicArrayList!.indexOf(originalImage)!;;
+    let index: number = this.imageBasicArrayList!.indexOf(originalImage)!;;
     
 
-    var alreadyAvailable: boolean = false;;
+    let alreadyAvailable: boolean = false;;
     
 
                         if(index >= 0)
                         
                                     {
                                     
-    var scaleX2Float: number = this.scaleXBasicArrayList!.get(index);;
+    let scaleX2Float: number = this.scaleXBasicArrayList!.get(index);;
     
 
-    var scaleX2: number = scaleX2Float!!;;
+    let scaleX2: number = scaleX2Float!!;;
     
 
-    var scaleY2Float: number = this.scaleYBasicArrayList!.get(index);;
+    let scaleY2Float: number = this.scaleYBasicArrayList!.get(index);;
     
 
-    var scaleY2: number = scaleY2Float!!;;
+    let scaleY2: number = scaleY2Float!!;;
     
 
                         if(scaleX2 == scaleX && scaleY2 == scaleY)
@@ -210,7 +214,7 @@ private constructor (){
                                 
                         else {
                             
-    var scaledImage: Image = this.getScaledImage(imageCache, originalImage, scaleX, scaleY, width, height, cached)!;;
+    let scaledImage: Image = this.getScaledImage(imageCache, originalImage, scaleX, scaleY, width, height, cached)!;;
     
 this.imageBasicArrayList!.add(originalImage);
     
@@ -236,7 +240,7 @@ this.scaleYBasicArrayList!.add(scaleY);
             
     getScaledImage(imageCache: ImageCache, originalImage: Image, scaleX: number, scaleY: number, width: number, height: number, cached: boolean): Image{
 
-    var image: Image = NullImage.NULL_IMAGE;;
+    let image: Image = NullImage.NULL_IMAGE;;
     
 
                         if(cached)
@@ -258,7 +262,7 @@ this.scaleYBasicArrayList!.add(scaleY);
                         
                                     {
                                     
-    var matrix: Matrix = new Matrix();;
+    let matrix: Matrix = new Matrix();;
     
 this.scale(image, matrix, scaleX, scaleY);
     
@@ -289,7 +293,7 @@ image.getGraphics()!.drawImage(originalImage, 0, 0, this.anchor);
 matrix.setScale(scaleX, scaleY);
     
 
-    var canvas: Canvas = (image as AndroidImageInterface).getCanvas()!;;
+    let canvas: Canvas = (image as AndroidImageInterface).getCanvas()!;;
     
 canvas.concat(matrix);
     
@@ -297,6 +301,4 @@ canvas.concat(matrix);
 
 
 }
-
-
 

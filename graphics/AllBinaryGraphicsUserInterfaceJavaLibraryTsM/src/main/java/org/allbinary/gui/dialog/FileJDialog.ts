@@ -20,12 +20,14 @@
 
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
 
 import { File } from '../../../../java/io/File.js';
 //not GWT import const File
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -137,7 +139,7 @@ jFileChooser1ActionPerformed(evt);
                             );
     
 
-    var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(getContentPane());;
+    let layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(getContentPane());;
     
 getContentPane()!.setLayout(layout);
     
@@ -154,7 +156,7 @@ pack();
 this.logUtil!.putF("Starting Action Command: " +evt.getActionCommand(), this, "ActionPerformed");
     
 
-    var files: File[] = this.getJFileChooser1()!.getSelectedFiles()!;;
+    let files: File[] = this.getJFileChooser1()!.getSelectedFiles()!;;
     
 
                         if(evt.getActionCommand() == this.getJFileChooser1()!.CANCEL_SELECTION)
@@ -205,6 +207,4 @@ this.jFileChooser1= jFileChooser1;
     private jFileChooser1: javax.swing.JFileChooser;
 
 }
-
-
 

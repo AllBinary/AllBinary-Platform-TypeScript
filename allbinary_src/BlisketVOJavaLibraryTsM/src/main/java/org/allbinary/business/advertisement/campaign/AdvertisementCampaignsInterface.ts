@@ -43,15 +43,13 @@ import { AdvertisementInterface } from '../../../../../org/allbinary/business/ad
 export interface AdvertisementCampaignsInterface {
         
 
-    add(advertisementInterface: AdvertisementInterface)
+    add(advertisementInterface: AdvertisementInterface): void;
 
-    get(index: number): AdvertisementInterface
+    get(index: number): AdvertisementInterface;
 
-    size(): number
+    size(): number;
 
-    isEnabled(): boolean
+    isEnabled(): boolean;
 
 }
-
-
 

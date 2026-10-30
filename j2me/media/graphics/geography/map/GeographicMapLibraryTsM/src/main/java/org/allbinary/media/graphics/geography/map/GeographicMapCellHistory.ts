@@ -30,15 +30,19 @@ import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
@@ -137,7 +141,7 @@ this.init();
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.fontHeight= font.getHeight();
     
@@ -178,21 +182,21 @@ this.myFontProcessor= MyFontProcessor.getInstance();
 
     public trackAll(list: BasicArrayList){
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 this.list.ensureCapacity(size);
     
 this.visitedList!.ensureCapacity(size);
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition;;
+    let geographicMapCellPosition: GeographicMapCellPosition;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 geographicMapCellPosition= list.get(index) as GeographicMapCellPosition;
     
@@ -240,10 +244,10 @@ this.visitedList!.add(this.booleanFactory!.FALSE);
 
     public getAfterIfNotLast(geographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
 
-    var localList: BasicArrayList = this.list;;
+    let localList: BasicArrayList = this.list;;
     
 
-    var index: number = localList!.indexOf(geographicMapCellPosition)!;;
+    let index: number = localList!.indexOf(geographicMapCellPosition)!;;
     
 
                         if(localList!.size() > index +1)
@@ -269,23 +273,23 @@ this.visitedList!.add(this.booleanFactory!.FALSE);
 
     public getFirstUnvisited(): GeographicMapCellPosition{
 
-    var localList: BasicArrayList = this.list;;
+    let localList: BasicArrayList = this.list;;
     
 
-    var localVisitedList: BasicArrayList = this.visitedList;;
+    let localVisitedList: BasicArrayList = this.visitedList;;
     
 
-    var size: number = localVisitedList!.size()!;;
+    let size: number = localVisitedList!.size()!;;
     
 
-    var value: Boolean;;
+    let value: Boolean;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 value= this.visitedList!.get(index) as Boolean;
     
@@ -315,20 +319,20 @@ value= this.visitedList!.get(index) as Boolean;
 
     public getFirstUnvisitedIndex(): number{
 
-    var localVisitedList: BasicArrayList = this.visitedList;;
+    let localVisitedList: BasicArrayList = this.visitedList;;
     
 
-    var size: number = localVisitedList!.size()!;;
+    let size: number = localVisitedList!.size()!;;
     
 
-    var value: Boolean;;
+    let value: Boolean;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 value= this.visitedList!.get(index) as Boolean;
     
@@ -358,23 +362,23 @@ value= this.visitedList!.get(index) as Boolean;
 
     public getInPathButNotTracked(pathList: BasicArrayList): BasicArrayList{
 
-    var inPathButNotTrackedList: BasicArrayList = new BasicArrayListD();;
+    let inPathButNotTrackedList: BasicArrayList = new BasicArrayListD();;
     
 
-    var localList: BasicArrayList = this.list;;
+    let localList: BasicArrayList = this.list;;
     
 
-    var size: number = pathList!.size()!;;
+    let size: number = pathList!.size()!;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition;;
+    let geographicMapCellPosition: GeographicMapCellPosition;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition;
     
@@ -400,14 +404,14 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition;
 
     public isVisited(geographicMapCellPosition: GeographicMapCellPosition): boolean{
 
-    var index: number = this.list.indexOf(geographicMapCellPosition)!;;
+    let index: number = this.list.indexOf(geographicMapCellPosition)!;;
     
 
                         if(index !=  -1)
                         
                                     {
                                     
-    var value: Boolean = this.visitedList!.get(index) as Boolean;;
+    let value: Boolean = this.visitedList!.get(index) as Boolean;;
     
 
                         if(value == this.booleanFactory!.TRUE)
@@ -440,10 +444,10 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition;
 
     public visit(geographicMapCellPosition: GeographicMapCellPosition): boolean{
 
-    var index: number = this.list.indexOf(geographicMapCellPosition)!;;
+    let index: number = this.list.indexOf(geographicMapCellPosition)!;;
     
 
-    var value: Boolean;;
+    let value: Boolean;;
     
 
                         if(index !=  -1)
@@ -452,7 +456,7 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition;
                                     value= this.visitedList!.get(index) as Boolean;
     
 
-    var TRUE: Boolean = this.booleanFactory!.TRUE;;
+    let TRUE: Boolean = this.booleanFactory!.TRUE;;
     
 
                         if(value != TRUE)
@@ -549,13 +553,13 @@ this.totalVisited++;
             
     public isPortionVisited(basicDecimal: BasicDecimal): boolean{
 
-    var size: number = this.getSize()!;;
+    let size: number = this.getSize()!;;
     
 
-    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /globalThis.Math.trunc(basicDecimal!.getUnscaled());;
+    let numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /globalThis.Math.trunc(basicDecimal!.getUnscaled());;
     
 
-    var numberNotVisited: number = this.getSize() -1 -this.totalVisited;;
+    let numberNotVisited: number = this.getSize() -1 -this.totalVisited;;
     
 
                         if(size -numberNotVisited > numberRequired)
@@ -587,20 +591,20 @@ this.totalVisited++;
             
     public reset(){
 
-    var localVisitedList: BasicArrayList = this.visitedList;;
+    let localVisitedList: BasicArrayList = this.visitedList;;
     
 
-    var localFalseBoolean: Boolean = this.booleanFactory!.FALSE;;
+    let localFalseBoolean: Boolean = this.booleanFactory!.FALSE;;
     
 
-    var size: number = localVisitedList!.size()!;;
+    let size: number = localVisitedList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = size -1;index >= 0; index--)
+    let index: number = size -1;index >= 0; index--)
         {
 localVisitedList!.set(index, localFalseBoolean);
     
@@ -613,10 +617,10 @@ this.totalVisited= 0;
 
     paintNotVisitedRelativeToPoint(graphics: Graphics, tiledLayer: AllBinaryTiledLayer, point: GPoint){
 
-    var x: number = point.getX() -tiledLayer!.getXP();;
+    let x: number = point.getX() -tiledLayer!.getXP();;
     
 
-    var y: number = point.getY() -tiledLayer!.getYP();;
+    let y: number = point.getY() -tiledLayer!.getYP();;
     
 
                         if(this.halfWidth == 0)
@@ -628,7 +632,7 @@ this.totalVisited= 0;
                                     }
                                 
 
-    var height: number = 2 *this.fontHeight;;
+    let height: number = 2 *this.fontHeight;;
     
 this.animation.paintXY(graphics, x +this.halfWidth, y +(height));
     
@@ -639,29 +643,28 @@ this.animation.paintXY(graphics, x +this.halfWidth, y +(height));
 
     public paintNotVisited(graphics: Graphics, geographicMapInterface: BasicGeographicMap){
 
-        try {
-            this.myFontProcessor!.process(graphics);
+ try { this.myFontProcessor!.process(graphics);
     
 graphics.setColor(this.RED);
     
 
-    var localVisitedList: BasicArrayList = this.visitedList;;
+    let localVisitedList: BasicArrayList = this.visitedList;;
     
 
-    var size: number = localVisitedList!.size()!;;
+    let size: number = localVisitedList!.size()!;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition;;
+    let geographicMapCellPosition: GeographicMapCellPosition;;
     
 
-    var isCellVisitedBoolean: Boolean;;
+    let isCellVisitedBoolean: Boolean;;
     
 
 
 
 
                         for (
-    var index: number = size;--index >= 0; )
+    let index: number = size;--index >= 0; )
         {
 geographicMapCellPosition= this.list.get(index) as GeographicMapCellPosition;
     
@@ -678,17 +681,20 @@ isCellVisitedBoolean= localVisitedList!.get(index) as Boolean;
                                 
 }
 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "paintNotVisited", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -703,6 +709,4 @@ this.totalVisited= 0;
 
 
 }
-
-
 

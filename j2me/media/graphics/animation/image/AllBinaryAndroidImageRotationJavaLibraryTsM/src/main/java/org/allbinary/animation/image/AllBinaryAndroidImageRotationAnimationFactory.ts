@@ -106,7 +106,7 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
             
     public static createFactoryU(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
 
-    var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);;
+    let androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);;
     
 androidImageRotationAnimationFactory!.init( -(image.getWidth()>>2),  -(image.getHeight()>>2));
     
@@ -123,7 +123,7 @@ androidImageRotationAnimationFactory!.init( -(image.getWidth()>>2),  -(image.get
             
     public static createFactoryDXYU(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
 
-    var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);;
+    let androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);;
     
 androidImageRotationAnimationFactory!.init(dx, dy);
     
@@ -140,7 +140,7 @@ androidImageRotationAnimationFactory!.init(dx, dy);
             
     public static createFactoryADXY(image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean): AllBinaryAndroidImageRotationAnimationFactory{
 
-    var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, width, height, angleIncrement, animationBehaviorFactory, resizeCanvasForRotation);;
+    let androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, width, height, angleIncrement, animationBehaviorFactory, resizeCanvasForRotation);;
     
 androidImageRotationAnimationFactory!.init(dx, dy);
     
@@ -186,7 +186,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
             
     getCanvasImage(): Image{
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
                         if(this.resizeCanvasForRotation && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
@@ -218,13 +218,13 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
             
     public getInstance(instanceId: number): Animation{
 
-    var canvasImage: Image = this.getCanvasImage()!;;
+    let canvasImage: Image = this.getCanvasImage()!;;
     
 
-    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(canvasImage, this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
+    let scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(canvasImage, this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
-    var copyOfScaledImage: Image = ImageCopyUtil.getInstance()!.createImage(scaledImage)!;;
+    let copyOfScaledImage: Image = ImageCopyUtil.getInstance()!.createImage(scaledImage)!;;
     
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
@@ -255,6 +255,4 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 
 
 }
-
-
 

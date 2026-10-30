@@ -83,7 +83,7 @@ this.labelX= x;
 
     public updateMeasurement(graphics: Graphics){
 
-    var labelWidth: number = graphics.getFont()!.stringWidth(this.LABEL) -this.LABEL.length;;
+    let labelWidth: number = graphics.getFont()!.stringWidth(this.LABEL) -this.LABEL.length;;
     
 this.valueX= labelWidth +this.labelX;
     
@@ -111,6 +111,4 @@ this.len= len;
 
 
 }
-
-
 

@@ -41,12 +41,14 @@ import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/M
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { SuperCrypt } from '../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
 //not GWT import const SuperCrypt
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -134,7 +136,7 @@ this.number= new SuperCrypt(new Integer(this.encryption).intValue()).decrypt(pay
 this.id= payment.get(PaymentData.ID) as string;
     
 
-    var def: string = payment.get(EntryData.getInstance()!.DEFAULT) as string;;
+    let def: string = payment.get(EntryData.getInstance()!.DEFAULT) as string;;
     
 
                         if(def != 
@@ -218,10 +220,10 @@ public constructor (){
 
     public isValid(): Boolean{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var aFalse: Boolean = Boolean.FALSE;;
+    let aFalse: Boolean = Boolean.FALSE;;
     
 
                         if(this.name == 
@@ -300,7 +302,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 }
 
@@ -582,7 +584,7 @@ this.number= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 hashMap!.put(PaymentData.NAME, this.name);
     
@@ -638,10 +640,10 @@ hashMap!.put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader);
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, PaymentData.PAYMENT, hashMap)!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, PaymentData.PAYMENT, hashMap)!;;
     
 
 
@@ -703,6 +705,4 @@ hashMap!.put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader);
 
 
 }
-
-
 

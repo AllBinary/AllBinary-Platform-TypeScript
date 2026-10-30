@@ -34,21 +34,26 @@ import { Set } from '../../../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 //not GWT import const DbConnectionInfo
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -146,11 +151,18 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
                             
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
+updateWhere(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.updateWhere$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2) return this.updateWhere$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: updateWhere'); }
+  //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public updateWhere(key: string, value: string, updatedKeyValuePairs: HashMap<any, any>){
+    public updateWhere$overload1(key: string, value: string, updatedKeyValuePairs: HashMap<any, any>){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.UPDATE);
     
@@ -159,12 +171,11 @@ stringBuffer!.append(this.getTableName());
 stringBuffer!.append(this.sqlStrings!.SET);
     
 
-        try {
-            
-    var keyArray: any[] = updatedKeyValuePairs!.keySet()!.()!;;
+ try { 
+    let keyArray: any[] = updatedKeyValuePairs!.keySet()!.()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
@@ -172,10 +183,10 @@ stringBuffer!.append(this.sqlStrings!.SET);
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var columnName: string = keyArray[i]!.toString()!;;
+    let columnName: string = keyArray[i]!.toString()!;;
     
 stringBuffer!.append(this.commonSeps!.SPACE);
     
@@ -184,7 +195,7 @@ stringBuffer!.append(columnName);
 stringBuffer!.append(this.EQUAL_QUOTE);
     
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName) as string;;
+    let columnValue: string = updatedKeyValuePairs!.get(columnName) as string;;
     
 
                         if(columnValue == 
@@ -229,7 +240,7 @@ stringBuffer!.append(this.getValue(value));
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 this.executeSQLStatement(sqlStatement);
     
@@ -242,10 +253,11 @@ this.executeSQLStatement(sqlStatement);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -255,17 +267,19 @@ this.executeSQLStatement(sqlStatement);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public updateWhere(whereKeyValuePairs: HashMap<any, any>, updatedKeyValuePairs: HashMap<any, any>){
+    public updateWhere$overload2(whereKeyValuePairs: HashMap<any, any>, updatedKeyValuePairs: HashMap<any, any>){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.UPDATE);
     
@@ -274,12 +288,11 @@ stringBuffer!.append(this.getTableName());
 stringBuffer!.append(this.sqlStrings!.SET);
     
 
-        try {
-            
-    var keyArray: any[] = updatedKeyValuePairs!.keySet()!.()!;;
+ try { 
+    let keyArray: any[] = updatedKeyValuePairs!.keySet()!.()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
@@ -287,10 +300,10 @@ stringBuffer!.append(this.sqlStrings!.SET);
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var columnName: string = keyArray[i]!.toString()!;;
+    let columnName: string = keyArray[i]!.toString()!;;
     
 stringBuffer!.append(this.commonSeps!.SPACE);
     
@@ -308,7 +321,7 @@ stringBuffer!.append(this.EQUAL_QUOTE);
                                     }
                                 
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName) as string;;
+    let columnValue: string = updatedKeyValuePairs!.get(columnName) as string;;
     
 
                         if(columnValue == 
@@ -345,13 +358,13 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 stringBuffer!.append(this.sqlStrings!.WHERE);
     
 
-    var set: Set = whereKeyValuePairs!.keySet()!;;
+    let set: Set = whereKeyValuePairs!.keySet()!;;
     
 
-    var keyArray2: any[] = set.toArray()!;;
+    let keyArray2: any[] = set.toArray()!;;
     
 
-    var size2: number = keyArray2!.length
+    let size2: number = keyArray2!.length
                 ;;
     
 
@@ -359,13 +372,13 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
 
 
                         for (
-    var i: number = 0;i < size2; i++)
+    let i: number = 0;i < size2; i++)
         {
 
-    var key: string = keyArray2[i]! as string;;
+    let key: string = keyArray2[i]! as string;;
     
 
-    var value: string = whereKeyValuePairs!.get(key) as string;;
+    let value: string = whereKeyValuePairs!.get(key) as string;;
     
 
 
@@ -393,7 +406,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 this.executeSQLStatement(sqlStatement);
     
@@ -406,10 +419,11 @@ this.executeSQLStatement(sqlStatement);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -424,15 +438,24 @@ this.executeSQLStatement(sqlStatement);
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
+deleteWhere(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.deleteWhere$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.deleteWhere$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: deleteWhere'); }
+  //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
+    public deleteWhere$overload1(key: string, value: string){
 
-    public deleteWhere(key: string, value: string){
-
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.DELETE);
     
@@ -451,9 +474,8 @@ stringBuffer!.append(value);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-        try {
-            
-    var sqlStatement: string = stringBuffer!.toString()!;;
+ try { 
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 this.executeSQLStatement(sqlStatement);
     
@@ -466,10 +488,11 @@ this.executeSQLStatement(sqlStatement);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -479,15 +502,17 @@ this.executeSQLStatement(sqlStatement);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public deleteWhere(keysAndValues: HashMap<any, any>){
+    public deleteWhere$overload2(keysAndValues: HashMap<any, any>){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.DELETE);
     
@@ -498,15 +523,14 @@ stringBuffer!.append(this.getTableName());
 stringBuffer!.append(this.sqlStrings!.WHERE);
     
 
-        try {
-            
-    var set: Set = keysAndValues!.keySet()!;;
+ try { 
+    let set: Set = keysAndValues!.keySet()!;;
     
 
-    var keyArray: any[] = set.toArray()!;;
+    let keyArray: any[] = set.toArray()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
@@ -514,13 +538,13 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var key: string = keyArray[i]! as string;;
+    let key: string = keyArray[i]! as string;;
     
 
-    var value: string = .toCharArray();;
+    let value: string = .toCharArray();;
     
 stringBuffer!.append(key);
     
@@ -542,7 +566,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 this.executeSQLStatement(sqlStatement);
     
@@ -555,10 +579,11 @@ this.executeSQLStatement(sqlStatement);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -568,14 +593,16 @@ this.executeSQLStatement(sqlStatement);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public insert(values: BasicArrayList){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.INSERT_INTO);
     
@@ -584,16 +611,15 @@ stringBuffer!.append(this.getTableName());
 stringBuffer!.append(this.sqlStrings!.VALUES);
     
 
-        try {
-            
+ try { 
 
 
 
                         for (
-    var i: number = 0;i < values.size() -1; i++)
+    let i: number = 0;i < values.size() -1; i++)
         {
 
-    var value: string = this.getValue(values.get(i) as string)!;;
+    let value: string = this.getValue(values.get(i) as string)!;;
     
 value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).all(value);
     
@@ -604,7 +630,7 @@ stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
 }
 
 
-    var value: string = this.getValue(values.get(values.size() -1) as string)!;;
+    let value: string = this.getValue(values.get(values.size() -1) as string)!;;
     
 value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).all(value);
     
@@ -613,7 +639,7 @@ stringBuffer!.append(value);
 stringBuffer!.append(this.INSERT_END);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 this.executeSQLStatement(sqlStatement);
     
@@ -626,10 +652,11 @@ this.executeSQLStatement(sqlStatement);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -639,14 +666,16 @@ this.executeSQLStatement(sqlStatement);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public getRow(keysAndValues: HashMap<any, any>): HashMap<any, any>{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
     
@@ -655,20 +684,19 @@ stringBuffer!.append(this.getTableName());
 stringBuffer!.append(this.sqlStrings!.WHERE);
     
 
-        try {
-            
-    var result: HashMap<any, any> = 
+ try { 
+    let result: HashMap<any, any> = 
                 null
             ;;
     
 
-    var set: Set = keysAndValues!.keySet()!;;
+    let set: Set = keysAndValues!.keySet()!;;
     
 
-    var keyArray: any[] = set.toArray()!;;
+    let keyArray: any[] = set.toArray()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
@@ -676,13 +704,13 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var key: string = keyArray[index]! as string;;
+    let key: string = keyArray[index]! as string;;
     
 
-    var value: string = .toCharArray();;
+    let value: string = .toCharArray();;
     
 stringBuffer!.append(key);
     
@@ -704,7 +732,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -716,10 +744,10 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
                                     }
                                 
 
-    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
+    let rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
     
 
-    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
+    let resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
     
 
         while(rset.next())
@@ -727,20 +755,20 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 result= this.stdUtil!.createHashMap();
     
 
-    var columnCount: number = resultSetMetaData!.getColumnCount()!;;
+    let columnCount: number = resultSetMetaData!.getColumnCount()!;;
     
 
 
 
 
                         for (
-    var index: number = 1;index <= columnCount; index++)
+    let index: number = 1;index <= columnCount; index++)
         {
 
-    var columnName: string = resultSetMetaData!.getColumnName(index)!;;
+    let columnName: string = resultSetMetaData!.getColumnName(index)!;;
     
 
-    var field: string = rset.getString(columnName)!;;
+    let field: string = rset.getString(columnName)!;;
     
 result.put(columnName, field);
     
@@ -778,10 +806,11 @@ result.put(columnName, field);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -797,12 +826,21 @@ result.put(columnName, field);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
-
-    public getRows(keysAndValues: HashMap<any, any>): BasicArrayList{
+getRows(...args: any[]): any {
+   
+    if (args.length === 1) return this.getRows$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.getRows$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getRows'); }
+  
+    public getRows$overload1(keysAndValues: HashMap<any, any>): BasicArrayList{
 
 
 
@@ -812,9 +850,9 @@ result.put(columnName, field);
 }
 
 
-    public getRows(keysAndValues: HashMap<any, any>, more: string): BasicArrayList{
+    public getRows$overload2(keysAndValues: HashMap<any, any>, more: string): BasicArrayList{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
     
@@ -823,18 +861,17 @@ stringBuffer!.append(this.getTableName());
 stringBuffer!.append(this.sqlStrings!.WHERE);
     
 
-        try {
-            
-    var rows: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let rows: BasicArrayList = new BasicArrayListD();;
     
 
-    var set: Set = keysAndValues!.keySet()!;;
+    let set: Set = keysAndValues!.keySet()!;;
     
 
-    var keyArray: any[] = set.toArray()!;;
+    let keyArray: any[] = set.toArray()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
@@ -842,13 +879,13 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var key: string = keyArray[index]! as string;;
+    let key: string = keyArray[index]! as string;;
     
 
-    var value: string = .toCharArray();;
+    let value: string = .toCharArray();;
     
 stringBuffer!.append(key);
     
@@ -881,42 +918,42 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 stringBuffer!.append(more);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
-    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
+    let rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
     
 
-    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
+    let resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
     
 
         while(rset.next())
         {
 
-    var result: HashMap<any, any> = this.stdUtil!.createHashMap()!;;
+    let result: HashMap<any, any> = this.stdUtil!.createHashMap()!;;
     
 
-    var columnCount: number = resultSetMetaData!.getColumnCount()!;;
+    let columnCount: number = resultSetMetaData!.getColumnCount()!;;
     
 
 
 
 
                         for (
-    var index: number = 1;index <= columnCount; index++)
+    let index: number = 1;index <= columnCount; index++)
         {
 
-    var columnName: string = resultSetMetaData!.getColumnName(index)!;;
+    let columnName: string = resultSetMetaData!.getColumnName(index)!;;
     
 
-    var field: string = rset.getString(columnName)!;;
+    let field: string = rset.getString(columnName)!;;
     
 result.put(columnName, field);
     
 }
 
 
-    var resultAsString: string = result.toString()!;;
+    let resultAsString: string = result.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -937,10 +974,11 @@ rows.add(result);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rows;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -956,22 +994,23 @@ rows.add(result);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public getAllRows(): BasicArrayList{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
     
 stringBuffer!.append(this.getTableName());
     
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
@@ -981,38 +1020,38 @@ stringBuffer!.append(this.getTableName());
                                     }
                                 
 
-    var rows: BasicArrayList = new BasicArrayListD();;
+    let rows: BasicArrayList = new BasicArrayListD();;
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
-    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
+    let rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
     
 
-    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
+    let resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
     
 
         while(rset.next())
         {
 
-    var result: HashMap<any, any> = this.stdUtil!.createHashMap()!;;
+    let result: HashMap<any, any> = this.stdUtil!.createHashMap()!;;
     
 
-    var columnCount: number = resultSetMetaData!.getColumnCount()!;;
+    let columnCount: number = resultSetMetaData!.getColumnCount()!;;
     
 
 
 
 
                         for (
-    var index: number = 1;index <= columnCount; index++)
+    let index: number = 1;index <= columnCount; index++)
         {
 
-    var columnName: string = resultSetMetaData!.getColumnName(index)!;;
+    let columnName: string = resultSetMetaData!.getColumnName(index)!;;
     
 
-    var field: string = rset.getString(columnName)!;;
+    let field: string = rset.getString(columnName)!;;
     
 result.put(columnName, field);
     
@@ -1037,10 +1076,11 @@ rows.add(result);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rows;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -1056,40 +1096,48 @@ rows.add(result);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
+getRowsWhereBetween(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[1] === 'string' && typeof args[2] === 'string' && typeof args[3] === 'string') return this.getRowsWhereBetween$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string') return this.getRowsWhereBetween$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: getRowsWhereBetween'); }
+  
+    public getRowsWhereBetween$overload1(whereKeyValuePairs: HashMap<any, any>, betweenColumn: string, smallest: string, largest: string): BasicArrayList{
 
-
-    public getRowsWhereBetween(whereKeyValuePairs: HashMap<any, any>, betweenColumn: string, smallest: string, largest: string): BasicArrayList{
-
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
     
 stringBuffer!.append(this.getTableName());
     
 
-        try {
-            
-    var rows: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let rows: BasicArrayList = new BasicArrayListD();;
     
 stringBuffer!.append(this.sqlStrings!.WHERE);
     
 
-    var set: Set = whereKeyValuePairs!.keySet()!;;
+    let set: Set = whereKeyValuePairs!.keySet()!;;
     
 
-    var key: string;;
+    let key: string;;
     
 
-    var value: string;;
+    let value: string;;
     
 
-    var keyArray: any[] = set.toArray()!;;
+    let keyArray: any[] = set.toArray()!;;
     
 
-    var size: number = keyArray!.length
+    let size: number = keyArray!.length
                 ;;
     
 
@@ -1097,7 +1145,7 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 key= keyArray[index]! as string;
     
@@ -1134,7 +1182,7 @@ stringBuffer!.append(largest);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -1146,25 +1194,25 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
                                     }
                                 
 
-    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
+    let rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
     
 
-    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
+    let resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
     
 
-    var result: HashMap<any, any>;;
+    let result: HashMap<any, any>;;
     
 
-    var columnNames: BasicArrayList;;
+    let columnNames: BasicArrayList;;
     
 
-    var columnCount: number= 0;;
+    let columnCount: number= 0;;
     
 
-    var columnName: string;;
+    let columnName: string;;
     
 
-    var field: string;;
+    let field: string;;
     
 
         while(rset.next())
@@ -1180,7 +1228,7 @@ columnCount= resultSetMetaData!.getColumnCount();
 
 
                         for (
-    var index: number = 1;index <= columnCount; index++)
+    let index: number = 1;index <= columnCount; index++)
         {
 columnName= resultSetMetaData!.getColumnName(index);
     
@@ -1209,10 +1257,11 @@ rows.add(result);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rows;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -1228,23 +1277,24 @@ rows.add(result);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public getRowsWhereBetween$overload2(betweenColumn: string, smallest: string, largest: string): BasicArrayList{
 
-    public getRowsWhereBetween(betweenColumn: string, smallest: string, largest: string): BasicArrayList{
-
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
     
 stringBuffer!.append(this.getTableName());
     
 
-        try {
-            
-    var rows: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let rows: BasicArrayList = new BasicArrayListD();;
     
 stringBuffer!.append(this.sqlStrings!.WHERE);
     
@@ -1267,7 +1317,7 @@ stringBuffer!.append(largest);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;;
+    let sqlStatement: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -1279,25 +1329,25 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
                                     }
                                 
 
-    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
+    let rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
     
 
-    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
+    let resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
     
 
-    var columnName: string;;
+    let columnName: string;;
     
 
-    var field: string;;
+    let field: string;;
     
 
-    var result: HashMap<any, any>;;
+    let result: HashMap<any, any>;;
     
 
-    var columnNames: BasicArrayList;;
+    let columnNames: BasicArrayList;;
     
 
-    var columnCount: number= 0;;
+    let columnCount: number= 0;;
     
 
         while(rset.next())
@@ -1313,7 +1363,7 @@ columnCount= resultSetMetaData!.getColumnCount();
 
 
                         for (
-    var index: number = 1;index <= columnCount; index++)
+    let index: number = 1;index <= columnCount; index++)
         {
 columnName= resultSetMetaData!.getColumnName(index);
     
@@ -1342,10 +1392,11 @@ rows.add(result);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rows;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
@@ -1361,12 +1412,12 @@ rows.add(result);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

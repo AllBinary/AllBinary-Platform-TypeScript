@@ -42,9 +42,7 @@
 export interface HealthVisitorInterface {
         
 
-    visit(healthInterface: HealthInterface)
+    visit(healthInterface: HealthInterface): void;
 
 }
-
-
 

@@ -121,5 +121,3 @@ super.paintXY(graphics, x +this.dx, y +this.dy);
 
 }
 
-
-

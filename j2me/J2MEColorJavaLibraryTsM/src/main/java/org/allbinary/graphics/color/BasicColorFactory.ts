@@ -23,6 +23,7 @@
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -98,7 +99,7 @@ export class BasicColorFactory
 
     public createInstanceARGB(alphaValue: number, r: number, g: number, b: number, name: string): BasicColor{
 
-    var ALPHA_MASK: number = globalThis.Math.trunc(0xFF000000);;
+    let ALPHA_MASK: number = globalThis.Math.trunc(0xFF000000);;
     
 
 
@@ -168,6 +169,4 @@ export class BasicColorFactory
     public readonly BORDER_COLOR: BasicColor = this.WHITE;
 
 }
-
-
 

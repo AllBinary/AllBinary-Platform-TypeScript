@@ -59,7 +59,7 @@ export class ABSystemWrapper
 }
 
 
-    public arraycopy(src: any = {}, srcPos: number, dest: any = {}, destPos: number, length: number){
+    public arraycopy(src: any, srcPos: number, dest: any, destPos: number, length: number){
 System.arraycopy(src, srcPos, dest, destPos, length);
     
 }
@@ -76,6 +76,4 @@ System.arraycopy(src, srcPos, dest, destPos, length);
 
 
 }
-
-
 

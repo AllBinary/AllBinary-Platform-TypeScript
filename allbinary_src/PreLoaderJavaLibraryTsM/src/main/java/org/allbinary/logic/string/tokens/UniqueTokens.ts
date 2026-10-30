@@ -31,21 +31,26 @@ import { HashSet } from '../../../../../java/util/HashSet.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 import { Replace } from '../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 //not GWT import const Replace
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -133,37 +138,36 @@ this.specialCharacters!.add("`");
             
     public getWhithoutDashesAndSkipNumberOnlyTokens(stringVector: BasicArrayList): HashSet{
 
-        try {
-            
-    var hashSet: HashSet = new HashSet();;
+ try { 
+    let hashSet: HashSet = new HashSet();;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
         while(index < stringVector!.size())
         {
 
-    var keywords: string = stringVector!.get(index) as string;;
+    let keywords: string = stringVector!.get(index) as string;;
     
 
-    var tokenizer: Tokenizer = new Tokenizer(commonSeps!.COMMA);;
+    let tokenizer: Tokenizer = new Tokenizer(commonSeps!.COMMA);;
     
 
-    var keywordVector: BasicArrayList = tokenizer.getTokensFromString(keywords, new BasicArrayListD())!;;
+    let keywordVector: BasicArrayList = tokenizer.getTokensFromString(keywords, new BasicArrayListD())!;;
     
 
 
 
 
                         for (
-    var forIndex: number = 0;forIndex < keywordVector!.size(); forIndex++)
+    let forIndex: number = 0;forIndex < keywordVector!.size(); forIndex++)
         {
 
-    var cleanString: string = keywordVector!.get(forIndex) as string;;
+    let cleanString: string = keywordVector!.get(forIndex) as string;;
     
 cleanString= cleanString!.trim();
     
@@ -177,20 +181,20 @@ hashSet!.add(cleanString);
                         
                                     {
                                     
-    var spaceTokenizer: Tokenizer = new Tokenizer(commonSeps!.SPACE);;
+    let spaceTokenizer: Tokenizer = new Tokenizer(commonSeps!.SPACE);;
     
 
-    var subKeywordVector: BasicArrayList = spaceTokenizer!.getTokensFromString(cleanString, new BasicArrayListD())!;;
+    let subKeywordVector: BasicArrayList = spaceTokenizer!.getTokensFromString(cleanString, new BasicArrayListD())!;;
     
 
 
 
 
                         for (
-    var spaceIndex: number = 0;spaceIndex < subKeywordVector!.size(); spaceIndex++)
+    let spaceIndex: number = 0;spaceIndex < subKeywordVector!.size(); spaceIndex++)
         {
 
-    var subCleanString: string = subKeywordVector!.get(spaceIndex) as string;;
+    let subCleanString: string = subKeywordVector!.get(spaceIndex) as string;;
     
 
                         if(!isSpecialCharacter(subCleanString) && !numberOnly(subCleanString))
@@ -218,24 +222,26 @@ index++;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return hashSet;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
     numberOnly(subCleaningString: string): boolean{
 
-        try {
-            Integer.parseInt(subCleaningString);
+ try { Integer.parseInt(subCleaningString);
     
 
 
@@ -243,18 +249,21 @@ index++;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof NumberFormatException) {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+  else { throw caught; } }
+ 
 }
 
 
@@ -264,7 +273,7 @@ index++;
 
 
                         for (
-    var index: number = 0;index < this.specialCharacters!.size(); index++)
+    let index: number = 0;index < this.specialCharacters!.size(); index++)
         {
 
                         if(subCleaningString!.compareTo(this.specialCharacters!.get(index) as string) == 0)
@@ -286,6 +295,4 @@ index++;
 
 
 }
-
-
 

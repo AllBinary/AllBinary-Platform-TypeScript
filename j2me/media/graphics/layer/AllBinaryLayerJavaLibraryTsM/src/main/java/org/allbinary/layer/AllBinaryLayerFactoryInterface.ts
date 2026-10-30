@@ -46,9 +46,7 @@ export interface AllBinaryLayerFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(): AllBinaryLayer
+    getInstance(): AllBinaryLayer;
 
 }
-
-
 

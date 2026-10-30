@@ -63,5 +63,3 @@ export class SWTRunnableProcessor extends SWTProcessor {
 
 }
 
-
-

@@ -24,6 +24,7 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -51,13 +52,13 @@ const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
     /*actual*/ public static getInfo(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var maxUtilizedMemoryAvailable: number = Runtime.getRuntime()!.maxMemory()!;;
+    let maxUtilizedMemoryAvailable: number = Runtime.getRuntime()!.maxMemory()!;;
     
 
-    var memoryUsed: number = Runtime.getRuntime()!.totalMemory()!;;
+    let memoryUsed: number = Runtime.getRuntime()!.totalMemory()!;;
     
 stringBuffer!.append("APK Memory: Available: ");
     
@@ -89,6 +90,4 @@ stringBuffer!.appendlong(Runtime.getRuntime()!.maxMemory() -memoryUsed);
 
 
 }
-
-
 

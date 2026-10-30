@@ -22,6 +22,7 @@
         
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -37,12 +38,15 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -80,9 +84,9 @@ TerrainEventHandler.hashtable= StdUtil.getInstance()!.createHashtable();
 }
 
 
-    public static getInstance(anyType: any = {}): TerrainEventHandler{
+    public static getInstance(anyType: any): TerrainEventHandler{
 
-    var eventHandlerCanBeNull: any = TerrainEventHandler.hashtable.get(anyType);;
+    let eventHandlerCanBeNull: any = TerrainEventHandler.hashtable.get(anyType);;
     
 
                         if(eventHandlerCanBeNull == 
@@ -151,23 +155,25 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;--index >= 0; )
+    let index: number = this.list.size()!;--index >= 0; )
         {
 
-        try {
-            
-    var terrainEventListener: TerrainEventListener = this.list.get(index) as TerrainEventListener;;
+ try { 
+    let terrainEventListener: TerrainEventListener = this.list.get(index) as TerrainEventListener;;
     
 terrainEventListener!.onTerrainEvent(eventObject as TerrainEvent);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 super.fireEvent(eventObject);
@@ -179,7 +185,7 @@ super.fireEvent(eventObject);
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var terrainEventListenerInterface: TerrainEventListenerInterface = eventListenerInterface as TerrainEventListenerInterface;;
+    let terrainEventListenerInterface: TerrainEventListenerInterface = eventListenerInterface as TerrainEventListenerInterface;;
     
 terrainEventListenerInterface!.onTerrainEvent(eventObject as TerrainEvent);
     
@@ -187,6 +193,4 @@ terrainEventListenerInterface!.onTerrainEvent(eventObject as TerrainEvent);
 
 
 }
-
-
 

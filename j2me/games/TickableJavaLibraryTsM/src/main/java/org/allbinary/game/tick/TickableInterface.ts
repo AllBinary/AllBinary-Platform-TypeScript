@@ -50,9 +50,7 @@ export interface TickableInterface extends NamedInterface {
 
                 //@Throws(Exception.constructor)
             
-    processTick(allBinaryLayerManager: AllBinaryLayerManager)
+    processTick(allBinaryLayerManager: AllBinaryLayerManager): void;
 
 }
-
-
 

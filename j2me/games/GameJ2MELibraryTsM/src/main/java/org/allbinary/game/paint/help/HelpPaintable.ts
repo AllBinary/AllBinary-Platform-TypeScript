@@ -47,9 +47,11 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -105,14 +107,14 @@ this.basicColor= basicColor;
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.titleBeginWidth= (font.stringWidth(this.title)>>1);
     
 this.charHeight= font.getHeight();
     
 
-    var size: number = this.inputInfo!.length
+    let size: number = this.inputInfo!.length
                 ;;
     
 
@@ -120,7 +122,7 @@ this.charHeight= font.getHeight();
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.beginWidthArray[index]= (font.stringWidth(this.inputInfo[index]!)>>1);
     
@@ -145,14 +147,14 @@ this.myFontProcessor= this.updateMyFontProcessor;
 this.myFontProcessor!.process(graphics);
     
 
-    var halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
+    let halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
     
 graphics.setColor(this.basicColor!.intValue());
     
 graphics.drawString(this.title, halfWidth -this.titleBeginWidth, this.charHeight, this.anchor);
     
 
-    var size: number = this.inputInfo!.length
+    let size: number = this.inputInfo!.length
                 ;;
     
 
@@ -160,7 +162,7 @@ graphics.drawString(this.title, halfWidth -this.titleBeginWidth, this.charHeight
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 graphics.drawString(this.inputInfo[index]!, halfWidth -this.beginWidthArray[index], (index +3) *this.charHeight, this.anchor);
     
@@ -170,6 +172,4 @@ graphics.drawString(this.inputInfo[index]!, halfWidth -this.beginWidthArray[inde
 
 
 }
-
-
 

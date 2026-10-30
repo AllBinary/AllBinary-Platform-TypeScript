@@ -36,9 +36,11 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -127,19 +129,19 @@ private constructor (){
                                     }
                                 
 
-    var width: number = originalImage!.getWidth()!;;
+    let width: number = originalImage!.getWidth()!;;
     
 
-    var height: number = originalImage!.getHeight()!;;
+    let height: number = originalImage!.getHeight()!;;
     
 
-    var scaleX: number = scaleNominatorX /scaleDenominatorX;;
+    let scaleX: number = scaleNominatorX /scaleDenominatorX;;
     
 
-    var scaleY: number = scaleNominatorY /scaleDenominatorY;;
+    let scaleY: number = scaleNominatorY /scaleDenominatorY;;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, globalThis.Math.trunc((scaleX *width)), globalThis.Math.trunc((scaleY *height)), mutable)!;;
+    let scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, globalThis.Math.trunc((scaleX *width)), globalThis.Math.trunc((scaleY *height)), mutable)!;;
     
 
 
@@ -162,13 +164,13 @@ this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX,
             
     public scale(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number, mutable: boolean){
 
-    var width: number = originalImage!.getWidth()!;;
+    let width: number = originalImage!.getWidth()!;;
     
 
-    var height: number = originalImage!.getHeight()!;;
+    let height: number = originalImage!.getHeight()!;;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, globalThis.Math.trunc((scaleX *width)), globalThis.Math.trunc((scaleY *height)), mutable)!;;
+    let scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, globalThis.Math.trunc((scaleX *width)), globalThis.Math.trunc((scaleY *height)), mutable)!;;
     
 originalImageArray[0]= scaledImage;
     
@@ -176,6 +178,4 @@ originalImageArray[0]= scaledImage;
 
 
 }
-
-
 

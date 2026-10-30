@@ -42,11 +42,9 @@
 export interface IntermissionCompositeInterface {
         
 
-    getStartIntermissionInterface(): IntermissionInterface
+    getStartIntermissionInterface(): IntermissionInterface;
 
-    getEndLevelIntermissionInterface(): IntermissionInterface
+    getEndLevelIntermissionInterface(): IntermissionInterface;
 
 }
-
-
 

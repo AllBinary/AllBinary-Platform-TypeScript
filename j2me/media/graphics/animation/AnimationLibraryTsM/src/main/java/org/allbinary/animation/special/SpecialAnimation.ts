@@ -74,7 +74,7 @@ public constructor (animationBehavior: AnimationBehavior){
 
     public nextFrame(){
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.animationBehaviorP as IndexedAnimationBehavior);;
+    let indexedAnimationBehavior: IndexedAnimationBehavior = (this.animationBehaviorP as IndexedAnimationBehavior);;
     
 indexedAnimationBehavior!.loopIndex++;
     
@@ -108,6 +108,4 @@ indexedAnimationBehavior!.loopIndex++;
 
 
 }
-
-
 

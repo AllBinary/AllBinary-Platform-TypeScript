@@ -34,9 +34,11 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -91,20 +93,22 @@ this.init();
 
     init(){
 
-        try {
-            this.paintableTable= this.createPaintableTable();
+ try { this.paintableTable= this.createPaintableTable();
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -112,34 +116,34 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
             
     createPaintableTable(): Paintable[][]{
 
-    var totalColumns: number = this.touchButtonLocationHelper!.getTotalColumns()!;;
+    let totalColumns: number = this.touchButtonLocationHelper!.getTotalColumns()!;;
     
 
-    var totalRows: number = this.touchButtonLocationHelper!.getTotalRows()!;;
+    let totalRows: number = this.touchButtonLocationHelper!.getTotalRows()!;;
     
 
-    var paintableTable: Paintable[][] = new Array(totalColumns).fill(null).map(() => new Array(totalRows).fill(null))
+    let paintableTable: Paintable[][] = new Array(totalColumns).fill(null).map(() => new Array(totalRows).fill(null))
                                                             ;;
     
 
-    var cellPositionFactory: CellPositionFactory = CellPositionFactory.getInstance()!;;
+    let cellPositionFactory: CellPositionFactory = CellPositionFactory.getInstance()!;;
     
 
-    var commonButtons: CommonButtons = CommonButtons.getInstance()!;;
+    let commonButtons: CommonButtons = CommonButtons.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = totalColumns -1;index >= 0; index--)
+    let index: number = totalColumns -1;index >= 0; index--)
         {
 
 
 
 
                         for (
-    var rowIndex: number = totalRows -1;rowIndex >= 0; rowIndex--)
+    let rowIndex: number = totalRows -1;rowIndex >= 0; rowIndex--)
         {
 this.paintableTable[index]![rowIndex]= TouchButton.createButton(BasicTouchInputFactory.getInstance()!.NONE, TouchButtonBlankResource.getInstance(), commonButtons!.NORMAL_BUTTON, cellPositionFactory!.getInstanceColRow(index, rowIndex), this.touchButtonLocationHelper!.getColumnsRemainderHalf(), this.touchButtonLocationHelper!.getRowsRemainderHalf());
     
@@ -158,24 +162,24 @@ this.paintableTable[index]![rowIndex]= TouchButton.createButton(BasicTouchInputF
 
     public paint(graphics: Graphics){
 
-    var totalColumns: number = this.touchButtonLocationHelper!.getTotalColumns()!;;
+    let totalColumns: number = this.touchButtonLocationHelper!.getTotalColumns()!;;
     
 
-    var totalRows: number = this.touchButtonLocationHelper!.getTotalRows()!;;
+    let totalRows: number = this.touchButtonLocationHelper!.getTotalRows()!;;
     
 
 
 
 
                         for (
-    var index: number = totalColumns -1;index >= 0; index--)
+    let index: number = totalColumns -1;index >= 0; index--)
         {
 
 
 
 
                         for (
-    var rowIndex: number = totalRows -1;rowIndex >= 0; rowIndex--)
+    let rowIndex: number = totalRows -1;rowIndex >= 0; rowIndex--)
         {
 this.paintableTable[index]![rowIndex]!.paint(graphics);
     
@@ -187,6 +191,4 @@ this.paintableTable[index]![rowIndex]!.paint(graphics);
 
 
 }
-
-
 

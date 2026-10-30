@@ -98,5 +98,3 @@ this.lastFrame= lastFrame;
 
 }
 
-
-

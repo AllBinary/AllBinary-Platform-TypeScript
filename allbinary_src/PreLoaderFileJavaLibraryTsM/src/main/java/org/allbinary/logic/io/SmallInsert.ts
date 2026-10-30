@@ -32,12 +32,14 @@ import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFileSystem } from '../../../../org/allbinary/logic/io/file/AbFileSystem.js';
 //not GWT import const AbFileSystem
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -83,12 +85,11 @@ this.string= AbFileSystem.getInstance()!.readAsString(fileName);
 
     public atBeginning(text: string): boolean{
 
-        try {
-            
-    var idFile: FileOutputStream = new FileOutputStream(this.fileName);;
+ try { 
+    let idFile: FileOutputStream = new FileOutputStream(this.fileName);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
+    let idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 idOutData!.writeBytes(text +this.string);
     
@@ -98,10 +99,11 @@ idOutData!.writeBytes(text +this.string);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
@@ -117,16 +119,17 @@ idOutData!.writeBytes(text +this.string);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public after(text: string, after: string): boolean{
 
-        try {
-            
-    var index: number = this.string.indexOf(after)!;;
+ try { 
+    let index: number = this.string.indexOf(after)!;;
     
 
                         if(index < 0)
@@ -146,16 +149,16 @@ idOutData!.writeBytes(text +this.string);
 index= index +after.length;
     
 
-    var start: string = this.string.substring(0, index)!;;
+    let start: string = this.string.substring(0, index)!;;
     
 
-    var end: string = this.string.substring(index +1, this.string.length)!;;
+    let end: string = this.string.substring(index +1, this.string.length)!;;
     
 
-    var idFile: FileOutputStream = new FileOutputStream(this.fileName);;
+    let idFile: FileOutputStream = new FileOutputStream(this.fileName);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
+    let idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 idOutData!.writeBytes(start +text +end);
     
@@ -169,10 +172,11 @@ idFile!.close();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
@@ -188,19 +192,20 @@ idFile!.close();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public atEnd(text: string): boolean{
 
-        try {
-            
-    var idFile: FileOutputStream = new FileOutputStream(this.fileName);;
+ try { 
+    let idFile: FileOutputStream = new FileOutputStream(this.fileName);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
+    let idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 idOutData!.writeBytes(this.string +text);
     
@@ -210,10 +215,11 @@ idOutData!.writeBytes(this.string +text);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
@@ -229,12 +235,12 @@ idOutData!.writeBytes(this.string +text);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

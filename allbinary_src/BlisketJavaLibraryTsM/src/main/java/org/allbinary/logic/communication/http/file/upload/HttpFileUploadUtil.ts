@@ -24,15 +24,18 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ClassUtil } from '../../../../../../../org/allbinary/logic/java/anyType/clazz/ClassUtil.js';
 //not GWT import const ClassUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { FileItem } from '../../../../../../../org/apache/commons/fileupload/FileItem.js';
 //not GWT import const FileItem
@@ -75,18 +78,25 @@ export class HttpFileUploadUtil
     
 }
 
-
+static log(...args: any[]): any {
+   
+    if (args.length === 1) return this.log$overload1(args[0]);
+   
+    if (args.length === 1) return this.log$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: log'); }
+  
                 //@Throws(Exception.constructor)
             
-    public static log(fileItem: FileItemStream){
+    public static log$overload1(fileItem: FileItemStream){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 stringBuffer!.append("FileItem Log:");
     
@@ -126,15 +136,15 @@ stringBuffer!.append(" Not Calculated Yet");
 }
 
 
-    public static log(fileItem: FileItem){
+    public static log$overload2(fileItem: FileItem){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 stringBuffer!.append("FileItem Log:");
     
@@ -184,11 +194,11 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public isValid(anyType: any = {}): boolean{
+    public isValid(anyType: any): boolean{
 
                         if(anyType != 
                                     null
-                                 && !(anyType instanceof String))
+                                 && !(((value: any) => typeof value === 'string' || value instanceof String)(anyType)))
                         
                                     {
                                     
@@ -226,6 +236,4 @@ private constructor (){
 
 
 }
-
-
 

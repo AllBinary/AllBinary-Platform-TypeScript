@@ -42,27 +42,25 @@
 export interface AdvertisementAreaInterface {
         
 
-    getName(): string
+    getName(): string;
 
-    getStoreName(): string
+    getStoreName(): string;
 
-    getDescription(): string
+    getDescription(): string;
 
-    getConstraints(): AdvertisementAreaConstraintsInterface
+    getConstraints(): AdvertisementAreaConstraintsInterface;
 
-    getCampaign(): string
+    getCampaign(): string;
 
-    setName(name: string)
+    setName(name: string): void;
 
-    setStoreName(storeName: string)
+    setStoreName(storeName: string): void;
 
-    setDescription(description: string)
+    setDescription(description: string): void;
 
-    setConstraints(advertisementConstraintsInterface: AdvertisementAreaConstraintsInterface)
+    setConstraints(advertisementConstraintsInterface: AdvertisementAreaConstraintsInterface): void;
 
-    setCampaign(campaign: string)
+    setCampaign(campaign: string): void;
 
 }
-
-
 

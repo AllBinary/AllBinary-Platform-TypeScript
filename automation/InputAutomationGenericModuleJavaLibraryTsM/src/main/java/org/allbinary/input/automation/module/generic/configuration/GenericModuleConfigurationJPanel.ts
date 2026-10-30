@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { GenericProfile } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
 //not GWT import const GenericProfile
@@ -43,12 +45,15 @@ import { GenericProfileActionsJPanel } from '../../../../../../../org/allbinary/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -197,7 +202,7 @@ okNewProfileJButtonActionPerformed(evt);
 this.newProfileNameJLabel!.setText("New Profile Name");
     
 
-    var newProfileJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.newProfileJDialog!.getContentPane());;
+    let newProfileJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.newProfileJDialog!.getContentPane());;
     
 this.newProfileJDialog!.getContentPane()!.setLayout(newProfileJDialogLayout);
     
@@ -349,7 +354,7 @@ this.jLabel3!.setText("Image Processing:");
 this.jLabel3!.setToolTipText("Turns on/off various extended image processing");
     
 
-    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
+    let jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -358,7 +363,7 @@ jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(javax.swing
 jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel2)!.addGap(7, 7, 7)!.addComponent(screenCaptureJRadioButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(savedCaptureJRadioButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel3)!.addGap(7, 7, 7)!.addComponent(captureComparisonJCheckBox)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(captureMotionAnalysisJCheckBox)!.addContainerGap(106, Short.MAX_VALUE)));
     
 
-    var genericProfilesJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.genericProfilesJPanel);;
+    let genericProfilesJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.genericProfilesJPanel);;
     
 this.genericProfilesJPanel!.setLayout(genericProfilesJPanelLayout);
     
@@ -369,7 +374,7 @@ genericProfilesJPanelLayout!.setVerticalGroup(genericProfilesJPanelLayout!.creat
 this.genericJTabbedPane!.addTab("Profiles", genericProfilesJPanel);
     
 
-    var blankGenericProfileActionsJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankGenericProfileActionsJPanel);;
+    let blankGenericProfileActionsJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankGenericProfileActionsJPanel);;
     
 this.blankGenericProfileActionsJPanel!.setLayout(blankGenericProfileActionsJPanelLayout);
     
@@ -386,8 +391,7 @@ add(this.genericJTabbedPane);
 
     savedCaptureJRadioButtonActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            
+ try { 
                         if(this.savedCaptureJRadioButton!.isSelected())
                         
                                     {
@@ -404,21 +408,23 @@ this.getGenericProfiles()!.save();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "savedCaptureJRadioButtonActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     screenCaptureJRadioButtonActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            
+ try { 
                         if(this.screenCaptureJRadioButton!.isSelected())
                         
                                     {
@@ -435,21 +441,23 @@ this.getGenericProfiles()!.save();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "screenCaptureJRadioButtonActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     captureMotionAnalysisJCheckBoxActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            
+ try { 
                         if(this.captureMotionAnalysisJCheckBox!.isSelected())
                         
                                     {
@@ -466,21 +474,23 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "screenCaptureJRadioButto
                             
 this.getGenericProfiles()!.save();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "captureComparisonJCheckBoxActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     captureComparisonJCheckBoxActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            
+ try { 
                         if(this.captureComparisonJCheckBox!.isSelected())
                         
                                     {
@@ -497,14 +507,17 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "captureComparisonJCheckB
                             
 this.getGenericProfiles()!.save();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "captureComparisonJCheckBoxActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -520,7 +533,7 @@ this.getBlankGenericProfileActionsJPanel()!.removeAll();
                         
                                     {
                                     
-    var genericProfileActionsJPanel: GenericProfileActionsJPanel = new GenericProfileActionsJPanel();;
+    let genericProfileActionsJPanel: GenericProfileActionsJPanel = new GenericProfileActionsJPanel();;
     
 this.setSelectedGenericProfile(this.getGenericProfiles()!.get(profileNameString));
     
@@ -531,7 +544,7 @@ genericProfileActionsJPanel!.setGenericProfileActions(this.getSelectedGenericPro
 genericProfileActionsJPanel!.selectFirstElement();
     
 
-    var layout: javax.swing.GroupLayout = this.getBlankGenericProfileActionsJPanel()!.getLayout() as javax.swing.GroupLayout;;
+    let layout: javax.swing.GroupLayout = this.getBlankGenericProfileActionsJPanel()!.getLayout() as javax.swing.GroupLayout;;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(genericProfileActionsJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
     
@@ -578,10 +591,10 @@ this.updateProfileUI(this.genericProfilesJList!.getModel()!.getElementAt(0) as s
 this.logUtil!.putF(this.commonStrings!.START, this, "updateProfileOptions");
     
 
-    var genericProfile: GenericProfile = this.getSelectedGenericProfile()!;;
+    let genericProfile: GenericProfile = this.getSelectedGenericProfile()!;;
     
 
-    var vector: BasicArrayList = genericProfile!.getGenericProfileDataWorkerTypeVector()!;;
+    let vector: BasicArrayList = genericProfile!.getGenericProfileDataWorkerTypeVector()!;;
     
 this.screenCaptureJRadioButton!.setSelected(false);
     
@@ -592,17 +605,17 @@ this.captureComparisonJCheckBox!.setSelected(false);
 this.captureMotionAnalysisJCheckBox!.setSelected(false);
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;;
+    let genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;;
     
 this.logUtil!.putF(genericProfile!.getName() +" has GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "updateProfileOptions");
     
@@ -718,38 +731,39 @@ this.selectedGenericProfile= selectedGenericProfile;
 
     genericProfilesJListValueChanged(evt: javax.swing.event.ListSelectionEvent){
 
-        try {
-            
-    var profileNameString: string = this.genericProfilesJList!.getSelectedValue() as string;;
+ try { 
+    let profileNameString: string = this.genericProfilesJList!.getSelectedValue() as string;;
     
 this.updateProfileUI(profileNameString);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "genericProfilesJListValueChanged", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     deleteProfileJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            
-    var anyType: any[] = this.genericProfilesJList!.getSelectedValues()!;;
+ try { 
+    let anyType: any[] = this.genericProfilesJList!.getSelectedValues()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < anyType!.length; index++)
+    let index: number = 0;index < anyType!.length; index++)
         {
 
-    var nextSelectedValueString: string = anyType[index]! as string;;
+    let nextSelectedValueString: string = anyType[index]! as string;;
     
 this.getGenericProfiles()!.remove(nextSelectedValueString);
     
@@ -757,22 +771,24 @@ this.getGenericProfiles()!.remove(nextSelectedValueString);
 
 this.selectFirstElement();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteProfileJButtonActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     okNewProfileJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            
-    var newProfileName: string = this.newProfileNameJTextField!.getText()!;;
+ try { 
+    let newProfileName: string = this.newProfileNameJTextField!.getText()!;;
     
 this.getGenericProfiles()!.add(newProfileName);
     
@@ -784,14 +800,17 @@ this.newProfileJDialog!.setVisible(false);
     
 this.updateProfileUI(newProfileName);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okNewProfileJButtonActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -842,6 +861,4 @@ this.newProfileJDialog!.setVisible(true);
     private screenCaptureJRadioButton: javax.swing.JRadioButton;
 
 }
-
-
 

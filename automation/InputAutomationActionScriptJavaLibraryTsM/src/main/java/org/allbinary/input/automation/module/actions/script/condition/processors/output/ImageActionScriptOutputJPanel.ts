@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { swing } from '../../../../../../../../../../javax/swing.js';
 //not GWT import const swing
@@ -34,9 +36,11 @@ import { InputImageType } from '../../../../../../../../../../org/allbinary/inpu
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -118,26 +122,26 @@ this.set();
 this.setImageTypeJlistModel();
     
 
-    var imageTypes: ImageTypes = this.capturedImageActionScriptOutputInterface!.getImageTypes()!;;
+    let imageTypes: ImageTypes = this.capturedImageActionScriptOutputInterface!.getImageTypes()!;;
     
 
-    var vector: BasicArrayList = imageTypes!.getVector()!;;
+    let vector: BasicArrayList = imageTypes!.getVector()!;;
     
 
-    var selectedArray: number[] = new Array(vector.size());;
+    let selectedArray: number[] = new Array(vector.size());;
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index) as InputImageType;;
+    let imageType: InputImageType = vector.get(index) as InputImageType;;
     
 selectedArray[index++]= imageType!.getIndex();
     
@@ -170,10 +174,10 @@ this.capturedImageActionScriptOutputInterface!.log();
 
     update(){
 
-    var anyType: any[] = this.itemTypesJList!.getSelectedValues()!;;
+    let anyType: any[] = this.itemTypesJList!.getSelectedValues()!;;
     
 
-    var imageTypes: ImageTypes = anyType.slice(, ).join('')!;;
+    let imageTypes: ImageTypes = anyType.slice(, ).join('')!;;
     
 this.capturedImageActionScriptOutputInterface!.setImageTypes(imageTypes);
     
@@ -214,23 +218,23 @@ this.capturedImageActionScriptOutputInterface!.log();
 
     setImageTypeJlistModel(){
 
-    var defaultListModel: DefaultListModel = new DefaultListModel();;
+    let defaultListModel: DefaultListModel = new DefaultListModel();;
     
 
-    var vector: BasicArrayList = InputImageType.getAllAsVector()!;;
+    let vector: BasicArrayList = InputImageType.getAllAsVector()!;;
     
 
-    var size: number = vector.size()!;;
+    let size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index) as InputImageType;;
+    let imageType: InputImageType = vector.get(index) as InputImageType;;
     
 defaultListModel!.addElement(imageType!.getName());
     
@@ -347,7 +351,7 @@ this.itemTypesJList!.setModel(new class extends javax.swing.AbstractListModel
 this.jScrollPane1!.setViewportView(this.itemTypesJList);
     
 
-    var capturedImageActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.capturedImageActionJDialog!.getContentPane());;
+    let capturedImageActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.capturedImageActionJDialog!.getContentPane());;
     
 this.capturedImageActionJDialog!.getContentPane()!.setLayout(capturedImageActionJDialogLayout);
     
@@ -373,7 +377,7 @@ capturedImageActionJButtonActionPerformed(evt);
 this.jLabel1!.setText("Capture Image:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -421,6 +425,4 @@ this.getCapturedImageActionJDialog()!.setVisible(true);
     private titleJLabel: javax.swing.JLabel;
 
 }
-
-
 

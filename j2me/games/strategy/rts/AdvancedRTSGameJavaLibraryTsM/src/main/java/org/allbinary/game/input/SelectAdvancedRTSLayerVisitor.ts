@@ -38,9 +38,11 @@ import { UnitLayer } from '../../../../org/allbinary/game/layer/unit/UnitLayer.j
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js';
 //not GWT import const Visitor
@@ -79,35 +81,35 @@ public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGam
 }
 
 
-    public visit(anyType: any = {}): any{
+    public visit(anyType: any): any{
 
-    var selectedLayer: CollidableDestroyableDamageableLayer = anyType as CollidableDestroyableDamageableLayer;;
+    let selectedLayer: CollidableDestroyableDamageableLayer = anyType as CollidableDestroyableDamageableLayer;;
     
 
                         if(selectedLayer != CollidableDestroyableDamageableLayer.getNullInstance() && selectedLayer!.getType() == BuildingLayer.getStaticType())
                         
                                     {
                                     
-    var rtsGameLayer: AdvancedRTSGameLayer = selectedLayer as AdvancedRTSGameLayer;;
+    let rtsGameLayer: AdvancedRTSGameLayer = selectedLayer as AdvancedRTSGameLayer;;
     
 
-    var assignWaypointsUtil: AssignWaypointsUtil = AssignWaypointsUtil.getInstance()!;;
+    let assignWaypointsUtil: AssignWaypointsUtil = AssignWaypointsUtil.getInstance()!;;
     
 
-    var list: BasicArrayList = this.selectedRTSLayersPlayerGameInput!.getSelectedBasicArrayList()!;;
+    let list: BasicArrayList = this.selectedRTSLayersPlayerGameInput!.getSelectedBasicArrayList()!;;
     
 
-    var currentRTSLayer: RTSLayer;;
+    let currentRTSLayer: RTSLayer;;
     
 
-    var unitLayer: UnitLayer;;
+    let unitLayer: UnitLayer;;
     
 
 
 
 
                         for (
-    var index: number = list.size() -1;index >= 0; index--)
+    let index: number = list.size() -1;index >= 0; index--)
         {
 currentRTSLayer= list.get(index) as RTSLayer;
     
@@ -139,6 +141,4 @@ assignWaypointsUtil!.set(unitLayer, rtsGameLayer);
 
 
 }
-
-
 

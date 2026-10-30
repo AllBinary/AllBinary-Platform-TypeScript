@@ -32,9 +32,11 @@ import { Logger } from '../../../../../java/util/logging/Logger.js';
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -76,7 +78,7 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
 }
 
 
-    private readonly logger: Logger = Logger.getLogger(LogUtil.constructor.toString()!)!;
+    private readonly logger: Logger = Logger.getLogger(LogUtil.toString()!)!;
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
 
@@ -88,23 +90,23 @@ private constructor (){
 
     /*actual*/ public putL(log: Log){
 
-    var specialMessage: string = log.getSpecialMessage()!;;
+    let specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;;
+    let anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;;
+    let functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;;
+    let exception: any = log.getThrowable()!;;
     
 this.put(specialMessage, anyType, functionName, exception);
     
 }
 
 
-    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any, functionName: string){
 this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
     
 }
@@ -116,14 +118,13 @@ this.putS(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_
 }
 
 
-    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public put(specialMessage: string, anyType: any, functionName: string, exception: any){
 
-        try {
-            
-    var className: string = CommonStrings.getInstance()!.EMPTY;;
+ try { 
+    let className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
-    var clazz: Function = anyType!.constructor!;;
+    let clazz: Function = anyType!.constructor!;;
     
 
                         if(clazz.toString()! != 
@@ -137,7 +138,7 @@ this.putS(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
+    let message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 
                         if(exception != 
@@ -156,20 +157,22 @@ this.putS(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_
 
                         }
                             
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
+ }
+   }
+ 
 }
 
-}
 
+    /*actual*/ public putS(specialMessage: string, className: string, functionName: string, exception: any){
 
-    /*actual*/ public putS(specialMessage: string, className: string, functionName: string, exception: any = {}){
-
-        try {
-            
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
+ try { 
+    let message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 
                         if(exception != 
@@ -188,16 +191,17 @@ this.putS(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_
 
                         }
                             
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

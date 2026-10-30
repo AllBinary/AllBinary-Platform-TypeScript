@@ -93,14 +93,21 @@ this.gl11.glBufferSubData(target, offset, size, data);
     
 }
 
-
-    public glClipPlanef(plane: number, equation: number[], offset: number){
+glClipPlanef(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glClipPlanef$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.glClipPlanef$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: glClipPlanef'); }
+  
+    public glClipPlanef$overload1(plane: number, equation: number[], offset: number){
 this.gl11.glClipPlanef(plane, equation, offset);
     
 }
 
 
-    public glClipPlanef(plane: number, equation: java.nio.FloatBuffer){
+    public glClipPlanef$overload2(plane: number, equation: java.nio.FloatBuffer){
 this.gl11.glClipPlanef(plane, equation);
     
 }
@@ -117,14 +124,21 @@ this.gl11.glColorPointer(size, type, stride, offset);
     
 }
 
-
-    public glDeleteBuffers(n: number, buffers: number[], offset: number){
+glDeleteBuffers(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glDeleteBuffers$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.glDeleteBuffers$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: glDeleteBuffers'); }
+  
+    public glDeleteBuffers$overload1(n: number, buffers: number[], offset: number){
 this.gl11.glDeleteBuffers(n, buffers, offset);
     
 }
 
 
-    public glDeleteBuffers(n: number, buffers: java.nio.IntBuffer){
+    public glDeleteBuffers$overload2(n: number, buffers: java.nio.IntBuffer){
 this.gl11.glDeleteBuffers(n, buffers);
     
 }
@@ -135,110 +149,173 @@ this.gl11.glDrawElements(mode, count, type, offset);
     
 }
 
-
-    public glGenBuffers(n: number, buffers: number[], offset: number){
+glGenBuffers(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glGenBuffers$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.glGenBuffers$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: glGenBuffers'); }
+  
+    public glGenBuffers$overload1(n: number, buffers: number[], offset: number){
 this.gl11.glGenBuffers(n, buffers, offset);
     
 }
 
 
-    public glGenBuffers(n: number, buffers: java.nio.IntBuffer){
+    public glGenBuffers$overload2(n: number, buffers: java.nio.IntBuffer){
 this.gl11.glGenBuffers(n, buffers);
     
 }
 
-
-    public glGetBufferParameteriv(target: number, pname: number, params: number[], offset: number){
+glGetBufferParameteriv(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glGetBufferParameteriv$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glGetBufferParameteriv$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: glGetBufferParameteriv'); }
+  
+    public glGetBufferParameteriv$overload1(target: number, pname: number, params: number[], offset: number){
 this.gl11.glGetBufferParameteriv(target, pname, params, offset);
     
 }
 
 
-    public glGetBufferParameteriv(target: number, pname: number, params: java.nio.IntBuffer){
+    public glGetBufferParameteriv$overload2(target: number, pname: number, params: java.nio.IntBuffer){
 this.gl11.glGetBufferParameteriv(target, pname, params);
     
 }
 
-
-    public glGetClipPlanef(pname: number, eqn: number[], offset: number){
+glGetClipPlanef(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glGetClipPlanef$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.glGetClipPlanef$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: glGetClipPlanef'); }
+  
+    public glGetClipPlanef$overload1(pname: number, eqn: number[], offset: number){
 this.gl11.glGetClipPlanef(pname, eqn, offset);
     
 }
 
 
-    public glGetClipPlanef(pname: number, eqn: java.nio.FloatBuffer){
+    public glGetClipPlanef$overload2(pname: number, eqn: java.nio.FloatBuffer){
 this.gl11.glGetClipPlanef(pname, eqn);
     
 }
 
-
-    public glGetFloatv(pname: number, params: number[], offset: number){
+glGetFloatv(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glGetFloatv$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.glGetFloatv$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: glGetFloatv'); }
+  
+    public glGetFloatv$overload1(pname: number, params: number[], offset: number){
 this.gl11.glGetFloatv(pname, params, offset);
     
 }
 
 
-    public glGetFloatv(pname: number, params: java.nio.FloatBuffer){
+    public glGetFloatv$overload2(pname: number, params: java.nio.FloatBuffer){
 this.gl11.glGetFloatv(pname, params);
     
 }
 
-
-    public glGetLightfv(light: number, pname: number, params: number[], offset: number){
+glGetLightfv(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glGetLightfv$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glGetLightfv$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: glGetLightfv'); }
+  
+    public glGetLightfv$overload1(light: number, pname: number, params: number[], offset: number){
 this.gl11.glGetLightfv(light, pname, params, offset);
     
 }
 
 
-    public glGetLightfv(light: number, pname: number, params: java.nio.FloatBuffer){
+    public glGetLightfv$overload2(light: number, pname: number, params: java.nio.FloatBuffer){
 this.gl11.glGetLightfv(light, pname, params);
     
 }
 
-
-    public glGetMaterialfv(face: number, pname: number, params: number[], offset: number){
+glGetMaterialfv(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glGetMaterialfv$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glGetMaterialfv$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: glGetMaterialfv'); }
+  
+    public glGetMaterialfv$overload1(face: number, pname: number, params: number[], offset: number){
 this.gl11.glGetMaterialfv(face, pname, params, offset);
     
 }
 
 
-    public glGetMaterialfv(face: number, pname: number, params: java.nio.FloatBuffer){
+    public glGetMaterialfv$overload2(face: number, pname: number, params: java.nio.FloatBuffer){
 this.gl11.glGetMaterialfv(face, pname, params);
     
 }
 
-
-    public glGetTexEnviv(env: number, pname: number, params: number[], offset: number){
+glGetTexEnviv(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glGetTexEnviv$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glGetTexEnviv$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: glGetTexEnviv'); }
+  
+    public glGetTexEnviv$overload1(env: number, pname: number, params: number[], offset: number){
 this.gl11.glGetTexEnviv(env, pname, params, offset);
     
 }
 
 
-    public glGetTexEnviv(env: number, pname: number, params: java.nio.IntBuffer){
+    public glGetTexEnviv$overload2(env: number, pname: number, params: java.nio.IntBuffer){
 this.gl11.glGetTexEnviv(env, pname, params);
     
 }
 
-
-    public glGetTexParameterfv(target: number, pname: number, params: number[], offset: number){
+glGetTexParameterfv(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glGetTexParameterfv$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glGetTexParameterfv$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: glGetTexParameterfv'); }
+  
+    public glGetTexParameterfv$overload1(target: number, pname: number, params: number[], offset: number){
 this.gl11.glGetTexParameterfv(target, pname, params, offset);
     
 }
 
 
-    public glGetTexParameterfv(target: number, pname: number, params: java.nio.FloatBuffer){
+    public glGetTexParameterfv$overload2(target: number, pname: number, params: java.nio.FloatBuffer){
 this.gl11.glGetTexParameterfv(target, pname, params);
     
 }
 
-
-    public glGetTexParameteriv(target: number, pname: number, params: number[], offset: number){
+glGetTexParameteriv(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glGetTexParameteriv$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glGetTexParameteriv$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: glGetTexParameteriv'); }
+  
+    public glGetTexParameteriv$overload1(target: number, pname: number, params: number[], offset: number){
 this.gl11.glGetTexParameteriv(target, pname, params, offset);
     
 }
 
 
-    public glGetTexParameteriv(target: number, pname: number, params: java.nio.IntBuffer){
+    public glGetTexParameteriv$overload2(target: number, pname: number, params: java.nio.IntBuffer){
 this.gl11.glGetTexParameteriv(target, pname, params);
     
 }
@@ -285,14 +362,21 @@ this.gl11.glPointParameterf(pname, param);
     
 }
 
-
-    public glPointParameterfv(pname: number, params: number[], offset: number){
+glPointParameterfv(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glPointParameterfv$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.glPointParameterfv$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: glPointParameterfv'); }
+  
+    public glPointParameterfv$overload1(pname: number, params: number[], offset: number){
 this.gl11.glPointParameterfv(pname, params, offset);
     
 }
 
 
-    public glPointParameterfv(pname: number, params: java.nio.FloatBuffer){
+    public glPointParameterfv$overload2(pname: number, params: java.nio.FloatBuffer){
 this.gl11.glPointParameterfv(pname, params);
     
 }
@@ -309,26 +393,40 @@ this.gl11.glTexEnvi(target, pname, param);
     
 }
 
-
-    public glTexEnviv(target: number, pname: number, params: number[], offset: number){
+glTexEnviv(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glTexEnviv$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glTexEnviv$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: glTexEnviv'); }
+  
+    public glTexEnviv$overload1(target: number, pname: number, params: number[], offset: number){
 this.gl11.glTexEnviv(target, pname, params, offset);
     
 }
 
 
-    public glTexEnviv(target: number, pname: number, params: java.nio.IntBuffer){
+    public glTexEnviv$overload2(target: number, pname: number, params: java.nio.IntBuffer){
 this.gl11.glTexEnviv(target, pname, params);
     
 }
 
-
-    public glTexParameterfv(target: number, pname: number, params: number[], offset: number){
+glTexParameterfv(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glTexParameterfv$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glTexParameterfv$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: glTexParameterfv'); }
+  
+    public glTexParameterfv$overload1(target: number, pname: number, params: number[], offset: number){
 this.gl11.glTexParameterfv(target, pname, params, offset);
     
 }
 
 
-    public glTexParameterfv(target: number, pname: number, params: java.nio.FloatBuffer){
+    public glTexParameterfv$overload2(target: number, pname: number, params: java.nio.FloatBuffer){
 this.gl11.glTexParameterfv(target, pname, params);
     
 }
@@ -339,14 +437,21 @@ this.gl11.glTexParameteri(target, pname, param);
     
 }
 
-
-    public glTexParameteriv(target: number, pname: number, params: number[], offset: number){
+glTexParameteriv(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glTexParameteriv$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glTexParameteriv$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: glTexParameteriv'); }
+  
+    public glTexParameteriv$overload1(target: number, pname: number, params: number[], offset: number){
 this.gl11.glTexParameteriv(target, pname, params, offset);
     
 }
 
 
-    public glTexParameteriv(target: number, pname: number, params: java.nio.IntBuffer){
+    public glTexParameteriv$overload2(target: number, pname: number, params: java.nio.IntBuffer){
 this.gl11.glTexParameteriv(target, pname, params);
     
 }
@@ -365,6 +470,4 @@ this.gl11.glVertexPointer(size, type, stride, offset);
 
 
 }
-
-
 

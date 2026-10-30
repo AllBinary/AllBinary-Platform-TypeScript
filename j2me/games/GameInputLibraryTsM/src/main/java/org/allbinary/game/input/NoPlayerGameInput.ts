@@ -23,6 +23,7 @@ import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKey
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -80,6 +81,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -45,6 +45,7 @@ import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dial
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
 //not GWT import const ImageProcessorInput
@@ -66,9 +67,11 @@ import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/anal
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -158,7 +161,7 @@ public constructor (){
         this.initComponents();
     
 
-    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
+    let commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 this.setSize(640, 480);
     
@@ -272,7 +275,7 @@ okJButtonActionPerformed(evt);
                             );
     
 
-    var analysisActionJDialogLayout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.analysisActionJDialog!.getContentPane());;
+    let analysisActionJDialogLayout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.analysisActionJDialog!.getContentPane());;
     
 this.analysisActionJDialog!.getContentPane()!.setLayout(analysisActionJDialogLayout);
     
@@ -492,9 +495,8 @@ pack();
 
     createStripImageJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            
-    var imageUnifierJPanel: ImageUnifierJPanel = new ImageUnifierJPanel(this.imageProcessorInput);;
+ try { 
+    let imageUnifierJPanel: ImageUnifierJPanel = new ImageUnifierJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -504,24 +506,26 @@ this.jPanel1!.updateUI();
     
 ImageToolJFrame.imageProcessorInputCompositeInterface= imageUnifierJPanel;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "createStripImageJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.logUtil!.putF("Starting", this, "okJButtonActionPerformed");
+ try { this.logUtil!.putF("Starting", this, "okJButtonActionPerformed");
     
 
-    var imageAnalysisResultsArray: ImageAnalysisResults[] = ImageAnalysis.getInstance()!.process(this.imageProcessorInput!.getBufferedImageArray(), this.getColorRangeInterface())!;;
+    let imageAnalysisResultsArray: ImageAnalysisResults[] = ImageAnalysis.getInstance()!.process(this.imageProcessorInput!.getBufferedImageArray(), this.getColorRangeInterface())!;;
     
 this.jPanel1!.removeAll();
     
@@ -535,14 +539,17 @@ ImageToolJFrame.imageProcessorInputCompositeInterface=
                                         null
                                     ;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okJButtonActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -552,36 +559,37 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okJButtonActionPerformed
 
     openImageJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.logUtil!.putF("Starting", this, "openImageJMenuItemActionPerformed");
+ try { this.logUtil!.putF("Starting", this, "openImageJMenuItemActionPerformed");
     
 this.fileJDialog!.setVisible(true);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "openImageJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public onFiles(files: File[]){
 
-        try {
-            this.logUtil!.putF("Reading " +files.length +" files.", this, "onFiles");
+ try { this.logUtil!.putF("Reading " +files.length +" files.", this, "onFiles");
     
 Arrays.sort(files, new class extends Comparator<File>
                                 {
                                 
     public compare(file1: File, file2: File): number{
 
-    var fileNameIndexValue1: number = extractIndexNumberIfAnyFromFileName(file1.getName())!;;
+    let fileNameIndexValue1: number = extractIndexNumberIfAnyFromFileName(file1.getName())!;;
     
 
-    var fileNameIndexValue2: number = extractIndexNumberIfAnyFromFileName(file2.getName())!;;
+    let fileNameIndexValue2: number = extractIndexNumberIfAnyFromFileName(file2.getName())!;;
     
 
 
@@ -593,29 +601,31 @@ Arrays.sort(files, new class extends Comparator<File>
 
     extractIndexNumberIfAnyFromFileName(name: string): number{
 
-    var i: number = 0;;
+    let i: number = 0;;
     
 
-        try {
-            
-    var start: number = name.lastIndexOf('_') +1;;
+ try { 
+    let start: number = name.lastIndexOf('_') +1;;
     
 
-    var end: number = name.lastIndexOf('.')!;;
+    let end: number = name.lastIndexOf('.')!;;
     
 
-    var number: string = name.substring(start, end)!;;
+    let number: string = name.substring(start, end)!;;
     
 i= Integer.parseInt(number);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 i= 0;
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -628,14 +638,14 @@ i= 0;
                             );
     
 
-    var bufferedImageArray: BufferedImage[] = new Array(files.length);;
+    let bufferedImageArray: BufferedImage[] = new Array(files.length);;
     
 
 
 
 
                         for (
-    var index: number = 0;index < files.length; index++)
+    let index: number = 0;index < files.length; index++)
         {
 bufferedImageArray[index]= ImageIO.read(files[index]!);
     
@@ -670,14 +680,17 @@ this.fileJDialog!.setVisible(false);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onFiles", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -687,29 +700,30 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onFiles", e);
 
     analyzeJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.logUtil!.putF("Starting", this, "analyzeJMenuItemActionPerformed");
+ try { this.logUtil!.putF("Starting", this, "analyzeJMenuItemActionPerformed");
     
 this.analysisActionJDialog!.setVisible(true);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "analyzeJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     generateRotationSpriteJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
+ try { this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
     
 
-    var spriteImageJPanel: RotationSpriteImageJPanel = new RotationSpriteImageJPanel(this.imageProcessorInput);;
+    let spriteImageJPanel: RotationSpriteImageJPanel = new RotationSpriteImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -719,24 +733,26 @@ this.jPanel1!.updateUI();
     
 ImageToolJFrame.imageProcessorInputCompositeInterface= spriteImageJPanel;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateRotationSpriteJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     generateSpriteSplitterMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
+ try { this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
     
 
-    var imageJPanel: SpriteSplitterImageJPanel = new SpriteSplitterImageJPanel(this.imageProcessorInput);;
+    let imageJPanel: SpriteSplitterImageJPanel = new SpriteSplitterImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -746,24 +762,26 @@ this.jPanel1!.updateUI();
     
 ImageToolJFrame.imageProcessorInputCompositeInterface= imageJPanel;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     generateRotationMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
+ try { this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
     
 
-    var rotationImageJPanel: RotationImageJPanel = new RotationImageJPanel(this.imageProcessorInput);;
+    let rotationImageJPanel: RotationImageJPanel = new RotationImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -773,24 +791,26 @@ this.jPanel1!.updateUI();
     
 ImageToolJFrame.imageProcessorInputCompositeInterface= rotationImageJPanel;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     scaleImagesJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "scaleImagesJMenuItemActionPerformed");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "scaleImagesJMenuItemActionPerformed");
     
 
-    var resizeImageJPanel: ResizeImageJPanel = new ResizeImageJPanel(this.imageProcessorInput);;
+    let resizeImageJPanel: ResizeImageJPanel = new ResizeImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -800,24 +820,26 @@ this.jPanel1!.updateUI();
     
 ImageToolJFrame.imageProcessorInputCompositeInterface= resizeImageJPanel;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     createIconsJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "createIconsJMenuItemActionPerformed");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "createIconsJMenuItemActionPerformed");
     
 
-    var createIconImagesJPanel: CreateIconImagesJPanel = new CreateIconImagesJPanel(this.imageProcessorInput);;
+    let createIconImagesJPanel: CreateIconImagesJPanel = new CreateIconImagesJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -827,24 +849,26 @@ this.jPanel1!.updateUI();
     
 ImageToolJFrame.imageProcessorInputCompositeInterface= createIconImagesJPanel;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     canvasImagesJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "canvasImagesJMenuItemActionPerformed");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "canvasImagesJMenuItemActionPerformed");
     
 
-    var resizeImageJPanel: CanvasImageJPanel = new CanvasImageJPanel(this.imageProcessorInput);;
+    let resizeImageJPanel: CanvasImageJPanel = new CanvasImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -854,24 +878,26 @@ this.jPanel1!.updateUI();
     
 ImageToolJFrame.imageProcessorInputCompositeInterface= resizeImageJPanel;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     generateMirrorSpriteMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.logUtil!.putF("Starting", this, "generateMirrorSpriteJMenuItemActionPerformed");
+ try { this.logUtil!.putF("Starting", this, "generateMirrorSpriteJMenuItemActionPerformed");
     
 
-    var spriteImageJPanel: MirrorSpriteImageJPanel = new MirrorSpriteImageJPanel(this.imageProcessorInput);;
+    let spriteImageJPanel: MirrorSpriteImageJPanel = new MirrorSpriteImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -881,24 +907,26 @@ this.jPanel1!.updateUI();
     
 ImageToolJFrame.imageProcessorInputCompositeInterface= spriteImageJPanel;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateMirrorSpriteJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     mirrorJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-        try {
-            this.logUtil!.putF("Starting", this, "generateMirrorJMenuItemActionPerformed");
+ try { this.logUtil!.putF("Starting", this, "generateMirrorJMenuItemActionPerformed");
     
 
-    var mirrorImageJPanel: MirrorImageJPanel = new MirrorImageJPanel(this.imageProcessorInput);;
+    let mirrorImageJPanel: MirrorImageJPanel = new MirrorImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -908,20 +936,23 @@ this.jPanel1!.updateUI();
     
 ImageToolJFrame.imageProcessorInputCompositeInterface= mirrorImageJPanel;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateMirrorJMenuItemActionPerformed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     getColorRangeInterface(): ColorRangeInterface{
 
-    var colorRangeInterface: ColorRangeInterface = new ColorRange() as ColorRangeInterface;;
+    let colorRangeInterface: ColorRangeInterface = new ColorRange() as ColorRangeInterface;;
     
 colorRangeInterface!.setMinRed(new Integer(this.getMinRedJTextField()!.getText()).intValue());
     
@@ -1101,6 +1132,4 @@ this.minRedJTextField= this.minRedJTextField;
     private titleJLabel: javax.swing.JLabel;
 
 }
-
-
 

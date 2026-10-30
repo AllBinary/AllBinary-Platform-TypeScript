@@ -42,12 +42,15 @@ import { MotionGestureConfigurationFactory } from '../../../../../../org/allbina
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -81,7 +84,7 @@ public constructor (){
 
             super();
         
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF("MotionGesture to CompleteMotionGesture Reciever", this, commonStrings!.CONSTRUCTOR);
     
@@ -94,30 +97,30 @@ CompleteMotionGestureInputEventHandler.getInstance()!.addListener(new GameKeyFro
             
     public onMotionGestureCompleted(list: BasicArrayList){
 
-    var configuration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;;
+    let configuration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;;
     
 
-    var commandActionsList: BasicArrayList = configuration.getAssociateCommandActionsList()!;;
+    let commandActionsList: BasicArrayList = configuration.getAssociateCommandActionsList()!;;
     
 
-    var size: number = commandActionsList!.size()!;;
+    let size: number = commandActionsList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = size -1;index >= 0; index--)
+    let index: number = size -1;index >= 0; index--)
         {
 
-    var association: MotionGestureToMotionGestureActionAssociation = commandActionsList!.objectArray[index]! as MotionGestureToMotionGestureActionAssociation;;
+    let association: MotionGestureToMotionGestureActionAssociation = commandActionsList!.objectArray[index]! as MotionGestureToMotionGestureActionAssociation;;
     
 
                         if(association.isMotionGestureArrayEquals(list) == true)
                         
                                     {
                                     
-    var completeMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = association.getCommandAction() as GameKeyCompleteMotionGestureInputEvent;;
+    let completeMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = association.getCommandAction() as GameKeyCompleteMotionGestureInputEvent;;
     
 CompleteMotionGestureInputEventHandler.getInstance()!.fireEvent(completeMotionGestureInputEvent);
     
@@ -133,6 +136,4 @@ break;
 
 
 }
-
-
 

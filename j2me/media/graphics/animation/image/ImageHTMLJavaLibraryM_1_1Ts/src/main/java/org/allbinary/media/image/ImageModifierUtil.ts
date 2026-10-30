@@ -38,12 +38,15 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
 //not GWT import const PlaynImage
@@ -53,12 +56,15 @@ import { ResourceCallbackStrings } from '../../../../org/microemu/device/Resourc
 
 //not plain js import { Canvas } 
 const Canvas = globalThis.playn.core.Canvas;
+type Canvas<T = any, U = any> = typeof Canvas extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Canvas;
 
 //not plain js import { CanvasImage } 
 const CanvasImage = globalThis.playn.core.CanvasImage;
+type CanvasImage<T = any, U = any> = typeof CanvasImage extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CanvasImage;
 
 //not plain js import { Callback } 
 const Callback = globalThis.playn.core.util.Callback;
+type Callback<T = any, U = any> = typeof Callback extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Callback;
 
 
 
@@ -112,10 +118,10 @@ export class ImageModifierUtil
 
     public setAlpha(originalImage: Image, image: Image, imageIndex: number, alpha: number){
 
-    var alphaF: number = alpha;;
+    let alphaF: number = alpha;;
     
 
-    var alphaFloat: number = alphaF /255;;
+    let alphaFloat: number = alphaF /255;;
     
 this.setAlphaF(originalImage, image, imageIndex, alphaFloat);
     
@@ -139,16 +145,16 @@ this.setAlpha2(originalImage, image, imageIndex, alpha);
 
     public setAlpha2(originalImage: Image, image: Image, imageIndex: number, alpha: number){
 
-    var htmlImage: PlaynImage = image as PlaynImage;;
+    let htmlImage: PlaynImage = image as PlaynImage;;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
+    let canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
     
 
-    var originalPlaynImage: playn.core.Image = (originalImage as PlaynImage).getImage() as playn.core.Image;;
+    let originalPlaynImage: playn.core.Image = (originalImage as PlaynImage).getImage() as playn.core.Image;;
     
 
-    var canvas: Canvas = canvasImage!.canvas()!;;
+    let canvas: Canvas = canvasImage!.canvas()!;;
     
 canvas.clear();
     
@@ -161,19 +167,19 @@ canvas.drawImage(originalPlaynImage, 0, 0);
 
     public setAlpha3(image: Image, alpha: number){
 
-    var alphaF: number = alpha;;
+    let alphaF: number = alpha;;
     
 
-    var alphaFloat: number = alphaF /255;;
+    let alphaFloat: number = alphaF /255;;
     
 
-    var htmlImage: PlaynImage = image as PlaynImage;;
+    let htmlImage: PlaynImage = image as PlaynImage;;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
+    let canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
     
 
-    var canvas: Canvas = canvasImage!.canvas()!;;
+    let canvas: Canvas = canvasImage!.canvas()!;;
     
 canvas.setAlpha(alphaFloat);
     
@@ -182,20 +188,20 @@ canvas.setAlpha(alphaFloat);
 
     public getImageArray(originalImageArray: Image[]): Image[]{
 
-    var size: number = originalImageArray!.length
+    let size: number = originalImageArray!.length
                 ;;
     
 this.alphaArray= new Array(size);
     
 
-    var imageArray: Image[] = new Array(size);;
+    let imageArray: Image[] = new Array(size);;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 imageArray[index]= originalImageArray[index]!;
     
@@ -214,7 +220,7 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
 
     public handleImage(imageArray: Image[], index: number, image: Image){
 
-    var image3: playn.core.Image = (image as PlaynImage).getImage() as playn.core.Image;;
+    let image3: playn.core.Image = (image as PlaynImage).getImage() as playn.core.Image;;
     
 
                         if(image3 != 
@@ -233,12 +239,12 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
                                 
                         else {
                             
-    var callback: Callback = new class extends Callback
+    let callback: Callback = new class extends Callback
                                 {
                                 
-    public onSuccess(resource: any = {}){
+    public onSuccess(resource: any){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.putF(this.resourceCallbackStrings!.DONE +image.getName(), this, this.resourceCallbackStrings!.HANDLE_IMAGE);
     
@@ -248,7 +254,7 @@ copy(imageArray, index, image, image3);
 
     public onFailure(e: Throwable){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.putF(new StringMaker().append(this.commonStrings!.EXCEPTION_LABEL)!.append(this.resourceCallbackStrings!.ERROR)!.append(image.getName())!.toString(), this, this.resourceCallbackStrings!.HANDLE_IMAGE);
     
@@ -276,31 +282,33 @@ image3.addCallback(callback);
 
     public copy(imageArray: Image[], index: number, image: Image, image3: playn.core.Image){
 
-        try {
-            
-    var image2: Image = Image.createImage(image3.width(), image3.height())!;;
+ try { 
+    let image2: Image = Image.createImage(image3.width(), image3.height())!;;
     
 
-    var graphics: Graphics = image2.getGraphics()!;;
+    let graphics: Graphics = image2.getGraphics()!;;
     
 graphics.drawImage(image, 0, 0, Anchor.TOP_LEFT);
     
 imageArray[index]= image2;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.putF(this.commonStrings!.EXCEPTION_LABEL +this.resourceCallbackStrings!.DONE, this, this.resourceCallbackStrings!.HANDLE_IMAGE);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public reset(){
 
-    var size: number = this.alphaArray!.length
+    let size: number = this.alphaArray!.length
                 ;;
     
 
@@ -308,7 +316,7 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION_LABEL +this.resourceCallbackStr
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.alphaArray[index]= true;
     
@@ -318,6 +326,4 @@ this.alphaArray[index]= true;
 
 
 }
-
-
 

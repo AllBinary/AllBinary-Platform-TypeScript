@@ -72,5 +72,3 @@ this.frameDelayTime= frameDelayTime;
 
 }
 
-
-

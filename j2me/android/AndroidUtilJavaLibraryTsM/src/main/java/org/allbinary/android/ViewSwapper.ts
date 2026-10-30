@@ -77,7 +77,7 @@ this.topViewArray= topViewArray;
 
     public setMainView(id: number){
 
-    var viewGroup: ViewGroup = this.activity.findViewById(this.rootViewId) as unknown as ViewGroup;;
+    let viewGroup: ViewGroup = this.activity.findViewById(this.rootViewId) as unknown as ViewGroup;;
     
 
                         if(id != this.currentMainViewId)
@@ -88,7 +88,7 @@ this.topViewArray= topViewArray;
 
 
                         for (
-    var index: number = 0;index < this.topViewArray!.length; index++)
+    let index: number = 0;index < this.topViewArray!.length; index++)
         {
 viewGroup!.removeView(this.topViewArray[index]!);
     
@@ -99,7 +99,7 @@ viewGroup!.removeView(this.topViewArray[index]!);
 
 
                         for (
-    var index: number = 0;index < this.mainViewArray!.length; index++)
+    let index: number = 0;index < this.mainViewArray!.length; index++)
         {
 
                         if(id != this.mainViewArray[index]!.getId())
@@ -117,7 +117,7 @@ viewGroup!.removeView(this.topViewArray[index]!);
 
 
                         for (
-    var index: number = 0;index < this.mainViewArray!.length; index++)
+    let index: number = 0;index < this.mainViewArray!.length; index++)
         {
 
                         if(id == this.mainViewArray[index]!.getId())
@@ -137,7 +137,7 @@ this.currentMainViewId= id;
 
 
                         for (
-    var index: number = 0;index < this.topViewArray!.length; index++)
+    let index: number = 0;index < this.topViewArray!.length; index++)
         {
 viewGroup!.addView(this.topViewArray[index]!);
     
@@ -150,6 +150,4 @@ viewGroup!.addView(this.topViewArray[index]!);
 
 
 }
-
-
 

@@ -57,6 +57,7 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -90,28 +91,28 @@ export class TopUBoundBounceAIFactory
             
     public getInstance(hashtable: ABHashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = ownerLayerInterface as VelocityInterfaceCompositeInterface;;
+    let velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = ownerLayerInterface as VelocityInterfaceCompositeInterface;;
     
 
-    var velocityInterface: VelocityInterface = velocityInterfaceCompositeInterface!.getVelocityProperties() as VelocityInterface;;
+    let velocityInterface: VelocityInterface = velocityInterfaceCompositeInterface!.getVelocityProperties() as VelocityInterface;;
     
 
-    var maxDistancePerTick: number = (velocityInterface!.getMaxForwardVelocity()>>velocityInterface!.getVelocityXBasicDecimalP()!.getScaledFactor());;
+    let maxDistancePerTick: number = (velocityInterface!.getMaxForwardVelocity()>>velocityInterface!.getVelocityXBasicDecimalP()!.getScaledFactor());;
     
 
-    var halfWidth: number = ownerLayerInterface!.getWidth() *2 +maxDistancePerTick +1;;
+    let halfWidth: number = ownerLayerInterface!.getWidth() *2 +maxDistancePerTick +1;;
     
 
-    var halfHeight: number = ownerLayerInterface!.getHeight() *2 +maxDistancePerTick +1;;
+    let halfHeight: number = ownerLayerInterface!.getHeight() *2 +maxDistancePerTick +1;;
     
 
-    var point: GPoint = PointFactory.getInstance()!.createXY(halfWidth, halfHeight +60)!;;
+    let point: GPoint = PointFactory.getInstance()!.createXY(halfWidth, halfHeight +60)!;;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var rectangle: Rectangle = new Rectangle(point, (displayInfo!.getLastWidth() -halfWidth -point.getX()), (displayInfo!.getLastHeight() -halfHeight -point.getY()));;
+    let rectangle: Rectangle = new Rectangle(point, (displayInfo!.getLastWidth() -halfWidth -point.getX()), (displayInfo!.getLastHeight() -halfHeight -point.getY()));;
     
 
 
@@ -123,6 +124,4 @@ export class TopUBoundBounceAIFactory
 
 
 }
-
-
 

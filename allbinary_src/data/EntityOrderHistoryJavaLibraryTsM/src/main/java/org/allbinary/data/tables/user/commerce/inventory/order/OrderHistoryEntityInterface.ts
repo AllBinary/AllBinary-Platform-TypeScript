@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
@@ -63,33 +65,31 @@ import { BasicDataTableInterface } from '../../../../../../../../org/allbinary/d
 export interface OrderHistoryEntityInterface extends BasicDataTableInterface {
         
 
-    insert(userName: string, order: Order)
+    insert(userName: string, order: Order): void;
 
-    setStatus(orderId: string, status: string)
+    setStatus(orderId: string, status: string): void;
 
-    setPaymentMethod(orderId: string, status: string)
-
-                //@Throws(Exception.constructor)
-            
-    getStoreOrders(storeFrontInterface: StoreFrontInterface): BasicArrayList
+    setPaymentMethod(orderId: string, status: string): void;
 
                 //@Throws(Exception.constructor)
             
-    getOrders(userName: string): BasicArrayList
+    getStoreOrders(storeFrontInterface: StoreFrontInterface): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    getOrders(status: string, fromDate: string, toDate: string): BasicArrayList
+    getOrders(userName: string): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    getOrder(id: string): OrderHistory
+    getOrders(status: string, fromDate: string, toDate: string): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>)
+    getOrder(id: string): OrderHistory;
+
+                //@Throws(Exception.constructor)
+            
+    update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>): void;
 
 }
-
-
 

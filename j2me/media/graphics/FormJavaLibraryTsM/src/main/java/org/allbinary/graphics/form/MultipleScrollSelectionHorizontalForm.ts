@@ -44,9 +44,11 @@ import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -80,6 +82,8 @@ import { FormTypeFactory } from './FormTypeFactory.js';
 //not GWT import - same folder const MultipleScrollSelectionFormVerticalPaintable
 //import { MultipleScrollSelectionFormHorizontalPaintable } from './MultipleScrollSelectionFormHorizontalPaintable.js';
 //not GWT import - same folder const MultipleScrollSelectionFormHorizontalPaintable
+type MultipleScrollSelectionFormHorizontalPaintable = InstanceType<MultipleScrollSelectionHorizontalForm['MultipleScrollSelectionFormHorizontalPaintable']>;
+type MultipleScrollSelectionFormVerticalPaintable = InstanceType<MultipleScrollSelectionHorizontalForm['MultipleScrollSelectionFormVerticalPaintable']>;
 
 export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm implements UpdateMyFontInterface {
         
@@ -88,7 +92,7 @@ export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm i
             
     public static createForm(title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
 
-    var scrollSelectionForm: ScrollSelectionForm = new MultipleScrollSelectionHorizontalForm(title, items, ItemPaintableFactory.getInstance(), border, backgroundBasicColor, foregroundBasicColor);;
+    let scrollSelectionForm: ScrollSelectionForm = new MultipleScrollSelectionHorizontalForm(title, items, ItemPaintableFactory.getInstance(), border, backgroundBasicColor, foregroundBasicColor);;
     
 scrollSelectionForm!.init(rectangle, formType);
     
@@ -102,7 +106,7 @@ scrollSelectionForm!.init(rectangle, formType);
 
 
 //inner= member=true isStatic=
-MultipleScrollSelectionFormHorizontalPaintable = class extends ItemIndexPaintable {
+MultipleScrollSelectionFormHorizontalPaintable = (() => { const outer$MultipleScrollSelectionHorizontalForm = this; return class extends ItemIndexPaintable {
         
 /*Static stuff is not allowed for TypeScript inner classes*//**/
 
@@ -129,11 +133,9 @@ MultipleScrollSelectionFormHorizontalPaintable = class extends ItemIndexPaintabl
 }
 
 
-}
-
-
+}; })();
 //inner= member=true isStatic=
-MultipleScrollSelectionFormVerticalPaintable = class extends ItemIndexPaintable {
+MultipleScrollSelectionFormVerticalPaintable = (() => { const outer$MultipleScrollSelectionHorizontalForm = this; return class extends ItemIndexPaintable {
         
 /*Static stuff is not allowed for TypeScript inner classes*//**/
 
@@ -160,9 +162,7 @@ MultipleScrollSelectionFormVerticalPaintable = class extends ItemIndexPaintable 
 }
 
 
-}
-
-
+}; })();
     private rectPaintable: Paintable = NullPaintable.getInstance()!;
 
     private multipleScrollSelectionHorizontalFormTypeItemIndexPaintable: ItemIndexPaintable = ItemIndexPaintable.getInstance()!;
@@ -195,14 +195,12 @@ class MPaintable extends Paintable {
         
 
     public paint(graphics: Graphics){
-MultipleScrollSelectionHorizontalForm.prototype.fillRect(graphics);
+outer$MultipleScrollSelectionHorizontalForm.fillRect(graphics);
     
 }
 
 
 }
-
-
 
                     //Otherwise - statement - EmptyStmt
 
@@ -228,7 +226,7 @@ graphics.fillRect(this.x, this.y, this.rectangle.getWidth(), this.rectangle.getH
 super.init(rectangle, formType);
     
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
+    let formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 
                         if(formType == formTypeFactory!.HORIZONTAL_FORM)
@@ -269,7 +267,7 @@ super.init(rectangle, formType);
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.fontHeight= font.getHeight();
     
@@ -282,7 +280,7 @@ this.myFontProcessor= MyFontProcessor.getInstance();
             
     paintHorizontal(graphics: Graphics, index: number, item: ABCustomItem, dx: number, dy: number): number{
 
-    var dx2: number = this.paintItem(graphics, index, item, dx, dy) +this.border;;
+    let dx2: number = this.paintItem(graphics, index, item, dx, dy) +this.border;;
     
 this.paintable.paint(graphics, index, dx, dy);
     
@@ -325,34 +323,33 @@ this.paintable.paint(graphics, index, dx, dy);
 
     public paint(graphics: Graphics){
 
-        try {
-            this.myFontProcessor!.process(graphics);
+ try { this.myFontProcessor!.process(graphics);
     
 
-    var start: number = this.getStartIndex()!;;
+    let start: number = this.getStartIndex()!;;
     
 
-    var size: number = this.size()!;;
+    let size: number = this.size()!;;
     
 
-    var dx: number = this.x;;
+    let dx: number = this.x;;
     
 
-    var dy: number = this.y;;
+    let dy: number = this.y;;
     
 this.rectPaintable!.paint(graphics);
     
 graphics.drawString(this.getTitle(), this.x, this.y -this.fontHeight, 0);
     
 
-    var item: ABCustomItem;;
+    let item: ABCustomItem;;
     
 
 
 
 
                         for (
-    var index: number = start;index < size; index++)
+    let index: number = start;index < size; index++)
         {
 item= this.get(index);
     
@@ -382,18 +379,19 @@ dx= this.multipleScrollSelectionHorizontalFormTypeItemIndexPaintable!.paint(grap
     
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.PAINT);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

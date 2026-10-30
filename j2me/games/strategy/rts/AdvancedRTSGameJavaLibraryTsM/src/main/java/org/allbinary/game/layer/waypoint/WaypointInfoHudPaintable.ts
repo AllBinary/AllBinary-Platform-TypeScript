@@ -79,7 +79,7 @@ public constructor (){
 super.updateMeasurement(graphics);
     
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.textLine2Y= (this.y +font.getHeight());
     
@@ -88,7 +88,7 @@ this.textLine2Y= (this.y +font.getHeight());
 
     public updateSelectionInfo(){
 
-    var rtsLayer: RTSLayer = this.rtsLayerP as RTSLayer;;
+    let rtsLayer: RTSLayer = this.rtsLayerP as RTSLayer;;
     
 this.setName(rtsLayer!.getName());
     
@@ -126,6 +126,4 @@ this.getAnimationInterface()!.paintXY(graphics, this.imageX, this.y);
 
 
 }
-
-
 

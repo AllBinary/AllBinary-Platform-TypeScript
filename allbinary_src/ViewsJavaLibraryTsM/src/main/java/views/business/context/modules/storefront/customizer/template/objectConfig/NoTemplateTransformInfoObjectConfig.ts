@@ -34,9 +34,11 @@ import { XmlDocumentHelper } from '../../../../../../../../org/allbinary/data/tr
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Replace } from '../../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 //not GWT import const Replace
@@ -118,7 +120,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
             
     generate(objectConfigDocument: Document): Document{
 
-    var docString: string = XmlDocumentHelper.toString(objectConfigDocument)!;;
+    let docString: string = XmlDocumentHelper.toString(objectConfigDocument)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -130,31 +132,31 @@ this.setDocument(this.generate(this.toXmlDoc()));
                                     }
                                 
 
-    var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;;
+    let storeName: string = this.getTransformInfoInterface()!.getStoreName()!;;
     
 
-    var viewName: string = this.getTransformInfoInterface()!.getName()!;;
+    let viewName: string = this.getTransformInfoInterface()!.getName()!;;
     
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var VARKEY: string = TransformInfoObjectConfigData.getInstance()!.VARKEY;;
+    let VARKEY: string = TransformInfoObjectConfigData.getInstance()!.VARKEY;;
     
 hashMap!.put(VARKEY +StoreFrontData.getInstance()!.NAME, storeName);
     
 hashMap!.put(VARKEY +TransformInfoData.getInstance()!.OWNER, viewName);
     
 
-    var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getTransformInfoInterface()!.getStoreName())!;;
+    let pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getTransformInfoInterface()!.getStoreName())!;;
     
 hashMap!.put(VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName);
     
 
-    var replace: Replace = new Replace(hashMap);;
+    let replace: Replace = new Replace(hashMap);;
     
 
-    var newObjectConfigDocument: Document = DomDocumentHelper.create(replace.all(docString))!;;
+    let newObjectConfigDocument: Document = DomDocumentHelper.create(replace.all(docString))!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -175,6 +177,4 @@ hashMap!.put(VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName);
 
 
 }
-
-
 

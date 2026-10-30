@@ -46,9 +46,7 @@ export interface BasicLayerProcessorInterface {
 
                 //@Throws(Exception.constructor)
             
-    process(allBinaryLayerManager: AllBinaryLayerManager)
+    process(allBinaryLayerManager: AllBinaryLayerManager): void;
 
 }
-
-
 

@@ -88,15 +88,17 @@ export class NewWorkAreaJDialog extends javax.swing.JDialog {
 
     public static main(args: string[]){
 
-        try {
-            new NewWorkAreaJDialog(new MyFrame(), true, new Dimension(100, 100), "testing").show();
+ try { new NewWorkAreaJDialog(new MyFrame(), true, new Dimension(100, 100), "testing").show();
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-}
-
+ }
+   }
+ 
 }
 
 
@@ -117,8 +119,7 @@ public constructor (parent: MyFrame, modal: boolean, dimension: Dimension, newNa
                             //For kotlin this is before the body of the constructor.
                     
 
-        try {
-            this.initComponents();
+ try { this.initComponents();
     
 this.parent= parent;
     
@@ -131,22 +132,24 @@ this.nameJTextField= new JTextField(newName);
 this.dimension= dimension;
     
 
-    var submitButton: JButton = new JButton("Ok");;
+    let submitButton: JButton = new JButton("Ok");;
     
 submitButton!.addActionListener(new class extends ActionListener
                                 {
                                 
     public actionPerformed(evt: ActionEvent){
 
-        try {
-            disposeNewDialog();
+ try { disposeNewDialog();
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-}
-
+ }
+   }
+ 
 }
 
                                 }
@@ -176,17 +179,20 @@ this.getContentPane()!.add(submitButton);
     
 this.show();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -194,15 +200,14 @@ this.show();
             
     disposeNewDialog(){
 
-        try {
-            
-    var canvasWidth: Integer = new Integer(this.xSizeJTextField!.getText());;
+ try { 
+    let canvasWidth: Integer = new Integer(this.xSizeJTextField!.getText());;
     
 
-    var canvasHeight: Integer = new Integer(this.ySizeJTextField!.getText());;
+    let canvasHeight: Integer = new Integer(this.ySizeJTextField!.getText());;
     
 
-    var newName: string = this.nameJTextField!.getText()!;;
+    let newName: string = this.nameJTextField!.getText()!;;
     
 
                         if(newName == 
@@ -212,7 +217,7 @@ this.show();
                                     throw new GraphicsException("No Name", this, "disposeNewDialog");
                                 
 
-    var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(newName, this.dimension, canvasWidth!.intValue(), canvasHeight!.intValue());;
+    let workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(newName, this.dimension, canvasWidth!.intValue(), canvasHeight!.intValue());;
     
 workAreaJPanel!.setLayout(new GridLayout(1, 1));
     
@@ -220,17 +225,20 @@ this.parent.add(workAreaJPanel as WorkAreaJPanelInterface);
     
 this.dispose();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -260,6 +268,4 @@ dispose();
 
 
 }
-
-
 

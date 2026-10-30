@@ -30,15 +30,18 @@ import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jc
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil/ByteUtil.js';
 //not GWT import const ByteUtil
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -72,23 +75,25 @@ public constructor (keyAsString: string){
 
             super();
         
-    var key: number[] = NullUtil.getInstance()!.NULL_BYTE_ARRAY;;
+    let key: number[] = NullUtil.getInstance()!.NULL_BYTE_ARRAY;;
     
 
-        try {
-            key= TsUtil.getInstance()!.getByteArray(keyAsString);
+ try { key= TsUtil.getInstance()!.getByteArray(keyAsString);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e);
     
-}
 
+ }
+   }
+ 
 this.key= key;
     
 }
@@ -96,17 +101,17 @@ this.key= key;
 
     public encrypt(array: number[]): number[]{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.mutilate(array);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
     
 
@@ -115,24 +120,26 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NullUtil.getInstance()!.NULL_BYTE_ARRAY;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public decrypt(array: number[]): number[]{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.mutilate(array);;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE("decrypt Failed", this, "decrypt", e);
     
 
@@ -141,21 +148,23 @@ PreLogUtil.putOE("decrypt Failed", this, "decrypt", e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NullUtil.getInstance()!.NULL_BYTE_ARRAY;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public mutilate(array: number[]): number[]{
 
-    var value: number;;
+    let value: number;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.key.length; index++)
+    let index: number = 0;index < this.key.length; index++)
         {
 value= this.key[index]!;
     
@@ -173,6 +182,4 @@ array= this.byteUtil!.xor(array, value);
 
 
 }
-
-
 

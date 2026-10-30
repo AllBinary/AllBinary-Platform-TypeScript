@@ -34,6 +34,7 @@ import { IntBuffer } from '../../../java/nio/IntBuffer.js';
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -230,8 +231,15 @@ export class NullGL10
     
 }
 
-
-    public glDeleteTextures(n: number, textures: number[], offset: number){
+glDeleteTextures(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glDeleteTextures$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.glDeleteTextures$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: glDeleteTextures'); }
+  
+    public glDeleteTextures$overload1(n: number, textures: number[], offset: number){
 
 
 
@@ -241,7 +249,7 @@ export class NullGL10
 }
 
 
-    public glDeleteTextures(n: number, textures: IntBuffer){
+    public glDeleteTextures$overload2(n: number, textures: IntBuffer){
 
 
 
@@ -370,8 +378,15 @@ export class NullGL10
     
 }
 
-
-    public glFogfv(pname: number, params: number[], offset: number){
+glFogfv(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glFogfv$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.glFogfv$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: glFogfv'); }
+  
+    public glFogfv$overload1(pname: number, params: number[], offset: number){
 
 
 
@@ -381,7 +396,7 @@ export class NullGL10
 }
 
 
-    public glFogfv(pname: number, params: FloatBuffer){
+    public glFogfv$overload2(pname: number, params: FloatBuffer){
 
 
 
@@ -410,8 +425,15 @@ export class NullGL10
     
 }
 
-
-    public glGenTextures(n: number, textures: number[], offset: number){
+glGenTextures(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glGenTextures$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.glGenTextures$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: glGenTextures'); }
+  
+    public glGenTextures$overload1(n: number, textures: number[], offset: number){
 
 
 
@@ -421,7 +443,7 @@ export class NullGL10
 }
 
 
-    public glGenTextures(n: number, textures: IntBuffer){
+    public glGenTextures$overload2(n: number, textures: IntBuffer){
 
 
 
@@ -440,8 +462,15 @@ export class NullGL10
     
 }
 
-
-    public glGetIntegerv(pname: number, params: number[], offset: number){
+glGetIntegerv(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glGetIntegerv$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.glGetIntegerv$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: glGetIntegerv'); }
+  
+    public glGetIntegerv$overload1(pname: number, params: number[], offset: number){
 
 
 
@@ -451,7 +480,7 @@ export class NullGL10
 }
 
 
-    public glGetIntegerv(pname: number, params: IntBuffer){
+    public glGetIntegerv$overload2(pname: number, params: IntBuffer){
 
 
 
@@ -490,8 +519,15 @@ export class NullGL10
     
 }
 
-
-    public glLightModelfv(pname: number, params: number[], offset: number){
+glLightModelfv(...args: any[]): any {
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glLightModelfv$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 2 && typeof args[0] === 'number') return this.glLightModelfv$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: glLightModelfv'); }
+  
+    public glLightModelfv$overload1(pname: number, params: number[], offset: number){
 
 
 
@@ -501,7 +537,7 @@ export class NullGL10
 }
 
 
-    public glLightModelfv(pname: number, params: FloatBuffer){
+    public glLightModelfv$overload2(pname: number, params: FloatBuffer){
 
 
 
@@ -520,8 +556,15 @@ export class NullGL10
     
 }
 
-
-    public glLightfv(light: number, pname: number, params: number[], offset: number){
+glLightfv(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glLightfv$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glLightfv$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: glLightfv'); }
+  
+    public glLightfv$overload1(light: number, pname: number, params: number[], offset: number){
 
 
 
@@ -531,7 +574,7 @@ export class NullGL10
 }
 
 
-    public glLightfv(light: number, pname: number, params: FloatBuffer){
+    public glLightfv$overload2(light: number, pname: number, params: FloatBuffer){
 
 
 
@@ -560,8 +603,15 @@ export class NullGL10
     
 }
 
-
-    public glLoadMatrixf(m: number[], offset: number){
+glLoadMatrixf(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[1] === 'number') return this.glLoadMatrixf$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.glLoadMatrixf$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: glLoadMatrixf'); }
+  
+    public glLoadMatrixf$overload1(m: number[], offset: number){
 
 
 
@@ -571,7 +621,7 @@ export class NullGL10
 }
 
 
-    public glLoadMatrixf(m: FloatBuffer){
+    public glLoadMatrixf$overload2(m: FloatBuffer){
 
 
 
@@ -600,8 +650,15 @@ export class NullGL10
     
 }
 
-
-    public glMaterialfv(face: number, pname: number, params: number[], offset: number){
+glMaterialfv(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glMaterialfv$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glMaterialfv$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: glMaterialfv'); }
+  
+    public glMaterialfv$overload1(face: number, pname: number, params: number[], offset: number){
 
 
 
@@ -611,7 +668,7 @@ export class NullGL10
 }
 
 
-    public glMaterialfv(face: number, pname: number, params: FloatBuffer){
+    public glMaterialfv$overload2(face: number, pname: number, params: FloatBuffer){
 
 
 
@@ -630,8 +687,15 @@ export class NullGL10
     
 }
 
-
-    public glMultMatrixf(m: number[], offset: number){
+glMultMatrixf(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[1] === 'number') return this.glMultMatrixf$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.glMultMatrixf$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: glMultMatrixf'); }
+  
+    public glMultMatrixf$overload1(m: number[], offset: number){
 
 
 
@@ -641,7 +705,7 @@ export class NullGL10
 }
 
 
-    public glMultMatrixf(m: FloatBuffer){
+    public glMultMatrixf$overload2(m: FloatBuffer){
 
 
 
@@ -870,8 +934,15 @@ export class NullGL10
     
 }
 
-
-    public glTexEnvfv(target: number, pname: number, params: number[], offset: number){
+glTexEnvfv(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glTexEnvfv$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glTexEnvfv$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: glTexEnvfv'); }
+  
+    public glTexEnvfv$overload1(target: number, pname: number, params: number[], offset: number){
 
 
 
@@ -881,7 +952,7 @@ export class NullGL10
 }
 
 
-    public glTexEnvfv(target: number, pname: number, params: FloatBuffer){
+    public glTexEnvfv$overload2(target: number, pname: number, params: FloatBuffer){
 
 
 
@@ -1002,6 +1073,4 @@ export class NullGL10
 
 
 }
-
-
 

@@ -46,6 +46,7 @@ import { BuildingSound } from '../../../../../org/allbinary/media/audio/Building
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 //not GWT import const BooleanFactory
@@ -79,6 +80,7 @@ import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { ErrorSound } from '../../../../../org/allbinary/media/audio/ErrorSound.js';
 //not GWT import const ErrorSound
@@ -124,7 +126,7 @@ public constructor (groupInterface: Group[]){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
+    let basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
     
 this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, SmallIntegerSingletonFactory.getInstance()!.getAt(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
@@ -137,10 +139,10 @@ this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
     
@@ -153,16 +155,16 @@ this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 super.process(layerManager);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 
-    var technologyRTSInterfaceImageItem: TechnologyRTSInterfaceImageItem = item as TechnologyRTSInterfaceImageItem;;
+    let technologyRTSInterfaceImageItem: TechnologyRTSInterfaceImageItem = item as TechnologyRTSInterfaceImageItem;;
     
 
-    var rtsInterface: RTSInterface = technologyRTSInterfaceImageItem!.getRtsInterface()!;;
+    let rtsInterface: RTSInterface = technologyRTSInterfaceImageItem!.getRtsInterface()!;;
     
 this.logUtil!.putF(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInterface!.isUpgradeable())!.toString(), this, commonStrings!.PROCESS);
     
@@ -171,10 +173,10 @@ this.logUtil!.putF(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInte
                         
                                     {
                                     
-    var cost: number = rtsInterface!.getUpgradeCost()!;;
+    let cost: number = rtsInterface!.getUpgradeCost()!;;
     
 
-    var capital: Capital = rtsPlayerLayerInterface!.getCapital()!;;
+    let capital: Capital = rtsPlayerLayerInterface!.getCapital()!;;
     
 stringMaker!.delete(0, stringMaker!.length());
     
@@ -219,6 +221,4 @@ TechEventHandler.getInstance()!.fireEvent(this.EVENT);
 
 
 }
-
-
 

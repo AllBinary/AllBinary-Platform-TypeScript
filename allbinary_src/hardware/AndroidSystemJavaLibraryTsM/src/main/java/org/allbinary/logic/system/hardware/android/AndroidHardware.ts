@@ -38,12 +38,15 @@ import { NullCloseable } from '../../../../../../org/allbinary/logic/io/NullClos
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { HardwareInterface } from '../../../../../../org/allbinary/logic/system/hardware/HardwareInterface.js';
 //not GWT import const HardwareInterface
@@ -56,18 +59,23 @@ import { HardwareComponentInterface } from '../../../../../../org/allbinary/logi
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -111,7 +119,7 @@ public constructor (){
         this.init(this.DEVICES);
     
 
-    var size: number = this.componentInterfaceVector!.size()!;;
+    let size: number = this.componentInterfaceVector!.size()!;;
     
 
                         if(size < this.MINHARDWARE)
@@ -132,16 +140,16 @@ public constructor (){
             
     init(filePath: string){
 
-    var lineNumberReader: Closeable = NullCloseable.NULL_CLOSEABLE;;
+    let lineNumberReader: Closeable = NullCloseable.NULL_CLOSEABLE;;
     
 
-        try {
-            lineNumberReader= this.get(filePath);
+ try { lineNumberReader= this.get(filePath);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.INIT, e);
     
 
@@ -149,10 +157,10 @@ this.logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.
 
                             throw e;
                     
-}
 
-         finally {
-            
+ }
+   }
+ finally { 
                         if(lineNumberReader != 
                                     null
                                 )
@@ -163,9 +171,7 @@ this.logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.
 
                                     }
                                 
-
-         }
-        
+ }
 }
 
 
@@ -175,15 +181,15 @@ this.logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.
 this.componentInterfaceVector= new BasicArrayListD();
     
 
-    var pciFile: FileReader = new FileReader(filePath);;
+    let pciFile: FileReader = new FileReader(filePath);;
     
 
-    var lineNumberReader: LineNumberReader = new LineNumberReader(pciFile);;
+    let lineNumberReader: LineNumberReader = new LineNumberReader(pciFile);;
     
 this.logUtil!.putF("File Found", this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var nextLine: string = lineNumberReader!.readLine()!;;
+    let nextLine: string = lineNumberReader!.readLine()!;;
     
 
         while(nextLine != 
@@ -217,20 +223,20 @@ this.componentInterfaceVector!.add(new UnknownHardware(nextLine));
 
     public toString(): string{
 
-    var stringBuilder: StringMaker = new StringMaker();;
+    let stringBuilder: StringMaker = new StringMaker();;
     
 
-    var size: number = this.componentInterfaceVector!.size()!;;
+    let size: number = this.componentInterfaceVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;;
+    let componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;;
     
 stringBuilder!.append(componentInterface!.toString());
     
@@ -268,6 +274,4 @@ stringBuilder!.append(CommonSeps.getInstance()!.NEW_LINE);
 
 
 }
-
-
 

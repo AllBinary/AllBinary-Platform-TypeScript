@@ -79,10 +79,10 @@ public constructor (storeFrontOrdersHistoryStatisticsInterface: StoreFrontOrders
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.storeFrontOrdersHistoryStatisticsInterface!.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.storeFrontOrdersHistoryStatisticsInterface!.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontOrdersHistoryStatisticsData.getInstance()!.NAME, hashMap)!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontOrdersHistoryStatisticsData.getInstance()!.NAME, hashMap)!;;
     
 
 
@@ -94,6 +94,4 @@ public constructor (storeFrontOrdersHistoryStatisticsInterface: StoreFrontOrders
 
 
 }
-
-
 

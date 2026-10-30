@@ -28,6 +28,7 @@ import { TableMappingInterface } from '../../../../../../org/allbinary/data/tabl
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -51,155 +52,153 @@ const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 export interface StoreFrontInterface extends TableMappingInterface {
         
 
-    isNameValid(): Boolean
+    isNameValid(): Boolean;
 
-    isValid(): Boolean
+    isValid(): Boolean;
 
-    nameValidationInfo(): string
+    nameValidationInfo(): string;
 
-    validationInfo(): string
+    validationInfo(): string;
 
-    getTestHtmlPath(): string
+    getTestHtmlPath(): string;
 
-    getCurrentHostName(): string
+    getCurrentHostName(): string;
 
-    getCurrentHostNamePath(): string
+    getCurrentHostNamePath(): string;
 
-    getCurrentHomeHostName(): string
+    getCurrentHomeHostName(): string;
 
-    getCurrentHomeHostNamePath(): string
+    getCurrentHomeHostNamePath(): string;
 
-    getName(): string
+    getName(): string;
 
-    getBasketName(): string
+    getBasketName(): string;
 
-    getHomeHostName(): string
+    getHomeHostName(): string;
 
-    getHomeHostNamePath(): string
+    getHomeHostNamePath(): string;
 
-    getHostName(): string
+    getHostName(): string;
 
-    getHostNamePath(): string
+    getHostNamePath(): string;
 
-    getTestHomeHostName(): string
+    getTestHomeHostName(): string;
 
-    getTestHomeHostNamePath(): string
+    getTestHomeHostNamePath(): string;
 
-    getTestHostName(): string
+    getTestHostName(): string;
 
-    getTestHostNamePath(): string
+    getTestHostNamePath(): string;
 
-    getStaticPath(): string
+    getStaticPath(): string;
 
-    getCategoryPath(): string
-
-                //@Throws(Exception.constructor)
-            
-    getSubStores(): BasicArrayList
-
-    getTagLocation(): string
-
-    getPackageLocation(): string
-
-    getInventoryControl(): string
-
-    getContextConfigurationInterface(): ContextConfigurationInterface
-
-    setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface)
-
-    getFtp(): string
-
-    getFtpPath(): string
-
-    getFtpUserName(): string
-
-    getFtpPassword(): string
-
-    getTestFtp(): string
-
-    getTestFtpPath(): string
-
-    getTestFtpUserName(): string
-
-    getTestFtpPassword(): string
-
-    getTimeCreated(): string
-
-    getLastModified(): string
-
-    setName(value: string)
-
-    setBasketName(value: string)
-
-    setHomeHostName(value: string)
+    getCategoryPath(): string;
 
                 //@Throws(Exception.constructor)
             
-    setHomeHostNamePath(value: string)
+    getSubStores(): BasicArrayList;
 
-    setHostName(value: string)
+    getTagLocation(): string;
 
-                //@Throws(Exception.constructor)
-            
-    setHostNamePath(value: string)
+    getPackageLocation(): string;
 
-    setTestHomeHostName(value: string)
+    getInventoryControl(): string;
 
-                //@Throws(Exception.constructor)
-            
-    setTestHomeHostNamePath(value: string)
+    getContextConfigurationInterface(): ContextConfigurationInterface;
 
-    setTestHostName(value: string)
+    setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface): void;
 
-                //@Throws(Exception.constructor)
-            
-    setTestHostNamePath(value: string)
+    getFtp(): string;
 
-                //@Throws(Exception.constructor)
-            
-    setImagePath(value: string)
+    getFtpPath(): string;
 
-                //@Throws(Exception.constructor)
-            
-    setStaticPath(value: string)
+    getFtpUserName(): string;
 
-                //@Throws(Exception.constructor)
-            
-    setCategoryPath(value: string)
+    getFtpPassword(): string;
 
-    setPackageLocation(value: string)
+    getTestFtp(): string;
 
-    setInventoryControl(value: string)
+    getTestFtpPath(): string;
 
-    setFtp(value: string)
+    getTestFtpUserName(): string;
 
-                //@Throws(Exception.constructor)
-            
-    setFtpPath(value: string)
+    getTestFtpPassword(): string;
 
-    setFtpUserName(value: string)
+    getTimeCreated(): string;
 
-    setFtpPassword(value: string)
+    getLastModified(): string;
 
-    setTestFtp(value: string)
+    setName(value: string): void;
+
+    setBasketName(value: string): void;
+
+    setHomeHostName(value: string): void;
 
                 //@Throws(Exception.constructor)
             
-    setTestFtpPath(value: string)
+    setHomeHostNamePath(value: string): void;
 
-    setTestFtpUserName(value: string)
-
-    setTestFtpPassword(value: string)
-
-    setTimeCreated(value: string)
-
-    setLastModified(value: string)
+    setHostName(value: string): void;
 
                 //@Throws(Exception.constructor)
             
-    install(current: number, total: number)
+    setHostNamePath(value: string): void;
+
+    setTestHomeHostName(value: string): void;
+
+                //@Throws(Exception.constructor)
+            
+    setTestHomeHostNamePath(value: string): void;
+
+    setTestHostName(value: string): void;
+
+                //@Throws(Exception.constructor)
+            
+    setTestHostNamePath(value: string): void;
+
+                //@Throws(Exception.constructor)
+            
+    setImagePath(value: string): void;
+
+                //@Throws(Exception.constructor)
+            
+    setStaticPath(value: string): void;
+
+                //@Throws(Exception.constructor)
+            
+    setCategoryPath(value: string): void;
+
+    setPackageLocation(value: string): void;
+
+    setInventoryControl(value: string): void;
+
+    setFtp(value: string): void;
+
+                //@Throws(Exception.constructor)
+            
+    setFtpPath(value: string): void;
+
+    setFtpUserName(value: string): void;
+
+    setFtpPassword(value: string): void;
+
+    setTestFtp(value: string): void;
+
+                //@Throws(Exception.constructor)
+            
+    setTestFtpPath(value: string): void;
+
+    setTestFtpUserName(value: string): void;
+
+    setTestFtpPassword(value: string): void;
+
+    setTimeCreated(value: string): void;
+
+    setLastModified(value: string): void;
+
+                //@Throws(Exception.constructor)
+            
+    install(current: number, total: number): void;
 
 }
-
-
 

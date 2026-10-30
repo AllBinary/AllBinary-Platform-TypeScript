@@ -42,9 +42,7 @@
 export interface MovementCompositeInterface {
         
 
-    getMovement(): Movement
+    getMovement(): Movement;
 
 }
-
-
 

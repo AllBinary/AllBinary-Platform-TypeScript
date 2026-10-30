@@ -44,19 +44,17 @@ export interface SecuredNativeLibraryInterface {
 
                 //@Throws(Exception.constructor)
             
-    load()
+    load(): void;
 
                 //@Throws(Exception.constructor)
             
-    unload()
+    unload(): void;
 
-    unlock(key: string): boolean
+    unlock(key: string): boolean;
 
-    getLibraryName(): string
+    getLibraryName(): string;
 
-    getName(): string
+    getName(): string;
 
 }
-
-
 

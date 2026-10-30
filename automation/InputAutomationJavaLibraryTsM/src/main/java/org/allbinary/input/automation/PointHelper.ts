@@ -57,10 +57,10 @@ export class PointHelper
 
     public static getCenterPoint(rectangle: Rectangle): Point{
 
-    var x: number = rectangle.getX() +rectangle.getWidth() /PointHelper.two;;
+    let x: number = rectangle.getX() +rectangle.getWidth() /PointHelper.two;;
     
 
-    var y: number = rectangle.getY() +rectangle.getHeight() /PointHelper.two;;
+    let y: number = rectangle.getY() +rectangle.getHeight() /PointHelper.two;;
     
 
 
@@ -78,6 +78,4 @@ public constructor (){
 
 
 }
-
-
 

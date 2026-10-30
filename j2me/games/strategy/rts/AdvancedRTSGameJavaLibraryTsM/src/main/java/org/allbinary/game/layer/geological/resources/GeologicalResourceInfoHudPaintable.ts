@@ -32,6 +32,7 @@ import { WaypointInfoHudPaintable } from '../../../../../../org/allbinary/game/l
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { KeyValueDrawCharArray } from '../../../../../../org/allbinary/graphics/draw/KeyValueDrawCharArray.js';
 //not GWT import const KeyValueDrawCharArray
@@ -78,7 +79,7 @@ public constructor (){
 super.updateMeasurement(graphics);
     
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.fontHeight= (2 *font.getHeight());
     
@@ -89,23 +90,23 @@ this.fontHeight= (2 *font.getHeight());
 super.updateSelectionInfo();
     
 
-    var rtsLayer: RTSLayer = this.rtsLayerP as RTSLayer;;
+    let rtsLayer: RTSLayer = this.rtsLayerP as RTSLayer;;
     
 
-    var list: BasicArrayList = rtsLayer!.geographicMapCellPositionAreaBase!.getOccupyingGeographicMapCellPositionList()!;;
+    let list: BasicArrayList = rtsLayer!.geographicMapCellPositionAreaBase!.getOccupyingGeographicMapCellPositionList()!;;
     
 
-    var total: number = 0;;
+    let total: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = list.size()!;--index >= 0; )
+    let index: number = list.size()!;--index >= 0; )
         {
 
-    var geographicMapCellPosition: GeologicalGeographicMapCellPosition = list.get(index) as GeologicalGeographicMapCellPosition;;
+    let geographicMapCellPosition: GeologicalGeographicMapCellPosition = list.get(index) as GeologicalGeographicMapCellPosition;;
     
 total += geographicMapCellPosition!.getGeologicalResource()!.getTotal();
     
@@ -125,6 +126,4 @@ this.keyvalueDrawString!.paint(graphics, (this.y +this.fontHeight));
 
 
 }
-
-
 

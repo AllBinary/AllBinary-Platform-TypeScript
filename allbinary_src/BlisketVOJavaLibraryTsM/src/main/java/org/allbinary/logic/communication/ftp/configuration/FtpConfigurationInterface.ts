@@ -40,23 +40,21 @@
 export interface FtpConfigurationInterface {
         
 
-    getServer(): string
+    getServer(): string;
 
-    getPath(): string
+    getPath(): string;
 
-    getUserName(): string
+    getUserName(): string;
 
-    getPassword(): string
+    getPassword(): string;
 
-    setServer(value: string)
+    setServer(value: string): void;
 
-    setPath(value: string)
+    setPath(value: string): void;
 
-    setUserName(value: string)
+    setUserName(value: string): void;
 
-    setPassword(value: string)
+    setPassword(value: string): void;
 
 }
-
-
 

@@ -33,6 +33,7 @@ import { InputRobotInterface } from '../../../../../org/allbinary/input/automati
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ImageComparatorConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
 //not GWT import const ImageComparatorConstraintsInterface
@@ -42,6 +43,7 @@ import { MotionRectangleConstraintsInterface } from '../../../../../org/allbinar
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -100,16 +102,16 @@ Thread.sleep(2000);
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS);
     
 
-    var hashtable: ABHashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
+    let hashtable: ABHashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
     
 
-    var set: Set = hashtable.keys()!;;
+    let set: Set = hashtable.keys()!;;
     
 
-    var inputTypeNameArray: any[] = set.toArray()!;;
+    let inputTypeNameArray: any[] = set.toArray()!;;
     
 
-    var size: number = inputTypeNameArray!.length
+    let size: number = inputTypeNameArray!.length
                 ;;
     
 
@@ -117,13 +119,13 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS)
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var inputTypeNameString: string = inputTypeNameArray[index]! as string;;
+    let inputTypeNameString: string = inputTypeNameArray[index]! as string;;
     
 
-    var robot: InputRobotInterface = hashtable.get(inputTypeNameString) as InputRobotInterface;;
+    let robot: InputRobotInterface = hashtable.get(inputTypeNameString) as InputRobotInterface;;
     
 
                         if(this.sleep > 0)
@@ -140,6 +142,4 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS)
 
 
 }
-
-
 

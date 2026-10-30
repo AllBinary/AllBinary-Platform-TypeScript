@@ -30,12 +30,14 @@ import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFileSystem } from '../../../../org/allbinary/logic/io/file/AbFileSystem.js';
 //not GWT import const AbFileSystem
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -81,9 +83,8 @@ this.string= AbFileSystem.getInstance()!.readAsString(fileName);
 
     public deleteAtStart(start: string, end: string): boolean{
 
-        try {
-            
-    var beginIndex: number= 0;var endIndex: number= 0;;
+ try { 
+    let beginIndex: number= 0;let endIndex: number= 0;;
     
 beginIndex= this.string.indexOf(start);
     
@@ -94,13 +95,13 @@ endIndex= this.string.indexOf(end);
                         
                                     {
                                     
-    var text: string = this.string.substring(endIndex, this.string.length)!;;
+    let text: string = this.string.substring(endIndex, this.string.length)!;;
     
 
-    var idFile: FileOutputStream = new FileOutputStream(this.fileName);;
+    let idFile: FileOutputStream = new FileOutputStream(this.fileName);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
+    let idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 idOutData!.writeBytes(text);
     
@@ -119,10 +120,11 @@ idOutData!.writeBytes(text);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
@@ -138,16 +140,17 @@ idOutData!.writeBytes(text);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public deleteBetween(start: string, end: string, newText: string): boolean{
 
-        try {
-            
-    var beginIndex: number= 0;var endIndex: number= 0;;
+ try { 
+    let beginIndex: number= 0;let endIndex: number= 0;;
     
 beginIndex= this.string.indexOf(start);
     
@@ -158,16 +161,16 @@ endIndex= this.string.indexOf(end);
                         
                                     {
                                     
-    var newStart: string = this.string.substring(0, beginIndex)!;;
+    let newStart: string = this.string.substring(0, beginIndex)!;;
     
 
-    var text: string = this.string.substring(endIndex +end.length, this.string.length)!;;
+    let text: string = this.string.substring(endIndex +end.length, this.string.length)!;;
     
 
-    var idFile: FileOutputStream = new FileOutputStream(this.fileName);;
+    let idFile: FileOutputStream = new FileOutputStream(this.fileName);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
+    let idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 idOutData!.writeBytes(newStart +newText +text);
     
@@ -186,10 +189,11 @@ idOutData!.writeBytes(newStart +newText +text);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
@@ -205,12 +209,12 @@ idOutData!.writeBytes(newStart +newText +text);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

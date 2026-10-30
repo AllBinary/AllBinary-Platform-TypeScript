@@ -70,7 +70,7 @@ export class MotionEventFactory
 
     private readonly id: number;
 
-public constructor (source: any = {}, id: number){
+public constructor (source: any, id: number){
 
             super();
         this.source= source;
@@ -84,10 +84,10 @@ MotionEventFactory.index= TouchMotionGestureFactory.getInstance()!.LAST_MOTION.g
 
     public getInstance(): AllBinaryEventObject{
 
-    var inputFactory: InputFactory = InputFactory.getInstance()!;;
+    let inputFactory: InputFactory = InputFactory.getInstance()!;;
     
 
-    var input: Input = inputFactory!.getInstanceById(MotionEventFactory.index++)!;;
+    let input: Input = inputFactory!.getInstanceById(MotionEventFactory.index++)!;;
     
 
                         if(input == inputFactory!.NO_INPUT)
@@ -116,6 +116,4 @@ MotionEventFactory.index= TouchMotionGestureFactory.getInstance()!.LAST_MOTION.g
 
 
 }
-
-
 

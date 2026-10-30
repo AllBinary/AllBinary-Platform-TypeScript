@@ -70,6 +70,7 @@ import { WeblisketSession } from '../org/allbinary/logic/communication/http/requ
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -125,7 +126,7 @@ this.pageContext= pageContext;
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
+    let storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 this.newStatus= propertiesHashMap!.get(OrderHistoryData.STATUS) as string;
     
@@ -166,15 +167,14 @@ this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
 
     public setOrderStatus(): string{
 
-        try {
-            
-    var success: string = "Status successfully set to: " +this.status;;
+ try { 
+    let success: string = "Status successfully set to: " +this.status;;
     
 
-    var orderReviewInterface: OrderHistoryInterface = OrderHistoryFactory.getInstance(this.id)!;;
+    let orderReviewInterface: OrderHistoryInterface = OrderHistoryFactory.getInstance(this.id)!;;
     
 
-    var status: string = orderReviewInterface!.getStatus()!;;
+    let status: string = orderReviewInterface!.getStatus()!;;
     
 
                         if(status.compareTo(OrderHistoryData.CANCELLED) == 0)
@@ -233,7 +233,7 @@ this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
                         
                                     {
                                     
-    var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;;
+    let orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;;
     
 orderHistoryEntityInterface!.setStatus(this.id, this.newStatus);
     
@@ -261,12 +261,13 @@ orderHistoryEntityInterface!.setStatus(this.id, this.newStatus);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Setting Order Status";
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to set order status";;
+    let error: string = "Failed to set order status";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -283,12 +284,12 @@ orderHistoryEntityInterface!.setStatus(this.id, this.newStatus);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error +"<br/>" +"Exception: " +e +"<br/>";
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

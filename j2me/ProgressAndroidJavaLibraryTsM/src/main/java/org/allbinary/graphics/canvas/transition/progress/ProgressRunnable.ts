@@ -29,6 +29,7 @@ import { SimpleProgressActivityInterface } from '../../../../../../org/allbinary
 
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
 
 
 
@@ -62,7 +63,7 @@ public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
 
             super();
         
-    var midletActivity2: MidletActivityBase = midletActivity as MidletActivityBase;;
+    let midletActivity2: MidletActivityBase = midletActivity as MidletActivityBase;;
     
 this.midletActivity= midletActivity2 as SimpleProgressActivityInterface;
     
@@ -76,6 +77,4 @@ this.progressCanvas= progressCanvas;
 
 
 }
-
-
 

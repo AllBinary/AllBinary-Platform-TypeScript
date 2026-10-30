@@ -27,18 +27,23 @@
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+type MathUtil<T = any, U = any> = typeof MathUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MathUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -97,10 +102,10 @@ private constructor (){
 
             super();
         
-    var TOTAL_ANGLE: number = globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE);;
+    let TOTAL_ANGLE: number = globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE);;
     
 
-    var MAX_VALUE: number = (Integer.MAX_VALUE);;
+    let MAX_VALUE: number = (Integer.MAX_VALUE);;
     
 this.noDecimalSin= new Array(TOTAL_ANGLE);
     
@@ -2309,20 +2314,20 @@ this.noDecimalTan[0]=  -174;
             
     public antiTan(dx: number, dy: number): number{
 
-    var MAX_VALUE: number = (Integer.MAX_VALUE);;
+    let MAX_VALUE: number = (Integer.MAX_VALUE);;
     
 
-    var MIN_VALUE: number = (Integer.MIN_VALUE);;
+    let MIN_VALUE: number = (Integer.MIN_VALUE);;
     
 
-    var ratio: number = (MAX_VALUE -1);;
+    let ratio: number = (MAX_VALUE -1);;
     
 
                         if(dy != 0)
                         
                                     {
                                     
-    var dxl: number = (dx);;
+    let dxl: number = (dx);;
     
 ratio= globalThis.Math.trunc(this.SCALE *dxl /dy);
     
@@ -2347,7 +2352,7 @@ ratio= globalThis.Math.trunc(this.SCALE *dxl /dy);
 
 
                         for (
-    var index: number = 180;index > 90; index--)
+    let index: number = 180;index > 90; index--)
         {
 
                         if(ratio <= this.noDecimalTan[index])
@@ -2396,7 +2401,7 @@ ratio= globalThis.Math.trunc(this.SCALE *dxl /dy);
 
 
                         for (
-    var index: number = 270;index > 180; index--)
+    let index: number = 270;index > 180; index--)
         {
 
                         if(ratio < this.noDecimalTan[index] && ratio >= this.noDecimalTan[index -1])
@@ -2425,7 +2430,7 @@ ratio= globalThis.Math.trunc(this.SCALE *dxl /dy);
 
 
                         for (
-    var index: number = (this.noDecimalTan!.length -1);index > 270; index--)
+    let index: number = (this.noDecimalTan!.length -1);index > 270; index--)
         {
 
                         if(ratio < this.noDecimalTan[index])
@@ -2474,7 +2479,7 @@ ratio= globalThis.Math.trunc(this.SCALE *dxl /dy);
 
 
                         for (
-    var index: number = 90;index > 0; index--)
+    let index: number = 90;index > 0; index--)
         {
 
                         if(ratio < this.noDecimalTan[index] && ratio >= this.noDecimalTan[index -1])
@@ -2495,7 +2500,7 @@ ratio= globalThis.Math.trunc(this.SCALE *dxl /dy);
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Invalid Ratio: ");
     
@@ -2525,30 +2530,30 @@ stringBuffer!.appendint(dy);
             
     public antiTanDebug(screenX: number, screenY: number, targetX: number, targetY: number): number{
 
-    var METHOD_NAME: string = "antiTanDebug";;
+    let METHOD_NAME: string = "antiTanDebug";;
     
 
-    var TARGET_ANGLE: string = " Targeting angle: ";;
+    let TARGET_ANGLE: string = " Targeting angle: ";;
     
 
-    var stringMaker: StringMaker = new StringMaker();;
+    let stringMaker: StringMaker = new StringMaker();;
     
 PreLogUtil.put(stringMaker!.append("screenX: ")!.appendint(screenX)!.append(" screenY: ")!.appendint(screenY)!.append(" targetX: ")!.appendint(targetX)!.append(" targetY: ")!.appendint(targetY)!.toString(), this, METHOD_NAME);
     
 
-    var targetX2: number = globalThis.Math.trunc( -targetX);;
+    let targetX2: number = globalThis.Math.trunc( -targetX);;
     
 
-    var targetY2: number = globalThis.Math.trunc( -targetY);;
+    let targetY2: number = globalThis.Math.trunc( -targetY);;
     
 
-    var screenX2: number = globalThis.Math.trunc( -screenX);;
+    let screenX2: number = globalThis.Math.trunc( -screenX);;
     
 
-    var screenY2: number = globalThis.Math.trunc( -screenY);;
+    let screenY2: number = globalThis.Math.trunc( -screenY);;
     
 
-    var dx: number[] = new Array(4);;
+    let dx: number[] = new Array(4);;
     
 dx[0]= (screenX -targetX);
     
@@ -2559,7 +2564,7 @@ dx[2]= (screenX2 -targetX);
 dx[3]= (screenX2 -targetX2);
     
 
-    var dy: number[] = new Array(4);;
+    let dy: number[] = new Array(4);;
     
 dy[0]= (screenY -targetY);
     
@@ -2570,27 +2575,27 @@ dy[2]= (screenY2 -targetY);
 dy[3]= (screenY2 -targetY2);
     
 
-    var angleOfTarget: number= 0;;
+    let angleOfTarget: number= 0;;
     
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
+    let angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 
-    var angle: Angle;;
+    let angle: Angle;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < dx.length; index++)
+    let index: number = 0;index < dx.length; index++)
         {
 
 
 
 
                         for (
-    var index2: number = 0;index2 < dy.length; index2++)
+    let index2: number = 0;index2 < dy.length; index2++)
         {
 angleOfTarget= this.antiTan(dx[index]!, dy[index2]!);
     
@@ -2616,6 +2621,4 @@ angleOfTarget= this.antiTan(dx[0]!, dy[0]!);
 
 
 }
-
-
 

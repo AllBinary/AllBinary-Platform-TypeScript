@@ -40,15 +40,18 @@ import { InputStream } from '../../../../java/io/InputStream.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
 //not GWT import const StreamUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 
 
@@ -114,7 +117,7 @@ this.ext= ext;
             
     public getResourceAsStream(resource: string): InputStream{
 
-    var inputStream: InputStream = this.getResourceAsStreamAtStart(resource, 2)!;;
+    let inputStream: InputStream = this.getResourceAsStreamAtStart(resource, 2)!;;
     
 
                         if(inputStream == 
@@ -154,7 +157,7 @@ this.ext= ext;
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
 
-    var inputStream: InputStream = new FileInputStream(new StringMaker().append(this.path)!.append(resource)!.append(this.ext)!.toString());;
+    let inputStream: InputStream = new FileInputStream(new StringMaker().append(this.path)!.append(resource)!.append(this.ext)!.toString());;
     
 
                         if(inputStream != 
@@ -163,7 +166,7 @@ this.ext= ext;
                         
                                     {
                                     
-    var byteArray: number[] = new Array(inputStream!.available());;
+    let byteArray: number[] = new Array(inputStream!.available());;
     
 StreamUtil.getInstance()!.getByteArray(inputStream, new ByteArrayOutputStream(), byteArray);
     
@@ -190,6 +193,4 @@ StreamUtil.getInstance()!.getByteArray(inputStream, new ByteArrayOutputStream(),
 
 
 }
-
-
 

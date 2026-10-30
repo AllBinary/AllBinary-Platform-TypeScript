@@ -73,14 +73,14 @@ export class CreateUserFactory
                         
                                     {
                                     
-    var roleString: string = hashMap!.get(UserRoleData.NAME.toString()) as string;;
+    let roleString: string = hashMap!.get(UserRoleData.NAME.toString()) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(roleString))
                         
                                     {
                                     
-    var role: UserRole = UserRoleB.getRole(roleString)!;;
+    let role: UserRole = UserRoleB.getRole(roleString)!;;
     
 
 
@@ -122,6 +122,4 @@ private constructor (){
 
 
 }
-
-
 

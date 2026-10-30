@@ -132,9 +132,11 @@ import { RemoteInfo } from '../../../../org/allbinary/game/multiplayer/layer/Rem
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { LayerDistanceUtil } from '../../../../org/allbinary/math/LayerDistanceUtil.js';
 //not GWT import const LayerDistanceUtil
@@ -150,9 +152,11 @@ import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
 //not GWT import const ViewPositionBase
@@ -205,10 +209,10 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
             
     public static createSimulatedInstance(remoteInfo: RemoteInfo): RTSLayer{
 
-    var nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;;
+    let nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;;
     
 
-    var nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;;
+    let nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;;
     
 
 
@@ -367,7 +371,7 @@ this.initAnimationInterface= this.indexedButShouldBeRotationAnimationInterface;
 this.destroyAnimationInterface= proceduralAnimationInterfaceFactoryInterface!.getInstanceAnimation(this.indexedButShouldBeRotationAnimationInterface) as IndexedAnimation;
     
 
-    var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;;
+    let animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;;
     
 this.rangeAnimation= animation;
     
@@ -390,16 +394,16 @@ this.geographicMapCellPositionAreaBase= new GeographicMapCellPositionArea(this);
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
+    let tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var viewPosition2: TileLayerPositionIntoViewPosition = this.getViewPosition() as TileLayerPositionIntoViewPosition;;
+    let viewPosition2: TileLayerPositionIntoViewPosition = this.getViewPosition() as TileLayerPositionIntoViewPosition;;
     
 viewPosition2!.setTiledLayer(tiledLayer);
     
@@ -440,7 +444,7 @@ this.setSelected(true);
 
     public deselect(){
 
-    var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;;
+    let animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;;
     
 this.rangeAnimation= animation;
     
@@ -503,8 +507,7 @@ this.animationInterface= this.indexedButShouldBeRotationAnimationInterface;
 
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 
-        try {
-            
+ try { 
                         if(this.isCompleted())
                         
                                     {
@@ -519,14 +522,17 @@ this.animationInterface= this.indexedButShouldBeRotationAnimationInterface;
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "processTick", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -554,13 +560,13 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "processTick", e);
 super.paintFirst(graphics);
     
 
-    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
+    let viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 
-    var viewX: number = viewPosition!.getX()!;;
+    let viewX: number = viewPosition!.getX()!;;
     
 
-    var viewY: number = viewPosition!.getY()!;;
+    let viewY: number = viewPosition!.getY()!;;
     
 this.getAnimationInterface()!.paintXY(graphics, viewX, viewY);
     
@@ -789,10 +795,10 @@ this.animationInterface= animationInterface;
             
     public setTarget(targetGameLayer: PathFindingLayerInterface){
 
-    var anotherTargetDistance: number = this.layerDistanceUtil!.getDistance(this as AllBinaryLayer, targetGameLayer as AllBinaryLayer)!;;
+    let anotherTargetDistance: number = this.layerDistanceUtil!.getDistance(this as AllBinaryLayer, targetGameLayer as AllBinaryLayer)!;;
     
 
-    var waypointBehaviorBase: WaypointBehaviorBase = this.getWaypointBehavior()!;;
+    let waypointBehaviorBase: WaypointBehaviorBase = this.getWaypointBehavior()!;;
     
 waypointBehaviorBase!.setTargetWithDistance(targetGameLayer as PathFindingLayerInterface, anotherTargetDistance);
     
@@ -1177,6 +1183,4 @@ this.indexedButShouldBeRotationAnimationInterface= rotationAnimationInterface;
 
 
 }
-
-
 

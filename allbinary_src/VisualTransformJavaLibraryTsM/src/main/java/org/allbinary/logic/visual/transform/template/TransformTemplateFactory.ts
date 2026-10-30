@@ -36,6 +36,7 @@ import { TransformInfoEntityBuilder } from '../../../../../../org/allbinary/data
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -73,8 +74,15 @@ export class TransformTemplateFactory
         
 
     private static readonly instance: TransformTemplateFactory = new TransformTemplateFactory();
-
-    public static getInstance(): TransformTemplateFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 4 && typeof args[1] === 'string') return this.getInstance$overload2(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): TransformTemplateFactory{
 
 
 
@@ -94,14 +102,13 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, templateName: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformTemplateInterface{
+    public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, templateName: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformTemplateInterface{
 
-        try {
-            
-    var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
+ try { 
+    let transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(templateName, propertiesHashMap, pageContext)!;;
+    let transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(templateName, propertiesHashMap, pageContext)!;;
     
 
 
@@ -109,12 +116,13 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface) as TransformTemplateInterface;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed To Get Instance";;
+    let error: string = "Failed To Get Instance";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -130,12 +138,12 @@ private constructor (){
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

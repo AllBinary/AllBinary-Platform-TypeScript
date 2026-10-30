@@ -25,6 +25,7 @@ import { Command } from '../../../javax/microedition/lcdui/Command.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -73,6 +74,4 @@ export class CommandUriAction
 
 
 }
-
-
 

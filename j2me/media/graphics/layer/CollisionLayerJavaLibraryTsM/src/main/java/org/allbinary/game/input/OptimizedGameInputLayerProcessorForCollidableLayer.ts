@@ -69,7 +69,7 @@ public constructor (){
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 
-    var gameInputInterface: AllBinaryGameLayer = layerInterface as AllBinaryGameLayer;;
+    let gameInputInterface: AllBinaryGameLayer = layerInterface as AllBinaryGameLayer;;
     
 gameInputInterface!.processInput(allBinaryLayerManager);
     
@@ -104,6 +104,4 @@ gameInputInterface!.processInput(allBinaryLayerManager);
 
 
 }
-
-
 

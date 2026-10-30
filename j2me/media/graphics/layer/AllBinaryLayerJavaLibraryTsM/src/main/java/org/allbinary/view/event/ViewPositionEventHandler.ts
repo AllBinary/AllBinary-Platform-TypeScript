@@ -37,9 +37,11 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -124,23 +126,25 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;--index >= 0; )
+    let index: number = this.list.size()!;--index >= 0; )
         {
 
-        try {
-            
-    var layerInterface: AllBinaryLayer = this.list.objectArray[index]! as AllBinaryLayer;;
+ try { 
+    let layerInterface: AllBinaryLayer = this.list.objectArray[index]! as AllBinaryLayer;;
     
 layerInterface!.onChangeEvent(eventObject as ViewPositionEvent);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 super.fireEvent(eventObject);
@@ -152,7 +156,7 @@ super.fireEvent(eventObject);
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var viewPositionEventListenerInterface: ViewPositionEventListenerInterface = (eventListenerInterface as ViewPositionEventListenerInterface);;
+    let viewPositionEventListenerInterface: ViewPositionEventListenerInterface = (eventListenerInterface as ViewPositionEventListenerInterface);;
     
 viewPositionEventListenerInterface!.onChangeEvent(eventObject as ViewPositionEvent);
     
@@ -160,6 +164,4 @@ viewPositionEventListenerInterface!.onChangeEvent(eventObject as ViewPositionEve
 
 
 }
-
-
 

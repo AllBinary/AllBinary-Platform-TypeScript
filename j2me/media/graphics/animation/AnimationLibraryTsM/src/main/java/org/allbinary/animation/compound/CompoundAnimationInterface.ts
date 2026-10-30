@@ -46,15 +46,13 @@ import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAni
 export interface CompoundAnimationInterface extends AnimationInterface {
         
 
-    nextAnimation()
+    nextAnimation(): void;
 
-    previousAnimation()
+    previousAnimation(): void;
 
-    setAnimation(index: number)
+    setAnimation(index: number): void;
 
-    getCurrentAnimation(): IndexedAnimation
+    getCurrentAnimation(): IndexedAnimation;
 
 }
-
-
 

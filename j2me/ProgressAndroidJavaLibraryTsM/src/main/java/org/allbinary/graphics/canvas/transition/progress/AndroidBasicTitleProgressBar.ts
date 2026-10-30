@@ -47,9 +47,11 @@ import { PreResourceImageUtil } from '../../../../../../org/allbinary/image/PreR
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ForcedLogUtil;
 
 //not plain js import { ExceptionUtil } 
 const ExceptionUtil = globalThis.org.allbinary.logic.java.exception.ExceptionUtil;
+type ExceptionUtil<T = any, U = any> = typeof ExceptionUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ExceptionUtil;
 
 import { Animation } from '../../../../../../org/allbinary/animation/Animation.js';
 //not GWT import const Animation
@@ -95,15 +97,18 @@ import { ImageAnimation } from '../../../../../../org/allbinary/animation/image/
 
 //not plain js import { ResourceUtil } 
 const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ResourceUtil;
 
 import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
 //not GWT import const EventStrings
 
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
 
 //not plain js import { NullRunnable } 
 const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
+type NullRunnable<T = any, U = any> = typeof NullRunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullRunnable;
 
 
 
@@ -176,7 +181,7 @@ this.init();
 DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
     
 
-    var size: number = this.IMAGE.length
+    let size: number = this.IMAGE.length
                 ;;
     
 
@@ -184,7 +189,7 @@ DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.IMAGE[index]= NullImage.NULL_IMAGE;
     
@@ -195,8 +200,7 @@ this.IMAGE[index]= NullImage.NULL_IMAGE;
 
     init(){
 
-        try {
-            
+ try { 
                         if(AndroidBasicTitleProgressBar.background != 0)
                         
                                     {
@@ -209,21 +213,23 @@ this.image= ImageCacheFactory.getInstance()!.getWithKey(AndroidBasicTitleProgres
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public initActivity(activity: Activity){
 
-        try {
-            
+ try { 
                         if(this.midletActivity != activity)
                         
                                     {
@@ -244,21 +250,23 @@ this.loadProgressImages();
                                 
 this.updateCurrent();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     updateCurrent(){
 
-        try {
-            
+ try { 
                         if(!this.isBackground())
                         
                                     {
@@ -272,10 +280,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
                         
                                     {
                                     
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var currentImage: Image;;
+    let currentImage: Image;;
     
 
                         if(displayInfo!.isPortrait())
@@ -312,14 +320,17 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDATE, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -331,35 +342,36 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
 
-        try {
-            this.loadProgressImages();
+ try { this.loadProgressImages();
     
 this.updateCurrent();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.putF(this.commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
     
 this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
     
-}
 
+ }
+   }
+ 
 }
 
 
     loadProgressImages(){
 
-        try {
-            
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+ try { 
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var lastWidth: number = displayInfo!.getLastWidth()!;;
+    let lastWidth: number = displayInfo!.getLastWidth()!;;
     
 
-    var lastHeight: number = displayInfo!.getLastHeight()!;;
+    let lastHeight: number = displayInfo!.getLastHeight()!;;
     
 
                         if(displayInfo!.isPortraitWH(lastWidth, lastHeight))
@@ -376,25 +388,28 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof IllegalArgumentException) {
+  const e = caught;
+  
 this.logUtil!.putF("IllegalArgumentException " +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages");
     
 this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 this.logUtil!.putF(this.commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages");
     
 this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -427,48 +442,51 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
 
     public start(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START_METHOD_NAME);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START_METHOD_NAME);
     
 super.start();
     
 this.midletActivity!.runOnUiThread(this.showTitleProgressBarRunnable);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START_METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public end(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.END_METHOD_NAME);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.END_METHOD_NAME);
     
 this.midletActivity!.runOnUiThread(this.dismissTitleProgressBarRunnable);
     
 super.end();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.END_METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public addEarlyPortion(value: number, text: string, index: number){
 
-        try {
-            this.portion= value;
+ try { this.portion= value;
     
 super.addEarlyPortion(value, text, index);
     
@@ -481,72 +499,81 @@ super.addEarlyPortion(value, text, index);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public addPortion(value: number, text: string, index: number){
 
-        try {
-            this.portion= value;
+ try { this.portion= value;
     
 super.addPortion(value, text, index);
     
 this.midletActivity!.runOnUiThread(this.titleProgressDialogPortionSetProgressRunnable);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     public addNormalPortion(value: number, text: string){
 
-        try {
-            this.portion= value;
+ try { this.portion= value;
     
 super.addNormalPortion(value, text);
     
 this.midletActivity!.runOnUiThread(this.titleProgressDialogPortionSetProgressRunnable);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     setValue(value: number){
 
-        try {
-            super.setValue(value);
+ try { super.setValue(value);
     
 this.midletActivity!.runOnUiThread(this.titleProgressDialogSetProgressRunnable);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -558,7 +585,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
             
     setImages(index: number, lastWidth: number, lastHeight: number){
 
-    var image: Image = this.image;;
+    let image: Image = this.image;;
     
 
                         if(image != NullImage.NULL_IMAGE)
@@ -582,7 +609,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
                                 
                         else {
                             
-    var nextIndex: number = index +1;;
+    let nextIndex: number = index +1;;
     
 
                         if(this.IMAGE[nextIndex] == NullImage.NULL_IMAGE)
@@ -610,10 +637,10 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.INIT);
 this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(AndroidBasicTitleProgressBar.RESOURCE);
     
 
-    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
+    let preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
     
 
-    var size: number = this.IMAGE.length
+    let size: number = this.IMAGE.length
                 ;;
     
 
@@ -621,7 +648,7 @@ this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(AndroidBasicT
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(this.IMAGE[index] != NullImage.NULL_IMAGE)
@@ -649,10 +676,10 @@ this.initOpenGL(graphics);
 this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(AndroidBasicTitleProgressBar.RESOURCE);
     
 
-    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
+    let preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
     
 
-    var size: number = this.IMAGE.length
+    let size: number = this.IMAGE.length
                 ;;
     
 
@@ -660,7 +687,7 @@ this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(AndroidBasicT
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(this.IMAGE[index] != NullImage.NULL_IMAGE)
@@ -680,7 +707,7 @@ this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(AndroidBasicT
             
     getImage(index: number): Image{
 
-    var image: Image = NullImage.NULL_IMAGE;;
+    let image: Image = NullImage.NULL_IMAGE;;
     
 
                         if(Features.getInstance()!.isFeature(MainFeatureFactory.getInstance()!.FULL_SCREEN))
@@ -708,19 +735,21 @@ this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(AndroidBasicT
 
     public paint2(graphics: Graphics){
 
-        try {
-            this.animation.paintXY(graphics, 0, 20);
+ try { this.animation.paintXY(graphics, 0, 20);
     
 super.paint2(graphics);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.PAINT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -749,6 +778,4 @@ this.portion= portion;
 
 
 }
-
-
 

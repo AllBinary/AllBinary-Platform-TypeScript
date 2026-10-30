@@ -51,15 +51,18 @@ import { InputAutomationModuleConfigurations } from '../../../../../org/allbinar
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
 //not GWT import const JavaHelpSetNotifier
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -107,13 +110,13 @@ this.defaultListModelHelper= new DefaultListModelHelper();
 this.hashMap= StdUtil.getInstance()!.createHashMap();
     
 
-    var collection: Collection = inputAutomationModuleConfigurations!.getHashMap()!.values()!;;
+    let collection: Collection = inputAutomationModuleConfigurations!.getHashMap()!.values()!;;
     
 
-    var iterator: Iterator = collection.iterator()!;;
+    let iterator: Iterator = collection.iterator()!;;
     
 
-    var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration;;
+    let inputAutomationModuleConfiguration: InputAutomationModuleConfiguration;;
     
 
         while(iterator.hasNext())
@@ -133,21 +136,21 @@ this.logUtil!.putF("Loaded " +this.hashMap!.size() +"/" +this.defaultListModelHe
 
     add(inputAutomationModuleConfiguration: InputAutomationModuleConfiguration){
 
-    var inputAutomationModuleInterface: InputAutomationModuleFactoryInterface = inputAutomationModuleConfiguration!.getInputAutomationModuleInterface()!;;
+    let inputAutomationModuleInterface: InputAutomationModuleFactoryInterface = inputAutomationModuleConfiguration!.getInputAutomationModuleInterface()!;;
     
 this.hashMap!.put(inputAutomationModuleConfiguration!.getName(), inputAutomationModuleInterface);
     
 this.defaultListModelHelper!.add(inputAutomationModuleConfiguration!.getName());
     
 
-    var helpSet: HelpSet = inputAutomationModuleInterface!.getHelpSet()!;;
+    let helpSet: HelpSet = inputAutomationModuleInterface!.getHelpSet()!;;
     
 
                         if(!JavaHelpSetNotifier.isNotified(helpSet))
                         
                                     {
                                     
-    var helpSetEvent: HelpSetEvent = new HelpSetEvent(this, helpSet, HelpSetEvent.HELPSET_ADDED);;
+    let helpSetEvent: HelpSetEvent = new HelpSetEvent(this, helpSet, HelpSetEvent.HELPSET_ADDED);;
     
 this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
     
@@ -169,12 +172,12 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
 
     public getInstance(moduleName: string): InputAutomationModuleFactoryInterface{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF("Getting Module: " +moduleName, this, commonStrings!.GET_INSTANCE);
     
 
-    var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName) as InputAutomationModuleFactoryInterface;;
+    let inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName) as InputAutomationModuleFactoryInterface;;
     
 
                         if(inputAutomationModuleFactoryInterface == 
@@ -197,6 +200,4 @@ this.logUtil!.putF("Getting Module: " +moduleName, this, commonStrings!.GET_INST
 
 
 }
-
-
 

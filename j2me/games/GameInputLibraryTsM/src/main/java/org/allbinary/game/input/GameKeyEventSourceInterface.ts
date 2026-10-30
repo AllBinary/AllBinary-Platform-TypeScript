@@ -40,9 +40,7 @@
 export interface GameKeyEventSourceInterface {
         
 
-    getSourceId(): number
+    getSourceId(): number;
 
 }
-
-
 

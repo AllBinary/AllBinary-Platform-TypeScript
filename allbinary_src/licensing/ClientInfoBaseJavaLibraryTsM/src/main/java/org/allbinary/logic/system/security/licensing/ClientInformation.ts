@@ -25,9 +25,11 @@ import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { HardwareInterface } from '../../../../../../org/allbinary/logic/system/hardware/HardwareInterface.js';
 //not GWT import const HardwareInterface
@@ -43,18 +45,23 @@ import { NoOperatingSystem } from '../../../../../../org/allbinary/logic/system/
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -204,13 +211,13 @@ this.init();
 
     public toHashtable(): ABHashtable<any, any>{
 
-    var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;;
+    let abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;;
     
 
-    var genericOperatingSystem: GenericOperatingSystem = this.getOperatingSystemInterface()!;;
+    let genericOperatingSystem: GenericOperatingSystem = this.getOperatingSystemInterface()!;;
     
 
-    var clientInfoHashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
+    let clientInfoHashtable: ABHashtable<any, any> = StdUtil.getInstance()!.createHashtable()!;;
     
 clientInfoHashtable!.put(abeClientInformationData!.NAME, this.name);
     
@@ -229,10 +236,10 @@ clientInfoHashtable!.put(abeClientInformationData!.OSVERSION, genericOperatingSy
 clientInfoHashtable!.put(abeClientInformationData!.OS, genericOperatingSystem!.toString());
     
 
-    var hardwareInterface: HardwareInterface = SystemHardwareFactory.getInstance()!.getInstance(genericOperatingSystem)!;;
+    let hardwareInterface: HardwareInterface = SystemHardwareFactory.getInstance()!.getInstance(genericOperatingSystem)!;;
     
 
-    var hardwareString: string = hardwareInterface!.toString()!;;
+    let hardwareString: string = hardwareInterface!.toString()!;;
     
 clientInfoHashtable!.put(abeClientInformationData!.HARDWARE, hardwareString);
     
@@ -274,10 +281,10 @@ clientInfoHashtable!.put(abeClientInformationData!.HARDWARE, hardwareString);
 
     public isLargerOrDifferentServerList(list: BasicArrayList): boolean{
 
-    var size: number = list.size() -1;;
+    let size: number = list.size() -1;;
     
 
-    var currentSize: number = this.licenseServers!.size() -1;;
+    let currentSize: number = this.licenseServers!.size() -1;;
     
 
                         if(size > currentSize)
@@ -297,20 +304,20 @@ clientInfoHashtable!.put(abeClientInformationData!.HARDWARE, hardwareString);
 
 
                         for (
-    var index: number = size;index >= 0; index--)
+    let index: number = size;index >= 0; index--)
         {
 
-    var newServerName: string = list.objectArray[index]! as string;;
+    let newServerName: string = list.objectArray[index]! as string;;
     
 
 
 
 
                         for (
-    var index2: number = currentSize;index2 >= 0; index2--)
+    let index2: number = currentSize;index2 >= 0; index2--)
         {
 
-    var nextOldServerName: string = this.licenseServers!.objectArray[index]! as string;;
+    let nextOldServerName: string = this.licenseServers!.objectArray[index]! as string;;
     
 
                         if(this.tsUtil!.compareTo(newServerName, nextOldServerName) != 0)
@@ -383,6 +390,4 @@ this.licenseServers= licenseServers;
 
 
 }
-
-
 

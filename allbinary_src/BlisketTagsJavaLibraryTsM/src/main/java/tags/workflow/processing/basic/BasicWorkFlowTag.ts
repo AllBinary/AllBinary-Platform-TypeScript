@@ -31,6 +31,7 @@ import { AbResponseHandler } from '../../../../org/allbinary/logic/communication
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StoreWorkFlowTag } from '../../../../tags/StoreWorkFlowTag.js';
 //not GWT import const StoreWorkFlowTag
@@ -78,8 +79,7 @@ public constructor (){
             
     public doStartTag(): number{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
@@ -96,10 +96,11 @@ this.getPropertiesHashMap()!.put(DynamicObjectData.NAME, "workflows.template.dat
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -108,12 +109,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

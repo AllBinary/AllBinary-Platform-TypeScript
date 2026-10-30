@@ -24,6 +24,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
@@ -42,9 +43,11 @@ import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/o
 
 //not plain js import { SystemProperties } 
 const SystemProperties = globalThis.org.allbinary.logic.system.os.SystemProperties;
+type SystemProperties<T = any, U = any> = typeof SystemProperties extends abstract new (...args: any[]) => infer Instance ? Instance : typeof SystemProperties;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -94,15 +97,14 @@ private constructor (){
 
     public getOperatingSystemInstance(): GenericOperatingSystem{
 
-        try {
-            
-    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
+ try { 
+    let operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
     
 
-    var osName: string = SystemProperties.getInstance()!.getName()!;;
+    let osName: string = SystemProperties.getInstance()!.getName()!;;
     
 
-    var operatingSystemInterface: GenericOperatingSystem;;
+    let operatingSystemInterface: GenericOperatingSystem;;
     
 
                         if(osName!.compareTo(operatingSystems!.SOLARIS) == 0)
@@ -141,16 +143,17 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return operatingSystemInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
@@ -163,12 +166,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NoOperatingSystem.NO_OPERATING_SYSTEM;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -44,9 +44,7 @@ export interface TransformTemplateInterface {
 
                 //@Throws(Exception.constructor)
             
-    getName(): string
+    getName(): string;
 
 }
-
-
 

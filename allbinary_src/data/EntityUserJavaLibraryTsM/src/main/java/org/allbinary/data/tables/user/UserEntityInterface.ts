@@ -25,9 +25,11 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontInterface } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 //not GWT import const StoreFrontInterface
@@ -65,37 +67,35 @@ export interface UserEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(Exception.constructor)
             
-    getAdministrators(): BasicArrayList
+    getAdministrators(): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    getStoreManagers(storeFrontInterface: StoreFrontInterface): BasicArrayList
+    getStoreManagers(storeFrontInterface: StoreFrontInterface): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    getCustomers(): BasicArrayList
+    getCustomers(): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    getUsersWithRole(userRole: UserRole): BasicArrayList
+    getUsersWithRole(userRole: UserRole): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    getUsers(storeFrontInterface: StoreFrontInterface): BasicArrayList
+    getUsers(storeFrontInterface: StoreFrontInterface): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    getUser(userName: string): UserInterface
+    getUser(userName: string): UserInterface;
 
-    login(userName: string, password: string): string
+    login(userName: string, password: string): string;
 
-    deleteWhere(key: string, value: string)
+    deleteWhere(key: string, value: string): void;
 
-    insert(values: BasicArrayList)
+    insert(values: BasicArrayList): void;
 
-    update(userName: string, updatedValues: HashMap<any, any>)
+    update(userName: string, updatedValues: HashMap<any, any>): void;
 
 }
-
-
 

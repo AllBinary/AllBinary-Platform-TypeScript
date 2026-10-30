@@ -45,11 +45,9 @@ import { GameKeyEventSourceInterface } from '../../../../../org/allbinary/game/i
 export interface MenuListener extends GameKeyEventSourceInterface {
         
 
-    open()
+    open(): void;
 
-    close()
+    close(): void;
 
 }
-
-
 

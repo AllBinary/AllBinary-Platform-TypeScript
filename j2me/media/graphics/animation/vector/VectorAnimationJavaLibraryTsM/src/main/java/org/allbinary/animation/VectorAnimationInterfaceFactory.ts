@@ -115,5 +115,3 @@ this.basicColor= basicColor;
 
 }
 
-
-

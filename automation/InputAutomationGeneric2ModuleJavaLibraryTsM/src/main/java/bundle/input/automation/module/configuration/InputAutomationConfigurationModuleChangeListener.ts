@@ -43,11 +43,9 @@ import { InputAutomationConfigurationModuleChangeEvent } from '../../../../../or
 export interface InputAutomationConfigurationModuleChangeListener {
         
 
-    onAdd(inputAutomationConfigurationChangeEvent: InputAutomationConfigurationModuleChangeEvent)
+    onAdd(inputAutomationConfigurationChangeEvent: InputAutomationConfigurationModuleChangeEvent): void;
 
-    onRemove(inputAutomationConfigurationChangeEvent: InputAutomationConfigurationModuleChangeEvent)
+    onRemove(inputAutomationConfigurationChangeEvent: InputAutomationConfigurationModuleChangeEvent): void;
 
 }
-
-
 

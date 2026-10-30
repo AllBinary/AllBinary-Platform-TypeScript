@@ -46,6 +46,7 @@ import { OpenGLLogUtil } from '../../../../org/allbinary/graphics/opengles/OpenG
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
 //not GWT import const PlatformBitmapBaseFactory
@@ -98,19 +99,21 @@ this.rectangle= [0,this.getHeight(), this.getWidth(),  -this.getHeight();];
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, "onResize");
+ try { this.logUtil!.putF(this.commonStrings!.START, this, "onResize");
     
 this.a= DisplayInfoSingleton.getInstance()!.getLastHeight() -this.getHeight();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onResize", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -118,7 +121,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onResize", e);
 this.onDisplayChangeEvent(DisplayInfoSingleton.getInstance()!.displayChangeEvent);
     
 
-    var gl11: GL11 = gl as GL11;;
+    let gl11: GL11 = gl as GL11;;
     
 
                         if(super.initTexture(gl11))
@@ -144,7 +147,7 @@ gl.glEnable(GL10.GL_TEXTURE_2D);
 gl.glBindTexture(GL10.GL_TEXTURE_2D, this.openGLESImageProperties!.textureID);
     
 
-    var gl11Ext: GL11Ext = gl as GL11Ext;;
+    let gl11Ext: GL11Ext = gl as GL11Ext;;
     
 gl11Ext!.glDrawTexfOES(x, (this.a -y), z, this.getWidth(), this.getHeight());
     
@@ -154,6 +157,4 @@ gl.glDisable(GL10.GL_TEXTURE_2D);
 
 
 }
-
-
 

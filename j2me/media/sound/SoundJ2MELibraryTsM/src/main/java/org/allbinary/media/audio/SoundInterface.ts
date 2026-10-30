@@ -45,15 +45,13 @@ import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js'
 export interface SoundInterface {
         
 
-    getResource(): string
+    getResource(): string;
 
-    getPlayerP(): Player
+    getPlayerP(): Player;
 
                 //@Throws(Exception.constructor)
             
-    init()
+    init(): void;
 
 }
-
-
 

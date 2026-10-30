@@ -49,9 +49,7 @@ export interface DownGameKeyEventListenerInterface extends EventListenerInterfac
 
                 //@Throws(Exception.constructor)
             
-    onDownGameKeyEvent(gameKeyEvent: GameKeyEvent)
+    onDownGameKeyEvent(gameKeyEvent: GameKeyEvent): void;
 
 }
-
-
 

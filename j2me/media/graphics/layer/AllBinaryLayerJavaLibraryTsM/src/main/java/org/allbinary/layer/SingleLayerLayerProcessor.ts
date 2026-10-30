@@ -65,7 +65,7 @@ public constructor (){
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var layerManager: LayerManager = this.getLayerManager()!;;
+    let layerManager: LayerManager = this.getLayerManager()!;;
     
 this.processAt(allBinaryLayerManager, layerManager!.getLayerAt(0) as AllBinaryLayer, 0);
     
@@ -73,6 +73,4 @@ this.processAt(allBinaryLayerManager, layerManager!.getLayerAt(0) as AllBinaryLa
 
 
 }
-
-
 

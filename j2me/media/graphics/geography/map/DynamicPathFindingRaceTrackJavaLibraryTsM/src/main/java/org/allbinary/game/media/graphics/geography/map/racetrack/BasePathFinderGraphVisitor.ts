@@ -28,6 +28,7 @@ import { SimpleWeightedGraph } from '../../../../../../../../org/jgrapht/graph/S
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
@@ -40,6 +41,7 @@ import { PathFindingNode } from '../../../../../../../../org/allbinary/media/gra
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -99,10 +101,10 @@ this.maxPathWeight= maxPathWeight;
 
 
                         for (
-    var index: number = startPathFindingNodeList!.size() -1;index >= 0; index--)
+    let index: number = startPathFindingNodeList!.size() -1;index >= 0; index--)
         {
 
-    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index) as PathFindingNode;;
+    let startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index) as PathFindingNode;;
     
 pathList!.remove(startPathFindingNode!.geographicMapCellPosition);
     
@@ -142,7 +144,7 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
 
     public getInvalidReason(graphPath: GraphPath): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(graphPath!.getEdgeList()!.size() < this.edgeMinimum)
@@ -181,6 +183,4 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
 
 
 }
-
-
 

@@ -92,17 +92,17 @@ export class GameInitializationUtil
             
     public initDemo(abeClientInformation: AbeClientInformationInterface, canvas: MyCanvas, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory){
 
-    var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;;
+    let mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;;
     
 
                         if(ChangedGameFeatureListener.getInstance()!.isChangedFeature(mainFeatureFactory!.STATIC))
                         
                                     {
                                     
-    var gameInitializationInterface: GameInitializationInterface = gameInitializationInterfaceFactoryInterface!.getInstance()!;;
+    let gameInitializationInterface: GameInitializationInterface = gameInitializationInterfaceFactoryInterface!.getInstance()!;;
     
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(mainFeatureFactory!.LOAD_ALL))
@@ -118,7 +118,7 @@ export class GameInitializationUtil
                         
                                     {
                                     
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
+    let resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 gameInitializationInterface!.init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_EARLY.getLevel());
     
@@ -152,10 +152,10 @@ GameInitializedEventHandler.getInstance()!.fireEvent(this.EVENT);
                         
                                     {
                                     
-    var gameInitializationInterface: GameInitializationInterface = gameInitializationInterfaceFactoryInterface!.getInstance()!;;
+    let gameInitializationInterface: GameInitializationInterface = gameInitializationInterfaceFactoryInterface!.getInstance()!;;
     
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
+    let resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 gameInitializationInterface!.init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_ALL.getLevel());
     
@@ -172,6 +172,4 @@ ChangedGameFeatureListener.getInstance()!.remove(MainFeatureFactory.getInstance(
 
 
 }
-
-
 

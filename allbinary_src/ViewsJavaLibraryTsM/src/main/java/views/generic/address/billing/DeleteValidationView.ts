@@ -76,7 +76,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
+    let httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 this.value= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParameter(StreetAddressData.ID);
     
@@ -94,13 +94,13 @@ this.value= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParam
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
                                 
 
-    var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());;
+    let billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
     
@@ -114,7 +114,7 @@ this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
 
                                     }
@@ -159,6 +159,4 @@ this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
 
 
 }
-
-
 

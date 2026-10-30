@@ -51,24 +51,30 @@ import { OpenGLImageCacheFactory } from '../../../../org/allbinary/image/opengle
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
 //not GWT import const SynchObject
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -131,11 +137,17 @@ export class OpenGLUtil
     public readonly runnableList: BasicArrayList = new BasicArrayListD();
 
     private created: boolean = false;
+onSurfaceCreated(...args: any[]): any {
+   
+    if (args.length === 1) return this.onSurfaceCreated$overload1(args[0]);
+   
+    if (args.length === 2) return this.onSurfaceCreated$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: onSurfaceCreated'); }
+  
+    public onSurfaceCreated$overload1(gl: GL10){
 
-    public onSurfaceCreated(gl: GL10){
-
-        try {
-            
+ try { 
                         if(!this.created)
                         
                                     {
@@ -146,32 +158,37 @@ PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +OpenGLCapabilities.getIn
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
     
+
+ }
+   }
+ 
 }
 
-}
 
+    public onSurfaceCreated$overload2(gl: GL10, loadTextures: LoadTextures){
 
-    public onSurfaceCreated(gl: GL10, loadTextures: LoadTextures){
-
-        try {
-            loadTextures!.load(gl);
+ try { loadTextures!.load(gl);
     
 OpenGLLogUtil.getInstance()!.logError(gl);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -194,7 +211,7 @@ this.surfaceCreatedAndInitialized= true;
 graphics.update();
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.update(graphics);
     
@@ -211,7 +228,7 @@ this.set(gl);
 
     public addImage(image: Image): Image{
 
-    var encapsulateImage: Image = this.preResourceImageUtil!.encapsulate(image)!;;
+    let encapsulateImage: Image = this.preResourceImageUtil!.encapsulate(image)!;;
     
 
                         if(encapsulateImage != image)
@@ -294,17 +311,17 @@ this.displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
         //mutex.withLock
         
 
-    var runnable: Runnable;;
+    let runnable: Runnable;;
     
 
-    var size: number = this.runnableList!.size()!;;
+    let size: number = this.runnableList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 runnable= this.runnableList!.get(index) as Runnable;
     
@@ -323,17 +340,17 @@ this.runnableList!.clear();
             
     set(gl: GL10){
 
-    var size: number = this.list.size()!;;
+    let size: number = this.list.size()!;;
     
 
-    var image: OpenGLESImage;;
+    let image: OpenGLESImage;;
     
 
 
 
 
                         for (
-    var index2: number = 0;index2 < size; index2++)
+    let index2: number = 0;index2 < size; index2++)
         {
 image= this.list.get(index2) as OpenGLESImage;
     
@@ -345,6 +362,4 @@ image.set(gl);
 
 
 }
-
-
 

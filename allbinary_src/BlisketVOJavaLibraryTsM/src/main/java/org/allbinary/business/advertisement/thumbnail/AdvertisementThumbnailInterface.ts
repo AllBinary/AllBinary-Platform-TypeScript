@@ -45,5 +45,3 @@ export interface AdvertisementThumbnailInterface extends AdvertisementImageInter
 
 }
 
-
-

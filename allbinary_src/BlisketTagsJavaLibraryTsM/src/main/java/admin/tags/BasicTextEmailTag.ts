@@ -34,12 +34,14 @@ import { BasicTextEmailHelperFactory } from '../../admin/taghelpers/BasicTextEma
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 //not GWT import const AbResponseHandler
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
 //not GWT import const CustomTagSupport
@@ -92,19 +94,18 @@ this.body= value;
 
     public send(): string{
 
-        try {
-            
-    var propertiesHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+ try { 
+    let propertiesHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 propertiesHashMap!.put("Subject", this.subject);
     
 propertiesHashMap!.put("Body", this.body);
     
 
-    var anyType: any = new BasicTextEmailHelperFactory().getInstance(propertiesHashMap, this.pageContext)!;;
+    let anyType: any = new BasicTextEmailHelperFactory().getInstance(propertiesHashMap, this.pageContext)!;;
     
 
-    var method: Method = anyType!.constructor.name.getMethod("send", 
+    let method: Method = anyType!.constructor.name.getMethod("send", 
                             null)!;;
     
 method.invoke(anyType, 
@@ -116,12 +117,13 @@ method.invoke(anyType,
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Email Sent";
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to Send Email.";;
+    let error: string = "Failed to Send Email.";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -138,8 +140,10 @@ method.invoke(anyType,
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -147,8 +151,7 @@ method.invoke(anyType,
             
     public doStartTag(): number{
 
-        try {
-            this.pageContext!.getOut()!.print(this.send());
+ try { this.pageContext!.getOut()!.print(this.send());
     
 
 
@@ -156,10 +159,11 @@ method.invoke(anyType,
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -168,12 +172,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

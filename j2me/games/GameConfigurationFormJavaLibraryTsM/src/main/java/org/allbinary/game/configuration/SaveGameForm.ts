@@ -39,6 +39,7 @@ import { CommandForm } from '../../../../org/allbinary/graphics/displayable/scre
 
 //not plain js import { ABSystemWrapper } 
 const ABSystemWrapper = globalThis.org.allbinary.logic.ABSystemWrapper;
+type ABSystemWrapper<T = any, U = any> = typeof ABSystemWrapper extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABSystemWrapper;
 
 import { MEUtil } from '../../../../org/allbinary/logic/MEUtil.js';
 //not GWT import const MEUtil
@@ -102,7 +103,7 @@ private constructor (commandListener: CommandListener, title: string, backgrounB
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var timeString: string = (ABSystemWrapper.getInstance()!.currentTimeMillis()).toString()!;;
+    let timeString: string = (ABSystemWrapper.getInstance()!.currentTimeMillis()).toString()!;;
     
 this.meUtil!.appendItem(this, new TextField("Name: ", timeString, 30, TextField.ANY));
     
@@ -113,7 +114,7 @@ this.initCommands(commandListener);
 
     public initCommands(cmdListener: CommandListener){
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
+    let gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 this.removeAllCommands();
     
@@ -127,6 +128,4 @@ this.setCommandListener(cmdListener);
 
 
 }
-
-
 

@@ -68,7 +68,7 @@ public constructor (image: Image, sequenceArray: number[], animationBehaviorFact
             
     public getInstance(instanceId: number): Animation{
 
-    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
+    let scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
 
@@ -80,6 +80,4 @@ public constructor (image: Image, sequenceArray: number[], animationBehaviorFact
 
 
 }
-
-
 

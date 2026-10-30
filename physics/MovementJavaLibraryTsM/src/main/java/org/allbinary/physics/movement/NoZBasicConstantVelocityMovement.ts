@@ -85,7 +85,7 @@ this.velocityProperties= velocityProperties;
 this.speedBasicDecimal= speedBasicDecimal;
     
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
+    let angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 this.velocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angleFactory!.getAt(angle), angleFactory!.getAt(otherAngle));
     
@@ -94,13 +94,13 @@ this.velocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angleFacto
 
     public moveOutsideRadius(layer: AllBinaryLayer, radius: number, angle: number, otherAngle: number){
 
-    var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;;
+    let scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;;
     
 
-    var xVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue));;
+    let xVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue));;
     
 
-    var yVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue));;
+    let yVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue));;
     
 layer.moveDXYZ(xVector, yVector, 0);
     
@@ -164,6 +164,4 @@ this.speedBasicDecimal= speedBasicDecimal;
 
 
 }
-
-
 

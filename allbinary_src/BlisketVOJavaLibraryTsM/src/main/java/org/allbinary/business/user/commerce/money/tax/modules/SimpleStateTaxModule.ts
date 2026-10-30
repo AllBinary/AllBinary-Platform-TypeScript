@@ -56,6 +56,7 @@ import { URLGLOBALS } from '../../../../../../../../org/allbinary/globals/URLGLO
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CryptFileReader } from '../../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
@@ -65,6 +66,7 @@ import { AbPath } from '../../../../../../../../org/allbinary/logic/io/path/AbPa
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -74,9 +76,11 @@ import { TransformInfoObjectConfigData } from '../../../../../../../../org/allbi
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -143,10 +147,10 @@ this.streetAddress= streetAddress;
 this.storeFrontInterface= storeFrontInterface;
     
 
-    var fileAbPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.storeFrontInterface!.getName() +this.STATETAXPATH, this.STATETAXFILE);;
+    let fileAbPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.storeFrontInterface!.getName() +this.STATETAXPATH, this.STATETAXFILE);;
     
 
-    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(fileAbPath)!;;
+    let data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(fileAbPath)!;;
     
 this.document= DomDocumentHelper.create(data);
     
@@ -160,37 +164,37 @@ this.document= DomDocumentHelper.create(data);
                                     }
                                 
 
-    var state: string = this.streetAddress!.getState()!;;
+    let state: string = this.streetAddress!.getState()!;;
     
 
-    var country: string = this.streetAddress!.getCountry()!;;
+    let country: string = this.streetAddress!.getCountry()!;;
     
 state= state.toUpperCase();
     
 
-    var nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;;
+    let nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var node: Node = nodeList!.item(index)!;;
+    let node: Node = nodeList!.item(index)!;;
     
 
-    var taxNodeChildren: NodeList = node.getChildNodes()!;;
+    let taxNodeChildren: NodeList = node.getChildNodes()!;;
     
 
-    var streetAddressNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, taxNodeChildren)!;;
+    let streetAddressNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, taxNodeChildren)!;;
     
 
-    var taxableStreetAddress: StreetAddress = new StreetAddress(streetAddressNode);;
+    let taxableStreetAddress: StreetAddress = new StreetAddress(streetAddressNode);;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
@@ -205,13 +209,13 @@ state= state.toUpperCase();
                         
                                     {
                                     
-    var rateNode: Node = DomSearchHelper.getNode(TaxData.RATE, taxNodeChildren)!;;
+    let rateNode: Node = DomSearchHelper.getNode(TaxData.RATE, taxNodeChildren)!;;
     
 
-    var taxRate: string = DomNodeHelper.getTextNodeValue(rateNode)!;;
+    let taxRate: string = DomNodeHelper.getTextNodeValue(rateNode)!;;
     
 
-    var taxRateFloat: number = new number(new number(taxRate) *.01);;
+    let taxRateFloat: number = new number(new number(taxRate) *.01);;
     
 
 
@@ -238,16 +242,15 @@ state= state.toUpperCase();
 
     public isValid(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Boolean{
 
-        try {
-            this.streetAddress= streetAddress;
+ try { this.streetAddress= streetAddress;
     
 this.storeFrontInterface= storeFrontInterface;
     
 
-    var fileAbPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.storeFrontInterface!.getName() +this.STATETAXPATH, this.STATETAXFILE);;
+    let fileAbPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.storeFrontInterface!.getName() +this.STATETAXPATH, this.STATETAXFILE);;
     
 
-    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(fileAbPath)!;;
+    let data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(fileAbPath)!;;
     
 this.document= DomDocumentHelper.create(data);
     
@@ -261,36 +264,36 @@ this.document= DomDocumentHelper.create(data);
                                     }
                                 
 
-    var country: string = this.streetAddress!.getCountry()!;;
+    let country: string = this.streetAddress!.getCountry()!;;
     
 
-    var rootNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
+    let rootNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
     
 
-    var nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;;
+    let nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < nodeList!.getLength(); index++)
+    let index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var node: Node = nodeList!.item(index)!;;
+    let node: Node = nodeList!.item(index)!;;
     
 
-    var taxNodeChildren: NodeList = node.getChildNodes()!;;
+    let taxNodeChildren: NodeList = node.getChildNodes()!;;
     
 
-    var streetAddressNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, taxNodeChildren)!;;
+    let streetAddressNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, taxNodeChildren)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("StreetAddress Node: ");
     
@@ -310,10 +313,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                                     }
                                 
 
-    var taxableStreetAddress: StreetAddress = new StreetAddress(streetAddressNode);;
+    let taxableStreetAddress: StreetAddress = new StreetAddress(streetAddressNode);;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && taxableStreetAddress!.getCountry()!.compareTo(this.ALL) == 0)
@@ -323,7 +326,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -333,7 +336,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                         
                                     {
                                     
-    var state: string = this.streetAddress!.getState()!;;
+    let state: string = this.streetAddress!.getState()!;;
     
 
                         if(state != 
@@ -345,7 +348,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE;
+                        return true;
     
 
                                     }
@@ -359,12 +362,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -378,14 +382,14 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

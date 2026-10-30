@@ -28,6 +28,7 @@ import { SmallIntegerSingletonFactory } from '../../../org/allbinary/logic/math/
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -78,10 +79,10 @@ public constructor (angleIncrement: number){
         this.angleIncrement= angleIncrement;
     
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
+    let angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 this.DOWN_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.DOWN.getValue() /this.angleIncrement);
     
@@ -128,7 +129,7 @@ this.RIGHT_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.RIGHT.getVal
 
     public getClosestGeneralDirection(angle: number): number{
 
-    var closestDirection: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(360)!;;
+    let closestDirection: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(360)!;;
     
 
                         if(this.UP_FRAME.intValue() -angle < closestDirection!.intValue() -angle)
@@ -176,6 +177,4 @@ this.RIGHT_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.RIGHT.getVal
 
 
 }
-
-
 

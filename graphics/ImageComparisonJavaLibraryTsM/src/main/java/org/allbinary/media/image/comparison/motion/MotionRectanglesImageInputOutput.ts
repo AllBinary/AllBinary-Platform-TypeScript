@@ -32,21 +32,25 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { ImageOutputData } from '../../../../../../org/allbinary/input/automation/ImageOutputData.js';
 //not GWT import const ImageOutputData
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LongUtil } from '../../../../../../org/allbinary/logic/java/number/LongUtil.js';
 //not GWT import const LongUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 //not GWT import const AutomaticCacheInterface
@@ -80,6 +84,7 @@ import { ImageIOInterface } from '../../../../../../org/allbinary/media/image/io
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -132,15 +137,22 @@ public constructor (){
             super();
         }
 
-
+save(...args: any[]): any {
+   
+    if (args.length === 1) return this.save$overload1(args[0]);
+   
+    if (args.length === 2) return this.save$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: save'); }
+  
                 //@Throws(Exception.constructor)
             
-    public save(frame: Long){
+    public save$overload1(frame: Long){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable = (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;;
+    let motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable = (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;;
     
 
                         if(motionRectanglesResultsFrameCacheable != 
@@ -149,7 +161,7 @@ public constructor (){
                         
                                     {
                                     
-    var motionRectangles: MotionRectangles = motionRectanglesResultsFrameCacheable!.getMotionRectangles()!;;
+    let motionRectangles: MotionRectangles = motionRectanglesResultsFrameCacheable!.getMotionRectangles()!;;
     
 this.save(motionRectangles, frame);
     
@@ -179,12 +191,12 @@ this.save(motionRectangles, frame);
 
                 //@Throws(Exception.constructor)
             
-    public save(motionRectangles: MotionRectangles, frame: Long){
+    public save$overload2(motionRectangles: MotionRectangles, frame: Long){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var filePathStringBuffer: StringMaker = new StringMaker();;
+    let filePathStringBuffer: StringMaker = new StringMaker();;
     
 filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
     
@@ -195,7 +207,7 @@ filePathStringBuffer!.append("_");
 filePathStringBuffer!.append(motionRectangles!.getName());
     
 
-    var filePathStringBuffer1: StringMaker = new StringMaker();;
+    let filePathStringBuffer1: StringMaker = new StringMaker();;
     
 filePathStringBuffer1!.append(filePathStringBuffer!.toString());
     
@@ -204,7 +216,7 @@ filePathStringBuffer1!.append("_1");
 filePathStringBuffer1!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
     
 
-    var filePathStringBuffer2: StringMaker = new StringMaker();;
+    let filePathStringBuffer2: StringMaker = new StringMaker();;
     
 filePathStringBuffer2!.append(filePathStringBuffer!.toString());
     
@@ -213,7 +225,7 @@ filePathStringBuffer2!.append("_2");
 filePathStringBuffer2!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
     
 
-    var filePathStringBuffer3: StringMaker = new StringMaker();;
+    let filePathStringBuffer3: StringMaker = new StringMaker();;
     
 filePathStringBuffer3!.append(filePathStringBuffer!.toString());
     
@@ -226,26 +238,26 @@ this.logUtil!.putF("Motion Image File Path 2: " +filePathStringBuffer2!.toString
 this.logUtil!.putF("Motion Image File Path 2: " +filePathStringBuffer3!.toString(), this, commonStrings!.SAVE);
     
 
-    var bufferedImageCacheables: BufferedImageCacheable[] = new Array(this.NUMBER_OF_IMAGES);;
+    let bufferedImageCacheables: BufferedImageCacheable[] = new Array(this.NUMBER_OF_IMAGES);;
     
 
-    var imageComparisonInfo: ImageComparisonResult = motionRectangles!.getImageComparisonResult()!;;
+    let imageComparisonInfo: ImageComparisonResult = motionRectangles!.getImageComparisonResult()!;;
     
 
-    var originalBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[0]!;;
+    let originalBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[0]!;;
     
 
-    var bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.getInstance(imageComparisonInfo!.imageWidth, imageComparisonInfo!.imageHeight, originalBufferedImage!.getType())!;;
+    let bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.getInstance(imageComparisonInfo!.imageWidth, imageComparisonInfo!.imageHeight, originalBufferedImage!.getType())!;;
     
 
-    var poolInterface: PoolInterface = BufferedImagePoolSingleton.getInstance()!;;
+    let poolInterface: PoolInterface = BufferedImagePoolSingleton.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.NUMBER_OF_IMAGES; index++)
+    let index: number = 0;index < this.NUMBER_OF_IMAGES; index++)
         {
 bufferedImageCacheables[index]= poolInterface!.remove(bufferedImageInfo) as BufferedImageCacheable;
     
@@ -263,7 +275,7 @@ bufferedImageCacheables[0]!.getBufferedImage()!.setData(imageComparisonInfo!.get
                                     }
                                 
 
-    var bufferedImageGraphicsArray: Graphics[];;
+    let bufferedImageGraphicsArray: Graphics[];;
     
 bufferedImageGraphicsArray= new Array(this.NUMBER_OF_IMAGES);
     
@@ -272,37 +284,37 @@ bufferedImageGraphicsArray= new Array(this.NUMBER_OF_IMAGES);
 
 
                         for (
-    var index: number = 0;index < this.NUMBER_OF_IMAGES; index++)
+    let index: number = 0;index < this.NUMBER_OF_IMAGES; index++)
         {
 bufferedImageGraphicsArray[index]= bufferedImageCacheables[index]!.getBufferedImage()!.getGraphics();
     
 }
 
 
-    var rectangelList: BasicArrayList = motionRectangles!.getVector()!;;
+    let rectangelList: BasicArrayList = motionRectangles!.getVector()!;;
     
 
-    var size: number = rectangelList!.size()!;;
+    let size: number = rectangelList!.size()!;;
     
 
 
 
 
                         for (
-    var index2: number = 0;index2 < size; index2++)
+    let index2: number = 0;index2 < size; index2++)
         {
 
-    var motionRectangle: MotionRectangle = rectangelList!.get(index2) as MotionRectangle;;
+    let motionRectangle: MotionRectangle = rectangelList!.get(index2) as MotionRectangle;;
     
 
-    var rectangle: Rectangle = motionRectangle!.getRectangle()!;;
+    let rectangle: Rectangle = motionRectangle!.getRectangle()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < this.NUMBER_OF_IMAGES; index++)
+    let index: number = 0;index < this.NUMBER_OF_IMAGES; index++)
         {
 bufferedImageGraphicsArray[index]!.setColor(Color.ORANGE);
     
@@ -313,7 +325,7 @@ bufferedImageGraphicsArray[index]!.drawRect(rectangle.x, rectangle.y, rectangle.
 }
 
 
-    var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;;
+    let imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;;
     
 
                         if(this.NUMBER_OF_IMAGES > 1)
@@ -339,6 +351,4 @@ imagePersistanceUtil!.saveWithImageIO(filePathStringBuffer2!.toString(), buffere
 
 
 }
-
-
 

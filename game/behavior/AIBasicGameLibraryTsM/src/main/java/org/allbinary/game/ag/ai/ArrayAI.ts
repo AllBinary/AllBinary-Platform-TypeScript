@@ -74,7 +74,7 @@ this.artificialIntelligenceInterfaceArray= artificialIntelligenceInterface;
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var size: number = this.artificialIntelligenceInterfaceArray!.length
+    let size: number = this.artificialIntelligenceInterfaceArray!.length
                 ;;
     
 
@@ -82,7 +82,7 @@ this.artificialIntelligenceInterfaceArray= artificialIntelligenceInterface;
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 this.artificialIntelligenceInterfaceArray[index]!.processAI(allBinaryLayerManager);
     
@@ -102,6 +102,4 @@ this.artificialIntelligenceInterfaceArray[index]!.processAI(allBinaryLayerManage
 
 
 }
-
-
 

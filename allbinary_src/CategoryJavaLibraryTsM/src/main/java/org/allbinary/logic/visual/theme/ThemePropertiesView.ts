@@ -76,7 +76,7 @@ public constructor (themeInterface: ThemeInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, ThemeData.getInstance()!.NAME, this.themeInterface!.toHashMap())!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, ThemeData.getInstance()!.NAME, this.themeInterface!.toHashMap())!;;
     
 
 
@@ -88,6 +88,4 @@ public constructor (themeInterface: ThemeInterface){
 
 
 }
-
-
 

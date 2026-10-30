@@ -27,9 +27,11 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 //not GWT import const EntryData
@@ -48,15 +50,18 @@ import { QuoteRequest } from '../../../../../../org/allbinary/business/user/quot
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 
 
@@ -99,8 +104,7 @@ this.setTableName(this.tableName);
 
     public insert(values: BasicArrayList){
 
-        try {
-            super.insert(values);
+ try { super.insert(values);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -111,10 +115,11 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -124,8 +129,10 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -133,14 +140,14 @@ this.setTableName(this.tableName);
             
     public get(userName: string, id: number): QuoteRequest{
 
-    var row: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let row: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 row.put(UserData.USERNAME, userName);
     
 row.put(QuoteRequestData.getInstance()!.ID, id.toString());
     
 
-    var quoteRequestHashMap: HashMap<any, any> = super.getRow(row)!;;
+    let quoteRequestHashMap: HashMap<any, any> = super.getRow(row)!;;
     
 
                         if(quoteRequestHashMap != 
@@ -182,8 +189,7 @@ row.put(QuoteRequestData.getInstance()!.ID, id.toString());
 
     public deleteWhere(key: string, value: string){
 
-        try {
-            super.deleteWhere(key, value);
+ try { super.deleteWhere(key, value);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -194,10 +200,11 @@ row.put(QuoteRequestData.getInstance()!.ID, id.toString());
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -207,17 +214,19 @@ row.put(QuoteRequestData.getInstance()!.ID, id.toString());
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public createTableStatement(): string{
 
-    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
+    let quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START);
     
@@ -282,7 +291,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 
     public dropTable(): string{
 
-    var result: string = dropTable.toCharArray();;
+    let result: string = dropTable.toCharArray();;
     
 
 
@@ -300,6 +309,4 @@ super.updateWhere(UserData.USERNAME, userName, updatedValues);
 
 
 }
-
-
 

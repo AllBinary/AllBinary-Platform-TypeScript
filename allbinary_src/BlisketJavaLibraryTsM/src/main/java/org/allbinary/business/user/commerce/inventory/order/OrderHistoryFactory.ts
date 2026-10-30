@@ -27,9 +27,11 @@ import { OrderHistoryEntity } from '../../../../../../../org/allbinary/data/tabl
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -59,12 +61,11 @@ export class OrderHistoryFactory
 
     public static getInstance(id: string): OrderHistory{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
-    var orderHistoryEntityInterface: OrderHistoryEntity = new org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntity();;
+ try { 
+    let orderHistoryEntityInterface: OrderHistoryEntity = new org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntity();;
     
 
 
@@ -72,12 +73,13 @@ export class OrderHistoryFactory
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return orderHistoryEntityInterface!.getOrder(id) as OrderHistory;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.FACTORYERROR))
@@ -94,8 +96,10 @@ export class OrderHistoryFactory
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -108,6 +112,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -80,7 +80,7 @@ export class BaseGameBehavior extends DemoGameBehavior {
             
     public init(){
 
-    var gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;;
+    let gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;;
     
 gameAdState!.playingAdState();
     
@@ -89,14 +89,14 @@ gameAdState!.playingAdState();
 
     public pause(allBinaryGameCanvas: AllBinaryGameCanvas){
 
-    var features: Features = Features.getInstance()!;;
+    let features: Features = Features.getInstance()!;;
     
 
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL_AS_GAME_THREAD))
                         
                                     {
                                     
-    var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
+    let currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
     
 currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gamePauseRunnable);
     
@@ -112,7 +112,7 @@ currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gamePauseRunnable);
                         
                                     {
                                     
-    var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
+    let currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
     
 currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gameRunnable);
     
@@ -187,6 +187,4 @@ allBinaryGameCanvas!.setHighScore2(abeClientInformation, name, score, autoSubmit
 
 
 }
-
-
 

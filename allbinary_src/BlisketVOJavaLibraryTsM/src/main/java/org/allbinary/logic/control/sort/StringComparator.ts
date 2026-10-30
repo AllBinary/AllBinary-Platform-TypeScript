@@ -53,12 +53,12 @@ public constructor (){
         }
 
 
-    public compare(anyType: any = {}, object2: any = {}): number{
+    public compare(anyType: any, object2: any): number{
 
-    var string: string = anyType as string;;
+    let string: string = anyType as string;;
     
 
-    var string2: string = object2 as string;;
+    let string2: string = object2 as string;;
     
 
 
@@ -70,6 +70,4 @@ public constructor (){
 
 
 }
-
-
 

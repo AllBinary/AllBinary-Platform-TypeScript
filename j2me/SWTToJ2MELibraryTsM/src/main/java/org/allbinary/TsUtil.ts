@@ -50,6 +50,7 @@ import { RecordStoreNotOpenException } from '../../javax/microedition/rms/Record
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -107,7 +108,7 @@ export class TsUtil
 }
 
 
-    public hashCode(anyType: any = {}): number{
+    public hashCode(anyType: any): number{
 
 
 
@@ -119,9 +120,9 @@ export class TsUtil
 
                 //@Throws(InterruptedException.constructor)
             
-    public waitFor(any: any = {}, timeoutMillis: number){
+    public waitFor(any: any, timeoutMillis: number){
 
-    var anyType: any = any;;
+    let anyType: any = any;;
     
 anyType!.wait(timeoutMillis);
     
@@ -130,12 +131,12 @@ anyType!.wait(timeoutMillis);
 
                 //@Throws(RecordStoreNotOpenException.constructor, InvalidRecordIDException.constructor, RecordStoreException.constructor)
             
-    public getRecord(anyType: any = {}, recordId: number): number[]{
+    public getRecord(anyType: any, recordId: number): number[]{
 
-    var recordStore: RecordStore = anyType as RecordStore;;
+    let recordStore: RecordStore = anyType as RecordStore;;
     
 
-    var data: number[];;
+    let data: number[];;
     
 
         
@@ -154,12 +155,7 @@ recordStore!.getRecord(recordId, data, 0);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return data.length < 1
-                        ?       
-                                NullUtil.getInstance()!.NULL_BYTE_ARRAY
-                                :
-
-                            data;
+                        return (data.length < 1 ? NullUtil.getInstance()!.NULL_BYTE_ARRAY : data);
     
 }
 
@@ -184,17 +180,17 @@ recordStore!.getRecord(recordId, data, 0);
 }
 
 
-    public equalsNotstring(anyType: any = {}, object2: any = {}): boolean{
+    public equalsNotstring(anyType: any, object2: any): boolean{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return anyType! === object2;;
+                        return (anyType === object2);;
     
 }
 
 
-    public getClassClassLoader(anyType: any = {}): ClassLoader{
+    public getClassClassLoader(anyType: any): ClassLoader{
 
 
 
@@ -209,7 +205,7 @@ recordStore!.getRecord(recordId, data, 0);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return globalThis.Math.trunc(value);
+                        return globalThis.Math.trunc(value.charCodeAt(0));
     
 }
 
@@ -268,6 +264,4 @@ System.gc();
 
 
 }
-
-
 

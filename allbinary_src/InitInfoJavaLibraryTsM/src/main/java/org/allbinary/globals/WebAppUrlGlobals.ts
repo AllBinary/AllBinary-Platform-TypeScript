@@ -97,7 +97,7 @@ this.isWebappPathSet= true;
             
     public getMainPath(): string{
 
-    var mainPath: string = InitInfo.getInstance()!.getMainPath()!;;
+    let mainPath: string = InitInfo.getInstance()!.getMainPath()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(mainPath))
@@ -138,6 +138,4 @@ this.isWebappPathSet= true;
 
 
 }
-
-
 

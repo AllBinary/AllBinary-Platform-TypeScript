@@ -30,9 +30,11 @@ import { Set } from '../../../../../../../java/util/Set.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 //not GWT import const DomNodeInterface
@@ -42,12 +44,15 @@ import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/M
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -116,27 +121,27 @@ this.vector= vector;
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;;
     
 
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    let EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 hashMap!.put(this.basicItemData!.IMAGE, EMPTY_STRING);
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;;
+    let keySet: Set = hashMap!.keys()!;;
     
 
-    var node: Node = document.createElement(this.basicItemData!.ITEM)!;;
+    let node: Node = document.createElement(this.basicItemData!.ITEM)!;;
     
 
-    var nameArray: any[] = keySet!.()!;;
+    let nameArray: any[] = keySet!.()!;;
     
 
-    var size2: number = nameArray!.length
+    let size2: number = nameArray!.length
                 ;;
     
 
@@ -144,13 +149,13 @@ hashMap!.put(this.basicItemData!.IMAGE, EMPTY_STRING);
 
 
                         for (
-    var index: number = 0;index < size2; index++)
+    let index: number = 0;index < size2; index++)
         {
 
-    var name: string = nameArray[index]! as string;;
+    let name: string = nameArray[index]! as string;;
     
 
-    var value: string = hashMap!.get(name) as string;;
+    let value: string = hashMap!.get(name) as string;;
     
 value= stringUtil!.getNonNull(value);
     
@@ -159,25 +164,25 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 }
 
 
-    var totalNode: Node = ModDomHelper.createNameValueNodes(document, this.basicItemData!.TOTAL, this.itemInterface!.getTotal()!.toString())!;;
+    let totalNode: Node = ModDomHelper.createNameValueNodes(document, this.basicItemData!.TOTAL, this.itemInterface!.getTotal()!.toString())!;;
     
 node.appendChild(totalNode);
     
 
-    var size: number = this.vector.size()!;;
+    let size: number = this.vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface = this.vector.get(index) as DomNodeInterface;;
+    let domNodeInterface: DomNodeInterface = this.vector.get(index) as DomNodeInterface;;
     
 
-    var customNode: Node = domNodeInterface!.toXmlNode(document)!;;
+    let customNode: Node = domNodeInterface!.toXmlNode(document)!;;
     
 node.appendChild(customNode);
     
@@ -213,6 +218,4 @@ node.appendChild(customNode);
 
 
 }
-
-
 

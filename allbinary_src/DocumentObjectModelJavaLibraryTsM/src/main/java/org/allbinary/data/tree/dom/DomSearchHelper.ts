@@ -24,9 +24,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { Node } from '../../../../../org/w3c/dom/Node.js';
 //not GWT import const Node
@@ -60,17 +62,17 @@ export class DomSearchHelper
 
     public static getNodeNoThrow(nodeName: string, nodeList: NodeList): Node{
 
-    var numberOfNodes: number = nodeList!.getLength()!;;
+    let numberOfNodes: number = nodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfNodes; index++)
+    let index: number = 0;index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.item(index)!;;
+    let node: Node = nodeList!.item(index)!;;
     
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
@@ -100,7 +102,7 @@ export class DomSearchHelper
             
     public static getNode(nodeName: string, nodeList: NodeList): Node{
 
-    var node: Node = DomSearchHelper.getNodeNoThrow(nodeName, nodeList)!;;
+    let node: Node = DomSearchHelper.getNodeNoThrow(nodeName, nodeList)!;;
     
 
                         if(node != 
@@ -133,7 +135,7 @@ export class DomSearchHelper
             
     public static getChildNodeList(nodeName: string, nodeList: NodeList): NodeList{
 
-    var node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;;
+    let node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;;
     
 
 
@@ -148,7 +150,7 @@ export class DomSearchHelper
             
     public static getAllNodes(nodeName: string, nodeList: NodeList): BasicArrayList{
 
-    var vector: BasicArrayList = DomSearchHelper.getAllNodesNoThrow(nodeName, nodeList)!;;
+    let vector: BasicArrayList = DomSearchHelper.getAllNodesNoThrow(nodeName, nodeList)!;;
     
 
                         if(vector == 
@@ -179,20 +181,20 @@ export class DomSearchHelper
 
     public static getAllNodesNoThrow(nodeName: string, nodeList: NodeList): BasicArrayList{
 
-    var nodeVector: BasicArrayList = new BasicArrayListD();;
+    let nodeVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var numberOfNodes: number = nodeList!.getLength()!;;
+    let numberOfNodes: number = nodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < numberOfNodes; index++)
+    let index: number = 0;index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.item(index)!;;
+    let node: Node = nodeList!.item(index)!;;
     
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
@@ -221,6 +223,4 @@ private constructor (){
 
 
 }
-
-
 

@@ -20,9 +20,11 @@
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { BasketReview } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketReview.js';
 //not GWT import const BasketReview
@@ -55,17 +57,15 @@ import { BasicDataTableInterface } from '../../../../../../../../org/allbinary/d
 export interface OrderItemsEntityInterface extends BasicDataTableInterface {
         
 
-    setStatus(orderId: string, groupId: string, status: string)
+    setStatus(orderId: string, groupId: string, status: string): void;
 
-    isEverythingShipped(orderId: string): boolean
+    isEverythingShipped(orderId: string): boolean;
 
-    getBasketReview(orderId: string): BasketReview
+    getBasketReview(orderId: string): BasketReview;
 
-    insert(userName: string, order: OrderInterface)
+    insert(userName: string, order: OrderInterface): void;
 
-    insert(values: BasicArrayList)
+    insert(values: BasicArrayList): void;
 
 }
-
-
 

@@ -39,9 +39,11 @@ import { CategoryHierarchyInterface } from '../../../../../org/allbinary/busines
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlData } from '../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
 //not GWT import const AbSqlData
@@ -51,21 +53,26 @@ import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { Document } from '../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -173,23 +180,23 @@ public constructor (categoryPropertiesHashMap: HashMap<any, any>){
             
     public getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath{
 
-    var abPathData: AbPathData = AbPathData.getInstance()!;;
+    let abPathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var pathStringBuffer: StringMaker = new StringMaker();;
+    let pathStringBuffer: StringMaker = new StringMaker();;
     
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
-    var nextParentCategoryInterface: CategoryInterface = categoryHierarchyInterface!.getParent()!;;
+    let nextParentCategoryInterface: CategoryInterface = categoryHierarchyInterface!.getParent()!;;
     
 
                         if(this != nextParentCategoryInterface!.getProperties())
                         
                                     {
                                     
-    var depthIndex: number = 0;;
+    let depthIndex: number = 0;;
     
 
         while(nextParentCategoryInterface != 
@@ -259,14 +266,14 @@ pathStringBuffer!.delete(0, pathStringBuffer!.length());
 pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(this.getValue());
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 pathStringBuffer!.append(list.get(index) as string);
     
@@ -321,13 +328,13 @@ this.category= value;
 
     public isValid(): Boolean{
 
-    var returnBoolean: Boolean = Boolean.FALSE;;
+    let returnBoolean: Boolean = Boolean.FALSE;;
     
 
                         if(StringValidationUtil.getInstance()!.isValidRequired(this.category, 1, AbSqlData.MAXSTRING))
                         
                                     {
-                                    returnBoolean= Boolean.TRUE;
+                                    returnBoolean= true;
     
 
                                     }
@@ -343,7 +350,7 @@ this.category= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let categoryHashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
     
@@ -358,7 +365,7 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
 
     public toVector(): BasicArrayList{
 
-    var categoryVector: BasicArrayList = new BasicArrayListD();;
+    let categoryVector: BasicArrayList = new BasicArrayListD();;
     
 categoryVector!.add(this.category);
     
@@ -408,6 +415,4 @@ categoryVector!.add(this.category);
 
 
 }
-
-
 

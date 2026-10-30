@@ -61,7 +61,7 @@ public constructor (layerInterface: AllBinaryLayer, location: number){
 
     public paintXY(graphics: Graphics, x: number, y: number){
 
-    var ax: number = this.allbinaryLayer!.getViewPosition()!.getX()!;;
+    let ax: number = this.allbinaryLayer!.getViewPosition()!.getX()!;;
     
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.basicColor, this.colorP);
     
@@ -71,6 +71,4 @@ graphics.fillRect(ax, this.getY() -1, this.x2, this.thickness);
 
 
 }
-
-
 

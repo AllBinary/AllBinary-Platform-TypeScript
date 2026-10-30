@@ -27,9 +27,11 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { StoreFrontData } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 //not GWT import const StoreFrontData
@@ -69,9 +71,11 @@ import { GLOBALS2 } from '../../../../../org/allbinary/globals/GLOBALS2.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 //not GWT import const AbSqlBean
@@ -81,9 +85,11 @@ import { SuperCrypt } from '../../../../../org/allbinary/logic/control/crypt/Sup
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -140,8 +146,7 @@ this.setTableName(this.tableName);
 
     public insert(values: BasicArrayList){
 
-        try {
-            super.insert(values);
+ try { super.insert(values);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -152,10 +157,11 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -165,8 +171,10 @@ this.setTableName(this.tableName);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
@@ -186,30 +194,30 @@ this.setTableName(this.tableName);
             
     public getStoreManagers(storeFrontInterface: StoreFrontInterface): BasicArrayList{
 
-    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var usersVector: BasicArrayList = new BasicArrayListD();;
+    let usersVector: BasicArrayList = new BasicArrayListD();;
     
 keysAndValues!.put(UserRoleData.NAME.toString(), UserRoleFactory.getInstance()!.STOREMANAGER.toString());
     
 keysAndValues!.put(UserData.PERMISSIONS, storeFrontInterface!.getName());
     
 
-    var usersHashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
+    let usersHashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var size: number = usersHashMapVector!.size()!;;
+    let size: number = usersHashMapVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;i < size; i++)
+    let i: number = 0;i < size; i++)
         {
 
-    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(i) as HashMap<any, any>;;
+    let userHashMap: HashMap<any, any> = usersHashMapVector!.get(i) as HashMap<any, any>;;
     
 
                         if(userHashMap != 
@@ -243,28 +251,28 @@ keysAndValues!.put(UserData.PERMISSIONS, storeFrontInterface!.getName());
             
     public getUsersWithRole(userRole: UserRole): BasicArrayList{
 
-    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var usersVector: BasicArrayList = new BasicArrayListD();;
+    let usersVector: BasicArrayList = new BasicArrayListD();;
     
 keysAndValues!.put(UserRoleData.NAME.toString(), userRole!.toString());
     
 
-    var usersHashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
+    let usersHashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var size: number = usersHashMapVector!.size()!;;
+    let size: number = usersHashMapVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index) as HashMap<any, any>;;
+    let userHashMap: HashMap<any, any> = usersHashMapVector!.get(index) as HashMap<any, any>;;
     
 
                         if(userHashMap != 
@@ -286,28 +294,28 @@ keysAndValues!.put(UserRoleData.NAME.toString(), userRole!.toString());
             
     public getUsers(storeFrontInterface: StoreFrontInterface): BasicArrayList{
 
-    var keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let keysAndValues: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var usersVector: BasicArrayList = new BasicArrayListD();;
+    let usersVector: BasicArrayList = new BasicArrayListD();;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName());
     
 
-    var usersHashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
+    let usersHashMapVector: BasicArrayList = super.getRows(keysAndValues)!;;
     
 
-    var size: number = usersHashMapVector!.size()!;;
+    let size: number = usersHashMapVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index) as HashMap<any, any>;;
+    let userHashMap: HashMap<any, any> = usersHashMapVector!.get(index) as HashMap<any, any>;;
     
 
                         if(userHashMap != 
@@ -329,12 +337,12 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getN
             
     public getUser(userName: string): UserInterface{
 
-    var row: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let row: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 row.put(UserData.USERNAME, userName);
     
 
-    var userHashMap: HashMap<any, any> = super.getRow(row)!;;
+    let userHashMap: HashMap<any, any> = super.getRow(row)!;;
     
 
                         if(userHashMap != 
@@ -366,8 +374,7 @@ row.put(UserData.USERNAME, userName);
 
     public deleteWhere(key: string, value: string){
 
-        try {
-            super.deleteWhere(key, value);
+ try { super.deleteWhere(key, value);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -378,10 +385,11 @@ row.put(UserData.USERNAME, userName);
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -391,22 +399,23 @@ row.put(UserData.USERNAME, userName);
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public login(userName: string, password: string): string{
 
-        try {
-            
-    var isUserNameAndPasswordCorrect: number = 0;;
+ try { 
+    let isUserNameAndPasswordCorrect: number = 0;;
     
 
-    var result: string = super.getField(UserData.USERNAME, userName, UserData.PASSWORD)!;;
+    let result: string = super.getField(UserData.USERNAME, userName, UserData.PASSWORD)!;;
     
 
-    var encryption: string = super.getField(UserData.USERNAME, userName, EntryData.getInstance()!.ENCRYPTION)!;;
+    let encryption: string = super.getField(UserData.USERNAME, userName, EntryData.getInstance()!.ENCRYPTION)!;;
     
 
                         if(encryption != 
@@ -441,7 +450,7 @@ row.put(UserData.USERNAME, userName);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.COMMAND_SUCCESS_FOR_USER);
     
@@ -475,7 +484,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "login");
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.COMMAND_SUCCESS_BUT_LOGIN_FAILED);
     
@@ -505,10 +514,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "login");
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -524,8 +534,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "login");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error";
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -547,10 +559,10 @@ super.updateWhere(UserData.USERNAME, userName, updatedValues);
 
     public createTableStatement(): string{
 
-    var entryData: EntryData = EntryData.getInstance()!;;
+    let entryData: EntryData = EntryData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.PREFIXNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.FIRSTNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.LASTNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.MIDDLENAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.SUFFIXNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.COMPANY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.POSITIONATCOMPANY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.MAINEMAIL)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.SECONDARYEMAIL)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.HOMEPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.CELLPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.WORKPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.OTHERCONTACT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.ELECTRONICDEVICE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.FAX)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserRoleData.NAME.toString())!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.CONFIGURATION)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(UserData.PERMISSIONS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(entryData!.ENCRYPTION)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(UserData.SECRET)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.PASSWORD)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(entryData!.ENABLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(entryData!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(entryData!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(UserData.USERNAME)!.append(this.sqlStrings!.END);
     
@@ -574,6 +586,4 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
 
 }
-
-
 

@@ -64,10 +64,10 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;;
+    let inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;;
     
 
-    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;;
+    let gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.UP, gameKeyFactory!.KEY_NUM2);
     
@@ -124,7 +124,7 @@ inputToGameKeyMapping!.add(gameKeyFactory!.LEFT, TouchMotionGestureFactory.getIn
 inputToGameKeyMapping!.add(gameKeyFactory!.RIGHT, TouchMotionGestureFactory.getInstance()!.RIGHT);
     
 
-    var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;;
+    let basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.UP, basicTouchInputFactory!.UP);
     
@@ -150,6 +150,4 @@ inputToGameKeyMapping!.add(gameKeyFactory!.KEY_NUM2, basicTouchInputFactory!.SPE
 
 
 }
-
-
 

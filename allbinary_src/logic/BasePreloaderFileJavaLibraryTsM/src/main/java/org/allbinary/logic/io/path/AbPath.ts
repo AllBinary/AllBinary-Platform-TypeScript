@@ -26,21 +26,25 @@
         
 //not plain js import { FilePathData } 
 const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+type FilePathData<T = any, U = any> = typeof FilePathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof FilePathData;
 
 import { FilePathUtil } from '../../../../../org/allbinary/logic/io/file/FilePathUtil.js';
 //not GWT import const FilePathUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -72,9 +76,8 @@ export class AbPath
 
     public static createAbPath(): AbPath{
 
-        try {
-            
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
+ try { 
+    let EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
 
@@ -82,17 +85,20 @@ export class AbPath
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new AbPath(EMPTY_STRING, EMPTY_STRING);
     
-
-                //: 
-} catch(ex) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const ex = caught;
+  
 
 
 
                             throw new RuntimeException();
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -120,7 +126,7 @@ public constructor (aPath: string, name: string){
 
             super();
         
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isEmpty(aPath))
@@ -165,7 +171,7 @@ this.nameP= this.EMPTY_STRING;
 
     getSchema(aPath: string): string{
 
-    var beginIndex: number = aPath!.indexOf(this.commonSeps!.COLON)!;;
+    let beginIndex: number = aPath!.indexOf(this.commonSeps!.COLON)!;;
     
 
                         if(beginIndex >= 0)
@@ -207,10 +213,10 @@ this.hasSchemaP= false;
             
     public getPathFromPath(aPath: string): string{
 
-    var filePathData: FilePathData = FilePathData.getInstance()!;;
+    let filePathData: FilePathData = FilePathData.getInstance()!;;
     
 
-    var tempPath: string = aPath;;
+    let tempPath: string = aPath;;
     
 
                         if(!this.hasSchema())
@@ -223,7 +229,7 @@ this.hasSchemaP= false;
                                 
                         else {
                             
-    var beginIndex: number = tempPath!.indexOf(this.commonSeps!.COLON)!;;
+    let beginIndex: number = tempPath!.indexOf(this.commonSeps!.COLON)!;;
     
 
                         if(beginIndex >= 0)
@@ -287,7 +293,7 @@ this.nameP= name;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.hasSchema())
@@ -319,10 +325,10 @@ stringBuffer!.append(this.nameP);
                         
                                     {
                                     
-    var filePathData: FilePathData = FilePathData.getInstance()!;;
+    let filePathData: FilePathData = FilePathData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.schema);
     
@@ -373,6 +379,4 @@ this.path= path;
 
 
 }
-
-
 

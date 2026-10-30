@@ -54,21 +54,19 @@ import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/lo
 export interface BasicTransformerInterface extends CompositeTransformInfoInterface {
         
 
-    setInputStream(inputStream: InputStream)
+    setInputStream(inputStream: InputStream): void;
 
-    setURIResolver(uriResolver: URIResolver)
+    setURIResolver(uriResolver: URIResolver): void;
 
-    getStreamSource(): StreamSource
+    getStreamSource(): StreamSource;
 
-    getInputStream(): InputStream
+    getInputStream(): InputStream;
 
-    getURIResolver(): URIResolver
+    getURIResolver(): URIResolver;
 
                 //@Throws(Exception.constructor)
             
-    translate(xmlDocumentStr: string): string
+    translate(xmlDocumentStr: string): string;
 
 }
-
-
 

@@ -35,6 +35,7 @@ import { PositionInterface } from '../../../../org/allbinary/layer/PositionInter
 
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -110,7 +111,7 @@ this.newLine= this.tempLine;
 
     public paintXY(graphics: Graphics, x: number, y: number){
 
-    var currentLine: number[][] = this.line;;
+    let currentLine: number[][] = this.line;;
     
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
@@ -124,6 +125,4 @@ graphics.drawLine(currentLine[0]![0]!, currentLine[0]![1]!, currentLine[1]![0]!,
 
 
 }
-
-
 

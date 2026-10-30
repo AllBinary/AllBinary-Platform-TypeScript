@@ -77,7 +77,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var displayChangeEventListener: DisplayChangeEventListener = (eventListenerInterface as DisplayChangeEventListener);;
+    let displayChangeEventListener: DisplayChangeEventListener = (eventListenerInterface as DisplayChangeEventListener);;
     
 displayChangeEventListener!.onDisplayChangeEvent(eventObject as DisplayChangeEvent);
     
@@ -85,6 +85,4 @@ displayChangeEventListener!.onDisplayChangeEvent(eventObject as DisplayChangeEve
 
 
 }
-
-
 

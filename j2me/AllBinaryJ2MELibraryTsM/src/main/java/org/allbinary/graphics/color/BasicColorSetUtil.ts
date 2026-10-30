@@ -81,5 +81,3 @@ graphics.setColor(value);
 
 }
 
-
-

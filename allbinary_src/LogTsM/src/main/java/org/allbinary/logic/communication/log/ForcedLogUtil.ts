@@ -24,9 +24,11 @@
         
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 
 
@@ -52,26 +54,26 @@ export class ForcedLogUtil
          {
         
 
-    public static log(message: string, anyType: any = {}){
+    public static log(message: string, anyType: any){
 
-        try {
-            
+ try { 
 
 
                             throw new Exception(message);
                     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 PreLogUtil.putOE(CommonStrings.getInstance()!.EXCEPTION, anyType, "log", e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -30,9 +30,11 @@ import { Vector } from '../../../../../../java/util/Vector.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -106,7 +108,7 @@ this.pixelDeltaVector= pixelDeltaVector;
 
     public clone(): any{
 
-    var motionRectangle: MotionRectangle = new MotionRectangle(this.getRectangle()!.clone() as Rectangle);;
+    let motionRectangle: MotionRectangle = new MotionRectangle(this.getRectangle()!.clone() as Rectangle);;
     
 motionRectangle!.setPixelDeltaVector(this.getPixelDeltaVector()!.clone() as BasicArrayList);
     
@@ -120,6 +122,4 @@ motionRectangle!.setPixelDeltaVector(this.getPixelDeltaVector()!.clone() as Basi
 
 
 }
-
-
 

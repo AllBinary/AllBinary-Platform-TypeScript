@@ -22,15 +22,19 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListUtil } 
 const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListUtil;
 
 
 
@@ -68,8 +72,7 @@ public constructor (){
 
     public get(): BasicArrayList{
 
-        try {
-            
+ try { 
                         if(this.index >= this.list.size())
                         
                                     {
@@ -79,7 +82,7 @@ public constructor (){
                                     }
                                 
 
-    var list: BasicArrayList = this.getAt(this.index++) as BasicArrayList;;
+    let list: BasicArrayList = this.getAt(this.index++) as BasicArrayList;;
     
 
 
@@ -87,10 +90,11 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return list;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.GET, e);
     
 
@@ -99,8 +103,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.GET, 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.basicArrayListUtil!.getImmutableInstance();;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -108,14 +114,14 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.GET, 
 super.clear();
     
 
-    var basicArrayList: BasicArrayList;;
+    let basicArrayList: BasicArrayList;;
     
 
 
 
 
                         for (
-    var index: number = this.list.size() -1;index >= 0; index--)
+    let index: number = this.list.size() -1;index >= 0; index--)
         {
 basicArrayList= (this.list.objectArray[index]! as BasicArrayList);
     
@@ -128,24 +134,24 @@ basicArrayList!.clear();
 
     public log(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("S: ");
     
 stringBuffer!.appendint(this.list.size());
     
 
-    var S_LABEL: string = " s: ";;
+    let S_LABEL: string = " s: ";;
     
 
-    var basicArrayList: BasicArrayList;;
+    let basicArrayList: BasicArrayList;;
     
 
 
 
 
                         for (
-    var index: number = this.list.size() -1;index >= 0; index--)
+    let index: number = this.list.size() -1;index >= 0; index--)
         {
 stringBuffer!.append(S_LABEL);
     
@@ -165,6 +171,4 @@ stringBuffer!.appendint(basicArrayList!.size());
 
 
 }
-
-
 

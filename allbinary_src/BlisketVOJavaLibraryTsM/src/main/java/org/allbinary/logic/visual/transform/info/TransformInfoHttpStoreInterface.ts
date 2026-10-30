@@ -42,11 +42,9 @@
 export interface TransformInfoHttpStoreInterface extends TransformInfoHttpInterface {
         
 
-    setStoreName(value: string)
+    setStoreName(value: string): void;
 
-    getStoreName(): string
+    getStoreName(): string;
 
 }
-
-
 

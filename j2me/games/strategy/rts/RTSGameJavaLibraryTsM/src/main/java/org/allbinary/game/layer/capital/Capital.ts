@@ -76,5 +76,3 @@ this.value += points;
 
 }
 
-
-

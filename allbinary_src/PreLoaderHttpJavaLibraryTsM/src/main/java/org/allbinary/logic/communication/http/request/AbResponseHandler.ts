@@ -45,6 +45,7 @@ import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/global
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
@@ -80,11 +81,10 @@ export class AbResponseHandler
             
     public static sendJspTagRedirect(pageContext: PageContext, e: Exception){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
+ try { 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
@@ -95,10 +95,11 @@ export class AbResponseHandler
                                 
 AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.ERRORPAGE);
     
-
-                //: 
-} catch(e2) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e2 = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
@@ -113,8 +114,10 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
                             throw new JspTagException();
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -122,11 +125,10 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
             
     public static sendServletRedirect(pageContext: PageContext, e: Exception){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
+ try { 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
@@ -137,10 +139,11 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
                                 
 AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.ERRORPAGE);
     
-
-                //: 
-} catch(e2) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e2 = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
@@ -155,8 +158,10 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
                             throw new ServletException();
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -164,11 +169,10 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
             
     public static sendJspTagLicensingRedirect(pageContext: PageContext, e: Exception){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
+ try { 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
@@ -179,10 +183,11 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
                                 
 AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.LICENSEERRORPAGE);
     
-
-                //: 
-} catch(e2) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e2 = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
@@ -197,8 +202,10 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
                             throw new JspTagException();
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -206,11 +213,10 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
             
     public static sendServletLicensingRedirect(pageContext: PageContext, e: Exception){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-        try {
-            
+ try { 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
@@ -221,10 +227,11 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
                                 
 AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.LICENSEERRORPAGE);
     
-
-                //: 
-} catch(e2) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e2 = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
@@ -239,8 +246,10 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
                             throw new ServletException();
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -248,13 +257,13 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
             
     public static sendRedirect(pageContext: PageContext, page: string){
 
-    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
+    let request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
     
 
-    var response: HttpServletResponse = pageContext!.getResponse() as HttpServletResponse;;
+    let response: HttpServletResponse = pageContext!.getResponse() as HttpServletResponse;;
     
 
-    var requestDispatcher: RequestDispatcher = request.getRequestDispatcher(page)!;;
+    let requestDispatcher: RequestDispatcher = request.getRequestDispatcher(page)!;;
     
 
                         if(response.isCommitted())
@@ -267,17 +276,19 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
                                 
                         else {
                             
-        try {
-            requestDispatcher!.forward(request, response);
+ try { requestDispatcher!.forward(request, response);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 pageContext!.getOut()!.print("Error: " +page);
     
-}
 
+ }
+   }
+ 
 
                         }
                             
@@ -293,6 +304,4 @@ private constructor (){
 
 
 }
-
-
 

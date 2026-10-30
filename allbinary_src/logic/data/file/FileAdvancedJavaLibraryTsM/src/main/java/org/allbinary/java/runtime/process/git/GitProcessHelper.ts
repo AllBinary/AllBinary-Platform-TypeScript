@@ -43,6 +43,7 @@ import { List } from '../../../../../../java/util/List.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 //not GWT import const AbFile
@@ -55,9 +56,11 @@ import { TrackedStrings } from '../../../../../../org/allbinary/logic/io/file/di
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -105,22 +108,29 @@ private constructor (){
 
             super();
         
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var THIS_IS_SLOW: string = "This is slow consider path exclusion instead";;
+    let THIS_IS_SLOW: string = "This is slow consider path exclusion instead";;
     
 logUtil!.putF(THIS_IS_SLOW, this, commonStrings!.CONSTRUCTOR);
     
 }
 
-
+trackedFiles(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.trackedFiles$overload1(args[0], args[1]);
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string') return this.trackedFiles$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: trackedFiles'); }
+  
                 //@Throws(IOException.constructor, InterruptedException.constructor)
             
-    public trackedFiles(rootAsString: string, pathspec: string): List<string>{
+    public trackedFiles$overload1(rootAsString: string, pathspec: string): List<string>{
 
 
 
@@ -132,15 +142,15 @@ logUtil!.putF(THIS_IS_SLOW, this, commonStrings!.CONSTRUCTOR);
 
                 //@Throws(IOException.constructor, InterruptedException.constructor)
             
-    public trackedFiles(rootAsString: string, pathspec: string, suffix: string): List<string>{
+    public trackedFiles$overload2(rootAsString: string, pathspec: string, suffix: string): List<string>{
 
-    var process: Process = new ProcessBuilder(this.trackedStrings!.GIT_COMMAND, this.trackedStrings!.CHANGE_DIRECTORY_OPTION, rootAsString, this.trackedStrings!.LIST_FILES_COMMAND, this.trackedStrings!.SEP_BY_NULL_CHAR_INSTEAD_OF_NEW_LINE, this.trackedStrings!.PATHSPEC_SEPARATOR, pathspec).redirectError(ProcessBuilder.Redirect.INHERIT)!.start()!;;
+    let process: Process = new ProcessBuilder(this.trackedStrings!.GIT_COMMAND, this.trackedStrings!.CHANGE_DIRECTORY_OPTION, rootAsString, this.trackedStrings!.LIST_FILES_COMMAND, this.trackedStrings!.SEP_BY_NULL_CHAR_INSTEAD_OF_NEW_LINE, this.trackedStrings!.PATHSPEC_SEPARATOR, pathspec).redirectError(ProcessBuilder.Redirect.INHERIT)!.start()!;;
     
 
-    var output: number[] = process.getInputStream()!.readAllBytes()!;;
+    let output: number[] = process.getInputStream()!.readAllBytes()!;;
     
 
-    var exitCode: number = process.waitFor()!;;
+    let exitCode: number = process.waitFor()!;;
     
 
                         if(exitCode != 0)
@@ -155,20 +165,20 @@ logUtil!.putF(THIS_IS_SLOW, this, commonStrings!.CONSTRUCTOR);
                                     }
                                 
 
-    var files: List<string> = new ArrayList<>();;
+    let files: List<string> = new ArrayList<>();;
     
 
-    var start: number = 0;;
+    let start: number = 0;;
     
 
-    var relativePath: string;;
+    let relativePath: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < output.length; index++)
+    let index: number = 0;index < output.length; index++)
         {
 
                         if(output[index] == 0)
@@ -203,15 +213,14 @@ start= index +1;
 
     public isTracked(file: AbFile): boolean{
 
-        try {
-            
-    var nativeFile: File = AbFileNativeUtil.get(file)!;;
+ try { 
+    let nativeFile: File = AbFileNativeUtil.get(file)!;;
     
 
-    var parentFile: File = nativeFile!.getParentFile()!;;
+    let parentFile: File = nativeFile!.getParentFile()!;;
     
 
-    var process: Process = new ProcessBuilder(this.trackedStrings!.GIT_COMMAND, this.trackedStrings!.CHANGE_DIRECTORY_OPTION, parentFile!.getPath(), this.trackedStrings!.LIST_FILES_COMMAND, this.trackedStrings!.ERROR_UNMATCH_OPTION, this.trackedStrings!.PATHSPEC_SEPARATOR, nativeFile!.getName()).redirectErrorStream(true)!.start()!;;
+    let process: Process = new ProcessBuilder(this.trackedStrings!.GIT_COMMAND, this.trackedStrings!.CHANGE_DIRECTORY_OPTION, parentFile!.getPath(), this.trackedStrings!.LIST_FILES_COMMAND, this.trackedStrings!.ERROR_UNMATCH_OPTION, this.trackedStrings!.PATHSPEC_SEPARATOR, nativeFile!.getName()).redirectErrorStream(true)!.start()!;;
     
 process.getInputStream()!.readAllBytes();
     
@@ -221,22 +230,23 @@ process.getInputStream()!.readAllBytes();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return process.waitFor() == 0;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -49,6 +49,7 @@ import { AcceptableResponseGenerator } from '../../org/allbinary/logic/communica
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { UserEmailEventNameData } from '../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 //not GWT import const UserEmailEventNameData
@@ -88,9 +89,11 @@ import { AbPath } from '../../org/allbinary/logic/io/path/AbPath.js';
 
 //not plain js import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+type AbPathData<T = any, U = any> = typeof AbPathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof AbPathData;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -167,8 +170,7 @@ this.searchParams= new SearchParams(this.request);
             
     email(){
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -178,40 +180,41 @@ this.searchParams= new SearchParams(this.request);
                                     }
                                 
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;;
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;;
     
 
-    var adminEmailSubject: string = "Generated Static Pages Email Notification";;
+    let adminEmailSubject: string = "Generated Static Pages Email Notification";;
     
 
-    var adminEmailTextBody: string = "Generated static pages for store: " +this.storeName;;
+    let adminEmailTextBody: string = "Generated static pages for store: " +this.storeName;;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
+    let adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
     
 
-    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
+    let storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
     
 
-    var storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);;
+    let storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);;
     
 
-    var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);;
+    let adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);;
     
 
-    var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.STOREGENERATINGSTATICPAGES)!;;
+    let adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.STOREGENERATINGSTATICPAGES)!;;
     
 
-    var storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, this.abeClientInformation, storeFrontInterface)!;;
+    let storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, this.abeClientInformation, storeFrontInterface)!;;
     
 storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, storeAdminEmailInfo);
     
 adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, adminEmailInfo);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
@@ -221,23 +224,24 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERAT
 
                                     }
                                 
-}
 
+ }
+   }
+ 
 }
 
 
     public generateStaticPages(): string{
 
-        try {
-            
-    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(this.request)!;;
+ try { 
+    let contentType: string = AcceptableResponseGenerator.getInstance()!.get(this.request)!;;
     
 
-    var searchRequest: SearchRequest = new SearchRequest(
+    let searchRequest: SearchRequest = new SearchRequest(
                             null, this.searchParams, this.xslFile, contentType, this.getPropertiesHashMap(), this.getPageContext());;
     
 
-    var success: string = ProductListingFactory.getInstance(searchRequest)!.generateAll(this.storeName)!;;
+    let success: string = ProductListingFactory.getInstance(searchRequest)!.generateAll(this.storeName)!;;
     
 this.email();
     
@@ -256,12 +260,13 @@ this.email();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to generate staticpages table";;
+    let error: string = "Failed to generate staticpages table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -278,27 +283,28 @@ this.email();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public makePublic(): string{
 
-        try {
-            
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;;
+ try { 
+    let storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;;
     
 
-    var fromAbPath: AbPath = new AbPath(storeFrontInterface!.getTestHtmlPath() +storeFrontInterface!.getStaticPath(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let fromAbPath: AbPath = new AbPath(storeFrontInterface!.getTestHtmlPath() +storeFrontInterface!.getStaticPath(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var toAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +storeFrontInterface!.getName() +AbPathData.getInstance()!.SEPARATOR +storeFrontInterface!.getStaticPath(), StringUtil.getInstance()!.EMPTY_STRING);;
+    let toAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +storeFrontInterface!.getName() +AbPathData.getInstance()!.SEPARATOR +storeFrontInterface!.getStaticPath(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 FileUtil.getInstance()!.copy(fromAbPath, toAbPath);
     
 
-    var success: string = "Made Public";;
+    let success: string = "Made Public";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -315,12 +321,13 @@ FileUtil.getInstance()!.copy(fromAbPath, toAbPath);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to makePublic";;
+    let error: string = "Failed to makePublic";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -337,12 +344,12 @@ FileUtil.getInstance()!.copy(fromAbPath, toAbPath);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

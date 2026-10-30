@@ -61,8 +61,7 @@ public constructor (){
             
     public doStartTag(): number{
 
-        try {
-            this.setName("Basic Basket View");
+ try { this.setName("Basic Basket View");
     
 this.setObjectFile("views.generic.basket.ValidationView");
     
@@ -102,10 +101,11 @@ this.setObjectFile("views.generic.basket.ValidationView");
 
                             throw new Exception("Command Null");
                     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -114,12 +114,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

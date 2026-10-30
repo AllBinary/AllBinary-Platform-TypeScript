@@ -48,9 +48,7 @@ import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTr
 export interface CustomTreeNodeInterface extends MutableTreeNode {
         
 
-    getJPopupMenu(): JPopupMenu
+    getJPopupMenu(): JPopupMenu;
 
 }
-
-
 

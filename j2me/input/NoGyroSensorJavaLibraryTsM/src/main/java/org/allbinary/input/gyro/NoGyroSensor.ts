@@ -25,6 +25,7 @@ import { AllBinarySensorListener } from '../../../../org/allbinary/input/AllBina
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
 //not GWT import const Orientation
@@ -78,6 +79,4 @@ public constructor (){
 
 
 }
-
-
 

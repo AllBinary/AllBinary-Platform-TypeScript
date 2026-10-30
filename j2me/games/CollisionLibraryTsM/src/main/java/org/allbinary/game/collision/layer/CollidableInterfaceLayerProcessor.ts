@@ -74,7 +74,7 @@ public constructor (){
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 
-    var collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface = layerInterface as CollidableInterfaceCompositeInterface;;
+    let collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface = layerInterface as CollidableInterfaceCompositeInterface;;
     
 
                         if(collidableInterfaceCompositeInterface!.getCollidableInferface()!.isCollidable(collidableInterfaceCompositeInterface as CollidableCompositeLayer))
@@ -116,6 +116,4 @@ public constructor (){
 
 
 }
-
-
 

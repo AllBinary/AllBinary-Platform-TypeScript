@@ -117,10 +117,19 @@ this.fileInputStream!.close();
     
 }
 
-
+read(...args: any[]): any {
+   
+    if (args.length === 0) return this.read$overload1();
+   
+    if (args.length === 1) return this.read$overload2(args[0]);
+   
+    if (args.length === 3 && typeof args[1] === 'number' && typeof args[2] === 'number') return this.read$overload3(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: read'); }
+  
                 //@Throws(IOException.constructor)
             
-    public read(): number{
+    public read$overload1(): number{
 
 
 
@@ -132,7 +141,7 @@ this.fileInputStream!.close();
 
                 //@Throws(IOException.constructor)
             
-    public read(b: number[]): number{
+    public read$overload2(b: number[]): number{
 
 
 
@@ -144,7 +153,7 @@ this.fileInputStream!.close();
 
                 //@Throws(IOException.constructor)
             
-    public read(buffer: number[], offset: number, count: number): number{
+    public read$overload3(buffer: number[], offset: number, count: number): number{
 
 
 
@@ -167,6 +176,4 @@ this.fileInputStream!.close();
 
 
 }
-
-
 

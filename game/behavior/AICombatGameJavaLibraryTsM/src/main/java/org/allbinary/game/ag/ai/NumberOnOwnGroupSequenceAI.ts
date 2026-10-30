@@ -79,17 +79,17 @@ this.numberOnSameTeam= numberOnSameTeam;
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var layerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    let layerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var index: number = this.getIndex()!;;
+    let index: number = this.getIndex()!;;
     
 
                         if(this.numberOnSameTeam!.length > index)
                         
                                     {
                                     
-    var size: number = GroupLayerManagerListener.getInstance()!.getGroupSizeFromInterface(layerInterface)!;;
+    let size: number = GroupLayerManagerListener.getInstance()!.getGroupSizeFromInterface(layerInterface)!;;
     
 
                         if(this.numberOnSameTeam[index]!.intValue() > size)
@@ -109,6 +109,4 @@ super.processAI(allBinaryLayerManager);
 
 
 }
-
-
 

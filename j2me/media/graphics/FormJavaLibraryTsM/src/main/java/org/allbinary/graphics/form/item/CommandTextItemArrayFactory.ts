@@ -37,18 +37,22 @@ import { ScreenInfo } from '../../../../../org/allbinary/graphics/form/ScreenInf
 
 //not plain js import { VectorUtil } 
 const VectorUtil = globalThis.org.allbinary.logic.VectorUtil;
+type VectorUtil<T = any, U = any> = typeof VectorUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof VectorUtil;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
 //not GWT import const Visitor
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -90,26 +94,26 @@ public constructor (visitorInterface: Visitor){
 }
 
 
-    public getInstance(vector: any = {}, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ABCustomItem[]{
+    public getInstance(vector: any, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ABCustomItem[]{
 
-    var vectorUtil: VectorUtil = VectorUtil.getInstance()!;;
+    let vectorUtil: VectorUtil = VectorUtil.getInstance()!;;
     
 
-    var size: number = vectorUtil!.getSize(vector)!;;
+    let size: number = vectorUtil!.getSize(vector)!;;
     
 this.list.clear();
     
 
-    var textItem: CommandTextItem;;
+    let textItem: CommandTextItem;;
     
 
-    var priorityLimit: number = 7;;
+    let priorityLimit: number = 7;;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    let displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var isLargeEnoughDisplayForBigMenu: boolean = (displayInfo!.isPortrait() && displayInfo!.getLastHeight() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH) || (!displayInfo!.isPortrait() && displayInfo!.getLastWidth() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH);;
+    let isLargeEnoughDisplayForBigMenu: boolean = (displayInfo!.isPortrait() && displayInfo!.getLastHeight() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH) || (!displayInfo!.isPortrait() && displayInfo!.getLastWidth() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH);;
     
 
                         if(!isLargeEnoughDisplayForBigMenu && size > 3)
@@ -121,14 +125,14 @@ this.list.clear();
                                     }
                                 
 
-    var command: Command;;
+    let command: Command;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 command= vectorUtil!.elementAt(vector, index) as Command;
     
@@ -137,7 +141,7 @@ command= vectorUtil!.elementAt(vector, index) as Command;
                         
                                     {
                                     
-    var aBoolean: Boolean = this.visitorInterface!.visit(command) as Boolean;;
+    let aBoolean: Boolean = this.visitorInterface!.visit(command) as Boolean;;
     
 
                         if(aBoolean.valueOf())
@@ -156,10 +160,10 @@ this.list.add(textItem);
 }
 
 
-    var textItemArray: ABCustomItem[] = new Array(this.list.size());;
+    let textItemArray: ABCustomItem[] = new Array(this.list.size());;
     
 
-    var size2: number = textItemArray!.length
+    let size2: number = textItemArray!.length
                 ;;
     
 
@@ -167,7 +171,7 @@ this.list.add(textItem);
 
 
                         for (
-    var index: number = 0;index < size2; index++)
+    let index: number = 0;index < size2; index++)
         {
 textItemArray[index]= this.list.objectArray[index]! as ABCustomItem;
     
@@ -183,6 +187,4 @@ textItemArray[index]= this.list.objectArray[index]! as ABCustomItem;
 
 
 }
-
-
 

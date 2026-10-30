@@ -22,6 +22,7 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 
 
@@ -63,7 +64,7 @@ export class Visitor
 
     readonly nullUtil: NullUtil = NullUtil.getInstance()!;
 
-    public visit(anyType: any = {}): any{
+    public visit(anyType: any): any{
 
 
 
@@ -74,6 +75,4 @@ export class Visitor
 
 
 }
-
-
 

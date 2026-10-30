@@ -123,14 +123,14 @@ public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, high
 this.highScoreUtil= new HighScoreUtil(highScoresFactoryInterface, highScoresHelper, abeClientInformation, gameInfo, cmdListener, name, highScore);
     
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
+    let operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
                         if(operatingSystemInterface!.isOverScan())
                         
                                     {
                                     
-    var username: string = InApplicationPurchaseFactory.getInstance()!.getUserName()!;;
+    let username: string = InApplicationPurchaseFactory.getInstance()!.getUserName()!;;
     
 
                         if(username != 
@@ -214,7 +214,7 @@ this.repaintBehavior!.onChangeRepaint(this);
             
     public update(){
 
-    var name: string = this.getTextFieldItem()!.getString()!;;
+    let name: string = this.getTextFieldItem()!.getString()!;;
     
 this.highScoreUtil!.update(name);
     
@@ -244,6 +244,4 @@ this.highScoreUtil!.submit(this);
 
 
 }
-
-
 

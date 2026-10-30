@@ -52,9 +52,7 @@ export interface RemoteHighScoresProcessorInterface {
 
                 //@Throws(Exception.constructor)
             
-    process(remoteHighScores: RemoteHighScores, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo)
+    process(remoteHighScores: RemoteHighScores, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo): void;
 
 }
-
-
 

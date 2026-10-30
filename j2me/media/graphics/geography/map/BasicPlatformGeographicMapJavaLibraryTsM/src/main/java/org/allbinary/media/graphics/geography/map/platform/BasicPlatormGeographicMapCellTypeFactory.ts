@@ -23,6 +23,7 @@ import { Enumeration } from '../../../../../../../java/util/Enumeration.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 //not GWT import const GeographicMapCellType
@@ -32,12 +33,15 @@ import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { EnumerationUtil } 
 const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+type EnumerationUtil<T = any, U = any> = typeof EnumerationUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof EnumerationUtil;
 
 
 
@@ -77,7 +81,7 @@ public constructor (tileTypeToTileIdsMap: ABHashtable<any, any>, maxTileId: numb
 
             super();
         
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
     
@@ -86,34 +90,34 @@ this.maxTileId= maxTileId;
 new GeographicMapCellType(0, 0);
     
 
-    var BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType = BasicPlatormGeographicMapCellType.createType(1)!;;
+    let BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType = BasicPlatormGeographicMapCellType.createType(1)!;;
     
 
-    var JUMP_THRU_CELL_TYPE: BasicPlatormGeographicMapCellType = BLOCK_CELL_TYPE;;
+    let JUMP_THRU_CELL_TYPE: BasicPlatormGeographicMapCellType = BLOCK_CELL_TYPE;;
     
 
-    var LADDER_CELL_TYPE: BasicPlatormGeographicMapCellType = BLOCK_CELL_TYPE;;
+    let LADDER_CELL_TYPE: BasicPlatormGeographicMapCellType = BLOCK_CELL_TYPE;;
     
 
-    var PLATFORM: string = "Platform";;
+    let PLATFORM: string = "Platform";;
     
 
-    var JUMP_TRHU: string = "JumpThru";;
+    let JUMP_TRHU: string = "JumpThru";;
     
 
-    var LADDER: string = "Ladder";;
+    let LADDER: string = "Ladder";;
     
 
-    var enumeration: Enumeration<any> = tileTypeToTileIdsMap!.keys()!;;
+    let enumeration: Enumeration<any> = tileTypeToTileIdsMap!.keys()!;;
     
 
-    var idsWithTypeList: BasicArrayList;;
+    let idsWithTypeList: BasicArrayList;;
     
 
-    var key: string;;
+    let key: string;;
     
 
-    var basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType;;
+    let basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
@@ -127,7 +131,7 @@ idsWithTypeList= tileTypeToTileIdsMap!.get(key) as BasicArrayList;
 basicPlatormGeographicMapCellType= new BasicPlatormGeographicMapCellType(idsWithTypeList);
     
 
-                        if(key === PLATFORM)
+                        if((key === PLATFORM))
                         
                                     {
                                     BLOCK_CELL_TYPE= basicPlatormGeographicMapCellType;
@@ -136,7 +140,7 @@ basicPlatormGeographicMapCellType= new BasicPlatormGeographicMapCellType(idsWith
                                     }
                                 
 
-                        if(key === JUMP_TRHU)
+                        if((key === JUMP_TRHU))
                         
                                     {
                                     JUMP_THRU_CELL_TYPE= basicPlatormGeographicMapCellType;
@@ -145,7 +149,7 @@ basicPlatormGeographicMapCellType= new BasicPlatormGeographicMapCellType(idsWith
                                     }
                                 
 
-                        if(key === LADDER)
+                        if((key === LADDER))
                         
                                     {
                                     LADDER_CELL_TYPE= basicPlatormGeographicMapCellType;
@@ -222,6 +226,4 @@ new GeographicMapCellType(this.maxTileId -2, 0);
 
 
 }
-
-
 

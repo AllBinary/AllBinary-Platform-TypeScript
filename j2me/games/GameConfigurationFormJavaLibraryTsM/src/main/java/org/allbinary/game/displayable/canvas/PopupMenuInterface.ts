@@ -44,15 +44,13 @@ export interface PopupMenuInterface {
 
                 //@Throws(Exception.constructor)
             
-    popupMenu()
+    popupMenu(): void;
 
-    closeMenu()
+    closeMenu(): void;
 
                 //@Throws(Exception.constructor)
             
-    toggleMenu()
+    toggleMenu(): void;
 
 }
-
-
 

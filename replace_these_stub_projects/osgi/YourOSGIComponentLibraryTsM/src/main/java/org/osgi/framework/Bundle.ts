@@ -26,17 +26,15 @@
 export interface Bundle {
         
 
-    getSymbolicName(): string
+    getSymbolicName(): string;
 
                 //@Throws(BundleException.constructor)
             
-    start()
+    start(): void;
 
                 //@Throws(BundleException.constructor)
             
-    start(options: number)
+    start(options: number): void;
 
 }
-
-
 

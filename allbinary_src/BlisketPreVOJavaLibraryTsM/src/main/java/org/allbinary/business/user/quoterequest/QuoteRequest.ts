@@ -32,9 +32,11 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
 //not GWT import const HttpServletRequest
@@ -53,21 +55,26 @@ import { QuoteRequestIdGenerator } from '../../../../../org/allbinary/data/gener
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbSqlData } from '../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
 //not GWT import const AbSqlData
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -115,7 +122,7 @@ public constructor (userName: string, request: HttpServletRequest){
 
             super();
         
-    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
+    let quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
     
 this.id= new QuoteRequestIdGenerator().getNext();
     
@@ -147,7 +154,7 @@ public constructor (hashMap: HashMap<any, any>){
 
             super();
         
-    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
+    let quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
     
 this.id= hashMap!.get(quoteRequestData!.ID) as string;
     
@@ -177,9 +184,8 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
 
     public isValid(): Boolean{
 
-        try {
-            
-    var valid: Boolean = Boolean.TRUE;;
+ try { 
+    let valid: Boolean = Boolean.TRUE;;
     
 
                         if(this.userName == 
@@ -187,7 +193,7 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
                                  || this.userName!.length < 4 || this.userName!.length > 250)
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -198,7 +204,7 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
                                  || this.projectInfo!.length < 0 || this.projectInfo!.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -209,7 +215,7 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
                                  || this.userComments!.length < 0 || this.userComments!.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -220,7 +226,7 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
                                  || this.budget.length < 0 || this.budget.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -231,7 +237,7 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
                                  || this.timeFrame!.length < 0 || this.timeFrame!.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -242,7 +248,7 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
                                  || this.comments.length < 0 || this.comments.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    valid= Boolean.FALSE;
+                                    valid= false;
     
 
                                     }
@@ -253,10 +259,11 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -270,18 +277,19 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE;
+                        return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public validationInfo(): string{
 
-        try {
-            
-    var stringBuffer: StringMaker = new StringMaker();;
+ try { 
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.userName == 
@@ -355,10 +363,11 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -374,14 +383,16 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Validating Form";
     
-}
 
+ }
+   }
+ 
 }
 
 
     public toVector(): BasicArrayList{
 
-    var values: BasicArrayList = new BasicArrayListD();;
+    let values: BasicArrayList = new BasicArrayListD();;
     
 values.add(this.id);
     
@@ -398,10 +409,10 @@ values.add(this.timeFrame);
 values.add(this.comments);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.add(time);
     
@@ -418,10 +429,10 @@ values.add(time);
 
     public toHashMap(): HashMap<any, any>{
 
-    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
+    let quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
     
 
-    var values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 values.put(UserData.USERNAME, userName);
     
@@ -436,10 +447,10 @@ values.put(quoteRequestData!.TIMEFRAME, this.timeFrame);
 values.put(quoteRequestData!.COMMENTS, this.comments);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();;
+    let time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -486,7 +497,7 @@ this.timeFrame= value;
 this.comments= value;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
                         if(this.comments == 
@@ -557,6 +568,4 @@ this.comments= value;
 
 
 }
-
-
 

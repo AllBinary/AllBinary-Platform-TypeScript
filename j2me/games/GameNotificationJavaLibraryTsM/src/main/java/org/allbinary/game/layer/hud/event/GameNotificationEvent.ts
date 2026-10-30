@@ -28,6 +28,7 @@ import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/colo
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -62,7 +63,7 @@ export class GameNotificationEvent extends AllBinaryEventObject {
 
     private readonly removeable: Boolean;
 
-public constructor (anyType: any = {}, string: string, seconds: Integer, basicColor: BasicColor, permanent: Boolean){
+public constructor (anyType: any, string: string, seconds: Integer, basicColor: BasicColor, permanent: Boolean){
             super(anyType);
                     
 
@@ -132,6 +133,4 @@ this.basicColor= basicColor;
 
 
 }
-
-
 

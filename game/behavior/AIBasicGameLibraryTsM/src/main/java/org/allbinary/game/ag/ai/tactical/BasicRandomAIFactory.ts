@@ -45,6 +45,7 @@ import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visi
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -76,7 +77,7 @@ export class BasicRandomAIFactory
             
     public getInstance(hashtable: ABHashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 
-    var visitor: Visitor = hashtable.get(BasicAI.AI_VISITOR) as Visitor;;
+    let visitor: Visitor = hashtable.get(BasicAI.AI_VISITOR) as Visitor;;
     
 
                         if(visitor == 
@@ -93,7 +94,7 @@ export class BasicRandomAIFactory
                                     }
                                 
 
-    var inputProbability: InputProbability = hashtable.get(InputProbability.INPUT_PROBABILITY) as InputProbability;;
+    let inputProbability: InputProbability = hashtable.get(InputProbability.INPUT_PROBABILITY) as InputProbability;;
     
 
 
@@ -105,6 +106,4 @@ export class BasicRandomAIFactory
 
 
 }
-
-
 

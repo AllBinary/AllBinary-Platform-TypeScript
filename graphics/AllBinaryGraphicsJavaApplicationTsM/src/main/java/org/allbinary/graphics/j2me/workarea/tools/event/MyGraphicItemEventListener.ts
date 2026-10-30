@@ -44,19 +44,17 @@
 export interface MyGraphicItemEventListener {
         
 
-    delete(evt: MyGraphicItemEvent)
+    delete(evt: MyGraphicItemEvent): void;
 
                 //@Throws(Exception.constructor)
             
-    duplicate(evt: MyGraphicItemEvent)
+    duplicate(evt: MyGraphicItemEvent): void;
 
-    rotate(evt: MyGraphicItemEvent)
+    rotate(evt: MyGraphicItemEvent): void;
 
-    highlight(evt: MyGraphicItemEvent)
+    highlight(evt: MyGraphicItemEvent): void;
 
-    deselect(evt: MyGraphicItemEvent)
+    deselect(evt: MyGraphicItemEvent): void;
 
 }
-
-
 

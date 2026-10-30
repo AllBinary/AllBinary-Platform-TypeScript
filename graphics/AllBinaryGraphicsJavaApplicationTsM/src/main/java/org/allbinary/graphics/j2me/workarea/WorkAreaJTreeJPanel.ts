@@ -55,15 +55,19 @@ import { MyGraphicItemEventSource } from '../../../../../org/allbinary/graphics/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -159,10 +163,17 @@ this.workAreaPropertiesJPanel!.add(this.workAreaJTree);
     
 }
 
+getNode(...args: any[]): any {
+   
+    if (args.length === 1) return this.getNode$overload1(args[0]);
+   
+    if (args.length === 1) return this.getNode$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getNode'); }
+  
+    public getNode$overload1(treePathArray: TreePath[]): BasicArrayList{
 
-    public getNode(treePathArray: TreePath[]): BasicArrayList{
-
-    var basicArrayList: BasicArrayList = new BasicArrayListD();;
+    let basicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
                         if(treePathArray != 
@@ -175,7 +186,7 @@ this.workAreaPropertiesJPanel!.add(this.workAreaJTree);
 
 
                         for (
-    var index: number = 0;index < treePathArray!.length; index++)
+    let index: number = 0;index < treePathArray!.length; index++)
         {
 basicArrayList!.add(this.getNode(treePathArray[index]!));
     
@@ -193,7 +204,7 @@ basicArrayList!.add(this.getNode(treePathArray[index]!));
 }
 
 
-    public getNode(treePath: TreePath): DefaultMutableTreeNode{
+    public getNode$overload2(treePath: TreePath): DefaultMutableTreeNode{
 
                         if(treePath != 
                                     null
@@ -201,7 +212,7 @@ basicArrayList!.add(this.getNode(treePathArray[index]!));
                         
                                     {
                                     
-    var obj: any[] = treePath!.getPath()!;;
+    let obj: any[] = treePath!.getPath()!;;
     
 
                         if(obj != 
@@ -210,7 +221,7 @@ basicArrayList!.add(this.getNode(treePathArray[index]!));
                         
                                     {
                                     
-    var node: DefaultMutableTreeNode = obj[obj.length -1]! as DefaultMutableTreeNode;;
+    let node: DefaultMutableTreeNode = obj[obj.length -1]! as DefaultMutableTreeNode;;
     
 
 
@@ -237,7 +248,7 @@ basicArrayList!.add(this.getNode(treePathArray[index]!));
             
     public deselectAll(){
 
-    var size: number = this.highlightedBasicArrayList!.size()!;;
+    let size: number = this.highlightedBasicArrayList!.size()!;;
     
 this.logUtil!.putF("size: " +size, this, "deselectAll");
     
@@ -246,10 +257,10 @@ this.logUtil!.putF("size: " +size, this, "deselectAll");
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var node: DefaultMutableTreeNode = this.highlightedBasicArrayList!.get(index) as DefaultMutableTreeNode;;
+    let node: DefaultMutableTreeNode = this.highlightedBasicArrayList!.get(index) as DefaultMutableTreeNode;;
     
 MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.DESELECT, node)));
     
@@ -290,7 +301,7 @@ MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEven
             
     public remove(treePath: TreePath){
 
-    var node: DefaultMutableTreeNode = this.getNode(treePath)!;;
+    let node: DefaultMutableTreeNode = this.getNode(treePath)!;;
     
 
                         if(node != 
@@ -317,18 +328,25 @@ MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEven
                                     }
                                 
 
-    var parent: DefaultMutableTreeNode = node.getParent() as DefaultMutableTreeNode;;
+    let parent: DefaultMutableTreeNode = node.getParent() as DefaultMutableTreeNode;;
     
 parent.remove(node);
     
 }
 
-
+copy(...args: any[]): any {
+   
+    if (args.length === 0) return this.copy$overload1();
+   
+    if (args.length === 1) return this.copy$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: copy'); }
+  
                 //@Throws(Exception.constructor)
             
-    copy(){
+    copy$overload1(){
 
-    var treePath: TreePath = this.workAreaJTree!.getSelectionPath()!;;
+    let treePath: TreePath = this.workAreaJTree!.getSelectionPath()!;;
     
 this.copy(treePath);
     
@@ -343,9 +361,9 @@ this.repaint();
 
                 //@Throws(Exception.constructor)
             
-    copy(treePath: TreePath){
+    copy$overload2(treePath: TreePath){
 
-    var node: DefaultMutableTreeNode = this.getNode(treePath)!;;
+    let node: DefaultMutableTreeNode = this.getNode(treePath)!;;
     
 
                         if(node != 
@@ -378,7 +396,7 @@ this.repaint();
             
     public rotate(treePath: TreePath, angle: number){
 
-    var node: DefaultMutableTreeNode = this.getNode(treePath)!;;
+    let node: DefaultMutableTreeNode = this.getNode(treePath)!;;
     
 
                         if(node != 
@@ -416,8 +434,15 @@ this.repaint();
     
 }
 
-
-    public expand(){
+expand(...args: any[]): any {
+   
+    if (args.length === 0) return this.expand$overload1();
+   
+    if (args.length === 1) return this.expand$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: expand'); }
+  
+    public expand$overload1(){
 this.workAreaJTree!.expandRow(0);
     
 this.workAreaJTree!.expandRow(1);
@@ -425,7 +450,7 @@ this.workAreaJTree!.expandRow(1);
 }
 
 
-    public expand(treePath: TreePath){
+    public expand$overload2(treePath: TreePath){
 this.workAreaJTree!.expandPath(treePath);
     
 }
@@ -532,9 +557,8 @@ add(this.itemJScrollPane1);
 
     rotateJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
 
-        try {
-            
-    var treePath: TreePath = this.workAreaJTree!.getSelectionPath()!;;
+ try { 
+    let treePath: TreePath = this.workAreaJTree!.getSelectionPath()!;;
     
 this.rotate(treePath, 45);
     
@@ -544,25 +568,27 @@ this.expand();
     
 this.repaint();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "rotateJMenuItemMousePressed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     workAreaJTreeMousePressed(evt: java.awt.event.MouseEvent){
 
-        try {
-            
-    var selectedTreePathArray: TreePath[] = this.workAreaJTree!.getSelectionPaths()!;;
+ try { 
+    let selectedTreePathArray: TreePath[] = this.workAreaJTree!.getSelectionPaths()!;;
     
 
-    var list: BasicArrayList = this.getNode(selectedTreePathArray)!;;
+    let list: BasicArrayList = this.getNode(selectedTreePathArray)!;;
     
 
                         if(list.size() > 0)
@@ -577,10 +603,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "rotateJMenuItemMousePres
 
 
                         for (
-    var index: number = 0;index < selectedTreePathArray!.length; index++)
+    let index: number = 0;index < selectedTreePathArray!.length; index++)
         {
 
-    var defaultMutableTreeNode: DefaultMutableTreeNode = list.get(index) as DefaultMutableTreeNode;;
+    let defaultMutableTreeNode: DefaultMutableTreeNode = list.get(index) as DefaultMutableTreeNode;;
     
 
                         if(defaultMutableTreeNode!.getUserObject() instanceof CanvasTreeLabel)
@@ -613,10 +639,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "rotateJMenuItemMousePres
 
 
                         for (
-    var index: number = 0;index < selectedTreePathArray!.length; index++)
+    let index: number = 0;index < selectedTreePathArray!.length; index++)
         {
 
-    var defaultMutableTreeNode: DefaultMutableTreeNode = list.get(index) as DefaultMutableTreeNode;;
+    let defaultMutableTreeNode: DefaultMutableTreeNode = list.get(index) as DefaultMutableTreeNode;;
     
 
                         if(defaultMutableTreeNode!.getUserObject() instanceof CanvasTreeLabel)
@@ -641,14 +667,17 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "rotateJMenuItemMousePres
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "workAreaJTreeMousePressed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -662,35 +691,36 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "workAreaJTreeMousePresse
 
     copyJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
 
-        try {
-            this.copy();
+ try { this.copy();
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "copyJMenuItemMousePressed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     deleteJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
 
-        try {
-            
-    var selectedTreePathArray: TreePath[] = this.workAreaJTree!.getSelectionPaths()!;;
+ try { 
+    let selectedTreePathArray: TreePath[] = this.workAreaJTree!.getSelectionPaths()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < selectedTreePathArray!.length; index++)
+    let index: number = 0;index < selectedTreePathArray!.length; index++)
         {
 
-    var treePath: TreePath = selectedTreePathArray[index]!;;
+    let treePath: TreePath = selectedTreePathArray[index]!;;
     
 this.remove(treePath);
     
@@ -702,14 +732,17 @@ this.repaint();
     
 }
 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteJMenuItemMousePressed", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -730,6 +763,4 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteJMenuItemMousePres
     private workAreaPropertiesJPanel: javax.swing.JPanel;
 
 }
-
-
 

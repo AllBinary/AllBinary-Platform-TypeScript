@@ -60,7 +60,7 @@ export class TouchScreenTypeFactory
 
     public TouchScreenTypeFactory(){
 
-    var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;;
+    let touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;;
     
 touchScreenFactory!.setTouch(true);
     
@@ -68,6 +68,4 @@ touchScreenFactory!.setTouch(true);
 
 
 }
-
-
 

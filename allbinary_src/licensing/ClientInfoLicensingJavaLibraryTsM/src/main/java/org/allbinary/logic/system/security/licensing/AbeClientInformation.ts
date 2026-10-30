@@ -28,12 +28,15 @@ import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/in
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -43,6 +46,7 @@ import { OperatingSystemFactory } from '../../../../../../org/allbinary/logic/sy
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -81,25 +85,24 @@ public constructor (name: string, version: string, specialName: string, shortNam
 
     public init(){
 
-        try {
-            this.setOperatingSystemInterface(OperatingSystemFactory.getInstance()!.getOperatingSystemInstance());
+ try { this.setOperatingSystemInterface(OperatingSystemFactory.getInstance()!.getOperatingSystemInstance());
     
 
-    var licenseInitInfo: LicenseInitInfo = LicenseInitInfoUtil.getInstance()!.read()!;;
+    let licenseInitInfo: LicenseInitInfo = LicenseInitInfoUtil.getInstance()!.read()!;;
     
 this.setLicenseId(licenseInitInfo!.getLicenseId());
     
 this.setLicenseServers(licenseInitInfo!.getServerList());
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
+    let stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(this.getLicenseId()))
                         
                                     {
                                     
-    var NONE: string = "No License Id";;
+    let NONE: string = "No License Id";;
     
 this.setLicenseId(NONE);
     
@@ -107,28 +110,29 @@ this.setLicenseId(NONE);
                                     }
                                 
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(new StringMaker().append("Special Name: ")!.append(this.getSpecialName())!.toString(), this, commonStrings!.CONSTRUCTOR);
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

@@ -40,43 +40,41 @@
 export interface DatabaseConnectionInfoInterface {
         
 
-    getUrl(): string
+    getUrl(): string;
 
-    getJdbcDriver(): string
+    getJdbcDriver(): string;
 
-    getName(): string
+    getName(): string;
 
-    getUserName(): string
+    getUserName(): string;
 
-    getPassword(): string
+    getPassword(): string;
 
-    getHost(): string
+    getHost(): string;
 
-    getSchema(): string
+    getSchema(): string;
 
-    getServer(): string
+    getServer(): string;
 
-    getPort(): string
+    getPort(): string;
 
-    setJdbcDriver(value: string)
+    setJdbcDriver(value: string): void;
 
-    setName(value: string)
+    setName(value: string): void;
 
-    setUserName(value: string)
+    setUserName(value: string): void;
 
-    setPassword(value: string)
+    setPassword(value: string): void;
 
-    setSchema(value: string)
+    setSchema(value: string): void;
 
-    setServer(value: string)
+    setServer(value: string): void;
 
-    setPort(value: string)
+    setPort(value: string): void;
 
-    getUserNameKey(): string
+    getUserNameKey(): string;
 
-    getPasswordKey(): string
+    getPasswordKey(): string;
 
 }
-
-
 

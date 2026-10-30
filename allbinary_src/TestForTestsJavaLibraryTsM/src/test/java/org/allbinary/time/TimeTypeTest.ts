@@ -46,27 +46,6 @@ export class TimeTypeTest
          {
         
 
-    static millisForHourLocal(hour: number): number{
-
-    var cal: Calendar = Calendar.getInstance()!;;
-    
-cal.set(Calendar.HOUR_OF_DAY, hour);
-    
-cal.set(Calendar.MINUTE, 0);
-    
-cal.set(Calendar.SECOND, 0);
-    
-cal.set(Calendar.MILLISECOND, 0);
-    
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return cal.getTimeInMillis();;
-    
-}
-
-
 //inner= member=true isStatic=static
 static TestableTimeTypeUtil = class extends TimeTypeUtil {
         
@@ -94,6 +73,25 @@ static TestableTimeTypeUtil = class extends TimeTypeUtil {
 
 
 }
+    static millisForHourLocal(hour: number): number{
+
+    let cal: Calendar = Calendar.getInstance()!;;
+    
+cal.set(Calendar.HOUR_OF_DAY, hour);
+    
+cal.set(Calendar.MINUTE, 0);
+    
+cal.set(Calendar.SECOND, 0);
+    
+cal.set(Calendar.MILLISECOND, 0);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return cal.getTimeInMillis();;
+    
+}
 
 
     isNight_returnsTrue_for_hours_less_than_6(){
@@ -119,12 +117,12 @@ static TestableTimeTypeUtil = class extends TimeTypeUtil {
 
     getNightOrDay_returns_expected_label(){
 
-    var nightUtil: TimeTypeUtil = new this.TestableTimeTypeUtil(0);;
+    let nightUtil: TimeTypeUtil = new this.TestableTimeTypeUtil(0);;
     
 Assertions.assertEquals(nightUtil!.NIGHT, nightUtil!.getNightOrDay());
     
 
-    var dayUtil: TimeTypeUtil = new this.TestableTimeTypeUtil(12);;
+    let dayUtil: TimeTypeUtil = new this.TestableTimeTypeUtil(12);;
     
 Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
     
@@ -133,7 +131,7 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
 
     getHourOfDay_long_converts_epoch_to_local_hour(){
 
-    var util: TimeTypeUtil = new TimeTypeUtil();;
+    let util: TimeTypeUtil = new TimeTypeUtil();;
     
 
                     //Otherwise - statement - ForEachStmt
@@ -143,7 +141,7 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
 
     isNight_long_expected_ranges(){
 
-    var util: TimeTypeUtil = new TimeTypeUtil();;
+    let util: TimeTypeUtil = new TimeTypeUtil();;
     
 
                     //Otherwise - statement - ForEachStmt
@@ -156,13 +154,13 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
 
     getNightOrDay_long_consistency(){
 
-    var util: TimeTypeUtil = new TimeTypeUtil();;
+    let util: TimeTypeUtil = new TimeTypeUtil();;
     
 
-    var nightMillis: number = TimeTypeTest.millisForHourLocal(0)!;;
+    let nightMillis: number = TimeTypeTest.millisForHourLocal(0)!;;
     
 
-    var dayMillis: number = TimeTypeTest.millisForHourLocal(12)!;;
+    let dayMillis: number = TimeTypeTest.millisForHourLocal(12)!;;
     
 Assertions.assertEquals(util.NIGHT, util.getNightOrDay(nightMillis));
     
@@ -173,7 +171,7 @@ Assertions.assertEquals(util.DAY, util.getNightOrDay(dayMillis));
 
     boundaries_day_for_long_based_api(){
 
-    var util: TimeTypeUtil = new TimeTypeUtil();;
+    let util: TimeTypeUtil = new TimeTypeUtil();;
     
 
                     //Otherwise - statement - ForEachStmt
@@ -183,7 +181,7 @@ Assertions.assertEquals(util.DAY, util.getNightOrDay(dayMillis));
 
     constants_accessible_and_stable(){
 
-    var util: TimeTypeUtil = new TimeTypeUtil();;
+    let util: TimeTypeUtil = new TimeTypeUtil();;
     
 Assertions.assertEquals("Night", util.NIGHT);
     
@@ -194,10 +192,10 @@ Assertions.assertEquals("Day", util.DAY);
 
     getInstance_returns_same_singleton(){
 
-    var a: TimeTypeUtil = TimeTypeUtil.getInstance()!;;
+    let a: TimeTypeUtil = TimeTypeUtil.getInstance()!;;
     
 
-    var b: TimeTypeUtil = TimeTypeUtil.getInstance()!;;
+    let b: TimeTypeUtil = TimeTypeUtil.getInstance()!;;
     
 Assertions.assertSame(a, b);
     
@@ -205,6 +203,4 @@ Assertions.assertSame(a, b);
 
 
 }
-
-
 

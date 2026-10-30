@@ -70,12 +70,19 @@ this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, co
     
 }
 
-
+getInstance(...args: any[]): any {
+   
+    if (args.length === 4 && typeof args[2] === 'number' && typeof args[3] === 'number') return this.getInstance$overload1(args[0], args[1], args[2], args[3]);
+   
+    if (args.length === 2) return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
-    public getInstance(goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number): PathFindingNodeCostInfo{
+    public getInstance$overload1(goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number): PathFindingNodeCostInfo{
 
-    var pathFindingNodeCostInfo: PathFindingNodeCostInfo = this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition)!;;
+    let pathFindingNodeCostInfo: PathFindingNodeCostInfo = this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition)!;;
     
 
                         if(pathFindingNodeCostInfo == 
@@ -111,7 +118,7 @@ pathFindingNodeCostInfo!.setCalculatedTotalCost();
 }
 
 
-    public getInstance(goingToFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): PathFindingNodeCostInfo{
+    public getInstance$overload2(goingToFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): PathFindingNodeCostInfo{
 
 
 
@@ -132,6 +139,4 @@ pathFindingNodeCostInfo!.setCalculatedTotalCost();
 
 
 }
-
-
 

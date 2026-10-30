@@ -48,13 +48,11 @@ import { Document } from '../../../../../org/w3c/dom/Document.js';
 export interface CategoryLoaderInterface extends CategoryModifierTreeInterface {
         
 
-    getDoc(categoryInterface: CategoryInterface): Document
+    getDoc(categoryInterface: CategoryInterface): Document;
 
-    get(categoryInterface: CategoryInterface): CategoryInterface
+    get(categoryInterface: CategoryInterface): CategoryInterface;
 
-    getAll(categoryInterface: CategoryInterface): CategoryInterface
+    getAll(categoryInterface: CategoryInterface): CategoryInterface;
 
 }
-
-
 

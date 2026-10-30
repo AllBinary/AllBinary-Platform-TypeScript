@@ -19,9 +19,11 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LogConfigTypeFactory } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
@@ -34,12 +36,14 @@ import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { ImageUtil } from '../../../../../org/allbinary/media/image/ImageUtil.js';
 //not GWT import const ImageUtil
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 
 
@@ -83,10 +87,10 @@ export class MediaUtil
 
     static getImageBufferPropertyHashMap(bufferedImage: BufferedImage): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
+    let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
 
-    var propertyStringArray: string[] = bufferedImage!.getPropertyNames()!;;
+    let propertyStringArray: string[] = bufferedImage!.getPropertyNames()!;;
     
 
                         if(propertyStringArray != 
@@ -99,10 +103,10 @@ export class MediaUtil
 
 
                         for (
-    var index: number = 0;index < propertyStringArray!.length; index++)
+    let index: number = 0;index < propertyStringArray!.length; index++)
         {
 
-    var propertyObject: any = bufferedImage!.getProperty(propertyStringArray[index]!)!;;
+    let propertyObject: any = bufferedImage!.getProperty(propertyStringArray[index]!)!;;
     
 hashMap!.put(propertyStringArray[index]!, propertyObject!.toString());
     
@@ -146,7 +150,7 @@ private constructor (){
                                     }
                                 
 
-    var bufferedImage: BufferedImage = ImageIOUtil.read(originalImageFile)!;;
+    let bufferedImage: BufferedImage = ImageIOUtil.read(originalImageFile)!;;
     
 
                         if(bufferedImage == 
@@ -167,7 +171,7 @@ private constructor (){
                         
                                     {
                                     
-    var hashMap: HashMap<any, any> = this.getImageBufferPropertyHashMap(bufferedImage)!;;
+    let hashMap: HashMap<any, any> = this.getImageBufferPropertyHashMap(bufferedImage)!;;
     
 this.logUtil!.putF("Image Properties: " +hashMap!.toString(), this, "saveImageFile()");
     
@@ -175,18 +179,18 @@ this.logUtil!.putF("Image Properties: " +hashMap!.toString(), this, "saveImageFi
                                     }
                                 
 
-    var imageFile: AbFile = AbFile.createAbFile(category +newImageFileName)!;;
+    let imageFile: AbFile = AbFile.createAbFile(category +newImageFileName)!;;
     
 imageFile!.createNewFile();
     
 
-    var imageUtil: ImageUtil = ImageUtil.getInstance()!;;
+    let imageUtil: ImageUtil = ImageUtil.getInstance()!;;
     
 
-    var newBufferedImage: BufferedImage = imageUtil!.createBufferedImageForSave(bufferedImage, newWidth, newHeight)!;;
+    let newBufferedImage: BufferedImage = imageUtil!.createBufferedImageForSave(bufferedImage, newWidth, newHeight)!;;
     
 
-    var isWritten: boolean = ImageIOUtil.write(newBufferedImage as RenderedImage, mediaData!.getName(), imageFile)!;;
+    let isWritten: boolean = ImageIOUtil.write(newBufferedImage as RenderedImage, mediaData!.getName(), imageFile)!;;
     
 
                         if(!isWritten)
@@ -205,10 +209,10 @@ imageFile!.createNewFile();
                         
                                     {
                                     
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
+    let commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Get Path: ");
     
@@ -251,6 +255,4 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "saveImageFile()");
 
 
 }
-
-
 

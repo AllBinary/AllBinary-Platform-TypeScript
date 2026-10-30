@@ -62,10 +62,17 @@ public constructor (){
             super();
         }
 
-
+getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
-    public getInstance(): UserInterface{
+    public getInstance$overload1(): UserInterface{
 
 
 
@@ -77,7 +84,7 @@ public constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(hashMap: HashMap<any, any>): UserInterface{
+    public getInstance$overload2(hashMap: HashMap<any, any>): UserInterface{
 
 
 
@@ -88,6 +95,4 @@ public constructor (){
 
 
 }
-
-
 

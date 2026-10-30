@@ -24,9 +24,11 @@
         
 //not plain js import { NullUtil } 
 const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
 
 //not plain js import { LogFormatUtil } 
 const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+type LogFormatUtil<T = any, U = any> = typeof LogFormatUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogFormatUtil;
 
 
 
@@ -57,7 +59,7 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
             static readonly PUBLIC: string = '%{public}s';
             
 
-    /*actual*/ public static put(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public static put(specialMessage: string, anyType: any, functionName: string){
 PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
     
 }
@@ -65,12 +67,12 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
 
     private static readonly LABEL: string = "org.allbinary";
 
-    /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public static putOE(specialMessage: string, anyType: any, functionName: string, exception: any){
 
-    var className: string = PreLogUtil.LABEL;;
+    let className: string = PreLogUtil.LABEL;;
     
 
-    var actualClassName: string = anyType!.constructor.name.toString()!!;;
+    let actualClassName: string = anyType!.constructor.name.toString()!!;;
     
 
                         if(actualClassName != 
@@ -84,7 +86,7 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 hilog.info(0x0000, className, PreLogUtil.PUBLIC, message);
     
@@ -97,9 +99,9 @@ PreLogUtil.putSE(specialMessage, className, functionName, NullUtil.getInstance()
 }
 
 
-    /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {}){
+    /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any){
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
+    let message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 hilog.info(0x0000, className, PreLogUtil.PUBLIC, message);
     
@@ -113,6 +115,4 @@ public constructor (){
 
 
 }
-
-
 

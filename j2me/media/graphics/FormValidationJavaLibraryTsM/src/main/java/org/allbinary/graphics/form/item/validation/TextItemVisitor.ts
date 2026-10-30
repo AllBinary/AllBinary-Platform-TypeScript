@@ -52,9 +52,9 @@ public constructor (){
         }
 
 
-    public visit(anyType: any = {}): any{
+    public visit(anyType: any): any{
 
-    var value: string = anyType as string;;
+    let value: string = anyType as string;;
     
 
                         if(value.length < 2)
@@ -83,6 +83,4 @@ public constructor (){
 
 
 }
-
-
 

@@ -47,9 +47,7 @@ export interface DestroyableInterface extends NamedInterface {
 
                 //@Throws(Exception.constructor)
             
-    isDestroyed(): boolean
+    isDestroyed(): boolean;
 
 }
-
-
 

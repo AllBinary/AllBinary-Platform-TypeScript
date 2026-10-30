@@ -49,31 +49,29 @@ import { Angle } from '../../../../../org/allbinary/math/Angle.js';
 export interface BasicVelocityInterface {
         
 
-    getVelocityXBasicDecimalP(): BasicDecimal
+    getVelocityXBasicDecimalP(): BasicDecimal;
 
-    getVelocityYBasicDecimalP(): BasicDecimal
+    getVelocityYBasicDecimalP(): BasicDecimal;
 
-    zero()
+    zero(): void;
 
-    setVelocityWithBigDecimalAndDirection(magnitudeBasicDecimal: BasicDecimal, direction: Direction, otherDirection: Direction)
+    setVelocityWithBigDecimalAndDirection(magnitudeBasicDecimal: BasicDecimal, direction: Direction, otherDirection: Direction): void;
 
-    addVelocityWithBigDecimalAndDirection(magnitudeBasicDecimal: BasicDecimal, direction: Direction, otherDirection: Direction)
+    addVelocityWithBigDecimalAndDirection(magnitudeBasicDecimal: BasicDecimal, direction: Direction, otherDirection: Direction): void;
 
-    setVelocityWithDirection(magnitude: number, direction: Direction, otherDirection: Direction)
+    setVelocityWithDirection(magnitude: number, direction: Direction, otherDirection: Direction): void;
 
-    addVelocityWithDirection(magnitude: number, direction: Direction, otherDirection: Direction)
+    addVelocityWithDirection(magnitude: number, direction: Direction, otherDirection: Direction): void;
 
-    setVelocityWithBigDecimal(magnitudeBasicDecimal: BasicDecimal, angle: Angle, otherAngle: Angle)
+    setVelocityWithBigDecimal(magnitudeBasicDecimal: BasicDecimal, angle: Angle, otherAngle: Angle): void;
 
-    addVelocityWithBigDecimal(magnitudeBasicDecimal: BasicDecimal, angle: Angle, otherAngle: Angle)
+    addVelocityWithBigDecimal(magnitudeBasicDecimal: BasicDecimal, angle: Angle, otherAngle: Angle): void;
 
-    setVelocity(magnitude: number, angle: Angle, otherAngle: Angle)
+    setVelocity(magnitude: number, angle: Angle, otherAngle: Angle): void;
 
-    addVelocity(magnitude: number, angle: Angle, otherAngle: Angle)
+    addVelocity(magnitude: number, angle: Angle, otherAngle: Angle): void;
 
-    addVelocityi(magnitude: number, angle: number, otherAngle: number)
+    addVelocityi(magnitude: number, angle: number, otherAngle: number): void;
 
 }
-
-
 

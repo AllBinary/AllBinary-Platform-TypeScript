@@ -79,10 +79,10 @@ this.currentSpeed= 5;
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    let ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var x: number = ownerLayerInterface!.getXP()!;;
+    let x: number = ownerLayerInterface!.getXP()!;;
     
 
                         if(ownerLayerInterface!.getXP() -this.currentSpeed <= 0)
@@ -186,10 +186,10 @@ ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInte
 
     drop(){
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    let ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var y: number = ownerLayerInterface!.getYP()!;;
+    let y: number = ownerLayerInterface!.getYP()!;;
     
 
                         if(ownerLayerInterface!.getY2() +ownerLayerInterface!.getHeight() > DisplayInfoSingleton.getInstance()!.getLastHeight())
@@ -212,6 +212,4 @@ ownerLayerInterface!.setPosition(ownerLayerInterface!.getXP(), y, ownerLayerInte
 
 
 }
-
-
 

@@ -43,7 +43,7 @@ export class ActivityFractureControllerUtilFactory
 
     public static getInstance(): AndroidKeyFactory{
 
-    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
+    let SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
     
 
                         if(SDK_VERSION <= 8)
@@ -85,6 +85,4 @@ export class ActivityFractureControllerUtilFactory
 
 
 }
-
-
 

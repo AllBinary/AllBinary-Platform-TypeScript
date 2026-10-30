@@ -48,12 +48,14 @@ import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -109,16 +111,16 @@ private constructor (){
             
     public init(abeClientInformation: AbeClientInformationInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var INPUT_AUTOMATION_CONFIGURATION: string = "InputAutomationConfiguration";;
+    let INPUT_AUTOMATION_CONFIGURATION: string = "InputAutomationConfiguration";;
     
 
-    var file: File = InputAutomationConfiguration.getFile()!;;
+    let file: File = InputAutomationConfiguration.getFile()!;;
     
 
                         if(file.isFile())
@@ -127,18 +129,18 @@ private constructor (){
                                     logUtil!.putF("LoadingConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
     
 
-    var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration.constructor)!;;
+    let jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration)!;;
     
 
-    var unmarshaller: Unmarshaller = jaxbContext!.createUnmarshaller()!;;
+    let unmarshaller: Unmarshaller = jaxbContext!.createUnmarshaller()!;;
     
 
-    var root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(new StreamSource(new FileInputStream(file)), InputAutomationConfiguration.constructor)!;;
+    let root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(new StreamSource(new FileInputStream(file)), InputAutomationConfiguration)!;;
     
 this.inputAutomationConfiguration= root.getValue() as InputAutomationConfiguration;
     
 
-    var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = this.inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;;
+    let inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = this.inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;;
     
 logUtil!.putF("isInstalled: " +this.inputAutomationConfiguration!.isInstalled() +" inputAutomationModuleConfigurationList: " +inputAutomationModuleConfigurationList, INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
     
@@ -149,17 +151,17 @@ logUtil!.putF("isInstalled: " +this.inputAutomationConfiguration!.isInstalled() 
                         
                                     {
                                     
-    var size: number = inputAutomationModuleConfigurationList!.length!;;
+    let size: number = inputAutomationModuleConfigurationList!.length!;;
     
 
-    var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration;;
+    let inputAutomationModuleConfiguration: InputAutomationModuleConfiguration;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index);
     
@@ -187,6 +189,4 @@ this.inputAutomationConfiguration= new InputAutomationConfiguration();
 
 
 }
-
-
 

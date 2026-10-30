@@ -43,5 +43,3 @@ export class OpenGLImageUtil extends OpenGLImageUtilBase {
 
 }
 
-
-

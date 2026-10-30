@@ -82,7 +82,7 @@ export class AllBinaryVisualDebugVibration extends AllBinaryVibrationME implemen
 
     public updateMeasurement(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;;
+    let font: Font = graphics.getFont()!;;
     
 this.width= font.stringWidth(this.VIBRATING);
     
@@ -115,6 +115,4 @@ graphics.drawString(this.VIBRATING, this.displayInfoSingleton!.getLastHalfWidth(
 
 
 }
-
-
 

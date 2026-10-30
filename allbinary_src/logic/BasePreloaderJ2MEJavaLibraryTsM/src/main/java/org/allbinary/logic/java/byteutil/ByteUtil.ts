@@ -64,17 +64,17 @@ private constructor (){
 
     public xor(array: number[], mask: number): number[]{
 
-    var bytes: number[] = new Array(array.length);;
+    let bytes: number[] = new Array(array.length);;
     
 
-    var size: number = array.length
+    let size: number = array.length
                 ;;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
-    var currentByte: number;;
+    let currentByte: number;;
     
 
         while(index < size)
@@ -98,14 +98,14 @@ index++;
 
     public not(array: number[]): number[]{
 
-    var bytes: number[] = new Array(array.length);;
+    let bytes: number[] = new Array(array.length);;
     
 
-    var size: number = array.length
+    let size: number = array.length
                 ;;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(index < size)
@@ -127,7 +127,7 @@ index++;
 
     public xorByte(array: number[], index: number): number[]{
 
-    var mask: number = 0;;
+    let mask: number = 0;;
     
 
                         if(index == 0)
@@ -181,7 +181,7 @@ index++;
                         }
                             
 
-    var size: number = newByteArray!.length
+    let size: number = newByteArray!.length
                 ;;
     
 
@@ -189,7 +189,7 @@ index++;
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(newByteArray[index] != oldByteArray[index])
@@ -244,14 +244,14 @@ stats[3]= oldByteArray!.length;
 stats[1]= 0;
     
 
-    var size: number = newSize;;
+    let size: number = newSize;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
                         if(newByteArray[index] != oldByteArray[index])
@@ -280,6 +280,4 @@ stats[1]++;
 
 
 }
-
-
 

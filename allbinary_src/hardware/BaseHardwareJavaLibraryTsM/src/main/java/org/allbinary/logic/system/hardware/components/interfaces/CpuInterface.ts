@@ -40,25 +40,23 @@
 export interface CpuInterface {
         
 
-    getProcessor(): string
+    getProcessor(): string;
 
-    getVendorId(): string
+    getVendorId(): string;
 
-    getCpuFamily(): string
+    getCpuFamily(): string;
 
-    getModel(): string
+    getModel(): string;
 
-    getModelName(): string
+    getModelName(): string;
 
-    getStepping(): string
+    getStepping(): string;
 
-    getCpuSpeed(): string
+    getCpuSpeed(): string;
 
-    getCacheSize(): string
+    getCacheSize(): string;
 
-    compareTo(cpuInterface: CpuInterface): boolean
+    compareTo(cpuInterface: CpuInterface): boolean;
 
 }
-
-
 

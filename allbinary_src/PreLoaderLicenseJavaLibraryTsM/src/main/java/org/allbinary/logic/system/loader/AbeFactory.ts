@@ -31,12 +31,14 @@ import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { ConstructorUtil } from '../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js';
 //not GWT import const ConstructorUtil
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
 //not GWT import const AbKeys
@@ -49,6 +51,7 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -79,8 +82,17 @@ export class AbeFactory
         
 
     private static readonly instance: AbeFactory = new AbeFactory();
-
-    public static getInstance(): AbeFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.getInstance$overload2(args[0], args[1]);
+   
+    if (args.length === 4 && typeof args[1] === 'string') return this.getInstance$overload3(args[0], args[1], args[2], args[3]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): AbeFactory{
 
 
 
@@ -103,19 +115,19 @@ private constructor (){
                 //@Throws(LicensingException.constructor)
             //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public getInstance(abeClientInformation: AbeClientInformationInterface, className: string): any{
+    public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, className: string): any{
 
-        try {
-            
+ try { 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new (this.constructor.name as any)();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
@@ -130,11 +142,11 @@ private constructor (){
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
@@ -150,34 +162,35 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
                 //@Throws(LicensingException.constructor)
             //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
-    public getInstance(abeClientInformation: AbeClientInformationInterface, className: string, classes: Function[], params: any[]): any{
+    public getInstance$overload3(abeClientInformation: AbeClientInformationInterface, className: string, classes: Function[], params: any[]): any{
 
-    var constructor: Constructor = 
+    let constructor: Constructor = 
                 null
             ;;
     
 
-        try {
-            
-    var parent: ClassLoader = WebappClassLoaderInfo.getLoader()!;;
+ try { 
+    let parent: ClassLoader = WebappClassLoaderInfo.getLoader()!;;
     
 
                         if(this.useCustomLoader)
                         
                                     {
                                     
-    var loader: ClassLoader = new AbeClassLoader(parent, AbKeys.getInstance()!.getKey(abeClientInformation, className));;
+    let loader: ClassLoader = new AbeClassLoader(parent, AbKeys.getInstance()!.getKey(abeClientInformation, className));;
     
 
-    var myClass: Function = loader.loadClass(className)!;;
+    let myClass: Function = loader.loadClass(className)!;;
     
 constructor= myClass!.getConstructor(classes);
     
@@ -192,7 +205,7 @@ constructor= myClass!.getConstructor(classes);
                                 
                         else {
                             
-    var myClass: Function = parent.loadClass(className)!;;
+    let myClass: Function = parent.loadClass(className)!;;
     
 constructor= myClass!.getConstructor(classes);
     
@@ -205,16 +218,17 @@ constructor= myClass!.getConstructor(classes);
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failure for: ");
     
@@ -234,17 +248,17 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failure for: ");
     
@@ -265,8 +279,10 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
@@ -275,19 +291,18 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
 
     public constructor(abeClientInformation: AbeClientInformationInterface, className: string): Function{
 
-        try {
-            
-    var parent: ClassLoader = WebappClassLoaderInfo.getLoader()!;;
+ try { 
+    let parent: ClassLoader = WebappClassLoaderInfo.getLoader()!;;
     
 
                         if(this.useCustomLoader)
                         
                                     {
                                     
-    var loader: ClassLoader = new AbeClassLoader(parent, AbKeys.getInstance()!.getKey(abeClientInformation, className));;
+    let loader: ClassLoader = new AbeClassLoader(parent, AbKeys.getInstance()!.getKey(abeClientInformation, className));;
     
 
-    var c: Function = loader.loadClass(className)!;;
+    let c: Function = loader.loadClass(className)!;;
     
 
 
@@ -300,7 +315,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
                                 
                         else {
                             
-    var c: Function = parent.loadClass(className)!;;
+    let c: Function = parent.loadClass(className)!;;
     
 
 
@@ -311,10 +326,11 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
@@ -329,11 +345,11 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
 
                             throw e;
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
@@ -349,12 +365,12 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

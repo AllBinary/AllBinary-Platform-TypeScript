@@ -28,6 +28,7 @@ import { Money } from '../../../../../../../org/allbinary/business/user/commerce
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -98,6 +99,4 @@ public constructor (){
 
 
 }
-
-
 

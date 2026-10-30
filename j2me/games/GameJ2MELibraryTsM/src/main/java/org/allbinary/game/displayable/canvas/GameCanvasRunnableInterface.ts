@@ -37,6 +37,7 @@ import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableI
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 
 
@@ -60,45 +61,43 @@ const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 export interface GameCanvasRunnableInterface extends RunnableInterface, PaintableInterface, ItemStateListener, GameStateCompositeInterface {
         
 
-    getTitle(): string
+    getTitle(): string;
 
-    isInitialized(): boolean
+    isInitialized(): boolean;
 
-    isPaused(): boolean
+    isPaused(): boolean;
 
-    unPause()
+    unPause(): void;
 
-    pause()
+    pause(): void;
 
-    isHighScoreSubmitted(): boolean
-
-                //@Throws(Exception.constructor)
-            
-    setHighScoreSubmitted(highScoreSubmitted: boolean)
+    isHighScoreSubmitted(): boolean;
 
                 //@Throws(Exception.constructor)
             
-    processGameOver()
-
-    isGameOver(): boolean
-
-    initCommands(cmdListener: CommandListener)
+    setHighScoreSubmitted(highScoreSubmitted: boolean): void;
 
                 //@Throws(Exception.constructor)
             
-    getCurrentStateHashtable(): ABHashtable<any, any>
+    processGameOver(): void;
+
+    isGameOver(): boolean;
+
+    initCommands(cmdListener: CommandListener): void;
 
                 //@Throws(Exception.constructor)
             
-    getLoadStateHashtable(): ABHashtable<any, any>
+    getCurrentStateHashtable(): ABHashtable<any, any>;
 
                 //@Throws(Exception.constructor)
             
-    setLoadStateHashtable(hashtable: ABHashtable<any, any>)
+    getLoadStateHashtable(): ABHashtable<any, any>;
 
-    getType(): number
+                //@Throws(Exception.constructor)
+            
+    setLoadStateHashtable(hashtable: ABHashtable<any, any>): void;
+
+    getType(): number;
 
 }
-
-
 

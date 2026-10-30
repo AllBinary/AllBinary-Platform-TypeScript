@@ -31,6 +31,7 @@ import { BasicLayerProcessor } from '../../../../../org/allbinary/layer/BasicLay
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -78,23 +79,23 @@ private constructor (){
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var list: BasicArrayList = this.getList()!;;
+    let list: BasicArrayList = this.getList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var layerInterface: AllBinaryLayer;;
+    let layerInterface: AllBinaryLayer;;
     
 
-    var dropLayerInterface: DropLayerInterface;;
+    let dropLayerInterface: DropLayerInterface;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 layerInterface= list.objectArray[index]! as AllBinaryLayer;
     
@@ -112,6 +113,4 @@ list.clear();
 
 
 }
-
-
 

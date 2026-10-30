@@ -62,21 +62,26 @@ import { NullRecordStore } from '../../../../org/allbinary/game/configuration/pe
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { ExceptionUtil } 
 const ExceptionUtil = globalThis.org.allbinary.logic.java.exception.ExceptionUtil;
+type ExceptionUtil<T = any, U = any> = typeof ExceptionUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ExceptionUtil;
 
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 //not GWT import const SmallIntegerSingletonFactory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -86,12 +91,15 @@ import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/Plat
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -153,17 +161,17 @@ this.name= StringUtil.getInstance()!.EMPTY_STRING;
             
     public deleteAll(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo){
 
-    var size: number = this.nameBasicArrayList!.size()!;;
+    let size: number = this.nameBasicArrayList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var integer: Integer = this.nameBasicArrayList!.objectArray[index]! as Integer;;
+    let integer: Integer = this.nameBasicArrayList!.objectArray[index]! as Integer;;
     
 this.delete(abeClientInformation, gameInfo, integer.intValue());
     
@@ -188,29 +196,29 @@ this.clear();
             
     public delete(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, deleteId: number){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
+    let recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
-        try {
-            this.logUtil!.putF(new StringMaker().append("Deleting: ")!.appendint(deleteId)!.toString(), this, this.commonStrings!.delete);
+ try { this.logUtil!.putF(new StringMaker().append("Deleting: ")!.appendint(deleteId)!.toString(), this, this.commonStrings!.delete);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 recordStore!.deleteRecord(deleteId);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                             throw e;
                     
-}
 
-         finally {
-            
+ }
+   }
+ finally { 
                         if(recordStore != 
                                     null
                                 )
@@ -223,9 +231,7 @@ recordStore!.closeRecordStore();
 
                                     }
                                 
-
-         }
-        
+ }
 }
 
 
@@ -241,39 +247,38 @@ recordStore!.closeRecordStore();
 
     public load(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo): string{
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
+    let recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
-        try {
-            
+ try { 
                         if(this.name == StringUtil.getInstance()!.EMPTY_STRING)
                         
                                     {
                                     
-    var LOADING_ID: string = "Loading id: ";;
+    let LOADING_ID: string = "Loading id: ";;
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
-    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
+    let recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var recordAsBytes: number[];;
+    let recordAsBytes: number[];;
     
 
-    var byteArrayInputStream: ByteArrayInputStream;;
+    let byteArrayInputStream: ByteArrayInputStream;;
     
 
-    var inputStream: DataInputStream;;
+    let inputStream: DataInputStream;;
     
 
         while(recordEnum!.hasNextElement())
         {
 
-    var id: number = recordEnum!.nextRecordId()!;;
+    let id: number = recordEnum!.nextRecordId()!;;
     
 this.logUtil!.putF(new StringMaker().append(LOADING_ID)!.appendint(id)!.toString(), this, this.commonStrings!.LOAD);
     
@@ -297,20 +302,20 @@ this.nameBasicArrayList!.add(smallIntegerSingletonFactory!.getAt(id));
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.save(abeClientInformation, gameInfo, this.name);
     
 this.logUtil!.putF(new StringMaker().append(this.commonStrings!.EXCEPTION_LABEL)!.append(ExceptionUtil.getInstance()!.getStackTrace(e))!.toString(), this, this.commonStrings!.LOAD);
     
-}
 
-         finally {
-            
-        try {
-            
+ }
+   }
+ finally { 
+ try { 
                         if(recordStore != 
                                     null
                                 )
@@ -323,17 +328,18 @@ recordStore!.closeRecordStore();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof RecordStoreException) {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.LOAD, e);
     
-}
 
-
-         }
-        
+ }
+  else { throw caught; } }
+ 
+ }
 
 
 
@@ -345,41 +351,40 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.LOAD,
 
     public save(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, name: string){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
+    let recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
-        try {
-            this.logUtil!.putF(new StringMaker().append("Saving: ")!.append(name)!.toString(), this, this.commonStrings!.SAVE);
+ try { this.logUtil!.putF(new StringMaker().append("Saving: ")!.append(name)!.toString(), this, this.commonStrings!.SAVE);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
+    let byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);;
+    let outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);;
     
 outputStream!.writeUTF(name);
     
 
-    var savedGameBytes: number[] = byteArrayOutputStream!.toByteArray()!;;
+    let savedGameBytes: number[] = byteArrayOutputStream!.toByteArray()!;;
     
 recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length);
     
 this.name= name;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.SAVE, e);
     
-}
 
-         finally {
-            
-        try {
-            
+ }
+   }
+ finally { 
+ try { 
                         if(recordStore != 
                                     null
                                 )
@@ -392,21 +397,20 @@ recordStore!.closeRecordStore();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof RecordStoreException) {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.SAVE, e);
     
+
+ }
+  else { throw caught; } }
+ 
+ }
 }
 
 
-         }
-        
 }
-
-
-}
-
-
 

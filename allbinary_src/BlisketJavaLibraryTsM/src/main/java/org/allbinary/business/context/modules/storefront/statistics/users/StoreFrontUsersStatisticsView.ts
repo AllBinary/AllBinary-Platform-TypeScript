@@ -79,10 +79,10 @@ public constructor (storeFrontUsersStatisticsInterface: StoreFrontUsersStatistic
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.storeFrontUsersStatisticsInterface!.toHashMap()!;;
+    let hashMap: HashMap<any, any> = this.storeFrontUsersStatisticsInterface!.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontUsersStatisticsData.getInstance()!.NAME, hashMap)!;;
+    let node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontUsersStatisticsData.getInstance()!.NAME, hashMap)!;;
     
 
 
@@ -94,6 +94,4 @@ public constructor (storeFrontUsersStatisticsInterface: StoreFrontUsersStatistic
 
 
 }
-
-
 

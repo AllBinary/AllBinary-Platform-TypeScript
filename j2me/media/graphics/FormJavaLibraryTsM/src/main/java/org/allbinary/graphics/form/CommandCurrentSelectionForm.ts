@@ -109,14 +109,14 @@ super.updateMeasurement(graphics);
 
     initAnimations(){
 
-    var nullAnimation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;;
+    let nullAnimation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;;
     
 
 
 
 
                         for (
-    var index: number = this.selectedAnimationArray!.length
+    let index: number = this.selectedAnimationArray!.length
                 ;--index >= 0; )
         {
 this.selectedAnimationArray[index]= nullAnimation;
@@ -128,7 +128,7 @@ this.selectedAnimationArray[index]= nullAnimation;
 
 
                         for (
-    var index: number = this.unSelectedAnimationArray!.length
+    let index: number = this.unSelectedAnimationArray!.length
                 ;--index >= 0; )
         {
 this.unSelectedAnimationArray[index]= nullAnimation;
@@ -144,7 +144,7 @@ this.unSelectedAnimationArray[index]= nullAnimation;
 
 
                         for (
-    var index: number = items.length
+    let index: number = items.length
                 ;--index >= 0; )
         {
 this.addAt(index, items[index]!);
@@ -156,31 +156,31 @@ this.addAt(index, items[index]!);
 
     addAt(index: number, item: ABCustomItem){
 
-    var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
+    let basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
     
 
-    var buttonColor: BasicColor = basicColorFactory!.TRANSPARENT_GREY;;
+    let buttonColor: BasicColor = basicColorFactory!.TRANSPARENT_GREY;;
     
 
-    var selectedButtonColor: BasicColor = basicColorFactory!.TRANSPARENT_RED;;
+    let selectedButtonColor: BasicColor = basicColorFactory!.TRANSPARENT_RED;;
     
 
-    var width: number = item.getMinimumWidth()!;;
+    let width: number = item.getMinimumWidth()!;;
     
 
-    var height: number = item.getMinimumHeight()!;;
+    let height: number = item.getMinimumHeight()!;;
     
 
-    var adjustedBorder: number = 3;;
+    let adjustedBorder: number = 3;;
     
 
-    var offset: number =  -(this.halfBorder +adjustedBorder);;
+    let offset: number =  -(this.halfBorder +adjustedBorder);;
     
 
-    var rectWidth: number = width +this.border -adjustedBorder;;
+    let rectWidth: number = width +this.border -adjustedBorder;;
     
 
-    var rectHeight: number = height +this.border -adjustedBorder;;
+    let rectHeight: number = height +this.border -adjustedBorder;;
     
 
                         if(J2MEUtil.isJ2ME() || J2MEUtil.isHTML())
@@ -223,7 +223,7 @@ adjustedBorder= 4;
 
 
                         for (
-    var index: number = items.length
+    let index: number = items.length
                 ;--index >= 0; )
         {
 items[index]!.preMeasurement(graphics);
@@ -237,38 +237,38 @@ this.updateAt(index, items[index]!);
 
     updateAt(index: number, item: ABCustomItem){
 
-    var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
+    let basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
     
 
-    var buttonColor: BasicColor = basicColorFactory!.TRANSPARENT_GREY;;
+    let buttonColor: BasicColor = basicColorFactory!.TRANSPARENT_GREY;;
     
 
-    var selectedButtonColor: BasicColor = basicColorFactory!.TRANSPARENT_RED;;
+    let selectedButtonColor: BasicColor = basicColorFactory!.TRANSPARENT_RED;;
     
 
-    var width: number = item.getMinimumWidth()!;;
+    let width: number = item.getMinimumWidth()!;;
     
 
-    var height: number = item.getMinimumHeight()!;;
+    let height: number = item.getMinimumHeight()!;;
     
 
-    var adjustedBorder: number = 3;;
+    let adjustedBorder: number = 3;;
     
 
-    var offset: number =  -(this.halfBorder +adjustedBorder);;
+    let offset: number =  -(this.halfBorder +adjustedBorder);;
     
 
-    var rectWidth: number = width +this.border -adjustedBorder;;
+    let rectWidth: number = width +this.border -adjustedBorder;;
     
 
-    var rectHeight: number = height +this.border -adjustedBorder;;
+    let rectHeight: number = height +this.border -adjustedBorder;;
     
 
                         if(J2MEUtil.isJ2ME() || J2MEUtil.isHTML())
                         
                                     {
                                     
-    var rectangleAdjustedAnimation: RectangleAdjustedAnimation = this.selectedAnimationArray[index]! as RectangleAdjustedAnimation;;
+    let rectangleAdjustedAnimation: RectangleAdjustedAnimation = this.selectedAnimationArray[index]! as RectangleAdjustedAnimation;;
     
 rectangleAdjustedAnimation!.setWidth(rectWidth);
     
@@ -285,7 +285,7 @@ rectangleAdjustedAnimation!.setBasicColorP(selectedButtonColor);
                                 
                         else {
                             
-    var rectangleAdjustedAnimation: RectangleFilledAdjustedAnimation = this.selectedAnimationArray[index]! as RectangleFilledAdjustedAnimation;;
+    let rectangleAdjustedAnimation: RectangleFilledAdjustedAnimation = this.selectedAnimationArray[index]! as RectangleFilledAdjustedAnimation;;
     
 rectangleAdjustedAnimation!.setWidth(rectWidth);
     
@@ -307,7 +307,7 @@ adjustedBorder= 4;
                         
                                     {
                                     
-    var rectangleAdjustedAnimation: RectangleAdjustedAnimation = this.unSelectedAnimationArray[index]! as RectangleAdjustedAnimation;;
+    let rectangleAdjustedAnimation: RectangleAdjustedAnimation = this.unSelectedAnimationArray[index]! as RectangleAdjustedAnimation;;
     
 rectangleAdjustedAnimation!.setWidth(rectWidth);
     
@@ -324,7 +324,7 @@ rectangleAdjustedAnimation!.setBasicColorP(buttonColor);
                                 
                         else {
                             
-    var rectangleAdjustedAnimation: RectangleFilledAdjustedAnimation = this.unSelectedAnimationArray[index]! as RectangleFilledAdjustedAnimation;;
+    let rectangleAdjustedAnimation: RectangleFilledAdjustedAnimation = this.unSelectedAnimationArray[index]! as RectangleFilledAdjustedAnimation;;
     
 rectangleAdjustedAnimation!.setWidth(rectWidth);
     
@@ -344,10 +344,10 @@ rectangleAdjustedAnimation!.setBasicColorP(buttonColor);
 
     public getSelectedCommand(): Command{
 
-    var index: number = super.getSelectedIndex()!;;
+    let index: number = super.getSelectedIndex()!;;
     
 
-    var commandTextItem: CommandTextItem = this.get(index) as unknown as CommandTextItem;;
+    let commandTextItem: CommandTextItem = this.get(index) as unknown as CommandTextItem;;
     
 
 
@@ -360,7 +360,7 @@ rectangleAdjustedAnimation!.setBasicColorP(buttonColor);
 
     public append(item: ABCustomItem): number{
 
-    var result: number = super.append(item)!;;
+    let result: number = super.append(item)!;;
     
 this.addAt(result, item);
     
@@ -436,6 +436,4 @@ this.unSelectedAnimationArray[index]!.paintXY(graphics, x, y);
 
 
 }
-
-
 

@@ -83,7 +83,7 @@ public constructor (dbConnectionInfo: DbConnectionInfo){
         }
 
 
-    setHelper(anyType: any = {}){
+    setHelper(anyType: any){
 this.anyType= anyType;
     
 }
@@ -101,16 +101,15 @@ this.anyType= anyType;
 
     getHostName(): string{
 
-        try {
-            
-    var dynamicClass: Function = this.anyType!.constructor!;;
+ try { 
+    let dynamicClass: Function = this.anyType!.constructor!;;
     
 
-    var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_GET_HOST_NAME, 
+    let method: Method = dynamicClass!.getMethod(this.METHOD_CALL_GET_HOST_NAME, 
                             null)!;;
     
 
-    var result: string = method.invoke(this.anyType, 
+    let result: string = method.invoke(this.anyType, 
                             null) as string;;
     
 
@@ -119,33 +118,35 @@ this.anyType= anyType;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public addUsers(): boolean{
 
-        try {
-            
-    var dynamicClass: Function = this.anyType!.constructor!;;
+ try { 
+    let dynamicClass: Function = this.anyType!.constructor!;;
     
 
-    var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_ADD_USERS, 
+    let method: Method = dynamicClass!.getMethod(this.METHOD_CALL_ADD_USERS, 
                             null)!;;
     
 
-    var result: Boolean = method.invoke(this.anyType, 
+    let result: Boolean = method.invoke(this.anyType, 
                             null) as Boolean;;
     
 
@@ -154,33 +155,35 @@ this.anyType= anyType;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public addDatabases(): boolean{
 
-        try {
-            
-    var dynamicClass: Function = this.anyType!.constructor!;;
+ try { 
+    let dynamicClass: Function = this.anyType!.constructor!;;
     
 
-    var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_ADD_DATABASES, 
+    let method: Method = dynamicClass!.getMethod(this.METHOD_CALL_ADD_DATABASES, 
                             null)!;;
     
 
-    var result: Boolean = method.invoke(this.anyType, 
+    let result: Boolean = method.invoke(this.anyType, 
                             null) as Boolean;;
     
 
@@ -189,33 +192,35 @@ this.anyType= anyType;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public addTables(): boolean{
 
-        try {
-            
-    var dynamicClass: Function = this.anyType!.constructor!;;
+ try { 
+    let dynamicClass: Function = this.anyType!.constructor!;;
     
 
-    var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_ADD_TABLES, 
+    let method: Method = dynamicClass!.getMethod(this.METHOD_CALL_ADD_TABLES, 
                             null)!;;
     
 
-    var result: Boolean = method.invoke(this.anyType, 
+    let result: Boolean = method.invoke(this.anyType, 
                             null) as Boolean;;
     
 
@@ -224,33 +229,35 @@ this.anyType= anyType;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public useTemporaryMainPath(): boolean{
 
-        try {
-            
-    var dynamicClass: Function = this.anyType!.constructor!;;
+ try { 
+    let dynamicClass: Function = this.anyType!.constructor!;;
     
 
-    var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_TEMP_MAIN_PATH, 
+    let method: Method = dynamicClass!.getMethod(this.METHOD_CALL_TEMP_MAIN_PATH, 
                             null)!;;
     
 
-    var result: Boolean = method.invoke(this.anyType, 
+    let result: Boolean = method.invoke(this.anyType, 
                             null) as Boolean;;
     
 
@@ -259,33 +266,35 @@ this.anyType= anyType;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public useNormalMainPath(): boolean{
 
-        try {
-            
-    var dynamicClass: Function = this.anyType!.constructor!;;
+ try { 
+    let dynamicClass: Function = this.anyType!.constructor!;;
     
 
-    var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_MAIN_PATH, 
+    let method: Method = dynamicClass!.getMethod(this.METHOD_CALL_MAIN_PATH, 
                             null)!;;
     
 
-    var result: Boolean = method.invoke(this.anyType, 
+    let result: Boolean = method.invoke(this.anyType, 
                             null) as Boolean;;
     
 
@@ -294,22 +303,23 @@ this.anyType= anyType;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result.valueOf();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

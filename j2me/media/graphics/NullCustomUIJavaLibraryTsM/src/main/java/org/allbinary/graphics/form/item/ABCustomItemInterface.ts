@@ -29,17 +29,15 @@ import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 export interface ABCustomItemInterface {
         
 
-    getMinimumWidth(): number
+    getMinimumWidth(): number;
 
-    getMinimumHeight(): number
+    getMinimumHeight(): number;
 
-    getLabel(): string
+    getLabel(): string;
 
-    paintXY(graphics: Graphics, x: number, y: number)
+    paintXY(graphics: Graphics, x: number, y: number): void;
 
-    paintUnselected(graphics: Graphics, x: number, y: number)
+    paintUnselected(graphics: Graphics, x: number, y: number): void;
 
 }
-
-
 

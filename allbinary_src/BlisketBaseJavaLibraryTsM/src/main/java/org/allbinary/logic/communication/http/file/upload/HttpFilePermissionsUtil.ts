@@ -68,7 +68,7 @@ export class HttpFilePermissionsUtil
             
     public create(path: AbPath){
 
-    var file: AbFile = AbFile.createAbFileFromAbPath(path)!;;
+    let file: AbFile = AbFile.createAbFileFromAbPath(path)!;;
     
 
                         if(!file.isFile())
@@ -83,6 +83,4 @@ export class HttpFilePermissionsUtil
 
 
 }
-
-
 

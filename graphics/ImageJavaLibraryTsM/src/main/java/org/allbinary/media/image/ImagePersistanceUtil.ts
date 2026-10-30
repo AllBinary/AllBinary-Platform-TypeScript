@@ -43,6 +43,7 @@ import { ImageOutputStream } from '../../../../javax/imageio/stream/ImageOutputS
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbFileOutputStream } from '../../../../org/allbinary/logic/io/AbFileOutputStream.js';
 //not GWT import const AbFileOutputStream
@@ -55,6 +56,7 @@ import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { PNGImageWriter } from '../../../../org/apache/batik/ext/awt/image/codec/png/PNGImageWriter.js';
 //not GWT import const PNGImageWriter
@@ -103,50 +105,52 @@ export class ImagePersistanceUtil
             
     public saveWithBatik(file: AbFile, bufferedImage: BufferedImage){
 
-    var batikPNGImageWriter: PNGImageWriter = new PNGImageWriter();;
+    let batikPNGImageWriter: PNGImageWriter = new PNGImageWriter();;
     
 
-    var fileOutputStream: AbFileOutputStream = AbFileOutputStream.createFromAbFile(file)!;;
+    let fileOutputStream: AbFileOutputStream = AbFileOutputStream.createFromAbFile(file)!;;
     
 
-        try {
-            batikPNGImageWriter!.writeImage(bufferedImage, fileOutputStream);
+ try { batikPNGImageWriter!.writeImage(bufferedImage, fileOutputStream);
     
-
-         finally {
-            fileOutputStream!.flush();
+ }
+ finally { fileOutputStream!.flush();
     
 StreamUtil.getInstance()!.close(fileOutputStream);
     
-
-         }
-        
+ }
 this.logUtil!.putF("Wrote Image: " +file.getAbsolutePath(), this, this.commonStrings!.SAVE);
     
 }
 
-
-    public saveWithImageIO(filePath: string, bufferedImage: BufferedImage){
+saveWithImageIO(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.saveWithImageIO$overload1(args[0], args[1]);
+   
+    if (args.length === 2) return this.saveWithImageIO$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: saveWithImageIO'); }
+  
+    public saveWithImageIO$overload1(filePath: string, bufferedImage: BufferedImage){
 this.saveWithImageIO(new File(filePath), bufferedImage);
     
 }
 
 
-    public saveWithImageIO(file: File, bufferedImage: BufferedImage){
+    public saveWithImageIO$overload2(file: File, bufferedImage: BufferedImage){
 
-    var writer: ImageWriter = 
+    let writer: ImageWriter = 
                 null
             ;;
     
 
-    var ios: ImageOutputStream = 
+    let ios: ImageOutputStream = 
                 null
             ;;
     
 
-        try {
-            
-    var iter: Iterator = ImageIO.getImageWritersByFormatName("jpeg")!;;
+ try { 
+    let iter: Iterator = ImageIO.getImageWritersByFormatName("jpeg")!;;
     
 
                         if(!iter.hasNext())
@@ -170,7 +174,7 @@ ios= ImageIO.createImageOutputStream(file);
 writer.setOutput(ios);
     
 
-    var iwp: ImageWriteParam = writer.getDefaultWriteParam()!;;
+    let iwp: ImageWriteParam = writer.getDefaultWriteParam()!;;
     
 iwp.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
     
@@ -183,18 +187,18 @@ writer.write(
     
 this.logUtil!.putF("Wrote Image: " +file.getAbsolutePath(), this, this.commonStrings!.SAVE);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.SAVE, e);
     
-}
 
-         finally {
-            
-        try {
-            
+ }
+   }
+ finally { 
+ try { 
                         if(ios != 
                                     null
                                 )
@@ -203,8 +207,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.SAVE,
                                     ios.flush();
     
 
-        try {
-            
+ try { 
                         if(ios != 
                                     null
                                 )
@@ -217,14 +220,17 @@ ios.close();
 
                                     }
                                 
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, ios, this.commonStrings!.CLOSE, e);
     
-}
 
+ }
+   }
+ 
 
                                     }
                                 
@@ -239,21 +245,20 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, ios, this.commonStrings!.CLOSE,
 
                                     }
                                 
-
-                //: 
-} catch(e2) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof IOException) {
+  const e2 = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.SAVE, e2);
     
+
+ }
+  else { throw caught; } }
+ 
+ }
 }
 
 
-         }
-        
 }
-
-
-}
-
-
 

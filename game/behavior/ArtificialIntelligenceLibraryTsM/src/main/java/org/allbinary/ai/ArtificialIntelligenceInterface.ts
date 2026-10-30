@@ -50,9 +50,7 @@ export interface ArtificialIntelligenceInterface extends IdentifierInterface {
 
                 //@Throws(Exception.constructor)
             
-    processAI(layerManager: AllBinaryLayerManager)
+    processAI(layerManager: AllBinaryLayerManager): void;
 
 }
-
-
 

@@ -40,6 +40,7 @@ import { RaceTrackPickupLayer } from '../../../../../../../../org/allbinary/game
 
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+type MyRandomFactory<T = any, U = any> = typeof MyRandomFactory extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MyRandomFactory;
 
 import { GPoint } from '../../../../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
@@ -115,7 +116,7 @@ private constructor (){
 super.update(allBinaryGameLayerManager, geographicMapInterface);
     
 
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
+    let tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 this.cellWidth= tiledLayer!.getCellWidth() /this.cellsPerRowOrColumn;
     
@@ -128,34 +129,34 @@ this.cellHeight= tiledLayer!.getCellHeight() /this.cellsPerRowOrColumn;
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.list.get(index) as GeographicMapCellPosition;;
+    let geographicMapCellPosition: GeographicMapCellPosition = this.list.get(index) as GeographicMapCellPosition;;
     
 
-    var point: GPoint = geographicMapCellPosition!.getPoint()!;;
+    let point: GPoint = geographicMapCellPosition!.getPoint()!;;
     
 
-    var randomCell: number = this.myRandomFactory!.getAbsoluteNextInt(this.totalCells)!;;
+    let randomCell: number = this.myRandomFactory!.getAbsoluteNextInt(this.totalCells)!;;
     
 
-    var row: number = this.rowArray[randomCell]!;;
+    let row: number = this.rowArray[randomCell]!;;
     
 
-    var column: number = this.columnArray[randomCell]!;;
+    let column: number = this.columnArray[randomCell]!;;
     
 
-    var x: number = point.getX() +(row *this.cellWidth);;
+    let x: number = point.getX() +(row *this.cellWidth);;
     
 
-    var y: number = point.getY() +(column *this.cellHeight);;
+    let y: number = point.getY() +(column *this.cellHeight);;
     
 
-    var pickedUpLayerInterfaceFactory: PickedUpLayerInterfaceFactoryInterface = DropLayerFactory.getInstance()!.getRandomInstance()!;;
+    let pickedUpLayerInterfaceFactory: PickedUpLayerInterfaceFactoryInterface = DropLayerFactory.getInstance()!.getRandomInstance()!;;
     
 
-    var tiledLayer: AllBinaryTiledLayer = this.raceTrackGeographicMap!.getAllBinaryTiledLayer()!;;
+    let tiledLayer: AllBinaryTiledLayer = this.raceTrackGeographicMap!.getAllBinaryTiledLayer()!;;
     
 
-    var pickupLayer: RaceTrackPickupLayer = PickupLayerCircularStaticPool.getInstance()!.getInstanceXYZ(pickedUpLayerInterfaceFactory, x, y, tiledLayer!.getZP() +3) as RaceTrackPickupLayer;;
+    let pickupLayer: RaceTrackPickupLayer = PickupLayerCircularStaticPool.getInstance()!.getInstanceXYZ(pickedUpLayerInterfaceFactory, x, y, tiledLayer!.getZP() +3) as RaceTrackPickupLayer;;
     
 pickupLayer!.setTiledLayer(tiledLayer);
     
@@ -165,6 +166,4 @@ allBinaryLayerManager!.append(pickupLayer);
 
 
 }
-
-
 

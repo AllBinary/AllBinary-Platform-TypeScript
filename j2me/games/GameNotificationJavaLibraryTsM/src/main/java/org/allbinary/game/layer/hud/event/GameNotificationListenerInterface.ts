@@ -49,9 +49,7 @@ export interface GameNotificationListenerInterface extends EventListenerInterfac
 
                 //@Throws(Exception.constructor)
             
-    onGameNotificationEvent(gameNotificationEvent: GameNotificationEvent)
+    onGameNotificationEvent(gameNotificationEvent: GameNotificationEvent): void;
 
 }
-
-
 

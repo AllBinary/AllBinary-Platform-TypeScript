@@ -42,9 +42,7 @@
 export interface DirectionalCompositeInterface {
         
 
-    getDirectionalInterface(): DirectionalInterface
+    getDirectionalInterface(): DirectionalInterface;
 
 }
-
-
 

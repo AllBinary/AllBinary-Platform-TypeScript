@@ -49,21 +49,25 @@ import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/ge
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { RectangleCollisionUtil } from '../../../../../org/allbinary/math/RectangleCollisionUtil.js';
 //not GWT import const RectangleCollisionUtil
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -124,7 +128,7 @@ this.rectangle= rectangle;
                         
                                     {
                                     
-    var gameCanvas: AllBinaryGameCanvas = this.getCanvas() as AllBinaryGameCanvas;;
+    let gameCanvas: AllBinaryGameCanvas = this.getCanvas() as AllBinaryGameCanvas;;
     
 gameCanvas!.toggleMenu();
     
@@ -150,28 +154,27 @@ gameCanvas!.toggleMenu();
             
     public processInputList(): number{
 
-        try {
-            
-    var motionInputsIndex: number = this.processMotionInputs()!;;
+ try { 
+    let motionInputsIndex: number = this.processMotionInputs()!;;
     
 
-    var list: BasicArrayList = this.getGameKeyEventList()!;;
+    let list: BasicArrayList = this.getGameKeyEventList()!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var key: number = 0;;
+    let key: number = 0;;
     
 
-    var gameKeyEvent: GameKeyEvent;;
+    let gameKeyEvent: GameKeyEvent;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     
@@ -223,10 +226,11 @@ this.clear();
 
                         }
                             
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()!.PROCESS_INPUT, e);
     
 
@@ -235,8 +239,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, GameInputStrings.getInsta
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return  -1;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -244,14 +250,14 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, GameInputStrings.getInsta
             
     public processMotionInputs(): number{
 
-    var lastIndex: number = this.motionGestureEventList!.size() -1;;
+    let lastIndex: number = this.motionGestureEventList!.size() -1;;
     
 
                         if(lastIndex >= 0)
                         
                                     {
                                     
-    var motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;;
+    let motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;;
     
 this.processMotionInput(motionGestureEvent);
     
@@ -290,20 +296,20 @@ this.motionGestureEventList!.clear();
                                     }
                                 
 
-    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
+    let touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
     
 
-    var motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;;
+    let motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;;
     
 
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
                         
                                     {
                                     
-    var point: GPoint = motionGestureEvent!.getCurrentPoint()!;;
+    let point: GPoint = motionGestureEvent!.getCurrentPoint()!;;
     
 
-    var rectPoint: GPoint = this.rectangle.getPoint()!;;
+    let rectPoint: GPoint = this.rectangle.getPoint()!;;
     
 
                         if(this.rectangleCollisionUtil!.isInside(rectPoint!.getX(), rectPoint!.getY(), this.rectangle.getMaxX() +20, this.rectangle.getMaxY(), point.getX(), point.getY()))
@@ -314,7 +320,7 @@ this.motionGestureEventList!.clear();
                         
                                     {
                                     
-    var gameCanvas: AllBinaryGameCanvas = this.getCanvas() as AllBinaryGameCanvas;;
+    let gameCanvas: AllBinaryGameCanvas = this.getCanvas() as AllBinaryGameCanvas;;
     
 gameCanvas!.toggleMenu();
     
@@ -331,6 +337,4 @@ gameCanvas!.toggleMenu();
 
 
 }
-
-
 

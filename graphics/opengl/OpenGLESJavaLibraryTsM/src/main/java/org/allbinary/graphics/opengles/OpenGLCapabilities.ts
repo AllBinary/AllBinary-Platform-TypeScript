@@ -44,33 +44,41 @@ import { OpenGLImageSpecificFactory } from '../../../../org/allbinary/image/open
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 import { Tokenizer } from '../../../../org/allbinary/logic/string/tokens/Tokenizer.js';
 //not GWT import const Tokenizer
 
 //not plain js import { PreLogUtil } 
 const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof PreLogUtil;
 
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 //not GWT import const Features
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -194,26 +202,25 @@ private constructor (){
 
     public initCapabilities(gl: GL10){
 
-    var METHOD_NAME: string = "initGLCapabilities";;
+    let METHOD_NAME: string = "initGLCapabilities";;
     
 
-        try {
-            
-    var features: Features = Features.getInstance()!;;
+ try { 
+    let features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    let openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
-    var openGLImageSpecificFactory: OpenGLImageSpecificFactory = OpenGLImageSpecificFactory.getInstance()!;;
+    let openGLImageSpecificFactory: OpenGLImageSpecificFactory = OpenGLImageSpecificFactory.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 this.glVersionString= gl.glGetString(GL10.GL_VERSION);
     
 
-    var GL_SHADING_LANGUAGE_VERSION: number = 0x8b8c;;
+    let GL_SHADING_LANGUAGE_VERSION: number = 0x8b8c;;
     
 this.glShaderVersionString= gl.glGetString(GL_SHADING_LANGUAGE_VERSION);
     
@@ -229,15 +236,14 @@ this.glShaderVersionString= gl.glGetString(GL_SHADING_LANGUAGE_VERSION);
                                     }
                                 
 
-        try {
-            
+ try { 
                         if(this.glShaderVersionString != 
                                     null
                                  && this.glShaderVersionString!.indexOf('.') >= 0)
                         
                                     {
                                     
-    var startIndex: number = this.glShaderVersionString!.lastIndexOf(' ')!;;
+    let startIndex: number = this.glShaderVersionString!.lastIndexOf(' ')!;;
     
 
                         if(startIndex >= 0)
@@ -253,17 +259,20 @@ this.shaderVersion= Integer.parseInt(this.glShaderVersionString!.replace(CommonS
 
                                     }
                                 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 this.glRenderer= gl.glGetString(GL10.GL_RENDERER);
     
 this.glVendor= gl.glGetString(GL10.GL_VENDOR);
@@ -444,7 +453,7 @@ this.glVersion= this.VERSION_UNK;
                                     }
                                 
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AUTO_SELECT))
@@ -489,7 +498,7 @@ openGLImageSpecificFactory!.setImageFactory(new OpenGLESGL10ImageFactory());
                         }
                             
 
-    var maxTextureSizeArray: number[] = new Array(1);;
+    let maxTextureSizeArray: number[] = new Array(1);;
     
 gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSizeArray, 0);
     
@@ -497,23 +506,26 @@ this.maxTextureSize= maxTextureSizeArray[0]!;
     
 this.initialized= true;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
     
-}
 
+ }
+   }
+ 
 }
 
 
     isExtension(gameFeature: OpenGLFeature): boolean{
 
-    var index: number = this.glExtensions!.indexOf(gameFeature!.getName())!;;
+    let index: number = this.glExtensions!.indexOf(gameFeature!.getName())!;;
     
 
                         if(index >= 0)
@@ -674,10 +686,10 @@ this.requireInitialization();
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("GL_VERSION: ");
     
@@ -718,22 +730,21 @@ stringBuffer!.append(commonSeps!.NEW_LINE);
 stringBuffer!.append(" GL_EXTENSIONS: ");
     
 
-        try {
-            
-    var tokenizer: Tokenizer = new Tokenizer(commonSeps!.SPACE);;
+ try { 
+    let tokenizer: Tokenizer = new Tokenizer(commonSeps!.SPACE);;
     
 
-    var list: BasicArrayList = tokenizer.getTokensFromString(this.glExtensions, new BasicArrayListD())!;;
+    let list: BasicArrayList = tokenizer.getTokensFromString(this.glExtensions, new BasicArrayListD())!;;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
@@ -741,17 +752,20 @@ stringBuffer!.append(this.stringUtil!.toString(list.objectArray[index]!));
     
 }
 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
     
-}
 
+ }
+   }
+ 
 
 
 
@@ -762,6 +776,4 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
 
 
 }
-
-
 

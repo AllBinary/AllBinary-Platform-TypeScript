@@ -77,5 +77,3 @@ public constructor (combatGameCanvas: AllBinaryGameCanvas){
 
 }
 
-
-

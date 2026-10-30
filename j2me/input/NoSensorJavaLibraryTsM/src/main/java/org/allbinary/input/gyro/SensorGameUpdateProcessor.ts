@@ -72,13 +72,13 @@ this.inputSensor= inputSensor;
 
                 //@Throws(Exception.constructor)
             
-    public process(anyType: any = {}){
+    public process(anyType: any){
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public sendNotifications(anyType: any = {}){
+    public sendNotifications(anyType: any){
 }
 
 
@@ -116,6 +116,4 @@ this.setInputSensor(NoAllBinarySensor.getInstance());
 
 
 }
-
-
 

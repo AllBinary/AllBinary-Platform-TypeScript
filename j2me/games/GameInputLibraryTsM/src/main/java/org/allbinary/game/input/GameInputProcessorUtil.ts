@@ -50,20 +50,20 @@ export class GameInputProcessorUtil
 
     public static init(inputProcessorArray: GameInputProcessor[]){
 
-    var noInputProcessor: GameInputProcessor = GameInputProcessor.getInstance()!;;
+    let noInputProcessor: GameInputProcessor = GameInputProcessor.getInstance()!;;
     
 
-    var total: number = InputFactory.getInstance()!.MAX;;
+    let total: number = InputFactory.getInstance()!.MAX;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < total; index++)
+    let index: number = 0;index < total; index++)
         {
 
-    var inputProcessorCanBeNull: GameInputProcessor = inputProcessorArray[index];;
+    let inputProcessorCanBeNull: GameInputProcessor = inputProcessorArray[index];;
     
 
                         if(inputProcessorCanBeNull == 
@@ -82,6 +82,4 @@ export class GameInputProcessorUtil
 
 
 }
-
-
 

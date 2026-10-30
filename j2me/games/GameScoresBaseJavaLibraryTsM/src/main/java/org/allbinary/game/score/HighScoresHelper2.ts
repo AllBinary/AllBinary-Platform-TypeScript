@@ -20,6 +20,7 @@
 
 //not plain js import { CircularIndexUtil } 
 const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CircularIndexUtil;
 
 
 
@@ -98,10 +99,10 @@ this.selectHighScores();
 this.circularIndexUtil!.next();
     
 
-    var highScores: HighScores = this.highScoresArrayP[this.circularIndexUtil!.getIndex()]!;;
+    let highScores: HighScores = this.highScoresArrayP[this.circularIndexUtil!.getIndex()]!;;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(highScores!.getTotal() < 1 && index < this.highScoresArrayP!.length)
@@ -118,6 +119,4 @@ this.setSelectedHighScores(highScores);
 
 
 }
-
-
 

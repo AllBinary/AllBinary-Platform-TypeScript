@@ -26,6 +26,7 @@ import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/AB
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AdvancedPlayerOwnedRTSLayers } from '../../../../../org/allbinary/game/layer/AdvancedPlayerOwnedRTSLayers.js';
 //not GWT import const AdvancedPlayerOwnedRTSLayers
@@ -146,10 +147,10 @@ public constructor (groupInterface: Group[]){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
+    let smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
+    let basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
     
 this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
@@ -166,10 +167,10 @@ this.getHashtable()!.put(WorkWaypoint.ID, smallIntegerSingletonFactory!.getAt(50
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
     
@@ -184,13 +185,13 @@ this.newUnitGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 super.process(layerManager);
     
 
-    var associatedRtsLayer2: RTSLayer = associatedRtsLayer as RTSLayer;;
+    let associatedRtsLayer2: RTSLayer = associatedRtsLayer as RTSLayer;;
     
 
-    var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = associatedRtsLayer2!.geographicMapCellPositionAreaBase;;
+    let geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = associatedRtsLayer2!.geographicMapCellPositionAreaBase;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionArea!.getNextSurroundingGeographicMapCellPosition()!;;
+    let geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionArea!.getNextSurroundingGeographicMapCellPosition()!;;
     
 this.getHashtable()!.put(Layer.ID, associatedRtsLayer);
     
@@ -207,18 +208,18 @@ this.getHashtable()!.put(UnitRTSFormInput.DECAL_ID, (rtsPlayerLayerInterface as 
                                 
                         else {
                             
-    var cellPoint: GPoint = geographicMapCellPosition!.getPoint()!;;
+    let cellPoint: GPoint = geographicMapCellPosition!.getPoint()!;;
     
 
-    var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;;
+    let rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;;
     
 rtsLayer!.setPosition(cellPoint!.getX(), cellPoint!.getY(), rtsLayer!.getZP());
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = rtsLayer!.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
+    let geographicMapCompositeInterface: GeographicMapCompositeInterface = rtsLayer!.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
+    let geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
     
@@ -226,10 +227,10 @@ rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
                         }
                             
 
-    var cellPoint: GPoint = geographicMapCellPosition!.getMidPoint()!;;
+    let cellPoint: GPoint = geographicMapCellPosition!.getMidPoint()!;;
     
 
-    var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;;
+    let rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;;
     
 rtsLayer!.setPosition(cellPoint!.getX() -rtsLayer!.getHalfWidth(), cellPoint!.getY() -rtsLayer!.getHalfHeight(), rtsLayer!.getZP());
     
@@ -242,13 +243,13 @@ this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager, rt
             
     attemptBuild(associatedRtsLayer: RTSLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer, itemIndex: number){
 
-    var cost: number = layerInterface!.getCost()!;;
+    let cost: number = layerInterface!.getCost()!;;
     
 
-    var capital: Capital = rtsPlayerLayerInterface!.getCapital()!;;
+    let capital: Capital = rtsPlayerLayerInterface!.getCapital()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Trying to Build: ");
     
@@ -281,10 +282,10 @@ AssignWaypointsUtil.getInstance()!.set(layerInterface as UnitLayer, associatedRt
 layerManager!.appendAt(layerInterface, PlayersSingletonFactory.total);
     
 
-    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;;
+    let advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;;
     
 
-    var advancedPlayerOwnedRTSLayers: AdvancedPlayerOwnedRTSLayers = advancedRTSPlayerLayerInterface!.getAdvancedPlayerOwnedRTSLayers()!;;
+    let advancedPlayerOwnedRTSLayers: AdvancedPlayerOwnedRTSLayers = advancedRTSPlayerLayerInterface!.getAdvancedPlayerOwnedRTSLayers()!;;
     
 advancedPlayerOwnedRTSLayers!.addUnit(layerInterface);
     
@@ -319,6 +320,4 @@ advancedPlayerOwnedRTSLayers!.addUnit(layerInterface);
 
 
 }
-
-
 

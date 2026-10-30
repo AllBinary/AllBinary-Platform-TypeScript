@@ -56,7 +56,7 @@ export class WaypointEventHandlerFactory
 
     public static getInstance(groupInterface: Group): WaypointEventHandler{
 
-    var groupId: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
+    let groupId: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
     
 
 
@@ -73,7 +73,7 @@ export class WaypointEventHandlerFactory
 
 
                         for (
-    var index: number = WaypointEventHandlerFactory.eventHandlerArray!.length -1;index >= 0; index--)
+    let index: number = WaypointEventHandlerFactory.eventHandlerArray!.length -1;index >= 0; index--)
         {
 WaypointEventHandlerFactory.eventHandlerArray[index]!.removeAllListeners();
     
@@ -83,6 +83,4 @@ WaypointEventHandlerFactory.eventHandlerArray[index]!.removeAllListeners();
 
 
 }
-
-
 

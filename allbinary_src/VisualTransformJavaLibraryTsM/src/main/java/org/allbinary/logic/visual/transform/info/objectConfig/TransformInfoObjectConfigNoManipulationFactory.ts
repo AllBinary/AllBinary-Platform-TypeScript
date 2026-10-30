@@ -27,6 +27,7 @@ import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { CryptFileReader } from '../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 //not GWT import const CryptFileReader
@@ -39,6 +40,7 @@ import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -71,8 +73,15 @@ export class TransformInfoObjectConfigNoManipulationFactory
         
 
     private static readonly instance: TransformInfoObjectConfigNoManipulationFactory = new TransformInfoObjectConfigNoManipulationFactory();
-
-    public static getInstance(): TransformInfoObjectConfigNoManipulationFactory{
+static getInstance(...args: any[]): any {
+   
+    if (args.length === 0) return this.getInstance$overload1();
+   
+    if (args.length === 2) return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
+    public static getInstance$overload1(): TransformInfoObjectConfigNoManipulationFactory{
 
 
 
@@ -92,14 +101,13 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
+    public getInstance$overload2(transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
 
-        try {
-            
-    var transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;;
+ try { 
+    let transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;;
     
 
-    var data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.getInstance()!.ENCRYPTED_EXTENSION).get(objectConfigFileAbPath)!;;
+    let data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.getInstance()!.ENCRYPTED_EXTENSION).get(objectConfigFileAbPath)!;;
     
 
 
@@ -107,12 +115,13 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new TransformInfoObjectConfig(transformInfoInterface, DomDocumentHelper.create(data));
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
@@ -128,12 +137,12 @@ private constructor (){
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

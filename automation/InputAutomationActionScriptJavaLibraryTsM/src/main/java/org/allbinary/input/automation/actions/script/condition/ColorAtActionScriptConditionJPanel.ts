@@ -22,6 +22,7 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -31,6 +32,7 @@ import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/im
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -98,7 +100,7 @@ this.set();
 
     set(){
 
-    var colorRangeInterface: ColorRangeInterface = this.colorAtActionScriptConditionInterface!.getColorRangeInterface()!;;
+    let colorRangeInterface: ColorRangeInterface = this.colorAtActionScriptConditionInterface!.getColorRangeInterface()!;;
     
 this.getMinRedJTextField()!.setText(colorRangeInterface!.getMinRed().toString());
     
@@ -123,7 +125,7 @@ this.colorAtActionScriptConditionInterface!.log();
 
     update(){
 
-    var colorRangeInterface: ColorRangeInterface = this.colorAtActionScriptConditionInterface!.getColorRangeInterface()!;;
+    let colorRangeInterface: ColorRangeInterface = this.colorAtActionScriptConditionInterface!.getColorRangeInterface()!;;
     
 colorRangeInterface!.setMinRed(Integer.valueOf(this.getMinRedJTextField()!.getText())!.intValue());
     
@@ -138,7 +140,7 @@ colorRangeInterface!.setMinBlue(Integer.valueOf(this.getMinBlueJTextField()!.get
 colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.getText())!.intValue());
     
 
-    var xString: string = this.getColorAtXJTextField()!.getText()!;;
+    let xString: string = this.getColorAtXJTextField()!.getText()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(xString) && StringValidationUtil.getInstance()!.isNumber(xString))
@@ -150,7 +152,7 @@ colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.get
                                     }
                                 
 
-    var yString: string = this.getColorAtYJTextField()!.getText()!;;
+    let yString: string = this.getColorAtYJTextField()!.getText()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(yString) && StringValidationUtil.getInstance()!.isNumber(yString))
@@ -407,7 +409,7 @@ okJButtonActionPerformed(evt);
                             );
     
 
-    var colorAtActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.colorAtActionJDialog!.getContentPane());;
+    let colorAtActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.colorAtActionJDialog!.getContentPane());;
     
 this.colorAtActionJDialog!.getContentPane()!.setLayout(colorAtActionJDialogLayout);
     
@@ -433,7 +435,7 @@ colorAtActionJButtonActionPerformed(evt);
 this.jLabel1!.setText("Color At:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
+    let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -503,6 +505,4 @@ this.getColorAtActionJDialog()!.setVisible(true);
     private yJLabel: javax.swing.JLabel;
 
 }
-
-
 

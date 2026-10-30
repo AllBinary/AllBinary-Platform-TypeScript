@@ -30,12 +30,15 @@ import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js'
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 //not GWT import const LogConfigTypeFactory
@@ -48,12 +51,14 @@ import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js'
 
 //not plain js import { FilePathData } 
 const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+type FilePathData<T = any, U = any> = typeof FilePathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof FilePathData;
 
 import { SubDirectory } from '../../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
 //not GWT import const SubDirectory
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { HardwareInterface } from '../../../../../../org/allbinary/logic/system/hardware/HardwareInterface.js';
 //not GWT import const HardwareInterface
@@ -99,15 +104,19 @@ import { Cpu } from '../../../../../../org/allbinary/logic/system/hardware/compo
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { ABHashtable } 
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
+type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -195,7 +204,7 @@ public constructor (){
                                     }
                                 
 
-    var cpu: Cpu = new Cpu();;
+    let cpu: Cpu = new Cpu();;
     
 
                         if(cpu != 
@@ -221,23 +230,30 @@ this.componentInterfaceVector!.add(cpu);
                                 
 }
 
-
+init(...args: any[]): any {
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.init$overload1(args[0]);
+   
+    if (args.length === 2 && typeof args[1] === 'string') return this.init$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: init'); }
+  
                 //@Throws(Exception.constructor)
             
-    init(filePath: string){
+    init$overload1(filePath: string){
 
-    var lineNumberReader: LineNumberReader = 
+    let lineNumberReader: LineNumberReader = 
                 null
             ;;
     
 
-        try {
-            this.init(lineNumberReader, filePath);
+ try { this.init(lineNumberReader, filePath);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
@@ -252,17 +268,18 @@ this.componentInterfaceVector!.add(cpu);
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
                 //@Throws(Exception.constructor)
             
-    init(lineNumberReader: LineNumberReader, filePath: string){
+    init$overload2(lineNumberReader: LineNumberReader, filePath: string){
 
-        try {
-            this.componentInterfaceVector= new BasicArrayListD();
+ try { this.componentInterfaceVector= new BasicArrayListD();
     
 this.videoInterfaceVector= new BasicArrayListD();
     
@@ -287,7 +304,7 @@ this.macInterfaceVector= new BasicArrayListD();
 this.monitorInterfaceVector= new BasicArrayListD();
     
 
-    var pciFile: FileReader = new FileReader(filePath);;
+    let pciFile: FileReader = new FileReader(filePath);;
     
 lineNumberReader= new LineNumberReader(pciFile);
     
@@ -298,14 +315,14 @@ lineNumberReader= new LineNumberReader(pciFile);
                         
                                     {
                                     
-    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, AbFile.createAbFile(FilePathData.getInstance()!.PATH_START))!;;
+    let fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, AbFile.createAbFile(FilePathData.getInstance()!.PATH_START))!;;
     
 
                         if(!fileVector!.isEmpty())
                         
                                     {
                                     
-    var file: AbFile = fileVector!.get(0) as AbFile;;
+    let file: AbFile = fileVector!.get(0) as AbFile;;
     
 lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
     
@@ -345,7 +362,7 @@ lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
                                     }
                                 
 
-    var nextLine: string = lineNumberReader!.readLine()!;;
+    let nextLine: string = lineNumberReader!.readLine()!;;
     
 
         while(lineNumberReader != 
@@ -372,7 +389,7 @@ nextLine= lineNumberReader!.readLine();
         while(this.isNextHardware(nextLine))
         {
 
-    var componentData: StringMaker = new StringMaker();;
+    let componentData: StringMaker = new StringMaker();;
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
@@ -390,7 +407,7 @@ componentData!.append(CommonSeps.getInstance()!.NEW_LINE);
 nextLine= lineNumberReader!.readLine();
     
 
-    var componentType: string = PCComponentFactory.getInstance()!.java.componentType!;;
+    let componentType: string = PCComponentFactory.getInstance()!.java.componentType!;;
     
 
         while(lineNumberReader != 
@@ -418,7 +435,7 @@ nextLine= lineNumberReader!.readLine();
 }
 
 
-    var componentInterface: HardwareComponentInterface = PCComponentFactory.getInstance()!.getInstance(componentType, componentData!.toString())!;;
+    let componentInterface: HardwareComponentInterface = PCComponentFactory.getInstance()!.getInstance(componentType, componentData!.toString())!;;
     
 
                         if(componentInterface != 
@@ -451,16 +468,13 @@ nextLine= lineNumberReader!.readLine();
                             
 lineNumberReader!.close();
     
-
-         finally {
-            
+ }
+ finally { 
                         if(lineNumberReader != 
                                     null
                                 )
                         lineNumberReader!.close()
-
-         }
-        
+ }
 }
 
 
@@ -586,20 +600,20 @@ lineNumberReader!.close();
 
     public toString(): string{
 
-    var hardwareBuffer: StringMaker = new StringMaker();;
+    let hardwareBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = this.componentInterfaceVector!.size()!;;
+    let size: number = this.componentInterfaceVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;;
+    let componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;;
     
 hardwareBuffer!.append("Component ");
     
@@ -650,7 +664,7 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
                         
                                     {
                                     
-    var index: number = nextLine!.indexOf("Bus")!;;
+    let index: number = nextLine!.indexOf("Bus")!;;
     
 
                         if(index >= 0 && index < 4)
@@ -678,6 +692,4 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 
 
 }
-
-
 

@@ -67,8 +67,7 @@ public constructor (){
             
     public doStartTag(): number{
 
-        try {
-            this.setName("Basic Payment View");
+ try { this.setName("Basic Payment View");
     
 this.setObjectFile("views.generic.payment.ValidationView");
     
@@ -141,10 +140,11 @@ this.setObjectFile("views.generic.payment.ValidationView");
 
                             throw new Exception("Command Null");
                     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof LicensingException) {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
     
 
@@ -153,11 +153,11 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
 
@@ -166,12 +166,12 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
+
+ }
+   }
+ 
 }
-*/
-}
 
 
 }
-
-
 

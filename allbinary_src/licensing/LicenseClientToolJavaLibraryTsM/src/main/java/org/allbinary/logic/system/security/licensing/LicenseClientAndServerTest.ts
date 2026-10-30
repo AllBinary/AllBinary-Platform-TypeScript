@@ -33,6 +33,7 @@ import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js'
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
 //not GWT import const LicenseInitInfo
@@ -42,6 +43,7 @@ import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/in
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { XmlRpcAbeLicenseRetrievalClient } from '../../../../../../org/allbinary/logic/system/security/licensing/client/XmlRpcAbeLicenseRetrievalClient.js';
 //not GWT import const XmlRpcAbeLicenseRetrievalClient
@@ -51,6 +53,7 @@ import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBA
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -88,23 +91,25 @@ export class LicenseClientAndServerTest
 
     public static main(args: string[]){
 
-        try {
-            
-    var licensingTest: LicenseClientAndServerTest = new LicenseClientAndServerTest(args);;
+ try { 
+    let licensingTest: LicenseClientAndServerTest = new LicenseClientAndServerTest(args);;
     
 licensingTest!.test();
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 this.logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e);
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -122,7 +127,7 @@ public constructor (options: string[]){
 
 
                         for (
-    var index: number = 1;index < options.length; index++)
+    let index: number = 1;index < options.length; index++)
         {
 this.vector.add(options[index]!);
     
@@ -133,19 +138,19 @@ this.vector.add(options[index]!);
                         
                                     {
                                     
-    var file: File = new File(PrintLicenseInitInfo.PATH +"testlicenseservers.txt");;
+    let file: File = new File(PrintLicenseInitInfo.PATH +"testlicenseservers.txt");;
     
 
-    var reader: FileReader = new FileReader(file);;
+    let reader: FileReader = new FileReader(file);;
     
 
-    var lineNumberReader: LineNumberReader = new LineNumberReader(reader);;
+    let lineNumberReader: LineNumberReader = new LineNumberReader(reader);;
     
 
         while(true)
         {
 
-    var line: string = lineNumberReader!.readLine()!;;
+    let line: string = lineNumberReader!.readLine()!;;
     
 
                         if(line != 
@@ -176,57 +181,55 @@ this.vector.add(options[index]!);
 
     public test(){
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
-        try {
-            
-    var list: BasicArrayList = new BasicArrayListD();;
+ try { 
+    let list: BasicArrayList = new BasicArrayListD();;
     
 
-    var TESTING: string = "Testing with new licence:<br/>";;
+    let TESTING: string = "Testing with new licence:<br/>";;
     
 
-    var PROCESSING: string = "Processing: <br/>";;
+    let PROCESSING: string = "Processing: <br/>";;
     
 
-    var END: string = "<br/>End<br/>";;
+    let END: string = "<br/>End<br/>";;
     
 
-    var RESULT: string = "Test Result: ";;
+    let RESULT: string = "Test Result: ";;
     
 
-    var size: number = this.vector.size()!;;
+    let size: number = this.vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 stringBuffer!.append(TESTING);
     
 
-    var serverName: string = this.vector.get(index) as string;;
+    let serverName: string = this.vector.get(index) as string;;
     
 
-        try {
-            
-    var licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();;
+ try { 
+    let licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();;
     
 licenseInitInfo!.addServer(serverName);
     
 LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo);
     
 
-    var abeClientInformation: AbeClientInformationInterface = AbeClientInformationInterfaceFactory.getInstance()!;;
+    let abeClientInformation: AbeClientInformationInterface = AbeClientInformationInterfaceFactory.getInstance()!;;
     
 
-    var xmlRpcAbeLicenseClient: XmlRpcAbeLicenseRetrievalClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);;
+    let xmlRpcAbeLicenseClient: XmlRpcAbeLicenseRetrievalClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);;
     
 
-    var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
+    let abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
                             null) as AbeLicenseInterface;;
     
 
@@ -248,32 +251,36 @@ this.logUtil!.putF(RESULT +stringBuffer!.toString(), this, "test");
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 list.add(serverName);
     
 this.logUtil!.put("Test Error: " +stringBuffer!.toString(), this, "test", e);
     
-}
 
+ }
+   }
+ 
 }
 
 this.logUtil!.putF("Total Servers Failed: " +list.size() +" Failed Servers: " +list.toString(), this, "test");
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put("Test Error: " +stringBuffer!.toString(), this, "test", e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

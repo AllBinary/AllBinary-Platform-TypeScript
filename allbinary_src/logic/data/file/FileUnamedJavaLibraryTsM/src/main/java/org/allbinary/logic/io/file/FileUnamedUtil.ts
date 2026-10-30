@@ -22,6 +22,7 @@
         
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -63,7 +64,7 @@ export class FileUnamedUtil
 
     public process(string: string): string{
 
-    var simplifiedString: string = string.toLowerCase()!;;
+    let simplifiedString: string = string.toLowerCase()!;;
     
 simplifiedString= simplifiedString!.replace(this.commonSeps!.SPACE, this.commonSeps!.UNDERSCORE);
     
@@ -79,6 +80,4 @@ simplifiedString= simplifiedString!.replace(this.commonSeps!.DASH, this.commonSe
 
 
 }
-
-
 

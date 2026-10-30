@@ -44,11 +44,9 @@ import { SequenceInterface } from './SequenceInterface.js';
 export interface SequentialAnimationInterface extends AnimationInterface, SequenceInterface {
         
 
-    getSize(): number
+    getSize(): number;
 
-    previousFrame()
+    previousFrame(): void;
 
 }
-
-
 

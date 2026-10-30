@@ -49,9 +49,7 @@ export interface DisplayChangeEventListener extends EventListenerInterface {
 
                 //@Throws(Exception.constructor)
             
-    onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent)
+    onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent): void;
 
 }
-
-
 

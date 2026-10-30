@@ -46,125 +46,123 @@ import { TableMappingInterface } from '../../../../../../../org/allbinary/data/t
 export interface ItemInterface extends TableMappingInterface {
         
 
-    setId(itemId: string)
+    setId(itemId: string): void;
 
-    setNumber(number: string)
+    setNumber(number: string): void;
 
-    setInBaskets(value: string)
+    setInBaskets(value: string): void;
 
-    setWeight(value: string)
+    setWeight(value: string): void;
 
-    setEnabled(value: string)
+    setEnabled(value: string): void;
 
-    setNewOrUsed(value: string)
+    setNewOrUsed(value: string): void;
 
-    setSummary(value: string)
+    setSummary(value: string): void;
 
-    setDistributor(value: string)
+    setDistributor(value: string): void;
 
-    setIdUsedByDistributor(value: string)
+    setIdUsedByDistributor(value: string): void;
 
-    setProducedBy(value: string)
+    setProducedBy(value: string): void;
 
-    setProductionDate(value: string)
+    setProductionDate(value: string): void;
 
-    setStartProductionDate(value: string)
+    setStartProductionDate(value: string): void;
 
-    setDescription(value: string)
+    setDescription(value: string): void;
 
-    setKeywords(value: string)
+    setKeywords(value: string): void;
 
-    setCategory(value: string)
+    setCategory(value: string): void;
 
-    setType(value: string)
+    setType(value: string): void;
 
-    setSmallImage(value: string)
+    setSmallImage(value: string): void;
 
-    setMediumImage(value: string)
+    setMediumImage(value: string): void;
 
-    setLargeImage(value: string)
+    setLargeImage(value: string): void;
 
-    setTimeEntered(value: string)
+    setTimeEntered(value: string): void;
 
-    setLastModified(value: string)
+    setLastModified(value: string): void;
 
-    setPrice(value: Money)
+    setPrice(value: Money): void;
 
-    setComment(value: string)
+    setComment(value: string): void;
 
-    setCustoms(value: string)
+    setCustoms(value: string): void;
 
-    setDownloads(value: string)
+    setDownloads(value: string): void;
 
-    setGroups(value: string)
+    setGroups(value: string): void;
 
-    setOptions(value: string)
+    setOptions(value: string): void;
 
-    setPermissions(value: string)
+    setPermissions(value: string): void;
 
-    setSpecials(value: string)
+    setSpecials(value: string): void;
 
-    getId(): string
+    getId(): string;
 
-    getNumber(): string
+    getNumber(): string;
 
-    getInBaskets(): string
+    getInBaskets(): string;
 
-    getWeight(): string
+    getWeight(): string;
 
-    getEnabled(): string
+    getEnabled(): string;
 
-    getNewOrUsed(): string
+    getNewOrUsed(): string;
 
-    getSummary(): string
+    getSummary(): string;
 
-    getDistributor(): string
+    getDistributor(): string;
 
-    getIdUsedByDistributor(): string
+    getIdUsedByDistributor(): string;
 
-    getProducedBy(): string
+    getProducedBy(): string;
 
-    getProductionDate(): string
+    getProductionDate(): string;
 
-    getStartProductionDate(): string
+    getStartProductionDate(): string;
 
-    getDescription(): string
+    getDescription(): string;
 
-    getKeywords(): string
+    getKeywords(): string;
 
-    getCategory(): string
+    getCategory(): string;
 
-    getType(): string
+    getType(): string;
 
-    getSmallImage(): string
+    getSmallImage(): string;
 
-    getMediumImage(): string
+    getMediumImage(): string;
 
-    getLargeImage(): string
+    getLargeImage(): string;
 
-    getTimeEntered(): string
+    getTimeEntered(): string;
 
-    getLastModified(): string
+    getLastModified(): string;
 
-    getPrice(): Money
+    getPrice(): Money;
 
-    getComment(): string
+    getComment(): string;
 
-    getCustoms(): string
+    getCustoms(): string;
 
-    getDownloads(): string
+    getDownloads(): string;
 
-    getGroups(): string
+    getGroups(): string;
 
-    getOptions(): string
+    getOptions(): string;
 
-    getPermissions(): string
+    getPermissions(): string;
 
-    getSpecials(): string
+    getSpecials(): string;
 
-    getTotal(): Money
+    getTotal(): Money;
 
 }
-
-
 

@@ -30,12 +30,14 @@ import { Calendar } from '../../../../../../java/util/Calendar.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeLicenseClient } from '../../../../../../org/allbinary/logic/system/security/licensing/client/AbeLicenseClient.js';
 //not GWT import const AbeLicenseClient
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -136,13 +138,12 @@ private constructor (){
             
     get(abeClientInformation: AbeClientInformationInterface): AbeLicenseInterface{
 
-        try {
-            this.logUtil!.putF("Getting Keys", this, this.commonStrings!.GET);
+ try { this.logUtil!.putF("Getting Keys", this, this.commonStrings!.GET);
     
 this.abeLicenseInterface= AbeNoLicense.getInstance();
     
 
-    var licenseClient: AbeLicenseClient = new AbeLicenseClient();;
+    let licenseClient: AbeLicenseClient = new AbeLicenseClient();;
     
 this.abeLicenseInterface= licenseClient!.get(abeClientInformation);
     
@@ -163,10 +164,11 @@ this.abeLicenseInterface= licenseClient!.get(abeClientInformation);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.abeLicenseInterface;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ if (caught instanceof IOException) {
+  const e = caught;
+  
 this.logUtil!.put("Licensing IO Error", this, this.commonStrings!.GET, e);
     
 
@@ -174,11 +176,11 @@ this.logUtil!.put("Licensing IO Error", this, this.commonStrings!.GET, e);
 
                             throw new LicensingException("License Server Connection Error");
                     
-}
 
-                //: 
-/* catch(e) 
-            {
+ }
+  else {
+  const e = caught;
+  
 this.logUtil!.put("Licensing Failure", this, this.commonStrings!.GET, e);
     
 
@@ -186,17 +188,19 @@ this.logUtil!.put("Licensing Failure", this, this.commonStrings!.GET, e);
 
                             throw new LicensingException("Unknown License Failure: " +this.constructor.name.toString()!);
                     
-}
-*/
+
+ }
+   }
+ 
 }
 
 
     isTimeToGetKey(): boolean{
 
-    var calendar: Calendar = Calendar.getInstance()!;;
+    let calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var currentTime: number = calendar.getTimeInMillis()!;;
+    let currentTime: number = calendar.getTimeInMillis()!;;
     
 
                         if(this.abeLicenseInterface == 
@@ -242,6 +246,4 @@ this.check= check;
 
 
 }
-
-
 

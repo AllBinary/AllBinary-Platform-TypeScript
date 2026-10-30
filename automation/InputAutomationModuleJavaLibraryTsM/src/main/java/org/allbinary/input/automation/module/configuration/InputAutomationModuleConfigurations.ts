@@ -45,6 +45,7 @@ import { NewInputAutomationModulesData } from '../../../../../../org/allbinary/i
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 //not GWT import const AbeClientInformationInterface
@@ -94,32 +95,32 @@ public constructor (abeClientInformation: AbeClientInformationInterface, file: F
         this.setHashMap(new HashMap<any, any>());
     
 
-    var bytes: number[] = new Array(100000);;
+    let bytes: number[] = new Array(100000);;
     
 
-    var idFile: FileInputStream = new FileInputStream(file);;
+    let idFile: FileInputStream = new FileInputStream(file);;
     
 
-    var length: number = idFile!.read(bytes)!;;
+    let length: number = idFile!.read(bytes)!;;
     
 
-    var data: string = String.fromCharCode(...bytes);;
+    let data: string = String.fromCharCode(...bytes);;
     
 
-    var endIndex: number = data.lastIndexOf('>')!;;
+    let endIndex: number = data.lastIndexOf('>')!;;
     
 
-    var document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;;
+    let document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;;
     
 
-    var nodeList: NodeList = document.getElementsByTagName(NewInputAutomationModulesData.NAME)!;;
+    let nodeList: NodeList = document.getElementsByTagName(NewInputAutomationModulesData.NAME)!;;
     
 
                         if(nodeList!.getLength() > 0)
                         
                                     {
                                     
-    var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;;
+    let nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;;
     
 this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor");
     
@@ -128,10 +129,10 @@ this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(),
 
 
                         for (
-    var index: number = 0;index < nameNodeList!.getLength(); index++)
+    let index: number = 0;index < nameNodeList!.getLength(); index++)
         {
 
-    var node: Node = nameNodeList!.item(index)!;;
+    let node: Node = nameNodeList!.item(index)!;;
     
 this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
     
@@ -149,7 +150,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, documen
         this.setHashMap(new HashMap<any, any>());
     
 
-    var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;;
+    let nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;;
     
 this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor");
     
@@ -158,10 +159,10 @@ this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(),
 
 
                         for (
-    var index: number = 0;index < nameNodeList!.getLength(); index++)
+    let index: number = 0;index < nameNodeList!.getLength(); index++)
         {
 
-    var node: Node = nameNodeList!.item(index)!;;
+    let node: Node = nameNodeList!.item(index)!;;
     
 this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
     
@@ -176,17 +177,17 @@ public constructor (inputAutomationModuleConfigurationList: List<InputAutomation
         this.setHashMap(new HashMap<any, any>());
     
 
-    var size: number = inputAutomationModuleConfigurationList!.length!;;
+    let size: number = inputAutomationModuleConfigurationList!.length!;;
     
 
-    var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration;;
+    let inputAutomationModuleConfiguration: InputAutomationModuleConfiguration;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index);
     
@@ -234,6 +235,4 @@ this.hashMap= hashMap;
 
 
 }
-
-
 

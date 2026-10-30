@@ -46,41 +46,41 @@ export class PGUtil
 
     public flattenCubicBezier(x0: number, y0: number, x1: number, y1: number, x2: number, y2: number, x3: number, y3: number, outX: number[], outY: number[], count: number[], maxPoints: number){
 
-    var fixedPoint: FixedPoint = FixedPoint.getInstance()!;;
+    let fixedPoint: FixedPoint = FixedPoint.getInstance()!;;
     
 
-    var steps: number = 10;;
+    let steps: number = 10;;
     
 
 
 
 
                         for (
-    var i: number = 1;i <= steps; i++)
+    let i: number = 1;i <= steps; i++)
         {
 
-    var t: number = fixedPoint!.div(fixedPoint!.toFixed(i), fixedPoint!.toFixed(steps))!;;
+    let t: number = fixedPoint!.div(fixedPoint!.toFixed(i), fixedPoint!.toFixed(steps))!;;
     
 
-    var mt: number = fixedPoint!.ONE -t;;
+    let mt: number = fixedPoint!.ONE -t;;
     
 
-    var mt3: number = fixedPoint!.mul(fixedPoint!.mul(mt, mt), mt)!;;
+    let mt3: number = fixedPoint!.mul(fixedPoint!.mul(mt, mt), mt)!;;
     
 
-    var mt2t3: number = 3 *fixedPoint!.mul(fixedPoint!.mul(mt, mt), t);;
+    let mt2t3: number = 3 *fixedPoint!.mul(fixedPoint!.mul(mt, mt), t);;
     
 
-    var mtt23: number = 3 *fixedPoint!.mul(fixedPoint!.mul(mt, t), t);;
+    let mtt23: number = 3 *fixedPoint!.mul(fixedPoint!.mul(mt, t), t);;
     
 
-    var t3: number = fixedPoint!.mul(fixedPoint!.mul(t, t), t)!;;
+    let t3: number = fixedPoint!.mul(fixedPoint!.mul(t, t), t)!;;
     
 
-    var x: number = fixedPoint!.mul(mt3, x0) +fixedPoint!.mul(mt2t3, x1) +fixedPoint!.mul(mtt23, x2) +fixedPoint!.mul(t3, x3);;
+    let x: number = fixedPoint!.mul(mt3, x0) +fixedPoint!.mul(mt2t3, x1) +fixedPoint!.mul(mtt23, x2) +fixedPoint!.mul(t3, x3);;
     
 
-    var y: number = fixedPoint!.mul(mt3, y0) +fixedPoint!.mul(mt2t3, y1) +fixedPoint!.mul(mtt23, y2) +fixedPoint!.mul(t3, y3);;
+    let y: number = fixedPoint!.mul(mt3, y0) +fixedPoint!.mul(mt2t3, y1) +fixedPoint!.mul(mtt23, y2) +fixedPoint!.mul(t3, y3);;
     
 
                         if(count[0] < maxPoints)
@@ -101,6 +101,4 @@ count[0]++;
 
 
 }
-
-
 

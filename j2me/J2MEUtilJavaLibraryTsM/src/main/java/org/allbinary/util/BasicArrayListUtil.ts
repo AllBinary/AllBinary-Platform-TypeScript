@@ -25,15 +25,19 @@
 
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+type MyRandomFactory<T = any, U = any> = typeof MyRandomFactory extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MyRandomFactory;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonPhoneStrings } 
 const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
 
 
 
@@ -81,10 +85,10 @@ export class BasicArrayListUtil
 
     public static main(args: string[]){
 
-    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
+    let commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 
-    var list: BasicArrayList = new BasicArrayListD();;
+    let list: BasicArrayList = new BasicArrayListD();;
     
 list.add(commonPhoneStrings!.ONE);
     
@@ -120,7 +124,7 @@ console.log(list.toString());
 
     public getRandom(list: BasicArrayList): any{
 
-    var i_random: number = this.getRandomIndex(list)!;;
+    let i_random: number = this.getRandomIndex(list)!;;
     
 
 
@@ -143,23 +147,23 @@ console.log(list.toString());
 
     public reverse(list: BasicArrayList){
 
-    var lastMinusOneIndex: number = list.size() -2;;
+    let lastMinusOneIndex: number = list.size() -2;;
     
 
-    var temp: any;;
+    let temp: any;;
     
 
-    var size: number = globalThis.Math.trunc(lastMinusOneIndex /2);;
+    let size: number = globalThis.Math.trunc(lastMinusOneIndex /2);;
     
 
-    var secondSwapIndex: number= 0;;
+    let secondSwapIndex: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;index <= size; index++)
+    let index: number = 0;index <= size; index++)
         {
 secondSwapIndex= lastMinusOneIndex -index;
     
@@ -176,13 +180,13 @@ list.addAt(secondSwapIndex +1, temp);
 
     public log(list: BasicArrayList): string{
 
-    var S_LABEL: string = " s: ";;
+    let S_LABEL: string = " s: ";;
     
 
-    var size: number = list.size()!;;
+    let size: number = list.size()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(CommonLabels.getInstance()!.TOTAL_LABEL);
     
@@ -193,10 +197,10 @@ stringBuffer!.appendint(size);
 
 
                         for (
-    var index: number = size -1;index >= 0; index--)
+    let index: number = size -1;index >= 0; index--)
         {
 
-    var usedList: BasicArrayList = list.objectArray[index]! as BasicArrayList;;
+    let usedList: BasicArrayList = list.objectArray[index]! as BasicArrayList;;
     
 stringBuffer!.append(S_LABEL);
     
@@ -224,6 +228,4 @@ stringBuffer!.appendint(usedList!.size());
 
 
 }
-
-
 

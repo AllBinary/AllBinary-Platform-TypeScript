@@ -61,7 +61,7 @@ public constructor (node: Node){
 
             super();
         
-    var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptOutputData.NAME, node.getChildNodes())!;;
+    let actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptOutputData.NAME, node.getChildNodes())!;;
     
 }
 
@@ -76,7 +76,7 @@ public constructor (){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(GenericProfileActionScriptOutputData.NAME)!;;
+    let node: Node = document.createElement(GenericProfileActionScriptOutputData.NAME)!;;
     
 
 
@@ -88,6 +88,4 @@ public constructor (){
 
 
 }
-
-
 

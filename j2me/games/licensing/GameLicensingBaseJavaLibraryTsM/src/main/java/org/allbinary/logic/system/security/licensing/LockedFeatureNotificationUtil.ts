@@ -110,5 +110,3 @@ GameNotificationEventHandler.getInstance()!.fireEvent(this.gameNotificationEvent
 
 }
 
-
-

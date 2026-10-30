@@ -22,9 +22,11 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
 //not GWT import const PaymentInterface
@@ -54,21 +56,19 @@ import { BasicDataTableInterface } from '../../../../../../../../org/allbinary/d
 export interface PaymentEntityInterface extends BasicDataTableInterface {
         
 
-    getLastId(userName: string): string
+    getLastId(userName: string): string;
 
-    setDefault(userName: string, index: Integer)
+    setDefault(userName: string, index: Integer): void;
 
-    getDefault(userName: string): PaymentInterface
+    getDefault(userName: string): PaymentInterface;
 
-    get(userName: string): BasicArrayList
+    get(userName: string): BasicArrayList;
 
-    add(userName: string, paymentInterface: PaymentInterface)
+    add(userName: string, paymentInterface: PaymentInterface): void;
 
-    remove(userName: string, index: Integer)
+    remove(userName: string, index: Integer): void;
 
-    insert(values: BasicArrayList)
+    insert(values: BasicArrayList): void;
 
 }
-
-
 

@@ -147,5 +147,3 @@ graphics.drawRegion(this.getImage(), this.getStartX(), this.getStartY(), this.ge
 
 }
 
-
-

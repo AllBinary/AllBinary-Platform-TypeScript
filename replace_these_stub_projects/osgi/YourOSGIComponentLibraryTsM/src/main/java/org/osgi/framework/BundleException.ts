@@ -30,5 +30,3 @@ export class BundleException extends Exception {
 
 }
 
-
-

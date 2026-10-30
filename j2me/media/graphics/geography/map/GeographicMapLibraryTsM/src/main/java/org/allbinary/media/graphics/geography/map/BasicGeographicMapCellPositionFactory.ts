@@ -24,15 +24,18 @@
         
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 //not GWT import const AllBinaryTiledLayer
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 
 
@@ -105,33 +108,33 @@ this.init();
             
     init(){
 
-    var tiledLayer: AllBinaryTiledLayer = this.tiledLayer;;
+    let tiledLayer: AllBinaryTiledLayer = this.tiledLayer;;
     
 
-    var columns: number = this.getColumns()!;;
+    let columns: number = this.getColumns()!;;
     
 
-    var rows: number = this.getRows()!;;
+    let rows: number = this.getRows()!;;
     
 
-    var width: number = tiledLayer!.getCellWidth()!;;
+    let width: number = tiledLayer!.getCellWidth()!;;
     
 
-    var height: number = tiledLayer!.getCellHeight()!;;
+    let height: number = tiledLayer!.getCellHeight()!;;
     
 
 
 
 
                         for (
-    var column: number = 0;column < columns; column++)
+    let column: number = 0;column < columns; column++)
         {
 
 
 
 
                         for (
-    var row: number = 0;row < rows; row++)
+    let row: number = 0;row < rows; row++)
         {
 this.createInstance(column, row, width, height);
     
@@ -146,32 +149,31 @@ this.createInstance(column, row, width, height);
             
     public visit(geographicMapCelPositionFactoryInitVisitorInterface: GeographicMapCellPositionFactoryInitVisitorInterface){
 
-    var tiledLayer: AllBinaryTiledLayer = this.tiledLayer;;
+    let tiledLayer: AllBinaryTiledLayer = this.tiledLayer;;
     
 
-    var columns: number = this.getColumns()!;;
+    let columns: number = this.getColumns()!;;
     
 
-    var rows: number = this.getRows()!;;
+    let rows: number = this.getRows()!;;
     
 
-        try {
-            
-    var cellPosition: GeographicMapCellPosition;;
+ try { 
+    let cellPosition: GeographicMapCellPosition;;
     
 
 
 
 
                         for (
-    var column: number = 0;column < columns; column++)
+    let column: number = 0;column < columns; column++)
         {
 
 
 
 
                         for (
-    var row: number = 0;row < rows; row++)
+    let row: number = 0;row < rows; row++)
         {
 cellPosition= this.getAt(column, row);
     
@@ -181,12 +183,13 @@ geographicMapCelPositionFactoryInitVisitorInterface!.visit(tiledLayer, cellPosit
 
 }
 
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    let commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 this.logUtil!.put(new StringMaker().append(commonSeps!.BRACKET_OPEN)!.appendint(rows)!.append(commonSeps!.BRACKET_CLOSE)!.append(commonSeps!.BRACKET_OPEN)!.appendint(columns)!.append(commonSeps!.BRACKET_CLOSE)!.toString(), this, "visit", e);
     
@@ -195,8 +198,10 @@ this.logUtil!.put(new StringMaker().append(commonSeps!.BRACKET_OPEN)!.appendint(
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -228,7 +233,7 @@ this.logUtil!.put(new StringMaker().append(commonSeps!.BRACKET_OPEN)!.appendint(
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
 
-    var cellPositionCanBeNull: any = this.geographicMapCellPositionArray[i_row]![i_column];;
+    let cellPositionCanBeNull: any = this.geographicMapCellPositionArray[i_row]![i_column];;
     
 
                         if(cellPositionCanBeNull == 
@@ -273,6 +278,4 @@ this.geographicMapCellPositionArray[i_row]![i_column]= cellPositionCanBeNull as 
 
 
 }
-
-
 

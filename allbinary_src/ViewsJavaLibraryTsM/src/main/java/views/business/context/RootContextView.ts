@@ -22,12 +22,15 @@
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 //not GWT import const StringValidationUtil
@@ -99,8 +102,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             
     public view(): string{
 
-        try {
-            
+ try { 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -110,10 +112,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var viewName: string = this.getName()!;;
+    let viewName: string = this.getName()!;;
     
 
-    var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(this.abeClientInformation, viewName, this.getTransformInfoInterface())!;;
+    let componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(this.abeClientInformation, viewName, this.getTransformInfoInterface())!;;
     
 
 
@@ -121,10 +123,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return componentInterface!.view();;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
@@ -139,8 +142,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             throw e;
                     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -148,12 +153,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             
     public getName(): string{
 
-        try {
-            
-    var objectConfig: NoTemplateTransformInfoObjectConfig = new NoTemplateTransformInfoObjectConfig(this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());;
+ try { 
+    let objectConfig: NoTemplateTransformInfoObjectConfig = new NoTemplateTransformInfoObjectConfig(this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());;
     
 
-    var componentsVector: BasicArrayList = objectConfig!.getTransforms()!;;
+    let componentsVector: BasicArrayList = objectConfig!.getTransforms()!;;
     
 
                         if(componentsVector!.size() == 0)
@@ -180,10 +184,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var transformInfoInterface: TransformInfo = componentsVector!.get(0) as TransformInfo;;
+    let transformInfoInterface: TransformInfo = componentsVector!.get(0) as TransformInfo;;
     
 
-    var viewName: string = transformInfoInterface!.getName()!;;
+    let viewName: string = transformInfoInterface!.getName()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -212,10 +216,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return viewName;
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -230,12 +235,12 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             throw e;
                     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

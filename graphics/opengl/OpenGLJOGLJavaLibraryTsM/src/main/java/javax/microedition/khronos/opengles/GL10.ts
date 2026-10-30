@@ -844,195 +844,193 @@ export interface GL10 extends javax.microedition.khronos.opengles.GL {
 
     //Interfaces do not have static fields - public static readonly GL_ZERO: number = 0;
 
-    glActiveTexture(texture: number)
+    glActiveTexture(texture: number): void;
 
-    glAlphaFunc(func: number, ref: number)
+    glAlphaFunc(func: number, ref: number): void;
 
-    glBindTexture(target: number, texture: number)
+    glBindTexture(target: number, texture: number): void;
 
-    glBlendFunc(sfactor: number, dfactor: number)
+    glBlendFunc(sfactor: number, dfactor: number): void;
 
-    glClear(mask: number)
+    glClear(mask: number): void;
 
-    glClearColor(red: number, green: number, blue: number, alpha: number)
+    glClearColor(red: number, green: number, blue: number, alpha: number): void;
 
-    glClearDepthf(depth: number)
+    glClearDepthf(depth: number): void;
 
-    glClearStencil(s: number)
+    glClearStencil(s: number): void;
 
-    glClientActiveTexture(texture: number)
+    glClientActiveTexture(texture: number): void;
 
-    glColor4f(red: number, green: number, blue: number, alpha: number)
+    glColor4f(red: number, green: number, blue: number, alpha: number): void;
 
-    glColorMask(red: boolean, green: boolean, blue: boolean, alpha: boolean)
+    glColorMask(red: boolean, green: boolean, blue: boolean, alpha: boolean): void;
 
-    glColorPointer(size: number, type: number, stride: number, pointer: java.nio.Buffer)
+    glColorPointer(size: number, type: number, stride: number, pointer: java.nio.Buffer): void;
 
-    glCompressedTexImage2D(target: number, level: number, internalformat: number, width: number, height: number, border: number, imageSize: number, data: java.nio.Buffer)
+    glCompressedTexImage2D(target: number, level: number, internalformat: number, width: number, height: number, border: number, imageSize: number, data: java.nio.Buffer): void;
 
-    glCompressedTexSubImage2D(target: number, level: number, xoffset: number, yoffset: number, width: number, height: number, format: number, imageSize: number, data: java.nio.Buffer)
+    glCompressedTexSubImage2D(target: number, level: number, xoffset: number, yoffset: number, width: number, height: number, format: number, imageSize: number, data: java.nio.Buffer): void;
 
-    glCopyTexImage2D(target: number, level: number, internalformat: number, x: number, y: number, width: number, height: number, border: number)
+    glCopyTexImage2D(target: number, level: number, internalformat: number, x: number, y: number, width: number, height: number, border: number): void;
 
-    glCopyTexSubImage2D(target: number, level: number, xoffset: number, yoffset: number, x: number, y: number, width: number, height: number)
+    glCopyTexSubImage2D(target: number, level: number, xoffset: number, yoffset: number, x: number, y: number, width: number, height: number): void;
 
-    glCullFace(mode: number)
+    glCullFace(mode: number): void;
 
-    glDeleteTextures(n: number, textures: number[], offset: number)
+    glDeleteTextures(n: number, textures: number[], offset: number): void;
 
-    glDeleteTextures(n: number, textures: java.nio.IntBuffer)
+    glDeleteTextures(n: number, textures: java.nio.IntBuffer): void;
 
-    glDepthFunc(func: number)
+    glDepthFunc(func: number): void;
 
-    glDepthMask(flag: boolean)
+    glDepthMask(flag: boolean): void;
 
-    glDepthRangef(zNear: number, zFar: number)
+    glDepthRangef(zNear: number, zFar: number): void;
 
-    glDisable(cap: number)
+    glDisable(cap: number): void;
 
-    glDisableClientState(array: number)
+    glDisableClientState(array: number): void;
 
-    glDrawArrays(mode: number, first: number, count: number)
+    glDrawArrays(mode: number, first: number, count: number): void;
 
-    glDrawElements(mode: number, count: number, type: number, indices: java.nio.Buffer)
+    glDrawElements(mode: number, count: number, type: number, indices: java.nio.Buffer): void;
 
-    glEnable(cap: number)
+    glEnable(cap: number): void;
 
-    glEnableClientState(array: number)
+    glEnableClientState(array: number): void;
 
-    glFinish()
+    glFinish(): void;
 
-    glFlush()
+    glFlush(): void;
 
-    glFogf(pname: number, param: number)
+    glFogf(pname: number, param: number): void;
 
-    glFogfv(pname: number, params: number[], offset: number)
+    glFogfv(pname: number, params: number[], offset: number): void;
 
-    glFogfv(pname: number, params: java.nio.FloatBuffer)
+    glFogfv(pname: number, params: java.nio.FloatBuffer): void;
 
-    glFrontFace(mode: number)
+    glFrontFace(mode: number): void;
 
-    glFrustumf(left: number, right: number, bottom: number, top: number, zNear: number, zFar: number)
+    glFrustumf(left: number, right: number, bottom: number, top: number, zNear: number, zFar: number): void;
 
-    glGenTextures(n: number, textures: number[], offset: number)
+    glGenTextures(n: number, textures: number[], offset: number): void;
 
-    glGenTextures(n: number, textures: java.nio.IntBuffer)
+    glGenTextures(n: number, textures: java.nio.IntBuffer): void;
 
-    glGetError(): number
+    glGetError(): number;
 
-    glGetIntegerv(pname: number, params: number[], offset: number)
+    glGetIntegerv(pname: number, params: number[], offset: number): void;
 
-    glGetIntegerv(pname: number, params: java.nio.IntBuffer)
+    glGetIntegerv(pname: number, params: java.nio.IntBuffer): void;
 
-    glGetString(name: number): string
+    glGetString(name: number): string;
 
-    glHint(target: number, mode: number)
+    glHint(target: number, mode: number): void;
 
-    glLightModelf(pname: number, param: number)
+    glLightModelf(pname: number, param: number): void;
 
-    glLightModelfv(pname: number, params: number[], offset: number)
+    glLightModelfv(pname: number, params: number[], offset: number): void;
 
-    glLightModelfv(pname: number, params: java.nio.FloatBuffer)
+    glLightModelfv(pname: number, params: java.nio.FloatBuffer): void;
 
-    glLightf(light: number, pname: number, param: number)
+    glLightf(light: number, pname: number, param: number): void;
 
-    glLightfv(light: number, pname: number, params: number[], offset: number)
+    glLightfv(light: number, pname: number, params: number[], offset: number): void;
 
-    glLightfv(light: number, pname: number, params: java.nio.FloatBuffer)
+    glLightfv(light: number, pname: number, params: java.nio.FloatBuffer): void;
 
-    glLineWidth(width: number)
+    glLineWidth(width: number): void;
 
-    glLoadIdentity()
+    glLoadIdentity(): void;
 
-    glLoadMatrixf(m: number[], offset: number)
+    glLoadMatrixf(m: number[], offset: number): void;
 
-    glLoadMatrixf(m: java.nio.FloatBuffer)
+    glLoadMatrixf(m: java.nio.FloatBuffer): void;
 
-    glLogicOp(opcode: number)
+    glLogicOp(opcode: number): void;
 
-    glMaterialf(face: number, pname: number, param: number)
+    glMaterialf(face: number, pname: number, param: number): void;
 
-    glMaterialfv(face: number, pname: number, params: number[], offset: number)
+    glMaterialfv(face: number, pname: number, params: number[], offset: number): void;
 
-    glMaterialfv(face: number, pname: number, params: java.nio.FloatBuffer)
+    glMaterialfv(face: number, pname: number, params: java.nio.FloatBuffer): void;
 
-    glMatrixMode(mode: number)
+    glMatrixMode(mode: number): void;
 
-    glMultMatrixf(m: number[], offset: number)
+    glMultMatrixf(m: number[], offset: number): void;
 
-    glMultMatrixf(m: java.nio.FloatBuffer)
+    glMultMatrixf(m: java.nio.FloatBuffer): void;
 
-    glMultiTexCoord4f(target: number, s: number, t: number, r: number, q: number)
+    glMultiTexCoord4f(target: number, s: number, t: number, r: number, q: number): void;
 
-    glNormal3f(nx: number, ny: number, nz: number)
+    glNormal3f(nx: number, ny: number, nz: number): void;
 
-    glNormalPointer(type: number, stride: number, pointer: java.nio.Buffer)
+    glNormalPointer(type: number, stride: number, pointer: java.nio.Buffer): void;
 
-    glOrthof(left: number, right: number, bottom: number, top: number, zNear: number, zFar: number)
+    glOrthof(left: number, right: number, bottom: number, top: number, zNear: number, zFar: number): void;
 
-    glPixelStorei(pname: number, param: number)
+    glPixelStorei(pname: number, param: number): void;
 
-    glPointSize(size: number)
+    glPointSize(size: number): void;
 
-    glPolygonOffset(factor: number, units: number)
+    glPolygonOffset(factor: number, units: number): void;
 
-    glPopMatrix()
+    glPopMatrix(): void;
 
-    glPushMatrix()
+    glPushMatrix(): void;
 
-    glReadPixels(x: number, y: number, width: number, height: number, format: number, type: number, pixels: java.nio.Buffer)
+    glReadPixels(x: number, y: number, width: number, height: number, format: number, type: number, pixels: java.nio.Buffer): void;
 
-    glRotatef(angle: number, x: number, y: number, z: number)
+    glRotatef(angle: number, x: number, y: number, z: number): void;
 
-    glRotatex(angle: number, x: number, y: number, z: number)
+    glRotatex(angle: number, x: number, y: number, z: number): void;
 
-    glSampleCoverage(value: number, invert: boolean)
+    glSampleCoverage(value: number, invert: boolean): void;
 
-    glScalef(x: number, y: number, z: number)
+    glScalef(x: number, y: number, z: number): void;
 
-    glScalex(x: number, y: number, z: number)
+    glScalex(x: number, y: number, z: number): void;
 
-    glScissor(x: number, y: number, width: number, height: number)
+    glScissor(x: number, y: number, width: number, height: number): void;
 
-    glShadeModel(mode: number)
+    glShadeModel(mode: number): void;
 
-    glStencilFunc(func: number, ref: number, mask: number)
+    glStencilFunc(func: number, ref: number, mask: number): void;
 
-    glStencilMask(mask: number)
+    glStencilMask(mask: number): void;
 
-    glStencilOp(fail: number, zfail: number, zpass: number)
+    glStencilOp(fail: number, zfail: number, zpass: number): void;
 
-    glTexCoordPointer(size: number, type: number, stride: number, pointer: java.nio.Buffer)
+    glTexCoordPointer(size: number, type: number, stride: number, pointer: java.nio.Buffer): void;
 
-    glTexEnvf(target: number, pname: number, param: number)
+    glTexEnvf(target: number, pname: number, param: number): void;
 
-    glTexEnvfv(target: number, pname: number, params: number[], offset: number)
+    glTexEnvfv(target: number, pname: number, params: number[], offset: number): void;
 
-    glTexEnvfv(target: number, pname: number, params: java.nio.FloatBuffer)
+    glTexEnvfv(target: number, pname: number, params: java.nio.FloatBuffer): void;
 
-    glTexImage2D(target: number, level: number, internalformat: number, width: number, height: number, border: number, format: number, type: number, pixels: java.nio.Buffer)
+    glTexImage2D(target: number, level: number, internalformat: number, width: number, height: number, border: number, format: number, type: number, pixels: java.nio.Buffer): void;
 
-    glTexParameterf(target: number, pname: number, param: number)
+    glTexParameterf(target: number, pname: number, param: number): void;
 
-    glTexParameteri(target: number, pname: number, param: number)
+    glTexParameteri(target: number, pname: number, param: number): void;
 
-    glTexSubImage2D(target: number, level: number, xoffset: number, yoffset: number, width: number, height: number, format: number, type: number, pixels: java.nio.Buffer)
+    glTexSubImage2D(target: number, level: number, xoffset: number, yoffset: number, width: number, height: number, format: number, type: number, pixels: java.nio.Buffer): void;
 
-    glTranslatef(x: number, y: number, z: number)
+    glTranslatef(x: number, y: number, z: number): void;
 
-    glVertexPointer(size: number, type: number, stride: number, pointer: java.nio.Buffer)
+    glVertexPointer(size: number, type: number, stride: number, pointer: java.nio.Buffer): void;
 
-    glViewport(x: number, y: number, width: number, height: number)
+    glViewport(x: number, y: number, width: number, height: number): void;
 
-    glBegin(i: number)
+    glBegin(i: number): void;
 
-    glEnd()
+    glEnd(): void;
 
-    glVertex3f(f: number, f2: number, f3: number)
+    glVertex3f(f: number, f2: number, f3: number): void;
 
-    glPolygonMode(i: number, i1: number)
+    glPolygonMode(i: number, i1: number): void;
 
 }
-
-
 

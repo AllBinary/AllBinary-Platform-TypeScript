@@ -25,9 +25,11 @@ import { HashMap } from '../../java/util/HashMap.js';
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 //not GWT import const PageContext
@@ -49,9 +51,11 @@ import { InventoryEntityFactory } from '../../org/allbinary/data/tables/user/com
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { HelperTag } from '../../tags/HelperTag.js';
 //not GWT import const HelperTag
@@ -95,10 +99,10 @@ public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageConte
 
             super();
         
-    var inventoryTag: HelperTag = propertiesHashMap!.get(AbTagData.PARENT) as HelperTag;;
+    let inventoryTag: HelperTag = propertiesHashMap!.get(AbTagData.PARENT) as HelperTag;;
     
 
-    var itemView: InventoryItemView = InventoryItemViewParentTagHelper.getInstance()!.getInventoryItemView(inventoryTag)!;;
+    let itemView: InventoryItemView = InventoryItemViewParentTagHelper.getInstance()!.getInventoryItemView(inventoryTag)!;;
     
 this.itemInterface= itemView!.getItemInterface();
     
@@ -109,17 +113,16 @@ this.itemInterface= itemView!.getItemInterface();
             
     public insert(): string{
 
-        try {
-            
-    var dataMappingInterface: TableMappingInterface = this.getItemInterface() as TableMappingInterface;;
+ try { 
+    let dataMappingInterface: TableMappingInterface = this.getItemInterface() as TableMappingInterface;;
     
 
-    var values: BasicArrayList = dataMappingInterface!.toVector()!;;
+    let values: BasicArrayList = dataMappingInterface!.toVector()!;;
     
 InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(values);
     
 
-    var success: string = "Successfully Added Product";;
+    let success: string = "Successfully Added Product";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -136,12 +139,13 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to add item to Inventory";;
+    let error: string = "Failed to add item to Inventory";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -158,24 +162,25 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public delete(): string{
 
-        try {
-            
-    var dataMappingInterface: TableMappingInterface = this.getItemInterface() as TableMappingInterface;;
+ try { 
+    let dataMappingInterface: TableMappingInterface = this.getItemInterface() as TableMappingInterface;;
     
 
-    var id: string = dataMappingInterface!.getKey() as string;;
+    let id: string = dataMappingInterface!.getKey() as string;;
     
 InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.deleteWhere(this.basicItemData!.ID, id);
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Successfully Removed the item with ");
     
@@ -188,7 +193,7 @@ stringBuffer!.append(id);
 stringBuffer!.append(" from to the Inventory table");
     
 
-    var success: string = stringBuffer!.toString()!;;
+    let success: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -205,12 +210,13 @@ stringBuffer!.append(" from to the Inventory table");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed to remove item with from Inventory";;
+    let error: string = "Failed to remove item with from Inventory";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -227,20 +233,21 @@ stringBuffer!.append(" from to the Inventory table");
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
     public update(): string{
 
-        try {
-            this.delete();
+ try { this.delete();
     
 this.insert();
     
 
-    var success: string = "Item Successfully Updated";;
+    let success: string = "Item Successfully Updated";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -257,12 +264,13 @@ this.insert();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var error: string = "Failed To Update Item";;
+    let error: string = "Failed To Update Item";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -279,8 +287,10 @@ this.insert();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return error;
     
-}
 
+ }
+   }
+ 
 }
 
 
@@ -295,6 +305,4 @@ this.insert();
 
 
 }
-
-
 

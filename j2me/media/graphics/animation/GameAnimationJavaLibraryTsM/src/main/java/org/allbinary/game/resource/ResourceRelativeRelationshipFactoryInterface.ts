@@ -28,6 +28,7 @@ import { RelativeRelationship } from '../../../../org/allbinary/graphics/Relativ
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -53,13 +54,11 @@ export interface ResourceRelativeRelationshipFactoryInterface extends GameFeatur
 
                 //@Throws(Exception.constructor)
             
-    getResourceRelativeRelationshipList(resource: string): BasicArrayList
+    getResourceRelativeRelationshipList(resource: string): BasicArrayList;
 
                 //@Throws(Exception.constructor)
             
-    addResourceRelativeRelationship(resource: string, relativeRelationship: RelativeRelationship)
+    addResourceRelativeRelationship(resource: string, relativeRelationship: RelativeRelationship): void;
 
 }
-
-
 

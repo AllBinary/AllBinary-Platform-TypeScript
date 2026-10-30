@@ -65,7 +65,7 @@ public constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var waypointEventListenerInterface: WaypointEventListenerInterface = (eventListenerInterface as WaypointEventListenerInterface);;
+    let waypointEventListenerInterface: WaypointEventListenerInterface = (eventListenerInterface as WaypointEventListenerInterface);;
     
 waypointEventListenerInterface!.onWaypointEvent(eventObject as RTSLayerEvent);
     
@@ -73,6 +73,4 @@ waypointEventListenerInterface!.onWaypointEvent(eventObject as RTSLayerEvent);
 
 
 }
-
-
 

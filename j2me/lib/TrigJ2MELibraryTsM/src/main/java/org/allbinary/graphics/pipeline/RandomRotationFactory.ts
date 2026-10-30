@@ -24,12 +24,14 @@
         
 //not plain js import { MyRandomFactory } 
 const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+type MyRandomFactory<T = any, U = any> = typeof MyRandomFactory extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MyRandomFactory;
 
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 //not GWT import const AngleFactory
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 
 
@@ -77,7 +79,7 @@ export class RandomRotationFactory
             
     public getInstanceList(vector: BasicArrayList, howMuch: number): BasicArrayList{
 
-    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(vector);;
+    let graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(vector);;
     
 graphicsPipe!.createMatrix();
     
@@ -103,6 +105,4 @@ graphicsPipe!.rotateToAngle(this.angleFactory!.getAt(this.getNextRandomAngle(how
 
 
 }
-
-
 

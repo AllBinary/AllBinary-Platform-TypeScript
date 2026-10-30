@@ -28,12 +28,15 @@ import { Set } from '../../../../../../../../java/util/Set.js';
 
 //not plain js import { StdUtil } 
 const StdUtil = globalThis.org.allbinary.logic.StdUtil;
+type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StdUtil;
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { MediaData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaData.js';
 //not GWT import const MediaData
@@ -46,6 +49,7 @@ import { MediaTypeData } from '../../../../../../../../org/allbinary/logic/visua
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 
 
@@ -111,16 +115,16 @@ private constructor (){
 this.writerFileTypesHashMap= StdUtil.getInstance()!.createHashMap();
     
 
-    var hashMap: HashMap<any, any> = MediaData.toHashMap()!;;
+    let hashMap: HashMap<any, any> = MediaData.toHashMap()!;;
     
 
-    var set: Set = hashMap!.keys()!;;
+    let set: Set = hashMap!.keys()!;;
     
 
-    var mediaDataNameArray: any[] = set.toArray()!;;
+    let mediaDataNameArray: any[] = set.toArray()!;;
     
 
-    var size: number = mediaDataNameArray!.length
+    let size: number = mediaDataNameArray!.length
                 ;;
     
 
@@ -128,47 +132,47 @@ this.writerFileTypesHashMap= StdUtil.getInstance()!.createHashMap();
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var mediaDataName: string = mediaDataNameArray[index]! as string;;
+    let mediaDataName: string = mediaDataNameArray[index]! as string;;
     
 
-    var mediaData: MediaData = hashMap!.get(mediaDataName) as MediaData;;
+    let mediaData: MediaData = hashMap!.get(mediaDataName) as MediaData;;
     
 this.readerFileTypesHashMap!.put(mediaData!.getName(), mediaData!.getType());
     
 }
 
 
-    var mediaIOUtil: MediaIOUtil = MediaIOUtil.getInstance()!;;
+    let mediaIOUtil: MediaIOUtil = MediaIOUtil.getInstance()!;;
     
 
-    var RESIZABLE_MEDIA: string = MediaTypeData.getInstance()!.RESIZABLE_MEDIA;;
+    let RESIZABLE_MEDIA: string = MediaTypeData.getInstance()!.RESIZABLE_MEDIA;;
     
 
-    var readerFileTypes: string[] = mediaIOUtil!.getReaderFormatNames()!;;
+    let readerFileTypes: string[] = mediaIOUtil!.getReaderFormatNames()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < readerFileTypes!.length; index++)
+    let index: number = 0;index < readerFileTypes!.length; index++)
         {
 this.readerFileTypesHashMap!.put(readerFileTypes[index]!, RESIZABLE_MEDIA);
     
 }
 
 
-    var writerFileTypes: string[] = mediaIOUtil!.getWriterFormatNames()!;;
+    let writerFileTypes: string[] = mediaIOUtil!.getWriterFormatNames()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < writerFileTypes!.length; index++)
+    let index: number = 0;index < writerFileTypes!.length; index++)
         {
 this.writerFileTypesHashMap!.put(writerFileTypes[index]!, RESIZABLE_MEDIA);
     
@@ -179,7 +183,7 @@ this.writerFileTypesHashMap!.put(writerFileTypes[index]!, RESIZABLE_MEDIA);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Supported Media Readers: ");
     
@@ -226,8 +230,15 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCT
     
 }
 
-
-    public isMedia(mediaFileType: string, aMediaType: string): boolean{
+isMedia(...args: any[]): any {
+   
+    if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.isMedia$overload1(args[0], args[1]);
+   
+    if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.isMedia$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: isMedia'); }
+  
+    public isMedia$overload1(mediaFileType: string, aMediaType: string): boolean{
 
 
 
@@ -257,13 +268,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCT
 }
 
 
-    isMedia(mediaFileType: string, aMediaType: string, hashMap: HashMap<any, any>): boolean{
+    isMedia$overload2(mediaFileType: string, aMediaType: string, hashMap: HashMap<any, any>): boolean{
 
                         if(hashMap!.containsKey(mediaFileType))
                         
                                     {
                                     
-    var mediaType: string = hashMap!.get(mediaFileType) as string;;
+    let mediaType: string = hashMap!.get(mediaFileType) as string;;
     
 
                         if(mediaType!.compareTo(aMediaType) == 0)
@@ -305,6 +316,4 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCT
 
 
 }
-
-
 

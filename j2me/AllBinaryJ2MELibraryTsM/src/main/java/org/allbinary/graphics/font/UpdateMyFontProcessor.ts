@@ -65,5 +65,3 @@ this.updateMeasurementProcessor!.updateMeasurement(graphics);
 
 }
 
-
-

@@ -22,15 +22,18 @@
         
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 //not GWT import const GeographicMapCellPosition
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 
 
@@ -67,7 +70,7 @@ export class PathFindingNodeCost extends PathFindingNode implements Comparable<P
 
     public pathFindingNodeCostInfoP: PathFindingNodeCostInfo;
 
-public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCellPosition, pathFindingNodeCostInfo: PathFindingNodeCostInfo){
+public constructor (parent: any, geographicMapCellPosition: GeographicMapCellPosition, pathFindingNodeCostInfo: PathFindingNodeCostInfo){
             super(parent, geographicMapCellPosition);
                     
 
@@ -134,7 +137,7 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.constructor.name.toString()!);
     
@@ -147,7 +150,7 @@ stringBuffer!.append(" Path: ");
 stringBuffer!.append(this.geographicMapCellPosition!.toString());
     
 
-    var pathFindingNode: PathFindingNode = this.parent as PathFindingNode;;
+    let pathFindingNode: PathFindingNode = this.parent as PathFindingNode;;
     
 
         while(pathFindingNode != 
@@ -172,6 +175,4 @@ pathFindingNode= pathFindingNode!.parent as PathFindingNode;
 
 
 }
-
-
 

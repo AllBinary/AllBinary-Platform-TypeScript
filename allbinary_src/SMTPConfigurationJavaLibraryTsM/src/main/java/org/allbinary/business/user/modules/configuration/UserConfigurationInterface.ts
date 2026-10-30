@@ -49,19 +49,17 @@ import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary
 export interface UserConfigurationInterface {
         
 
-    getUserEmailConfigurationInterface(): UserEmailConfigurationInterface
+    getUserEmailConfigurationInterface(): UserEmailConfigurationInterface;
 
-    setUserEmailConfigurationInterface(userEmailConfigurationInterface: UserEmailConfigurationInterface)
+    setUserEmailConfigurationInterface(userEmailConfigurationInterface: UserEmailConfigurationInterface): void;
 
-    getTimeCreated(): TimeCreated
+    getTimeCreated(): TimeCreated;
 
-    getTimeLastModified(): TimeLastModified
+    getTimeLastModified(): TimeLastModified;
 
-    setTimeCreated(timeCreated: TimeCreated)
+    setTimeCreated(timeCreated: TimeCreated): void;
 
-    setTimeLastModified(timeLastModified: TimeLastModified)
+    setTimeLastModified(timeLastModified: TimeLastModified): void;
 
 }
-
-
 

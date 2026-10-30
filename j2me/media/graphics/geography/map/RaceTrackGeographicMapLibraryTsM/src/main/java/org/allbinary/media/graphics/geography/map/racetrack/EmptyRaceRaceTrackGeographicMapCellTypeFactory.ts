@@ -20,6 +20,7 @@
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { PathFindingNodeCostInfoData } from '../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNodeCostInfoData.js';
 //not GWT import const PathFindingNodeCostInfoData
@@ -66,7 +67,7 @@ private constructor (){
 
             super();
         
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.EMPTY_CELL_TYPE= new RaceTrackGeographicMapCellType(commonStrings!.EMPTY, 0, PathFindingNodeCostInfoData.getInstance()!.MAX_NODE_COST, 1);
     
@@ -78,6 +79,4 @@ this.FINISH_LINE_ROAD_CELL_TYPE= this.DEFAULT_FINISH_LINE_ROAD_CELL_TYPE;
 
 
 }
-
-
 

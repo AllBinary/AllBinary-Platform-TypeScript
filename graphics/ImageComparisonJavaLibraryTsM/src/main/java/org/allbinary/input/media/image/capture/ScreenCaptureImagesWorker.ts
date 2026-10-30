@@ -29,6 +29,7 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 //not GWT import const BasicEventHandler
@@ -38,9 +39,11 @@ import { BufferedImageFrameCacheable } from '../../../../../../org/allbinary/med
 
 //not plain js import { CommonLabels } 
 const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonLabels;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 //not GWT import const TimeDelayHelper
@@ -123,13 +126,12 @@ this.running= running;
 
     public run(){
 
-        try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
+ try { this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
     
 this.setRunning(true);
     
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
+    let timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
     
 
         while(isRunning())
@@ -137,17 +139,17 @@ this.setRunning(true);
 timeHelper!.setStartTimeTNT();
     
 
-    var bufferedImage: BufferedImage = this.screenScavangerRobot!.getScreenAsBufferedImages()[0]!;;
+    let bufferedImage: BufferedImage = this.screenScavangerRobot!.getScreenAsBufferedImages()[0]!;;
     
 
-    var frame: Long = new Long(index);;
+    let frame: Long = new Long(index);;
     
 ScreenCaptureImagesWorker.index++;
     
 CapturedBufferedImagesCacheSingleton.getInstance()!.add(new BufferedImageFrameCacheable(bufferedImage, frame));
     
 
-    var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);;
+    let capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);;
     
 fireEvent(capturedImageEvent);
     
@@ -159,18 +161,19 @@ this.setRunning(false);
 
 this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
+
+ }
+   }
+ 
 }
 
-}
-
 
 }
-
-
 

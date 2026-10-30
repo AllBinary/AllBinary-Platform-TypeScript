@@ -40,18 +40,23 @@ import { RectangleFactory } from '../../../org/allbinary/graphics/RectangleFacto
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 //not plain js import { StringUtil } 
 const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringUtil;
 
 //not plain js import { CommonSeps } 
 const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonSeps;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -117,33 +122,33 @@ private constructor (){
             
     public getRectangleXY(resource: string, x: number, y: number): Rectangle{
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
+    let pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var list: BasicArrayList = this.getList()!;;
+    let list: BasicArrayList = this.getList()!;;
     
 
-    var scale: number = GameConfigurationCentral.getInstance()!.SCALE.getValue()!.intValue()!;;
+    let scale: number = GameConfigurationCentral.getInstance()!.SCALE.getValue()!.intValue()!;;
     
 
-    var size: number = this.getList()!.size()!;;
+    let size: number = this.getList()!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 
-    var featureInterface: FeatureResourceAnimationInterfaceFactoryInterface = list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface;;
+    let featureInterface: FeatureResourceAnimationInterfaceFactoryInterface = list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface;;
     
 
                         if(featureInterface!.isFeature())
                         
                                     {
                                     
-    var rectangle: Rectangle = featureInterface!.getRectangle(resource)!;;
+    let rectangle: Rectangle = featureInterface!.getRectangle(resource)!;;
     
 
                         if(rectangle != RectangleFactory.SINGLETON)
@@ -199,26 +204,26 @@ private constructor (){
             
     getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
 
-    var list: BasicArrayList = this.getList()!;;
+    let list: BasicArrayList = this.getList()!;;
     
 
-    var resourceTypeAvailableList: BasicArrayList = new BasicArrayListD();;
+    let resourceTypeAvailableList: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = this.getList()!.size()!;;
+    let size: number = this.getList()!.size()!;;
     
 
-    var featureInterface: FeatureResourceAnimationInterfaceFactoryInterface;;
+    let featureInterface: FeatureResourceAnimationInterfaceFactoryInterface;;
     
 
-    var animationInterfaceFactoryInterface: BasicAnimationInterfaceFactoryInterface;;
+    let animationInterfaceFactoryInterface: BasicAnimationInterfaceFactoryInterface;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 featureInterface= list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface;
     
@@ -253,22 +258,22 @@ animationInterfaceFactoryInterface= featureInterface!.getBasicAnimationInterface
                         
                                     {
                                     
-    var NO_ANIMATION_AVAILABLE_FROM: string = "No animation available from: ";;
+    let NO_ANIMATION_AVAILABLE_FROM: string = "No animation available from: ";;
     
 
-    var FOR_FACTORIES: string = " factories: ";;
+    let FOR_FACTORIES: string = " factories: ";;
     
 
-    var FOR_RESOURCE: string = " for Resource: ";;
+    let FOR_RESOURCE: string = " for Resource: ";;
     
 
-    var HAS_KEY: string = " has: ";;
+    let HAS_KEY: string = " has: ";;
     
 
-    var RESOURCES_LABEL: string = " resources ";;
+    let RESOURCES_LABEL: string = " resources ";;
     
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(NO_ANIMATION_AVAILABLE_FROM);
     
@@ -281,14 +286,14 @@ stringBuffer!.appendint(size);
 stringBuffer!.append(FOR_FACTORIES);
     
 
-    var size2: number = resourceTypeAvailableList!.size()!;;
+    let size2: number = resourceTypeAvailableList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size2; index++)
+    let index: number = 0;index < size2; index++)
         {
 stringBuffer!.append(resourceTypeAvailableList!.get(index)!.toString());
     
@@ -305,7 +310,7 @@ stringBuffer!.append(resource);
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
     
@@ -338,14 +343,14 @@ stringBuffer!.append(RESOURCES_LABEL);
                                 
                         else {
                             
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = 0;index < size; index++)
+    let index: number = 0;index < size; index++)
         {
 featureInterface= list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface;
     
@@ -356,7 +361,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
 }
 
 
-    var result: string = stringBuffer!.toString()!;;
+    let result: string = stringBuffer!.toString()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -372,6 +377,4 @@ stringBuffer!.delete(0, stringBuffer!.length());
 
 
 }
-
-
 

@@ -90,5 +90,3 @@ this.ownershipPaintableInterface!.paint(graphics);
 
 }
 
-
-

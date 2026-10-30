@@ -33,6 +33,7 @@ import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 
 
@@ -100,7 +101,7 @@ private constructor (){
             
     public createImage(originalImage: Image): Image{
 
-    var image: Image = this.imageCreationUtil!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
+    let image: Image = this.imageCreationUtil!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
     
 
                         if(image.isMutable())
@@ -133,10 +134,10 @@ private constructor (){
             
     public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
 
-    var newWidth: number = globalThis.Math.trunc((originalImage!.getWidth() *canvasScale));;
+    let newWidth: number = globalThis.Math.trunc((originalImage!.getWidth() *canvasScale));;
     
 
-    var newHeight: number = globalThis.Math.trunc((originalImage!.getHeight() *canvasScale));;
+    let newHeight: number = globalThis.Math.trunc((originalImage!.getHeight() *canvasScale));;
     
 
                         if(resize)
@@ -164,20 +165,20 @@ private constructor (){
                                     }
                                 
 
-    var image: Image = this.imageCreationUtil!.createImageWH(newWidth, newHeight)!;;
+    let image: Image = this.imageCreationUtil!.createImageWH(newWidth, newHeight)!;;
     
 
                         if(image.isMutable())
                         
                                     {
                                     
-    var halfWidthDelta: number = (newWidth -originalImage!.getWidth()) /2;;
+    let halfWidthDelta: number = (newWidth -originalImage!.getWidth()) /2;;
     
 
-    var halfHeightDelta: number = (newHeight -originalImage!.getHeight()) /2;;
+    let halfHeightDelta: number = (newHeight -originalImage!.getHeight()) /2;;
     
 
-    var graphics: Graphics = image.getGraphics()!;;
+    let graphics: Graphics = image.getGraphics()!;;
     
 graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, this.anchor);
     
@@ -203,6 +204,4 @@ graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, this.anchor);
 
 
 }
-
-
 

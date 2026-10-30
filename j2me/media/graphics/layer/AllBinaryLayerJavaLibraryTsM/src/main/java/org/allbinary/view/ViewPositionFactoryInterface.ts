@@ -46,9 +46,7 @@ export interface ViewPositionFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(): ViewPositionBase
+    getInstance(): ViewPositionBase;
 
 }
-
-
 

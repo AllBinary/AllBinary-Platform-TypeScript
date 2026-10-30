@@ -78,7 +78,7 @@ export class SmallLongFactory
 
 
                         for (
-    var index: number = value -1;index >= this.lastMin; index--)
+    let index: number = value -1;index >= this.lastMin; index--)
         {
 this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Long(index);
     
@@ -89,7 +89,7 @@ this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Long(index);
 
 
                         for (
-    var index: number = negativeValue -1;index >= this.lastNegativeMin; index--)
+    let index: number = negativeValue -1;index >= this.lastNegativeMin; index--)
         {
 this.INTEGER_ARRAY[index]= new Long( -index);
     
@@ -134,7 +134,7 @@ this.MIN= value;
 
 
                         for (
-    var index: number = this.POSITIVE_MAX -1;index >= this.lastMin; index--)
+    let index: number = this.POSITIVE_MAX -1;index >= this.lastMin; index--)
         {
 this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Long(index);
     
@@ -145,7 +145,7 @@ this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Long(index);
 
 
                         for (
-    var index: number = this.NEGATIVE_MAX -1;index >= this.lastNegativeMin; index--)
+    let index: number = this.NEGATIVE_MAX -1;index >= this.lastNegativeMin; index--)
         {
 this.INTEGER_ARRAY[index]= new Long( -index);
     
@@ -195,7 +195,7 @@ private constructor (){
 
     public getString(index: number): string{
 
-    var i: number = index +this.NEGATIVE_MAX;;
+    let i: number = index +this.NEGATIVE_MAX;;
     
 
                         if(this.STRING_ARRAY[i] == 
@@ -218,6 +218,4 @@ private constructor (){
 
 
 }
-
-
 

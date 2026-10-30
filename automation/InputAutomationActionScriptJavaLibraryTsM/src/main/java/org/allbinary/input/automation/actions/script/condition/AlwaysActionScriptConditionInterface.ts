@@ -40,13 +40,11 @@
 export interface AlwaysActionScriptConditionInterface {
         
 
-    setIsOn(isOn: boolean)
+    setIsOn(isOn: boolean): void;
 
-    isIsOn(): boolean
+    isIsOn(): boolean;
 
-    log()
+    log(): void;
 
 }
-
-
 

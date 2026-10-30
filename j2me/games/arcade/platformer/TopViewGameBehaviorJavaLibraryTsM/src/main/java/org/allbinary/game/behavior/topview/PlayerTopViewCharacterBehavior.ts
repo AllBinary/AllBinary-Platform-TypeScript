@@ -40,6 +40,7 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 //not GWT import const BasicGeographicMap
@@ -86,7 +87,7 @@ TrackingEventHandler.getInstance()!.fireEvent(TrackingEventCircularStaticPool.ge
 
     public terrainMove(layer: AllBinaryLayer, geographicMapInterfaceArray: BasicGeographicMap[], x: number, y: number){
 
-    var basicGeographicMapUtil: BasicGeographicMapUtil = BasicGeographicMapUtil.getInstance()!;;
+    let basicGeographicMapUtil: BasicGeographicMapUtil = BasicGeographicMapUtil.getInstance()!;;
     
 basicGeographicMapUtil!.setPosition(geographicMapInterfaceArray, x, y);
     
@@ -108,6 +109,4 @@ basicGeographicMapUtil!.setPosition(geographicMapInterfaceArray, x, y);
 
 
 }
-
-
 

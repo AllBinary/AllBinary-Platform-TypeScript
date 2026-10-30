@@ -25,6 +25,7 @@ import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerG
 
 //not plain js import { StringMaker } 
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 //not GWT import const AllBinaryEventObject
@@ -40,9 +41,11 @@ import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -128,23 +131,25 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;--index >= 0; )
+    let index: number = this.list.size()!;--index >= 0; )
         {
 
-        try {
-            
-    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;;
+ try { 
+    let playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;;
     
 playerGameInput!.onDownGameKeyEvent(eventObject as GameKeyEvent);
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
-}
 
+ }
+   }
+ 
 }
 
 super.fireEvent(eventObject);
@@ -156,7 +161,7 @@ super.fireEvent(eventObject);
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var downGameKeyEventListenerInterface: DownGameKeyEventListenerInterface = eventListenerInterface as DownGameKeyEventListenerInterface;;
+    let downGameKeyEventListenerInterface: DownGameKeyEventListenerInterface = eventListenerInterface as DownGameKeyEventListenerInterface;;
     
 downGameKeyEventListenerInterface!.onDownGameKeyEvent(eventObject as GameKeyEvent);
     
@@ -165,7 +170,7 @@ downGameKeyEventListenerInterface!.onDownGameKeyEvent(eventObject as GameKeyEven
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();;
+    let stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toString());
     
@@ -174,33 +179,35 @@ stringBuffer!.append(DownGameKeyEventHandlerBase.TOTAL_LISTENERS);
 stringBuffer!.appendint(this.list.size());
     
 
-    var eventListenerInterface: EventListenerInterface;;
+    let eventListenerInterface: EventListenerInterface;;
     
 
-    var size: number = this.list.size()!;;
+    let size: number = this.list.size()!;;
     
 
-    var index: number = 0;;
+    let index: number = 0;;
     
 
         while(index < size)
         {
 
-        try {
-            eventListenerInterface= this.list.get(index) as EventListenerInterface;
+ try { eventListenerInterface= this.list.get(index) as EventListenerInterface;
     
 stringBuffer!.append(DownGameKeyEventHandlerBase.LISTENER_LABEL);
     
 stringBuffer!.append(eventListenerInterface!.toString());
     
-
-                //: 
-} catch(e) 
-            {
+ }
+ catch (caught: any) {
+ {
+  const e = caught;
+  
 this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.TOSTRING, e);
     
-}
 
+ }
+   }
+ 
 index++;
     
 }
@@ -215,6 +222,4 @@ index++;
 
 
 }
-
-
 

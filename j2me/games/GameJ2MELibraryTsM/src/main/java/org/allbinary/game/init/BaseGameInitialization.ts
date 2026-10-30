@@ -157,14 +157,14 @@ ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance
             
     public init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number){
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
+    let resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(!this.isInitialized() && (level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel() || level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel()))
                         
                                     {
                                     
-    var localPortion: number = 40;;
+    let localPortion: number = 40;;
     
 
                         if(level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
@@ -184,7 +184,7 @@ this.initKeyMapping(abeClientInformation, this.getPortion());
 GameKeyEventFactory.getInstance()!.init();
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
+    let progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.addNormalPortion(localPortion, "Game Key Events");
     
@@ -218,7 +218,7 @@ this.resourceInitializationArray[this.EARLY_RESOURCES]!.init();
             
     public resourceInitialization(level: number){
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
+    let resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(this.resourceAnimationChange() && level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
@@ -265,10 +265,10 @@ this.allLoaded= true;
 
     public resourceAnimationChange(): boolean{
 
-    var changedGameFeatureListener: ChangedGameFeatureListener = ChangedGameFeatureListener.getInstance()!;;
+    let changedGameFeatureListener: ChangedGameFeatureListener = ChangedGameFeatureListener.getInstance()!;;
     
 
-    var gameConfigurationCentral: GameConfigurationCentral = GameConfigurationCentral.getInstance()!;;
+    let gameConfigurationCentral: GameConfigurationCentral = GameConfigurationCentral.getInstance()!;;
     
 
                         if(changedGameFeatureListener!.isChangedGameConfiguration(gameConfigurationCentral!.SCALE))
@@ -311,7 +311,7 @@ this.allLoaded= false;
 GameFeatureImageCacheFactory.releaseAll();
     
 
-    var featuredAnimationInterfaceFactoryInterfaceFactory: FeaturedAnimationInterfaceFactoryInterfaceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;;
+    let featuredAnimationInterfaceFactoryInterfaceFactory: FeaturedAnimationInterfaceFactoryInterfaceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;;
     
 featuredAnimationInterfaceFactoryInterfaceFactory!.clear();
     
@@ -363,6 +363,4 @@ this.initialized= initialized;
 
 
 }
-
-
 

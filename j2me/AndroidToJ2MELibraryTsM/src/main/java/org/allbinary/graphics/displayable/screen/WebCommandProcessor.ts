@@ -42,15 +42,19 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 
 //not plain js import { LogUtil } 
 const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof LogUtil;
 
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
 
 //not plain js import { BasicArrayListD } 
 const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayListD;
 
 
 
@@ -100,12 +104,11 @@ export class WebCommandProcessor
 
     public process(midletCommandListener: CommandListener, command: Command, canvas: Canvas){
 
-        try {
-            
-    var context: Context = this.aboutCommandProcessor!.getContext() as Context;;
+ try { 
+    let context: Context = this.aboutCommandProcessor!.getContext() as Context;;
     
 
-    var intent: Intent = new Intent(context, TsUtil.getInstance()!.getClassClassLoader(this)!.loadClass(this.WEB_VIEW_ACTIVITY));;
+    let intent: Intent = new Intent(context, TsUtil.getInstance()!.getClassClassLoader(this)!.loadClass(this.WEB_VIEW_ACTIVITY));;
     
 intent.putExtra(this.aboutCommandProcessor!.URL, this.list.removeAt(0) as string);
     
@@ -113,21 +116,22 @@ intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     
 context.startActivity(intent);
     
+ }
+ catch (caught: any) {
+ if (caught instanceof ClassNotFoundException) {
+  const e = caught;
+  
 
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "process", e);
     
+
+ }
+  else { throw caught; } }
+ 
 }
 
-}
-
 
 }
-
-
 
