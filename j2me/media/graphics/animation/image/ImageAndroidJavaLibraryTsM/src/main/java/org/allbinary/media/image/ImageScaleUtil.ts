@@ -156,10 +156,10 @@ private constructor (){
     var originalBitmap: Bitmap = originalAndroidImage!.getBitmap()!;;
     
 
-    var width: number = Math.round((originalBitmap!.getWidth() *scaleX));;
+    var width: number = globalThis.Math.trunc((originalBitmap!.getWidth() *scaleX));;
     
 
-    var height: number = Math.round((originalBitmap!.getHeight() *scaleY));;
+    var height: number = globalThis.Math.trunc((originalBitmap!.getHeight() *scaleY));;
     
 
     var index: number = this.imageBasicArrayList!.indexOf(originalImage)!;;

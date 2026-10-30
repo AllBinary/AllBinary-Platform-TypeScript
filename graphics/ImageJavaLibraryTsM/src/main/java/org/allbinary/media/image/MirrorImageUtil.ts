@@ -164,7 +164,7 @@ g.dispose();
     var cellWidth: number = height;;
     
 
-    var numberOfFramesPerOrientation: number = width /cellWidth;;
+    var numberOfFramesPerOrientation: number = globalThis.Math.trunc(width /cellWidth);;
     
 
     var numberOfFrames: number = numberOfFramesPerOrientation;;

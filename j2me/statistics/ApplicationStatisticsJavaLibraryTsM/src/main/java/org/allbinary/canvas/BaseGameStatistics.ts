@@ -129,7 +129,7 @@ this.totalRefreshes++;
                         
                                     {
                                     
-    var time: number = (this.totalRefreshes /(elapsed>>this.DEFAULT_SCALE_FACTOR));;
+    var time: number = (globalThis.Math.trunc(this.totalRefreshes /(elapsed>>this.DEFAULT_SCALE_FACTOR)));;
     
 
 
@@ -196,7 +196,7 @@ totalTime= (totalTime>>this.DEFAULT_SCALE_FACTOR);
                         
                                     {
                                     
-    var framesPerSec: number = Math.round((this.totalFrames /totalTime));;
+    var framesPerSec: number = globalThis.Math.trunc((globalThis.Math.trunc(this.totalFrames /totalTime)));;
     
 
                         if(framesPerSec < 10)
@@ -214,7 +214,7 @@ this.CHAR_ARRAY[1]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[framesPer
                         
                                     {
                                     
-    var tens: number = framesPerSec /10;;
+    var tens: number = globalThis.Math.trunc(framesPerSec /10);;
     
 
     var removeTens: number = tens *10;;
@@ -235,7 +235,7 @@ this.CHAR_ARRAY[1]![1]= this.PLUS_CHAR;
                         }
                             
 
-    var refreshesPerSec: number = Math.round((this.totalRefreshes /totalTime));;
+    var refreshesPerSec: number = globalThis.Math.trunc((globalThis.Math.trunc(this.totalRefreshes /totalTime)));;
     
 
                         if(refreshesPerSec < 10)
@@ -253,12 +253,12 @@ this.CHAR_ARRAY[3]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshes
                         
                                     {
                                     
-    var tens: number = refreshesPerSec /10;;
+    var tens: number = globalThis.Math.trunc(refreshesPerSec /10);;
     
 
     var removeTens: number = tens *10;;
     
-this.CHAR_ARRAY[3]![0]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSec /10]!;
+this.CHAR_ARRAY[3]![0]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[globalThis.Math.trunc(refreshesPerSec /10)]!;
     
 this.CHAR_ARRAY[3]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSec -removeTens]!;
     
@@ -289,7 +289,7 @@ this.CHAR_ARRAY[3]![1]= this.PLUS_CHAR;
 
     var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
-totalTime= (totalTime /10000);
+totalTime= (globalThis.Math.trunc(totalTime /10000));
     
 
                         if(totalTime > 0)
@@ -299,11 +299,11 @@ totalTime= (totalTime /10000);
     
 this.STRING_ARRAY[3]= (this.totalFrames).toString();
     
-this.STRING_ARRAY[5]= (this.totalFrames /totalTime).toString();
+this.STRING_ARRAY[5]= (globalThis.Math.trunc(this.totalFrames /totalTime)).toString();
     
 this.STRING_ARRAY[7]= (this.totalRefreshes).toString();
     
-this.STRING_ARRAY[9]= (this.totalRefreshes /totalTime).toString();
+this.STRING_ARRAY[9]= (globalThis.Math.trunc(this.totalRefreshes /totalTime)).toString();
     
 
                                     }
@@ -348,7 +348,7 @@ stringBuffer!.appendlong(this.totalFrames);
     
 stringBuffer!.append(this.STRING_ARRAY[4]!);
     
-stringBuffer!.appendlong(this.totalFrames /totalTime);
+stringBuffer!.appendlong(globalThis.Math.trunc(this.totalFrames /totalTime));
     
 
                         if(this.totalRefreshes > 0)
@@ -360,7 +360,7 @@ stringBuffer!.appendlong(this.totalRefreshes);
     
 stringBuffer!.append(this.STRING_ARRAY[8]!);
     
-stringBuffer!.appendlong(this.totalRefreshes /totalTime);
+stringBuffer!.appendlong(globalThis.Math.trunc(this.totalRefreshes /totalTime));
     
 stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
     
@@ -380,7 +380,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 
     var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
-totalTime= (totalTime /1000);
+totalTime= (globalThis.Math.trunc(totalTime /1000));
     
 
                         if(totalTime > 0)

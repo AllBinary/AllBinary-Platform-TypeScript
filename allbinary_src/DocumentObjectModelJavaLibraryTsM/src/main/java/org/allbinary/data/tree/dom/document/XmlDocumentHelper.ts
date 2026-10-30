@@ -182,9 +182,7 @@ this.transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, ignoreDeclar
                                 booleanFactory!.YES
                                 :
 
-                            booleanFactory!.NO;
-
-    );
+                            booleanFactory!.NO);
     
 this.transformer.setOutputProperty(OutputKeys.INDENT, booleanFactory!.YES);
     

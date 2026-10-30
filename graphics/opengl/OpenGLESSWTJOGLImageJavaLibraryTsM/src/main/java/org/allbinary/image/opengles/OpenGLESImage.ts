@@ -139,7 +139,7 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round((this.openGLBitmap!.getHeight() *this.openGLESImageProperties!.scaleY2));
+                        return globalThis.Math.trunc((this.openGLBitmap!.getHeight() *this.openGLESImageProperties!.scaleY2));
     
 }
 
@@ -149,7 +149,7 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round((this.openGLBitmap!.getWidth() *this.openGLESImageProperties!.scaleX2));
+                        return globalThis.Math.trunc((this.openGLBitmap!.getWidth() *this.openGLESImageProperties!.scaleX2));
     
 }
 

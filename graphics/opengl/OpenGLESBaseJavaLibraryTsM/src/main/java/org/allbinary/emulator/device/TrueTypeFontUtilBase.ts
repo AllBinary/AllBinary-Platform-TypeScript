@@ -129,7 +129,7 @@ this.cellSize= this.fontSize +(6 *this.scale);
     
 this.textureSize= this.getAsTextureSize(this.CELLS_PER_ROW *this.cellSize);
     
-this.actualCellsPerRow= this.textureSize /this.cellSize;
+this.actualCellsPerRow= globalThis.Math.trunc(this.textureSize /this.cellSize);
     
 }
 

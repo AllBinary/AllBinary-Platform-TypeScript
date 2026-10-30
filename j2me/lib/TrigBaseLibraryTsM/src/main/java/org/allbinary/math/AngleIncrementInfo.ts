@@ -85,7 +85,7 @@ public constructor (angleIncrement: number){
     
 this.DOWN_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.DOWN.getValue() /this.angleIncrement);
     
-this.UP_FRAME= smallIntegerSingletonFactory!.getAt(Math.round(angleFactory!.UP.getValue()));
+this.UP_FRAME= smallIntegerSingletonFactory!.getAt(globalThis.Math.trunc(angleFactory!.UP.getValue()));
     
 this.LEFT_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.LEFT.getValue() /this.angleIncrement);
     
@@ -101,7 +101,7 @@ this.RIGHT_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.RIGHT.getVal
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.frameUtil!.getFrameAngle(frame, Math.round(this.angleIncrement));;
+                        return this.frameUtil!.getFrameAngle(frame, globalThis.Math.trunc(this.angleIncrement));;
     
 }
 

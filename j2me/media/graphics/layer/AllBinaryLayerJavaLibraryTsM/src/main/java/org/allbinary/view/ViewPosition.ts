@@ -121,7 +121,7 @@ protected constructor (x: number, y: number, z: number){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round((this.getZ() +this.allbinaryLayer!.getDepth()));
+                        return globalThis.Math.trunc((this.getZ() +this.allbinaryLayer!.getDepth()));
     
 }
 

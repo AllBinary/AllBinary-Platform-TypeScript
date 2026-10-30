@@ -118,7 +118,7 @@ this.cipher.init(Cipher.DECRYPT_MODE, this.secretKey);
                         if(value < 8 && value > 0)
                         
                                     {
-                                    array= this.byteUtil!.xorByte(array, Math.round(value));
+                                    array= this.byteUtil!.xorByte(array, globalThis.Math.trunc(value));
     
 
                                     }

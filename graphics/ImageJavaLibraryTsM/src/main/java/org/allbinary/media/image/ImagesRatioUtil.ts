@@ -176,7 +176,7 @@ ratio += (bufferedImageArray[index]!.getWidth() /bufferedImageArray[index]!.getH
                         if(ratio > imageRatio)
                         
                                     {
-                                    newWidth= Math.round((bufferedImage!.getHeight() *ratio));
+                                    newWidth= globalThis.Math.trunc((bufferedImage!.getHeight() *ratio));
     
 point.x= (newWidth -bufferedImage!.getWidth()) /2;
     
@@ -184,7 +184,7 @@ point.x= (newWidth -bufferedImage!.getWidth()) /2;
                                     }
                                 
                         else {
-                            newHeight= Math.round((bufferedImage!.getWidth() /ratio));
+                            newHeight= globalThis.Math.trunc((bufferedImage!.getWidth() /ratio));
     
 point.y= (newHeight -bufferedImage!.getHeight()) /2;
     

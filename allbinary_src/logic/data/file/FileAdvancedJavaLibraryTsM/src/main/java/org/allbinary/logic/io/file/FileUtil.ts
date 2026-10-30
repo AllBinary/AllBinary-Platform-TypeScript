@@ -743,7 +743,7 @@ stringBuffer!.append(" Total: ");
 stringBuffer!.appendint(size);
     
 
-    var portion: number = size /total +1;;
+    var portion: number = globalThis.Math.trunc(size /total) +1;;
     
 
     var start: number = portion *current;;

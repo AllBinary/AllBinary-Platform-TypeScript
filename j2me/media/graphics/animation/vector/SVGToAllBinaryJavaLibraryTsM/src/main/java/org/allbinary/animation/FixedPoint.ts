@@ -49,7 +49,7 @@ export class FixedPoint
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round((val *65536.0));
+                        return globalThis.Math.trunc((val *65536.0));
     
 }
 
@@ -59,7 +59,7 @@ export class FixedPoint
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round((val *65536.0));
+                        return globalThis.Math.trunc((val *65536.0));
     
 }
 
@@ -69,7 +69,7 @@ export class FixedPoint
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(((a *b)>>16));
+                        return globalThis.Math.trunc(((a *b)>>16));
     
 }
 
@@ -79,7 +79,7 @@ export class FixedPoint
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round((((a)<<16) /b));
+                        return globalThis.Math.trunc((globalThis.Math.trunc(((a)<<16) /b)));
     
 }
 

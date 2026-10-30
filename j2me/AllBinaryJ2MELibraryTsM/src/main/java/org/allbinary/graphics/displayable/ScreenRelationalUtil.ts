@@ -109,7 +109,7 @@ export class ScreenRelationalUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round((this.getScaleWH(aWidth, aHeight) *aHeight));
+                        return globalThis.Math.trunc((this.getScaleWH(aWidth, aHeight) *aHeight));
     
 }
 
@@ -119,7 +119,7 @@ export class ScreenRelationalUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round((this.getScaleWHA(aWidth, aHeight, add) *aHeight));
+                        return globalThis.Math.trunc((this.getScaleWHA(aWidth, aHeight, add) *aHeight));
     
 }
 

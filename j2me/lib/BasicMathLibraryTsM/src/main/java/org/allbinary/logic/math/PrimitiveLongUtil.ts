@@ -159,7 +159,7 @@ this.charArray= new Array(this.maxDigits);
         while(div >= 1)
         {
 
-    var digit: number = (value -lastValue) /div;;
+    var digit: number = globalThis.Math.trunc((value -lastValue) /div);;
     
 
                         if(digit >= 0 && digit < 10)
@@ -183,7 +183,7 @@ lastValue += digit *div;
 
                                     }
                                 
-div= div /10;
+div= globalThis.Math.trunc(div /10);
     
 }
 

@@ -98,7 +98,7 @@ export class BasicColorFactory
 
     public createInstanceARGB(alphaValue: number, r: number, g: number, b: number, name: string): BasicColor{
 
-    var ALPHA_MASK: number = Math.round(0xFF000000);;
+    var ALPHA_MASK: number = globalThis.Math.trunc(0xFF000000);;
     
 
 

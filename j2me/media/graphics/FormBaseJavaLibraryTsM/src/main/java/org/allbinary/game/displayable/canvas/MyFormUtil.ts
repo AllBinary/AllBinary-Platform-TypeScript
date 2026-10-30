@@ -117,9 +117,7 @@ export class MyFormUtil
                                 2
                                 :
 
-                            3;
-
-    ;;
+                            3;;
     
 
     var width: number = MyFontProcessor.defaultStringWidth(font, TOTAL_CHAR_WIDTH)!;;

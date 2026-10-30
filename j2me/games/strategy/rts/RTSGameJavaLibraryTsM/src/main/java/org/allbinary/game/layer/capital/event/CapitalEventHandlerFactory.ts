@@ -72,7 +72,7 @@ CapitalEventHandlerFactory.capitalEventHandlerArray[index]= new CapitalEventHand
             
     public static getInstance(groupInterface: Group): CapitalEventHandler{
 
-    var groupId: number = Math.round(groupInterface!.getGroupId());;
+    var groupId: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
     
 
 

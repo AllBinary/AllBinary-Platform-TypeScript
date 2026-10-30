@@ -552,7 +552,7 @@ this.totalVisited++;
     var size: number = this.getSize()!;;
     
 
-    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /Math.round(basicDecimal!.getUnscaled());;
+    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /globalThis.Math.trunc(basicDecimal!.getUnscaled());;
     
 
     var numberNotVisited: number = this.getSize() -1 -this.totalVisited;;

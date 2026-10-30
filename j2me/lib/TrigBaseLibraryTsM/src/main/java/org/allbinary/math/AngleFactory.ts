@@ -112,7 +112,7 @@ LogUtil.getInstance()!.putF(stringMaker!.toString(), "main", "main");
 
     public readonly QUARTER_TOTAL_ANGLE: number = 90;
 
-    private readonly angleArray: Angle[] = new Array(Math.round(this.TOTAL_ANGLE));
+    private readonly angleArray: Angle[] = new Array(globalThis.Math.trunc(this.TOTAL_ANGLE));
 
     private readonly NEGATIVE_ONE: number =  -1;
 
@@ -202,7 +202,7 @@ this.angleArray[index]= new Angle(index);
 
     public getAt(index: number): Angle{
 
-    var adjustedIndex: number = Math.round(this.frameUtil!.adjustAngleToFrameAngle(index));;
+    var adjustedIndex: number = globalThis.Math.trunc(this.frameUtil!.adjustAngleToFrameAngle(index));;
     
 
 

@@ -97,7 +97,7 @@ private constructor (){
 
             super();
         
-    var TOTAL_ANGLE: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);;
+    var TOTAL_ANGLE: number = globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE);;
     
 
     var MAX_VALUE: number = (Integer.MAX_VALUE);;
@@ -2324,7 +2324,7 @@ this.noDecimalTan[0]=  -174;
                                     
     var dxl: number = (dx);;
     
-ratio= this.SCALE *dxl /dy;
+ratio= globalThis.Math.trunc(this.SCALE *dxl /dy);
     
 
                         if(dx <= 0 && dy < 0)
@@ -2536,16 +2536,16 @@ stringBuffer!.appendint(dy);
 PreLogUtil.put(stringMaker!.append("screenX: ")!.appendint(screenX)!.append(" screenY: ")!.appendint(screenY)!.append(" targetX: ")!.appendint(targetX)!.append(" targetY: ")!.appendint(targetY)!.toString(), this, METHOD_NAME);
     
 
-    var targetX2: number = Math.round( -targetX);;
+    var targetX2: number = globalThis.Math.trunc( -targetX);;
     
 
-    var targetY2: number = Math.round( -targetY);;
+    var targetY2: number = globalThis.Math.trunc( -targetY);;
     
 
-    var screenX2: number = Math.round( -screenX);;
+    var screenX2: number = globalThis.Math.trunc( -screenX);;
     
 
-    var screenY2: number = Math.round( -screenY);;
+    var screenY2: number = globalThis.Math.trunc( -screenY);;
     
 
     var dx: number[] = new Array(4);;
@@ -2594,7 +2594,7 @@ dy[3]= (screenY2 -targetY2);
         {
 angleOfTarget= this.antiTan(dx[index]!, dy[index2]!);
     
-angle= angleFactory!.getAt(Math.round(angleOfTarget));
+angle= angleFactory!.getAt(globalThis.Math.trunc(angleOfTarget));
     
 stringMaker!.delete(0, stringMaker!.length());
     

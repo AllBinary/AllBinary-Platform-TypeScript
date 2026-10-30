@@ -209,10 +209,10 @@ ForcedLogUtil.log(message +motionEvent!.getPointerCount(), this);
     var scalableListener: ScalableListener = this.displayInfo!.getScalableListener()!;;
     
 
-    var x: number = Math.round(((motionEvent!.getX(pointerIndex) -this.displayInfo!.getLeft()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
+    var x: number = globalThis.Math.trunc(((motionEvent!.getX(pointerIndex) -this.displayInfo!.getLeft()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
     
 
-    var y: number = Math.round(((motionEvent!.getY(pointerIndex) -this.displayInfo!.getTop()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
+    var y: number = globalThis.Math.trunc(((motionEvent!.getY(pointerIndex) -this.displayInfo!.getTop()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
     
 this.motionRecognizerArray[pointerId]!.processStartMotionEvent(x, y, motionEvent!.getDeviceId(), 0);
     
@@ -246,10 +246,10 @@ this.motionRecognizerArray[pointerId]!.processStartMotionEvent(x, y, motionEvent
     var scalableListener: ScalableListener = this.displayInfo!.getScalableListener()!;;
     
 
-    var x: number = Math.round(((motionEvent!.getX(pointerIndex) -this.displayInfo!.getLeft()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
+    var x: number = globalThis.Math.trunc(((motionEvent!.getX(pointerIndex) -this.displayInfo!.getLeft()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
     
 
-    var y: number = Math.round(((motionEvent!.getY(pointerIndex) -this.displayInfo!.getTop()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
+    var y: number = globalThis.Math.trunc(((motionEvent!.getY(pointerIndex) -this.displayInfo!.getTop()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
     
 this.motionRecognizerArray[pointerId]!.processEndMotionEvent(x, y, motionEvent!.getDeviceId(), 0);
     
@@ -283,10 +283,10 @@ this.motionRecognizerArray[pointerId]!.processEndMotionEvent(x, y, motionEvent!.
     var scalableListener: ScalableListener = this.displayInfo!.getScalableListener()!;;
     
 
-    var x: number = Math.round(((motionEvent!.getX(pointerIndex) -this.displayInfo!.getLeft()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
+    var x: number = globalThis.Math.trunc(((motionEvent!.getX(pointerIndex) -this.displayInfo!.getLeft()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
     
 
-    var y: number = Math.round(((motionEvent!.getY(pointerIndex) -this.displayInfo!.getTop()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
+    var y: number = globalThis.Math.trunc(((motionEvent!.getY(pointerIndex) -this.displayInfo!.getTop()) /scalableListener!.getRatio(this.displayInfo!.getRatio())));;
     
 this.motionRecognizerArray[pointerId]!.processDraggedMotionEvent(x, y, motionEvent!.getDeviceId(), 0);
     

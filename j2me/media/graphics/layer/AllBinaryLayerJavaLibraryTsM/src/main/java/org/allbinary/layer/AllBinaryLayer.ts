@@ -186,7 +186,7 @@ this.viewPosition!.setAllbinaryLayer(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round((this.getZP() +this.getDepth()));
+                        return globalThis.Math.trunc((this.getZP() +this.getDepth()));
     
 }
 
@@ -238,7 +238,7 @@ this.halfHeight= halfHeight;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(this.getDepth()) /2;
+                        return globalThis.Math.trunc(globalThis.Math.trunc(this.getDepth()) /2);
     
 }
 

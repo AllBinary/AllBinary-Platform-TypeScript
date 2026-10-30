@@ -66,7 +66,7 @@ export class PointHelper
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PointFactory.getInstance(Math.round(x), Math.round(y));;
+                        return PointFactory.getInstance(globalThis.Math.trunc(x), globalThis.Math.trunc(y));;
     
 }
 

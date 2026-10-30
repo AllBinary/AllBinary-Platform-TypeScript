@@ -286,7 +286,7 @@ image3.addCallback(callback);
 
         try {
             
-    var image2: Image = Image.createImageWH(Math.round(image3.width()), Math.round(image3.height()))!;;
+    var image2: Image = Image.createImageWH(globalThis.Math.trunc(image3.width()), globalThis.Math.trunc(image3.height()))!;;
     
 
     var graphics: Graphics = image2.getGraphics()!;;

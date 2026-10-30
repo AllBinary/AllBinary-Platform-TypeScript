@@ -203,7 +203,7 @@ this.icon= new Array(bufferedImageArray!.length);
     var oldRatio: number = width /height;;
     
 
-    var newHeight: number = Math.round((newWidth /oldRatio));;
+    var newHeight: number = globalThis.Math.trunc((newWidth /oldRatio));;
     
 
     var iconBufferedImage: BufferedImage = ImageUtil.getInstance()!.createBufferedImage(bufferedImageArray[index]!, newWidth, newHeight, true)!;;

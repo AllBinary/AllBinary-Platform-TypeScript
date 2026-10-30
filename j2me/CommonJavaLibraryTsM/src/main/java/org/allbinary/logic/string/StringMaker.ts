@@ -264,8 +264,6 @@ this.charArray= copy;
                                 :
 
                             value2;
-
-    ;
     
 }
 

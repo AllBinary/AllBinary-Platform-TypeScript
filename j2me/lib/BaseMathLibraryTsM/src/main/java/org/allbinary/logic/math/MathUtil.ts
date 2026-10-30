@@ -50,7 +50,7 @@ export class MathUtil
 
         while(digits > 0)
         {
-digits= digits /10;
+digits= globalThis.Math.trunc(digits /10);
     
 total++;
     
@@ -83,14 +83,14 @@ total++;
     var accumulated: number = value>>1;;
     
 
-    var result: number = (accumulated +(value /accumulated))>>1;;
+    var result: number = (accumulated +(globalThis.Math.trunc(value /accumulated)))>>1;;
     
 
         do
         {
 accumulated= result;
     
-result= (accumulated +(value /accumulated))>>1;
+result= (accumulated +(globalThis.Math.trunc(value /accumulated)))>>1;
     
 }
 
@@ -168,8 +168,6 @@ result= (result +(x /result)) /2;
                                 :
 
                             value;
-
-    ;
     
 }
 
@@ -185,8 +183,6 @@ result= (result +(x /result)) /2;
                                 :
 
                             value;
-
-    ;
     
 }
 
@@ -202,8 +198,6 @@ result= (result +(x /result)) /2;
                                 :
 
                             value2;
-
-    ;
     
 }
 
@@ -219,8 +213,6 @@ result= (result +(x /result)) /2;
                                 :
 
                             value2;
-
-    ;
     
 }
 

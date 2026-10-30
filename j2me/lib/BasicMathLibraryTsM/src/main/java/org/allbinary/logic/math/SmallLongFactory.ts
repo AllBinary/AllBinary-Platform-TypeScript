@@ -188,7 +188,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.INTEGER_ARRAY[(Math.round(index)) +this.NEGATIVE_MAX]!;
+                        return this.INTEGER_ARRAY[(globalThis.Math.trunc(index)) +this.NEGATIVE_MAX]!;
     
 }
 

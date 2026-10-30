@@ -149,10 +149,10 @@ colorBufferList!.set(index, this.basicColor);
     var col: number= 0;;
     
 
-    var w: number = width /segsW;;
+    var w: number = globalThis.Math.trunc(width /segsW);;
     
 
-    var h: number = height /segsH;;
+    var h: number = globalThis.Math.trunc(height /segsH);;
     
 
     var width5: number = width /2;;

@@ -177,7 +177,7 @@ this.FAKE_WAYPOINT_LAYER= fakeWaypoint;
 
 
     initRange(weaponRange: number){
-this.longWeaponRange= weaponRange /2;
+this.longWeaponRange= globalThis.Math.trunc(weaponRange /2);
     
 }
 

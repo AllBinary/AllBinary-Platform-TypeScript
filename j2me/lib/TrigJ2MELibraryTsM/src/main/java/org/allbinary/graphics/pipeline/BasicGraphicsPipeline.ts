@@ -133,7 +133,7 @@ this.pointBasicArrayList= newBasicArrayList;
                 //@Throws(Exception.constructor)
             
     public rotateToAngle(angle: Angle){
-this.rotate(Math.round(angle.getValue()));
+this.rotate(globalThis.Math.trunc(angle.getValue()));
     
 }
 
@@ -196,7 +196,7 @@ secondX= (secondPoint!.getX() *cos) -y;
     
 secondY= (secondPoint!.getX() *sin) +(secondPoint!.getY() *cos);
     
-point= pointFactory!.createXY(Math.round(secondX) /10000, Math.round(secondY) /10000);
+point= pointFactory!.createXY(globalThis.Math.trunc(globalThis.Math.trunc(secondX) /10000), globalThis.Math.trunc(globalThis.Math.trunc(secondY) /10000));
     
 newBasicArrayList!.add(point);
     

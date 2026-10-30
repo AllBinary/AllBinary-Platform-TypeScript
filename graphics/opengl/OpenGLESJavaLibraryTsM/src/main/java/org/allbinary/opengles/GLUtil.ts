@@ -146,7 +146,7 @@ b.order(ByteOrder.nativeOrder());
 
         while(byteBuffer!.hasRemaining())
         {
-unsigned= (Math.round(byteBuffer!.get()))&0xFF;
+unsigned= (globalThis.Math.trunc(byteBuffer!.get()))&0xFF;
     
 v= (unsigned) /255;
     

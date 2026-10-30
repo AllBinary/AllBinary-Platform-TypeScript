@@ -301,7 +301,7 @@ this.nextSongSound= NoSound.getInstance();
     
 PreLogUtil.put(new StringMaker().append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
     
-this.timeDelayHelper!.delay= Math.round(duration);
+this.timeDelayHelper!.delay= globalThis.Math.trunc(duration);
     
 this.currentIntent!.putExtra(this.musicStrings!.SONG_EXTRA, this.resourceUtil!.getResourceId(this.currentSongSound!.getResource())!.intValue());
     

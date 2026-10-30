@@ -54,7 +54,7 @@ export class RectangleCollisionUtil
 
     public static isCollision(rectangle: Rectangle, point: GPoint): boolean{
 
-                        if(point.getX() > (Math.round(rectangle.x) +rectangle.getWidth()) || point.getY() > (Math.round(rectangle.y) +rectangle.getHeight()) || point.getX() < rectangle.x || point.getY() < rectangle.y)
+                        if(point.getX() > (globalThis.Math.trunc(rectangle.x) +rectangle.getWidth()) || point.getY() > (globalThis.Math.trunc(rectangle.y) +rectangle.getHeight()) || point.getX() < rectangle.x || point.getY() < rectangle.y)
                         
                                     {
                                     

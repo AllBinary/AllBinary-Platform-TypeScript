@@ -438,7 +438,7 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "integerArrayV
     var aChar: string = text[index]!;;
     
 
-                        if(aChar == '&')
+                        if(aChar == '&'.charCodeAt(0))
                         
                                     {
                                     

@@ -151,7 +151,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
 
     public isLetter(charValue: string): boolean{
 
-    var value: number = Math.round(charValue);;
+    var value: number = globalThis.Math.trunc(charValue);;
     
 
 

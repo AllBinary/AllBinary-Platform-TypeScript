@@ -92,8 +92,6 @@ public constructor (isHighestBest: boolean){
                                 :
 
                             0;
-
-    ;
     
 }
 

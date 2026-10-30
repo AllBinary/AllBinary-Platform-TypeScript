@@ -218,7 +218,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
     var temp: number= 0;;
     
 
-    var size: number = length /2;;
+    var size: number = globalThis.Math.trunc(length /2);;
     
 
 
@@ -256,7 +256,7 @@ intArray[length -index]= temp;
 
 
                         for (
-    var y: number = 0;y <= length /2; y++)
+    var y: number = 0;y <= globalThis.Math.trunc(length /2); y++)
         {
 
 

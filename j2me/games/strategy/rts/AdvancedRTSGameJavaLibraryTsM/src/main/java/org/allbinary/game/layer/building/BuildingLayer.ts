@@ -432,7 +432,7 @@ this.indexedButShouldBeRotationAnimationInterface!.nextFrame();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(total);
+                        return globalThis.Math.trunc(total);
     
 }
 
@@ -447,7 +447,7 @@ this.logUtil!.putF("Cost: " +downgradeCost, this, "getDowngradeCost");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(downgradeCost) *9 /10;
+                        return globalThis.Math.trunc(globalThis.Math.trunc(downgradeCost) *9 /10);
     
 }
 
@@ -460,7 +460,7 @@ this.logUtil!.putF("Cost: " +downgradeCost, this, "getDowngradeCost");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(upgradeCost);
+                        return globalThis.Math.trunc(upgradeCost);
     
 }
 

@@ -166,7 +166,7 @@ this.timeDelayHelper= NoTimeDelayHelper.SINGLETON;
                                     this.max= 1;
     
 
-                        if(this.healthScale -this.healthInterface!.getHealth() > (this.healthScale *2) /3)
+                        if(this.healthScale -this.healthInterface!.getHealth() > globalThis.Math.trunc((this.healthScale *2) /3))
                         
                                     {
                                     this.timeDelayHelper= this.slowBeatTimeDelayHelper;
@@ -175,7 +175,7 @@ this.timeDelayHelper= NoTimeDelayHelper.SINGLETON;
                                     }
                                 
                              else 
-                        if(this.healthScale -this.healthInterface!.getHealth() > this.healthScale /3)
+                        if(this.healthScale -this.healthInterface!.getHealth() > globalThis.Math.trunc(this.healthScale /3))
                         
                                     {
                                     this.timeDelayHelper= this.mediumBeatTimeDelayHelper;

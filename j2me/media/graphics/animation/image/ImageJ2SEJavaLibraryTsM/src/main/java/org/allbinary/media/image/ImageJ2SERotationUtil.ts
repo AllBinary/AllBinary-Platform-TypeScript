@@ -213,7 +213,7 @@ bufferedImageArray[index]= this.getRotatedImageRadians(bufferedImage, radians);
 
                                     }
                                 
-rows= (size /columns);
+rows= (globalThis.Math.trunc(size /columns));
     
 
                         if(size % columns != 0)
@@ -252,7 +252,7 @@ rows= (size /columns);
     var index: number = 0;index < size; index++)
         {
 
-                        if(index /9 != 0 && index % 9 == 0)
+                        if(globalThis.Math.trunc(index /9) != 0 && index % 9 == 0)
                         
                                     {
                                     rowIndex++;

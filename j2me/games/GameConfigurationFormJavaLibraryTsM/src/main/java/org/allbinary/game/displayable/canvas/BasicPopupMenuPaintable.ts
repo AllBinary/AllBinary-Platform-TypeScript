@@ -231,9 +231,7 @@ this.offset= (this.heightOffset>>1) +(SWTJOGLProcessor.getInstance()!.isJOGL()
                                 4
                                 :
 
-                            0;
-
-    );
+                            0);
     
 this.myFontProcessor= MyFontProcessor.getInstance();
     

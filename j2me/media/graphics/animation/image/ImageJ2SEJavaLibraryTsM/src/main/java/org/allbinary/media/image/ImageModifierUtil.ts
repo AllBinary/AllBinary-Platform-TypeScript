@@ -258,7 +258,7 @@ newBufferedImage!.setRGB(index, index2, (ax<<24) | (rx<<16) | (gx<<8) | (bx));
 
     public setAlpha(unusedOriginalImage: Image, image: Image, imageIndex: number, alphaInt: number){
 
-    var alpha: number = alphaInt;;
+    var alpha: number = ((alphaInt) << 24 >> 24);;
     
 
     var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;;

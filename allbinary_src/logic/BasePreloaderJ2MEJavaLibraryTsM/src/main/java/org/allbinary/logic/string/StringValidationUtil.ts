@@ -109,7 +109,7 @@ private constructor (){
     var digit: string = value[index]!;;
     
 
-                        if(!this.isNumberFromChar(digit) && digit != '.')
+                        if(!this.isNumberFromChar(digit) && digit != '.'.charCodeAt(0))
                         
                                     {
                                     
@@ -122,7 +122,7 @@ private constructor (){
                                     }
                                 
 
-                        if(digit == '.')
+                        if(digit == '.'.charCodeAt(0))
                         
                                     {
                                     numberOfDecimalPoints++;
@@ -156,7 +156,7 @@ private constructor (){
 
     public isNumberFromChar(digit: string): boolean{
 
-                        if(digit != '0' && digit != '1' && digit != '2' && digit != '3' && digit != '4' && digit != '5' && digit != '6' && digit != '7' && digit != '8' && digit != '9')
+                        if(digit != '0'.charCodeAt(0) && digit != '1'.charCodeAt(0) && digit != '2'.charCodeAt(0) && digit != '3'.charCodeAt(0) && digit != '4'.charCodeAt(0) && digit != '5'.charCodeAt(0) && digit != '6'.charCodeAt(0) && digit != '7'.charCodeAt(0) && digit != '8'.charCodeAt(0) && digit != '9'.charCodeAt(0))
                         
                                     {
                                     

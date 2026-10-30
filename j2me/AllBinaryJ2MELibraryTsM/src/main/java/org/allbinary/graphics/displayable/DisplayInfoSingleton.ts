@@ -323,9 +323,9 @@ stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(this.displayRatio)!.toString(), this, this.SET_LAST_SIZE_METHOD_NAME);
     
-aLastWidth= Math.round((aLastWidth *this.displayRatio));
+aLastWidth= globalThis.Math.trunc((aLastWidth *this.displayRatio));
     
-aLastHeight= Math.round((aLastHeight *this.displayRatio));
+aLastHeight= globalThis.Math.trunc((aLastHeight *this.displayRatio));
     
 this.scalableListener!.scale(this.ratio);
     
@@ -356,9 +356,9 @@ stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(this.displayRatio)!.toString(), this, this.SET_LAST_SIZE_METHOD_NAME);
     
-aLastWidth= Math.round((aLastWidth *this.displayRatio));
+aLastWidth= globalThis.Math.trunc((aLastWidth *this.displayRatio));
     
-aLastHeight= Math.round((aLastHeight *this.displayRatio));
+aLastHeight= globalThis.Math.trunc((aLastHeight *this.displayRatio));
     
 this.scalableListener!.scale(this.ratio);
     
@@ -592,9 +592,9 @@ stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(this.displayRatio)!.toString(), this, this.commonStrings!.UPDATE);
     
-aLastWidth= Math.round((aLastWidth *this.displayRatio));
+aLastWidth= globalThis.Math.trunc((aLastWidth *this.displayRatio));
     
-aLastHeight= Math.round((aLastHeight *this.displayRatio));
+aLastHeight= globalThis.Math.trunc((aLastHeight *this.displayRatio));
     
 this.scalableListener!.scale(this.ratio);
     
@@ -625,9 +625,9 @@ stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(this.displayRatio)!.toString(), this, this.commonStrings!.UPDATE);
     
-aLastWidth= Math.round((aLastWidth *this.displayRatio));
+aLastWidth= globalThis.Math.trunc((aLastWidth *this.displayRatio));
     
-aLastHeight= Math.round((aLastHeight *this.displayRatio));
+aLastHeight= globalThis.Math.trunc((aLastHeight *this.displayRatio));
     
 this.scalableListener!.scale(this.ratio);
     
@@ -762,9 +762,7 @@ stringBuffer!.append(this.isPortrait()
                                 this.PORTRAIT
                                 :
 
-                            this.LANDSCAPE;
-
-    );
+                            this.LANDSCAPE);
     
 
 

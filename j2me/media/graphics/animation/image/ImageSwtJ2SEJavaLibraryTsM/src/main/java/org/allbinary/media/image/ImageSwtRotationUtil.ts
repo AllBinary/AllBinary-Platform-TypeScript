@@ -187,7 +187,7 @@ private constructor (){
                         for (
     var index: number = 0;index < size; index++)
         {
-angle= (totalAngle /size) *index;
+angle= (globalThis.Math.trunc(totalAngle /size)) *index;
     
 bufferedImageArray[index]= this.getRotatedImage(bufferedImage, angle);
     
@@ -222,7 +222,7 @@ bufferedImageArray[index]= this.getRotatedImage(bufferedImage, angle);
 
                                     }
                                 
-rows= (size /columns);
+rows= (globalThis.Math.trunc(size /columns));
     
 
                         if(size % columns != 0)
@@ -266,7 +266,7 @@ gc.setInterpolation(SWT.HIGH);
     var index: number = 0;index < size; index++)
         {
 
-                        if(index /9 != 0 && index % 9 == 0)
+                        if(globalThis.Math.trunc(index /9) != 0 && index % 9 == 0)
                         
                                     {
                                     rowIndex++;

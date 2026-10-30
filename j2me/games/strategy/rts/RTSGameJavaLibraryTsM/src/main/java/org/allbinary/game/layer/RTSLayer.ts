@@ -640,7 +640,7 @@ this.hackVerticleBuild++;
 
                                     }
                                 
-this.percentCompleteP= 100 *this.hackVerticleBuild /this.BUILD_VALUE;
+this.percentCompleteP= globalThis.Math.trunc(100 *this.hackVerticleBuild /this.BUILD_VALUE);
     
 this.getHudPaintable()!.updateInfo();
     

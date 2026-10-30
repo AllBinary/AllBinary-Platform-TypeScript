@@ -224,7 +224,7 @@ this.rand= new Random(seed);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round((this.rand.nextInt() /div));
+                        return globalThis.Math.trunc((this.rand.nextInt() /div));
     
 }
 

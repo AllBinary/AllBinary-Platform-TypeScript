@@ -74,7 +74,7 @@ public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
             
     var progressCanvas: AndroidBasicTitleProgressBar = this.progressCanvas as AndroidBasicTitleProgressBar;;
     
-this.midletActivity!.onSetProgress(Math.round((this.progressCanvas!.getValue() +this.progressCanvas!.getMaxValue() /progressCanvas!.getPortion())), this.progressCanvas!.getText());
+this.midletActivity!.onSetProgress(globalThis.Math.trunc((this.progressCanvas!.getValue() +this.progressCanvas!.getMaxValue() /progressCanvas!.getPortion())), this.progressCanvas!.getText());
     
 
                 //: 

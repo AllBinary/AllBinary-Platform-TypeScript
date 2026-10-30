@@ -221,9 +221,9 @@ value= Integer.parseInt(inputStream!.readUTF());
     
 inputId= value;
     
-gameActionInput= gameKeyFactory!.getGameKey(Math.round(gameActionInputId));
+gameActionInput= gameKeyFactory!.getGameKey(globalThis.Math.trunc(gameActionInputId));
     
-input= inputFactory!.getInstanceById(Math.round(inputId));
+input= inputFactory!.getInstanceById(globalThis.Math.trunc(inputId));
     
 
                         if(input == inputFactory!.NO_INPUT || gameActionInput == 

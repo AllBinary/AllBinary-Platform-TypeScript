@@ -232,7 +232,7 @@ progressCanvas!.endIfPaintedSinceStart();
                                     }
                                 
                              else 
-                        if(totalLoaded > size /12)
+                        if(totalLoaded > globalThis.Math.trunc(size /12))
                         
                                     {
                                     

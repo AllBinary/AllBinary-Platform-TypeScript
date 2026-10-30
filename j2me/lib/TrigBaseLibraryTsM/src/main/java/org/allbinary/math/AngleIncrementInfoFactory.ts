@@ -60,11 +60,11 @@ export class AngleIncrementInfoFactory
 }
 
 
-    private readonly angleIncrementInfo: AngleIncrementInfo[] = new Array(Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE));
+    private readonly angleIncrementInfo: AngleIncrementInfo[] = new Array(globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE));
 
     public getAt(angleIncrement: number): AngleIncrementInfo{
 
-    var halfAngleIncrement: number = (Math.round(angleIncrement)>>1);;
+    var halfAngleIncrement: number = (globalThis.Math.trunc(angleIncrement)>>1);;
     
 
     var angleIncrementInfo: AngleIncrementInfo;;

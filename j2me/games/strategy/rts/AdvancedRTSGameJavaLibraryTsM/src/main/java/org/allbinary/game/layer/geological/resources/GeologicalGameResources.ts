@@ -32,6 +32,9 @@ import { AndroidUtil } from '../../../../../../org/allbinary/AndroidUtil.js';
 import { GraphicsFeatureFactory } from '../../../../../../org/allbinary/game/configuration/feature/GraphicsFeatureFactory.js';
 //not GWT import const GraphicsFeatureFactory
 
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
 
 
 
@@ -54,14 +57,23 @@ import { GraphicsFeatureFactory } from '../../../../../../org/allbinary/game/con
 export class GeologicalGameResources extends BasicGameResources {
         
 
-    private static readonly instance: GeologicalGameResources = new GeologicalGameResources();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): BasicGameResources{
+
+                        if(GeologicalGameResources.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    GeologicalGameResources.instance= new GeologicalGameResources();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GeologicalGameResources.instance;
+                        return GeologicalGameResources.instance as GeologicalGameResources;
     
 }
 

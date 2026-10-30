@@ -72,7 +72,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.adjustAngleToFrameAngle(Math.round(angle)) /angleIncrement;
+                        return this.adjustAngleToFrameAngle(globalThis.Math.trunc(angle)) /angleIncrement;
     
 }
 

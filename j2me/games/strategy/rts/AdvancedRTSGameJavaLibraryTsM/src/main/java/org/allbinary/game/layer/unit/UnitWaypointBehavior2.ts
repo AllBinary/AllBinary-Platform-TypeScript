@@ -194,8 +194,6 @@ this.waypointPathRunnable= J2MEUtil.isHTML()
                                 :
 
                             new WaypointPathRunnable();
-
-    ;
     
 }
 

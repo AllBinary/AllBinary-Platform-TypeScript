@@ -112,10 +112,10 @@ image.getRGB(originalData, 0, image.getWidth(), 0, 0, image.getWidth(), image.ge
     var scaledData: number[] = new Array(width *height);;
     
 
-    var heightRatioFactor: number = (8 *sourceHeight) /height;;
+    var heightRatioFactor: number = globalThis.Math.trunc((8 *sourceHeight) /height);;
     
 
-    var widthRatioFactor: number = (8 *sourceWidth) /width;;
+    var widthRatioFactor: number = globalThis.Math.trunc((8 *sourceWidth) /width);;
     
 
     var scaledIndex: number = scaledData!.length -1;;

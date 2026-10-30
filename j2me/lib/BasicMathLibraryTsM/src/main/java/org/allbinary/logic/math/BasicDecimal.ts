@@ -169,7 +169,7 @@ this.updateScaled();
 
 
     public divideint(value: number){
-this.units= this.units /value;
+this.units= globalThis.Math.trunc(this.units /value);
     
 this.updateScaled();
     
@@ -177,7 +177,7 @@ this.updateScaled();
 
 
     public dividelong(value: number){
-this.units= this.units /value;
+this.units= globalThis.Math.trunc(this.units /value);
     
 this.updateScaled();
     
@@ -205,7 +205,7 @@ this.updateScaled();
     private scaled: number= 0;
 
     updateScaled(){
-this.scaled= Math.round((this.units /this.factorValue));
+this.scaled= globalThis.Math.trunc((globalThis.Math.trunc(this.units /this.factorValue)));
     
 }
 

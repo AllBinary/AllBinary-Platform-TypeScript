@@ -269,7 +269,7 @@ this.nextSongSound= NoSound.getInstance();
 
     var duration: number = this.currentSongSound!.getDuration();;
     
-this.timeDelayHelper!.delay= Math.round(duration);
+this.timeDelayHelper!.delay= globalThis.Math.trunc(duration);
     
 
                         if(duration <= 0)

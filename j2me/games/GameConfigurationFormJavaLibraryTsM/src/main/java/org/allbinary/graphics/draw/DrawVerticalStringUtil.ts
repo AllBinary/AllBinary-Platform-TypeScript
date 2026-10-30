@@ -132,7 +132,7 @@ this.offsetY= 0;
                                     }
                                 
                         else {
-                            this.offsetY= 2 +(this.charHeight *2 /3);
+                            this.offsetY= 2 +(globalThis.Math.trunc(this.charHeight *2 /3));
     
 
                         }
@@ -244,7 +244,7 @@ PreLogUtil.put(new StringMaker().append("Exception: stringLength: ")!.appendint(
                         if(width > maxWidth)
                         
                                     {
-                                    minTotalLines= (width /maxWidth) +1;
+                                    minTotalLines= (globalThis.Math.trunc(width /maxWidth)) +1;
     
 
                                     }

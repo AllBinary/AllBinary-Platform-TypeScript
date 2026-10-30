@@ -139,7 +139,7 @@ PreLogUtil.put(new StringMaker().append("Exception: stringLength: ")!.appendint(
                         if(width > maxWidth)
                         
                                     {
-                                    minTotalLines= (width /maxWidth) +1;
+                                    minTotalLines= (globalThis.Math.trunc(width /maxWidth)) +1;
     
 
                                     }

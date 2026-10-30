@@ -191,11 +191,11 @@ bx= (imageData!.data[index3 +2]&0xFF);
                         if(rx != 0 || gx != 0 || bx != 0)
                         
                                     {
-                                    imageData!.data[index3]= r;
+                                    imageData!.data[index3]= ((r) << 24 >> 24);
     
-imageData!.data[index3 +1]= g;
+imageData!.data[index3 +1]= ((g) << 24 >> 24);
     
-imageData!.data[index3 +2]= b;
+imageData!.data[index3 +2]= ((b) << 24 >> 24);
     
 
                                     }
@@ -316,11 +316,11 @@ gx *= g;
     
 bx *= b;
     
-imageData!.data[index]= rx;
+imageData!.data[index]= ((rx) << 24 >> 24);
     
-imageData!.data[index +1]= gx;
+imageData!.data[index +1]= ((gx) << 24 >> 24);
     
-imageData!.data[index +2]= bx;
+imageData!.data[index +2]= ((bx) << 24 >> 24);
     
 }
 
@@ -365,7 +365,7 @@ this.setAlphaSWT(image, alphaInt);
 
     public setAlphaSWT(image: Image, alphaInt: number){
 
-    var alpha: number = alphaInt;;
+    var alpha: number = ((alphaInt) << 24 >> 24);;
     
 
     var newBufferedImage: org.eclipse.swt.graphics.Image;;

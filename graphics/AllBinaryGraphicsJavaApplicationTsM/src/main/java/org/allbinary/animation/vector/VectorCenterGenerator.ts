@@ -176,7 +176,7 @@ this.setHeight(this.maxY -this.minY);
                                     }
                                 
 
-    var middle: number = max /2;;
+    var middle: number = globalThis.Math.trunc(max /2);;
     
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;;

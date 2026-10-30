@@ -322,10 +322,10 @@ index3--;
 }
 
 
-    var x: number = index -(countX /2);;
+    var x: number = index -(globalThis.Math.trunc(countX /2));;
     
 
-    var y: number = index2 -(countY /2);;
+    var y: number = index2 -(globalThis.Math.trunc(countY /2));;
     
 
                         if(x >= 0 && y >= 0 && x < mapData!.length && y < mapData[0]!.length)

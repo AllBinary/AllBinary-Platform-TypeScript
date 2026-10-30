@@ -95,10 +95,10 @@ private constructor (){
 
         try {
             
-    var x: number = Math.round(motionEvent!.getX());;
+    var x: number = globalThis.Math.trunc(motionEvent!.getX());;
     
 
-    var y: number = Math.round(motionEvent!.getY());;
+    var y: number = globalThis.Math.trunc(motionEvent!.getY());;
     
 
     var action: number = motionEvent!.getAction()!;;

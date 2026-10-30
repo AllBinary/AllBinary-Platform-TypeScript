@@ -180,10 +180,10 @@ private constructor (){
                                     }
                                 
 
-    var newWidth: number = Math.round((originalImage!.getWidth() *canvasScale));;
+    var newWidth: number = globalThis.Math.trunc((originalImage!.getWidth() *canvasScale));;
     
 
-    var newHeight: number = Math.round((originalImage!.getHeight() *canvasScale));;
+    var newHeight: number = globalThis.Math.trunc((originalImage!.getHeight() *canvasScale));;
     
 
                         if(resize)

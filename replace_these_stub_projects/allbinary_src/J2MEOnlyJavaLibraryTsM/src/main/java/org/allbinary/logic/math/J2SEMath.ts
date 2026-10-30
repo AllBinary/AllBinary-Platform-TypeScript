@@ -61,7 +61,7 @@ export class J2SEMath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(value);
+                        return globalThis.Math.trunc(value);
     
 }
 
@@ -77,8 +77,6 @@ export class J2SEMath
                                 :
 
                             value;
-
-    ;
     
 }
 
@@ -94,8 +92,6 @@ export class J2SEMath
                                 :
 
                             value;
-
-    ;
     
 }
 

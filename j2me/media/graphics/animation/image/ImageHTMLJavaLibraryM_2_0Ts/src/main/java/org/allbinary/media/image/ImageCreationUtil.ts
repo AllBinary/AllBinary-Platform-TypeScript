@@ -89,7 +89,7 @@ private constructor (){
             
     public createImage(width: number, height: number, maxScaleX: number, maxScaleY: number): Image{
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, Math.round((width *maxScaleX)) +1, Math.round((height *maxScaleY)) +1)!;;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, globalThis.Math.trunc((width *maxScaleX)) +1, globalThis.Math.trunc((height *maxScaleY)) +1)!;;
     
 
 

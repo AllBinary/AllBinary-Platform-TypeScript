@@ -208,7 +208,7 @@ paint.setTypeface(typeface);
     
 paint.setTextSize(this.realFontSize);
     
-paint.setAlpha(Math.round(basicColor!.alpha));
+paint.setAlpha(globalThis.Math.trunc(basicColor!.alpha));
     
 paint.setColor(basicColor!.intValue());
     

@@ -208,14 +208,14 @@ rtsLayer!.select();
 }
 
 
-    private readonly MAX_RELOAD_TIME: number = Integer.MAX_VALUE /100000;
+    private readonly MAX_RELOAD_TIME: number = globalThis.Math.trunc(Integer.MAX_VALUE /100000);
 
     public getCostExponential(cost: number): number{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ((cost *cost *cost) /(cost *1000));
+                        return (globalThis.Math.trunc((cost *cost *cost) /(cost *1000)));
     
 }
 
@@ -230,7 +230,7 @@ cost= this.getCostExponential(cost);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(cost);
+                        return globalThis.Math.trunc(cost);
     
 }
 
@@ -318,7 +318,7 @@ downgradeCost += (currentWeaponCost -downgradeWeaponCost);
     
 }
 
-downgradeCost= downgradeCost *9 /10;
+downgradeCost= globalThis.Math.trunc(downgradeCost *9 /10);
     
 this.logUtil!.putF(new StringMaker().append("Total Cost: ")!.appendint(downgradeCost)!.toString(), this, "getDowngradeCost");
     

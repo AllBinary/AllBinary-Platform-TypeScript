@@ -158,8 +158,6 @@ recordStore!.getRecord(recordId, data, 0);
                                 :
 
                             data;
-
-    ;
     
 }
 
@@ -199,7 +197,7 @@ recordStore!.getRecord(recordId, data, 0);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(value);
+                        return globalThis.Math.trunc(value);
     
 }
 

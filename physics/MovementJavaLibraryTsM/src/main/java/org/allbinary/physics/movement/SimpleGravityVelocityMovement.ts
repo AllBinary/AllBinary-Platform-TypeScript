@@ -57,7 +57,7 @@ export class SimpleGravityVelocityMovement extends BasicConstantVelocityMovement
         
 
 public constructor (speedBasicDecimal: BasicDecimal){
-            super(speedBasicDecimal, new VelocityProperties(Math.round(speedBasicDecimal!.getUnscaled()), Math.round(speedBasicDecimal!.getUnscaled())));
+            super(speedBasicDecimal, new VelocityProperties(globalThis.Math.trunc(speedBasicDecimal!.getUnscaled()), globalThis.Math.trunc(speedBasicDecimal!.getUnscaled())));
                     
 
                             //For kotlin this is before the body of the constructor.

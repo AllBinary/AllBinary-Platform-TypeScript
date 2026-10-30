@@ -114,7 +114,7 @@ this.fontDebugFactory!.setFont(existingFont, graphics);
                                 
 this.hasChanged= true;
     
-this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, Math.round((this.fontSize *scaleX)));
+this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, globalThis.Math.trunc((this.fontSize *scaleX)));
     
 }
 

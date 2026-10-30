@@ -174,10 +174,10 @@ bufferedImage= bufferedImageArray[index]!;
 imageData= bufferedImage!.getImageData();
     
 
-    var newWidth: number = Math.round((imageData!.width *percent /100));;
+    var newWidth: number = globalThis.Math.trunc((imageData!.width *percent /100));;
     
 
-    var newHeight: number = Math.round((imageData!.height *percent /100));;
+    var newHeight: number = globalThis.Math.trunc((imageData!.height *percent /100));;
     
 scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWidth, newHeight, scale);
     
@@ -220,10 +220,10 @@ bufferedImage= bufferedImageArray[index]!;
 imageData= bufferedImage!.getImageData();
     
 
-    var newWidth: number = Math.round((imageData!.width *percent));;
+    var newWidth: number = globalThis.Math.trunc((imageData!.width *percent));;
     
 
-    var newHeight: number = Math.round((imageData!.height *percent));;
+    var newHeight: number = globalThis.Math.trunc((imageData!.height *percent));;
     
 scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWidth, newHeight, scale);
     

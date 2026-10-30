@@ -374,7 +374,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, 
 startIndex= index;
     
 
-        while(index < size -1 && byteArray[index] != .code'\n'.code)
+        while(index < size -1 && byteArray[index] != (('\n'.charCodeAt(0)) << 24 >> 24))
         {
 index++;
     
@@ -385,7 +385,7 @@ index++;
                         
                                     {
                                     
-                        if(index > 0 && byteArray[index -1] == .code'\r'.code)
+                        if(index > 0 && byteArray[index -1] == (('\r'.charCodeAt(0)) << 24 >> 24))
                         
                                     {
                                     returnLine= 1;

@@ -137,7 +137,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
     var weaponLayer: WeaponLayer;;
     
 
-    var increment: number = reducedWidth /(this.total -1);;
+    var increment: number = globalThis.Math.trunc(reducedWidth /(this.total -1));;
     
 
     var next: number =  -halfWidth;;
@@ -149,15 +149,15 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
                         for (
     var index: number = 0;index < this.total; index++)
         {
-sine= (next *this.noDecimalTrigTable!.sin(Math.round(angle)));
+sine= (next *this.noDecimalTrigTable!.sin(globalThis.Math.trunc(angle)));
     
-beamX= Math.round((sine /this.noDecimalTrigTable!.SCALE));
+beamX= globalThis.Math.trunc((sine /this.noDecimalTrigTable!.SCALE));
     
-cosine= (next *this.noDecimalTrigTable!.cos(Math.round(angle)));
+cosine= (next *this.noDecimalTrigTable!.cos(globalThis.Math.trunc(angle)));
     
-beamY=  -Math.round((cosine /this.noDecimalTrigTable!.SCALE));
+beamY=  -globalThis.Math.trunc((cosine /this.noDecimalTrigTable!.SCALE));
     
-weaponLayer= this.weaponLayerCircularStaticPool!.getInstanceWeaponLayer(sourceLayerInterface, x +beamX, y +beamY, 0, Math.round(angle), Math.round(otherAngle), weaponProperties, scoreableInterface);
+weaponLayer= this.weaponLayerCircularStaticPool!.getInstanceWeaponLayer(sourceLayerInterface, x +beamX, y +beamY, 0, globalThis.Math.trunc(angle), globalThis.Math.trunc(otherAngle), weaponProperties, scoreableInterface);
     
 allbinaryLayerManager!.append(weaponLayer);
     

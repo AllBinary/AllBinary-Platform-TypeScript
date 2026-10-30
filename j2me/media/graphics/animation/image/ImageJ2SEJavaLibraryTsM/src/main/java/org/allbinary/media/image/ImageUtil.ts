@@ -166,10 +166,10 @@ private constructor (){
 bufferedImage= bufferedImageArray[index]!;
     
 
-    var newWidth: number = Math.round((bufferedImage!.getWidth() *percent /100));;
+    var newWidth: number = globalThis.Math.trunc((bufferedImage!.getWidth() *percent /100));;
     
 
-    var newHeight: number = Math.round((bufferedImage!.getHeight() *percent /100));;
+    var newHeight: number = globalThis.Math.trunc((bufferedImage!.getHeight() *percent /100));;
     
 scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale);
     
@@ -207,10 +207,10 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 bufferedImage= bufferedImageArray[index]!;
     
 
-    var newWidth: number = Math.round((bufferedImage!.getWidth() *percent));;
+    var newWidth: number = globalThis.Math.trunc((bufferedImage!.getWidth() *percent));;
     
 
-    var newHeight: number = Math.round((bufferedImage!.getHeight() *percent));;
+    var newHeight: number = globalThis.Math.trunc((bufferedImage!.getHeight() *percent));;
     
 scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale);
     
@@ -374,22 +374,22 @@ graphics.drawRenderedImage(bufferedImage, affineTransform);
     var heightRatio: number = d_newHeight /height;;
     
 
-    var dx2: number = Math.round((newWidth -width));;
+    var dx2: number = globalThis.Math.trunc((newWidth -width));;
     
 
-    var dy2: number = Math.round((newHeight -height));;
+    var dy2: number = globalThis.Math.trunc((newHeight -height));;
     
 
-    var dx: number = Math.round(dx2) /2;;
+    var dx: number = globalThis.Math.trunc(globalThis.Math.trunc(dx2) /2);;
     
 
-    var dy: number = Math.round(dy2) /2;;
+    var dy: number = globalThis.Math.trunc(globalThis.Math.trunc(dy2) /2);;
     
 
-    var dx4: number = Math.round(dx2) /4;;
+    var dx4: number = globalThis.Math.trunc(globalThis.Math.trunc(dx2) /4);;
     
 
-    var dy4: number = Math.round(dy2) /4;;
+    var dy4: number = globalThis.Math.trunc(globalThis.Math.trunc(dy2) /4);;
     
 
     var newBufferedImage: BufferedImage = new BufferedImage(newWidth, newHeight, BufferedImage.TYPE_INT_ARGB_PRE);;

@@ -114,7 +114,7 @@ this.colorIndex++;
 }
 
 
-    var ALPHA_MASK: number = Math.round(0xFF000000);;
+    var ALPHA_MASK: number = globalThis.Math.trunc(0xFF000000);;
     
 basicColor= BasicColorFactory.getInstance()!.createInstanceAN(colorAsInt&ALPHA_MASK, colorAsInt&0x00FFFFFF, StringUtil.getInstance()!.EMPTY_STRING);
     

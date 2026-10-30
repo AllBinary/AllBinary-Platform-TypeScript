@@ -89,8 +89,6 @@ export class TimeTypeUtil
                                 :
 
                             this.DAY;
-
-    ;
     
 }
 
@@ -134,8 +132,6 @@ calendar.setTimeInMillis(timeInMillis);
                                 :
 
                             this.DAY;
-
-    ;
     
 }
 

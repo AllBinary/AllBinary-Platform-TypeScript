@@ -81,7 +81,7 @@ private constructor (){
         {
 currentByte= array[index]!;
     
-bytes[index]= (currentByte ^ mask);
+bytes[index]= (((currentByte ^ mask)) << 24 >> 24);
     
 index++;
     
@@ -110,7 +110,7 @@ index++;
 
         while(index < size)
         {
-bytes[index]= ~array[index];
+bytes[index]= ((~array[index]) << 24 >> 24);
     
 index++;
     

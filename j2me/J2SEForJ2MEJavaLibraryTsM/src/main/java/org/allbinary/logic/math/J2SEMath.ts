@@ -79,8 +79,6 @@ export class J2SEMath
                                 :
 
                             value;
-
-    ;
     
 }
 
@@ -96,8 +94,6 @@ export class J2SEMath
                                 :
 
                             value;
-
-    ;
     
 }
 

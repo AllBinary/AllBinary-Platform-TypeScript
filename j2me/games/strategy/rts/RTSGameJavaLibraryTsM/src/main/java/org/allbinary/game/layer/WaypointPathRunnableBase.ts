@@ -123,7 +123,7 @@ this.setPriority();
     var distance: number = this.layerDistanceUtil!.getDistance(targetLayer, pathFindingLayer)!;;
     
 
-    var distanceCategory: number = distance /70;;
+    var distanceCategory: number = globalThis.Math.trunc(distance /70);;
     
 this.priorityP= distanceCategory;
     

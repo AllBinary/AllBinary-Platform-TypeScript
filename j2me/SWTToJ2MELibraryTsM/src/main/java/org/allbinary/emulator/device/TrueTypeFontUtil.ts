@@ -157,8 +157,6 @@ this.widthScale= (this.scale == 2)
                             
                                         //Otherwise - expression - elseExpr - DoubleLiteralExpr
 ;
-
-    ;
     
 }
 
@@ -403,7 +401,7 @@ this.characterArray[0]= pattern[index];
                         if(this.characterArray[0] == ' ')
                         
                                     {
-                                    _characterWidth[index]= (fontSize /4);
+                                    _characterWidth[index]= (globalThis.Math.trunc(fontSize /4));
     
 
                                     }
@@ -413,9 +411,9 @@ this.characterArray[0]= pattern[index];
     var shortPatternIndex: number = this.shortPattern!.indexOf(this.characterArray[0]!)!;;
     
 
-    var w: number = Math.round((this.widthFloatArray[shortPatternIndex] /75)) +19;;
+    var w: number = globalThis.Math.trunc((this.widthFloatArray[shortPatternIndex] /75)) +19;;
     
-_characterWidth[index]= Math.round(w);
+_characterWidth[index]= globalThis.Math.trunc(w);
     
 
                         if(this.characterArray[0] == '.' || this.characterArray[0] == '1')

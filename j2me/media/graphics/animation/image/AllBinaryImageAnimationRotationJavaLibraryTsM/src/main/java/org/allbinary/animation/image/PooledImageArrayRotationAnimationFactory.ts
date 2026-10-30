@@ -81,7 +81,7 @@ export class PooledImageArrayRotationAnimationFactory
             
     public static createFactory(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
 
-    var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);;
+    var totalAngle: number = globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE);;
     
 
     var angleIncrement: number = (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity());;
@@ -99,7 +99,7 @@ export class PooledImageArrayRotationAnimationFactory
             
     public static createDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
 
-    var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);;
+    var totalAngle: number = globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE);;
     
 
     var angleIncrement: number = (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity());;
@@ -123,7 +123,7 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
         this.animationBehaviorFactory= animationBehaviorFactory;
     
 
-    var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);;
+    var totalAngle: number = globalThis.Math.trunc(AngleFactory.getInstance()!.TOTAL_ANGLE);;
     
 
     var imageArray: Image[] = ImageToRotationImageArrayUtil.getInstance()!.generate(image, angleIncrement, totalAngle)!;;

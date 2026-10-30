@@ -149,7 +149,7 @@ this.adjustFrame(angle.getValue());
 
 
     public adjustFrame(angle: number){
-this.setFrame(this.frameUtil!.getFrameForAngle(angle, Math.round(this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement())));
+this.setFrame(this.frameUtil!.getFrameForAngle(angle, globalThis.Math.trunc(this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement())));
     
 }
 

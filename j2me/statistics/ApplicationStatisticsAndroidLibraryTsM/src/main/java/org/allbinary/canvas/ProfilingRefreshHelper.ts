@@ -99,10 +99,10 @@ this.frameProcessingTimeElapsed= Date.now() -this.frameProcessingTimeElapsed;
                                     {
                                     
                         if(this.frameProcessingTimeElapsed > this.worstFrameProcessingTime)
-                        this.worstFrameProcessingTime= Math.round(this.frameProcessingTimeElapsed)
+                        this.worstFrameProcessingTime= globalThis.Math.trunc(this.frameProcessingTimeElapsed)
 
                         if(this.frameProcessingTimeElapsed < this.bestFrameProcessingTime)
-                        this.bestFrameProcessingTime= Math.round(this.frameProcessingTimeElapsed)
+                        this.bestFrameProcessingTime= globalThis.Math.trunc(this.frameProcessingTimeElapsed)
 
                                     }
                                 

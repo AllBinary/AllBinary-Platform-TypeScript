@@ -537,7 +537,7 @@ this.initDuplicate(canvasJPanel!.duplicate());
             
     public autoRotate(increments: number, totalAngle: number){
 
-    var incrementAngle: number = Math.round((totalAngle /increments));;
+    var incrementAngle: number = globalThis.Math.trunc((globalThis.Math.trunc(totalAngle /increments)));;
     
 
 

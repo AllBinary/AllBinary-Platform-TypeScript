@@ -114,10 +114,10 @@ export class AnimationFactoryImageScaleUtil
                                 
                         else {
                             
-    var scaledWidth: number = Math.round((scaleX *width));;
+    var scaledWidth: number = globalThis.Math.trunc((scaleX *width));;
     
 
-    var scaledHeight: number = Math.round((scaleY *height));;
+    var scaledHeight: number = globalThis.Math.trunc((scaleY *height));;
     
 scaledImage= this.imageScaleUtil!.scale(image, scaledWidth, scaledHeight);
     
@@ -169,9 +169,9 @@ scaledImage= this.imageScaleUtil!.scale(image, scaledWidth, scaledHeight);
                                     }
                                 
                         else {
-                            animationFactoryInitializationVisitor!.dx= Math.round((animationFactoryInitializationVisitor!.originalDx *scaleX));
+                            animationFactoryInitializationVisitor!.dx= globalThis.Math.trunc((animationFactoryInitializationVisitor!.originalDx *scaleX));
     
-animationFactoryInitializationVisitor!.dy= Math.round((animationFactoryInitializationVisitor!.originalDy *scaleY));
+animationFactoryInitializationVisitor!.dy= globalThis.Math.trunc((animationFactoryInitializationVisitor!.originalDy *scaleY));
     
 
                         }

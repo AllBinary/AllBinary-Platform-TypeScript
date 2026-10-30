@@ -1818,10 +1818,10 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     }
                                 
 
-    var viewTotal: number = (total *85) /100;;
+    var viewTotal: number = globalThis.Math.trunc((total *85) /100);;
     
 
-    var installTotal: number = (total *93) /100;;
+    var installTotal: number = globalThis.Math.trunc((total *93) /100);;
     
 
                         if(current < viewTotal)
@@ -1835,7 +1835,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                         
                                     {
                                     
-    var halfViewTotal: number = viewTotal /2;;
+    var halfViewTotal: number = globalThis.Math.trunc(viewTotal /2);;
     
 
                         if(current < halfViewTotal)

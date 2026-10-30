@@ -195,7 +195,7 @@ this.pathFindingThreadPool!.runAPriorityTask();
                     
 this.backgroundBasicColor= backgroundBasicColor;
     
-this.gauge= new ABCustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, Math.round(this.maxValue), 0, backgroundBasicColor, foregroundBasicColor);
+this.gauge= new ABCustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, globalThis.Math.trunc(this.maxValue), 0, backgroundBasicColor, foregroundBasicColor);
     
 }
 

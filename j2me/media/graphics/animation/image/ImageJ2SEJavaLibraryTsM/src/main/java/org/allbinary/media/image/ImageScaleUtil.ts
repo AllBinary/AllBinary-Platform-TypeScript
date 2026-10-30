@@ -125,13 +125,13 @@ private constructor (){
                         if(cached)
                         
                                     {
-                                    image= imageCache!.get(this.constructor.name.toString()!, Math.round((width *scaleX)), Math.round((height *scaleY)));
+                                    image= imageCache!.get(this.constructor.name.toString()!, globalThis.Math.trunc((width *scaleX)), globalThis.Math.trunc((height *scaleY)));
     
 
                                     }
                                 
                         else {
-                            image= imageCache!.get("createImage", Math.round((width *scaleX)), Math.round((height *scaleY)));
+                            image= imageCache!.get("createImage", globalThis.Math.trunc((width *scaleX)), globalThis.Math.trunc((height *scaleY)));
     
 
                         }

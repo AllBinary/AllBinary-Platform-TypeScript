@@ -138,7 +138,7 @@ private constructor (){
             
     public createImageInternal(originalImage: Image, scaleX: number, scaleY: number): Image{
 
-    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(Math.round((originalImage!.getWidth() *scaleX)), Math.round((originalImage!.getHeight() *scaleY)))!;;
+    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(globalThis.Math.trunc((originalImage!.getWidth() *scaleX)), globalThis.Math.trunc((originalImage!.getHeight() *scaleY)))!;;
     
 
                         if(image.isMutable())

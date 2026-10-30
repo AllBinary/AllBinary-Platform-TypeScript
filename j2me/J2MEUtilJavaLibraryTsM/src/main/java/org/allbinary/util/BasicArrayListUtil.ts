@@ -149,7 +149,7 @@ console.log(list.toString());
     var temp: any;;
     
 
-    var size: number = lastMinusOneIndex /2;;
+    var size: number = globalThis.Math.trunc(lastMinusOneIndex /2);;
     
 
     var secondSwapIndex: number= 0;;

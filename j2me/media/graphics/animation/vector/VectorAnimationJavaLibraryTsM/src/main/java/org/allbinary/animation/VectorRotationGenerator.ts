@@ -119,10 +119,10 @@ private constructor (){
     var totalAngle: number = this.angleFactory!.TOTAL_ANGLE;;
     
 
-    var angleIncrement: number = totalAngle /frames;;
+    var angleIncrement: number = globalThis.Math.trunc(totalAngle /frames);;
     
 
-    var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(totalAngle /angleIncrement);;
+    var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(globalThis.Math.trunc(totalAngle /angleIncrement));;
     
 
     var pointBasicArrayList: BasicArrayList = new BasicArrayListS(points.length);;

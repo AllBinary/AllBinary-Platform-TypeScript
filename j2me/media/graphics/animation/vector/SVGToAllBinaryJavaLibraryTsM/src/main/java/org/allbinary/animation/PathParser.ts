@@ -65,7 +65,7 @@ export class PathParser
     var c: string = d[i]!;;
     
 
-                        if(c == ' ' || c == ',' || c == '\t' || c == '\n' || c == '\r')
+                        if(c == ' '.charCodeAt(0) || c == ','.charCodeAt(0) || c == '\t'.charCodeAt(0) || c == '\n'.charCodeAt(0) || c == '\r'.charCodeAt(0))
                         
                                     {
                                     
@@ -83,7 +83,7 @@ sb.setLength(0);
                                     }
                                 
                              else 
-                        if(c == 'M' || c == 'm' || c == 'L' || c == 'l' || c == 'V' || c == 'v' || c == 'C' || c == 'c' || c == 'Z' || c == 'z')
+                        if(c == 'M'.charCodeAt(0) || c == 'm'.charCodeAt(0) || c == 'L'.charCodeAt(0) || c == 'l'.charCodeAt(0) || c == 'V'.charCodeAt(0) || c == 'v'.charCodeAt(0) || c == 'C'.charCodeAt(0) || c == 'c'.charCodeAt(0) || c == 'Z'.charCodeAt(0) || c == 'z'.charCodeAt(0))
                         
                                     {
                                     
@@ -156,7 +156,7 @@ tokens.toArrayType(res);
     var cmd: string = tok[0]!;;
     
 
-                        if(cmd == 'M' || cmd == 'm')
+                        if(cmd == 'M'.charCodeAt(0) || cmd == 'm'.charCodeAt(0))
                         
                                     {
                                     
@@ -166,7 +166,7 @@ tokens.toArrayType(res);
     var y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-                        if(cmd == 'm')
+                        if(cmd == 'm'.charCodeAt(0))
                         
                                     {
                                     x += curX;
@@ -194,7 +194,7 @@ count[0]++;
                                     }
                                 
                              else 
-                        if(cmd == 'L' || cmd == 'l')
+                        if(cmd == 'L'.charCodeAt(0) || cmd == 'l'.charCodeAt(0))
                         
                                     {
                                     
@@ -204,7 +204,7 @@ count[0]++;
     var y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-                        if(cmd == 'l')
+                        if(cmd == 'l'.charCodeAt(0))
                         
                                     {
                                     x += curX;
@@ -228,14 +228,14 @@ count[0]++;
                                     }
                                 
                              else 
-                        if(cmd == 'V' || cmd == 'v')
+                        if(cmd == 'V'.charCodeAt(0) || cmd == 'v'.charCodeAt(0))
                         
                                     {
                                     
     var y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-                        if(cmd == 'v')
+                        if(cmd == 'v'.charCodeAt(0))
                         
                                     {
                                     y += curY;
@@ -255,7 +255,7 @@ count[0]++;
                                     }
                                 
                              else 
-                        if(cmd == 'C' || cmd == 'c')
+                        if(cmd == 'C'.charCodeAt(0) || cmd == 'c'.charCodeAt(0))
                         
                                     {
                                     
@@ -277,7 +277,7 @@ count[0]++;
     var y3: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-                        if(cmd == 'c')
+                        if(cmd == 'c'.charCodeAt(0))
                         
                                     {
                                     x1 += curX;
@@ -305,7 +305,7 @@ curY= y3;
                                     }
                                 
                              else 
-                        if(cmd == 'Z' || cmd == 'z')
+                        if(cmd == 'Z'.charCodeAt(0) || cmd == 'z'.charCodeAt(0))
                         
                                     {
                                     curX= startX;
@@ -325,7 +325,7 @@ count[0]++;
         while(idx < tokens.length && !isCommand(tokens[idx]!))
         {
 
-                        if(cmd == 'M' || cmd == 'm' || cmd == 'L' || cmd == 'l')
+                        if(cmd == 'M'.charCodeAt(0) || cmd == 'm'.charCodeAt(0) || cmd == 'L'.charCodeAt(0) || cmd == 'l'.charCodeAt(0))
                         
                                     {
                                     
@@ -335,7 +335,7 @@ count[0]++;
     var y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-                        if(cmd == 'm' || cmd == 'l')
+                        if(cmd == 'm'.charCodeAt(0) || cmd == 'l'.charCodeAt(0))
                         
                                     {
                                     x += curX;
@@ -359,14 +359,14 @@ count[0]++;
                                     }
                                 
                              else 
-                        if(cmd == 'V' || cmd == 'v')
+                        if(cmd == 'V'.charCodeAt(0) || cmd == 'v'.charCodeAt(0))
                         
                                     {
                                     
     var y: number = fixedPoint!.toFixed(Double.parseDouble(tokens[idx++]!))!;;
     
 
-                        if(cmd == 'v')
+                        if(cmd == 'v'.charCodeAt(0))
                         
                                     {
                                     y += curY;

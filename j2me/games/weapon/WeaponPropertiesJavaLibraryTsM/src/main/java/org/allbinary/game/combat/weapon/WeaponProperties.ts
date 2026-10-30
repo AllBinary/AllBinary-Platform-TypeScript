@@ -118,9 +118,9 @@ this.setSpeed(new BasicDecimal(speed));
     var scaledDissipation: number = dissipation *this.speed.getScaledFactorValue();;
     
 
-    var value: number = (unscaledDamage /scaledDissipation);;
+    var value: number = (globalThis.Math.trunc(unscaledDamage /scaledDissipation));;
     
-this.setRange(Math.round((value *9)) /10);
+this.setRange(globalThis.Math.trunc(globalThis.Math.trunc((value *9)) /10));
     
 
                                     }

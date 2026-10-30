@@ -115,7 +115,7 @@ this.setText(text);
 this.fontHeight= font.getHeight();
     
 
-    var adjustedFontHeight: number = Math.round( -(this.fontHeight *2.00));;
+    var adjustedFontHeight: number = globalThis.Math.trunc( -(this.fontHeight *2.00));;
     
 this.offsetY= SWTJOGLProcessor.getInstance()!.isJOGL()
                         ?       
@@ -123,8 +123,6 @@ this.offsetY= SWTJOGLProcessor.getInstance()!.isJOGL()
                                 :
 
                             0;
-
-    ;
     
 this.textChangeListener!.onMeasure();
     

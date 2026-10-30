@@ -206,50 +206,21 @@ node.appendChild(whiteNode);
 
 
                         for (
-    var blueIndex: number = this.MAX /2;blueIndex < this.MAX; )
+    var blueIndex: number = globalThis.Math.trunc(this.MAX /2);blueIndex < this.MAX; )
         {
 
 
 
 
                         for (
-    var greenIndex: number = 0;greenIndex < this.MAX /2; )
+    var greenIndex: number = 0;greenIndex < globalThis.Math.trunc(this.MAX /2); )
         {
 
 
 
 
                         for (
-    var redIndex: number = 0;redIndex < this.MAX /2; )
-        {
-node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
-    
-}
-
-}
-
-}
-
-
-
-
-
-                        for (
-    var redIndex: number = this.MAX /2;redIndex < this.MAX; )
-        {
-
-
-
-
-                        for (
-    var greenIndex: number = 0;greenIndex < this.MAX /2; )
-        {
-
-
-
-
-                        for (
-    var blueIndex: number = 0;blueIndex < this.MAX /2; )
+    var redIndex: number = 0;redIndex < globalThis.Math.trunc(this.MAX /2); )
         {
 node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     
@@ -264,21 +235,50 @@ node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
 
 
                         for (
-    var greenIndex: number = this.MAX /2;greenIndex < this.MAX; )
+    var redIndex: number = globalThis.Math.trunc(this.MAX /2);redIndex < this.MAX; )
         {
 
 
 
 
                         for (
-    var redIndex: number = 0;redIndex < this.MAX /2; )
+    var greenIndex: number = 0;greenIndex < globalThis.Math.trunc(this.MAX /2); )
         {
 
 
 
 
                         for (
-    var blueIndex: number = 0;blueIndex < this.MAX /2; )
+    var blueIndex: number = 0;blueIndex < globalThis.Math.trunc(this.MAX /2); )
+        {
+node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
+    
+}
+
+}
+
+}
+
+
+
+
+
+                        for (
+    var greenIndex: number = globalThis.Math.trunc(this.MAX /2);greenIndex < this.MAX; )
+        {
+
+
+
+
+                        for (
+    var redIndex: number = 0;redIndex < globalThis.Math.trunc(this.MAX /2); )
+        {
+
+
+
+
+                        for (
+    var blueIndex: number = 0;blueIndex < globalThis.Math.trunc(this.MAX /2); )
         {
 node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     

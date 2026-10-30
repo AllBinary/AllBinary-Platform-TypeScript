@@ -130,8 +130,6 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.BLACK);
 
                             NullPaintable.getInstance();
 
-    ;
-
     private readonly gameKeyEventList: BasicArrayList = new BasicArrayListD();
 
 public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositionBase){

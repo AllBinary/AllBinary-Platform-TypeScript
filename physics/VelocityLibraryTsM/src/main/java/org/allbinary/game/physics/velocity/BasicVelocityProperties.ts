@@ -207,13 +207,13 @@ this.addVelocity(magnitude, angle, otherAngle);
 
 
     public setVelocity(magnitude: number, angle: Angle, otherAngle: Angle){
-this.setVelocityi(magnitude, Math.round(angle.getValue()), Math.round(otherAngle!.getValue()));
+this.setVelocityi(magnitude, globalThis.Math.trunc(angle.getValue()), globalThis.Math.trunc(otherAngle!.getValue()));
     
 }
 
 
     public addVelocity(magnitude: number, angle: Angle, otherAngle: Angle){
-this.addVelocityi(magnitude, Math.round(angle.getValue()), Math.round(otherAngle!.getValue()));
+this.addVelocityi(magnitude, globalThis.Math.trunc(angle.getValue()), globalThis.Math.trunc(otherAngle!.getValue()));
     
 }
 

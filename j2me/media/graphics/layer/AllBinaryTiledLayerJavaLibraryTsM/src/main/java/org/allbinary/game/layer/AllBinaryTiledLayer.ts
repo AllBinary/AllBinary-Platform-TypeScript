@@ -239,7 +239,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round((this.z +this.getDepth()));
+                        return globalThis.Math.trunc((this.z +this.getDepth()));
     
 }
 

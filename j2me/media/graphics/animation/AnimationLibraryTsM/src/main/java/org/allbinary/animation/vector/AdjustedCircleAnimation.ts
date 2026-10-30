@@ -108,7 +108,7 @@ this.yAdjustment= yAdjustment;
                         
                                     {
                                     
-    var widthPortion: number = (((innerWidth /3) *10) /7);;
+    var widthPortion: number = (globalThis.Math.trunc(((globalThis.Math.trunc(innerWidth /3)) *10) /7));;
     
 this.xAdjustment=  -((this.width>>1) -widthPortion);
     

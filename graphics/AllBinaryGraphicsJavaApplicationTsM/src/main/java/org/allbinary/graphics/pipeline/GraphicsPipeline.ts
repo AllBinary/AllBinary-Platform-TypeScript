@@ -93,7 +93,7 @@ public constructor (points: BasicArrayList){
     var secondY: number = (secondPoint!.getX() *Math.sin(aTheta)) +(secondPoint!.getY() *Math.cos(aTheta));;
     
 
-    var point: GPoint = PointFactory.getInstance()!.createXY((Math.round(secondX)), (Math.round(secondY)))!;;
+    var point: GPoint = PointFactory.getInstance()!.createXY((globalThis.Math.trunc(secondX)), (globalThis.Math.trunc(secondY)))!;;
     
 newVector!.add(point);
     

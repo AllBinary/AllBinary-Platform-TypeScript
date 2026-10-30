@@ -139,7 +139,7 @@ private constructor (){
     var scaleY: number = scaleNominatorY /scaleDenominatorY;;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.round((scaleX *width)), Math.round((scaleY *height)), mutable)!;;
+    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, globalThis.Math.trunc((scaleX *width)), globalThis.Math.trunc((scaleY *height)), mutable)!;;
     
 
 
@@ -168,7 +168,7 @@ this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX,
     var height: number = originalImage!.getHeight()!;;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.round((scaleX *width)), Math.round((scaleY *height)), mutable)!;;
+    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, globalThis.Math.trunc((scaleX *width)), globalThis.Math.trunc((scaleY *height)), mutable)!;;
     
 originalImageArray[0]= scaledImage;
     

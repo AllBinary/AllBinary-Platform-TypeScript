@@ -571,9 +571,7 @@ this.setWaypointBehavior(new UnitWaypointBehavior2(this, this.waypointLayerInter
                                 new MultipassNoCacheWaypoint(this, AttackSound.getInstance())
                                 :
 
-                            new NoCacheWaypoint(this, AttackSound.getInstance());
-
-    ;;
+                            new NoCacheWaypoint(this, AttackSound.getInstance());;
     
 this.getWaypointBehavior()!.setWaypoint(waypoint);
     
@@ -925,7 +923,7 @@ this.initSensorRangeAnimation= AdjustedCircleAnimation.createW(sensorRange, sens
     
 this.getUnitWaypointBehavior()!.initRange(this.weaponRange);
     
-this.fireTimeHelper!.delay= (Math.round(weaponProperties!.getReloadTime()));
+this.fireTimeHelper!.delay= (globalThis.Math.trunc(weaponProperties!.getReloadTime()));
     
 }
 
@@ -1178,7 +1176,7 @@ this.move();
 
 
     public accelerate(accelerate: BasicDecimal){
-this.getVehicleProperties()!.getVelocityProperties()!.addVelocityi(accelerate.getUnscaled(), Math.round(this.rotationAnimationInterfaceP!.getAngleInfoP()!.getAngle()), 90);
+this.getVehicleProperties()!.getVelocityProperties()!.addVelocityi(accelerate.getUnscaled(), globalThis.Math.trunc(this.rotationAnimationInterfaceP!.getAngleInfoP()!.getAngle()), 90);
     
 }
 
@@ -1190,9 +1188,9 @@ this.getVehicleProperties()!.getVelocityProperties()!.addVelocityi(accelerate.ge
     var angleInfo: AngleInfo = this.rotationAnimationInterfaceP!.getAngleInfoP()!;;
     
 
-    var angle: number = Math.round((angleInfo!.getAngle() +this.slightAngle));;
+    var angle: number = globalThis.Math.trunc((angleInfo!.getAngle() +this.slightAngle));;
     
-this.hashtable.put(SmallIntegerSingletonFactory.getInstance()!.getAt(1), SmallIntegerSingletonFactory.getInstance()!.getAt(Math.round(AngleFactory.getInstance()!.getAt(angle)!.getValue())));
+this.hashtable.put(SmallIntegerSingletonFactory.getInstance()!.getAt(1), SmallIntegerSingletonFactory.getInstance()!.getAt(globalThis.Math.trunc(AngleFactory.getInstance()!.getAt(angle)!.getValue())));
     
 
     var salvoInterface: SalvoInterface = this.getPartInterfaceArray()[0]! as SalvoInterface;;
@@ -1320,7 +1318,7 @@ this.rtsLogHelper!.turnTo(this, dx, dy, angleInfo, angle, this.movementAngle, ev
                                     }
                                 
                              else 
-                        if((Math.round(this.movementAngle!.getValue())) == angle)
+                        if((globalThis.Math.trunc(this.movementAngle!.getValue())) == angle)
                         
                                     {
                                     
@@ -1681,7 +1679,7 @@ this.getUnitWaypointBehavior()!.move();
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
-this.layerPartialCellPositionsUtil!.getAllDXY(geographicMapInterface, this, Math.round(velocityXScaled), Math.round(velocityYScaled), UnitLayer.getPartialpositionlist());
+this.layerPartialCellPositionsUtil!.getAllDXY(geographicMapInterface, this, globalThis.Math.trunc(velocityXScaled), globalThis.Math.trunc(velocityYScaled), UnitLayer.getPartialpositionlist());
     
 
     var cellPosition: GeographicMapCellPosition = DropCellPositionHistory.getInstance()!.getCellPositionWithDrop(UnitLayer.getPartialpositionlist()) as GeographicMapCellPosition;;
@@ -1697,10 +1695,10 @@ this.layerPartialCellPositionsUtil!.getAllDXY(geographicMapInterface, this, Math
     var tiledLayerUtil: TiledLayerUtil = TiledLayerUtil.getInstance()!;;
     
 
-    var x: number = this.x +Math.round(velocityXScaled);;
+    var x: number = this.x +globalThis.Math.trunc(velocityXScaled);;
     
 
-    var y: number = this.y +Math.round(velocityYScaled);;
+    var y: number = this.y +globalThis.Math.trunc(velocityYScaled);;
     
 x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.getWidth());
     

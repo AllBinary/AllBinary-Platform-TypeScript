@@ -279,7 +279,7 @@ anchor= Graphics.TOP&Graphics.RIGHT;
                         if(basicHudFactory!.TOPCENTER == this.getLocation())
                         
                                     {
-                                    x= ((width -maxWidth) /2);
+                                    x= (globalThis.Math.trunc((width -maxWidth) /2));
     
 y= this.bufferZoneY;
     
@@ -292,7 +292,7 @@ anchor= Graphics.TOP&Graphics.HCENTER;
                         if(basicHudFactory!.BOTTOMCENTER == this.getLocation())
                         
                                     {
-                                    x= ((width -maxWidth) /2);
+                                    x= (globalThis.Math.trunc((width -maxWidth) /2));
     
 y= height -maxHeight -this.bufferZone;
     

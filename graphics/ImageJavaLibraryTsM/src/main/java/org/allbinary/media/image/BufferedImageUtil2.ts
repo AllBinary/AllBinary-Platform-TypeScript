@@ -74,7 +74,7 @@ export class BufferedImageUtil2
 
                                     }
                                 
-rows= (bufferedImageArray!.length /columns);
+rows= (globalThis.Math.trunc(bufferedImageArray!.length /columns));
     
 
                         if(bufferedImageArray!.length % columns != 0)
@@ -107,7 +107,7 @@ rows= (bufferedImageArray!.length /columns);
     var index: number = 0;index < bufferedImageArray!.length; index++)
         {
 
-                        if(index /max != 0 && index % max == 0)
+                        if(globalThis.Math.trunc(index /max) != 0 && index % max == 0)
                         
                                     {
                                     rowIndex++;

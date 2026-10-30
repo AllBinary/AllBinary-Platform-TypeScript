@@ -94,13 +94,13 @@ this.basicVelocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angle
     var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;;
     
 
-    var xVector: number = Math.round((this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue));;
+    var xVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue));;
     
 
-    var yVector: number = Math.round((this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue));;
+    var yVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue));;
     
 
-    var zVector: number = Math.round((this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue));;
+    var zVector: number = globalThis.Math.trunc((this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue));;
     
 layer.moveDXYZ(xVector, yVector, zVector);
     

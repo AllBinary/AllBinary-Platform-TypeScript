@@ -60,7 +60,7 @@ export class BasicColorUtil
 
     public readonly ZERO_ARRAY: BasicColor[] = [];
 
-    public readonly ALPHA: number = Math.round(0xFF000000);
+    public readonly ALPHA: number = globalThis.Math.trunc(0xFF000000);
 
     public readonly isAlpha: boolean = true;
 

@@ -152,7 +152,7 @@ sprite= spriteFactory!.createSprite(scaledImage, width, height);
     var height2: number = this.j2seMath!.round((scaleHeight) -0.5)!;;
     
 
-    var multiplesOf16Width: number = width2 /16;;
+    var multiplesOf16Width: number = globalThis.Math.trunc(width2 /16);;
     
 
     var by16Width: number = multiplesOf16Width *16;;
@@ -160,7 +160,7 @@ sprite= spriteFactory!.createSprite(scaledImage, width, height);
 scaleX= (by16Width) /width;
     
 
-    var multiplesOf16Height: number = height2 /16;;
+    var multiplesOf16Height: number = globalThis.Math.trunc(height2 /16);;
     
 
     var by16Height: number = multiplesOf16Height *16;;
@@ -190,7 +190,7 @@ scaleY= (by16Height) /height;
                                 
 scaledImage= this.imageScaleUtil!.createImage2(this.imageCache, image, scaleX, 1.0, scaleY, 1.0, true);
     
-sprite= spriteFactory!.createSprite(scaledImage, Math.round((width *scaleX)), Math.round((height *scaleY)));
+sprite= spriteFactory!.createSprite(scaledImage, globalThis.Math.trunc((width *scaleX)), globalThis.Math.trunc((height *scaleY)));
     
 
                         }

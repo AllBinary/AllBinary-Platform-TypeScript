@@ -599,7 +599,7 @@ graphics.setStroke(new BasicStroke(x));
 
     var secondPoint: GPoint = tempPointVector!.get(index) as GPoint;;
     
-graphics.drawLine((firstPoint!.getX() *x) -(x /4), (firstPoint!.getY() *y) -(y /4), (secondPoint!.getX() *x) -(x /4), (secondPoint!.getY() *y) -(y /4));
+graphics.drawLine((firstPoint!.getX() *x) -(globalThis.Math.trunc(x /4)), (firstPoint!.getY() *y) -(globalThis.Math.trunc(y /4)), (secondPoint!.getX() *x) -(globalThis.Math.trunc(x /4)), (secondPoint!.getY() *y) -(globalThis.Math.trunc(y /4)));
     
 firstPoint= secondPoint;
     

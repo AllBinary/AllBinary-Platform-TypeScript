@@ -166,9 +166,9 @@ this.scaleProperties= scaleProperties;
                         if(this.scaleProperties!.shouldScale)
                         
                                     {
-                                    this.scaleProperties!.scaleWidth= Math.round((this.animationFactoryInitializationVisitor!.width *this.scaleProperties!.scaleX));
+                                    this.scaleProperties!.scaleWidth= globalThis.Math.trunc((this.animationFactoryInitializationVisitor!.width *this.scaleProperties!.scaleX));
     
-this.scaleProperties!.scaleHeight= Math.round((this.animationFactoryInitializationVisitor!.height *this.scaleProperties!.scaleY));
+this.scaleProperties!.scaleHeight= globalThis.Math.trunc((this.animationFactoryInitializationVisitor!.height *this.scaleProperties!.scaleY));
     
 
                                     }

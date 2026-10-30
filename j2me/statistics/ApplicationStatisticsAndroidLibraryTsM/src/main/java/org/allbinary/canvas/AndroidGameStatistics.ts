@@ -129,7 +129,7 @@ this.ANDROID_STRING_ARRAY[index]= stringArray[index]!;
 
     var totalTime: number = this.getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
-totalTime= (totalTime /10000);
+totalTime= (globalThis.Math.trunc(totalTime /10000));
     
 this.ANDROID_STRING_ARRAY[10]= this.TOTAL_ONDRAWS;
     
@@ -137,7 +137,7 @@ this.ANDROID_STRING_ARRAY[11]= (this.totalOnDraws).toString();
     
 this.ANDROID_STRING_ARRAY[12]= this.ONDRAWS_RATE;
     
-this.ANDROID_STRING_ARRAY[13]= (this.totalOnDraws /totalTime).toString();
+this.ANDROID_STRING_ARRAY[13]= (globalThis.Math.trunc(this.totalOnDraws /totalTime)).toString();
     
 
 
@@ -152,7 +152,7 @@ this.ANDROID_STRING_ARRAY[13]= (this.totalOnDraws /totalTime).toString();
 
     var totalTime: number = this.getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
-totalTime= (totalTime /1000);
+totalTime= (globalThis.Math.trunc(totalTime /1000));
     
 
                         if(totalTime > 0)
@@ -174,7 +174,7 @@ stringBuffer!.append(this.totalOnDraws.toString());
 stringBuffer!.append(this.ONDRAWS_RATE);
     
 
-    var drawsOverTime: string = (this.totalOnDraws /totalTime).toString()!;;
+    var drawsOverTime: string = (globalThis.Math.trunc(this.totalOnDraws /totalTime)).toString()!;;
     
 stringBuffer!.append(drawsOverTime);
     

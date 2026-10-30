@@ -56,7 +56,7 @@ export class WaypointEventHandlerFactory
 
     public static getInstance(groupInterface: Group): WaypointEventHandler{
 
-    var groupId: number = Math.round(groupInterface!.getGroupId());;
+    var groupId: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
     
 
 

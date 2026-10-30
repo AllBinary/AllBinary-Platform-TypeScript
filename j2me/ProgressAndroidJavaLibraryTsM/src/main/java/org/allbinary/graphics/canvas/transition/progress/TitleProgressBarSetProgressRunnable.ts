@@ -69,7 +69,7 @@ public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
     public run(){
 
         try {
-            this.midletActivity!.onSetProgress(Math.round(this.progressCanvas!.getValue()), this.progressCanvas!.getText());
+            this.midletActivity!.onSetProgress(globalThis.Math.trunc(this.progressCanvas!.getValue()), this.progressCanvas!.getText());
     
 
                 //: 

@@ -139,7 +139,7 @@ geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource()
                                     outOfResources= false;
     
 
-    var maxResourceLoad: number = Math.round(unitLayer!.getMaxResourceLoad());;
+    var maxResourceLoad: number = globalThis.Math.trunc(unitLayer!.getMaxResourceLoad());;
     
 geologicalResource!.remove(maxResourceLoad);
     

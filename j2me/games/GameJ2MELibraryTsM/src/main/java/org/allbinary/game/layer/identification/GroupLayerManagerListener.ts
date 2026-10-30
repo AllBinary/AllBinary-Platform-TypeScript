@@ -149,7 +149,7 @@ groupList!.clear();
 
     public getGroupSize(groupInterface: Group): number{
 
-    var id: number = Math.round(groupInterface!.getGroupId());;
+    var id: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
     
 
 
@@ -162,7 +162,7 @@ groupList!.clear();
 
     public getList(groupInterface: Group): BasicArrayList{
 
-    var id: number = Math.round(groupInterface!.getGroupId());;
+    var id: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
     
 
 
@@ -204,7 +204,7 @@ groupList!.clear();
 
     public areAllOtherGroupsEmpty(groupInterface: Group): boolean{
 
-    var id: number = Math.round(groupInterface!.getGroupId());;
+    var id: number = globalThis.Math.trunc(groupInterface!.getGroupId());;
     
 
     var size: number = this.list.size()!;;
@@ -287,7 +287,7 @@ groupInterfaceArray= excludeGroupList!.objectArray[index]! as Group[];
         {
 groupInterface= groupInterfaceArray[index2]!;
     
-groupId= Math.round(groupInterface!.getGroupId());
+groupId= globalThis.Math.trunc(groupInterface!.getGroupId());
     
 
                         if(groupId == id)
@@ -403,7 +403,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                         for (
     var index: number = 0;index < size; index++)
         {
-id= Math.round(groupInterfaceArray[index]!.getGroupId());
+id= globalThis.Math.trunc(groupInterfaceArray[index]!.getGroupId());
     
 groupList= this.list.objectArray[id]! as BasicArrayList;
     
@@ -462,7 +462,7 @@ groupList= this.list.objectArray[id]! as BasicArrayList;
                         for (
     var index: number = 0;index < size; index++)
         {
-id= Math.round(groupInterfaceArray[index]!.getGroupId());
+id= globalThis.Math.trunc(groupInterfaceArray[index]!.getGroupId());
     
 groupList= this.list.objectArray[id]! as BasicArrayList;
     

@@ -398,7 +398,7 @@ inventoryNode!.appendChild(itemNode!.cloneNode(true));
 
                                     }
                                 
-currentPage= ((numberOfResults +1) /pageLength) -1;
+currentPage= (globalThis.Math.trunc((numberOfResults +1) /pageLength)) -1;
     
 numberOfResultsOnCurrentPage++;
     

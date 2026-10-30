@@ -76,7 +76,7 @@ private constructor (){
     var imageRotationUtil: ImageRotationUtil = ImageRotationUtil.getInstance()!;;
     
 
-    var totalFrames: number = totalAngle /angleIncrement;;
+    var totalFrames: number = globalThis.Math.trunc(totalAngle /angleIncrement);;
     
 
     var imageArray: Image[] = new Array(totalFrames);;

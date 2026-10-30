@@ -118,7 +118,7 @@ this.startTime= this.gameTickTimeDelayHelper!.startTime;
 
                                     }
                                 
-this.hundredthTime= currentTime /100;
+this.hundredthTime= globalThis.Math.trunc(currentTime /100);
     
 
                         if(this.hundredthTime >= this.maxTime)
@@ -140,7 +140,7 @@ this.hundredthTime= currentTime /100;
                         if(lastLowerTime != this.hundredthTime)
                         
                                     {
-                                    this.hundrethsString= this.primitiveLongUtil!.getCharArray(Math.round(this.hundredthTime));
+                                    this.hundrethsString= this.primitiveLongUtil!.getCharArray(globalThis.Math.trunc(this.hundredthTime));
     
 this.totalDigits= this.primitiveLongUtil!.getCurrentTotalDigits();
     

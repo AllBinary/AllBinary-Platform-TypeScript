@@ -224,9 +224,7 @@ console.log(stringBuilder!.toString());
                                 root
                                 :
 
-                            this.asObject(svgValue, KEY_SVG);
-
-    ;;
+                            this.asObject(svgValue, KEY_SVG);;
     
 
     var pointVector: BasicArrayList = new BasicArrayListD();;
@@ -396,10 +394,10 @@ this.addSeparator(pointVector);
     var angle: number = (Math.PI *2.0d *index) /CIRCLE_SEGMENTS;;
     
 
-    var x: number = Math.round(Math.round(cx +(Math.cos(angle) *radius)));;
+    var x: number = globalThis.Math.trunc(Math.round(cx +(Math.cos(angle) *radius)));;
     
 
-    var y: number = Math.round(Math.round(cy +(Math.sin(angle) *radius)));;
+    var y: number = globalThis.Math.trunc(Math.round(cy +(Math.sin(angle) *radius)));;
     
 this.addPoint(pointVector, x, y);
     
@@ -526,7 +524,7 @@ e.printStackTrace();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(Math.round((value as Number).doubleValue()));
+                        return globalThis.Math.trunc(Math.round((value as Number).doubleValue()));
     
 
                                     }
@@ -539,7 +537,7 @@ e.printStackTrace();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(Math.round(Double.parseDouble(value as string)));
+                        return globalThis.Math.trunc(Math.round(Double.parseDouble(value as string)));
     
 
                                     }

@@ -62,7 +62,7 @@ export class OscillateVelocityMovement extends BasicConstantVelocityMovement {
     private oscillatePositive: boolean= false;
 
 public constructor (speedBasicDecimal: BasicDecimal, oscillateMin: number, oscillateMax: number){
-            super(speedBasicDecimal, new VelocityProperties(Math.round(speedBasicDecimal!.getUnscaled()), Math.round(speedBasicDecimal!.getUnscaled())));
+            super(speedBasicDecimal, new VelocityProperties(globalThis.Math.trunc(speedBasicDecimal!.getUnscaled()), globalThis.Math.trunc(speedBasicDecimal!.getUnscaled())));
                     
 
                             //For kotlin this is before the body of the constructor.

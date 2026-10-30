@@ -156,7 +156,7 @@ y[i]= fixedPoint!.toInt(polyY[i]!);
                         
                                     {
                                     
-    var interX: number = x1 +(scanY -y1) *(x2 -x1) /(y2 -y1);;
+    var interX: number = x1 +globalThis.Math.trunc((scanY -y1) *(x2 -x1) /(y2 -y1));;
     
 scanlineX[intersectCount++]= interX;
     
