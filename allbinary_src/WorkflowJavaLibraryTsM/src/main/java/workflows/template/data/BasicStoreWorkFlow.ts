@@ -51,7 +51,7 @@ import { StoreWorkFlowInterface } from '../../../org/allbinary/logic/control/wor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWorkFlow } from './BasicWorkFlow.js';
-//not GWT import - same folder const BasicWorkFlow
+//sameFolderImports - not GWT import - same folder const BasicWorkFlow
 
 export class BasicStoreWorkFlow extends BasicWorkFlow implements StoreWorkFlowInterface {
         

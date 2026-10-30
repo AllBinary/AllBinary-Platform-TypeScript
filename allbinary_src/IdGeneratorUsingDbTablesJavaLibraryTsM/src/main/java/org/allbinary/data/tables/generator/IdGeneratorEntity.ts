@@ -70,7 +70,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IdGeneratorEntityInterface } from './IdGeneratorEntityInterface.js';
-//not GWT import - same folder const IdGeneratorEntityInterface
+//sameFolderImports - not GWT import - same folder const IdGeneratorEntityInterface
 
 export class IdGeneratorEntity extends AbSqlBean implements IdGeneratorEntityInterface {
         

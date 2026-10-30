@@ -55,7 +55,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomizersView } from './CustomizersView.js';
-//not GWT import - same folder const CustomizersView
+//sameFolderImports - not GWT import - same folder const CustomizersView
 
 export class CustomizersValidationView extends CustomizersView implements ValidationComponentInterface {
         

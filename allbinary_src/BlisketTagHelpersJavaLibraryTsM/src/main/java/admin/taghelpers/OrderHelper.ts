@@ -103,7 +103,7 @@ import { StringValidationUtil } from '../../org/allbinary/logic/string/StringVal
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
-//not GWT import - same folder const TagHelper
+//sameFolderImports - not GWT import - same folder const TagHelper
 
 export class OrderHelper extends TagHelper {
         

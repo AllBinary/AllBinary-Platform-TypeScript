@@ -53,7 +53,7 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LineAnimation } from './LineAnimation.js';
-//not GWT import - same folder const LineAnimation
+//sameFolderImports - not GWT import - same folder const LineAnimation
 
 export class LineAnimationFactory
             extends Object

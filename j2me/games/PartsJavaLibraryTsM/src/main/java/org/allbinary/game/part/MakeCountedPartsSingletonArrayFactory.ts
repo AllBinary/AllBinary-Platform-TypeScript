@@ -71,9 +71,9 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CountedLayerInterfaceFactoryPart } from './CountedLayerInterfaceFactoryPart.js';
-//not GWT import - same folder const CountedLayerInterfaceFactoryPart
+//sameFolderImports - not GWT import - same folder const CountedLayerInterfaceFactoryPart
 import { PartInterface } from './PartInterface.js';
-//not GWT import - same folder const PartInterface
+//sameFolderImports - not GWT import - same folder const PartInterface
 
 export class MakeCountedPartsSingletonArrayFactory
             extends Object

@@ -56,9 +56,9 @@ type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultListModel } from './DefaultListModel.js';
-//not GWT import - same folder const DefaultListModel
+//sameFolderImports - not GWT import - same folder const DefaultListModel
 import { ListModel } from './ListModel.js';
-//not GWT import - same folder const ListModel
+//sameFolderImports - not GWT import - same folder const ListModel
 
 export class DefaultListModelHelper
             extends Object

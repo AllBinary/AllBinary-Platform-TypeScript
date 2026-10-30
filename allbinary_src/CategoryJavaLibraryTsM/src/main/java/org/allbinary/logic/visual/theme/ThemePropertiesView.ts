@@ -53,9 +53,9 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThemeInterface } from './ThemeInterface.js';
-//not GWT import - same folder const ThemeInterface
+//sameFolderImports - not GWT import - same folder const ThemeInterface
 import { ThemeData } from './ThemeData.js';
-//not GWT import - same folder const ThemeData
+//sameFolderImports - not GWT import - same folder const ThemeData
 
 export class ThemePropertiesView
             extends Object

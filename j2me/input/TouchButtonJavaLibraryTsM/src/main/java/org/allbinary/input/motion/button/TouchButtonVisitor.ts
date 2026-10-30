@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonInput } from './TouchButtonInput.js';
-//not GWT import - same folder const TouchButtonInput
+//sameFolderImports - not GWT import - same folder const TouchButtonInput
 
 export class TouchButtonVisitor
             extends Object

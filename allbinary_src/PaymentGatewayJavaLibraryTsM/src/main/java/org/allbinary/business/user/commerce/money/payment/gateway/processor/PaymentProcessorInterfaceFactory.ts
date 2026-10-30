@@ -67,9 +67,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentProcessorInterfaceFactoryInterface } from './PaymentProcessorInterfaceFactoryInterface.js';
-//not GWT import - same folder const PaymentProcessorInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const PaymentProcessorInterfaceFactoryInterface
 import { PaymentProcessorInterface } from './PaymentProcessorInterface.js';
-//not GWT import - same folder const PaymentProcessorInterface
+//sameFolderImports - not GWT import - same folder const PaymentProcessorInterface
 
 export class PaymentProcessorInterfaceFactory
             extends Object

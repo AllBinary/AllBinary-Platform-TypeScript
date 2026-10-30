@@ -43,7 +43,7 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ValidatorBase } from './ValidatorBase.js';
-//not GWT import - same folder const ValidatorBase
+//sameFolderImports - not GWT import - same folder const ValidatorBase
 
 export class GenericValidator extends ValidatorBase {
         

@@ -77,7 +77,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryEntityInterface } from './CategoryEntityInterface.js';
-//not GWT import - same folder const CategoryEntityInterface
+//sameFolderImports - not GWT import - same folder const CategoryEntityInterface
 
 export class CategoryEntity extends AbSqlBean implements CategoryEntityInterface {
         

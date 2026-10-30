@@ -47,11 +47,11 @@ import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoFactoryInterface } from './TransformInfoFactoryInterface.js';
-//not GWT import - same folder const TransformInfoFactoryInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoFactoryInterface
 import { TransformInfoHttpStore } from './TransformInfoHttpStore.js';
-//not GWT import - same folder const TransformInfoHttpStore
+//sameFolderImports - not GWT import - same folder const TransformInfoHttpStore
 import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import - same folder const TransformInfoInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoInterface
 
 export class TransformInfoHttpStoreFactory
             extends Object

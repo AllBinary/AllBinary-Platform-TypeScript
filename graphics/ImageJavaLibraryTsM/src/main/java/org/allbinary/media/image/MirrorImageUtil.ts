@@ -55,9 +55,9 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtil
+//sameFolderImports - not GWT import - same folder const ImageUtil
 import { Graphics2D } from './Graphics2D.js';
-//not GWT import - same folder const Graphics2D
+//sameFolderImports - not GWT import - same folder const Graphics2D
 
 export class MirrorImageUtil
             extends Object

@@ -79,7 +79,7 @@ type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AuthenticationHelper } from './AuthenticationHelper.js';
-//not GWT import - same folder const AuthenticationHelper
+//sameFolderImports - not GWT import - same folder const AuthenticationHelper
 
 export class AuthenticationHelperUtil
             extends Object

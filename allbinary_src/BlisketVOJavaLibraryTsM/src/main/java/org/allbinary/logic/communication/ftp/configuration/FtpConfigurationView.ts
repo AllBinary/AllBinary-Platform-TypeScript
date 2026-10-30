@@ -62,13 +62,13 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FtpConfigurationInterface } from './FtpConfigurationInterface.js';
-//not GWT import - same folder const FtpConfigurationInterface
+//sameFolderImports - not GWT import - same folder const FtpConfigurationInterface
 import { FtpConfiguration } from './FtpConfiguration.js';
-//not GWT import - same folder const FtpConfiguration
+//sameFolderImports - not GWT import - same folder const FtpConfiguration
 import { FtpConfigurationData } from './FtpConfigurationData.js';
-//not GWT import - same folder const FtpConfigurationData
+//sameFolderImports - not GWT import - same folder const FtpConfigurationData
 import { FtpConfigurationMapping } from './FtpConfigurationMapping.js';
-//not GWT import - same folder const FtpConfigurationMapping
+//sameFolderImports - not GWT import - same folder const FtpConfigurationMapping
 
 export class FtpConfigurationView
             extends Object

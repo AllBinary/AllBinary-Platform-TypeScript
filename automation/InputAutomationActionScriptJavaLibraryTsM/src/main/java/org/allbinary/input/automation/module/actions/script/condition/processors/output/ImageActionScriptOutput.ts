@@ -74,17 +74,17 @@ import { NodeList } from '../../../../../../../../../../org/w3c/dom/NodeList.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptOutput } from './BasicProfileActionScriptOutput.js';
-//not GWT import - same folder const BasicProfileActionScriptOutput
+//sameFolderImports - not GWT import - same folder const BasicProfileActionScriptOutput
 import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
-//not GWT import - same folder const ImageActionScriptOutputInterface
+//sameFolderImports - not GWT import - same folder const ImageActionScriptOutputInterface
 import { ImageTypes } from './ImageTypes.js';
-//not GWT import - same folder const ImageTypes
+//sameFolderImports - not GWT import - same folder const ImageTypes
 import { ImageActionScriptOutputJPanel } from './ImageActionScriptOutputJPanel.js';
-//not GWT import - same folder const ImageActionScriptOutputJPanel
+//sameFolderImports - not GWT import - same folder const ImageActionScriptOutputJPanel
 import { ImageActionScriptOutputData } from './ImageActionScriptOutputData.js';
-//not GWT import - same folder const ImageActionScriptOutputData
+//sameFolderImports - not GWT import - same folder const ImageActionScriptOutputData
 import { ImageActionScriptOutputProcessor } from './ImageActionScriptOutputProcessor.js';
-//not GWT import - same folder const ImageActionScriptOutputProcessor
+//sameFolderImports - not GWT import - same folder const ImageActionScriptOutputProcessor
 
 export class ImageActionScriptOutput extends BasicProfileActionScriptOutput implements ImageActionScriptOutputInterface {
         

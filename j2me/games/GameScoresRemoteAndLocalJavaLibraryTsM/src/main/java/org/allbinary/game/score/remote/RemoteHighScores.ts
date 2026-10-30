@@ -94,11 +94,11 @@ type EnumerationUtil<T = any, U = any> = typeof EnumerationUtil extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScoresProcessorFactory } from './RemoteHighScoresProcessorFactory.js';
-//not GWT import - same folder const RemoteHighScoresProcessorFactory
+//sameFolderImports - not GWT import - same folder const RemoteHighScoresProcessorFactory
 import { RemoteHighScoresSubmissionProcessorFactory } from './RemoteHighScoresSubmissionProcessorFactory.js';
-//not GWT import - same folder const RemoteHighScoresSubmissionProcessorFactory
+//sameFolderImports - not GWT import - same folder const RemoteHighScoresSubmissionProcessorFactory
 import { RemoteHighScoresData } from './RemoteHighScoresData.js';
-//not GWT import - same folder const RemoteHighScoresData
+//sameFolderImports - not GWT import - same folder const RemoteHighScoresData
 
 export class RemoteHighScores extends HighScores {
         

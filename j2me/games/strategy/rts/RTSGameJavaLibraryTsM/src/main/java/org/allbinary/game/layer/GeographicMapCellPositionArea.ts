@@ -70,7 +70,7 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
-//not GWT import - same folder const GeographicMapCellPositionAreaBase
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionAreaBase
 
 export class GeographicMapCellPositionArea extends GeographicMapCellPositionAreaBase {
         

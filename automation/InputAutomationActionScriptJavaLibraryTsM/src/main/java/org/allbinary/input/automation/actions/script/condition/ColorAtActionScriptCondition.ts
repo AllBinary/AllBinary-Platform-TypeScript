@@ -110,13 +110,13 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptCondition } from './BasicProfileActionScriptCondition.js';
-//not GWT import - same folder const BasicProfileActionScriptCondition
+//sameFolderImports - not GWT import - same folder const BasicProfileActionScriptCondition
 import { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
-//not GWT import - same folder const ColorAtActionScriptConditionInterface
+//sameFolderImports - not GWT import - same folder const ColorAtActionScriptConditionInterface
 import { ColorAtActionScriptConditionJPanel } from './ColorAtActionScriptConditionJPanel.js';
-//not GWT import - same folder const ColorAtActionScriptConditionJPanel
+//sameFolderImports - not GWT import - same folder const ColorAtActionScriptConditionJPanel
 import { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
-//not GWT import - same folder const ColorAtActionScriptConditionData
+//sameFolderImports - not GWT import - same folder const ColorAtActionScriptConditionData
 
 export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition implements ColorAtActionScriptConditionInterface {
         

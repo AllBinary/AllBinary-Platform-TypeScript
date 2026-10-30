@@ -66,7 +66,7 @@ import { TransformInfoObjectFactory } from '../../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformTemplateInterface } from './TransformTemplateInterface.js';
-//not GWT import - same folder const TransformTemplateInterface
+//sameFolderImports - not GWT import - same folder const TransformTemplateInterface
 
 export class TransformTemplateFactory
             extends Object

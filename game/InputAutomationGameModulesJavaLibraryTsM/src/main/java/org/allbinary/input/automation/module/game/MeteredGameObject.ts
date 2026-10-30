@@ -24,7 +24,8 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-            import { Double } from '../../../../../../java/lang/Double.js';
+            //import { Double } from '../../../../../../java/lang/Double.js';
+            const Double = globalThis.java.lang.Double;
         
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
@@ -56,9 +57,9 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MeteredGameObjectInterface } from './MeteredGameObjectInterface.js';
-//not GWT import - same folder const MeteredGameObjectInterface
+//sameFolderImports - not GWT import - same folder const MeteredGameObjectInterface
 import { GraphicsAnalysisUtil } from './GraphicsAnalysisUtil.js';
-//not GWT import - same folder const GraphicsAnalysisUtil
+//sameFolderImports - not GWT import - same folder const GraphicsAnalysisUtil
 
 export class MeteredGameObject
             extends Object

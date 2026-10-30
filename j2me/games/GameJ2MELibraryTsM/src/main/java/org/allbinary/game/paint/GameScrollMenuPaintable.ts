@@ -64,9 +64,9 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGameDemoPaintable } from './BasicGameDemoPaintable.js';
-//not GWT import - same folder const BasicGameDemoPaintable
+//sameFolderImports - not GWT import - same folder const BasicGameDemoPaintable
 import { MainGameDemoStatePaintable } from './MainGameDemoStatePaintable.js';
-//not GWT import - same folder const MainGameDemoStatePaintable
+//sameFolderImports - not GWT import - same folder const MainGameDemoStatePaintable
 
 export class GameScrollMenuPaintable extends BasicGameDemoPaintable implements ColorChangeListener {
         

@@ -56,9 +56,9 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
-//not GWT import - same folder const ContextConfigurationInterface
+//sameFolderImports - not GWT import - same folder const ContextConfigurationInterface
 import { ContextConfigurationView } from './ContextConfigurationView.js';
-//not GWT import - same folder const ContextConfigurationView
+//sameFolderImports - not GWT import - same folder const ContextConfigurationView
 
 export class ContextConfigurationDomDocumentMapping
             extends Object

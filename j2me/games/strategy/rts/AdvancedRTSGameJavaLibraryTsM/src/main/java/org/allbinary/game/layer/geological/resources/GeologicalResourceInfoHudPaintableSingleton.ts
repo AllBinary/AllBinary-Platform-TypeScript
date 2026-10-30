@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalResourceInfoHudPaintable } from './GeologicalResourceInfoHudPaintable.js';
-//not GWT import - same folder const GeologicalResourceInfoHudPaintable
+//sameFolderImports - not GWT import - same folder const GeologicalResourceInfoHudPaintable
 
 export class GeologicalResourceInfoHudPaintableSingleton
             extends Object

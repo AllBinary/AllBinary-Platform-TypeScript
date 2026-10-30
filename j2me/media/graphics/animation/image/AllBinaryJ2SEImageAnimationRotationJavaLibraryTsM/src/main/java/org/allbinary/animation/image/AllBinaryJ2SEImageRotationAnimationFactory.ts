@@ -69,11 +69,11 @@ import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUt
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import - same folder const BaseImageAnimationFactory
+//sameFolderImports - not GWT import - same folder const BaseImageAnimationFactory
 import { AllBinaryJ2SEImageRotationAnimation } from './AllBinaryJ2SEImageRotationAnimation.js';
-//not GWT import - same folder const AllBinaryJ2SEImageRotationAnimation
+//sameFolderImports - not GWT import - same folder const AllBinaryJ2SEImageRotationAnimation
 import { AllBinaryAdjustedJ2SEImageRotationAnimation } from './AllBinaryAdjustedJ2SEImageRotationAnimation.js';
-//not GWT import - same folder const AllBinaryAdjustedJ2SEImageRotationAnimation
+//sameFolderImports - not GWT import - same folder const AllBinaryAdjustedJ2SEImageRotationAnimation
 
 export class AllBinaryJ2SEImageRotationAnimationFactory extends BaseImageAnimationFactory {
         

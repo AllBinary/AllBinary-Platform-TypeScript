@@ -52,9 +52,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryLoader } from './CategoryLoader.js';
-//not GWT import - same folder const CategoryLoader
+//sameFolderImports - not GWT import - same folder const CategoryLoader
 import { CategoryLoaderInterface } from './CategoryLoaderInterface.js';
-//not GWT import - same folder const CategoryLoaderInterface
+//sameFolderImports - not GWT import - same folder const CategoryLoaderInterface
 
 export class CategoryLoaderFactory
             extends Object

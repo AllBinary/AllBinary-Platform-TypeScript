@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScaleFactorFactory } from './ScaleFactorFactory.js';
-//not GWT import - same folder const ScaleFactorFactory
+//sameFolderImports - not GWT import - same folder const ScaleFactorFactory
 
 export class BasicDecimal
             extends Object

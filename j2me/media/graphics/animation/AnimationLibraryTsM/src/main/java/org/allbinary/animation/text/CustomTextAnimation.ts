@@ -55,9 +55,9 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextAnimation } from './TextAnimation.js';
-//not GWT import - same folder const TextAnimation
+//sameFolderImports - not GWT import - same folder const TextAnimation
 import { TextInterface } from './TextInterface.js';
-//not GWT import - same folder const TextInterface
+//sameFolderImports - not GWT import - same folder const TextInterface
 
 export class CustomTextAnimation extends TextAnimation implements TextInterface {
         

@@ -31,7 +31,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JTreeInterface } from './JTreeInterface.js';
-//not GWT import - same folder const JTreeInterface
+//sameFolderImports - not GWT import - same folder const JTreeInterface
 
 export class JTreeInterfaceFactory
             extends Object

@@ -37,11 +37,11 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { JColorChooser } from './JColorChooser.js';
-//not GWT import - same folder const JColorChooser
+//sameFolderImports - not GWT import - same folder const JColorChooser
 import { BorderLayout } from './BorderLayout.js';
-//not GWT import - same folder const BorderLayout
+//sameFolderImports - not GWT import - same folder const BorderLayout
 
 export class ColorChooser extends javax.swing.JPanel {
         

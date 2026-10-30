@@ -65,7 +65,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionEventProcessor } from './MotionEventProcessor.js';
-//not GWT import - same folder const MotionEventProcessor
+//sameFolderImports - not GWT import - same folder const MotionEventProcessor
 
 export class TrackballGameInputMotionEventProcessor extends MotionEventProcessor {
         

@@ -76,15 +76,15 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointPathRunnableBase } from './WaypointPathRunnableBase.js';
-//not GWT import - same folder const WaypointPathRunnableBase
+//sameFolderImports - not GWT import - same folder const WaypointPathRunnableBase
 //import { FirstRunnable } from './FirstRunnable.js';
-//not GWT import - same folder const FirstRunnable
+//sameFolderImports - not GWT import - same folder const FirstRunnable
 //import { SecondRunnable } from './SecondRunnable.js';
-//not GWT import - same folder const SecondRunnable
+//sameFolderImports - not GWT import - same folder const SecondRunnable
 //import { EndRunnable } from './EndRunnable.js';
-//not GWT import - same folder const EndRunnable
+//sameFolderImports - not GWT import - same folder const EndRunnable
 import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import - same folder const WaypointBehaviorBase
+//sameFolderImports - not GWT import - same folder const WaypointBehaviorBase
 type FirstRunnable = InstanceType<MultipassWaypointPathRunnable['FirstRunnable']>;
 type SecondRunnable = InstanceType<MultipassWaypointPathRunnable['SecondRunnable']>;
 type EndRunnable = InstanceType<MultipassWaypointPathRunnable['EndRunnable']>;

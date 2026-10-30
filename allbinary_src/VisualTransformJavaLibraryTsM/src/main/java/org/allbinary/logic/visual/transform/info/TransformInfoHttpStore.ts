@@ -72,9 +72,9 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttp } from './TransformInfoHttp.js';
-//not GWT import - same folder const TransformInfoHttp
+//sameFolderImports - not GWT import - same folder const TransformInfoHttp
 import { TransformInfoHttpStoreInterface } from './TransformInfoHttpStoreInterface.js';
-//not GWT import - same folder const TransformInfoHttpStoreInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoHttpStoreInterface
 
 export class TransformInfoHttpStore extends TransformInfoHttp implements TransformInfoHttpStoreInterface {
         

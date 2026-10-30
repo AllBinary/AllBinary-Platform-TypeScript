@@ -49,9 +49,9 @@ import { MIDlet } from '../../../../javax/microedition/midlet/MIDlet.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GLHolder } from './GLHolder.js';
-//not GWT import - same folder const GLHolder
+//sameFolderImports - not GWT import - same folder const GLHolder
 import { RatioProcessor } from './RatioProcessor.js';
-//not GWT import - same folder const RatioProcessor
+//sameFolderImports - not GWT import - same folder const RatioProcessor
 //SWTWithoutJOGL
 export class SWTJOGLProcessor
             extends Object

@@ -80,7 +80,7 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HeadingData } from './HeadingData.js';
-//not GWT import - same folder const HeadingData
+//sameFolderImports - not GWT import - same folder const HeadingData
 
 export class HeadingValidation extends Validation implements DomNodeInterface {
         

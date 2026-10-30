@@ -72,7 +72,7 @@ import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import - same folder const ImageComparisonResult
+//sameFolderImports - not GWT import - same folder const ImageComparisonResult
 
 export class ChangedPixelsUtil
             extends Object

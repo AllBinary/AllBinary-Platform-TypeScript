@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Movement } from './Movement.js';
-//not GWT import - same folder const Movement
+//sameFolderImports - not GWT import - same folder const Movement
 
 export interface MovementCompositeInterface {
         

@@ -66,7 +66,7 @@ import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageMo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-//not GWT import - same folder const ImageBaseRotationAnimation
+//sameFolderImports - not GWT import - same folder const ImageBaseRotationAnimation
 
 export class AllBinaryNoFlickerAndroidImageRotationAnimation extends ImageBaseRotationAnimation {
         

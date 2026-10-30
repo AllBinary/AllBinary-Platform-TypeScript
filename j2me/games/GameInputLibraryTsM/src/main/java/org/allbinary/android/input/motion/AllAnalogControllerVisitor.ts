@@ -50,9 +50,9 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogControllerVisitor } from './AnalogControllerVisitor.js';
-//not GWT import - same folder const AnalogControllerVisitor
+//sameFolderImports - not GWT import - same folder const AnalogControllerVisitor
 import { AnalogLocationInputProcessor } from './AnalogLocationInputProcessor.js';
-//not GWT import - same folder const AnalogLocationInputProcessor
+//sameFolderImports - not GWT import - same folder const AnalogLocationInputProcessor
 
 export class AllAnalogControllerVisitor extends AnalogControllerVisitor {
         

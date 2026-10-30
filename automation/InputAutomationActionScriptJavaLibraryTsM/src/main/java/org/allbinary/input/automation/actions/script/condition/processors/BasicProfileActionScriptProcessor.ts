@@ -57,9 +57,9 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptProcessorInterface } from './ProfileActionScriptProcessorInterface.js';
-//not GWT import - same folder const ProfileActionScriptProcessorInterface
+//sameFolderImports - not GWT import - same folder const ProfileActionScriptProcessorInterface
 import { GenericProfileActionScriptProcessorData } from './GenericProfileActionScriptProcessorData.js';
-//not GWT import - same folder const GenericProfileActionScriptProcessorData
+//sameFolderImports - not GWT import - same folder const GenericProfileActionScriptProcessorData
 
 export class BasicProfileActionScriptProcessor extends ProfileActionScriptItem implements ProfileActionScriptProcessorInterface {
         

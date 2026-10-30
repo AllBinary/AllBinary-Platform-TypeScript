@@ -66,11 +66,11 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptItemInterface } from './ProfileActionScriptItemInterface.js';
-//not GWT import - same folder const ProfileActionScriptItemInterface
+//sameFolderImports - not GWT import - same folder const ProfileActionScriptItemInterface
 import { JPopupMenu } from './JPopupMenu.js';
-//not GWT import - same folder const JPopupMenu
+//sameFolderImports - not GWT import - same folder const JPopupMenu
 import { JMenuItem } from './JMenuItem.js';
-//not GWT import - same folder const JMenuItem
+//sameFolderImports - not GWT import - same folder const JMenuItem
 
 export class ProfileActionScriptItem extends DefaultMutableTreeNode implements ProfileActionScriptItemInterface, ActionListener {
         

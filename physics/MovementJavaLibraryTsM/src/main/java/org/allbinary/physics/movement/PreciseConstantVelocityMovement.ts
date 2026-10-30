@@ -41,7 +41,7 @@ import { ScaleFactorFactory } from '../../../../org/allbinary/logic/math/ScaleFa
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicConstantVelocityMovement } from './BasicConstantVelocityMovement.js';
-//not GWT import - same folder const BasicConstantVelocityMovement
+//sameFolderImports - not GWT import - same folder const BasicConstantVelocityMovement
 
 export class PreciseConstantVelocityMovement extends BasicConstantVelocityMovement {
         

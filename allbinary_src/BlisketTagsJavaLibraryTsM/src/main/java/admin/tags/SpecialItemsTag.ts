@@ -43,7 +43,7 @@ import { SpecialItemsRequestHelperFactory } from '../../admin/taghelpers/Special
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import - same folder const TableTag
+//sameFolderImports - not GWT import - same folder const TableTag
 
 export class SpecialItemsTag extends TableTag {
         

@@ -66,7 +66,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserData } from './UserData.js';
-//not GWT import - same folder const UserData
+//sameFolderImports - not GWT import - same folder const UserData
 
 export class UserDomNode
             extends Object

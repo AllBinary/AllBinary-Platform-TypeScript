@@ -87,9 +87,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchMotionGestureFactory } from './TouchMotionGestureFactory.js';
-//not GWT import - same folder const TouchMotionGestureFactory
+//sameFolderImports - not GWT import - same folder const TouchMotionGestureFactory
 import { MotionGestureInput } from './MotionGestureInput.js';
-//not GWT import - same folder const MotionGestureInput
+//sameFolderImports - not GWT import - same folder const MotionGestureInput
 
 export class MotionGestureRecognizer
             extends Object

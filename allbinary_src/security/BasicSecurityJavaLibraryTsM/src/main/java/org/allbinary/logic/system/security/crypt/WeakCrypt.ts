@@ -62,7 +62,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DatabaseEncoder } from './DatabaseEncoder.js';
-//not GWT import - same folder const DatabaseEncoder
+//sameFolderImports - not GWT import - same folder const DatabaseEncoder
 
 export class WeakCrypt
             extends Object

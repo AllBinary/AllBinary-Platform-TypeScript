@@ -53,9 +53,9 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailInterface } from './EmailInterface.js';
-//not GWT import - same folder const EmailInterface
+//sameFolderImports - not GWT import - same folder const EmailInterface
 import { Email } from './Email.js';
-//not GWT import - same folder const Email
+//sameFolderImports - not GWT import - same folder const Email
 
 export class AbEmail
             extends Object

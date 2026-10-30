@@ -50,9 +50,9 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FileItemStream } from './FileItemStream.js';
-//not GWT import - same folder const FileItemStream
+//sameFolderImports - not GWT import - same folder const FileItemStream
 import { FileItem } from './FileItem.js';
-//not GWT import - same folder const FileItem
+//sameFolderImports - not GWT import - same folder const FileItem
 
 export class FileItemUtil
             extends Object

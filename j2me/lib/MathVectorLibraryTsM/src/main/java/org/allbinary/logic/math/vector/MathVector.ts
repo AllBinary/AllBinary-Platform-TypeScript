@@ -42,7 +42,7 @@ import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecim
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MathVectorInterface } from './MathVectorInterface.js';
-//not GWT import - same folder const MathVectorInterface
+//sameFolderImports - not GWT import - same folder const MathVectorInterface
 
 export class MathVector
             extends Object

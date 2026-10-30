@@ -47,9 +47,9 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CapitalEventListenerInterface } from './CapitalEventListenerInterface.js';
-//not GWT import - same folder const CapitalEventListenerInterface
+//sameFolderImports - not GWT import - same folder const CapitalEventListenerInterface
 import { CapitalEvent } from './CapitalEvent.js';
-//not GWT import - same folder const CapitalEvent
+//sameFolderImports - not GWT import - same folder const CapitalEvent
 
 export class CapitalEventHandler extends BasicEventHandler {
         

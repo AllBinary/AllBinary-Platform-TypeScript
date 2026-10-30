@@ -52,7 +52,7 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleWeaponLayer } from './SimpleWeaponLayer.js';
-//not GWT import - same folder const SimpleWeaponLayer
+//sameFolderImports - not GWT import - same folder const SimpleWeaponLayer
 
 export class TempExplosionWeaponLayer extends SimpleWeaponLayer {
         

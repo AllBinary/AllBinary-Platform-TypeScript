@@ -45,7 +45,7 @@ import { TenderType } from '../../../../../../../../../org/allbinary/business/us
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentTransactionInterface } from './PaymentTransactionInterface.js';
-//not GWT import - same folder const PaymentTransactionInterface
+//sameFolderImports - not GWT import - same folder const PaymentTransactionInterface
 
 export interface PaymentTransactionInterfaceFactoryInterface {
         

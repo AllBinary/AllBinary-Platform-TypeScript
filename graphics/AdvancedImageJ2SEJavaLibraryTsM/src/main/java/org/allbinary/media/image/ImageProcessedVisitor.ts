@@ -43,7 +43,7 @@ import { IOException } from '../../../../java/io/IOException.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageProcessorInputCompositeInterface } from './ImageProcessorInputCompositeInterface.js';
-//not GWT import - same folder const ImageProcessorInputCompositeInterface
+//sameFolderImports - not GWT import - same folder const ImageProcessorInputCompositeInterface
 
 export interface ImageProcessedVisitor extends ImageProcessorInputCompositeInterface {
         

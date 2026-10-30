@@ -37,9 +37,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackGeographicMapCellTypeFactory } from './RaceTrackGeographicMapCellTypeFactory.js';
-//not GWT import - same folder const RaceTrackGeographicMapCellTypeFactory
+//sameFolderImports - not GWT import - same folder const RaceTrackGeographicMapCellTypeFactory
 import { EmptyRaceRaceTrackGeographicMapCellTypeFactory } from './EmptyRaceRaceTrackGeographicMapCellTypeFactory.js';
-//not GWT import - same folder const EmptyRaceRaceTrackGeographicMapCellTypeFactory
+//sameFolderImports - not GWT import - same folder const EmptyRaceRaceTrackGeographicMapCellTypeFactory
 
 export class CloseLoopRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeographicMapCellTypeFactory {
         

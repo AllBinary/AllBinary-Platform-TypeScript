@@ -74,15 +74,15 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-//not GWT import - same folder const PathFindingLayerInterface
+//sameFolderImports - not GWT import - same folder const PathFindingLayerInterface
 import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
-//not GWT import - same folder const GeographicMapCellPositionAreaBase
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionAreaBase
 import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import - same folder const SelectionHudPaintable
+//sameFolderImports - not GWT import - same folder const SelectionHudPaintable
 import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
-//not GWT import - same folder const RTSLayer2LogHelper
+//sameFolderImports - not GWT import - same folder const RTSLayer2LogHelper
 import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import - same folder const WaypointBehaviorBase
+//sameFolderImports - not GWT import - same folder const WaypointBehaviorBase
 
 export class NullPathFindingLayer
             extends Object

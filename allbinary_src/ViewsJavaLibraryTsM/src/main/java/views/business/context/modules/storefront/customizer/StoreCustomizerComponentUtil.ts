@@ -69,7 +69,7 @@ import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/vi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomizerUtil } from './CustomizerUtil.js';
-//not GWT import - same folder const CustomizerUtil
+//sameFolderImports - not GWT import - same folder const CustomizerUtil
 
 export class StoreCustomizerComponentUtil
             extends Object

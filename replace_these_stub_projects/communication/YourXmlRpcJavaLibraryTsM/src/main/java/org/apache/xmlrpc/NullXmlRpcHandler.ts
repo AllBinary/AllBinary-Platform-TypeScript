@@ -53,7 +53,7 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { XmlRpcHandler } from './XmlRpcHandler.js';
-//not GWT import - same folder const XmlRpcHandler
+//sameFolderImports - not GWT import - same folder const XmlRpcHandler
 
 export class NullXmlRpcHandler
             extends Object

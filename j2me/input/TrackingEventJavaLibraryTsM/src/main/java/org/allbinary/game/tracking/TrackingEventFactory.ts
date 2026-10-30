@@ -45,9 +45,9 @@ import { AllBinaryEventObjectFactoryInterface } from '../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackingEvent } from './TrackingEvent.js';
-//not GWT import - same folder const TrackingEvent
+//sameFolderImports - not GWT import - same folder const TrackingEvent
 import { TrackingEventHandler } from './TrackingEventHandler.js';
-//not GWT import - same folder const TrackingEventHandler
+//sameFolderImports - not GWT import - same folder const TrackingEventHandler
 
 export class TrackingEventFactory
             extends Object

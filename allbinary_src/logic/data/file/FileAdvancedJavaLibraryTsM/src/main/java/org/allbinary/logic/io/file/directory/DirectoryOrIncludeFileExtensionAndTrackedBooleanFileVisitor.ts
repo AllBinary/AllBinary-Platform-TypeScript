@@ -59,7 +59,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackedStrings } from './TrackedStrings.js';
-//not GWT import - same folder const TrackedStrings
+//sameFolderImports - not GWT import - same folder const TrackedStrings
 
 export class DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor extends IncludeFileExtensionsBooleanFileVisitor {
         

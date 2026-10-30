@@ -50,13 +50,13 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthBar } from './HealthBar.js';
-//not GWT import - same folder const HealthBar
+//sameFolderImports - not GWT import - same folder const HealthBar
 import { HealthBarTwodAnimation } from './HealthBarTwodAnimation.js';
-//not GWT import - same folder const HealthBarTwodAnimation
+//sameFolderImports - not GWT import - same folder const HealthBarTwodAnimation
 import { Health } from './Health.js';
-//not GWT import - same folder const Health
+//sameFolderImports - not GWT import - same folder const Health
 import { HealthBarAnimationInterfaceFactory } from './HealthBarAnimationInterfaceFactory.js';
-//not GWT import - same folder const HealthBarAnimationInterfaceFactory
+//sameFolderImports - not GWT import - same folder const HealthBarAnimationInterfaceFactory
 
 export class HealthBarFactory
             extends Object

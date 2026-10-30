@@ -80,7 +80,7 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputToGameKeyMapping } from './InputToGameKeyMapping.js';
-//not GWT import - same folder const InputToGameKeyMapping
+//sameFolderImports - not GWT import - same folder const InputToGameKeyMapping
 
 export class InputMapping
             extends Object

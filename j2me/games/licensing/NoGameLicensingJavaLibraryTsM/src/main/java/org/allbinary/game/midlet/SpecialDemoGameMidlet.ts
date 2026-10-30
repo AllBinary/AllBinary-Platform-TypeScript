@@ -43,13 +43,13 @@ import { LicenseServerInitFileUtil } from '../../../../org/allbinary/logic/syste
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidlet } from './DemoGameMidlet.js';
-//not GWT import - same folder const DemoGameMidlet
+//sameFolderImports - not GWT import - same folder const DemoGameMidlet
 import { LicenseLoadingType } from './LicenseLoadingType.js';
-//not GWT import - same folder const LicenseLoadingType
+//sameFolderImports - not GWT import - same folder const LicenseLoadingType
 import { LicensedDemoSetupFactory } from './LicensedDemoSetupFactory.js';
-//not GWT import - same folder const LicensedDemoSetupFactory
+//sameFolderImports - not GWT import - same folder const LicensedDemoSetupFactory
 import { LicenseCheckRunnableFactory } from './LicenseCheckRunnableFactory.js';
-//not GWT import - same folder const LicenseCheckRunnableFactory
+//sameFolderImports - not GWT import - same folder const LicenseCheckRunnableFactory
 
 export class SpecialDemoGameMidlet extends DemoGameMidlet {
         

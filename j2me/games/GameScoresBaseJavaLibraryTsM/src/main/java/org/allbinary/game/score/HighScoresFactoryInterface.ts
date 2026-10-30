@@ -40,9 +40,9 @@ import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import - same folder const HighScoresResultsListener
+//sameFolderImports - not GWT import - same folder const HighScoresResultsListener
 import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
-//not GWT import - same folder const HighScoresHelperBaseInterface
+//sameFolderImports - not GWT import - same folder const HighScoresHelperBaseInterface
 
 export interface HighScoresFactoryInterface {
         

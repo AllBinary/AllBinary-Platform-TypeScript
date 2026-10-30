@@ -51,7 +51,7 @@ type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlTag } from './HtmlTag.js';
-//not GWT import - same folder const HtmlTag
+//sameFolderImports - not GWT import - same folder const HtmlTag
 
 export class HtmlTags
             extends Object

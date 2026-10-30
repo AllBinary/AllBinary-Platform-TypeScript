@@ -53,9 +53,9 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VirtualKeyboardEvent } from './VirtualKeyboardEvent.js';
-//not GWT import - same folder const VirtualKeyboardEvent
+//sameFolderImports - not GWT import - same folder const VirtualKeyboardEvent
 import { VirtualKeyboardEventListenerInterface } from './VirtualKeyboardEventListenerInterface.js';
-//not GWT import - same folder const VirtualKeyboardEventListenerInterface
+//sameFolderImports - not GWT import - same folder const VirtualKeyboardEventListenerInterface
 
 export class VirtualKeyboardEventHandler extends BasicEventHandler {
         

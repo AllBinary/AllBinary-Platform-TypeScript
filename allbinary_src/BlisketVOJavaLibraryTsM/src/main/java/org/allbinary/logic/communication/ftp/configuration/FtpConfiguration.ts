@@ -42,9 +42,9 @@ import { HashMap } from '../../../../../../java/util/HashMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FtpConfigurationInterface } from './FtpConfigurationInterface.js';
-//not GWT import - same folder const FtpConfigurationInterface
+//sameFolderImports - not GWT import - same folder const FtpConfigurationInterface
 import { FtpConfigurationData } from './FtpConfigurationData.js';
-//not GWT import - same folder const FtpConfigurationData
+//sameFolderImports - not GWT import - same folder const FtpConfigurationData
 
 export class FtpConfiguration
             extends Object

@@ -43,7 +43,7 @@ import { PermissionItemsRequestHelperFactory } from '../../admin/taghelpers/Perm
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import - same folder const TableTag
+//sameFolderImports - not GWT import - same folder const TableTag
 
 export class PermissionItemsTag extends TableTag {
         

@@ -76,9 +76,9 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownloadableItem } from './DownloadableItem.js';
-//not GWT import - same folder const DownloadableItem
+//sameFolderImports - not GWT import - same folder const DownloadableItem
 import { DownloadItemData } from './DownloadItemData.js';
-//not GWT import - same folder const DownloadItemData
+//sameFolderImports - not GWT import - same folder const DownloadItemData
 
 export class DownloadableItemView
             extends Object

@@ -51,9 +51,9 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileInputStream } from './AbFileInputStream.js';
-//not GWT import - same folder const AbFileInputStream
+//sameFolderImports - not GWT import - same folder const AbFileInputStream
 import { AbFileOutputStream } from './AbFileOutputStream.js';
-//not GWT import - same folder const AbFileOutputStream
+//sameFolderImports - not GWT import - same folder const AbFileOutputStream
 
 export class FileStreamFactory
             extends Object

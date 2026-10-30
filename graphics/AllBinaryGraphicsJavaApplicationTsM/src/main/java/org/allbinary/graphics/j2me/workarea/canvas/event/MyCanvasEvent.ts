@@ -40,9 +40,9 @@ import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventObject } from './EventObject.js';
-//not GWT import - same folder const EventObject
+//sameFolderImports - not GWT import - same folder const EventObject
 import { MyCanvasEventSource } from './MyCanvasEventSource.js';
-//not GWT import - same folder const MyCanvasEventSource
+//sameFolderImports - not GWT import - same folder const MyCanvasEventSource
 
 export class MyCanvasEvent extends java.util.EventObject {
         

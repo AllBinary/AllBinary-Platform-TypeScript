@@ -48,9 +48,9 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayBaseRotationAnimation } from './ImageArrayBaseRotationAnimation.js';
-//not GWT import - same folder const ImageArrayBaseRotationAnimation
+//sameFolderImports - not GWT import - same folder const ImageArrayBaseRotationAnimation
 import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
-//not GWT import - same folder const ImageArrayRotationAnimationInfo
+//sameFolderImports - not GWT import - same folder const ImageArrayRotationAnimationInfo
 
 export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation {
         

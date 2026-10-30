@@ -43,11 +43,11 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbPath } from './AbPath.js';
-//not GWT import - same folder const AbPath
+//sameFolderImports - not GWT import - same folder const AbPath
 //not plain js - same folder import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 import { PathUtil } from './PathUtil.js';
-//not GWT import - same folder const PathUtil
+//sameFolderImports - not GWT import - same folder const PathUtil
 
 export class AbFilePath extends AbPath {
         

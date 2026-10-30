@@ -55,7 +55,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidSystemProperties } from './AndroidSystemProperties.js';
-//not GWT import - same folder const AndroidSystemProperties
+//sameFolderImports - not GWT import - same folder const AndroidSystemProperties
 
 export class AndroidOS extends GenericOperatingSystem {
         

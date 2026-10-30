@@ -68,7 +68,7 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitInfoEntity } from './InitInfoEntity.js';
-//not GWT import - same folder const InitInfoEntity
+//sameFolderImports - not GWT import - same folder const InitInfoEntity
 
 export class InitInfo
             extends Object

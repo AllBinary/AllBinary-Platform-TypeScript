@@ -72,7 +72,7 @@ import { ViewPositionEventHandler } from '../../../../../../../org/allbinary/vie
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineWeaponResources } from './MineWeaponResources.js';
-//not GWT import - same folder const MineWeaponResources
+//sameFolderImports - not GWT import - same folder const MineWeaponResources
 
 export class MineLayer extends SimpleWeaponLayer {
         

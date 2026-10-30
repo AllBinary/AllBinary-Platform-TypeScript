@@ -64,7 +64,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyCompleteMotionGestureInputEventFactory } from './GameKeyCompleteMotionGestureInputEventFactory.js';
-//not GWT import - same folder const GameKeyCompleteMotionGestureInputEventFactory
+//sameFolderImports - not GWT import - same folder const GameKeyCompleteMotionGestureInputEventFactory
 
 export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestureInputEvent implements GameKeyEventSourceInterface {
         

@@ -50,7 +50,7 @@ import { OrderItemsEntity } from '../../../../../../../org/allbinary/data/tables
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Order } from './Order.js';
-//not GWT import - same folder const Order
+//sameFolderImports - not GWT import - same folder const Order
 
 export class OrderProcessorUtil
             extends Object

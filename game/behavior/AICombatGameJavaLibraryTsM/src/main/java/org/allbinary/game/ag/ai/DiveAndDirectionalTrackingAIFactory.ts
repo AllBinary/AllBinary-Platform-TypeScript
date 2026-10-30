@@ -66,13 +66,13 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThrustAIVisitorFactory } from './ThrustAIVisitorFactory.js';
-//not GWT import - same folder const ThrustAIVisitorFactory
+//sameFolderImports - not GWT import - same folder const ThrustAIVisitorFactory
 import { BasicProbabilityAIDataFactory } from './BasicProbabilityAIDataFactory.js';
-//not GWT import - same folder const BasicProbabilityAIDataFactory
+//sameFolderImports - not GWT import - same folder const BasicProbabilityAIDataFactory
 import { LastKeyAIVisitorFactory } from './LastKeyAIVisitorFactory.js';
-//not GWT import - same folder const LastKeyAIVisitorFactory
+//sameFolderImports - not GWT import - same folder const LastKeyAIVisitorFactory
 import { DiveAndDirectionalTrackingAI } from './DiveAndDirectionalTrackingAI.js';
-//not GWT import - same folder const DiveAndDirectionalTrackingAI
+//sameFolderImports - not GWT import - same folder const DiveAndDirectionalTrackingAI
 
 export class DiveAndDirectionalTrackingAIFactory
             extends Object

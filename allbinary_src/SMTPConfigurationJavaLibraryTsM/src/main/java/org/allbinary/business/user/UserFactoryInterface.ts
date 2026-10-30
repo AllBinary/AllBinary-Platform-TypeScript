@@ -45,7 +45,7 @@ import { HashMap } from '../../../../java/util/HashMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserInterface } from './UserInterface.js';
-//not GWT import - same folder const UserInterface
+//sameFolderImports - not GWT import - same folder const UserInterface
 
 export interface UserFactoryInterface extends Serializable {
         

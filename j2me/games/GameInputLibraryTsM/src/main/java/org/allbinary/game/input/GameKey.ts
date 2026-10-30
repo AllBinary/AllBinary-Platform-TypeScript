@@ -45,7 +45,7 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Input } from './Input.js';
-//not GWT import - same folder const Input
+//sameFolderImports - not GWT import - same folder const Input
 
 export class GameKey extends Input {
         

@@ -57,9 +57,9 @@ type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JvmStatistics } from './JvmStatistics.js';
-//not GWT import - same folder const JvmStatistics
+//sameFolderImports - not GWT import - same folder const JvmStatistics
 import { JvmStatisticsData } from './JvmStatisticsData.js';
-//not GWT import - same folder const JvmStatisticsData
+//sameFolderImports - not GWT import - same folder const JvmStatisticsData
 
 export class JvmStatisticsMapping extends JvmStatistics implements TableMappingInterface {
         

@@ -54,9 +54,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailServerConfigurationInterface } from './EmailServerConfigurationInterface.js';
-//not GWT import - same folder const EmailServerConfigurationInterface
+//sameFolderImports - not GWT import - same folder const EmailServerConfigurationInterface
 import { EmailServerConfigurationData } from './EmailServerConfigurationData.js';
-//not GWT import - same folder const EmailServerConfigurationData
+//sameFolderImports - not GWT import - same folder const EmailServerConfigurationData
 
 export class EmailServerConfiguration
             extends Object

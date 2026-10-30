@@ -54,9 +54,9 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
         //not plain js - same folder import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 import { AbFilePath } from './AbFilePath.js';
-//not GWT import - same folder const AbFilePath
+//sameFolderImports - not GWT import - same folder const AbFilePath
 import { AbPath } from './AbPath.js';
-//not GWT import - same folder const AbPath
+//sameFolderImports - not GWT import - same folder const AbPath
 //Used to correct user input for paths
 export class PathUtil
             extends Object

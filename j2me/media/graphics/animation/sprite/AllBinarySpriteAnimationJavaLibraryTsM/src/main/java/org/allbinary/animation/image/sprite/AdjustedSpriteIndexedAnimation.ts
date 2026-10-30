@@ -57,7 +57,7 @@ import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/Basi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpriteIndexedAnimation } from './SpriteIndexedAnimation.js';
-//not GWT import - same folder const SpriteIndexedAnimation
+//sameFolderImports - not GWT import - same folder const SpriteIndexedAnimation
 
 export class AdjustedSpriteIndexedAnimation extends SpriteIndexedAnimation {
         

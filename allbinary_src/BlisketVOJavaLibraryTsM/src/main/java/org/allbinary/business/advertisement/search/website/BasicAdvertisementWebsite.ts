@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementWebsiteInterface } from './AdvertisementWebsiteInterface.js';
-//not GWT import - same folder const AdvertisementWebsiteInterface
+//sameFolderImports - not GWT import - same folder const AdvertisementWebsiteInterface
 
 export class BasicAdvertisementWebsite
             extends Object

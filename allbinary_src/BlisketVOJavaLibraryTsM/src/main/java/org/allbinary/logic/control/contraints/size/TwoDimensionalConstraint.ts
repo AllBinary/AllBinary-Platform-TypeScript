@@ -42,9 +42,9 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TwoDimensionalConstraintInterface } from './TwoDimensionalConstraintInterface.js';
-//not GWT import - same folder const TwoDimensionalConstraintInterface
+//sameFolderImports - not GWT import - same folder const TwoDimensionalConstraintInterface
 import { SizeConstraintInterface } from './SizeConstraintInterface.js';
-//not GWT import - same folder const SizeConstraintInterface
+//sameFolderImports - not GWT import - same folder const SizeConstraintInterface
 
 export class TwoDimensionalConstraint
             extends Object

@@ -42,7 +42,7 @@ import { Group } from '../../../../../../org/allbinary/game/identification/Group
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointEventHandler } from './WaypointEventHandler.js';
-//not GWT import - same folder const WaypointEventHandler
+//sameFolderImports - not GWT import - same folder const WaypointEventHandler
 
 export class WaypointEventHandlerFactory
             extends Object

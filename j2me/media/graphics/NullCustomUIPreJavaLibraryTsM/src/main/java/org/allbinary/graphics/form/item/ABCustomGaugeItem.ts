@@ -33,7 +33,7 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABCustomItem } from './ABCustomItem.js';
-//not GWT import - same folder const ABCustomItem
+//sameFolderImports - not GWT import - same folder const ABCustomItem
 
 export class ABCustomGaugeItem extends ABCustomItem {
         

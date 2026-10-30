@@ -58,23 +58,23 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleGeographicMap } from './SimpleGeographicMap.js';
-//not GWT import - same folder const SimpleGeographicMap
+//sameFolderImports - not GWT import - same folder const SimpleGeographicMap
 import { GeographicMapInterface } from './GeographicMapInterface.js';
-//not GWT import - same folder const GeographicMapInterface
+//sameFolderImports - not GWT import - same folder const GeographicMapInterface
 import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
-//not GWT import - same folder const BasicGeographicMapCellPositionFactory
+//sameFolderImports - not GWT import - same folder const BasicGeographicMapCellPositionFactory
 import { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPositionFactoryInterface.js';
-//not GWT import - same folder const GeographicMapCellPositionFactoryInterface
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionFactoryInterface
 import { GeographicMapCellTypeFactory } from './GeographicMapCellTypeFactory.js';
-//not GWT import - same folder const GeographicMapCellTypeFactory
+//sameFolderImports - not GWT import - same folder const GeographicMapCellTypeFactory
 import { GeographicMapCellPositionBaseFactory } from './GeographicMapCellPositionBaseFactory.js';
-//not GWT import - same folder const GeographicMapCellPositionBaseFactory
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionBaseFactory
 import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import - same folder const GeographicMapCellPosition
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPosition
 import { SimpleGeographicMapCellPositionFactory } from './SimpleGeographicMapCellPositionFactory.js';
-//not GWT import - same folder const SimpleGeographicMapCellPositionFactory
+//sameFolderImports - not GWT import - same folder const SimpleGeographicMapCellPositionFactory
 import { GeographicMapCellType } from './GeographicMapCellType.js';
-//not GWT import - same folder const GeographicMapCellType
+//sameFolderImports - not GWT import - same folder const GeographicMapCellType
 
 export class BasicGeographicMap extends SimpleGeographicMap implements GeographicMapInterface {
         

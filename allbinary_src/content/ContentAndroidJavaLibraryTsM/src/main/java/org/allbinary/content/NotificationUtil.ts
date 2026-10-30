@@ -74,11 +74,11 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NotificationBuilder } from './NotificationBuilder.js';
-//not GWT import - same folder const NotificationBuilder
+//sameFolderImports - not GWT import - same folder const NotificationBuilder
 import { NotificationBuilderAPI23 } from './NotificationBuilderAPI23.js';
-//not GWT import - same folder const NotificationBuilderAPI23
+//sameFolderImports - not GWT import - same folder const NotificationBuilderAPI23
 import { CommandUriAction } from './CommandUriAction.js';
-//not GWT import - same folder const CommandUriAction
+//sameFolderImports - not GWT import - same folder const CommandUriAction
 
 export class NotificationUtil
             extends Object

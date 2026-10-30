@@ -69,7 +69,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputMotionInfoAPI5 } from './GameInputMotionInfoAPI5.js';
-//not GWT import - same folder const GameInputMotionInfoAPI5
+//sameFolderImports - not GWT import - same folder const GameInputMotionInfoAPI5
 
 export class GameInputMotionEventProcessorAPI5 extends BaseGameInputMotionEventProcessor {
         

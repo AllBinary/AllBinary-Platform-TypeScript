@@ -45,7 +45,7 @@ import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/display
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameAdStateFactory } from './GameAdStateFactory.js';
-//not GWT import - same folder const GameAdStateFactory
+//sameFolderImports - not GWT import - same folder const GameAdStateFactory
 
 export class BottomLimiter
             extends Object

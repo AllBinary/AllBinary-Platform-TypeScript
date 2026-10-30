@@ -75,7 +75,7 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DamageFloaters } from './DamageFloaters.js';
-//not GWT import - same folder const DamageFloaters
+//sameFolderImports - not GWT import - same folder const DamageFloaters
 
 export class PtsDamageFloaters extends DamageFloaters {
         

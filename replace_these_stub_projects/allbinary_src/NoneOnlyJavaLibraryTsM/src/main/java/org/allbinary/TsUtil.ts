@@ -146,7 +146,7 @@ anyType!.wait(timeoutMillis);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return string.getBytes();;
+                        return Array.from(new TextEncoder().encode(string), byte => (byte << 24) >> 24);;
     
 }
 

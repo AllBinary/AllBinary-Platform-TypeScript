@@ -43,9 +43,9 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThirdPartyInApplicationPurchaseInterface } from './ThirdPartyInApplicationPurchaseInterface.js';
-//not GWT import - same folder const ThirdPartyInApplicationPurchaseInterface
+//sameFolderImports - not GWT import - same folder const ThirdPartyInApplicationPurchaseInterface
 import { LockableFeature } from './LockableFeature.js';
-//not GWT import - same folder const LockableFeature
+//sameFolderImports - not GWT import - same folder const LockableFeature
 
 export class ThirdPartyInApplicationPurchase
             extends Object

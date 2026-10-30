@@ -76,7 +76,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationConfiguration } from './InputAutomationConfiguration.js';
-//not GWT import - same folder const InputAutomationConfiguration
+//sameFolderImports - not GWT import - same folder const InputAutomationConfiguration
 
 export class InputAutomationConfigurationFactory
             extends Object

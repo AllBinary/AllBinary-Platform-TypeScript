@@ -77,11 +77,11 @@ type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSFormInput } from './RTSFormInput.js';
-//not GWT import - same folder const RTSFormInput
+//sameFolderImports - not GWT import - same folder const RTSFormInput
 import { WaypointRTSFormInput } from './WaypointRTSFormInput.js';
-//not GWT import - same folder const WaypointRTSFormInput
+//sameFolderImports - not GWT import - same folder const WaypointRTSFormInput
 import { UnitRTSFormInput } from './UnitRTSFormInput.js';
-//not GWT import - same folder const UnitRTSFormInput
+//sameFolderImports - not GWT import - same folder const UnitRTSFormInput
 
 export class CompositeRTSFormInput extends RTSFormInput {
         

@@ -56,13 +56,13 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageLoadingProcessor } from './BaseImageLoadingProcessor.js';
-//not GWT import - same folder const BaseImageLoadingProcessor
+//sameFolderImports - not GWT import - same folder const BaseImageLoadingProcessor
 import { ABRunnable } from './ABRunnable.js';
-//not GWT import - same folder const ABRunnable
+//sameFolderImports - not GWT import - same folder const ABRunnable
 //import { ImageCacheRunnable } from './ImageCacheRunnable.js';
-//not GWT import - same folder const ImageCacheRunnable
+//sameFolderImports - not GWT import - same folder const ImageCacheRunnable
 import { ImageThreadPool } from './ImageThreadPool.js';
-//not GWT import - same folder const ImageThreadPool
+//sameFolderImports - not GWT import - same folder const ImageThreadPool
 type ImageCacheRunnable = InstanceType<ConcurrentImageLoadingProcessor['ImageCacheRunnable']>;
 
 export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {

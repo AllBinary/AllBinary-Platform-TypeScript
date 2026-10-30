@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sound } from './Sound.js';
-//not GWT import - same folder const Sound
+//sameFolderImports - not GWT import - same folder const Sound
 
 export interface SoundsFactoryInterface {
         

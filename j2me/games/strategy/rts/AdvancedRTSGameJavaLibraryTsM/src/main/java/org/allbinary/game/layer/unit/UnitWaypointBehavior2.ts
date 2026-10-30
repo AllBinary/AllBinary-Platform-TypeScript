@@ -134,13 +134,13 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UnitWaypointBehavior } from './UnitWaypointBehavior.js';
-//not GWT import - same folder const UnitWaypointBehavior
+//sameFolderImports - not GWT import - same folder const UnitWaypointBehavior
 import { UnitWaypointStrings } from './UnitWaypointStrings.js';
-//not GWT import - same folder const UnitWaypointStrings
+//sameFolderImports - not GWT import - same folder const UnitWaypointStrings
 import { UnitLayer } from './UnitLayer.js';
-//not GWT import - same folder const UnitLayer
+//sameFolderImports - not GWT import - same folder const UnitLayer
 //import { BuildingSteeringVisitor } from './BuildingSteeringVisitor.js';
-//not GWT import - same folder const BuildingSteeringVisitor
+//sameFolderImports - not GWT import - same folder const BuildingSteeringVisitor
 type BuildingSteeringVisitor = InstanceType<UnitWaypointBehavior2['BuildingSteeringVisitor']>;
 
 export class UnitWaypointBehavior2 extends UnitWaypointBehavior {

@@ -71,11 +71,11 @@ import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullPathFindingLayer } from './NullPathFindingLayer.js';
-//not GWT import - same folder const NullPathFindingLayer
+//sameFolderImports - not GWT import - same folder const NullPathFindingLayer
 import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
-//not GWT import - same folder const RTSPlayerLayerInterface
+//sameFolderImports - not GWT import - same folder const RTSPlayerLayerInterface
 import { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
-//not GWT import - same folder const PlayerOwnedRTSLayers
+//sameFolderImports - not GWT import - same folder const PlayerOwnedRTSLayers
 
 export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayerInterface {
         

@@ -61,9 +61,9 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayViewAbstract } from './PaymentGatewayViewAbstract.js';
-//not GWT import - same folder const PaymentGatewayViewAbstract
+//sameFolderImports - not GWT import - same folder const PaymentGatewayViewAbstract
 import { PaymentGatewayComponent } from './PaymentGatewayComponent.js';
-//not GWT import - same folder const PaymentGatewayComponent
+//sameFolderImports - not GWT import - same folder const PaymentGatewayComponent
 
 export class GatewayView extends PaymentGatewayViewAbstract {
         

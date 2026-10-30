@@ -73,9 +73,9 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailData } from './EmailData.js';
-//not GWT import - same folder const EmailData
+//sameFolderImports - not GWT import - same folder const EmailData
 import { Email } from './Email.js';
-//not GWT import - same folder const Email
+//sameFolderImports - not GWT import - same folder const Email
 
 export class EmailsNotUsed
             extends Object

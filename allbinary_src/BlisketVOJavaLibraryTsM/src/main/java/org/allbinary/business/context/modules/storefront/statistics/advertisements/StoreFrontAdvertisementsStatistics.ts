@@ -59,7 +59,7 @@ type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontAdvertisementsStatisticsInterface } from './StoreFrontAdvertisementsStatisticsInterface.js';
-//not GWT import - same folder const StoreFrontAdvertisementsStatisticsInterface
+//sameFolderImports - not GWT import - same folder const StoreFrontAdvertisementsStatisticsInterface
 
 export class StoreFrontAdvertisementsStatistics
             extends Object

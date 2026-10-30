@@ -50,15 +50,15 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Panel } from './Panel.js';
-//not GWT import - same folder const Panel
+//sameFolderImports - not GWT import - same folder const Panel
 import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton
+//sameFolderImports - not GWT import - same folder const JButton
 import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout
+//sameFolderImports - not GWT import - same folder const GridLayout
 import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener
+//sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent
+//sameFolderImports - not GWT import - same folder const ActionEvent
 
 export class RemoveActionScriptItemJPanel extends java.awt.Panel {
         

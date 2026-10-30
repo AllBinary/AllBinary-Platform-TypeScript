@@ -48,9 +48,9 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseMotionGestureEventListener } from './BaseMotionGestureEventListener.js';
-//not GWT import - same folder const BaseMotionGestureEventListener
+//sameFolderImports - not GWT import - same folder const BaseMotionGestureEventListener
 import { MotionGestureEvent } from './MotionGestureEvent.js';
-//not GWT import - same folder const MotionGestureEvent
+//sameFolderImports - not GWT import - same folder const MotionGestureEvent
 
 export class MovedMotionGesturesHandler extends BasicEventHandler {
         

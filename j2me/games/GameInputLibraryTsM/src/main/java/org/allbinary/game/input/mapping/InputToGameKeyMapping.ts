@@ -88,7 +88,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputMapping } from './InputMapping.js';
-//not GWT import - same folder const InputMapping
+//sameFolderImports - not GWT import - same folder const InputMapping
 
 export class InputToGameKeyMapping extends InputMapping {
         

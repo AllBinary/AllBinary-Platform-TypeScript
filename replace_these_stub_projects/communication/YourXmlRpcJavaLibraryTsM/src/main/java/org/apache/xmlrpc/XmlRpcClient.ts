@@ -9,11 +9,13 @@
 import { IOException } from '../../../java/io/IOException.js';
 //not GWT import const IOException
 
-import { MalformedURLException } from '../../../java/net/MalformedURLException.js';
-//not GWT import const MalformedURLException
+//not plain js import { MalformedURLException } 
+const MalformedURLException = globalThis.java.net.MalformedURLException;
+type MalformedURLException<T = any, U = any> = typeof MalformedURLException extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MalformedURLException;
 
-import { URL } from '../../../java/net/URL.js';
-//not GWT import const URL
+//not plain js import { URL } 
+const URL = globalThis.java.net.URL;
+type URL<T = any, U = any> = typeof URL extends abstract new (...args: any[]) => infer Instance ? Instance : typeof URL;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
@@ -49,7 +51,7 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { XmlRpcHandler } from './XmlRpcHandler.js';
-//not GWT import - same folder const XmlRpcHandler
+//sameFolderImports - not GWT import - same folder const XmlRpcHandler
 
 export class XmlRpcClient
             extends Object

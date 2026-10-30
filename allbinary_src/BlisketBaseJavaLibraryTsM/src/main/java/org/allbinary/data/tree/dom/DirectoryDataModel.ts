@@ -72,9 +72,9 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomNodeInterface } from './DomNodeInterface.js';
-//not GWT import - same folder const DomNodeInterface
+//sameFolderImports - not GWT import - same folder const DomNodeInterface
 import { FileDomDataModel } from './FileDomDataModel.js';
-//not GWT import - same folder const FileDomDataModel
+//sameFolderImports - not GWT import - same folder const FileDomDataModel
 
 export class DirectoryDataModel
             extends Object

@@ -62,9 +62,9 @@ import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtil
+//sameFolderImports - not GWT import - same folder const ImageUtil
 import { Image } from './Image.js';
-//not GWT import - same folder const Image
+//sameFolderImports - not GWT import - same folder const Image
 
 export class ImageSwtRotationUtil
             extends Object

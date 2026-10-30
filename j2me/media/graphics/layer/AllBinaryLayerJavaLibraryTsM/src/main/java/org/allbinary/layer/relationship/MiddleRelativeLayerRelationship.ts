@@ -49,7 +49,7 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RelativeLayerRelationship } from './RelativeLayerRelationship.js';
-//not GWT import - same folder const RelativeLayerRelationship
+//sameFolderImports - not GWT import - same folder const RelativeLayerRelationship
 
 export class MiddleRelativeLayerRelationship extends RelativeLayerRelationship {
         

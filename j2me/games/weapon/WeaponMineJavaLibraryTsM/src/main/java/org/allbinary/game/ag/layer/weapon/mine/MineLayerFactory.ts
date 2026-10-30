@@ -50,7 +50,7 @@ import { ViewPositionFactoryInterface } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineLayer } from './MineLayer.js';
-//not GWT import - same folder const MineLayer
+//sameFolderImports - not GWT import - same folder const MineLayer
 
 export class MineLayerFactory
             extends Object

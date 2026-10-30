@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CenterStaticViewPositionFactory } from './CenterStaticViewPositionFactory.js';
-//not GWT import - same folder const CenterStaticViewPositionFactory
+//sameFolderImports - not GWT import - same folder const CenterStaticViewPositionFactory
 
 export class CenterViewPositionFactory extends CenterStaticViewPositionFactory {
         

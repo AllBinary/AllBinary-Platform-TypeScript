@@ -64,7 +64,7 @@ type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RendererStrings } from './RendererStrings.js';
-//not GWT import - same folder const RendererStrings
+//sameFolderImports - not GWT import - same folder const RendererStrings
 
 export class EmulatorCustomRenderer
             extends Object

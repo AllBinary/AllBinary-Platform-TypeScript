@@ -43,13 +43,13 @@ import { GL2 } from '../../../com/jogamp/opengl/GL2.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL11 } from './GL11.js';
-//not GWT import - same folder const GL11
+//sameFolderImports - not GWT import - same folder const GL11
 import { Buffer } from './Buffer.js';
-//not GWT import - same folder const Buffer
+//sameFolderImports - not GWT import - same folder const Buffer
 import { FloatBuffer } from './FloatBuffer.js';
-//not GWT import - same folder const FloatBuffer
+//sameFolderImports - not GWT import - same folder const FloatBuffer
 import { IntBuffer } from './IntBuffer.js';
-//not GWT import - same folder const IntBuffer
+//sameFolderImports - not GWT import - same folder const IntBuffer
 //JOGLEToKhronosGL11
 export class JOGL11 extends JOGL10 implements javax.microedition.khronos.opengles.GL11 {
         

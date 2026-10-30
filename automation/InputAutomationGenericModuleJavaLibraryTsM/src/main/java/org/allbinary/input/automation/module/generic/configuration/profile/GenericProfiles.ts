@@ -98,11 +98,11 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfilesData } from './GenericProfilesData.js';
-//not GWT import - same folder const GenericProfilesData
+//sameFolderImports - not GWT import - same folder const GenericProfilesData
 import { GenericProfileData } from './GenericProfileData.js';
-//not GWT import - same folder const GenericProfileData
+//sameFolderImports - not GWT import - same folder const GenericProfileData
 import { GenericProfile } from './GenericProfile.js';
-//not GWT import - same folder const GenericProfile
+//sameFolderImports - not GWT import - same folder const GenericProfile
 
 export class GenericProfiles
             extends Object

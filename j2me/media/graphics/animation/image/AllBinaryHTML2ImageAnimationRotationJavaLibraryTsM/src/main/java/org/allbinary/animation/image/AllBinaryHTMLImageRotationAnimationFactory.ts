@@ -63,11 +63,11 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import - same folder const BaseImageAnimationFactory
+//sameFolderImports - not GWT import - same folder const BaseImageAnimationFactory
 import { AllBinaryHTMLImageRotationAnimation } from './AllBinaryHTMLImageRotationAnimation.js';
-//not GWT import - same folder const AllBinaryHTMLImageRotationAnimation
+//sameFolderImports - not GWT import - same folder const AllBinaryHTMLImageRotationAnimation
 import { AllBinaryAdjustedHTMLImageRotationAnimation } from './AllBinaryAdjustedHTMLImageRotationAnimation.js';
-//not GWT import - same folder const AllBinaryAdjustedHTMLImageRotationAnimation
+//sameFolderImports - not GWT import - same folder const AllBinaryAdjustedHTMLImageRotationAnimation
 
 export class AllBinaryHTMLImageRotationAnimationFactory extends BaseImageAnimationFactory {
         

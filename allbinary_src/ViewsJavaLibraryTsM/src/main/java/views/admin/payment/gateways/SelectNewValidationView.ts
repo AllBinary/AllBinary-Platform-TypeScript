@@ -54,7 +54,7 @@ import { HttpStoreComponentView } from '../../../../views/business/context/modul
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectNewView } from './SelectNewView.js';
-//not GWT import - same folder const SelectNewView
+//sameFolderImports - not GWT import - same folder const SelectNewView
 
 export class SelectNewValidationView extends HttpStoreComponentView implements ValidationComponentInterface {
         

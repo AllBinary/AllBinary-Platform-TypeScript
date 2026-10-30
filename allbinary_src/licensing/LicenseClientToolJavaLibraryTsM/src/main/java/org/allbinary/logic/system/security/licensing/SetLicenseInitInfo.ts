@@ -27,8 +27,9 @@
 import { BufferedReader } from '../../../../../../java/io/BufferedReader.js';
 //not GWT import const BufferedReader
 
-import { InputStreamReader } from '../../../../../../java/io/InputStreamReader.js';
-//not GWT import const InputStreamReader
+//not plain js import { InputStreamReader } 
+const InputStreamReader = globalThis.java.io.InputStreamReader;
+type InputStreamReader<T = any, U = any> = typeof InputStreamReader extends abstract new (...args: any[]) => infer Instance ? Instance : typeof InputStreamReader;
 
 import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
 //not GWT import const LicenseInitInfo
@@ -74,9 +75,9 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicArrayListD } from './BasicArrayListD.js';
-//not GWT import - same folder const BasicArrayListD
+//sameFolderImports - not GWT import - same folder const BasicArrayListD
 import { PrintLicenseInitInfo } from './PrintLicenseInitInfo.js';
-//not GWT import - same folder const PrintLicenseInitInfo
+//sameFolderImports - not GWT import - same folder const PrintLicenseInitInfo
 
 export class SetLicenseInitInfo
             extends Object

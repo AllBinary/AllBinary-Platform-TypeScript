@@ -103,13 +103,13 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Order } from './Order.js';
-//not GWT import - same folder const Order
+//sameFolderImports - not GWT import - same folder const Order
 import { OrderHistoryInterface } from './OrderHistoryInterface.js';
-//not GWT import - same folder const OrderHistoryInterface
+//sameFolderImports - not GWT import - same folder const OrderHistoryInterface
 import { OrderData } from './OrderData.js';
-//not GWT import - same folder const OrderData
+//sameFolderImports - not GWT import - same folder const OrderData
 import { OrderHistoryData } from './OrderHistoryData.js';
-//not GWT import - same folder const OrderHistoryData
+//sameFolderImports - not GWT import - same folder const OrderHistoryData
 
 export class OrderHistory extends Order implements OrderHistoryInterface {
         

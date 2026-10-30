@@ -80,7 +80,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownloadItemsEntityInterface } from './DownloadItemsEntityInterface.js';
-//not GWT import - same folder const DownloadItemsEntityInterface
+//sameFolderImports - not GWT import - same folder const DownloadItemsEntityInterface
 
 export class DownloadItemsEntity extends AbSqlBean implements DownloadItemsEntityInterface {
         

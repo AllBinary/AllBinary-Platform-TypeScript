@@ -40,7 +40,7 @@ import { GameInputProcessor } from '../../../../../org/allbinary/game/input/Game
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UnitLayer } from './UnitLayer.js';
-//not GWT import - same folder const UnitLayer
+//sameFolderImports - not GWT import - same folder const UnitLayer
 
 export class UnitGameInputProcessor extends GameInputProcessor {
         

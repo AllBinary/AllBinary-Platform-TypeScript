@@ -79,25 +79,25 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { JLayeredPane } from './JLayeredPane.js';
-//not GWT import - same folder const JLayeredPane
+//sameFolderImports - not GWT import - same folder const JLayeredPane
 import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics
+//sameFolderImports - not GWT import - same folder const Graphics
 import { JCheckBox } from './JCheckBox.js';
-//not GWT import - same folder const JCheckBox
+//sameFolderImports - not GWT import - same folder const JCheckBox
 import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton
+//sameFolderImports - not GWT import - same folder const JButton
 import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel
+//sameFolderImports - not GWT import - same folder const JLabel
 import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout
+//sameFolderImports - not GWT import - same folder const GroupLayout
 import { Short } from './Short.js';
-//not GWT import - same folder const Short
+//sameFolderImports - not GWT import - same folder const Short
 import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener
+//sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent
+//sameFolderImports - not GWT import - same folder const ActionEvent
 
 export class MirrorSpriteImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         

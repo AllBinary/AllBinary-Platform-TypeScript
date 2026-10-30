@@ -64,7 +64,7 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoTemplateTransformInfoObjectConfig } from './NoTemplateTransformInfoObjectConfig.js';
-//not GWT import - same folder const NoTemplateTransformInfoObjectConfig
+//sameFolderImports - not GWT import - same folder const NoTemplateTransformInfoObjectConfig
 
 export class InsertTemplateCustomizerTransformInfoObjectConfig extends NoTemplateTransformInfoObjectConfig {
         

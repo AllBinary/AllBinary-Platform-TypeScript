@@ -37,9 +37,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import - same folder const HighScoresResultsListener
+//sameFolderImports - not GWT import - same folder const HighScoresResultsListener
 import { HighScores } from './HighScores.js';
-//not GWT import - same folder const HighScores
+//sameFolderImports - not GWT import - same folder const HighScores
 
 export interface HighScoresHelperBaseInterface extends HighScoresResultsListener {
         

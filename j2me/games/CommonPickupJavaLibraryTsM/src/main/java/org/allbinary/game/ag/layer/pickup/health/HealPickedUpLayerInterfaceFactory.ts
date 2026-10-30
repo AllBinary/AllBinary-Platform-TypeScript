@@ -63,11 +63,11 @@ import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealLayerCircularStaticPool } from './HealLayerCircularStaticPool.js';
-//not GWT import - same folder const HealLayerCircularStaticPool
+//sameFolderImports - not GWT import - same folder const HealLayerCircularStaticPool
 import { HealLayerFactory } from './HealLayerFactory.js';
-//not GWT import - same folder const HealLayerFactory
+//sameFolderImports - not GWT import - same folder const HealLayerFactory
 import { HealthResources } from './HealthResources.js';
-//not GWT import - same folder const HealthResources
+//sameFolderImports - not GWT import - same folder const HealthResources
 
 export class HealPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {
         

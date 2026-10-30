@@ -73,9 +73,9 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileActionJPanel } from './GenericProfileActionJPanel.js';
-//not GWT import - same folder const GenericProfileActionJPanel
+//sameFolderImports - not GWT import - same folder const GenericProfileActionJPanel
 import { GenericProfileActionData } from './GenericProfileActionData.js';
-//not GWT import - same folder const GenericProfileActionData
+//sameFolderImports - not GWT import - same folder const GenericProfileActionData
 
 export class GenericProfileAction
             extends Object

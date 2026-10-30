@@ -50,9 +50,9 @@ import { MotionRectangleConstraints } from '../../../../../../../org/allbinary/i
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangle
+//sameFolderImports - not GWT import - same folder const Rectangle
 
 export class NoMotionRectangleConstraints extends MotionRectangleConstraints {
         

@@ -70,9 +70,9 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import - same folder const SelectionHudPaintable
+//sameFolderImports - not GWT import - same folder const SelectionHudPaintable
 import { RTSLayer } from './RTSLayer.js';
-//not GWT import - same folder const RTSLayer
+//sameFolderImports - not GWT import - same folder const RTSLayer
 
 export class MultiSelectPaintable extends SelectionHudPaintable {
         

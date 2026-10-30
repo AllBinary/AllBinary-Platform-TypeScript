@@ -68,7 +68,7 @@ import { Document } from '../../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttpInterface } from './TransformInfoHttpInterface.js';
-//not GWT import - same folder const TransformInfoHttpInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoHttpInterface
 //Hack class should not exist
 export class TransformInfoBasic extends AbContext implements TransformInfoHttpInterface {
         

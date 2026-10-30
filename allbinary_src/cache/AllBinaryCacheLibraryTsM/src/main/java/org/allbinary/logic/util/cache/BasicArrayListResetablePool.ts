@@ -39,11 +39,11 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbstractArrayListPool } from './AbstractArrayListPool.js';
-//not GWT import - same folder const AbstractArrayListPool
+//sameFolderImports - not GWT import - same folder const AbstractArrayListPool
 import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
-//not GWT import - same folder const CacheableInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const CacheableInterfaceFactoryInterface
 import { CacheableInterface } from './CacheableInterface.js';
-//not GWT import - same folder const CacheableInterface
+//sameFolderImports - not GWT import - same folder const CacheableInterface
 
 export class BasicArrayListResetablePool extends AbstractArrayListPool {
         

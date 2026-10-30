@@ -31,8 +31,9 @@ import { StringReader } from '../../../../../../java/io/StringReader.js';
 import { StringWriter } from '../../../../../../java/io/StringWriter.js';
 //not GWT import const StringWriter
 
-import { Writer } from '../../../../../../java/io/Writer.js';
-//not GWT import const Writer
+//not plain js import { Writer } 
+const Writer = globalThis.java.io.Writer;
+type Writer<T = any, U = any> = typeof Writer extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Writer;
 
 import { DocumentBuilderFactory } from '../../../../../../javax/xml/parsers/DocumentBuilderFactory.js';
 //not GWT import const DocumentBuilderFactory

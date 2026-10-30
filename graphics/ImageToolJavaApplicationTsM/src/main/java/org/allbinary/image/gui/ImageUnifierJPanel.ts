@@ -22,7 +22,8 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-            import { Double } from '../../../../java/lang/Double.js';
+            //import { Double } from '../../../../java/lang/Double.js';
+            const Double = globalThis.java.lang.Double;
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
@@ -106,43 +107,43 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { ImageIconUnique } from './ImageIconUnique.js';
-//not GWT import - same folder const ImageIconUnique
+//sameFolderImports - not GWT import - same folder const ImageIconUnique
 import { DefaultListModel } from './DefaultListModel.js';
-//not GWT import - same folder const DefaultListModel
+//sameFolderImports - not GWT import - same folder const DefaultListModel
 import { ImageIcon } from './ImageIcon.js';
-//not GWT import - same folder const ImageIcon
+//sameFolderImports - not GWT import - same folder const ImageIcon
 import { Icon } from './Icon.js';
-//not GWT import - same folder const Icon
+//sameFolderImports - not GWT import - same folder const Icon
 import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel
+//sameFolderImports - not GWT import - same folder const JLabel
 import { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPane
+//sameFolderImports - not GWT import - same folder const JScrollPane
 import { JList } from './JList.js';
-//not GWT import - same folder const JList
+//sameFolderImports - not GWT import - same folder const JList
 import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton
+//sameFolderImports - not GWT import - same folder const JButton
 import { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextField
+//sameFolderImports - not GWT import - same folder const JTextField
 import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener
+//sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent
+//sameFolderImports - not GWT import - same folder const ActionEvent
 import { PropertyChangeListener } from './PropertyChangeListener.js';
-//not GWT import - same folder const PropertyChangeListener
+//sameFolderImports - not GWT import - same folder const PropertyChangeListener
 import { PropertyChangeEvent } from './PropertyChangeEvent.js';
-//not GWT import - same folder const PropertyChangeEvent
+//sameFolderImports - not GWT import - same folder const PropertyChangeEvent
 import { KeyAdapter } from './KeyAdapter.js';
-//not GWT import - same folder const KeyAdapter
+//sameFolderImports - not GWT import - same folder const KeyAdapter
 import { KeyEvent } from './KeyEvent.js';
-//not GWT import - same folder const KeyEvent
+//sameFolderImports - not GWT import - same folder const KeyEvent
 import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout
+//sameFolderImports - not GWT import - same folder const GroupLayout
 import { Short } from './Short.js';
-//not GWT import - same folder const Short
+//sameFolderImports - not GWT import - same folder const Short
 
 export class ImageUnifierJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         

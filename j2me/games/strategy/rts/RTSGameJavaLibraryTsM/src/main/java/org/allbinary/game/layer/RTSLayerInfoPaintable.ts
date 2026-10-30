@@ -48,7 +48,7 @@ import { NullInitUpdatePaintable } from '../../../../org/allbinary/graphics/pain
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import - same folder const SelectionHudPaintable
+//sameFolderImports - not GWT import - same folder const SelectionHudPaintable
 
 export class RTSLayerInfoPaintable extends InitUpdatePaintable {
         

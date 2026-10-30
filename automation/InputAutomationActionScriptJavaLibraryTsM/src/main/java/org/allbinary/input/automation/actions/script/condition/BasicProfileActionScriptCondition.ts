@@ -108,21 +108,21 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptConditionInterface } from './ProfileActionScriptConditionInterface.js';
-//not GWT import - same folder const ProfileActionScriptConditionInterface
+//sameFolderImports - not GWT import - same folder const ProfileActionScriptConditionInterface
 import { GenericProfileActionScriptConditionData } from './GenericProfileActionScriptConditionData.js';
-//not GWT import - same folder const GenericProfileActionScriptConditionData
+//sameFolderImports - not GWT import - same folder const GenericProfileActionScriptConditionData
 import { ProfileActionScriptConditionFactory } from './ProfileActionScriptConditionFactory.js';
-//not GWT import - same folder const ProfileActionScriptConditionFactory
+//sameFolderImports - not GWT import - same folder const ProfileActionScriptConditionFactory
 import { JMenu } from './JMenu.js';
-//not GWT import - same folder const JMenu
+//sameFolderImports - not GWT import - same folder const JMenu
 import { JMenuItem } from './JMenuItem.js';
-//not GWT import - same folder const JMenuItem
+//sameFolderImports - not GWT import - same folder const JMenuItem
 import { TimeIntervalActionScriptCondition } from './TimeIntervalActionScriptCondition.js';
-//not GWT import - same folder const TimeIntervalActionScriptCondition
+//sameFolderImports - not GWT import - same folder const TimeIntervalActionScriptCondition
 import { AlwaysActionScriptCondition } from './AlwaysActionScriptCondition.js';
-//not GWT import - same folder const AlwaysActionScriptCondition
+//sameFolderImports - not GWT import - same folder const AlwaysActionScriptCondition
 import { ColorAtActionScriptCondition } from './ColorAtActionScriptCondition.js';
-//not GWT import - same folder const ColorAtActionScriptCondition
+//sameFolderImports - not GWT import - same folder const ColorAtActionScriptCondition
 
 export class BasicProfileActionScriptCondition extends ProfileActionScriptItem implements ProfileActionScriptConditionInterface {
         

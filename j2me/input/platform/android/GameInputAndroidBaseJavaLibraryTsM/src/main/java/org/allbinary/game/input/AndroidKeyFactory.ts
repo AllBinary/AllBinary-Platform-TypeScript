@@ -45,9 +45,9 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidGameKey } from './AndroidGameKey.js';
-//not GWT import - same folder const AndroidGameKey
+//sameFolderImports - not GWT import - same folder const AndroidGameKey
 import { Input } from './Input.js';
-//not GWT import - same folder const Input
+//sameFolderImports - not GWT import - same folder const Input
 
 export class AndroidKeyFactory extends ActivityFractureUtil {
         

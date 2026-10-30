@@ -49,7 +49,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpriteFactoryInterface } from './SpriteFactoryInterface.js';
-//not GWT import - same folder const SpriteFactoryInterface
+//sameFolderImports - not GWT import - same folder const SpriteFactoryInterface
 
 export class SpriteFactory
             extends Object

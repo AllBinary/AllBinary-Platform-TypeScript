@@ -53,9 +53,9 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonFactory } from './TouchButtonFactory.js';
-//not GWT import - same folder const TouchButtonFactory
+//sameFolderImports - not GWT import - same folder const TouchButtonFactory
 import { TouchButton } from './TouchButton.js';
-//not GWT import - same folder const TouchButton
+//sameFolderImports - not GWT import - same folder const TouchButton
 
 export class TouchButtonsPaintable extends Paintable {
         

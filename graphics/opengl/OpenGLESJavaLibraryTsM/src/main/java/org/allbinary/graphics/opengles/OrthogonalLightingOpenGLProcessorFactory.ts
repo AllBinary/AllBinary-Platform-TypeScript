@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullOpenGLProcessorFactory } from './NullOpenGLProcessorFactory.js';
-//not GWT import - same folder const NullOpenGLProcessorFactory
+//sameFolderImports - not GWT import - same folder const NullOpenGLProcessorFactory
 import { OpenGLProcessor } from './OpenGLProcessor.js';
-//not GWT import - same folder const OpenGLProcessor
+//sameFolderImports - not GWT import - same folder const OpenGLProcessor
 
 export class OrthogonalLightingOpenGLProcessorFactory
             extends Object

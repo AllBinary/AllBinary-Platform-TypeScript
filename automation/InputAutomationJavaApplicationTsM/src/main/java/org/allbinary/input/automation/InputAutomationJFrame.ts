@@ -29,8 +29,9 @@ type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...arg
 import { URI } from '../../../../java/net/URI.js';
 //not GWT import const URI
 
-import { URL } from '../../../../java/net/URL.js';
-//not GWT import const URL
+//not plain js import { URL } 
+const URL = globalThis.java.net.URL;
+type URL<T = any, U = any> = typeof URL extends abstract new (...args: any[]) => infer Instance ? Instance : typeof URL;
 
 import { Desktop } from '../../../../java/awt/Desktop.js';
 //not GWT import const Desktop
@@ -146,49 +147,49 @@ import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInte
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JFrame } from './JFrame.js';
-//not GWT import - same folder const JFrame
+//sameFolderImports - not GWT import - same folder const JFrame
 import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel
+//sameFolderImports - not GWT import - same folder const JLabel
 import { JTabbedPane } from './JTabbedPane.js';
-//not GWT import - same folder const JTabbedPane
+//sameFolderImports - not GWT import - same folder const JTabbedPane
 import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPane
+//sameFolderImports - not GWT import - same folder const JScrollPane
 import { JList } from './JList.js';
-//not GWT import - same folder const JList
+//sameFolderImports - not GWT import - same folder const JList
 import { JMenuBar } from './JMenuBar.js';
-//not GWT import - same folder const JMenuBar
+//sameFolderImports - not GWT import - same folder const JMenuBar
 import { JMenu } from './JMenu.js';
-//not GWT import - same folder const JMenu
+//sameFolderImports - not GWT import - same folder const JMenu
 import { JMenuItem } from './JMenuItem.js';
-//not GWT import - same folder const JMenuItem
+//sameFolderImports - not GWT import - same folder const JMenuItem
 import { JCheckBoxMenuItem } from './JCheckBoxMenuItem.js';
-//not GWT import - same folder const JCheckBoxMenuItem
+//sameFolderImports - not GWT import - same folder const JCheckBoxMenuItem
 import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout
+//sameFolderImports - not GWT import - same folder const GroupLayout
 import { Short } from './Short.js';
-//not GWT import - same folder const Short
+//sameFolderImports - not GWT import - same folder const Short
 import { WindowFocusListener } from './WindowFocusListener.js';
-//not GWT import - same folder const WindowFocusListener
+//sameFolderImports - not GWT import - same folder const WindowFocusListener
 import { WindowEvent } from './WindowEvent.js';
-//not GWT import - same folder const WindowEvent
+//sameFolderImports - not GWT import - same folder const WindowEvent
 import { FocusAdapter } from './FocusAdapter.js';
-//not GWT import - same folder const FocusAdapter
+//sameFolderImports - not GWT import - same folder const FocusAdapter
 import { FocusEvent } from './FocusEvent.js';
-//not GWT import - same folder const FocusEvent
+//sameFolderImports - not GWT import - same folder const FocusEvent
 import { ListSelectionListener } from './ListSelectionListener.js';
-//not GWT import - same folder const ListSelectionListener
+//sameFolderImports - not GWT import - same folder const ListSelectionListener
 import { ListSelectionEvent } from './ListSelectionEvent.js';
-//not GWT import - same folder const ListSelectionEvent
+//sameFolderImports - not GWT import - same folder const ListSelectionEvent
 import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener
+//sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent
+//sameFolderImports - not GWT import - same folder const ActionEvent
 import { EventQueue } from './EventQueue.js';
-//not GWT import - same folder const EventQueue
+//sameFolderImports - not GWT import - same folder const EventQueue
 
 export class InputAutomationJFrame extends javax.swing.JFrame implements InputAutomationConfigurationModuleChangeListener, InputAutomationRobotChangeListener, HelpSetListener {
         

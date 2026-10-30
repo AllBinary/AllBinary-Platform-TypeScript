@@ -37,9 +37,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellType } from './GeographicMapCellType.js';
-//not GWT import - same folder const GeographicMapCellType
+//sameFolderImports - not GWT import - same folder const GeographicMapCellType
 import { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import - same folder const BasicGeographicMap
+//sameFolderImports - not GWT import - same folder const BasicGeographicMap
 
 export interface GeographicMapCompositeInterface {
         

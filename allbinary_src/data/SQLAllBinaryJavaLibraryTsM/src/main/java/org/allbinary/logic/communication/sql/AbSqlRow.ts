@@ -80,7 +80,7 @@ import { Replace } from '../../../../../org/allbinary/logic/string/regex/replace
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlColumn } from './AbSqlColumn.js';
-//not GWT import - same folder const AbSqlColumn
+//sameFolderImports - not GWT import - same folder const AbSqlColumn
 
 export class AbSqlRow extends AbSqlColumn {
         

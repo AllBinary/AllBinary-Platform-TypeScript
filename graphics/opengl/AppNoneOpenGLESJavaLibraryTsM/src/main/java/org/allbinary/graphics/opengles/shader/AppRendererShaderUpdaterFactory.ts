@@ -37,11 +37,11 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderUpdater } from './ShaderUpdater.js';
-//not GWT import - same folder const ShaderUpdater
+//sameFolderImports - not GWT import - same folder const ShaderUpdater
 import { ShaderComposite } from './ShaderComposite.js';
-//not GWT import - same folder const ShaderComposite
+//sameFolderImports - not GWT import - same folder const ShaderComposite
 import { ShaderOpenGLProcessor } from './ShaderOpenGLProcessor.js';
-//not GWT import - same folder const ShaderOpenGLProcessor
+//sameFolderImports - not GWT import - same folder const ShaderOpenGLProcessor
 
 export class AppRendererShaderUpdaterFactory extends ShaderUpdater {
         

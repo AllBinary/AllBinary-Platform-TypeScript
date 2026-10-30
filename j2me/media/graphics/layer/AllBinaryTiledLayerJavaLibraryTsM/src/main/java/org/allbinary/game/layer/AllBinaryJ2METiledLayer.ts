@@ -56,7 +56,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
-//not GWT import - same folder const AllBinaryTiledLayer
+//sameFolderImports - not GWT import - same folder const AllBinaryTiledLayer
 
 export class AllBinaryJ2METiledLayer extends AllBinaryTiledLayer {
         

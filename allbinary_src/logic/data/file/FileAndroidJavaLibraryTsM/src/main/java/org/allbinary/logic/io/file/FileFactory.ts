@@ -51,7 +51,7 @@ type ResourceUtil<T = any, U = any> = typeof ResourceUtil extends abstract new (
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
-//not GWT import - same folder const AbFile
+//sameFolderImports - not GWT import - same folder const AbFile
 
 export class FileFactory
             extends Object

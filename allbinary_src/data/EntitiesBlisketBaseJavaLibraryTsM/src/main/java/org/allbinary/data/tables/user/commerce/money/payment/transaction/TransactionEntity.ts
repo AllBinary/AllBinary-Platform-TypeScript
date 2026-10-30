@@ -88,7 +88,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransactionEntityInterface } from './TransactionEntityInterface.js';
-//not GWT import - same folder const TransactionEntityInterface
+//sameFolderImports - not GWT import - same folder const TransactionEntityInterface
 
 export class TransactionEntity extends AbSqlBean implements TransactionEntityInterface {
         

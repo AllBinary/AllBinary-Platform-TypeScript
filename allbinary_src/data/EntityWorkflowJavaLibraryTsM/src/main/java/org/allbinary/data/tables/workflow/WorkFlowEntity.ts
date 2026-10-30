@@ -95,7 +95,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../../../../org/all
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowEntityInterface } from './WorkFlowEntityInterface.js';
-//not GWT import - same folder const WorkFlowEntityInterface
+//sameFolderImports - not GWT import - same folder const WorkFlowEntityInterface
 
 export class WorkFlowEntity extends AbSqlBean implements WorkFlowEntityInterface {
         

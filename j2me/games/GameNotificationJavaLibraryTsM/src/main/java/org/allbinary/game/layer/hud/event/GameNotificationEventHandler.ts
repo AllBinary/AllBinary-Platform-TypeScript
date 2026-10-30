@@ -55,9 +55,9 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameNotificationListenerInterface } from './GameNotificationListenerInterface.js';
-//not GWT import - same folder const GameNotificationListenerInterface
+//sameFolderImports - not GWT import - same folder const GameNotificationListenerInterface
 import { GameNotificationEvent } from './GameNotificationEvent.js';
-//not GWT import - same folder const GameNotificationEvent
+//sameFolderImports - not GWT import - same folder const GameNotificationEvent
 
 export class GameNotificationEventHandler extends BasicEventHandler {
         

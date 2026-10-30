@@ -48,11 +48,11 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import - same folder const BaseImageAnimationFactory
+//sameFolderImports - not GWT import - same folder const BaseImageAnimationFactory
 import { LeftToRightImageAnimation } from './LeftToRightImageAnimation.js';
-//not GWT import - same folder const LeftToRightImageAnimation
+//sameFolderImports - not GWT import - same folder const LeftToRightImageAnimation
 import { AdjustedLeftToRightImageAnimation } from './AdjustedLeftToRightImageAnimation.js';
-//not GWT import - same folder const AdjustedLeftToRightImageAnimation
+//sameFolderImports - not GWT import - same folder const AdjustedLeftToRightImageAnimation
 
 export class LeftToRightImageAnimationFactory extends BaseImageAnimationFactory {
         

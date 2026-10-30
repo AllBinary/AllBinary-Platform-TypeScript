@@ -137,7 +137,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCComponentFactory } from './PCComponentFactory.js';
-//not GWT import - same folder const PCComponentFactory
+//sameFolderImports - not GWT import - same folder const PCComponentFactory
 
 export class LinuxHardware
             extends Object

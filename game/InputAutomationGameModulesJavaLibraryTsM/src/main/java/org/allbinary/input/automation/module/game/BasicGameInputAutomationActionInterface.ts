@@ -45,7 +45,7 @@ import { InputAutomationActionInterface } from '../../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangle
+//sameFolderImports - not GWT import - same folder const Rectangle
 
 export interface BasicGameInputAutomationActionInterface extends InputAutomationActionInterface {
         

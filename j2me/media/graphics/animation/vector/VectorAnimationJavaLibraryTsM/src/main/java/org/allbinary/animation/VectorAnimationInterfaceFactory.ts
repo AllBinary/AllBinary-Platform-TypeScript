@@ -50,13 +50,13 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const AnimationInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const AnimationInterfaceFactoryInterface
 import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
-//not GWT import - same folder const AnimationBehaviorFactory
+//sameFolderImports - not GWT import - same folder const AnimationBehaviorFactory
 import { VectorAnimation } from './VectorAnimation.js';
-//not GWT import - same folder const VectorAnimation
+//sameFolderImports - not GWT import - same folder const VectorAnimation
 import { Animation } from './Animation.js';
-//not GWT import - same folder const Animation
+//sameFolderImports - not GWT import - same folder const Animation
 
 export class VectorAnimationInterfaceFactory
             extends Object

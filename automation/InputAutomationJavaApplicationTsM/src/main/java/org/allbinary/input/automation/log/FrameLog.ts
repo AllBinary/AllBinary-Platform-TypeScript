@@ -76,11 +76,11 @@ export class FrameLog
          {
         
 
-    private static frameBytes: number[] = .toCharArray().getBytes()!;
+    private static frameBytes: number[] = Array.from(new TextEncoder().encode(.toCharArray()), byte => (byte << 24) >> 24)!;
 
-    private static info: number[] = .toCharArray().getBytes()!;
+    private static info: number[] = Array.from(new TextEncoder().encode(.toCharArray()), byte => (byte << 24) >> 24)!;
 
-    private static actions: number[] = .toCharArray().getBytes()!;
+    private static actions: number[] = Array.from(new TextEncoder().encode(.toCharArray()), byte => (byte << 24) >> 24)!;
 
     private readonly frame: Long;
 
@@ -148,19 +148,19 @@ filePathStringBuffer!.append(".txt");
     
 fileOutputStream!.write(FrameLog.frameBytes);
     
-fileOutputStream!.write(getFrame()!.toString()!.getBytes());
+fileOutputStream!.write(Array.from(new TextEncoder().encode(getFrame()!.toString()!), byte => (byte << 24) >> 24));
     
 fileOutputStream!.write('\n');
     
 fileOutputStream!.write(FrameLog.info);
     
-fileOutputStream!.write(this.infoStringBuffer!.toString()!.getBytes());
+fileOutputStream!.write(Array.from(new TextEncoder().encode(this.infoStringBuffer!.toString()!), byte => (byte << 24) >> 24));
     
 fileOutputStream!.write('\n');
     
 fileOutputStream!.write(FrameLog.actions);
     
-fileOutputStream!.write(this.actionsStringBuffer!.toString()!.getBytes());
+fileOutputStream!.write(Array.from(new TextEncoder().encode(this.actionsStringBuffer!.toString()!), byte => (byte << 24) >> 24));
     
 fileOutputStream!.close();
     

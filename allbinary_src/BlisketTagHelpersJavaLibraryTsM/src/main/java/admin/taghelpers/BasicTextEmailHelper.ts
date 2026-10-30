@@ -69,7 +69,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
-//not GWT import - same folder const TagHelper
+//sameFolderImports - not GWT import - same folder const TagHelper
 
 export class BasicTextEmailHelper extends TagHelper {
         

@@ -40,9 +40,9 @@ import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecim
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MathVector } from './MathVector.js';
-//not GWT import - same folder const MathVector
+//sameFolderImports - not GWT import - same folder const MathVector
 import { YAxisMathVectorUtil } from './YAxisMathVectorUtil.js';
-//not GWT import - same folder const YAxisMathVectorUtil
+//sameFolderImports - not GWT import - same folder const YAxisMathVectorUtil
 
 export class YAxisMathVector extends MathVector {
         

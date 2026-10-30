@@ -57,7 +57,7 @@ import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-//not GWT import - same folder const UserConfigurationInterface
+//sameFolderImports - not GWT import - same folder const UserConfigurationInterface
 
 export class UserConfiguration
             extends Object

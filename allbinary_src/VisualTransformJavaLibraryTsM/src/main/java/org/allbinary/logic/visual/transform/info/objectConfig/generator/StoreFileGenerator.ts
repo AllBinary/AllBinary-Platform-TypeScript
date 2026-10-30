@@ -112,7 +112,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
-//not GWT import - same folder const TransformInfoObjectConfigGenerator
+//sameFolderImports - not GWT import - same folder const TransformInfoObjectConfigGenerator
 
 export class StoreFileGenerator extends TransformInfoObjectConfigGenerator {
         
@@ -270,7 +270,7 @@ this.file= AbFile.createAbFileFromAbPath(this.fileAbPath);
                         
                                     {
                                     
-    let inputStream: InputStream = new ByteArrayInputStream(input.getBytes());;
+    let inputStream: InputStream = new ByteArrayInputStream(Array.from(new TextEncoder().encode(input), byte => (byte << 24) >> 24));;
     
 FileUtil.getInstance()!.write(inputStream, this.file);
     

@@ -67,11 +67,11 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import - same folder const TransformInfoInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoInterface
 import { TransformInfoData } from './TransformInfoData.js';
-//not GWT import - same folder const TransformInfoData
+//sameFolderImports - not GWT import - same folder const TransformInfoData
 import { TransformInfo } from './TransformInfo.js';
-//not GWT import - same folder const TransformInfo
+//sameFolderImports - not GWT import - same folder const TransformInfo
 
 export class TransformInfoDomNode
             extends Object

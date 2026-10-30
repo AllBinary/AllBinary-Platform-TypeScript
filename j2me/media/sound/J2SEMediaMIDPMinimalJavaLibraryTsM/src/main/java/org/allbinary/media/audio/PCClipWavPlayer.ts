@@ -102,13 +102,13 @@ import { MusicThreadPool } from '../../../../org/allbinary/thread/MusicThreadPoo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlayer } from './BasicPlayer.js';
-//not GWT import - same folder const BasicPlayer
+//sameFolderImports - not GWT import - same folder const BasicPlayer
 import { NullAudioFormat } from './NullAudioFormat.js';
-//not GWT import - same folder const NullAudioFormat
+//sameFolderImports - not GWT import - same folder const NullAudioFormat
 import { NullClip } from './NullClip.js';
-//not GWT import - same folder const NullClip
+//sameFolderImports - not GWT import - same folder const NullClip
 import { NullControl } from './NullControl.js';
-//not GWT import - same folder const NullControl
+//sameFolderImports - not GWT import - same folder const NullControl
 
 export class PCClipWavPlayer extends BasicPlayer implements LineListener {
         

@@ -65,9 +65,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyEvent } from './GameKeyEvent.js';
-//not GWT import - same folder const GameKeyEvent
+//sameFolderImports - not GWT import - same folder const GameKeyEvent
 import { DownKeyEventListenerInterface } from './DownKeyEventListenerInterface.js';
-//not GWT import - same folder const DownKeyEventListenerInterface
+//sameFolderImports - not GWT import - same folder const DownKeyEventListenerInterface
 
 export class DownKeyEventHandlerBase extends BasicEventHandler {
         

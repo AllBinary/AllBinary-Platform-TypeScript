@@ -123,11 +123,11 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScores } from './HighScores.js';
-//not GWT import - same folder const HighScores
+//sameFolderImports - not GWT import - same folder const HighScores
 import { HighScore } from './HighScore.js';
-//not GWT import - same folder const HighScore
+//sameFolderImports - not GWT import - same folder const HighScore
 import { ScoreComparator } from './ScoreComparator.js';
-//not GWT import - same folder const ScoreComparator
+//sameFolderImports - not GWT import - same folder const ScoreComparator
 
 export class RecordStoreHighScores extends HighScores {
         

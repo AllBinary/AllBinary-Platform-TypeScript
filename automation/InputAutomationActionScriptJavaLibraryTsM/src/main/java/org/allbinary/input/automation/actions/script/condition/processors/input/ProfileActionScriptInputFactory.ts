@@ -47,15 +47,15 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptInputInterface } from './ProfileActionScriptInputInterface.js';
-//not GWT import - same folder const ProfileActionScriptInputInterface
+//sameFolderImports - not GWT import - same folder const ProfileActionScriptInputInterface
 import { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
-//not GWT import - same folder const KeyboardActionScriptInputData
+//sameFolderImports - not GWT import - same folder const KeyboardActionScriptInputData
 import { MouseActionScriptInputData } from './MouseActionScriptInputData.js';
-//not GWT import - same folder const MouseActionScriptInputData
+//sameFolderImports - not GWT import - same folder const MouseActionScriptInputData
 import { MouseActionScriptInput } from './MouseActionScriptInput.js';
-//not GWT import - same folder const MouseActionScriptInput
+//sameFolderImports - not GWT import - same folder const MouseActionScriptInput
 import { KeyboardActionScriptInput } from './KeyboardActionScriptInput.js';
-//not GWT import - same folder const KeyboardActionScriptInput
+//sameFolderImports - not GWT import - same folder const KeyboardActionScriptInput
 
 export class ProfileActionScriptInputFactory
             extends Object

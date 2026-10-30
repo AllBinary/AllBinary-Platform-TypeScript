@@ -63,9 +63,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryPrivateTree } from './CategoryPrivateTree.js';
-//not GWT import - same folder const CategoryPrivateTree
+//sameFolderImports - not GWT import - same folder const CategoryPrivateTree
 import { CategoryModifierTreeInterface } from './CategoryModifierTreeInterface.js';
-//not GWT import - same folder const CategoryModifierTreeInterface
+//sameFolderImports - not GWT import - same folder const CategoryModifierTreeInterface
 
 export class CategoryModifierTree extends CategoryPrivateTree implements CategoryModifierTreeInterface {
         

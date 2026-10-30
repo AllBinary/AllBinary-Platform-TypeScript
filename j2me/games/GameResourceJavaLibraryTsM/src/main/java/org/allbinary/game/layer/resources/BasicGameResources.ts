@@ -60,7 +60,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameGraphicsResourceUtil } from './GameGraphicsResourceUtil.js';
-//not GWT import - same folder const GameGraphicsResourceUtil
+//sameFolderImports - not GWT import - same folder const GameGraphicsResourceUtil
 
 export class BasicGameResources
             extends Object

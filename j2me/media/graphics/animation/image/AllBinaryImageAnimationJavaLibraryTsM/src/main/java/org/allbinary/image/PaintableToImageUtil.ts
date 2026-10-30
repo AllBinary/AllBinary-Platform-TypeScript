@@ -50,7 +50,7 @@ import { PaintableInterface } from '../../../org/allbinary/graphics/paint/Painta
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeatureImageCacheFactory } from './GameFeatureImageCacheFactory.js';
-//not GWT import - same folder const GameFeatureImageCacheFactory
+//sameFolderImports - not GWT import - same folder const GameFeatureImageCacheFactory
 
 export class PaintableToImageUtil
             extends Object

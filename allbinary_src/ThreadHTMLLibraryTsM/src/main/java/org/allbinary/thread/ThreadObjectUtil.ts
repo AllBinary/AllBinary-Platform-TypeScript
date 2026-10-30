@@ -29,9 +29,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullPriorityRunnable } from './NullPriorityRunnable.js';
-//not GWT import - same folder const NullPriorityRunnable
+//sameFolderImports - not GWT import - same folder const NullPriorityRunnable
 import { PriorityRunnable } from './PriorityRunnable.js';
-//not GWT import - same folder const PriorityRunnable
+//sameFolderImports - not GWT import - same folder const PriorityRunnable
 
 export class ThreadObjectUtil
             extends Object

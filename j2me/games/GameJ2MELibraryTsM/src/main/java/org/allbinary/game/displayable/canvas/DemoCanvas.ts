@@ -346,37 +346,37 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCanvasRunnableInterface } from './GameCanvasRunnableInterface.js';
-//not GWT import - same folder const GameCanvasRunnableInterface
+//sameFolderImports - not GWT import - same folder const GameCanvasRunnableInterface
 import { MenuListener } from './MenuListener.js';
-//not GWT import - same folder const MenuListener
+//sameFolderImports - not GWT import - same folder const MenuListener
 import { DemoPaintableInterface } from './DemoPaintableInterface.js';
-//not GWT import - same folder const DemoPaintableInterface
+//sameFolderImports - not GWT import - same folder const DemoPaintableInterface
 import { FormUtil } from './FormUtil.js';
-//not GWT import - same folder const FormUtil
+//sameFolderImports - not GWT import - same folder const FormUtil
 import { NullGameCanvas } from './NullGameCanvas.js';
-//not GWT import - same folder const NullGameCanvas
+//sameFolderImports - not GWT import - same folder const NullGameCanvas
 import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-//not GWT import - same folder const AllBinaryGameCanvas
+//sameFolderImports - not GWT import - same folder const AllBinaryGameCanvas
 import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
-//not GWT import - same folder const NoMenuInputProcessor
+//sameFolderImports - not GWT import - same folder const NoMenuInputProcessor
 import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-//not GWT import - same folder const BasicMenuInputProcessor
+//sameFolderImports - not GWT import - same folder const BasicMenuInputProcessor
 import { DemoGameStartupRunnable } from './DemoGameStartupRunnable.js';
-//not GWT import - same folder const DemoGameStartupRunnable
+//sameFolderImports - not GWT import - same folder const DemoGameStartupRunnable
 import { NullWaitGameRunnable } from './NullWaitGameRunnable.js';
-//not GWT import - same folder const NullWaitGameRunnable
+//sameFolderImports - not GWT import - same folder const NullWaitGameRunnable
 import { GameRunnable } from './GameRunnable.js';
-//not GWT import - same folder const GameRunnable
+//sameFolderImports - not GWT import - same folder const GameRunnable
 import { GameInputMappingCanvas } from './GameInputMappingCanvas.js';
-//not GWT import - same folder const GameInputMappingCanvas
+//sameFolderImports - not GWT import - same folder const GameInputMappingCanvas
 import { DemoLimitedCommandTextItemArrayFactory } from './DemoLimitedCommandTextItemArrayFactory.js';
-//not GWT import - same folder const DemoLimitedCommandTextItemArrayFactory
+//sameFolderImports - not GWT import - same folder const DemoLimitedCommandTextItemArrayFactory
 import { CommandFormInputProcessor } from './CommandFormInputProcessor.js';
-//not GWT import - same folder const CommandFormInputProcessor
+//sameFolderImports - not GWT import - same folder const CommandFormInputProcessor
 import { DemoCanvasProgressUtil } from './DemoCanvasProgressUtil.js';
-//not GWT import - same folder const DemoCanvasProgressUtil
+//sameFolderImports - not GWT import - same folder const DemoCanvasProgressUtil
 import { DemoGameRunnable } from './DemoGameRunnable.js';
-//not GWT import - same folder const DemoGameRunnable
+//sameFolderImports - not GWT import - same folder const DemoGameRunnable
 
 export class DemoCanvas extends RunnableCanvas implements GameCanvasRunnableInterface, MenuListener, DisplayChangeEventListener, DemoPaintableInterface {
         

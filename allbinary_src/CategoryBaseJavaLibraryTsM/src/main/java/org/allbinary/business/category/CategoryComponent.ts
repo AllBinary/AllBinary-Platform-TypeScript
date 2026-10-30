@@ -54,9 +54,9 @@ import { Document } from '../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryView } from './CategoryView.js';
-//not GWT import - same folder const CategoryView
+//sameFolderImports - not GWT import - same folder const CategoryView
 import { CategoryInterface } from './CategoryInterface.js';
-//not GWT import - same folder const CategoryInterface
+//sameFolderImports - not GWT import - same folder const CategoryInterface
 
 export class CategoryComponent extends CategoryView implements TransformInterface {
         

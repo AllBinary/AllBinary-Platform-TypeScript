@@ -53,9 +53,9 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LazyProgressCanvas } from './LazyProgressCanvas.js';
-//not GWT import - same folder const LazyProgressCanvas
+//sameFolderImports - not GWT import - same folder const LazyProgressCanvas
 import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import - same folder const ProgressCanvas
+//sameFolderImports - not GWT import - same folder const ProgressCanvas
 
 export class ProgressCanvasFactory
             extends Object

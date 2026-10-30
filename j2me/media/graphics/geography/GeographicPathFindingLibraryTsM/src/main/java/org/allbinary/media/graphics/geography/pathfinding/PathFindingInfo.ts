@@ -47,13 +47,13 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingInfoInterface } from './PathFindingInfoInterface.js';
-//not GWT import - same folder const PathFindingInfoInterface
+//sameFolderImports - not GWT import - same folder const PathFindingInfoInterface
 import { PathFindingNodeCostInfoFactoryBase } from './PathFindingNodeCostInfoFactoryBase.js';
-//not GWT import - same folder const PathFindingNodeCostInfoFactoryBase
+//sameFolderImports - not GWT import - same folder const PathFindingNodeCostInfoFactoryBase
 import { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
-//not GWT import - same folder const GeographicPathFinderBase
+//sameFolderImports - not GWT import - same folder const GeographicPathFinderBase
 import { PathFindingNode } from './PathFindingNode.js';
-//not GWT import - same folder const PathFindingNode
+//sameFolderImports - not GWT import - same folder const PathFindingNode
 
 export class PathFindingInfo
             extends Object

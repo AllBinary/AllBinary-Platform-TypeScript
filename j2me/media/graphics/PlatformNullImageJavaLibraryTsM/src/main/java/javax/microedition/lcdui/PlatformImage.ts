@@ -45,11 +45,11 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullImage } from './NullImage.js';
-//not GWT import - same folder const NullImage
+//sameFolderImports - not GWT import - same folder const NullImage
 import { Image } from './Image.js';
-//not GWT import - same folder const Image
+//sameFolderImports - not GWT import - same folder const Image
 import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics
+//sameFolderImports - not GWT import - same folder const Graphics
 //PlatformNullImageJavaLibrary
 export class PlatformImage
             extends Object

@@ -27,7 +27,7 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdConfiguration } from './AdConfiguration.js';
-//not GWT import - same folder const AdConfiguration
+//sameFolderImports - not GWT import - same folder const AdConfiguration
 
 export class AppNameLicensingAdConfiguration extends AdConfiguration {
         

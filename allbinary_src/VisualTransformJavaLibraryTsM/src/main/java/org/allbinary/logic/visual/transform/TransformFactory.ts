@@ -83,7 +83,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInterface } from './TransformInterface.js';
-//not GWT import - same folder const TransformInterface
+//sameFolderImports - not GWT import - same folder const TransformInterface
 
 export class TransformFactory
             extends Object

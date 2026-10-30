@@ -55,7 +55,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRecognizer } from './MotionRecognizer.js';
-//not GWT import - same folder const MotionRecognizer
+//sameFolderImports - not GWT import - same folder const MotionRecognizer
 
 export class AllMotionRecognizer extends MotionRecognizer {
         

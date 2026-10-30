@@ -90,9 +90,9 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputRobotInterface } from './InputRobotInterface.js';
-//not GWT import - same folder const InputRobotInterface
+//sameFolderImports - not GWT import - same folder const InputRobotInterface
 import { InputRobot } from './InputRobot.js';
-//not GWT import - same folder const InputRobot
+//sameFolderImports - not GWT import - same folder const InputRobot
 
 export class InputRobotFactory
             extends Object

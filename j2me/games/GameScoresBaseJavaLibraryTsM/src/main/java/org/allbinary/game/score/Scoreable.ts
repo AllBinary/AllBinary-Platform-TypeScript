@@ -44,7 +44,7 @@ import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/ma
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScoreableInterface } from './ScoreableInterface.js';
-//not GWT import - same folder const ScoreableInterface
+//sameFolderImports - not GWT import - same folder const ScoreableInterface
 
 export class Scoreable
             extends Object

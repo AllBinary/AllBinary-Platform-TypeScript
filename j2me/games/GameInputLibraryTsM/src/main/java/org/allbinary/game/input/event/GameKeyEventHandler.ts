@@ -50,11 +50,11 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PressGameKeyEventHandler } from './PressGameKeyEventHandler.js';
-//not GWT import - same folder const PressGameKeyEventHandler
+//sameFolderImports - not GWT import - same folder const PressGameKeyEventHandler
 import { UpGameKeyEventHandler } from './UpGameKeyEventHandler.js';
-//not GWT import - same folder const UpGameKeyEventHandler
+//sameFolderImports - not GWT import - same folder const UpGameKeyEventHandler
 import { DownGameKeyEventHandler } from './DownGameKeyEventHandler.js';
-//not GWT import - same folder const DownGameKeyEventHandler
+//sameFolderImports - not GWT import - same folder const DownGameKeyEventHandler
 
 export class GameKeyEventHandler
             extends Object

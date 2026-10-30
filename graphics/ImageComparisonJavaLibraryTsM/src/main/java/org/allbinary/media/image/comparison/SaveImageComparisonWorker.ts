@@ -71,13 +71,13 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResultsListener } from './ImageComparisonResultsListener.js';
-//not GWT import - same folder const ImageComparisonResultsListener
+//sameFolderImports - not GWT import - same folder const ImageComparisonResultsListener
 import { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';
-//not GWT import - same folder const ImageComparisonResultsEvent
+//sameFolderImports - not GWT import - same folder const ImageComparisonResultsEvent
 import { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import - same folder const ImageComparisonResult
+//sameFolderImports - not GWT import - same folder const ImageComparisonResult
 import { ComparisonImageInputOutput } from './ComparisonImageInputOutput.js';
-//not GWT import - same folder const ComparisonImageInputOutput
+//sameFolderImports - not GWT import - same folder const ComparisonImageInputOutput
 
 export class SaveImageComparisonWorker
             extends Object

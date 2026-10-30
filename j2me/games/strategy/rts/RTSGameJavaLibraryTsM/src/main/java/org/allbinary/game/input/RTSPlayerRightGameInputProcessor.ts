@@ -45,9 +45,9 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSPlayerGameInputProcessor } from './RTSPlayerGameInputProcessor.js';
-//not GWT import - same folder const RTSPlayerGameInputProcessor
+//sameFolderImports - not GWT import - same folder const RTSPlayerGameInputProcessor
 import { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
-//not GWT import - same folder const RTSPlayerGameInput
+//sameFolderImports - not GWT import - same folder const RTSPlayerGameInput
 
 export class RTSPlayerRightGameInputProcessor extends RTSPlayerGameInputProcessor {
         

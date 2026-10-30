@@ -66,9 +66,9 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PartInterface } from './PartInterface.js';
-//not GWT import - same folder const PartInterface
+//sameFolderImports - not GWT import - same folder const PartInterface
 import { CountedLayerInterfaceFactoryPart } from './CountedLayerInterfaceFactoryPart.js';
-//not GWT import - same folder const CountedLayerInterfaceFactoryPart
+//sameFolderImports - not GWT import - same folder const CountedLayerInterfaceFactoryPart
 
 export class CountedLayersHudPaintable
             extends Object

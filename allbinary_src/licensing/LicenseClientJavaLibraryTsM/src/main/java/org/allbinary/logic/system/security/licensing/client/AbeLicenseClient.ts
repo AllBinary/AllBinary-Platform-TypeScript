@@ -71,7 +71,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { XmlRpcAbeLicenseRetrievalClient } from './XmlRpcAbeLicenseRetrievalClient.js';
-//not GWT import - same folder const XmlRpcAbeLicenseRetrievalClient
+//sameFolderImports - not GWT import - same folder const XmlRpcAbeLicenseRetrievalClient
 
 export class AbeLicenseClient
             extends Object

@@ -48,9 +48,9 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BoundsChangeEventListener } from './BoundsChangeEventListener.js';
-//not GWT import - same folder const BoundsChangeEventListener
+//sameFolderImports - not GWT import - same folder const BoundsChangeEventListener
 import { BoundsChangeEvent } from './BoundsChangeEvent.js';
-//not GWT import - same folder const BoundsChangeEvent
+//sameFolderImports - not GWT import - same folder const BoundsChangeEvent
 
 export class BoundsChangeEventHandler extends BasicEventHandler {
         

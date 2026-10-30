@@ -74,9 +74,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLSurfaceChangedInterface } from './OpenGLSurfaceChangedInterface.js';
-//not GWT import - same folder const OpenGLSurfaceChangedInterface
+//sameFolderImports - not GWT import - same folder const OpenGLSurfaceChangedInterface
 import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
-//not GWT import - same folder const OpenGLESImageProperties
+//sameFolderImports - not GWT import - same folder const OpenGLESImageProperties
 //OpenGLESNullImageJ2MEJavaLibrary
 export class OpenGLESImage
             extends Object

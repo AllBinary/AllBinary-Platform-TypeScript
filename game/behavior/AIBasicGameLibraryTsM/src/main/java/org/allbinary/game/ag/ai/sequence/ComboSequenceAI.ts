@@ -51,7 +51,7 @@ import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/All
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SequenceAI } from './SequenceAI.js';
-//not GWT import - same folder const SequenceAI
+//sameFolderImports - not GWT import - same folder const SequenceAI
 
 export class ComboSequenceAI extends SequenceAI {
         

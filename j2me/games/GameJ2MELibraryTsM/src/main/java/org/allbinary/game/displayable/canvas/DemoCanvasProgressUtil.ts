@@ -51,7 +51,7 @@ import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoCanvas } from './DemoCanvas.js';
-//not GWT import - same folder const DemoCanvas
+//sameFolderImports - not GWT import - same folder const DemoCanvas
 
 export class DemoCanvasProgressUtil
             extends Object

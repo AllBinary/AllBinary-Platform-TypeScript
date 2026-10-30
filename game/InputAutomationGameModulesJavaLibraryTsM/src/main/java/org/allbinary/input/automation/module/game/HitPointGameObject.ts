@@ -52,9 +52,9 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MeteredGameObject } from './MeteredGameObject.js';
-//not GWT import - same folder const MeteredGameObject
+//sameFolderImports - not GWT import - same folder const MeteredGameObject
 import { HitPointGameObjectInterface } from './HitPointGameObjectInterface.js';
-//not GWT import - same folder const HitPointGameObjectInterface
+//sameFolderImports - not GWT import - same folder const HitPointGameObjectInterface
 
 export class HitPointGameObject extends MeteredGameObject implements HitPointGameObjectInterface {
         

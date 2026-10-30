@@ -82,11 +82,11 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigsData } from './LogConfigsData.js';
-//not GWT import - same folder const LogConfigsData
+//sameFolderImports - not GWT import - same folder const LogConfigsData
 import { LogConfigData } from './LogConfigData.js';
-//not GWT import - same folder const LogConfigData
+//sameFolderImports - not GWT import - same folder const LogConfigData
 import { LogConfig } from './LogConfig.js';
-//not GWT import - same folder const LogConfig
+//sameFolderImports - not GWT import - same folder const LogConfig
 
 export class LoggingInitInfo
             extends Object

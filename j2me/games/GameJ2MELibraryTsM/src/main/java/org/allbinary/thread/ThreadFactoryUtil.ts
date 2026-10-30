@@ -81,11 +81,11 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABRunnable } from './ABRunnable.js';
-//not GWT import - same folder const ABRunnable
+//sameFolderImports - not GWT import - same folder const ABRunnable
 import { PrimaryThreadPool } from './PrimaryThreadPool.js';
-//not GWT import - same folder const PrimaryThreadPool
+//sameFolderImports - not GWT import - same folder const PrimaryThreadPool
 import { ThreadPool } from './ThreadPool.js';
-//not GWT import - same folder const ThreadPool
+//sameFolderImports - not GWT import - same folder const ThreadPool
 
 export class ThreadFactoryUtil
             extends Object

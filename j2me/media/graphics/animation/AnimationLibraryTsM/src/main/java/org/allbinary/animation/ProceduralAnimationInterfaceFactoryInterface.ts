@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicAnimationInterfaceFactoryInterface } from './BasicAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const BasicAnimationInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const BasicAnimationInterfaceFactoryInterface
 import { Animation } from './Animation.js';
-//not GWT import - same folder const Animation
+//sameFolderImports - not GWT import - same folder const Animation
 
 export interface ProceduralAnimationInterfaceFactoryInterface extends BasicAnimationInterfaceFactoryInterface {
         

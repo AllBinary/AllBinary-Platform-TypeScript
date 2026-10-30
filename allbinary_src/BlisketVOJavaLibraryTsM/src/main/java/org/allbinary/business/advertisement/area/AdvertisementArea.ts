@@ -56,13 +56,13 @@ import { Document } from '../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementAreaInterface } from './AdvertisementAreaInterface.js';
-//not GWT import - same folder const AdvertisementAreaInterface
+//sameFolderImports - not GWT import - same folder const AdvertisementAreaInterface
 import { AdvertisementAreaConstraintsInterface } from './AdvertisementAreaConstraintsInterface.js';
-//not GWT import - same folder const AdvertisementAreaConstraintsInterface
+//sameFolderImports - not GWT import - same folder const AdvertisementAreaConstraintsInterface
 import { AdvertisementAreaData } from './AdvertisementAreaData.js';
-//not GWT import - same folder const AdvertisementAreaData
+//sameFolderImports - not GWT import - same folder const AdvertisementAreaData
 import { AdvertisementAreaConstraints } from './AdvertisementAreaConstraints.js';
-//not GWT import - same folder const AdvertisementAreaConstraints
+//sameFolderImports - not GWT import - same folder const AdvertisementAreaConstraints
 
 export class AdvertisementArea
             extends Object

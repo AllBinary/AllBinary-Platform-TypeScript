@@ -48,9 +48,9 @@ import { TransformInfoObjectConfigGeneratorFactory } from '../../../../../../org
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoEntityFactory } from './TransformInfoEntityFactory.js';
-//not GWT import - same folder const TransformInfoEntityFactory
+//sameFolderImports - not GWT import - same folder const TransformInfoEntityFactory
 import { TransformInfoEntity } from './TransformInfoEntity.js';
-//not GWT import - same folder const TransformInfoEntity
+//sameFolderImports - not GWT import - same folder const TransformInfoEntity
 
 export class TransformInfoEntityBuilder
             extends Object

@@ -46,9 +46,9 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColor } from './BasicColor.js';
-//not GWT import - same folder const BasicColor
+//sameFolderImports - not GWT import - same folder const BasicColor
 import { BasicColorUtil } from './BasicColorUtil.js';
-//not GWT import - same folder const BasicColorUtil
+//sameFolderImports - not GWT import - same folder const BasicColorUtil
 
 export class BasicColorFactory
             extends Object

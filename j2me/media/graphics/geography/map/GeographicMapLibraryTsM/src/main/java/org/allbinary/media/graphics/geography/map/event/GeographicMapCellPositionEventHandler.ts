@@ -62,9 +62,9 @@ import { BasicEventHandler } from '../../../../../../../org/allbinary/logic/util
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionEvent } from './GeographicMapCellPositionEvent.js';
-//not GWT import - same folder const GeographicMapCellPositionEvent
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionEvent
 import { GeographicMapCellPositionEventListenerInterface } from './GeographicMapCellPositionEventListenerInterface.js';
-//not GWT import - same folder const GeographicMapCellPositionEventListenerInterface
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionEventListenerInterface
 
 export class GeographicMapCellPositionEventHandler extends BasicEventHandler {
         

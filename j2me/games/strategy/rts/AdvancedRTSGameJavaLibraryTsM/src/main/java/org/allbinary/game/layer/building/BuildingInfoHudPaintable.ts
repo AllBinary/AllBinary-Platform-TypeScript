@@ -81,7 +81,7 @@ type MathUtil<T = any, U = any> = typeof MathUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BuildingLayer } from './BuildingLayer.js';
-//not GWT import - same folder const BuildingLayer
+//sameFolderImports - not GWT import - same folder const BuildingLayer
 
 export class BuildingInfoHudPaintable extends SelectionHudPaintable {
         

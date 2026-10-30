@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCacheFactory } from './ImageCacheFactory.js';
-//not GWT import - same folder const ImageCacheFactory
+//sameFolderImports - not GWT import - same folder const ImageCacheFactory
 import { ImageCache } from './ImageCache.js';
-//not GWT import - same folder const ImageCache
+//sameFolderImports - not GWT import - same folder const ImageCache
 
 export class GameFeatureImageCacheFactory
             extends Object

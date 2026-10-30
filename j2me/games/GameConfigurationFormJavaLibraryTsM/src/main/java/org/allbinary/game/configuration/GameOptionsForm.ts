@@ -118,17 +118,17 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationTextInput } from './GameConfigurationTextInput.js';
-//not GWT import - same folder const GameConfigurationTextInput
+//sameFolderImports - not GWT import - same folder const GameConfigurationTextInput
 import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
-//not GWT import - same folder const GameConfigurationSingleton
+//sameFolderImports - not GWT import - same folder const GameConfigurationSingleton
 import { GameConfiguration } from './GameConfiguration.js';
-//not GWT import - same folder const GameConfiguration
+//sameFolderImports - not GWT import - same folder const GameConfiguration
 import { GameConfigurationGauge } from './GameConfigurationGauge.js';
-//not GWT import - same folder const GameConfigurationGauge
+//sameFolderImports - not GWT import - same folder const GameConfigurationGauge
 import { GameConfigurationUtil } from './GameConfigurationUtil.js';
-//not GWT import - same folder const GameConfigurationUtil
+//sameFolderImports - not GWT import - same folder const GameConfigurationUtil
 import { GameConfigurationCentral } from './GameConfigurationCentral.js';
-//not GWT import - same folder const GameConfigurationCentral
+//sameFolderImports - not GWT import - same folder const GameConfigurationCentral
 
 export class GameOptionsForm extends CommandForm {
         

@@ -78,9 +78,9 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BoundBounceAI } from './BoundBounceAI.js';
-//not GWT import - same folder const BoundBounceAI
+//sameFolderImports - not GWT import - same folder const BoundBounceAI
 import { ReverseVelocityBoundsVisitor } from './ReverseVelocityBoundsVisitor.js';
-//not GWT import - same folder const ReverseVelocityBoundsVisitor
+//sameFolderImports - not GWT import - same folder const ReverseVelocityBoundsVisitor
 
 export class TopUBoundBounceAIFactory
             extends Object

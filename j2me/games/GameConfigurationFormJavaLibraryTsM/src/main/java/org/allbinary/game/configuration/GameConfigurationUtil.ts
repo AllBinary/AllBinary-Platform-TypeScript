@@ -61,15 +61,15 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
-//not GWT import - same folder const GameConfigurationSingleton
+//sameFolderImports - not GWT import - same folder const GameConfigurationSingleton
 import { GameConfiguration } from './GameConfiguration.js';
-//not GWT import - same folder const GameConfiguration
+//sameFolderImports - not GWT import - same folder const GameConfiguration
 import { GameOptionsForm } from './GameOptionsForm.js';
-//not GWT import - same folder const GameOptionsForm
+//sameFolderImports - not GWT import - same folder const GameOptionsForm
 import { GameConfigurationGauge } from './GameConfigurationGauge.js';
-//not GWT import - same folder const GameConfigurationGauge
+//sameFolderImports - not GWT import - same folder const GameConfigurationGauge
 import { GameConfigurationCentral } from './GameConfigurationCentral.js';
-//not GWT import - same folder const GameConfigurationCentral
+//sameFolderImports - not GWT import - same folder const GameConfigurationCentral
 
 export class GameConfigurationUtil
             extends Object

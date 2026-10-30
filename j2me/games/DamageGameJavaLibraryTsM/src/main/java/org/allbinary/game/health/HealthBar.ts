@@ -48,13 +48,13 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthListenerInterface } from './HealthListenerInterface.js';
-//not GWT import - same folder const HealthListenerInterface
+//sameFolderImports - not GWT import - same folder const HealthListenerInterface
 import { HealthBarAnimation } from './HealthBarAnimation.js';
-//not GWT import - same folder const HealthBarAnimation
+//sameFolderImports - not GWT import - same folder const HealthBarAnimation
 import { HealthInterface } from './HealthInterface.js';
-//not GWT import - same folder const HealthInterface
+//sameFolderImports - not GWT import - same folder const HealthInterface
 import { Health } from './Health.js';
-//not GWT import - same folder const Health
+//sameFolderImports - not GWT import - same folder const Health
 
 export class HealthBar extends Paintable implements HealthListenerInterface {
         

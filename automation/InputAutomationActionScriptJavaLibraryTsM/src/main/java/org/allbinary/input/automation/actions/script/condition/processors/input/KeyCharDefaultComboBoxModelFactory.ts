@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../../../../../java/lang/Object.js';
         
-            import { Character } from '../../../../../../../../../java/lang/Character.js';
+            //not plain js import { Character }
+            const Character = globalThis.java.lang.Character;
+            type Character<T = any, U = any> = typeof Character extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Character;
         
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
@@ -52,9 +54,9 @@ import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/in
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-//not GWT import - same folder const DefaultComboBoxModel
+//sameFolderImports - not GWT import - same folder const DefaultComboBoxModel
 import { KeyStroke } from './KeyStroke.js';
-//not GWT import - same folder const KeyStroke
+//sameFolderImports - not GWT import - same folder const KeyStroke
 
 export class KeyCharDefaultComboBoxModelFactory
             extends Object

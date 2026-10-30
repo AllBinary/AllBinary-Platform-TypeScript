@@ -54,11 +54,11 @@ type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingNode } from './PathFindingNode.js';
-//not GWT import - same folder const PathFindingNode
+//sameFolderImports - not GWT import - same folder const PathFindingNode
 import { Comparable } from './Comparable.js';
-//not GWT import - same folder const Comparable
+//sameFolderImports - not GWT import - same folder const Comparable
 import { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
-//not GWT import - same folder const PathFindingNodeCostInfo
+//sameFolderImports - not GWT import - same folder const PathFindingNodeCostInfo
 
 export class PathFindingNodeCost extends PathFindingNode implements Comparable<PathFindingNodeCost> {
         

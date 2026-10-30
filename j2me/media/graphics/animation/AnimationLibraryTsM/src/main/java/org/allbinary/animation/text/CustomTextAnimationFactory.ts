@@ -66,9 +66,9 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTextAnimation } from './CustomTextAnimation.js';
-//not GWT import - same folder const CustomTextAnimation
+//sameFolderImports - not GWT import - same folder const CustomTextAnimation
 import { AdjustCustomTextAnimation } from './AdjustCustomTextAnimation.js';
-//not GWT import - same folder const AdjustCustomTextAnimation
+//sameFolderImports - not GWT import - same folder const AdjustCustomTextAnimation
 
 export class CustomTextAnimationFactory
             extends Object

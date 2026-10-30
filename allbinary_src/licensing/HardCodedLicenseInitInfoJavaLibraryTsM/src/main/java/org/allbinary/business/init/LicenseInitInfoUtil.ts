@@ -41,7 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LicenseInitInfo } from './LicenseInitInfo.js';
-//not GWT import - same folder const LicenseInitInfo
+//sameFolderImports - not GWT import - same folder const LicenseInitInfo
 
 export class LicenseInitInfoUtil
             extends Object

@@ -48,7 +48,7 @@ import { Document } from '../../../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericStoreTransformInfoObjectConfig } from './GenericStoreTransformInfoObjectConfig.js';
-//not GWT import - same folder const GenericStoreTransformInfoObjectConfig
+//sameFolderImports - not GWT import - same folder const GenericStoreTransformInfoObjectConfig
 
 export class OverrideStoreTransformInfoObjectConfig extends GenericStoreTransformInfoObjectConfig {
         

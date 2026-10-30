@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThreadPool } from './ThreadPool.js';
-//not GWT import - same folder const ThreadPool
+//sameFolderImports - not GWT import - same folder const ThreadPool
 import { PriorityRunnable } from './PriorityRunnable.js';
-//not GWT import - same folder const PriorityRunnable
+//sameFolderImports - not GWT import - same folder const PriorityRunnable
 //This is mainly for network communications.
 export class PathFindingThreadPool extends ThreadPool {
         

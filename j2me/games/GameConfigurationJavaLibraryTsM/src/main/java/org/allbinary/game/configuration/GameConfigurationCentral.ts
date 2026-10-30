@@ -83,7 +83,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfiguration } from './GameConfiguration.js';
-//not GWT import - same folder const GameConfiguration
+//sameFolderImports - not GWT import - same folder const GameConfiguration
 
 export class GameConfigurationCentral
             extends Object

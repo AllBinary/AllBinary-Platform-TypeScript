@@ -87,7 +87,7 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BodyData } from './BodyData.js';
-//not GWT import - same folder const BodyData
+//sameFolderImports - not GWT import - same folder const BodyData
 
 export class GenericBodyValidation extends Validation implements DomNodeInterface {
         

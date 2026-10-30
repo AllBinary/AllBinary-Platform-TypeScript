@@ -71,7 +71,7 @@ import { Document } from '../../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomDocumentHelper } from './DomDocumentHelper.js';
-//not GWT import - same folder const DomDocumentHelper
+//sameFolderImports - not GWT import - same folder const DomDocumentHelper
 
 export class DomDocumentFileHelper
             extends Object

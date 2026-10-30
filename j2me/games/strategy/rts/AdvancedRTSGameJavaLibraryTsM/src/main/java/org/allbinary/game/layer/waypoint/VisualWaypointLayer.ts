@@ -59,11 +59,11 @@ import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointLayer } from './WaypointLayer.js';
-//not GWT import - same folder const WaypointLayer
+//sameFolderImports - not GWT import - same folder const WaypointLayer
 import { WaypointInfoHudPaintableSingleton } from './WaypointInfoHudPaintableSingleton.js';
-//not GWT import - same folder const WaypointInfoHudPaintableSingleton
+//sameFolderImports - not GWT import - same folder const WaypointInfoHudPaintableSingleton
 import { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
-//not GWT import - same folder const WaypointInfoHudPaintable
+//sameFolderImports - not GWT import - same folder const WaypointInfoHudPaintable
 
 export class VisualWaypointLayer extends WaypointLayer {
         

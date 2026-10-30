@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameRunnable } from './GameRunnable.js';
-//not GWT import - same folder const GameRunnable
+//sameFolderImports - not GWT import - same folder const GameRunnable
 
 export class NullWaitGameRunnable extends GameRunnable {
         

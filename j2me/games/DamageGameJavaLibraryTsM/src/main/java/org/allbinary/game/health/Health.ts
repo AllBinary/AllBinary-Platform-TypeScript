@@ -51,11 +51,11 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthInterface } from './HealthInterface.js';
-//not GWT import - same folder const HealthInterface
+//sameFolderImports - not GWT import - same folder const HealthInterface
 import { NullHealthListener } from './NullHealthListener.js';
-//not GWT import - same folder const NullHealthListener
+//sameFolderImports - not GWT import - same folder const NullHealthListener
 import { HealthListenerInterface } from './HealthListenerInterface.js';
-//not GWT import - same folder const HealthListenerInterface
+//sameFolderImports - not GWT import - same folder const HealthListenerInterface
 
 export class Health
             extends Object

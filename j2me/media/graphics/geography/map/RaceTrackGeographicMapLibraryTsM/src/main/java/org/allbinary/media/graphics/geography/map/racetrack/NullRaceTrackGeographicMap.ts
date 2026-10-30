@@ -66,11 +66,11 @@ import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackGeographicMapInterface } from './RaceTrackGeographicMapInterface.js';
-//not GWT import - same folder const RaceTrackGeographicMapInterface
+//sameFolderImports - not GWT import - same folder const RaceTrackGeographicMapInterface
 import { RaceTrackInfo } from './RaceTrackInfo.js';
-//not GWT import - same folder const RaceTrackInfo
+//sameFolderImports - not GWT import - same folder const RaceTrackInfo
 import { RaceTrackData } from './RaceTrackData.js';
-//not GWT import - same folder const RaceTrackData
+//sameFolderImports - not GWT import - same folder const RaceTrackData
 
 export class NullRaceTrackGeographicMap
             extends Object

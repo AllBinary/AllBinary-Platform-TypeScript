@@ -45,9 +45,9 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialGameInputProcessor } from './SpecialGameInputProcessor.js';
-//not GWT import - same folder const SpecialGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SpecialGameInputProcessor
 import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDamageableLayer.js';
-//not GWT import - same folder const CollidableDestroyableDamageableLayer
+//sameFolderImports - not GWT import - same folder const CollidableDestroyableDamageableLayer
 
 export class Special5GameInputProcessor extends SpecialGameInputProcessor {
         

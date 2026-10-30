@@ -40,7 +40,7 @@ import { GameConfiguration } from '../../../../../org/allbinary/game/configurati
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseChangedGameFeatureListener } from './BaseChangedGameFeatureListener.js';
-//not GWT import - same folder const BaseChangedGameFeatureListener
+//sameFolderImports - not GWT import - same folder const BaseChangedGameFeatureListener
 
 export class ChangedGameFeatureListener extends BaseChangedGameFeatureListener {
         

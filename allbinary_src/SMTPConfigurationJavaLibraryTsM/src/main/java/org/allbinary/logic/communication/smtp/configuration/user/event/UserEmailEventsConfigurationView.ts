@@ -78,19 +78,19 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventsConfigurationInterface } from './UserEmailEventsConfigurationInterface.js';
-//not GWT import - same folder const UserEmailEventsConfigurationInterface
+//sameFolderImports - not GWT import - same folder const UserEmailEventsConfigurationInterface
 import { UserEmailEventsConfiguration } from './UserEmailEventsConfiguration.js';
-//not GWT import - same folder const UserEmailEventsConfiguration
+//sameFolderImports - not GWT import - same folder const UserEmailEventsConfiguration
 import { UserEmailEventConfigurationData } from './UserEmailEventConfigurationData.js';
-//not GWT import - same folder const UserEmailEventConfigurationData
+//sameFolderImports - not GWT import - same folder const UserEmailEventConfigurationData
 import { UserEmailEventConfigurationView } from './UserEmailEventConfigurationView.js';
-//not GWT import - same folder const UserEmailEventConfigurationView
+//sameFolderImports - not GWT import - same folder const UserEmailEventConfigurationView
 import { UserEmailEventsConfigurationMapping } from './UserEmailEventsConfigurationMapping.js';
-//not GWT import - same folder const UserEmailEventsConfigurationMapping
+//sameFolderImports - not GWT import - same folder const UserEmailEventsConfigurationMapping
 import { UserEmailEventsConfigurationData } from './UserEmailEventsConfigurationData.js';
-//not GWT import - same folder const UserEmailEventsConfigurationData
+//sameFolderImports - not GWT import - same folder const UserEmailEventsConfigurationData
 import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
-//not GWT import - same folder const UserEmailEventConfigurationInterface
+//sameFolderImports - not GWT import - same folder const UserEmailEventConfigurationInterface
 
 export class UserEmailEventsConfigurationView
             extends Object

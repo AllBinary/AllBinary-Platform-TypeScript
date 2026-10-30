@@ -48,9 +48,9 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreThemeCategoryView } from './StoreThemeCategoryView.js';
-//not GWT import - same folder const StoreThemeCategoryView
+//sameFolderImports - not GWT import - same folder const StoreThemeCategoryView
 import { StoreThemeCategoryInterface } from './StoreThemeCategoryInterface.js';
-//not GWT import - same folder const StoreThemeCategoryInterface
+//sameFolderImports - not GWT import - same folder const StoreThemeCategoryInterface
 
 export class StoreThemeCategoryValidationView extends StoreThemeCategoryView implements ValidationInterface {
         

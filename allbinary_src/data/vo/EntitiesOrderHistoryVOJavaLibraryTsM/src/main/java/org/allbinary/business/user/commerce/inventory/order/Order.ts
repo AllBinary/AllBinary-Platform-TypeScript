@@ -88,11 +88,11 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderInterface } from './OrderInterface.js';
-//not GWT import - same folder const OrderInterface
+//sameFolderImports - not GWT import - same folder const OrderInterface
 import { OrderHistoryData } from './OrderHistoryData.js';
-//not GWT import - same folder const OrderHistoryData
+//sameFolderImports - not GWT import - same folder const OrderHistoryData
 import { OrderData } from './OrderData.js';
-//not GWT import - same folder const OrderData
+//sameFolderImports - not GWT import - same folder const OrderData
 
 export class Order
             extends Object

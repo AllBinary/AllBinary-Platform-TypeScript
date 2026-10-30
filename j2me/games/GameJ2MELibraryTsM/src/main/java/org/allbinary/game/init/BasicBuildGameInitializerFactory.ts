@@ -39,11 +39,11 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInitializationInterfaceFactoryInterface } from './GameInitializationInterfaceFactoryInterface.js';
-//not GWT import - same folder const GameInitializationInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const GameInitializationInterfaceFactoryInterface
 import { BaseGameInitialization } from './BaseGameInitialization.js';
-//not GWT import - same folder const BaseGameInitialization
+//sameFolderImports - not GWT import - same folder const BaseGameInitialization
 import { GameInitializationInterface } from './GameInitializationInterface.js';
-//not GWT import - same folder const GameInitializationInterface
+//sameFolderImports - not GWT import - same folder const GameInitializationInterface
 
 export class BasicBuildGameInitializerFactory
             extends Object

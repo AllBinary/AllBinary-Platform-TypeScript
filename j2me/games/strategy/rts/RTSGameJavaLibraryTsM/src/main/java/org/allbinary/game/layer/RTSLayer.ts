@@ -180,27 +180,27 @@ import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSInterface } from './RTSInterface.js';
-//not GWT import - same folder const RTSInterface
+//sameFolderImports - not GWT import - same folder const RTSInterface
 import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-//not GWT import - same folder const PathFindingLayerInterface
+//sameFolderImports - not GWT import - same folder const PathFindingLayerInterface
 import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
-//not GWT import - same folder const RTSLayer2LogHelper
+//sameFolderImports - not GWT import - same folder const RTSLayer2LogHelper
 import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
-//not GWT import - same folder const GeographicMapCellPositionAreaBase
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionAreaBase
 import { GeographicMapCellPositionArea } from './GeographicMapCellPositionArea.js';
-//not GWT import - same folder const GeographicMapCellPositionArea
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionArea
 import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
-//not GWT import - same folder const AllBinaryTiledLayer
+//sameFolderImports - not GWT import - same folder const AllBinaryTiledLayer
 import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
-//not GWT import - same folder const AllBinaryGameLayerManager
+//sameFolderImports - not GWT import - same folder const AllBinaryGameLayerManager
 import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
-//not GWT import - same folder const RTSPlayerLayerInterface
+//sameFolderImports - not GWT import - same folder const RTSPlayerLayerInterface
 import { RTSLayerUtil } from './RTSLayerUtil.js';
-//not GWT import - same folder const RTSLayerUtil
+//sameFolderImports - not GWT import - same folder const RTSLayerUtil
 import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import - same folder const WaypointBehaviorBase
+//sameFolderImports - not GWT import - same folder const WaypointBehaviorBase
 import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import - same folder const SelectionHudPaintable
+//sameFolderImports - not GWT import - same folder const SelectionHudPaintable
 
 export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface, GameInputInterface, GameKeyEventSourceInterface, RTSInterface, PathFindingLayerInterface {
         

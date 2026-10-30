@@ -48,7 +48,7 @@ import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableCompositeLayer } from './CollidableCompositeLayer.js';
-//not GWT import - same folder const CollidableCompositeLayer
+//sameFolderImports - not GWT import - same folder const CollidableCompositeLayer
 
 export class CollidableRTSBehavior extends CollidableDestroyableDamageableBehavior {
         

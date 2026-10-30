@@ -57,7 +57,7 @@ import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyedEventHandler } from './DestroyedEventHandler.js';
-//not GWT import - same folder const DestroyedEventHandler
+//sameFolderImports - not GWT import - same folder const DestroyedEventHandler
 
 export class DestroyedEvent extends AllBinaryEventObject {
         

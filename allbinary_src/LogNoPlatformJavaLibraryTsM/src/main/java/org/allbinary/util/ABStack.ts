@@ -18,8 +18,9 @@
         
 
 
-import { Stack } from '../../../java/util/Stack.js';
-//not GWT import const Stack
+//not plain js import { Stack } 
+const Stack = globalThis.java.util.Stack;
+type Stack<T = any, U = any> = typeof Stack extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Stack;
 
 
 

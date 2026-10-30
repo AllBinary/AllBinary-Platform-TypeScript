@@ -63,7 +63,7 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import - same folder const TableTag
+//sameFolderImports - not GWT import - same folder const TableTag
 
 export class ShippingAddressTag extends TableTag {
         

@@ -45,7 +45,7 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonsPaintable } from './TouchButtonsPaintable.js';
-//not GWT import - same folder const TouchButtonsPaintable
+//sameFolderImports - not GWT import - same folder const TouchButtonsPaintable
 
 export class TouchButtonsPaintableFactory
             extends Object

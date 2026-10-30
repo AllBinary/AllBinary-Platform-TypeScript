@@ -86,11 +86,11 @@ type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Features } from './Features.js';
-//not GWT import - same folder const Features
+//sameFolderImports - not GWT import - same folder const Features
 import { Feature } from './Feature.js';
-//not GWT import - same folder const Feature
+//sameFolderImports - not GWT import - same folder const Feature
 import { GameFeatureUtil } from './GameFeatureUtil.js';
-//not GWT import - same folder const GameFeatureUtil
+//sameFolderImports - not GWT import - same folder const GameFeatureUtil
 
 export class GameFeatureFormUtil
             extends Object

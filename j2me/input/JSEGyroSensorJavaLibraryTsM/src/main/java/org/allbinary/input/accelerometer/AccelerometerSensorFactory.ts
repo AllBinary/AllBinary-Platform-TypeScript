@@ -50,7 +50,7 @@ import { AllBinaryOrientationSensor } from '../../../../org/allbinary/input/gyro
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoAccelerometerSensor } from './NoAccelerometerSensor.js';
-//not GWT import - same folder const NoAccelerometerSensor
+//sameFolderImports - not GWT import - same folder const NoAccelerometerSensor
 
 export class AccelerometerSensorFactory
             extends Object

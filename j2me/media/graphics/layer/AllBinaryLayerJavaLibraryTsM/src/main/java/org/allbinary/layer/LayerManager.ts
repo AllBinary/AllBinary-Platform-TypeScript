@@ -56,11 +56,11 @@ type ABSystemWrapper<T = any, U = any> = typeof ABSystemWrapper extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerLoggingBase } from './LayerManagerLoggingBase.js';
-//not GWT import - same folder const LayerManagerLoggingBase
+//sameFolderImports - not GWT import - same folder const LayerManagerLoggingBase
 import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import - same folder const AllBinaryLayer
+//sameFolderImports - not GWT import - same folder const AllBinaryLayer
 import { Layer } from './Layer.js';
-//not GWT import - same folder const Layer
+//sameFolderImports - not GWT import - same folder const Layer
 
 export class LayerManager
             extends Object

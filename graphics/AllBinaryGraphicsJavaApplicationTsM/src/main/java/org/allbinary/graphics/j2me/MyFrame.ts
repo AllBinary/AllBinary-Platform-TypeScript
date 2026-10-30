@@ -125,47 +125,47 @@ import { Document } from '../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JFrame } from './JFrame.js';
-//not GWT import - same folder const JFrame
+//sameFolderImports - not GWT import - same folder const JFrame
 import { KeyListener } from './KeyListener.js';
-//not GWT import - same folder const KeyListener
+//sameFolderImports - not GWT import - same folder const KeyListener
 import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { JToolBar } from './JToolBar.js';
-//not GWT import - same folder const JToolBar
+//sameFolderImports - not GWT import - same folder const JToolBar
 import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton
+//sameFolderImports - not GWT import - same folder const JButton
 import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { JTabbedPane } from './JTabbedPane.js';
-//not GWT import - same folder const JTabbedPane
+//sameFolderImports - not GWT import - same folder const JTabbedPane
 import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel
+//sameFolderImports - not GWT import - same folder const JLabel
 import { JMenuBar } from './JMenuBar.js';
-//not GWT import - same folder const JMenuBar
+//sameFolderImports - not GWT import - same folder const JMenuBar
 import { JMenu } from './JMenu.js';
-//not GWT import - same folder const JMenu
+//sameFolderImports - not GWT import - same folder const JMenu
 import { JMenuItem } from './JMenuItem.js';
-//not GWT import - same folder const JMenuItem
+//sameFolderImports - not GWT import - same folder const JMenuItem
 import { WindowAdapter } from './WindowAdapter.js';
-//not GWT import - same folder const WindowAdapter
+//sameFolderImports - not GWT import - same folder const WindowAdapter
 import { WindowEvent } from './WindowEvent.js';
-//not GWT import - same folder const WindowEvent
+//sameFolderImports - not GWT import - same folder const WindowEvent
 import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener
+//sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent
+//sameFolderImports - not GWT import - same folder const ActionEvent
 import { MouseAdapter } from './MouseAdapter.js';
-//not GWT import - same folder const MouseAdapter
+//sameFolderImports - not GWT import - same folder const MouseAdapter
 import { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEvent
+//sameFolderImports - not GWT import - same folder const MouseEvent
 import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout
+//sameFolderImports - not GWT import - same folder const GridLayout
 import { ChangeListener } from './ChangeListener.js';
-//not GWT import - same folder const ChangeListener
+//sameFolderImports - not GWT import - same folder const ChangeListener
 import { ChangeEvent } from './ChangeEvent.js';
-//not GWT import - same folder const ChangeEvent
+//sameFolderImports - not GWT import - same folder const ChangeEvent
 import { KeyEvent } from './KeyEvent.js';
-//not GWT import - same folder const KeyEvent
+//sameFolderImports - not GWT import - same folder const KeyEvent
 
 export class MyFrame extends javax.swing.JFrame implements FileJDialogListenerInterface, HashMapJDialogListenerInterface, java.awt.event.KeyListener {
         

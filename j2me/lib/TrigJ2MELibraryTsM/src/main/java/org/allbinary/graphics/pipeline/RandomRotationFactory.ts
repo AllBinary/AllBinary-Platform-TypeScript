@@ -52,7 +52,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGraphicsPipeline } from './BasicGraphicsPipeline.js';
-//not GWT import - same folder const BasicGraphicsPipeline
+//sameFolderImports - not GWT import - same folder const BasicGraphicsPipeline
 
 export class RandomRotationFactory
             extends Object

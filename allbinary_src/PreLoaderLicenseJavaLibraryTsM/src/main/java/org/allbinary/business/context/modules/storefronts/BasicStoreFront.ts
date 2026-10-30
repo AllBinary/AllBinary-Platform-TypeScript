@@ -68,7 +68,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicStoreFrontInterface } from './BasicStoreFrontInterface.js';
-//not GWT import - same folder const BasicStoreFrontInterface
+//sameFolderImports - not GWT import - same folder const BasicStoreFrontInterface
 
 export class BasicStoreFront
             extends Object

@@ -67,7 +67,7 @@ import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/Primitive
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialAnimation } from './SpecialAnimation.js';
-//not GWT import - same folder const SpecialAnimation
+//sameFolderImports - not GWT import - same folder const SpecialAnimation
 
 export class TitleAnimation extends SpecialAnimation {
         

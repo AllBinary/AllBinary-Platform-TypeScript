@@ -67,9 +67,9 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FeaturedResourceFactory } from './FeaturedResourceFactory.js';
-//not GWT import - same folder const FeaturedResourceFactory
+//sameFolderImports - not GWT import - same folder const FeaturedResourceFactory
 import { ResourceRelativeRelationshipFactoryInterface } from './ResourceRelativeRelationshipFactoryInterface.js';
-//not GWT import - same folder const ResourceRelativeRelationshipFactoryInterface
+//sameFolderImports - not GWT import - same folder const ResourceRelativeRelationshipFactoryInterface
 
 export class FeaturedResourceRelativeRelationshipFactory extends FeaturedResourceFactory {
         

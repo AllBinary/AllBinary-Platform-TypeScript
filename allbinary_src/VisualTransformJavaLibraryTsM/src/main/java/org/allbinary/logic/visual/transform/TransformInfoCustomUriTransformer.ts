@@ -60,7 +60,7 @@ import { TransformInfoObjectConfigInterface } from '../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTransformer } from './BasicTransformer.js';
-//not GWT import - same folder const BasicTransformer
+//sameFolderImports - not GWT import - same folder const BasicTransformer
 
 export class TransformInfoCustomUriTransformer extends BasicTransformer {
         

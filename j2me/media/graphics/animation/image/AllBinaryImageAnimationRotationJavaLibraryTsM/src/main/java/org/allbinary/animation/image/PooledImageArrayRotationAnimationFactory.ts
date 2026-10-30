@@ -69,9 +69,9 @@ import { ImageToRotationImageArrayUtil } from '../../../../org/allbinary/media/i
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
-//not GWT import - same folder const ImageArrayRotationAnimationInfo
+//sameFolderImports - not GWT import - same folder const ImageArrayRotationAnimationInfo
 import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
-//not GWT import - same folder const AdjustedImageArrayRotationAnimation
+//sameFolderImports - not GWT import - same folder const AdjustedImageArrayRotationAnimation
 //TWB - Adjustments should be done in the resource creation and not at the animation level
 export class PooledImageArrayRotationAnimationFactory
             extends Object

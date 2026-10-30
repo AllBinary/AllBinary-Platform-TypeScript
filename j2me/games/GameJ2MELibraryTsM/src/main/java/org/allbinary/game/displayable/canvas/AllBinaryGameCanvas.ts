@@ -441,63 +441,63 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvasInterface } from './AllBinaryGameCanvasInterface.js';
-//not GWT import - same folder const AllBinaryGameCanvasInterface
+//sameFolderImports - not GWT import - same folder const AllBinaryGameCanvasInterface
 import { GameCanvasRunnableInterface } from './GameCanvasRunnableInterface.js';
-//not GWT import - same folder const GameCanvasRunnableInterface
+//sameFolderImports - not GWT import - same folder const GameCanvasRunnableInterface
 import { MenuListener } from './MenuListener.js';
-//not GWT import - same folder const MenuListener
+//sameFolderImports - not GWT import - same folder const MenuListener
 import { PopupMenuInterface } from './PopupMenuInterface.js';
-//not GWT import - same folder const PopupMenuInterface
+//sameFolderImports - not GWT import - same folder const PopupMenuInterface
 import { GameCanvasRunnable } from './GameCanvasRunnable.js';
-//not GWT import - same folder const GameCanvasRunnable
+//sameFolderImports - not GWT import - same folder const GameCanvasRunnable
 import { GameCanvasPauseRunnable } from './GameCanvasPauseRunnable.js';
-//not GWT import - same folder const GameCanvasPauseRunnable
+//sameFolderImports - not GWT import - same folder const GameCanvasPauseRunnable
 import { FormUtil } from './FormUtil.js';
-//not GWT import - same folder const FormUtil
+//sameFolderImports - not GWT import - same folder const FormUtil
 import { MyFormUtil } from './MyFormUtil.js';
-//not GWT import - same folder const MyFormUtil
+//sameFolderImports - not GWT import - same folder const MyFormUtil
 import { EndGameInfo } from './EndGameInfo.js';
-//not GWT import - same folder const EndGameInfo
+//sameFolderImports - not GWT import - same folder const EndGameInfo
 import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
-//not GWT import - same folder const NoMenuInputProcessor
+//sameFolderImports - not GWT import - same folder const NoMenuInputProcessor
 import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-//not GWT import - same folder const BasicMenuInputProcessor
+//sameFolderImports - not GWT import - same folder const BasicMenuInputProcessor
 import { DemoGameBehavior } from './DemoGameBehavior.js';
-//not GWT import - same folder const DemoGameBehavior
+//sameFolderImports - not GWT import - same folder const DemoGameBehavior
 import { BaseMenuBehavior } from './BaseMenuBehavior.js';
-//not GWT import - same folder const BaseMenuBehavior
+//sameFolderImports - not GWT import - same folder const BaseMenuBehavior
 import { BaseGameBehavior } from './BaseGameBehavior.js';
-//not GWT import - same folder const BaseGameBehavior
+//sameFolderImports - not GWT import - same folder const BaseGameBehavior
 import { BasicPopupMenuPaintable } from './BasicPopupMenuPaintable.js';
-//not GWT import - same folder const BasicPopupMenuPaintable
+//sameFolderImports - not GWT import - same folder const BasicPopupMenuPaintable
 import { PopupMenuInputProcessor } from './PopupMenuInputProcessor.js';
-//not GWT import - same folder const PopupMenuInputProcessor
+//sameFolderImports - not GWT import - same folder const PopupMenuInputProcessor
 import { InGameMenuBehavior } from './InGameMenuBehavior.js';
-//not GWT import - same folder const InGameMenuBehavior
+//sameFolderImports - not GWT import - same folder const InGameMenuBehavior
 import { GameLimitedCommandTextItemArrayFactory } from './GameLimitedCommandTextItemArrayFactory.js';
-//not GWT import - same folder const GameLimitedCommandTextItemArrayFactory
+//sameFolderImports - not GWT import - same folder const GameLimitedCommandTextItemArrayFactory
 import { PopupCommandFormInputProcessor } from './PopupCommandFormInputProcessor.js';
-//not GWT import - same folder const PopupCommandFormInputProcessor
+//sameFolderImports - not GWT import - same folder const PopupCommandFormInputProcessor
 import { NullWaitGameRunnable } from './NullWaitGameRunnable.js';
-//not GWT import - same folder const NullWaitGameRunnable
+//sameFolderImports - not GWT import - same folder const NullWaitGameRunnable
 import { GameProcessor } from './GameProcessor.js';
-//not GWT import - same folder const GameProcessor
+//sameFolderImports - not GWT import - same folder const GameProcessor
 import { CheatGameInputProcessor } from './CheatGameInputProcessor.js';
-//not GWT import - same folder const CheatGameInputProcessor
+//sameFolderImports - not GWT import - same folder const CheatGameInputProcessor
 import { EndGameProcessor } from './EndGameProcessor.js';
-//not GWT import - same folder const EndGameProcessor
+//sameFolderImports - not GWT import - same folder const EndGameProcessor
 import { StartIntermissionProcessor } from './StartIntermissionProcessor.js';
-//not GWT import - same folder const StartIntermissionProcessor
+//sameFolderImports - not GWT import - same folder const StartIntermissionProcessor
 import { EndGamePaintable } from './EndGamePaintable.js';
-//not GWT import - same folder const EndGamePaintable
+//sameFolderImports - not GWT import - same folder const EndGamePaintable
 import { NullDemoPaintable } from './NullDemoPaintable.js';
-//not GWT import - same folder const NullDemoPaintable
+//sameFolderImports - not GWT import - same folder const NullDemoPaintable
 import { DemoPaintableInterface } from './DemoPaintableInterface.js';
-//not GWT import - same folder const DemoPaintableInterface
+//sameFolderImports - not GWT import - same folder const DemoPaintableInterface
 import { GameCanvasInputProcessor } from './GameCanvasInputProcessor.js';
-//not GWT import - same folder const GameCanvasInputProcessor
+//sameFolderImports - not GWT import - same folder const GameCanvasInputProcessor
 import { FormInputProcessor } from './FormInputProcessor.js';
-//not GWT import - same folder const FormInputProcessor
+//sameFolderImports - not GWT import - same folder const FormInputProcessor
 
 export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGameCanvasInterface, GameCanvasRunnableInterface, MenuListener, IntermissionCompositeInterface, IntermissionEnableListenerInterface, PopupMenuInterface, DisplayChangeEventListener, UpdateMyFontInterface {
         

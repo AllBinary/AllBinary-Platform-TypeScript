@@ -72,21 +72,21 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupBehaviorInterface } from './PickupBehaviorInterface.js';
-//not GWT import - same folder const PickupBehaviorInterface
+//sameFolderImports - not GWT import - same folder const PickupBehaviorInterface
 import { PickupProcessorInterface } from './PickupProcessorInterface.js';
-//not GWT import - same folder const PickupProcessorInterface
+//sameFolderImports - not GWT import - same folder const PickupProcessorInterface
 import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import - same folder const PickedUpLayerInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const PickedUpLayerInterfaceFactoryInterface
 import { PickedUpLayerType } from './PickedUpLayerType.js';
-//not GWT import - same folder const PickedUpLayerType
+//sameFolderImports - not GWT import - same folder const PickedUpLayerType
 import { PickedUpLayerTypeFactory } from './PickedUpLayerTypeFactory.js';
-//not GWT import - same folder const PickedUpLayerTypeFactory
+//sameFolderImports - not GWT import - same folder const PickedUpLayerTypeFactory
 import { CountedPickedUpLayerInterfaceFactoryInterface } from './CountedPickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import - same folder const CountedPickedUpLayerInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const CountedPickedUpLayerInterfaceFactoryInterface
 import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
-//not GWT import - same folder const PickedUpLayerInterface
+//sameFolderImports - not GWT import - same folder const PickedUpLayerInterface
 import { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
-//not GWT import - same folder const CountedPickedUpLayerInterfaceFactory
+//sameFolderImports - not GWT import - same folder const CountedPickedUpLayerInterfaceFactory
 
 export class PickupBehavior
             extends Object

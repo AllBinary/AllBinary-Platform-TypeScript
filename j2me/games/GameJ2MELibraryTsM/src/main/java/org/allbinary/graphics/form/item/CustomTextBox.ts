@@ -84,7 +84,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABTextFieldItem } from './ABTextFieldItem.js';
-//not GWT import - same folder const ABTextFieldItem
+//sameFolderImports - not GWT import - same folder const ABTextFieldItem
 
 export class CustomTextBox extends GameCommandCanvas implements RawKeyEventListener {
         

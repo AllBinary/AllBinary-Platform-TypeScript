@@ -91,9 +91,9 @@ import { ViewPositionEvent } from '../../../org/allbinary/view/event/ViewPositio
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Layer } from './Layer.js';
-//not GWT import - same folder const Layer
+//sameFolderImports - not GWT import - same folder const Layer
 import { LayerInterface } from './LayerInterface.js';
-//not GWT import - same folder const LayerInterface
+//sameFolderImports - not GWT import - same folder const LayerInterface
 
 export class AllBinaryLayer extends Layer implements LayerInterface {
         

@@ -46,7 +46,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlBasic } from './AbSqlBasic.js';
-//not GWT import - same folder const AbSqlBasic
+//sameFolderImports - not GWT import - same folder const AbSqlBasic
 
 export class AbSqlTable extends AbSqlBasic {
         

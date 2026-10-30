@@ -82,9 +82,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonInput } from './TouchButtonInput.js';
-//not GWT import - same folder const TouchButtonInput
+//sameFolderImports - not GWT import - same folder const TouchButtonInput
 import { TouchButtonResource } from './TouchButtonResource.js';
-//not GWT import - same folder const TouchButtonResource
+//sameFolderImports - not GWT import - same folder const TouchButtonResource
 
 export class TouchButton extends Paintable {
         

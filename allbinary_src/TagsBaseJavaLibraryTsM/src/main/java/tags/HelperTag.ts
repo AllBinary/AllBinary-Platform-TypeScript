@@ -46,7 +46,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PropertiesTag } from './PropertiesTag.js';
-//not GWT import - same folder const PropertiesTag
+//sameFolderImports - not GWT import - same folder const PropertiesTag
 
 export class HelperTag extends PropertiesTag {
         

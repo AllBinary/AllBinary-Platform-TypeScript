@@ -103,9 +103,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseScalable } from './BaseScalable.js';
-//not GWT import - same folder const BaseScalable
+//sameFolderImports - not GWT import - same folder const BaseScalable
 import { ScalableListener } from './ScalableListener.js';
-//not GWT import - same folder const ScalableListener
+//sameFolderImports - not GWT import - same folder const ScalableListener
 
 export class DisplayInfoSingleton
             extends Object

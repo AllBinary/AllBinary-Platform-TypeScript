@@ -74,7 +74,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicVelocityInterface } from './BasicVelocityInterface.js';
-//not GWT import - same folder const BasicVelocityInterface
+//sameFolderImports - not GWT import - same folder const BasicVelocityInterface
 
 export class BasicVelocityProperties
             extends Object

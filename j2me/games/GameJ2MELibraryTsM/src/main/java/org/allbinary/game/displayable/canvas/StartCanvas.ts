@@ -301,21 +301,21 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCanvasRunnableInterface } from './GameCanvasRunnableInterface.js';
-//not GWT import - same folder const GameCanvasRunnableInterface
+//sameFolderImports - not GWT import - same folder const GameCanvasRunnableInterface
 import { MenuListener } from './MenuListener.js';
-//not GWT import - same folder const MenuListener
+//sameFolderImports - not GWT import - same folder const MenuListener
 import { FormUtil } from './FormUtil.js';
-//not GWT import - same folder const FormUtil
+//sameFolderImports - not GWT import - same folder const FormUtil
 import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
-//not GWT import - same folder const NoMenuInputProcessor
+//sameFolderImports - not GWT import - same folder const NoMenuInputProcessor
 import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-//not GWT import - same folder const BasicMenuInputProcessor
+//sameFolderImports - not GWT import - same folder const BasicMenuInputProcessor
 import { NullWaitGameRunnable } from './NullWaitGameRunnable.js';
-//not GWT import - same folder const NullWaitGameRunnable
+//sameFolderImports - not GWT import - same folder const NullWaitGameRunnable
 import { GameRunnable } from './GameRunnable.js';
-//not GWT import - same folder const GameRunnable
+//sameFolderImports - not GWT import - same folder const GameRunnable
 import { GameInputMappingCanvas } from './GameInputMappingCanvas.js';
-//not GWT import - same folder const GameInputMappingCanvas
+//sameFolderImports - not GWT import - same folder const GameInputMappingCanvas
 
 export class StartCanvas extends RunnableCanvas implements GameCanvasRunnableInterface, MenuListener, DisplayChangeEventListener {
         

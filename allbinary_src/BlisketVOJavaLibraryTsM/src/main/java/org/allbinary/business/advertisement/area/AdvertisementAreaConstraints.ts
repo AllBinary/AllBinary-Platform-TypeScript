@@ -62,9 +62,9 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementAreaConstraintsInterface } from './AdvertisementAreaConstraintsInterface.js';
-//not GWT import - same folder const AdvertisementAreaConstraintsInterface
+//sameFolderImports - not GWT import - same folder const AdvertisementAreaConstraintsInterface
 import { AdvertisementAreaData } from './AdvertisementAreaData.js';
-//not GWT import - same folder const AdvertisementAreaData
+//sameFolderImports - not GWT import - same folder const AdvertisementAreaData
 
 export class AdvertisementAreaConstraints
             extends Object

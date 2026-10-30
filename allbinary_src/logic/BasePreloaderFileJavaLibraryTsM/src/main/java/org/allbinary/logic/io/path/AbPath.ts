@@ -67,7 +67,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
         //not plain js - same folder import { AbPathData } 
 const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 import { PathUtil } from './PathUtil.js';
-//not GWT import - same folder const PathUtil
+//sameFolderImports - not GWT import - same folder const PathUtil
 
 export class AbPath
             extends Object

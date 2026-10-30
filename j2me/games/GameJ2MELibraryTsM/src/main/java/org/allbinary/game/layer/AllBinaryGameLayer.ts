@@ -103,9 +103,9 @@ import { ViewPositionEventListenerInterface } from '../../../../org/allbinary/vi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SWTUtil } from './SWTUtil.js';
-//not GWT import - same folder const SWTUtil
+//sameFolderImports - not GWT import - same folder const SWTUtil
 import { GameLayerUtil } from './GameLayerUtil.js';
-//not GWT import - same folder const GameLayerUtil
+//sameFolderImports - not GWT import - same folder const GameLayerUtil
 
 export class AllBinaryGameLayer extends AllBinaryLayer implements ViewPositionEventListenerInterface, OpenGLSurfaceChangedInterface {
         

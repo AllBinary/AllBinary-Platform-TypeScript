@@ -82,7 +82,7 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BuildingLayer } from './BuildingLayer.js';
-//not GWT import - same folder const BuildingLayer
+//sameFolderImports - not GWT import - same folder const BuildingLayer
 
 export class BuildingPropertiesFactory
             extends Object

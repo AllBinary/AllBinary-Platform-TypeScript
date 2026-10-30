@@ -47,9 +47,9 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointFactory } from './PointFactory.js';
-//not GWT import - same folder const PointFactory
+//sameFolderImports - not GWT import - same folder const PointFactory
 import { GPoint } from './GPoint.js';
-//not GWT import - same folder const GPoint
+//sameFolderImports - not GWT import - same folder const GPoint
 
 export class RelativeRelationship
             extends Object

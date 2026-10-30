@@ -46,7 +46,7 @@ import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePathFinderGraphVisitor } from './BasePathFinderGraphVisitor.js';
-//not GWT import - same folder const BasePathFinderGraphVisitor
+//sameFolderImports - not GWT import - same folder const BasePathFinderGraphVisitor
 //1.4.2
 export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor {
         

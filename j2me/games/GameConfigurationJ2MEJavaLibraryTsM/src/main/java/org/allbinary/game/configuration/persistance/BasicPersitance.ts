@@ -76,9 +76,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PersistanceStrings } from './PersistanceStrings.js';
-//not GWT import - same folder const PersistanceStrings
+//sameFolderImports - not GWT import - same folder const PersistanceStrings
 import { NullRecordStore } from './NullRecordStore.js';
-//not GWT import - same folder const NullRecordStore
+//sameFolderImports - not GWT import - same folder const NullRecordStore
 
 export class BasicPersitance
             extends Object

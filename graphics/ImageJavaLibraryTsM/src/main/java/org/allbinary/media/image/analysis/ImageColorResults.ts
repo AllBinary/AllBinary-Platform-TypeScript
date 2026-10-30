@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorRange } from './ColorRange.js';
-//not GWT import - same folder const ColorRange
+//sameFolderImports - not GWT import - same folder const ColorRange
 import { ColorAverage } from './ColorAverage.js';
-//not GWT import - same folder const ColorAverage
+//sameFolderImports - not GWT import - same folder const ColorAverage
 
 export class ImageColorResults
             extends Object

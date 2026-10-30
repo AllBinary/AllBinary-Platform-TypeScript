@@ -61,7 +61,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorCacheableFactory } from './ColorCacheableFactory.js';
-//not GWT import - same folder const ColorCacheableFactory
+//sameFolderImports - not GWT import - same folder const ColorCacheableFactory
 
 export class ColorCacheFactory
             extends Object

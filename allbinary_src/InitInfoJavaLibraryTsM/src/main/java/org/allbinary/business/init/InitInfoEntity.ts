@@ -75,9 +75,9 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitSql } from './InitSql.js';
-//not GWT import - same folder const InitSql
+//sameFolderImports - not GWT import - same folder const InitSql
 import { InitInfo } from './InitInfo.js';
-//not GWT import - same folder const InitInfo
+//sameFolderImports - not GWT import - same folder const InitInfo
 
 export class InitInfoEntity extends InitSql {
         

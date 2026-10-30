@@ -39,15 +39,15 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerProcessor } from './LayerProcessor.js';
-//not GWT import - same folder const LayerProcessor
+//sameFolderImports - not GWT import - same folder const LayerProcessor
 import { SingleLayerLayerManager } from './SingleLayerLayerManager.js';
-//not GWT import - same folder const SingleLayerLayerManager
+//sameFolderImports - not GWT import - same folder const SingleLayerLayerManager
 import { LayerManager } from './LayerManager.js';
-//not GWT import - same folder const LayerManager
+//sameFolderImports - not GWT import - same folder const LayerManager
 import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import - same folder const AllBinaryLayer
+//sameFolderImports - not GWT import - same folder const AllBinaryLayer
 import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
-//not GWT import - same folder const AllBinaryLayerManager
+//sameFolderImports - not GWT import - same folder const AllBinaryLayerManager
 
 export class SingleLayerLayerProcessor extends LayerProcessor {
         

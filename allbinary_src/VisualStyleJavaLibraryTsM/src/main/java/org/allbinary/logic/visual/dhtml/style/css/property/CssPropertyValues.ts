@@ -91,9 +91,9 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssPropertyValueData } from './CssPropertyValueData.js';
-//not GWT import - same folder const CssPropertyValueData
+//sameFolderImports - not GWT import - same folder const CssPropertyValueData
 import { CssPropertyData } from './CssPropertyData.js';
-//not GWT import - same folder const CssPropertyData
+//sameFolderImports - not GWT import - same folder const CssPropertyData
 
 export class CssPropertyValues
             extends Object

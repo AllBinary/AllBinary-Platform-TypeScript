@@ -46,7 +46,7 @@ type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abst
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayerFactoryInterface } from './AllBinaryLayerFactoryInterface.js';
-//not GWT import - same folder const AllBinaryLayerFactoryInterface
+//sameFolderImports - not GWT import - same folder const AllBinaryLayerFactoryInterface
 
 export class AllBinaryLayerCircularPool extends BaseCircularPool {
         

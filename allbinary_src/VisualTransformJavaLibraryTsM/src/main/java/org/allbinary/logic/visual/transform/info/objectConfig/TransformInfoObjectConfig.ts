@@ -109,9 +109,9 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
-//not GWT import - same folder const TransformInfoObjectConfigInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoObjectConfigInterface
 import { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
-//not GWT import - same folder const TransformInfoObjectConfigData
+//sameFolderImports - not GWT import - same folder const TransformInfoObjectConfigData
 
 export class TransformInfoObjectConfig
             extends Object

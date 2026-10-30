@@ -82,9 +82,9 @@ import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryModifierTree } from './CategoryModifierTree.js';
-//not GWT import - same folder const CategoryModifierTree
+//sameFolderImports - not GWT import - same folder const CategoryModifierTree
 import { CategoryLoaderInterface } from './CategoryLoaderInterface.js';
-//not GWT import - same folder const CategoryLoaderInterface
+//sameFolderImports - not GWT import - same folder const CategoryLoaderInterface
 
 export class CategoryLoader extends CategoryModifierTree implements CategoryLoaderInterface {
         

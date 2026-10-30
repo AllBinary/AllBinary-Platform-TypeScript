@@ -97,7 +97,7 @@ type EnumerationUtil<T = any, U = any> = typeof EnumerationUtil extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputToGameKeyMapping } from './InputToGameKeyMapping.js';
-//not GWT import - same folder const InputToGameKeyMapping
+//sameFolderImports - not GWT import - same folder const InputToGameKeyMapping
 //GameInputPersistanceLibrary
 export class PersistentInputMapping
             extends Object

@@ -53,7 +53,7 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ValidationInterface } from './ValidationInterface.js';
-//not GWT import - same folder const ValidationInterface
+//sameFolderImports - not GWT import - same folder const ValidationInterface
 
 export class Validation
             extends Object

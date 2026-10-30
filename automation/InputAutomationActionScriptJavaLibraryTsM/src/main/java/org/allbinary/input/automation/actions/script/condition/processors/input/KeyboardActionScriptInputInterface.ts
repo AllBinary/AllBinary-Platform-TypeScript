@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptInputInterface } from './ProfileActionScriptInputInterface.js';
-//not GWT import - same folder const ProfileActionScriptInputInterface
+//sameFolderImports - not GWT import - same folder const ProfileActionScriptInputInterface
 
 export interface KeyboardActionScriptInputInterface extends ProfileActionScriptInputInterface {
         

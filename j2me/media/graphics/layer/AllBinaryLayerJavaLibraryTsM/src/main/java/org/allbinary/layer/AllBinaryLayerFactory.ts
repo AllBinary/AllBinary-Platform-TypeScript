@@ -49,9 +49,9 @@ import { ViewPosition } from '../../../org/allbinary/view/ViewPosition.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayerFactoryInterface } from './AllBinaryLayerFactoryInterface.js';
-//not GWT import - same folder const AllBinaryLayerFactoryInterface
+//sameFolderImports - not GWT import - same folder const AllBinaryLayerFactoryInterface
 import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import - same folder const AllBinaryLayer
+//sameFolderImports - not GWT import - same folder const AllBinaryLayer
 
 export class AllBinaryLayerFactory
             extends Object

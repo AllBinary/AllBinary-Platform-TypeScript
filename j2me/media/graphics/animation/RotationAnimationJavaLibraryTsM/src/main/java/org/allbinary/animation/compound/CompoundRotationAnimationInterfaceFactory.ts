@@ -53,9 +53,9 @@ type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterfaceFactory } from './CompoundAnimationInterfaceFactory.js';
-//not GWT import - same folder const CompoundAnimationInterfaceFactory
+//sameFolderImports - not GWT import - same folder const CompoundAnimationInterfaceFactory
 import { CompoundRotationAnimation } from './CompoundRotationAnimation.js';
-//not GWT import - same folder const CompoundRotationAnimation
+//sameFolderImports - not GWT import - same folder const CompoundRotationAnimation
 
 export class CompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         

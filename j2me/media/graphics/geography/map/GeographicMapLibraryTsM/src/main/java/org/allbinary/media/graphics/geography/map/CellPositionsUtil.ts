@@ -52,11 +52,11 @@ type BasicArrayListS<T = any, U = any> = typeof BasicArrayListS extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
-//not GWT import - same folder const BasicGeographicMapCellPositionFactory
+//sameFolderImports - not GWT import - same folder const BasicGeographicMapCellPositionFactory
 import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import - same folder const GeographicMapCellPosition
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPosition
 import { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import - same folder const BasicGeographicMap
+//sameFolderImports - not GWT import - same folder const BasicGeographicMap
 
 export class CellPositionsUtil
             extends Object

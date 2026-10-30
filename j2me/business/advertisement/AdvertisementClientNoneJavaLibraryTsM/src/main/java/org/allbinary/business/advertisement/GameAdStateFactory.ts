@@ -33,11 +33,11 @@ import { SoftwareInformation } from '../../../../org/allbinary/logic/system/Soft
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameAdStateFactoryInterface } from './GameAdStateFactoryInterface.js';
-//not GWT import - same folder const GameAdStateFactoryInterface
+//sameFolderImports - not GWT import - same folder const GameAdStateFactoryInterface
 import { AppNameLicensingAdConfiguration } from './AppNameLicensingAdConfiguration.js';
-//not GWT import - same folder const AppNameLicensingAdConfiguration
+//sameFolderImports - not GWT import - same folder const AppNameLicensingAdConfiguration
 import { GameAdStateBase } from './GameAdStateBase.js';
-//not GWT import - same folder const GameAdStateBase
+//sameFolderImports - not GWT import - same folder const GameAdStateBase
 
 export class GameAdStateFactory
             extends Object

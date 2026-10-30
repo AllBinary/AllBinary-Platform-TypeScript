@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidletState } from './DemoGameMidletState.js';
-//not GWT import - same folder const DemoGameMidletState
+//sameFolderImports - not GWT import - same folder const DemoGameMidletState
 
 export class DemoGameMidletStateFactory
             extends Object

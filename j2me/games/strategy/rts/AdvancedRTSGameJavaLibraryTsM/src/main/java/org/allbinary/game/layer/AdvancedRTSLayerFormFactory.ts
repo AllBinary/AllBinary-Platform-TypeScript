@@ -59,9 +59,9 @@ import { ItemArraySingletonFactoryInterface } from '../../../../org/allbinary/gr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSScrollSelectionFormFactory } from './RTSScrollSelectionFormFactory.js';
-//not GWT import - same folder const RTSScrollSelectionFormFactory
+//sameFolderImports - not GWT import - same folder const RTSScrollSelectionFormFactory
 import { RTSLayer } from './RTSLayer.js';
-//not GWT import - same folder const RTSLayer
+//sameFolderImports - not GWT import - same folder const RTSLayer
 
 export class AdvancedRTSLayerFormFactory extends RTSLayerFormFactory {
         

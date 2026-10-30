@@ -69,7 +69,7 @@ type HTMLPlaynUtil<T = any, U = any> = typeof HTMLPlaynUtil extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCreationUtil } from './ImageCreationUtil.js';
-//not GWT import - same folder const ImageCreationUtil
+//sameFolderImports - not GWT import - same folder const ImageCreationUtil
 
 export class ImageScaleUtil
             extends Object

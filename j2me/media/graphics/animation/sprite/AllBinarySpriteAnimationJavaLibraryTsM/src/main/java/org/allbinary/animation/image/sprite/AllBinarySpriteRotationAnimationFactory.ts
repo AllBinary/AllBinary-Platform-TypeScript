@@ -67,9 +67,9 @@ import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/Primit
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinarySpriteRotationAnimation } from './AllBinarySpriteRotationAnimation.js';
-//not GWT import - same folder const AllBinarySpriteRotationAnimation
+//sameFolderImports - not GWT import - same folder const AllBinarySpriteRotationAnimation
 import { AllBinaryAdjustedSpriteRotationAnimation } from './AllBinaryAdjustedSpriteRotationAnimation.js';
-//not GWT import - same folder const AllBinaryAdjustedSpriteRotationAnimation
+//sameFolderImports - not GWT import - same folder const AllBinaryAdjustedSpriteRotationAnimation
 
 export class AllBinarySpriteRotationAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         

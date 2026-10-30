@@ -44,9 +44,9 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerEventListenerInterface } from './LayerManagerEventListenerInterface.js';
-//not GWT import - same folder const LayerManagerEventListenerInterface
+//sameFolderImports - not GWT import - same folder const LayerManagerEventListenerInterface
 import { LayerManagerEvent } from './LayerManagerEvent.js';
-//not GWT import - same folder const LayerManagerEvent
+//sameFolderImports - not GWT import - same folder const LayerManagerEvent
 
 export class LayerManagerEventListener
             extends Object

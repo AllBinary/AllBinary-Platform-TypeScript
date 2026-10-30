@@ -74,21 +74,21 @@ import { SecondaryThreadPool } from '../../../../org/allbinary/thread/SecondaryT
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresBase } from './HighScoresBase.js';
-//not GWT import - same folder const HighScoresBase
+//sameFolderImports - not GWT import - same folder const HighScoresBase
 import { HighScores } from './HighScores.js';
-//not GWT import - same folder const HighScores
+//sameFolderImports - not GWT import - same folder const HighScores
 import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import - same folder const HighScoresResultsListener
+//sameFolderImports - not GWT import - same folder const HighScoresResultsListener
 import { RecordStoreHighScores } from './RecordStoreHighScores.js';
-//not GWT import - same folder const RecordStoreHighScores
+//sameFolderImports - not GWT import - same folder const RecordStoreHighScores
 import { ScoreComparator } from './ScoreComparator.js';
-//not GWT import - same folder const ScoreComparator
+//sameFolderImports - not GWT import - same folder const ScoreComparator
 import { LastFetchHighScoresFactory } from './LastFetchHighScoresFactory.js';
-//not GWT import - same folder const LastFetchHighScoresFactory
+//sameFolderImports - not GWT import - same folder const LastFetchHighScoresFactory
 import { HighScoresHelper2 } from './HighScoresHelper2.js';
-//not GWT import - same folder const HighScoresHelper2
+//sameFolderImports - not GWT import - same folder const HighScoresHelper2
 import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
-//not GWT import - same folder const HighScoresHelperBaseInterface
+//sameFolderImports - not GWT import - same folder const HighScoresHelperBaseInterface
 
 export class BasicHighScoresFactory extends HighScoresBase {
         

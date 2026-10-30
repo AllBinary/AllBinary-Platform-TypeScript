@@ -24,7 +24,8 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-            import { Double } from '../../../../../../java/lang/Double.js';
+            //import { Double } from '../../../../../../java/lang/Double.js';
+            const Double = globalThis.java.lang.Double;
         
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 //not GWT import const GPoint
@@ -68,9 +69,9 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsUtil } from './PointsUtil.js';
-//not GWT import - same folder const PointsUtil
+//sameFolderImports - not GWT import - same folder const PointsUtil
 import { Document } from './Document.js';
-//not GWT import - same folder const Document
+//sameFolderImports - not GWT import - same folder const Document
 
 export class PointsDomUtil
             extends Object

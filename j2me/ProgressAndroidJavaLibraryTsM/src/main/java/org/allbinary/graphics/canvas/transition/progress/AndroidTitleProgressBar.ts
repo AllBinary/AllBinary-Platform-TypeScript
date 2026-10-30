@@ -61,15 +61,15 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import - same folder const ProgressCanvas
+//sameFolderImports - not GWT import - same folder const ProgressCanvas
 //import { ShowTitleProgressBarRunnable } from './ShowTitleProgressBarRunnable.js';
-//not GWT import - same folder const ShowTitleProgressBarRunnable
+//sameFolderImports - not GWT import - same folder const ShowTitleProgressBarRunnable
 //import { DismissTitleProgressBarRunnable } from './DismissTitleProgressBarRunnable.js';
-//not GWT import - same folder const DismissTitleProgressBarRunnable
+//sameFolderImports - not GWT import - same folder const DismissTitleProgressBarRunnable
 //import { TitleProgressBarPortionSetProgressRunnable } from './TitleProgressBarPortionSetProgressRunnable.js';
-//not GWT import - same folder const TitleProgressBarPortionSetProgressRunnable
+//sameFolderImports - not GWT import - same folder const TitleProgressBarPortionSetProgressRunnable
 //import { TitleProgressBarSetProgressRunnable } from './TitleProgressBarSetProgressRunnable.js';
-//not GWT import - same folder const TitleProgressBarSetProgressRunnable
+//sameFolderImports - not GWT import - same folder const TitleProgressBarSetProgressRunnable
 type TitleProgressBarSetProgressRunnable = InstanceType<AndroidTitleProgressBar['TitleProgressBarSetProgressRunnable']>;
 type TitleProgressBarPortionSetProgressRunnable = InstanceType<AndroidTitleProgressBar['TitleProgressBarPortionSetProgressRunnable']>;
 type ShowTitleProgressBarRunnable = InstanceType<AndroidTitleProgressBar['ShowTitleProgressBarRunnable']>;

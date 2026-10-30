@@ -46,7 +46,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RectangleCollisionUtil } from './RectangleCollisionUtil.js';
-//not GWT import - same folder const RectangleCollisionUtil
+//sameFolderImports - not GWT import - same folder const RectangleCollisionUtil
 
 export class RectangleCollisionPointUtil
             extends Object

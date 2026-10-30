@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryEventObject } from './AllBinaryEventObject.js';
-//not GWT import - same folder const AllBinaryEventObject
+//sameFolderImports - not GWT import - same folder const AllBinaryEventObject
 
 export interface EventListenerInterface {
         

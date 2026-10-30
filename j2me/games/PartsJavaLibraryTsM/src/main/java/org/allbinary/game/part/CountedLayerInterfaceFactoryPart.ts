@@ -79,7 +79,7 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PartInterface } from './PartInterface.js';
-//not GWT import - same folder const PartInterface
+//sameFolderImports - not GWT import - same folder const PartInterface
 
 export class CountedLayerInterfaceFactoryPart
             extends Object

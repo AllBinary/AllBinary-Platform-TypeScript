@@ -58,7 +58,7 @@ import { GeographicMapCellPositionTracking } from '../../../../org/allbinary/med
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VehiclePropertiesCompositeInterface } from './VehiclePropertiesCompositeInterface.js';
-//not GWT import - same folder const VehiclePropertiesCompositeInterface
+//sameFolderImports - not GWT import - same folder const VehiclePropertiesCompositeInterface
 
 export interface VehicleLayerInterface extends LayerInterface, VehiclePropertiesCompositeInterface {
         

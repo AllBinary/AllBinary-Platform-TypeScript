@@ -69,9 +69,9 @@ import { ViewPositionEventHandler } from '../../../../../org/allbinary/view/even
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupLayer } from './PickupLayer.js';
-//not GWT import - same folder const PickupLayer
+//sameFolderImports - not GWT import - same folder const PickupLayer
 import { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
-//not GWT import - same folder const CountedPickedUpLayerInterfaceFactory
+//sameFolderImports - not GWT import - same folder const CountedPickedUpLayerInterfaceFactory
 
 export class RaceTrackPickupLayer extends PickupLayer {
         

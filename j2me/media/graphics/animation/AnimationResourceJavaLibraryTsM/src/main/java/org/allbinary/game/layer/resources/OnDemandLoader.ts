@@ -74,9 +74,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OnDemandResourcesFactory } from './OnDemandResourcesFactory.js';
-//not GWT import - same folder const OnDemandResourcesFactory
+//sameFolderImports - not GWT import - same folder const OnDemandResourcesFactory
 import { OnDemandResources } from './OnDemandResources.js';
-//not GWT import - same folder const OnDemandResources
+//sameFolderImports - not GWT import - same folder const OnDemandResources
 
 export class OnDemandLoader
             extends Object

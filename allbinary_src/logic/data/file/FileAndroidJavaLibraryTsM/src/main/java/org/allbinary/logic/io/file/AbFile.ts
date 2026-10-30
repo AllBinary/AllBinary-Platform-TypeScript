@@ -66,7 +66,7 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileInterface } from './AbFileInterface.js';
-//not GWT import - same folder const AbFileInterface
+//sameFolderImports - not GWT import - same folder const AbFileInterface
 
 export class AbFile
             extends Object

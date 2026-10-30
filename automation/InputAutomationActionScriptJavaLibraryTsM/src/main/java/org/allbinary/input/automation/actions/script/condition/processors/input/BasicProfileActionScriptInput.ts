@@ -94,9 +94,9 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptInputInterface } from './ProfileActionScriptInputInterface.js';
-//not GWT import - same folder const ProfileActionScriptInputInterface
+//sameFolderImports - not GWT import - same folder const ProfileActionScriptInputInterface
 import { GenericProfileActionScriptInputData } from './GenericProfileActionScriptInputData.js';
-//not GWT import - same folder const GenericProfileActionScriptInputData
+//sameFolderImports - not GWT import - same folder const GenericProfileActionScriptInputData
 
 export class BasicProfileActionScriptInput extends BasicProfileActionScriptProcessor implements ProfileActionScriptInputInterface {
         

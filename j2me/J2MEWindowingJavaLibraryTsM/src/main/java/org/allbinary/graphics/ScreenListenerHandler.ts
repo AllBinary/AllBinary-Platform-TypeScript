@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenEmptyListener } from './ScreenEmptyListener.js';
-//not GWT import - same folder const ScreenEmptyListener
+//sameFolderImports - not GWT import - same folder const ScreenEmptyListener
 import { ScreenListenerInterface } from './ScreenListenerInterface.js';
-//not GWT import - same folder const ScreenListenerInterface
+//sameFolderImports - not GWT import - same folder const ScreenListenerInterface
 
 export class ScreenListenerHandler
             extends Object

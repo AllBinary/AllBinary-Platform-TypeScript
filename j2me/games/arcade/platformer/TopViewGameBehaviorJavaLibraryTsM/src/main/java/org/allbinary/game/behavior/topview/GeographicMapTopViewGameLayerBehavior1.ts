@@ -70,9 +70,9 @@ import { SimpleGeographicMapCellPositionFactory } from '../../../../../org/allbi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapTopViewLayerBehavior } from './GeographicMapTopViewLayerBehavior.js';
-//not GWT import - same folder const GeographicMapTopViewLayerBehavior
+//sameFolderImports - not GWT import - same folder const GeographicMapTopViewLayerBehavior
 import { TopViewCharacterInterface } from './TopViewCharacterInterface.js';
-//not GWT import - same folder const TopViewCharacterInterface
+//sameFolderImports - not GWT import - same folder const TopViewCharacterInterface
 
 export class GeographicMapTopViewGameLayerBehavior1 extends GeographicMapTopViewLayerBehavior {
         

@@ -53,13 +53,13 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathGeneratorInterface } from './PathGeneratorInterface.js';
-//not GWT import - same folder const PathGeneratorInterface
+//sameFolderImports - not GWT import - same folder const PathGeneratorInterface
 import { PathFindingInfo } from './PathFindingInfo.js';
-//not GWT import - same folder const PathFindingInfo
+//sameFolderImports - not GWT import - same folder const PathFindingInfo
 import { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
-//not GWT import - same folder const GeographicPathFinderBase
+//sameFolderImports - not GWT import - same folder const GeographicPathFinderBase
 import { MultipassState } from './MultipassState.js';
-//not GWT import - same folder const MultipassState
+//sameFolderImports - not GWT import - same folder const MultipassState
 
 export class PathGenerator
             extends Object

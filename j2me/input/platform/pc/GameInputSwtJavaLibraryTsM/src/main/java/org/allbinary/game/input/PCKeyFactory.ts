@@ -51,9 +51,9 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCGameKey } from './PCGameKey.js';
-//not GWT import - same folder const PCGameKey
+//sameFolderImports - not GWT import - same folder const PCGameKey
 import { Input } from './Input.js';
-//not GWT import - same folder const Input
+//sameFolderImports - not GWT import - same folder const Input
 
 export class PCKeyFactory
             extends Object

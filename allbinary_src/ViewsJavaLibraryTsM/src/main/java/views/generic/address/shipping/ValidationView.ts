@@ -57,7 +57,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingAddressesView } from './ShippingAddressesView.js';
-//not GWT import - same folder const ShippingAddressesView
+//sameFolderImports - not GWT import - same folder const ShippingAddressesView
 
 export class ValidationView extends ShippingAddressesView implements ValidationComponentInterface {
         

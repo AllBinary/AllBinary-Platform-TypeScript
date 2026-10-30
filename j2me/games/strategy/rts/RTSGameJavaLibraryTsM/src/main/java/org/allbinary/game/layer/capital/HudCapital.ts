@@ -40,7 +40,7 @@ import { NumberStringHud } from '../../../../../org/allbinary/game/ag/layer/hud/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Capital } from './Capital.js';
-//not GWT import - same folder const Capital
+//sameFolderImports - not GWT import - same folder const Capital
 
 export class HudCapital extends Capital {
         

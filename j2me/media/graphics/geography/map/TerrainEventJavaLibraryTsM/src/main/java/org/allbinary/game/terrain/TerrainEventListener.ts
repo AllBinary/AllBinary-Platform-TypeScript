@@ -43,9 +43,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TerrainEventListenerInterface } from './TerrainEventListenerInterface.js';
-//not GWT import - same folder const TerrainEventListenerInterface
+//sameFolderImports - not GWT import - same folder const TerrainEventListenerInterface
 import { TerrainEvent } from './TerrainEvent.js';
-//not GWT import - same folder const TerrainEvent
+//sameFolderImports - not GWT import - same folder const TerrainEvent
 
 export class TerrainEventListener
             extends Object

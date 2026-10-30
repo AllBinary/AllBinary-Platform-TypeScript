@@ -54,11 +54,11 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AngleIncrementInfo } from './AngleIncrementInfo.js';
-//not GWT import - same folder const AngleIncrementInfo
+//sameFolderImports - not GWT import - same folder const AngleIncrementInfo
 import { AngleIncrementInfoFactory } from './AngleIncrementInfoFactory.js';
-//not GWT import - same folder const AngleIncrementInfoFactory
+//sameFolderImports - not GWT import - same folder const AngleIncrementInfoFactory
 import { FrameUtil } from './FrameUtil.js';
-//not GWT import - same folder const FrameUtil
+//sameFolderImports - not GWT import - same folder const FrameUtil
 
 export class AngleInfo
             extends Object

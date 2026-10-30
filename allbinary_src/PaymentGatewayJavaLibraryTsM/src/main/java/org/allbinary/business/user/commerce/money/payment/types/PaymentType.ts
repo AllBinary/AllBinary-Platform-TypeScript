@@ -65,9 +65,9 @@ type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPaymentType } from './BasicPaymentType.js';
-//not GWT import - same folder const BasicPaymentType
+//sameFolderImports - not GWT import - same folder const BasicPaymentType
 import { PaymentTypeUtil } from './PaymentTypeUtil.js';
-//not GWT import - same folder const PaymentTypeUtil
+//sameFolderImports - not GWT import - same folder const PaymentTypeUtil
 
 export class PaymentType
             extends Object

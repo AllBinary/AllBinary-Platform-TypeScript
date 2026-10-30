@@ -61,7 +61,7 @@ type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abst
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterface } from './CompoundAnimationInterface.js';
-//not GWT import - same folder const CompoundAnimationInterface
+//sameFolderImports - not GWT import - same folder const CompoundAnimationInterface
 
 export class CompoundIndexedAnimation extends IndexedAnimation implements CompoundAnimationInterface {
         

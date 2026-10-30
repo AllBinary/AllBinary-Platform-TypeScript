@@ -8,8 +8,9 @@
         
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-import { Stack } from '../../../java/util/Stack.js';
-//not GWT import const Stack
+//not plain js import { Stack } 
+const Stack = globalThis.java.util.Stack;
+type Stack<T = any, U = any> = typeof Stack extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Stack;
 
 
 
@@ -30,13 +31,13 @@ import { Stack } from '../../../java/util/Stack.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Canvas } from './Canvas.js';
-//not GWT import - same folder const Canvas
+//sameFolderImports - not GWT import - same folder const Canvas
 import { Command } from './Command.js';
-//not GWT import - same folder const Command
+//sameFolderImports - not GWT import - same folder const Command
 import { CommandListener } from './CommandListener.js';
-//not GWT import - same folder const CommandListener
+//sameFolderImports - not GWT import - same folder const CommandListener
 import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics
+//sameFolderImports - not GWT import - same folder const Graphics
 
 export class NullCanvas extends Canvas {
         

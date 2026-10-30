@@ -48,7 +48,7 @@ import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/Pr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonsPaintableComposite } from './TouchButtonsPaintableComposite.js';
-//not GWT import - same folder const TouchButtonsPaintableComposite
+//sameFolderImports - not GWT import - same folder const TouchButtonsPaintableComposite
 
 export class TouchButtonsPaintableCompositeFactory
             extends Object

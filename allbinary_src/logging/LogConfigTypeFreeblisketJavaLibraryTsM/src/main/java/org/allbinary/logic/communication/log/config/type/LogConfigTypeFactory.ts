@@ -47,7 +47,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigType } from './LogConfigType.js';
-//not GWT import - same folder const LogConfigType
+//sameFolderImports - not GWT import - same folder const LogConfigType
 
 export class LogConfigTypeFactory
             extends Object

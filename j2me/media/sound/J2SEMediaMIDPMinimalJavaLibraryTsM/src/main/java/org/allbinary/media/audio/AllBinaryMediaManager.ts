@@ -93,13 +93,13 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sounds } from './Sounds.js';
-//not GWT import - same folder const Sounds
+//sameFolderImports - not GWT import - same folder const Sounds
 import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import - same folder const SoundsFactoryInterface
+//sameFolderImports - not GWT import - same folder const SoundsFactoryInterface
 import { NoPlayer } from './NoPlayer.js';
-//not GWT import - same folder const NoPlayer
+//sameFolderImports - not GWT import - same folder const NoPlayer
 import { PCClipWavPlayer } from './PCClipWavPlayer.js';
-//not GWT import - same folder const PCClipWavPlayer
+//sameFolderImports - not GWT import - same folder const PCClipWavPlayer
 //J2SEMediaMIDPMinimalJavaLibrary
 export class AllBinaryMediaManager
             extends Object

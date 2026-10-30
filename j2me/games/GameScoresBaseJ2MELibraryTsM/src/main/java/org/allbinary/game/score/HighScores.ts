@@ -61,9 +61,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresInterface } from './HighScoresInterface.js';
-//not GWT import - same folder const HighScoresInterface
+//sameFolderImports - not GWT import - same folder const HighScoresInterface
 import { HighScore } from './HighScore.js';
-//not GWT import - same folder const HighScore
+//sameFolderImports - not GWT import - same folder const HighScore
 
 export class HighScores
             extends Object

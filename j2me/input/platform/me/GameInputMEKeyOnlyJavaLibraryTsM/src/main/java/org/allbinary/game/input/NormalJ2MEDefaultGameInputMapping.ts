@@ -46,7 +46,7 @@ import { PersistentInputMapping } from '../../../../org/allbinary/game/input/map
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyFactory } from './GameKeyFactory.js';
-//not GWT import - same folder const GameKeyFactory
+//sameFolderImports - not GWT import - same folder const GameKeyFactory
 
 export class NormalJ2MEDefaultGameInputMapping extends PersistentInputMapping {
         

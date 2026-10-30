@@ -66,7 +66,7 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThemesData } from './ThemesData.js';
-//not GWT import - same folder const ThemesData
+//sameFolderImports - not GWT import - same folder const ThemesData
 
 export class ThemesValidation extends Validation implements DomNodeInterface {
         

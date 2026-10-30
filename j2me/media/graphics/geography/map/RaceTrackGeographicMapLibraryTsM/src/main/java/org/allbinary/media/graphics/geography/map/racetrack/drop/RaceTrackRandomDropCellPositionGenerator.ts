@@ -73,7 +73,7 @@ import { GeographicMapCellPosition } from '../../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackDropCellPositionGenerator } from './RaceTrackDropCellPositionGenerator.js';
-//not GWT import - same folder const RaceTrackDropCellPositionGenerator
+//sameFolderImports - not GWT import - same folder const RaceTrackDropCellPositionGenerator
 
 export class RaceTrackRandomDropCellPositionGenerator extends RaceTrackDropCellPositionGenerator {
         

@@ -75,9 +75,9 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowInterface } from './WorkFlowInterface.js';
-//not GWT import - same folder const WorkFlowInterface
+//sameFolderImports - not GWT import - same folder const WorkFlowInterface
 import { WorkFlowData } from './WorkFlowData.js';
-//not GWT import - same folder const WorkFlowData
+//sameFolderImports - not GWT import - same folder const WorkFlowData
 
 export class RequestWorkFlowFactory
             extends Object

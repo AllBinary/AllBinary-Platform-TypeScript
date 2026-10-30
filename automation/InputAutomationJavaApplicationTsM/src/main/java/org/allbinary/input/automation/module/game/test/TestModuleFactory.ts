@@ -54,7 +54,7 @@ import { RunnableInterface } from '../../../../../../../org/allbinary/thread/Run
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 
 export class TestModuleFactory extends AbstractInputAutomationFactory {
         

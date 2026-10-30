@@ -63,9 +63,9 @@ import { RunnableInterface } from '../../../../../../org/allbinary/thread/Runnab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericInputAutomationAction } from './GenericInputAutomationAction.js';
-//not GWT import - same folder const GenericInputAutomationAction
+//sameFolderImports - not GWT import - same folder const GenericInputAutomationAction
 import { GenericInputAutomationWorker } from './GenericInputAutomationWorker.js';
-//not GWT import - same folder const GenericInputAutomationWorker
+//sameFolderImports - not GWT import - same folder const GenericInputAutomationWorker
 
 export class GenericModuleFactory extends AbstractInputAutomationFactory {
         

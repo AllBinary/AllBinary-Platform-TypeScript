@@ -50,9 +50,9 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
-//not GWT import - same folder const UserEmailEventConfigurationInterface
+//sameFolderImports - not GWT import - same folder const UserEmailEventConfigurationInterface
 import { UserEmailEventConfigurationData } from './UserEmailEventConfigurationData.js';
-//not GWT import - same folder const UserEmailEventConfigurationData
+//sameFolderImports - not GWT import - same folder const UserEmailEventConfigurationData
 
 export class UserEmailEventConfiguration
             extends Object

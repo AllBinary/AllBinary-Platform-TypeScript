@@ -55,7 +55,7 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedBasicArrayListCache } from './IndexedBasicArrayListCache.js';
-//not GWT import - same folder const IndexedBasicArrayListCache
+//sameFolderImports - not GWT import - same folder const IndexedBasicArrayListCache
 
 export class KeylessBasicArrayListCache extends IndexedBasicArrayListCache {
         

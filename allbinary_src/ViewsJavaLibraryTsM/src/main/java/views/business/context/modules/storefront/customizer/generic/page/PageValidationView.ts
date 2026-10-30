@@ -100,7 +100,7 @@ import { CustomizerUtil } from '../../../../../../../../views/business/context/m
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PageView } from './PageView.js';
-//not GWT import - same folder const PageView
+//sameFolderImports - not GWT import - same folder const PageView
 
 export class PageValidationView extends PageView implements ValidationComponentInterface {
         

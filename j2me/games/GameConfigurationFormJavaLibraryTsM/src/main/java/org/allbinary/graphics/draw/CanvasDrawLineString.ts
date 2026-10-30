@@ -54,7 +54,7 @@ import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/U
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DrawStringUtil } from './DrawStringUtil.js';
-//not GWT import - same folder const DrawStringUtil
+//sameFolderImports - not GWT import - same folder const DrawStringUtil
 
 export class CanvasDrawLineString
             extends Object

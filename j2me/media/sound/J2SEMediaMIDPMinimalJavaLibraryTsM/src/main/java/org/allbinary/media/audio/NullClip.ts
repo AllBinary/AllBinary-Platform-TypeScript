@@ -69,9 +69,9 @@ import { LineUnavailableException } from '../../../../javax/sound/sampled/LineUn
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullJ2SEControl } from './NullJ2SEControl.js';
-//not GWT import - same folder const NullJ2SEControl
+//sameFolderImports - not GWT import - same folder const NullJ2SEControl
 import { NullAudioFormat } from './NullAudioFormat.js';
-//not GWT import - same folder const NullAudioFormat
+//sameFolderImports - not GWT import - same folder const NullAudioFormat
 
 export class NullClip
             extends Object

@@ -49,9 +49,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryMediaManager } from './AllBinaryMediaManager.js';
-//not GWT import - same folder const AllBinaryMediaManager
+//sameFolderImports - not GWT import - same folder const AllBinaryMediaManager
 import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import - same folder const SoundsFactoryInterface
+//sameFolderImports - not GWT import - same folder const SoundsFactoryInterface
 
 export class AllBinaryMediaManagerShutdown
             extends Object

@@ -71,11 +71,11 @@ import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/ma
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundStrings } from './SoundStrings.js';
-//not GWT import - same folder const SoundStrings
+//sameFolderImports - not GWT import - same folder const SoundStrings
 import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import - same folder const SoundsFactoryInterface
+//sameFolderImports - not GWT import - same folder const SoundsFactoryInterface
 import { Sound } from './Sound.js';
-//not GWT import - same folder const Sound
+//sameFolderImports - not GWT import - same folder const Sound
 
 export class Sounds
             extends Object

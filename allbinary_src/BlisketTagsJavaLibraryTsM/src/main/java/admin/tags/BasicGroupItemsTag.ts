@@ -46,7 +46,7 @@ import { BasicGroupItemsRequestHelperFactory } from '../../admin/taghelpers/Basi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-//not GWT import - same folder const TableTag
+//sameFolderImports - not GWT import - same folder const TableTag
 
 export class BasicGroupItemsTag extends TableTag {
         

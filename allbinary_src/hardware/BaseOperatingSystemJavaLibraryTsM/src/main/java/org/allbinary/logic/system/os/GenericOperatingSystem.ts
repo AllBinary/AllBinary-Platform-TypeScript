@@ -57,7 +57,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OperatingSystemInterface } from './OperatingSystemInterface.js';
-//not GWT import - same folder const OperatingSystemInterface
+//sameFolderImports - not GWT import - same folder const OperatingSystemInterface
 //not plain js - same folder import { SystemProperties } 
 const SystemProperties = globalThis.org.allbinary.logic.system.os.SystemProperties;
 

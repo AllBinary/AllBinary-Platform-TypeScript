@@ -48,9 +48,9 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollMapEventListenerInterface } from './ScrollMapEventListenerInterface.js';
-//not GWT import - same folder const ScrollMapEventListenerInterface
+//sameFolderImports - not GWT import - same folder const ScrollMapEventListenerInterface
 import { ScrollMapEvent } from './ScrollMapEvent.js';
-//not GWT import - same folder const ScrollMapEvent
+//sameFolderImports - not GWT import - same folder const ScrollMapEvent
 
 export class ScrollMapEventHandler extends BasicEventHandler {
         

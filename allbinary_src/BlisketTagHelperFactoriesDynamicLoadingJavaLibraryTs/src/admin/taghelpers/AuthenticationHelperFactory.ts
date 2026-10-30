@@ -51,9 +51,9 @@ import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperFactoryInterface } from './TagHelperFactoryInterface.js';
-//not GWT import - same folder const TagHelperFactoryInterface
+//sameFolderImports - not GWT import - same folder const TagHelperFactoryInterface
 import { HelperFactory } from './HelperFactory.js';
-//not GWT import - same folder const HelperFactory
+//sameFolderImports - not GWT import - same folder const HelperFactory
 
 export class AuthenticationHelperFactory
             extends Object

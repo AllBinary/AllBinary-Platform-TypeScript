@@ -42,7 +42,7 @@ import { EventListenerInterface } from '../../../../../../org/allbinary/logic/ut
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyedEvent } from './DestroyedEvent.js';
-//not GWT import - same folder const DestroyedEvent
+//sameFolderImports - not GWT import - same folder const DestroyedEvent
 
 export interface DestroyedEventListenerInterface extends EventListenerInterface {
         

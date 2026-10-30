@@ -80,11 +80,11 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullHighScoresSingletonFactory } from './NullHighScoresSingletonFactory.js';
-//not GWT import - same folder const NullHighScoresSingletonFactory
+//sameFolderImports - not GWT import - same folder const NullHighScoresSingletonFactory
 import { HighScores } from './HighScores.js';
-//not GWT import - same folder const HighScores
+//sameFolderImports - not GWT import - same folder const HighScores
 import { HighScore } from './HighScore.js';
-//not GWT import - same folder const HighScore
+//sameFolderImports - not GWT import - same folder const HighScore
 
 export class HighScoresPaintable extends Paintable implements ColorChangeListener, UpdateMyFontInterface {
         

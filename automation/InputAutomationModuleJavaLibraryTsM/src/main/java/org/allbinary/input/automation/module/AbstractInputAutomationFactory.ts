@@ -18,8 +18,9 @@
         
 
 
-import { URL } from '../../../../../java/net/URL.js';
-//not GWT import const URL
+//not plain js import { URL } 
+const URL = globalThis.java.net.URL;
+type URL<T = any, U = any> = typeof URL extends abstract new (...args: any[]) => infer Instance ? Instance : typeof URL;
 
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
 //not GWT import const HelpSet
@@ -49,9 +50,9 @@ import { JavaHelpUtil } from '../../../../../org/allbinary/logic/java/help/JavaH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleFactoryInterface } from './InputAutomationModuleFactoryInterface.js';
-//not GWT import - same folder const InputAutomationModuleFactoryInterface
+//sameFolderImports - not GWT import - same folder const InputAutomationModuleFactoryInterface
 import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 
 export class AbstractInputAutomationFactory extends InputAutomationModuleFactoryInterface {
         

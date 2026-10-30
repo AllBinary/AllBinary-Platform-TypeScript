@@ -61,17 +61,17 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseTouchInput } from './BaseTouchInput.js';
-//not GWT import - same folder const BaseTouchInput
+//sameFolderImports - not GWT import - same folder const BaseTouchInput
 import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
-//not GWT import - same folder const TouchButtonLocationHelper
+//sameFolderImports - not GWT import - same folder const TouchButtonLocationHelper
 import { BasicTouchButtonCellPositionFactory } from './BasicTouchButtonCellPositionFactory.js';
-//not GWT import - same folder const BasicTouchButtonCellPositionFactory
+//sameFolderImports - not GWT import - same folder const BasicTouchButtonCellPositionFactory
 import { CommonButtons } from './CommonButtons.js';
-//not GWT import - same folder const CommonButtons
+//sameFolderImports - not GWT import - same folder const CommonButtons
 import { TouchButton } from './TouchButton.js';
-//not GWT import - same folder const TouchButton
+//sameFolderImports - not GWT import - same folder const TouchButton
 import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
-//not GWT import - same folder const BasicTouchInputFactory
+//sameFolderImports - not GWT import - same folder const BasicTouchInputFactory
 
 export class BasicNeededTouchButtonsBuilder extends BaseTouchInput {
         

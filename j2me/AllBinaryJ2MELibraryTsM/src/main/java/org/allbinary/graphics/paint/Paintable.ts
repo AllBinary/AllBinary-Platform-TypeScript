@@ -45,7 +45,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaintableInterface } from './PaintableInterface.js';
-//not GWT import - same folder const PaintableInterface
+//sameFolderImports - not GWT import - same folder const PaintableInterface
 
 export class Paintable
             extends Object

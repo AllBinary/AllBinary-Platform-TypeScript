@@ -55,7 +55,7 @@ type ForcedLogUtil<T = any, U = any> = typeof ForcedLogUtil extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDamageableLayer.js';
-//not GWT import - same folder const CollidableDestroyableDamageableLayer
+//sameFolderImports - not GWT import - same folder const CollidableDestroyableDamageableLayer
 
 export class CollidableDestroyableDamageableBehavior extends CollidableBaseBehavior {
         

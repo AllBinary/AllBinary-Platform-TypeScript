@@ -85,7 +85,7 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-//not GWT import - same folder const AllBinaryGameCanvas
+//sameFolderImports - not GWT import - same folder const AllBinaryGameCanvas
 
 export class StartIntermissionPaintable extends InitUpdatePaintable implements UpdateMyFontInterface {
         

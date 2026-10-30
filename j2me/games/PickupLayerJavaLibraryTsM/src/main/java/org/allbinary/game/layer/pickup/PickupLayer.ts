@@ -75,13 +75,13 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
-//not GWT import - same folder const PickedUpLayerInterface
+//sameFolderImports - not GWT import - same folder const PickedUpLayerInterface
 import { PickupableInterface } from './PickupableInterface.js';
-//not GWT import - same folder const PickupableInterface
+//sameFolderImports - not GWT import - same folder const PickupableInterface
 import { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
-//not GWT import - same folder const CountedPickedUpLayerInterfaceFactory
+//sameFolderImports - not GWT import - same folder const CountedPickedUpLayerInterfaceFactory
 import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import - same folder const PickedUpLayerInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const PickedUpLayerInterfaceFactoryInterface
 
 export class PickupLayer extends MultiPlayerGameLayer implements PickedUpLayerInterface, PickupableInterface {
         

@@ -56,7 +56,7 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import - same folder const ProgressCanvas
+//sameFolderImports - not GWT import - same folder const ProgressCanvas
 
 export class ProgressCanvasFactory
             extends Object

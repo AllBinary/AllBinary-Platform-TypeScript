@@ -74,7 +74,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeHttpRequestInfoData } from './AbeHttpRequestInfoData.js';
-//not GWT import - same folder const AbeHttpRequestInfoData
+//sameFolderImports - not GWT import - same folder const AbeHttpRequestInfoData
 
 export class AbeHttpRequestInfo
             extends Object

@@ -84,9 +84,9 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StylesData } from './StylesData.js';
-//not GWT import - same folder const StylesData
+//sameFolderImports - not GWT import - same folder const StylesData
 import { StyleData } from './StyleData.js';
-//not GWT import - same folder const StyleData
+//sameFolderImports - not GWT import - same folder const StyleData
 
 export class StylesValidationFactory
             extends Object

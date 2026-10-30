@@ -128,10 +128,10 @@ newFile!.createNewFile();
     let dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(newFile)!;;
     
 
-    let cryptedUserName: number[] = new WeakCrypt(1).encrypt(this.getUserName())!.getBytes()!;;
+    let cryptedUserName: number[] = Array.from(new TextEncoder().encode(new WeakCrypt(1).encrypt(this.getUserName())!), byte => (byte << 24) >> 24)!;;
     
 
-    let cryptedPassword: number[] = new WeakCrypt(2).encrypt(this.getPassword())!.getBytes()!;;
+    let cryptedPassword: number[] = Array.from(new TextEncoder().encode(new WeakCrypt(2).encrypt(this.getPassword())!), byte => (byte << 24) >> 24)!;;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName));
     

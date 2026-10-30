@@ -94,7 +94,7 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StreetAddressesEntityInterface } from './StreetAddressesEntityInterface.js';
-//not GWT import - same folder const StreetAddressesEntityInterface
+//sameFolderImports - not GWT import - same folder const StreetAddressesEntityInterface
 
 export class StreetAddressesEntity extends AbSqlBean implements StreetAddressesEntityInterface {
         

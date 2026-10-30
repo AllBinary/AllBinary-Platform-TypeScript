@@ -59,9 +59,9 @@ type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventsConfigurationInterface } from './UserEmailEventsConfigurationInterface.js';
-//not GWT import - same folder const UserEmailEventsConfigurationInterface
+//sameFolderImports - not GWT import - same folder const UserEmailEventsConfigurationInterface
 import { UserEmailEventsConfigurationData } from './UserEmailEventsConfigurationData.js';
-//not GWT import - same folder const UserEmailEventsConfigurationData
+//sameFolderImports - not GWT import - same folder const UserEmailEventsConfigurationData
 
 export class UserEmailEventsConfigurationMapping
             extends Object

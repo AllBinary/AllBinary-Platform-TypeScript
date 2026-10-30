@@ -68,11 +68,11 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
-//not GWT import - same folder const PaymentGatewayInterface
+//sameFolderImports - not GWT import - same folder const PaymentGatewayInterface
 import { PaymentGatewayMapping } from './PaymentGatewayMapping.js';
-//not GWT import - same folder const PaymentGatewayMapping
+//sameFolderImports - not GWT import - same folder const PaymentGatewayMapping
 import { PaymentGatewayData } from './PaymentGatewayData.js';
-//not GWT import - same folder const PaymentGatewayData
+//sameFolderImports - not GWT import - same folder const PaymentGatewayData
 
 export class PaymentGatewayView
             extends Object

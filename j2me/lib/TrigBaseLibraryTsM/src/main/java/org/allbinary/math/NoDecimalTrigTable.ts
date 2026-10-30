@@ -67,11 +67,11 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AngleFactory } from './AngleFactory.js';
-//not GWT import - same folder const AngleFactory
+//sameFolderImports - not GWT import - same folder const AngleFactory
 //not plain js - same folder import { PositionStrings } 
 const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
 import { Angle } from './Angle.js';
-//not GWT import - same folder const Angle
+//sameFolderImports - not GWT import - same folder const Angle
 
 export class NoDecimalTrigTable
             extends Object

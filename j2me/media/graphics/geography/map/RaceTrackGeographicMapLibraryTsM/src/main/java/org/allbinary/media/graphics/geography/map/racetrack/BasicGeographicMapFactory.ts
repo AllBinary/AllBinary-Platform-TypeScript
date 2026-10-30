@@ -59,11 +59,11 @@ import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackInfo } from './RaceTrackInfo.js';
-//not GWT import - same folder const RaceTrackInfo
+//sameFolderImports - not GWT import - same folder const RaceTrackInfo
 import { RaceTrackData } from './RaceTrackData.js';
-//not GWT import - same folder const RaceTrackData
+//sameFolderImports - not GWT import - same folder const RaceTrackData
 import { AllBinaryTiledLayerFactoryInterface } from './AllBinaryTiledLayerFactoryInterface.js';
-//not GWT import - same folder const AllBinaryTiledLayerFactoryInterface
+//sameFolderImports - not GWT import - same folder const AllBinaryTiledLayerFactoryInterface
 
 export class BasicGeographicMapFactory
             extends Object

@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DebugInterface } from './DebugInterface.js';
-//not GWT import - same folder const DebugInterface
+//sameFolderImports - not GWT import - same folder const DebugInterface
 
 export class NoDebug
             extends Object

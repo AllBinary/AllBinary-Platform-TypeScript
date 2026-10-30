@@ -87,11 +87,11 @@ import { WholesaleUserFactory } from '../../../../../org/allbinary/business/user
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicUserRoleFactory } from './BasicUserRoleFactory.js';
-//not GWT import - same folder const BasicUserRoleFactory
+//sameFolderImports - not GWT import - same folder const BasicUserRoleFactory
 import { UserRoleB } from './UserRoleB.js';
-//not GWT import - same folder const UserRoleB
+//sameFolderImports - not GWT import - same folder const UserRoleB
 import { UserRole } from './UserRole.js';
-//not GWT import - same folder const UserRole
+//sameFolderImports - not GWT import - same folder const UserRole
 
 export class UserRoleFactory
             extends Object

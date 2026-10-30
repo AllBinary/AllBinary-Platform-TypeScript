@@ -47,7 +47,7 @@ import { Proxy } from '../../../../../java/lang/reflect/Proxy.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InvocationHandler } from './InvocationHandler.js';
-//not GWT import - same folder const InvocationHandler
+//sameFolderImports - not GWT import - same folder const InvocationHandler
 
 export class InterfaceCastProxy
             extends Object

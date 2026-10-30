@@ -87,7 +87,7 @@ import { Memory } from '../../../org/allbinary/system/Memory.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCacheBase } from './ImageCacheBase.js';
-//not GWT import - same folder const ImageCacheBase
+//sameFolderImports - not GWT import - same folder const ImageCacheBase
 
 export class ImageCache extends ImageCacheBase {
         

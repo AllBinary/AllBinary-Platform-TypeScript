@@ -73,7 +73,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreWorkFlowInterface } from './StoreWorkFlowInterface.js';
-//not GWT import - same folder const StoreWorkFlowInterface
+//sameFolderImports - not GWT import - same folder const StoreWorkFlowInterface
 
 export class StoreTagWorkFlowFactory
             extends Object

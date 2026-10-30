@@ -46,7 +46,7 @@ import { VelocityProperties } from '../../../../../org/allbinary/game/physics/ve
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitialJumpBehavior } from './InitialJumpBehavior.js';
-//not GWT import - same folder const InitialJumpBehavior
+//sameFolderImports - not GWT import - same folder const InitialJumpBehavior
 
 export class TopViewGameLayerBehavior extends GameLayerBehavior {
         

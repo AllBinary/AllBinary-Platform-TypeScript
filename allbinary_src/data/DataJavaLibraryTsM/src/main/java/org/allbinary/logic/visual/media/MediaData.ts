@@ -48,9 +48,9 @@ type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MediaTypeData } from './MediaTypeData.js';
-//not GWT import - same folder const MediaTypeData
+//sameFolderImports - not GWT import - same folder const MediaTypeData
 import { MediaDataFactory } from './MediaDataFactory.js';
-//not GWT import - same folder const MediaDataFactory
+//sameFolderImports - not GWT import - same folder const MediaDataFactory
 
 export class MediaData
             extends Object

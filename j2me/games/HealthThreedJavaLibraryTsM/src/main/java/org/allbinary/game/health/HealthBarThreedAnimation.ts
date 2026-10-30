@@ -75,7 +75,7 @@ import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthBarAnimation } from './HealthBarAnimation.js';
-//not GWT import - same folder const HealthBarAnimation
+//sameFolderImports - not GWT import - same folder const HealthBarAnimation
 
 export class HealthBarThreedAnimation extends HealthBarAnimation {
         

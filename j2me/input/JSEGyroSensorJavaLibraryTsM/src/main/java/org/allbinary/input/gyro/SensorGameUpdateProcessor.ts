@@ -53,7 +53,7 @@ import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/acce
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GyroSensorFactory } from './GyroSensorFactory.js';
-//not GWT import - same folder const GyroSensorFactory
+//sameFolderImports - not GWT import - same folder const GyroSensorFactory
 
 export class SensorGameUpdateProcessor
             extends Object

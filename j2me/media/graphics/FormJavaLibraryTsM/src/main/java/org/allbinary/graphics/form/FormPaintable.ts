@@ -43,7 +43,7 @@ import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaintableForm } from './PaintableForm.js';
-//not GWT import - same folder const PaintableForm
+//sameFolderImports - not GWT import - same folder const PaintableForm
 
 export class FormPaintable extends Paintable {
         

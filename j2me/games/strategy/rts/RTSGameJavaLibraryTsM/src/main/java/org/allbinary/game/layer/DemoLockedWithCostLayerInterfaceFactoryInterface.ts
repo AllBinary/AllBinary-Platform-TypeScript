@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CostLayerInterfaceFactoryInterface } from './CostLayerInterfaceFactoryInterface.js';
-//not GWT import - same folder const CostLayerInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const CostLayerInterfaceFactoryInterface
 
 export interface DemoLockedWithCostLayerInterfaceFactoryInterface extends CostLayerInterfaceFactoryInterface {
         

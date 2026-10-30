@@ -45,7 +45,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellType } from './GeographicMapCellType.js';
-//not GWT import - same folder const GeographicMapCellType
+//sameFolderImports - not GWT import - same folder const GeographicMapCellType
 
 export class GeographicMapCellTypeFactory
             extends Object

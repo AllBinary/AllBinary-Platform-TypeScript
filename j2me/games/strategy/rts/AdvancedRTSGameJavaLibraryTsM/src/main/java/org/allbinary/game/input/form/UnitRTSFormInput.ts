@@ -125,11 +125,11 @@ import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/me
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSFormInput } from './RTSFormInput.js';
-//not GWT import - same folder const RTSFormInput
+//sameFolderImports - not GWT import - same folder const RTSFormInput
 import { AssignWaypointsUtil } from './AssignWaypointsUtil.js';
-//not GWT import - same folder const AssignWaypointsUtil
+//sameFolderImports - not GWT import - same folder const AssignWaypointsUtil
 import { PlayersSingletonFactory } from './PlayersSingletonFactory.js';
-//not GWT import - same folder const PlayersSingletonFactory
+//sameFolderImports - not GWT import - same folder const PlayersSingletonFactory
 
 export class UnitRTSFormInput extends RTSFormInput {
         

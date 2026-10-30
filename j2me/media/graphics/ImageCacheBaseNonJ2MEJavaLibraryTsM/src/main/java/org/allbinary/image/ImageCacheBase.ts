@@ -84,7 +84,7 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageFactory } from './ImageFactory.js';
-//not GWT import - same folder const ImageFactory
+//sameFolderImports - not GWT import - same folder const ImageFactory
 
 export class ImageCacheBase
             extends Object

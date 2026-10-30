@@ -69,19 +69,19 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionForm } from './ScrollSelectionForm.js';
-//not GWT import - same folder const ScrollSelectionForm
+//sameFolderImports - not GWT import - same folder const ScrollSelectionForm
 import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-//not GWT import - same folder const ItemPaintableFactory
+//sameFolderImports - not GWT import - same folder const ItemPaintableFactory
 import { FormType } from './FormType.js';
-//not GWT import - same folder const FormType
+//sameFolderImports - not GWT import - same folder const FormType
 import { ItemIndexPaintable } from './ItemIndexPaintable.js';
-//not GWT import - same folder const ItemIndexPaintable
+//sameFolderImports - not GWT import - same folder const ItemIndexPaintable
 import { FormTypeFactory } from './FormTypeFactory.js';
-//not GWT import - same folder const FormTypeFactory
+//sameFolderImports - not GWT import - same folder const FormTypeFactory
 //import { MultipleScrollSelectionFormVerticalPaintable } from './MultipleScrollSelectionFormVerticalPaintable.js';
-//not GWT import - same folder const MultipleScrollSelectionFormVerticalPaintable
+//sameFolderImports - not GWT import - same folder const MultipleScrollSelectionFormVerticalPaintable
 //import { MultipleScrollSelectionFormHorizontalPaintable } from './MultipleScrollSelectionFormHorizontalPaintable.js';
-//not GWT import - same folder const MultipleScrollSelectionFormHorizontalPaintable
+//sameFolderImports - not GWT import - same folder const MultipleScrollSelectionFormHorizontalPaintable
 type MultipleScrollSelectionFormHorizontalPaintable = InstanceType<MultipleScrollSelectionHorizontalForm['MultipleScrollSelectionFormHorizontalPaintable']>;
 type MultipleScrollSelectionFormVerticalPaintable = InstanceType<MultipleScrollSelectionHorizontalForm['MultipleScrollSelectionFormVerticalPaintable']>;
 

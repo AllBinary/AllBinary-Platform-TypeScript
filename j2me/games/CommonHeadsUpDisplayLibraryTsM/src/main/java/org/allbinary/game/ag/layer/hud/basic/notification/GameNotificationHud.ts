@@ -72,7 +72,7 @@ import { EventStrings } from '../../../../../../../../org/allbinary/logic/util/e
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameNotification } from './GameNotification.js';
-//not GWT import - same folder const GameNotification
+//sameFolderImports - not GWT import - same folder const GameNotification
 
 export class GameNotificationHud extends BasicHud implements GameNotificationListenerInterface {
         

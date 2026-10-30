@@ -80,7 +80,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BlisketServletUtil } from './BlisketServletUtil.js';
-//not GWT import - same folder const BlisketServletUtil
+//sameFolderImports - not GWT import - same folder const BlisketServletUtil
 
 export class MagicalImageServlet extends HttpServlet {
         

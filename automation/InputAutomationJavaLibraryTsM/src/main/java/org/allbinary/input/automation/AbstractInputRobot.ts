@@ -55,11 +55,11 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
-//not GWT import - same folder const Point
+//sameFolderImports - not GWT import - same folder const Point
 import { PointHelper } from './PointHelper.js';
-//not GWT import - same folder const PointHelper
+//sameFolderImports - not GWT import - same folder const PointHelper
 import { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangle
+//sameFolderImports - not GWT import - same folder const Rectangle
 
 export class AbstractInputRobot
             extends Object

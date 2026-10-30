@@ -133,17 +133,17 @@ type ABSystemWrapper<T = any, U = any> = typeof ABSystemWrapper extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCacheBase } from './ImageCacheBase.js';
-//not GWT import - same folder const ImageCacheBase
+//sameFolderImports - not GWT import - same folder const ImageCacheBase
 //import { NotHTMLEndProcessor } from './NotHTMLEndProcessor.js';
-//not GWT import - same folder const NotHTMLEndProcessor
+//sameFolderImports - not GWT import - same folder const NotHTMLEndProcessor
 //import { FirstProcessor } from './FirstProcessor.js';
-//not GWT import - same folder const FirstProcessor
+//sameFolderImports - not GWT import - same folder const FirstProcessor
 //import { NotHTMLProcessor } from './NotHTMLProcessor.js';
-//not GWT import - same folder const NotHTMLProcessor
+//sameFolderImports - not GWT import - same folder const NotHTMLProcessor
 //import { HTMLEndProcessor } from './HTMLEndProcessor.js';
-//not GWT import - same folder const HTMLEndProcessor
+//sameFolderImports - not GWT import - same folder const HTMLEndProcessor
 import { ImageFactory } from './ImageFactory.js';
-//not GWT import - same folder const ImageFactory
+//sameFolderImports - not GWT import - same folder const ImageFactory
 type NotHTMLProcessor = InstanceType<ImageCache['NotHTMLProcessor']>;
 type NotHTMLEndProcessor = InstanceType<ImageCache['NotHTMLEndProcessor']>;
 type HTMLEndProcessor = InstanceType<ImageCache['HTMLEndProcessor']>;

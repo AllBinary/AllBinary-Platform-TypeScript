@@ -62,9 +62,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewPositionEvent } from './ViewPositionEvent.js';
-//not GWT import - same folder const ViewPositionEvent
+//sameFolderImports - not GWT import - same folder const ViewPositionEvent
 import { ViewPositionEventListenerInterface } from './ViewPositionEventListenerInterface.js';
-//not GWT import - same folder const ViewPositionEventListenerInterface
+//sameFolderImports - not GWT import - same folder const ViewPositionEventListenerInterface
 
 export class ViewPositionEventHandler extends BasicEventHandler {
         

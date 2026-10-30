@@ -53,9 +53,9 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import - same folder const TransformInfoInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoInterface
 import { TransformInfoData } from './TransformInfoData.js';
-//not GWT import - same folder const TransformInfoData
+//sameFolderImports - not GWT import - same folder const TransformInfoData
 
 export class TransformInfoInterfaceView
             extends Object

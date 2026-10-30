@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AudioContentTypeData } from './AudioContentTypeData.js';
-//not GWT import - same folder const AudioContentTypeData
+//sameFolderImports - not GWT import - same folder const AudioContentTypeData
 
 export class AudioContentTypeDataFactory
             extends Object

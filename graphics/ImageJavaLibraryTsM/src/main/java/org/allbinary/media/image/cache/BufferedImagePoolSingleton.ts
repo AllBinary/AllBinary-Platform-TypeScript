@@ -61,7 +61,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BufferedImageCacheableFactory } from './BufferedImageCacheableFactory.js';
-//not GWT import - same folder const BufferedImageCacheableFactory
+//sameFolderImports - not GWT import - same folder const BufferedImageCacheableFactory
 
 export class BufferedImagePoolSingleton
             extends Object

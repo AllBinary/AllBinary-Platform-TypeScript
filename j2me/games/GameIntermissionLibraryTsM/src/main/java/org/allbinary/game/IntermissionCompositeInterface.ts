@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IntermissionInterface } from './IntermissionInterface.js';
-//not GWT import - same folder const IntermissionInterface
+//sameFolderImports - not GWT import - same folder const IntermissionInterface
 
 export interface IntermissionCompositeInterface {
         

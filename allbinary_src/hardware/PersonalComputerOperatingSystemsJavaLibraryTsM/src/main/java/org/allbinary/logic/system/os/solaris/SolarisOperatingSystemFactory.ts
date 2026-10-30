@@ -68,7 +68,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SolarisOS } from './SolarisOS.js';
-//not GWT import - same folder const SolarisOS
+//sameFolderImports - not GWT import - same folder const SolarisOS
 
 export class SolarisOperatingSystemFactory
             extends Object

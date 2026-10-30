@@ -71,11 +71,11 @@ type EnumerationUtil<T = any, U = any> = typeof EnumerationUtil extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementInterface } from './LayerPlacementInterface.js';
-//not GWT import - same folder const LayerPlacementInterface
+//sameFolderImports - not GWT import - same folder const LayerPlacementInterface
 import { LayerPlacementType } from './LayerPlacementType.js';
-//not GWT import - same folder const LayerPlacementType
+//sameFolderImports - not GWT import - same folder const LayerPlacementType
 import { LayerPlacementTypeFactory } from './LayerPlacementTypeFactory.js';
-//not GWT import - same folder const LayerPlacementTypeFactory
+//sameFolderImports - not GWT import - same folder const LayerPlacementTypeFactory
 
 export class LayerPlacer
             extends Object

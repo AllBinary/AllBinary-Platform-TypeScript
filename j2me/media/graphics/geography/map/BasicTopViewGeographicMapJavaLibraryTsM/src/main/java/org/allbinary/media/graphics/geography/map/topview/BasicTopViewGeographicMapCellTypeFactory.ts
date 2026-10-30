@@ -66,9 +66,9 @@ type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTopViewGeographicMapCellType } from './BasicTopViewGeographicMapCellType.js';
-//not GWT import - same folder const BasicTopViewGeographicMapCellType
+//sameFolderImports - not GWT import - same folder const BasicTopViewGeographicMapCellType
 import { BasicTopViewGeographicMapStrings } from './BasicTopViewGeographicMapStrings.js';
-//not GWT import - same folder const BasicTopViewGeographicMapStrings
+//sameFolderImports - not GWT import - same folder const BasicTopViewGeographicMapStrings
 
 export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         

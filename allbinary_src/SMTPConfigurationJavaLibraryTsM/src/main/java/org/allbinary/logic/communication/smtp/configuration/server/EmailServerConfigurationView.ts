@@ -62,13 +62,13 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailServerConfigurationInterface } from './EmailServerConfigurationInterface.js';
-//not GWT import - same folder const EmailServerConfigurationInterface
+//sameFolderImports - not GWT import - same folder const EmailServerConfigurationInterface
 import { EmailServerConfigurationData } from './EmailServerConfigurationData.js';
-//not GWT import - same folder const EmailServerConfigurationData
+//sameFolderImports - not GWT import - same folder const EmailServerConfigurationData
 import { EmailServerConfiguration } from './EmailServerConfiguration.js';
-//not GWT import - same folder const EmailServerConfiguration
+//sameFolderImports - not GWT import - same folder const EmailServerConfiguration
 import { EmailServerConfigurationMapping } from './EmailServerConfigurationMapping.js';
-//not GWT import - same folder const EmailServerConfigurationMapping
+//sameFolderImports - not GWT import - same folder const EmailServerConfigurationMapping
 
 export class EmailServerConfigurationView
             extends Object

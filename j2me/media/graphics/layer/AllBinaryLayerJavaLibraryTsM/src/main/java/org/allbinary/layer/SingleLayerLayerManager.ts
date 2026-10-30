@@ -37,9 +37,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManager } from './LayerManager.js';
-//not GWT import - same folder const LayerManager
+//sameFolderImports - not GWT import - same folder const LayerManager
 import { LayerManagerNoDebug } from './LayerManagerNoDebug.js';
-//not GWT import - same folder const LayerManagerNoDebug
+//sameFolderImports - not GWT import - same folder const LayerManagerNoDebug
 
 export class SingleLayerLayerManager extends LayerManager {
         

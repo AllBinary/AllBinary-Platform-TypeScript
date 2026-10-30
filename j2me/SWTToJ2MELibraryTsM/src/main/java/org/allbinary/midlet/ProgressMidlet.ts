@@ -60,11 +60,11 @@ import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryMidlet } from './AllBinaryMidlet.js';
-//not GWT import - same folder const AllBinaryMidlet
+//sameFolderImports - not GWT import - same folder const AllBinaryMidlet
 import { MidletExitProcessorFactory } from './MidletExitProcessorFactory.js';
-//not GWT import - same folder const MidletExitProcessorFactory
+//sameFolderImports - not GWT import - same folder const MidletExitProcessorFactory
 import { ExitRunnable } from './ExitRunnable.js';
-//not GWT import - same folder const ExitRunnable
+//sameFolderImports - not GWT import - same folder const ExitRunnable
 //SWTForJ2ME
 export class ProgressMidlet extends AllBinaryMidlet {
         

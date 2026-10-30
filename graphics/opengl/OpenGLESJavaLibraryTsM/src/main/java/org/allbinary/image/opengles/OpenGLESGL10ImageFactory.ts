@@ -46,9 +46,9 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLImageFactory } from './OpenGLImageFactory.js';
-//not GWT import - same folder const OpenGLImageFactory
+//sameFolderImports - not GWT import - same folder const OpenGLImageFactory
 import { OpenGLESGL10Image } from './OpenGLESGL10Image.js';
-//not GWT import - same folder const OpenGLESGL10Image
+//sameFolderImports - not GWT import - same folder const OpenGLESGL10Image
 
 export class OpenGLESGL10ImageFactory extends OpenGLImageFactory {
         

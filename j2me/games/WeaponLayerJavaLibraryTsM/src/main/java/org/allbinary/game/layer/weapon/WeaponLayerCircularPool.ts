@@ -51,7 +51,7 @@ import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/A
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WeaponLayer } from './WeaponLayer.js';
-//not GWT import - same folder const WeaponLayer
+//sameFolderImports - not GWT import - same folder const WeaponLayer
 
 export class WeaponLayerCircularPool extends AllBinaryLayerCircularPool {
         

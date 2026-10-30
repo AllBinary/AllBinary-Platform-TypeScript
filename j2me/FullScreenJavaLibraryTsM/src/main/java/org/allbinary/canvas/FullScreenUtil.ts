@@ -53,7 +53,7 @@ import { CommandListener } from '../../../javax/microedition/lcdui/CommandListen
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RunnableCanvas } from './RunnableCanvas.js';
-//not GWT import - same folder const RunnableCanvas
+//sameFolderImports - not GWT import - same folder const RunnableCanvas
 
 export class FullScreenUtil
             extends Object

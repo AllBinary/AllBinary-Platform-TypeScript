@@ -59,11 +59,11 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompleteMotionGestureInputEventListener } from './CompleteMotionGestureInputEventListener.js';
-//not GWT import - same folder const CompleteMotionGestureInputEventListener
+//sameFolderImports - not GWT import - same folder const CompleteMotionGestureInputEventListener
 import { CompleteMotionGestureInputEvent } from './CompleteMotionGestureInputEvent.js';
-//not GWT import - same folder const CompleteMotionGestureInputEvent
+//sameFolderImports - not GWT import - same folder const CompleteMotionGestureInputEvent
 import { CompleteMotionGestureInputEventListenerInterface } from './CompleteMotionGestureInputEventListenerInterface.js';
-//not GWT import - same folder const CompleteMotionGestureInputEventListenerInterface
+//sameFolderImports - not GWT import - same folder const CompleteMotionGestureInputEventListenerInterface
 
 export class CompleteMotionGestureInputEventHandler extends BasicEventHandler {
         

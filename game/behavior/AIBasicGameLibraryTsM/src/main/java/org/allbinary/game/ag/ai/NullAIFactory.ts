@@ -55,7 +55,7 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullAI } from './NullAI.js';
-//not GWT import - same folder const NullAI
+//sameFolderImports - not GWT import - same folder const NullAI
 
 export class NullAIFactory
             extends Object

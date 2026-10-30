@@ -28,7 +28,8 @@
         
             import { Math } from '../../../java/lang/Math.js';
         
-            import { Double } from '../../../java/lang/Double.js';
+            //import { Double } from '../../../java/lang/Double.js';
+            const Double = globalThis.java.lang.Double;
         
 import { Enumeration } from '../../../java/util/Enumeration.js';
 //not GWT import const Enumeration
@@ -87,11 +88,11 @@ import { JSONObject } from '../../../org/json/me/JSONObject.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShapeTypeFactory } from './ShapeTypeFactory.js';
-//not GWT import - same folder const ShapeTypeFactory
+//sameFolderImports - not GWT import - same folder const ShapeTypeFactory
 import { ShapeType } from './ShapeType.js';
-//not GWT import - same folder const ShapeType
+//sameFolderImports - not GWT import - same folder const ShapeType
 import { Number } from './Number.js';
-//not GWT import - same folder const Number
+//sameFolderImports - not GWT import - same folder const Number
 
 export class SVGAsJSONSimpleLoader
             extends Object

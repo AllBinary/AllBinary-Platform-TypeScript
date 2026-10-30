@@ -95,9 +95,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLCapabilities } from './OpenGLCapabilities.js';
-//not GWT import - same folder const OpenGLCapabilities
+//sameFolderImports - not GWT import - same folder const OpenGLCapabilities
 import { OpenGLLogUtil } from './OpenGLLogUtil.js';
-//not GWT import - same folder const OpenGLLogUtil
+//sameFolderImports - not GWT import - same folder const OpenGLLogUtil
 
 export class OpenGLUtil
             extends Object

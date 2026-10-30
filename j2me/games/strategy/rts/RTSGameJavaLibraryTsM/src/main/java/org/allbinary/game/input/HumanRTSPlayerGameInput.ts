@@ -180,11 +180,11 @@ import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
-//not GWT import - same folder const RTSPlayerGameInput
+//sameFolderImports - not GWT import - same folder const RTSPlayerGameInput
 import { LayerPositionFinderInterface } from './LayerPositionFinderInterface.js';
-//not GWT import - same folder const LayerPositionFinderInterface
+//sameFolderImports - not GWT import - same folder const LayerPositionFinderInterface
 import { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
-//not GWT import - same folder const SelectRTSLayerVisitorFactoryInterface
+//sameFolderImports - not GWT import - same folder const SelectRTSLayerVisitorFactoryInterface
 
 export class HumanRTSPlayerGameInput extends RTSPlayerGameInput implements BaseMotionGestureEventListener {
         

@@ -68,7 +68,7 @@ import { CustomizerUtil } from '../../../../../../../../../views/business/contex
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssCustomizerView } from './CssCustomizerView.js';
-//not GWT import - same folder const CssCustomizerView
+//sameFolderImports - not GWT import - same folder const CssCustomizerView
 
 export class NewCssValidationView extends CssCustomizerView implements ValidationComponentInterface {
         

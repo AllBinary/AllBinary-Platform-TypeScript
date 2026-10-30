@@ -55,7 +55,7 @@ import { AbeClientInformationInterface } from '../../../../../../../../org/allbi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
-//not GWT import - same folder const UserEmailEventConfigurationInterface
+//sameFolderImports - not GWT import - same folder const UserEmailEventConfigurationInterface
 
 export class UserEmailEventListenerFactory
             extends Object

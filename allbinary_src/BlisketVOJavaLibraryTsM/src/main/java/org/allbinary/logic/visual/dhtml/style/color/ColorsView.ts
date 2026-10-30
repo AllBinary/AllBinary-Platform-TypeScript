@@ -63,9 +63,9 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorData } from './ColorData.js';
-//not GWT import - same folder const ColorData
+//sameFolderImports - not GWT import - same folder const ColorData
 import { ColorsData } from './ColorsData.js';
-//not GWT import - same folder const ColorsData
+//sameFolderImports - not GWT import - same folder const ColorsData
 
 export class ColorsView
             extends Object

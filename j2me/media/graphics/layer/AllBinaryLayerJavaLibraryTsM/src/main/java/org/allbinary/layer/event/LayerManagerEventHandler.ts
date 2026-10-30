@@ -59,11 +59,11 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerEventListener } from './LayerManagerEventListener.js';
-//not GWT import - same folder const LayerManagerEventListener
+//sameFolderImports - not GWT import - same folder const LayerManagerEventListener
 import { LayerManagerEvent } from './LayerManagerEvent.js';
-//not GWT import - same folder const LayerManagerEvent
+//sameFolderImports - not GWT import - same folder const LayerManagerEvent
 import { LayerManagerEventListenerInterface } from './LayerManagerEventListenerInterface.js';
-//not GWT import - same folder const LayerManagerEventListenerInterface
+//sameFolderImports - not GWT import - same folder const LayerManagerEventListenerInterface
 
 export class LayerManagerEventHandler extends BasicEventHandler {
         

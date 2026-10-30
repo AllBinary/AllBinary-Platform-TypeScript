@@ -78,7 +78,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationFactoryInitializationVisitor } from './AnimationFactoryInitializationVisitor.js';
-//not GWT import - same folder const AnimationFactoryInitializationVisitor
+//sameFolderImports - not GWT import - same folder const AnimationFactoryInitializationVisitor
 
 export class BaseImageAnimationFactory
             extends Object

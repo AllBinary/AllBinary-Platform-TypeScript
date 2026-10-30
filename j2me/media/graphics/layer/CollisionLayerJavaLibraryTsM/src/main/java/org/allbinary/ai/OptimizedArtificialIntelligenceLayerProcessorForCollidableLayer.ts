@@ -51,7 +51,7 @@ import { LayerProcessor } from '../../../org/allbinary/layer/LayerProcessor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OptimizedArtificialIntelligenceLayerManager } from './OptimizedArtificialIntelligenceLayerManager.js';
-//not GWT import - same folder const OptimizedArtificialIntelligenceLayerManager
+//sameFolderImports - not GWT import - same folder const OptimizedArtificialIntelligenceLayerManager
 
 export class OptimizedArtificialIntelligenceLayerProcessorForCollidableLayer extends LayerProcessor {
         

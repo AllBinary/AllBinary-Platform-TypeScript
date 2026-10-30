@@ -60,7 +60,7 @@ type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlRow } from './HtmlRow.js';
-//not GWT import - same folder const HtmlRow
+//sameFolderImports - not GWT import - same folder const HtmlRow
 
 export class HtmlTable extends HtmlTag {
         

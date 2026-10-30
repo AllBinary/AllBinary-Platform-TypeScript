@@ -43,7 +43,7 @@ import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UpKeyEventHandlerBase } from './UpKeyEventHandlerBase.js';
-//not GWT import - same folder const UpKeyEventHandlerBase
+//sameFolderImports - not GWT import - same folder const UpKeyEventHandlerBase
 
 export class UpKeyEventHandler extends UpKeyEventHandlerBase {
         

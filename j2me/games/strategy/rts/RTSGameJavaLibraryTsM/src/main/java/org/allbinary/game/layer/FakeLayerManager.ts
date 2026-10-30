@@ -51,7 +51,7 @@ import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
-//not GWT import - same folder const AllBinaryGameLayerManager
+//sameFolderImports - not GWT import - same folder const AllBinaryGameLayerManager
 
 export class FakeLayerManager extends AllBinaryGameLayerManager implements GeographicMapCompositeInterface {
         

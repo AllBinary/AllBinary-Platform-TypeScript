@@ -59,9 +59,9 @@ import { Document } from '../../../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigAndManipulatorFactoryInterface } from './TransformInfoObjectConfigAndManipulatorFactoryInterface.js';
-//not GWT import - same folder const TransformInfoObjectConfigAndManipulatorFactoryInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoObjectConfigAndManipulatorFactoryInterface
 import { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
-//not GWT import - same folder const TransformInfoObjectConfigInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoObjectConfigInterface
 
 export class TransformInfoObjectConfigAndManipulatorFactoryBase
             extends Object

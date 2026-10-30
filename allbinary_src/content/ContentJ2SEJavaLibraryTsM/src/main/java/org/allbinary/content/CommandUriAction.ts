@@ -60,7 +60,7 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Intent } from './Intent.js';
-//not GWT import - same folder const Intent
+//sameFolderImports - not GWT import - same folder const Intent
 
 export class CommandUriAction
             extends Object

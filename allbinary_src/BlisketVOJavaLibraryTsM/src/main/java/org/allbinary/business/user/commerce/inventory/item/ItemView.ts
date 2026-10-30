@@ -71,11 +71,11 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderItemInterface } from './OrderItemInterface.js';
-//not GWT import - same folder const OrderItemInterface
+//sameFolderImports - not GWT import - same folder const OrderItemInterface
 import { ItemData } from './ItemData.js';
-//not GWT import - same folder const ItemData
+//sameFolderImports - not GWT import - same folder const ItemData
 import { BasicItemView } from './BasicItemView.js';
-//not GWT import - same folder const BasicItemView
+//sameFolderImports - not GWT import - same folder const BasicItemView
 
 export class ItemView
             extends Object

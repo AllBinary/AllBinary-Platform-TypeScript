@@ -48,7 +48,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ParamsUtil } from './ParamsUtil.js';
-//not GWT import - same folder const ParamsUtil
+//sameFolderImports - not GWT import - same folder const ParamsUtil
 
 export class MethodUtil
             extends Object

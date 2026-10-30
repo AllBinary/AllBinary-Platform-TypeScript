@@ -49,7 +49,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingInfo } from './PathFindingInfo.js';
-//not GWT import - same folder const PathFindingInfo
+//sameFolderImports - not GWT import - same folder const PathFindingInfo
 
 export interface PathGeneratorInterface {
         

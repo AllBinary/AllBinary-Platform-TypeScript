@@ -64,7 +64,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TopViewGameLayerBehavior } from './TopViewGameLayerBehavior.js';
-//not GWT import - same folder const TopViewGameLayerBehavior
+//sameFolderImports - not GWT import - same folder const TopViewGameLayerBehavior
 
 export class GeographicMapTopViewLayerBehavior extends TopViewGameLayerBehavior {
         

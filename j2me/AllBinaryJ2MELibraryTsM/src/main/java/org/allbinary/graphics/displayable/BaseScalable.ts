@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScalableListener } from './ScalableListener.js';
-//not GWT import - same folder const ScalableListener
+//sameFolderImports - not GWT import - same folder const ScalableListener
 
 export class BaseScalable
             extends Object

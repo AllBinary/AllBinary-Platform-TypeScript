@@ -56,9 +56,9 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthBarThreedAnimation } from './HealthBarThreedAnimation.js';
-//not GWT import - same folder const HealthBarThreedAnimation
+//sameFolderImports - not GWT import - same folder const HealthBarThreedAnimation
 import { HealthBarAnimation } from './HealthBarAnimation.js';
-//not GWT import - same folder const HealthBarAnimation
+//sameFolderImports - not GWT import - same folder const HealthBarAnimation
 
 export class HealthBarAnimationInterfaceFactory
             extends Object

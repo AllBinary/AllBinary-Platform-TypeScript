@@ -53,27 +53,27 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
-//not GWT import - same folder const ColorAtActionScriptConditionInterface
+//sameFolderImports - not GWT import - same folder const ColorAtActionScriptConditionInterface
 import { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextField
+//sameFolderImports - not GWT import - same folder const JTextField
 import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel
+//sameFolderImports - not GWT import - same folder const JLabel
 import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog
+//sameFolderImports - not GWT import - same folder const JDialog
 import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton
+//sameFolderImports - not GWT import - same folder const JButton
 import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener
+//sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent
+//sameFolderImports - not GWT import - same folder const ActionEvent
 import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout
+//sameFolderImports - not GWT import - same folder const GroupLayout
 import { Short } from './Short.js';
-//not GWT import - same folder const Short
+//sameFolderImports - not GWT import - same folder const Short
 
 export class ColorAtActionScriptConditionJPanel extends javax.swing.JPanel {
         

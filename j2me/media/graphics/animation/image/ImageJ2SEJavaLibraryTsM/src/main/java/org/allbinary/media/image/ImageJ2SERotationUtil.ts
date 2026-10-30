@@ -50,9 +50,9 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtil
+//sameFolderImports - not GWT import - same folder const ImageUtil
 import { ImageJ2SEUtil } from './ImageJ2SEUtil.js';
-//not GWT import - same folder const ImageJ2SEUtil
+//sameFolderImports - not GWT import - same folder const ImageJ2SEUtil
 
 export class ImageJ2SERotationUtil
             extends Object

@@ -182,7 +182,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
     
 response.setContentType("text/plain");
     
-response.getOutputStream()!.write("OK!".getBytes());
+response.getOutputStream()!.write(Array.from(new TextEncoder().encode("OK!"), byte => (byte << 24) >> 24));
     
 
                                     }

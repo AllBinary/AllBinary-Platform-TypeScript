@@ -44,15 +44,15 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresBase } from './HighScoresBase.js';
-//not GWT import - same folder const HighScoresBase
+//sameFolderImports - not GWT import - same folder const HighScoresBase
 import { HighScores } from './HighScores.js';
-//not GWT import - same folder const HighScores
+//sameFolderImports - not GWT import - same folder const HighScores
 import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import - same folder const HighScoresResultsListener
+//sameFolderImports - not GWT import - same folder const HighScoresResultsListener
 import { HighScoresHelperBase } from './HighScoresHelperBase.js';
-//not GWT import - same folder const HighScoresHelperBase
+//sameFolderImports - not GWT import - same folder const HighScoresHelperBase
 import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
-//not GWT import - same folder const HighScoresHelperBaseInterface
+//sameFolderImports - not GWT import - same folder const HighScoresHelperBaseInterface
 
 export class NoHighScoresFactory extends HighScoresBase {
         

@@ -55,11 +55,11 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
-//not GWT import - same folder const GeographicMapCellPositionAreaBase
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionAreaBase
 import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import - same folder const SelectionHudPaintable
+//sameFolderImports - not GWT import - same folder const SelectionHudPaintable
 import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
-//not GWT import - same folder const RTSLayer2LogHelper
+//sameFolderImports - not GWT import - same folder const RTSLayer2LogHelper
 
 export interface PathFindingLayerInterface extends WaypointLayerInterface, GameKeyEventSourceInterface, GroupInterfaceCompositeInterface, DestroyableInterface {
         

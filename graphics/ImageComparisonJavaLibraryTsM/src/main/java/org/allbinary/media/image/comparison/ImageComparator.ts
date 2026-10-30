@@ -75,11 +75,11 @@ import { PixelDeltaFactory } from '../../../../../org/allbinary/media/image/comp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparatorConstraintsInterface } from './ImageComparatorConstraintsInterface.js';
-//not GWT import - same folder const ImageComparatorConstraintsInterface
+//sameFolderImports - not GWT import - same folder const ImageComparatorConstraintsInterface
 import { Color } from './Color.js';
-//not GWT import - same folder const Color
+//sameFolderImports - not GWT import - same folder const Color
 import { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import - same folder const ImageComparisonResult
+//sameFolderImports - not GWT import - same folder const ImageComparisonResult
 
 export class ImageComparator
             extends Object

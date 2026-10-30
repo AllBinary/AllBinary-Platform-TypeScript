@@ -46,7 +46,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomScreen } from './CustomScreen.js';
-//not GWT import - same folder const CustomScreen
+//sameFolderImports - not GWT import - same folder const CustomScreen
 
 export class ABCustomForm extends CustomScreen {
         

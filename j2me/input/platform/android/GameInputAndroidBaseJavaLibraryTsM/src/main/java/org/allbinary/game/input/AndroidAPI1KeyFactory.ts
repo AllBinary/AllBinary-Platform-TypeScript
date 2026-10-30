@@ -27,7 +27,7 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidKeyFactory } from './AndroidKeyFactory.js';
-//not GWT import - same folder const AndroidKeyFactory
+//sameFolderImports - not GWT import - same folder const AndroidKeyFactory
 
 export class AndroidAPI1KeyFactory extends AndroidKeyFactory {
         

@@ -80,7 +80,7 @@ import { TimeUtil } from '../../../../../../../../org/allbinary/time/TimeUtil.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownloadItemData } from './DownloadItemData.js';
-//not GWT import - same folder const DownloadItemData
+//sameFolderImports - not GWT import - same folder const DownloadItemData
 
 export class DownloadableItem
             extends Object

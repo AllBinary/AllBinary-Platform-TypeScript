@@ -53,9 +53,9 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageProcessorInput } from './ImageProcessorInput.js';
-//not GWT import - same folder const ImageProcessorInput
+//sameFolderImports - not GWT import - same folder const ImageProcessorInput
 import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
-//not GWT import - same folder const ImageProcessedVisitor
+//sameFolderImports - not GWT import - same folder const ImageProcessedVisitor
 
 export class CanvasTrimUtil
             extends Object

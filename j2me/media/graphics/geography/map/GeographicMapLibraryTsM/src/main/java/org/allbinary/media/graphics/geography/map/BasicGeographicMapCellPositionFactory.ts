@@ -56,13 +56,13 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import - same folder const BasicGeographicMap
+//sameFolderImports - not GWT import - same folder const BasicGeographicMap
 import { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPositionFactoryInterface.js';
-//not GWT import - same folder const GeographicMapCellPositionFactoryInterface
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionFactoryInterface
 import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import - same folder const GeographicMapCellPosition
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPosition
 import { GeographicMapCellPositionFactoryInitVisitorInterface } from './GeographicMapCellPositionFactoryInitVisitorInterface.js';
-//not GWT import - same folder const GeographicMapCellPositionFactoryInitVisitorInterface
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionFactoryInitVisitorInterface
 
 export class BasicGeographicMapCellPositionFactory
             extends Object

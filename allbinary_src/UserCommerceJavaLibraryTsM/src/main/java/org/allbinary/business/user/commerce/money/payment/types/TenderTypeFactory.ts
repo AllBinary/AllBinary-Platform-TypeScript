@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TenderType } from './TenderType.js';
-//not GWT import - same folder const TenderType
+//sameFolderImports - not GWT import - same folder const TenderType
 
 export class TenderTypeFactory
             extends Object

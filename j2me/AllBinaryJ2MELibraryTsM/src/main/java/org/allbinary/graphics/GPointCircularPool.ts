@@ -44,7 +44,7 @@ type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abst
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomGPoint } from './CustomGPoint.js';
-//not GWT import - same folder const CustomGPoint
+//sameFolderImports - not GWT import - same folder const CustomGPoint
 
 export class GPointCircularPool extends BaseCircularPool {
         

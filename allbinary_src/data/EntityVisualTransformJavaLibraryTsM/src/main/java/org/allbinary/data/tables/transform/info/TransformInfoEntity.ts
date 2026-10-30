@@ -104,7 +104,7 @@ import { TransformInfoObjectConfigGeneratorFactoryInterface } from '../../../../
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoEntityInterface } from './TransformInfoEntityInterface.js';
-//not GWT import - same folder const TransformInfoEntityInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoEntityInterface
 
 export class TransformInfoEntity extends AbSqlBean implements TransformInfoEntityInterface {
         

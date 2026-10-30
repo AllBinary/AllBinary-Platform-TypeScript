@@ -37,9 +37,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HitPointGameObjectInterface } from './HitPointGameObjectInterface.js';
-//not GWT import - same folder const HitPointGameObjectInterface
+//sameFolderImports - not GWT import - same folder const HitPointGameObjectInterface
 import { MagicGameObjectInterface } from './MagicGameObjectInterface.js';
-//not GWT import - same folder const MagicGameObjectInterface
+//sameFolderImports - not GWT import - same folder const MagicGameObjectInterface
 
 export interface MagicCharacterGameObjectInterface {
         

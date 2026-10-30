@@ -50,7 +50,7 @@ import { UserInterface } from '../../../../../../../org/allbinary/business/user/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AffiliateUser } from './AffiliateUser.js';
-//not GWT import - same folder const AffiliateUser
+//sameFolderImports - not GWT import - same folder const AffiliateUser
 
 export class AffiliateUserFactory
             extends Object

@@ -47,7 +47,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventNameData } from './UserEmailEventNameData.js';
-//not GWT import - same folder const UserEmailEventNameData
+//sameFolderImports - not GWT import - same folder const UserEmailEventNameData
 
 export class EmailEvent extends EventObject {
         

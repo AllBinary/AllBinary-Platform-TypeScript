@@ -77,7 +77,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTable } from './BasicTable.js';
-//not GWT import - same folder const BasicTable
+//sameFolderImports - not GWT import - same folder const BasicTable
 
 export class PaymentGatewayHelper extends BasicTable {
         

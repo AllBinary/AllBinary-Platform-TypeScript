@@ -42,7 +42,7 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogLocationInputProcessor } from './AnalogLocationInputProcessor.js';
-//not GWT import - same folder const AnalogLocationInputProcessor
+//sameFolderImports - not GWT import - same folder const AnalogLocationInputProcessor
 
 export class AnalogControllerVisitor
             extends Object

@@ -56,11 +56,11 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomNodeInterface } from './DomNodeInterface.js';
-//not GWT import - same folder const DomNodeInterface
+//sameFolderImports - not GWT import - same folder const DomNodeInterface
 import { FileTableMapping } from './FileTableMapping.js';
-//not GWT import - same folder const FileTableMapping
+//sameFolderImports - not GWT import - same folder const FileTableMapping
 import { ModDomHelper } from './ModDomHelper.js';
-//not GWT import - same folder const ModDomHelper
+//sameFolderImports - not GWT import - same folder const ModDomHelper
 
 export class FileDomDataModel
             extends Object

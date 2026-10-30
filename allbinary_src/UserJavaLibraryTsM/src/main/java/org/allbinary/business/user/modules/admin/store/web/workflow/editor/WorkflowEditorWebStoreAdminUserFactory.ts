@@ -50,7 +50,7 @@ import { UserInterface } from '../../../../../../../../../../org/allbinary/busin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkflowEditorWebStoreAdminUser } from './WorkflowEditorWebStoreAdminUser.js';
-//not GWT import - same folder const WorkflowEditorWebStoreAdminUser
+//sameFolderImports - not GWT import - same folder const WorkflowEditorWebStoreAdminUser
 
 export class WorkflowEditorWebStoreAdminUserFactory
             extends Object

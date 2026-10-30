@@ -25,9 +25,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathParser } from './PathParser.js';
-//not GWT import - same folder const PathParser
+//sameFolderImports - not GWT import - same folder const PathParser
 import { FixedPoint } from './FixedPoint.js';
-//not GWT import - same folder const FixedPoint
+//sameFolderImports - not GWT import - same folder const FixedPoint
 
 export class PolygonRasterizer
             extends Object

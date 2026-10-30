@@ -49,9 +49,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IdGeneratorEntity } from './IdGeneratorEntity.js';
-//not GWT import - same folder const IdGeneratorEntity
+//sameFolderImports - not GWT import - same folder const IdGeneratorEntity
 import { IdGeneratorEntityInterface } from './IdGeneratorEntityInterface.js';
-//not GWT import - same folder const IdGeneratorEntityInterface
+//sameFolderImports - not GWT import - same folder const IdGeneratorEntityInterface
 
 export class IdGeneratorEntityFactory
             extends Object

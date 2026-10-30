@@ -51,7 +51,7 @@ import { RaceTrackGeographicMapCellType } from '../../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingNodeCostInfoFactoryBase } from './PathFindingNodeCostInfoFactoryBase.js';
-//not GWT import - same folder const PathFindingNodeCostInfoFactoryBase
+//sameFolderImports - not GWT import - same folder const PathFindingNodeCostInfoFactoryBase
 
 export class PathFindingNodeCostInfoFactory extends PathFindingNodeCostInfoFactoryBase {
         

@@ -72,13 +72,13 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationData } from './UserConfigurationData.js';
-//not GWT import - same folder const UserConfigurationData
+//sameFolderImports - not GWT import - same folder const UserConfigurationData
 import { UserConfigurationView } from './UserConfigurationView.js';
-//not GWT import - same folder const UserConfigurationView
+//sameFolderImports - not GWT import - same folder const UserConfigurationView
 import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-//not GWT import - same folder const UserConfigurationInterface
+//sameFolderImports - not GWT import - same folder const UserConfigurationInterface
 import { UserConfiguration } from './UserConfiguration.js';
-//not GWT import - same folder const UserConfiguration
+//sameFolderImports - not GWT import - same folder const UserConfiguration
 
 export class UserConfigurationInterfaceFactory
             extends Object

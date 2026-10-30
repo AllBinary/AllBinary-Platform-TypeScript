@@ -63,27 +63,27 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionForm } from './ScrollSelectionForm.js';
-//not GWT import - same folder const ScrollSelectionForm
+//sameFolderImports - not GWT import - same folder const ScrollSelectionForm
 import { ItemIndexDx } from './ItemIndexDx.js';
-//not GWT import - same folder const ItemIndexDx
+//sameFolderImports - not GWT import - same folder const ItemIndexDx
 import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-//not GWT import - same folder const ItemPaintableFactory
+//sameFolderImports - not GWT import - same folder const ItemPaintableFactory
 import { FormTypeFactory } from './FormTypeFactory.js';
-//not GWT import - same folder const FormTypeFactory
+//sameFolderImports - not GWT import - same folder const FormTypeFactory
 //import { VerticalFormProcessor } from './VerticalFormProcessor.js';
-//not GWT import - same folder const VerticalFormProcessor
+//sameFolderImports - not GWT import - same folder const VerticalFormProcessor
 //import { VerticalItemIndexDx } from './VerticalItemIndexDx.js';
-//not GWT import - same folder const VerticalItemIndexDx
+//sameFolderImports - not GWT import - same folder const VerticalItemIndexDx
 //import { HorizontalFormProcessor } from './HorizontalFormProcessor.js';
-//not GWT import - same folder const HorizontalFormProcessor
+//sameFolderImports - not GWT import - same folder const HorizontalFormProcessor
 //import { HorizontalItemIndexDx } from './HorizontalItemIndexDx.js';
-//not GWT import - same folder const HorizontalItemIndexDx
+//sameFolderImports - not GWT import - same folder const HorizontalItemIndexDx
 //import { TempHorizontalFormProcessor } from './TempHorizontalFormProcessor.js';
-//not GWT import - same folder const TempHorizontalFormProcessor
+//sameFolderImports - not GWT import - same folder const TempHorizontalFormProcessor
 //import { TempHorizontalItemIndexDx } from './TempHorizontalItemIndexDx.js';
-//not GWT import - same folder const TempHorizontalItemIndexDx
+//sameFolderImports - not GWT import - same folder const TempHorizontalItemIndexDx
 import { FormType } from './FormType.js';
-//not GWT import - same folder const FormType
+//sameFolderImports - not GWT import - same folder const FormType
 type TempHorizontalFormProcessor = InstanceType<ScrollCurrentSelectionForm['TempHorizontalFormProcessor']>;
 type HorizontalFormProcessor = InstanceType<ScrollCurrentSelectionForm['HorizontalFormProcessor']>;
 type VerticalFormProcessor = InstanceType<ScrollCurrentSelectionForm['VerticalFormProcessor']>;

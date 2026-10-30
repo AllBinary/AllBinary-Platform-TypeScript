@@ -111,9 +111,9 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailInterface } from './EmailInterface.js';
-//not GWT import - same folder const EmailInterface
+//sameFolderImports - not GWT import - same folder const EmailInterface
 import { EmailData } from './EmailData.js';
-//not GWT import - same folder const EmailData
+//sameFolderImports - not GWT import - same folder const EmailData
 
 export class Email
             extends Object
@@ -205,7 +205,7 @@ internetHeaders!.addHeader("Content-Type", "text/html");
 
                                     }
                                 
-mimeBodyParts[1]= new MimeBodyPart(internetHeaders, htmlAttachment!.getBytes());
+mimeBodyParts[1]= new MimeBodyPart(internetHeaders, Array.from(new TextEncoder().encode(htmlAttachment!), byte => (byte << 24) >> 24));
     
 
                                     }

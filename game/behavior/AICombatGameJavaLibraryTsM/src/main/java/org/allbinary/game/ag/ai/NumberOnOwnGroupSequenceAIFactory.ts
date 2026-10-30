@@ -76,9 +76,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NumberInSameGroupSequence } from './NumberInSameGroupSequence.js';
-//not GWT import - same folder const NumberInSameGroupSequence
+//sameFolderImports - not GWT import - same folder const NumberInSameGroupSequence
 import { NumberOnOwnGroupSequenceAI } from './NumberOnOwnGroupSequenceAI.js';
-//not GWT import - same folder const NumberOnOwnGroupSequenceAI
+//sameFolderImports - not GWT import - same folder const NumberOnOwnGroupSequenceAI
 
 export class NumberOnOwnGroupSequenceAIFactory
             extends Object

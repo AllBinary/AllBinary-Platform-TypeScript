@@ -382,11 +382,11 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableUnitBehavior } from './CollidableUnitBehavior.js';
-//not GWT import - same folder const CollidableUnitBehavior
+//sameFolderImports - not GWT import - same folder const CollidableUnitBehavior
 import { UnitWaypointBehavior2 } from './UnitWaypointBehavior2.js';
-//not GWT import - same folder const UnitWaypointBehavior2
+//sameFolderImports - not GWT import - same folder const UnitWaypointBehavior2
 import { UnitWaypointBehavior } from './UnitWaypointBehavior.js';
-//not GWT import - same folder const UnitWaypointBehavior
+//sameFolderImports - not GWT import - same folder const UnitWaypointBehavior
 
 export class UnitLayer extends AdvancedRTSGameLayer implements BuildingEventListenerInterface, TrackingEventListenerInterface {
         

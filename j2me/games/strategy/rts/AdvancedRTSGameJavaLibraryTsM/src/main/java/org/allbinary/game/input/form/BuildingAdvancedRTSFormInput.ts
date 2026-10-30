@@ -101,7 +101,7 @@ import { DropCellPositionHistory } from '../../../../../org/allbinary/media/grap
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BuildingRTSFormInput } from './BuildingRTSFormInput.js';
-//not GWT import - same folder const BuildingRTSFormInput
+//sameFolderImports - not GWT import - same folder const BuildingRTSFormInput
 
 export class BuildingAdvancedRTSFormInput extends BuildingRTSFormInput {
         

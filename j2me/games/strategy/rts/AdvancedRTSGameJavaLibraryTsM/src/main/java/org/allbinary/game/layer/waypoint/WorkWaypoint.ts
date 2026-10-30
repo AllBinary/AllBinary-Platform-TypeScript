@@ -69,9 +69,9 @@ import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Waypoint } from './Waypoint.js';
-//not GWT import - same folder const Waypoint
+//sameFolderImports - not GWT import - same folder const Waypoint
 import { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
-//not GWT import - same folder const WaypointInfoHudPaintable
+//sameFolderImports - not GWT import - same folder const WaypointInfoHudPaintable
 
 export class WorkWaypoint extends Waypoint {
         

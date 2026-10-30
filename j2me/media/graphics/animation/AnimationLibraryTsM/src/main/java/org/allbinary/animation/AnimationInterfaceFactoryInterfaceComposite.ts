@@ -44,11 +44,11 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const AnimationInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const AnimationInterfaceFactoryInterface
 import { NullAnimationFactory } from './NullAnimationFactory.js';
-//not GWT import - same folder const NullAnimationFactory
+//sameFolderImports - not GWT import - same folder const NullAnimationFactory
 import { Animation } from './Animation.js';
-//not GWT import - same folder const Animation
+//sameFolderImports - not GWT import - same folder const Animation
 
 export class AnimationInterfaceFactoryInterfaceComposite
             extends Object

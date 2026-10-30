@@ -49,7 +49,7 @@ import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cach
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BufferedImageInfo } from './BufferedImageInfo.js';
-//not GWT import - same folder const BufferedImageInfo
+//sameFolderImports - not GWT import - same folder const BufferedImageInfo
 
 export class BufferedImageCacheable
             extends Object

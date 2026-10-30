@@ -48,9 +48,9 @@ import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DisplayChangeEventListener } from './DisplayChangeEventListener.js';
-//not GWT import - same folder const DisplayChangeEventListener
+//sameFolderImports - not GWT import - same folder const DisplayChangeEventListener
 import { DisplayChangeEvent } from './DisplayChangeEvent.js';
-//not GWT import - same folder const DisplayChangeEvent
+//sameFolderImports - not GWT import - same folder const DisplayChangeEvent
 
 export class DisplayChangeEventHandler extends BasicEventHandler {
         

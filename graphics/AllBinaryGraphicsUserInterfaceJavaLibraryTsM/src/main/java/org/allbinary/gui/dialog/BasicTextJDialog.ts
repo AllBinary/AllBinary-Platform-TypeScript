@@ -41,27 +41,27 @@ type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...arg
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog
+//sameFolderImports - not GWT import - same folder const JDialog
 import { CloseJDialogListenerInterface } from './CloseJDialogListenerInterface.js';
-//not GWT import - same folder const CloseJDialogListenerInterface
+//sameFolderImports - not GWT import - same folder const CloseJDialogListenerInterface
 import { Frame } from './Frame.js';
-//not GWT import - same folder const Frame
+//sameFolderImports - not GWT import - same folder const Frame
 import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton
+//sameFolderImports - not GWT import - same folder const JButton
 import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel
+//sameFolderImports - not GWT import - same folder const JLabel
 import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener
+//sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent
+//sameFolderImports - not GWT import - same folder const ActionEvent
 import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout
+//sameFolderImports - not GWT import - same folder const GroupLayout
 import { Short } from './Short.js';
-//not GWT import - same folder const Short
+//sameFolderImports - not GWT import - same folder const Short
 import { EventQueue } from './EventQueue.js';
-//not GWT import - same folder const EventQueue
+//sameFolderImports - not GWT import - same folder const EventQueue
 import { JFrame } from './JFrame.js';
-//not GWT import - same folder const JFrame
+//sameFolderImports - not GWT import - same folder const JFrame
 
 export class BasicTextJDialog extends javax.swing.JDialog {
         

@@ -55,13 +55,13 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonsListBuilder } from './TouchButtonsListBuilder.js';
-//not GWT import - same folder const TouchButtonsListBuilder
+//sameFolderImports - not GWT import - same folder const TouchButtonsListBuilder
 import { BasicTouchButtonsBuilder } from './BasicTouchButtonsBuilder.js';
-//not GWT import - same folder const BasicTouchButtonsBuilder
+//sameFolderImports - not GWT import - same folder const BasicTouchButtonsBuilder
 import { BuildingScrollTouchButtonsBuilder } from './BuildingScrollTouchButtonsBuilder.js';
-//not GWT import - same folder const BuildingScrollTouchButtonsBuilder
+//sameFolderImports - not GWT import - same folder const BuildingScrollTouchButtonsBuilder
 import { UpgradeDowngradeTouchButtonsBuilder } from './UpgradeDowngradeTouchButtonsBuilder.js';
-//not GWT import - same folder const UpgradeDowngradeTouchButtonsBuilder
+//sameFolderImports - not GWT import - same folder const UpgradeDowngradeTouchButtonsBuilder
 
 export class EndLevelTouchButtonsBuilder extends TouchButtonsListBuilder {
         

@@ -62,7 +62,7 @@ type EnumerationUtil<T = any, U = any> = typeof EnumerationUtil extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlatormGeographicMapCellType } from './BasicPlatormGeographicMapCellType.js';
-//not GWT import - same folder const BasicPlatormGeographicMapCellType
+//sameFolderImports - not GWT import - same folder const BasicPlatormGeographicMapCellType
 
 export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         

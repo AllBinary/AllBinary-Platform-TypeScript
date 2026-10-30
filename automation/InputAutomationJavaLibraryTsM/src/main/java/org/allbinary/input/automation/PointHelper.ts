@@ -42,11 +42,11 @@ import { awt } from '../../../../java/awt.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointFactory } from './PointFactory.js';
-//not GWT import - same folder const PointFactory
+//sameFolderImports - not GWT import - same folder const PointFactory
 import { Point } from './Point.js';
-//not GWT import - same folder const Point
+//sameFolderImports - not GWT import - same folder const Point
 import { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangle
+//sameFolderImports - not GWT import - same folder const Rectangle
 
 export class PointHelper
             extends Object

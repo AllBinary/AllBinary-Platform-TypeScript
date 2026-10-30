@@ -58,7 +58,7 @@ import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HackRotationSpriteIndexedAnimation } from './HackRotationSpriteIndexedAnimation.js';
-//not GWT import - same folder const HackRotationSpriteIndexedAnimation
+//sameFolderImports - not GWT import - same folder const HackRotationSpriteIndexedAnimation
 
 export class AllBinarySpriteRotationAnimation extends HackRotationSpriteIndexedAnimation {
         

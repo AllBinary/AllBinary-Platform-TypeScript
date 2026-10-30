@@ -47,7 +47,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColorUtil } from './BasicColorUtil.js';
-//not GWT import - same folder const BasicColorUtil
+//sameFolderImports - not GWT import - same folder const BasicColorUtil
 
 export class BasicColor
             extends Object

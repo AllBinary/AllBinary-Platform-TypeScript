@@ -57,9 +57,9 @@ import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventSt
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdConfiguration } from './AdConfiguration.js';
-//not GWT import - same folder const AdConfiguration
+//sameFolderImports - not GWT import - same folder const AdConfiguration
 import { Advertisements } from './Advertisements.js';
-//not GWT import - same folder const Advertisements
+//sameFolderImports - not GWT import - same folder const Advertisements
 
 export class GameAdStateBase
             extends Object

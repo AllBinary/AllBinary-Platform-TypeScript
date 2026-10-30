@@ -97,15 +97,15 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptInput } from './BasicProfileActionScriptInput.js';
-//not GWT import - same folder const BasicProfileActionScriptInput
+//sameFolderImports - not GWT import - same folder const BasicProfileActionScriptInput
 import { KeyboardActionScriptInputInterface } from './KeyboardActionScriptInputInterface.js';
-//not GWT import - same folder const KeyboardActionScriptInputInterface
+//sameFolderImports - not GWT import - same folder const KeyboardActionScriptInputInterface
 import { KeyboardActionScriptInputJPanel } from './KeyboardActionScriptInputJPanel.js';
-//not GWT import - same folder const KeyboardActionScriptInputJPanel
+//sameFolderImports - not GWT import - same folder const KeyboardActionScriptInputJPanel
 import { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
-//not GWT import - same folder const KeyboardActionScriptInputData
+//sameFolderImports - not GWT import - same folder const KeyboardActionScriptInputData
 import { KeyboardInputAutomationProcessor } from './KeyboardInputAutomationProcessor.js';
-//not GWT import - same folder const KeyboardInputAutomationProcessor
+//sameFolderImports - not GWT import - same folder const KeyboardInputAutomationProcessor
 
 export class KeyboardActionScriptInput extends BasicProfileActionScriptInput implements KeyboardActionScriptInputInterface {
         

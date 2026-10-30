@@ -74,11 +74,11 @@ type CanvasSurface<T = any, U = any> = typeof CanvasSurface extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-//not GWT import - same folder const ImageBaseRotationAnimation
+//sameFolderImports - not GWT import - same folder const ImageBaseRotationAnimation
 import { AlphaBaseProcessor } from './AlphaBaseProcessor.js';
-//not GWT import - same folder const AlphaBaseProcessor
+//sameFolderImports - not GWT import - same folder const AlphaBaseProcessor
 import { AlphaProcessor } from './AlphaProcessor.js';
-//not GWT import - same folder const AlphaProcessor
+//sameFolderImports - not GWT import - same folder const AlphaProcessor
 
 export class AllBinaryHTMLImageRotationAnimation extends ImageBaseRotationAnimation {
         

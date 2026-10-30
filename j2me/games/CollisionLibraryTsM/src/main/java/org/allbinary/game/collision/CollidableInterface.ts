@@ -48,7 +48,7 @@ import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollisionType } from './CollisionType.js';
-//not GWT import - same folder const CollisionType
+//sameFolderImports - not GWT import - same folder const CollisionType
 
 export interface CollidableInterface extends NamedInterface {
         

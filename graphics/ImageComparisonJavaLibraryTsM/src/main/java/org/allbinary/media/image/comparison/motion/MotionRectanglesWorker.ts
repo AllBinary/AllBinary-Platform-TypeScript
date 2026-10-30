@@ -81,25 +81,25 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangleConstraintsInterface } from './MotionRectangleConstraintsInterface.js';
-//not GWT import - same folder const MotionRectangleConstraintsInterface
+//sameFolderImports - not GWT import - same folder const MotionRectangleConstraintsInterface
 import { AllMotionRectangles } from './AllMotionRectangles.js';
-//not GWT import - same folder const AllMotionRectangles
+//sameFolderImports - not GWT import - same folder const AllMotionRectangles
 import { AllMotionRectanglesResultsCacheSingleton } from './AllMotionRectanglesResultsCacheSingleton.js';
-//not GWT import - same folder const AllMotionRectanglesResultsCacheSingleton
+//sameFolderImports - not GWT import - same folder const AllMotionRectanglesResultsCacheSingleton
 import { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
-//not GWT import - same folder const MotionRectanglesResultsFrameCacheable
+//sameFolderImports - not GWT import - same folder const MotionRectanglesResultsFrameCacheable
 import { ConsolidateMotionRectangles } from './ConsolidateMotionRectangles.js';
-//not GWT import - same folder const ConsolidateMotionRectangles
+//sameFolderImports - not GWT import - same folder const ConsolidateMotionRectangles
 import { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
-//not GWT import - same folder const ConsolidatedMotionRectanglesResultsCacheSingleton
+//sameFolderImports - not GWT import - same folder const ConsolidatedMotionRectanglesResultsCacheSingleton
 import { ConstrainedMotionRectangles } from './ConstrainedMotionRectangles.js';
-//not GWT import - same folder const ConstrainedMotionRectangles
+//sameFolderImports - not GWT import - same folder const ConstrainedMotionRectangles
 import { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
-//not GWT import - same folder const ConstrainedMotionRectanglesResultsCacheSingleton
+//sameFolderImports - not GWT import - same folder const ConstrainedMotionRectanglesResultsCacheSingleton
 import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
-//not GWT import - same folder const MotionRectanglesResultsEvent
+//sameFolderImports - not GWT import - same folder const MotionRectanglesResultsEvent
 import { MotionRectangles } from './MotionRectangles.js';
-//not GWT import - same folder const MotionRectangles
+//sameFolderImports - not GWT import - same folder const MotionRectangles
 
 export class MotionRectanglesWorker extends BasicEventHandler implements ImageComparisonResultsListener {
         

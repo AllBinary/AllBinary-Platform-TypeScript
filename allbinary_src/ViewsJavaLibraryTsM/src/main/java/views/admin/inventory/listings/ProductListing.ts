@@ -161,7 +161,7 @@ import { InventorySearchUtil } from '../../../../views/generic/inventory/Invento
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProductListingInterface } from './ProductListingInterface.js';
-//not GWT import - same folder const ProductListingInterface
+//sameFolderImports - not GWT import - same folder const ProductListingInterface
 
 export class ProductListing
             extends Object

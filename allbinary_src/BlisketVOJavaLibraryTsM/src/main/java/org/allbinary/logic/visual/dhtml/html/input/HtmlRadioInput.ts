@@ -40,9 +40,9 @@ import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlValueInput } from './HtmlValueInput.js';
-//not GWT import - same folder const HtmlValueInput
+//sameFolderImports - not GWT import - same folder const HtmlValueInput
 import { HtmlInputData } from './HtmlInputData.js';
-//not GWT import - same folder const HtmlInputData
+//sameFolderImports - not GWT import - same folder const HtmlInputData
 
 export class HtmlRadioInput extends HtmlValueInput {
         

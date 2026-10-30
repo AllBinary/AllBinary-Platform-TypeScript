@@ -65,11 +65,11 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Angle } from './Angle.js';
-//not GWT import - same folder const Angle
+//sameFolderImports - not GWT import - same folder const Angle
 import { NamedAngle } from './NamedAngle.js';
-//not GWT import - same folder const NamedAngle
+//sameFolderImports - not GWT import - same folder const NamedAngle
 import { FrameUtil } from './FrameUtil.js';
-//not GWT import - same folder const FrameUtil
+//sameFolderImports - not GWT import - same folder const FrameUtil
 
 export class AngleFactory
             extends Object

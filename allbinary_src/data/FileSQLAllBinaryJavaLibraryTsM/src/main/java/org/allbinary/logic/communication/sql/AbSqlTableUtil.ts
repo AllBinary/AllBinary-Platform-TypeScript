@@ -106,11 +106,11 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SqlStrings } from './SqlStrings.js';
-//not GWT import - same folder const SqlStrings
+//sameFolderImports - not GWT import - same folder const SqlStrings
 import { StringBuilder } from './StringBuilder.js';
-//not GWT import - same folder const StringBuilder
+//sameFolderImports - not GWT import - same folder const StringBuilder
 import { AbSqlTable } from './AbSqlTable.js';
-//not GWT import - same folder const AbSqlTable
+//sameFolderImports - not GWT import - same folder const AbSqlTable
 
 export class AbSqlTableUtil
             extends Object
@@ -485,7 +485,7 @@ stringBuffer!.append(this.END);
 
                                     }
                                 
-outputStream!.write(sqlStatementLine!.getBytes());
+outputStream!.write(Array.from(new TextEncoder().encode(sqlStatementLine!), byte => (byte << 24) >> 24));
     
 }
 

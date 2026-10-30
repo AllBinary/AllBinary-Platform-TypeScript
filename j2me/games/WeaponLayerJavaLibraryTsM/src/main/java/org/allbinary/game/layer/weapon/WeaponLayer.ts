@@ -102,7 +102,7 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableWeaponBehavior } from './CollidableWeaponBehavior.js';
-//not GWT import - same folder const CollidableWeaponBehavior
+//sameFolderImports - not GWT import - same folder const CollidableWeaponBehavior
 
 export class WeaponLayer extends MultiPlayerGameLayer implements TickableInterface {
         

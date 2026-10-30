@@ -42,7 +42,7 @@ import { Serializable } from '../../../../../java/io/Serializable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicUserRoles } from './BasicUserRoles.js';
-//not GWT import - same folder const BasicUserRoles
+//sameFolderImports - not GWT import - same folder const BasicUserRoles
 
 export class BasicUserRole
             extends Object

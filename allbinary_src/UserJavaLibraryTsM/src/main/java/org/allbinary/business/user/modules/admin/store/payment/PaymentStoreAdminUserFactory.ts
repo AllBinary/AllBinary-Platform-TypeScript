@@ -50,7 +50,7 @@ import { UserInterface } from '../../../../../../../../org/allbinary/business/us
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentStoreAdminUser } from './PaymentStoreAdminUser.js';
-//not GWT import - same folder const PaymentStoreAdminUser
+//sameFolderImports - not GWT import - same folder const PaymentStoreAdminUser
 
 export class PaymentStoreAdminUserFactory
             extends Object

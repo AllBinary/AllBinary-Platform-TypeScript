@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicVelocityInterface } from './BasicVelocityInterface.js';
-//not GWT import - same folder const BasicVelocityInterface
+//sameFolderImports - not GWT import - same folder const BasicVelocityInterface
 
 export interface VelocityInterface extends BasicVelocityInterface {
         

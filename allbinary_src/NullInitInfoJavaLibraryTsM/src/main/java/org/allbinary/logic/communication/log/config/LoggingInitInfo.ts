@@ -49,7 +49,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfig } from './LogConfig.js';
-//not GWT import - same folder const LogConfig
+//sameFolderImports - not GWT import - same folder const LogConfig
 
 export class LoggingInitInfo
             extends Object

@@ -91,7 +91,7 @@ import { BareMain } from '../../../../org/microemu/app/BareMain.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Image } from './Image.js';
-//not GWT import - same folder const Image
+//sameFolderImports - not GWT import - same folder const Image
 
 export class ImageUtil
             extends Object

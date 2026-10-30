@@ -52,7 +52,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DropLayerInterface } from './DropLayerInterface.js';
-//not GWT import - same folder const DropLayerInterface
+//sameFolderImports - not GWT import - same folder const DropLayerInterface
 
 export class DropLayerProcessor extends BasicLayerProcessor {
         

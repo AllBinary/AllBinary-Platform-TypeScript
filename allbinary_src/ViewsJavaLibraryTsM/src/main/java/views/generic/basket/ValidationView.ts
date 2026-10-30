@@ -54,7 +54,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasketView } from './BasketView.js';
-//not GWT import - same folder const BasketView
+//sameFolderImports - not GWT import - same folder const BasketView
 
 export class ValidationView extends BasketView implements ValidationComponentInterface {
         

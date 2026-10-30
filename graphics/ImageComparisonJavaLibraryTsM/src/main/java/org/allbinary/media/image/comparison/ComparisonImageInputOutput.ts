@@ -79,13 +79,13 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResultCacheSingleton } from './ImageComparisonResultCacheSingleton.js';
-//not GWT import - same folder const ImageComparisonResultCacheSingleton
+//sameFolderImports - not GWT import - same folder const ImageComparisonResultCacheSingleton
 import { ImageComparisonResultFrameCacheable } from './ImageComparisonResultFrameCacheable.js';
-//not GWT import - same folder const ImageComparisonResultFrameCacheable
+//sameFolderImports - not GWT import - same folder const ImageComparisonResultFrameCacheable
 import { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import - same folder const ImageComparisonResult
+//sameFolderImports - not GWT import - same folder const ImageComparisonResult
 import { ChangedPixelsUtil } from './ChangedPixelsUtil.js';
-//not GWT import - same folder const ChangedPixelsUtil
+//sameFolderImports - not GWT import - same folder const ChangedPixelsUtil
 
 export class ComparisonImageInputOutput
             extends Object

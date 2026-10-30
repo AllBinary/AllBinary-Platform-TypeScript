@@ -58,7 +58,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
-//not GWT import - same folder const MouseActionScriptInputInterface
+//sameFolderImports - not GWT import - same folder const MouseActionScriptInputInterface
 
 export class MouseInputAutomationProcessor
             extends Object

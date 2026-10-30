@@ -37,9 +37,9 @@ import { Test } from '../../../org/junit/jupiter/api/Test.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeTypeUtil } from './TimeTypeUtil.js';
-//not GWT import - same folder const TimeTypeUtil
+//sameFolderImports - not GWT import - same folder const TimeTypeUtil
 //import { TestableTimeTypeUtil } from './TestableTimeTypeUtil.js';
-//not GWT import - same folder const TestableTimeTypeUtil
+//sameFolderImports - not GWT import - same folder const TestableTimeTypeUtil
 
 export class TimeTypeTest
             extends Object

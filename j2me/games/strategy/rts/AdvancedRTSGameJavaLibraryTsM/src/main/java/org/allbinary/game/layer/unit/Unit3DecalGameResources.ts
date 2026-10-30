@@ -32,6 +32,10 @@ import { AndroidUtil } from '../../../../../org/allbinary/AndroidUtil.js';
 import { GraphicsFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/GraphicsFeatureFactory.js';
 //not GWT import const GraphicsFeatureFactory
 
+//not plain js import { NullUtil } 
+const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args: any[]) => infer Instance ? Instance : typeof NullUtil;
+
 
 
 
@@ -54,14 +58,23 @@ import { GraphicsFeatureFactory } from '../../../../../org/allbinary/game/config
 export class Unit3DecalGameResources extends BasicGameResources {
         
 
-    private static readonly instance: Unit3DecalGameResources = new Unit3DecalGameResources();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): BasicGameResources{
+
+                        if(Unit3DecalGameResources.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    Unit3DecalGameResources.instance= new Unit3DecalGameResources();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Unit3DecalGameResources.instance;
+                        return Unit3DecalGameResources.instance as Unit3DecalGameResources;
     
 }
 

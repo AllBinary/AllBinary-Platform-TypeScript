@@ -61,9 +61,9 @@ import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-//not GWT import - same folder const PathFindingLayerInterface
+//sameFolderImports - not GWT import - same folder const PathFindingLayerInterface
 import { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
-//not GWT import - same folder const PlayerOwnedRTSLayers
+//sameFolderImports - not GWT import - same folder const PlayerOwnedRTSLayers
 
 export interface RTSPlayerLayerInterface extends GameNotificationHudCompositeInterface, BuildMenuCompositeInterface, PlayerGameInputCompositeInterface, DestroyedEventListenerInterface, TickableInterface, PathFindingLayerInterface {
         

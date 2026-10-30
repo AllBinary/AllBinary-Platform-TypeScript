@@ -43,9 +43,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ArtificialIntelligenceFactoryInterface } from './ArtificialIntelligenceFactoryInterface.js';
-//not GWT import - same folder const ArtificialIntelligenceFactoryInterface
+//sameFolderImports - not GWT import - same folder const ArtificialIntelligenceFactoryInterface
 import { ArtificialIntelligence } from './ArtificialIntelligence.js';
-//not GWT import - same folder const ArtificialIntelligence
+//sameFolderImports - not GWT import - same folder const ArtificialIntelligence
 
 export class ArtificialIntelligenceFactory
             extends Object

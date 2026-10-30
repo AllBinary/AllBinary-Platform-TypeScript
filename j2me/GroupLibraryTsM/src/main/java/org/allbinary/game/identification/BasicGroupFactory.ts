@@ -43,7 +43,7 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Group } from './Group.js';
-//not GWT import - same folder const Group
+//sameFolderImports - not GWT import - same folder const Group
 
 export class BasicGroupFactory
             extends Object

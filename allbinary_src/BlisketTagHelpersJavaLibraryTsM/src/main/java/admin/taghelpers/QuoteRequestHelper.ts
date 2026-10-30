@@ -78,7 +78,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
-//not GWT import - same folder const ModifyTable
+//sameFolderImports - not GWT import - same folder const ModifyTable
 //TWB - Am I missing the correct Quote Request? Probably not
 export class QuoteRequestHelper extends ModifyTable {
         

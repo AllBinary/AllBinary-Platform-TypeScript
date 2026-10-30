@@ -35,7 +35,7 @@ import { ShortBuffer } from '../../../../java/nio/ShortBuffer.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL } from './GL.js';
-//not GWT import - same folder const GL
+//sameFolderImports - not GWT import - same folder const GL
 
             //Interfaces do not have static fields for typescript so create a class with the static fields
             export class GL11ExtI {

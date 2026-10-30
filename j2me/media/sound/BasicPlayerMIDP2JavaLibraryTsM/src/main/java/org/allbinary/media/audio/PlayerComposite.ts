@@ -79,9 +79,9 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeBaseInterface } from './TimeBaseInterface.js';
-//not GWT import - same folder const TimeBaseInterface
+//sameFolderImports - not GWT import - same folder const TimeBaseInterface
 import { Controllable2 } from './Controllable2.js';
-//not GWT import - same folder const Controllable2
+//sameFolderImports - not GWT import - same folder const Controllable2
 //BasicPlayerMIDP2
 export class PlayerComposite
             extends Object

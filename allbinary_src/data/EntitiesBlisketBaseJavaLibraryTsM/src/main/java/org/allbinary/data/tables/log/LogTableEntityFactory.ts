@@ -49,7 +49,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogTableEntity } from './LogTableEntity.js';
-//not GWT import - same folder const LogTableEntity
+//sameFolderImports - not GWT import - same folder const LogTableEntity
 
 export class LogTableEntityFactory
             extends Object

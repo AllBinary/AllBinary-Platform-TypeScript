@@ -50,7 +50,7 @@ import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/lay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvasInterface } from './AllBinaryGameCanvasInterface.js';
-//not GWT import - same folder const AllBinaryGameCanvasInterface
+//sameFolderImports - not GWT import - same folder const AllBinaryGameCanvasInterface
 
 export class NullAllBinaryGameCanvas
             extends Object

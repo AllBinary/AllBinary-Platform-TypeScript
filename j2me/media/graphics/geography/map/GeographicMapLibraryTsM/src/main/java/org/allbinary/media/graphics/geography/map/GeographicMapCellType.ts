@@ -50,7 +50,7 @@ import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellTypeFactory } from './GeographicMapCellTypeFactory.js';
-//not GWT import - same folder const GeographicMapCellTypeFactory
+//sameFolderImports - not GWT import - same folder const GeographicMapCellTypeFactory
 
 export class GeographicMapCellType
             extends Object

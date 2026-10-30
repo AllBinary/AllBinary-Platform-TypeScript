@@ -54,7 +54,7 @@ import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosit
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import - same folder const GeographicMapCellPosition
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPosition
 
 export class GeographicMapDirectionUtil
             extends Object

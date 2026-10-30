@@ -51,7 +51,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DatabaseConnectionInfoInterface } from './DatabaseConnectionInfoInterface.js';
-//not GWT import - same folder const DatabaseConnectionInfoInterface
+//sameFolderImports - not GWT import - same folder const DatabaseConnectionInfoInterface
 
 export class DbConnectionInfo
             extends Object

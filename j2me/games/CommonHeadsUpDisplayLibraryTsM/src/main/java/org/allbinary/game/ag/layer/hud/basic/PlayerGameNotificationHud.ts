@@ -109,9 +109,9 @@ type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abst
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { SetAndRemoveProcessor } from './SetAndRemoveProcessor.js';
-//not GWT import - same folder const SetAndRemoveProcessor
+//sameFolderImports - not GWT import - same folder const SetAndRemoveProcessor
 //import { NextUnremoveableProcessor } from './NextUnremoveableProcessor.js';
-//not GWT import - same folder const NextUnremoveableProcessor
+//sameFolderImports - not GWT import - same folder const NextUnremoveableProcessor
 type SetAndRemoveProcessor = InstanceType<PlayerGameNotificationHud['SetAndRemoveProcessor']>;
 type NextUnremoveableProcessor = InstanceType<PlayerGameNotificationHud['NextUnremoveableProcessor']>;
 

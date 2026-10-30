@@ -49,7 +49,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericModuleFactory } from './GenericModuleFactory.js';
-//not GWT import - same folder const GenericModuleFactory
+//sameFolderImports - not GWT import - same folder const GenericModuleFactory
 
 export class InputAutomationGenericModuleServiceFactory extends InputAutomationModuleServiceFactory {
         

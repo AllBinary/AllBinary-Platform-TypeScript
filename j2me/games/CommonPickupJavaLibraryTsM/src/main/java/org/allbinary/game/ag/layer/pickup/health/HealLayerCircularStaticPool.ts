@@ -54,7 +54,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealLayer } from './HealLayer.js';
-//not GWT import - same folder const HealLayer
+//sameFolderImports - not GWT import - same folder const HealLayer
 
 export class HealLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         

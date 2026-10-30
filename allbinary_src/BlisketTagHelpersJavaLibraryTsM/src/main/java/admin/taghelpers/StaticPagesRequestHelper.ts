@@ -126,7 +126,7 @@ import { ProductListingFactory } from '../../views/admin/inventory/listings/Prod
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperInterface } from './TagHelperInterface.js';
-//not GWT import - same folder const TagHelperInterface
+//sameFolderImports - not GWT import - same folder const TagHelperInterface
 
 export class StaticPagesRequestHelper extends AbContext implements TagHelperInterface {
         

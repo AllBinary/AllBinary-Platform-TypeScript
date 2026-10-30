@@ -90,7 +90,7 @@ type ABStack<T = any, U = any> = typeof ABStack extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenRepaintProcessorFactory } from './ScreenRepaintProcessorFactory.js';
-//not GWT import - same folder const ScreenRepaintProcessorFactory
+//sameFolderImports - not GWT import - same folder const ScreenRepaintProcessorFactory
 
 export class CommandForm extends Form implements MyCommandInterface, MenuListener {
         

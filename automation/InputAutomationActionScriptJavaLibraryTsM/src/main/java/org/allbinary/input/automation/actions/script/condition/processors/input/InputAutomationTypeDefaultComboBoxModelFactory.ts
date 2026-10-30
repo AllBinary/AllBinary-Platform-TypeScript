@@ -50,7 +50,7 @@ import { InputRobotFactory } from '../../../../../../../../../org/allbinary/inpu
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-//not GWT import - same folder const DefaultComboBoxModel
+//sameFolderImports - not GWT import - same folder const DefaultComboBoxModel
 
 export class InputAutomationTypeDefaultComboBoxModelFactory
             extends Object

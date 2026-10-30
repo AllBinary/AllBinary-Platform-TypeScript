@@ -48,9 +48,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsInterface } from './GraphicsInterface.js';
-//not GWT import - same folder const GraphicsInterface
+//sameFolderImports - not GWT import - same folder const GraphicsInterface
 import { NullGL10 } from './NullGL10.js';
-//not GWT import - same folder const NullGL10
+//sameFolderImports - not GWT import - same folder const NullGL10
 
 export class OpenGLESGraphics
             extends Object

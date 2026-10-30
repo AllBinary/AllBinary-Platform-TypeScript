@@ -75,9 +75,9 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollCurrentSelectionForm } from './ScrollCurrentSelectionForm.js';
-//not GWT import - same folder const ScrollCurrentSelectionForm
+//sameFolderImports - not GWT import - same folder const ScrollCurrentSelectionForm
 import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-//not GWT import - same folder const ItemPaintableFactory
+//sameFolderImports - not GWT import - same folder const ItemPaintableFactory
 
 export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm implements UpdateMyFontInterface {
         

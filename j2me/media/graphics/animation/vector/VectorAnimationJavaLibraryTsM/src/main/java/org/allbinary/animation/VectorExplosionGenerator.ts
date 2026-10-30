@@ -65,9 +65,9 @@ type BasicArrayListS<T = any, U = any> = typeof BasicArrayListS extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorExplosionType } from './VectorExplosionType.js';
-//not GWT import - same folder const VectorExplosionType
+//sameFolderImports - not GWT import - same folder const VectorExplosionType
 import { VectorAnimationUtil } from './VectorAnimationUtil.js';
-//not GWT import - same folder const VectorAnimationUtil
+//sameFolderImports - not GWT import - same folder const VectorAnimationUtil
 
 export class VectorExplosionGenerator
             extends Object

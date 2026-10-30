@@ -40,9 +40,9 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Paintable } from './Paintable.js';
-//not GWT import - same folder const Paintable
+//sameFolderImports - not GWT import - same folder const Paintable
 import { PaintableInterface } from './PaintableInterface.js';
-//not GWT import - same folder const PaintableInterface
+//sameFolderImports - not GWT import - same folder const PaintableInterface
 
 export class PaintableComposite extends Paintable {
         

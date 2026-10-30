@@ -65,9 +65,9 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssPropertyData } from './CssPropertyData.js';
-//not GWT import - same folder const CssPropertyData
+//sameFolderImports - not GWT import - same folder const CssPropertyData
 import { CssPropertyValidationFactory } from './CssPropertyValidationFactory.js';
-//not GWT import - same folder const CssPropertyValidationFactory
+//sameFolderImports - not GWT import - same folder const CssPropertyValidationFactory
 
 export class CssPropertiesValidationFactory
             extends Object

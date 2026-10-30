@@ -81,9 +81,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProcessBuilder } from './ProcessBuilder.js';
-//not GWT import - same folder const ProcessBuilder
+//sameFolderImports - not GWT import - same folder const ProcessBuilder
 import { Process } from './Process.js';
-//not GWT import - same folder const Process
+//sameFolderImports - not GWT import - same folder const Process
 //Do not use this instead just skip target, build, Application paths.
 export class GitProcessHelper
             extends Object

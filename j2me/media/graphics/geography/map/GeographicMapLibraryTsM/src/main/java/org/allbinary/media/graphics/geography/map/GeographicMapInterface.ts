@@ -50,13 +50,13 @@ import { Layer } from '../../../../../../org/allbinary/layer/Layer.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import - same folder const GeographicMapCellPosition
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPosition
 import { GeographicMapCellType } from './GeographicMapCellType.js';
-//not GWT import - same folder const GeographicMapCellType
+//sameFolderImports - not GWT import - same folder const GeographicMapCellType
 import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
-//not GWT import - same folder const BasicGeographicMapCellPositionFactory
+//sameFolderImports - not GWT import - same folder const BasicGeographicMapCellPositionFactory
 import { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPositionFactoryInterface.js';
-//not GWT import - same folder const GeographicMapCellPositionFactoryInterface
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionFactoryInterface
 
 export interface GeographicMapInterface {
         

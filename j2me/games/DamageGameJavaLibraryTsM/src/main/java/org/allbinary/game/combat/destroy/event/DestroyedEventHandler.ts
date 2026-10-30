@@ -62,9 +62,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyedEvent } from './DestroyedEvent.js';
-//not GWT import - same folder const DestroyedEvent
+//sameFolderImports - not GWT import - same folder const DestroyedEvent
 import { DestroyedEventListenerInterface } from './DestroyedEventListenerInterface.js';
-//not GWT import - same folder const DestroyedEventListenerInterface
+//sameFolderImports - not GWT import - same folder const DestroyedEventListenerInterface
 
 export class DestroyedEventHandler extends BasicEventHandler {
         

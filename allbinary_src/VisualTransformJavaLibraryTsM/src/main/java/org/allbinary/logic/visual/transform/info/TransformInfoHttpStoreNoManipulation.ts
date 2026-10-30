@@ -48,7 +48,7 @@ import { TransformInfoObjectConfigNoManipulationFactory } from '../../../../../.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttpStore } from './TransformInfoHttpStore.js';
-//not GWT import - same folder const TransformInfoHttpStore
+//sameFolderImports - not GWT import - same folder const TransformInfoHttpStore
 
 export class TransformInfoHttpStoreNoManipulation extends TransformInfoHttpStore {
         

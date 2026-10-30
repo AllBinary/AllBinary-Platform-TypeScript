@@ -57,7 +57,7 @@ import { PrimitiveLongSingleton } from '../../../../../../../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Timer } from './Timer.js';
-//not GWT import - same folder const Timer
+//sameFolderImports - not GWT import - same folder const Timer
 
 export class TimeHudWidget extends BasicHud {
         

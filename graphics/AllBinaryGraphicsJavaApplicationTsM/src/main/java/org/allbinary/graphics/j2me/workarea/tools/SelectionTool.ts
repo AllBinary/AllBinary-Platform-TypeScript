@@ -24,7 +24,8 @@
         
             import { Math } from '../../../../../../java/lang/Math.js';
         
-            import { Double } from '../../../../../../java/lang/Double.js';
+            //import { Double } from '../../../../../../java/lang/Double.js';
+            const Double = globalThis.java.lang.Double;
         
 import { awt } from '../../../../../../java/awt.js';
 //not GWT import const awt
@@ -86,21 +87,21 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicItemInterface } from './GraphicItemInterface.js';
-//not GWT import - same folder const GraphicItemInterface
+//sameFolderImports - not GWT import - same folder const GraphicItemInterface
 import { Color } from './Color.js';
-//not GWT import - same folder const Color
+//sameFolderImports - not GWT import - same folder const Color
 import { Points } from './Points.js';
-//not GWT import - same folder const Points
+//sameFolderImports - not GWT import - same folder const Points
 import { LinesGraphicItem } from './LinesGraphicItem.js';
-//not GWT import - same folder const LinesGraphicItem
+//sameFolderImports - not GWT import - same folder const LinesGraphicItem
 import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics
+//sameFolderImports - not GWT import - same folder const Graphics
 import { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEvent
+//sameFolderImports - not GWT import - same folder const MouseEvent
 import { MouseStrings } from './MouseStrings.js';
-//not GWT import - same folder const MouseStrings
+//sameFolderImports - not GWT import - same folder const MouseStrings
 import { KeyEvent } from './KeyEvent.js';
-//not GWT import - same folder const KeyEvent
+//sameFolderImports - not GWT import - same folder const KeyEvent
 
 export class SelectionTool
             extends Object

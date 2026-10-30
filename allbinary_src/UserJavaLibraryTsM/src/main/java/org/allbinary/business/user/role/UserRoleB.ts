@@ -57,11 +57,11 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserRole } from './UserRole.js';
-//not GWT import - same folder const UserRole
+//sameFolderImports - not GWT import - same folder const UserRole
 import { BasicUserRole } from './BasicUserRole.js';
-//not GWT import - same folder const BasicUserRole
+//sameFolderImports - not GWT import - same folder const BasicUserRole
 import { UserRoleFactory } from './UserRoleFactory.js';
-//not GWT import - same folder const UserRoleFactory
+//sameFolderImports - not GWT import - same folder const UserRoleFactory
 
 export class UserRoleB extends UserRole {
         

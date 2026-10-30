@@ -42,13 +42,13 @@ import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';
-//not GWT import - same folder const VectorAnimationFactoryInterface
+//sameFolderImports - not GWT import - same folder const VectorAnimationFactoryInterface
 import { TimedVectorAnimation } from './TimedVectorAnimation.js';
-//not GWT import - same folder const TimedVectorAnimation
+//sameFolderImports - not GWT import - same folder const TimedVectorAnimation
 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import - same folder const AnimationBehavior
+//sameFolderImports - not GWT import - same folder const AnimationBehavior
 import { VectorAnimation } from './VectorAnimation.js';
-//not GWT import - same folder const VectorAnimation
+//sameFolderImports - not GWT import - same folder const VectorAnimation
 
 export class TimedVectorAnimationFactory
             extends Object

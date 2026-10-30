@@ -77,9 +77,9 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTextBox2 } from './CustomTextBox2.js';
-//not GWT import - same folder const CustomTextBox2
+//sameFolderImports - not GWT import - same folder const CustomTextBox2
 import { CustomTextBoxIndexedAnimation } from './CustomTextBoxIndexedAnimation.js';
-//not GWT import - same folder const CustomTextBoxIndexedAnimation
+//sameFolderImports - not GWT import - same folder const CustomTextBoxIndexedAnimation
 
 export class CustomTextBoxIndexedAnimationFactory
             extends Object

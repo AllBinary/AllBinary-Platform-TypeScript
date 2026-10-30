@@ -67,15 +67,15 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CaptureWorkerInterface } from './CaptureWorkerInterface.js';
-//not GWT import - same folder const CaptureWorkerInterface
+//sameFolderImports - not GWT import - same folder const CaptureWorkerInterface
 import { ScreenScavangerRobot } from './ScreenScavangerRobot.js';
-//not GWT import - same folder const ScreenScavangerRobot
+//sameFolderImports - not GWT import - same folder const ScreenScavangerRobot
 import { ProcessingFrameIndexFactory } from './ProcessingFrameIndexFactory.js';
-//not GWT import - same folder const ProcessingFrameIndexFactory
+//sameFolderImports - not GWT import - same folder const ProcessingFrameIndexFactory
 import { CapturedBufferedImagesCacheSingleton } from './CapturedBufferedImagesCacheSingleton.js';
-//not GWT import - same folder const CapturedBufferedImagesCacheSingleton
+//sameFolderImports - not GWT import - same folder const CapturedBufferedImagesCacheSingleton
 import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
-//not GWT import - same folder const CapturedImageWorkerResultsEvent
+//sameFolderImports - not GWT import - same folder const CapturedImageWorkerResultsEvent
 
 export class ScreenCaptureImagesWorker extends BasicEventHandler implements CaptureWorkerInterface {
         

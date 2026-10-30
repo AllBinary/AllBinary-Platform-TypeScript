@@ -50,7 +50,7 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BuildingEventListenerInterface } from './BuildingEventListenerInterface.js';
-//not GWT import - same folder const BuildingEventListenerInterface
+//sameFolderImports - not GWT import - same folder const BuildingEventListenerInterface
 
 export class LocalPlayerBuildingEventHandler extends BasicEventHandler {
         

@@ -70,7 +70,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseGameInitialization } from './BaseGameInitialization.js';
-//not GWT import - same folder const BaseGameInitialization
+//sameFolderImports - not GWT import - same folder const BaseGameInitialization
 
 export class CommonGameInitialization extends BaseGameInitialization {
         

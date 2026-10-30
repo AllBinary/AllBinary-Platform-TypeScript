@@ -63,7 +63,7 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
-//not GWT import - same folder const GameConfigurationSingleton
+//sameFolderImports - not GWT import - same folder const GameConfigurationSingleton
 
 export class GameConfiguration
             extends Object

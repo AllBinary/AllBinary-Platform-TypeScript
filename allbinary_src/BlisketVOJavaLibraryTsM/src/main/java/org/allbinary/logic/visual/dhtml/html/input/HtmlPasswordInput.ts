@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlLengthInput } from './HtmlLengthInput.js';
-//not GWT import - same folder const HtmlLengthInput
+//sameFolderImports - not GWT import - same folder const HtmlLengthInput
 import { HtmlInputData } from './HtmlInputData.js';
-//not GWT import - same folder const HtmlInputData
+//sameFolderImports - not GWT import - same folder const HtmlInputData
 
 export class HtmlPasswordInput extends HtmlLengthInput {
         

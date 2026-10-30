@@ -90,11 +90,11 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayer } from './RTSLayer.js';
-//not GWT import - same folder const RTSLayer
+//sameFolderImports - not GWT import - same folder const RTSLayer
 import { FakeLayerManager } from './FakeLayerManager.js';
-//not GWT import - same folder const FakeLayerManager
+//sameFolderImports - not GWT import - same folder const FakeLayerManager
 import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
-//not GWT import - same folder const AllBinaryGameLayerManager
+//sameFolderImports - not GWT import - same folder const AllBinaryGameLayerManager
 
 export class RTSLayerUtil
             extends Object

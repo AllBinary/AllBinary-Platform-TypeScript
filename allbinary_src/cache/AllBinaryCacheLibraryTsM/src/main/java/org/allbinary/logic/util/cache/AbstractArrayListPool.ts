@@ -53,11 +53,11 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PoolInterface } from './PoolInterface.js';
-//not GWT import - same folder const PoolInterface
+//sameFolderImports - not GWT import - same folder const PoolInterface
 import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
-//not GWT import - same folder const CacheableInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const CacheableInterfaceFactoryInterface
 import { CacheableInterface } from './CacheableInterface.js';
-//not GWT import - same folder const CacheableInterface
+//sameFolderImports - not GWT import - same folder const CacheableInterface
 
 export class AbstractArrayListPool
             extends Object

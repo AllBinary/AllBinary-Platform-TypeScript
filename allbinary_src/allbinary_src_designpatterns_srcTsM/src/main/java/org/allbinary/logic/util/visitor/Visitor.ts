@@ -43,7 +43,7 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VisitorInterface } from './VisitorInterface.js';
-//not GWT import - same folder const VisitorInterface
+//sameFolderImports - not GWT import - same folder const VisitorInterface
 
 export class Visitor
             extends Object

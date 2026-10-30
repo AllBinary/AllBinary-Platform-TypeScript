@@ -85,17 +85,17 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Feature } from './Feature.js';
-//not GWT import - same folder const Feature
+//sameFolderImports - not GWT import - same folder const Feature
 import { GameFeatureFactory } from './GameFeatureFactory.js';
-//not GWT import - same folder const GameFeatureFactory
+//sameFolderImports - not GWT import - same folder const GameFeatureFactory
 import { InputFeatureFactory } from './InputFeatureFactory.js';
-//not GWT import - same folder const InputFeatureFactory
+//sameFolderImports - not GWT import - same folder const InputFeatureFactory
 import { SensorFeatureFactory } from './SensorFeatureFactory.js';
-//not GWT import - same folder const SensorFeatureFactory
+//sameFolderImports - not GWT import - same folder const SensorFeatureFactory
 import { TouchFeatureFactory } from './TouchFeatureFactory.js';
-//not GWT import - same folder const TouchFeatureFactory
+//sameFolderImports - not GWT import - same folder const TouchFeatureFactory
 import { MainFeatureFactory } from './MainFeatureFactory.js';
-//not GWT import - same folder const MainFeatureFactory
+//sameFolderImports - not GWT import - same folder const MainFeatureFactory
 
 export class Features
             extends Object

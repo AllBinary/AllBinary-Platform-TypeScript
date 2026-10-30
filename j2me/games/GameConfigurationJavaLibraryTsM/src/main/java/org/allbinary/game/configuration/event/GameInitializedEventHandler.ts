@@ -48,9 +48,9 @@ import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInitializedListenerInterface } from './GameInitializedListenerInterface.js';
-//not GWT import - same folder const GameInitializedListenerInterface
+//sameFolderImports - not GWT import - same folder const GameInitializedListenerInterface
 import { GameInitializedEvent } from './GameInitializedEvent.js';
-//not GWT import - same folder const GameInitializedEvent
+//sameFolderImports - not GWT import - same folder const GameInitializedEvent
 
 export class GameInitializedEventHandler extends BasicEventHandler {
         

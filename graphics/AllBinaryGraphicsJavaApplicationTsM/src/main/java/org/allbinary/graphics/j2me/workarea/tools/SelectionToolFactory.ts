@@ -42,11 +42,11 @@ import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/work
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
-//not GWT import - same folder const GraphicsItemInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const GraphicsItemInterfaceFactoryInterface
 import { SelectionTool } from './SelectionTool.js';
-//not GWT import - same folder const SelectionTool
+//sameFolderImports - not GWT import - same folder const SelectionTool
 import { GraphicItemInterface } from './GraphicItemInterface.js';
-//not GWT import - same folder const GraphicItemInterface
+//sameFolderImports - not GWT import - same folder const GraphicItemInterface
 
 export class SelectionToolFactory
             extends Object

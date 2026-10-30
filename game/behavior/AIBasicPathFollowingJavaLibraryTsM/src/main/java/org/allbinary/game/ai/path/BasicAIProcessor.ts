@@ -69,7 +69,7 @@ import { GeographicMapCellPathHistoryInfo } from '../../../../../org/allbinary/m
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicDirectionAIHelper } from './BasicDirectionAIHelper.js';
-//not GWT import - same folder const BasicDirectionAIHelper
+//sameFolderImports - not GWT import - same folder const BasicDirectionAIHelper
 
 export class BasicAIProcessor
             extends Object

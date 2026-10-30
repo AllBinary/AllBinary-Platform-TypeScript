@@ -48,7 +48,7 @@ import { AnimationBehavior } from '../../../../org/allbinary/animation/Animation
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageAnimation } from './ImageAnimation.js';
-//not GWT import - same folder const ImageAnimation
+//sameFolderImports - not GWT import - same folder const ImageAnimation
 
 export class AdjustedImageAnimation extends ImageAnimation {
         

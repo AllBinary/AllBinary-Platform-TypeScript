@@ -48,25 +48,25 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog
+//sameFolderImports - not GWT import - same folder const JDialog
 import { FileJDialogListenerInterface } from './FileJDialogListenerInterface.js';
-//not GWT import - same folder const FileJDialogListenerInterface
+//sameFolderImports - not GWT import - same folder const FileJDialogListenerInterface
 import { Frame } from './Frame.js';
-//not GWT import - same folder const Frame
+//sameFolderImports - not GWT import - same folder const Frame
 import { JFileChooser } from './JFileChooser.js';
-//not GWT import - same folder const JFileChooser
+//sameFolderImports - not GWT import - same folder const JFileChooser
 import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener
+//sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent
+//sameFolderImports - not GWT import - same folder const ActionEvent
 import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout
+//sameFolderImports - not GWT import - same folder const GroupLayout
 import { Short } from './Short.js';
-//not GWT import - same folder const Short
+//sameFolderImports - not GWT import - same folder const Short
 import { EventQueue } from './EventQueue.js';
-//not GWT import - same folder const EventQueue
+//sameFolderImports - not GWT import - same folder const EventQueue
 import { JFrame } from './JFrame.js';
-//not GWT import - same folder const JFrame
+//sameFolderImports - not GWT import - same folder const JFrame
 
 export class FileJDialog extends javax.swing.JDialog {
         

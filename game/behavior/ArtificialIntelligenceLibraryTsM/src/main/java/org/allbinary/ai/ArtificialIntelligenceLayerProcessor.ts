@@ -48,9 +48,9 @@ import { LayerProcessor } from '../../../org/allbinary/layer/LayerProcessor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ArtificialIntelligenceLayerManager } from './ArtificialIntelligenceLayerManager.js';
-//not GWT import - same folder const ArtificialIntelligenceLayerManager
+//sameFolderImports - not GWT import - same folder const ArtificialIntelligenceLayerManager
 import { ArtificialIntelligenceCompositeInterface } from './ArtificialIntelligenceCompositeInterface.js';
-//not GWT import - same folder const ArtificialIntelligenceCompositeInterface
+//sameFolderImports - not GWT import - same folder const ArtificialIntelligenceCompositeInterface
 
 export class ArtificialIntelligenceLayerProcessor extends LayerProcessor {
         

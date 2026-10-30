@@ -58,13 +58,13 @@ import { CommonButtons } from '../../../../org/allbinary/input/motion/button/Com
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-//not GWT import - same folder const SelectionHudPaintable
+//sameFolderImports - not GWT import - same folder const SelectionHudPaintable
 import { RTSLayerCompositePaintable } from './RTSLayerCompositePaintable.js';
-//not GWT import - same folder const RTSLayerCompositePaintable
+//sameFolderImports - not GWT import - same folder const RTSLayerCompositePaintable
 import { UpgradableWideRTSLayerPaintable } from './UpgradableWideRTSLayerPaintable.js';
-//not GWT import - same folder const UpgradableWideRTSLayerPaintable
+//sameFolderImports - not GWT import - same folder const UpgradableWideRTSLayerPaintable
 import { RTSLayer } from './RTSLayer.js';
-//not GWT import - same folder const RTSLayer
+//sameFolderImports - not GWT import - same folder const RTSLayer
 
 export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {
         

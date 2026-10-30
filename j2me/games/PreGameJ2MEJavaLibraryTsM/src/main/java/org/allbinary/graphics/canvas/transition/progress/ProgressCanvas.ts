@@ -114,9 +114,9 @@ import { ThreadPool } from '../../../../../../org/allbinary/thread/ThreadPool.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { ProgressPaintable } from './ProgressPaintable.js';
-//not GWT import - same folder const ProgressPaintable
+//sameFolderImports - not GWT import - same folder const ProgressPaintable
 import { ProgressEndListener } from './ProgressEndListener.js';
-//not GWT import - same folder const ProgressEndListener
+//sameFolderImports - not GWT import - same folder const ProgressEndListener
 type ProgressPaintable = InstanceType<ProgressCanvas['ProgressPaintable']>;
 
 export class ProgressCanvas extends RunnableCanvas implements PaintableInterface, UpdateMyFontInterface {

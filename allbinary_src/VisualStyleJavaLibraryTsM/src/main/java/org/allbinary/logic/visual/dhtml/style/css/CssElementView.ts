@@ -99,9 +99,9 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssElementData } from './CssElementData.js';
-//not GWT import - same folder const CssElementData
+//sameFolderImports - not GWT import - same folder const CssElementData
 import { CssElementsValidationFactory } from './CssElementsValidationFactory.js';
-//not GWT import - same folder const CssElementsValidationFactory
+//sameFolderImports - not GWT import - same folder const CssElementsValidationFactory
 
 export class CssElementView
             extends Object

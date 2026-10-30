@@ -51,7 +51,7 @@ import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCa
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import - same folder const ProgressCanvas
+//sameFolderImports - not GWT import - same folder const ProgressCanvas
 
 export class LazyProgressCanvas extends ProgressCanvas {
         

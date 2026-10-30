@@ -86,7 +86,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
-//not GWT import - same folder const TagHelper
+//sameFolderImports - not GWT import - same folder const TagHelper
 
 export class UpdateOrderHelper extends TagHelper {
         

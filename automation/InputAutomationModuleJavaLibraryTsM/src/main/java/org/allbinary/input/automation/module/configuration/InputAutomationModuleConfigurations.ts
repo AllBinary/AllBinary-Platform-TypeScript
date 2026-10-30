@@ -78,7 +78,7 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleConfiguration } from './InputAutomationModuleConfiguration.js';
-//not GWT import - same folder const InputAutomationModuleConfiguration
+//sameFolderImports - not GWT import - same folder const InputAutomationModuleConfiguration
 
 export class InputAutomationModuleConfigurations
             extends Object

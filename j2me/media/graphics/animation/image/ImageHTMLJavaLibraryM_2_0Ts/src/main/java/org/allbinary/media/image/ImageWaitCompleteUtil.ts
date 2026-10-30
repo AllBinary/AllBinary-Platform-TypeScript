@@ -71,7 +71,7 @@ type CoreImage<T = any, U = any> = typeof CoreImage extends abstract new (...arg
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCompleteUtil } from './ImageCompleteUtil.js';
-//not GWT import - same folder const ImageCompleteUtil
+//sameFolderImports - not GWT import - same folder const ImageCompleteUtil
 
 export class ImageWaitCompleteUtil extends ImageCompleteUtil {
         

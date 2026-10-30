@@ -46,7 +46,7 @@ import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationRobotOSGIServiceVisitor } from './InputAutomationRobotOSGIServiceVisitor.js';
-//not GWT import - same folder const InputAutomationRobotOSGIServiceVisitor
+//sameFolderImports - not GWT import - same folder const InputAutomationRobotOSGIServiceVisitor
 
 export class InputAutomationRobotServiceConsumer extends InputAutomationServiceConsumer {
         

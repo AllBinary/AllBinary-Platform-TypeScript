@@ -51,7 +51,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MultipassState } from './MultipassState.js';
-//not GWT import - same folder const MultipassState
+//sameFolderImports - not GWT import - same folder const MultipassState
 
 export class GeographicPathFinderBase
             extends Object

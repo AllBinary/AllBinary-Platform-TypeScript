@@ -63,9 +63,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Group } from './Group.js';
-//not GWT import - same folder const Group
+//sameFolderImports - not GWT import - same folder const Group
 import { GroupCommonFactory } from './GroupCommonFactory.js';
-//not GWT import - same folder const GroupCommonFactory
+//sameFolderImports - not GWT import - same folder const GroupCommonFactory
 
 export class CompositeGroup
             extends Object

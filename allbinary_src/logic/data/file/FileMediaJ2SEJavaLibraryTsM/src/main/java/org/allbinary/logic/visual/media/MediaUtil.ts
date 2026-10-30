@@ -64,9 +64,9 @@ type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageIOUtil } from './ImageIOUtil.js';
-//not GWT import - same folder const ImageIOUtil
+//sameFolderImports - not GWT import - same folder const ImageIOUtil
 import { MediaData } from './MediaData.js';
-//not GWT import - same folder const MediaData
+//sameFolderImports - not GWT import - same folder const MediaData
 //import com.sun.imageio.plugins.common.ImageUtil;
 export class MediaUtil
             extends Object

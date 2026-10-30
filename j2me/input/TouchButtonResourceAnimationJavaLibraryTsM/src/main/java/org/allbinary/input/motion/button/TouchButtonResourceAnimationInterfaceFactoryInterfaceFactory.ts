@@ -89,25 +89,25 @@ import { ImageCompleteUtil } from '../../../../../org/allbinary/media/image/Imag
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonBlankResource } from './TouchButtonBlankResource.js';
-//not GWT import - same folder const TouchButtonBlankResource
+//sameFolderImports - not GWT import - same folder const TouchButtonBlankResource
 import { TouchButtonResource } from './TouchButtonResource.js';
-//not GWT import - same folder const TouchButtonResource
+//sameFolderImports - not GWT import - same folder const TouchButtonResource
 import { TouchButtonGenericActionResource } from './TouchButtonGenericActionResource.js';
-//not GWT import - same folder const TouchButtonGenericActionResource
+//sameFolderImports - not GWT import - same folder const TouchButtonGenericActionResource
 import { TouchButtonStartResource } from './TouchButtonStartResource.js';
-//not GWT import - same folder const TouchButtonStartResource
+//sameFolderImports - not GWT import - same folder const TouchButtonStartResource
 import { TouchButtonUpResource } from './TouchButtonUpResource.js';
-//not GWT import - same folder const TouchButtonUpResource
+//sameFolderImports - not GWT import - same folder const TouchButtonUpResource
 import { TouchButtonDownResource } from './TouchButtonDownResource.js';
-//not GWT import - same folder const TouchButtonDownResource
+//sameFolderImports - not GWT import - same folder const TouchButtonDownResource
 import { TouchButtonTurnLeftResource } from './TouchButtonTurnLeftResource.js';
-//not GWT import - same folder const TouchButtonTurnLeftResource
+//sameFolderImports - not GWT import - same folder const TouchButtonTurnLeftResource
 import { TouchButtonTurnRightResource } from './TouchButtonTurnRightResource.js';
-//not GWT import - same folder const TouchButtonTurnRightResource
+//sameFolderImports - not GWT import - same folder const TouchButtonTurnRightResource
 import { TouchButtonStrafeLeftResource } from './TouchButtonStrafeLeftResource.js';
-//not GWT import - same folder const TouchButtonStrafeLeftResource
+//sameFolderImports - not GWT import - same folder const TouchButtonStrafeLeftResource
 import { TouchButtonStrafeRightResource } from './TouchButtonStrafeRightResource.js';
-//not GWT import - same folder const TouchButtonStrafeRightResource
+//sameFolderImports - not GWT import - same folder const TouchButtonStrafeRightResource
 
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {
         

@@ -80,7 +80,7 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TitleData } from './TitleData.js';
-//not GWT import - same folder const TitleData
+//sameFolderImports - not GWT import - same folder const TitleData
 
 export class TitleView
             extends Object

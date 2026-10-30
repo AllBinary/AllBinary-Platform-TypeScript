@@ -50,9 +50,9 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ComparableObject } from './ComparableObject.js';
-//not GWT import - same folder const ComparableObject
+//sameFolderImports - not GWT import - same folder const ComparableObject
 import { ObjectPermutationVisitor } from './ObjectPermutationVisitor.js';
-//not GWT import - same folder const ObjectPermutationVisitor
+//sameFolderImports - not GWT import - same folder const ObjectPermutationVisitor
 
 export class OrderedObjectArrayPermutationUtil
             extends Object

@@ -55,7 +55,7 @@ import { TableMappingInterface } from '../../../../../../../../org/allbinary/dat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
-//not GWT import - same folder const PaymentGatewayInterface
+//sameFolderImports - not GWT import - same folder const PaymentGatewayInterface
 
 export class PaymentGatewayMapping
             extends Object

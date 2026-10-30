@@ -65,7 +65,7 @@ import { CustomizerUtil } from '../../../../../../../../views/business/context/m
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GlobalsView } from './GlobalsView.js';
-//not GWT import - same folder const GlobalsView
+//sameFolderImports - not GWT import - same folder const GlobalsView
 
 export class NewGlobalsValidationView extends GlobalsView implements ValidationComponentInterface {
         

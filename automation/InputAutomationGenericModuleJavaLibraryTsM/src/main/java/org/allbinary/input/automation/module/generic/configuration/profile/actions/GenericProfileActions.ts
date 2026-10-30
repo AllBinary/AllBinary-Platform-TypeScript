@@ -100,13 +100,13 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileActionsJPanel } from './GenericProfileActionsJPanel.js';
-//not GWT import - same folder const GenericProfileActionsJPanel
+//sameFolderImports - not GWT import - same folder const GenericProfileActionsJPanel
 import { GenericProfileActionsData } from './GenericProfileActionsData.js';
-//not GWT import - same folder const GenericProfileActionsData
+//sameFolderImports - not GWT import - same folder const GenericProfileActionsData
 import { GenericProfileActionData } from './GenericProfileActionData.js';
-//not GWT import - same folder const GenericProfileActionData
+//sameFolderImports - not GWT import - same folder const GenericProfileActionData
 import { GenericProfileAction } from './GenericProfileAction.js';
-//not GWT import - same folder const GenericProfileAction
+//sameFolderImports - not GWT import - same folder const GenericProfileAction
 
 export class GenericProfileActions
             extends Object

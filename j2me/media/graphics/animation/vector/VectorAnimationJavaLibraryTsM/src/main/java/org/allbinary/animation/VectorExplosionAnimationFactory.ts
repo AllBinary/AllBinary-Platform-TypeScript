@@ -47,17 +47,17 @@ import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicCo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface
 import { VectorExplosionGenerator } from './VectorExplosionGenerator.js';
-//not GWT import - same folder const VectorExplosionGenerator
+//sameFolderImports - not GWT import - same folder const VectorExplosionGenerator
 import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
-//not GWT import - same folder const AnimationBehaviorFactory
+//sameFolderImports - not GWT import - same folder const AnimationBehaviorFactory
 import { VectorAnimationInterface } from './VectorAnimationInterface.js';
-//not GWT import - same folder const VectorAnimationInterface
+//sameFolderImports - not GWT import - same folder const VectorAnimationInterface
 import { VectorRotationAnimation } from './VectorRotationAnimation.js';
-//not GWT import - same folder const VectorRotationAnimation
+//sameFolderImports - not GWT import - same folder const VectorRotationAnimation
 import { Animation } from './Animation.js';
-//not GWT import - same folder const Animation
+//sameFolderImports - not GWT import - same folder const Animation
 
 export class VectorExplosionAnimationFactory
             extends Object

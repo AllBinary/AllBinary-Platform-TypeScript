@@ -48,11 +48,11 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresFactoryInterface } from './HighScoresFactoryInterface.js';
-//not GWT import - same folder const HighScoresFactoryInterface
+//sameFolderImports - not GWT import - same folder const HighScoresFactoryInterface
 import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-//not GWT import - same folder const HighScoresResultsListener
+//sameFolderImports - not GWT import - same folder const HighScoresResultsListener
 import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
-//not GWT import - same folder const HighScoresHelperBaseInterface
+//sameFolderImports - not GWT import - same folder const HighScoresHelperBaseInterface
 
 export class HighScoresBase
             extends Object

@@ -47,7 +47,7 @@ type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LongData } from './LongData.js';
-//not GWT import - same folder const LongData
+//sameFolderImports - not GWT import - same folder const LongData
 
 export class LongUtil
             extends Object

@@ -66,9 +66,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingMethodsInterface } from './ShippingMethodsInterface.js';
-//not GWT import - same folder const ShippingMethodsInterface
+//sameFolderImports - not GWT import - same folder const ShippingMethodsInterface
 import { ShippingMethodsFactory } from './ShippingMethodsFactory.js';
-//not GWT import - same folder const ShippingMethodsFactory
+//sameFolderImports - not GWT import - same folder const ShippingMethodsFactory
 
 export class ShippingMethods
             extends Object

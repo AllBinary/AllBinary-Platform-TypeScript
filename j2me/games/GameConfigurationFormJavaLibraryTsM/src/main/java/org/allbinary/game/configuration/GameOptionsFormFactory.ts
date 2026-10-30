@@ -58,7 +58,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameOptionsForm } from './GameOptionsForm.js';
-//not GWT import - same folder const GameOptionsForm
+//sameFolderImports - not GWT import - same folder const GameOptionsForm
 
 export class GameOptionsFormFactory
             extends Object

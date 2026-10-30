@@ -43,11 +43,11 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { J2MEGameKey } from './J2MEGameKey.js';
-//not GWT import - same folder const J2MEGameKey
+//sameFolderImports - not GWT import - same folder const J2MEGameKey
 import { J2MEKeyFactory } from './J2MEKeyFactory.js';
-//not GWT import - same folder const J2MEKeyFactory
+//sameFolderImports - not GWT import - same folder const J2MEKeyFactory
 import { Input } from './Input.js';
-//not GWT import - same folder const Input
+//sameFolderImports - not GWT import - same folder const Input
 
 export class PlatformKeyFactory
             extends Object

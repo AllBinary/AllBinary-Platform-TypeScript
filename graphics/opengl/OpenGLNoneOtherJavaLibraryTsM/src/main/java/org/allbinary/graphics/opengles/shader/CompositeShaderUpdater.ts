@@ -55,7 +55,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderUpdater } from './ShaderUpdater.js';
-//not GWT import - same folder const ShaderUpdater
+//sameFolderImports - not GWT import - same folder const ShaderUpdater
 
 export class CompositeShaderUpdater extends ShaderUpdater {
         

@@ -44,11 +44,11 @@ import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileOutputStream } from './AbFileOutputStream.js';
-//not GWT import - same folder const AbFileOutputStream
+//sameFolderImports - not GWT import - same folder const AbFileOutputStream
 import { AbDataOutputStream } from './AbDataOutputStream.js';
-//not GWT import - same folder const AbDataOutputStream
+//sameFolderImports - not GWT import - same folder const AbDataOutputStream
 import { FileStreamFactory } from './FileStreamFactory.js';
-//not GWT import - same folder const FileStreamFactory
+//sameFolderImports - not GWT import - same folder const FileStreamFactory
 
 export class DataOutputStreamFactory
             extends Object

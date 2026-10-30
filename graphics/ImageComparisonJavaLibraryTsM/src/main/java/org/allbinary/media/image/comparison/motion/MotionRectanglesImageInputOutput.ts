@@ -105,23 +105,23 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllMotionRectanglesResultsCacheSingleton } from './AllMotionRectanglesResultsCacheSingleton.js';
-//not GWT import - same folder const AllMotionRectanglesResultsCacheSingleton
+//sameFolderImports - not GWT import - same folder const AllMotionRectanglesResultsCacheSingleton
 import { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
-//not GWT import - same folder const MotionRectanglesResultsFrameCacheable
+//sameFolderImports - not GWT import - same folder const MotionRectanglesResultsFrameCacheable
 import { MotionRectangles } from './MotionRectangles.js';
-//not GWT import - same folder const MotionRectangles
+//sameFolderImports - not GWT import - same folder const MotionRectangles
 import { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
-//not GWT import - same folder const ConsolidatedMotionRectanglesResultsCacheSingleton
+//sameFolderImports - not GWT import - same folder const ConsolidatedMotionRectanglesResultsCacheSingleton
 import { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
-//not GWT import - same folder const ConstrainedMotionRectanglesResultsCacheSingleton
+//sameFolderImports - not GWT import - same folder const ConstrainedMotionRectanglesResultsCacheSingleton
 import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics
+//sameFolderImports - not GWT import - same folder const Graphics
 import { MotionRectangle } from './MotionRectangle.js';
-//not GWT import - same folder const MotionRectangle
+//sameFolderImports - not GWT import - same folder const MotionRectangle
 import { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangle
+//sameFolderImports - not GWT import - same folder const Rectangle
 import { Color } from './Color.js';
-//not GWT import - same folder const Color
+//sameFolderImports - not GWT import - same folder const Color
 
 export class MotionRectanglesImageInputOutput
             extends Object

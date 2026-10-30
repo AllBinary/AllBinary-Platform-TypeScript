@@ -85,7 +85,7 @@ import { AbeClientInformationInterface } from '../../../../../../../org/allbinar
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventHandler } from './UserEmailEventHandler.js';
-//not GWT import - same folder const UserEmailEventHandler
+//sameFolderImports - not GWT import - same folder const UserEmailEventHandler
 
 export class EmailEventHandlerUtil
             extends Object

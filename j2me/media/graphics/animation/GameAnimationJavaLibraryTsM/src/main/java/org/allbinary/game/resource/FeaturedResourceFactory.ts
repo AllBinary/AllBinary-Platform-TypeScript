@@ -82,7 +82,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ResourceLoadingLevelFactory } from './ResourceLoadingLevelFactory.js';
-//not GWT import - same folder const ResourceLoadingLevelFactory
+//sameFolderImports - not GWT import - same folder const ResourceLoadingLevelFactory
 
 export class FeaturedResourceFactory
             extends Object

@@ -41,7 +41,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
-//not GWT import - same folder const TransformInfoObjectConfigGenerator
+//sameFolderImports - not GWT import - same folder const TransformInfoObjectConfigGenerator
 
 export class BasicGenerator extends TransformInfoObjectConfigGenerator {
         

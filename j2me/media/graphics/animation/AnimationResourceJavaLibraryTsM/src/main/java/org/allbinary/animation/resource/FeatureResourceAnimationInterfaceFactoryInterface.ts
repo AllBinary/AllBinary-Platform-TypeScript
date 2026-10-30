@@ -47,7 +47,7 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ResourceAnimationInterfaceFactoryInterface } from './ResourceAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const ResourceAnimationInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const ResourceAnimationInterfaceFactoryInterface
 
 export interface FeatureResourceAnimationInterfaceFactoryInterface extends ResourceAnimationInterfaceFactoryInterface, RectangleResourceFactoryInterface, GameFeatureControlledInterface {
         

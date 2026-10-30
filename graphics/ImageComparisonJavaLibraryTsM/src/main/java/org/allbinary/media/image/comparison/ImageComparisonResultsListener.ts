@@ -40,7 +40,7 @@ import { BasicEventListenerInterface } from '../../../../../org/allbinary/logic/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';
-//not GWT import - same folder const ImageComparisonResultsEvent
+//sameFolderImports - not GWT import - same folder const ImageComparisonResultsEvent
 
 export interface ImageComparisonResultsListener extends BasicEventListenerInterface {
         

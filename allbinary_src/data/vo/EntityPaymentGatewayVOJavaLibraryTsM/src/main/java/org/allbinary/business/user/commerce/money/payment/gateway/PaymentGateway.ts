@@ -75,11 +75,11 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
-//not GWT import - same folder const PaymentGatewayInterface
+//sameFolderImports - not GWT import - same folder const PaymentGatewayInterface
 import { PaymentGatewayData } from './PaymentGatewayData.js';
-//not GWT import - same folder const PaymentGatewayData
+//sameFolderImports - not GWT import - same folder const PaymentGatewayData
 import { PaymentGatewayPrimaryKey } from './PaymentGatewayPrimaryKey.js';
-//not GWT import - same folder const PaymentGatewayPrimaryKey
+//sameFolderImports - not GWT import - same folder const PaymentGatewayPrimaryKey
 
 export class PaymentGateway
             extends Object

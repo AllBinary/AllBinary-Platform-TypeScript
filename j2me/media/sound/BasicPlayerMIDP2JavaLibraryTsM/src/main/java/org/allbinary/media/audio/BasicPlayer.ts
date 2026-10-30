@@ -67,11 +67,11 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeBaseInterface } from './TimeBaseInterface.js';
-//not GWT import - same folder const TimeBaseInterface
+//sameFolderImports - not GWT import - same folder const TimeBaseInterface
 import { Controllable2 } from './Controllable2.js';
-//not GWT import - same folder const Controllable2
+//sameFolderImports - not GWT import - same folder const Controllable2
 import { NullControl } from './NullControl.js';
-//not GWT import - same folder const NullControl
+//sameFolderImports - not GWT import - same folder const NullControl
 //BasicPlayerMIDP2JavaLibrary
 export class BasicPlayer
             extends Object

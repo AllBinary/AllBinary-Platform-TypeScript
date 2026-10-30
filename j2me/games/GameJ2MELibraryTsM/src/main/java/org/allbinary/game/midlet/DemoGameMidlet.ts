@@ -68,11 +68,11 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameMidlet } from './GameMidlet.js';
-//not GWT import - same folder const GameMidlet
+//sameFolderImports - not GWT import - same folder const GameMidlet
 import { DemoRunnable } from './DemoRunnable.js';
-//not GWT import - same folder const DemoRunnable
+//sameFolderImports - not GWT import - same folder const DemoRunnable
 import { CreateGameRunnable } from './CreateGameRunnable.js';
-//not GWT import - same folder const CreateGameRunnable
+//sameFolderImports - not GWT import - same folder const CreateGameRunnable
 
 export class DemoGameMidlet extends GameMidlet {
         

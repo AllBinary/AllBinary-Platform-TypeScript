@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewPosition } from './ViewPosition.js';
-//not GWT import - same folder const ViewPosition
+//sameFolderImports - not GWT import - same folder const ViewPosition
 
 export class StaticViewPosition extends ViewPosition {
         

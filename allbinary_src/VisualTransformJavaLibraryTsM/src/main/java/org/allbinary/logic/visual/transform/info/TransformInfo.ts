@@ -148,9 +148,9 @@ import { Document } from '../../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import - same folder const TransformInfoInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoInterface
 import { TransformInfoData } from './TransformInfoData.js';
-//not GWT import - same folder const TransformInfoData
+//sameFolderImports - not GWT import - same folder const TransformInfoData
 
 export class TransformInfo
             extends Object
@@ -963,7 +963,7 @@ hashMap!.put(transformInfoData!.OBJECT, this.anyType);
     
 hashMap!.put(transformInfoData!.OBJECTCONFIGFILENAME, this.getObjectConfigFile());
     
-hashMap!.put(transformInfoData!.OBJECTCONFIG, Encoder.encode(this.getObjectConfigInterface()!.toString()!.getBytes()));
+hashMap!.put(transformInfoData!.OBJECTCONFIG, Encoder.encode(Array.from(new TextEncoder().encode(this.getObjectConfigInterface()!.toString()!), byte => (byte << 24) >> 24)));
     
 hashMap!.put(transformInfoData!.TEMPLATEFILENAME, this.templateFileName);
     
@@ -971,7 +971,7 @@ hashMap!.put(transformInfoData!.TEMPLATE, this.template);
     
 hashMap!.put(transformInfoData!.DATAFILENAME, this.dataFileName);
     
-hashMap!.put(transformInfoData!.DATA, Encoder.encode(this.data.getBytes()));
+hashMap!.put(transformInfoData!.DATA, Encoder.encode(Array.from(new TextEncoder().encode(this.data), byte => (byte << 24) >> 24)));
     
 
     let calendar: Calendar = Calendar.getInstance()!;;
@@ -1004,7 +1004,7 @@ vector.add(this.anyType);
     
 vector.add(this.getObjectConfigFile());
     
-vector.add(Encoder.encode(this.getObjectConfigInterface()!.toString()!.getBytes()));
+vector.add(Encoder.encode(Array.from(new TextEncoder().encode(this.getObjectConfigInterface()!.toString()!), byte => (byte << 24) >> 24)));
     
 vector.add(this.templateFileName);
     
@@ -1012,7 +1012,7 @@ vector.add(this.template);
     
 vector.add(this.dataFileName);
     
-vector.add(Encoder.encode(this.data.getBytes()));
+vector.add(Encoder.encode(Array.from(new TextEncoder().encode(this.data), byte => (byte << 24) >> 24)));
     
 
     let calendar: Calendar = Calendar.getInstance()!;;

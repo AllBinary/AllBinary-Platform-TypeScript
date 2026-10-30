@@ -77,11 +77,11 @@ import { BouncyCastleProvider } from '../../../../../../../org/bouncycastle/jce/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseSecretComposite } from './BaseSecretComposite.js';
-//not GWT import - same folder const BaseSecretComposite
+//sameFolderImports - not GWT import - same folder const BaseSecretComposite
 import { KeySpecFactory } from './KeySpecFactory.js';
-//not GWT import - same folder const KeySpecFactory
+//sameFolderImports - not GWT import - same folder const KeySpecFactory
 import { SecretComposite } from './SecretComposite.js';
-//not GWT import - same folder const SecretComposite
+//sameFolderImports - not GWT import - same folder const SecretComposite
 
 export class AbCrypt
             extends Object

@@ -50,7 +50,7 @@ import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayRotationAnimationCacheable } from './ImageArrayRotationAnimationCacheable.js';
-//not GWT import - same folder const ImageArrayRotationAnimationCacheable
+//sameFolderImports - not GWT import - same folder const ImageArrayRotationAnimationCacheable
 
 export class ImageArrayRotationAnimationCacheableInterfaceFactory
             extends Object

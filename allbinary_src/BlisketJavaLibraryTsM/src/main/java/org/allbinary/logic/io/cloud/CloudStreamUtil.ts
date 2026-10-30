@@ -51,9 +51,9 @@ import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileInputStream } from './AbFileInputStream.js';
-//not GWT import - same folder const AbFileInputStream
+//sameFolderImports - not GWT import - same folder const AbFileInputStream
 import { AbFileLocalInputStream } from './AbFileLocalInputStream.js';
-//not GWT import - same folder const AbFileLocalInputStream
+//sameFolderImports - not GWT import - same folder const AbFileLocalInputStream
 
 export class CloudStreamUtil
             extends Object

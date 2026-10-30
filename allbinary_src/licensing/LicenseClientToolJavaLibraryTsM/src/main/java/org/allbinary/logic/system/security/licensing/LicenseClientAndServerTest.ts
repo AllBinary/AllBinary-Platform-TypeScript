@@ -74,15 +74,15 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicArrayListD } from './BasicArrayListD.js';
-//not GWT import - same folder const BasicArrayListD
+//sameFolderImports - not GWT import - same folder const BasicArrayListD
 import { PrintLicenseInitInfo } from './PrintLicenseInitInfo.js';
-//not GWT import - same folder const PrintLicenseInitInfo
+//sameFolderImports - not GWT import - same folder const PrintLicenseInitInfo
 import { AbeClientInformationInterfaceFactory } from './AbeClientInformationInterfaceFactory.js';
-//not GWT import - same folder const AbeClientInformationInterfaceFactory
+//sameFolderImports - not GWT import - same folder const AbeClientInformationInterfaceFactory
 import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
-//not GWT import - same folder const AbeClientInformationInterface
+//sameFolderImports - not GWT import - same folder const AbeClientInformationInterface
 import { AbeLicenseInterface } from './AbeLicenseInterface.js';
-//not GWT import - same folder const AbeLicenseInterface
+//sameFolderImports - not GWT import - same folder const AbeLicenseInterface
 
 export class LicenseClientAndServerTest
             extends Object

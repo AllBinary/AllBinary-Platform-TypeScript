@@ -54,11 +54,11 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABCustomForm } from './ABCustomForm.js';
-//not GWT import - same folder const ABCustomForm
+//sameFolderImports - not GWT import - same folder const ABCustomForm
 import { FormTypeFactory } from './FormTypeFactory.js';
-//not GWT import - same folder const FormTypeFactory
+//sameFolderImports - not GWT import - same folder const FormTypeFactory
 import { FormType } from './FormType.js';
-//not GWT import - same folder const FormType
+//sameFolderImports - not GWT import - same folder const FormType
 
 export class PaintableForm extends ABCustomForm {
         

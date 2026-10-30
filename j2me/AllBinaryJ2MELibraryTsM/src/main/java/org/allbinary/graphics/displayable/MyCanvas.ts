@@ -90,11 +90,11 @@ type ABStack<T = any, U = any> = typeof ABStack extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DisplayableInterface } from './DisplayableInterface.js';
-//not GWT import - same folder const DisplayableInterface
+//sameFolderImports - not GWT import - same folder const DisplayableInterface
 import { CanvasStrings } from './CanvasStrings.js';
-//not GWT import - same folder const CanvasStrings
+//sameFolderImports - not GWT import - same folder const CanvasStrings
 import { DisplayInfoSingleton } from './DisplayInfoSingleton.js';
-//not GWT import - same folder const DisplayInfoSingleton
+//sameFolderImports - not GWT import - same folder const DisplayInfoSingleton
 
 export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandInterface {
         

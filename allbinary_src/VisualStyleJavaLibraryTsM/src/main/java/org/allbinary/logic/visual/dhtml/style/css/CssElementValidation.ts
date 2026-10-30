@@ -56,7 +56,7 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssElementView } from './CssElementView.js';
-//not GWT import - same folder const CssElementView
+//sameFolderImports - not GWT import - same folder const CssElementView
 
 export class CssElementValidation extends CssElementView implements ValidationInterface {
         

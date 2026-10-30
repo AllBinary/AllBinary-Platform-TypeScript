@@ -39,8 +39,9 @@ import { OutputStream } from '../../../../../java/io/OutputStream.js';
 import { Reader } from '../../../../../java/io/Reader.js';
 //not GWT import const Reader
 
-import { Writer } from '../../../../../java/io/Writer.js';
-//not GWT import const Writer
+//not plain js import { Writer } 
+const Writer = globalThis.java.io.Writer;
+type Writer<T = any, U = any> = typeof Writer extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Writer;
 
 import { CharBuffer } from '../../../../../java/nio/CharBuffer.js';
 //not GWT import const CharBuffer

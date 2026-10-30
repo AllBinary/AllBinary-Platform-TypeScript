@@ -65,13 +65,13 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidlet } from './DemoGameMidlet.js';
-//not GWT import - same folder const DemoGameMidlet
+//sameFolderImports - not GWT import - same folder const DemoGameMidlet
 import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
-//not GWT import - same folder const DemoGameMidletEvent
+//sameFolderImports - not GWT import - same folder const DemoGameMidletEvent
 import { DemoGameMidletStateFactory } from './DemoGameMidletStateFactory.js';
-//not GWT import - same folder const DemoGameMidletStateFactory
+//sameFolderImports - not GWT import - same folder const DemoGameMidletStateFactory
 import { DemoGameMidletEventHandler } from './DemoGameMidletEventHandler.js';
-//not GWT import - same folder const DemoGameMidletEventHandler
+//sameFolderImports - not GWT import - same folder const DemoGameMidletEventHandler
 
 export class DemoRunnable
             extends Object

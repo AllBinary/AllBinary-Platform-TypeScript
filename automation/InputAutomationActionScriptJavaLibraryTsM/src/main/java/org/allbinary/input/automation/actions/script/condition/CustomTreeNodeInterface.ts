@@ -43,7 +43,7 @@ import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPopupMenu } from './JPopupMenu.js';
-//not GWT import - same folder const JPopupMenu
+//sameFolderImports - not GWT import - same folder const JPopupMenu
 
 export interface CustomTreeNodeInterface extends MutableTreeNode {
         

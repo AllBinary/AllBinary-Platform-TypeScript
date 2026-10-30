@@ -40,9 +40,9 @@ import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCGameInputMapping } from './PCGameInputMapping.js';
-//not GWT import - same folder const PCGameInputMapping
+//sameFolderImports - not GWT import - same folder const PCGameInputMapping
 import { LaptopDefaultGameInputMapping } from './LaptopDefaultGameInputMapping.js';
-//not GWT import - same folder const LaptopDefaultGameInputMapping
+//sameFolderImports - not GWT import - same folder const LaptopDefaultGameInputMapping
 
 export class LaptopGameInputMapping extends PCGameInputMapping {
         

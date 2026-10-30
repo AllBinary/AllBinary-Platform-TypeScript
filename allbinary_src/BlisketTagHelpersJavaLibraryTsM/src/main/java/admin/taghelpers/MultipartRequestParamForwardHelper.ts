@@ -83,7 +83,7 @@ import { HelperTag } from '../../tags/HelperTag.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryItemViewParentTagHelper } from './InventoryItemViewParentTagHelper.js';
-//not GWT import - same folder const InventoryItemViewParentTagHelper
+//sameFolderImports - not GWT import - same folder const InventoryItemViewParentTagHelper
 
 export class MultipartRequestParamForwardHelper
             extends Object

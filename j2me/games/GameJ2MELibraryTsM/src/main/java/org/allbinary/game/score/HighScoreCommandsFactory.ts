@@ -40,9 +40,9 @@ import { Command } from '../../../../javax/microedition/lcdui/Command.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoreCommandsBaseFactory } from './HighScoreCommandsBaseFactory.js';
-//not GWT import - same folder const HighScoreCommandsBaseFactory
+//sameFolderImports - not GWT import - same folder const HighScoreCommandsBaseFactory
 import { HighScoreCommands } from './HighScoreCommands.js';
-//not GWT import - same folder const HighScoreCommands
+//sameFolderImports - not GWT import - same folder const HighScoreCommands
 
 export class HighScoreCommandsFactory extends HighScoreCommandsBaseFactory {
         

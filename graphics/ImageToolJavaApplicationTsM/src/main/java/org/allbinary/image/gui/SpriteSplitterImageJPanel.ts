@@ -97,29 +97,29 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { JCheckBox } from './JCheckBox.js';
-//not GWT import - same folder const JCheckBox
+//sameFolderImports - not GWT import - same folder const JCheckBox
 import { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextField
+//sameFolderImports - not GWT import - same folder const JTextField
 import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel
+//sameFolderImports - not GWT import - same folder const JLabel
 import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics
+//sameFolderImports - not GWT import - same folder const Graphics
 import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton
+//sameFolderImports - not GWT import - same folder const JButton
 import { JComboBox } from './JComboBox.js';
-//not GWT import - same folder const JComboBox
+//sameFolderImports - not GWT import - same folder const JComboBox
 import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-//not GWT import - same folder const DefaultComboBoxModel
+//sameFolderImports - not GWT import - same folder const DefaultComboBoxModel
 import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener
+//sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent
+//sameFolderImports - not GWT import - same folder const ActionEvent
 import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout
+//sameFolderImports - not GWT import - same folder const GroupLayout
 import { Short } from './Short.js';
-//not GWT import - same folder const Short
+//sameFolderImports - not GWT import - same folder const Short
 
 export class SpriteSplitterImageJPanel extends javax.swing.JPanel implements ImageProcessedVisitor {
         

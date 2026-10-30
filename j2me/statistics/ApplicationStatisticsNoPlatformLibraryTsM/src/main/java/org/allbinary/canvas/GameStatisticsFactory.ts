@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseGameStatistics } from './BaseGameStatistics.js';
-//not GWT import - same folder const BaseGameStatistics
+//sameFolderImports - not GWT import - same folder const BaseGameStatistics
 //NoPlatform
 expect export class GameStatisticsFactory extends BaseGameStatistics {
         

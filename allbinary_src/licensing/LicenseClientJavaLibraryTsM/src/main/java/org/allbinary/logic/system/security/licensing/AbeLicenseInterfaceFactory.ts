@@ -58,15 +58,15 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeLicenseInterface } from './AbeLicenseInterface.js';
-//not GWT import - same folder const AbeLicenseInterface
+//sameFolderImports - not GWT import - same folder const AbeLicenseInterface
 import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
-//not GWT import - same folder const AbeClientInformationInterface
+//sameFolderImports - not GWT import - same folder const AbeClientInformationInterface
 import { AbeNoLicense } from './AbeNoLicense.js';
-//not GWT import - same folder const AbeNoLicense
+//sameFolderImports - not GWT import - same folder const AbeNoLicense
 import { AbeClientInformationData } from './AbeClientInformationData.js';
-//not GWT import - same folder const AbeClientInformationData
+//sameFolderImports - not GWT import - same folder const AbeClientInformationData
 import { LicensingException } from './LicensingException.js';
-//not GWT import - same folder const LicensingException
+//sameFolderImports - not GWT import - same folder const LicensingException
 
 export class AbeLicenseInterfaceFactory
             extends Object

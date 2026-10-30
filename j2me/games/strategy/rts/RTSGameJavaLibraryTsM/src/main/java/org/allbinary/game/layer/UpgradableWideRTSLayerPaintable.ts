@@ -52,11 +52,11 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayerCompositePaintable } from './RTSLayerCompositePaintable.js';
-//not GWT import - same folder const RTSLayerCompositePaintable
+//sameFolderImports - not GWT import - same folder const RTSLayerCompositePaintable
 import { UpgradableRTSLayerHudPaintable } from './UpgradableRTSLayerHudPaintable.js';
-//not GWT import - same folder const UpgradableRTSLayerHudPaintable
+//sameFolderImports - not GWT import - same folder const UpgradableRTSLayerHudPaintable
 import { RTSLayer } from './RTSLayer.js';
-//not GWT import - same folder const RTSLayer
+//sameFolderImports - not GWT import - same folder const RTSLayer
 
 export class UpgradableWideRTSLayerPaintable extends RTSLayerCompositePaintable {
         

@@ -48,11 +48,11 @@ import { OperatingSystemFactory } from '../../../../org/allbinary/logic/system/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorFillPaintable } from './ColorFillPaintable.js';
-//not GWT import - same folder const ColorFillPaintable
+//sameFolderImports - not GWT import - same folder const ColorFillPaintable
 import { OverScanColorFillPaintable } from './OverScanColorFillPaintable.js';
-//not GWT import - same folder const OverScanColorFillPaintable
+//sameFolderImports - not GWT import - same folder const OverScanColorFillPaintable
 import { ColorFillBasePaintable } from './ColorFillBasePaintable.js';
-//not GWT import - same folder const ColorFillBasePaintable
+//sameFolderImports - not GWT import - same folder const ColorFillBasePaintable
 
 export class ColorFillPaintableFactory
             extends Object

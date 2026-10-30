@@ -49,11 +49,11 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MultiPlayerGameLayerInterface } from './MultiPlayerGameLayerInterface.js';
-//not GWT import - same folder const MultiPlayerGameLayerInterface
+//sameFolderImports - not GWT import - same folder const MultiPlayerGameLayerInterface
 import { RemoteInfo } from './RemoteInfo.js';
-//not GWT import - same folder const RemoteInfo
+//sameFolderImports - not GWT import - same folder const RemoteInfo
 import { MultiplayerBehavior } from './MultiplayerBehavior.js';
-//not GWT import - same folder const MultiplayerBehavior
+//sameFolderImports - not GWT import - same folder const MultiplayerBehavior
 
 export class MultiPlayerGameLayer extends CollidableDestroyableDamageableLayer implements MultiPlayerGameLayerInterface {
         

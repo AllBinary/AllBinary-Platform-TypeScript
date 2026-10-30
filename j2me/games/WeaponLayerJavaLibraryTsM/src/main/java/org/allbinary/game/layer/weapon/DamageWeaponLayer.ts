@@ -54,9 +54,9 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WeaponLayer } from './WeaponLayer.js';
-//not GWT import - same folder const WeaponLayer
+//sameFolderImports - not GWT import - same folder const WeaponLayer
 import { CollidableDamageWeaponBehavior } from './CollidableDamageWeaponBehavior.js';
-//not GWT import - same folder const CollidableDamageWeaponBehavior
+//sameFolderImports - not GWT import - same folder const CollidableDamageWeaponBehavior
 
 export class DamageWeaponLayer extends WeaponLayer {
         

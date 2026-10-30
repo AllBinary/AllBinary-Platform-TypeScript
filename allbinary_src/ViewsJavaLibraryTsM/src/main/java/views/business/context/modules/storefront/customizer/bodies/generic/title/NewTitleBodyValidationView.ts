@@ -68,7 +68,7 @@ import { CustomizerUtil } from '../../../../../../../../../views/business/contex
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TitleBodyCustomizerView } from './TitleBodyCustomizerView.js';
-//not GWT import - same folder const TitleBodyCustomizerView
+//sameFolderImports - not GWT import - same folder const TitleBodyCustomizerView
 
 export class NewTitleBodyValidationView extends TitleBodyCustomizerView implements ValidationComponentInterface {
         

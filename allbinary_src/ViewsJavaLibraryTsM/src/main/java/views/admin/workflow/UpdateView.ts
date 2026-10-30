@@ -59,7 +59,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowView } from './WorkFlowView.js';
-//not GWT import - same folder const WorkFlowView
+//sameFolderImports - not GWT import - same folder const WorkFlowView
 
 export class UpdateView extends WorkFlowView implements ValidationComponentInterface {
         

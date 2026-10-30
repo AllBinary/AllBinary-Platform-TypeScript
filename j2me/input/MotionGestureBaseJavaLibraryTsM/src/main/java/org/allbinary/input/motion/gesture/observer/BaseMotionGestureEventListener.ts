@@ -40,7 +40,7 @@ import { EventListenerInterface } from '../../../../../../org/allbinary/logic/ut
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionGestureEvent } from './MotionGestureEvent.js';
-//not GWT import - same folder const MotionGestureEvent
+//sameFolderImports - not GWT import - same folder const MotionGestureEvent
 
 export interface BaseMotionGestureEventListener extends EventListenerInterface {
         

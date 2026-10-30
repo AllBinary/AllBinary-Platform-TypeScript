@@ -59,9 +59,9 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicStoreFront } from './BasicStoreFront.js';
-//not GWT import - same folder const BasicStoreFront
+//sameFolderImports - not GWT import - same folder const BasicStoreFront
 import { BasicStoreFrontInterface } from './BasicStoreFrontInterface.js';
-//not GWT import - same folder const BasicStoreFrontInterface
+//sameFolderImports - not GWT import - same folder const BasicStoreFrontInterface
 
 export class BasicStoreFrontsEntity extends InitSql {
         

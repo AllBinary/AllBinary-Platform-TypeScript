@@ -58,17 +58,17 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionToolFactory } from './SelectionToolFactory.js';
-//not GWT import - same folder const SelectionToolFactory
+//sameFolderImports - not GWT import - same folder const SelectionToolFactory
 import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
-//not GWT import - same folder const GraphicsItemInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const GraphicsItemInterfaceFactoryInterface
 import { LinesGraphicItem } from './LinesGraphicItem.js';
-//not GWT import - same folder const LinesGraphicItem
+//sameFolderImports - not GWT import - same folder const LinesGraphicItem
 import { LinesGraphicItemFactory } from './LinesGraphicItemFactory.js';
-//not GWT import - same folder const LinesGraphicItemFactory
+//sameFolderImports - not GWT import - same folder const LinesGraphicItemFactory
 import { GraphicItemBuilder } from './GraphicItemBuilder.js';
-//not GWT import - same folder const GraphicItemBuilder
+//sameFolderImports - not GWT import - same folder const GraphicItemBuilder
 import { GraphicItemInterface } from './GraphicItemInterface.js';
-//not GWT import - same folder const GraphicItemInterface
+//sameFolderImports - not GWT import - same folder const GraphicItemInterface
 
 export class GraphicItemFactory
             extends Object

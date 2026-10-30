@@ -72,7 +72,7 @@ import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/Primitiv
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSInterface } from './RTSInterface.js';
-//not GWT import - same folder const RTSInterface
+//sameFolderImports - not GWT import - same folder const RTSInterface
 
 export class TechnologyRTSInterfaceImageItem extends ABCustomImageItem implements UpdateMyFontInterface {
         

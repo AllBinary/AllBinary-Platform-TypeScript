@@ -69,7 +69,7 @@ import { NoDecimalTrigTable } from '../../../../../org/allbinary/math/NoDecimalT
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWeaponPart } from './BasicWeaponPart.js';
-//not GWT import - same folder const BasicWeaponPart
+//sameFolderImports - not GWT import - same folder const BasicWeaponPart
 
 export class StraightMultiProjectileWeaponPart extends BasicWeaponPart {
         

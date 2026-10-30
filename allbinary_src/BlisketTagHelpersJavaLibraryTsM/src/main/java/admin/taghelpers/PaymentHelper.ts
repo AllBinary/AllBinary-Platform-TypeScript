@@ -78,7 +78,7 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Table } from './Table.js';
-//not GWT import - same folder const Table
+//sameFolderImports - not GWT import - same folder const Table
 
 export class PaymentHelper extends Table {
         

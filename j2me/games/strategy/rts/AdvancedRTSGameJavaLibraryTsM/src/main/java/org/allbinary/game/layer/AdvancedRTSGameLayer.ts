@@ -170,21 +170,21 @@ import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayer } from './RTSLayer.js';
-//not GWT import - same folder const RTSLayer
+//sameFolderImports - not GWT import - same folder const RTSLayer
 import { NullPathFindingLayer } from './NullPathFindingLayer.js';
-//not GWT import - same folder const NullPathFindingLayer
+//sameFolderImports - not GWT import - same folder const NullPathFindingLayer
 import { AdvancedRTSProperties } from './AdvancedRTSProperties.js';
-//not GWT import - same folder const AdvancedRTSProperties
+//sameFolderImports - not GWT import - same folder const AdvancedRTSProperties
 import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-//not GWT import - same folder const PathFindingLayerInterface
+//sameFolderImports - not GWT import - same folder const PathFindingLayerInterface
 import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import - same folder const WaypointBehaviorBase
+//sameFolderImports - not GWT import - same folder const WaypointBehaviorBase
 import { AdvancedRTSPlayerLayerInterface } from './AdvancedRTSPlayerLayerInterface.js';
-//not GWT import - same folder const AdvancedRTSPlayerLayerInterface
+//sameFolderImports - not GWT import - same folder const AdvancedRTSPlayerLayerInterface
 import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
-//not GWT import - same folder const RTSPlayerLayerInterface
+//sameFolderImports - not GWT import - same folder const RTSPlayerLayerInterface
 import { RTSLayerUtil } from './RTSLayerUtil.js';
-//not GWT import - same folder const RTSLayerUtil
+//sameFolderImports - not GWT import - same folder const RTSLayerUtil
 
 export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventListenerInterface {
         

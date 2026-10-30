@@ -52,7 +52,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowWrapper } from './WorkFlowWrapper.js';
-//not GWT import - same folder const WorkFlowWrapper
+//sameFolderImports - not GWT import - same folder const WorkFlowWrapper
 
 export class StoreWorkFlowWrapper extends WorkFlowWrapper {
         

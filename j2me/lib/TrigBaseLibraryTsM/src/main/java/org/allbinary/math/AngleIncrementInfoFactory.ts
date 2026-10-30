@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AngleFactory } from './AngleFactory.js';
-//not GWT import - same folder const AngleFactory
+//sameFolderImports - not GWT import - same folder const AngleFactory
 import { AngleIncrementInfo } from './AngleIncrementInfo.js';
-//not GWT import - same folder const AngleIncrementInfo
+//sameFolderImports - not GWT import - same folder const AngleIncrementInfo
 
 export class AngleIncrementInfoFactory
             extends Object

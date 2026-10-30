@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLFeature } from './OpenGLFeature.js';
-//not GWT import - same folder const OpenGLFeature
+//sameFolderImports - not GWT import - same folder const OpenGLFeature
 
 export class OpenGLFeatureFactory
             extends Object

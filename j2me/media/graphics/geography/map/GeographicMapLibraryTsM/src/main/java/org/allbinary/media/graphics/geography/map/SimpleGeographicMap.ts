@@ -56,11 +56,11 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellTypeFactory } from './GeographicMapCellTypeFactory.js';
-//not GWT import - same folder const GeographicMapCellTypeFactory
+//sameFolderImports - not GWT import - same folder const GeographicMapCellTypeFactory
 import { GeographicMapCellType } from './GeographicMapCellType.js';
-//not GWT import - same folder const GeographicMapCellType
+//sameFolderImports - not GWT import - same folder const GeographicMapCellType
 import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-//not GWT import - same folder const GeographicMapCellPosition
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPosition
 
 export class SimpleGeographicMap
             extends Object

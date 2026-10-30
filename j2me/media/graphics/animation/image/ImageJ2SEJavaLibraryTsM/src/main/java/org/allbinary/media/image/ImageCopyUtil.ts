@@ -57,9 +57,9 @@ import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImm
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtil
+//sameFolderImports - not GWT import - same folder const ImageUtil
 import { ImageCreationUtil } from './ImageCreationUtil.js';
-//not GWT import - same folder const ImageCreationUtil
+//sameFolderImports - not GWT import - same folder const ImageCreationUtil
 
 export class ImageCopyUtil
             extends Object

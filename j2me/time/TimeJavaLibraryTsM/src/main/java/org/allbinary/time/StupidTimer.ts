@@ -57,7 +57,7 @@ import { ThreadObjectUtil } from '../../../org/allbinary/thread/ThreadObjectUtil
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeDelayHelper } from './TimeDelayHelper.js';
-//not GWT import - same folder const TimeDelayHelper
+//sameFolderImports - not GWT import - same folder const TimeDelayHelper
 
 export class StupidTimer
             extends Object

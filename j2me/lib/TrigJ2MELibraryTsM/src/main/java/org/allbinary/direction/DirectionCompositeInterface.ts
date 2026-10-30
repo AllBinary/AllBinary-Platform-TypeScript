@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Direction } from './Direction.js';
-//not GWT import - same folder const Direction
+//sameFolderImports - not GWT import - same folder const Direction
 
 export interface DirectionCompositeInterface {
         

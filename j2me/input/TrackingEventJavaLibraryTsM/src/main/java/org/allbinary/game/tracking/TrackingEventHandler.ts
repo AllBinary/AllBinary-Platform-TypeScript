@@ -48,9 +48,9 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackingEventListenerInterface } from './TrackingEventListenerInterface.js';
-//not GWT import - same folder const TrackingEventListenerInterface
+//sameFolderImports - not GWT import - same folder const TrackingEventListenerInterface
 import { TrackingEvent } from './TrackingEvent.js';
-//not GWT import - same folder const TrackingEvent
+//sameFolderImports - not GWT import - same folder const TrackingEvent
 
 export class TrackingEventHandler extends BasicEventHandler {
         

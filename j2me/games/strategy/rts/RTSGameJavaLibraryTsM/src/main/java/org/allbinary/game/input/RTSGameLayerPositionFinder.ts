@@ -48,7 +48,7 @@ import { DropCellPositionHistory } from '../../../../org/allbinary/media/graphic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPositionFinderInterface } from './LayerPositionFinderInterface.js';
-//not GWT import - same folder const LayerPositionFinderInterface
+//sameFolderImports - not GWT import - same folder const LayerPositionFinderInterface
 
 export class RTSGameLayerPositionFinder
             extends Object

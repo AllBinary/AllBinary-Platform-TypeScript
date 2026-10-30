@@ -60,9 +60,9 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePatrolAI } from './BasePatrolAI.js';
-//not GWT import - same folder const BasePatrolAI
+//sameFolderImports - not GWT import - same folder const BasePatrolAI
 import { PacePatrolAI } from './PacePatrolAI.js';
-//not GWT import - same folder const PacePatrolAI
+//sameFolderImports - not GWT import - same folder const PacePatrolAI
 
 export class PacePatrolAIFactory
             extends Object

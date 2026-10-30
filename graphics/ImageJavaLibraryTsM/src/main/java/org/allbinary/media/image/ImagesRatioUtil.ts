@@ -55,11 +55,11 @@ type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtil
+//sameFolderImports - not GWT import - same folder const ImageUtil
 import { Point } from './Point.js';
-//not GWT import - same folder const Point
+//sameFolderImports - not GWT import - same folder const Point
 import { Graphics2D } from './Graphics2D.js';
-//not GWT import - same folder const Graphics2D
+//sameFolderImports - not GWT import - same folder const Graphics2D
 
 export class ImagesRatioUtil
             extends Object

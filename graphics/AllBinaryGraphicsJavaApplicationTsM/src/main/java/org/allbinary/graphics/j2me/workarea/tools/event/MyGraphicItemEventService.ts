@@ -43,13 +43,13 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventListenerList } from './EventListenerList.js';
-//not GWT import - same folder const EventListenerList
+//sameFolderImports - not GWT import - same folder const EventListenerList
 import { EventListener } from './EventListener.js';
-//not GWT import - same folder const EventListener
+//sameFolderImports - not GWT import - same folder const EventListener
 import { MyGraphicItemEventListener } from './MyGraphicItemEventListener.js';
-//not GWT import - same folder const MyGraphicItemEventListener
+//sameFolderImports - not GWT import - same folder const MyGraphicItemEventListener
 import { MyGraphicItemEvent } from './MyGraphicItemEvent.js';
-//not GWT import - same folder const MyGraphicItemEvent
+//sameFolderImports - not GWT import - same folder const MyGraphicItemEvent
 
 export class MyGraphicItemEventService
             extends Object

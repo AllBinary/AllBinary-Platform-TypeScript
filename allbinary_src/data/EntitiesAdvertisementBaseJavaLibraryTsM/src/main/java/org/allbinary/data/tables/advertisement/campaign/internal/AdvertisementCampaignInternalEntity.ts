@@ -92,7 +92,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementCampaignInternalEntityInterface } from './AdvertisementCampaignInternalEntityInterface.js';
-//not GWT import - same folder const AdvertisementCampaignInternalEntityInterface
+//sameFolderImports - not GWT import - same folder const AdvertisementCampaignInternalEntityInterface
 
 export class AdvertisementCampaignInternalEntity extends AbSqlBean implements AdvertisementCampaignInternalEntityInterface {
         

@@ -63,7 +63,7 @@ import { TimeDelayHelper } from '../../../../../../../../../org/allbinary/time/T
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { KeyboardActionScriptInputInterface } from './KeyboardActionScriptInputInterface.js';
-//not GWT import - same folder const KeyboardActionScriptInputInterface
+//sameFolderImports - not GWT import - same folder const KeyboardActionScriptInputInterface
 
 export class KeyboardInputAutomationProcessor
             extends Object

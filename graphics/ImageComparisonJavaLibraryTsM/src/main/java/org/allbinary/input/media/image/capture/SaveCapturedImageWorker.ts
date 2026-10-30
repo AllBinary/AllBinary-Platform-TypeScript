@@ -75,11 +75,11 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CapturedImageWorkerResultsListener } from './CapturedImageWorkerResultsListener.js';
-//not GWT import - same folder const CapturedImageWorkerResultsListener
+//sameFolderImports - not GWT import - same folder const CapturedImageWorkerResultsListener
 import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
-//not GWT import - same folder const CapturedImageWorkerResultsEvent
+//sameFolderImports - not GWT import - same folder const CapturedImageWorkerResultsEvent
 import { CapturedImageInputOutput } from './CapturedImageInputOutput.js';
-//not GWT import - same folder const CapturedImageInputOutput
+//sameFolderImports - not GWT import - same folder const CapturedImageInputOutput
 
 export class SaveCapturedImageWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
         

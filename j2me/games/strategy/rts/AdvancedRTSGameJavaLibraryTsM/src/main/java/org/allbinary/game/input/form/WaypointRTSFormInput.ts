@@ -155,9 +155,9 @@ import { RaceTrackGeographicMapCellTypeFactory } from '../../../../../org/allbin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSFormInput } from './RTSFormInput.js';
-//not GWT import - same folder const RTSFormInput
+//sameFolderImports - not GWT import - same folder const RTSFormInput
 import { PrimaryWaypointHelper } from './PrimaryWaypointHelper.js';
-//not GWT import - same folder const PrimaryWaypointHelper
+//sameFolderImports - not GWT import - same folder const PrimaryWaypointHelper
 
 export class WaypointRTSFormInput extends RTSFormInput {
         

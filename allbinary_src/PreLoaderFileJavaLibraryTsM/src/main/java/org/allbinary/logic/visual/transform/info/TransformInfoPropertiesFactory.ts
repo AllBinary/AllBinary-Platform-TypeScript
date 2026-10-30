@@ -67,9 +67,9 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoData } from './TransformInfoData.js';
-//not GWT import - same folder const TransformInfoData
+//sameFolderImports - not GWT import - same folder const TransformInfoData
 import { TransformInfoProperties } from './TransformInfoProperties.js';
-//not GWT import - same folder const TransformInfoProperties
+//sameFolderImports - not GWT import - same folder const TransformInfoProperties
 
 export class TransformInfoPropertiesFactory
             extends Object

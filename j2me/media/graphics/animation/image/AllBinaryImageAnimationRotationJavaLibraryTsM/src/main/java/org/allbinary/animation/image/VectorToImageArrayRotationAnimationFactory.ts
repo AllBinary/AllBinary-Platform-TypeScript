@@ -81,9 +81,9 @@ import { VectorInfo } from '../../../../org/allbinary/vector/VectorInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import - same folder const BaseImageAnimationFactory
+//sameFolderImports - not GWT import - same folder const BaseImageAnimationFactory
 import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
-//not GWT import - same folder const AdjustedImageArrayRotationAnimation
+//sameFolderImports - not GWT import - same folder const AdjustedImageArrayRotationAnimation
 
 export class VectorToImageArrayRotationAnimationFactory extends BaseImageAnimationFactory {
         

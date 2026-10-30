@@ -57,7 +57,7 @@ import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/Primitive
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageSegmentAnimation } from './ImageSegmentAnimation.js';
-//not GWT import - same folder const ImageSegmentAnimation
+//sameFolderImports - not GWT import - same folder const ImageSegmentAnimation
 
 export class BottomToTopImageAnimation extends ImageSegmentAnimation {
         

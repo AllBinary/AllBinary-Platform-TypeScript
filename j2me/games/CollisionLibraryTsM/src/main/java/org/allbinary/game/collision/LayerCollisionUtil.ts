@@ -51,11 +51,11 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollisionProcessor } from './CollisionProcessor.js';
-//not GWT import - same folder const CollisionProcessor
+//sameFolderImports - not GWT import - same folder const CollisionProcessor
 import { Collision2DProcessor } from './Collision2DProcessor.js';
-//not GWT import - same folder const Collision2DProcessor
+//sameFolderImports - not GWT import - same folder const Collision2DProcessor
 import { CollisionThreedProcessor } from './CollisionThreedProcessor.js';
-//not GWT import - same folder const CollisionThreedProcessor
+//sameFolderImports - not GWT import - same folder const CollisionThreedProcessor
 
 export class LayerCollisionUtil
             extends Object

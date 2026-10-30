@@ -53,7 +53,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompleteMotionGestureListenerInterface } from './CompleteMotionGestureListenerInterface.js';
-//not GWT import - same folder const CompleteMotionGestureListenerInterface
+//sameFolderImports - not GWT import - same folder const CompleteMotionGestureListenerInterface
 
 export class NullCompleteMotionGestureReceiver
             extends Object

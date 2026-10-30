@@ -43,7 +43,7 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import - same folder const AllBinaryLayer
+//sameFolderImports - not GWT import - same folder const AllBinaryLayer
 
 export interface LayerInterfaceFactoryInterface {
         

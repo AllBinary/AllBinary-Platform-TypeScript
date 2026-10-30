@@ -61,9 +61,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThreadObjectUtil } from './ThreadObjectUtil.js';
-//not GWT import - same folder const ThreadObjectUtil
+//sameFolderImports - not GWT import - same folder const ThreadObjectUtil
 import { ThreadPool } from './ThreadPool.js';
-//not GWT import - same folder const ThreadPool
+//sameFolderImports - not GWT import - same folder const ThreadPool
 
 export class PooledThread extends Thread {
         

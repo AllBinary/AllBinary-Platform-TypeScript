@@ -53,7 +53,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogTableEntityInterface } from './LogTableEntityInterface.js';
-//not GWT import - same folder const LogTableEntityInterface
+//sameFolderImports - not GWT import - same folder const LogTableEntityInterface
 
 export class LogTableEntity extends AbSqlBean implements LogTableEntityInterface {
         

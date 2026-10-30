@@ -67,7 +67,7 @@ import { ValidatedViewHelperFactory } from '../taghelpers/ValidatedViewHelperFac
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformTag } from './TransformTag.js';
-//not GWT import - same folder const TransformTag
+//sameFolderImports - not GWT import - same folder const TransformTag
 
 export class ValidationTransformTag extends TransformTag {
         

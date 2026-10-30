@@ -83,21 +83,21 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import - same folder const PlayerGameInput
+//sameFolderImports - not GWT import - same folder const PlayerGameInput
 import { InputFactory } from './InputFactory.js';
-//not GWT import - same folder const InputFactory
+//sameFolderImports - not GWT import - same folder const InputFactory
 import { GameInputProcessor } from './GameInputProcessor.js';
-//not GWT import - same folder const GameInputProcessor
+//sameFolderImports - not GWT import - same folder const GameInputProcessor
 import { ScrollMapUpGameInputProcessor } from './ScrollMapUpGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapUpGameInputProcessor
+//sameFolderImports - not GWT import - same folder const ScrollMapUpGameInputProcessor
 import { ScrollMapDownGameInputProcessor } from './ScrollMapDownGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapDownGameInputProcessor
+//sameFolderImports - not GWT import - same folder const ScrollMapDownGameInputProcessor
 import { ScrollMapRightGameInputProcessor } from './ScrollMapRightGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapRightGameInputProcessor
+//sameFolderImports - not GWT import - same folder const ScrollMapRightGameInputProcessor
 import { ScrollMapLeftGameInputProcessor } from './ScrollMapLeftGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapLeftGameInputProcessor
+//sameFolderImports - not GWT import - same folder const ScrollMapLeftGameInputProcessor
 import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
-//not GWT import - same folder const GameInputProcessorUtil
+//sameFolderImports - not GWT import - same folder const GameInputProcessorUtil
 
 export class ScrollMapPlayerGameInput extends PlayerGameInput {
         

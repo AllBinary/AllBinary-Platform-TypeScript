@@ -66,23 +66,23 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { GenericProfileActionScript } from './GenericProfileActionScript.js';
-//not GWT import - same folder const GenericProfileActionScript
+//sameFolderImports - not GWT import - same folder const GenericProfileActionScript
 import { JTree } from './JTree.js';
-//not GWT import - same folder const JTree
+//sameFolderImports - not GWT import - same folder const JTree
 import { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPane
+//sameFolderImports - not GWT import - same folder const JScrollPane
 import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout
+//sameFolderImports - not GWT import - same folder const GridLayout
 import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { MouseAdapter } from './MouseAdapter.js';
-//not GWT import - same folder const MouseAdapter
+//sameFolderImports - not GWT import - same folder const MouseAdapter
 import { JPopupMenu } from './JPopupMenu.js';
-//not GWT import - same folder const JPopupMenu
+//sameFolderImports - not GWT import - same folder const JPopupMenu
 import { JComponent } from './JComponent.js';
-//not GWT import - same folder const JComponent
+//sameFolderImports - not GWT import - same folder const JComponent
 
 export class GenericProfileActionScriptJPanel extends javax.swing.JPanel implements JTreeInterface {
         

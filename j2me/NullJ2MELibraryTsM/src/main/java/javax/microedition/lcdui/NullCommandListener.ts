@@ -25,11 +25,11 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandListener } from './CommandListener.js';
-//not GWT import - same folder const CommandListener
+//sameFolderImports - not GWT import - same folder const CommandListener
 import { Command } from './Command.js';
-//not GWT import - same folder const Command
+//sameFolderImports - not GWT import - same folder const Command
 import { Displayable } from './Displayable.js';
-//not GWT import - same folder const Displayable
+//sameFolderImports - not GWT import - same folder const Displayable
 
 export class NullCommandListener
             extends Object

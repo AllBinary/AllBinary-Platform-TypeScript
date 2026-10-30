@@ -80,7 +80,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackRoadsGeographicMapCellHistoryFactory } from './RaceTrackRoadsGeographicMapCellHistoryFactory.js';
-//not GWT import - same folder const RaceTrackRoadsGeographicMapCellHistoryFactory
+//sameFolderImports - not GWT import - same folder const RaceTrackRoadsGeographicMapCellHistoryFactory
 
 export class BasePathFindingInfoFactory
             extends Object

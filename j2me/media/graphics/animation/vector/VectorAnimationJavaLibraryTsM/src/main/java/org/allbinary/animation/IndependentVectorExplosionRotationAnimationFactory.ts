@@ -51,17 +51,17 @@ import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface
 import { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';
-//not GWT import - same folder const VectorAnimationFactoryInterface
+//sameFolderImports - not GWT import - same folder const VectorAnimationFactoryInterface
 import { VectorRotationGenerator } from './VectorRotationGenerator.js';
-//not GWT import - same folder const VectorRotationGenerator
+//sameFolderImports - not GWT import - same folder const VectorRotationGenerator
 import { VectorExplosionGenerator } from './VectorExplosionGenerator.js';
-//not GWT import - same folder const VectorExplosionGenerator
+//sameFolderImports - not GWT import - same folder const VectorExplosionGenerator
 import { IndexedAnimation } from './IndexedAnimation.js';
-//not GWT import - same folder const IndexedAnimation
+//sameFolderImports - not GWT import - same folder const IndexedAnimation
 import { Animation } from './Animation.js';
-//not GWT import - same folder const Animation
+//sameFolderImports - not GWT import - same folder const Animation
 
 export class IndependentVectorExplosionRotationAnimationFactory
             extends Object

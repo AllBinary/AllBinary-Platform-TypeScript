@@ -51,7 +51,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GPoint } from './GPoint.js';
-//not GWT import - same folder const GPoint
+//sameFolderImports - not GWT import - same folder const GPoint
 
 export class Rectangle
             extends Object

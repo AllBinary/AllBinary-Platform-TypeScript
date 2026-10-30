@@ -55,9 +55,9 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoShippingModule } from './NoShippingModule.js';
-//not GWT import - same folder const NoShippingModule
+//sameFolderImports - not GWT import - same folder const NoShippingModule
 import { Document } from './Document.js';
-//not GWT import - same folder const Document
+//sameFolderImports - not GWT import - same folder const Document
 
 export class NoShippingModuleView extends NoShippingModule implements DomNodeInterface {
         

@@ -70,13 +70,13 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptCondition } from './BasicProfileActionScriptCondition.js';
-//not GWT import - same folder const BasicProfileActionScriptCondition
+//sameFolderImports - not GWT import - same folder const BasicProfileActionScriptCondition
 import { AlwaysActionScriptConditionInterface } from './AlwaysActionScriptConditionInterface.js';
-//not GWT import - same folder const AlwaysActionScriptConditionInterface
+//sameFolderImports - not GWT import - same folder const AlwaysActionScriptConditionInterface
 import { AlwaysActionScriptConditionJPanel } from './AlwaysActionScriptConditionJPanel.js';
-//not GWT import - same folder const AlwaysActionScriptConditionJPanel
+//sameFolderImports - not GWT import - same folder const AlwaysActionScriptConditionJPanel
 import { AlwaysActionScriptConditionData } from './AlwaysActionScriptConditionData.js';
-//not GWT import - same folder const AlwaysActionScriptConditionData
+//sameFolderImports - not GWT import - same folder const AlwaysActionScriptConditionData
 
 export class AlwaysActionScriptCondition extends BasicProfileActionScriptCondition implements AlwaysActionScriptConditionInterface {
         

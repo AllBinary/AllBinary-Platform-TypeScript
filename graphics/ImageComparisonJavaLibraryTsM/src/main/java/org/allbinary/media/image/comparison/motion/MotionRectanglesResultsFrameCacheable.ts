@@ -48,7 +48,7 @@ import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/c
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangles } from './MotionRectangles.js';
-//not GWT import - same folder const MotionRectangles
+//sameFolderImports - not GWT import - same folder const MotionRectangles
 
 export class MotionRectanglesResultsFrameCacheable
             extends Object

@@ -80,7 +80,7 @@ import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableI
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCopyUtil } from './ImageCopyUtil.js';
-//not GWT import - same folder const ImageCopyUtil
+//sameFolderImports - not GWT import - same folder const ImageCopyUtil
 
 export class ImageModifierUtil
             extends Object

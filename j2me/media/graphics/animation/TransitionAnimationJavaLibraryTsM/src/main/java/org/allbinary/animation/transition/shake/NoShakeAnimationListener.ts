@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShakeAnimationListener } from './ShakeAnimationListener.js';
-//not GWT import - same folder const ShakeAnimationListener
+//sameFolderImports - not GWT import - same folder const ShakeAnimationListener
 
 export class NoShakeAnimationListener extends ShakeAnimationListener {
         

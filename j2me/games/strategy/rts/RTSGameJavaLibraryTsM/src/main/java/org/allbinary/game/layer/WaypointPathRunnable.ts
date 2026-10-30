@@ -52,9 +52,9 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointPathRunnableBase } from './WaypointPathRunnableBase.js';
-//not GWT import - same folder const WaypointPathRunnableBase
+//sameFolderImports - not GWT import - same folder const WaypointPathRunnableBase
 import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import - same folder const WaypointBehaviorBase
+//sameFolderImports - not GWT import - same folder const WaypointBehaviorBase
 
 export class WaypointPathRunnable extends WaypointPathRunnableBase {
         

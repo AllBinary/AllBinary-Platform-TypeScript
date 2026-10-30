@@ -51,9 +51,9 @@ import { AdvertisementSearchInterface } from '../../../../../org/allbinary/busin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementCampaignInterface } from './AdvertisementCampaignInterface.js';
-//not GWT import - same folder const AdvertisementCampaignInterface
+//sameFolderImports - not GWT import - same folder const AdvertisementCampaignInterface
 import { AdvertisementCampaignData } from './AdvertisementCampaignData.js';
-//not GWT import - same folder const AdvertisementCampaignData
+//sameFolderImports - not GWT import - same folder const AdvertisementCampaignData
 
 export class AdvertisementCampaign
             extends Object

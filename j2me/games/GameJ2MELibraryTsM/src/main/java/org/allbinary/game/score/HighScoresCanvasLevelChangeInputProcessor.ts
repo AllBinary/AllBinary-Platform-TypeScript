@@ -74,7 +74,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresCanvasInputProcessor } from './HighScoresCanvasInputProcessor.js';
-//not GWT import - same folder const HighScoresCanvasInputProcessor
+//sameFolderImports - not GWT import - same folder const HighScoresCanvasInputProcessor
 
 export class HighScoresCanvasLevelChangeInputProcessor extends HighScoresCanvasInputProcessor implements UpdateMyFontInterface {
         

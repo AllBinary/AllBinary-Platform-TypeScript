@@ -50,11 +50,11 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Animation } from './Animation.js';
-//not GWT import - same folder const Animation
+//sameFolderImports - not GWT import - same folder const Animation
 import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
-//not GWT import - same folder const IndexedAnimationInterface
+//sameFolderImports - not GWT import - same folder const IndexedAnimationInterface
 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import - same folder const AnimationBehavior
+//sameFolderImports - not GWT import - same folder const AnimationBehavior
 
 export class IndexedAnimation extends Animation implements IndexedAnimationInterface {
         

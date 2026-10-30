@@ -56,9 +56,9 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontUsersStatisticsInterface } from './StoreFrontUsersStatisticsInterface.js';
-//not GWT import - same folder const StoreFrontUsersStatisticsInterface
+//sameFolderImports - not GWT import - same folder const StoreFrontUsersStatisticsInterface
 import { StoreFrontUsersStatisticsData } from './StoreFrontUsersStatisticsData.js';
-//not GWT import - same folder const StoreFrontUsersStatisticsData
+//sameFolderImports - not GWT import - same folder const StoreFrontUsersStatisticsData
 
 export class StoreFrontUsersStatisticsView
             extends Object

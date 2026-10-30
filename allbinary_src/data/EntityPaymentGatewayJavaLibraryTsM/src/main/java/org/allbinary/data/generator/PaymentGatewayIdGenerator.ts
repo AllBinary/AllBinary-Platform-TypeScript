@@ -49,7 +49,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UniqueIdGenerator } from './UniqueIdGenerator.js';
-//not GWT import - same folder const UniqueIdGenerator
+//sameFolderImports - not GWT import - same folder const UniqueIdGenerator
 
 export class PaymentGatewayIdGenerator extends UniqueIdGenerator {
         

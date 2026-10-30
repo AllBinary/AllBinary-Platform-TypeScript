@@ -81,7 +81,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RequestData } from './RequestData.js';
-//not GWT import - same folder const RequestData
+//sameFolderImports - not GWT import - same folder const RequestData
 //Note: if request is destroyed or messed up this will not work. Use fileRequestParams
 export class RequestParams
             extends Object

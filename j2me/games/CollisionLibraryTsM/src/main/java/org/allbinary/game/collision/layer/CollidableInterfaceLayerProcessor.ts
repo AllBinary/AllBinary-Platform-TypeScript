@@ -54,9 +54,9 @@ import { LayerProcessor } from '../../../../../org/allbinary/layer/LayerProcesso
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableInterfaceLayerManager } from './CollidableInterfaceLayerManager.js';
-//not GWT import - same folder const CollidableInterfaceLayerManager
+//sameFolderImports - not GWT import - same folder const CollidableInterfaceLayerManager
 import { AllBinaryCollisionManager } from './AllBinaryCollisionManager.js';
-//not GWT import - same folder const AllBinaryCollisionManager
+//sameFolderImports - not GWT import - same folder const AllBinaryCollisionManager
 
 export class CollidableInterfaceLayerProcessor extends LayerProcessor {
         

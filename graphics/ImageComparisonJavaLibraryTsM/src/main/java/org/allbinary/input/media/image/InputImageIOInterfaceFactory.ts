@@ -53,7 +53,7 @@ import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/Im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputImageType } from './InputImageType.js';
-//not GWT import - same folder const InputImageType
+//sameFolderImports - not GWT import - same folder const InputImageType
 
 export class InputImageIOInterfaceFactory
             extends Object

@@ -97,9 +97,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UnitLayer } from './UnitLayer.js';
-//not GWT import - same folder const UnitLayer
+//sameFolderImports - not GWT import - same folder const UnitLayer
 //import { SimpleSteeringVisitor } from './SimpleSteeringVisitor.js';
-//not GWT import - same folder const SimpleSteeringVisitor
+//sameFolderImports - not GWT import - same folder const SimpleSteeringVisitor
 type SimpleSteeringVisitor = InstanceType<CollidableUnitBehavior['SimpleSteeringVisitor']>;
 
 export class CollidableUnitBehavior extends CollidableRTSBehavior {

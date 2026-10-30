@@ -40,7 +40,7 @@ import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Layer } from './Layer.js';
-//not GWT import - same folder const Layer
+//sameFolderImports - not GWT import - same folder const Layer
 
 export class NullLayer extends Layer {
         

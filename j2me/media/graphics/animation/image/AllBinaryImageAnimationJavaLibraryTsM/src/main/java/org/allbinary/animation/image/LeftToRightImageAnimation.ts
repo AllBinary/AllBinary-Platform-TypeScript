@@ -54,7 +54,7 @@ import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageSegmentAnimation } from './ImageSegmentAnimation.js';
-//not GWT import - same folder const ImageSegmentAnimation
+//sameFolderImports - not GWT import - same folder const ImageSegmentAnimation
 
 export class LeftToRightImageAnimation extends ImageSegmentAnimation {
         

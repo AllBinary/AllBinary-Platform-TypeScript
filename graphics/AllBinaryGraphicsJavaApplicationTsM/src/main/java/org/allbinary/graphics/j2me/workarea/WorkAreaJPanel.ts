@@ -111,27 +111,27 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { WorkAreaJPanelInterface } from './WorkAreaJPanelInterface.js';
-//not GWT import - same folder const WorkAreaJPanelInterface
+//sameFolderImports - not GWT import - same folder const WorkAreaJPanelInterface
 import { WorkAreaJTreeJPanel } from './WorkAreaJTreeJPanel.js';
-//not GWT import - same folder const WorkAreaJTreeJPanel
+//sameFolderImports - not GWT import - same folder const WorkAreaJTreeJPanel
 import { Component } from './Component.js';
-//not GWT import - same folder const Component
+//sameFolderImports - not GWT import - same folder const Component
 import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { WorkAreaDom } from './WorkAreaDom.js';
-//not GWT import - same folder const WorkAreaDom
+//sameFolderImports - not GWT import - same folder const WorkAreaDom
 import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout
+//sameFolderImports - not GWT import - same folder const GridLayout
 import { GridBagLayout } from './GridBagLayout.js';
-//not GWT import - same folder const GridBagLayout
+//sameFolderImports - not GWT import - same folder const GridBagLayout
 import { GridBagConstraints } from './GridBagConstraints.js';
-//not GWT import - same folder const GridBagConstraints
+//sameFolderImports - not GWT import - same folder const GridBagConstraints
 import { KeyAdapter } from './KeyAdapter.js';
-//not GWT import - same folder const KeyAdapter
+//sameFolderImports - not GWT import - same folder const KeyAdapter
 import { KeyEvent } from './KeyEvent.js';
-//not GWT import - same folder const KeyEvent
+//sameFolderImports - not GWT import - same folder const KeyEvent
 
 export class WorkAreaJPanel extends JPanel implements WorkAreaJPanelInterface, MyCanvasEventListener, EventListener, Runnable {
         

@@ -44,7 +44,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagStrings } from './TagStrings.js';
-//not GWT import - same folder const TagStrings
+//sameFolderImports - not GWT import - same folder const TagStrings
 
 export class CustomTagSupport extends TagSupport {
         

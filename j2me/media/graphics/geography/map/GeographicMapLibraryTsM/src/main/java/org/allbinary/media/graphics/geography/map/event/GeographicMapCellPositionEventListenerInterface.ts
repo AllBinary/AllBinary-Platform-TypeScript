@@ -42,7 +42,7 @@ import { EventListenerInterface } from '../../../../../../../org/allbinary/logic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionEvent } from './GeographicMapCellPositionEvent.js';
-//not GWT import - same folder const GeographicMapCellPositionEvent
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionEvent
 
 export interface GeographicMapCellPositionEventListenerInterface extends EventListenerInterface {
         

@@ -79,9 +79,9 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicItemData } from './BasicItemData.js';
-//not GWT import - same folder const BasicItemData
+//sameFolderImports - not GWT import - same folder const BasicItemData
 import { ItemInterface } from './ItemInterface.js';
-//not GWT import - same folder const ItemInterface
+//sameFolderImports - not GWT import - same folder const ItemInterface
 
 export class BasicItemView
             extends Object

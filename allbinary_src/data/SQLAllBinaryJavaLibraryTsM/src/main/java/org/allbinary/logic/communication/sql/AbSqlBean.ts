@@ -59,7 +59,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlRow } from './AbSqlRow.js';
-//not GWT import - same folder const AbSqlRow
+//sameFolderImports - not GWT import - same folder const AbSqlRow
 
 export class AbSqlBean extends AbSqlRow {
         

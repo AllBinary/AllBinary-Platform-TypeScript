@@ -96,7 +96,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePatrolAI } from './BasePatrolAI.js';
-//not GWT import - same folder const BasePatrolAI
+//sameFolderImports - not GWT import - same folder const BasePatrolAI
 
 export class PacePatrolAI extends BasePatrolAI implements TrackingEventListenerInterface {
         

@@ -45,7 +45,7 @@ import { TransformInfoInterface } from '../../../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentProcessorInterface } from './PaymentProcessorInterface.js';
-//not GWT import - same folder const PaymentProcessorInterface
+//sameFolderImports - not GWT import - same folder const PaymentProcessorInterface
 
 export interface PaymentProcessorInterfaceFactoryInterface {
         

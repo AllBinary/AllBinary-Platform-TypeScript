@@ -54,7 +54,7 @@ import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomNodeHelper } from './DomNodeHelper.js';
-//not GWT import - same folder const DomNodeHelper
+//sameFolderImports - not GWT import - same folder const DomNodeHelper
 
 export class DomNodeListHelper
             extends Object

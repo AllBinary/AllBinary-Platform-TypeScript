@@ -61,13 +61,13 @@ import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VehiclePropertiesCompositeInterface } from './VehiclePropertiesCompositeInterface.js';
-//not GWT import - same folder const VehiclePropertiesCompositeInterface
+//sameFolderImports - not GWT import - same folder const VehiclePropertiesCompositeInterface
 import { CollidableCompositeLayer } from './CollidableCompositeLayer.js';
-//not GWT import - same folder const CollidableCompositeLayer
+//sameFolderImports - not GWT import - same folder const CollidableCompositeLayer
 import { VehicleProperties } from './VehicleProperties.js';
-//not GWT import - same folder const VehicleProperties
+//sameFolderImports - not GWT import - same folder const VehicleProperties
 import { VehicleFrictionProperties } from './VehicleFrictionProperties.js';
-//not GWT import - same folder const VehicleFrictionProperties
+//sameFolderImports - not GWT import - same folder const VehicleFrictionProperties
 
 export class CollidableVehicleBehavior extends CollidableDestroyableDamageableBehavior {
         

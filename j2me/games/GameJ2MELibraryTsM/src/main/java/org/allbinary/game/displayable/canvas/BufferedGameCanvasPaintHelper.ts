@@ -67,7 +67,7 @@ type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abst
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-//not GWT import - same folder const AllBinaryGameCanvas
+//sameFolderImports - not GWT import - same folder const AllBinaryGameCanvas
 
 export class BufferedGameCanvasPaintHelper extends ProcessPaintable {
         

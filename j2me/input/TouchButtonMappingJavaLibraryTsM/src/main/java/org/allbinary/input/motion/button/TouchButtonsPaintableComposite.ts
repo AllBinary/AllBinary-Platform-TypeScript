@@ -98,7 +98,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonsMappingPaintable } from './TouchButtonsMappingPaintable.js';
-//not GWT import - same folder const TouchButtonsMappingPaintable
+//sameFolderImports - not GWT import - same folder const TouchButtonsMappingPaintable
 
 export class TouchButtonsPaintableComposite extends ProcessPaintable implements CompleteMotionGestureInputEventListenerInterface {
         

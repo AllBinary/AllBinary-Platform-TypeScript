@@ -66,7 +66,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
-//not GWT import - same folder const AbFile
+//sameFolderImports - not GWT import - same folder const AbFile
 
 export class FileListFetcher
             extends Object

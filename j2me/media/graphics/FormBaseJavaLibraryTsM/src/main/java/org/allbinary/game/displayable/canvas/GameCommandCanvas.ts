@@ -199,13 +199,13 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MenuListener } from './MenuListener.js';
-//not GWT import - same folder const MenuListener
+//sameFolderImports - not GWT import - same folder const MenuListener
 import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
-//not GWT import - same folder const NoMenuInputProcessor
+//sameFolderImports - not GWT import - same folder const NoMenuInputProcessor
 import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-//not GWT import - same folder const BasicMenuInputProcessor
+//sameFolderImports - not GWT import - same folder const BasicMenuInputProcessor
 import { ImmediateCommandFormInputProcessor } from './ImmediateCommandFormInputProcessor.js';
-//not GWT import - same folder const ImmediateCommandFormInputProcessor
+//sameFolderImports - not GWT import - same folder const ImmediateCommandFormInputProcessor
 
 export class GameCommandCanvas extends MyCanvas implements MenuListener, DisplayChangeEventListener, UpdateMyFontInterface {
         

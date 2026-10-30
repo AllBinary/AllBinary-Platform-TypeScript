@@ -66,7 +66,7 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWeaponPart } from './BasicWeaponPart.js';
-//not GWT import - same folder const BasicWeaponPart
+//sameFolderImports - not GWT import - same folder const BasicWeaponPart
 
 export class BasicProjectileWeaponPart extends BasicWeaponPart {
         

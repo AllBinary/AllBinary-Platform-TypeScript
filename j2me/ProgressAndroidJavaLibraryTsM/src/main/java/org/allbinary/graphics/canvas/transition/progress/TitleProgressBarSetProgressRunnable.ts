@@ -50,9 +50,9 @@ import { Activity } from '../../../../../../android/app/Activity.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressRunnable } from './ProgressRunnable.js';
-//not GWT import - same folder const ProgressRunnable
+//sameFolderImports - not GWT import - same folder const ProgressRunnable
 import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import - same folder const ProgressCanvas
+//sameFolderImports - not GWT import - same folder const ProgressCanvas
 
 export class TitleProgressBarSetProgressRunnable extends ProgressRunnable {
         

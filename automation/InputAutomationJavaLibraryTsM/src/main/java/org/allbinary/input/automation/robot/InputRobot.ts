@@ -67,19 +67,19 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputRobotInterface } from './InputRobotInterface.js';
-//not GWT import - same folder const InputRobotInterface
+//sameFolderImports - not GWT import - same folder const InputRobotInterface
 import { Robot } from './Robot.js';
-//not GWT import - same folder const Robot
+//sameFolderImports - not GWT import - same folder const Robot
 import { GraphicsDevice } from './GraphicsDevice.js';
-//not GWT import - same folder const GraphicsDevice
+//sameFolderImports - not GWT import - same folder const GraphicsDevice
 import { MouseInfo } from './MouseInfo.js';
-//not GWT import - same folder const MouseInfo
+//sameFolderImports - not GWT import - same folder const MouseInfo
 import { Point } from './Point.js';
-//not GWT import - same folder const Point
+//sameFolderImports - not GWT import - same folder const Point
 import { Rectangle } from './Rectangle.js';
-//not GWT import - same folder const Rectangle
+//sameFolderImports - not GWT import - same folder const Rectangle
 import { Color } from './Color.js';
-//not GWT import - same folder const Color
+//sameFolderImports - not GWT import - same folder const Color
 
 export class InputRobot
             extends Object

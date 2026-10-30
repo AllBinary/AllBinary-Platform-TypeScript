@@ -62,9 +62,9 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameSkillType } from './GameSkillType.js';
-//not GWT import - same folder const GameSkillType
+//sameFolderImports - not GWT import - same folder const GameSkillType
 import { GameSkillPropertyInterface } from './GameSkillPropertyInterface.js';
-//not GWT import - same folder const GameSkillPropertyInterface
+//sameFolderImports - not GWT import - same folder const GameSkillPropertyInterface
 
 export class GameSkill
             extends Object

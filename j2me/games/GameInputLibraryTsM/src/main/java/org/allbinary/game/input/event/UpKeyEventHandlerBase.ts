@@ -65,7 +65,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UpKeyEventListenerInterface } from './UpKeyEventListenerInterface.js';
-//not GWT import - same folder const UpKeyEventListenerInterface
+//sameFolderImports - not GWT import - same folder const UpKeyEventListenerInterface
 
 export class UpKeyEventHandlerBase extends BasicEventHandler {
         

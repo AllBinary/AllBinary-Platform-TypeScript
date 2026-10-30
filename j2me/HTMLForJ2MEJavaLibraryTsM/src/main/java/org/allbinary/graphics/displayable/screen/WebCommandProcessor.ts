@@ -70,7 +70,7 @@ type PlayN<T = any, U = any> = typeof PlayN extends abstract new (...args: any[]
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AboutCommandProcessor } from './AboutCommandProcessor.js';
-//not GWT import - same folder const AboutCommandProcessor
+//sameFolderImports - not GWT import - same folder const AboutCommandProcessor
 
 export class WebCommandProcessor
             extends Object

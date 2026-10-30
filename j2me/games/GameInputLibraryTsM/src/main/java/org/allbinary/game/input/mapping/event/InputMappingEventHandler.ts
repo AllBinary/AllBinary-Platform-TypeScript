@@ -48,9 +48,9 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputMappingEventListenerInterface } from './InputMappingEventListenerInterface.js';
-//not GWT import - same folder const InputMappingEventListenerInterface
+//sameFolderImports - not GWT import - same folder const InputMappingEventListenerInterface
 import { InputMappingEvent } from './InputMappingEvent.js';
-//not GWT import - same folder const InputMappingEvent
+//sameFolderImports - not GWT import - same folder const InputMappingEvent
 
 export class InputMappingEventHandler extends BasicEventHandler {
         

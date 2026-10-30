@@ -48,7 +48,7 @@ import { MotionGestureRecognizer } from '../../../../org/allbinary/input/motion/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRecognizer } from './MotionRecognizer.js';
-//not GWT import - same folder const MotionRecognizer
+//sameFolderImports - not GWT import - same folder const MotionRecognizer
 
 export class GestureOnlyMotionRecognizer extends MotionRecognizer {
         

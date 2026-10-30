@@ -43,7 +43,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollisionHelper } from './CollisionHelper.js';
-//not GWT import - same folder const CollisionHelper
+//sameFolderImports - not GWT import - same folder const CollisionHelper
 
 export class SourceCollisionHelper extends CollisionHelper {
         

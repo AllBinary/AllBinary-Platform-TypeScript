@@ -86,7 +86,7 @@ import { CustomizerUtil } from '../../../../../../../../views/business/context/m
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TopBarView } from './TopBarView.js';
-//not GWT import - same folder const TopBarView
+//sameFolderImports - not GWT import - same folder const TopBarView
 
 export class InsertHeaderValidationView extends TopBarView implements ValidationComponentInterface {
         

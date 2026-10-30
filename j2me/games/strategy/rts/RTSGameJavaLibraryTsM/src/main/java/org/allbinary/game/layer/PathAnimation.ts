@@ -80,15 +80,15 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LinePathAnimation } from './LinePathAnimation.js';
-//not GWT import - same folder const LinePathAnimation
+//sameFolderImports - not GWT import - same folder const LinePathAnimation
 import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-//not GWT import - same folder const PathFindingLayerInterface
+//sameFolderImports - not GWT import - same folder const PathFindingLayerInterface
 import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
-//not GWT import - same folder const AllBinaryGameLayerManager
+//sameFolderImports - not GWT import - same folder const AllBinaryGameLayerManager
 import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-//not GWT import - same folder const WaypointBehaviorBase
+//sameFolderImports - not GWT import - same folder const WaypointBehaviorBase
 import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
-//not GWT import - same folder const AllBinaryTiledLayer
+//sameFolderImports - not GWT import - same folder const AllBinaryTiledLayer
 
 export class PathAnimation extends Animation {
         

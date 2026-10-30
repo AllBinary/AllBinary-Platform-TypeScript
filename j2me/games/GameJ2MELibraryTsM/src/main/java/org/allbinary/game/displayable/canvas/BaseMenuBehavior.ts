@@ -47,7 +47,7 @@ import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullP
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-//not GWT import - same folder const AllBinaryGameCanvas
+//sameFolderImports - not GWT import - same folder const AllBinaryGameCanvas
 
 export class BaseMenuBehavior
             extends Object

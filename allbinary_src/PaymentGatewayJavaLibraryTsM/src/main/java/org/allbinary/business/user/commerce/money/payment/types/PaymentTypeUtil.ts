@@ -111,7 +111,7 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentType } from './PaymentType.js';
-//not GWT import - same folder const PaymentType
+//sameFolderImports - not GWT import - same folder const PaymentType
 
 export class PaymentTypeUtil
             extends Object

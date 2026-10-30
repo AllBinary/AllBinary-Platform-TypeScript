@@ -79,7 +79,7 @@ import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/vi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { URIResolverStrings } from './URIResolverStrings.js';
-//not GWT import - same folder const URIResolverStrings
+//sameFolderImports - not GWT import - same folder const URIResolverStrings
 
 export class BasicUriResolver
             extends Object

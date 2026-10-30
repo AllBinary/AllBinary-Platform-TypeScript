@@ -45,7 +45,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyableInterface } from './DestroyableInterface.js';
-//not GWT import - same folder const DestroyableInterface
+//sameFolderImports - not GWT import - same folder const DestroyableInterface
 
 export class DestroyableBaseBehavior
             extends Object

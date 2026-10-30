@@ -71,7 +71,7 @@ type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasketInterface } from './BasketInterface.js';
-//not GWT import - same folder const BasketInterface
+//sameFolderImports - not GWT import - same folder const BasketInterface
 
 export class Basket
             extends Object

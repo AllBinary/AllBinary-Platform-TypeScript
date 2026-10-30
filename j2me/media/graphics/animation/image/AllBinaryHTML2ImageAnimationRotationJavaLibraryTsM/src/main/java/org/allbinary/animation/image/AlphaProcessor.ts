@@ -43,7 +43,7 @@ import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageMo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AlphaBaseProcessor } from './AlphaBaseProcessor.js';
-//not GWT import - same folder const AlphaBaseProcessor
+//sameFolderImports - not GWT import - same folder const AlphaBaseProcessor
 
 export class AlphaProcessor extends AlphaBaseProcessor {
         

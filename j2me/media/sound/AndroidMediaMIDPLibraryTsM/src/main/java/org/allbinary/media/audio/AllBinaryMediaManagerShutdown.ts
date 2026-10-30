@@ -45,7 +45,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import - same folder const SoundsFactoryInterface
+//sameFolderImports - not GWT import - same folder const SoundsFactoryInterface
 
 export class AllBinaryMediaManagerShutdown
             extends Object

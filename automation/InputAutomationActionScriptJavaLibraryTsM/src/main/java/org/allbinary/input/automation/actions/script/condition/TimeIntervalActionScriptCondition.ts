@@ -75,13 +75,13 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptCondition } from './BasicProfileActionScriptCondition.js';
-//not GWT import - same folder const BasicProfileActionScriptCondition
+//sameFolderImports - not GWT import - same folder const BasicProfileActionScriptCondition
 import { TimeIntervalActionScriptConditionInterface } from './TimeIntervalActionScriptConditionInterface.js';
-//not GWT import - same folder const TimeIntervalActionScriptConditionInterface
+//sameFolderImports - not GWT import - same folder const TimeIntervalActionScriptConditionInterface
 import { TimeIntervalActionScriptConditionJPanel } from './TimeIntervalActionScriptConditionJPanel.js';
-//not GWT import - same folder const TimeIntervalActionScriptConditionJPanel
+//sameFolderImports - not GWT import - same folder const TimeIntervalActionScriptConditionJPanel
 import { TimeIntervalActionScriptConditionData } from './TimeIntervalActionScriptConditionData.js';
-//not GWT import - same folder const TimeIntervalActionScriptConditionData
+//sameFolderImports - not GWT import - same folder const TimeIntervalActionScriptConditionData
 
 export class TimeIntervalActionScriptCondition extends BasicProfileActionScriptCondition implements TimeIntervalActionScriptConditionInterface {
         

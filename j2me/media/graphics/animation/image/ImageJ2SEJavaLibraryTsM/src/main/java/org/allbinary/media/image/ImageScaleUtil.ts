@@ -56,11 +56,11 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtil
+//sameFolderImports - not GWT import - same folder const ImageUtil
 import { ImageJ2SEUtil } from './ImageJ2SEUtil.js';
-//not GWT import - same folder const ImageJ2SEUtil
+//sameFolderImports - not GWT import - same folder const ImageJ2SEUtil
 import { ImageCreationUtil } from './ImageCreationUtil.js';
-//not GWT import - same folder const ImageCreationUtil
+//sameFolderImports - not GWT import - same folder const ImageCreationUtil
 
 export class ImageScaleUtil
             extends Object

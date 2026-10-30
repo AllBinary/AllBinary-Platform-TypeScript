@@ -53,9 +53,9 @@ import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionEventFactory } from './MotionEventFactory.js';
-//not GWT import - same folder const MotionEventFactory
+//sameFolderImports - not GWT import - same folder const MotionEventFactory
 import { MotionGestureEvent } from './MotionGestureEvent.js';
-//not GWT import - same folder const MotionGestureEvent
+//sameFolderImports - not GWT import - same folder const MotionGestureEvent
 
 export class MotionEventCircularPool
             extends Object

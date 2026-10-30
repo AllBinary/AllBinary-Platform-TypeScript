@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinarySensor } from './AllBinarySensor.js';
-//not GWT import - same folder const AllBinarySensor
+//sameFolderImports - not GWT import - same folder const AllBinarySensor
 
 export class NoAllBinarySensor extends AllBinarySensor {
         

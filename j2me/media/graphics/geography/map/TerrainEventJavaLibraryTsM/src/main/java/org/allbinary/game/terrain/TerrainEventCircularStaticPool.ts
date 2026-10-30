@@ -44,11 +44,11 @@ import { AllBinaryEventCircularPool } from '../../../../org/allbinary/logic/util
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TerrainEventFactory } from './TerrainEventFactory.js';
-//not GWT import - same folder const TerrainEventFactory
+//sameFolderImports - not GWT import - same folder const TerrainEventFactory
 import { TerrainEvent } from './TerrainEvent.js';
-//not GWT import - same folder const TerrainEvent
+//sameFolderImports - not GWT import - same folder const TerrainEvent
 import { BasicTerrainInfo } from './BasicTerrainInfo.js';
-//not GWT import - same folder const BasicTerrainInfo
+//sameFolderImports - not GWT import - same folder const BasicTerrainInfo
 
 export class TerrainEventCircularStaticPool
             extends Object

@@ -65,7 +65,7 @@ import { StoreTagWorkFlowHelperFactory } from '../taghelpers/StoreTagWorkFlowHel
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HelperTag } from './HelperTag.js';
-//not GWT import - same folder const HelperTag
+//sameFolderImports - not GWT import - same folder const HelperTag
 //and hidden field removal
 export class StoreWorkFlowTag extends HelperTag {
         

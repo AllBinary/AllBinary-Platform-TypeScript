@@ -140,27 +140,27 @@ type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import - same folder const PlayerGameInput
+//sameFolderImports - not GWT import - same folder const PlayerGameInput
 import { InputFactory } from './InputFactory.js';
-//not GWT import - same folder const InputFactory
+//sameFolderImports - not GWT import - same folder const InputFactory
 import { GameInputProcessor } from './GameInputProcessor.js';
-//not GWT import - same folder const GameInputProcessor
+//sameFolderImports - not GWT import - same folder const GameInputProcessor
 import { ScrollMapPlayerGameInput } from './ScrollMapPlayerGameInput.js';
-//not GWT import - same folder const ScrollMapPlayerGameInput
+//sameFolderImports - not GWT import - same folder const ScrollMapPlayerGameInput
 import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
-//not GWT import - same folder const SelectedRTSLayersPlayerGameInput
+//sameFolderImports - not GWT import - same folder const SelectedRTSLayersPlayerGameInput
 import { LayerPositionFinderInterface } from './LayerPositionFinderInterface.js';
-//not GWT import - same folder const LayerPositionFinderInterface
+//sameFolderImports - not GWT import - same folder const LayerPositionFinderInterface
 import { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
-//not GWT import - same folder const SelectRTSLayerVisitorFactoryInterface
+//sameFolderImports - not GWT import - same folder const SelectRTSLayerVisitorFactoryInterface
 import { RTSPlayerLeftGameInputProcessor } from './RTSPlayerLeftGameInputProcessor.js';
-//not GWT import - same folder const RTSPlayerLeftGameInputProcessor
+//sameFolderImports - not GWT import - same folder const RTSPlayerLeftGameInputProcessor
 import { RTSPlayerRightGameInputProcessor } from './RTSPlayerRightGameInputProcessor.js';
-//not GWT import - same folder const RTSPlayerRightGameInputProcessor
+//sameFolderImports - not GWT import - same folder const RTSPlayerRightGameInputProcessor
 import { RTSPlayerFireGameInputProcessor } from './RTSPlayerFireGameInputProcessor.js';
-//not GWT import - same folder const RTSPlayerFireGameInputProcessor
+//sameFolderImports - not GWT import - same folder const RTSPlayerFireGameInputProcessor
 import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
-//not GWT import - same folder const GameInputProcessorUtil
+//sameFolderImports - not GWT import - same folder const GameInputProcessorUtil
 
 export class RTSPlayerGameInput extends PlayerGameInput {
         

@@ -67,7 +67,7 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RootStoreThemeCategoryProperties } from './RootStoreThemeCategoryProperties.js';
-//not GWT import - same folder const RootStoreThemeCategoryProperties
+//sameFolderImports - not GWT import - same folder const RootStoreThemeCategoryProperties
 
 export class RootStoreThemeCategoryPropertiesFactory
             extends Object

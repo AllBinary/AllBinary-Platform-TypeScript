@@ -44,7 +44,7 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThirdPartyStore } from './ThirdPartyStore.js';
-//not GWT import - same folder const ThirdPartyStore
+//sameFolderImports - not GWT import - same folder const ThirdPartyStore
 
 export class NoThirdPartyStore extends ThirdPartyStore {
         

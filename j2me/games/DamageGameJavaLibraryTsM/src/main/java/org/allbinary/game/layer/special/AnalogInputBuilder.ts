@@ -45,31 +45,31 @@ import { GameInputProcessor } from '../../../../../org/allbinary/game/input/Game
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialUpGameInputProcessor } from './SpecialUpGameInputProcessor.js';
-//not GWT import - same folder const SpecialUpGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SpecialUpGameInputProcessor
 import { SpecialDownGameInputProcessor } from './SpecialDownGameInputProcessor.js';
-//not GWT import - same folder const SpecialDownGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SpecialDownGameInputProcessor
 import { SpecialRightGameInputProcessor } from './SpecialRightGameInputProcessor.js';
-//not GWT import - same folder const SpecialRightGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SpecialRightGameInputProcessor
 import { SpecialLeftGameInputProcessor } from './SpecialLeftGameInputProcessor.js';
-//not GWT import - same folder const SpecialLeftGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SpecialLeftGameInputProcessor
 import { Special1GameInputProcessor } from './Special1GameInputProcessor.js';
-//not GWT import - same folder const Special1GameInputProcessor
+//sameFolderImports - not GWT import - same folder const Special1GameInputProcessor
 import { Special3GameInputProcessor } from './Special3GameInputProcessor.js';
-//not GWT import - same folder const Special3GameInputProcessor
+//sameFolderImports - not GWT import - same folder const Special3GameInputProcessor
 import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDamageableLayer.js';
-//not GWT import - same folder const CollidableDestroyableDamageableLayer
+//sameFolderImports - not GWT import - same folder const CollidableDestroyableDamageableLayer
 import { SpecialAnalogUpGameInputProcessor } from './SpecialAnalogUpGameInputProcessor.js';
-//not GWT import - same folder const SpecialAnalogUpGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SpecialAnalogUpGameInputProcessor
 import { SpecialAnalogDownGameInputProcessor } from './SpecialAnalogDownGameInputProcessor.js';
-//not GWT import - same folder const SpecialAnalogDownGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SpecialAnalogDownGameInputProcessor
 import { SpecialAnalogRightGameInputProcessor } from './SpecialAnalogRightGameInputProcessor.js';
-//not GWT import - same folder const SpecialAnalogRightGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SpecialAnalogRightGameInputProcessor
 import { SpecialAnalogLeftGameInputProcessor } from './SpecialAnalogLeftGameInputProcessor.js';
-//not GWT import - same folder const SpecialAnalogLeftGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SpecialAnalogLeftGameInputProcessor
 import { SpecialAnalogLeftTriggerGameInputProcessor } from './SpecialAnalogLeftTriggerGameInputProcessor.js';
-//not GWT import - same folder const SpecialAnalogLeftTriggerGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SpecialAnalogLeftTriggerGameInputProcessor
 import { SpecialAnalogRightTriggerGameInputProcessor } from './SpecialAnalogRightTriggerGameInputProcessor.js';
-//not GWT import - same folder const SpecialAnalogRightTriggerGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SpecialAnalogRightTriggerGameInputProcessor
 
 export class AnalogInputBuilder
             extends Object

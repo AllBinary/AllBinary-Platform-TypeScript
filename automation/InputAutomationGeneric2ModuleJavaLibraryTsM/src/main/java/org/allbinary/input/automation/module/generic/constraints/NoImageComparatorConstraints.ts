@@ -51,7 +51,7 @@ import { ImageComparatorConstraints } from '../../../../../../../org/allbinary/i
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
-//not GWT import - same folder const Color
+//sameFolderImports - not GWT import - same folder const Color
 
 export class NoImageComparatorConstraints extends ImageComparatorConstraints {
         

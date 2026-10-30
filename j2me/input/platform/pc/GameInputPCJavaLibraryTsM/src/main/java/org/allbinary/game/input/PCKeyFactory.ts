@@ -53,9 +53,9 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
         //not plain js - same folder import { ABKeyEventWrapper } 
 const ABKeyEventWrapper = globalThis.org.allbinary.game.input.ABKeyEventWrapper;
 import { PCGameKey } from './PCGameKey.js';
-//not GWT import - same folder const PCGameKey
+//sameFolderImports - not GWT import - same folder const PCGameKey
 import { Input } from './Input.js';
-//not GWT import - same folder const Input
+//sameFolderImports - not GWT import - same folder const Input
 
 export class PCKeyFactory
             extends Object

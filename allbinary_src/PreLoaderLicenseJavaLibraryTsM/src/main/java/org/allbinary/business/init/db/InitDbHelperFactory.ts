@@ -50,7 +50,7 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DatabaseConnectionInfoInterface } from './DatabaseConnectionInfoInterface.js';
-//not GWT import - same folder const DatabaseConnectionInfoInterface
+//sameFolderImports - not GWT import - same folder const DatabaseConnectionInfoInterface
 
 export class InitDbHelperFactory
             extends Object

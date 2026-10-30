@@ -68,9 +68,9 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleProgressActivityInterface } from './SimpleProgressActivityInterface.js';
-//not GWT import - same folder const SimpleProgressActivityInterface
+//sameFolderImports - not GWT import - same folder const SimpleProgressActivityInterface
 import { KeyInputViewCompositeInterface } from './KeyInputViewCompositeInterface.js';
-//not GWT import - same folder const KeyInputViewCompositeInterface
+//sameFolderImports - not GWT import - same folder const KeyInputViewCompositeInterface
 
 export class MidletActivityBase extends Activity implements GameFeatureListenerInterface, GameInitializedListenerInterface, SimpleProgressActivityInterface, KeyInputViewCompositeInterface, GenericMotionEventVerifyInterface {
         

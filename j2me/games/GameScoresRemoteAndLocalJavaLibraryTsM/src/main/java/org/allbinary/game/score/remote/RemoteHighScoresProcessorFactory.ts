@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScoresProcessor } from './RemoteHighScoresProcessor.js';
-//not GWT import - same folder const RemoteHighScoresProcessor
+//sameFolderImports - not GWT import - same folder const RemoteHighScoresProcessor
 import { RemoteHighScoresProcessorInterface } from './RemoteHighScoresProcessorInterface.js';
-//not GWT import - same folder const RemoteHighScoresProcessorInterface
+//sameFolderImports - not GWT import - same folder const RemoteHighScoresProcessorInterface
 
 export class RemoteHighScoresProcessorFactory
             extends Object

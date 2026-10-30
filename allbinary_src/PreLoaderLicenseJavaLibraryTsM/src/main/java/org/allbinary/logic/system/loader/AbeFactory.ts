@@ -72,9 +72,9 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WebappClassLoaderInfo } from './WebappClassLoaderInfo.js';
-//not GWT import - same folder const WebappClassLoaderInfo
+//sameFolderImports - not GWT import - same folder const WebappClassLoaderInfo
 import { AbeClassLoader } from './AbeClassLoader.js';
-//not GWT import - same folder const AbeClassLoader
+//sameFolderImports - not GWT import - same folder const AbeClassLoader
 
 export class AbeFactory
             extends Object

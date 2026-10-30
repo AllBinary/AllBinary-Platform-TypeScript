@@ -53,9 +53,9 @@ type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchScreenFactory } from './TouchScreenFactory.js';
-//not GWT import - same folder const TouchScreenFactory
+//sameFolderImports - not GWT import - same folder const TouchScreenFactory
 import { TouchScreenTypesFactory } from './TouchScreenTypesFactory.js';
-//not GWT import - same folder const TouchScreenTypesFactory
+//sameFolderImports - not GWT import - same folder const TouchScreenTypesFactory
 
 export class TouchScreenTypeFactory
             extends Object

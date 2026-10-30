@@ -41,9 +41,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformDocument } from './TransformDocument.js';
-//not GWT import - same folder const TransformDocument
+//sameFolderImports - not GWT import - same folder const TransformDocument
 import { TransformDocumentInterface } from './TransformDocumentInterface.js';
-//not GWT import - same folder const TransformDocumentInterface
+//sameFolderImports - not GWT import - same folder const TransformDocumentInterface
 
 export class TransformDocumentFactory
             extends Object

@@ -49,7 +49,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontsEntity } from './StoreFrontsEntity.js';
-//not GWT import - same folder const StoreFrontsEntity
+//sameFolderImports - not GWT import - same folder const StoreFrontsEntity
 
 export class StoreFrontsEntityFactory
             extends Object

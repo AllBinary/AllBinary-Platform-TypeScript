@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderManager } from './ShaderManager.js';
-//not GWT import - same folder const ShaderManager
+//sameFolderImports - not GWT import - same folder const ShaderManager
 
 export class ShaderManagerFactory
             extends Object

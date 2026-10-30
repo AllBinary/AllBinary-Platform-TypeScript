@@ -59,7 +59,7 @@ import { Parcelable } from '../../../android/os/Parcelable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NotificationBuilder } from './NotificationBuilder.js';
-//not GWT import - same folder const NotificationBuilder
+//sameFolderImports - not GWT import - same folder const NotificationBuilder
 
 export class NotificationBuilderAPI23 extends NotificationBuilder {
         

@@ -53,7 +53,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PrimitiveLongSingleton } from './PrimitiveLongSingleton.js';
-//not GWT import - same folder const PrimitiveLongSingleton
+//sameFolderImports - not GWT import - same folder const PrimitiveLongSingleton
 //not plain js - same folder import { MathUtil } 
 const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
 

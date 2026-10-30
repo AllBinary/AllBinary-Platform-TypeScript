@@ -65,9 +65,9 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInitializationInterface } from './GameInitializationInterface.js';
-//not GWT import - same folder const GameInitializationInterface
+//sameFolderImports - not GWT import - same folder const GameInitializationInterface
 import { BasicBuildGameInitializerFactory } from './BasicBuildGameInitializerFactory.js';
-//not GWT import - same folder const BasicBuildGameInitializerFactory
+//sameFolderImports - not GWT import - same folder const BasicBuildGameInitializerFactory
 
 export class GameInitializationUtil
             extends Object

@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MultiplayerBehavior } from './MultiplayerBehavior.js';
-//not GWT import - same folder const MultiplayerBehavior
+//sameFolderImports - not GWT import - same folder const MultiplayerBehavior
 
 export interface MultiPlayerGameLayerInterface {
         

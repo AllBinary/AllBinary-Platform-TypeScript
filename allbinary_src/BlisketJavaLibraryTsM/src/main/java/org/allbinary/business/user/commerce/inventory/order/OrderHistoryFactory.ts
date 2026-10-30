@@ -52,7 +52,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistory } from './OrderHistory.js';
-//not GWT import - same folder const OrderHistory
+//sameFolderImports - not GWT import - same folder const OrderHistory
 //Retrieves a single order for a user
 export class OrderHistoryFactory
             extends Object

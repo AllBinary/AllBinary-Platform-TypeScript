@@ -80,7 +80,7 @@ const Log = globalThis.org.allbinary.logic.communication.log.Log;
 //not plain js - same folder import { LogFormatUtil } 
 const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
 import { XmlRpcRemoteLogClient } from './XmlRpcRemoteLogClient.js';
-//not GWT import - same folder const XmlRpcRemoteLogClient
+//sameFolderImports - not GWT import - same folder const XmlRpcRemoteLogClient
 //ActualPlatform
 /*actual*/ export class LogUtil
             extends Object

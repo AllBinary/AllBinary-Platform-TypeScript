@@ -129,7 +129,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTable } from './BasicTable.js';
-//not GWT import - same folder const BasicTable
+//sameFolderImports - not GWT import - same folder const BasicTable
 
 export class QuoteHelper extends BasicTable {
         

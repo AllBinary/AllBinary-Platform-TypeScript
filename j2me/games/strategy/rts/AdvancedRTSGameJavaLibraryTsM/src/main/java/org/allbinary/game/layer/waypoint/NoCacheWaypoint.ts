@@ -105,7 +105,7 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointBase } from './WaypointBase.js';
-//not GWT import - same folder const WaypointBase
+//sameFolderImports - not GWT import - same folder const WaypointBase
 
 export class NoCacheWaypoint extends WaypointBase implements BuildingEventListenerInterface {
         

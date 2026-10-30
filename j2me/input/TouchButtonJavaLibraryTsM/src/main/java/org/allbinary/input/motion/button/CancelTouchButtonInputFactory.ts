@@ -46,9 +46,9 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonInput } from './TouchButtonInput.js';
-//not GWT import - same folder const TouchButtonInput
+//sameFolderImports - not GWT import - same folder const TouchButtonInput
 import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
-//not GWT import - same folder const BasicTouchInputFactory
+//sameFolderImports - not GWT import - same folder const BasicTouchInputFactory
 
 export class CancelTouchButtonInputFactory
             extends Object

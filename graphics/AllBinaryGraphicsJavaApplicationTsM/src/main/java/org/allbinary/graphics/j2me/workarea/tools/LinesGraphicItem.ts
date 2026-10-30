@@ -26,7 +26,8 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-            import { Double } from '../../../../../../java/lang/Double.js';
+            //import { Double } from '../../../../../../java/lang/Double.js';
+            const Double = globalThis.java.lang.Double;
         
 import { awt } from '../../../../../../java/awt.js';
 //not GWT import const awt
@@ -117,25 +118,25 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicItemInterface } from './GraphicItemInterface.js';
-//not GWT import - same folder const GraphicItemInterface
+//sameFolderImports - not GWT import - same folder const GraphicItemInterface
 import { Color } from './Color.js';
-//not GWT import - same folder const Color
+//sameFolderImports - not GWT import - same folder const Color
 import { Points } from './Points.js';
-//not GWT import - same folder const Points
+//sameFolderImports - not GWT import - same folder const Points
 import { PointsDomUtil } from './PointsDomUtil.js';
-//not GWT import - same folder const PointsDomUtil
+//sameFolderImports - not GWT import - same folder const PointsDomUtil
 import { Graphics2D } from './Graphics2D.js';
-//not GWT import - same folder const Graphics2D
+//sameFolderImports - not GWT import - same folder const Graphics2D
 import { BasicStroke } from './BasicStroke.js';
-//not GWT import - same folder const BasicStroke
+//sameFolderImports - not GWT import - same folder const BasicStroke
 import { PointsUtil } from './PointsUtil.js';
-//not GWT import - same folder const PointsUtil
+//sameFolderImports - not GWT import - same folder const PointsUtil
 import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics
+//sameFolderImports - not GWT import - same folder const Graphics
 import { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEvent
+//sameFolderImports - not GWT import - same folder const MouseEvent
 import { KeyEvent } from './KeyEvent.js';
-//not GWT import - same folder const KeyEvent
+//sameFolderImports - not GWT import - same folder const KeyEvent
 
 export class LinesGraphicItem
             extends Object

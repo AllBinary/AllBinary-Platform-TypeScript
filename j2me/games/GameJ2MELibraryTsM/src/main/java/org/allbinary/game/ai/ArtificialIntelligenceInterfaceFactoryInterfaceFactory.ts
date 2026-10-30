@@ -57,9 +57,9 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicAI } from './BasicAI.js';
-//not GWT import - same folder const BasicAI
+//sameFolderImports - not GWT import - same folder const BasicAI
 import { ArtificialIntelligenceInterfaceFactoryInterface } from './ArtificialIntelligenceInterfaceFactoryInterface.js';
-//not GWT import - same folder const ArtificialIntelligenceInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const ArtificialIntelligenceInterfaceFactoryInterface
 
 export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory
             extends Object

@@ -6,7 +6,8 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-            import { Double } from '../../../java/lang/Double.js';
+            //import { Double } from '../../../java/lang/Double.js';
+            const Double = globalThis.java.lang.Double;
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
@@ -39,11 +40,11 @@ type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StringBuffer } from './StringBuffer.js';
-//not GWT import - same folder const StringBuffer
+//sameFolderImports - not GWT import - same folder const StringBuffer
 import { FixedPoint } from './FixedPoint.js';
-//not GWT import - same folder const FixedPoint
+//sameFolderImports - not GWT import - same folder const FixedPoint
 import { PGUtil } from './PGUtil.js';
-//not GWT import - same folder const PGUtil
+//sameFolderImports - not GWT import - same folder const PGUtil
 
 export class PathParser
             extends Object

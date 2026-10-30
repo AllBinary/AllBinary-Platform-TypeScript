@@ -56,7 +56,7 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryPropertiesInterface } from './CategoryPropertiesInterface.js';
-//not GWT import - same folder const CategoryPropertiesInterface
+//sameFolderImports - not GWT import - same folder const CategoryPropertiesInterface
 
 export class CategoryPropertiesView
             extends Object

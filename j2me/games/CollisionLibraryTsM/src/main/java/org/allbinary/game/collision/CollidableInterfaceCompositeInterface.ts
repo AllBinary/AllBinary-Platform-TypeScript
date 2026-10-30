@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
-//not GWT import - same folder const CollidableBaseBehavior
+//sameFolderImports - not GWT import - same folder const CollidableBaseBehavior
 
 export interface CollidableInterfaceCompositeInterface {
         

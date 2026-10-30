@@ -85,17 +85,17 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptInput } from './BasicProfileActionScriptInput.js';
-//not GWT import - same folder const BasicProfileActionScriptInput
+//sameFolderImports - not GWT import - same folder const BasicProfileActionScriptInput
 import { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
-//not GWT import - same folder const MouseActionScriptInputInterface
+//sameFolderImports - not GWT import - same folder const MouseActionScriptInputInterface
 import { Point } from './Point.js';
-//not GWT import - same folder const Point
+//sameFolderImports - not GWT import - same folder const Point
 import { MouseActionScriptInputJPanel } from './MouseActionScriptInputJPanel.js';
-//not GWT import - same folder const MouseActionScriptInputJPanel
+//sameFolderImports - not GWT import - same folder const MouseActionScriptInputJPanel
 import { MouseActionScriptInputData } from './MouseActionScriptInputData.js';
-//not GWT import - same folder const MouseActionScriptInputData
+//sameFolderImports - not GWT import - same folder const MouseActionScriptInputData
 import { MouseInputAutomationProcessor } from './MouseInputAutomationProcessor.js';
-//not GWT import - same folder const MouseInputAutomationProcessor
+//sameFolderImports - not GWT import - same folder const MouseInputAutomationProcessor
 
 export class MouseActionScriptInput extends BasicProfileActionScriptInput implements MouseActionScriptInputInterface {
         

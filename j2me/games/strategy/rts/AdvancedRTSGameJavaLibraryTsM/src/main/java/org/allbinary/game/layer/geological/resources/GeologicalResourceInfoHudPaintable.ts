@@ -56,7 +56,7 @@ import { KeyValueDrawCharArray } from '../../../../../../org/allbinary/graphics/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalGeographicMapCellPosition } from './GeologicalGeographicMapCellPosition.js';
-//not GWT import - same folder const GeologicalGeographicMapCellPosition
+//sameFolderImports - not GWT import - same folder const GeologicalGeographicMapCellPosition
 
 export class GeologicalResourceInfoHudPaintable extends WaypointInfoHudPaintable {
         

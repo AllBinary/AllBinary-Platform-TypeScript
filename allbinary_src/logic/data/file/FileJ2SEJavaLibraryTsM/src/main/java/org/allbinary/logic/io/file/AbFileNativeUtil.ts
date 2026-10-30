@@ -42,7 +42,7 @@ import { File } from '../../../../../java/io/File.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
-//not GWT import - same folder const AbFile
+//sameFolderImports - not GWT import - same folder const AbFile
 
 export class AbFileNativeUtil
             extends Object

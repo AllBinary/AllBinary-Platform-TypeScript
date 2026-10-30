@@ -70,11 +70,11 @@ import { FileItemUtil } from '../../../../../../../org/apache/commons/fileupload
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileUpload } from './AbFileUpload.js';
-//not GWT import - same folder const AbFileUpload
+//sameFolderImports - not GWT import - same folder const AbFileUpload
 import { HttpFileUploadUtil } from './HttpFileUploadUtil.js';
-//not GWT import - same folder const HttpFileUploadUtil
+//sameFolderImports - not GWT import - same folder const HttpFileUploadUtil
 import { AbFileItem } from './AbFileItem.js';
-//not GWT import - same folder const AbFileItem
+//sameFolderImports - not GWT import - same folder const AbFileItem
 
 export class AbFileUploadFactory
             extends Object

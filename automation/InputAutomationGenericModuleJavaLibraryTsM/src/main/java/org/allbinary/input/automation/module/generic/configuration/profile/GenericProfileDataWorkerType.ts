@@ -63,11 +63,11 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileDataWorkerTypeInterface } from './GenericProfileDataWorkerTypeInterface.js';
-//not GWT import - same folder const GenericProfileDataWorkerTypeInterface
+//sameFolderImports - not GWT import - same folder const GenericProfileDataWorkerTypeInterface
 import { SavedCaptureGenericProfileDataWorkerType } from './SavedCaptureGenericProfileDataWorkerType.js';
-//not GWT import - same folder const SavedCaptureGenericProfileDataWorkerType
+//sameFolderImports - not GWT import - same folder const SavedCaptureGenericProfileDataWorkerType
 import { GenericProfileDataWorkerData } from './GenericProfileDataWorkerData.js';
-//not GWT import - same folder const GenericProfileDataWorkerData
+//sameFolderImports - not GWT import - same folder const GenericProfileDataWorkerData
 
 export class GenericProfileDataWorkerType
             extends Object

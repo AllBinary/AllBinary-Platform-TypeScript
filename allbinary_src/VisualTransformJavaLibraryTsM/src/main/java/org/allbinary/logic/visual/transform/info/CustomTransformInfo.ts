@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfo } from './TransformInfo.js';
-//not GWT import - same folder const TransformInfo
+//sameFolderImports - not GWT import - same folder const TransformInfo
 import { TransformInfoInterface } from './TransformInfoInterface.js';
-//not GWT import - same folder const TransformInfoInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoInterface
 
 export class CustomTransformInfo extends TransformInfo implements TransformInfoInterface {
         

@@ -56,13 +56,13 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoOperatingSystem } from './NoOperatingSystem.js';
-//not GWT import - same folder const NoOperatingSystem
+//sameFolderImports - not GWT import - same folder const NoOperatingSystem
 import { GenericOperatingSystem } from './GenericOperatingSystem.js';
-//not GWT import - same folder const GenericOperatingSystem
+//sameFolderImports - not GWT import - same folder const GenericOperatingSystem
 //not plain js - same folder import { SystemProperties } 
 const SystemProperties = globalThis.org.allbinary.logic.system.os.SystemProperties;
 import { OperatingSystems } from './OperatingSystems.js';
-//not GWT import - same folder const OperatingSystems
+//sameFolderImports - not GWT import - same folder const OperatingSystems
 
 export class OperatingSystemFactory
             extends Object

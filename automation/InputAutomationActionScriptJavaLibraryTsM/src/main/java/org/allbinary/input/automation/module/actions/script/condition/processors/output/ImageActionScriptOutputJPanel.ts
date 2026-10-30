@@ -61,39 +61,39 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
-//not GWT import - same folder const ImageActionScriptOutputInterface
+//sameFolderImports - not GWT import - same folder const ImageActionScriptOutputInterface
 import { ImageTypes } from './ImageTypes.js';
-//not GWT import - same folder const ImageTypes
+//sameFolderImports - not GWT import - same folder const ImageTypes
 import { DefaultListModel } from './DefaultListModel.js';
-//not GWT import - same folder const DefaultListModel
+//sameFolderImports - not GWT import - same folder const DefaultListModel
 import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog
+//sameFolderImports - not GWT import - same folder const JDialog
 import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel
+//sameFolderImports - not GWT import - same folder const JLabel
 import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton
+//sameFolderImports - not GWT import - same folder const JButton
 import { JCheckBox } from './JCheckBox.js';
-//not GWT import - same folder const JCheckBox
+//sameFolderImports - not GWT import - same folder const JCheckBox
 import { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPane
+//sameFolderImports - not GWT import - same folder const JScrollPane
 import { JList } from './JList.js';
-//not GWT import - same folder const JList
+//sameFolderImports - not GWT import - same folder const JList
 import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener
+//sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent
+//sameFolderImports - not GWT import - same folder const ActionEvent
 import { Insets } from './Insets.js';
-//not GWT import - same folder const Insets
+//sameFolderImports - not GWT import - same folder const Insets
 import { AbstractListModel } from './AbstractListModel.js';
-//not GWT import - same folder const AbstractListModel
+//sameFolderImports - not GWT import - same folder const AbstractListModel
 import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout
+//sameFolderImports - not GWT import - same folder const GroupLayout
 import { Short } from './Short.js';
-//not GWT import - same folder const Short
+//sameFolderImports - not GWT import - same folder const Short
 
 export class ImageActionScriptOutputJPanel extends javax.swing.JPanel {
         

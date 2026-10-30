@@ -84,11 +84,11 @@ import { AttackSound } from '../../../../../org/allbinary/media/audio/AttackSoun
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableWaypointBehavior } from './CollidableWaypointBehavior.js';
-//not GWT import - same folder const CollidableWaypointBehavior
+//sameFolderImports - not GWT import - same folder const CollidableWaypointBehavior
 import { Waypoint } from './Waypoint.js';
-//not GWT import - same folder const Waypoint
+//sameFolderImports - not GWT import - same folder const Waypoint
 import { WaypointCellPositionHistory } from './WaypointCellPositionHistory.js';
-//not GWT import - same folder const WaypointCellPositionHistory
+//sameFolderImports - not GWT import - same folder const WaypointCellPositionHistory
 
 export class WaypointLayer extends AdvancedRTSGameLayer {
         

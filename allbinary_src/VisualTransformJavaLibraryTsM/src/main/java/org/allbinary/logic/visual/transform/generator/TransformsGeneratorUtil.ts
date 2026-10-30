@@ -69,7 +69,7 @@ import { TransformInfoObjectConfigInterface } from '../../../../../../org/allbin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformGeneratorUtil } from './TransformGeneratorUtil.js';
-//not GWT import - same folder const TransformGeneratorUtil
+//sameFolderImports - not GWT import - same folder const TransformGeneratorUtil
 
 export class TransformsGeneratorUtil
             extends Object

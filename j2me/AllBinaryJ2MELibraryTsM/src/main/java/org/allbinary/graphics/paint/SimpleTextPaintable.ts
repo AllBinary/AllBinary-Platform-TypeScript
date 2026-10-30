@@ -61,7 +61,7 @@ import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/U
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Paintable } from './Paintable.js';
-//not GWT import - same folder const Paintable
+//sameFolderImports - not GWT import - same folder const Paintable
 
 export class SimpleTextPaintable extends Paintable implements UpdateMyFontInterface {
         

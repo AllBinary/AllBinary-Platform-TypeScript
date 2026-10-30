@@ -71,19 +71,19 @@ import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-//not GWT import - same folder const ImageBaseRotationAnimation
+//sameFolderImports - not GWT import - same folder const ImageBaseRotationAnimation
 import { ModifierBaseProcessor } from './ModifierBaseProcessor.js';
-//not GWT import - same folder const ModifierBaseProcessor
+//sameFolderImports - not GWT import - same folder const ModifierBaseProcessor
 import { ScaleProcessor } from './ScaleProcessor.js';
-//not GWT import - same folder const ScaleProcessor
+//sameFolderImports - not GWT import - same folder const ScaleProcessor
 import { ScaleBaseProcessor } from './ScaleBaseProcessor.js';
-//not GWT import - same folder const ScaleBaseProcessor
+//sameFolderImports - not GWT import - same folder const ScaleBaseProcessor
 import { SetColorProcessor } from './SetColorProcessor.js';
-//not GWT import - same folder const SetColorProcessor
+//sameFolderImports - not GWT import - same folder const SetColorProcessor
 import { ChangeColorProcessor } from './ChangeColorProcessor.js';
-//not GWT import - same folder const ChangeColorProcessor
+//sameFolderImports - not GWT import - same folder const ChangeColorProcessor
 import { AlphaProcessor } from './AlphaProcessor.js';
-//not GWT import - same folder const AlphaProcessor
+//sameFolderImports - not GWT import - same folder const AlphaProcessor
 
 export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimation {
         

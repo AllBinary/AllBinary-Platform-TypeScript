@@ -90,13 +90,13 @@ type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPersitance } from './BasicPersitance.js';
-//not GWT import - same folder const BasicPersitance
+//sameFolderImports - not GWT import - same folder const BasicPersitance
 import { NullRecordStore } from './NullRecordStore.js';
-//not GWT import - same folder const NullRecordStore
+//sameFolderImports - not GWT import - same folder const NullRecordStore
 import { NullRecordFilter } from './NullRecordFilter.js';
-//not GWT import - same folder const NullRecordFilter
+//sameFolderImports - not GWT import - same folder const NullRecordFilter
 import { NullRecordComparator } from './NullRecordComparator.js';
-//not GWT import - same folder const NullRecordComparator
+//sameFolderImports - not GWT import - same folder const NullRecordComparator
 
 export class KeyValuePersistance extends BasicPersitance {
         

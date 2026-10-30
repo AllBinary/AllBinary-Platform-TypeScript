@@ -83,7 +83,7 @@ type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
-//not GWT import - same folder const TagHelper
+//sameFolderImports - not GWT import - same folder const TagHelper
 
 export class OrderHistoryRequestHelper extends TagHelper {
         

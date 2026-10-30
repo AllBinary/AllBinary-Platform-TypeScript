@@ -46,7 +46,7 @@ import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageMo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifierBaseProcessor } from './ModifierBaseProcessor.js';
-//not GWT import - same folder const ModifierBaseProcessor
+//sameFolderImports - not GWT import - same folder const ModifierBaseProcessor
 
 export class SetColorProcessor extends ModifierBaseProcessor {
         

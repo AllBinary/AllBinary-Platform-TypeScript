@@ -53,17 +53,17 @@ type CommonLabels<T = any, U = any> = typeof CommonLabels extends abstract new (
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtil
+//sameFolderImports - not GWT import - same folder const ImageUtil
 import { GraphicsEnvironment } from './GraphicsEnvironment.js';
-//not GWT import - same folder const GraphicsEnvironment
+//sameFolderImports - not GWT import - same folder const GraphicsEnvironment
 import { GraphicsDevice } from './GraphicsDevice.js';
-//not GWT import - same folder const GraphicsDevice
+//sameFolderImports - not GWT import - same folder const GraphicsDevice
 import { GraphicsConfiguration } from './GraphicsConfiguration.js';
-//not GWT import - same folder const GraphicsConfiguration
+//sameFolderImports - not GWT import - same folder const GraphicsConfiguration
 import { Graphics2D } from './Graphics2D.js';
-//not GWT import - same folder const Graphics2D
+//sameFolderImports - not GWT import - same folder const Graphics2D
 import { ImageUnifierProperties } from './ImageUnifierProperties.js';
-//not GWT import - same folder const ImageUnifierProperties
+//sameFolderImports - not GWT import - same folder const ImageUnifierProperties
 
 export class ImageUnifierUtil
             extends Object

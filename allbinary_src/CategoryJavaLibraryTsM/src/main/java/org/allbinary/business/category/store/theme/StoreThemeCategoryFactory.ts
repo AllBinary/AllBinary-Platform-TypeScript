@@ -83,7 +83,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreThemeCategory } from './StoreThemeCategory.js';
-//not GWT import - same folder const StoreThemeCategory
+//sameFolderImports - not GWT import - same folder const StoreThemeCategory
 
 export class StoreThemeCategoryFactory
             extends Object

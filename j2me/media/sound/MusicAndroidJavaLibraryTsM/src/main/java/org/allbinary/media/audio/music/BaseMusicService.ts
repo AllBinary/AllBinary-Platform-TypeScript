@@ -68,7 +68,7 @@ type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...arg
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MusicStrings } from './MusicStrings.js';
-//not GWT import - same folder const MusicStrings
+//sameFolderImports - not GWT import - same folder const MusicStrings
 
 export class BaseMusicService extends Service {
         

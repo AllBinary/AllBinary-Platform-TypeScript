@@ -55,9 +55,9 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandFormInputProcessor } from './CommandFormInputProcessor.js';
-//not GWT import - same folder const CommandFormInputProcessor
+//sameFolderImports - not GWT import - same folder const CommandFormInputProcessor
 import { GameCommandCanvas } from './GameCommandCanvas.js';
-//not GWT import - same folder const GameCommandCanvas
+//sameFolderImports - not GWT import - same folder const GameCommandCanvas
 
 export class ImmediateCommandFormInputProcessor extends CommandFormInputProcessor {
         

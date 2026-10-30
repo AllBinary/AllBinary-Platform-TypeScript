@@ -74,7 +74,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserView } from './UserView.js';
-//not GWT import - same folder const UserView
+//sameFolderImports - not GWT import - same folder const UserView
 
 export class DeleteValidationUserView extends UserView implements ValidationComponentInterface {
         

@@ -48,11 +48,11 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInterface.js';
-//not GWT import - same folder const PlayerGameInputCompositeInterface
+//sameFolderImports - not GWT import - same folder const PlayerGameInputCompositeInterface
 import { NoPlayerGameInput } from './NoPlayerGameInput.js';
-//not GWT import - same folder const NoPlayerGameInput
+//sameFolderImports - not GWT import - same folder const NoPlayerGameInput
 import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import - same folder const PlayerGameInput
+//sameFolderImports - not GWT import - same folder const PlayerGameInput
 
 export class NullPlayerGameInputComposite
             extends Object

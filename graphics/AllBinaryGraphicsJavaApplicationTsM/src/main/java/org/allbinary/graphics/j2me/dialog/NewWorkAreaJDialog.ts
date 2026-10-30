@@ -65,23 +65,23 @@ import { WorkAreaJPanelInterface } from '../../../../../org/allbinary/graphics/j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog
+//sameFolderImports - not GWT import - same folder const JDialog
 import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextField
+//sameFolderImports - not GWT import - same folder const JTextField
 import { Frame } from './Frame.js';
-//not GWT import - same folder const Frame
+//sameFolderImports - not GWT import - same folder const Frame
 import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton
+//sameFolderImports - not GWT import - same folder const JButton
 import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout
+//sameFolderImports - not GWT import - same folder const GridLayout
 import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel
+//sameFolderImports - not GWT import - same folder const JLabel
 import { WindowAdapter } from './WindowAdapter.js';
-//not GWT import - same folder const WindowAdapter
+//sameFolderImports - not GWT import - same folder const WindowAdapter
 import { WindowEvent } from './WindowEvent.js';
-//not GWT import - same folder const WindowEvent
+//sameFolderImports - not GWT import - same folder const WindowEvent
 
 export class NewWorkAreaJDialog extends javax.swing.JDialog {
         

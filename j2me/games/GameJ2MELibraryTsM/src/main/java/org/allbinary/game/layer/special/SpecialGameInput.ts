@@ -50,7 +50,7 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialGameInputInterface } from './SpecialGameInputInterface.js';
-//not GWT import - same folder const SpecialGameInputInterface
+//sameFolderImports - not GWT import - same folder const SpecialGameInputInterface
 
 export class SpecialGameInput
             extends Object

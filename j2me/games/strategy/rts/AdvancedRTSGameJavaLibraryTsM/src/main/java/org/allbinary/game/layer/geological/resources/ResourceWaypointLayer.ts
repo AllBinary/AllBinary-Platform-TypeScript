@@ -63,9 +63,9 @@ import { RemoteInfo } from '../../../../../../org/allbinary/game/multiplayer/lay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalResourceInfoHudPaintableSingleton } from './GeologicalResourceInfoHudPaintableSingleton.js';
-//not GWT import - same folder const GeologicalResourceInfoHudPaintableSingleton
+//sameFolderImports - not GWT import - same folder const GeologicalResourceInfoHudPaintableSingleton
 import { GeologicalResourceInfoHudPaintable } from './GeologicalResourceInfoHudPaintable.js';
-//not GWT import - same folder const GeologicalResourceInfoHudPaintable
+//sameFolderImports - not GWT import - same folder const GeologicalResourceInfoHudPaintable
 
 export class ResourceWaypointLayer extends WaypointLayer {
         

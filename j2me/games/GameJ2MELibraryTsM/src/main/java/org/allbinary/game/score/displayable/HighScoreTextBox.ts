@@ -99,7 +99,7 @@ import { InApplicationPurchaseFactory } from '../../../../../org/allbinary/logic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoreUtil } from './HighScoreUtil.js';
-//not GWT import - same folder const HighScoreUtil
+//sameFolderImports - not GWT import - same folder const HighScoreUtil
 
 export class HighScoreTextBox extends CustomTextBox {
         

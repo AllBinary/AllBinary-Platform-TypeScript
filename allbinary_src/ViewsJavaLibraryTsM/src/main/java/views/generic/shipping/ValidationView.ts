@@ -48,11 +48,11 @@ import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/tran
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingMethodsView } from './ShippingMethodsView.js';
-//not GWT import - same folder const ShippingMethodsView
+//sameFolderImports - not GWT import - same folder const ShippingMethodsView
 import { Document } from './Document.js';
-//not GWT import - same folder const Document
+//sameFolderImports - not GWT import - same folder const Document
 import { Node } from './Node.js';
-//not GWT import - same folder const Node
+//sameFolderImports - not GWT import - same folder const Node
 
 export class ValidationView extends ShippingMethodsView implements ValidationComponentInterface {
         

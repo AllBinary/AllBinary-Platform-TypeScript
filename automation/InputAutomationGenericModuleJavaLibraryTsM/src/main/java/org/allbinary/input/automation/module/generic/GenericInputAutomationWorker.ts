@@ -95,9 +95,9 @@ import { MotionRectanglesWorker } from '../../../../../../org/allbinary/media/im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileCaptureWorkerFactory } from './GenericProfileCaptureWorkerFactory.js';
-//not GWT import - same folder const GenericProfileCaptureWorkerFactory
+//sameFolderImports - not GWT import - same folder const GenericProfileCaptureWorkerFactory
 import { CaptureWorkerUtil } from './CaptureWorkerUtil.js';
-//not GWT import - same folder const CaptureWorkerUtil
+//sameFolderImports - not GWT import - same folder const CaptureWorkerUtil
 
 export class GenericInputAutomationWorker extends AbstractInputAutomationWorker {
         

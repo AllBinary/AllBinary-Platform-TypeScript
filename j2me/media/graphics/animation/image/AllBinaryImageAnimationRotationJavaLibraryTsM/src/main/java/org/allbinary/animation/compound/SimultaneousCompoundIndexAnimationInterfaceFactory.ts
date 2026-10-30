@@ -60,7 +60,7 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimultaneousCompoundIndexAnimation } from './SimultaneousCompoundIndexAnimation.js';
-//not GWT import - same folder const SimultaneousCompoundIndexAnimation
+//sameFolderImports - not GWT import - same folder const SimultaneousCompoundIndexAnimation
 
 export class SimultaneousCompoundIndexAnimationInterfaceFactory
             extends Object

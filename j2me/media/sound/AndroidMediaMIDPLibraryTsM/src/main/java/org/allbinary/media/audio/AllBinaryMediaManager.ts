@@ -81,19 +81,19 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sounds } from './Sounds.js';
-//not GWT import - same folder const Sounds
+//sameFolderImports - not GWT import - same folder const Sounds
 import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-//not GWT import - same folder const SoundsFactoryInterface
+//sameFolderImports - not GWT import - same folder const SoundsFactoryInterface
 import { Sound } from './Sound.js';
-//not GWT import - same folder const Sound
+//sameFolderImports - not GWT import - same folder const Sound
 import { AndroidMediaPlayerWrapper } from './AndroidMediaPlayerWrapper.js';
-//not GWT import - same folder const AndroidMediaPlayerWrapper
+//sameFolderImports - not GWT import - same folder const AndroidMediaPlayerWrapper
 import { PlayerComposite } from './PlayerComposite.js';
-//not GWT import - same folder const PlayerComposite
+//sameFolderImports - not GWT import - same folder const PlayerComposite
 import { MediaPlayerUtil } from './MediaPlayerUtil.js';
-//not GWT import - same folder const MediaPlayerUtil
+//sameFolderImports - not GWT import - same folder const MediaPlayerUtil
 import { NoPlayer } from './NoPlayer.js';
-//not GWT import - same folder const NoPlayer
+//sameFolderImports - not GWT import - same folder const NoPlayer
 //AndroidMediaMIDPLibrary
 export class AllBinaryMediaManager
             extends Object

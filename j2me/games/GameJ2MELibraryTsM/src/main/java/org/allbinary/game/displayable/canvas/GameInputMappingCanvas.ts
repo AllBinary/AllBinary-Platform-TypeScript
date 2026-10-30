@@ -107,9 +107,9 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCommandCanvas } from './GameCommandCanvas.js';
-//not GWT import - same folder const GameCommandCanvas
+//sameFolderImports - not GWT import - same folder const GameCommandCanvas
 import { GameInputMappingInstructionsCanvas } from './GameInputMappingInstructionsCanvas.js';
-//not GWT import - same folder const GameInputMappingInstructionsCanvas
+//sameFolderImports - not GWT import - same folder const GameInputMappingInstructionsCanvas
 
 export class GameInputMappingCanvas extends GameCommandCanvas implements InputMappingInterface {
         

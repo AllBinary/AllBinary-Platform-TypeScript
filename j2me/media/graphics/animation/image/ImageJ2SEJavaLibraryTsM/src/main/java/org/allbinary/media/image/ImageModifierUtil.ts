@@ -67,9 +67,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-//not GWT import - same folder const ImageUtil
+//sameFolderImports - not GWT import - same folder const ImageUtil
 import { ImageCreationUtil } from './ImageCreationUtil.js';
-//not GWT import - same folder const ImageCreationUtil
+//sameFolderImports - not GWT import - same folder const ImageCreationUtil
 
 export class ImageModifierUtil
             extends Object

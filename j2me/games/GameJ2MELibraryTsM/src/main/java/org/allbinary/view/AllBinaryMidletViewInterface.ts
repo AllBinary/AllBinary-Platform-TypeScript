@@ -32,7 +32,7 @@ import { MidletCompositeInterface } from '../../../org/allbinary/midlet/MidletCo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmulatorViewInterface } from './EmulatorViewInterface.js';
-//not GWT import - same folder const EmulatorViewInterface
+//sameFolderImports - not GWT import - same folder const EmulatorViewInterface
 
 export interface AllBinaryMidletViewInterface extends MidletCompositeInterface, EmulatorViewInterface, DemoGameMidletEventListener, GameInitializedListenerInterface {
         

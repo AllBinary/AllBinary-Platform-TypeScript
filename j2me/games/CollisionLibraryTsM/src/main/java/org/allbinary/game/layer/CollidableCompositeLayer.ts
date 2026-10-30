@@ -84,7 +84,7 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameLayer } from './AllBinaryGameLayer.js';
-//not GWT import - same folder const AllBinaryGameLayer
+//sameFolderImports - not GWT import - same folder const AllBinaryGameLayer
 
 export class CollidableCompositeLayer extends AllBinaryGameLayer implements CollidableInterfaceCompositeInterface {
         

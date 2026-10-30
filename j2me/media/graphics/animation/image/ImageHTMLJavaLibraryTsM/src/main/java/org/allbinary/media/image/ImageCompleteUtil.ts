@@ -61,7 +61,7 @@ import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Hashtable } from './Hashtable.js';
-//not GWT import - same folder const Hashtable
+//sameFolderImports - not GWT import - same folder const Hashtable
 
 export class ImageCompleteUtil
             extends Object

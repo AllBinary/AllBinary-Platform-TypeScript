@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeClientInformation } from './AbeClientInformation.js';
-//not GWT import - same folder const AbeClientInformation
+//sameFolderImports - not GWT import - same folder const AbeClientInformation
 
 export class InputAutomationClientInformation extends AbeClientInformation {
         

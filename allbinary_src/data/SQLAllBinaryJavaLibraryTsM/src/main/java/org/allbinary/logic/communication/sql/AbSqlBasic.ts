@@ -88,9 +88,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SqlTypeStrings } from './SqlTypeStrings.js';
-//not GWT import - same folder const SqlTypeStrings
+//sameFolderImports - not GWT import - same folder const SqlTypeStrings
 import { SqlStrings } from './SqlStrings.js';
-//not GWT import - same folder const SqlStrings
+//sameFolderImports - not GWT import - same folder const SqlStrings
 
 export class AbSqlBasic
             extends Object

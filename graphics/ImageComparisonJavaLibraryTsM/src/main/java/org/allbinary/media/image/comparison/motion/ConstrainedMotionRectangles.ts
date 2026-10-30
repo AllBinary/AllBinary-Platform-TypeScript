@@ -61,11 +61,11 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangles } from './MotionRectangles.js';
-//not GWT import - same folder const MotionRectangles
+//sameFolderImports - not GWT import - same folder const MotionRectangles
 import { MotionRectangleConstraintsInterface } from './MotionRectangleConstraintsInterface.js';
-//not GWT import - same folder const MotionRectangleConstraintsInterface
+//sameFolderImports - not GWT import - same folder const MotionRectangleConstraintsInterface
 import { MotionRectangle } from './MotionRectangle.js';
-//not GWT import - same folder const MotionRectangle
+//sameFolderImports - not GWT import - same folder const MotionRectangle
 
 export class ConstrainedMotionRectangles extends MotionRectangles {
         

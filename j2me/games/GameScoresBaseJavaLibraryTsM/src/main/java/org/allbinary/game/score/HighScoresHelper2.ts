@@ -41,11 +41,11 @@ type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abst
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresHelperBase } from './HighScoresHelperBase.js';
-//not GWT import - same folder const HighScoresHelperBase
+//sameFolderImports - not GWT import - same folder const HighScoresHelperBase
 import { NullHighScoresSingletonFactory } from './NullHighScoresSingletonFactory.js';
-//not GWT import - same folder const NullHighScoresSingletonFactory
+//sameFolderImports - not GWT import - same folder const NullHighScoresSingletonFactory
 import { HighScores } from './HighScores.js';
-//not GWT import - same folder const HighScores
+//sameFolderImports - not GWT import - same folder const HighScores
 
 export class HighScoresHelper2 extends HighScoresHelperBase {
         

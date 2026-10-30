@@ -54,7 +54,7 @@ import { PaymentProcessorComponent } from '../../views/admin/payment/PaymentProc
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
-//not GWT import - same folder const TagHelper
+//sameFolderImports - not GWT import - same folder const TagHelper
 
 export class PaymentProcessHelper extends TagHelper {
         

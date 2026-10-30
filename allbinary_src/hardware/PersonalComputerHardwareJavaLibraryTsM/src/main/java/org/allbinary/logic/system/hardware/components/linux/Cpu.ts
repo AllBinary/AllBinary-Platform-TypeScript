@@ -100,7 +100,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CpuInfo } from './CpuInfo.js';
-//not GWT import - same folder const CpuInfo
+//sameFolderImports - not GWT import - same folder const CpuInfo
 
 export class Cpu
             extends Object

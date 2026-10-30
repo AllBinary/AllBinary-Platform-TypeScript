@@ -74,7 +74,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryItemView } from './InventoryItemView.js';
-//not GWT import - same folder const InventoryItemView
+//sameFolderImports - not GWT import - same folder const InventoryItemView
 
 export class DeleteFileValidationView extends InventoryItemView implements ValidationComponentInterface {
         

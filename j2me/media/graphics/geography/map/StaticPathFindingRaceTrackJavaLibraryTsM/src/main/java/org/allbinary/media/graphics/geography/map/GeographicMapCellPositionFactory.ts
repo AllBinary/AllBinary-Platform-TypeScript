@@ -62,11 +62,11 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionBaseFactory } from './GeographicMapCellPositionBaseFactory.js';
-//not GWT import - same folder const GeographicMapCellPositionBaseFactory
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionBaseFactory
 import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
-//not GWT import - same folder const BasicGeographicMapCellPositionFactory
+//sameFolderImports - not GWT import - same folder const BasicGeographicMapCellPositionFactory
 import { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import - same folder const BasicGeographicMap
+//sameFolderImports - not GWT import - same folder const BasicGeographicMap
 
 export class GeographicMapCellPositionFactory extends GeographicMapCellPositionBaseFactory {
         

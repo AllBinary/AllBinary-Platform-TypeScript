@@ -48,7 +48,7 @@ import { GameInputMotionEventProcessorAPI5 } from '../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseGameInputMotionEventProcessor } from './BaseGameInputMotionEventProcessor.js';
-//not GWT import - same folder const BaseGameInputMotionEventProcessor
+//sameFolderImports - not GWT import - same folder const BaseGameInputMotionEventProcessor
 
 export class GameInputMotionEventProcessorFactory
             extends Object

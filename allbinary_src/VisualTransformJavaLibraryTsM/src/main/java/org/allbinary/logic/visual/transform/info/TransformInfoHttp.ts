@@ -82,11 +82,11 @@ import { TransformInfoObjectConfig } from '../../../../../../org/allbinary/logic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfo } from './TransformInfo.js';
-//not GWT import - same folder const TransformInfo
+//sameFolderImports - not GWT import - same folder const TransformInfo
 import { TransformInfoHttpInterface } from './TransformInfoHttpInterface.js';
-//not GWT import - same folder const TransformInfoHttpInterface
+//sameFolderImports - not GWT import - same folder const TransformInfoHttpInterface
 import { TransformInfoData } from './TransformInfoData.js';
-//not GWT import - same folder const TransformInfoData
+//sameFolderImports - not GWT import - same folder const TransformInfoData
 
 export class TransformInfoHttp extends TransformInfo implements TransformInfoHttpInterface {
         

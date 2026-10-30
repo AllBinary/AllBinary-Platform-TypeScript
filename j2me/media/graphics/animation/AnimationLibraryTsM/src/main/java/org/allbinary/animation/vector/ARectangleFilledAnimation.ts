@@ -29,7 +29,7 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RectangleFilledAnimation } from './RectangleFilledAnimation.js';
-//not GWT import - same folder const RectangleFilledAnimation
+//sameFolderImports - not GWT import - same folder const RectangleFilledAnimation
 
 export class ARectangleFilledAnimation extends RectangleFilledAnimation {
         

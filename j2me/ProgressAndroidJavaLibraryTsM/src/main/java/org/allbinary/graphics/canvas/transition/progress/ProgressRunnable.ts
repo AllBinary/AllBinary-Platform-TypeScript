@@ -50,7 +50,7 @@ type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...arg
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import - same folder const ProgressCanvas
+//sameFolderImports - not GWT import - same folder const ProgressCanvas
 
 export class ProgressRunnable extends ARunnable {
         

@@ -63,7 +63,7 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Life } from './Life.js';
-//not GWT import - same folder const Life
+//sameFolderImports - not GWT import - same folder const Life
 
 export class HealthIncludingLifeBar extends Paintable implements HealthListenerInterface {
         

@@ -22,7 +22,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { NumberFormatException } from '../../../../../java/lang/NumberFormatException.js';
+            //import { NumberFormatException } from '../../../../../java/lang/NumberFormatException.js';
+            const NumberFormatException = globalThis.java.lang.NumberFormatException;
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
@@ -71,7 +72,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Tokenizer } from './Tokenizer.js';
-//not GWT import - same folder const Tokenizer
+//sameFolderImports - not GWT import - same folder const Tokenizer
 
 export class UniqueTokens
             extends Object

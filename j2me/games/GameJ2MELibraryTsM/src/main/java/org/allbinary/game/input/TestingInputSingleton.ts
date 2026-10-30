@@ -74,15 +74,15 @@ import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputInterface } from './GameInputInterface.js';
-//not GWT import - same folder const GameInputInterface
+//sameFolderImports - not GWT import - same folder const GameInputInterface
 import { InputFactory } from './InputFactory.js';
-//not GWT import - same folder const InputFactory
+//sameFolderImports - not GWT import - same folder const InputFactory
 import { GameInputProcessor } from './GameInputProcessor.js';
-//not GWT import - same folder const GameInputProcessor
+//sameFolderImports - not GWT import - same folder const GameInputProcessor
 import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
-//not GWT import - same folder const GameInputProcessorUtil
+//sameFolderImports - not GWT import - same folder const GameInputProcessorUtil
 import { TestInputInterface } from './TestInputInterface.js';
-//not GWT import - same folder const TestInputInterface
+//sameFolderImports - not GWT import - same folder const TestInputInterface
 
 export class TestingInputSingleton extends AllBinaryGameLayer implements GameInputInterface {
         

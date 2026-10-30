@@ -54,7 +54,7 @@ import { DisplayInBrowserContraintsInterface } from '../../../../org/allbinary/l
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementInterface } from './AdvertisementInterface.js';
-//not GWT import - same folder const AdvertisementInterface
+//sameFolderImports - not GWT import - same folder const AdvertisementInterface
 
 export class Advertisement
             extends Object

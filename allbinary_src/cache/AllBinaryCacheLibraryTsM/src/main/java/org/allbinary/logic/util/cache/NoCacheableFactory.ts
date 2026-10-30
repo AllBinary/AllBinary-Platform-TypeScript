@@ -41,9 +41,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
-//not GWT import - same folder const CacheableInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const CacheableInterfaceFactoryInterface
 import { CacheableInterface } from './CacheableInterface.js';
-//not GWT import - same folder const CacheableInterface
+//sameFolderImports - not GWT import - same folder const CacheableInterface
 
 export class NoCacheableFactory
             extends Object

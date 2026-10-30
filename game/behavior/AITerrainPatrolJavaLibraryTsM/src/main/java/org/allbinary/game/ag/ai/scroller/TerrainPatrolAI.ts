@@ -74,7 +74,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PacePatrolAI } from './PacePatrolAI.js';
-//not GWT import - same folder const PacePatrolAI
+//sameFolderImports - not GWT import - same folder const PacePatrolAI
 
 export class TerrainPatrolAI extends PacePatrolAI {
         

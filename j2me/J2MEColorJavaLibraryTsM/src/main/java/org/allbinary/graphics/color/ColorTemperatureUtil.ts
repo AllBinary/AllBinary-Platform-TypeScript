@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColorFactory } from './BasicColorFactory.js';
-//not GWT import - same folder const BasicColorFactory
+//sameFolderImports - not GWT import - same folder const BasicColorFactory
 import { BasicColor } from './BasicColor.js';
-//not GWT import - same folder const BasicColor
+//sameFolderImports - not GWT import - same folder const BasicColor
 
 export class ColorTemperatureUtil
             extends Object

@@ -48,11 +48,11 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistoryView } from './OrderHistoryView.js';
-//not GWT import - same folder const OrderHistoryView
+//sameFolderImports - not GWT import - same folder const OrderHistoryView
 import { Document } from './Document.js';
-//not GWT import - same folder const Document
+//sameFolderImports - not GWT import - same folder const Document
 import { Node } from './Node.js';
-//not GWT import - same folder const Node
+//sameFolderImports - not GWT import - same folder const Node
 
 export class ValidationView extends OrderHistoryView implements ValidationComponentInterface {
         

@@ -43,9 +43,9 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoHighScoresFactory } from './NoHighScoresFactory.js';
-//not GWT import - same folder const NoHighScoresFactory
+//sameFolderImports - not GWT import - same folder const NoHighScoresFactory
 import { HighScores } from './HighScores.js';
-//not GWT import - same folder const HighScores
+//sameFolderImports - not GWT import - same folder const HighScores
 
 export class LastFetchHighScoresFactory
             extends Object

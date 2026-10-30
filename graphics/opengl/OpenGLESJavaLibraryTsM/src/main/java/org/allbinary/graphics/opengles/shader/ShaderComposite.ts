@@ -48,17 +48,17 @@ import { NullOpenGLProcessorFactory } from '../../../../../org/allbinary/graphic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Shader } from './Shader.js';
-//not GWT import - same folder const Shader
+//sameFolderImports - not GWT import - same folder const Shader
 import { ShaderInitializer } from './ShaderInitializer.js';
-//not GWT import - same folder const ShaderInitializer
+//sameFolderImports - not GWT import - same folder const ShaderInitializer
 import { CompositeShaderUpdater } from './CompositeShaderUpdater.js';
-//not GWT import - same folder const CompositeShaderUpdater
+//sameFolderImports - not GWT import - same folder const CompositeShaderUpdater
 import { ModelViewProjection } from './ModelViewProjection.js';
-//not GWT import - same folder const ModelViewProjection
+//sameFolderImports - not GWT import - same folder const ModelViewProjection
 import { NullOpenGLTextureProcessor } from './NullOpenGLTextureProcessor.js';
-//not GWT import - same folder const NullOpenGLTextureProcessor
+//sameFolderImports - not GWT import - same folder const NullOpenGLTextureProcessor
 import { OpenGLObject3dProcessor } from './OpenGLObject3dProcessor.js';
-//not GWT import - same folder const OpenGLObject3dProcessor
+//sameFolderImports - not GWT import - same folder const OpenGLObject3dProcessor
 
 export class ShaderComposite
             extends Object

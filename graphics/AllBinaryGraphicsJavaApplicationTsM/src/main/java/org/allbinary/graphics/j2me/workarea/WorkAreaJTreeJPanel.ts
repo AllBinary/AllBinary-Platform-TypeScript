@@ -88,25 +88,25 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { JTree } from './JTree.js';
-//not GWT import - same folder const JTree
+//sameFolderImports - not GWT import - same folder const JTree
 import { MouseAdapter } from './MouseAdapter.js';
-//not GWT import - same folder const MouseAdapter
+//sameFolderImports - not GWT import - same folder const MouseAdapter
 import { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEvent
+//sameFolderImports - not GWT import - same folder const MouseEvent
 import { JPopupMenu } from './JPopupMenu.js';
-//not GWT import - same folder const JPopupMenu
+//sameFolderImports - not GWT import - same folder const JPopupMenu
 import { JMenuItem } from './JMenuItem.js';
-//not GWT import - same folder const JMenuItem
+//sameFolderImports - not GWT import - same folder const JMenuItem
 import { JScrollPane } from './JScrollPane.js';
-//not GWT import - same folder const JScrollPane
+//sameFolderImports - not GWT import - same folder const JScrollPane
 import { PopupMenuListener } from './PopupMenuListener.js';
-//not GWT import - same folder const PopupMenuListener
+//sameFolderImports - not GWT import - same folder const PopupMenuListener
 import { PopupMenuEvent } from './PopupMenuEvent.js';
-//not GWT import - same folder const PopupMenuEvent
+//sameFolderImports - not GWT import - same folder const PopupMenuEvent
 import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout
+//sameFolderImports - not GWT import - same folder const GridLayout
 
 export class WorkAreaJTreeJPanel extends javax.swing.JPanel {
         

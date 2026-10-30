@@ -77,7 +77,7 @@ import { StoreCustomizerComponentUtil } from '../../../../../../../../views/busi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericBodyCustomizerView } from './GenericBodyCustomizerView.js';
-//not GWT import - same folder const GenericBodyCustomizerView
+//sameFolderImports - not GWT import - same folder const GenericBodyCustomizerView
 
 export class InsertGenericBodyValidationView extends GenericBodyCustomizerView implements ValidationComponentInterface {
         

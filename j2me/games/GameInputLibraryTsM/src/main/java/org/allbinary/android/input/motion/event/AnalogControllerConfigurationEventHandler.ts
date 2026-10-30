@@ -59,9 +59,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogControllerConfigurationEventListenerInterface } from './AnalogControllerConfigurationEventListenerInterface.js';
-//not GWT import - same folder const AnalogControllerConfigurationEventListenerInterface
+//sameFolderImports - not GWT import - same folder const AnalogControllerConfigurationEventListenerInterface
 import { AnalogControllerConfigurationEvent } from './AnalogControllerConfigurationEvent.js';
-//not GWT import - same folder const AnalogControllerConfigurationEvent
+//sameFolderImports - not GWT import - same folder const AnalogControllerConfigurationEvent
 
 export class AnalogControllerConfigurationEventHandler extends BasicEventHandler {
         

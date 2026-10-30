@@ -60,17 +60,17 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterfaceFactory } from './PickedUpLayerInterfaceFactory.js';
-//not GWT import - same folder const PickedUpLayerInterfaceFactory
+//sameFolderImports - not GWT import - same folder const PickedUpLayerInterfaceFactory
 import { CountedPickedUpLayerInterfaceFactoryInterface } from './CountedPickedUpLayerInterfaceFactoryInterface.js';
-//not GWT import - same folder const CountedPickedUpLayerInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const CountedPickedUpLayerInterfaceFactoryInterface
 import { PickedUpLayerTypeFactory } from './PickedUpLayerTypeFactory.js';
-//not GWT import - same folder const PickedUpLayerTypeFactory
+//sameFolderImports - not GWT import - same folder const PickedUpLayerTypeFactory
 import { IconLayer } from './IconLayer.js';
-//not GWT import - same folder const IconLayer
+//sameFolderImports - not GWT import - same folder const IconLayer
 import { CountedPickedUpLayerInterfaceFactoryPool } from './CountedPickedUpLayerInterfaceFactoryPool.js';
-//not GWT import - same folder const CountedPickedUpLayerInterfaceFactoryPool
+//sameFolderImports - not GWT import - same folder const CountedPickedUpLayerInterfaceFactoryPool
 import { PickedUpLayerType } from './PickedUpLayerType.js';
-//not GWT import - same folder const PickedUpLayerType
+//sameFolderImports - not GWT import - same folder const PickedUpLayerType
 
 export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements CountedPickedUpLayerInterfaceFactoryInterface {
         

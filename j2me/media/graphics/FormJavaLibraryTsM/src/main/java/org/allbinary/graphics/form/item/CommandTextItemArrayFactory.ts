@@ -73,9 +73,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandTextItem } from './CommandTextItem.js';
-//not GWT import - same folder const CommandTextItem
+//sameFolderImports - not GWT import - same folder const CommandTextItem
 import { ABCustomItem } from './ABCustomItem.js';
-//not GWT import - same folder const ABCustomItem
+//sameFolderImports - not GWT import - same folder const ABCustomItem
 
 export class CommandTextItemArrayFactory
             extends Object

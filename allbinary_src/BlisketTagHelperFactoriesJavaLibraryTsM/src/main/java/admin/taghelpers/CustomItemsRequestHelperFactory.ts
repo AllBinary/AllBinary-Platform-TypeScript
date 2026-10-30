@@ -52,9 +52,9 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperFactory } from './TagHelperFactory.js';
-//not GWT import - same folder const TagHelperFactory
+//sameFolderImports - not GWT import - same folder const TagHelperFactory
 import { CustomItemsRequestHelper } from './CustomItemsRequestHelper.js';
-//not GWT import - same folder const CustomItemsRequestHelper
+//sameFolderImports - not GWT import - same folder const CustomItemsRequestHelper
 
 export class CustomItemsRequestHelperFactory extends TagHelperFactory {
         

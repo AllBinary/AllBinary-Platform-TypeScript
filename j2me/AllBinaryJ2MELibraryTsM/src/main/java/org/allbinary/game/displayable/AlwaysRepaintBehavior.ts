@@ -69,7 +69,7 @@ type NullRunnable<T = any, U = any> = typeof NullRunnable extends abstract new (
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RepaintBehavior } from './RepaintBehavior.js';
-//not GWT import - same folder const RepaintBehavior
+//sameFolderImports - not GWT import - same folder const RepaintBehavior
 
 export class AlwaysRepaintBehavior extends RepaintBehavior {
         

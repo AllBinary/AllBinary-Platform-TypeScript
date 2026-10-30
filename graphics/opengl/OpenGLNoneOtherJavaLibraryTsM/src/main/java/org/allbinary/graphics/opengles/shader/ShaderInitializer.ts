@@ -46,7 +46,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Shader } from './Shader.js';
-//not GWT import - same folder const Shader
+//sameFolderImports - not GWT import - same folder const Shader
 
 export class ShaderInitializer
             extends Object

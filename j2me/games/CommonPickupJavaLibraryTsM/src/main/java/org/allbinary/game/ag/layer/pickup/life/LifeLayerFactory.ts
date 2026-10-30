@@ -47,7 +47,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LifeLayer } from './LifeLayer.js';
-//not GWT import - same folder const LifeLayer
+//sameFolderImports - not GWT import - same folder const LifeLayer
 
 export class LifeLayerFactory
             extends Object

@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenCapture } from './ScreenCapture.js';
-//not GWT import - same folder const ScreenCapture
+//sameFolderImports - not GWT import - same folder const ScreenCapture
 
 export class ScreenCaptureNoneFactory
             extends Object

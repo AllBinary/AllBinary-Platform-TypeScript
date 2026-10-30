@@ -45,7 +45,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseTouchInput } from './BaseTouchInput.js';
-//not GWT import - same folder const BaseTouchInput
+//sameFolderImports - not GWT import - same folder const BaseTouchInput
 
 export class TouchButtonsListBuilder extends BaseTouchInput {
         

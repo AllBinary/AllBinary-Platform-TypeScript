@@ -34,7 +34,7 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABCustomItem } from './ABCustomItem.js';
-//not GWT import - same folder const ABCustomItem
+//sameFolderImports - not GWT import - same folder const ABCustomItem
 
 export class ABCustomImageItem extends ABCustomItem {
         

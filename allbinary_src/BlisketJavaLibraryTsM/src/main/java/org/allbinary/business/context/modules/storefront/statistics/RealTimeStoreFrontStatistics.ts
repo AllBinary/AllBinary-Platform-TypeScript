@@ -68,7 +68,7 @@ import { StoreFrontUsersStatisticsInterface } from '../../../../../../../org/all
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontStatisticsInterface } from './StoreFrontStatisticsInterface.js';
-//not GWT import - same folder const StoreFrontStatisticsInterface
+//sameFolderImports - not GWT import - same folder const StoreFrontStatisticsInterface
 
 export class RealTimeStoreFrontStatistics
             extends Object

@@ -91,9 +91,9 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogoData } from './LogoData.js';
-//not GWT import - same folder const LogoData
+//sameFolderImports - not GWT import - same folder const LogoData
 import { LogoImageFileUtil } from './LogoImageFileUtil.js';
-//not GWT import - same folder const LogoImageFileUtil
+//sameFolderImports - not GWT import - same folder const LogoImageFileUtil
 
 export class LogoValidation extends Validation implements DomNodeInterface {
         

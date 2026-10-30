@@ -50,9 +50,9 @@ import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyEventFactory } from './DestroyEventFactory.js';
-//not GWT import - same folder const DestroyEventFactory
+//sameFolderImports - not GWT import - same folder const DestroyEventFactory
 import { DestroyedEvent } from './DestroyedEvent.js';
-//not GWT import - same folder const DestroyedEvent
+//sameFolderImports - not GWT import - same folder const DestroyedEvent
 
 export class DestroyEventCircularStaticPool
             extends Object

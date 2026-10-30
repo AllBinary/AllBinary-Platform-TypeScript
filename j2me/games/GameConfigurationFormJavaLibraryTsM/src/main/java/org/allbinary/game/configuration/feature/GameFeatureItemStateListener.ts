@@ -83,11 +83,11 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeatureFactory } from './GameFeatureFactory.js';
-//not GWT import - same folder const GameFeatureFactory
+//sameFolderImports - not GWT import - same folder const GameFeatureFactory
 import { GameFeature } from './GameFeature.js';
-//not GWT import - same folder const GameFeature
+//sameFolderImports - not GWT import - same folder const GameFeature
 import { GameFeatureUtil } from './GameFeatureUtil.js';
-//not GWT import - same folder const GameFeatureUtil
+//sameFolderImports - not GWT import - same folder const GameFeatureUtil
 
 export class GameFeatureItemStateListener
             extends Object

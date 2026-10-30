@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LockableFeature } from './LockableFeature.js';
-//not GWT import - same folder const LockableFeature
+//sameFolderImports - not GWT import - same folder const LockableFeature
 
 export interface LockedUtilInterface {
         

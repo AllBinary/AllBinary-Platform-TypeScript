@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentTransactionKeys } from './PaymentTransactionKeys.js';
-//not GWT import - same folder const PaymentTransactionKeys
+//sameFolderImports - not GWT import - same folder const PaymentTransactionKeys
 
 export class PaymentTransactionKeysFactory
             extends Object

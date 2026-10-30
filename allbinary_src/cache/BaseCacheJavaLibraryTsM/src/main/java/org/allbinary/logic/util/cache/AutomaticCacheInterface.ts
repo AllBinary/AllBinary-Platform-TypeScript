@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CacheInterface } from './CacheInterface.js';
-//not GWT import - same folder const CacheInterface
+//sameFolderImports - not GWT import - same folder const CacheInterface
 import { CacheableInterface } from './CacheableInterface.js';
-//not GWT import - same folder const CacheableInterface
+//sameFolderImports - not GWT import - same folder const CacheableInterface
 
 export interface AutomaticCacheInterface extends CacheInterface {
         

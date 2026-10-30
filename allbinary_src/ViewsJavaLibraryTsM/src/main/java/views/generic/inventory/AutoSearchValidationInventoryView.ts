@@ -46,7 +46,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventorySearch } from './InventorySearch.js';
-//not GWT import - same folder const InventorySearch
+//sameFolderImports - not GWT import - same folder const InventorySearch
 
 export class AutoSearchValidationInventoryView extends InventorySearch {
         

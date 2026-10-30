@@ -315,13 +315,13 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameMidletStateFactory } from './GameMidletStateFactory.js';
-//not GWT import - same folder const GameMidletStateFactory
+//sameFolderImports - not GWT import - same folder const GameMidletStateFactory
 import { GameMidletEventHandler } from './GameMidletEventHandler.js';
-//not GWT import - same folder const GameMidletEventHandler
+//sameFolderImports - not GWT import - same folder const GameMidletEventHandler
 import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
-//not GWT import - same folder const DemoGameMidletEvent
+//sameFolderImports - not GWT import - same folder const DemoGameMidletEvent
 import { DemoGameMidletStateFactory } from './DemoGameMidletStateFactory.js';
-//not GWT import - same folder const DemoGameMidletStateFactory
+//sameFolderImports - not GWT import - same folder const DemoGameMidletStateFactory
 
 export class GameMidlet extends ProgressMidlet implements CommandListener {
         

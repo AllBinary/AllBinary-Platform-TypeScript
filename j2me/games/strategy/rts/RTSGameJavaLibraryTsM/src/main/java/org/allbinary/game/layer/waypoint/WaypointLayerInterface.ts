@@ -61,11 +61,11 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointLogHelper } from './WaypointLogHelper.js';
-//not GWT import - same folder const WaypointLogHelper
+//sameFolderImports - not GWT import - same folder const WaypointLogHelper
 import { Waypoint2LogHelper } from './Waypoint2LogHelper.js';
-//not GWT import - same folder const Waypoint2LogHelper
+//sameFolderImports - not GWT import - same folder const Waypoint2LogHelper
 import { WaypointRunnableLogHelper } from './WaypointRunnableLogHelper.js';
-//not GWT import - same folder const WaypointRunnableLogHelper
+//sameFolderImports - not GWT import - same folder const WaypointRunnableLogHelper
 
 export interface WaypointLayerInterface {
         

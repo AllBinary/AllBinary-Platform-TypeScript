@@ -75,11 +75,11 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileDataWorkerData } from './GenericProfileDataWorkerData.js';
-//not GWT import - same folder const GenericProfileDataWorkerData
+//sameFolderImports - not GWT import - same folder const GenericProfileDataWorkerData
 import { GenericProfileDataWorkerType } from './GenericProfileDataWorkerType.js';
-//not GWT import - same folder const GenericProfileDataWorkerType
+//sameFolderImports - not GWT import - same folder const GenericProfileDataWorkerType
 import { GenericProfileData } from './GenericProfileData.js';
-//not GWT import - same folder const GenericProfileData
+//sameFolderImports - not GWT import - same folder const GenericProfileData
 
 export class GenericProfile
             extends Object

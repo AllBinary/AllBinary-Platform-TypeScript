@@ -102,9 +102,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HudGraphicsPosition } from './HudGraphicsPosition.js';
-//not GWT import - same folder const HudGraphicsPosition
+//sameFolderImports - not GWT import - same folder const HudGraphicsPosition
 import { BasicHudFactory } from './BasicHudFactory.js';
-//not GWT import - same folder const BasicHudFactory
+//sameFolderImports - not GWT import - same folder const BasicHudFactory
 
 export class BasicHud_1
             extends Object

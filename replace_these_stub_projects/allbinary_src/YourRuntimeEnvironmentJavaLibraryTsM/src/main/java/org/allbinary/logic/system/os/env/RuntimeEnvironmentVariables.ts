@@ -15,8 +15,9 @@
 import { BufferedReader } from '../../../../../../java/io/BufferedReader.js';
 //not GWT import const BufferedReader
 
-import { InputStreamReader } from '../../../../../../java/io/InputStreamReader.js';
-//not GWT import const InputStreamReader
+//not plain js import { InputStreamReader } 
+const InputStreamReader = globalThis.java.io.InputStreamReader;
+type InputStreamReader<T = any, U = any> = typeof InputStreamReader extends abstract new (...args: any[]) => infer Instance ? Instance : typeof InputStreamReader;
 
 import { Properties } from '../../../../../../java/util/Properties.js';
 //not GWT import const Properties
@@ -57,7 +58,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Process } from './Process.js';
-//not GWT import - same folder const Process
+//sameFolderImports - not GWT import - same folder const Process
 
 export class RuntimeEnvironmentVariables
             extends Object

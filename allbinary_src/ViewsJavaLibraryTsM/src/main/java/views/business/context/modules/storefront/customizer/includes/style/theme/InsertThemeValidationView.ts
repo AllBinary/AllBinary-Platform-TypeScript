@@ -77,7 +77,7 @@ import { StoreCustomizerComponentUtil } from '../../../../../../../../../views/b
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThemeCustomizerView } from './ThemeCustomizerView.js';
-//not GWT import - same folder const ThemeCustomizerView
+//sameFolderImports - not GWT import - same folder const ThemeCustomizerView
 
 export class InsertThemeValidationView extends ThemeCustomizerView implements ValidationComponentInterface {
         

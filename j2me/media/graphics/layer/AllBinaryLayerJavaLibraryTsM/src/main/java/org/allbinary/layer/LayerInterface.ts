@@ -43,9 +43,9 @@ import { PaintableInterface } from '../../../org/allbinary/graphics/paint/Painta
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NamedInterface } from './NamedInterface.js';
-//not GWT import - same folder const NamedInterface
+//sameFolderImports - not GWT import - same folder const NamedInterface
 import { PositionInterface } from './PositionInterface.js';
-//not GWT import - same folder const PositionInterface
+//sameFolderImports - not GWT import - same folder const PositionInterface
 
 export interface LayerInterface extends NamedInterface, PaintableInterface, GroupInterfaceCompositeInterface, PositionInterface {
         

@@ -60,7 +60,7 @@ import { ViewPositionBase } from '../../../../../../org/allbinary/view/ViewPosit
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MiniMapLayer } from './MiniMapLayer.js';
-//not GWT import - same folder const MiniMapLayer
+//sameFolderImports - not GWT import - same folder const MiniMapLayer
 
 export class ImageMiniMapLayer extends MiniMapLayer {
         

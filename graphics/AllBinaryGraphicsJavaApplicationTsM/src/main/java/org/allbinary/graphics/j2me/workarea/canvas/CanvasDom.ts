@@ -24,7 +24,8 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-            import { Double } from '../../../../../../java/lang/Double.js';
+            //import { Double } from '../../../../../../java/lang/Double.js';
+            const Double = globalThis.java.lang.Double;
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap
@@ -86,13 +87,13 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IntegerDimension } from './IntegerDimension.js';
-//not GWT import - same folder const IntegerDimension
+//sameFolderImports - not GWT import - same folder const IntegerDimension
 import { Grid } from './Grid.js';
-//not GWT import - same folder const Grid
+//sameFolderImports - not GWT import - same folder const Grid
 import { CanvasJPanel } from './CanvasJPanel.js';
-//not GWT import - same folder const CanvasJPanel
+//sameFolderImports - not GWT import - same folder const CanvasJPanel
 import { Document } from './Document.js';
-//not GWT import - same folder const Document
+//sameFolderImports - not GWT import - same folder const Document
 
 export class CanvasDom
             extends Object

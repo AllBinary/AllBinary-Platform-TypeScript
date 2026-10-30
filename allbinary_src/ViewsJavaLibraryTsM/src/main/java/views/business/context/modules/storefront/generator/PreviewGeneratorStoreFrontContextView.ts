@@ -59,7 +59,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeneratorStoreFrontContextView } from './GeneratorStoreFrontContextView.js';
-//not GWT import - same folder const GeneratorStoreFrontContextView
+//sameFolderImports - not GWT import - same folder const GeneratorStoreFrontContextView
 
 export class PreviewGeneratorStoreFrontContextView extends GeneratorStoreFrontContextView {
         

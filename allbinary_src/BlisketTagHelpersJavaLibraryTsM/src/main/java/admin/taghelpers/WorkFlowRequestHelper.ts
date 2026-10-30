@@ -71,7 +71,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
-//not GWT import - same folder const ModifyTable
+//sameFolderImports - not GWT import - same folder const ModifyTable
 
 export class WorkFlowRequestHelper extends ModifyTable {
         

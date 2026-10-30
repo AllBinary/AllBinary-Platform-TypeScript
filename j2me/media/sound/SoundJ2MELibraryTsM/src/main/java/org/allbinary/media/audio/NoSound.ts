@@ -41,9 +41,9 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sound } from './Sound.js';
-//not GWT import - same folder const Sound
+//sameFolderImports - not GWT import - same folder const Sound
 import { NoPlayer } from './NoPlayer.js';
-//not GWT import - same folder const NoPlayer
+//sameFolderImports - not GWT import - same folder const NoPlayer
 
 export class NoSound extends Sound {
         

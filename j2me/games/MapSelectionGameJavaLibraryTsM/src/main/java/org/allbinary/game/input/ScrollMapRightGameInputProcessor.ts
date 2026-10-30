@@ -45,9 +45,9 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollMapGameInputProcessor } from './ScrollMapGameInputProcessor.js';
-//not GWT import - same folder const ScrollMapGameInputProcessor
+//sameFolderImports - not GWT import - same folder const ScrollMapGameInputProcessor
 import { ScrollMapPlayerGameInput } from './ScrollMapPlayerGameInput.js';
-//not GWT import - same folder const ScrollMapPlayerGameInput
+//sameFolderImports - not GWT import - same folder const ScrollMapPlayerGameInput
 
 export class ScrollMapRightGameInputProcessor extends ScrollMapGameInputProcessor {
         

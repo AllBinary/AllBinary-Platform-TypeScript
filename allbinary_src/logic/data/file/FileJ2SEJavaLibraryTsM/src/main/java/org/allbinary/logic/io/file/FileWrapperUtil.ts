@@ -48,7 +48,7 @@ type PreLogUtil<T = any, U = any> = typeof PreLogUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
-//not GWT import - same folder const AbFile
+//sameFolderImports - not GWT import - same folder const AbFile
 
 export class FileWrapperUtil
             extends Object

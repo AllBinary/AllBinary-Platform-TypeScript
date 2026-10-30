@@ -64,7 +64,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RawKeyEventListener } from './RawKeyEventListener.js';
-//not GWT import - same folder const RawKeyEventListener
+//sameFolderImports - not GWT import - same folder const RawKeyEventListener
 
 export class RawKeyEventHandler
             extends Object

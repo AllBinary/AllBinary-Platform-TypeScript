@@ -43,9 +43,9 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
-//not GWT import - same folder const RTSPlayerLayerInterface
+//sameFolderImports - not GWT import - same folder const RTSPlayerLayerInterface
 import { AdvancedPlayerOwnedRTSLayers } from './AdvancedPlayerOwnedRTSLayers.js';
-//not GWT import - same folder const AdvancedPlayerOwnedRTSLayers
+//sameFolderImports - not GWT import - same folder const AdvancedPlayerOwnedRTSLayers
 
 export interface AdvancedRTSPlayerLayerInterface extends RTSPlayerLayerInterface {
         

@@ -115,9 +115,9 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingMethodsData } from './ShippingMethodsData.js';
-//not GWT import - same folder const ShippingMethodsData
+//sameFolderImports - not GWT import - same folder const ShippingMethodsData
 import { ShippingMethodData } from './ShippingMethodData.js';
-//not GWT import - same folder const ShippingMethodData
+//sameFolderImports - not GWT import - same folder const ShippingMethodData
 
 export class ShippingMethodsFactory
             extends Object

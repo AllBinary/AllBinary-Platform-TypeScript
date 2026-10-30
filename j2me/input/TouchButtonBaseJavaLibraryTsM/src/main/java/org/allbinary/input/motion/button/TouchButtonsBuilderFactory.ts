@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoButtonsTouchInputFactory } from './NoButtonsTouchInputFactory.js';
-//not GWT import - same folder const NoButtonsTouchInputFactory
+//sameFolderImports - not GWT import - same folder const NoButtonsTouchInputFactory
 import { BaseTouchInput } from './BaseTouchInput.js';
-//not GWT import - same folder const BaseTouchInput
+//sameFolderImports - not GWT import - same folder const BaseTouchInput
 
 export class TouchButtonsBuilderFactory
             extends Object

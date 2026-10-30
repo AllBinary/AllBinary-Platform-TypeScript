@@ -66,7 +66,7 @@ import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableI
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageSwtRotationUtil } from './ImageSwtRotationUtil.js';
-//not GWT import - same folder const ImageSwtRotationUtil
+//sameFolderImports - not GWT import - same folder const ImageSwtRotationUtil
 
 export class ImageRotationUtil
             extends Object

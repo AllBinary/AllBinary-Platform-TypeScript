@@ -52,9 +52,9 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AngleFactory } from './AngleFactory.js';
-//not GWT import - same folder const AngleFactory
+//sameFolderImports - not GWT import - same folder const AngleFactory
 import { FrameUtil } from './FrameUtil.js';
-//not GWT import - same folder const FrameUtil
+//sameFolderImports - not GWT import - same folder const FrameUtil
 
 export class AngleIncrementInfo
             extends Object

@@ -55,9 +55,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import - same folder const PlayerGameInput
+//sameFolderImports - not GWT import - same folder const PlayerGameInput
 import { GameInputProcessorInterface } from './GameInputProcessorInterface.js';
-//not GWT import - same folder const GameInputProcessorInterface
+//sameFolderImports - not GWT import - same folder const GameInputProcessorInterface
 
 export class GameInputProcessorComposite extends PlayerGameInput {
         

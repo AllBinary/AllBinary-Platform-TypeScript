@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextChangeListener } from './TextChangeListener.js';
-//not GWT import - same folder const TextChangeListener
+//sameFolderImports - not GWT import - same folder const TextChangeListener
 
 export interface TextInterface {
         

@@ -52,7 +52,7 @@ type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointRunnableLogHelper } from './WaypointRunnableLogHelper.js';
-//not GWT import - same folder const WaypointRunnableLogHelper
+//sameFolderImports - not GWT import - same folder const WaypointRunnableLogHelper
 
 export class WaypointRunnableSelectedLogHelper extends WaypointRunnableLogHelper {
         

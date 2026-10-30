@@ -55,7 +55,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameNotificationHud } from './GameNotificationHud.js';
-//not GWT import - same folder const GameNotificationHud
+//sameFolderImports - not GWT import - same folder const GameNotificationHud
 
 export class NoGameNotificationHudSingleton
             extends Object

@@ -53,7 +53,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionAreaInterface } from './GeographicMapCellPositionAreaInterface.js';
-//not GWT import - same folder const GeographicMapCellPositionAreaInterface
+//sameFolderImports - not GWT import - same folder const GeographicMapCellPositionAreaInterface
 
 export class GeographicMapCellPositionAreaBase
             extends Object

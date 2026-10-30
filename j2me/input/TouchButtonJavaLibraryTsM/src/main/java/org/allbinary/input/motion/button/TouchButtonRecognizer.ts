@@ -67,23 +67,23 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
-//not GWT import - same folder const BasicTouchInputFactory
+//sameFolderImports - not GWT import - same folder const BasicTouchInputFactory
 import { TouchButtonInput } from './TouchButtonInput.js';
-//not GWT import - same folder const TouchButtonInput
+//sameFolderImports - not GWT import - same folder const TouchButtonInput
 import { CurrentlyPressedTouchButtonSingleton } from './CurrentlyPressedTouchButtonSingleton.js';
-//not GWT import - same folder const CurrentlyPressedTouchButtonSingleton
+//sameFolderImports - not GWT import - same folder const CurrentlyPressedTouchButtonSingleton
 //import { ReleaseHelper } from './ReleaseHelper.js';
-//not GWT import - same folder const ReleaseHelper
+//sameFolderImports - not GWT import - same folder const ReleaseHelper
 import { CancelTouchButtonInputFactory } from './CancelTouchButtonInputFactory.js';
-//not GWT import - same folder const CancelTouchButtonInputFactory
+//sameFolderImports - not GWT import - same folder const CancelTouchButtonInputFactory
 import { TouchScreenFactory } from './TouchScreenFactory.js';
-//not GWT import - same folder const TouchScreenFactory
+//sameFolderImports - not GWT import - same folder const TouchScreenFactory
 //import { MultitouchReleaseHelper } from './MultitouchReleaseHelper.js';
-//not GWT import - same folder const MultitouchReleaseHelper
+//sameFolderImports - not GWT import - same folder const MultitouchReleaseHelper
 import { TouchButtonFactory } from './TouchButtonFactory.js';
-//not GWT import - same folder const TouchButtonFactory
+//sameFolderImports - not GWT import - same folder const TouchButtonFactory
 import { TouchButton } from './TouchButton.js';
-//not GWT import - same folder const TouchButton
+//sameFolderImports - not GWT import - same folder const TouchButton
 type ReleaseHelper = InstanceType<TouchButtonRecognizer['ReleaseHelper']>;
 type MultitouchReleaseHelper = InstanceType<TouchButtonRecognizer['MultitouchReleaseHelper']>;
 

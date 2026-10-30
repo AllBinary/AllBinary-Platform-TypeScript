@@ -50,7 +50,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FallingPickupLayer } from './FallingPickupLayer.js';
-//not GWT import - same folder const FallingPickupLayer
+//sameFolderImports - not GWT import - same folder const FallingPickupLayer
 
 export class FallingPickupLayerFactory
             extends Object

@@ -92,55 +92,55 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JFrame } from './JFrame.js';
-//not GWT import - same folder const JFrame
+//sameFolderImports - not GWT import - same folder const JFrame
 import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog
+//sameFolderImports - not GWT import - same folder const JDialog
 import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel
+//sameFolderImports - not GWT import - same folder const JLabel
 import { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextField
+//sameFolderImports - not GWT import - same folder const JTextField
 import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton
+//sameFolderImports - not GWT import - same folder const JButton
 import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { JMenuBar } from './JMenuBar.js';
-//not GWT import - same folder const JMenuBar
+//sameFolderImports - not GWT import - same folder const JMenuBar
 import { JMenu } from './JMenu.js';
-//not GWT import - same folder const JMenu
+//sameFolderImports - not GWT import - same folder const JMenu
 import { JMenuItem } from './JMenuItem.js';
-//not GWT import - same folder const JMenuItem
+//sameFolderImports - not GWT import - same folder const JMenuItem
 import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener
+//sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent
+//sameFolderImports - not GWT import - same folder const ActionEvent
 import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout
+//sameFolderImports - not GWT import - same folder const GroupLayout
 import { Short } from './Short.js';
-//not GWT import - same folder const Short
+//sameFolderImports - not GWT import - same folder const Short
 import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout
+//sameFolderImports - not GWT import - same folder const GridLayout
 import { ImageUnifierJPanel } from './ImageUnifierJPanel.js';
-//not GWT import - same folder const ImageUnifierJPanel
+//sameFolderImports - not GWT import - same folder const ImageUnifierJPanel
 import { ImageAnalysisResultsJPanel } from './ImageAnalysisResultsJPanel.js';
-//not GWT import - same folder const ImageAnalysisResultsJPanel
+//sameFolderImports - not GWT import - same folder const ImageAnalysisResultsJPanel
 import { RotationSpriteImageJPanel } from './RotationSpriteImageJPanel.js';
-//not GWT import - same folder const RotationSpriteImageJPanel
+//sameFolderImports - not GWT import - same folder const RotationSpriteImageJPanel
 import { SpriteSplitterImageJPanel } from './SpriteSplitterImageJPanel.js';
-//not GWT import - same folder const SpriteSplitterImageJPanel
+//sameFolderImports - not GWT import - same folder const SpriteSplitterImageJPanel
 import { RotationImageJPanel } from './RotationImageJPanel.js';
-//not GWT import - same folder const RotationImageJPanel
+//sameFolderImports - not GWT import - same folder const RotationImageJPanel
 import { ResizeImageJPanel } from './ResizeImageJPanel.js';
-//not GWT import - same folder const ResizeImageJPanel
+//sameFolderImports - not GWT import - same folder const ResizeImageJPanel
 import { CreateIconImagesJPanel } from './CreateIconImagesJPanel.js';
-//not GWT import - same folder const CreateIconImagesJPanel
+//sameFolderImports - not GWT import - same folder const CreateIconImagesJPanel
 import { CanvasImageJPanel } from './CanvasImageJPanel.js';
-//not GWT import - same folder const CanvasImageJPanel
+//sameFolderImports - not GWT import - same folder const CanvasImageJPanel
 import { MirrorSpriteImageJPanel } from './MirrorSpriteImageJPanel.js';
-//not GWT import - same folder const MirrorSpriteImageJPanel
+//sameFolderImports - not GWT import - same folder const MirrorSpriteImageJPanel
 import { MirrorImageJPanel } from './MirrorImageJPanel.js';
-//not GWT import - same folder const MirrorImageJPanel
+//sameFolderImports - not GWT import - same folder const MirrorImageJPanel
 
 export class ImageToolJFrame extends javax.swing.JFrame implements FileJDialogListenerInterface {
         

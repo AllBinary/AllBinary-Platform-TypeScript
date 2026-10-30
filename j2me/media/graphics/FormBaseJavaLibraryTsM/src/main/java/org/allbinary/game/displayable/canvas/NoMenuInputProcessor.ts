@@ -50,7 +50,7 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-//not GWT import - same folder const BasicMenuInputProcessor
+//sameFolderImports - not GWT import - same folder const BasicMenuInputProcessor
 
 export class NoMenuInputProcessor extends BasicMenuInputProcessor {
         

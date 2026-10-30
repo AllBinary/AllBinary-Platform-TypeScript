@@ -40,7 +40,7 @@ import { View } from '../../../../android/view/View.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewCompositeInterface } from './ViewCompositeInterface.js';
-//not GWT import - same folder const ViewCompositeInterface
+//sameFolderImports - not GWT import - same folder const ViewCompositeInterface
 
 export interface KeyInputViewCompositeInterface extends ViewCompositeInterface {
         

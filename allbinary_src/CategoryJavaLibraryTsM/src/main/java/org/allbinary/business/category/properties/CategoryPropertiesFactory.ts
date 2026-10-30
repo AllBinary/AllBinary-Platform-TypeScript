@@ -55,11 +55,11 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryPropertiesFactoryInterface } from './CategoryPropertiesFactoryInterface.js';
-//not GWT import - same folder const CategoryPropertiesFactoryInterface
+//sameFolderImports - not GWT import - same folder const CategoryPropertiesFactoryInterface
 import { CategoryPropertiesInterface } from './CategoryPropertiesInterface.js';
-//not GWT import - same folder const CategoryPropertiesInterface
+//sameFolderImports - not GWT import - same folder const CategoryPropertiesInterface
 import { CategoryProperties } from './CategoryProperties.js';
-//not GWT import - same folder const CategoryProperties
+//sameFolderImports - not GWT import - same folder const CategoryProperties
 
 export class CategoryPropertiesFactory
             extends Object

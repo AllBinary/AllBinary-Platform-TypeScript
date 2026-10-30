@@ -50,9 +50,9 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Serializable } from './Serializable.js';
-//not GWT import - same folder const Serializable
+//sameFolderImports - not GWT import - same folder const Serializable
 import { PaymentGateway } from './PaymentGateway.js';
-//not GWT import - same folder const PaymentGateway
+//sameFolderImports - not GWT import - same folder const PaymentGateway
 
 export class PaymentGatewayPrimaryKey
             extends Object

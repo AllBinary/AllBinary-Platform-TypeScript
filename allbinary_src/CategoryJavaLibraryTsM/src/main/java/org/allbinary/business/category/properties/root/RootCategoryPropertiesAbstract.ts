@@ -77,7 +77,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RootCategoryPropertiesInterface } from './RootCategoryPropertiesInterface.js';
-//not GWT import - same folder const RootCategoryPropertiesInterface
+//sameFolderImports - not GWT import - same folder const RootCategoryPropertiesInterface
 
 export class RootCategoryPropertiesAbstract
             extends Object

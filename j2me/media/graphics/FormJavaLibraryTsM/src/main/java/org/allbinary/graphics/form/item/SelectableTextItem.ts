@@ -43,9 +43,9 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABTextItem } from './ABTextItem.js';
-//not GWT import - same folder const ABTextItem
+//sameFolderImports - not GWT import - same folder const ABTextItem
 import { ABStringComponent } from './ABStringComponent.js';
-//not GWT import - same folder const ABStringComponent
+//sameFolderImports - not GWT import - same folder const ABStringComponent
 
 export class SelectableTextItem extends ABTextItem {
         

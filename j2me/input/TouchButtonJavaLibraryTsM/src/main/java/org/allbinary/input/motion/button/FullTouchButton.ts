@@ -57,11 +57,11 @@ import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButton } from './TouchButton.js';
-//not GWT import - same folder const TouchButton
+//sameFolderImports - not GWT import - same folder const TouchButton
 import { TouchButtonInput } from './TouchButtonInput.js';
-//not GWT import - same folder const TouchButtonInput
+//sameFolderImports - not GWT import - same folder const TouchButtonInput
 import { TouchButtonResource } from './TouchButtonResource.js';
-//not GWT import - same folder const TouchButtonResource
+//sameFolderImports - not GWT import - same folder const TouchButtonResource
 
 export class FullTouchButton extends TouchButton {
         

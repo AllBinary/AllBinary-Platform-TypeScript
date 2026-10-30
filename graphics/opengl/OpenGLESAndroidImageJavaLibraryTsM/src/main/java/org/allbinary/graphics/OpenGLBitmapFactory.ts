@@ -47,9 +47,9 @@ import { AndroidImageInterface } from '../../../org/microemu/android/device/Andr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { Config } from './Config.js';
-//not GWT import - same folder const Config
+//sameFolderImports - not GWT import - same folder const Config
 import { OpenGLBitmap } from './OpenGLBitmap.js';
-//not GWT import - same folder const OpenGLBitmap
+//sameFolderImports - not GWT import - same folder const OpenGLBitmap
 type Config = InstanceType<OpenGLBitmapFactory['Config']>;
 
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {

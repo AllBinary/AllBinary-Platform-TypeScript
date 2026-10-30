@@ -77,9 +77,9 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLFeatureFactory } from './OpenGLFeatureFactory.js';
-//not GWT import - same folder const OpenGLFeatureFactory
+//sameFolderImports - not GWT import - same folder const OpenGLFeatureFactory
 import { OpenGLFeature } from './OpenGLFeature.js';
-//not GWT import - same folder const OpenGLFeature
+//sameFolderImports - not GWT import - same folder const OpenGLFeature
 
 export class OpenGLConfiguration
             extends Object

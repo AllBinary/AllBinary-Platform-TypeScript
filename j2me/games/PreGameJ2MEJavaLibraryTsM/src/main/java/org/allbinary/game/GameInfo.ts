@@ -69,17 +69,17 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameTypeFactory } from './GameTypeFactory.js';
-//not GWT import - same folder const GameTypeFactory
+//sameFolderImports - not GWT import - same folder const GameTypeFactory
 import { GameMode } from './GameMode.js';
-//not GWT import - same folder const GameMode
+//sameFolderImports - not GWT import - same folder const GameMode
 import { PlayerTypesFactory } from './PlayerTypesFactory.js';
-//not GWT import - same folder const PlayerTypesFactory
+//sameFolderImports - not GWT import - same folder const PlayerTypesFactory
 import { GameInfoData } from './GameInfoData.js';
-//not GWT import - same folder const GameInfoData
+//sameFolderImports - not GWT import - same folder const GameInfoData
 import { GameType } from './GameType.js';
-//not GWT import - same folder const GameType
+//sameFolderImports - not GWT import - same folder const GameType
 import { PlayerType } from './PlayerType.js';
-//not GWT import - same folder const PlayerType
+//sameFolderImports - not GWT import - same folder const PlayerType
 
 export class GameInfo
             extends Object

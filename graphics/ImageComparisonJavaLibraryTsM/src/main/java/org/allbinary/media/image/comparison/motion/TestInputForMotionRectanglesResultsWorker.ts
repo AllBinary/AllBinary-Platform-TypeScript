@@ -91,11 +91,11 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectanglesResultsListener } from './MotionRectanglesResultsListener.js';
-//not GWT import - same folder const MotionRectanglesResultsListener
+//sameFolderImports - not GWT import - same folder const MotionRectanglesResultsListener
 import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
-//not GWT import - same folder const MotionRectanglesResultsEvent
+//sameFolderImports - not GWT import - same folder const MotionRectanglesResultsEvent
 import { MotionRectangles } from './MotionRectangles.js';
-//not GWT import - same folder const MotionRectangles
+//sameFolderImports - not GWT import - same folder const MotionRectangles
 
 export class TestInputForMotionRectanglesResultsWorker
             extends Object

@@ -50,7 +50,7 @@ import { UserInterface } from '../../../../../../../../../org/allbinary/business
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WizardWebStoreAdminUser } from './WizardWebStoreAdminUser.js';
-//not GWT import - same folder const WizardWebStoreAdminUser
+//sameFolderImports - not GWT import - same folder const WizardWebStoreAdminUser
 
 export class WizardWebStoreAdminUserFactory
             extends Object

@@ -74,11 +74,11 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-//not GWT import - same folder const UserConfigurationInterface
+//sameFolderImports - not GWT import - same folder const UserConfigurationInterface
 import { UserConfiguration } from './UserConfiguration.js';
-//not GWT import - same folder const UserConfiguration
+//sameFolderImports - not GWT import - same folder const UserConfiguration
 import { UserConfigurationData } from './UserConfigurationData.js';
-//not GWT import - same folder const UserConfigurationData
+//sameFolderImports - not GWT import - same folder const UserConfigurationData
 
 export class UserConfigurationView
             extends Object

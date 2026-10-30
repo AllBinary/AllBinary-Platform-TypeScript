@@ -124,21 +124,21 @@ import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import - same folder const PlayerGameInput
+//sameFolderImports - not GWT import - same folder const PlayerGameInput
 import { InputFactory } from './InputFactory.js';
-//not GWT import - same folder const InputFactory
+//sameFolderImports - not GWT import - same folder const InputFactory
 import { GameInputProcessor } from './GameInputProcessor.js';
-//not GWT import - same folder const GameInputProcessor
+//sameFolderImports - not GWT import - same folder const GameInputProcessor
 import { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
-//not GWT import - same folder const SelectRTSLayerVisitorFactoryInterface
+//sameFolderImports - not GWT import - same folder const SelectRTSLayerVisitorFactoryInterface
 import { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
-//not GWT import - same folder const RTSPlayerGameInput
+//sameFolderImports - not GWT import - same folder const RTSPlayerGameInput
 import { SelectedRTSLayersPlayerUpgradeGameInputProcessor } from './SelectedRTSLayersPlayerUpgradeGameInputProcessor.js';
-//not GWT import - same folder const SelectedRTSLayersPlayerUpgradeGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SelectedRTSLayersPlayerUpgradeGameInputProcessor
 import { SelectedRTSLayersPlayerDowngradeGameInputProcessor } from './SelectedRTSLayersPlayerDowngradeGameInputProcessor.js';
-//not GWT import - same folder const SelectedRTSLayersPlayerDowngradeGameInputProcessor
+//sameFolderImports - not GWT import - same folder const SelectedRTSLayersPlayerDowngradeGameInputProcessor
 import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
-//not GWT import - same folder const GameInputProcessorUtil
+//sameFolderImports - not GWT import - same folder const GameInputProcessorUtil
 
 export class SelectedRTSLayersPlayerGameInput extends PlayerGameInput {
         

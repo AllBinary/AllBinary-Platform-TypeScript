@@ -57,19 +57,19 @@ type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abst
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const AnimationInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const AnimationInterfaceFactoryInterface
 import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-//not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const ProceduralAnimationInterfaceFactoryInterface
 import { RotationAnimation } from './RotationAnimation.js';
-//not GWT import - same folder const RotationAnimation
+//sameFolderImports - not GWT import - same folder const RotationAnimation
 import { NullRotationAnimation } from './NullRotationAnimation.js';
-//not GWT import - same folder const NullRotationAnimation
+//sameFolderImports - not GWT import - same folder const NullRotationAnimation
 import { IndexedAnimationBehavior } from './IndexedAnimationBehavior.js';
-//not GWT import - same folder const IndexedAnimationBehavior
+//sameFolderImports - not GWT import - same folder const IndexedAnimationBehavior
 //import { NullRotationAnimation2 } from './NullRotationAnimation2.js';
-//not GWT import - same folder const NullRotationAnimation2
+//sameFolderImports - not GWT import - same folder const NullRotationAnimation2
 import { Animation } from './Animation.js';
-//not GWT import - same folder const Animation
+//sameFolderImports - not GWT import - same folder const Animation
 type NullRotationAnimation2 = InstanceType<NullRotationAnimationFactory['NullRotationAnimation2']>;
 
 export class NullRotationAnimationFactory

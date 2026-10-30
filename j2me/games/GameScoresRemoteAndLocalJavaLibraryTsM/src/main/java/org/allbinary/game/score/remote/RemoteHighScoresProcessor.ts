@@ -81,13 +81,13 @@ type HashtableUtil<T = any, U = any> = typeof HashtableUtil extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScoresProcessorInterface } from './RemoteHighScoresProcessorInterface.js';
-//not GWT import - same folder const RemoteHighScoresProcessorInterface
+//sameFolderImports - not GWT import - same folder const RemoteHighScoresProcessorInterface
 import { RemoteHighScoresData } from './RemoteHighScoresData.js';
-//not GWT import - same folder const RemoteHighScoresData
+//sameFolderImports - not GWT import - same folder const RemoteHighScoresData
 import { XmlRpcRemoteHighScoresClient } from './XmlRpcRemoteHighScoresClient.js';
-//not GWT import - same folder const XmlRpcRemoteHighScoresClient
+//sameFolderImports - not GWT import - same folder const XmlRpcRemoteHighScoresClient
 import { RemoteHighScores } from './RemoteHighScores.js';
-//not GWT import - same folder const RemoteHighScores
+//sameFolderImports - not GWT import - same folder const RemoteHighScores
 
 export class RemoteHighScoresProcessor
             extends Object

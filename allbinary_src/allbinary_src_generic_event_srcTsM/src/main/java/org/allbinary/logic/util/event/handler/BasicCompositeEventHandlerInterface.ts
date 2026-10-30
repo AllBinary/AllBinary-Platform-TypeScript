@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicEventHandlerInterface } from './BasicEventHandlerInterface.js';
-//not GWT import - same folder const BasicEventHandlerInterface
+//sameFolderImports - not GWT import - same folder const BasicEventHandlerInterface
 
 export interface BasicCompositeEventHandlerInterface {
         

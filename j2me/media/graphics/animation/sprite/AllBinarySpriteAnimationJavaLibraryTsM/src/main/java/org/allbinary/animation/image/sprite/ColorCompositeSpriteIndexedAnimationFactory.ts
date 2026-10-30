@@ -66,7 +66,7 @@ import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/Primit
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpriteIndexedAnimation } from './SpriteIndexedAnimation.js';
-//not GWT import - same folder const SpriteIndexedAnimation
+//sameFolderImports - not GWT import - same folder const SpriteIndexedAnimation
 
 export class ColorCompositeSpriteIndexedAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         

@@ -51,7 +51,7 @@ import { Processor } from '../../../org/allbinary/canvas/Processor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MidletExitProcessor } from './MidletExitProcessor.js';
-//not GWT import - same folder const MidletExitProcessor
+//sameFolderImports - not GWT import - same folder const MidletExitProcessor
 
 export class MidletExitProcessorFactory
             extends Object

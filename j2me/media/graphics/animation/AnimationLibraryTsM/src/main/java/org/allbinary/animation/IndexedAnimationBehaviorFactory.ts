@@ -37,11 +37,11 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
-//not GWT import - same folder const AnimationBehaviorFactory
+//sameFolderImports - not GWT import - same folder const AnimationBehaviorFactory
 import { IndexedAnimationBehavior } from './IndexedAnimationBehavior.js';
-//not GWT import - same folder const IndexedAnimationBehavior
+//sameFolderImports - not GWT import - same folder const IndexedAnimationBehavior
 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import - same folder const AnimationBehavior
+//sameFolderImports - not GWT import - same folder const AnimationBehavior
 
 export class IndexedAnimationBehaviorFactory extends AnimationBehaviorFactory {
         

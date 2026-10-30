@@ -45,13 +45,13 @@ import { LayerManagerEventHandler } from '../../../org/allbinary/layer/event/Lay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManager } from './LayerManager.js';
-//not GWT import - same folder const LayerManager
+//sameFolderImports - not GWT import - same folder const LayerManager
 import { LayerProcessor } from './LayerProcessor.js';
-//not GWT import - same folder const LayerProcessor
+//sameFolderImports - not GWT import - same folder const LayerProcessor
 import { LayerManagerNoDebug } from './LayerManagerNoDebug.js';
-//not GWT import - same folder const LayerManagerNoDebug
+//sameFolderImports - not GWT import - same folder const LayerManagerNoDebug
 import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import - same folder const AllBinaryLayer
+//sameFolderImports - not GWT import - same folder const AllBinaryLayer
 
 export class AllBinaryLayerManager extends LayerManager {
         

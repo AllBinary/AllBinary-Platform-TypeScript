@@ -39,9 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputFeature } from './InputFeature.js';
-//not GWT import - same folder const InputFeature
+//sameFolderImports - not GWT import - same folder const InputFeature
 import { Features } from './Features.js';
-//not GWT import - same folder const Features
+//sameFolderImports - not GWT import - same folder const Features
 
 export class InputFeatureFactory
             extends Object

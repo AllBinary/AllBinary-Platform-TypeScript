@@ -96,13 +96,13 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputProcessorInterface } from './GameInputProcessorInterface.js';
-//not GWT import - same folder const GameInputProcessorInterface
+//sameFolderImports - not GWT import - same folder const GameInputProcessorInterface
 import { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInterface.js';
-//not GWT import - same folder const PlayerGameInputCompositeInterface
+//sameFolderImports - not GWT import - same folder const PlayerGameInputCompositeInterface
 import { PlayerGameInput } from './PlayerGameInput.js';
-//not GWT import - same folder const PlayerGameInput
+//sameFolderImports - not GWT import - same folder const PlayerGameInput
 import { GameInputProcessorComposite } from './GameInputProcessorComposite.js';
-//not GWT import - same folder const GameInputProcessorComposite
+//sameFolderImports - not GWT import - same folder const GameInputProcessorComposite
 
 export class PreGameSelectionGameInputProcessor extends Processor implements GameInputProcessorInterface, PlayerGameInputCompositeInterface {
         

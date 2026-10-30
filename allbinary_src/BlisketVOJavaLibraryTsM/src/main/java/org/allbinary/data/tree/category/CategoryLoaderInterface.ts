@@ -43,7 +43,7 @@ import { Document } from '../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryModifierTreeInterface } from './CategoryModifierTreeInterface.js';
-//not GWT import - same folder const CategoryModifierTreeInterface
+//sameFolderImports - not GWT import - same folder const CategoryModifierTreeInterface
 
 export interface CategoryLoaderInterface extends CategoryModifierTreeInterface {
         

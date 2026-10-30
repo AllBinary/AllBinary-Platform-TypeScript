@@ -28,9 +28,9 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompleteMotionGestureInputEventListenerInterface } from './CompleteMotionGestureInputEventListenerInterface.js';
-//not GWT import - same folder const CompleteMotionGestureInputEventListenerInterface
+//sameFolderImports - not GWT import - same folder const CompleteMotionGestureInputEventListenerInterface
 import { CompleteMotionGestureInputEvent } from './CompleteMotionGestureInputEvent.js';
-//not GWT import - same folder const CompleteMotionGestureInputEvent
+//sameFolderImports - not GWT import - same folder const CompleteMotionGestureInputEvent
 
 export class CompleteMotionGestureInputEventListener
             extends Object

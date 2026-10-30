@@ -55,7 +55,7 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LurchRotationAI } from './LurchRotationAI.js';
-//not GWT import - same folder const LurchRotationAI
+//sameFolderImports - not GWT import - same folder const LurchRotationAI
 
 export class LurchRotationAIFactory
             extends Object

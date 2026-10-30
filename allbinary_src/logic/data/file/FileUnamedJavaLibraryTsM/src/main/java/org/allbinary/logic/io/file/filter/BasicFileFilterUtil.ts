@@ -53,7 +53,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VisitorFileFilter } from './VisitorFileFilter.js';
-//not GWT import - same folder const VisitorFileFilter
+//sameFolderImports - not GWT import - same folder const VisitorFileFilter
 
 export class BasicFileFilterUtil
             extends Object

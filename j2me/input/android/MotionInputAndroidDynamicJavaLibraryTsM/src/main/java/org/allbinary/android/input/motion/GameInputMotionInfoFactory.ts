@@ -48,7 +48,7 @@ import { GameInputMotionInfoAPI5 } from '../../../../../org/allbinary/android/in
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputMotionInfo } from './GameInputMotionInfo.js';
-//not GWT import - same folder const GameInputMotionInfo
+//sameFolderImports - not GWT import - same folder const GameInputMotionInfo
 
 export class GameInputMotionInfoFactory
             extends Object

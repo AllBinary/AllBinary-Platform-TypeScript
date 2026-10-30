@@ -76,7 +76,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPaymentTypeUtil } from './BasicPaymentTypeUtil.js';
-//not GWT import - same folder const BasicPaymentTypeUtil
+//sameFolderImports - not GWT import - same folder const BasicPaymentTypeUtil
 
 export class BasicPaymentType
             extends Object

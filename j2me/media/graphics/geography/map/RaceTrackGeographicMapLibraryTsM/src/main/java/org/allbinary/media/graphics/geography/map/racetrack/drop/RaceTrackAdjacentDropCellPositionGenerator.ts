@@ -115,9 +115,9 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackDropCellPositionGenerator } from './RaceTrackDropCellPositionGenerator.js';
-//not GWT import - same folder const RaceTrackDropCellPositionGenerator
+//sameFolderImports - not GWT import - same folder const RaceTrackDropCellPositionGenerator
 import { RaceTrackAdjacentDropLayerFactory } from './RaceTrackAdjacentDropLayerFactory.js';
-//not GWT import - same folder const RaceTrackAdjacentDropLayerFactory
+//sameFolderImports - not GWT import - same folder const RaceTrackAdjacentDropLayerFactory
 
 export class RaceTrackAdjacentDropCellPositionGenerator extends RaceTrackDropCellPositionGenerator {
         

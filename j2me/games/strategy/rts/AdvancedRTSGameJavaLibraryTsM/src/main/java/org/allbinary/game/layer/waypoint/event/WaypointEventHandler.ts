@@ -50,7 +50,7 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointEventListenerInterface } from './WaypointEventListenerInterface.js';
-//not GWT import - same folder const WaypointEventListenerInterface
+//sameFolderImports - not GWT import - same folder const WaypointEventListenerInterface
 
 export class WaypointEventHandler extends BasicEventHandler {
         

@@ -68,7 +68,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LinuxOS } from './LinuxOS.js';
-//not GWT import - same folder const LinuxOS
+//sameFolderImports - not GWT import - same folder const LinuxOS
 
 export class LinuxOperatingSystemFactory
             extends Object

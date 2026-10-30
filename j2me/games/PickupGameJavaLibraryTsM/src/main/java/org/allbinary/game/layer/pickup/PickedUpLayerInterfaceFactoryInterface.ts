@@ -43,7 +43,7 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerType } from './PickedUpLayerType.js';
-//not GWT import - same folder const PickedUpLayerType
+//sameFolderImports - not GWT import - same folder const PickedUpLayerType
 
 export interface PickedUpLayerInterfaceFactoryInterface {
         

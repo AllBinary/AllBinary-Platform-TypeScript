@@ -73,7 +73,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HelpPaintable } from './HelpPaintable.js';
-//not GWT import - same folder const HelpPaintable
+//sameFolderImports - not GWT import - same folder const HelpPaintable
 
 export class BasicInputMappingHelpPaintable extends HelpPaintable {
         

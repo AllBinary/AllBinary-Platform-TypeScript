@@ -66,11 +66,11 @@ import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsLayerCircularStaticPool } from './PointsLayerCircularStaticPool.js';
-//not GWT import - same folder const PointsLayerCircularStaticPool
+//sameFolderImports - not GWT import - same folder const PointsLayerCircularStaticPool
 import { PointsLayerFactory } from './PointsLayerFactory.js';
-//not GWT import - same folder const PointsLayerFactory
+//sameFolderImports - not GWT import - same folder const PointsLayerFactory
 import { PointsResources } from './PointsResources.js';
-//not GWT import - same folder const PointsResources
+//sameFolderImports - not GWT import - same folder const PointsResources
 
 export class Points20kPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {
         

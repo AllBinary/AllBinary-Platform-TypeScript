@@ -54,9 +54,9 @@ import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorBaseRotationAnimation } from './VectorBaseRotationAnimation.js';
-//not GWT import - same folder const VectorBaseRotationAnimation
+//sameFolderImports - not GWT import - same folder const VectorBaseRotationAnimation
 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import - same folder const AnimationBehavior
+//sameFolderImports - not GWT import - same folder const AnimationBehavior
 
 export class VectorRotationAnimation extends VectorBaseRotationAnimation {
         

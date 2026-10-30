@@ -49,11 +49,11 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
-//not GWT import - same folder const PlayerOwnedRTSLayers
+//sameFolderImports - not GWT import - same folder const PlayerOwnedRTSLayers
 import { RTSLayer } from './RTSLayer.js';
-//not GWT import - same folder const RTSLayer
+//sameFolderImports - not GWT import - same folder const RTSLayer
 import { AllBinaryGameLayer } from './AllBinaryGameLayer.js';
-//not GWT import - same folder const AllBinaryGameLayer
+//sameFolderImports - not GWT import - same folder const AllBinaryGameLayer
 
 export class AdvancedPlayerOwnedRTSLayers extends PlayerOwnedRTSLayers {
         

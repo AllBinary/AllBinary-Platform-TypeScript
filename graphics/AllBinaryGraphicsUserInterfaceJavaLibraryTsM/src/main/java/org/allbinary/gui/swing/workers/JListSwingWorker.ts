@@ -40,11 +40,11 @@ import { swing } from '../../../../../javax/swing.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SwingWorker } from './SwingWorker.js';
-//not GWT import - same folder const SwingWorker
+//sameFolderImports - not GWT import - same folder const SwingWorker
 import { JList } from './JList.js';
-//not GWT import - same folder const JList
+//sameFolderImports - not GWT import - same folder const JList
 import { ListModel } from './ListModel.js';
-//not GWT import - same folder const ListModel
+//sameFolderImports - not GWT import - same folder const ListModel
 
 export class JListSwingWorker extends SwingWorker {
         

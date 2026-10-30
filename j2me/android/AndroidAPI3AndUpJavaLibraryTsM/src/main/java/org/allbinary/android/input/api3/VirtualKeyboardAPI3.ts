@@ -66,9 +66,9 @@ import { EventStrings } from '../../../../../org/allbinary/logic/util/event/Even
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShowVirtualKeyboardRunnable } from './ShowVirtualKeyboardRunnable.js';
-//not GWT import - same folder const ShowVirtualKeyboardRunnable
+//sameFolderImports - not GWT import - same folder const ShowVirtualKeyboardRunnable
 import { HideVirtualKeyboardRunnable } from './HideVirtualKeyboardRunnable.js';
-//not GWT import - same folder const HideVirtualKeyboardRunnable
+//sameFolderImports - not GWT import - same folder const HideVirtualKeyboardRunnable
 
 export class VirtualKeyboardAPI3 extends VirtualKeyboard implements VirtualKeyboardEventListenerInterface {
         

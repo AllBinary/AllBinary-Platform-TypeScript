@@ -96,7 +96,7 @@ import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/vi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbTransformer } from './AbTransformer.js';
-//not GWT import - same folder const AbTransformer
+//sameFolderImports - not GWT import - same folder const AbTransformer
 
 export class BasicTransformer extends AbTransformer {
         
@@ -216,7 +216,7 @@ this.streamUtil!.close(inputStream);
 
  try { outputStream= new ByteArrayOutputStream();
     
-inputStream= new ByteArrayInputStream(this.getTransformInfoInterface()!.getTemplate()!.getBytes());
+inputStream= new ByteArrayInputStream(Array.from(new TextEncoder().encode(this.getTransformInfoInterface()!.getTemplate()!), byte => (byte << 24) >> 24));
     
 outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384)) as ByteArrayOutputStream;
     

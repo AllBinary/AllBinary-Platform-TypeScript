@@ -59,11 +59,11 @@ type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abst
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimation } from './IndexedAnimation.js';
-//not GWT import - same folder const IndexedAnimation
+//sameFolderImports - not GWT import - same folder const IndexedAnimation
 import { VectorAnimationInterface } from './VectorAnimationInterface.js';
-//not GWT import - same folder const VectorAnimationInterface
+//sameFolderImports - not GWT import - same folder const VectorAnimationInterface
 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import - same folder const AnimationBehavior
+//sameFolderImports - not GWT import - same folder const AnimationBehavior
 
 export class VectorAnimation extends IndexedAnimation implements VectorAnimationInterface {
         

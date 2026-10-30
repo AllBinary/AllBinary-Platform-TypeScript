@@ -57,7 +57,7 @@ import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCa
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthGraphic } from './HealthGraphic.js';
-//not GWT import - same folder const HealthGraphic
+//sameFolderImports - not GWT import - same folder const HealthGraphic
 
 export class ImageHealthGraphic extends HealthGraphic {
         

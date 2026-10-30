@@ -89,7 +89,7 @@ import { StringValidationUtil } from '../../../../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryEntityInterface } from './InventoryEntityInterface.js';
-//not GWT import - same folder const InventoryEntityInterface
+//sameFolderImports - not GWT import - same folder const InventoryEntityInterface
 
 export class InventoryEntity extends AbSqlBean implements InventoryEntityInterface {
         

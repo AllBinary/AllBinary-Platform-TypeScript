@@ -45,9 +45,9 @@ import { CacheableInterfaceFactoryInterface } from '../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BufferedImageCacheable } from './BufferedImageCacheable.js';
-//not GWT import - same folder const BufferedImageCacheable
+//sameFolderImports - not GWT import - same folder const BufferedImageCacheable
 import { BufferedImageInfo } from './BufferedImageInfo.js';
-//not GWT import - same folder const BufferedImageInfo
+//sameFolderImports - not GWT import - same folder const BufferedImageInfo
 
 export class BufferedImageCacheableFactory
             extends Object

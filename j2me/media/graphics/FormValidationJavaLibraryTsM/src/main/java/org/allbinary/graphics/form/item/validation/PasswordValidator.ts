@@ -40,7 +40,7 @@ import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/i
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextFieldItemValidator } from './TextFieldItemValidator.js';
-//not GWT import - same folder const TextFieldItemValidator
+//sameFolderImports - not GWT import - same folder const TextFieldItemValidator
 
 export class PasswordValidator extends TextFieldItemValidator {
         

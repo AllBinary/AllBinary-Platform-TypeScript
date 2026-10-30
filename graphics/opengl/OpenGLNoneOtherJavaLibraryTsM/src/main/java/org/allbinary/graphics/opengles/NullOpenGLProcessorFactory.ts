@@ -25,7 +25,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLProcessor } from './OpenGLProcessor.js';
-//not GWT import - same folder const OpenGLProcessor
+//sameFolderImports - not GWT import - same folder const OpenGLProcessor
 
 export class NullOpenGLProcessorFactory
             extends Object

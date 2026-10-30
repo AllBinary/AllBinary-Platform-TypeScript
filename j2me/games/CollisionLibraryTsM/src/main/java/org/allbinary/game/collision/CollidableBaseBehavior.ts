@@ -66,15 +66,15 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableInterface } from './CollidableInterface.js';
-//not GWT import - same folder const CollidableInterface
+//sameFolderImports - not GWT import - same folder const CollidableInterface
 import { LayerCollisionUtil } from './LayerCollisionUtil.js';
-//not GWT import - same folder const LayerCollisionUtil
+//sameFolderImports - not GWT import - same folder const LayerCollisionUtil
 import { CollidableInterfaceCompositeInterface } from './CollidableInterfaceCompositeInterface.js';
-//not GWT import - same folder const CollidableInterfaceCompositeInterface
+//sameFolderImports - not GWT import - same folder const CollidableInterfaceCompositeInterface
 import { CollisionTypeFactory } from './CollisionTypeFactory.js';
-//not GWT import - same folder const CollisionTypeFactory
+//sameFolderImports - not GWT import - same folder const CollisionTypeFactory
 import { CollisionType } from './CollisionType.js';
-//not GWT import - same folder const CollisionType
+//sameFolderImports - not GWT import - same folder const CollisionType
 
 export class CollidableBaseBehavior
             extends Object

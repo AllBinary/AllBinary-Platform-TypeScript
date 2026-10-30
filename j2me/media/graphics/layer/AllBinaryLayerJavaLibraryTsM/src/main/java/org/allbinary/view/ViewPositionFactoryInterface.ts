@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewPositionBase } from './ViewPositionBase.js';
-//not GWT import - same folder const ViewPositionBase
+//sameFolderImports - not GWT import - same folder const ViewPositionBase
 
 export interface ViewPositionFactoryInterface {
         

@@ -41,9 +41,9 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellHistoryProgressBase } from './GeographicMapCellHistoryProgressBase.js';
-//not GWT import - same folder const GeographicMapCellHistoryProgressBase
+//sameFolderImports - not GWT import - same folder const GeographicMapCellHistoryProgressBase
 import { GeographicMapCellHistory } from './GeographicMapCellHistory.js';
-//not GWT import - same folder const GeographicMapCellHistory
+//sameFolderImports - not GWT import - same folder const GeographicMapCellHistory
 
 export class GeographicMapCellHistoryProgress extends GeographicMapCellHistoryProgressBase {
         

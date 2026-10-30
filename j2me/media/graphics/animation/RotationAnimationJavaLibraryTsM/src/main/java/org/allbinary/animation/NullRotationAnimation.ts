@@ -35,9 +35,9 @@ type CircularIndexUtil<T = any, U = any> = typeof CircularIndexUtil extends abst
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RotationAnimation } from './RotationAnimation.js';
-//not GWT import - same folder const RotationAnimation
+//sameFolderImports - not GWT import - same folder const RotationAnimation
 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import - same folder const AnimationBehavior
+//sameFolderImports - not GWT import - same folder const AnimationBehavior
 
 export class NullRotationAnimation extends RotationAnimation {
         

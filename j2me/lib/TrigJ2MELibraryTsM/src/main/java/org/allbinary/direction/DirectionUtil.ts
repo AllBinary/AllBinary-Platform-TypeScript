@@ -45,9 +45,9 @@ import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DirectionFactory } from './DirectionFactory.js';
-//not GWT import - same folder const DirectionFactory
+//sameFolderImports - not GWT import - same folder const DirectionFactory
 import { Direction } from './Direction.js';
-//not GWT import - same folder const Direction
+//sameFolderImports - not GWT import - same folder const Direction
 
 export class DirectionUtil
             extends Object

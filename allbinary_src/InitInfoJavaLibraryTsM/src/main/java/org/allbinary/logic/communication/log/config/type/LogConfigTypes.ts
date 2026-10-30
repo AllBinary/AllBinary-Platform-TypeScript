@@ -65,11 +65,11 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigTypeFactory } from './LogConfigTypeFactory.js';
-//not GWT import - same folder const LogConfigTypeFactory
+//sameFolderImports - not GWT import - same folder const LogConfigTypeFactory
 import { LogConfigTypeData } from './LogConfigTypeData.js';
-//not GWT import - same folder const LogConfigTypeData
+//sameFolderImports - not GWT import - same folder const LogConfigTypeData
 import { LogConfigType } from './LogConfigType.js';
-//not GWT import - same folder const LogConfigType
+//sameFolderImports - not GWT import - same folder const LogConfigType
 
 export class LogConfigTypes
             extends Object

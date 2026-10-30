@@ -59,9 +59,9 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleFileUtil } from './SimpleFileUtil.js';
-//not GWT import - same folder const SimpleFileUtil
+//sameFolderImports - not GWT import - same folder const SimpleFileUtil
 import { AbFile } from './AbFile.js';
-//not GWT import - same folder const AbFile
+//sameFolderImports - not GWT import - same folder const AbFile
 
 export class FileUtil2
             extends Object

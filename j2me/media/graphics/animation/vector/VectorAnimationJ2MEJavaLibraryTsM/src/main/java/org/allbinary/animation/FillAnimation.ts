@@ -29,9 +29,9 @@ import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimation } from './IndexedAnimation.js';
-//not GWT import - same folder const IndexedAnimation
+//sameFolderImports - not GWT import - same folder const IndexedAnimation
 import { AnimationBehavior } from './AnimationBehavior.js';
-//not GWT import - same folder const AnimationBehavior
+//sameFolderImports - not GWT import - same folder const AnimationBehavior
 
 export class FillAnimation extends IndexedAnimation {
         

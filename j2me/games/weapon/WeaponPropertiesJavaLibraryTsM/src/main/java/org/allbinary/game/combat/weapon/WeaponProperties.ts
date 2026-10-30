@@ -56,7 +56,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleWeaponProperties } from './SimpleWeaponProperties.js';
-//not GWT import - same folder const SimpleWeaponProperties
+//sameFolderImports - not GWT import - same folder const SimpleWeaponProperties
 
 export class WeaponProperties extends SimpleWeaponProperties {
         

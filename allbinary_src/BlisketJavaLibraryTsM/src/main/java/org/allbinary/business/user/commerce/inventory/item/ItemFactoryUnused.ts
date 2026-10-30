@@ -56,7 +56,7 @@ import { RequestParams } from '../../../../../../../org/allbinary/logic/communic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Item } from './Item.js';
-//not GWT import - same folder const Item
+//sameFolderImports - not GWT import - same folder const Item
 
 export class ItemFactoryUnused
             extends Object

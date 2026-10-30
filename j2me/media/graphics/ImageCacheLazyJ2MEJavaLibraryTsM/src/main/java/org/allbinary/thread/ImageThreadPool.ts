@@ -55,7 +55,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThreadPool } from './ThreadPool.js';
-//not GWT import - same folder const ThreadPool
+//sameFolderImports - not GWT import - same folder const ThreadPool
 //This is mainly for network communications.
 export class ImageThreadPool extends ThreadPool {
         

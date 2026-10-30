@@ -60,11 +60,11 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoHardware } from './NoHardware.js';
-//not GWT import - same folder const NoHardware
+//sameFolderImports - not GWT import - same folder const NoHardware
 import { HardwareInterface } from './HardwareInterface.js';
-//not GWT import - same folder const HardwareInterface
+//sameFolderImports - not GWT import - same folder const HardwareInterface
 import { HardwareFactory } from './HardwareFactory.js';
-//not GWT import - same folder const HardwareFactory
+//sameFolderImports - not GWT import - same folder const HardwareFactory
 
 export class SystemHardwareFactory
             extends Object

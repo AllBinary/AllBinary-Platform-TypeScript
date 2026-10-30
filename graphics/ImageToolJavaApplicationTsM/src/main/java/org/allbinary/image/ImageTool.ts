@@ -56,7 +56,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventQueue } from './EventQueue.js';
-//not GWT import - same folder const EventQueue
+//sameFolderImports - not GWT import - same folder const EventQueue
 
 export class ImageTool
             extends Object

@@ -50,7 +50,7 @@ import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTreeNodeInterface } from './CustomTreeNodeInterface.js';
-//not GWT import - same folder const CustomTreeNodeInterface
+//sameFolderImports - not GWT import - same folder const CustomTreeNodeInterface
 
 export interface ProfileActionScriptConditionInterface extends ProfileActionScriptNodeInterface, CustomTreeNodeInterface, ProfileActionScriptItemInterface {
         

@@ -66,7 +66,7 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicRandomAI } from './BasicRandomAI.js';
-//not GWT import - same folder const BasicRandomAI
+//sameFolderImports - not GWT import - same folder const BasicRandomAI
 
 export class BasicRandomAIFactory
             extends Object

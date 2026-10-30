@@ -51,7 +51,7 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryFlickerAndroidImageRotationAnimation } from './AllBinaryFlickerAndroidImageRotationAnimation.js';
-//not GWT import - same folder const AllBinaryFlickerAndroidImageRotationAnimation
+//sameFolderImports - not GWT import - same folder const AllBinaryFlickerAndroidImageRotationAnimation
 
 export class AllBinaryAdjustedAndroidImageRotationAnimation extends AllBinaryFlickerAndroidImageRotationAnimation {
         

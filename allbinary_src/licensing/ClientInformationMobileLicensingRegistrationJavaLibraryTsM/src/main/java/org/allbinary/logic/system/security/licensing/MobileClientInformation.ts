@@ -58,9 +58,9 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeClientInformation } from './AbeClientInformation.js';
-//not GWT import - same folder const AbeClientInformation
+//sameFolderImports - not GWT import - same folder const AbeClientInformation
 import { PartnerIdentifierFileUtil } from './PartnerIdentifierFileUtil.js';
-//not GWT import - same folder const PartnerIdentifierFileUtil
+//sameFolderImports - not GWT import - same folder const PartnerIdentifierFileUtil
 
 export class MobileClientInformation extends AbeClientInformation {
         

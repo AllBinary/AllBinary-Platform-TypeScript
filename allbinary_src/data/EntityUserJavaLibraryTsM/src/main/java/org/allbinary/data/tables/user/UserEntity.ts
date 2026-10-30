@@ -110,7 +110,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEntityInterface } from './UserEntityInterface.js';
-//not GWT import - same folder const UserEntityInterface
+//sameFolderImports - not GWT import - same folder const UserEntityInterface
 
 export class UserEntity extends AbSqlBean implements UserEntityInterface {
         

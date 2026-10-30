@@ -60,9 +60,9 @@ import { DropCellPositionHistory } from '../../../../../../../org/allbinary/medi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomMapGeneratorBase } from './CustomMapGeneratorBase.js';
-//not GWT import - same folder const CustomMapGeneratorBase
+//sameFolderImports - not GWT import - same folder const CustomMapGeneratorBase
 import { RaceTrackGeographicMap } from './RaceTrackGeographicMap.js';
-//not GWT import - same folder const RaceTrackGeographicMap
+//sameFolderImports - not GWT import - same folder const RaceTrackGeographicMap
 
 export class CustomMapGenerator extends CustomMapGeneratorBase {
         

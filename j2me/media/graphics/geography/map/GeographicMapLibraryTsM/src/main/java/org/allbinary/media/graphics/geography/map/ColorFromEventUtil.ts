@@ -48,9 +48,9 @@ import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/colo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCompositeInterface } from './GeographicMapCompositeInterface.js';
-//not GWT import - same folder const GeographicMapCompositeInterface
+//sameFolderImports - not GWT import - same folder const GeographicMapCompositeInterface
 import { BasicGeographicMap } from './BasicGeographicMap.js';
-//not GWT import - same folder const BasicGeographicMap
+//sameFolderImports - not GWT import - same folder const BasicGeographicMap
 
 export class ColorFromEventUtil
             extends Object

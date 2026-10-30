@@ -40,9 +40,9 @@ import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { J2MEGameInputMapping } from './J2MEGameInputMapping.js';
-//not GWT import - same folder const J2MEGameInputMapping
+//sameFolderImports - not GWT import - same folder const J2MEGameInputMapping
 import { NormalJ2MEDefaultGameInputMapping } from './NormalJ2MEDefaultGameInputMapping.js';
-//not GWT import - same folder const NormalJ2MEDefaultGameInputMapping
+//sameFolderImports - not GWT import - same folder const NormalJ2MEDefaultGameInputMapping
 
 export class NormalJ2MEGameInputMapping extends J2MEGameInputMapping {
         

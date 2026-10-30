@@ -48,7 +48,7 @@ import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseSecretComposite } from './BaseSecretComposite.js';
-//not GWT import - same folder const BaseSecretComposite
+//sameFolderImports - not GWT import - same folder const BaseSecretComposite
 
 export class SecretComposite extends BaseSecretComposite {
         

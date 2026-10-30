@@ -46,7 +46,7 @@ type NullUtil<T = any, U = any> = typeof NullUtil extends abstract new (...args:
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionGestureInput } from './MotionGestureInput.js';
-//not GWT import - same folder const MotionGestureInput
+//sameFolderImports - not GWT import - same folder const MotionGestureInput
 
 export class TrackballMotionGestureFactory
             extends Object

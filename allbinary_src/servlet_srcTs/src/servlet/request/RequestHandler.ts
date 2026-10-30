@@ -64,19 +64,19 @@ import { RequestWorkFlowFactory } from '../../org/allbinary/logic/control/workfl
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HttpServlet } from './HttpServlet.js';
-//not GWT import - same folder const HttpServlet
+//sameFolderImports - not GWT import - same folder const HttpServlet
 import { ServletConfig } from './ServletConfig.js';
-//not GWT import - same folder const ServletConfig
+//sameFolderImports - not GWT import - same folder const ServletConfig
 import { PrintWriter } from './PrintWriter.js';
-//not GWT import - same folder const PrintWriter
+//sameFolderImports - not GWT import - same folder const PrintWriter
 import { ServletRequest } from './ServletRequest.js';
-//not GWT import - same folder const ServletRequest
+//sameFolderImports - not GWT import - same folder const ServletRequest
 import { ServletResponse } from './ServletResponse.js';
-//not GWT import - same folder const ServletResponse
+//sameFolderImports - not GWT import - same folder const ServletResponse
 import { HttpServletRequest } from './HttpServletRequest.js';
-//not GWT import - same folder const HttpServletRequest
+//sameFolderImports - not GWT import - same folder const HttpServletRequest
 import { HttpServletResponse } from './HttpServletResponse.js';
-//not GWT import - same folder const HttpServletResponse
+//sameFolderImports - not GWT import - same folder const HttpServletResponse
 
 export class RequestHandler extends HttpServlet {
         

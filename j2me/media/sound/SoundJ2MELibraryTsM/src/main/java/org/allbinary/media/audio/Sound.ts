@@ -54,9 +54,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundInterface } from './SoundInterface.js';
-//not GWT import - same folder const SoundInterface
+//sameFolderImports - not GWT import - same folder const SoundInterface
 import { NoPlayer } from './NoPlayer.js';
-//not GWT import - same folder const NoPlayer
+//sameFolderImports - not GWT import - same folder const NoPlayer
 
 export class Sound
             extends Object

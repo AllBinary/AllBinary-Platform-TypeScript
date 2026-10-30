@@ -53,9 +53,9 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWeaponPart } from './BasicWeaponPart.js';
-//not GWT import - same folder const BasicWeaponPart
+//sameFolderImports - not GWT import - same folder const BasicWeaponPart
 import { BasicWeaponPartFactoryInterface } from './BasicWeaponPartFactoryInterface.js';
-//not GWT import - same folder const BasicWeaponPartFactoryInterface
+//sameFolderImports - not GWT import - same folder const BasicWeaponPartFactoryInterface
 
 export class BasicWeaponPartCircularPool
             extends Object

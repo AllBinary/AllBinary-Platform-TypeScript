@@ -42,7 +42,7 @@ import { EventListenerInterface } from '../../../../../../org/allbinary/logic/ut
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogControllerConfigurationEvent } from './AnalogControllerConfigurationEvent.js';
-//not GWT import - same folder const AnalogControllerConfigurationEvent
+//sameFolderImports - not GWT import - same folder const AnalogControllerConfigurationEvent
 
 export interface AnalogControllerConfigurationEventListenerInterface extends EventListenerInterface {
         

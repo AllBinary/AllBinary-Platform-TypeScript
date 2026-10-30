@@ -110,7 +110,7 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TaxModuleInterface } from './TaxModuleInterface.js';
-//not GWT import - same folder const TaxModuleInterface
+//sameFolderImports - not GWT import - same folder const TaxModuleInterface
 
 export class SimpleStateTaxModule
             extends Object

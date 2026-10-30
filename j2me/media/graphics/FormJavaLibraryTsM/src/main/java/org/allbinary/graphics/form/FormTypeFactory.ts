@@ -46,7 +46,7 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FormType } from './FormType.js';
-//not GWT import - same folder const FormType
+//sameFolderImports - not GWT import - same folder const FormType
 
 export class FormTypeFactory
             extends Object

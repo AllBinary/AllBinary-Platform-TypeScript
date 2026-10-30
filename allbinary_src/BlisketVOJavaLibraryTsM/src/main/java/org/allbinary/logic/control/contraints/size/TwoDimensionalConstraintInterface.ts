@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SizeConstraintInterface } from './SizeConstraintInterface.js';
-//not GWT import - same folder const SizeConstraintInterface
+//sameFolderImports - not GWT import - same folder const SizeConstraintInterface
 
 export interface TwoDimensionalConstraintInterface {
         

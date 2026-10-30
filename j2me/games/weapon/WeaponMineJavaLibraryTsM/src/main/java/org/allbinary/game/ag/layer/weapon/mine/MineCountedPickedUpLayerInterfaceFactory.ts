@@ -75,9 +75,9 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineLayerCircularStaticPool } from './MineLayerCircularStaticPool.js';
-//not GWT import - same folder const MineLayerCircularStaticPool
+//sameFolderImports - not GWT import - same folder const MineLayerCircularStaticPool
 import { MineWeaponResources } from './MineWeaponResources.js';
-//not GWT import - same folder const MineWeaponResources
+//sameFolderImports - not GWT import - same folder const MineWeaponResources
 
 export class MineCountedPickedUpLayerInterfaceFactory extends CountedPickedUpLayerInterfaceFactory {
         

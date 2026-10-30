@@ -63,7 +63,7 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { KeyPressesAI } from './KeyPressesAI.js';
-//not GWT import - same folder const KeyPressesAI
+//sameFolderImports - not GWT import - same folder const KeyPressesAI
 
 export class MultiKeyPressesAI extends KeyPressesAI {
         

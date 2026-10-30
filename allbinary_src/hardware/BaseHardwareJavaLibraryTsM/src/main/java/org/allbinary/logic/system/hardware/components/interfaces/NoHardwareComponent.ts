@@ -43,7 +43,7 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HardwareComponentInterface } from './HardwareComponentInterface.js';
-//not GWT import - same folder const HardwareComponentInterface
+//sameFolderImports - not GWT import - same folder const HardwareComponentInterface
 
 export class NoHardwareComponent
             extends Object

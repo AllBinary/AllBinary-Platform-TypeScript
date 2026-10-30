@@ -47,7 +47,7 @@ import { ViewPositionFactoryInterface } from '../../../../org/allbinary/view/Vie
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StaticTileLayerIntoPositionViewPosition } from './StaticTileLayerIntoPositionViewPosition.js';
-//not GWT import - same folder const StaticTileLayerIntoPositionViewPosition
+//sameFolderImports - not GWT import - same folder const StaticTileLayerIntoPositionViewPosition
 
 export class StaticTileLayerViewPositionFactory
             extends Object

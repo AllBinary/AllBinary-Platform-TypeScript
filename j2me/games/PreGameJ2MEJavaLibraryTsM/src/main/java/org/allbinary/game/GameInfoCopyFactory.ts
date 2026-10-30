@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInfo } from './GameInfo.js';
-//not GWT import - same folder const GameInfo
+//sameFolderImports - not GWT import - same folder const GameInfo
 
 export class GameInfoCopyFactory
             extends Object

@@ -84,17 +84,17 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparatorConstraintsInterface } from './ImageComparatorConstraintsInterface.js';
-//not GWT import - same folder const ImageComparatorConstraintsInterface
+//sameFolderImports - not GWT import - same folder const ImageComparatorConstraintsInterface
 import { ImageComparator } from './ImageComparator.js';
-//not GWT import - same folder const ImageComparator
+//sameFolderImports - not GWT import - same folder const ImageComparator
 import { ImageComparisonResult } from './ImageComparisonResult.js';
-//not GWT import - same folder const ImageComparisonResult
+//sameFolderImports - not GWT import - same folder const ImageComparisonResult
 import { ImageComparisonResultFrameCacheable } from './ImageComparisonResultFrameCacheable.js';
-//not GWT import - same folder const ImageComparisonResultFrameCacheable
+//sameFolderImports - not GWT import - same folder const ImageComparisonResultFrameCacheable
 import { ImageComparisonResultCacheSingleton } from './ImageComparisonResultCacheSingleton.js';
-//not GWT import - same folder const ImageComparisonResultCacheSingleton
+//sameFolderImports - not GWT import - same folder const ImageComparisonResultCacheSingleton
 import { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';
-//not GWT import - same folder const ImageComparisonResultsEvent
+//sameFolderImports - not GWT import - same folder const ImageComparisonResultsEvent
 
 export class ImageComparisonWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
         

@@ -60,9 +60,9 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import - same folder const BaseImageAnimationFactory
+//sameFolderImports - not GWT import - same folder const BaseImageAnimationFactory
 import { LazyImageRotationAnimation } from './LazyImageRotationAnimation.js';
-//not GWT import - same folder const LazyImageRotationAnimation
+//sameFolderImports - not GWT import - same folder const LazyImageRotationAnimation
 
 export class LazyImageRotationAnimationFactory
             extends Object

@@ -52,7 +52,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlBean } from './AbSqlBean.js';
-//not GWT import - same folder const AbSqlBean
+//sameFolderImports - not GWT import - same folder const AbSqlBean
 
 export class AbDatabaseManagement extends AbSqlBean {
         

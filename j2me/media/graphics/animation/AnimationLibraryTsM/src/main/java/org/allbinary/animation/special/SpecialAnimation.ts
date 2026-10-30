@@ -46,7 +46,7 @@ import { IndexedAnimationBehavior } from '../../../../org/allbinary/animation/In
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialAnimationInterface } from './SpecialAnimationInterface.js';
-//not GWT import - same folder const SpecialAnimationInterface
+//sameFolderImports - not GWT import - same folder const SpecialAnimationInterface
 
 export class SpecialAnimation extends IndexedAnimation implements SpecialAnimationInterface {
         

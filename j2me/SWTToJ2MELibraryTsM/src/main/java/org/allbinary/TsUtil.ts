@@ -28,7 +28,8 @@
         
             import { Float } from '../../java/lang/Float.js';
         
-            import { Double } from '../../java/lang/Double.js';
+            //import { Double } from '../../java/lang/Double.js';
+            const Double = globalThis.java.lang.Double;
         
 import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
 //not GWT import const Displayable
@@ -225,7 +226,7 @@ recordStore!.getRecord(recordId, data, 0);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return string.getBytes();;
+                        return Array.from(new TextEncoder().encode(string), byte => (byte << 24) >> 24);;
     
 }
 

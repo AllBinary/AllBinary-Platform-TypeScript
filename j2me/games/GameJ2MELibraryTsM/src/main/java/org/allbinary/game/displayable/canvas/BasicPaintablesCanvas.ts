@@ -57,7 +57,7 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCommandCanvas } from './GameCommandCanvas.js';
-//not GWT import - same folder const GameCommandCanvas
+//sameFolderImports - not GWT import - same folder const GameCommandCanvas
 
 export class BasicPaintablesCanvas extends GameCommandCanvas {
         

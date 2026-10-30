@@ -46,7 +46,7 @@ import { PathFinderGraphVisitorBase } from '../../../../../../../../org/allbinar
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePathFinderGraphVisitor } from './BasePathFinderGraphVisitor.js';
-//not GWT import - same folder const BasePathFinderGraphVisitor
+//sameFolderImports - not GWT import - same folder const BasePathFinderGraphVisitor
 
 export class SimplePathFinderGraphVisitorFactory extends PathFinderGraphVisitorFactoryBase {
         

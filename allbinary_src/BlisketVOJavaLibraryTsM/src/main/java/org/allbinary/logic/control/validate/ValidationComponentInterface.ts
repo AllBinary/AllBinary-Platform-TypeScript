@@ -40,7 +40,7 @@ import { TransformInterface } from '../../../../../org/allbinary/logic/visual/tr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ValidationInterface } from './ValidationInterface.js';
-//not GWT import - same folder const ValidationInterface
+//sameFolderImports - not GWT import - same folder const ValidationInterface
 
 export interface ValidationComponentInterface extends TransformInterface, ValidationInterface {
         

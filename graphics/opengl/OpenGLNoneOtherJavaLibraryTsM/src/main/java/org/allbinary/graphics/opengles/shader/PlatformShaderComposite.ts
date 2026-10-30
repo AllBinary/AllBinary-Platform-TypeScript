@@ -43,15 +43,15 @@ import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderComposite } from './ShaderComposite.js';
-//not GWT import - same folder const ShaderComposite
+//sameFolderImports - not GWT import - same folder const ShaderComposite
 import { Shader } from './Shader.js';
-//not GWT import - same folder const Shader
+//sameFolderImports - not GWT import - same folder const Shader
 import { CompositeShaderUpdater } from './CompositeShaderUpdater.js';
-//not GWT import - same folder const CompositeShaderUpdater
+//sameFolderImports - not GWT import - same folder const CompositeShaderUpdater
 import { ShaderInitializer } from './ShaderInitializer.js';
-//not GWT import - same folder const ShaderInitializer
+//sameFolderImports - not GWT import - same folder const ShaderInitializer
 import { ModelViewProjection } from './ModelViewProjection.js';
-//not GWT import - same folder const ModelViewProjection
+//sameFolderImports - not GWT import - same folder const ModelViewProjection
 
 export class PlatformShaderComposite extends ShaderComposite {
         

@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SensorFeature } from './SensorFeature.js';
-//not GWT import - same folder const SensorFeature
+//sameFolderImports - not GWT import - same folder const SensorFeature
 
 export class SensorFeatureFactory
             extends Object

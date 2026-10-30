@@ -84,7 +84,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageFactory } from './ImageFactory.js';
-//not GWT import - same folder const ImageFactory
+//sameFolderImports - not GWT import - same folder const ImageFactory
 
 export class ImageCacheBase
             extends Object

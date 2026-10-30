@@ -81,7 +81,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StaticPagesEntityInterface } from './StaticPagesEntityInterface.js';
-//not GWT import - same folder const StaticPagesEntityInterface
+//sameFolderImports - not GWT import - same folder const StaticPagesEntityInterface
 
 export class StaticPagesEntity extends AbSqlBean implements StaticPagesEntityInterface {
         

@@ -59,15 +59,15 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
-//not GWT import - same folder const TouchButtonLocationHelper
+//sameFolderImports - not GWT import - same folder const TouchButtonLocationHelper
 import { CommonButtons } from './CommonButtons.js';
-//not GWT import - same folder const CommonButtons
+//sameFolderImports - not GWT import - same folder const CommonButtons
 import { TouchButton } from './TouchButton.js';
-//not GWT import - same folder const TouchButton
+//sameFolderImports - not GWT import - same folder const TouchButton
 import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
-//not GWT import - same folder const BasicTouchInputFactory
+//sameFolderImports - not GWT import - same folder const BasicTouchInputFactory
 import { TouchButtonBlankResource } from './TouchButtonBlankResource.js';
-//not GWT import - same folder const TouchButtonBlankResource
+//sameFolderImports - not GWT import - same folder const TouchButtonBlankResource
 
 export class TouchButtonsMappingPaintable extends Paintable {
         

@@ -44,7 +44,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BooleanFileVisitor } from './BooleanFileVisitor.js';
-//not GWT import - same folder const BooleanFileVisitor
+//sameFolderImports - not GWT import - same folder const BooleanFileVisitor
 
 export class ExcludeFileExtensionsBooleanFileVisitor extends BooleanFileVisitor {
         

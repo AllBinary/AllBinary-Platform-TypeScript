@@ -91,31 +91,31 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaintableForm } from './PaintableForm.js';
-//not GWT import - same folder const PaintableForm
+//sameFolderImports - not GWT import - same folder const PaintableForm
 import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-//not GWT import - same folder const ItemPaintableFactory
+//sameFolderImports - not GWT import - same folder const ItemPaintableFactory
 import { ItemIndexPaintable } from './ItemIndexPaintable.js';
-//not GWT import - same folder const ItemIndexPaintable
+//sameFolderImports - not GWT import - same folder const ItemIndexPaintable
 import { ItemIndexDx } from './ItemIndexDx.js';
-//not GWT import - same folder const ItemIndexDx
+//sameFolderImports - not GWT import - same folder const ItemIndexDx
 import { ItemPaintable } from './ItemPaintable.js';
-//not GWT import - same folder const ItemPaintable
+//sameFolderImports - not GWT import - same folder const ItemPaintable
 import { FormTypeFactory } from './FormTypeFactory.js';
-//not GWT import - same folder const FormTypeFactory
+//sameFolderImports - not GWT import - same folder const FormTypeFactory
 //import { ScrollSelectionFormTempHorizontalPaintable } from './ScrollSelectionFormTempHorizontalPaintable.js';
-//not GWT import - same folder const ScrollSelectionFormTempHorizontalPaintable
+//sameFolderImports - not GWT import - same folder const ScrollSelectionFormTempHorizontalPaintable
 //import { ScrollSelectionFormTempHorizontalDx } from './ScrollSelectionFormTempHorizontalDx.js';
-//not GWT import - same folder const ScrollSelectionFormTempHorizontalDx
+//sameFolderImports - not GWT import - same folder const ScrollSelectionFormTempHorizontalDx
 //import { ScrollSelectionFormVerticalPaintable } from './ScrollSelectionFormVerticalPaintable.js';
-//not GWT import - same folder const ScrollSelectionFormVerticalPaintable
+//sameFolderImports - not GWT import - same folder const ScrollSelectionFormVerticalPaintable
 //import { ScrollSelectionFormVericalDx } from './ScrollSelectionFormVericalDx.js';
-//not GWT import - same folder const ScrollSelectionFormVericalDx
+//sameFolderImports - not GWT import - same folder const ScrollSelectionFormVericalDx
 //import { ScrollSelectionFormHorizontalPaintable } from './ScrollSelectionFormHorizontalPaintable.js';
-//not GWT import - same folder const ScrollSelectionFormHorizontalPaintable
+//sameFolderImports - not GWT import - same folder const ScrollSelectionFormHorizontalPaintable
 //import { ScrollSelectionFormHorizontalDx } from './ScrollSelectionFormHorizontalDx.js';
-//not GWT import - same folder const ScrollSelectionFormHorizontalDx
+//sameFolderImports - not GWT import - same folder const ScrollSelectionFormHorizontalDx
 import { FormType } from './FormType.js';
-//not GWT import - same folder const FormType
+//sameFolderImports - not GWT import - same folder const FormType
 type ScrollSelectionFormHorizontalPaintable = InstanceType<ScrollSelectionForm['ScrollSelectionFormHorizontalPaintable']>;
 type ScrollSelectionFormVerticalPaintable = InstanceType<ScrollSelectionForm['ScrollSelectionFormVerticalPaintable']>;
 type ScrollSelectionFormTempHorizontalPaintable = InstanceType<ScrollSelectionForm['ScrollSelectionFormTempHorizontalPaintable']>;

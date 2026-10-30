@@ -54,9 +54,9 @@ import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperFactoryInterface } from './TagHelperFactoryInterface.js';
-//not GWT import - same folder const TagHelperFactoryInterface
+//sameFolderImports - not GWT import - same folder const TagHelperFactoryInterface
 import { HelperFactory } from './HelperFactory.js';
-//not GWT import - same folder const HelperFactory
+//sameFolderImports - not GWT import - same folder const HelperFactory
 
 export class CustomLoaderHelperFactory
             extends Object

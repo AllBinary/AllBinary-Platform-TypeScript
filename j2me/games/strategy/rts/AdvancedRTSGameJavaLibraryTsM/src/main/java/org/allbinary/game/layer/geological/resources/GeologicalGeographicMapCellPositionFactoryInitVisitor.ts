@@ -50,7 +50,7 @@ import { GeographicMapCellPositionFactoryInitVisitorInterface } from '../../../.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalGeographicMapCellPosition } from './GeologicalGeographicMapCellPosition.js';
-//not GWT import - same folder const GeologicalGeographicMapCellPosition
+//sameFolderImports - not GWT import - same folder const GeologicalGeographicMapCellPosition
 
 export class GeologicalGeographicMapCellPositionFactoryInitVisitor
             extends Object

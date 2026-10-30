@@ -55,19 +55,19 @@ import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseRaceTrackGeographicMap } from './BaseRaceTrackGeographicMap.js';
-//not GWT import - same folder const BaseRaceTrackGeographicMap
+//sameFolderImports - not GWT import - same folder const BaseRaceTrackGeographicMap
 import { CustomMapGeneratorBase } from './CustomMapGeneratorBase.js';
-//not GWT import - same folder const CustomMapGeneratorBase
+//sameFolderImports - not GWT import - same folder const CustomMapGeneratorBase
 import { BasicGeographicMapFactory } from './BasicGeographicMapFactory.js';
-//not GWT import - same folder const BasicGeographicMapFactory
+//sameFolderImports - not GWT import - same folder const BasicGeographicMapFactory
 import { RaceTrackInfo } from './RaceTrackInfo.js';
-//not GWT import - same folder const RaceTrackInfo
+//sameFolderImports - not GWT import - same folder const RaceTrackInfo
 import { RaceTrackData } from './RaceTrackData.js';
-//not GWT import - same folder const RaceTrackData
+//sameFolderImports - not GWT import - same folder const RaceTrackData
 import { AllBinaryTiledLayerFactoryInterface } from './AllBinaryTiledLayerFactoryInterface.js';
-//not GWT import - same folder const AllBinaryTiledLayerFactoryInterface
+//sameFolderImports - not GWT import - same folder const AllBinaryTiledLayerFactoryInterface
 import { CustomMapGeneratorBaseFactory } from './CustomMapGeneratorBaseFactory.js';
-//not GWT import - same folder const CustomMapGeneratorBaseFactory
+//sameFolderImports - not GWT import - same folder const CustomMapGeneratorBaseFactory
 
 export class RaceTrackGeographicMap extends BaseRaceTrackGeographicMap {
         

@@ -42,9 +42,9 @@ import { Features } from '../../../../org/allbinary/game/configuration/feature/F
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLConfiguration } from './OpenGLConfiguration.js';
-//not GWT import - same folder const OpenGLConfiguration
+//sameFolderImports - not GWT import - same folder const OpenGLConfiguration
 import { OpenGLFeatureFactory } from './OpenGLFeatureFactory.js';
-//not GWT import - same folder const OpenGLFeatureFactory
+//sameFolderImports - not GWT import - same folder const OpenGLFeatureFactory
 
 export class OpenGLFeatureUtil
             extends Object

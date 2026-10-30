@@ -57,7 +57,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CryptInterface } from './CryptInterface.js';
-//not GWT import - same folder const CryptInterface
+//sameFolderImports - not GWT import - same folder const CryptInterface
 
 export class BasicCryptUtil
             extends Object

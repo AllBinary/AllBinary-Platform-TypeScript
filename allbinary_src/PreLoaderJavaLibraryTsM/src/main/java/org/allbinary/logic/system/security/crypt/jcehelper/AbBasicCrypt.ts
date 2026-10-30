@@ -70,9 +70,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SunJCE } from './SunJCE.js';
-//not GWT import - same folder const SunJCE
+//sameFolderImports - not GWT import - same folder const SunJCE
 import { KeySpecFactory } from './KeySpecFactory.js';
-//not GWT import - same folder const KeySpecFactory
+//sameFolderImports - not GWT import - same folder const KeySpecFactory
 
 export class AbBasicCrypt
             extends Object
@@ -93,7 +93,7 @@ public constructor (algorithm: string, key: string){
         
  try { this.algorithm= algorithm;
     
-this.key= key.getBytes();
+this.key= Array.from(new TextEncoder().encode(key), byte => (byte << 24) >> 24);
     
 this.init();
     

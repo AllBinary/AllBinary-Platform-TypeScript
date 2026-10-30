@@ -112,13 +112,13 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
-//not GWT import - same folder const AbFile
+//sameFolderImports - not GWT import - same folder const AbFile
 //not plain js - same folder import { FilePathData } 
 const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
 import { FileWrapperUtil } from './FileWrapperUtil.js';
-//not GWT import - same folder const FileWrapperUtil
+//sameFolderImports - not GWT import - same folder const FileWrapperUtil
 import { FileUtil2 } from './FileUtil2.js';
-//not GWT import - same folder const FileUtil2
+//sameFolderImports - not GWT import - same folder const FileUtil2
 //data/init/views/TestStore/template/type/genericTemplateObjectConfig.xml
 export class FileUtil
             extends Object
@@ -1360,7 +1360,7 @@ skipFile= skipFiles[index]!;
     
 dataOutputStream= new AbDataOutputStream(fileOutputStream);
     
-dataOutputStream!.write(string.getBytes(), 0, string.length);
+dataOutputStream!.write(Array.from(new TextEncoder().encode(string), byte => (byte << 24) >> 24)0, string.length);
     
 dataOutputStream!.flush();
     

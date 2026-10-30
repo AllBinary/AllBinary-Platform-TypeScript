@@ -96,11 +96,11 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathGeneratorInterface } from './PathGeneratorInterface.js';
-//not GWT import - same folder const PathGeneratorInterface
+//sameFolderImports - not GWT import - same folder const PathGeneratorInterface
 import { PathCacheFactory } from './PathCacheFactory.js';
-//not GWT import - same folder const PathCacheFactory
+//sameFolderImports - not GWT import - same folder const PathCacheFactory
 import { PathFindingInfo } from './PathFindingInfo.js';
-//not GWT import - same folder const PathFindingInfo
+//sameFolderImports - not GWT import - same folder const PathFindingInfo
 
 export class StaticPathGenerator
             extends Object

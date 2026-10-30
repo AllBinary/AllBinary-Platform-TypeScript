@@ -60,11 +60,11 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManagerLoggingBase } from './LayerManagerLoggingBase.js';
-//not GWT import - same folder const LayerManagerLoggingBase
+//sameFolderImports - not GWT import - same folder const LayerManagerLoggingBase
 import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import - same folder const AllBinaryLayer
+//sameFolderImports - not GWT import - same folder const AllBinaryLayer
 import { LayerManager } from './LayerManager.js';
-//not GWT import - same folder const LayerManager
+//sameFolderImports - not GWT import - same folder const LayerManager
 
 export class LayerManagerLogging extends LayerManagerLoggingBase {
         

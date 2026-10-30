@@ -75,9 +75,9 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransactionResultInterface } from './TransactionResultInterface.js';
-//not GWT import - same folder const TransactionResultInterface
+//sameFolderImports - not GWT import - same folder const TransactionResultInterface
 import { PaymentTransactionKeysFactory } from './PaymentTransactionKeysFactory.js';
-//not GWT import - same folder const PaymentTransactionKeysFactory
+//sameFolderImports - not GWT import - same folder const PaymentTransactionKeysFactory
 
 export class TransactionResult
             extends Object

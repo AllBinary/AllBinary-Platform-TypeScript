@@ -101,7 +101,7 @@ type BasicArrayListS<T = any, U = any> = typeof BasicArrayListS extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimplePathFinderGraphVisitorFactory } from './SimplePathFinderGraphVisitorFactory.js';
-//not GWT import - same folder const SimplePathFinderGraphVisitorFactory
+//sameFolderImports - not GWT import - same folder const SimplePathFinderGraphVisitorFactory
 
 export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
         

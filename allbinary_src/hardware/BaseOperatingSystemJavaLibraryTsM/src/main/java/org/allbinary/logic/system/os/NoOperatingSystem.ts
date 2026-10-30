@@ -37,7 +37,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericOperatingSystem } from './GenericOperatingSystem.js';
-//not GWT import - same folder const GenericOperatingSystem
+//sameFolderImports - not GWT import - same folder const GenericOperatingSystem
 
 export class NoOperatingSystem extends GenericOperatingSystem {
         

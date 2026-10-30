@@ -78,7 +78,7 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SalvoInterface } from './SalvoInterface.js';
-//not GWT import - same folder const SalvoInterface
+//sameFolderImports - not GWT import - same folder const SalvoInterface
 
 export class BasicWeaponPart
             extends Object

@@ -34,8 +34,9 @@ import { File } from '../../../../../java/io/File.js';
 import { URI } from '../../../../../java/net/URI.js';
 //not GWT import const URI
 
-import { URL } from '../../../../../java/net/URL.js';
-//not GWT import const URL
+//not plain js import { URL } 
+const URL = globalThis.java.net.URL;
+type URL<T = any, U = any> = typeof URL extends abstract new (...args: any[]) => infer Instance ? Instance : typeof URL;
 
 import { CSH } from '../../../../../javax/help/CSH.js';
 //not GWT import const CSH
@@ -76,13 +77,13 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
-//not GWT import - same folder const Point
+//sameFolderImports - not GWT import - same folder const Point
 import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel
+//sameFolderImports - not GWT import - same folder const JLabel
 import { DisplayHelpFromSource } from './DisplayHelpFromSource.js';
-//not GWT import - same folder const DisplayHelpFromSource
+//sameFolderImports - not GWT import - same folder const DisplayHelpFromSource
 
 export class JavaHelpUtil
             extends Object

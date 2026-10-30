@@ -65,11 +65,11 @@ import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
-//not GWT import - same folder const ContextConfigurationInterface
+//sameFolderImports - not GWT import - same folder const ContextConfigurationInterface
 import { ContextConfiguration } from './ContextConfiguration.js';
-//not GWT import - same folder const ContextConfiguration
+//sameFolderImports - not GWT import - same folder const ContextConfiguration
 import { ContextConfigurationData } from './ContextConfigurationData.js';
-//not GWT import - same folder const ContextConfigurationData
+//sameFolderImports - not GWT import - same folder const ContextConfigurationData
 
 export class ContextConfigurationView
             extends Object

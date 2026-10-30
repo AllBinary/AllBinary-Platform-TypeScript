@@ -47,7 +47,7 @@ import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationConfigurationModuleChangeEvent } from './InputAutomationConfigurationModuleChangeEvent.js';
-//not GWT import - same folder const InputAutomationConfigurationModuleChangeEvent
+//sameFolderImports - not GWT import - same folder const InputAutomationConfigurationModuleChangeEvent
 
 export class InputAutomationConfigurationUtil
             extends Object

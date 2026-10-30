@@ -44,7 +44,7 @@ import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ArtificialIntelligenceInterface } from './ArtificialIntelligenceInterface.js';
-//not GWT import - same folder const ArtificialIntelligenceInterface
+//sameFolderImports - not GWT import - same folder const ArtificialIntelligenceInterface
 
 export class ArtificialIntelligence
             extends Object

@@ -66,11 +66,11 @@ import { ImageToRotationImageArrayUtil } from '../../../../org/allbinary/media/i
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-//not GWT import - same folder const BaseImageAnimationFactory
+//sameFolderImports - not GWT import - same folder const BaseImageAnimationFactory
 import { ImageArrayRotationAnimation } from './ImageArrayRotationAnimation.js';
-//not GWT import - same folder const ImageArrayRotationAnimation
+//sameFolderImports - not GWT import - same folder const ImageArrayRotationAnimation
 import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
-//not GWT import - same folder const AdjustedImageArrayRotationAnimation
+//sameFolderImports - not GWT import - same folder const AdjustedImageArrayRotationAnimation
 
 export class AllBinaryArrayImageRotationAnimationFactory extends BaseImageAnimationFactory {
         

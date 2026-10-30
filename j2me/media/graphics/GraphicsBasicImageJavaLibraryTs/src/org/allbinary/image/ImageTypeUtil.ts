@@ -43,7 +43,7 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicArrayListD } from './BasicArrayListD.js';
-//not GWT import - same folder const BasicArrayListD
+//sameFolderImports - not GWT import - same folder const BasicArrayListD
 
 export class ImageTypeUtil
             extends Object

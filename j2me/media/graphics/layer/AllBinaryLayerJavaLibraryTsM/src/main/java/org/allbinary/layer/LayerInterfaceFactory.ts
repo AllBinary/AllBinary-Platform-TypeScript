@@ -75,11 +75,11 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Layer } from './Layer.js';
-//not GWT import - same folder const Layer
+//sameFolderImports - not GWT import - same folder const Layer
 import { LayerInterfaceFactoryInterface } from './LayerInterfaceFactoryInterface.js';
-//not GWT import - same folder const LayerInterfaceFactoryInterface
+//sameFolderImports - not GWT import - same folder const LayerInterfaceFactoryInterface
 import { AllBinaryLayer } from './AllBinaryLayer.js';
-//not GWT import - same folder const AllBinaryLayer
+//sameFolderImports - not GWT import - same folder const AllBinaryLayer
 
 export class LayerInterfaceFactory
             extends Object

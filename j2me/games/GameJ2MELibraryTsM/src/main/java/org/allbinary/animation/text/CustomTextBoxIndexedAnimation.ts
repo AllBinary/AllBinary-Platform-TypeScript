@@ -65,9 +65,9 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextInterface } from './TextInterface.js';
-//not GWT import - same folder const TextInterface
+//sameFolderImports - not GWT import - same folder const TextInterface
 import { TextChangeListener } from './TextChangeListener.js';
-//not GWT import - same folder const TextChangeListener
+//sameFolderImports - not GWT import - same folder const TextChangeListener
 
 export class CustomTextBoxIndexedAnimation extends IndexedAnimation implements RawKeyEventListener, UpdateMyFontInterface, TextInterface {
         

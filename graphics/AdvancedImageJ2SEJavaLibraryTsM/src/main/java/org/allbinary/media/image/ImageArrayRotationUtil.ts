@@ -55,11 +55,11 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageJ2SERotationUtil } from './ImageJ2SERotationUtil.js';
-//not GWT import - same folder const ImageJ2SERotationUtil
+//sameFolderImports - not GWT import - same folder const ImageJ2SERotationUtil
 import { ImageProcessorInput } from './ImageProcessorInput.js';
-//not GWT import - same folder const ImageProcessorInput
+//sameFolderImports - not GWT import - same folder const ImageProcessorInput
 import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
-//not GWT import - same folder const ImageProcessedVisitor
+//sameFolderImports - not GWT import - same folder const ImageProcessedVisitor
 
 export class ImageArrayRotationUtil
             extends Object

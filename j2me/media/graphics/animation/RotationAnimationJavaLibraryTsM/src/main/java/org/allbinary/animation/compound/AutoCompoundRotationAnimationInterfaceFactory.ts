@@ -49,9 +49,9 @@ import { RotationAnimation } from '../../../../org/allbinary/animation/RotationA
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterfaceFactory } from './CompoundAnimationInterfaceFactory.js';
-//not GWT import - same folder const CompoundAnimationInterfaceFactory
+//sameFolderImports - not GWT import - same folder const CompoundAnimationInterfaceFactory
 import { AutoCompoundRotationAnimation } from './AutoCompoundRotationAnimation.js';
-//not GWT import - same folder const AutoCompoundRotationAnimation
+//sameFolderImports - not GWT import - same folder const AutoCompoundRotationAnimation
 
 export class AutoCompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         

@@ -50,9 +50,9 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorRangeInterface } from './ColorRangeInterface.js';
-//not GWT import - same folder const ColorRangeInterface
+//sameFolderImports - not GWT import - same folder const ColorRangeInterface
 import { Color } from './Color.js';
-//not GWT import - same folder const Color
+//sameFolderImports - not GWT import - same folder const Color
 
 export class ColorRange
             extends Object

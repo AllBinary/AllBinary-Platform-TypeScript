@@ -84,9 +84,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DynamicInitDb } from './DynamicInitDb.js';
-//not GWT import - same folder const DynamicInitDb
+//sameFolderImports - not GWT import - same folder const DynamicInitDb
 import { InitializerData } from './InitializerData.js';
-//not GWT import - same folder const InitializerData
+//sameFolderImports - not GWT import - same folder const InitializerData
 
 export class InitializerDatabase
             extends Object

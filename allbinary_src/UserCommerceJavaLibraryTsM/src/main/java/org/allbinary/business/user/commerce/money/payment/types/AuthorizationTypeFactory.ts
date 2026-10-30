@@ -39,7 +39,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AuthorizationType } from './AuthorizationType.js';
-//not GWT import - same folder const AuthorizationType
+//sameFolderImports - not GWT import - same folder const AuthorizationType
 
 export class AuthorizationTypeFactory
             extends Object

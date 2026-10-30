@@ -97,7 +97,7 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DbConnectionInfo } from './DbConnectionInfo.js';
-//not GWT import - same folder const DbConnectionInfo
+//sameFolderImports - not GWT import - same folder const DbConnectionInfo
 
 export class DbInitInfo extends DbConnectionInfo {
         
@@ -186,25 +186,25 @@ newFile!.createNewFile();
     
 
  try { 
-    let cryptedJdbcDriver: number[] = new WeakCrypt(1).encrypt(this.getJdbcDriver())!.getBytes()!;;
+    let cryptedJdbcDriver: number[] = Array.from(new TextEncoder().encode(new WeakCrypt(1).encrypt(this.getJdbcDriver())!), byte => (byte << 24) >> 24)!;;
     
 
-    let cryptedName: number[] = new WeakCrypt(2).encrypt(this.getName())!.getBytes()!;;
+    let cryptedName: number[] = Array.from(new TextEncoder().encode(new WeakCrypt(2).encrypt(this.getName())!), byte => (byte << 24) >> 24)!;;
     
 
-    let cryptedUserName: number[] = new WeakCrypt(3).encrypt(this.getUserName())!.getBytes()!;;
+    let cryptedUserName: number[] = Array.from(new TextEncoder().encode(new WeakCrypt(3).encrypt(this.getUserName())!), byte => (byte << 24) >> 24)!;;
     
 
-    let cryptedPassword: number[] = new WeakCrypt(4).encrypt(this.getPassword())!.getBytes()!;;
+    let cryptedPassword: number[] = Array.from(new TextEncoder().encode(new WeakCrypt(4).encrypt(this.getPassword())!), byte => (byte << 24) >> 24)!;;
     
 
-    let cryptedSchema: number[] = new WeakCrypt(5).encrypt(this.getSchema())!.getBytes()!;;
+    let cryptedSchema: number[] = Array.from(new TextEncoder().encode(new WeakCrypt(5).encrypt(this.getSchema())!), byte => (byte << 24) >> 24)!;;
     
 
-    let cryptedServer: number[] = new WeakCrypt(6).encrypt(this.getServer())!.getBytes()!;;
+    let cryptedServer: number[] = Array.from(new TextEncoder().encode(new WeakCrypt(6).encrypt(this.getServer())!), byte => (byte << 24) >> 24)!;;
     
 
-    let cryptedPort: number[] = new WeakCrypt(7).encrypt(this.getPort())!.getBytes()!;;
+    let cryptedPort: number[] = Array.from(new TextEncoder().encode(new WeakCrypt(7).encrypt(this.getPort())!), byte => (byte << 24) >> 24)!;;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedJdbcDriver));
     

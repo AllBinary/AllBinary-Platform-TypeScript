@@ -129,15 +129,15 @@ type NullRunnable<T = any, U = any> = typeof NullRunnable extends abstract new (
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
-//not GWT import - same folder const ProgressCanvas
+//sameFolderImports - not GWT import - same folder const ProgressCanvas
 import { ShowTitleProgressBarRunnable } from './ShowTitleProgressBarRunnable.js';
-//not GWT import - same folder const ShowTitleProgressBarRunnable
+//sameFolderImports - not GWT import - same folder const ShowTitleProgressBarRunnable
 import { DismissTitleProgressBarRunnable } from './DismissTitleProgressBarRunnable.js';
-//not GWT import - same folder const DismissTitleProgressBarRunnable
+//sameFolderImports - not GWT import - same folder const DismissTitleProgressBarRunnable
 import { TitleProgressBarSetProgressRunnable } from './TitleProgressBarSetProgressRunnable.js';
-//not GWT import - same folder const TitleProgressBarSetProgressRunnable
+//sameFolderImports - not GWT import - same folder const TitleProgressBarSetProgressRunnable
 import { TitleProgressBarPortionSetProgressRunnable } from './TitleProgressBarPortionSetProgressRunnable.js';
-//not GWT import - same folder const TitleProgressBarPortionSetProgressRunnable
+//sameFolderImports - not GWT import - same folder const TitleProgressBarPortionSetProgressRunnable
 
 export class AndroidBasicTitleProgressBar extends ProgressCanvas implements DisplayChangeEventListener {
         

@@ -116,7 +116,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLFeatureFactory } from './OpenGLFeatureFactory.js';
-//not GWT import - same folder const OpenGLFeatureFactory
+//sameFolderImports - not GWT import - same folder const OpenGLFeatureFactory
 
 export class CurrentDisplayableFactory
             extends Object

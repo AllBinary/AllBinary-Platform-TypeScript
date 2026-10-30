@@ -53,17 +53,17 @@ import { TsUtil } from '../../../org/allbinary/TsUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Context } from './Context.js';
-//not GWT import - same folder const Context
+//sameFolderImports - not GWT import - same folder const Context
 import { NotificationManager } from './NotificationManager.js';
-//not GWT import - same folder const NotificationManager
+//sameFolderImports - not GWT import - same folder const NotificationManager
 import { CommandUriAction } from './CommandUriAction.js';
-//not GWT import - same folder const CommandUriAction
+//sameFolderImports - not GWT import - same folder const CommandUriAction
 import { Intent } from './Intent.js';
-//not GWT import - same folder const Intent
+//sameFolderImports - not GWT import - same folder const Intent
 import { Notification } from './Notification.js';
-//not GWT import - same folder const Notification
+//sameFolderImports - not GWT import - same folder const Notification
 import { PendingIntent } from './PendingIntent.js';
-//not GWT import - same folder const PendingIntent
+//sameFolderImports - not GWT import - same folder const PendingIntent
 
 export class NotificationUtil
             extends Object

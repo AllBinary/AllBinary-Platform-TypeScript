@@ -22,7 +22,8 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-            import { Double } from '../../../../../../java/lang/Double.js';
+            //import { Double } from '../../../../../../java/lang/Double.js';
+            const Double = globalThis.java.lang.Double;
         
 import { awt } from '../../../../../../java/awt.js';
 //not GWT import const awt
@@ -156,33 +157,33 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { MouseListener } from './MouseListener.js';
-//not GWT import - same folder const MouseListener
+//sameFolderImports - not GWT import - same folder const MouseListener
 import { MouseMotionListener } from './MouseMotionListener.js';
-//not GWT import - same folder const MouseMotionListener
+//sameFolderImports - not GWT import - same folder const MouseMotionListener
 import { KeyListener } from './KeyListener.js';
-//not GWT import - same folder const KeyListener
+//sameFolderImports - not GWT import - same folder const KeyListener
 import { IntegerDimension } from './IntegerDimension.js';
-//not GWT import - same folder const IntegerDimension
+//sameFolderImports - not GWT import - same folder const IntegerDimension
 import { CanvasTreeLabel } from './CanvasTreeLabel.js';
-//not GWT import - same folder const CanvasTreeLabel
+//sameFolderImports - not GWT import - same folder const CanvasTreeLabel
 import { Color } from './Color.js';
-//not GWT import - same folder const Color
+//sameFolderImports - not GWT import - same folder const Color
 import { Grid } from './Grid.js';
-//not GWT import - same folder const Grid
+//sameFolderImports - not GWT import - same folder const Grid
 import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { CanvasDom } from './CanvasDom.js';
-//not GWT import - same folder const CanvasDom
+//sameFolderImports - not GWT import - same folder const CanvasDom
 import { GridLayout } from './GridLayout.js';
-//not GWT import - same folder const GridLayout
+//sameFolderImports - not GWT import - same folder const GridLayout
 import { Graphics } from './Graphics.js';
-//not GWT import - same folder const Graphics
+//sameFolderImports - not GWT import - same folder const Graphics
 import { MouseEvent } from './MouseEvent.js';
-//not GWT import - same folder const MouseEvent
+//sameFolderImports - not GWT import - same folder const MouseEvent
 import { KeyEvent } from './KeyEvent.js';
-//not GWT import - same folder const KeyEvent
+//sameFolderImports - not GWT import - same folder const KeyEvent
 
 export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.MouseListener, java.awt.event.MouseMotionListener, java.awt.event.KeyListener, MyGraphicItemEventListener {
         

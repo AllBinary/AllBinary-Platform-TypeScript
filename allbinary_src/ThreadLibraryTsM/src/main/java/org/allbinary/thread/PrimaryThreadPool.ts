@@ -49,7 +49,7 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThreadPool } from './ThreadPool.js';
-//not GWT import - same folder const ThreadPool
+//sameFolderImports - not GWT import - same folder const ThreadPool
 
 export class PrimaryThreadPool extends ThreadPool {
         

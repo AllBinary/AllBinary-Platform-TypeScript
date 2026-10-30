@@ -74,7 +74,7 @@ type LogUtil<T = any, U = any> = typeof LogUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PrimaryWaypointHelper } from './PrimaryWaypointHelper.js';
-//not GWT import - same folder const PrimaryWaypointHelper
+//sameFolderImports - not GWT import - same folder const PrimaryWaypointHelper
 
 export class AssignWaypointsUtil
             extends Object

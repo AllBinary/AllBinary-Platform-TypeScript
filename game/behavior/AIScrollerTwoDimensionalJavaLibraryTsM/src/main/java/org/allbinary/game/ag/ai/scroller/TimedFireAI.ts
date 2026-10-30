@@ -65,7 +65,7 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeFiredInterface } from './TimeFiredInterface.js';
-//not GWT import - same folder const TimeFiredInterface
+//sameFolderImports - not GWT import - same folder const TimeFiredInterface
 
 export class TimedFireAI extends BasicAI {
         

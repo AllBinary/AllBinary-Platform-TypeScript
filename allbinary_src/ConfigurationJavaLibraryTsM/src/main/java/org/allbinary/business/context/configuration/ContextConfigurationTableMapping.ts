@@ -59,9 +59,9 @@ type StdUtil<T = any, U = any> = typeof StdUtil extends abstract new (...args: a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
-//not GWT import - same folder const ContextConfigurationInterface
+//sameFolderImports - not GWT import - same folder const ContextConfigurationInterface
 import { ContextConfigurationData } from './ContextConfigurationData.js';
-//not GWT import - same folder const ContextConfigurationData
+//sameFolderImports - not GWT import - same folder const ContextConfigurationData
 
 export class ContextConfigurationTableMapping
             extends Object

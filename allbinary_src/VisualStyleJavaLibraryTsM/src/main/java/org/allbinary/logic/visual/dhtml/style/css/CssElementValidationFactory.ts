@@ -47,7 +47,7 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssElementValidation } from './CssElementValidation.js';
-//not GWT import - same folder const CssElementValidation
+//sameFolderImports - not GWT import - same folder const CssElementValidation
 
 export class CssElementValidationFactory
             extends Object

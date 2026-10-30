@@ -50,31 +50,31 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidMediaPlayerWrapper } from './AndroidMediaPlayerWrapper.js';
-//not GWT import - same folder const AndroidMediaPlayerWrapper
+//sameFolderImports - not GWT import - same folder const AndroidMediaPlayerWrapper
 import { OnBufferingUpdateListener } from './OnBufferingUpdateListener.js';
-//not GWT import - same folder const OnBufferingUpdateListener
+//sameFolderImports - not GWT import - same folder const OnBufferingUpdateListener
 import { OnPreparedListener } from './OnPreparedListener.js';
-//not GWT import - same folder const OnPreparedListener
+//sameFolderImports - not GWT import - same folder const OnPreparedListener
 import { OnErrorListener } from './OnErrorListener.js';
-//not GWT import - same folder const OnErrorListener
+//sameFolderImports - not GWT import - same folder const OnErrorListener
 import { OnCompletionListener } from './OnCompletionListener.js';
-//not GWT import - same folder const OnCompletionListener
+//sameFolderImports - not GWT import - same folder const OnCompletionListener
 //import { MediaPlayerOnBufferingUpdateListener } from './MediaPlayerOnBufferingUpdateListener.js';
-//not GWT import - same folder const MediaPlayerOnBufferingUpdateListener
+//sameFolderImports - not GWT import - same folder const MediaPlayerOnBufferingUpdateListener
 //import { AndroidMediaPlayerOnBufferingUpdateListener } from './AndroidMediaPlayerOnBufferingUpdateListener.js';
-//not GWT import - same folder const AndroidMediaPlayerOnBufferingUpdateListener
+//sameFolderImports - not GWT import - same folder const AndroidMediaPlayerOnBufferingUpdateListener
 //import { MediaPlayerOnPreparedListener } from './MediaPlayerOnPreparedListener.js';
-//not GWT import - same folder const MediaPlayerOnPreparedListener
+//sameFolderImports - not GWT import - same folder const MediaPlayerOnPreparedListener
 //import { AndroidMediaPlayerOnPreparedListener } from './AndroidMediaPlayerOnPreparedListener.js';
-//not GWT import - same folder const AndroidMediaPlayerOnPreparedListener
+//sameFolderImports - not GWT import - same folder const AndroidMediaPlayerOnPreparedListener
 //import { MediaPlayerOnErrorListener } from './MediaPlayerOnErrorListener.js';
-//not GWT import - same folder const MediaPlayerOnErrorListener
+//sameFolderImports - not GWT import - same folder const MediaPlayerOnErrorListener
 //import { AndroidMediaPlayerOnErrorListener } from './AndroidMediaPlayerOnErrorListener.js';
-//not GWT import - same folder const AndroidMediaPlayerOnErrorListener
+//sameFolderImports - not GWT import - same folder const AndroidMediaPlayerOnErrorListener
 //import { MediaPlayerOnCompletionListener } from './MediaPlayerOnCompletionListener.js';
-//not GWT import - same folder const MediaPlayerOnCompletionListener
+//sameFolderImports - not GWT import - same folder const MediaPlayerOnCompletionListener
 //import { AndroidMediaPlayerOnCompletionListener } from './AndroidMediaPlayerOnCompletionListener.js';
-//not GWT import - same folder const AndroidMediaPlayerOnCompletionListener
+//sameFolderImports - not GWT import - same folder const AndroidMediaPlayerOnCompletionListener
 type MediaPlayerOnBufferingUpdateListener = InstanceType<AndroidMediaPlayerWrapperListener['MediaPlayerOnBufferingUpdateListener']>;
 type MediaPlayerOnPreparedListener = InstanceType<AndroidMediaPlayerWrapperListener['MediaPlayerOnPreparedListener']>;
 type MediaPlayerOnErrorListener = InstanceType<AndroidMediaPlayerWrapperListener['MediaPlayerOnErrorListener']>;

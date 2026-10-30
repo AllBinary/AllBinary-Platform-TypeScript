@@ -42,9 +42,9 @@ import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/C
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
-//not GWT import - same folder const CollidableBaseBehavior
+//sameFolderImports - not GWT import - same folder const CollidableBaseBehavior
 import { CollidableInterfaceCompositeInterface } from './CollidableInterfaceCompositeInterface.js';
-//not GWT import - same folder const CollidableInterfaceCompositeInterface
+//sameFolderImports - not GWT import - same folder const CollidableInterfaceCompositeInterface
 
 export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
         

@@ -65,9 +65,9 @@ type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract n
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VehicleLayerInterface } from './VehicleLayerInterface.js';
-//not GWT import - same folder const VehicleLayerInterface
+//sameFolderImports - not GWT import - same folder const VehicleLayerInterface
 import { VehicleProperties } from './VehicleProperties.js';
-//not GWT import - same folder const VehicleProperties
+//sameFolderImports - not GWT import - same folder const VehicleProperties
 
 export class NullVehicleLayer
             extends Object

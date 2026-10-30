@@ -75,37 +75,37 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-//not GWT import - same folder const JPanel
+//sameFolderImports - not GWT import - same folder const JPanel
 import { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
-//not GWT import - same folder const MouseActionScriptInputInterface
+//sameFolderImports - not GWT import - same folder const MouseActionScriptInputInterface
 import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-//not GWT import - same folder const DefaultComboBoxModel
+//sameFolderImports - not GWT import - same folder const DefaultComboBoxModel
 import { ComboBoxModel } from './ComboBoxModel.js';
-//not GWT import - same folder const ComboBoxModel
+//sameFolderImports - not GWT import - same folder const ComboBoxModel
 import { JDialog } from './JDialog.js';
-//not GWT import - same folder const JDialog
+//sameFolderImports - not GWT import - same folder const JDialog
 import { JLabel } from './JLabel.js';
-//not GWT import - same folder const JLabel
+//sameFolderImports - not GWT import - same folder const JLabel
 import { JButton } from './JButton.js';
-//not GWT import - same folder const JButton
+//sameFolderImports - not GWT import - same folder const JButton
 import { JCheckBox } from './JCheckBox.js';
-//not GWT import - same folder const JCheckBox
+//sameFolderImports - not GWT import - same folder const JCheckBox
 import { JTextField } from './JTextField.js';
-//not GWT import - same folder const JTextField
+//sameFolderImports - not GWT import - same folder const JTextField
 import { JComboBox } from './JComboBox.js';
-//not GWT import - same folder const JComboBox
+//sameFolderImports - not GWT import - same folder const JComboBox
 import { Dimension } from './Dimension.js';
-//not GWT import - same folder const Dimension
+//sameFolderImports - not GWT import - same folder const Dimension
 import { ActionListener } from './ActionListener.js';
-//not GWT import - same folder const ActionListener
+//sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';
-//not GWT import - same folder const ActionEvent
+//sameFolderImports - not GWT import - same folder const ActionEvent
 import { Insets } from './Insets.js';
-//not GWT import - same folder const Insets
+//sameFolderImports - not GWT import - same folder const Insets
 import { GroupLayout } from './GroupLayout.js';
-//not GWT import - same folder const GroupLayout
+//sameFolderImports - not GWT import - same folder const GroupLayout
 import { Short } from './Short.js';
-//not GWT import - same folder const Short
+//sameFolderImports - not GWT import - same folder const Short
 
 export class MouseActionScriptInputJPanel extends javax.swing.JPanel {
         

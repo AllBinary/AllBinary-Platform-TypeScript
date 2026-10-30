@@ -55,7 +55,7 @@ type BasicArrayListD<T = any, U = any> = typeof BasicArrayListD extends abstract
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfiguration } from './GameConfiguration.js';
-//not GWT import - same folder const GameConfiguration
+//sameFolderImports - not GWT import - same folder const GameConfiguration
 
 export class GameConfigurationSingleton
             extends Object

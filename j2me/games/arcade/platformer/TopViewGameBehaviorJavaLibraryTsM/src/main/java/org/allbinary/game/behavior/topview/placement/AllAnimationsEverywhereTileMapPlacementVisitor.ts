@@ -40,7 +40,7 @@ import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TileMapPlacementVisitor } from './TileMapPlacementVisitor.js';
-//not GWT import - same folder const TileMapPlacementVisitor
+//sameFolderImports - not GWT import - same folder const TileMapPlacementVisitor
 
 export class AllAnimationsEverywhereTileMapPlacementVisitor extends TileMapPlacementVisitor {
         

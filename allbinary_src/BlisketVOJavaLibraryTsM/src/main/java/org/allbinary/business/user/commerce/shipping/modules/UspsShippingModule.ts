@@ -45,7 +45,7 @@ import { Money } from '../../../../../../../org/allbinary/business/user/commerce
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingInterface } from './ShippingInterface.js';
-//not GWT import - same folder const ShippingInterface
+//sameFolderImports - not GWT import - same folder const ShippingInterface
 
 export class UspsShippingModule
             extends Object

@@ -63,9 +63,9 @@ type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (..
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RegistrationConfiguration } from './RegistrationConfiguration.js';
-//not GWT import - same folder const RegistrationConfiguration
+//sameFolderImports - not GWT import - same folder const RegistrationConfiguration
 import { XmlRpcRemoteLicenseRegistrationClient } from './XmlRpcRemoteLicenseRegistrationClient.js';
-//not GWT import - same folder const XmlRpcRemoteLicenseRegistrationClient
+//sameFolderImports - not GWT import - same folder const XmlRpcRemoteLicenseRegistrationClient
 
 export class LicenseRegistrationUtil
             extends Object

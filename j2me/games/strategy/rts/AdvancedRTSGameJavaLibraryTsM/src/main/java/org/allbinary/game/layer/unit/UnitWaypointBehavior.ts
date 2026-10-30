@@ -120,9 +120,9 @@ type BasicArrayListUtil<T = any, U = any> = typeof BasicArrayListUtil extends ab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UnitWaypointStrings } from './UnitWaypointStrings.js';
-//not GWT import - same folder const UnitWaypointStrings
+//sameFolderImports - not GWT import - same folder const UnitWaypointStrings
 import { UnitLayer } from './UnitLayer.js';
-//not GWT import - same folder const UnitLayer
+//sameFolderImports - not GWT import - same folder const UnitLayer
 
 export class UnitWaypointBehavior extends WaypointBehaviorBase implements WaypointEventListenerInterface {
         
