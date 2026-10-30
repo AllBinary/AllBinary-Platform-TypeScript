@@ -22,12 +22,6 @@
         
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-import { HashSet } from '../../../../../../java/util/HashSet.js';
-//not GWT import const HashSet
-
-import { PriorityQueue } from '../../../../../../java/util/PriorityQueue.js';
-//not GWT import const PriorityQueue
-
 import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 //not GWT import const AllBinaryTiledLayer
 
@@ -57,6 +51,12 @@ import { GeographicMapCellType } from '../../../../../../org/allbinary/media/gra
 
 import { RaceTrackGeographicMapCellType } from '../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellType.js';
 //not GWT import const RaceTrackGeographicMapCellType
+
+//not plain js import { ABHashSet } 
+const ABHashSet = globalThis.org.allbinary.util.ABHashSet;
+
+//not plain js import { ABPriorityQueue } 
+const ABPriorityQueue = globalThis.org.allbinary.util.ABPriorityQueue;
 
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
@@ -105,9 +105,9 @@ export class PathFinder extends GeographicPathFinderBase {
 
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
 
-    private readonly openPriorityQueue: PriorityQueue<PathFindingNodeCost> = new PriorityQueue<PathFindingNodeCost>();
+    private readonly openPriorityQueue: ABPriorityQueue<PathFindingNodeCost> = new ABPriorityQueue<PathFindingNodeCost>();
 
-    private readonly closedSet: HashSet<PathFindingNodeCost> = new HashSet<PathFindingNodeCost>();
+    private readonly closedSet: ABHashSet<PathFindingNodeCost> = new ABHashSet<PathFindingNodeCost>();
 
     private geographicMapInterface: any = NullUtil.getInstance()!.NULL_OBJECT;
 

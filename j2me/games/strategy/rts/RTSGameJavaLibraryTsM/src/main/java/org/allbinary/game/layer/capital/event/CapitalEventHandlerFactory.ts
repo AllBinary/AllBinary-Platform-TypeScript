@@ -49,13 +49,11 @@ export class CapitalEventHandlerFactory
          {
         
 
-    private static readonly capitalEventHandlerArray: CapitalEventHandler[];
+    private static readonly capitalEventHandlerArray: CapitalEventHandler[] = new Array(10);
 
                 private static initResult: number = CapitalEventHandlerFactory.init();
                 private static init(): number { 
                     
-capitalEventHandlerArray= new Array(10);
-    
 
 
 
@@ -74,10 +72,13 @@ CapitalEventHandlerFactory.capitalEventHandlerArray[index]= new CapitalEventHand
             
     public static getInstance(groupInterface: Group): CapitalEventHandler{
 
+    var groupId: number = Math.round(groupInterface!.getGroupId());;
+    
+
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CapitalEventHandlerFactory.capitalEventHandlerArray[Math.round(groupInterface!.getGroupId();)]!;
+                        return CapitalEventHandlerFactory.capitalEventHandlerArray[groupId]!;
     
 }
 

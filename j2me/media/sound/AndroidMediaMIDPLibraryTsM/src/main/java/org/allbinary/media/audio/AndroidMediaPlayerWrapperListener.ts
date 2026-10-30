@@ -8,7 +8,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { PlayerListener, PlayerListenerI } from '../../../../javax/microedition/media/PlayerListener.js';
+import { PlayerListenerI } from '../../../../javax/microedition/media/PlayerListener.js';
+const PlayerListener = PlayerListenerI;
 //not GWT import const PlayerListener
 
 import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';

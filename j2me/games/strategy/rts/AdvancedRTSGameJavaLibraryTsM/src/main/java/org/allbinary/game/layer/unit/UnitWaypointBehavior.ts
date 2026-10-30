@@ -112,15 +112,17 @@ const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { UnitLayer } from './UnitLayer.js';
+        import { UnitWaypointStrings } from './UnitWaypointStrings.js';
+//not GWT import - same folder const UnitWaypointStrings
+import { UnitLayer } from './UnitLayer.js';
 //not GWT import - same folder const UnitLayer
 
 export class UnitWaypointBehavior extends WaypointBehaviorBase implements WaypointEventListenerInterface {
         
 
-    private static readonly PATHING: string = "Pathing";
+    readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
 
-    commonSeps: CommonSeps = CommonSeps.getInstance()!;
+    private readonly unitWaypointStrings: UnitWaypointStrings = UnitWaypointStrings.getInstance()!;
 
     private longWeaponRange: number = 0;
 
@@ -365,7 +367,7 @@ this.lastPathGeographicMapCellPosition= SimpleGeographicMapCellPositionFactory.N
                         if(this.associatedAdvancedRTSGameLayer!.showMoreCaptionStates)
                         
                                     {
-                                    this.associatedAdvancedRTSGameLayer!.getCaptionAnimationHelper()!.update(UnitWaypointBehavior.PATHING, BasicColorFactory.getInstance()!.GREEN);
+                                    this.associatedAdvancedRTSGameLayer!.getCaptionAnimationHelper()!.update(this.unitWaypointStrings!.PATHING, BasicColorFactory.getInstance()!.GREEN);
     
 
                                     }

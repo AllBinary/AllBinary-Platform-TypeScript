@@ -41,7 +41,8 @@ import { Control } from '../../../../javax/microedition/media/Control.js';
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 //not GWT import const MediaException
 
-import { PlayerListener, PlayerListenerI } from '../../../../javax/microedition/media/PlayerListener.js';
+import { PlayerListenerI } from '../../../../javax/microedition/media/PlayerListener.js';
+const PlayerListener = PlayerListenerI;
 //not GWT import const PlayerListener
 
 import { AudioInputStream } from '../../../../javax/sound/sampled/AudioInputStream.js';

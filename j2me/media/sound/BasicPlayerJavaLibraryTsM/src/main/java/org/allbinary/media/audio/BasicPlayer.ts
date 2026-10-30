@@ -29,7 +29,8 @@ import { MediaException } from '../../../../javax/microedition/media/MediaExcept
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 //not GWT import const Player
 
-import { PlayerListener, PlayerListenerI } from '../../../../javax/microedition/media/PlayerListener.js';
+import { PlayerListenerI } from '../../../../javax/microedition/media/PlayerListener.js';
+const PlayerListener = PlayerListenerI;
 //not GWT import const PlayerListener
 
 //not plain js import { StringUtil } 

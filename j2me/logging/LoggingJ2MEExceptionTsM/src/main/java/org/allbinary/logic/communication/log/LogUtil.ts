@@ -127,7 +127,7 @@ this.put(specialMessage, anyType, functionName, exception);
 }
 
 
-    /*actual*/ public putF(specialMessage: string, className: string, functionName: string){
+    /*actual*/ public putFS(specialMessage: string, className: string, functionName: string){
 }
 
 

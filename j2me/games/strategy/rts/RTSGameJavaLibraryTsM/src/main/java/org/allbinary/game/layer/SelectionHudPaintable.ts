@@ -91,7 +91,7 @@ export class SelectionHudPaintable extends InitUpdatePaintable implements Update
 
     readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
 
-    myFontProcessor: MyFontProcessor = updateMyFontProcessor;
+    myFontProcessor: MyFontProcessor = this.updateMyFontProcessor;
 
     private x: number= 0;
 

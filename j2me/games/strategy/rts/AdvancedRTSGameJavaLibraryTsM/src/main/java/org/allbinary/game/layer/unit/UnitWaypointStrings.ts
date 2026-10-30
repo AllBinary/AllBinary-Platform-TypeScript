@@ -59,6 +59,8 @@ export class UnitWaypointStrings
 }
 
 
+    public readonly PATHING: string = "Pathing";
+
     public readonly WANDERING: string = "Order?";
 
     public readonly THINKING: string = "Thinking";
@@ -84,6 +86,14 @@ export class UnitWaypointStrings
     public readonly ALREADY_THERE: string = "Already There";
 
     public readonly NEXT_PATH_NODE: string = CommonLabels.getInstance()!.NEXT +" Path Node";
+
+    public readonly _ALL_VISITED_SHORT: string = " Arrived";
+
+    public readonly _ALREADY_THERE_SHORT: string = " Again?";
+
+    public readonly VISITED_MOST_OF_THE_PATH: string = " visited most of the path";
+
+    public readonly RETURNING_AS_WAYPOINT_PATH_LIST: string = " returning as waypointPathsList was runningWaypointPathList";
 
 }
 

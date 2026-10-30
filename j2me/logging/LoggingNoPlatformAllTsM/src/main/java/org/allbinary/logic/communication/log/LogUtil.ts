@@ -96,7 +96,7 @@ private constructor (){
 }
 
 
-    public putF(specialMessage: string, className: string, functionName: string){
+    public putFS(specialMessage: string, className: string, functionName: string){
 
 
 

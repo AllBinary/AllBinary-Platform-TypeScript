@@ -72,7 +72,7 @@ private constructor (){
 }
 
 
-    /*actual*/ public putF(specialMessage: string, className: string, functionName: string){
+    /*actual*/ public putFS(specialMessage: string, className: string, functionName: string){
 }
 
 

@@ -77,9 +77,6 @@ import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormI
 import { BuildingEventHandler } from '../../../../org/allbinary/game/layer/building/event/BuildingEventHandler.js';
 //not GWT import const BuildingEventHandler
 
-import { UnitLayer } from '../../../../org/allbinary/game/layer/unit/UnitLayer.js';
-//not GWT import const UnitLayer
-
 import { Waypoint2LogHelper } from '../../../../org/allbinary/game/layer/waypoint/Waypoint2LogHelper.js';
 //not GWT import const Waypoint2LogHelper
 
@@ -377,7 +374,7 @@ this.waypointBehaviorBase= unitWaypointHelper;
     var parentAdvancedRTSGameLayer: AdvancedRTSGameLayer = this.parentLayer as AdvancedRTSGameLayer;;
     
 
-                        if(parentAdvancedRTSGameLayer!.getType() != UnitLayer.getStaticType())
+                        if(parentAdvancedRTSGameLayer!.getType() != 1)
                         
                                     {
                                     
@@ -403,7 +400,7 @@ this.waypointBehaviorBase= unitWaypointHelper;
 
     public isWaypointListEmptyOrOnlyTargets(): boolean{
 
-                        if(this.getType() != UnitLayer.getStaticType())
+                        if(this.getType() != 1)
                         
                                     {
                                     

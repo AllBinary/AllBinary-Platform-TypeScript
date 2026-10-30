@@ -56,10 +56,13 @@ export class WaypointEventHandlerFactory
 
     public static getInstance(groupInterface: Group): WaypointEventHandler{
 
+    var groupId: number = Math.round(groupInterface!.getGroupId());;
+    
+
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return WaypointEventHandlerFactory.eventHandlerArray[Math.round(groupInterface!.getGroupId();)]!;
+                        return WaypointEventHandlerFactory.eventHandlerArray[groupId]!;
     
 }
 
