@@ -25,7 +25,7 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
             //import { Double } from '../../../../../../java/lang/Double.js';
-            const Double = globalThis.java.lang.Double;
+            const Double = (globalThis.java?.lang?.Double ?? class {}) as typeof globalThis.java.lang.Double;
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
 //not GWT import const HashMap

@@ -36,7 +36,7 @@ import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
 //not GWT import const FileInputStream
 
 //not plain js import { URL } 
-const URL = globalThis.java.net.URL;
+const URL = (globalThis.java?.net?.URL ?? class {}) as typeof globalThis.java.net.URL;
 type URL<T = any, U = any> = typeof URL extends abstract new (...args: any[]) => infer Instance ? Instance : typeof URL;
 
 import { HashMap } from '../../../../../../java/util/HashMap.js';

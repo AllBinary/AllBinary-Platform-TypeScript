@@ -20,6 +20,7 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
+
 //not plain js import { FilePathData } 
 const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
 type FilePathData<T = any, U = any> = typeof FilePathData extends abstract new (...args: any[]) => infer Instance ? Instance : typeof FilePathData;
@@ -50,7 +51,7 @@ type CommonSeps<T = any, U = any> = typeof CommonSeps extends abstract new (...a
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //Used to correct user input for paths
 export class AbPathData
             extends Object
          {

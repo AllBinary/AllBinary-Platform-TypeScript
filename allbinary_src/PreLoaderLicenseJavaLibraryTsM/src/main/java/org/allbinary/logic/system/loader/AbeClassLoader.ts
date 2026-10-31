@@ -18,13 +18,16 @@
         
 
 
-            import { Class } from '../../../../../java/lang/Class.js';
+            //import { Class } from '../../../../../java/lang/Class.js';
+            const Class = (globalThis.java?.lang?.Class ?? class {}) as typeof globalThis.java.lang.Class;
+            type Class<T = any, U = any> = typeof Class extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Class;
         
             import { ClassLoader } from '../../../../../java/lang/ClassLoader.js';
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { ClassNotFoundException } from '../../../../../java/lang/ClassNotFoundException.js';
+            //import { ClassNotFoundException } from '../../../../../java/lang/ClassNotFoundException.js';
+            const ClassNotFoundException = (globalThis.java?.lang?.ClassNotFoundException ?? class {}) as typeof globalThis.java.lang.ClassNotFoundException;
         
 import { FileInputStream } from '../../../../../java/io/FileInputStream.js';
 //not GWT import const FileInputStream

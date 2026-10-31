@@ -21,7 +21,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
             //not plain js import { Character }
-            const Character = globalThis.java.lang.Character;
+            const Character = (globalThis.java?.lang?.Character ?? class {}) as typeof globalThis.java.lang.Character;
             type Character<T = any, U = any> = typeof Character extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Character;
         
             import { Exception } from '../../../java/lang/Exception.js';

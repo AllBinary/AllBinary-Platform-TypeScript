@@ -29,7 +29,7 @@
             import { Float } from '../../java/lang/Float.js';
         
             //import { Double } from '../../java/lang/Double.js';
-            const Double = globalThis.java.lang.Double;
+            const Double = (globalThis.java?.lang?.Double ?? class {}) as typeof globalThis.java.lang.Double;
         
 import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
 //not GWT import const Displayable

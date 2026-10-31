@@ -32,7 +32,7 @@ import { StringWriter } from '../../../../../../java/io/StringWriter.js';
 //not GWT import const StringWriter
 
 //not plain js import { Writer } 
-const Writer = globalThis.java.io.Writer;
+const Writer = (globalThis.java?.io?.Writer ?? class {}) as typeof globalThis.java.io.Writer;
 type Writer<T = any, U = any> = typeof Writer extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Writer;
 
 import { DocumentBuilderFactory } from '../../../../../../javax/xml/parsers/DocumentBuilderFactory.js';
@@ -70,8 +70,9 @@ type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
 
-import { InputSource } from '../../../../../../org/xml/sax/InputSource.js';
-//not GWT import const InputSource
+//not plain js import { InputSource } 
+const InputSource = (globalThis.org?.xml?.sax?.InputSource ?? class {}) as typeof globalThis.org.xml.sax.InputSource;
+type InputSource<T = any, U = any> = typeof InputSource extends abstract new (...args: any[]) => infer Instance ? Instance : typeof InputSource;
 
 
 

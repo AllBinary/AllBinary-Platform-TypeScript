@@ -10,11 +10,11 @@ import { IOException } from '../../../java/io/IOException.js';
 //not GWT import const IOException
 
 //not plain js import { MalformedURLException } 
-const MalformedURLException = globalThis.java.net.MalformedURLException;
+const MalformedURLException = (globalThis.java?.net?.MalformedURLException ?? class {}) as typeof globalThis.java.net.MalformedURLException;
 type MalformedURLException<T = any, U = any> = typeof MalformedURLException extends abstract new (...args: any[]) => infer Instance ? Instance : typeof MalformedURLException;
 
 //not plain js import { URL } 
-const URL = globalThis.java.net.URL;
+const URL = (globalThis.java?.net?.URL ?? class {}) as typeof globalThis.java.net.URL;
 type URL<T = any, U = any> = typeof URL extends abstract new (...args: any[]) => infer Instance ? Instance : typeof URL;
 
 //not plain js import { BasicArrayList } 

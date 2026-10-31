@@ -28,7 +28,7 @@ import { BufferedReader } from '../../../../../../java/io/BufferedReader.js';
 //not GWT import const BufferedReader
 
 //not plain js import { InputStreamReader } 
-const InputStreamReader = globalThis.java.io.InputStreamReader;
+const InputStreamReader = (globalThis.java?.io?.InputStreamReader ?? class {}) as typeof globalThis.java.io.InputStreamReader;
 type InputStreamReader<T = any, U = any> = typeof InputStreamReader extends abstract new (...args: any[]) => infer Instance ? Instance : typeof InputStreamReader;
 
 import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';

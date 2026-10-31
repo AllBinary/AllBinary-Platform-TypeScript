@@ -20,7 +20,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-            import { ClassNotFoundException } from '../../../../../java/lang/ClassNotFoundException.js';
+            //import { ClassNotFoundException } from '../../../../../java/lang/ClassNotFoundException.js';
+            const ClassNotFoundException = (globalThis.java?.lang?.ClassNotFoundException ?? class {}) as typeof globalThis.java.lang.ClassNotFoundException;
         
 import { Context } from '../../../../../android/content/Context.js';
 //not GWT import const Context

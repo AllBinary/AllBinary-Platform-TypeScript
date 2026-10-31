@@ -23,7 +23,7 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
             //import { Double } from '../../../../../../java/lang/Double.js';
-            const Double = globalThis.java.lang.Double;
+            const Double = (globalThis.java?.lang?.Double ?? class {}) as typeof globalThis.java.lang.Double;
         
 import { VectorRotationGenerator } from '../../../../../../org/allbinary/animation/VectorRotationGenerator.js';
 //not GWT import const VectorRotationGenerator

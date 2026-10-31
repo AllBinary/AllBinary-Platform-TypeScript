@@ -9,7 +9,7 @@
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
 //not plain js import { Stack } 
-const Stack = globalThis.java.util.Stack;
+const Stack = (globalThis.java?.util?.Stack ?? class {}) as typeof globalThis.java.util.Stack;
 type Stack<T = any, U = any> = typeof Stack extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Stack;
 
 

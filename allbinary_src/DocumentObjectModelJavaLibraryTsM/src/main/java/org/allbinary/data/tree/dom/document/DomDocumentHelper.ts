@@ -36,6 +36,10 @@ import { DocumentBuilder } from '../../../../../../javax/xml/parsers/DocumentBui
 import { DocumentBuilderFactory } from '../../../../../../javax/xml/parsers/DocumentBuilderFactory.js';
 //not GWT import const DocumentBuilderFactory
 
+//not plain js import { CommonPhoneStrings } 
+const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+type CommonPhoneStrings<T = any, U = any> = typeof CommonPhoneStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonPhoneStrings;
+
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
 
@@ -64,11 +68,14 @@ export class DomDocumentHelper
         
 
     public static init(){
-System.setProperty("jdk.xml.maxElementDepth", "0");
+
+    let commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
-System.setProperty("jdk.xml.xpathExprOpLimit", "0");
+System.setProperty("jdk.xml.maxElementDepth", commonPhoneStrings!.ZERO);
     
-System.setProperty("jdk.xml.xpathTotalOpLimit", "0");
+System.setProperty("jdk.xml.xpathExprOpLimit", commonPhoneStrings!.ZERO);
+    
+System.setProperty("jdk.xml.xpathTotalOpLimit", commonPhoneStrings!.ZERO);
     
 
     let LIMIT: string = "500000";;

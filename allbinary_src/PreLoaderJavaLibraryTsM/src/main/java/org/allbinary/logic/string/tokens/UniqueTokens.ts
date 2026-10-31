@@ -23,7 +23,7 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
             //import { NumberFormatException } from '../../../../../java/lang/NumberFormatException.js';
-            const NumberFormatException = globalThis.java.lang.NumberFormatException;
+            const NumberFormatException = (globalThis.java?.lang?.NumberFormatException ?? class {}) as typeof globalThis.java.lang.NumberFormatException;
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         

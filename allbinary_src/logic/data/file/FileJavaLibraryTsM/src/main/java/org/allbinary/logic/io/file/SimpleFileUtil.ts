@@ -40,7 +40,7 @@ import { Reader } from '../../../../../java/io/Reader.js';
 //not GWT import const Reader
 
 //not plain js import { Writer } 
-const Writer = globalThis.java.io.Writer;
+const Writer = (globalThis.java?.io?.Writer ?? class {}) as typeof globalThis.java.io.Writer;
 type Writer<T = any, U = any> = typeof Writer extends abstract new (...args: any[]) => infer Instance ? Instance : typeof Writer;
 
 import { CharBuffer } from '../../../../../java/nio/CharBuffer.js';

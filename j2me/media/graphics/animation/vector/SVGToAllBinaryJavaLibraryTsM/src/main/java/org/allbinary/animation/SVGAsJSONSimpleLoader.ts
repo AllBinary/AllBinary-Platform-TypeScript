@@ -29,7 +29,7 @@
             import { Math } from '../../../java/lang/Math.js';
         
             //import { Double } from '../../../java/lang/Double.js';
-            const Double = globalThis.java.lang.Double;
+            const Double = (globalThis.java?.lang?.Double ?? class {}) as typeof globalThis.java.lang.Double;
         
 import { Enumeration } from '../../../java/util/Enumeration.js';
 //not GWT import const Enumeration

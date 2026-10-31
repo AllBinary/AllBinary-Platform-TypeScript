@@ -7,7 +7,7 @@
             import { Object } from '../../../java/lang/Object.js';
         
             //import { Double } from '../../../java/lang/Double.js';
-            const Double = globalThis.java.lang.Double;
+            const Double = (globalThis.java?.lang?.Double ?? class {}) as typeof globalThis.java.lang.Double;
         
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
