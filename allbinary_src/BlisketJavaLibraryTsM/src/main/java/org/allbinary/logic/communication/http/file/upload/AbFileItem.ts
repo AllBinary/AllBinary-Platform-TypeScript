@@ -36,8 +36,9 @@ import { InputStream } from '../../../../../../../java/io/InputStream.js';
 import { OutputStream } from '../../../../../../../java/io/OutputStream.js';
 //not GWT import const OutputStream
 
-import { UnsupportedEncodingException } from '../../../../../../../java/io/UnsupportedEncodingException.js';
-//not GWT import const UnsupportedEncodingException
+//not plain js import { UnsupportedEncodingException } 
+const UnsupportedEncodingException = (globalThis.java?.io?.UnsupportedEncodingException ?? class {}) as typeof globalThis.java.io.UnsupportedEncodingException;
+type UnsupportedEncodingException<T = any, U = any> = typeof UnsupportedEncodingException extends abstract new (...args: any[]) => infer Instance ? Instance : typeof UnsupportedEncodingException;
 
 //not plain js import { ForcedLogUtil } 
 const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;

@@ -22,8 +22,9 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { BufferedInputStream } from '../../../../java/io/BufferedInputStream.js';
-//not GWT import const BufferedInputStream
+//not plain js import { BufferedInputStream } 
+const BufferedInputStream = (globalThis.java?.io?.BufferedInputStream ?? class {}) as typeof globalThis.java.io.BufferedInputStream;
+type BufferedInputStream<T = any, U = any> = typeof BufferedInputStream extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BufferedInputStream;
 
 import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
 //not GWT import const ByteArrayInputStream
