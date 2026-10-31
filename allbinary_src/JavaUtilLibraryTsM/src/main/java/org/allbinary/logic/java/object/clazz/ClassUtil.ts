@@ -84,9 +84,16 @@ static viewAll(...args: any[]): any {
 
                                     }
                                 
-                             else 
-                        if()
-                        
+                        else {
+                            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return "Object Null";
+    
+
+                        }
+                            
 }
 
 
@@ -157,9 +164,16 @@ stringBuffer!.append(MethodUtil.viewAll(myClass.prototype.constructor, lineBreak
 
                                     }
                                 
-                             else 
-                        if()
-                        
+                        else {
+                            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return "Class Null";
+    
+
+                        }
+                            
 }
 
 

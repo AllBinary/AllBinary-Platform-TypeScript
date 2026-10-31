@@ -100,11 +100,7 @@ export class ABHashMap extends HashMap<K, V> {
 }
 
 
-    public putAll(map: Map<
-                //Otherwise - typeArguments - type - WildcardType
-
-                //Otherwise - typeArguments - type - WildcardType
->){
+    public putAll(map: Map<any, any>){
 super.putAll(map);
     
 }

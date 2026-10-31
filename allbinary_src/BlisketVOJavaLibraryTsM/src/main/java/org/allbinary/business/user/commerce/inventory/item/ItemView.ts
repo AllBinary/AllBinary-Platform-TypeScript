@@ -117,7 +117,7 @@ node.appendChild(basicItemView!.toXmlNode(document));
     let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    let nameArray: any[] = keySet!.()!;;
+    let nameArray: any[] = keySet!.toArray()!;;
     
 
     let size: number = nameArray!.length

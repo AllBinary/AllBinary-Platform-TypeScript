@@ -71,9 +71,21 @@ export class EmailServerConfiguration
 
     private smtpServer: string;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 3) {
+            this.constructor$2(args[0], args[1], args[2]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -88,12 +100,10 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
                                 
 this.setSmtpServer(StringUtil.getInstance()!.EMPTY_STRING);
     
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$1(hashMap: HashMap<any, any>): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -114,12 +124,10 @@ this.setSmtpServer(hashMap!.get(EmailServerConfigurationData.SERVER) as string);
     
 this.log();
     
-}
 
-
-public constructor (account: string, password: string, server: string){
-
-            super();
+    }
+    
+    private constructor$2(account: string, password: string, server: string): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -140,9 +148,9 @@ this.setSmtpServer(server);
     
 this.log();
     
-}
 
-
+    }
+    
     public setSmtpServer(value: string){
 this.smtpServer= value;
     

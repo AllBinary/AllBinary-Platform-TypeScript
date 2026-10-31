@@ -98,9 +98,18 @@ export class UserEmailConfigurationView
 
     private userEmailConfigurationInterface: UserEmailConfigurationInterface;
 
-public constructor (node: Node){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(node: Node): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -123,17 +132,15 @@ this.userEmailConfigurationInterface= new UserEmailConfiguration() as UserEmailC
     
 this.userEmailConfigurationInterface!.setUserEmailEventsConfigurationInterface(userEmailEventsConfigurationView!.getUserEmailEventsConfigurationInterface());
     
-}
 
-
-public constructor (userEmailConfigurationInterface: UserEmailConfigurationInterface){
-
-            super();
+    }
+    
+    private constructor$1(userEmailConfigurationInterface: UserEmailConfigurationInterface): void {
         this.userEmailConfigurationInterface= userEmailConfigurationInterface;
     
-}
 
-
+    }
+    
     public getEmailConfigurationInterface(): UserEmailConfigurationInterface{
 
 

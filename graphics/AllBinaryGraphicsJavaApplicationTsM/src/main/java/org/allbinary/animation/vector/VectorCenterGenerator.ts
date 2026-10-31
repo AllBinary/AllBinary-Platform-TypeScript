@@ -135,7 +135,7 @@ public constructor (){
             
     public calculate(hashMap: HashMap<any, any>){
 
-    let graphicItemArray: any[] = hashMap!.keys().()!;;
+    let graphicItemArray: any[] = hashMap!.keys().toArray()!;;
     
 
     let size: number = graphicItemArray!.length
@@ -212,7 +212,7 @@ this.calculate(hashMap);
 this.logUtil!.putF(new StringMaker().append(" dx: ")!.appendint(this.dx)!.append(" dy: ")!.appendint(this.dy)!.toString(), this, this.commonStrings!.GET_INSTANCE);
     
 
-    let graphicItemArray: any[] = hashMap!.keys().()!;;
+    let graphicItemArray: any[] = hashMap!.keys().toArray()!;;
     
 
     let size: number = graphicItemArray!.length

@@ -136,9 +136,21 @@ console.log("New String: " +testString);
 
     private readonly hashMap: HashMap<any, any>;
 
-public constructor (key: string, value: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') {
+            this.constructor$0(args[0], args[1]);
+        }
+        else if(args.length === 2) {
+            this.constructor$1(args[0], args[1]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(key: string, value: string): void {
         this.hashMap= StdUtil.getInstance()!.createHashMap();
     
 this.hashMap!.put(
@@ -149,27 +161,23 @@ this.hashMap!.put(
                                                     value
                                                 ]);
     
-}
 
-
-public constructor (keys: string[], values: string[]){
-
-            super();
+    }
+    
+    private constructor$1(keys: string[], values: string[]): void {
         this.hashMap= StdUtil.getInstance()!.createHashMap();
     
 this.hashMap!.put(keys, values);
     
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(hashMap: HashMap<any, any>): void {
         this.hashMap= hashMap;
     
-}
 
-
+    }
+    
     public all(replace: string): string{
 
 

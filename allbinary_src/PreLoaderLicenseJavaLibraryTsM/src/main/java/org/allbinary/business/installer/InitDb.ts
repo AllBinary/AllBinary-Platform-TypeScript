@@ -73,18 +73,25 @@ export class InitDb
 
     private readonly METHOD_CALL_MAIN_PATH: string = "useNormalMainPath";
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
         }
-
-
-public constructor (dbConnectionInfo: DbConnectionInfo){
-
-            super();
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
         }
-
-
+        
+    }
+    
+    private constructor$0(): void {
+        
+    }
+    
+    private constructor$1(dbConnectionInfo: DbConnectionInfo): void {
+        
+    }
+    
     setHelper(anyType: any){
 this.anyType= anyType;
     

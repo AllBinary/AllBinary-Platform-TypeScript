@@ -131,15 +131,22 @@ export class BasicStoreFront
 
     private lastModified: string;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
         }
-
-
-public constructor (storeHashMap: HashMap<any, any>){
-
-            super();
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
+    }
+    
+    private constructor$1(storeHashMap: HashMap<any, any>): void {
         
     let storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
     
@@ -199,9 +206,9 @@ this.timeCreated= storeHashMap!.get(EntryData.getInstance()!.TIMECREATED) as str
     
 this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as string;
     
-}
 
-
+    }
+    
     public getTestHtmlPath(): string{
 
 

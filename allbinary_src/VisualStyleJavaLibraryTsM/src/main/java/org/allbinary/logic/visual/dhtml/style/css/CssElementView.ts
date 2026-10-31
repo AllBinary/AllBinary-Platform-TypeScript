@@ -126,9 +126,18 @@ export class CssElementView
 
     cssPropertyVector: BasicArrayList;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.cssPropertyVector= new BasicArrayListD();
     
 
@@ -140,12 +149,10 @@ this.description= stringUtil!.EMPTY_STRING;
     
 this.value= stringUtil!.EMPTY_STRING;
     
-}
 
-
-public constructor (node: Node){
-
-            super();
+    }
+    
+    private constructor$1(node: Node): void {
         
  try { 
     let valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;;
@@ -246,9 +253,9 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
  }
    }
  
-}
 
-
+    }
+    
     public getValue(): string{
 
 

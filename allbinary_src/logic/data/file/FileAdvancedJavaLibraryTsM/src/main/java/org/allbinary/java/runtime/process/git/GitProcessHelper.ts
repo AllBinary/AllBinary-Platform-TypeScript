@@ -165,7 +165,7 @@ trackedFiles(...args: any[]): any {
                                     }
                                 
 
-    let files: List<string> = new ArrayList<>();;
+    let files: List<string> = new ArrayList();;
     
 
     let start: number = 0;;

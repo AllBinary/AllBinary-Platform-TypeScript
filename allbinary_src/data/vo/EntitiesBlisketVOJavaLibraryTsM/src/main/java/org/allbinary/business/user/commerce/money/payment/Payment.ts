@@ -120,9 +120,21 @@ export class Payment
 
     private isDefault: boolean = false;
 
-public constructor (payment: HashMap<any, any>){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof HashMap) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 0) {
+            this.constructor$2();
+        }
+        
+    }
+    
+    private constructor$0(payment: HashMap<any, any>): void {
         this.name= payment.get(PaymentData.NAME) as string;
     
 this.type= payment.get(PaymentData.TYPE) as string;
@@ -175,12 +187,10 @@ this.driversLicense= payment.get(PaymentData.DRIVERSLICENSE) as string;
     
 this.magneticInkCheckReader= payment.get(PaymentData.MAGNETICINKCHECKREADER) as string;
     
-}
 
-
-public constructor (request: ServletRequest){
-
-            super();
+    }
+    
+    private constructor$1(request: ServletRequest): void {
         this.name= request.getParameter(PaymentData.NAME);
     
 this.type= request.getParameter(PaymentData.TYPE);
@@ -209,15 +219,13 @@ this.driversLicense= request.getParameter(PaymentData.DRIVERSLICENSE);
     
 this.magneticInkCheckReader= request.getParameter(PaymentData.MAGNETICINKCHECKREADER);
     
-}
 
-
-public constructor (){
-
-            super();
-        }
-
-
+    }
+    
+    private constructor$2(): void {
+        
+    }
+    
     public isValid(): Boolean{
 
     let stringUtil: StringUtil = StringUtil.getInstance()!;;

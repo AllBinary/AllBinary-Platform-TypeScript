@@ -132,9 +132,18 @@ export class CanvasDom
 
     private readonly grid: Grid;
 
-public constructor (canvasNode: Node){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(canvasNode: Node): void {
         this.grid= new Grid();
     
 this.grid.grid= PointFactory.getInstance()!.createXY(0, 0);
@@ -260,12 +269,10 @@ this.grid.isGridPossible= .valueOf();
 
                         }
                             
-}
 
-
-public constructor (canvasJPanel: CanvasJPanel){
-
-            super();
+    }
+    
+    private constructor$1(canvasJPanel: CanvasJPanel): void {
         this.angle= canvasJPanel!.getAngle();
     
 this.graphicItemHashMap= canvasJPanel!.getGraphicItemHashMap();
@@ -276,9 +283,9 @@ this.grid= new Grid(canvasJPanel!.getGrid());
     
 this.angle= canvasJPanel!.getAngle();
     
-}
 
-
+    }
+    
     public getAngle(): number{
 
 
@@ -455,7 +462,7 @@ frameNode!.appendChild(realSizeNode);
     let graphicItemNode: Node = document.createElement(this.GRAPHICITEMS) as Node;;
     
 
-    let graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;;
+    let graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().toArray()!;;
     
 
     let size: number = graphicItemArray!.length

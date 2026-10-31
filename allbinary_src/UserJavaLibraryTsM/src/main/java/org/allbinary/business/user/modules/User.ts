@@ -187,36 +187,44 @@ export class User
 
     private userConfigurationInterface: UserConfigurationInterface;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1 && args[0] instanceof HttpServletRequest) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance();
     
 this.password= new Password(StringUtil.getInstance()!.EMPTY_STRING);
     
-}
 
-
-public constructor (request: HttpServletRequest){
-
-            super();
+    }
+    
+    private constructor$1(request: HttpServletRequest): void {
         this.getFormData(new RequestParams(request).toHashMap());
     
 this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole());
     
-}
 
-
-public constructor (userHashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(userHashMap: HashMap<any, any>): void {
         this.getFormData(userHashMap);
     
 this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole());
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     public getFormData(userHashMap: HashMap<any, any>){

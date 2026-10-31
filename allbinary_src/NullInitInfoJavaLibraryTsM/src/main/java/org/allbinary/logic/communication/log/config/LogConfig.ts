@@ -81,9 +81,18 @@ export class LogConfig
 
     private fileName: string;
 
-public constructor (aName: string, aDescription: string, aPath: string, aFileName: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 4) {
+            this.constructor$0(args[0], args[1], args[2], args[3]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(aName: string, aDescription: string, aPath: string, aFileName: string): void {
         this.isEnabled= false;
     
 this.name= aName;
@@ -94,12 +103,10 @@ this.path= aPath;
     
 this.fileName= aFileName;
     
-}
 
-
-public constructor (node: Node){
-
-            super();
+    }
+    
+    private constructor$1(node: Node): void {
         
     let enabledValueNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.ENABLE, node.getChildNodes())!;;
     
@@ -126,9 +133,9 @@ this.description= DomNodeHelper.getTextNodeValue(descriptionValueNode);
     
 this.fileName= DomNodeHelper.getTextNodeValue(fileValueNode);
     
-}
 
-
+    }
+    
     public getName(): string{
 
 

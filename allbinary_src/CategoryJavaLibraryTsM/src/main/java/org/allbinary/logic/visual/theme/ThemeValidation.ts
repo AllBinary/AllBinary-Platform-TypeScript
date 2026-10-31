@@ -172,9 +172,21 @@ export class ThemeValidation
 
     private fileAbPath: AbPath;
 
-public constructor (transformInfoInterface: TransformInfoInterface, cssStyleValidation: CssStyleValidation, categoryThemePath: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 3) {
+            this.constructor$0(args[0], args[1], args[2]);
+        }
+        else if(args.length === 2 && args[0] instanceof TransformInfoInterface && args[1] instanceof HashMap) {
+            this.constructor$1(args[0], args[1]);
+        }
+        else if(args.length === 2) {
+            this.constructor$2(args[0], args[1]);
+        }
+        
+    }
+    
+    private constructor$0(transformInfoInterface: TransformInfoInterface, cssStyleValidation: CssStyleValidation, categoryThemePath: string): void {
         this.transformInfoInterface= transformInfoInterface;
     
 
@@ -191,12 +203,10 @@ this.styleValidationInterface= cssStyleValidation;
     
 this.init();
     
-}
 
-
-public constructor (transformInfoInterface: TransformInfoInterface, hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$1(transformInfoInterface: TransformInfoInterface, hashMap: HashMap<any, any>): void {
         this.transformInfoInterface= transformInfoInterface;
     
 
@@ -238,12 +248,10 @@ this.logUtil!.putF("Http Request Constructor", this, stringBuffer!.toString());
                                 
 this.init();
     
-}
 
-
-public constructor (storeThemeCategoryInterface: StoreThemeCategoryInterface, node: Node){
-
-            super();
+    }
+    
+    private constructor$2(storeThemeCategoryInterface: StoreThemeCategoryInterface, node: Node): void {
         this.transformInfoInterface= storeThemeCategoryInterface!.getTransformInfoInterface();
     
 this.categoryAbPath= storeThemeCategoryInterface!.getPath();
@@ -268,9 +276,9 @@ this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
     
 this.init(storeThemeCategoryInterface);
     
-}
 
-init(...args: any[]): any {
+    }
+    init(...args: any[]): any {
    
     if (args.length === 0) return this.init$overload1();
    

@@ -128,9 +128,21 @@ export class BasicWorkFlow
 
     private storeName: string;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 2) {
+            this.constructor$1(args[0], args[1]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.workFlowName= StringUtil.getInstance()!.EMPTY_STRING;
     
 this.workFlowDoc= DomDocumentHelper.create();
@@ -140,12 +152,10 @@ this.workFlowDoc= DomDocumentHelper.create();
     
 this.workFlowDoc!.appendChild(workFlowNode);
     
-}
 
-
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
-
-            super();
+    }
+    
+    private constructor$1(hashMap: HashMap<any, any>, pageContext: PageContext): void {
         
     let weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);;
     
@@ -158,21 +168,19 @@ this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME) as stri
     
 this.workFlowDoc= DomDocumentHelper.create(requestHashMap!.get(WorkFlowData.getInstance()!.DATA) as string);
     
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(hashMap: HashMap<any, any>): void {
         this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME) as string;
     
 this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
     
 this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance()!.DATA) as string);
     
-}
 
-
+    }
+    
     public getName(): string{
 
 
@@ -275,7 +283,7 @@ hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
     let node: Node = document.createElement(WorkFlowData.getInstance()!.WORKFLOW)!;;
     
 
-    let nameArray: any[] = keySet!.()!;;
+    let nameArray: any[] = keySet!.toArray()!;;
     
 
     let size: number = nameArray!.length

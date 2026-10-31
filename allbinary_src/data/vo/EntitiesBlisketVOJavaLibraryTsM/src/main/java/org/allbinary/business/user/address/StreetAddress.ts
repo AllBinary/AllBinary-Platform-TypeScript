@@ -113,15 +113,34 @@ export class StreetAddress
 
     private isDefault: boolean = false;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
         }
-
-
-public constructor (node: Node){
-
-            super();
+        else if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 1 && args[0] instanceof StreetAddress) {
+            this.constructor$2(args[0]);
+        }
+        else if(args.length === 1 && args[0] instanceof HttpServletRequest) {
+            this.constructor$3(args[0]);
+        }
+        else if(args.length === 6) {
+            this.constructor$4(args[0], args[1], args[2], args[3], args[4], args[5]);
+        }
+        else if(args.length === 1) {
+            this.constructor$5(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
+    }
+    
+    private constructor$1(node: Node): void {
         
     let nameNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, node.getChildNodes())!;;
     
@@ -154,12 +173,10 @@ this.country= DomNodeHelper.getTextNodeValue(countryNode);
     
 this.log();
     
-}
 
-
-public constructor (streetAddress: StreetAddress){
-
-            super();
+    }
+    
+    private constructor$2(streetAddress: StreetAddress): void {
         this.id= streetAddress!.getId();
     
 this.name= streetAddress!.getName();
@@ -178,12 +195,10 @@ this.isDefault= streetAddress!.isDefault();
     
 this.log();
     
-}
 
-
-public constructor (request: HttpServletRequest){
-
-            super();
+    }
+    
+    private constructor$3(request: HttpServletRequest): void {
         this.setId(request.getParameter(StreetAddressData.ID));
     
 this.setName(request.getParameter(StreetAddressData.NAME));
@@ -200,12 +215,10 @@ this.setCountry(request.getParameter(StreetAddressData.COUNTRY));
     
 this.log();
     
-}
 
-
-public constructor (name: string, street: string, city: string, state: string, code: string, country: string){
-
-            super();
+    }
+    
+    private constructor$4(name: string, street: string, city: string, state: string, code: string, country: string): void {
         this.name= name;
     
 this.street= street;
@@ -220,12 +233,10 @@ this.country= country;
     
 this.log();
     
-}
 
-
-public constructor (address: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$5(address: HashMap<any, any>): void {
         this.id= address.get(StreetAddressData.ID) as string;
     
 this.name= address.get(StreetAddressData.NAME) as string;
@@ -262,9 +273,9 @@ this.country= address.get(StreetAddressData.COUNTRY) as string;
                             
 this.log();
     
-}
 
-
+    }
+    
     log(){
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -653,7 +664,7 @@ hashMap!.put(StreetAddressData.COUNTRY, this.country);
     let keySet: Set = hashMap!.keys()!;;
     
 
-    let keyArray: any[] = keySet!.()!;;
+    let keyArray: any[] = keySet!.toArray()!;;
     
 
     let size: number = keyArray!.length

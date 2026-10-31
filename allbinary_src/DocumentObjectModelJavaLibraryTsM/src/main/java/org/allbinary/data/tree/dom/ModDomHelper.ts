@@ -233,7 +233,7 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
     let keySet: Set = hashMap!.keys()!;;
     
 
-    let keyArray: any[] = keySet!.()!;;
+    let keyArray: any[] = keySet!.toArray()!;;
     
 
     let size: number = keyArray!.length
@@ -412,7 +412,7 @@ static createNodeWithValueNodes(...args: any[]): any {
     let keySet: Set = hashMap!.keys()!;;
     
 
-    let keyArray: any[] = keySet!.()!;;
+    let keyArray: any[] = keySet!.toArray()!;;
     
 
     let size: number = keyArray!.length

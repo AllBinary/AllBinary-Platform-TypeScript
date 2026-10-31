@@ -180,7 +180,7 @@ hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer.valueOf(secondDelta -s
     let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    let nameArray: any[] = keySet!.()!;;
+    let nameArray: any[] = keySet!.toArray()!;;
     
 
     let size: number = nameArray!.length

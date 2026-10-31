@@ -246,17 +246,27 @@ export class StoreFront
 
     private readonly ONE_EMPTY_STRING_ARRAY: string[] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1 && args[0] instanceof HttpServletRequest) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.contextConfigurationInterface= new ContextConfiguration();
     
-}
 
-
-public constructor (request: HttpServletRequest){
-
-            super();
+    }
+    
+    private constructor$1(request: HttpServletRequest): void {
         this.getFormData(new RequestParams(request).toHashMap());
     
 
@@ -270,12 +280,10 @@ public constructor (request: HttpServletRequest){
                                 
 this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getInstance()!.getInstance("Admin"));
     
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(hashMap: HashMap<any, any>): void {
         this.getFormData(hashMap);
     
 
@@ -295,9 +303,9 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
 
                                     }
                                 
-}
 
-
+    }
+    
     isColumn(columnName: string): boolean{
 
                         if(columnName!.compareTo(StoreFrontData.getInstance()!.NAME) == 0 || columnName!.compareTo(UserData.MAINEMAIL) == 0)

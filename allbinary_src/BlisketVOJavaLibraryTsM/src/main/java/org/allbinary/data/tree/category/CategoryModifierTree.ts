@@ -133,9 +133,15 @@ this.save(newChildCategoryInterface);
 
                                     }
                                 
-                             else 
-                        if()
-                        
+                        else {
+                            
+
+
+                            throw new Exception("Will Not Add Null Category");
+                    
+
+                        }
+                            
  }
  catch (caught: any) {
  {
@@ -180,9 +186,15 @@ this.directory.remove(directoryToBeDeletedAbPath);
 
                                     }
                                 
-                             else 
-                        if()
-                        
+                        else {
+                            
+
+
+                            throw new Exception("Will Not Add Null Category");
+                    
+
+                        }
+                            
  }
  catch (caught: any) {
  {

@@ -78,9 +78,18 @@ export class ContextConfigurationView
 
     private contextConfigurationInterface: ContextConfigurationInterface;
 
-public constructor (node: Node){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(node: Node): void {
         
     let childNodeList: NodeList = node.getChildNodes()!;;
     
@@ -94,17 +103,15 @@ this.contextConfigurationInterface= new ContextConfiguration();
     
 this.contextConfigurationInterface!.setEmailServerConfigurationInterface(emailServerConfigurationView!.getEmailConfigurationInterface() as EmailServerConfigurationInterface);
     
-}
 
-
-public constructor (contextConfigurationInterface: ContextConfigurationInterface){
-
-            super();
+    }
+    
+    private constructor$1(contextConfigurationInterface: ContextConfigurationInterface): void {
         this.contextConfigurationInterface= contextConfigurationInterface;
     
-}
 
-
+    }
+    
     public getContextConfigurationInterface(): ContextConfigurationInterface{
 
 

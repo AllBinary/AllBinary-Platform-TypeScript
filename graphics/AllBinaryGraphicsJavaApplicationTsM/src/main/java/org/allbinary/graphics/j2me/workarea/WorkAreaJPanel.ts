@@ -164,9 +164,18 @@ export class WorkAreaJPanel extends JPanel implements WorkAreaJPanelInterface, M
 
     private isPlaying: boolean = false;
 
-public constructor (name: string, dimension: Dimension, x: number, y: number){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 4) {
+            this.constructor$0(args[0], args[1], args[2], args[3]);
+        }
+        else if(args.length === 2) {
+            this.constructor$1(args[0], args[1]);
+        }
+        
+    }
+    
+    private constructor$0(name: string, dimension: Dimension, x: number, y: number): void {
         
  try { this.initComponents();
     
@@ -201,12 +210,10 @@ this.canvasHolderJPanel!.add(canvasJPanel as Component);
  }
    }
  
-}
 
-
-public constructor (workAreaDom: WorkAreaDom, dimension: Dimension){
-
-            super();
+    }
+    
+    private constructor$1(workAreaDom: WorkAreaDom, dimension: Dimension): void {
         
  try { this.initComponents();
     
@@ -266,9 +273,9 @@ this.propertiesJPanel!.set(this.workAreaJTreeJPanel);
  }
    }
  
-}
 
-
+    }
+    
     initMyComponents(dimension: Dimension){
 this.workAreaJTreeJPanel= new WorkAreaJTreeJPanel(this.name);
     

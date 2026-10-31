@@ -93,30 +93,38 @@ export class CssStyleValidation extends Validation implements DomNodeInterface {
 
     cssStyleElementVector: BasicArrayList;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1 && args[0] instanceof Document) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.cssStyleElementVector= new BasicArrayListD();
     
-}
 
-
-public constructor (document: Document){
-
-            super();
+    }
+    
+    private constructor$1(document: Document): void {
         this.cssStyleElementVector= StylesValidationFactory.getInstance()!.getInstance(document);
     
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(hashMap: HashMap<any, any>): void {
         this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
     
-}
 
-
+    }
+    
     public isValid(): Boolean{
 
  try { 

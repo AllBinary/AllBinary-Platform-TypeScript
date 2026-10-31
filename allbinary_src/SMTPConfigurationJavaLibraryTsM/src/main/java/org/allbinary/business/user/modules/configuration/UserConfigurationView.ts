@@ -87,9 +87,18 @@ export class UserConfigurationView
 
     private userConfigurationInterface: UserConfigurationInterface;
 
-public constructor (node: Node){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(node: Node): void {
         this.userConfigurationInterface= new UserConfiguration() as UserConfigurationInterface;
     
 
@@ -122,17 +131,15 @@ this.userConfigurationInterface!.setTimeCreated(timeCreatedView!.getTimeCreated(
     
 this.userConfigurationInterface!.setTimeLastModified(timeLastModifiedView!.getTimeLastModified());
     
-}
 
-
-public constructor (userConfigurationInterface: UserConfigurationInterface){
-
-            super();
+    }
+    
+    private constructor$1(userConfigurationInterface: UserConfigurationInterface): void {
         this.userConfigurationInterface= userConfigurationInterface;
     
-}
 
-
+    }
+    
     public getUserConfigurationInterface(): UserConfigurationInterface{
 
 

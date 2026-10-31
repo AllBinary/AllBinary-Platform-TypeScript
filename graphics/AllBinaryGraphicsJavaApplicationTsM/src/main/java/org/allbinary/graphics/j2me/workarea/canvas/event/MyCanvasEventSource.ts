@@ -53,28 +53,35 @@ export class MyCanvasEventSource
 
     private angle: number = 0;
 
-public constructor (command: string, treeNode: MutableTreeNode){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 2) {
+            this.constructor$0(args[0], args[1]);
+        }
+        else if(args.length === 3) {
+            this.constructor$1(args[0], args[1], args[2]);
+        }
+        
+    }
+    
+    private constructor$0(command: string, treeNode: MutableTreeNode): void {
         this.command= command;
     
 this.treeNode= treeNode;
     
-}
 
-
-public constructor (command: string, angle: number, treeNode: MutableTreeNode){
-
-            super();
+    }
+    
+    private constructor$1(command: string, angle: number, treeNode: MutableTreeNode): void {
         this.command= command;
     
 this.treeNode= treeNode;
     
 this.setAngle(angle);
     
-}
 
-
+    }
+    
     public getCommand(): string{
 
 

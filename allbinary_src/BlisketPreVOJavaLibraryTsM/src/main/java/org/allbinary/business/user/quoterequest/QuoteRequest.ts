@@ -118,9 +118,18 @@ export class QuoteRequest
 
     private comments: string;
 
-public constructor (userName: string, request: HttpServletRequest){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 2) {
+            this.constructor$0(args[0], args[1]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(userName: string, request: HttpServletRequest): void {
         
     let quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
     
@@ -147,12 +156,10 @@ this.setComments(request.getParameter(quoteRequestData!.COMMENTS) as string);
 
                                     }
                                 
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$1(hashMap: HashMap<any, any>): void {
         
     let quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
     
@@ -179,9 +186,9 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
 
                                     }
                                 
-}
 
-
+    }
+    
     public isValid(): Boolean{
 
  try { 

@@ -221,9 +221,15 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
                                     }
                                 
-                             else 
-                        if()
-                        
+                        else {
+                            
+
+
+                            throw new Exception("No WorkFlow ClassName");
+                    
+
+                        }
+                            
  }
  catch (caught: any) {
  if (caught instanceof LicensingException) {

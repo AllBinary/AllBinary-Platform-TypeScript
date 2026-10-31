@@ -77,9 +77,18 @@ export class EmailServerConfigurationView
 
     private emailServerConfigurationInterface: EmailServerConfigurationInterface;
 
-public constructor (node: Node){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(node: Node): void {
         
     let childNodeList: NodeList = node.getChildNodes()!;;
     
@@ -94,17 +103,15 @@ public constructor (node: Node){
     
 this.emailServerConfigurationInterface= new EmailServerConfiguration(accountName, password, server) as EmailServerConfigurationInterface;
     
-}
 
-
-public constructor (emailServerConfigurationInterface: EmailServerConfigurationInterface){
-
-            super();
+    }
+    
+    private constructor$1(emailServerConfigurationInterface: EmailServerConfigurationInterface): void {
         this.emailServerConfigurationInterface= emailServerConfigurationInterface;
     
-}
 
-
+    }
+    
     public getEmailConfigurationInterface(): EmailServerConfigurationInterface{
 
 

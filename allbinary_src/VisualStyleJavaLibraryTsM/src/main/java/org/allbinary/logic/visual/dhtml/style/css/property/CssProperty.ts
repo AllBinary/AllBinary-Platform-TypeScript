@@ -88,19 +88,26 @@ export class CssProperty
 
     private cssPropertyValues: CssPropertyValues;
 
-public constructor (name: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && typeof args[0] === 'string') {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(name: string): void {
         this.propertyName= name;
     
 this.cssPropertyValues= new CssPropertyValues();
     
-}
 
-
-public constructor (node: Node){
-
-            super();
+    }
+    
+    private constructor$1(node: Node): void {
         
     let propertyNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;;
     
@@ -120,9 +127,9 @@ this.propertyName= DomNodeHelper.getTextNodeValue(propertyNode);
     
 this.cssPropertyValues= new CssPropertyValues(propertyValuesNode);
     
-}
 
-
+    }
+    
     public getName(): string{
 
 

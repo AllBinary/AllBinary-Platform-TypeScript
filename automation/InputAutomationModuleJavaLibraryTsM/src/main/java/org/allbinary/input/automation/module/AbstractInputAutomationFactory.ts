@@ -63,21 +63,28 @@ export class AbstractInputAutomationFactory extends InputAutomationModuleFactory
 
     private helpSet: HelpSet;
 
-public constructor (name: string, jPanel: JPanel, helpSet: HelpSet){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 3) {
+            this.constructor$0(args[0], args[1], args[2]);
+        }
+        else if(args.length === 2) {
+            this.constructor$1(args[0], args[1]);
+        }
+        
+    }
+    
+    private constructor$0(name: string, jPanel: JPanel, helpSet: HelpSet): void {
         this.name= name;
     
 this.jPanel= jPanel;
     
 this.helpSet= helpSet;
     
-}
 
-
-public constructor (name: string, jPanel: JPanel){
-
-            super();
+    }
+    
+    private constructor$1(name: string, jPanel: JPanel): void {
         this.name= name;
     
 this.jPanel= jPanel;
@@ -87,9 +94,9 @@ this.jPanel= jPanel;
     
 this.helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);
     
-}
 
-
+    }
+    
     public getName(): string{
 
 

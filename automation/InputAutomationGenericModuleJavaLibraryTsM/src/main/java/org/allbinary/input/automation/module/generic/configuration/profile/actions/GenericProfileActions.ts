@@ -127,42 +127,50 @@ export class GenericProfileActions
 
     private hashMap: HashMap<any, any>;
 
-public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, name: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 2) {
+            this.constructor$0(args[0], args[1]);
+        }
+        else if(args.length === 3 && args[0] instanceof GenericProfileActionsJPanel && args[1] instanceof AbPath && typeof args[2] === 'string') {
+            this.constructor$1(args[0], args[1], args[2]);
+        }
+        else if(args.length === 3) {
+            this.constructor$2(args[0], args[1], args[2]);
+        }
+        
+    }
+    
+    private constructor$0(genericProfileActionsJPanel: GenericProfileActionsJPanel, name: string): void {
         this.setName(name);
     
 this.init(genericProfileActionsJPanel);
     
 this.load();
     
-}
 
-
-public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, abPath: AbPath, name: string){
-
-            super();
+    }
+    
+    private constructor$1(genericProfileActionsJPanel: GenericProfileActionsJPanel, abPath: AbPath, name: string): void {
         this.setName(name);
     
 this.init(genericProfileActionsJPanel);
     
 this.load();
     
-}
 
-
-public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, fileInputStream: FileInputStream, name: string){
-
-            super();
+    }
+    
+    private constructor$2(genericProfileActionsJPanel: GenericProfileActionsJPanel, fileInputStream: FileInputStream, name: string): void {
         this.setName(name);
     
 this.init(genericProfileActionsJPanel);
     
 this.fileInit(fileInputStream);
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     init(genericProfileActionsJPanel: GenericProfileActionsJPanel){

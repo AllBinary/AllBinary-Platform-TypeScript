@@ -210,8 +210,13 @@ scanlineX[j]= temp;
 
                         if(i +1 >= intersectCount)
                         
-                                    //Otherwise - thenStmt - BreakStmt
+                                    {
+                                    break;
 
+                    
+
+                                    }
+                                
 
     let startX: number = scanlineX[i]!;;
     

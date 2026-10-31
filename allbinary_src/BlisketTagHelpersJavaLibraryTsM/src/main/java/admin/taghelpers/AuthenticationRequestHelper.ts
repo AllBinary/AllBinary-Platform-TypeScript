@@ -116,26 +116,33 @@ export class AuthenticationRequestHelper extends TagHelper {
 
     private request: HttpServletRequest;
 
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 2 && args[0] instanceof HashMap && args[1] instanceof PageContext) {
+            this.constructor$0(args[0], args[1]);
+        }
+        else if(args.length === 2) {
+            this.constructor$1(args[0], args[1]);
+        }
+        
+    }
+    
+    private constructor$0(hashMap: HashMap<any, any>, pageContext: PageContext): void {
         this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
-}
 
-
-public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
-
-            super();
+    }
+    
+    private constructor$1(hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): void {
         this.weblisketSession= new WeblisketSession(hashMap, httpServletRequest);
     
 this.request= httpServletRequest;
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     generateNewPassword(): string{

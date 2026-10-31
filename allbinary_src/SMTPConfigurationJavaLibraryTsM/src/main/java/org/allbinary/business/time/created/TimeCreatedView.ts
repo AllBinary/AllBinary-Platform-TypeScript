@@ -68,22 +68,29 @@ export class TimeCreatedView
 
     private timeCreated: TimeCreated;
 
-public constructor (timeCreated: TimeCreated){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof TimeCreated) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(timeCreated: TimeCreated): void {
         this.setTimeCreated(timeCreated);
     
-}
 
-
-public constructor (node: Node){
-
-            super();
+    }
+    
+    private constructor$1(node: Node): void {
         this.setTimeCreated(new TimeCreated(DomNodeHelper.getTextNodeValue(node)));
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{

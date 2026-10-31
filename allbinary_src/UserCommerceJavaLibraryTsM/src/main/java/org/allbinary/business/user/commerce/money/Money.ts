@@ -71,25 +71,36 @@ export class Money
 
     private readonly DEFAULT_CURRENCY: string = "USD";
 
-public constructor (money: Money){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof Money) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 0) {
+            this.constructor$1();
+        }
+        else if(args.length === 1 && typeof args[0] === 'string') {
+            this.constructor$2(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$3(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(money: Money): void {
         this.units= new Long(money.getUnits());
     
-}
 
-
-public constructor (){
-
-            super();
+    }
+    
+    private constructor$1(): void {
         this.units= new Long(0);
     
-}
 
-
-public constructor (usDollarStr: string){
-
-            super();
+    }
+    
+    private constructor$2(usDollarStr: string): void {
         
                         if(usDollarStr != 
                                     null
@@ -101,17 +112,15 @@ public constructor (usDollarStr: string){
 
                                     }
                                 
-}
 
-
-public constructor (units: number){
-
-            super();
+    }
+    
+    private constructor$3(units: number): void {
         this.units= new Long(units);
     
-}
 
-
+    }
+    
     public isValid(): boolean{
 
                         if(this.units != 

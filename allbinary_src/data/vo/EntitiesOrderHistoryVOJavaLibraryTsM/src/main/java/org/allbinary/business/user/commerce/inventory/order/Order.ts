@@ -119,9 +119,18 @@ export class Order
 
     private storeCancelComment: string;
 
-public constructor (basket: BasketInterface){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 6) {
+            this.constructor$1(args[0], args[1], args[2], args[3], args[4], args[5]);
+        }
+        
+    }
+    
+    private constructor$0(basket: BasketInterface): void {
         this.basket= basket;
     
 this.id= 
@@ -130,12 +139,10 @@ this.id=
     
 this.shippingType= StringUtil.getInstance()!.EMPTY_STRING;
     
-}
 
-
-public constructor (storeName: string, basket: BasketInterface, id: string, shippingType: string, special: string, paymentMethod: string){
-
-            super();
+    }
+    
+    private constructor$1(storeName: string, basket: BasketInterface, id: string, shippingType: string, special: string, paymentMethod: string): void {
         this.storeName= storeName;
     
 this.basket= basket;
@@ -148,9 +155,9 @@ this.special= special;
     
 this.paymentMethod= paymentMethod;
     
-}
 
-
+    }
+    
     public isIdValid(): Boolean{
 
                         if(this.getId() == 
@@ -439,7 +446,7 @@ hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment);
     let keySet: Set = hashMap!.keys()!;;
     
 
-    let keyArray: any[] = keySet!.()!;;
+    let keyArray: any[] = keySet!.toArray()!;;
     
 
     let size: number = keyArray!.length

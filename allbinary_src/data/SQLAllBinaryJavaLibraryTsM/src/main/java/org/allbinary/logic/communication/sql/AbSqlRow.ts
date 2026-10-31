@@ -172,7 +172,7 @@ stringBuffer!.append(this.sqlStrings!.SET);
     
 
  try { 
-    let keyArray: any[] = updatedKeyValuePairs!.keySet()!.()!;;
+    let keyArray: any[] = updatedKeyValuePairs!.keySet()!.toArray()!;;
     
 
     let size: number = keyArray!.length
@@ -289,7 +289,7 @@ stringBuffer!.append(this.sqlStrings!.SET);
     
 
  try { 
-    let keyArray: any[] = updatedKeyValuePairs!.keySet()!.()!;;
+    let keyArray: any[] = updatedKeyValuePairs!.keySet()!.toArray()!;;
     
 
     let size: number = keyArray!.length

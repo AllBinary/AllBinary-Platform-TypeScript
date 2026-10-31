@@ -452,7 +452,7 @@ stringBuffer!.append(this.sqlStrings!.SET);
     
 
  try { 
-    let columnArray: any[] = updatedKeyValuePairs!.keySet()!.()!;;
+    let columnArray: any[] = updatedKeyValuePairs!.keySet()!.toArray()!;;
     
 
     let size: number = columnArray!.length

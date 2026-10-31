@@ -109,20 +109,27 @@ export class UserName
 
     private userName: string;
 
-private constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
         }
-
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
+    }
+    
+    private constructor$1(hashMap: HashMap<any, any>): void {
         this.userName= hashMap!.get(UserData.USERNAME) as string;
     
-}
 
-isValid(...args: any[]): any {
+    }
+    isValid(...args: any[]): any {
    
     if (args.length === 0) return this.isValid$overload1();
    

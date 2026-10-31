@@ -132,9 +132,12 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                                     null
                                 )
                         error += this.componentInterface!.constructor.name.toString()!
-                             else 
-                        if()
-                        
+                        else {
+                            error += "Unknown";
+    
+
+                        }
+                            
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -178,9 +181,12 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                                     null
                                 )
                         error += this.componentInterface!.constructor.name.toString()!
-                             else 
-                        if()
-                        
+                        else {
+                            error += "Unknown";
+    
+
+                        }
+                            
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         

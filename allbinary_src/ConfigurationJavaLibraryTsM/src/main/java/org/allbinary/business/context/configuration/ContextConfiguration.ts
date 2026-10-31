@@ -69,26 +69,33 @@ export class ContextConfiguration
 
     private emailServerConfigurationInterface: EmailServerConfigurationInterface;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.logUtil!.putF(this.commonStrings!.START, this, "ContextConfiguration");
     
 this.setEmailServerConfigurationInterface(new EmailServerConfiguration() as EmailServerConfigurationInterface);
     
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$1(hashMap: HashMap<any, any>): void {
         this.logUtil!.putF(this.commonStrings!.START, this, "ContextConfiguration(HashMap)");
     
 this.setEmailServerConfigurationInterface(new EmailServerConfiguration(hashMap) as EmailServerConfigurationInterface);
     
-}
 
-
+    }
+    
     public getEmailServerConfigurationInterface(): EmailServerConfigurationInterface{
 
 

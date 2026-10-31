@@ -95,9 +95,28 @@ export class TransformInfoHttp extends TransformInfo implements TransformInfoHtt
 
     private readonly abContext: AbContext;
 
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext, crud: boolean){
-            super();
-                    
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 3 && args[0] instanceof HashMap && args[1] instanceof PageContext && typeof args[2] === 'boolean') {
+            this.constructor$0(args[0], args[1], args[2]);
+        }
+        else if(args.length === 3 && args[0] instanceof HttpServletRequest && args[1] instanceof HashMap && args[2] instanceof PageContext) {
+            this.constructor$1(args[0], args[1], args[2]);
+        }
+        else if(args.length === 3) {
+            this.constructor$2(args[0], args[1], args[2]);
+        }
+        else if(args.length === 2) {
+            this.constructor$3(args[0], args[1]);
+        }
+        else if(args.length === 1) {
+            this.constructor$4(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(propertiesHashMap: HashMap<any, any>, pageContext: PageContext, crud: boolean): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -114,12 +133,11 @@ this.abContext= new AbContext(propertiesHashMap, pageContext);
                                 
 this.override(propertiesHashMap);
     
-}
 
-
-public constructor (request: HttpServletRequest, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
-            super();
-                    
+    }
+    
+    private constructor$1(request: HttpServletRequest, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -138,12 +156,11 @@ this.set(new RequestParams(request as HttpServletRequest).toHashMap());
     
 this.override(propertiesHashMap);
     
-}
 
-
-public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
-            super();
-                    
+    }
+    
+    private constructor$2(databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -160,12 +177,11 @@ this.abContext= new AbContext(propertiesHashMap, pageContext);
                                 
 this.set(databaseHashMap);
     
-}
 
-
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
-            super();
-                    
+    }
+    
+    private constructor$3(propertiesHashMap: HashMap<any, any>, pageContext: PageContext): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -182,20 +198,19 @@ this.abContext= new AbContext(propertiesHashMap, pageContext);
                                 
 this.set(propertiesHashMap);
     
-}
 
-
-public constructor (parentViewOfThisTransformInfoInterface: TransformInfoHttp){
-            super();
-                    
+    }
+    
+    private constructor$4(parentViewOfThisTransformInfoInterface: TransformInfoHttp): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
 this.abContext= new AbContext(parentViewOfThisTransformInfoInterface!.getPropertiesHashMap(), parentViewOfThisTransformInfoInterface!.getPageContext());
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     set(hashMap: HashMap<any, any>){

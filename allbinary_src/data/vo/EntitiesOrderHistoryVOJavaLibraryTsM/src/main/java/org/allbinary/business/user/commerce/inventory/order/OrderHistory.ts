@@ -494,7 +494,7 @@ hashMap!.put(OrderHistoryData.TAX, this.taxes.toString());
     let keySet: Set = hashMap!.keys()!;;
     
 
-    let keyArray: any[] = keySet!.()!;;
+    let keyArray: any[] = keySet!.toArray()!;;
     
 
     let size: number = keyArray!.length

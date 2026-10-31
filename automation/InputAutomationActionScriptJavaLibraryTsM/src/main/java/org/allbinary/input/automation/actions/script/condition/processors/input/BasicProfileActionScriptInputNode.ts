@@ -57,21 +57,28 @@ export class BasicProfileActionScriptInputNode
          {
         
 
-public constructor (node: Node){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 0) {
+            this.constructor$1();
+        }
+        
+    }
+    
+    private constructor$0(node: Node): void {
         
     let actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptInputData.NAME, node.getChildNodes())!;;
     
-}
 
-
-public constructor (){
-
-            super();
-        }
-
-
+    }
+    
+    private constructor$1(): void {
+        
+    }
+    
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{

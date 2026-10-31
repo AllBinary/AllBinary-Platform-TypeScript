@@ -329,7 +329,7 @@ stringBuffer!.append(this.sqlStrings!.SELECT);
     
 
  try { 
-    let keyArray: any[] = columnsAndValues!.keySet()!.()!;;
+    let keyArray: any[] = columnsAndValues!.keySet()!.toArray()!;;
     
 
     let size: number = keyArray!.length
@@ -382,7 +382,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
         while(rset.next())
         {
 
-    let keyArray2: any[] = columnsAndValues!.keySet()!.()!;;
+    let keyArray2: any[] = columnsAndValues!.keySet()!.toArray()!;;
     
 
     let size2: number = keyArray2!.length

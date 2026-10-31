@@ -70,30 +70,37 @@ export class UserConfiguration
 
     private timeLastModified: TimeLastModified;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.userEmailConfigurationInterface= new UserEmailConfiguration() as UserEmailConfigurationInterface;
     
 this.timeCreated= new TimeCreated(0);
     
 this.timeLastModified= new TimeLastModified(0);
     
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$1(hashMap: HashMap<any, any>): void {
         this.userEmailConfigurationInterface= new UserEmailConfiguration(hashMap) as UserEmailConfigurationInterface;
     
 this.timeCreated= new TimeCreated(hashMap!.get(EntryData.getInstance()!.TIMECREATED) as string);
     
 this.timeLastModified= new TimeLastModified(hashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as string);
     
-}
 
-
+    }
+    
     public getUserEmailConfigurationInterface(): UserEmailConfigurationInterface{
 
 

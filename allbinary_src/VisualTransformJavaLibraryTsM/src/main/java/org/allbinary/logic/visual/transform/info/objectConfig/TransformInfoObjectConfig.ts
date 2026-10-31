@@ -128,9 +128,21 @@ export class TransformInfoObjectConfig
 
     private outputTypeName: string;
 
-public constructor (transformInfoInterface: Object){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 2) {
+            this.constructor$1(args[0], args[1]);
+        }
+        else if(args.length === 3) {
+            this.constructor$2(args[0], args[1], args[2]);
+        }
+        
+    }
+    
+    private constructor$0(transformInfoInterface: Object): void {
         this.ownerTransformInfoInterface= transformInfoInterface;
     
 this.createDocument();
@@ -170,12 +182,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInt
 
                                     }
                                 
-}
 
-
-public constructor (transformInfoInterface: Object, document: Object){
-
-            super();
+    }
+    
+    private constructor$1(transformInfoInterface: Object, document: Object): void {
         this.ownerTransformInfoInterface= transformInfoInterface;
     
 this.document= document;
@@ -229,12 +239,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInt
 
                                     }
                                 
-}
 
-
-public constructor (transformInfoInterface: Object, name: string, type: string){
-
-            super();
+    }
+    
+    private constructor$2(transformInfoInterface: Object, name: string, type: string): void {
         this.ownerTransformInfoInterface= transformInfoInterface;
     
 this.createDocument();
@@ -284,9 +292,9 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInt
 
                                     }
                                 
-}
 
-
+    }
+    
     createDocument(){
 this.document= DomDocumentHelper.create();
     

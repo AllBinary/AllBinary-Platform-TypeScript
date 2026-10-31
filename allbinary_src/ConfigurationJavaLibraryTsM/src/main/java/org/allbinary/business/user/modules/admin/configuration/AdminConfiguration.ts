@@ -94,36 +94,44 @@ export class AdminConfiguration
 
     private contextConfigurationInterface: ContextConfigurationInterface;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1 && args[0] instanceof HttpServletRequest) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.contextConfigurationInterface= ContextConfigurationInterfaceFactory.getInstance()!.getInstance(AdminConfigurationData.CONTEXTNAME);
     
-}
 
-
-public constructor (request: HttpServletRequest){
-
-            super();
+    }
+    
+    private constructor$1(request: HttpServletRequest): void {
         this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.getFormData(new RequestParams(request).toHashMap());
     
-}
 
-
-public constructor (storeHashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(storeHashMap: HashMap<any, any>): void {
         this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.getFormData(storeHashMap);
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     getFormData(storeHashMap: HashMap<any, any>){

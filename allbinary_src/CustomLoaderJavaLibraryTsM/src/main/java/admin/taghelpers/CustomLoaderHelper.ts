@@ -70,18 +70,25 @@ export class CustomLoaderHelper
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 2) {
+            this.constructor$0(args[0], args[1]);
         }
-
-
-public constructor (){
-
-            super();
+        else if(args.length === 0) {
+            this.constructor$1();
         }
-
-
+        
+    }
+    
+    private constructor$0(hashMap: HashMap<any, any>, pageContext: PageContext): void {
+        
+    }
+    
+    private constructor$1(): void {
+        
+    }
+    
                 //@Throws(Exception.constructor)
             
     public getWebappPath(): string{

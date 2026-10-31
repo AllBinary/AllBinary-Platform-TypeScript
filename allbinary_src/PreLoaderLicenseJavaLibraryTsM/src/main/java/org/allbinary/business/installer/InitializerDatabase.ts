@@ -119,9 +119,18 @@ export class InitializerDatabase
 
     private initDb: DynamicInitDb;
 
-public constructor (abeClientInformation: AbeClientInformationInterface, map: Map){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 2 && args[0] instanceof AbeClientInformationInterface && args[1] instanceof Map) {
+            this.constructor$0(args[0], args[1]);
+        }
+        else if(args.length === 2) {
+            this.constructor$1(args[0], args[1]);
+        }
+        
+    }
+    
+    private constructor$0(abeClientInformation: AbeClientInformationInterface, map: Map): void {
         
     let stringBuffer: StringMaker = new StringMaker();;
     
@@ -169,17 +178,15 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
 
 this.getFormData(abeClientInformation, hashMap);
     
-}
 
-
-public constructor (abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$1(abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap<any, any>): void {
         this.getFormData(abeClientInformation, initHashMap);
     
-}
 
-
+    }
+    
     public getFormData(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>){
 
  try { 

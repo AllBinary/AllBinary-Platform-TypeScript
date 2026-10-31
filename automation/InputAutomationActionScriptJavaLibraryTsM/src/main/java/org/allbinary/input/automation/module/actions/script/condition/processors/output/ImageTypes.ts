@@ -111,15 +111,22 @@ imageTypes!.getVector()!.add(imageType);
 
     private vector: BasicArrayList = new BasicArrayListD();
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
         }
-
-
-public constructor (node: Node){
-
-            super();
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
+    }
+    
+    private constructor$1(node: Node): void {
         
     let nodeList: NodeList = node.getChildNodes()!;;
     
@@ -156,9 +163,9 @@ this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
                             
 }
 
-}
 
-
+    }
+    
     public getVector(): BasicArrayList{
 
 

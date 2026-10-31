@@ -80,28 +80,37 @@ export class MultipartRequestParams extends RequestParams {
 
     private special: boolean = false;
 
-public constructor (request: HttpServletRequest){
-            super();
-                    
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof HttpServletRequest) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(request: HttpServletRequest): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
 this.processMultipartRequest(request);
     
-}
 
-
-public constructor (pageContext: PageContext){
-            super();
-                    
+    }
+    
+    private constructor$1(pageContext: PageContext): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
 this.processMultipartRequest(pageContext!.getRequest() as HttpServletRequest);
     
-}
 
-
+    }
+    
     setSpecial(){
 this.special= true;
     

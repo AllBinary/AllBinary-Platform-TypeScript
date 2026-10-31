@@ -178,17 +178,24 @@ export class LinuxHardware
 
     private readonly MINHARDWARE: number = 5;
 
-public constructor (path: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 0) {
+            this.constructor$1();
+        }
+        
+    }
+    
+    private constructor$0(path: string): void {
         this.init(path);
     
-}
 
-
-public constructor (){
-
-            super();
+    }
+    
+    private constructor$1(): void {
         this.init(PCIFILE);
     
 
@@ -228,9 +235,9 @@ this.componentInterfaceVector!.add(cpu);
 
                                     }
                                 
-}
 
-init(...args: any[]): any {
+    }
+    init(...args: any[]): any {
    
     if (args.length === 1 && typeof args[0] === 'string') return this.init$overload1(args[0]);
    

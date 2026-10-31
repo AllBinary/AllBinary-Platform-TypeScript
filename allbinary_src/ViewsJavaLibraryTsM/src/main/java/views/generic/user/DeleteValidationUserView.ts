@@ -130,9 +130,16 @@ this.userName= new UserName(hashMap).get();
 
                                     }
                                 
-                             else 
-                        if()
-                        
+                        else {
+                            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return false;
+    
+
+                        }
+                            
 
 
 
@@ -185,9 +192,12 @@ this.userName= new UserName(hashMap).get();
 
                                     }
                                 
-                             else 
-                        if()
-                        
+                        else {
+                            stringBuffer!.append("User Name is not valid.<br />");
+    
+
+                        }
+                            
 
 
 

@@ -182,7 +182,7 @@ this.waitForDataWorkers();
     let cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;;
     
 
-    let keyArray: any[] = cacheInterface!.keySet()!.()!;;
+    let keyArray: any[] = cacheInterface!.keySet()!.toArray()!;;
     
 
                         if(keyArray!.length > 0)

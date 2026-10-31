@@ -112,30 +112,38 @@ export class CategoryProperties
 
     private category: string;
 
-public constructor (name: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && typeof args[0] === 'string') {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(name: string): void {
         this.category= name;
     
-}
 
-
-public constructor (node: Node){
-
-            super();
+    }
+    
+    private constructor$1(node: Node): void {
         this.category= CategoryUtil.getNameFromNode(node);
     
-}
 
-
-public constructor (categoryPropertiesHashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(categoryPropertiesHashMap: HashMap<any, any>): void {
         this.category= .toCharArray();
     
-}
 
-
+    }
+    
     public isRealRoot(): boolean{
 
 

@@ -94,9 +94,18 @@ export class GenericProfile
 
     private genericProfileActions: GenericProfileActions;
 
-public constructor (node: Node){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(node: Node): void {
         this.setName(DomNodeHelper.getTextNodeValue(node));
     
 this.vector= new BasicArrayListD();
@@ -132,19 +141,17 @@ this.vector.add(genericProfileDataWorkerType);
                                 
 }
 
-}
 
-
-public constructor (name: string){
-
-            super();
+    }
+    
+    private constructor$1(name: string): void {
         this.setName(name);
     
 this.vector= new BasicArrayListD();
     
-}
 
-
+    }
+    
     public getGenericProfileDataWorkerTypeVector(): BasicArrayList{
 
 

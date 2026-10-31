@@ -48,22 +48,29 @@ export class Time
 
     private timeLong: Long;
 
-public constructor (time: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && typeof args[0] === 'string') {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(time: string): void {
         this.timeLong= new Long(time);
     
-}
 
-
-public constructor (time: number){
-
-            super();
+    }
+    
+    private constructor$1(time: number): void {
         this.timeLong= new Long(time);
     
-}
 
-
+    }
+    
     public getLong(): Long{
 
 

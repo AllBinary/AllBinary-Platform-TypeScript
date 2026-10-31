@@ -123,9 +123,21 @@ export class Category
 
     private readonly CATEGORY: Integer = new Integer(0);
 
-public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 2) {
+            this.constructor$1(args[0], args[1]);
+        }
+        else if(args.length === 3) {
+            this.constructor$2(args[0], args[1], args[2]);
+        }
+        
+    }
+    
+    private constructor$0(categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
@@ -141,33 +153,29 @@ this.categoryHierarchyInterface= new CategoryHierarchy(this, this) as CategoryHi
     
 this.log();
     
-}
 
-
-public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
-
-            super();
+    }
+    
+    private constructor$1(categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number): void {
         this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance();
     
 this.categoryHierarchyInterface= new CategoryHierarchy(this, this, level) as CategoryHierarchyInterface;
     
 this.log();
     
-}
 
-
-public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
-
-            super();
+    }
+    
+    private constructor$2(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface): void {
         this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance() as CategoryPropertiesInterface;
     
 this.categoryHierarchyInterface= new CategoryHierarchy(rootCategoryInterface, parentCategoryInterface) as CategoryHierarchyInterface;
     
 this.log();
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     public getKey(): any{

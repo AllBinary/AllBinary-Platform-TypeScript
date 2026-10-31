@@ -67,7 +67,7 @@ export class J2SEUtil
 
     public getHashMapAsArray(hashMap: HashMap<any, any>): any[]{
 
-    let objectArray: any[] = hashMap!.keys().()!;;
+    let objectArray: any[] = hashMap!.keys().toArray()!;;
     
 
 
@@ -80,7 +80,7 @@ export class J2SEUtil
 
     public getMapAsArray(map: Map<any, any>): any[]{
 
-    let objectArray: any[] = map.keySet()!.()!;;
+    let objectArray: any[] = map.keySet()!.toArray()!;;
     
 
 

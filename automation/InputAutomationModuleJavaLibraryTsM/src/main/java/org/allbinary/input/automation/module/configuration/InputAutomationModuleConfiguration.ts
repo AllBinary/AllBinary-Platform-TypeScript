@@ -117,42 +117,51 @@ export class InputAutomationModuleConfiguration
 
     private inputAutomationModuleInterface: InputAutomationModuleFactoryInterface;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
         }
-
-
-public constructor (abeClientInformation: AbeClientInformationInterface, node: Node){
-
-            super();
+        else if(args.length === 2) {
+            this.constructor$1(args[0], args[1]);
+        }
+        else if(args.length === 3) {
+            this.constructor$2(args[0], args[1], args[2]);
+        }
+        else if(args.length === 1) {
+            this.constructor$3(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
+    }
+    
+    private constructor$1(abeClientInformation: AbeClientInformationInterface, node: Node): void {
         this.init(abeClientInformation, node);
     
-}
 
-
-public constructor (abeClientInformation: AbeClientInformationInterface, name: string, className: string){
-
-            super();
+    }
+    
+    private constructor$2(abeClientInformation: AbeClientInformationInterface, name: string, className: string): void {
         this.setName(name);
     
 this.setClassName(className);
     
 this.init(abeClientInformation);
     
-}
 
-
-public constructor (inputAutomationModuleInterface: InputAutomationModuleFactoryInterface){
-
-            super();
+    }
+    
+    private constructor$3(inputAutomationModuleInterface: InputAutomationModuleFactoryInterface): void {
         this.setInputAutomationModuleInterface(inputAutomationModuleInterface);
     
 this.setClassName(this.inputAutomationModuleInterface!.constructor.name.toString()!);
     
-}
 
-init(...args: any[]): any {
+    }
+    init(...args: any[]): any {
    
     if (args.length === 2) return this.init$overload1(args[0], args[1]);
    

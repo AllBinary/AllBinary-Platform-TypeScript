@@ -175,9 +175,18 @@ export class Initializer
 
     private staticPagesPort: string;
 
-public constructor (map: Map){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof Map) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(map: Map): void {
         
     let stringBuffer: StringMaker = new StringMaker();;
     
@@ -225,17 +234,15 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
 
 this.getFormData(hashMap);
     
-}
 
-
-public constructor (initHashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$1(initHashMap: HashMap<any, any>): void {
         this.getFormData(initHashMap);
     
-}
 
-
+    }
+    
     public getFormData(hashMap: HashMap<any, any>){
 
  try { 

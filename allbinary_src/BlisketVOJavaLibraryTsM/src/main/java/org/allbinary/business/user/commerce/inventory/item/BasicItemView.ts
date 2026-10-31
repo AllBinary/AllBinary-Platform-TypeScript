@@ -138,7 +138,7 @@ hashMap!.put(this.basicItemData!.IMAGE, EMPTY_STRING);
     let node: Node = document.createElement(this.basicItemData!.ITEM)!;;
     
 
-    let nameArray: any[] = keySet!.()!;;
+    let nameArray: any[] = keySet!.toArray()!;;
     
 
     let size2: number = nameArray!.length

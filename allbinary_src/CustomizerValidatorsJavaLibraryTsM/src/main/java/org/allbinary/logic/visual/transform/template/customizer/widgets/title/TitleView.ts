@@ -95,17 +95,27 @@ export class TitleView
 
     private title: string;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.title= TitleView.NAME;
     
-}
 
-
-public constructor (node: Node){
-
-            super();
+    }
+    
+    private constructor$1(node: Node): void {
         
     let titleTextNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.TEXT, node.getChildNodes())!;;
     
@@ -132,12 +142,10 @@ this.title= DomNodeHelper.getTextNodeValue(valueNode);
 
                                     }
                                 
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(hashMap: HashMap<any, any>): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -149,9 +157,9 @@ public constructor (hashMap: HashMap<any, any>){
                                 
 this.getFormData(hashMap);
     
-}
 
-
+    }
+    
     public getTitle(): string{
 
 

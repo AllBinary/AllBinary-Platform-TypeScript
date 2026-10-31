@@ -190,7 +190,7 @@ timeHelper!.setStartTimeTNT();
     let robotHashtable: ABHashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
     
 
-    let inputTypeNameArray: any[] = robotHashtable!.keys().()!;;
+    let inputTypeNameArray: any[] = robotHashtable!.keys().toArray()!;;
     
 
     let size: number = inputTypeNameArray!.length

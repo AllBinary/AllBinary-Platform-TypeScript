@@ -91,26 +91,33 @@ export class BasicPaymentType
 
     private paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface;
 
-protected constructor (paymentMethod: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 3) {
+            this.constructor$1(args[0], args[1], args[2]);
+        }
+        
+    }
+    
+    private constructor$0(paymentMethod: string): void {
         this.init(paymentMethod);
     
-}
 
-
-protected constructor (paymentMethod: string, paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface, paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface){
-
-            super();
+    }
+    
+    private constructor$1(paymentMethod: string, paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface, paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface): void {
         this.init(paymentMethod);
     
 this.paymentGatewayInterfaceFactoryInterface= paymentGatewayInterfaceFactoryInterface;
     
 this.paymentGatewayDomNodeFactoryInterface= paymentGatewayDomNodeFactoryInterface;
     
-}
 
-
+    }
+    
     init(paymentMethod: string){
 
     let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;

@@ -99,9 +99,18 @@ export class TransformHttpRequestDocument
 
     private document: Document;
 
-public constructor (pageContext: PageContext, weblisketSession: WeblisketSession){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 2) {
+            this.constructor$0(args[0], args[1]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(pageContext: PageContext, weblisketSession: WeblisketSession): void {
         
  try { 
     let contentType: string = AcceptableResponseGenerator.getInstance()!.get(pageContext!.getRequest() as HttpServletRequest)!;;
@@ -157,12 +166,10 @@ this.document.appendChild(contentTypeNode);
  }
    }
  
-}
 
-
-public constructor (searchRequest: SearchRequest){
-
-            super();
+    }
+    
+    private constructor$1(searchRequest: SearchRequest): void {
         
  try { 
     let contentType: string = searchRequest!.getContentType()!;;
@@ -209,9 +216,9 @@ this.document.appendChild(contentTypeNode);
  }
    }
  
-}
 
-
+    }
+    
     public getBaseNode(): Node{
 
 

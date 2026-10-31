@@ -108,9 +108,21 @@ export class LogoValidation extends Validation implements DomNodeInterface {
 
     private isFile: boolean;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.isFile= false;
     
 this.logoAbPath= 
@@ -121,31 +133,27 @@ this.logoFile=
                                         null
                                     ;
     
-}
 
-
-public constructor (node: Node){
-
-            super();
+    }
+    
+    private constructor$1(node: Node): void {
         this.isFile= false;
     
 this.logoAbPath= new AbPath(DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEPATH, node.getChildNodes())!.getNodeValue(), StringUtil.getInstance()!.EMPTY_STRING);
     
 this.logoFile= DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEFILENAME, node.getChildNodes())!.getNodeValue();
     
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(hashMap: HashMap<any, any>): void {
         this.isFile= true;
     
 this.getFormData(hashMap);
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     public getFormData(hashMap: HashMap<any, any>){

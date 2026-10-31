@@ -92,9 +92,18 @@ export class TransactionResult
 
     private result: string;
 
-public constructor (result: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && typeof args[0] === 'string') {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(result: string): void {
         
  try { this.result= result;
     
@@ -126,19 +135,17 @@ this.logUtil!.putF(exceptionMessage, this, this.commonStrings!.CONSTRUCTOR);
  }
    }
  
-}
 
-
-public constructor (keyValuePairs: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$1(keyValuePairs: HashMap<any, any>): void {
         keyValuePairs= keyValuePairs;
     
 this.result= "Needs to have the hashmap converted to string for other constructor";
     
-}
 
-
+    }
+    
     public toString(): string{
 
 

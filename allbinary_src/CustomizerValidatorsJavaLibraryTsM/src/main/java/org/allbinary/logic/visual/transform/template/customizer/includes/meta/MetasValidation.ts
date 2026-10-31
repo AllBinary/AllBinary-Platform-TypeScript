@@ -101,9 +101,18 @@ export class MetasValidation extends Validation implements DomNodeInterface {
 
     private metaValidationVector: BasicArrayList;
 
-public constructor (storeName: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && typeof args[0] === 'string') {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(storeName: string): void {
         this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
     
 this.metaValidationVector= new BasicArrayListD();
@@ -126,20 +135,18 @@ this.metaValidationVector!.add(abstractMetaValidation);
     
 this.metaValidationVector!.add(descriptionMetaValidation);
     
-}
 
-
-public constructor (document: Document){
-
-            super();
+    }
+    
+    private constructor$1(document: Document): void {
         
 
 
                             throw new Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
                     
-}
 
-
+    }
+    
     public isValid(): Boolean{
 
  try { 

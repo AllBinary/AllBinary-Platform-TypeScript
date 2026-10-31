@@ -69,9 +69,18 @@ export class UserEmailConfiguration
 
     private userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -83,12 +92,10 @@ public constructor (){
                                 
 this.setUserEmailEventsConfigurationInterface(new UserEmailEventsConfiguration());
     
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$1(hashMap: HashMap<any, any>): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -100,9 +107,9 @@ public constructor (hashMap: HashMap<any, any>){
                                 
 this.setUserEmailEventsConfigurationInterface(new UserEmailEventsConfiguration(hashMap));
     
-}
 
-
+    }
+    
     public getUserEmailEventsConfigurationInterface(): UserEmailEventsConfigurationInterface{
 
 

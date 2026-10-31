@@ -75,9 +75,16 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Table Dropped Successfully";
     
-                             else 
-                        if()
-                        
+                        else {
+                            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return "Failed To Drop Table";
+    
+
+                        }
+                            
  }
  catch (caught: any) {
  {

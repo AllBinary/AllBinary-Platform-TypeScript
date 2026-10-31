@@ -99,9 +99,18 @@ export class AbeHttpRequestInfo
 
     private requestedFilePath: string;
 
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof HashMap) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(hashMap: HashMap<any, any>): void {
         
     let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
@@ -117,12 +126,10 @@ this.remotePort= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData
     
 this.requestedFilePath= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REQUEST_FILE_PATH) as string);
     
-}
 
-
-public constructor (httpServletRequest: HttpServletRequest){
-
-            super();
+    }
+    
+    private constructor$1(httpServletRequest: HttpServletRequest): void {
         
     let stringUtil: StringUtil = StringUtil.getInstance()!;;
     
@@ -155,9 +162,9 @@ this.requestedFilePath= httpServletRequest!.getServletPath();
     
 this.remotePort= Integer.toString(httpServletRequest!.getRemotePort());
     
-}
 
-
+    }
+    
     public toHashMap(): HashMap<any, any>{
 
     let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;

@@ -57,15 +57,22 @@ export class Grid
 
     public isChanged: boolean = true;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
         }
-
-
-public constructor (grid: Grid){
-
-            super();
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
+    }
+    
+    private constructor$1(grid: Grid): void {
         this.grid= grid.grid;
     
 this.showGrid(grid.isGridOn);
@@ -74,9 +81,9 @@ this.isGridPossible= grid.isGridPossible;
     
 this.setZoom(grid.getZoom());
     
-}
 
-
+    }
+    
     public isGridOn(): boolean{
 
 

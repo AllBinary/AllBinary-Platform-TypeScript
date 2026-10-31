@@ -67,33 +67,41 @@ export class CategoryHierarchy
 
     private level: number;
 
-public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 2) {
+            this.constructor$0(args[0], args[1]);
+        }
+        else if(args.length === 3 && args[0] instanceof CategoryInterface && args[1] instanceof CategoryInterface && typeof args[2] === 'number') {
+            this.constructor$1(args[0], args[1], args[2]);
+        }
+        else if(args.length === 3) {
+            this.constructor$2(args[0], args[1], args[2]);
+        }
+        
+    }
+    
+    private constructor$0(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface): void {
         this.level= 0;
     
 this.setRoot(rootCategoryInterface);
     
 this.setParent(parentCategoryInterface);
     
-}
 
-
-public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, level: number){
-
-            super();
+    }
+    
+    private constructor$1(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, level: number): void {
         this.level= level;
     
 this.setRoot(rootCategoryInterface);
     
 this.setParent(parentCategoryInterface);
     
-}
 
-
-public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): void {
         
     let levelString: string = StringUtil.getInstance()!.getNonNull(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL) as string)!;;
     
@@ -103,9 +111,9 @@ this.setRoot(rootCategoryInterface);
     
 this.setParent(parentCategoryInterface);
     
-}
 
-
+    }
+    
     public getLevel(): number{
 
 

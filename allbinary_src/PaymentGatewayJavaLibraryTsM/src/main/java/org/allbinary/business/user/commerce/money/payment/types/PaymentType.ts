@@ -80,9 +80,18 @@ export class PaymentType
 
     private readonly paymentProcessorInterfaceFactoryInterface: PaymentProcessorInterfaceFactoryInterface;
 
-protected constructor (basicPaymentType: BasicPaymentType){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 3) {
+            this.constructor$1(args[0], args[1], args[2]);
+        }
+        
+    }
+    
+    private constructor$0(basicPaymentType: BasicPaymentType): void {
         this.basicPaymentType= basicPaymentType;
     
 this.paymentTransactionInterfaceFactoryInterface= 
@@ -95,12 +104,10 @@ this.paymentProcessorInterfaceFactoryInterface=
     
 PaymentTypeUtil.getInstance()!.add(this);
     
-}
 
-
-protected constructor (basicPaymentType: BasicPaymentType, paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface, paymentProcessorInterfaceFactoryInterface: PaymentProcessorInterfaceFactoryInterface){
-
-            super();
+    }
+    
+    private constructor$1(basicPaymentType: BasicPaymentType, paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface, paymentProcessorInterfaceFactoryInterface: PaymentProcessorInterfaceFactoryInterface): void {
         this.basicPaymentType= basicPaymentType;
     
 this.paymentTransactionInterfaceFactoryInterface= paymentTransactionInterfaceFactoryInterface;
@@ -109,9 +116,9 @@ this.paymentProcessorInterfaceFactoryInterface= paymentProcessorInterfaceFactory
     
 PaymentTypeUtil.getInstance()!.add(this);
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     public getPaymentTransactionInterfaceFactoryInterface(): PaymentTransactionInterfaceFactoryInterface{

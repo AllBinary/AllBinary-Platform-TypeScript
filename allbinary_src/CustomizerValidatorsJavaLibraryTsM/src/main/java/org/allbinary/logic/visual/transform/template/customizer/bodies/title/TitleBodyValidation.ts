@@ -105,9 +105,21 @@ export class TitleBodyValidation extends Validation implements DomNodeInterface 
 
     private titleValidation: TitleNotRequiredValidation;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1 && args[0] instanceof Document) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -124,12 +136,10 @@ this.body= stringUtil!.EMPTY_STRING;
     
 this.titleValidation= new TitleNotRequiredValidation();
     
-}
 
-
-public constructor (document: Document){
-
-            super();
+    }
+    
+    private constructor$1(document: Document): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -180,12 +190,10 @@ this.titleValidation= new TitleNotRequiredValidation(titleNode);
                                 
 }
 
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(hashMap: HashMap<any, any>): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -197,9 +205,9 @@ public constructor (hashMap: HashMap<any, any>){
                                 
 this.getFormData(hashMap);
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     public getFormData(hashMap: HashMap<any, any>){

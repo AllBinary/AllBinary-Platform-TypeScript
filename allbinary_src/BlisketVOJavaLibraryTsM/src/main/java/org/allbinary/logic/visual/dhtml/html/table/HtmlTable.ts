@@ -158,7 +158,7 @@ this.htmlRowsVector!.add(htmlRow);
     let result: string = stringUtil!.EMPTY_STRING;;
     
 
-    let attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;;
+    let attributeKeys: any[] = this.otherAttributes!.keySet()!.toArray()!;;
     
 result= this.before;
     

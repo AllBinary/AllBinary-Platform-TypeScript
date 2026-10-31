@@ -115,22 +115,29 @@ export class Cpu
 
     private cpuHashMap: HashMap<any, any>;
 
-public constructor (filePath: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 0) {
+            this.constructor$1();
+        }
+        
+    }
+    
+    private constructor$0(filePath: string): void {
         this.init(filePath);
     
-}
 
-
-public constructor (){
-
-            super();
+    }
+    
+    private constructor$1(): void {
         this.init(this.CPUFILE);
     
-}
 
-init(...args: any[]): any {
+    }
+    init(...args: any[]): any {
    
     if (args.length === 1 && typeof args[0] === 'string') return this.init$overload1(args[0]);
    

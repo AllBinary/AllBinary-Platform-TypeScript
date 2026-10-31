@@ -105,18 +105,28 @@ export class WeblisketSession
 
     private session: HttpSession;
 
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
-            this(hashMap, pageContext!.getRequest() as HttpServletRequest);
-                    
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 2 && args[0] instanceof HashMap && args[1] instanceof PageContext) {
+            this.constructor$0(args[0], args[1]);
+        }
+        else if(args.length === 2) {
+            this.constructor$1(args[0], args[1]);
+        }
+        
+    }
+    
+    private constructor$0(hashMap: HashMap<any, any>, pageContext: PageContext): void {
+        
+        this.constructor$1(hashMap, pageContext!.getRequest() as HttpServletRequest);
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
-
-public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
-
-            super();
+    }
+    
+    private constructor$1(hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): void {
         
     let propertiesHashMap: HashMap<any, any> = hashMap;;
     
@@ -136,9 +146,9 @@ this.session= request.getSession(true);
 
                                     }
                                 
-}
 
-
+    }
+    
     public getId(): string{
 
 

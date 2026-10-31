@@ -96,17 +96,27 @@ export class GenericBodyValidation extends Validation implements DomNodeInterfac
 
     private body: string;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1 && args[0] instanceof Document) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.body= StringUtil.getInstance()!.EMPTY_STRING;
     
-}
 
-
-public constructor (document: Document){
-
-            super();
+    }
+    
+    private constructor$1(document: Document): void {
         
     let nodeList: NodeList = document.getElementsByTagName(BodyData.getInstance()!.NAME)!;;
     
@@ -127,17 +137,15 @@ this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode);
     
 }
 
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(hashMap: HashMap<any, any>): void {
         this.getFormData(hashMap);
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     public getFormData(hashMap: HashMap<any, any>){

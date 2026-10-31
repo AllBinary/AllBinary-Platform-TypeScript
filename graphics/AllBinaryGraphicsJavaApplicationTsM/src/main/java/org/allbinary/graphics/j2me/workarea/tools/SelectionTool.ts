@@ -247,7 +247,7 @@ public constructor (canvasJPanel: CanvasJPanel){
     let hashMap: HashMap<any, any> = this.canvasJPanel!.getGraphicItemHashMap()!;;
     
 
-    let graphicItemArray: any[] = hashMap!.keys().()!;;
+    let graphicItemArray: any[] = hashMap!.keys().toArray()!;;
     
 
     let size: number = graphicItemArray!.length

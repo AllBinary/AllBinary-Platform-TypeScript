@@ -78,38 +78,47 @@ export class RootStoreThemeCategoryPropertiesFactory
 
     private categoryPropertiesInterface: CategoryPropertiesInterface;
 
-public constructor (transformInfoInterface: TransformInfoInterface){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 2 && args[0] instanceof TransformInfoInterface && args[1] instanceof AbPath) {
+            this.constructor$1(args[0], args[1]);
+        }
+        else if(args.length === 2 && args[0] instanceof TransformInfoInterface && args[1] instanceof Node) {
+            this.constructor$2(args[0], args[1]);
+        }
+        else if(args.length === 2) {
+            this.constructor$3(args[0], args[1]);
+        }
+        
+    }
+    
+    private constructor$0(transformInfoInterface: TransformInfoInterface): void {
         this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transformInfoInterface) as CategoryPropertiesInterface;
     
-}
 
-
-public constructor (transformInfoInterface: TransformInfoInterface, abPath: AbPath){
-
-            super();
+    }
+    
+    private constructor$1(transformInfoInterface: TransformInfoInterface, abPath: AbPath): void {
         this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transformInfoInterface, abPath) as CategoryPropertiesInterface;
     
-}
 
-
-public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
-
-            super();
+    }
+    
+    private constructor$2(transformInfoInterface: TransformInfoInterface, node: Node): void {
         this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transformInfoInterface, node) as CategoryPropertiesInterface;
     
-}
 
-
-public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$3(transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>): void {
         this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transformInfoInterface, categoryPropertiesHashMap) as CategoryPropertiesInterface;
     
-}
 
-
+    }
+    
     public getInstance(): CategoryPropertiesInterface{
 
  try { 

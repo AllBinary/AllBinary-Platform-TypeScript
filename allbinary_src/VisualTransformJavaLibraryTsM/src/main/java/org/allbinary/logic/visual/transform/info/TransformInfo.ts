@@ -185,23 +185,31 @@ export class TransformInfo
 
     private data: string = StringUtil.getInstance()!.EMPTY_STRING;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
         }
-
-
-public constructor (name: string){
-
-            super();
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 5) {
+            this.constructor$2(args[0], args[1], args[2], args[3], args[4]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
+    }
+    
+    private constructor$1(name: string): void {
         this.setName(name);
     
-}
 
-
-public constructor (name: string, objectFileName: string, objectConfigFileName: string, templateFileName: string, dataFileName: string){
-
-            super();
+    }
+    
+    private constructor$2(name: string, objectFileName: string, objectConfigFileName: string, templateFileName: string, dataFileName: string): void {
         this.setName(name);
     
 this.setObjectFile(objectFileName);
@@ -212,9 +220,9 @@ this.setTemplateFile(templateFileName);
     
 this.setDataFile(dataFileName);
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     public override(hashMap: HashMap<any, any>){

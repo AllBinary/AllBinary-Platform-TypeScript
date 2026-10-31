@@ -65,22 +65,29 @@ export class CssPropertyView
 
     private cssProperty: CssProperty;
 
-public constructor (name: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && typeof args[0] === 'string') {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(name: string): void {
         this.cssProperty= new CssProperty(name);
     
-}
 
-
-public constructor (node: Node){
-
-            super();
+    }
+    
+    private constructor$1(node: Node): void {
         this.cssProperty= new CssProperty(node);
     
-}
 
-
+    }
+    
     public getProperty(): CssProperty{
 
 

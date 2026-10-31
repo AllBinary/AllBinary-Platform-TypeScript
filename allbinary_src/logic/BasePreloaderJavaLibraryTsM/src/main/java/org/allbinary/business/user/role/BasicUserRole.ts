@@ -59,18 +59,28 @@ export class BasicUserRole
 
     private readonly sessionInactivityTimeout: number;
 
- constructor (aRole: string, a_int_RoleId: number, aSessionTimeout: number, aSessionInactivityTimeout: number){
-            this(aRole, aRole, a_int_RoleId, aSessionTimeout, aSessionInactivityTimeout);
-                    
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 4) {
+            this.constructor$0(args[0], args[1], args[2], args[3]);
+        }
+        else if(args.length === 5) {
+            this.constructor$1(args[0], args[1], args[2], args[3], args[4]);
+        }
+        
+    }
+    
+    private constructor$0(aRole: string, a_int_RoleId: number, aSessionTimeout: number, aSessionInactivityTimeout: number): void {
+        
+        this.constructor$1(aRole, aRole, a_int_RoleId, aSessionTimeout, aSessionInactivityTimeout);
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
-
- constructor (aRole: string, aDisplayValue: string, a_int_RoleId: number, aSessionTimeout: number, aSessionInactivityTimeout: number){
-
-            super();
+    }
+    
+    private constructor$1(aRole: string, aDisplayValue: string, a_int_RoleId: number, aSessionTimeout: number, aSessionInactivityTimeout: number): void {
         this.m_int_RoleId= a_int_RoleId;
     
 this.role= aRole;
@@ -83,9 +93,9 @@ this.sessionInactivityTimeout= aSessionInactivityTimeout;
     
 BasicUserRoles.getInstance()!.roleVector!.add(this);
     
-}
 
-
+    }
+    
     getRoleId(): number{
 
 

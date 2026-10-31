@@ -63,9 +63,16 @@ public constructor (name: string){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-                             else 
-                        if()
-                        
+                        else {
+                            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return false;
+    
+
+                        }
+                            
 }
 
 

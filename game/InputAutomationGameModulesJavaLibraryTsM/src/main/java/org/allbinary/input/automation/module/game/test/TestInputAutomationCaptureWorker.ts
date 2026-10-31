@@ -125,7 +125,7 @@ this.setGenericProfileActions(genericProfileActions);
                                     this.logUtil!.putF(this.IMAGE_AVAILABLE_SO_PROCESSING, this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    let anyType: any = cacheInterface!.keySet()!.()[0]!;;
+    let anyType: any = cacheInterface!.keySet()!.toArray()[0]!;;
     
 
     let hashMap: HashMap<any, any> = this.getGenericProfileActions()!.getHashMap()!;;

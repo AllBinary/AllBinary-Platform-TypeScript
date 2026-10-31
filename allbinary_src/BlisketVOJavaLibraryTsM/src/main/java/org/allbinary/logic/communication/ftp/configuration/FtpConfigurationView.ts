@@ -77,9 +77,18 @@ export class FtpConfigurationView
 
     private ftpConfigurationInterface: FtpConfigurationInterface;
 
-public constructor (node: Node){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(node: Node): void {
         this.setFtpConfigurationInterface(new FtpConfiguration() as FtpConfigurationInterface);
     
 
@@ -105,17 +114,15 @@ this.getFtpConfigurationInterface()!.setPassword(password);
     
 this.getFtpConfigurationInterface()!.setPath(path);
     
-}
 
-
-public constructor (ftpConfigurationInterface: FtpConfigurationInterface){
-
-            super();
+    }
+    
+    private constructor$1(ftpConfigurationInterface: FtpConfigurationInterface): void {
         this.setFtpConfigurationInterface(ftpConfigurationInterface);
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{

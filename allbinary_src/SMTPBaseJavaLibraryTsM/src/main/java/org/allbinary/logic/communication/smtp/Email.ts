@@ -144,26 +144,33 @@ export class Email
 
     private isDebug: boolean;
 
-public constructor (from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 7) {
+            this.constructor$0(args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
+        }
+        else if(args.length === 8) {
+            this.constructor$1(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7]);
+        }
+        
+    }
+    
+    private constructor$0(from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string): void {
         this.isDebug= false;
     
 this.init(from, to, subject, server, textBody, htmlAttachment, contentBase);
     
-}
 
-
-public constructor (from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string, isDebug: boolean){
-
-            super();
+    }
+    
+    private constructor$1(from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string, isDebug: boolean): void {
         this.isDebug= isDebug;
     
 this.init(from, to, subject, server, textBody, htmlAttachment, contentBase);
     
-}
 
-init(...args: any[]): any {
+    }
+    init(...args: any[]): any {
    
     if (args.length === 7 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string' && typeof args[3] === 'string' && typeof args[4] === 'string' && typeof args[5] === 'string' && typeof args[6] === 'string') return this.init$overload1(args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
    

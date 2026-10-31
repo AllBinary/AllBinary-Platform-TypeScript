@@ -113,7 +113,7 @@ this.numberOfColumns++;
     let result: string = stringUtil!.EMPTY_STRING;;
     
 
-    let attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;;
+    let attributeKeys: any[] = this.otherAttributes!.keySet()!.toArray()!;;
     
 
     let attributeSize: number = attributeKeys!.length

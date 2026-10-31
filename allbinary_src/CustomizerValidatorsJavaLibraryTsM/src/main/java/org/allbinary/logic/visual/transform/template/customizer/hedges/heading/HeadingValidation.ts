@@ -91,19 +91,29 @@ export class HeadingValidation extends Validation implements DomNodeInterface {
 
     private logo: LogoValidation;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1 && args[0] instanceof Document) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.title= new TitleValidation();
     
 this.logo= new LogoValidation();
     
-}
 
-
-public constructor (document: Document){
-
-            super();
+    }
+    
+    private constructor$1(document: Document): void {
         
     let headingNodeList: NodeList = document.getElementsByTagName(HeadingData.NAME)!;;
     
@@ -117,17 +127,15 @@ this.title= new TitleValidation(titleNode);
     
 this.logo= new LogoValidation(logoNode);
     
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(hashMap: HashMap<any, any>): void {
         this.getFormData(hashMap);
     
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     public getFormData(hashMap: HashMap<any, any>){

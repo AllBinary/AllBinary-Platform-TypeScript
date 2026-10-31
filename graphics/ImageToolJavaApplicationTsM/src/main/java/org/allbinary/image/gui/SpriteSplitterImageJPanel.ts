@@ -245,7 +245,7 @@ this.jPanel2= new javax.swing.JPanel();
     
 this.jLabel1= new javax.swing.JLabel();
     
-this.totalFramesJComboBox= new javax.swing.JComboBox<>();
+this.totalFramesJComboBox= new javax.swing.JComboBox();
     
 
     let size: number = 70;;
@@ -268,7 +268,7 @@ this.totalFramesJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(animati
     
 this.jLabel2= new javax.swing.JLabel();
     
-this.totalAnimationsJComboBox= new javax.swing.JComboBox<>();
+this.totalAnimationsJComboBox= new javax.swing.JComboBox();
     
 
     let animationStringArray: string[] = new Array(size -1);;
@@ -288,7 +288,7 @@ this.totalAnimationsJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(ani
     
 this.jLabel3= new javax.swing.JLabel();
     
-this.spriteTypeJComboBox= new javax.swing.JComboBox<>();
+this.spriteTypeJComboBox= new javax.swing.JComboBox();
     
 this.spriteTypeJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [

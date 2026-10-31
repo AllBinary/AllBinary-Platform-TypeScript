@@ -84,9 +84,24 @@ export class TransformInfoDomNode
 
     private mappedName: string;
 
-public constructor (node: Node){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 2 && args[0] instanceof TransformInfoInterface && typeof args[1] === 'string') {
+            this.constructor$2(args[0], args[1]);
+        }
+        else if(args.length === 2) {
+            this.constructor$3(args[0], args[1]);
+        }
+        
+    }
+    
+    private constructor$0(node: Node): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -214,39 +229,33 @@ this.transformInfoInterface= new TransformInfo(name) as TransformInfoInterface;
 
                         }
                             
-}
 
-
-public constructor (transformInfoInterface: TransformInfoInterface){
-
-            super();
+    }
+    
+    private constructor$1(transformInfoInterface: TransformInfoInterface): void {
         this.transformInfoInterface= transformInfoInterface;
     
 this.mappedName= transformInfoInterface!.getName();
     
-}
 
-
-public constructor (transformInfoInterface: TransformInfoInterface, mappedName: string){
-
-            super();
+    }
+    
+    private constructor$2(transformInfoInterface: TransformInfoInterface, mappedName: string): void {
         this.transformInfoInterface= transformInfoInterface;
     
 this.mappedName= mappedName;
     
-}
 
-
-public constructor (name: string, mappedName: string){
-
-            super();
+    }
+    
+    private constructor$3(name: string, mappedName: string): void {
         this.transformInfoInterface= new TransformInfo(name);
     
 this.mappedName= mappedName;
     
-}
 
-
+    }
+    
     public getTransformInfoInterface(): TransformInfoInterface{
 
 

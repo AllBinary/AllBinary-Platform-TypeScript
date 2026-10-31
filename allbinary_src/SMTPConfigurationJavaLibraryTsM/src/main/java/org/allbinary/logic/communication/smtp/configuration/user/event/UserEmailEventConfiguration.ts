@@ -65,9 +65,18 @@ export class UserEmailEventConfiguration
 
     private eventListenerClassPath: string;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.setName(StringUtil.getInstance()!.EMPTY_STRING);
     
 this.setEventListenerClassPath(StringUtil.getInstance()!.EMPTY_STRING);
@@ -81,12 +90,10 @@ this.setEventListenerClassPath(StringUtil.getInstance()!.EMPTY_STRING);
 
                                     }
                                 
-}
 
-
-public constructor (hashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$1(hashMap: HashMap<any, any>): void {
         this.setName(hashMap!.get(UserEmailEventConfigurationData.NAME) as string);
     
 this.setEventListenerClassPath(hashMap!.get(UserEmailEventConfigurationData.LISTENER_CLASSPATH) as string);
@@ -100,9 +107,9 @@ this.setEventListenerClassPath(hashMap!.get(UserEmailEventConfigurationData.LIST
 
                                     }
                                 
-}
 
-
+    }
+    
     public getName(): string{
 
 

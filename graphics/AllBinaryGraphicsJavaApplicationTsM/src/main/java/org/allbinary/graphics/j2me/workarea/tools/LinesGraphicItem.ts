@@ -189,9 +189,18 @@ export class LinesGraphicItem
 
     private points: Points;
 
-public constructor (){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 0) {
+            this.constructor$0();
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(): void {
         this.points= new Points();
     
 
@@ -210,12 +219,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
  }
    }
  
-}
 
-
-public constructor (linesNode: Node){
-
-            super();
+    }
+    
+    private constructor$1(linesNode: Node): void {
         this.points= new Points();
     
 this.init();
@@ -272,9 +279,9 @@ this.addPoint(pointTwoNode!.getChildNodes());
 
                                     }
                                 
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     public init(){

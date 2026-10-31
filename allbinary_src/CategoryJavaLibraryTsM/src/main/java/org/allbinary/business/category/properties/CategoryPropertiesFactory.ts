@@ -70,30 +70,38 @@ export class CategoryPropertiesFactory
 
     private categoryPropertiesInterface: CategoryPropertiesInterface;
 
-public constructor (name: string){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1 && typeof args[0] === 'string') {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 1 && args[0] instanceof Node) {
+            this.constructor$1(args[0]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(name: string): void {
         this.categoryPropertiesInterface= new CategoryProperties(name) as CategoryPropertiesInterface;
     
-}
 
-
-public constructor (node: Node){
-
-            super();
+    }
+    
+    private constructor$1(node: Node): void {
         this.categoryPropertiesInterface= new CategoryProperties(node) as CategoryPropertiesInterface;
     
-}
 
-
-public constructor (categoryPropertiesHashMap: HashMap<any, any>){
-
-            super();
+    }
+    
+    private constructor$2(categoryPropertiesHashMap: HashMap<any, any>): void {
         this.categoryPropertiesInterface= new CategoryProperties(categoryPropertiesHashMap) as CategoryPropertiesInterface;
     
-}
 
-
+    }
+    
     public getInstance(): CategoryPropertiesInterface{
 
  try { 

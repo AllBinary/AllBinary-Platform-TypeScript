@@ -218,9 +218,18 @@ export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.M
 
     private readonly grid: Grid;
 
-public constructor (workAreaJTreeJPanel: WorkAreaJTreeJPanel, dimension: Dimension, x: number, y: number){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 4) {
+            this.constructor$0(args[0], args[1], args[2], args[3]);
+        }
+        else if(args.length === 3) {
+            this.constructor$1(args[0], args[1], args[2]);
+        }
+        
+    }
+    
+    private constructor$0(workAreaJTreeJPanel: WorkAreaJTreeJPanel, dimension: Dimension, x: number, y: number): void {
         this.grid= new Grid();
     
 
@@ -252,12 +261,10 @@ this.setCanvasSize(x, y);
  }
    }
  
-}
 
-
-public constructor (workAreaJTreeJPanel: WorkAreaJTreeJPanel, dimension: Dimension, canvasDom: CanvasDom){
-
-            super();
+    }
+    
+    private constructor$1(workAreaJTreeJPanel: WorkAreaJTreeJPanel, dimension: Dimension, canvasDom: CanvasDom): void {
         this.grid= new Grid(canvasDom!.getGrid());
     
 
@@ -274,7 +281,7 @@ this.setCanvasSize(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimensio
 this.graphicItemHashMap= canvasDom!.getGraphicItemHashMap();
     
 
-    let graphicItemArray: any[] = this.graphicItemHashMap!.keys().()!;;
+    let graphicItemArray: any[] = this.graphicItemHashMap!.keys().toArray()!;;
     
 
     let size: number = graphicItemArray!.length
@@ -322,9 +329,9 @@ this.workAreaJTreeJPanel!.repaint();
  }
    }
  
-}
 
-
+    }
+    
                 //@Throws(Exception.constructor)
             
     initMyComponents(){
@@ -529,7 +536,7 @@ this.setAngle(this.angle +angle);
     let newPoints: BasicArrayList = new BasicArrayListD();;
     
 
-    let graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;;
+    let graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().toArray()!;;
     
 
     let size: number = graphicItemArray!.length
@@ -620,7 +627,7 @@ this.workAreaJTreeJPanel!.repaint();
             
     public explode(howMuch: number, explosionType: number){
 
-    let graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;;
+    let graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().toArray()!;;
     
 
     let size: number = graphicItemArray!.length
@@ -665,7 +672,7 @@ this.repaint();
     let width: number = this.getCanvasDimension()!.getWidth()!;;
     
 
-    let graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;;
+    let graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().toArray()!;;
     
 
     let size: number = graphicItemArray!.length
@@ -764,7 +771,7 @@ this.canvasTreeNode!.add(graphicItemClone!.getTreeNode());
             
     public duplicateGraphicItemHashMap(hashMap: HashMap<any, any>){
 
-    let mutableTreeNodeArray: any[] = hashMap!.keys().()!;;
+    let mutableTreeNodeArray: any[] = hashMap!.keys().toArray()!;;
     
 
     let size: number = mutableTreeNodeArray!.length
@@ -875,7 +882,7 @@ this.duplicateGraphicItem(graphicItem);
     let angleDouble: number = new number(this.angle);;
     
 
-    let graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;;
+    let graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().toArray()!;;
     
 
     let size: number = graphicItemArray!.length
@@ -1215,7 +1222,7 @@ StatusFactory.getInstance()!.setStatus("Key Pressed");
     
 
  try { 
-    let graphicItemArray: any[] = this.graphicItemHashMap!.keys().()!;;
+    let graphicItemArray: any[] = this.graphicItemHashMap!.keys().toArray()!;;
     
 
     let size: number = graphicItemArray!.length

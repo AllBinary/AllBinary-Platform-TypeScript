@@ -90,9 +90,18 @@ export class GenericProfileAction
 
     private genericProfileActionJPanel: GenericProfileActionJPanel;
 
-public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, node: Node){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 2) {
+            this.constructor$0(args[0], args[1]);
+        }
+        else if(args.length === 1) {
+            this.constructor$1(args[0]);
+        }
+        
+    }
+    
+    private constructor$0(genericProfileActionJPanel: GenericProfileActionJPanel, node: Node): void {
         
     let actionNameNode: Node = DomSearchHelper.getNode(GenericProfileActionData.NAME, node.getChildNodes())!;;
     
@@ -118,19 +127,17 @@ public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, node
                             
 this.setGenericProfileActionScript(new GenericProfileActionScript(this.genericProfileActionJPanel, node));
     
-}
 
-
-public constructor (name: string){
-
-            super();
+    }
+    
+    private constructor$1(name: string): void {
         this.name= name;
     
 this.setGenericProfileActionScript(new GenericProfileActionScript(this.genericProfileActionJPanel));
     
-}
 
-
+    }
+    
     public getName(): string{
 
 

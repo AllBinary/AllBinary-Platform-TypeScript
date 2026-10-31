@@ -89,9 +89,24 @@ export class InputAutomationModuleConfigurations
 
     private hashMap: HashMap<any, any>;
 
-public constructor (abeClientInformation: AbeClientInformationInterface, file: File){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 2 && args[0] instanceof AbeClientInformationInterface && args[1] instanceof File) {
+            this.constructor$0(args[0], args[1]);
+        }
+        else if(args.length === 2) {
+            this.constructor$1(args[0], args[1]);
+        }
+        else if(args.length === 1) {
+            this.constructor$2(args[0]);
+        }
+        else if(args.length === 0) {
+            this.constructor$3();
+        }
+        
+    }
+    
+    private constructor$0(abeClientInformation: AbeClientInformationInterface, file: File): void {
         this.setHashMap(new HashMap<any, any>());
     
 
@@ -141,12 +156,10 @@ this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
 
                                     }
                                 
-}
 
-
-public constructor (abeClientInformation: AbeClientInformationInterface, document: Document){
-
-            super();
+    }
+    
+    private constructor$1(abeClientInformation: AbeClientInformationInterface, document: Document): void {
         this.setHashMap(new HashMap<any, any>());
     
 
@@ -168,12 +181,10 @@ this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
     
 }
 
-}
 
-
-public constructor (inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration>){
-
-            super();
+    }
+    
+    private constructor$2(inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration>): void {
         this.setHashMap(new HashMap<any, any>());
     
 
@@ -195,17 +206,15 @@ this.add(inputAutomationModuleConfiguration);
     
 }
 
-}
 
-
-public constructor (){
-
-            super();
+    }
+    
+    private constructor$3(): void {
         this.setHashMap(new HashMap<any, any>());
     
-}
 
-
+    }
+    
     public add(inputAutomationModuleConfiguration: InputAutomationModuleConfiguration){
 this.getHashMap()!.put(inputAutomationModuleConfiguration!.getClassName(), inputAutomationModuleConfiguration);
     

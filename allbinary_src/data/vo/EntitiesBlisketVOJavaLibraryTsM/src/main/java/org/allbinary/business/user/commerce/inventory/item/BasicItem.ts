@@ -169,9 +169,18 @@ export class BasicItem
 
     lastModified: string;
 
-public constructor (itemHashMap: HashMap<any, any>){
-
-            super();
+    public constructor(...args: any[]) {
+        super();
+        if(args.length === 1) {
+            this.constructor$0(args[0]);
+        }
+        else if(args.length === 0) {
+            this.constructor$1();
+        }
+        
+    }
+    
+    private constructor$0(itemHashMap: HashMap<any, any>): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
@@ -239,12 +248,10 @@ this.permissions= itemHashMap!.get(this.basicItemData!.PERMISSIONS) as string;
     
 this.specials= itemHashMap!.get(this.basicItemData!.SPECIALS) as string;
     
-}
 
-
-public constructor (){
-
-            super();
+    }
+    
+    private constructor$1(): void {
         
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
@@ -315,9 +322,9 @@ this.permissions= EMPTY;
     
 this.specials= EMPTY;
     
-}
 
-
+    }
+    
     public setId(itemId: string){
 this.itemId= itemId;
     
