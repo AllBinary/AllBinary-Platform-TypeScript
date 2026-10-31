@@ -18,6 +18,8 @@
         
 
 
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 
 
 
@@ -42,8 +44,6 @@ import { GridLayout } from './GridLayout.js';
 //sameFolderImports - not GWT import - same folder const GridLayout
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 import { Dimension } from './Dimension.js';
 //sameFolderImports - not GWT import - same folder const Dimension
 

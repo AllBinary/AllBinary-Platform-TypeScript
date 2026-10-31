@@ -93,22 +93,48 @@ export class StoreThemeCategory extends Category implements StoreThemeCategoryIn
 
     private themeVector: BasicArrayList;
 
-public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
+    public constructor(...args: any[]) {
+        if(args.length === 3) {
+            const transformInfoInterface = args[0];
+            const categoryPropertiesFactoryInterface = args[1];
+            const level = args[2];
             super(categoryPropertiesFactoryInterface, level);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.transformInfoInterface= transformInfoInterface;
-    
-this.themeVector= new BasicArrayListD();
-    
-}
-
-
-public constructor (transformInfoInterface: TransformInfoInterface, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
+            this.constructor$0(transformInfoInterface, categoryPropertiesFactoryInterface, level);
+            
+        }
+        else if(args.length === 4 && args[0] instanceof TransformInfoInterface && args[1] instanceof CategoryInterface && args[2] instanceof CategoryInterface && args[3] instanceof CategoryPropertiesFactoryInterface) {
+            const transformInfoInterface = args[0];
+            const rootCategoryInterface = args[1];
+            const parentCategoryInterface = args[2];
+            const categoryPropertiesFactoryInterface = args[3];
             super(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
-                    
+            this.constructor$1(transformInfoInterface, rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
+            
+        }
+        else if(args.length === 4) {
+            const transformInfoInterface = args[0];
+            const node = args[1];
+            const categoryPropertiesFactoryInterface = args[2];
+            const level = args[3];
+            super(categoryPropertiesFactoryInterface, level);
+            this.constructor$2(transformInfoInterface, node, categoryPropertiesFactoryInterface, level);
+            
+        }
+        else if(args.length === 5) {
+            const transformInfoInterface = args[0];
+            const node = args[1];
+            const rootCategoryInterface = args[2];
+            const parentCategoryInterface = args[3];
+            const categoryPropertiesFactoryInterface = args[4];
+            super(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
+            this.constructor$3(transformInfoInterface, node, rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
+            
+        }
+        
+    }
+    
+    private constructor$0(transformInfoInterface: TransformInfoInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -116,12 +142,23 @@ this.transformInfoInterface= transformInfoInterface;
     
 this.themeVector= new BasicArrayListD();
     
-}
 
+    }
+    
+    private constructor$1(transformInfoInterface: TransformInfoInterface, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface): void {
+        
 
-public constructor (transformInfoInterface: TransformInfoInterface, node: Node, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
-            super(categoryPropertiesFactoryInterface, level);
+                            //For kotlin this is before the body of the constructor.
                     
+this.transformInfoInterface= transformInfoInterface;
+    
+this.themeVector= new BasicArrayListD();
+    
+
+    }
+    
+    private constructor$2(transformInfoInterface: TransformInfoInterface, node: Node, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -131,12 +168,11 @@ this.themeVector= new BasicArrayListD();
     
 this.addThemes(node);
     
-}
 
-
-public constructor (transformInfoInterface: TransformInfoInterface, node: Node, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
-            super(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
-                    
+    }
+    
+    private constructor$3(transformInfoInterface: TransformInfoInterface, node: Node, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -146,9 +182,9 @@ this.themeVector= new BasicArrayListD();
     
 this.addThemes(node);
     
-}
 
-
+    }
+    
     public getTransformInfoInterface(): TransformInfoInterface{
 
 

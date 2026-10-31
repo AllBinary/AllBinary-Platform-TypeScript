@@ -25,6 +25,8 @@
             //import { Double } from '../../../../java/lang/Double.js';
             const Double = (globalThis.java?.lang?.Double ?? class {}) as typeof globalThis.java.lang.Double;
         
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 //not GWT import const BufferedImage
 
@@ -142,8 +144,6 @@ import { KeyEvent } from './KeyEvent.js';
 //sameFolderImports - not GWT import - same folder const KeyEvent
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 
 export class ImageUnifierJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         

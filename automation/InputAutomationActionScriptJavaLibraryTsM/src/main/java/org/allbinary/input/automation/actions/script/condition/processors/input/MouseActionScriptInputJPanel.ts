@@ -22,6 +22,8 @@
         
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 import { InputEvent } from '../../../../../../../../../java/awt/event/InputEvent.js';
 //not GWT import const InputEvent
 
@@ -104,8 +106,6 @@ import { Insets } from './Insets.js';
 //sameFolderImports - not GWT import - same folder const Insets
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 
 export class MouseActionScriptInputJPanel extends javax.swing.JPanel {
         

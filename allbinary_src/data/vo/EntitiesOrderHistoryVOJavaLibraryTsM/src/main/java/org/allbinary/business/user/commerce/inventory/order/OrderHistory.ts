@@ -140,18 +140,40 @@ export class OrderHistory extends Order implements OrderHistoryInterface {
 
     private total: Money;
 
-public constructor (basketInterface: BasketInterface){
+    public constructor(...args: any[]) {
+        if(args.length === 1) {
+            const basketInterface = args[0];
             super(basketInterface);
-                    
+            this.constructor$0(basketInterface);
+            
+        }
+        else if(args.length === 2 && args[0] instanceof BasketInterface && args[1] instanceof OrderHistory) {
+            const basketInterface = args[0];
+            const orderHistory = args[1];
+            super(orderHistory!.getStoreName(), basketInterface, orderHistory!.getId(), orderHistory!.getShippingMethod(), orderHistory!.getSpecial(), orderHistory!.getPaymentMethod());
+            this.constructor$1(basketInterface, orderHistory);
+            
+        }
+        else if(args.length === 2) {
+            const basketInterface = args[0];
+            const orderHistoryHashMap = args[1];
+            super(orderHistoryHashMap!.get(StoreFrontData.getInstance()!.NAME) as string, basketInterface, orderHistoryHashMap!.get(OrderData.ID) as string, orderHistoryHashMap!.get(ShippingMethodData.NAME) as string, orderHistoryHashMap!.get(EntryData.getInstance()!.SPECIAL) as string, orderHistoryHashMap!.get(PaymentData.METHOD) as string);
+            this.constructor$2(basketInterface, orderHistoryHashMap);
+            
+        }
+        
+    }
+    
+    private constructor$0(basketInterface: BasketInterface): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
-
-public constructor (basketInterface: BasketInterface, orderHistory: OrderHistory){
-            super(orderHistory!.getStoreName(), basketInterface, orderHistory!.getId(), orderHistory!.getShippingMethod(), orderHistory!.getSpecial(), orderHistory!.getPaymentMethod());
-                    
+    }
+    
+    private constructor$1(basketInterface: BasketInterface, orderHistory: OrderHistory): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -189,12 +211,11 @@ super.setStoreComments(orderHistory!.getStoreComments() as string);
     
 super.setStoreCancelComments(orderHistory!.getStoreCancelComments() as string);
     
-}
 
-
-public constructor (basketInterface: BasketInterface, orderHistoryHashMap: HashMap<any, any>){
-            super(orderHistoryHashMap!.get(StoreFrontData.getInstance()!.NAME) as string, basketInterface, orderHistoryHashMap!.get(OrderData.ID) as string, orderHistoryHashMap!.get(ShippingMethodData.NAME) as string, orderHistoryHashMap!.get(EntryData.getInstance()!.SPECIAL) as string, orderHistoryHashMap!.get(PaymentData.METHOD) as string);
-                    
+    }
+    
+    private constructor$2(basketInterface: BasketInterface, orderHistoryHashMap: HashMap<any, any>): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -232,9 +253,9 @@ super.setStoreComments(orderHistoryHashMap!.get(OrderData.STORECOMMENT) as strin
     
 super.setStoreCancelComments(orderHistoryHashMap!.get(OrderData.STORECANCELCOMMENT) as string);
     
-}
 
-
+    }
+    
     public setUserName(value: string){
 this.userName= value;
     

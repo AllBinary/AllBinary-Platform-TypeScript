@@ -170,12 +170,15 @@ export class BasicItem
     lastModified: string;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 1) {
+        super();if(args.length === 1) {
+            
             this.constructor$0(args[0]);
+            
         }
         else if(args.length === 0) {
+            
             this.constructor$1();
+            
         }
         
     }

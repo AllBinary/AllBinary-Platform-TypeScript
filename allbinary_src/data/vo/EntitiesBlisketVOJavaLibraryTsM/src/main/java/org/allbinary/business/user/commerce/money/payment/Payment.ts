@@ -121,15 +121,20 @@ export class Payment
     private isDefault: boolean = false;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 1 && args[0] instanceof HashMap) {
+        super();if(args.length === 1 && args[0] instanceof HashMap) {
+            
             this.constructor$0(args[0]);
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$1(args[0]);
+            
         }
         else if(args.length === 0) {
+            
             this.constructor$2();
+            
         }
         
     }

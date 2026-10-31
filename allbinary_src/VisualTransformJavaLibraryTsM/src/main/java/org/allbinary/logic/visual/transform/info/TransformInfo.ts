@@ -186,15 +186,20 @@ export class TransformInfo
     private data: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 0) {
+        super();if(args.length === 0) {
+            
             this.constructor$0();
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$1(args[0]);
+            
         }
         else if(args.length === 5) {
+            
             this.constructor$2(args[0], args[1], args[2], args[3], args[4]);
+            
         }
         
     }

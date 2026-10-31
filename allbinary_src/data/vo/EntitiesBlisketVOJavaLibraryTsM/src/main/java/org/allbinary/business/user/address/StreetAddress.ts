@@ -114,24 +114,35 @@ export class StreetAddress
     private isDefault: boolean = false;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 0) {
+        super();if(args.length === 0) {
+            
             this.constructor$0();
+            
         }
         else if(args.length === 1 && args[0] instanceof Node) {
+            
             this.constructor$1(args[0]);
+            
         }
         else if(args.length === 1 && args[0] instanceof StreetAddress) {
+            
             this.constructor$2(args[0]);
+            
         }
         else if(args.length === 1 && args[0] instanceof HttpServletRequest) {
+            
             this.constructor$3(args[0]);
+            
         }
         else if(args.length === 6) {
+            
             this.constructor$4(args[0], args[1], args[2], args[3], args[4], args[5]);
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$5(args[0]);
+            
         }
         
     }

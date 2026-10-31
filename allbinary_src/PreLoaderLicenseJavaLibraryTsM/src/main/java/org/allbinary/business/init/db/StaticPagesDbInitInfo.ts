@@ -44,23 +44,36 @@ export class StaticPagesDbInitInfo extends DbInitInfo {
 
     private static readonly INITFILE: string = "staticpagesbinitdata.dat";
 
-public constructor (){
+    public constructor(...args: any[]) {
+        if(args.length === 0) {
             super(INITFILE, true);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (read: boolean){
+            this.constructor$0();
+            
+        }
+        else if(args.length === 1) {
+            const read = args[0];
             super(INITFILE, read);
-                    
+            this.constructor$1(read);
+            
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
+    }
+    
+    private constructor$1(read: boolean): void {
+        
 
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
 }
 

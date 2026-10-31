@@ -68,30 +68,47 @@ import { Node } from '../../../../../../../../../../../../org/w3c/dom/Node.js';
 export class EditCssStyleValidation extends CssStyleValidation implements ValidationInterface, DomNodeInterface {
         
 
-public constructor (){
-
+    public constructor(...args: any[]) {
+        if(args.length === 0) {
             super();
+            this.constructor$0();
+            
         }
-
-
-public constructor (document: Document){
+        else if(args.length === 1 && args[0] instanceof Document) {
+            const document = args[0];
             super(document);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (hashMap: HashMap<any, any>){
+            this.constructor$1(document);
+            
+        }
+        else if(args.length === 1) {
+            const hashMap = args[0];
             super(hashMap);
-                    
+            this.constructor$2(hashMap);
+            
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
+    }
+    
+    private constructor$1(document: Document): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
+    }
+    
+    private constructor$2(hashMap: HashMap<any, any>): void {
+        
 
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
     public isValid(): Boolean{
 
 

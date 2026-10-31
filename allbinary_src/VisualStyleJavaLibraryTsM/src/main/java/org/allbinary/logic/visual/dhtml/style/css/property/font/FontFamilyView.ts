@@ -50,23 +50,36 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 export class FontFamilyView extends CssPropertyView {
         
 
-public constructor (){
+    public constructor(...args: any[]) {
+        if(args.length === 0) {
             super(FontFamilyData.getInstance()!.VALUE);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (node: Node){
+            this.constructor$0();
+            
+        }
+        else if(args.length === 1) {
+            const node = args[0];
             super(node);
-                    
+            this.constructor$1(node);
+            
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
+    }
+    
+    private constructor$1(node: Node): void {
+        
 
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
 }
 

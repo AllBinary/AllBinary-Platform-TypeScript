@@ -56,28 +56,41 @@ export class AffiliateUser extends User {
 
     private affiliateSales: AffiliateSales;
 
-public constructor (){
+    public constructor(...args: any[]) {
+        if(args.length === 0) {
             super();
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.affiliateSales= new AffiliateSales();
-    
-}
-
-
-public constructor (userHashMap: HashMap<any, any>){
+            this.constructor$0();
+            
+        }
+        else if(args.length === 1) {
+            const userHashMap = args[0];
             super(userHashMap);
-                    
+            this.constructor$1(userHashMap);
+            
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
 this.affiliateSales= new AffiliateSales();
     
-}
 
+    }
+    
+    private constructor$1(userHashMap: HashMap<any, any>): void {
+        
 
+                            //For kotlin this is before the body of the constructor.
+                    
+this.affiliateSales= new AffiliateSales();
+    
+
+    }
+    
     public validateSession(weblisketSession: WeblisketSessionInterface){
 super.validateSession(weblisketSession);
     

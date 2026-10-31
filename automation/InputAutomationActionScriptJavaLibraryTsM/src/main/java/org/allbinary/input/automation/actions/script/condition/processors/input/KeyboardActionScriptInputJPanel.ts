@@ -22,6 +22,8 @@
         
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 import { swing } from '../../../../../../../../../javax/swing.js';
 //not GWT import const swing
 
@@ -104,8 +106,6 @@ import { Insets } from './Insets.js';
 //sameFolderImports - not GWT import - same folder const Insets
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 
 export class KeyboardActionScriptInputJPanel extends javax.swing.JPanel {
         

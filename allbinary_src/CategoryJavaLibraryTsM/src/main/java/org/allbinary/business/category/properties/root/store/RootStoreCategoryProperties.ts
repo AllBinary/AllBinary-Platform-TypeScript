@@ -139,18 +139,25 @@ export class RootStoreCategoryProperties
     transformInfoInterface: TransformInfoInterface;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 1) {
+        super();if(args.length === 1) {
+            
             this.constructor$0(args[0]);
+            
         }
         else if(args.length === 2 && args[0] instanceof TransformInfoInterface && args[1] instanceof AbPath) {
+            
             this.constructor$1(args[0], args[1]);
+            
         }
         else if(args.length === 2 && args[0] instanceof TransformInfoInterface && args[1] instanceof Node) {
+            
             this.constructor$2(args[0], args[1]);
+            
         }
         else if(args.length === 2) {
+            
             this.constructor$3(args[0], args[1]);
+            
         }
         
     }

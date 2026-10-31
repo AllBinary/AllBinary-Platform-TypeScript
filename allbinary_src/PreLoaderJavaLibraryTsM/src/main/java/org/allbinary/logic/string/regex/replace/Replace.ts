@@ -137,15 +137,20 @@ console.log("New String: " +testString);
     private readonly hashMap: HashMap<any, any>;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') {
+        super();if(args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') {
+            
             this.constructor$0(args[0], args[1]);
+            
         }
         else if(args.length === 2) {
+            
             this.constructor$1(args[0], args[1]);
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$2(args[0]);
+            
         }
         
     }

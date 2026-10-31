@@ -18,6 +18,8 @@
         
 
 
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 
 
 
@@ -42,8 +44,6 @@ import { JLabel } from './JLabel.js';
 //sameFolderImports - not GWT import - same folder const JLabel
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 
 export class BlankModuleConfigurationJPanel extends javax.swing.JPanel {
         

@@ -106,15 +106,20 @@ export class TitleBodyValidation extends Validation implements DomNodeInterface 
     private titleValidation: TitleNotRequiredValidation;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 0) {
+        super();if(args.length === 0) {
+            
             this.constructor$0();
+            
         }
         else if(args.length === 1 && args[0] instanceof Document) {
+            
             this.constructor$1(args[0]);
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$2(args[0]);
+            
         }
         
     }

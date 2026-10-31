@@ -119,12 +119,15 @@ export class LogConfig
     private fileName: string;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 4) {
+        super();if(args.length === 4) {
+            
             this.constructor$0(args[0], args[1], args[2], args[3]);
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$1(args[0]);
+            
         }
         
     }

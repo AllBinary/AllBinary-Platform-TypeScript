@@ -53,37 +53,62 @@ import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 export class OverrideStoreTransformInfoObjectConfig extends GenericStoreTransformInfoObjectConfig {
         
 
-public constructor (abeClientInformation: Object, transformInfoInterface: Object){
+    public constructor(...args: any[]) {
+        if(args.length === 2) {
+            const abeClientInformation = args[0];
+            const transformInfoInterface = args[1];
             super(abeClientInformation, transformInfoInterface);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (abeClientInformation: Object, transformInfoInterface: Object, document: Object){
+            this.constructor$0(abeClientInformation, transformInfoInterface);
+            
+        }
+        else if(args.length === 3) {
+            const abeClientInformation = args[0];
+            const transformInfoInterface = args[1];
+            const document = args[2];
             super(abeClientInformation, transformInfoInterface, document);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.setDocument(this.generate(this.toXmlDoc()));
-    
-}
-
-
-public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string){
+            this.constructor$1(abeClientInformation, transformInfoInterface, document);
+            
+        }
+        else if(args.length === 4) {
+            const abeClientInformation = args[0];
+            const transformInfoInterface = args[1];
+            const name = args[2];
+            const type = args[3];
             super(abeClientInformation, transformInfoInterface, name, type);
+            this.constructor$2(abeClientInformation, transformInfoInterface, name, type);
+            
+        }
+        
+    }
+    
+    private constructor$0(abeClientInformation: Object, transformInfoInterface: Object): void {
+        
+
+                            //For kotlin this is before the body of the constructor.
                     
+
+    }
+    
+    private constructor$1(abeClientInformation: Object, transformInfoInterface: Object, document: Object): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
 this.setDocument(this.generate(this.toXmlDoc()));
     
-}
 
+    }
+    
+    private constructor$2(abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string): void {
+        
 
+                            //For kotlin this is before the body of the constructor.
+                    
+this.setDocument(this.generate(this.toXmlDoc()));
+    
+
+    }
+    
                 //@Throws(Exception.constructor)
             
     generate(objectConfigDocument: Document): Document{

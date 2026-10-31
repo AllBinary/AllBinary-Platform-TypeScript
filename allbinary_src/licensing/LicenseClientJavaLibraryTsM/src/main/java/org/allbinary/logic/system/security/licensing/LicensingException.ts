@@ -44,20 +44,32 @@ export class LicensingException extends Exception {
 
     public static readonly serialVersionUID: number = 1;
 
-public constructor (){
-
+    public constructor(...args: any[]) {
+        if(args.length === 0) {
             super();
+            this.constructor$0();
+            
         }
-
-
-public constructor (msg: string){
+        else if(args.length === 1) {
+            const msg = args[0];
             super(msg);
-                    
+            this.constructor$1(msg);
+            
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
+    }
+    
+    private constructor$1(msg: string): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
-
+    }
+    
 }
 

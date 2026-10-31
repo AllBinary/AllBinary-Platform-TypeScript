@@ -20,6 +20,8 @@
 
             import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
         
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
@@ -92,8 +94,6 @@ import { AbstractListModel } from './AbstractListModel.js';
 //sameFolderImports - not GWT import - same folder const AbstractListModel
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 
 export class ImageActionScriptOutputJPanel extends javax.swing.JPanel {
         

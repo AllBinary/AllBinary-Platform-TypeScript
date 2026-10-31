@@ -22,6 +22,8 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { awt } from '../../../../java/awt.js';
@@ -117,8 +119,6 @@ import { ActionEvent } from './ActionEvent.js';
 //sameFolderImports - not GWT import - same folder const ActionEvent
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 
 export class CanvasImageJPanel extends javax.swing.JPanel implements ImageProcessedVisitor {
         

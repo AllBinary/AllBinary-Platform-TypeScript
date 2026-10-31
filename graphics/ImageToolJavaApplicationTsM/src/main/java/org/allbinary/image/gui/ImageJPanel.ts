@@ -18,6 +18,8 @@
         
 
 
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 import { awt } from '../../../../java/awt.js';
 //not GWT import const awt
 
@@ -59,8 +61,6 @@ import { Graphics } from './Graphics.js';
 //sameFolderImports - not GWT import - same folder const Graphics
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 
 export class ImageJPanel extends javax.swing.JPanel {
         

@@ -64,24 +64,39 @@ import { GenericProfileActionScriptProcessorData } from './GenericProfileActionS
 export class BasicProfileActionScriptProcessor extends ProfileActionScriptItem implements ProfileActionScriptProcessorInterface {
         
 
-public constructor (label: string, node: Node){
+    public constructor(...args: any[]) {
+        if(args.length === 2) {
+            const label = args[0];
+            const node = args[1];
             super(label, node);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (label: string){
+            this.constructor$0(label, node);
+            
+        }
+        else if(args.length === 1) {
+            const label = args[0];
             super(label);
-                    
+            this.constructor$1(label);
+            
+        }
+        
+    }
+    
+    private constructor$0(label: string, node: Node): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
+    }
+    
+    private constructor$1(label: string): void {
+        
 
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
     public actionPerformed(actionEvent: ActionEvent){
 super.actionPerformed(actionEvent);
     

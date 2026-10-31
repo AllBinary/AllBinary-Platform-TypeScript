@@ -96,21 +96,30 @@ export class TransformInfoHttp extends TransformInfo implements TransformInfoHtt
     private readonly abContext: AbContext;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 3 && args[0] instanceof HashMap && args[1] instanceof PageContext && typeof args[2] === 'boolean') {
+        super();if(args.length === 3 && args[0] instanceof HashMap && args[1] instanceof PageContext && typeof args[2] === 'boolean') {
+            
             this.constructor$0(args[0], args[1], args[2]);
+            
         }
         else if(args.length === 3 && args[0] instanceof HttpServletRequest && args[1] instanceof HashMap && args[2] instanceof PageContext) {
+            
             this.constructor$1(args[0], args[1], args[2]);
+            
         }
         else if(args.length === 3) {
+            
             this.constructor$2(args[0], args[1], args[2]);
+            
         }
         else if(args.length === 2) {
+            
             this.constructor$3(args[0], args[1]);
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$4(args[0]);
+            
         }
         
     }

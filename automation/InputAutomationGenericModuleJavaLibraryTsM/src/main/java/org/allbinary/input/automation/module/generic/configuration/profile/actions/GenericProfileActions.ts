@@ -128,15 +128,20 @@ export class GenericProfileActions
     private hashMap: HashMap<any, any>;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 2) {
+        super();if(args.length === 2) {
+            
             this.constructor$0(args[0], args[1]);
+            
         }
         else if(args.length === 3 && args[0] instanceof GenericProfileActionsJPanel && args[1] instanceof AbPath && typeof args[2] === 'string') {
+            
             this.constructor$1(args[0], args[1], args[2]);
+            
         }
         else if(args.length === 3) {
+            
             this.constructor$2(args[0], args[1], args[2]);
+            
         }
         
     }

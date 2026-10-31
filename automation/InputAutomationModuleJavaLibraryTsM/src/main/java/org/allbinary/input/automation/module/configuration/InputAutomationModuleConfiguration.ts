@@ -118,18 +118,25 @@ export class InputAutomationModuleConfiguration
     private inputAutomationModuleInterface: InputAutomationModuleFactoryInterface;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 0) {
+        super();if(args.length === 0) {
+            
             this.constructor$0();
+            
         }
         else if(args.length === 2) {
+            
             this.constructor$1(args[0], args[1]);
+            
         }
         else if(args.length === 3) {
+            
             this.constructor$2(args[0], args[1], args[2]);
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$3(args[0]);
+            
         }
         
     }

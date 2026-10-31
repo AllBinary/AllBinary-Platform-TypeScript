@@ -55,32 +55,51 @@ import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFile
 export class AbFileInputStream extends FileInputStream {
         
 
-public constructor (name: string){
+    public constructor(...args: any[]) {
+        if(args.length === 1 && typeof args[0] === 'string') {
+            const name = args[0];
             super(name);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (file: AbFile){
+            this.constructor$0(name);
+            
+        }
+        else if(args.length === 1 && args[0] instanceof AbFile) {
+            const file = args[0];
             super(AbFileNativeUtil.get(file));
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-protected constructor (file: File){
+            this.constructor$1(file);
+            
+        }
+        else if(args.length === 1) {
+            const file = args[0];
             super(file);
-                    
+            this.constructor$2(file);
+            
+        }
+        
+    }
+    
+    private constructor$0(name: string): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
+    }
+    
+    private constructor$1(file: AbFile): void {
+        
 
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
+    private constructor$2(file: File): void {
+        
+
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
 }
 

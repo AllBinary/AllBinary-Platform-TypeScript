@@ -22,6 +22,8 @@
         
             import { Float } from '../../../../java/lang/Float.js';
         
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js';
 //not GWT import const ImageAnalysisResults
 
@@ -65,8 +67,6 @@ import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
 //sameFolderImports - not GWT import - same folder const DefaultComboBoxModel
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 
 export class ImageAnalysisResultsJPanel extends javax.swing.JPanel {
         

@@ -24,6 +24,8 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
@@ -82,8 +84,6 @@ import { ActionEvent } from './ActionEvent.js';
 //sameFolderImports - not GWT import - same folder const ActionEvent
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 import { EventQueue } from './EventQueue.js';
 //sameFolderImports - not GWT import - same folder const EventQueue
 import { JFrame } from './JFrame.js';

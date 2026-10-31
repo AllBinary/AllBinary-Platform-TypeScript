@@ -43,23 +43,36 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
 export class ABHashtable extends Hashtable<K, V> {
         
 
-public constructor (initialCapacity: number){
+    public constructor(...args: any[]) {
+        if(args.length === 1) {
+            const initialCapacity = args[0];
             super(initialCapacity);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (){
+            this.constructor$0(initialCapacity);
+            
+        }
+        else if(args.length === 0) {
             super();
-                    
+            this.constructor$1();
+            
+        }
+        
+    }
+    
+    private constructor$0(initialCapacity: number): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
+    }
+    
+    private constructor$1(): void {
+        
 
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
 }
 

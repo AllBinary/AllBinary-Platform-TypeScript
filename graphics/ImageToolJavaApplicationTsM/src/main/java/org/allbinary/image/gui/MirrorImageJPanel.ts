@@ -20,6 +20,8 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { awt } from '../../../../java/awt.js';
@@ -93,8 +95,6 @@ import { JLabel } from './JLabel.js';
 //sameFolderImports - not GWT import - same folder const JLabel
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 import { ActionListener } from './ActionListener.js';
 //sameFolderImports - not GWT import - same folder const ActionListener
 import { ActionEvent } from './ActionEvent.js';

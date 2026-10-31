@@ -79,12 +79,15 @@ export class ContextConfigurationView
     private contextConfigurationInterface: ContextConfigurationInterface;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 1 && args[0] instanceof Node) {
+        super();if(args.length === 1 && args[0] instanceof Node) {
+            
             this.constructor$0(args[0]);
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$1(args[0]);
+            
         }
         
     }

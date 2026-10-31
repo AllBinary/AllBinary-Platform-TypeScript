@@ -87,42 +87,69 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 export class RootStoreThemeCategoryProperties extends RootStoreCategoryProperties {
         
 
-public constructor (transformInfoInterface: TransformInfoInterface){
+    public constructor(...args: any[]) {
+        if(args.length === 1) {
+            const transformInfoInterface = args[0];
             super(transformInfoInterface);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (transformInfoInterface: TransformInfoInterface, abPath: AbPath){
+            this.constructor$0(transformInfoInterface);
+            
+        }
+        else if(args.length === 2 && args[0] instanceof TransformInfoInterface && args[1] instanceof AbPath) {
+            const transformInfoInterface = args[0];
+            const abPath = args[1];
             super(transformInfoInterface, abPath);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
+            this.constructor$1(transformInfoInterface, abPath);
+            
+        }
+        else if(args.length === 2 && args[0] instanceof TransformInfoInterface && args[1] instanceof Node) {
+            const transformInfoInterface = args[0];
+            const node = args[1];
             super(transformInfoInterface, node);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
+            this.constructor$2(transformInfoInterface, node);
+            
+        }
+        else if(args.length === 2) {
+            const transformInfoInterface = args[0];
+            const categoryPropertiesHashMap = args[1];
             super(transformInfoInterface, categoryPropertiesHashMap);
-                    
+            this.constructor$3(transformInfoInterface, categoryPropertiesHashMap);
+            
+        }
+        
+    }
+    
+    private constructor$0(transformInfoInterface: TransformInfoInterface): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
+    }
+    
+    private constructor$1(transformInfoInterface: TransformInfoInterface, abPath: AbPath): void {
+        
 
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
+    private constructor$2(transformInfoInterface: TransformInfoInterface, node: Node): void {
+        
+
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
+    private constructor$3(transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>): void {
+        
+
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
                 //@Throws(Exception.constructor)
             
     public initPath(){

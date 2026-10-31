@@ -120,12 +120,15 @@ export class InitializerDatabase
     private initDb: DynamicInitDb;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 2 && args[0] instanceof AbeClientInformationInterface && args[1] instanceof Map) {
+        super();if(args.length === 2 && args[0] instanceof AbeClientInformationInterface && args[1] instanceof Map) {
+            
             this.constructor$0(args[0], args[1]);
+            
         }
         else if(args.length === 2) {
+            
             this.constructor$1(args[0], args[1]);
+            
         }
         
     }

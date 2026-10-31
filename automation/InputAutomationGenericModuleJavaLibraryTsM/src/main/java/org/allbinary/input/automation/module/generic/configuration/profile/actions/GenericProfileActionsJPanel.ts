@@ -20,6 +20,8 @@
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 import { DefaultListModelHelper } from '../../../../../../../../../org/allbinary/input/automation/module/DefaultListModelHelper.js';
 //not GWT import const DefaultListModelHelper
 
@@ -75,8 +77,6 @@ import { ActionEvent } from './ActionEvent.js';
 //sameFolderImports - not GWT import - same folder const ActionEvent
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 import { ListSelectionListener } from './ListSelectionListener.js';
 //sameFolderImports - not GWT import - same folder const ListSelectionListener
 import { ListSelectionEvent } from './ListSelectionEvent.js';

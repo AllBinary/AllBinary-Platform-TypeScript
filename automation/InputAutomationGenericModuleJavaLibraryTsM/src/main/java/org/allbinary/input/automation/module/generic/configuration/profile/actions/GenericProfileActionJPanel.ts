@@ -18,6 +18,8 @@
         
 
 
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 import { JTreeInterfaceFactory } from '../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
 //not GWT import const JTreeInterfaceFactory
 
@@ -64,8 +66,6 @@ import { GenericProfileAction } from './GenericProfileAction.js';
 //sameFolderImports - not GWT import - same folder const GenericProfileAction
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 import { JScrollPane } from './JScrollPane.js';
 //sameFolderImports - not GWT import - same folder const JScrollPane
 import { JLabel } from './JLabel.js';

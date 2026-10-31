@@ -69,12 +69,15 @@ export class TimeLastModifiedView
     private timeLastModified: TimeLastModified;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 1 && args[0] instanceof TimeLastModified) {
+        super();if(args.length === 1 && args[0] instanceof TimeLastModified) {
+            
             this.constructor$0(args[0]);
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$1(args[0]);
+            
         }
         
     }

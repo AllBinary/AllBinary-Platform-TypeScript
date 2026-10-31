@@ -43,23 +43,37 @@ import { Time } from '../../../../../org/allbinary/business/time/Time.js';
 export class TimeCreated extends Time {
         
 
-public constructor (time: string){
+    public constructor(...args: any[]) {
+        if(args.length === 1 && typeof args[0] === 'string') {
+            const time = args[0];
             super(time);
-                    
+            this.constructor$0(time);
+            
+        }
+        else if(args.length === 1) {
+            const time = args[0];
+            super(time);
+            this.constructor$1(time);
+            
+        }
+        
+    }
+    
+    private constructor$0(time: string): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
-
-public constructor (time: number){
-            super(time);
-                    
+    }
+    
+    private constructor$1(time: number): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
-
+    }
+    
 }
 

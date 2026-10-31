@@ -63,43 +63,69 @@ import { TransformInfoData } from './TransformInfoData.js';
 export class TransformInfoDomNodeView extends TransformInfoDomNode implements DomNodeInterface {
         
 
-public constructor (transformInfoInterface: TransformInfoInterface, mapping: string){
+    public constructor(...args: any[]) {
+        if(args.length === 2 && args[0] instanceof TransformInfoInterface && typeof args[1] === 'string') {
+            const transformInfoInterface = args[0];
+            const mapping = args[1];
             super(transformInfoInterface, mapping);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (transformInfoInterface: TransformInfoInterface){
+            this.constructor$0(transformInfoInterface, mapping);
+            
+        }
+        else if(args.length === 1 && args[0] instanceof TransformInfoInterface) {
+            const transformInfoInterface = args[0];
             super(transformInfoInterface);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (name: string, mappedName: string){
+            this.constructor$1(transformInfoInterface);
+            
+        }
+        else if(args.length === 2) {
+            const name = args[0];
+            const mappedName = args[1];
             super(name, mappedName);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (name: string){
+            this.constructor$2(name, mappedName);
+            
+        }
+        else if(args.length === 1) {
+            const name = args[0];
             super(name, 
                             null);
-                    
+            this.constructor$3(name);
+            
+        }
+        
+    }
+    
+    private constructor$0(transformInfoInterface: TransformInfoInterface, mapping: string): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
+    }
+    
+    private constructor$1(transformInfoInterface: TransformInfoInterface): void {
+        
 
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
+    private constructor$2(name: string, mappedName: string): void {
+        
+
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
+    private constructor$3(name: string): void {
+        
+
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{

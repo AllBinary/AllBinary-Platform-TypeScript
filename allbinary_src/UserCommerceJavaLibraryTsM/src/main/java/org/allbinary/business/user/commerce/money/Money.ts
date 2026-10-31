@@ -72,18 +72,25 @@ export class Money
     private readonly DEFAULT_CURRENCY: string = "USD";
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 1 && args[0] instanceof Money) {
+        super();if(args.length === 1 && args[0] instanceof Money) {
+            
             this.constructor$0(args[0]);
+            
         }
         else if(args.length === 0) {
+            
             this.constructor$1();
+            
         }
         else if(args.length === 1 && typeof args[0] === 'string') {
+            
             this.constructor$2(args[0]);
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$3(args[0]);
+            
         }
         
     }

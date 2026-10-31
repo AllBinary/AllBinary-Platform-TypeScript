@@ -69,12 +69,15 @@ export class TimeCreatedView
     private timeCreated: TimeCreated;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 1 && args[0] instanceof TimeCreated) {
+        super();if(args.length === 1 && args[0] instanceof TimeCreated) {
+            
             this.constructor$0(args[0]);
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$1(args[0]);
+            
         }
         
     }

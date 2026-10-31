@@ -20,6 +20,8 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 //not plain js import { BasicArrayList } 
 const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
@@ -105,8 +107,6 @@ import { ActionEvent } from './ActionEvent.js';
 //sameFolderImports - not GWT import - same folder const ActionEvent
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 import { GridLayout } from './GridLayout.js';
 //sameFolderImports - not GWT import - same folder const GridLayout
 import { ListSelectionListener } from './ListSelectionListener.js';

@@ -26,6 +26,8 @@
         
             import { Float } from '../../../../java/lang/Float.js';
         
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
@@ -98,8 +100,6 @@ import { Dimension } from './Dimension.js';
 //sameFolderImports - not GWT import - same folder const Dimension
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 
 export class ResizeImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         

@@ -173,15 +173,20 @@ export class ThemeValidation
     private fileAbPath: AbPath;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 3) {
+        super();if(args.length === 3) {
+            
             this.constructor$0(args[0], args[1], args[2]);
+            
         }
         else if(args.length === 2 && args[0] instanceof TransformInfoInterface && args[1] instanceof HashMap) {
+            
             this.constructor$1(args[0], args[1]);
+            
         }
         else if(args.length === 2) {
+            
             this.constructor$2(args[0], args[1]);
+            
         }
         
     }

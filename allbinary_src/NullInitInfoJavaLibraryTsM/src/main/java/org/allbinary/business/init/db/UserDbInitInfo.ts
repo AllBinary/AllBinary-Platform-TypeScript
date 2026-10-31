@@ -42,25 +42,38 @@
 export class UserDbInitInfo extends DbInitInfo {
         
 
-public constructor (){
+    public constructor(...args: any[]) {
+        if(args.length === 0) {
             super(
                             null, false);
-                    
+            this.constructor$0();
+            
+        }
+        else if(args.length === 1) {
+            const read = args[0];
+            super(
+                            null, false);
+            this.constructor$1(read);
+            
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
-
-public constructor (read: boolean){
-            super(
-                            null, false);
-                    
+    }
+    
+    private constructor$1(read: boolean): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
-
+    }
+    
 }
 

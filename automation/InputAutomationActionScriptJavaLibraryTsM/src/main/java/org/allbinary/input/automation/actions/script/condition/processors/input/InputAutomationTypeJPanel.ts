@@ -18,6 +18,8 @@
         
 
 
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 
 
 
@@ -46,8 +48,6 @@ import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
 //sameFolderImports - not GWT import - same folder const DefaultComboBoxModel
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 
 export class InputAutomationTypeJPanel extends javax.swing.JPanel {
         

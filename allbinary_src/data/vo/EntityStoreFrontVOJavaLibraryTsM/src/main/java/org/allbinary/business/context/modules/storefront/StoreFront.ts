@@ -247,15 +247,20 @@ export class StoreFront
     private readonly ONE_EMPTY_STRING_ARRAY: string[] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 0) {
+        super();if(args.length === 0) {
+            
             this.constructor$0();
+            
         }
         else if(args.length === 1 && args[0] instanceof HttpServletRequest) {
+            
             this.constructor$1(args[0]);
+            
         }
         else if(args.length === 1) {
+            
             this.constructor$2(args[0]);
+            
         }
         
     }

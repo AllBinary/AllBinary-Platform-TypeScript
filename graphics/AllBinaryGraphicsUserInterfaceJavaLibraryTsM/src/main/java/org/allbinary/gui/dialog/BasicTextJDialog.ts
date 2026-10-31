@@ -18,6 +18,8 @@
         
 
 
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
 //not plain js import { ARunnable } 
 const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 type ARunnable<T = any, U = any> = typeof ARunnable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ARunnable;
@@ -56,8 +58,6 @@ import { ActionEvent } from './ActionEvent.js';
 //sameFolderImports - not GWT import - same folder const ActionEvent
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 import { EventQueue } from './EventQueue.js';
 //sameFolderImports - not GWT import - same folder const EventQueue
 import { JFrame } from './JFrame.js';
@@ -83,9 +83,26 @@ new BasicTextJDialog(new javax.swing.JFrame(), true, "Test").setVisible(true);
 
     private closeListenerInterface: CloseJDialogListenerInterface;
 
-public constructor (parent: java.awt.Frame, modal: boolean, text: string){
+    public constructor(...args: any[]) {
+        if(args.length === 3) {
+            const parent = args[0];
+            const modal = args[1];
+            const text = args[2];
             super(parent, modal);
-                    
+            this.constructor$0(parent, modal, text);
+            
+        }
+        else if(args.length === 1) {
+            const text = args[0];
+            super();
+            this.constructor$1(text);
+            
+        }
+        
+    }
+    
+    private constructor$0(parent: java.awt.Frame, modal: boolean, text: string): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -93,9 +110,9 @@ this.initComponents();
     
 this.setText(text);
     
-}
 
-
+    }
+    
     public setText(text: string){
 this.textJLabel!.setText(text);
     
@@ -108,16 +125,14 @@ this.closeListenerInterface= closeListenerInterface;
 }
 
 
-public constructor (text: string){
-
-            super();
+    private constructor$1(text: string): void {
         this.initComponents();
     
 this.textJLabel!.setText(text);
     
-}
 
-
+    }
+    
     initComponents(){
 this.jButton1= new javax.swing.JButton();
     

@@ -51,24 +51,37 @@ import { WeblisketSessionInterface } from '../../../../../../../../org/allbinary
 export class CustomerStoreAdminUser extends User {
         
 
-public constructor (){
+    public constructor(...args: any[]) {
+        if(args.length === 0) {
             super();
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (userHashMap: HashMap<any, any>){
+            this.constructor$0();
+            
+        }
+        else if(args.length === 1) {
+            const userHashMap = args[0];
             super(userHashMap);
-                    
+            this.constructor$1(userHashMap);
+            
+        }
+        
+    }
+    
+    private constructor$0(): void {
+        
 
                             //For kotlin this is before the body of the constructor.
                     
-}
 
+    }
+    
+    private constructor$1(userHashMap: HashMap<any, any>): void {
+        
 
+                            //For kotlin this is before the body of the constructor.
+                    
+
+    }
+    
     public validateSession(weblisketSession: WeblisketSessionInterface){
 super.validateSession(weblisketSession);
     

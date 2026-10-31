@@ -145,12 +145,15 @@ export class Email
     private isDebug: boolean;
 
     public constructor(...args: any[]) {
-        super();
-        if(args.length === 7) {
+        super();if(args.length === 7) {
+            
             this.constructor$0(args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
+            
         }
         else if(args.length === 8) {
+            
             this.constructor$1(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7]);
+            
         }
         
     }

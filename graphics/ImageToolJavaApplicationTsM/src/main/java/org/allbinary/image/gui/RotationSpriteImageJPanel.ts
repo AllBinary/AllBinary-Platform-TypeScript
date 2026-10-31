@@ -22,6 +22,8 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
+            const Short = (globalThis.java?.lang?.Short ?? class {}) as typeof globalThis.java.lang.Short;
+        
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { awt } from '../../../../java/awt.js';
@@ -103,8 +105,6 @@ import { JCheckBox } from './JCheckBox.js';
 //sameFolderImports - not GWT import - same folder const JCheckBox
 import { GroupLayout } from './GroupLayout.js';
 //sameFolderImports - not GWT import - same folder const GroupLayout
-import { Short } from './Short.js';
-//sameFolderImports - not GWT import - same folder const Short
 import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
 //sameFolderImports - not GWT import - same folder const DefaultComboBoxModel
 import { ActionListener } from './ActionListener.js';
