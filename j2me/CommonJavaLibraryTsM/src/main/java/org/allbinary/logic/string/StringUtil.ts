@@ -71,6 +71,9 @@ export class StringUtil
                                                             this.EMPTY_STRING
                                                         ];
 
+    public ONE_EMPTY_STRING_ARRAY_OF_ARRAYS: string[][] = new Array(0).fill(null).map(() => new Array(0).fill(null))
+                                                            ;
+
     private readonly stringArray: string[] = [];
 
 private constructor (){

@@ -132,8 +132,7 @@ UpdateMyFontProperties = (() => { const outer$InputMappingHelpPaintable = this; 
 
     inputDeltaXArray: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
 
-    sepArray: string[][] = new Array(0).fill(null).map(() => new Array(0).fill(null))
-                                                            ;
+    sepArray: string[][] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY_OF_ARRAYS;
 
     sepWidthArray: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
 
