@@ -87,7 +87,7 @@ this.geographicMapCellTypeFactory= this.raceTrackGeographicMap!.getGeographicMap
     let size2: number = mapArray[0]!.length
                 ;;
     
-this.customMapArray= new Array(mapArray!.length).fill(null).map(() => new Array(size2).fill(null));
+this.customMapArray= new Array(mapArray!.length).fill(null).map(() => new Array(size2).fill(0));
     
 
                         if(mapArray!.length != this.customMapArray!.length || mapArray[0]!.length != this.customMapArray[0]!.length)

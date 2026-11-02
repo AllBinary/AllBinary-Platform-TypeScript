@@ -698,10 +698,10 @@ image= this.openGLUtil!.addImage(image);
     let halfHeightDelta: number = (newHeight -originalImage!.getHeight()) /2;;
     
 
-    let originalPixelArray: number[] = new Array(originalImage!.getWidth() *originalImage!.getHeight());;
+    let originalPixelArray: number[] = new Array(originalImage!.getWidth() *originalImage!.getHeight()).fill(0);;
     
 
-    let newPixelArray: number[] = new Array(image.getWidth() *image.getHeight());;
+    let newPixelArray: number[] = new Array(image.getWidth() *image.getHeight()).fill(0);;
     
 
     let width: number = originalImage!.getWidth()!;;
@@ -767,10 +767,10 @@ getImage.
     let halfHeightDelta: number = (newHeight -originalImage!.getHeight()) /2;;
     
 
-    let originalPixelArray: number[] = new Array(originalImage!.getWidth() *originalImage!.getHeight());;
+    let originalPixelArray: number[] = new Array(originalImage!.getWidth() *originalImage!.getHeight()).fill(0);;
     
 
-    let newPixelArray: number[] = new Array(image.getWidth() *image.getHeight());;
+    let newPixelArray: number[] = new Array(image.getWidth() *image.getHeight()).fill(0);;
     
 
     let width: number = originalImage!.getWidth()!;;

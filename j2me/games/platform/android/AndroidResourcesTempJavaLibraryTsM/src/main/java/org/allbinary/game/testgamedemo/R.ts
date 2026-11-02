@@ -38,7 +38,7 @@ export class R
         
 
 //inner= member=true isStatic=static
-static attr = class
+static attr = class attr
             extends Object
          {
         
@@ -47,7 +47,7 @@ static attr = class
 
 }
 //inner= member=true isStatic=static
-static drawable = class
+static drawable = class drawable
             extends Object
          {
         
@@ -56,7 +56,7 @@ static drawable = class
 
 }
 //inner= member=true isStatic=static
-static id = class
+static id = class id
             extends Object
          {
         
@@ -75,7 +75,7 @@ static id = class
 
 }
 //inner= member=true isStatic=static
-static layout = class
+static layout = class layout
             extends Object
          {
         
@@ -86,7 +86,7 @@ static layout = class
 
 }
 //inner= member=true isStatic=static
-static raw = class
+static raw = class raw
             extends Object
          {
         
@@ -159,7 +159,7 @@ static raw = class
 
 }
 //inner= member=true isStatic=static
-static string = class
+static string = class string
             extends Object
          {
         

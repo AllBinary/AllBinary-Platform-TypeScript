@@ -80,7 +80,7 @@ this.lifeInterface= lifeInterface;
 
     let size: number = globalThis.Math.trunc(this.getLifeInterface()!.getMaxlives());;
     
-this.xArray= new Array(size);
+this.xArray= new Array(size).fill(0);
     
 this.animationInterface= animationInterface;
     

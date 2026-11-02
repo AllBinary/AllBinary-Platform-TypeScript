@@ -104,12 +104,12 @@ scaledImages[index]= this.scale(images[index]!, width, height);
     let sourceHeight: number = image.getHeight()!;;
     
 
-    let originalData: number[] = new Array(image.getWidth() *image.getHeight());;
+    let originalData: number[] = new Array(image.getWidth() *image.getHeight()).fill(0);;
     
 image.getRGB(originalData, 0, image.getWidth(), 0, 0, image.getWidth(), image.getHeight());
     
 
-    let scaledData: number[] = new Array(width *height);;
+    let scaledData: number[] = new Array(width *height).fill(0);;
     
 
     let heightRatioFactor: number = globalThis.Math.trunc((8 *sourceHeight) /height);;

@@ -420,9 +420,8 @@ list.clear();
 
     let layerManager: FakeLayerManager = new FakeLayerManager(GameInfo.NONE);;
     
-layerManager!.setGeographicMapInterface(
-                                                [
-                                                    baseRaceTrackGeographicMap
+layerManager!.setGeographicMapInterface([
+baseRaceTrackGeographicMap
                                                 ]);
     
 hashtable.put(AllBinaryGameLayerManager.ID, layerManager);

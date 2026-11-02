@@ -82,7 +82,7 @@ public constructor (fileName: string){
             super();
         
  try { 
-    let bytes: number[] = new Array(100000);;
+    let bytes: number[] = new Array(100000).fill(0);;
     
 this.fileName= fileName;
     

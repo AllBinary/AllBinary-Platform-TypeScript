@@ -125,7 +125,7 @@ graphics.setColor(this.RED);
 
 
                         for (
-    let index: number = size;index >= 0; )
+    let index: number = size;index >= 0; index -= 2)
         {
 charArray= this.baseRefreshHelperCharArray[index]!;
     

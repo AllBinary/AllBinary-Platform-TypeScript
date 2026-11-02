@@ -87,7 +87,7 @@ export class ChangedPixelsUtil
 
     private static readonly SCAN_SIZE: number = 0;
 
-    private static readonly CLEAR_INT_ARRAY: number[] = new Array(1800 *1600);
+    private static readonly CLEAR_INT_ARRAY: number[] = new Array(1800 *1600).fill(0);
 
                 //@Throws(Exception.constructor)
             

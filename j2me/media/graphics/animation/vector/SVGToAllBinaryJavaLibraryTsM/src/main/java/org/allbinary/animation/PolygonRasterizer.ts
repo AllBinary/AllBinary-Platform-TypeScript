@@ -85,10 +85,10 @@ PolygonRasterizer.getInstance()!.fillPolygon(pathX, pathY, pointCount, pixelBuff
     let fixedPoint: FixedPoint = FixedPoint.getInstance()!;;
     
 
-    let x: number[] = new Array(numPoints);;
+    let x: number[] = new Array(numPoints).fill(0);;
     
 
-    let y: number[] = new Array(numPoints);;
+    let y: number[] = new Array(numPoints).fill(0);;
     
 
     let minY: number = height;let maxY: number = 0;;
@@ -119,7 +119,7 @@ y[i]= fixedPoint!.toInt(polyY[i]!);
                         if(maxY >= height)
                         maxY= height -1
 
-    let scanlineX: number[] = new Array(numPoints);;
+    let scanlineX: number[] = new Array(numPoints).fill(0);;
     
 
 
@@ -205,7 +205,7 @@ scanlineX[j]= temp;
 
 
                         for (
-    let i: number = 0;i < intersectCount; )
+    let i: number = 0;i < intersectCount; i += 2)
         {
 
                         if(i +1 >= intersectCount)
@@ -258,13 +258,13 @@ buffer[rowOffset +pixelX]= colorRGB;
     let height: number = 100;;
     
 
-    let pathX: number[] = new Array(200);;
+    let pathX: number[] = new Array(200).fill(0);;
     
 
-    let pathY: number[] = new Array(200);;
+    let pathY: number[] = new Array(200).fill(0);;
     
 
-    let pixelBuffer: number[] = new Array(width *height);;
+    let pixelBuffer: number[] = new Array(width *height).fill(0);;
     
 
     let svgPath: string = "M 32.139812,81.554575 14.450128,74.294372 V 50.000034 25.705697 l 17.73231,-7.268329 C 41.935209,14.439788 49.953112,11.168898 50,11.168723 c 0.04689,-1.74e-4 8.064791,3.270238 17.817562,7.267583 l 17.73231,7.267899 V 50 74.295795 l -17.73231,7.2679 c -9.752771,3.997344 -17.789855,7.264116 -17.860188,7.259492 -0.07033,-0.0046 -8.088235,-3.275499 -17.817562,-7.268612 z";;

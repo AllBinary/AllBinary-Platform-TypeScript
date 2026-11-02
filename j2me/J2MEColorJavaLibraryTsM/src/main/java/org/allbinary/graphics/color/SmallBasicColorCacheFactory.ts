@@ -66,7 +66,7 @@ export class SmallBasicColorCacheFactory
 
     private readonly SIZE: number = 255;
 
-    private readonly INDEX_TO_COLOR: number[] = new Array(this.SIZE);
+    private readonly INDEX_TO_COLOR: number[] = new Array(this.SIZE).fill(0);
 
     private readonly BASIC_COLOR_ARRAY: BasicColor[] = new Array(this.SIZE);
 

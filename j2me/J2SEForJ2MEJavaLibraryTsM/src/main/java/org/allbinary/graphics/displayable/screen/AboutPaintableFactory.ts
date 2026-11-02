@@ -89,9 +89,8 @@ this.paintableArray= AboutPaintable.getInstance(INFO, DEVELOPERS)!.getPaintableA
 }
 
 
-    public paintableArray: Paintable[] = 
-                                                [
-                                                    NullPaintable.getInstance()
+    public paintableArray: Paintable[] = [
+NullPaintable.getInstance()
                                                 ];
 
 }

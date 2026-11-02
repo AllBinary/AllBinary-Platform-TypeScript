@@ -107,11 +107,11 @@ private constructor (info: string[], developers: string[]){
             super();
         this.info= info;
     
-this.infoBeginWidth= new Array(this.info.length);
+this.infoBeginWidth= new Array(this.info.length).fill(0);
     
 this.developers= developers;
     
-this.developersBeginWidth= new Array(this.developers.length);
+this.developersBeginWidth= new Array(this.developers.length).fill(0);
     
 }
 

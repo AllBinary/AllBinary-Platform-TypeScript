@@ -94,7 +94,7 @@ export class ImageModifierUtil
 }
 
 
-    private readonly colorArray: number[] = new Array(1);
+    private readonly colorArray: number[] = new Array(1).fill(0);
 
     public setColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
 

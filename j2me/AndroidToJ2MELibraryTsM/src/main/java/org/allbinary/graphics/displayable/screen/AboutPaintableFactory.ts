@@ -62,9 +62,8 @@ export class AboutPaintableFactory
 }
 
 
-    public paintableArray: Paintable[] = 
-                                                [
-                                                    NullPaintable.getInstance()
+    public paintableArray: Paintable[] = [
+NullPaintable.getInstance()
                                                 ];
 
 }

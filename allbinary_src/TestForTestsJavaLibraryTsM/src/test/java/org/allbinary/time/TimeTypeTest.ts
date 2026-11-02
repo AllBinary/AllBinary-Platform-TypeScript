@@ -47,7 +47,7 @@ export class TimeTypeTest
         
 
 //inner= member=true isStatic=static
-static TestableTimeTypeUtil = class extends TimeTypeUtil {
+static TestableTimeTypeUtil = class TestableTimeTypeUtil extends TimeTypeUtil {
         
 /*Static stuff is not allowed for TypeScript inner classes*//**/
 

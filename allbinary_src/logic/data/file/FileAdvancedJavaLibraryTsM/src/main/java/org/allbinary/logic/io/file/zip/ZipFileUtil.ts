@@ -134,7 +134,7 @@ zipFile!.createNewFile();
     let stringBuffer: StringMaker = new StringMaker();;
     
 
-    let byteArray: number[] = new Array(16384);;
+    let byteArray: number[] = new Array(16384).fill(0);;
     
 
     let fileInputStream: AbFileInputStream;;
@@ -225,7 +225,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
             
     public unzip(path: string, zipFile: AbFile, fileName: string){
 
-    let buffer: number[] = new Array(16384);;
+    let buffer: number[] = new Array(16384).fill(0);;
     
 
     let inputStream: ZipInputStream = 

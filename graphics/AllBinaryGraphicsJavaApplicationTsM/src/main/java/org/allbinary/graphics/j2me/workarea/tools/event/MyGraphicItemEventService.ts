@@ -96,7 +96,7 @@ MyGraphicItemEventService.listenerList!.remove(listener.constructor as Class<any
 
 
                         for (
-    let i: number = 0;i < listeners.length; )
+    let i: number = 0;i < listeners.length; i += 2)
         {
 
                         if(listeners[i] == listeners[i +1]!.constructor)

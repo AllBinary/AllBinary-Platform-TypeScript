@@ -115,7 +115,7 @@ private constructor (){
     let size: number = list.size()!;;
     
 
-    let points: number[][] = new Array(size).fill(null).map(() => new Array(2).fill(null));;
+    let points: number[][] = new Array(size).fill(null).map(() => new Array(2).fill(0));;
     
 
 

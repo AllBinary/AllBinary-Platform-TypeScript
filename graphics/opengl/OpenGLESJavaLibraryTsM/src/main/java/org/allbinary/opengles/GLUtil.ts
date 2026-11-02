@@ -190,7 +190,7 @@ this.position(buffer, 0);
 
 
                         for (
-    let i: number = 0;i < uvs.length; )
+    let i: number = 0;i < uvs.length; i += 2)
         {
 
     let u: number = uvs[i]!;;

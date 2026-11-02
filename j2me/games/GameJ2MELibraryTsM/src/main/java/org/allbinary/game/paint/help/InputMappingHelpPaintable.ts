@@ -215,16 +215,16 @@ updateMyFontProperties!.charHeight= font.getHeight();
     
 updateMyFontProperties!.actionStringArray= new Array(size);
     
-updateMyFontProperties!.keymappingBeginWidthArray= new Array(size);
+updateMyFontProperties!.keymappingBeginWidthArray= new Array(size).fill(0);
     
-updateMyFontProperties!.actionStringDeltaXArray= new Array(size);
+updateMyFontProperties!.actionStringDeltaXArray= new Array(size).fill(0);
     
-updateMyFontProperties!.inputDeltaXArray= new Array(size).fill(null).map(() => new Array(0).fill(null));
+updateMyFontProperties!.inputDeltaXArray= new Array(size).fill(null).map(() => new Array(0).fill(0));
     
 updateMyFontProperties!.sepArray= new Array(size).fill(null).map(() => new Array(0).fill(null))
                                                             ;
     
-updateMyFontProperties!.sepWidthArray= new Array(size).fill(null).map(() => new Array(0).fill(null));
+updateMyFontProperties!.sepWidthArray= new Array(size).fill(null).map(() => new Array(0).fill(0));
     
 
     let list: BasicArrayList;;
@@ -266,11 +266,11 @@ updateMyFontProperties!.actionStringDeltaXArray[index]= font.stringWidth(actionS
     
 size2= list.size();
     
-updateMyFontProperties!.inputDeltaXArray[index]= new Array(size2);
+updateMyFontProperties!.inputDeltaXArray[index]= new Array(size2).fill(0);
     
 updateMyFontProperties!.sepArray[index]= new Array(size2);
     
-updateMyFontProperties!.sepWidthArray[index]= new Array(size2);
+updateMyFontProperties!.sepWidthArray[index]= new Array(size2).fill(0);
     
 
 

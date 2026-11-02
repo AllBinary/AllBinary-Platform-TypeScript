@@ -158,12 +158,10 @@ console.log("New String: " +testString);
     private constructor$0(key: string, value: string): void {
         this.hashMap= StdUtil.getInstance()!.createHashMap();
     
-this.hashMap!.put(
-                                                [
-                                                    key
-                                                ], 
-                                                [
-                                                    value
+this.hashMap!.put([
+key
+                                                ], [
+value
                                                 ]);
     
 

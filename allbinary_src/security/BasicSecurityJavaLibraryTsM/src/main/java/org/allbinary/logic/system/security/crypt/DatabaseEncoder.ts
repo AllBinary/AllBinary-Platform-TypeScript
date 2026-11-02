@@ -171,7 +171,7 @@ byteVector!.add(Number(byteOfData));
 }
 
 
-    let decode: number[] = new Array(byteVector!.size());;
+    let decode: number[] = new Array(byteVector!.size()).fill(0);;
     
 
     let decodeIndex: number = 0;;

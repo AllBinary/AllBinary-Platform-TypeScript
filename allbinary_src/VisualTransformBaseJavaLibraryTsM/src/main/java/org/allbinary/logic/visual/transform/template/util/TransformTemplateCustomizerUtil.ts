@@ -150,54 +150,44 @@ this.GLOBALS_UPDATE= commonStrings!.UPDATE +SPACE;
 
     let hashMap: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-hashMap!.put(
-                                                [
-                                                    viewName +SPACE
+hashMap!.put([
+viewName +SPACE
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
-hashMap!.put(
-                                                [
-                                                    storeName +SPACE
+hashMap!.put([
+storeName +SPACE
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
-hashMap!.put(
-                                                [
-                                                    this.CUSTOMIZER_NAME
+hashMap!.put([
+this.CUSTOMIZER_NAME
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
-hashMap!.put(
-                                                [
-                                                    this.BODY_VIEWNAMEKEY
+hashMap!.put([
+this.BODY_VIEWNAMEKEY
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
-hashMap!.put(
-                                                [
-                                                    this.TITLE_VIEWNAMEKEY
+hashMap!.put([
+this.TITLE_VIEWNAMEKEY
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
-hashMap!.put(
-                                                [
-                                                    this.GLOBALS_NEW
+hashMap!.put([
+this.GLOBALS_NEW
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
-hashMap!.put(
-                                                [
-                                                    this.GLOBALS_INSERT
+hashMap!.put([
+this.GLOBALS_INSERT
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
-hashMap!.put(
-                                                [
-                                                    this.GLOBALS_DELETE
+hashMap!.put([
+this.GLOBALS_DELETE
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
-hashMap!.put(
-                                                [
-                                                    this.GLOBALS_EDIT
+hashMap!.put([
+this.GLOBALS_EDIT
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
-hashMap!.put(
-                                                [
-                                                    this.GLOBALS_UPDATE
+hashMap!.put([
+this.GLOBALS_UPDATE
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 

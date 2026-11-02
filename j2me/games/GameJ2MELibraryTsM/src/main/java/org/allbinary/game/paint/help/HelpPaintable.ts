@@ -136,7 +136,7 @@ this.myFontProcessor= MyFontProcessor.getInstance();
     public setInputInfoP(inputInfo: string[]){
 this.inputInfo= inputInfo;
     
-this.beginWidthArray= new Array(this.inputInfo!.length);
+this.beginWidthArray= new Array(this.inputInfo!.length).fill(0);
     
 this.myFontProcessor= this.updateMyFontProcessor;
     

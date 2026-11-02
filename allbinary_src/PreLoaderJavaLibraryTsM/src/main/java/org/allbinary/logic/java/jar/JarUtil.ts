@@ -84,7 +84,7 @@ public constructor (jarURL: URL){
 
     public show(){
 
-    let cache: number[] = new Array(1024);;
+    let cache: number[] = new Array(1024).fill(0);;
     
 
  try { 
@@ -125,7 +125,7 @@ offset += i;
                         
                                     {
                                     
-    let newcache: number[] = new Array(cache.length +1024);;
+    let newcache: number[] = new Array(cache.length +1024).fill(0);;
     
 System.arraycopy(cache, 0, newcache, 0, cache.length);
     
@@ -137,7 +137,7 @@ cache= newcache;
 }
 
 
-    let tmp: number[] = new Array(offset);;
+    let tmp: number[] = new Array(offset).fill(0);;
     
 System.arraycopy(cache, 0, tmp, 0, offset);
     

@@ -246,7 +246,7 @@ this.fileInit(idFile);
             
     fileInit(fileInputStream: FileInputStream){
 
-    let bytes: number[] = new Array(100000);;
+    let bytes: number[] = new Array(100000).fill(0);;
     
 
     let length: number = fileInputStream!.read(bytes)!;;

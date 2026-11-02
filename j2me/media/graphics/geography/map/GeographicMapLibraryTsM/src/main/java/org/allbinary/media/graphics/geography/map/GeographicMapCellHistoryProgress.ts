@@ -63,7 +63,7 @@ this.init();
 
 
     public init(){
-this.totalVisitedArray= new Array(this.geographicMapCellHistoryArray!.length);
+this.totalVisitedArray= new Array(this.geographicMapCellHistoryArray!.length).fill(0);
     
 }
 

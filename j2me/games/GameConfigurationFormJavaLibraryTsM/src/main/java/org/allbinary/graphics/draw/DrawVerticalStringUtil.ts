@@ -151,7 +151,7 @@ this.offsetY= 0;
     let aChar: string;;
     
 
-    let offsetXArray: number[] = new Array(size);;
+    let offsetXArray: number[] = new Array(size).fill(0);;
     
 
 

@@ -75,7 +75,7 @@ export class GraphicsAnalysisUtil
 
 
                         for (
-    let index: number = max_x.intValue()!;index > min_x.intValue(); )
+    let index: number = max_x.intValue()!;index > min_x.intValue(); index -= 1)
         {
 
     let colorInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(index, y.intValue()))!;;

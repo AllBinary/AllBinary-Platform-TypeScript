@@ -230,9 +230,8 @@ generateJButtonActionPerformed(evt);
                                 }
                             );
     
-this.totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
-                                                [
-                                                    this.commonStrings!.UP,this.commonStrings!.DOWN,"-90","90"
+this.totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel([
+this.commonStrings!.UP,this.commonStrings!.DOWN,"-90","90"
                                                 ]));
     
 this.totalAngleJComboBox!.addActionListener(new class extends java.awt.event.ActionListener

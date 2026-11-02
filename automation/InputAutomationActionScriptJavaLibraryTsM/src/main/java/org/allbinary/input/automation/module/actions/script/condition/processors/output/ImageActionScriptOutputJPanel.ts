@@ -128,7 +128,7 @@ this.setImageTypeJlistModel();
     let vector: BasicArrayList = imageTypes!.getVector()!;;
     
 
-    let selectedArray: number[] = new Array(vector.size());;
+    let selectedArray: number[] = new Array(vector.size()).fill(0);;
     
 
     let size: number = vector.size()!;;

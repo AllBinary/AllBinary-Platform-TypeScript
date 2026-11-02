@@ -109,10 +109,10 @@ console.log(stringBuilder!.toString());
 stringBuilder!.delete(0, stringBuilder!.length());
     
 
-    let intArray: number[] = new Array(52);;
+    let intArray: number[] = new Array(52).fill(0);;
     
 
-    let intArray2: number[] = new Array(52);;
+    let intArray2: number[] = new Array(52).fill(0);;
     
 
     let size: number = intArray!.length

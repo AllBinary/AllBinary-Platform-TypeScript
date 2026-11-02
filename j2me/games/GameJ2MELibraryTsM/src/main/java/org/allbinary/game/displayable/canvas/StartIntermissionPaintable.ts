@@ -127,7 +127,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], basi
     
 this.stringArray= stringArray;
     
-this.lastWidth= new Array(this.stringArray!.length);
+this.lastWidth= new Array(this.stringArray!.length).fill(0);
     
 this.setBasicColorP(basicColor);
     

@@ -149,9 +149,8 @@ this.totalPixelsJTextField!.setEditable(false);
     
 this.matchingPixelsJTextField!.setEditable(false);
     
-this.jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel(
-                                                [
-                                                    CommonPhoneStrings.getInstance()!.ONE
+this.jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel([
+CommonPhoneStrings.getInstance()!.ONE
                                                 ]));
     
 this.jComboBox1!.setEnabled(false);

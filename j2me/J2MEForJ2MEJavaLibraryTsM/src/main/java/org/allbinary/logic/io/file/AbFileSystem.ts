@@ -120,7 +120,7 @@ readAsString(...args: any[]): any {
   
     public readAsString$overload1(fileName: string): string{
 
-    let bytes: number[] = new Array(1000000);;
+    let bytes: number[] = new Array(1000000).fill(0);;
     
 
 

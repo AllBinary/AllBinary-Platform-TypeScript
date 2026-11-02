@@ -112,7 +112,7 @@ inputStream= CloudStreamUtil.getInstance()!.getFile(file);
     let outputStream: ByteArrayOutputStream = new ByteArrayOutputStream(8000);;
     
 
-    let byteArray: number[] = StreamUtil.getInstance()!.getByteArray(inputStream, outputStream, new Array(16384))!;;
+    let byteArray: number[] = StreamUtil.getInstance()!.getByteArray(inputStream, outputStream, new Array(16384).fill(0))!;;
     
 response.setContentType("image/jpeg;charset=utf-8");
     

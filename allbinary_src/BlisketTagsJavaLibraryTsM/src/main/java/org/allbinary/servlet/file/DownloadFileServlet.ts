@@ -238,7 +238,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.QUOTE);
     
 response.setHeader("Content-Disposition", stringBuffer!.toString());
     
-StreamUtil.getInstance()!.get(inputStream, response.getOutputStream(), new Array(16348));
+StreamUtil.getInstance()!.get(inputStream, response.getOutputStream(), new Array(16348).fill(0));
     
 
                                     }

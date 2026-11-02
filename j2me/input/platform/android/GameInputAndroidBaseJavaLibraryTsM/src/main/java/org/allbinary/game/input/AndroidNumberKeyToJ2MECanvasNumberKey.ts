@@ -36,7 +36,7 @@ export class AndroidNumberKeyToJ2MECanvasNumberKey
          {
         
 
-    private static readonly androidtoJavaMicroEditionKeyMap: number[] = new Array(17);
+    private static readonly androidtoJavaMicroEditionKeyMap: number[] = new Array(17).fill(0);
 
     public static init(){
 AndroidNumberKeyToJ2MECanvasNumberKey.androidtoJavaMicroEditionKeyMap[KeyEvent.KEYCODE_0]= Canvas.KEY_NUM0;

@@ -218,7 +218,7 @@ this.write(inputStream, dataOutputStream);
             
     public write$overload2(inputStream: InputStream, dataOutputStream: AbDataOutputStream){
 
- try { dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, new Array(16384)) as AbDataOutputStream;
+ try { dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, new Array(16384).fill(0)) as AbDataOutputStream;
     
 dataOutputStream!.flush();
     
@@ -255,7 +255,7 @@ copy(...args: any[]): any {
             
     copy$overload1(dataInputStream: AbFileInputStream, dataOutputStream: AbDataOutputStream){
 
- try { dataOutputStream= StreamUtil.getInstance()!.get(dataInputStream, dataOutputStream, new Array(16384)) as AbDataOutputStream;
+ try { dataOutputStream= StreamUtil.getInstance()!.get(dataInputStream, dataOutputStream, new Array(16384).fill(0)) as AbDataOutputStream;
     
 dataOutputStream!.flush();
     

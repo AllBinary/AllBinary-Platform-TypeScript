@@ -164,7 +164,7 @@ OpenGLLogUtil.getInstance()!.logError(gl10, this);
 
     regionRectangleVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *3)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
 
-    private readonly regionTextureRectangleFloatArray: number[] = new Array(8);
+    private readonly regionTextureRectangleFloatArray: number[] = new Array(8).fill(0);
 
     private regionTextureVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *2)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
 

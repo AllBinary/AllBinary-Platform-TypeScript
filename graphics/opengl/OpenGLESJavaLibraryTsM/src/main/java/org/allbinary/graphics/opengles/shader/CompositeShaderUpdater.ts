@@ -95,11 +95,11 @@ public constructor (uniformBlockArray: string[], uniformArray: string[], attribu
             super();
         this.uniformBlockArray= uniformBlockArray;
     
-this.uniformBlockHandleArray= new Array(this.uniformBlockArray!.length);
+this.uniformBlockHandleArray= new Array(this.uniformBlockArray!.length).fill(0);
     
 this.uniformArray= uniformArray;
     
-this.uniformHandleArray= new Array(this.uniformArray!.length);
+this.uniformHandleArray= new Array(this.uniformArray!.length).fill(0);
     
 this.attributeArray= attributeArray;
     

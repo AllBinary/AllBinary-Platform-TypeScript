@@ -95,7 +95,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOfbyte(original: number[], newLength: number): number[]{
 
-    let copy: number[] = new Array(newLength);;
+    let copy: number[] = new Array(newLength).fill(0);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -110,7 +110,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOfshort(original: number[], newLength: number): number[]{
 
-    let copy: number[] = new Array(newLength);;
+    let copy: number[] = new Array(newLength).fill(0);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -125,7 +125,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOfint(original: number[], newLength: number): number[]{
 
-    let copy: number[] = new Array(newLength);;
+    let copy: number[] = new Array(newLength).fill(0);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -140,7 +140,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOflong(original: number[], newLength: number): number[]{
 
-    let copy: number[] = new Array(newLength);;
+    let copy: number[] = new Array(newLength).fill(0);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -173,7 +173,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOffloat(original: number[], newLength: number): number[]{
 
-    let copy: number[] = new Array(newLength);;
+    let copy: number[] = new Array(newLength).fill(0);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -188,7 +188,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOfdouble(original: number[], newLength: number): number[]{
 
-    let copy: number[] = new Array(newLength);;
+    let copy: number[] = new Array(newLength).fill(0);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
@@ -203,7 +203,7 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
     public copyOfboolean(original: boolean[], newLength: number): boolean[]{
 
-    let copy: boolean[] = new Array(newLength);;
+    let copy: boolean[] = new Array(newLength).fill(false);;
     
 System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     

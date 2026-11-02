@@ -138,7 +138,7 @@ this.setTemplateAsInputStream();
     
 inputStream= new AbFileInputStream(file);
     
-outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384)) as ByteArrayOutputStream;
+outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384).fill(0)) as ByteArrayOutputStream;
     
 
     let abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.DESEDE, AbKeys.getInstance()!.getKey(this.abeClientInformation, file.getAbsolutePath()));;
@@ -218,7 +218,7 @@ this.streamUtil!.close(inputStream);
     
 inputStream= new ByteArrayInputStream(Array.from(new TextEncoder().encode(this.getTransformInfoInterface()!.getTemplate()!), byte => (byte << 24) >> 24));
     
-outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384)) as ByteArrayOutputStream;
+outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384).fill(0)) as ByteArrayOutputStream;
     
 
     let abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.DESEDE, AbKeys.getInstance()!.getKey(this.abeClientInformation, this.getTransformInfoInterface()!.getName()));;
@@ -408,7 +408,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "setTemplateAsInputStream()")
     
 outputStream= new ByteArrayOutputStream();
     
-outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384)) as ByteArrayOutputStream;
+outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384).fill(0)) as ByteArrayOutputStream;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))

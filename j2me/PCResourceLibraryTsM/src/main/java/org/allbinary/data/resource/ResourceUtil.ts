@@ -166,7 +166,7 @@ this.ext= ext;
                         
                                     {
                                     
-    let byteArray: number[] = new Array(inputStream!.available());;
+    let byteArray: number[] = new Array(inputStream!.available()).fill(0);;
     
 StreamUtil.getInstance()!.getByteArray(inputStream, new ByteArrayOutputStream(), byteArray);
     

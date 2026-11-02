@@ -137,7 +137,7 @@ this.hashMap= StdUtil.getInstance()!.createHashMap();
                         
                                     {
                                     
-    let bytes: number[] = new Array(100000);;
+    let bytes: number[] = new Array(100000).fill(0);;
     
 
     let idFile: FileInputStream = new FileInputStream(fileName);;

@@ -64,7 +64,7 @@ private constructor (){
 
     public xor(array: number[], mask: number): number[]{
 
-    let bytes: number[] = new Array(array.length);;
+    let bytes: number[] = new Array(array.length).fill(0);;
     
 
     let size: number = array.length
@@ -98,7 +98,7 @@ index++;
 
     public not(array: number[]): number[]{
 
-    let bytes: number[] = new Array(array.length);;
+    let bytes: number[] = new Array(array.length).fill(0);;
     
 
     let size: number = array.length

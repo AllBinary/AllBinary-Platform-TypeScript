@@ -159,7 +159,7 @@ PreLogUtil.putOE("init Failed", this, commonStrings!.INIT, e);
     let encrypted: number[] = this.cipher.doFinal(array)!;;
     
 
-    let result: number[] = new Array(ivArray!.length +encrypted.length);;
+    let result: number[] = new Array(ivArray!.length +encrypted.length).fill(0);;
     
 PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt");
     
@@ -216,7 +216,7 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
  try { this.cipher.init(Cipher.DECRYPT_MODE, secretKey);
     
 
-    let ivArray: number[] = new Array(8);;
+    let ivArray: number[] = new Array(8).fill(0);;
     
 
 
@@ -232,7 +232,7 @@ ivArray[index]= array[index]!;
 PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt");
     
 
-    let result: number[] = new Array(array.length -ivArray!.length);;
+    let result: number[] = new Array(array.length -ivArray!.length).fill(0);;
     
 
 

@@ -117,7 +117,7 @@ export class InputAutomationModuleConfigurations
         this.setHashMap(new HashMap<any, any>());
     
 
-    let bytes: number[] = new Array(100000);;
+    let bytes: number[] = new Array(100000).fill(0);;
     
 
     let idFile: FileInputStream = new FileInputStream(file);;

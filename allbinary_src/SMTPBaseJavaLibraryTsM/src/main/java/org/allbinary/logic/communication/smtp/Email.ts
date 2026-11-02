@@ -220,12 +220,10 @@ mimeBodyParts[1]= new MimeBodyPart(internetHeaders, Array.from(new TextEncoder()
 
                                     }
                                 
-this.init(server, null as Authenticator, 
-                                                [
-                                                    new InternetAddress(from)
-                                                ], 
-                                                [
-                                                    new InternetAddress(to)
+this.init(server, null as Authenticator, [
+new InternetAddress(from)
+                                                ], [
+new InternetAddress(to)
                                                 ], null as InternetAddress[], null as InternetAddress[], subject, mimeBodyParts);
     
  }

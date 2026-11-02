@@ -487,9 +487,8 @@ this.adjustFor16BelowJButton= new javax.swing.JButton();
     
 this.jLabel1!.setText("Percent:");
     
-this.jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel(
-                                                [
-                                                    "Item 1","Item 2","Item 3","Item 4"
+this.jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel([
+"Item 1","Item 2","Item 3","Item 4"
                                                 ]));
     
 this.aboveJButton!.setText("Process");

@@ -477,7 +477,6 @@ index= index +nextCharString!.length +3;
 
 
                         continue
-                    
 
                                     }
                                 

@@ -119,7 +119,7 @@ anyType!.wait(timeoutMillis);
 
         //mutex.withLock
         
-data= new Array(recordStore!.getRecordSize(recordId));
+data= new Array(recordStore!.getRecordSize(recordId)).fill(0);
     
 recordStore!.getRecord(recordId, data, 0);
     

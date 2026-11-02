@@ -141,7 +141,7 @@ nextBasicArrayList= vector.objectArray[index]! as BasicArrayList;
     
 framePoints= this.toFrameArrayFromPointBasicArrayList(nextBasicArrayList);
     
-points[index]= new Array(framePoints!.length).fill(null).map(() => new Array(2).fill(null));
+points[index]= new Array(framePoints!.length).fill(null).map(() => new Array(2).fill(0));
     
 
 
@@ -169,7 +169,7 @@ points[index]![pointIndex]![1]= framePoints[pointIndex]![1]!;
 
     public toFrameArrayFromPointBasicArrayList(list: BasicArrayList): number[][]{
 
-    let points: number[][] = new Array(list.size()).fill(null).map(() => new Array(2).fill(null));;
+    let points: number[][] = new Array(list.size()).fill(null).map(() => new Array(2).fill(0));;
     
 
     let size: number = list.size()!;;

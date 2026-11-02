@@ -305,7 +305,7 @@ newBufferedImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image;
 
 
                         for (
-    let index: number = 0;index < size; )
+    let index: number = 0;index < size; index += 4)
         {
 rx= (imageData!.data[index]&0xFF)<<16;
     

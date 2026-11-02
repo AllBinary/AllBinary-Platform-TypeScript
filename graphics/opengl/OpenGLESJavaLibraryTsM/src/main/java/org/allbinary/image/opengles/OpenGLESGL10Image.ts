@@ -89,7 +89,7 @@ export class OpenGLESGL10Image extends OpenGLESImage {
     private readonly glUtil: GLUtil = GLUtil.getInstance()!;
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
     private readonly textureVertexFloatBuffer: FloatBuffer = outer$OpenGLESGL10Image.textureVertexFloatBuffer;
-    private readonly regionTextureRectangleFloatArray: number[] = new Array(8);
+    private readonly regionTextureRectangleFloatArray: number[] = new Array(8).fill(0);
     private readonly regionTextureVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *2)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
     private readonly regionRectangleFloatArray: number[] = [
                                 //Otherwise - values - DoubleLiteralExpr

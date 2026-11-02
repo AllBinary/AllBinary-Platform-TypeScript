@@ -151,9 +151,8 @@ protected constructor (resources: BasicGameResources[]){
     let image: Image = IMAGE_CACHE.getWithKey(flagResources!.RESOURCE_ICON)!;;
     
 
-    let item: ABCustomItem = new LayerInterfaceFactoryImageItem(name, image, ImageItem.LAYOUT_DEFAULT, flagResources!.NAME, this.basicColor, 
-                                                [
-                                                    new RTSLayerTextAnimation(RTSGameStrings.getInstance()!.DRAGGABLE, image)
+    let item: ABCustomItem = new LayerInterfaceFactoryImageItem(name, image, ImageItem.LAYOUT_DEFAULT, flagResources!.NAME, this.basicColor, [
+new RTSLayerTextAnimation(RTSGameStrings.getInstance()!.DRAGGABLE, image)
                                                 ], layerInterfaceFactoryInterface);;
     
 

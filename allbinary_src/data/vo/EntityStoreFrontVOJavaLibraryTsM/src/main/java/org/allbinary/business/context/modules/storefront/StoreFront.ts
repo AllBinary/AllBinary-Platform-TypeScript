@@ -541,9 +541,8 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
                                     
     let hashMap: HashMap<any, any> = SpecialCharacterUtil.getHashMap()!;;
     
-hashMap!.put(
-                                                [
-                                                    CommonSeps.getInstance()!.SPACE
+hashMap!.put([
+CommonSeps.getInstance()!.SPACE
                                                 ], this.ONE_EMPTY_STRING_ARRAY);
     
 this.name= new Replace(hashMap).all(this.name);

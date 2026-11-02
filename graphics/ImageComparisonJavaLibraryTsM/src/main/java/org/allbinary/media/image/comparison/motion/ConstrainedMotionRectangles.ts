@@ -130,7 +130,6 @@ this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(
                                     
 
                         continue
-                    
 
                                     }
                                 
@@ -144,7 +143,6 @@ this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(
                                     
 
                         continue
-                    
 
                                     }
                                 
@@ -158,7 +156,6 @@ this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(
                                     
 
                         continue
-                    
 
                                     }
                                 
@@ -172,7 +169,6 @@ this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(
                                     
 
                         continue
-                    
 
                                     }
                                 

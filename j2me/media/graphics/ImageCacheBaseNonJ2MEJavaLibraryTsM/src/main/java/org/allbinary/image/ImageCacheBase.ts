@@ -99,9 +99,9 @@ export class ImageCacheBase
 
     readonly SIZE: number = 128;
 
-    readonly widths: number[] = new Array(this.SIZE);
+    readonly widths: number[] = new Array(this.SIZE).fill(0);
 
-    readonly heights: number[] = new Array(this.SIZE);
+    readonly heights: number[] = new Array(this.SIZE).fill(0);
 
     readonly listOfList: BasicArrayList[] = new Array(this.SIZE);
 

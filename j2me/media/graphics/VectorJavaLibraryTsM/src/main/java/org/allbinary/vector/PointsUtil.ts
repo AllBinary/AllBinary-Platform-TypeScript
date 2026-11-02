@@ -75,7 +75,7 @@ export class PointsUtil
     let size2: number = points[index]!.length
                 ;;
     
-newPoints[index]= new Array(size2).fill(null).map(() => new Array(2).fill(null));
+newPoints[index]= new Array(size2).fill(null).map(() => new Array(2).fill(0));
     
 
 
@@ -135,7 +135,7 @@ adjust(...args: any[]): any {
 
     public adjust$overload2(points: number[][], x: number, y: number): number[][]{
 
-    let newPoints: number[][] = new Array(points.length).fill(null).map(() => new Array(2).fill(null));;
+    let newPoints: number[][] = new Array(points.length).fill(null).map(() => new Array(2).fill(0));;
     
 
 

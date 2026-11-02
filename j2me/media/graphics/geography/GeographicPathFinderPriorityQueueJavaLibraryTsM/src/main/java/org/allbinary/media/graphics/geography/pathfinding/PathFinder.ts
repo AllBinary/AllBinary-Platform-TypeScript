@@ -448,7 +448,6 @@ this.closedSet!.add(current);
                                     
 
                         continue
-                    
 
                                     }
                                 
@@ -642,7 +641,6 @@ this.closedSet!.add(current);
                                     
 
                         continue
-                    
 
                                     }
                                 

@@ -80,20 +80,19 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
 export class PtsDamageFloaters extends DamageFloaters {
         
 
-    private static readonly basicColorArrayIndexer: BasicColorArrayIndexer = new BasicColorArrayIndexer(
-                                                [
-                                                    BasicColorFactory.getInstance()!.WHITE,BasicColorFactory.getInstance()!.RED,BasicColorFactory.getInstance()!.YELLOW,BasicColorFactory.getInstance()!.BLUE
+    private static readonly basicColorArrayIndexer: BasicColorArrayIndexer = new BasicColorArrayIndexer([
+BasicColorFactory.getInstance()!.WHITE,BasicColorFactory.getInstance()!.RED,BasicColorFactory.getInstance()!.YELLOW,BasicColorFactory.getInstance()!.BLUE
                                                 ]);
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
 
     private layerInterface: AllBinaryLayer;
 
-    private lastDamage: number[] = new Array(5);
+    private lastDamage: number[] = new Array(5).fill(0);
 
     private lastDamageString: string[][] = new Array(5).fill(null).map(() => new Array(0).fill(null));
 
-    private lastDamageStringSizeArray: number[] = new Array(5);
+    private lastDamageStringSizeArray: number[] = new Array(5).fill(0);
 
     private circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(5)!;
 

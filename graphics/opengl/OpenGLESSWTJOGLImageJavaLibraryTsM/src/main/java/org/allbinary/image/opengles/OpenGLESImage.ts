@@ -178,7 +178,7 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
                                     OpenGLESImage.texture2dList!.add(this);
     
 
-    let textures: number[] = new Array(1);;
+    let textures: number[] = new Array(1).fill(0);;
     
 gl.glEnable(GL10.GL_TEXTURE_2D);
     

@@ -60,9 +60,8 @@ export class HighScoreCommandsFactory extends HighScoreCommandsBaseFactory {
 
 
 private constructor (){
-            super(
-                                                [
-                                                    HighScoreCommands.getInstance()!.PERSONAL,HighScoreCommands.getInstance()!.WORLD
+            super([
+HighScoreCommands.getInstance()!.PERSONAL,HighScoreCommands.getInstance()!.WORLD
                                                 ]);
                     
 

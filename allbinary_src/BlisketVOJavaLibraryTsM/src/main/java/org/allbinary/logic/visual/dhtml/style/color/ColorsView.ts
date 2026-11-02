@@ -153,7 +153,7 @@ node.appendChild(blackNode);
 
 
                         for (
-    let index: number = 0;index < this.MAX; )
+    let index: number = 0;index < this.MAX; index += this.delta)
         {
 
     let hexColorStringBuffer: StringMaker = new StringMaker();;
@@ -208,50 +208,21 @@ node.appendChild(whiteNode);
 
 
                         for (
-    let blueIndex: number = globalThis.Math.trunc(this.MAX /2);blueIndex < this.MAX; )
+    let blueIndex: number = globalThis.Math.trunc(this.MAX /2);blueIndex < this.MAX; blueIndex += this.delta)
         {
 
 
 
 
                         for (
-    let greenIndex: number = 0;greenIndex < globalThis.Math.trunc(this.MAX /2); )
+    let greenIndex: number = 0;greenIndex < globalThis.Math.trunc(this.MAX /2); greenIndex += this.delta)
         {
 
 
 
 
                         for (
-    let redIndex: number = 0;redIndex < globalThis.Math.trunc(this.MAX /2); )
-        {
-node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
-    
-}
-
-}
-
-}
-
-
-
-
-
-                        for (
-    let redIndex: number = globalThis.Math.trunc(this.MAX /2);redIndex < this.MAX; )
-        {
-
-
-
-
-                        for (
-    let greenIndex: number = 0;greenIndex < globalThis.Math.trunc(this.MAX /2); )
-        {
-
-
-
-
-                        for (
-    let blueIndex: number = 0;blueIndex < globalThis.Math.trunc(this.MAX /2); )
+    let redIndex: number = 0;redIndex < globalThis.Math.trunc(this.MAX /2); redIndex += this.delta)
         {
 node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     
@@ -266,21 +237,21 @@ node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
 
 
                         for (
-    let greenIndex: number = globalThis.Math.trunc(this.MAX /2);greenIndex < this.MAX; )
+    let redIndex: number = globalThis.Math.trunc(this.MAX /2);redIndex < this.MAX; redIndex += this.delta)
         {
 
 
 
 
                         for (
-    let redIndex: number = 0;redIndex < globalThis.Math.trunc(this.MAX /2); )
+    let greenIndex: number = 0;greenIndex < globalThis.Math.trunc(this.MAX /2); greenIndex += this.delta)
         {
 
 
 
 
                         for (
-    let blueIndex: number = 0;blueIndex < globalThis.Math.trunc(this.MAX /2); )
+    let blueIndex: number = 0;blueIndex < globalThis.Math.trunc(this.MAX /2); blueIndex += this.delta)
         {
 node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     
@@ -295,21 +266,50 @@ node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
 
 
                         for (
-    let greenIndex: number = 0;greenIndex < this.MAX; )
+    let greenIndex: number = globalThis.Math.trunc(this.MAX /2);greenIndex < this.MAX; greenIndex += this.delta)
         {
 
 
 
 
                         for (
-    let redIndex: number = 0;redIndex < this.MAX; )
+    let redIndex: number = 0;redIndex < globalThis.Math.trunc(this.MAX /2); redIndex += this.delta)
         {
 
 
 
 
                         for (
-    let blueIndex: number = 0;blueIndex < this.MAX; )
+    let blueIndex: number = 0;blueIndex < globalThis.Math.trunc(this.MAX /2); blueIndex += this.delta)
+        {
+node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
+    
+}
+
+}
+
+}
+
+
+
+
+
+                        for (
+    let greenIndex: number = 0;greenIndex < this.MAX; greenIndex += 2 *this.delta)
+        {
+
+
+
+
+                        for (
+    let redIndex: number = 0;redIndex < this.MAX; redIndex += 2 *this.delta)
+        {
+
+
+
+
+                        for (
+    let blueIndex: number = 0;blueIndex < this.MAX; blueIndex += 2 *this.delta)
         {
 node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     

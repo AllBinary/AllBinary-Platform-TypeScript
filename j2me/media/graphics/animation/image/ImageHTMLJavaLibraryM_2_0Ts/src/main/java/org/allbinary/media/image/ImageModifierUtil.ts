@@ -201,7 +201,7 @@ canvas.setAlpha(alphaFloat);
     let size: number = originalImageArray!.length
                 ;;
     
-this.alphaArray= new Array(size);
+this.alphaArray= new Array(size).fill(false);
     
 
     let imageArray: Image[] = new Array(size);;

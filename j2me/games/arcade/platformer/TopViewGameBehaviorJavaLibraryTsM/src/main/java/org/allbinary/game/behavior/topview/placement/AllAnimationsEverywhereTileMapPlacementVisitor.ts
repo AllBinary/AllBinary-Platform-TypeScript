@@ -65,7 +65,7 @@ export class AllAnimationsEverywhereTileMapPlacementVisitor extends TileMapPlace
 
 
                         for (
-    let index2: number = 0;index2 < size2; )
+    let index2: number = 0;index2 < size2; index2 += 7)
         {
 mapData[index]![index2]= 1;
     

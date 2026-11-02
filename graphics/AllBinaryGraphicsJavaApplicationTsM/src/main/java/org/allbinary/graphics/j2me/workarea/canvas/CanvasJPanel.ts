@@ -934,7 +934,7 @@ graphics.setColor(CanvasJPanel.gridColor);
 
 
                         for (
-    let value: number = yAdjust;value <= this.getHeight() -yAdjust; )
+    let value: number = yAdjust;value <= this.getHeight() -yAdjust; value += this.getYPixelsPerWorkAreaPixel())
         {
 graphics.drawLine(xLeft, value, xRight, value);
     
@@ -945,7 +945,7 @@ graphics.drawLine(xLeft, value, xRight, value);
 
 
                         for (
-    let value: number = xAdjust;value <= this.getWidth() -xAdjust; )
+    let value: number = xAdjust;value <= this.getWidth() -xAdjust; value += this.getYPixelsPerWorkAreaPixel())
         {
 graphics.drawLine(value, yUpper, value, yLower);
     

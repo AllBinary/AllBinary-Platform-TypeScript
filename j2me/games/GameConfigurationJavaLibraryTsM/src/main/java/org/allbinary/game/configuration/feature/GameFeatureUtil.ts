@@ -127,7 +127,7 @@ export class GameFeatureUtil
     let SELECTED_SEP: string = "] = ";;
     
 
-    let selectedArray_return: boolean[] = new Array(choiceGroup!.size());;
+    let selectedArray_return: boolean[] = new Array(choiceGroup!.size()).fill(false);;
     
 
     let total: number = choiceGroup!.getSelectedFlags(selectedArray_return)!;;
@@ -209,7 +209,7 @@ choiceGroup!.setSelectedIndex(index, false);
     let SELECTED_SEP: string = "] = ";;
     
 
-    let selectedArray_return: boolean[] = new Array(choiceGroup!.size());;
+    let selectedArray_return: boolean[] = new Array(choiceGroup!.size()).fill(false);;
     
 
     let total: number = choiceGroup!.getSelectedFlags(selectedArray_return)!;;
@@ -290,7 +290,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     let SELECTED_SEP: string = "] = ";;
     
 
-    let selectedArray_return: boolean[] = new Array(choiceGroup!.size());;
+    let selectedArray_return: boolean[] = new Array(choiceGroup!.size()).fill(false);;
     
 
     let total: number = choiceGroup!.getSelectedFlags(selectedArray_return)!;;

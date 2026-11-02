@@ -73,11 +73,11 @@ export class LocalPlayerInputIdFactory
 
     private readonly MAX_FAST_DEVICEID: number = 65;
 
-    private readonly deviceIdToplayerId: number[] = new Array(this.MAX_FAST_DEVICEID);
+    private readonly deviceIdToplayerId: number[] = new Array(this.MAX_FAST_DEVICEID).fill(0);
 
-    private readonly playerIdToDeviceId: number[] = new Array(this.MAX_NUMBER_OF_PLAYERS);
+    private readonly playerIdToDeviceId: number[] = new Array(this.MAX_NUMBER_OF_PLAYERS).fill(0);
 
-    private readonly playersInPlay: boolean[] = new Array(this.MAX_NUMBER_OF_PLAYERS);
+    private readonly playersInPlay: boolean[] = new Array(this.MAX_NUMBER_OF_PLAYERS).fill(false);
 
     private totalDevicesMapped: number = 0;
 

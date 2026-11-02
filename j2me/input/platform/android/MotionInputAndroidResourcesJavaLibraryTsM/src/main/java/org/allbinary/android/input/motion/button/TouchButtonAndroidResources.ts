@@ -102,7 +102,7 @@ export class TouchButtonAndroidResources extends Init {
                                                         ];;
     
 
-    let RESOURCE_ARRAY: number[] = new Array(RESOURCE_STRING_ARRAY.length);;
+    let RESOURCE_ARRAY: number[] = new Array(RESOURCE_STRING_ARRAY.length).fill(0);;
     
 
                         if(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE == 128)

@@ -87,7 +87,7 @@ public constructor (types: BasicArrayList){
     let size: number = types.size()!;;
     
 
-    let typeArray: number[] = new Array(size);;
+    let typeArray: number[] = new Array(size).fill(0);;
     
 
     let typeAsInteger: Integer;;

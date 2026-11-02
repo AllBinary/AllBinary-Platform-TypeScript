@@ -137,7 +137,7 @@ graphics.setColor(this.debugColor);
 
 
                         for (
-    let rowIndex: number = firstRow;rowIndex < totalRows; rowIndex++)
+    let rowIndex: number = firstRow;rowIndex < totalRows; rowIndex++, y += tileHeight)
         {
 x= x0;
     
@@ -146,7 +146,7 @@ x= x0;
 
 
                         for (
-    let columnIndex: number = firstColumn;columnIndex < totalColumns; columnIndex++)
+    let columnIndex: number = firstColumn;columnIndex < totalColumns; columnIndex++, x += tileWidth)
         {
 tile= this.tiledLayerP!.getCell(columnIndex, rowIndex);
     
@@ -166,7 +166,6 @@ tile= this.tiledLayerP!.getCell(columnIndex, rowIndex);
                                     
 
                         continue
-                    
 
                                     }
                                 

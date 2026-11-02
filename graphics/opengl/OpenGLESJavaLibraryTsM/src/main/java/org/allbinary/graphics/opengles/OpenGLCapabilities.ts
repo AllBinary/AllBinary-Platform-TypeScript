@@ -498,7 +498,7 @@ openGLImageSpecificFactory!.setImageFactory(new OpenGLESGL10ImageFactory());
                         }
                             
 
-    let maxTextureSizeArray: number[] = new Array(1);;
+    let maxTextureSizeArray: number[] = new Array(1).fill(0);;
     
 gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSizeArray, 0);
     

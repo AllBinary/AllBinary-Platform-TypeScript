@@ -138,11 +138,11 @@ export class DisplayInfoSingleton
 
     public readonly ADJUSTING_FOR_SCALING_IN_LANDSCAPE: string = "Adjusting for Scaling in landscape display ratio: ";
 
-    private last: number[] = new Array(4);
+    private last: number[] = new Array(4).fill(0);
 
-    private lastHalf: number[] = new Array(4);
+    private lastHalf: number[] = new Array(4).fill(0);
 
-    private full: number[] = new Array(4);
+    private full: number[] = new Array(4).fill(0);
 
     private top: number= 0;
 

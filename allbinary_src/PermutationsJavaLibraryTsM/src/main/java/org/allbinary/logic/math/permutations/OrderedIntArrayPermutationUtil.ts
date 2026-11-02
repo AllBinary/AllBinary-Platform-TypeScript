@@ -68,7 +68,7 @@ export class OrderedIntArrayPermutationUtil
     let TOTAL: number = 3;;
     
 
-    let data: number[] = new Array(TOTAL);;
+    let data: number[] = new Array(TOTAL).fill(0);;
     
 
 
