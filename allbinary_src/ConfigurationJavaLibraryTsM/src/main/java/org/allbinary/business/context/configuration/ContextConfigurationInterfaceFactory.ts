@@ -78,10 +78,6 @@ static getInstance(...args: any[]): any {
    
     if (args.length === 0) return this.getInstance$overload1();
    
-    if (args.length === 1) return this.getInstance$overload2(args[0]);
-   
-    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload3(args[0]);
-   
    throw new TypeError('No matching overload: getInstance'); }
   
     public static getInstance$overload1(): ContextConfigurationInterfaceFactory{
@@ -99,7 +95,15 @@ private constructor (){
             super();
         }
 
-
+getInstance(...args: any[]): any {
+   
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload3(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
     public getInstance$overload2(document: Document): ContextConfigurationInterface{

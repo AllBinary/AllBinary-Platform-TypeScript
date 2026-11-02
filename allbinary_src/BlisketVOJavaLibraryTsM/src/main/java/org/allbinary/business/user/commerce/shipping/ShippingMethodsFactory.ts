@@ -145,7 +145,7 @@ stringBuffer!.append("shipping");
     
 stringBuffer!.append(sep);
     
-SHIPPINGMETHODSFILEPATHSTRING= stringBuffer!.toString();
+ShippingMethodsFactory.SHIPPINGMETHODSFILEPATHSTRING= stringBuffer!.toString();
     
 
 

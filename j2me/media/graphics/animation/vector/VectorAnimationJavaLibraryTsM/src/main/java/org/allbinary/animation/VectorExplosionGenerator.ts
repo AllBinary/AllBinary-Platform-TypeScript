@@ -80,8 +80,6 @@ static getInstance(...args: any[]): any {
    
     if (args.length === 0) return this.getInstance$overload1();
    
-    if (args.length === 3 && typeof args[1] === 'number') return this.getInstance$overload2(args[0], args[1], args[2]);
-   
    throw new TypeError('No matching overload: getInstance'); }
   
     public static getInstance$overload1(): VectorExplosionGenerator{
@@ -141,7 +139,13 @@ points[index]![1]= point.getY();
     
 }
 
-
+getInstance(...args: any[]): any {
+   
+   
+    if (args.length === 3 && typeof args[1] === 'number') return this.getInstance$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
     public getInstance$overload2(points: number[][], howMuch: number, type: VectorExplosionType): number[][][]{

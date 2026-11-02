@@ -63,7 +63,13 @@ export class NullAIFactory
         
 
     private static NULL_AI: NullAI = new NullAI();
-
+static getInstance(...args: any[]): any {
+   
+   
+    if (args.length === 0) return this.getInstance$overload2();
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
     public static getInstance$overload2(): ArtificialIntelligenceInterface{
 
 
@@ -77,8 +83,6 @@ getInstance(...args: any[]): any {
    
    
     if (args.length === 3) return this.getInstance$overload1(args[0], args[1], args[2]);
-   
-    if (args.length === 0) return this.getInstance$overload2();
    
    throw new TypeError('No matching overload: getInstance'); }
   

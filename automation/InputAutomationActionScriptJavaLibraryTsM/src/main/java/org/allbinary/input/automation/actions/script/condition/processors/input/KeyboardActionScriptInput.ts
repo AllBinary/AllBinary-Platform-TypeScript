@@ -111,7 +111,13 @@ export class KeyboardActionScriptInput extends BasicProfileActionScriptInput imp
         
 
     private static readonly NAME: string = "Keyboard";
-
+static getText(...args: any[]): any {
+   
+   
+    if (args.length === 1) return this.getText$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getText'); }
+  
     static getText$overload2(integerArray: Integer[]): string{
 
     let index: number = 0;;
@@ -410,8 +416,6 @@ getText(...args: any[]): any {
    
    
     if (args.length === 0) return this.getText$overload1();
-   
-    if (args.length === 1) return this.getText$overload2(args[0]);
    
    throw new TypeError('No matching overload: getText'); }
   

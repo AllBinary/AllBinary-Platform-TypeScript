@@ -65,8 +65,6 @@ static getInstance(...args: any[]): any {
    
     if (args.length === 0) return this.getInstance$overload1();
    
-    if (args.length === 2 && typeof args[1] === 'boolean') return this.getInstance$overload2(args[0], args[1]);
-   
    throw new TypeError('No matching overload: getInstance'); }
   
     public static getInstance$overload1(): ColorFillPaintableFactory{
@@ -78,7 +76,13 @@ static getInstance(...args: any[]): any {
     
 }
 
-
+getInstance(...args: any[]): any {
+   
+   
+    if (args.length === 2 && typeof args[1] === 'boolean') return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
     public getInstance$overload2(basicColor: BasicColor, forThreedCanvas: boolean): ColorFillBasePaintable{
 
     let operatingSystem: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;

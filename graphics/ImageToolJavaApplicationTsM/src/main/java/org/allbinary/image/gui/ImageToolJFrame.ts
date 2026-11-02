@@ -185,7 +185,7 @@ this.fileJDialog!.addFinishedListener(this);
 
 
     initComponents(){
-analysisActionJDialog= new javax.swing.JDialog();
+this.analysisActionJDialog= new javax.swing.JDialog();
     
 this.titleJLabel= new javax.swing.JLabel();
     

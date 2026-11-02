@@ -82,8 +82,6 @@ static getInstance(...args: any[]): any {
    
     if (args.length === 0) return this.getInstance$overload1();
    
-    if (args.length === 1) return this.getInstance$overload2(args[0]);
-   
    throw new TypeError('No matching overload: getInstance'); }
   
     public static getInstance$overload1(): PaymentProcessorInterfaceFactory{
@@ -103,7 +101,13 @@ private constructor (){
             super();
         }
 
-
+getInstance(...args: any[]): any {
+   
+   
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 

@@ -141,7 +141,7 @@ this.initComponents();
 
 
     initComponents(){
-angleIncrementJTextField= new javax.swing.JTextField();
+this.angleIncrementJTextField= new javax.swing.JTextField();
     
 this.jLabel1= new javax.swing.JLabel();
     

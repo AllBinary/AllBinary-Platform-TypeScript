@@ -112,7 +112,13 @@ export class InputRobotFactory
     
 }
 
-
+static loadLibraries(...args: any[]): any {
+   
+   
+    if (args.length === 1) return this.loadLibraries$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: loadLibraries'); }
+  
                 //@Throws(Exception.constructor)
             
     public static loadLibraries$overload2(collection: Collection){
@@ -141,7 +147,7 @@ InputRobotFactory.loadLibrary(iterator.next() as InputRobotInterface);
     let logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-                        if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterfaceinputRobotInterface))
+                        if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface, inputRobotInterface))
                         
                                     {
                                     logUtil!.putF("Loading Library: " +inputRobotInterface!.getName(), "InputRobotFactory", "loadLibraries");
@@ -274,8 +280,6 @@ loadLibraries(...args: any[]): any {
    
     if (args.length === 0) return this.loadLibraries$overload1();
    
-    if (args.length === 1) return this.loadLibraries$overload2(args[0]);
-   
    throw new TypeError('No matching overload: loadLibraries'); }
   
                 //@Throws(Exception.constructor)
@@ -338,7 +342,7 @@ this.logUtil!.putF("Unloading Libraries", this, "unloadLibraries");
 inputRobotInterface= this.get(inputRobotArray[index]! as string);
     
 
-                        if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterfaceinputRobotInterface))
+                        if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface, inputRobotInterface))
                         
                                     {
                                     this.logUtil!.putF("Unloading Library: " +inputRobotInterface!.getName(), this, "unloadLibraries");

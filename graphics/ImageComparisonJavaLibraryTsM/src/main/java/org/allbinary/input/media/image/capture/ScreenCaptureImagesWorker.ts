@@ -93,7 +93,7 @@ export class ScreenCaptureImagesWorker extends BasicEventHandler implements Capt
 public constructor (){
 
             super();
-        screenScavangerRobot= new ScreenScavangerRobot();
+        this.screenScavangerRobot= new ScreenScavangerRobot();
     
 ScreenCaptureImagesWorker.index= ProcessingFrameIndexFactory.next();
     

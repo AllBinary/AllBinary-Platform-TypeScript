@@ -81,10 +81,6 @@ static getInstance(...args: any[]): any {
    
     if (args.length === 0) return this.getInstance$overload1();
    
-    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);
-   
-    if (args.length === 1) return this.getInstance$overload3(args[0]);
-   
    throw new TypeError('No matching overload: getInstance'); }
   
     public static getInstance$overload1(): GraphicItemFactory{
@@ -110,7 +106,15 @@ this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFac
     
 }
 
-
+getInstance(...args: any[]): any {
+   
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);
+   
+    if (args.length === 1) return this.getInstance$overload3(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
     public getInstance$overload2(itemName: string): GraphicsItemInterfaceFactoryInterface{
 
     let graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = this.graphicItems!.get(itemName) as GraphicsItemInterfaceFactoryInterface;;

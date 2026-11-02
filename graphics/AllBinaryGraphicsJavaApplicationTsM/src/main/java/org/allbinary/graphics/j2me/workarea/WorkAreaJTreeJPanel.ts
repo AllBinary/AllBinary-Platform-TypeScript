@@ -460,7 +460,7 @@ this.workAreaJTree!.expandPath(treePath);
 
 
     initComponents(){
-itemJPopupMenu= new javax.swing.JPopupMenu();
+this.itemJPopupMenu= new javax.swing.JPopupMenu();
     
 this.deleteJMenuItem= new javax.swing.JMenuItem();
     

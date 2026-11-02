@@ -81,18 +81,8 @@ export class TransformInfoObjectConfigAndManipulatorFactory extends TransformInf
 static getInstance(...args: any[]): any {
    
    
-    if (args.length === 3 && args[2] instanceof AbPath) return this.getInstance$overload2(args[0], args[1], args[2]);
-    
     if (args.length === 0) return this.getInstance$overload1();
    
-    if (args.length === 3 && args[2] == null) return this.getInstance$overload2(args[0], args[1], args[2]);
-   
-    if (args.length === 2) return this.getInstance$overload3(args[0], args[1]);
-   
-    if (args.length === 3) return this.getInstance$overload4(args[0], args[1], args[2]);
-   
-    if (args.length === 3) return this.getInstance$overload2(args[0], args[1], args[2]);
-    
    throw new TypeError('No matching overload: getInstance'); }
   
     public static getInstance$overload1(): TransformInfoObjectConfigAndManipulatorFactory{
@@ -112,7 +102,21 @@ private constructor (){
             super();
         }
 
-
+getInstance(...args: any[]): any {
+   
+   
+    if (args.length === 3 && args[2] instanceof AbPath) return this.getInstance$overload2(args[0], args[1], args[2]);
+    
+    if (args.length === 3 && args[2] == null) return this.getInstance$overload2(args[0], args[1], args[2]);
+   
+    if (args.length === 2) return this.getInstance$overload3(args[0], args[1]);
+   
+    if (args.length === 3) return this.getInstance$overload4(args[0], args[1], args[2]);
+   
+    if (args.length === 3) return this.getInstance$overload2(args[0], args[1], args[2]);
+    
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
     public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{

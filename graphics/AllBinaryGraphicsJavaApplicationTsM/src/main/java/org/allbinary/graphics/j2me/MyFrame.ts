@@ -247,7 +247,7 @@ this.rotateJDialog= new RotateJDialog(this, false);
 
 
     initComponents(){
-jToolBar1= new javax.swing.JToolBar();
+this.jToolBar1= new javax.swing.JToolBar();
     
 this.jButton2= new javax.swing.JButton();
     

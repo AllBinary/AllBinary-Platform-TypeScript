@@ -63,7 +63,13 @@ export class PixelDelta
             extends Object
          implements CacheableInterface {
         
-
+static getKey(...args: any[]): any {
+   
+   
+    if (args.length === 2) return this.getKey$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getKey'); }
+  
     public static getKey$overload2(point: GPoint, colorDelta: ColorDelta): any{
 
 
@@ -95,8 +101,6 @@ getKey(...args: any[]): any {
    
    
     if (args.length === 0) return this.getKey$overload1();
-   
-    if (args.length === 2) return this.getKey$overload2(args[0], args[1]);
    
    throw new TypeError('No matching overload: getKey'); }
   

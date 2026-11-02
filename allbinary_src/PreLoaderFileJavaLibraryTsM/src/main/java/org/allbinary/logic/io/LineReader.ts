@@ -184,7 +184,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "hasNext", e);
 
     let temp: string = this.string.substring(index, nextIndex)!;;
     
-index= nextIndex +1;
+this.index= nextIndex +1;
     
 
 

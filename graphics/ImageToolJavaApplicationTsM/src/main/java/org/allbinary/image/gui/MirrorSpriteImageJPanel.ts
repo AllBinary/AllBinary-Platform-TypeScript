@@ -207,7 +207,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
 
 
     initComponents(){
-jLayeredPane1= new javax.swing.JLayeredPane();
+this.jLayeredPane1= new javax.swing.JLayeredPane();
     
 this.jPanel1= new class extends javax.swing.JPanel
                                 {

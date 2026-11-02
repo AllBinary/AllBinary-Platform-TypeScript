@@ -95,7 +95,7 @@ stringBuffer!.append("MakePayment");
     
 stringBuffer!.append(PaymentGatewayPageData.EXTENSION);
     
-MAKEPAYMENT= stringBuffer!.toString();
+this.MAKEPAYMENT= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -105,7 +105,7 @@ stringBuffer!.append("Checkout");
     
 stringBuffer!.append(PaymentGatewayPageData.EXTENSION);
     
-CHECKOUT= stringBuffer!.toString();
+this.CHECKOUT= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -115,7 +115,7 @@ stringBuffer!.append("Shipping");
     
 stringBuffer!.append(PaymentGatewayPageData.EXTENSION);
     
-SHIPPING= stringBuffer!.toString();
+this.SHIPPING= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -125,7 +125,7 @@ stringBuffer!.append("ShippingAddress");
     
 stringBuffer!.append(PaymentGatewayPageData.EXTENSION);
     
-SHIPPINGADDRESS= stringBuffer!.toString();
+this.SHIPPINGADDRESS= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -135,7 +135,7 @@ stringBuffer!.append("ShippingAddressAction");
     
 stringBuffer!.append(PaymentGatewayPageData.EXTENSION);
     
-SHIPPINGADDRESSACTION= stringBuffer!.toString();
+this.SHIPPINGADDRESSACTION= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -145,7 +145,7 @@ stringBuffer!.append("BillingAddress");
     
 stringBuffer!.append(PaymentGatewayPageData.EXTENSION);
     
-BILLINGADDRESS= stringBuffer!.toString();
+this.BILLINGADDRESS= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -155,7 +155,7 @@ stringBuffer!.append("Payment");
     
 stringBuffer!.append(PaymentGatewayPageData.EXTENSION);
     
-PAYMENT= stringBuffer!.toString();
+this.PAYMENT= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -165,7 +165,7 @@ stringBuffer!.append("Authorize");
     
 stringBuffer!.append(PaymentGatewayPageData.EXTENSION);
     
-AUTHORIZE= stringBuffer!.toString();
+this.AUTHORIZE= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -175,7 +175,7 @@ stringBuffer!.append("PaymentFinish");
     
 stringBuffer!.append(PaymentGatewayPageData.EXTENSION);
     
-FINISH= stringBuffer!.toString();
+this.FINISH= stringBuffer!.toString();
     
 }
 

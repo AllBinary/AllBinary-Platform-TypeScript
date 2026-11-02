@@ -96,12 +96,6 @@ static getInstance(...args: any[]): any {
    
     if (args.length === 0) return this.getInstance$overload1();
    
-    if (args.length === 3 && typeof args[1] === 'string') return this.getInstance$overload2(args[0], args[1], args[2]);
-   
-    if (args.length === 3) return this.getInstance$overload3(args[0], args[1], args[2]);
-   
-    if (args.length === 2) return this.getInstance$overload4(args[0], args[1]);
-   
    throw new TypeError('No matching overload: getInstance'); }
   
     public static getInstance$overload1(): TransformFactory{
@@ -123,7 +117,17 @@ private constructor (){
 
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-
+getInstance(...args: any[]): any {
+   
+   
+    if (args.length === 3 && typeof args[1] === 'string') return this.getInstance$overload2(args[0], args[1], args[2]);
+   
+    if (args.length === 3) return this.getInstance$overload3(args[0], args[1], args[2]);
+   
+    if (args.length === 2) return this.getInstance$overload4(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
     public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, viewName: string, ownerTransformInfoInterface: TransformInfoInterface): TransformInterface{

@@ -56,8 +56,6 @@ static getInstance(...args: any[]): any {
    
     if (args.length === 0) return this.getInstance$overload1();
    
-    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);
-   
    throw new TypeError('No matching overload: getInstance'); }
   
     public static getInstance$overload1(): LicenseTypeFactory{
@@ -75,7 +73,13 @@ static getInstance(...args: any[]): any {
     public readonly DEMO: LicenseType = new LicenseType("Demo");
 
     public readonly NORMAL: LicenseType = new LicenseType("Normal");
-
+getInstance(...args: any[]): any {
+   
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
     public getInstance$overload2(name: string): LicenseType{
 
                         if(this.DEMO.getName()!.compareTo(name) == 0)

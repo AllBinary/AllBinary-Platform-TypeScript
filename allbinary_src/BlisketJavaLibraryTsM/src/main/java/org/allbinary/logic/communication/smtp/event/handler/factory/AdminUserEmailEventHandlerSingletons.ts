@@ -90,8 +90,6 @@ static getInstance(...args: any[]): any {
    
     if (args.length === 0) return this.getInstance$overload1();
    
-    if (args.length === 2) return this.getInstance$overload2(args[0], args[1]);
-   
    throw new TypeError('No matching overload: getInstance'); }
   
     public static getInstance$overload1(): AdminUserEmailEventHandlerSingletons{
@@ -124,7 +122,13 @@ private constructor (){
                                 
 }
 
-
+getInstance(...args: any[]): any {
+   
+   
+    if (args.length === 2) return this.getInstance$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor)
             
     public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData): UserEmailEventHandler{

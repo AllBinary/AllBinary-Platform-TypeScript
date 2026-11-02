@@ -93,7 +93,13 @@ export class ImageAnalysis
     
 }
 
-
+static process(...args: any[]): any {
+   
+   
+    if (args.length === 2) return this.process$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: process'); }
+  
                 //@Throws(Exception.constructor)
             
     public static process$overload2(bufferedImage: BufferedImage, colorRangeInterface: ColorRangeInterface): ImageAnalysisResults{
@@ -255,8 +261,6 @@ process(...args: any[]): any {
    
    
     if (args.length === 2) return this.process$overload1(args[0], args[1]);
-   
-    if (args.length === 2) return this.process$overload2(args[0], args[1]);
    
    throw new TypeError('No matching overload: process'); }
   

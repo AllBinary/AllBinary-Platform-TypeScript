@@ -60,7 +60,13 @@ export class ColorDelta
             extends Object
          implements CacheableInterface {
         
-
+static getKey(...args: any[]): any {
+   
+   
+    if (args.length === 2 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.getKey$overload2(args[0], args[1]);
+   
+   throw new TypeError('No matching overload: getKey'); }
+  
     public static getKey$overload2(rgb1: number, rgb2: number): any{
 
 
@@ -92,8 +98,6 @@ getKey(...args: any[]): any {
    
    
     if (args.length === 0) return this.getKey$overload1();
-   
-    if (args.length === 2 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.getKey$overload2(args[0], args[1]);
    
    throw new TypeError('No matching overload: getKey'); }
   

@@ -210,7 +210,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
 
 
     initComponents(){
-jLayeredPane1= new javax.swing.JLayeredPane();
+this.jLayeredPane1= new javax.swing.JLayeredPane();
     
 this.buttonGroup= new javax.swing.ButtonGroup();
     

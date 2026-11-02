@@ -85,18 +85,18 @@ export class ColorCacheFactory
     let STATIC_BLOCK: string = "Static Block";;
     
 
- try { logUtil!.putF(commonStrings!.START, ColorCacheFactorySTATIC_BLOCK);
+ try { logUtil!.putF(commonStrings!.START, ColorCacheFactory, STATIC_BLOCK);
     
 ColorCacheFactory.cacheInterface= AutomaticCacheInterfaceFactory.getInstance(new ColorCacheableFactory(), CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX);
     
-logUtil!.putF(commonStrings!.END, ColorCacheFactorySTATIC_BLOCK);
+logUtil!.putF(commonStrings!.END, ColorCacheFactory, STATIC_BLOCK);
     
  }
  catch (caught: any) {
  {
   const e = caught;
   
-logUtil!.put(commonStrings!.EXCEPTION, ColorCacheFactorySTATIC_BLOCK, e);
+logUtil!.put(commonStrings!.EXCEPTION, ColorCacheFactory, STATIC_BLOCK, e);
     
 
  }

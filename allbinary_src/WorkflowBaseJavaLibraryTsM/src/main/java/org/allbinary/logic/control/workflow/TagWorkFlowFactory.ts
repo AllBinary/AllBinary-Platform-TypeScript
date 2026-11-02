@@ -88,8 +88,6 @@ static getInstance(...args: any[]): any {
    
     if (args.length === 0) return this.getInstance$overload1();
    
-    if (args.length === 3) return this.getInstance$overload2(args[0], args[1], args[2]);
-   
    throw new TypeError('No matching overload: getInstance'); }
   
     public static getInstance$overload1(): TagWorkFlowFactory{
@@ -109,7 +107,13 @@ private constructor (){
             super();
         }
 
-
+getInstance(...args: any[]): any {
+   
+   
+    if (args.length === 3) return this.getInstance$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
     public getInstance$overload2(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{

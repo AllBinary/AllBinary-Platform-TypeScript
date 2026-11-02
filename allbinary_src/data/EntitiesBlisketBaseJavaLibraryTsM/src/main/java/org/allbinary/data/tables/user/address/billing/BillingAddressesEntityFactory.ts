@@ -65,8 +65,6 @@ static getInstance(...args: any[]): any {
    
     if (args.length === 0) return this.getInstance$overload1();
    
-    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);
-   
    throw new TypeError('No matching overload: getInstance'); }
   
     public static getInstance$overload1(): BillingAddressesEntityFactory{
@@ -86,7 +84,13 @@ private constructor (){
             super();
         }
 
-
+getInstance(...args: any[]): any {
+   
+   
+    if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: getInstance'); }
+  
     public getInstance$overload2(userName: string): StreetAddressesEntity{
 
  try { 

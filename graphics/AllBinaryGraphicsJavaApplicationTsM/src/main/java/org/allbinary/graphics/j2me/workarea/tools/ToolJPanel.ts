@@ -67,7 +67,7 @@ public constructor (){
 
 
     initComponents(){
-lineJButton= new javax.swing.JButton();
+this.lineJButton= new javax.swing.JButton();
     
 this.rectJButton= new javax.swing.JButton();
     
