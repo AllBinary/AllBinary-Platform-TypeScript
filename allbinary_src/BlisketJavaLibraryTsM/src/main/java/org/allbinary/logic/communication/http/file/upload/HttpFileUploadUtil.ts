@@ -80,6 +80,7 @@ export class HttpFileUploadUtil
 
 static log(...args: any[]): any {
    
+   
     if (args.length === 1) return this.log$overload1(args[0]);
    
     if (args.length === 1) return this.log$overload2(args[0]);

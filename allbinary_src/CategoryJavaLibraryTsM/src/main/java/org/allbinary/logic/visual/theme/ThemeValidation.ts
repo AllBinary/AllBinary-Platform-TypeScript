@@ -285,6 +285,7 @@ this.init(storeThemeCategoryInterface);
     }
     init(...args: any[]): any {
    
+   
     if (args.length === 0) return this.init$overload1();
    
     if (args.length === 1) return this.init$overload2(args[0]);

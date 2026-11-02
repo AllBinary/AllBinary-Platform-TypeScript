@@ -77,12 +77,17 @@ export class VectorMirrorGenerator
     private static readonly instance: VectorMirrorGenerator = new VectorMirrorGenerator();
 static getInstance(...args: any[]): any {
    
+   
+    if (args.length === 2 && typeof args[1] === 'number' && args[0] instanceof BasicArrayList) return this.getInstance$overload3(args[0], args[1]);
+    
     if (args.length === 0) return this.getInstance$overload1();
    
     if (args.length === 2 && typeof args[1] === 'number') return this.getInstance$overload2(args[0], args[1]);
    
-    if (args.length === 2 && typeof args[1] === 'number') return this.getInstance$overload3(args[0], args[1]);
+    if (args.length === 2 && typeof args[1] === 'number' && args[0] == null) return this.getInstance$overload3(args[0], args[1]);
    
+    if (args.length === 2 && typeof args[1] === 'number') return this.getInstance$overload3(args[0], args[1]);
+    
    throw new TypeError('No matching overload: getInstance'); }
   
     public static getInstance$overload1(): VectorMirrorGenerator{

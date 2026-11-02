@@ -239,6 +239,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
 
 updateImage(...args: any[]): any {
    
+   
     if (args.length === 0) return this.updateImage$overload1();
    
     if (args.length === 1) return this.updateImage$overload2(args[0]);

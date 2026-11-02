@@ -445,7 +445,7 @@ file= new File(filePath);
                                     }
                                 
 
-    let isWritten: boolean = ImageIO.write(outer$CanvasImageJPanel.result as RenderedImage, this.imageStrings!.PNG, file)!;;
+    let isWritten: boolean = ImageIO.write(this.result as RenderedImage, this.imageStrings!.PNG, file)!;;
     
 this.logUtil!.putF(new StringMaker().append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, this.commonStrings!.RUN);
     

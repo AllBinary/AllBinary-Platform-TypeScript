@@ -70,10 +70,15 @@ public constructor (booleanVisitorInterface: VisitorInterface){
 
 accept(...args: any[]): any {
    
+   
+    if (args.length === 1 && args[0] instanceof AbFile) return this.accept$overload2(args[0]);
+    
     if (args.length === 1) return this.accept$overload1(args[0]);
    
-    if (args.length === 1) return this.accept$overload2(args[0]);
+    if (args.length === 1 && args[0] == null) return this.accept$overload2(args[0]);
    
+    if (args.length === 1) return this.accept$overload2(args[0]);
+    
    throw new TypeError('No matching overload: accept'); }
   
     public accept$overload1(file: File): boolean{

@@ -179,6 +179,7 @@ this.byteArray= byteArray;
 
 getString(...args: any[]): any {
    
+   
     if (args.length === 1 && typeof args[0] === 'string') return this.getString$overload1(args[0]);
    
     if (args.length === 0) return this.getString$overload2();
@@ -233,10 +234,15 @@ getString(...args: any[]): any {
 
 write(...args: any[]): any {
    
+   
+    if (args.length === 1 && args[0] instanceof AbFile) return this.write$overload2(args[0]);
+    
     if (args.length === 1) return this.write$overload1(args[0]);
    
-    if (args.length === 1) return this.write$overload2(args[0]);
+    if (args.length === 1 && args[0] == null) return this.write$overload2(args[0]);
    
+    if (args.length === 1) return this.write$overload2(args[0]);
+    
    throw new TypeError('No matching overload: write'); }
   
                 //@Throws(Exception.constructor)

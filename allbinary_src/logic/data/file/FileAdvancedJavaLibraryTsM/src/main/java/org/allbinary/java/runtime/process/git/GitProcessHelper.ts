@@ -122,6 +122,7 @@ logUtil!.putF(THIS_IS_SLOW, this, commonStrings!.CONSTRUCTOR);
 
 trackedFiles(...args: any[]): any {
    
+   
     if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.trackedFiles$overload1(args[0], args[1]);
    
     if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string') return this.trackedFiles$overload2(args[0], args[1], args[2]);

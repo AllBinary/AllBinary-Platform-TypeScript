@@ -943,10 +943,19 @@ this.automationModuleConfigurationJPanel= automationModuleConfigurationJPanel;
 
 onAdd(...args: any[]): any {
    
+   
+    if (args.length === 1 && args[0] instanceof InputAutomationRobotChangeEvent) return this.onAdd$overload1(args[0]);
+    
+    if (args.length === 1 && args[0] instanceof InputAutomationConfigurationModuleChangeEvent) return this.onAdd$overload2(args[0]);
+    
+    if (args.length === 1 && args[0] == null) return this.onAdd$overload1(args[0]);
+   
+    if (args.length === 1 && args[0] == null) return this.onAdd$overload2(args[0]);
+   
     if (args.length === 1) return this.onAdd$overload1(args[0]);
-   
+    
     if (args.length === 1) return this.onAdd$overload2(args[0]);
-   
+    
    throw new TypeError('No matching overload: onAdd'); }
   
     public onAdd$overload1(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent){
@@ -970,10 +979,19 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e);
 
 onRemove(...args: any[]): any {
    
+   
+    if (args.length === 1 && args[0] instanceof InputAutomationRobotChangeEvent) return this.onRemove$overload1(args[0]);
+    
+    if (args.length === 1 && args[0] instanceof InputAutomationConfigurationModuleChangeEvent) return this.onRemove$overload2(args[0]);
+    
+    if (args.length === 1 && args[0] == null) return this.onRemove$overload1(args[0]);
+   
+    if (args.length === 1 && args[0] == null) return this.onRemove$overload2(args[0]);
+   
     if (args.length === 1) return this.onRemove$overload1(args[0]);
-   
+    
     if (args.length === 1) return this.onRemove$overload2(args[0]);
-   
+    
    throw new TypeError('No matching overload: onRemove'); }
   
     public onRemove$overload1(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent){

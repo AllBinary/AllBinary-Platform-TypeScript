@@ -142,6 +142,7 @@ export class Cpu
     }
     init(...args: any[]): any {
    
+   
     if (args.length === 1 && typeof args[0] === 'string') return this.init$overload1(args[0]);
    
     if (args.length === 2 && typeof args[1] === 'string') return this.init$overload2(args[0], args[1]);
@@ -385,6 +386,7 @@ nextLine= lineNumberReader!.readLine();
 }
 
 compareTo(...args: any[]): any {
+   
    
     if (args.length === 1) return this.compareTo$overload1(args[0]);
    

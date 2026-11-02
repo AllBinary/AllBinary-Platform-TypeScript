@@ -128,6 +128,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 isValid(...args: any[]): any {
    
+   
     if (args.length === 0) return this.isValid$overload1();
    
     if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'number') return this.isValid$overload2(args[0], args[1]);
@@ -330,6 +331,7 @@ HttpFileUploadUtil.log(fileItem);
 }
 
 validationInfo(...args: any[]): any {
+   
    
     if (args.length === 0) return this.validationInfo$overload1();
    

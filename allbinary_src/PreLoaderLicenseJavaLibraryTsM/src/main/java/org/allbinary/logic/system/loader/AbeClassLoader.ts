@@ -129,6 +129,7 @@ AbeClassLoader.PATH= org.allbinary.globals.URLGLOBALS.getWebappPath() +"WEB-INF/
 
 loadClass(...args: any[]): any {
    
+   
     if (args.length === 1 && typeof args[0] === 'string') return this.loadClass$overload1(args[0]);
    
     if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'boolean') return this.loadClass$overload2(args[0], args[1]);

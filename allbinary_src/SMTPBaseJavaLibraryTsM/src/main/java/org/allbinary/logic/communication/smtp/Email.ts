@@ -175,6 +175,7 @@ this.init(from, to, subject, server, textBody, htmlAttachment, contentBase);
     }
     init(...args: any[]): any {
    
+   
     if (args.length === 7 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string' && typeof args[3] === 'string' && typeof args[4] === 'string' && typeof args[5] === 'string' && typeof args[6] === 'string') return this.init$overload1(args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
    
     if (args.length === 8 && typeof args[0] === 'string' && typeof args[6] === 'string') return this.init$overload2(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7]);

@@ -90,6 +90,7 @@ this.key= ColorDelta.getKey(rgb1, rgb2);
 
 getKey(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getKey$overload1();
    
     if (args.length === 2 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.getKey$overload2(args[0], args[1]);

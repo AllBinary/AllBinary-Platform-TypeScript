@@ -62,6 +62,7 @@ export class ColorFillPaintableFactory
     private static readonly instance: ColorFillPaintableFactory = new ColorFillPaintableFactory();
 static getInstance(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getInstance$overload1();
    
     if (args.length === 2 && typeof args[1] === 'boolean') return this.getInstance$overload2(args[0], args[1]);

@@ -71,6 +71,7 @@ export class KeySpecFactory
     private static readonly instance: KeySpecFactory = new KeySpecFactory();
 static getInstance(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getInstance$overload1();
    
     if (args.length === 2 && typeof args[0] === 'string') return this.getInstance$overload2(args[0], args[1]);

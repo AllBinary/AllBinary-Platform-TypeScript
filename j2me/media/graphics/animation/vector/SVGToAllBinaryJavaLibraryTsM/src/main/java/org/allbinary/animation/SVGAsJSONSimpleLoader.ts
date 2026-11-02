@@ -454,6 +454,7 @@ pointVector!.add([SHAPE_SEPARATOR[0],SHAPE_SEPARATOR[1]]);
 
 readInt(...args: any[]): any {
    
+   
     if (args.length === 2 && typeof args[1] === 'string') return this.readInt$overload1(args[0], args[1]);
    
     if (args.length === 3 && typeof args[1] === 'string' && typeof args[2] === 'number') return this.readInt$overload2(args[0], args[1], args[2]);

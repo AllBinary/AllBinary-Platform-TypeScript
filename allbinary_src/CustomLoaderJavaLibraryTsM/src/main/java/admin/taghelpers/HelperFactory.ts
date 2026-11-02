@@ -77,6 +77,7 @@ export class HelperFactory
         
 static getInstance(...args: any[]): any {
    
+   
     if (args.length === 5 && typeof args[1] === 'string' && typeof args[2] === 'string') return this.getInstance$overload1(args[0], args[1], args[2], args[3], args[4]);
    
     if (args.length === 5 && typeof args[1] === 'string' && typeof args[2] === 'string') return this.getInstance$overload2(args[0], args[1], args[2], args[3], args[4]);

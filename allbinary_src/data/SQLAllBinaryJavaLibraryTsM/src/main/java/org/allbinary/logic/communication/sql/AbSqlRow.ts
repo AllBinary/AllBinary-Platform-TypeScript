@@ -153,6 +153,7 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
 updateWhere(...args: any[]): any {
    
+   
     if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.updateWhere$overload1(args[0], args[1], args[2]);
    
     if (args.length === 2) return this.updateWhere$overload2(args[0], args[1]);
@@ -445,6 +446,7 @@ this.executeSQLStatement(sqlStatement);
 }
 
 deleteWhere(...args: any[]): any {
+   
    
     if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.deleteWhere$overload1(args[0], args[1]);
    
@@ -834,6 +836,7 @@ result.put(columnName, field);
 
 getRows(...args: any[]): any {
    
+   
     if (args.length === 1) return this.getRows$overload1(args[0]);
    
     if (args.length === 2 && typeof args[1] === 'string') return this.getRows$overload2(args[0], args[1]);
@@ -1103,6 +1106,7 @@ rows.add(result);
 }
 
 getRowsWhereBetween(...args: any[]): any {
+   
    
     if (args.length === 4 && typeof args[1] === 'string' && typeof args[2] === 'string' && typeof args[3] === 'string') return this.getRowsWhereBetween$overload1(args[0], args[1], args[2], args[3]);
    

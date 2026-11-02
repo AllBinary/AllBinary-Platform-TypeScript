@@ -408,6 +408,7 @@ this.keyboardActionScriptInputJPanel!.getKeyActionJDialog()!.setVisible(true);
 
 getText(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getText$overload1();
    
     if (args.length === 1) return this.getText$overload2(args[0]);

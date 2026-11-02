@@ -76,12 +76,21 @@ export class AbXslHelper
 
 translate(...args: any[]): any {
    
-    if (args.length === 2) return this.translate$overload1(args[0], args[1]);
    
-    if (args.length === 2) return this.translate$overload2(args[0], args[1]);
+    if (args.length === 2 && args[0] instanceof AbFile && args[1] instanceof AbFile) return this.translate$overload1(args[0], args[1]);
+    
+    if (args.length === 2 && args[0] instanceof AbPath && args[1] instanceof AbPath) return this.translate$overload2(args[0], args[1]);
+    
+    if (args.length === 2 && args[0] == null && args[1] == null) return this.translate$overload1(args[0], args[1]);
+   
+    if (args.length === 2 && args[0] == null && args[1] == null) return this.translate$overload2(args[0], args[1]);
    
     if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.translate$overload3(args[0], args[1]);
    
+    if (args.length === 2) return this.translate$overload1(args[0], args[1]);
+    
+    if (args.length === 2) return this.translate$overload2(args[0], args[1]);
+    
    throw new TypeError('No matching overload: translate'); }
   
                 //@Throws(Exception.constructor)

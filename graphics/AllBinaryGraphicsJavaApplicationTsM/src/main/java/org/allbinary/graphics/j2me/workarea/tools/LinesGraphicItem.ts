@@ -377,10 +377,15 @@ this.setRotate(this.theta +Math.toRadians(angle));
 
 addPoint(...args: any[]): any {
    
+   
+    if (args.length === 1 && args[0] instanceof GPoint) return this.addPoint$overload2(args[0]);
+    
     if (args.length === 1) return this.addPoint$overload1(args[0]);
    
-    if (args.length === 1) return this.addPoint$overload2(args[0]);
+    if (args.length === 1 && args[0] == null) return this.addPoint$overload2(args[0]);
    
+    if (args.length === 1) return this.addPoint$overload2(args[0]);
+    
    throw new TypeError('No matching overload: addPoint'); }
   
                 //@Throws(Exception.constructor)

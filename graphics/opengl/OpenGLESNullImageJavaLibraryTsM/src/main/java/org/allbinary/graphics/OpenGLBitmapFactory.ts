@@ -84,6 +84,7 @@ public constructor (bitmapConfig: any){
     public readonly ARGB_8888 = new this.Config(NullUtil.getInstance()!.NULL_OBJECT);
 createBitmap(...args: any[]): any {
    
+   
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.createBitmap$overload1(args[0], args[1], args[2]);
    
     if (args.length === 1) return this.createBitmap$overload2(args[0]);

@@ -88,6 +88,7 @@ export class FileListFetcher
     private readonly subDirectory: SubDirectory = SubDirectory.getInstance()!;
 getFiles(...args: any[]): any {
    
+   
     if (args.length === 1 && typeof args[0] === 'string') return this.getFiles$overload1(args[0]);
    
     if (args.length === 2 && typeof args[0] === 'string') return this.getFiles$overload2(args[0], args[1]);
@@ -267,6 +268,7 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 }
 
 getTrackedFiles(...args: any[]): any {
+   
    
     if (args.length === 2 && typeof args[0] === 'string') return this.getTrackedFiles$overload1(args[0], args[1]);
    

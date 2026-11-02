@@ -150,6 +150,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 
 generate(...args: any[]): any {
    
+   
     if (args.length === 1) return this.generate$overload1(args[0]);
    
     if (args.length === 2 && typeof args[0] === 'string') return this.generate$overload2(args[0], args[1]);

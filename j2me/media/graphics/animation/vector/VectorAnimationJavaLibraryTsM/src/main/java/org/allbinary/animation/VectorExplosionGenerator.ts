@@ -77,6 +77,7 @@ export class VectorExplosionGenerator
     private static readonly instance: VectorExplosionGenerator = new VectorExplosionGenerator();
 static getInstance(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getInstance$overload1();
    
     if (args.length === 3 && typeof args[1] === 'number') return this.getInstance$overload2(args[0], args[1], args[2]);

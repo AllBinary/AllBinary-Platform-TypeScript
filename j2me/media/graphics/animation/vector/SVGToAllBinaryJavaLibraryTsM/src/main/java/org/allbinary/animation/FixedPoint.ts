@@ -45,6 +45,7 @@ export class FixedPoint
     public readonly ONE: number = 1<<16;
 toFixed(...args: any[]): any {
    
+   
     if (args.length === 1 && typeof args[0] === 'number') return this.toFixed$overload1(args[0]);
    
     if (args.length === 1 && typeof args[0] === 'number') return this.toFixed$overload2(args[0]);

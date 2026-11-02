@@ -53,12 +53,17 @@ export class RectangleCollisionUtil
         
 static isCollision(...args: any[]): any {
    
-    if (args.length === 2) return this.isCollision$overload1(args[0], args[1]);
+   
+    if (args.length === 2 && args[1] instanceof GPoint) return this.isCollision$overload1(args[0], args[1]);
+    
+    if (args.length === 2 && args[1] == null) return this.isCollision$overload1(args[0], args[1]);
    
     if (args.length === 2) return this.isCollision$overload2(args[0], args[1]);
    
     if (args.length === 8 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[2] === 'number' && typeof args[3] === 'number' && typeof args[4] === 'number' && typeof args[5] === 'number' && typeof args[6] === 'number' && typeof args[7] === 'number') return this.isCollision$overload3(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7]);
    
+    if (args.length === 2) return this.isCollision$overload1(args[0], args[1]);
+    
    throw new TypeError('No matching overload: isCollision'); }
   
     public static isCollision$overload1(rectangle: Rectangle, point: GPoint): boolean{

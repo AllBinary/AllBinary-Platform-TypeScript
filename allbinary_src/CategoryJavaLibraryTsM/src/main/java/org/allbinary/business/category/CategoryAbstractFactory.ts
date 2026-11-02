@@ -88,6 +88,7 @@ public constructor (){
 
 getRootInstance(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getRootInstance$overload1();
    
     if (args.length === 1) return this.getRootInstance$overload2(args[0]);
@@ -121,6 +122,7 @@ getRootInstance(...args: any[]): any {
 }
 
 getInstance(...args: any[]): any {
+   
    
     if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload1(args[0]);
    

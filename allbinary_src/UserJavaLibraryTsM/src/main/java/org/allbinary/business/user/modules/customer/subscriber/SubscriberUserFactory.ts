@@ -64,6 +64,7 @@ public constructor (){
 
 getInstance(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getInstance$overload1();
    
     if (args.length === 1) return this.getInstance$overload2(args[0]);

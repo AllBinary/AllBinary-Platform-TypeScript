@@ -80,6 +80,7 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
 getField(...args: any[]): any {
    
+   
     if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string' && typeof args[2] === 'string') return this.getField$overload1(args[0], args[1], args[2]);
    
     if (args.length === 2 && typeof args[1] === 'string') return this.getField$overload2(args[0], args[1]);

@@ -75,6 +75,7 @@ export class CssPropertiesValidationFactory
         
 static getInstance(...args: any[]): any {
    
+   
     if (args.length === 1) return this.getInstance$overload1(args[0]);
    
     if (args.length === 1) return this.getInstance$overload2(args[0]);

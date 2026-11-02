@@ -40,6 +40,7 @@ export class OpenGLObject3dProcessor
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 process(...args: any[]): any {
    
+   
     if (args.length === 2) return this.process$overload1(args[0], args[1]);
    
     if (args.length === 3 && typeof args[2] === 'number') return this.process$overload2(args[0], args[1], args[2]);

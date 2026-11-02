@@ -99,6 +99,7 @@ export class BufferedWriterUtil
     private readonly REMOVING_OLD: string = "Remove old for overwriting: ";
 overwrite(...args: any[]): any {
    
+   
     if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.overwrite$overload1(args[0], args[1]);
    
     if (args.length === 2 && typeof args[1] === 'string') return this.overwrite$overload2(args[0], args[1]);

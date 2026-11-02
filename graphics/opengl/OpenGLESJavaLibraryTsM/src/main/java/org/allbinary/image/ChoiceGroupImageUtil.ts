@@ -117,10 +117,15 @@ choiceGroupFactory!.init(imageArray);
 
 update(...args: any[]): any {
    
+   
+    if (args.length === 1 && args[0] instanceof Graphics) return this.update$overload2(args[0]);
+    
     if (args.length === 1) return this.update$overload1(args[0]);
    
-    if (args.length === 1) return this.update$overload2(args[0]);
+    if (args.length === 1 && args[0] == null) return this.update$overload2(args[0]);
    
+    if (args.length === 1) return this.update$overload2(args[0]);
+    
    throw new TypeError('No matching overload: update'); }
   
     public update$overload1(gl: GL){

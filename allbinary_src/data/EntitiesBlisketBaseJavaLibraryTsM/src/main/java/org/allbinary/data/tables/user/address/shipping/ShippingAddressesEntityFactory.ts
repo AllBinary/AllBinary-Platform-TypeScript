@@ -62,6 +62,7 @@ export class ShippingAddressesEntityFactory
     private static readonly instance: ShippingAddressesEntityFactory = new ShippingAddressesEntityFactory();
 static getInstance(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getInstance$overload1();
    
     if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);

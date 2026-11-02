@@ -59,6 +59,7 @@ public constructor (filterStringBasicArrayList: BasicArrayList){
 
 visit(...args: any[]): any {
    
+   
     if (args.length === 1) return this.visit$overload1(args[0]);
    
     if (args.length === 2 && typeof args[1] === 'string') return this.visit$overload2(args[0], args[1]);

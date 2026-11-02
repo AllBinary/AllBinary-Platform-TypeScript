@@ -136,6 +136,7 @@ this.fileOutputStream!.close();
 
 write(...args: any[]): any {
    
+   
     if (args.length === 1) return this.write$overload1(args[0]);
    
     if (args.length === 3 && typeof args[1] === 'number' && typeof args[2] === 'number') return this.write$overload2(args[0], args[1], args[2]);

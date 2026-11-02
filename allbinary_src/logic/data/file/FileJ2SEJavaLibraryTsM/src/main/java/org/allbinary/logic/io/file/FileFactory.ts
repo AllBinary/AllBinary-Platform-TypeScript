@@ -51,6 +51,7 @@ export class FileFactory
     private static readonly instance: FileFactory = new FileFactory();
 static getInstance(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getInstance$overload1();
    
     if (args.length === 1 && typeof args[0] === 'string') return this.getInstance$overload2(args[0]);

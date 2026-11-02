@@ -93,6 +93,7 @@ this.key= PixelDelta.getKey(this.getPoint(), this.getColorDelta());
 
 getKey(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getKey$overload1();
    
     if (args.length === 2) return this.getKey$overload2(args[0], args[1]);

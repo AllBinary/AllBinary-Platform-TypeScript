@@ -487,6 +487,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getNodeVector(nodename)");
 
 getTransformDomNodes(...args: any[]): any {
    
+   
     if (args.length === 1 && typeof args[0] === 'string') return this.getTransformDomNodes$overload1(args[0]);
    
     if (args.length === 0) return this.getTransformDomNodes$overload2();
@@ -528,6 +529,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 }
 
 getTransforms(...args: any[]): any {
+   
    
     if (args.length === 1 && typeof args[0] === 'string') return this.getTransforms$overload1(args[0]);
    

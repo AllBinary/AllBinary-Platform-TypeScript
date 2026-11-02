@@ -71,12 +71,17 @@ export class TransformInfoObjectConfigAndManipulatorFactoryBase
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 getInstance(...args: any[]): any {
    
-    if (args.length === 3) return this.getInstance$overload1(args[0], args[1], args[2]);
+   
+    if (args.length === 3 && args[2] instanceof AbPath) return this.getInstance$overload1(args[0], args[1], args[2]);
+    
+    if (args.length === 3 && args[2] == null) return this.getInstance$overload1(args[0], args[1], args[2]);
    
     if (args.length === 2) return this.getInstance$overload2(args[0], args[1]);
    
     if (args.length === 3) return this.getInstance$overload3(args[0], args[1], args[2]);
    
+    if (args.length === 3) return this.getInstance$overload1(args[0], args[1], args[2]);
+    
    throw new TypeError('No matching overload: getInstance'); }
   
                 //@Throws(Exception.constructor)

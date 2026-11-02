@@ -62,6 +62,7 @@ export class InitDbHelperFactory
     private static readonly CLASSNAME: string = "org.allbinary.business.installer.InitDbCrypted";
 static getInstance(...args: any[]): any {
    
+   
     if (args.length === 2) return this.getInstance$overload1(args[0], args[1]);
    
     if (args.length === 1) return this.getInstance$overload2(args[0]);

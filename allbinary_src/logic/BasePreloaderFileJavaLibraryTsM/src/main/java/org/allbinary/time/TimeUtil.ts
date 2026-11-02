@@ -64,6 +64,7 @@ export class TimeUtil
     private static readonly calendar: Calendar = Calendar.getInstance()!;
 setCalendar(...args: any[]): any {
    
+   
     if (args.length === 5 && typeof args[1] === 'string' && typeof args[2] === 'string' && typeof args[3] === 'string' && typeof args[4] === 'string') return this.setCalendar$overload1(args[0], args[1], args[2], args[3], args[4]);
    
     if (args.length === 7 && typeof args[1] === 'string' && typeof args[2] === 'string' && typeof args[3] === 'string' && typeof args[4] === 'string' && typeof args[5] === 'string' && typeof args[6] === 'string') return this.setCalendar$overload2(args[0], args[1], args[2], args[3], args[4], args[5], args[6]);

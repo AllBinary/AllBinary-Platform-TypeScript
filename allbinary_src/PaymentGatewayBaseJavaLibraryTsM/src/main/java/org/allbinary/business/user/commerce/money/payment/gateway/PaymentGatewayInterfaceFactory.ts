@@ -88,12 +88,17 @@ public constructor (){
 
 getInstance(...args: any[]): any {
    
+   
+    if (args.length === 1 && args[0] instanceof BasicPaymentType) return this.getInstance$overload2(args[0]);
+    
     if (args.length === 1) return this.getInstance$overload1(args[0]);
    
-    if (args.length === 1) return this.getInstance$overload2(args[0]);
+    if (args.length === 1 && args[0] == null) return this.getInstance$overload2(args[0]);
    
     if (args.length === 1) return this.getInstance$overload3(args[0]);
    
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+    
    throw new TypeError('No matching overload: getInstance'); }
   
                 //@Throws(Exception.constructor)

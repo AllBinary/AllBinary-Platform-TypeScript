@@ -120,7 +120,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e);
 public constructor (options: string[]){
 
             super();
-        LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
+        LicenseInitInfoUtil.getInstance()!.setFilePath("G:\\mnt\\bc\\mydev\\work\\allbinary_src\\licensing\\data\\" +PATH_GLOBALS.getInstance()!.INIT_PATH);
     
 
 
@@ -138,7 +138,7 @@ this.vector.add(options[index]!);
                         
                                     {
                                     
-    let file: File = new File(PrintLicenseInitInfo.PATH +"testlicenseservers.txt");;
+    let file: File = new File("G:\\mnt\\bc\\mydev\\work\\allbinary_src\\licensing\\data\\" +"testlicenseservers.txt");;
     
 
     let reader: FileReader = new FileReader(file);;

@@ -134,6 +134,7 @@ export class UserName
     }
     isValid(...args: any[]): any {
    
+   
     if (args.length === 0) return this.isValid$overload1();
    
     if (args.length === 1 && typeof args[0] === 'string') return this.isValid$overload2(args[0]);

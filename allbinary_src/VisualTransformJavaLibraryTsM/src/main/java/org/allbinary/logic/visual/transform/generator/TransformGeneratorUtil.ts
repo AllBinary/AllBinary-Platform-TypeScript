@@ -95,10 +95,15 @@ private constructor (){
 
 generate(...args: any[]): any {
    
+   
+    if (args.length === 3 && args[1] instanceof TransformInfoDomNode) return this.generate$overload2(args[0], args[1], args[2]);
+    
     if (args.length === 3) return this.generate$overload1(args[0], args[1], args[2]);
    
-    if (args.length === 3) return this.generate$overload2(args[0], args[1], args[2]);
+    if (args.length === 3 && args[1] == null) return this.generate$overload2(args[0], args[1], args[2]);
    
+    if (args.length === 3) return this.generate$overload2(args[0], args[1], args[2]);
+    
    throw new TypeError('No matching overload: generate'); }
   
                 //@Throws(Exception.constructor)

@@ -83,6 +83,7 @@ public constructor (){
 
 visit(...args: any[]): any {
    
+   
     if (args.length === 1) return this.visit$overload1(args[0]);
    
     if (args.length === 1) return this.visit$overload2(args[0]);

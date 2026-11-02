@@ -73,6 +73,7 @@ this.print(this.data, stringBuilder);
 
 print(...args: any[]): any {
    
+   
     if (args.length === 1) return this.print$overload1(args[0]);
    
     if (args.length === 2) return this.print$overload2(args[0], args[1]);

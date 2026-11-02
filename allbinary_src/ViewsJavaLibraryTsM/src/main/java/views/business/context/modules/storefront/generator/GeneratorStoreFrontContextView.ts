@@ -83,6 +83,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 view(...args: any[]): any {
    
+   
     if (args.length === 1 && typeof args[0] === 'string') return this.view$overload1(args[0]);
    
     if (args.length === 0) return this.view$overload2();

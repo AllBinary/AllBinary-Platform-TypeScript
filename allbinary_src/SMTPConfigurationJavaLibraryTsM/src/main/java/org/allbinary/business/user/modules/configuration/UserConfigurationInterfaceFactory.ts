@@ -88,12 +88,17 @@ export class UserConfigurationInterfaceFactory
     private static readonly configurationName: string = "DefaultUserConfiguration";
 static getInstance(...args: any[]): any {
    
+   
+    if (args.length === 1 && args[0] instanceof UserRole) return this.getInstance$overload2(args[0]);
+    
     if (args.length === 1) return this.getInstance$overload1(args[0]);
    
-    if (args.length === 1) return this.getInstance$overload2(args[0]);
+    if (args.length === 1 && args[0] == null) return this.getInstance$overload2(args[0]);
    
     if (args.length === 0) return this.getInstance$overload3();
    
+    if (args.length === 1) return this.getInstance$overload2(args[0]);
+    
    throw new TypeError('No matching overload: getInstance'); }
   
                 //@Throws(Exception.constructor)

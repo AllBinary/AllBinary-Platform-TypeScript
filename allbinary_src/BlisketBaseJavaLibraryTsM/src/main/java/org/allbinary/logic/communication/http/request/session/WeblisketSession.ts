@@ -181,6 +181,7 @@ this.session.setAttribute(PaymentGatewayData.NAME.toString(), value);
 
 setAuthenticated(...args: any[]): any {
    
+   
     if (args.length === 0) return this.setAuthenticated$overload1();
    
     if (args.length === 1 && typeof args[0] === 'boolean') return this.setAuthenticated$overload2(args[0]);

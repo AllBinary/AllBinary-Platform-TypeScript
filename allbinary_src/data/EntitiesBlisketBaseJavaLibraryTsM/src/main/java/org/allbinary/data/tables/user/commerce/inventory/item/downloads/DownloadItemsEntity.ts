@@ -177,6 +177,7 @@ super.updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID) a
 
 getForItem(...args: any[]): any {
    
+   
     if (args.length === 1 && typeof args[0] === 'string') return this.getForItem$overload1(args[0]);
    
     if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.getForItem$overload2(args[0], args[1]);

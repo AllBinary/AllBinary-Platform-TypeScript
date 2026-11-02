@@ -220,6 +220,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
 get(...args: any[]): any {
    
+   
     if (args.length === 1) return this.get$overload1(args[0]);
    
     if (args.length === 1) return this.get$overload2(args[0]);
@@ -310,6 +311,7 @@ get(...args: any[]): any {
 }
 
 getAll(...args: any[]): any {
+   
    
     if (args.length === 1) return this.getAll$overload1(args[0]);
    

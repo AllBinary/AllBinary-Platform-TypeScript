@@ -139,6 +139,7 @@ export class OpenGLUtil
     private created: boolean = false;
 onSurfaceCreated(...args: any[]): any {
    
+   
     if (args.length === 1) return this.onSurfaceCreated$overload1(args[0]);
    
     if (args.length === 2) return this.onSurfaceCreated$overload2(args[0], args[1]);

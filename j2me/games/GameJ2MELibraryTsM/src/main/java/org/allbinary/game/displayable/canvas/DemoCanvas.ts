@@ -1245,7 +1245,7 @@ this.threadFactoryUtil!.start(this.canvasThread);
 
     public preDemoProcess(){
 
-                        if(!this.gameCanvas!.isInitialized() || this.gameCanvas!.getTitle() == NullGameCanvas.NO_GAME)
+                        if(!this.gameCanvas!.isInitialized() || this.gameCanvas!.getTitle() == "No Background Game")
                         
                                     {
                                     
@@ -1389,7 +1389,7 @@ PreLogUtil.put(this.commonStrings!.START, this, METHOD_NAME);
     let isDefault: boolean = J2MEUtil.isHTML()!;;
     
 
-                        if(this.gameCanvas != NullGameCanvas.getInstance() && (this.gameCanvas!.isRunning() || isDefault || SWTUtil.isSWT) && !(this.gameCanvas!.getType() == NullGameCanvas.TYPE))
+                        if(this.gameCanvas != NullGameCanvas.getInstance() && (this.gameCanvas!.isRunning() || isDefault || SWTUtil.isSWT) && !(this.gameCanvas!.getType() == 1))
                         
                                     {
                                     this.gameRunnable= this.gameCanvas!.gameRunnable;

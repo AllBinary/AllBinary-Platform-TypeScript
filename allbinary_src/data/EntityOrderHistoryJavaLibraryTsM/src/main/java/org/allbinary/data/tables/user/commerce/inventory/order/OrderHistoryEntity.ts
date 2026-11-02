@@ -192,6 +192,7 @@ this.setTableName(this.tableName);
 
 insert(...args: any[]): any {
    
+   
     if (args.length === 2 && typeof args[0] === 'string') return this.insert$overload1(args[0], args[1]);
    
     if (args.length === 1) return this.insert$overload2(args[0]);
@@ -612,6 +613,7 @@ orderReviewVector!.add(orderReview);
 }
 
 getOrders(...args: any[]): any {
+   
    
     if (args.length === 1 && typeof args[0] === 'string') return this.getOrders$overload1(args[0]);
    

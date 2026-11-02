@@ -42,7 +42,9 @@ import { GL2 } from '../../../com/jogamp/opengl/GL2.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GL11 } from './GL11.js';
+        import { JOGL10 } from './JOGL10.js';
+//sameFolderImports - not GWT import - same folder const JOGL10
+import { GL11 } from './GL11.js';
 //sameFolderImports - not GWT import - same folder const GL11
 import { Buffer } from './Buffer.js';
 //sameFolderImports - not GWT import - same folder const Buffer
@@ -95,6 +97,7 @@ this.gl11.glBufferSubData(target, offset, size, data);
 
 glClipPlanef(...args: any[]): any {
    
+   
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glClipPlanef$overload1(args[0], args[1], args[2]);
    
     if (args.length === 2 && typeof args[0] === 'number') return this.glClipPlanef$overload2(args[0], args[1]);
@@ -126,6 +129,7 @@ this.gl11.glColorPointer(size, type, stride, offset);
 
 glDeleteBuffers(...args: any[]): any {
    
+   
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glDeleteBuffers$overload1(args[0], args[1], args[2]);
    
     if (args.length === 2 && typeof args[0] === 'number') return this.glDeleteBuffers$overload2(args[0], args[1]);
@@ -151,6 +155,7 @@ this.gl11.glDrawElements(mode, count, type, offset);
 
 glGenBuffers(...args: any[]): any {
    
+   
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glGenBuffers$overload1(args[0], args[1], args[2]);
    
     if (args.length === 2 && typeof args[0] === 'number') return this.glGenBuffers$overload2(args[0], args[1]);
@@ -169,6 +174,7 @@ this.gl11.glGenBuffers(n, buffers);
 }
 
 glGetBufferParameteriv(...args: any[]): any {
+   
    
     if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glGetBufferParameteriv$overload1(args[0], args[1], args[2], args[3]);
    
@@ -189,6 +195,7 @@ this.gl11.glGetBufferParameteriv(target, pname, params);
 
 glGetClipPlanef(...args: any[]): any {
    
+   
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glGetClipPlanef$overload1(args[0], args[1], args[2]);
    
     if (args.length === 2 && typeof args[0] === 'number') return this.glGetClipPlanef$overload2(args[0], args[1]);
@@ -207,6 +214,7 @@ this.gl11.glGetClipPlanef(pname, eqn);
 }
 
 glGetFloatv(...args: any[]): any {
+   
    
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glGetFloatv$overload1(args[0], args[1], args[2]);
    
@@ -227,6 +235,7 @@ this.gl11.glGetFloatv(pname, params);
 
 glGetLightfv(...args: any[]): any {
    
+   
     if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glGetLightfv$overload1(args[0], args[1], args[2], args[3]);
    
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glGetLightfv$overload2(args[0], args[1], args[2]);
@@ -245,6 +254,7 @@ this.gl11.glGetLightfv(light, pname, params);
 }
 
 glGetMaterialfv(...args: any[]): any {
+   
    
     if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glGetMaterialfv$overload1(args[0], args[1], args[2], args[3]);
    
@@ -265,6 +275,7 @@ this.gl11.glGetMaterialfv(face, pname, params);
 
 glGetTexEnviv(...args: any[]): any {
    
+   
     if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glGetTexEnviv$overload1(args[0], args[1], args[2], args[3]);
    
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glGetTexEnviv$overload2(args[0], args[1], args[2]);
@@ -284,6 +295,7 @@ this.gl11.glGetTexEnviv(env, pname, params);
 
 glGetTexParameterfv(...args: any[]): any {
    
+   
     if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glGetTexParameterfv$overload1(args[0], args[1], args[2], args[3]);
    
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glGetTexParameterfv$overload2(args[0], args[1], args[2]);
@@ -302,6 +314,7 @@ this.gl11.glGetTexParameterfv(target, pname, params);
 }
 
 glGetTexParameteriv(...args: any[]): any {
+   
    
     if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glGetTexParameteriv$overload1(args[0], args[1], args[2], args[3]);
    
@@ -364,6 +377,7 @@ this.gl11.glPointParameterf(pname, param);
 
 glPointParameterfv(...args: any[]): any {
    
+   
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glPointParameterfv$overload1(args[0], args[1], args[2]);
    
     if (args.length === 2 && typeof args[0] === 'number') return this.glPointParameterfv$overload2(args[0], args[1]);
@@ -395,6 +409,7 @@ this.gl11.glTexEnvi(target, pname, param);
 
 glTexEnviv(...args: any[]): any {
    
+   
     if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glTexEnviv$overload1(args[0], args[1], args[2], args[3]);
    
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glTexEnviv$overload2(args[0], args[1], args[2]);
@@ -413,6 +428,7 @@ this.gl11.glTexEnviv(target, pname, params);
 }
 
 glTexParameterfv(...args: any[]): any {
+   
    
     if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glTexParameterfv$overload1(args[0], args[1], args[2], args[3]);
    
@@ -438,6 +454,7 @@ this.gl11.glTexParameteri(target, pname, param);
 }
 
 glTexParameteriv(...args: any[]): any {
+   
    
     if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glTexParameteriv$overload1(args[0], args[1], args[2], args[3]);
    

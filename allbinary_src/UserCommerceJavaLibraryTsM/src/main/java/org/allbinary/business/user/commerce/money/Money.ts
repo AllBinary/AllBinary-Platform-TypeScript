@@ -158,6 +158,7 @@ export class Money
 
 add(...args: any[]): any {
    
+   
     if (args.length === 1) return this.add$overload1(args[0]);
    
     if (args.length === 1 && typeof args[0] === 'string') return this.add$overload2(args[0]);
@@ -182,6 +183,7 @@ this.units= new Long(this.units.longValue() -convertUsdToUnits(usDollarStr));
 }
 
 multiply(...args: any[]): any {
+   
    
     if (args.length === 1) return this.multiply$overload1(args[0]);
    

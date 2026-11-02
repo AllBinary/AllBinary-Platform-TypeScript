@@ -138,6 +138,7 @@ newValueNode!.appendChild(newValueTextNode);
 
 static createNameValueNodes(...args: any[]): any {
    
+   
     if (args.length === 4 && typeof args[1] === 'string' && typeof args[2] === 'string' && typeof args[3] === 'string') return this.createNameValueNodes$overload1(args[0], args[1], args[2], args[3]);
    
     if (args.length === 3 && typeof args[1] === 'string' && typeof args[2] === 'string') return this.createNameValueNodes$overload2(args[0], args[1], args[2]);
@@ -184,6 +185,7 @@ newNode!.appendChild(ModDomHelper.createValueNode(document, valueText));
 }
 
 static createNameValueIndexNodes(...args: any[]): any {
+   
    
     if (args.length === 4 && typeof args[1] === 'string' && typeof args[2] === 'number' && typeof args[3] === 'string') return this.createNameValueIndexNodes$overload1(args[0], args[1], args[2], args[3]);
    
@@ -380,6 +382,7 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
 }
 
 static createNodeWithValueNodes(...args: any[]): any {
+   
    
     if (args.length === 3 && typeof args[1] === 'string') return this.createNodeWithValueNodes$overload1(args[0], args[1], args[2]);
    

@@ -98,10 +98,15 @@ this.fireEmailEvent();
 
 addListener(...args: any[]): any {
    
-    if (args.length === 1) return this.addListener$overload1(args[0]);
+   
+    if (args.length === 1 && args[0] instanceof BasicArrayList) return this.addListener$overload1(args[0]);
+    
+    if (args.length === 1 && args[0] == null) return this.addListener$overload1(args[0]);
    
     if (args.length === 1) return this.addListener$overload2(args[0]);
    
+    if (args.length === 1) return this.addListener$overload1(args[0]);
+    
    throw new TypeError('No matching overload: addListener'); }
   //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 

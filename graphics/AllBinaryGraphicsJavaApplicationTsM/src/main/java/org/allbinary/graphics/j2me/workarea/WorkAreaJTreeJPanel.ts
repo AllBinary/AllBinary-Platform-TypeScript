@@ -165,6 +165,7 @@ this.workAreaPropertiesJPanel!.add(this.workAreaJTree);
 
 getNode(...args: any[]): any {
    
+   
     if (args.length === 1) return this.getNode$overload1(args[0]);
    
     if (args.length === 1) return this.getNode$overload2(args[0]);
@@ -336,6 +337,7 @@ parent.remove(node);
 
 copy(...args: any[]): any {
    
+   
     if (args.length === 0) return this.copy$overload1();
    
     if (args.length === 1) return this.copy$overload2(args[0]);
@@ -435,6 +437,7 @@ this.repaint();
 }
 
 expand(...args: any[]): any {
+   
    
     if (args.length === 0) return this.expand$overload1();
    

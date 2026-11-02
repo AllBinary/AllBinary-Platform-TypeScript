@@ -76,6 +76,7 @@ export class FileItemUtil
     public readonly DEFAULT_CHARSET: string = "ISO-8859-1";
 getString(...args: any[]): any {
    
+   
     if (args.length === 1) return this.getString$overload1(args[0]);
    
     if (args.length === 1) return this.getString$overload2(args[0]);

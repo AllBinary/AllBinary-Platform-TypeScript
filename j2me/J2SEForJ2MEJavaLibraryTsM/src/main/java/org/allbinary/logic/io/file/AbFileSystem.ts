@@ -154,6 +154,7 @@ console.log("isDirectory: " +isDirectory);
 
 readAsString(...args: any[]): any {
    
+   
     if (args.length === 1 && typeof args[0] === 'string') return this.readAsString$overload1(args[0]);
    
     if (args.length === 2 && typeof args[0] === 'string') return this.readAsString$overload2(args[0], args[1]);

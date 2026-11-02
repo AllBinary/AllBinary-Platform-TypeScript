@@ -459,6 +459,7 @@ this.staticPages!.insert(insertVector);
 
 generateAll(...args: any[]): any {
    
+   
     if (args.length === 0) return this.generateAll$overload1();
    
     if (args.length === 1 && typeof args[0] === 'string') return this.generateAll$overload2(args[0]);

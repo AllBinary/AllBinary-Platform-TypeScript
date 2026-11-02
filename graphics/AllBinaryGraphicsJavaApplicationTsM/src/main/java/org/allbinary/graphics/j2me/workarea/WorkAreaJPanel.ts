@@ -452,14 +452,19 @@ super.setVisible(false);
 
 select(...args: any[]): any {
    
+   
+    if (args.length === 1 && args[0] instanceof MyCanvasEvent) return this.select$overload4(args[0]);
+    
     if (args.length === 0) return this.select$overload1();
    
     if (args.length === 1 && typeof args[0] === 'number') return this.select$overload2(args[0]);
    
     if (args.length === 1) return this.select$overload3(args[0]);
    
-    if (args.length === 1) return this.select$overload4(args[0]);
+    if (args.length === 1 && args[0] == null) return this.select$overload4(args[0]);
    
+    if (args.length === 1) return this.select$overload4(args[0]);
+    
    throw new TypeError('No matching overload: select'); }
   
     public select$overload1(){
@@ -538,10 +543,15 @@ this.select(this.canvasJPanelList!.size() -1);
 
 duplicate(...args: any[]): any {
    
+   
+    if (args.length === 1 && args[0] instanceof MyCanvasEvent) return this.duplicate$overload2(args[0]);
+    
     if (args.length === 1) return this.duplicate$overload1(args[0]);
    
-    if (args.length === 1) return this.duplicate$overload2(args[0]);
+    if (args.length === 1 && args[0] == null) return this.duplicate$overload2(args[0]);
    
+    if (args.length === 1) return this.duplicate$overload2(args[0]);
+    
    throw new TypeError('No matching overload: duplicate'); }
   
                 //@Throws(Exception.constructor)
@@ -605,6 +615,7 @@ canvasJPanel!.explodeAll();
 }
 
 autoExplode(...args: any[]): any {
+   
    
     if (args.length === 2 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.autoExplode$overload1(args[0], args[1]);
    
@@ -716,10 +727,10 @@ canvasJPanel!.repaint();
 WorkAreaJPanel.document= DomHelper.getInstance()!.createDocument();
     
 
-    let workAreaNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.WORKAREA)!;;
+    let workAreaNode: Node = WorkAreaJPanel.document.createElement("workArea")!;;
     
 
-    let nameNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.NAME)!;;
+    let nameNode: Node = WorkAreaJPanel.document.createElement("name")!;;
     
 
     let nameTextNode: Node = WorkAreaJPanel.document.createTextNode(this.name)!;;
@@ -727,7 +738,7 @@ WorkAreaJPanel.document= DomHelper.getInstance()!.createDocument();
 nameNode!.appendChild(nameTextNode);
     
 
-    let framesNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.FRAMES)!;;
+    let framesNode: Node = WorkAreaJPanel.document.createElement("frames")!;;
     
 
     let size: number = this.canvasJPanelList!.size()!;;
@@ -908,6 +919,7 @@ this.autoExplode(10, 0);
 }
 
 center(...args: any[]): any {
+   
    
     if (args.length === 0) return this.center$overload1();
    

@@ -168,6 +168,7 @@ public constructor (imageComparatorConstraintsInterface: ImageComparatorConstrai
 
 compare(...args: any[]): any {
    
+   
     if (args.length === 5 && typeof args[4] === 'number') return this.compare$overload1(args[0], args[1], args[2], args[3], args[4]);
    
     if (args.length === 6 && typeof args[4] === 'number' && typeof args[5] === 'string') return this.compare$overload2(args[0], args[1], args[2], args[3], args[4], args[5]);

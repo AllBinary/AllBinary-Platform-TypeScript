@@ -170,6 +170,7 @@ this.setClassName(this.inputAutomationModuleInterface!.constructor.name.toString
     }
     init(...args: any[]): any {
    
+   
     if (args.length === 2) return this.init$overload1(args[0], args[1]);
    
     if (args.length === 1) return this.init$overload2(args[0]);

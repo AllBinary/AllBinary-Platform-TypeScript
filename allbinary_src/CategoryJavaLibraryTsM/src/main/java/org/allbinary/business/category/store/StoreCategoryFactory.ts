@@ -102,6 +102,7 @@ this.transformInfoInterface= transformInfoInterface;
 
 getRootInstance(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getRootInstance$overload1();
    
     if (args.length === 1) return this.getRootInstance$overload2(args[0]);

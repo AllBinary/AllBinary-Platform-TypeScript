@@ -232,6 +232,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCT
 
 isMedia(...args: any[]): any {
    
+   
     if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.isMedia$overload1(args[0], args[1]);
    
     if (args.length === 3 && typeof args[0] === 'string' && typeof args[1] === 'string') return this.isMedia$overload2(args[0], args[1], args[2]);

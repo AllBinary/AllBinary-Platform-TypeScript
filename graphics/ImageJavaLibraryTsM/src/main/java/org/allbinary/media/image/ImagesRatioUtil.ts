@@ -160,6 +160,7 @@ ratio += (bufferedImageArray[index]!.getWidth() /bufferedImageArray[index]!.getH
 
 fudge(...args: any[]): any {
    
+   
     if (args.length === 2 && typeof args[1] === 'number') return this.fudge$overload1(args[0], args[1]);
    
     if (args.length === 3 && typeof args[1] === 'number' && typeof args[2] === 'number') return this.fudge$overload2(args[0], args[1], args[2]);

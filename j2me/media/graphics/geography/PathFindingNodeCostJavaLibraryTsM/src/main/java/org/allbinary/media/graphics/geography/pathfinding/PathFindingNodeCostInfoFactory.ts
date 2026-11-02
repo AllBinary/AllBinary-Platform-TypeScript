@@ -72,6 +72,7 @@ this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, co
 
 getInstance(...args: any[]): any {
    
+   
     if (args.length === 4 && typeof args[2] === 'number' && typeof args[3] === 'number') return this.getInstance$overload1(args[0], args[1], args[2], args[3]);
    
     if (args.length === 2) return this.getInstance$overload2(args[0], args[1]);

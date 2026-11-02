@@ -102,7 +102,7 @@ initInfo!.createNewLicenseInitInfo(new BasicArrayListD());
 public constructor (options: string[]){
 
             super();
-        LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
+        LicenseInitInfoUtil.getInstance()!.setFilePath("G:\\mnt\\bc\\mydev\\work\\allbinary_src\\licensing\\data\\" +PATH_GLOBALS.getInstance()!.INIT_PATH);
     
 
 
@@ -174,7 +174,7 @@ console.log("License Serv Example: http://www.dartstatistics.com/LicServ/servers
 licenseInitInfo!.clearServers();
     
 
-    let file: File = new File(PrintLicenseInitInfo.PATH +"licenseservers.txt");;
+    let file: File = new File("G:\\mnt\\bc\\mydev\\work\\allbinary_src\\licensing\\data\\" +"licenseservers.txt");;
     
 
     let reader: FileReader = new FileReader(file);;

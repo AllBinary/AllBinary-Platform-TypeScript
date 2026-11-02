@@ -233,6 +233,7 @@ export class NullGL10
 
 glDeleteTextures(...args: any[]): any {
    
+   
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glDeleteTextures$overload1(args[0], args[1], args[2]);
    
     if (args.length === 2 && typeof args[0] === 'number') return this.glDeleteTextures$overload2(args[0], args[1]);
@@ -380,6 +381,7 @@ glDeleteTextures(...args: any[]): any {
 
 glFogfv(...args: any[]): any {
    
+   
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glFogfv$overload1(args[0], args[1], args[2]);
    
     if (args.length === 2 && typeof args[0] === 'number') return this.glFogfv$overload2(args[0], args[1]);
@@ -427,6 +429,7 @@ glFogfv(...args: any[]): any {
 
 glGenTextures(...args: any[]): any {
    
+   
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glGenTextures$overload1(args[0], args[1], args[2]);
    
     if (args.length === 2 && typeof args[0] === 'number') return this.glGenTextures$overload2(args[0], args[1]);
@@ -463,6 +466,7 @@ glGenTextures(...args: any[]): any {
 }
 
 glGetIntegerv(...args: any[]): any {
+   
    
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glGetIntegerv$overload1(args[0], args[1], args[2]);
    
@@ -521,6 +525,7 @@ glGetIntegerv(...args: any[]): any {
 
 glLightModelfv(...args: any[]): any {
    
+   
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'number') return this.glLightModelfv$overload1(args[0], args[1], args[2]);
    
     if (args.length === 2 && typeof args[0] === 'number') return this.glLightModelfv$overload2(args[0], args[1]);
@@ -557,6 +562,7 @@ glLightModelfv(...args: any[]): any {
 }
 
 glLightfv(...args: any[]): any {
+   
    
     if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glLightfv$overload1(args[0], args[1], args[2], args[3]);
    
@@ -605,6 +611,7 @@ glLightfv(...args: any[]): any {
 
 glLoadMatrixf(...args: any[]): any {
    
+   
     if (args.length === 2 && typeof args[1] === 'number') return this.glLoadMatrixf$overload1(args[0], args[1]);
    
     if (args.length === 1) return this.glLoadMatrixf$overload2(args[0]);
@@ -652,6 +659,7 @@ glLoadMatrixf(...args: any[]): any {
 
 glMaterialfv(...args: any[]): any {
    
+   
     if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glMaterialfv$overload1(args[0], args[1], args[2], args[3]);
    
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[1] === 'number') return this.glMaterialfv$overload2(args[0], args[1], args[2]);
@@ -688,6 +696,7 @@ glMaterialfv(...args: any[]): any {
 }
 
 glMultMatrixf(...args: any[]): any {
+   
    
     if (args.length === 2 && typeof args[1] === 'number') return this.glMultMatrixf$overload1(args[0], args[1]);
    
@@ -935,6 +944,7 @@ glMultMatrixf(...args: any[]): any {
 }
 
 glTexEnvfv(...args: any[]): any {
+   
    
     if (args.length === 4 && typeof args[0] === 'number' && typeof args[1] === 'number' && typeof args[3] === 'number') return this.glTexEnvfv$overload1(args[0], args[1], args[2], args[3]);
    

@@ -466,6 +466,7 @@ this.file.deleteOnExit();
 
 setWritable(...args: any[]): any {
    
+   
     if (args.length === 2 && typeof args[0] === 'boolean' && typeof args[1] === 'boolean') return this.setWritable$overload1(args[0], args[1]);
    
     if (args.length === 1 && typeof args[0] === 'boolean') return this.setWritable$overload2(args[0]);
@@ -493,6 +494,7 @@ setWritable(...args: any[]): any {
 
 setReadable(...args: any[]): any {
    
+   
     if (args.length === 2 && typeof args[0] === 'boolean' && typeof args[1] === 'boolean') return this.setReadable$overload1(args[0], args[1]);
    
     if (args.length === 1 && typeof args[0] === 'boolean') return this.setReadable$overload2(args[0]);
@@ -519,6 +521,7 @@ setReadable(...args: any[]): any {
 }
 
 setExecutable(...args: any[]): any {
+   
    
     if (args.length === 2 && typeof args[0] === 'boolean' && typeof args[1] === 'boolean') return this.setExecutable$overload1(args[0], args[1]);
    

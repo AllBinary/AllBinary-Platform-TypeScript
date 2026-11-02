@@ -66,6 +66,7 @@ export class OpenGLLogUtil
     private readonly MAX_TEXTURE: string = " Max Texture Size: ";
 logError(...args: any[]): any {
    
+   
     if (args.length === 1) return this.logError$overload1(args[0]);
    
     if (args.length === 2) return this.logError$overload2(args[0], args[1]);

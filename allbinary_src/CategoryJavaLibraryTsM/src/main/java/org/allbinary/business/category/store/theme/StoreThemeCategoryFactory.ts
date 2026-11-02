@@ -114,6 +114,7 @@ this.transformInfoInterface= transformInfoInterface;
 
 getRootInstance(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getRootInstance$overload1();
    
     if (args.length === 1) return this.getRootInstance$overload2(args[0]);
@@ -243,6 +244,7 @@ getRootInstance(...args: any[]): any {
 }
 
 getInstance(...args: any[]): any {
+   
    
     if (args.length === 2 && typeof args[0] === 'string' && typeof args[1] === 'number') return this.getInstance$overload1(args[0], args[1]);
    

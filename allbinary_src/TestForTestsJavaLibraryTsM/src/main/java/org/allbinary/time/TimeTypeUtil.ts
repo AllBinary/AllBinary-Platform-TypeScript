@@ -53,6 +53,7 @@ export class TimeTypeUtil
     public readonly DAY: string = "Day";
 isNight(...args: any[]): any {
    
+   
     if (args.length === 0) return this.isNight$overload1();
    
     if (args.length === 1 && typeof args[0] === 'number') return this.isNight$overload2(args[0]);
@@ -73,6 +74,7 @@ isNight(...args: any[]): any {
 
 getHourOfDay(...args: any[]): any {
    
+   
     if (args.length === 0) return this.getHourOfDay$overload1();
    
     if (args.length === 1 && typeof args[0] === 'number') return this.getHourOfDay$overload2(args[0]);
@@ -92,6 +94,7 @@ getHourOfDay(...args: any[]): any {
 }
 
 getNightOrDay(...args: any[]): any {
+   
    
     if (args.length === 0) return this.getNightOrDay$overload1();
    

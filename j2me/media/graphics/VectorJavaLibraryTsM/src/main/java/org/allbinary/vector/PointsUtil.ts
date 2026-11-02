@@ -117,6 +117,7 @@ newPoints[index]![index2]![1]= 1000;
 
 adjust(...args: any[]): any {
    
+   
     if (args.length === 2 && typeof args[1] === 'number') return this.adjust$overload1(args[0], args[1]);
    
     if (args.length === 3 && typeof args[1] === 'number' && typeof args[2] === 'number') return this.adjust$overload2(args[0], args[1], args[2]);

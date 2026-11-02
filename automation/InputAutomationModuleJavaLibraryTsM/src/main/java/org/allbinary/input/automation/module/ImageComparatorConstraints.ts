@@ -116,10 +116,15 @@ this.setAvoidVector(new BasicArrayListD());
 
 isCollisionWithAvoidRectangles(...args: any[]): any {
    
+   
+    if (args.length === 1 && args[0] instanceof GPoint) return this.isCollisionWithAvoidRectangles$overload2(args[0]);
+    
     if (args.length === 1) return this.isCollisionWithAvoidRectangles$overload1(args[0]);
    
-    if (args.length === 1) return this.isCollisionWithAvoidRectangles$overload2(args[0]);
+    if (args.length === 1 && args[0] == null) return this.isCollisionWithAvoidRectangles$overload2(args[0]);
    
+    if (args.length === 1) return this.isCollisionWithAvoidRectangles$overload2(args[0]);
+    
    throw new TypeError('No matching overload: isCollisionWithAvoidRectangles'); }
   
     public isCollisionWithAvoidRectangles$overload1(rectangle: Rectangle): boolean{

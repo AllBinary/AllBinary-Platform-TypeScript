@@ -112,6 +112,7 @@ private constructor (){
 
 createDocument(...args: any[]): any {
    
+   
     if (args.length === 0) return this.createDocument$overload1();
    
     if (args.length === 1) return this.createDocument$overload2(args[0]);
@@ -391,10 +392,15 @@ copyTransformer!.transform(domSource, streamResult);
 
 searchNodeList(...args: any[]): any {
    
+   
+    if (args.length === 2 && typeof args[0] === 'string' && args[1] instanceof BasicArrayList) return this.searchNodeList$overload2(args[0], args[1]);
+    
     if (args.length === 2 && typeof args[0] === 'string') return this.searchNodeList$overload1(args[0], args[1]);
    
-    if (args.length === 2 && typeof args[0] === 'string') return this.searchNodeList$overload2(args[0], args[1]);
+    if (args.length === 2 && typeof args[0] === 'string' && args[1] == null) return this.searchNodeList$overload2(args[0], args[1]);
    
+    if (args.length === 2 && typeof args[0] === 'string') return this.searchNodeList$overload2(args[0], args[1]);
+    
    throw new TypeError('No matching overload: searchNodeList'); }
   
                 //@Throws(Exception.constructor)

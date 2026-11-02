@@ -49,6 +49,7 @@ export class IntArrayUtil
         
 static toString(...args: any[]): any {
    
+   
     if (args.length === 1) return this.toString$overload1(args[0]);
    
     if (args.length === 1) return this.toString$overload2(args[0]);

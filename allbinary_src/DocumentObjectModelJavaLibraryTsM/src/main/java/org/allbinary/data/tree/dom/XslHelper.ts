@@ -101,6 +101,7 @@ private constructor (){
 
 translate(...args: any[]): any {
    
+   
     if (args.length === 3) return this.translate$overload1(args[0], args[1], args[2]);
    
     if (args.length === 4) return this.translate$overload2(args[0], args[1], args[2], args[3]);

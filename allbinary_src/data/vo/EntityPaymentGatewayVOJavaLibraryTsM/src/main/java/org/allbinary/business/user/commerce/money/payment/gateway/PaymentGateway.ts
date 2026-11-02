@@ -915,6 +915,7 @@ this.timeEntered= value;
 
 toHashMap(...args: any[]): any {
    
+   
     if (args.length === 0) return this.toHashMap$overload1();
    
     if (args.length === 1 && typeof args[0] === 'boolean') return this.toHashMap$overload2(args[0]);
@@ -1062,6 +1063,7 @@ paymentGatewayHashMap!.put(EntryData.getInstance()!.LASTMODIFIED.toString(), thi
 }
 
 toVector(...args: any[]): any {
+   
    
     if (args.length === 0) return this.toVector$overload1();
    

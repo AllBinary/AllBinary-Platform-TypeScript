@@ -89,6 +89,7 @@ export class ImageFactory
 
 createImageFromInputStream(...args: any[]): any {
    
+   
     if (args.length === 2) return this.createImageFromInputStream$overload1(args[0], args[1]);
    
     if (args.length === 1) return this.createImageFromInputStream$overload2(args[0]);

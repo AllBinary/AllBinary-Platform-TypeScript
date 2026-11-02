@@ -109,6 +109,7 @@ node= nodeList!.item(index);
 
 static getTextNodeValue(...args: any[]): any {
    
+   
     if (args.length === 1) return this.getTextNodeValue$overload1(args[0]);
    
     if (args.length === 2 && typeof args[0] === 'string') return this.getTextNodeValue$overload2(args[0], args[1]);

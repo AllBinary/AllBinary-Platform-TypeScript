@@ -353,7 +353,7 @@ file= new File(filePath);
                                     }
                                 
 
-    let isWritten: boolean = ImageIO.write(outer$RotationImageJPanel.result as RenderedImage, this.imageStrings!.PNG, file)!;;
+    let isWritten: boolean = ImageIO.write(this.result as RenderedImage, this.imageStrings!.PNG, file)!;;
     
 this.logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, this.commonStrings!.RUN);
     
