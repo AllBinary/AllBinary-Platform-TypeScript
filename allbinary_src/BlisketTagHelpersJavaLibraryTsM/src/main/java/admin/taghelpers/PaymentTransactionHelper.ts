@@ -181,7 +181,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
     let success: string = "Restore Successful";;
     
 
-    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(new TransactionEntity(), portion)!;;
+    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(new TransactionEntity(), this.portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

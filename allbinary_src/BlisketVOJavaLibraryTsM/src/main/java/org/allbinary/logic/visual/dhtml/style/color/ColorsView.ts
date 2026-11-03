@@ -101,7 +101,7 @@ public constructor (){
 
                                     }
                                 
-hexColorStringBuffer!.append(redIndex, HEXRADIX.toString());
+hexColorStringBuffer!.append(redIndex, this.HEXRADIX.toString());
     
 
                         if(greenIndex < this.HEXRADIX)
@@ -112,7 +112,7 @@ hexColorStringBuffer!.append(redIndex, HEXRADIX.toString());
 
                                     }
                                 
-hexColorStringBuffer!.append(greenIndex, HEXRADIX.toString());
+hexColorStringBuffer!.append(greenIndex, this.HEXRADIX.toString());
     
 
                         if(blueIndex < this.HEXRADIX)
@@ -123,7 +123,7 @@ hexColorStringBuffer!.append(greenIndex, HEXRADIX.toString());
 
                                     }
                                 
-hexColorStringBuffer!.append(blueIndex, HEXRADIX.toString());
+hexColorStringBuffer!.append(blueIndex, this.HEXRADIX.toString());
     
 
     let colorNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, hexColorStringBuffer!.toString())!;;
@@ -167,7 +167,7 @@ node.appendChild(blackNode);
 
                                     }
                                 
-hexColorStringBuffer!.append(index, HEXRADIX.toString());
+hexColorStringBuffer!.append(index, this.HEXRADIX.toString());
     
 
                         if(index < this.HEXRADIX)
@@ -178,7 +178,7 @@ hexColorStringBuffer!.append(index, HEXRADIX.toString());
 
                                     }
                                 
-hexColorStringBuffer!.append(index, HEXRADIX.toString());
+hexColorStringBuffer!.append(index, this.HEXRADIX.toString());
     
 
                         if(index < this.HEXRADIX)
@@ -189,7 +189,7 @@ hexColorStringBuffer!.append(index, HEXRADIX.toString());
 
                                     }
                                 
-hexColorStringBuffer!.append(index, HEXRADIX.toString());
+hexColorStringBuffer!.append(index, this.HEXRADIX.toString());
     
 
     let colorNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, hexColorStringBuffer!.toString())!;;

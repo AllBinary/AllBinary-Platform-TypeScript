@@ -96,8 +96,7 @@ removeJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.removeJButton);
     

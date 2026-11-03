@@ -202,7 +202,7 @@ stringBuffer!.append("Creating Table: ");
     
 stringBuffer!.append(tableData);
     
-PreLogUtil.put(stringBuffer!.toString(), INIT_SQL, "createTable()");
+PreLogUtil.put(stringBuffer!.toString(), this.INIT_SQL, "createTable()");
     
 this.executeSQLStatement(tableData);
     
@@ -221,7 +221,7 @@ this.executeSQLStatement(tableData);
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "createTable()", e);
+                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this.INIT_SQL, "createTable()", e);
     
 
                                     }
@@ -261,7 +261,7 @@ this.executeSQLStatement(tableData);
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "dropTables()", e);
+                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this.INIT_SQL, "dropTables()", e);
     
 
                                     }
@@ -526,7 +526,7 @@ this.executeSQLStatement(sqlStatement);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    PreLogUtil.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this.INIT_SQL, METHOD_UPDATE_WHERE);
+                                    PreLogUtil.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this.INIT_SQL, this.METHOD_UPDATE_WHERE);
     
 
                                     }
@@ -540,7 +540,7 @@ this.executeSQLStatement(sqlStatement);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    PreLogUtil.putOE(this.FAILED_SQL_STATEMENT +stringBuffer, this.INIT_SQL, METHOD_UPDATE_WHERE, e);
+                                    PreLogUtil.putOE(this.FAILED_SQL_STATEMENT +stringBuffer, this.INIT_SQL, this.METHOD_UPDATE_WHERE, e);
     
 
                                     }
@@ -598,7 +598,7 @@ this.executeSQLStatement(sqlStatement);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    PreLogUtil.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this.INIT_SQL, INSERT);
+                                    PreLogUtil.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this.INIT_SQL, this.INSERT);
     
 
                                     }
@@ -612,7 +612,7 @@ this.executeSQLStatement(sqlStatement);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    PreLogUtil.putOE(this.FAILED_SQL_STATEMENT +stringBuffer!.toString(), this.INIT_SQL, INSERT, e);
+                                    PreLogUtil.putOE(this.FAILED_SQL_STATEMENT +stringBuffer!.toString(), this.INIT_SQL, this.INSERT, e);
     
 
                                     }
@@ -692,7 +692,7 @@ stmt.close();
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "executeSQLStatement()", e);
+                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this.INIT_SQL, "executeSQLStatement()", e);
     
 
                                     }
@@ -711,7 +711,7 @@ stmt.close();
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "executeSQLStatement()", e);
+                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this.INIT_SQL, "executeSQLStatement()", e);
     
 
                                     }
@@ -752,7 +752,7 @@ stmt.close();
  if (caught instanceof SQLException) {
   const se = caught;
   
-PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "createConnection()", se);
+PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this.INIT_SQL, "createConnection()", se);
     
 
 
@@ -825,7 +825,7 @@ this.createConnection();
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "initialize()", se);
+                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this.INIT_SQL, "initialize()", se);
     
 
                                     }

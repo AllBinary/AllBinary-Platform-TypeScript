@@ -198,8 +198,7 @@ newColorAtJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.newTimeIntervalJButton!.setText("Time Interval");
     
@@ -211,8 +210,7 @@ newTimeIntervalJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.newAlwaysJButton!.setText("Always On/Off");
     
@@ -224,17 +222,16 @@ newAlwaysJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 
     let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(ifJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(newColorAtJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(newTimeIntervalJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(newAlwaysJButton)!.addContainerGap(61, Short.MAX_VALUE))!.addComponent(genericProfileActionScriptJScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE));
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(this.ifJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(this.newColorAtJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(this.newTimeIntervalJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(this.newAlwaysJButton)!.addContainerGap(61, Short.MAX_VALUE))!.addComponent(this.genericProfileActionScriptJScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE));
     
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(ifJLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(newColorAtJButton)!.addComponent(newTimeIntervalJButton)!.addComponent(newAlwaysJButton))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(genericProfileActionScriptJScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)));
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(this.ifJLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(this.newColorAtJButton)!.addComponent(this.newTimeIntervalJButton)!.addComponent(this.newAlwaysJButton))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(this.genericProfileActionScriptJScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)));
     
 }
 

@@ -263,7 +263,7 @@ this.executeSQLStatement(sqlStatement);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, METHOD_UPDATE_WHERE, e);
+                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, this.METHOD_UPDATE_WHERE, e);
     
 
                                     }
@@ -429,7 +429,7 @@ this.executeSQLStatement(sqlStatement);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, METHOD_UPDATE_WHERE, e);
+                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, this.METHOD_UPDATE_WHERE, e);
     
 
                                     }
@@ -1270,7 +1270,7 @@ rows.add(result);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, METHOD_GET_ROWS_WHERE_BETWEEN, e);
+                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, this.METHOD_GET_ROWS_WHERE_BETWEEN, e);
     
 
                                     }
@@ -1405,7 +1405,7 @@ rows.add(result);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, METHOD_GET_ROWS_WHERE_BETWEEN, e);
+                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, this.METHOD_GET_ROWS_WHERE_BETWEEN, e);
     
 
                                     }

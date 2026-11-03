@@ -151,7 +151,7 @@ this.logUtil!.putF(path, this, commonStrings!.CONSTRUCTOR);
     let fos: FileOutputStream = new FileOutputStream(path);;
     
 
-    let bitmap: Bitmap = (getImage as AndroidImageInterface).getBitmap()!;;
+    let bitmap: Bitmap = (this.fontImage!.openGLBitmap!.getImage() as AndroidImageInterface).getBitmap()!;;
     
 bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
     

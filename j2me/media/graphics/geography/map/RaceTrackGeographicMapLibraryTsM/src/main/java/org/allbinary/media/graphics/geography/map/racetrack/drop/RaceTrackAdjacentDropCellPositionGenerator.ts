@@ -291,7 +291,7 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, direction);
     let z: number = point.getZ()!;;
     
 
-    let layerInterface: AllBinaryLayer = RaceTrackAdjacentDropLayerFactory.getInstance()!.getRandomInstance()!.getNextInstance(hashtable, x, y, z)!;;
+    let layerInterface: AllBinaryLayer = RaceTrackAdjacentDropLayerFactory.getInstance()!.getRandomInstance()!.getNextInstance(this.hashtable, x, y, z)!;;
     
 
     let baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap = this.raceTrackGeographicMap as BaseRaceTrackGeographicMap;;

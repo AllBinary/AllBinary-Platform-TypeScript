@@ -131,14 +131,14 @@ export class MapSelectionGameInputProcessor extends Processor implements GameInp
 SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
 
-    let track: number = this.preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex() +1;;
+    let track: number = preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex() +1;;
     
 
-    let wave: number = this.raceTrackGeographicMapInterfaceFactoryInterface!.getFirstWaveWithTrack(track)!;;
+    let wave: number = raceTrackGeographicMapInterfaceFactoryInterface!.getFirstWaveWithTrack(track)!;;
     
-this.gameCanvas!.getLayerManager()!.getGameInfo()!.setCurrentLevel(wave);
+gameCanvas!.getLayerManager()!.getGameInfo()!.setCurrentLevel(wave);
     
-this.gameCanvas!.buildGameInit(false);
+gameCanvas!.buildGameInit(false);
     
 GameKeyEventHandler.getInstance()!.removeListener(getPlayerGameInput());
     
@@ -165,8 +165,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
  
 }
 
-                                }
-                            ;
+                                }();
 
 public constructor (gameCanvas: AllBinaryGameCanvas, raceTrackGeographicMapInterfaceFactoryInterface: MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface, mapSelectorPaintable: PreGameSelectorPaintable, lockedIndex: number){
 
@@ -249,7 +248,7 @@ break;
                                     {
                                     this.abRunnable!.setRunning(true);
     
-ThreadObjectUtil.getInstance()!.processThread(abRunnable);
+ThreadObjectUtil.getInstance()!.processThread(this.abRunnable);
     
 
                                     }

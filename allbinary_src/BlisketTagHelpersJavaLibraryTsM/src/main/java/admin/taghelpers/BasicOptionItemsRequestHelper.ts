@@ -186,7 +186,7 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     let values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-values.put(this.basicItemData!.ID, id);
+values.put(this.basicItemData!.ID, this.id);
     
 values.put(BasicOptionItemData.OPTION_ONE_ONE_ITEM, this.optionItem!.get(0));
     

@@ -86,7 +86,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRotatedImageRadians(bufferedImage, TWO_PIE *totalAngle /360);;
+                        return this.getRotatedImageRadians(bufferedImage, this.TWO_PIE *totalAngle /360);;
     
 }
 
@@ -141,7 +141,7 @@ g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.drawRotatedImageRadians(bufferedImage, newBufferedImage, g, TWO_PIE *totalAngle /360);;
+                        return this.drawRotatedImageRadians(bufferedImage, newBufferedImage, g, this.TWO_PIE *totalAngle /360);;
     
 }
 
@@ -154,7 +154,7 @@ g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.drawRotatedImageRadians(bufferedImage, newBufferedImage, g, TWO_PIE *totalAngle /360);;
+                        return this.drawRotatedImageRadians(bufferedImage, newBufferedImage, g, this.TWO_PIE *totalAngle /360);;
     
 }
 

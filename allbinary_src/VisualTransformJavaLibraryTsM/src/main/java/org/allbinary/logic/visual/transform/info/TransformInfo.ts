@@ -832,7 +832,7 @@ this.data= fileData;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    this.logUtil!.putF("Data: " +XmlDocumentHelper.toString(DomDocumentHelper.create(data)), this, "getData()");
+                                    this.logUtil!.putF("Data: " +XmlDocumentHelper.toString(DomDocumentHelper.create(this.data)), this, "getData()");
     
 
                                     }

@@ -86,9 +86,7 @@ accept(...args: any[]): any {
     let abFile: AbFile = FileWrapperUtil.wrapFile(file)!;;
     
 
-    let isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(abFile)visit as Boolean
-visit.
-                    .valueOf()!;;
+    let isFileAcceptable: boolean = (this.booleanVisitorInterface!.visit(abFile) as Boolean)..valueOf()!;;
     
 
 
@@ -101,9 +99,7 @@ visit.
 
     public accept$overload2(file: AbFile): boolean{
 
-    let isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(file)visit as Boolean
-visit.
-                    .valueOf()!;;
+    let isFileAcceptable: boolean = (this.booleanVisitorInterface!.visit(file) as Boolean)..valueOf()!;;
     
 
 

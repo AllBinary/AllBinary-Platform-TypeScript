@@ -229,7 +229,7 @@ this.logUtil!.putF(new StringMaker().append(" dx: ")!.appendint(this.dx)!.append
     let item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;;
     
 
-    let list: BasicArrayList = VectorCenterGenerator.translate(item.getPointsInterface()!.getPoints(), dx, dy)!;;
+    let list: BasicArrayList = VectorCenterGenerator.translate(item.getPointsInterface()!.getPoints(), this.dx, this.dy)!;;
     
 
     let newPoints: Points = new Points();;

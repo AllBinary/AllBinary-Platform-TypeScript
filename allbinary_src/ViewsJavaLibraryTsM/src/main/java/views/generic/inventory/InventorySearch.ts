@@ -273,7 +273,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return inventorySearchUtil!.search(abeClientInformation, searchRequest, vector);;
+                        return inventorySearchUtil!.search(abeClientInformation, this.searchRequest, vector);;
     
 }
 

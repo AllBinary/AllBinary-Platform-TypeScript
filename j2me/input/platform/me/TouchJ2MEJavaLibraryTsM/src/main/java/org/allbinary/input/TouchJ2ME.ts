@@ -85,7 +85,7 @@ motionGesturesHandler!.addListenerInterface(new GameMotionGestureListener(Motion
 
     public pointerDragged(x: number, y: number){
 
- try { this.motionRecognizer!.processDraggedMotionEvent(x, y, DEVICE_ID, 0);
+ try { this.motionRecognizer!.processDraggedMotionEvent(x, y, this.DEVICE_ID, 0);
     
  }
  catch (caught: any) {
@@ -106,7 +106,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerDragged", e);
 
     public pointerPressed(x: number, y: number){
 
- try { this.motionRecognizer!.processStartMotionEvent(x, y, DEVICE_ID, 0);
+ try { this.motionRecognizer!.processStartMotionEvent(x, y, this.DEVICE_ID, 0);
     
  }
  catch (caught: any) {
@@ -127,7 +127,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerPressed", e);
 
     public pointerReleased(x: number, y: number){
 
- try { this.motionRecognizer!.processEndMotionEvent(x, y, DEVICE_ID, 0);
+ try { this.motionRecognizer!.processEndMotionEvent(x, y, this.DEVICE_ID, 0);
     
  }
  catch (caught: any) {

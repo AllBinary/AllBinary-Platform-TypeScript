@@ -75,11 +75,11 @@ export class ImageTypeUtil
 private constructor (){
 
             super();
-        this.list.add(JPG);
+        this.list.add(this.JPG);
     
-this.list.add(GIF);
+this.list.add(this.GIF);
     
-this.list.add(PNG);
+this.list.add(this.PNG);
     
 }
 

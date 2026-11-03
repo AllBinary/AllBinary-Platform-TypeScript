@@ -290,8 +290,7 @@ gl.glPopMatrix();
     
 }
 
-                                }
-                            ;
+                                }();
 
     private openGLESImageDraw: OpenGLESImageDraw = OpenGLESImageDraw.getInstance()!;
 

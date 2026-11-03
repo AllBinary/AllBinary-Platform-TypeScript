@@ -175,7 +175,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_LARGETS_INTEG
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_LARGETS_INTEGER_IN_COLUMN, e);
+                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, this.METHOD_GET_LARGETS_INTEGER_IN_COLUMN, e);
     
 
                                     }
@@ -259,7 +259,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_COLUMN);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_COLUMN, e);
+                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, this.METHOD_GET_COLUMN, e);
     
 
                                     }

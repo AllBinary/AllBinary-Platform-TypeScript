@@ -167,7 +167,7 @@ this.setTableName(this.tableName);
 
     let stringBuffer: StringMaker = new StringMaker();;
     
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(this.basicItemData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.tableName)!.append(this.sqlStrings!.START)!.append(this.basicItemData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     
 stringBuffer!.append(BasicOptionItemData.OPTION_ONE_TITLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(BasicOptionItemData.DEFAULT_OPTION_ITEM)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicOptionItemData.DEFAULT_OPTION_VALUE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     

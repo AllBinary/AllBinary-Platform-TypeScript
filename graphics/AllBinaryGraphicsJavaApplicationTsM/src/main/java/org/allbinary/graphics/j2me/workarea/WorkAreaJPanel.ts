@@ -795,8 +795,7 @@ innerJPanelKeyReleased(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.innerJPanel);
     

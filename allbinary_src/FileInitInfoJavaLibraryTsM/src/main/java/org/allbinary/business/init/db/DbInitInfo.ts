@@ -150,7 +150,7 @@ this.initFileName= initFileName;
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    PreLogUtil.put(this.httpData!.URL_LABEL +url, this, GET_URL);
+                                    PreLogUtil.put(this.httpData!.URL_LABEL +url, this, this.GET_URL);
     
 
                                     }

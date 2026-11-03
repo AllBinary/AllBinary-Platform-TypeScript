@@ -196,8 +196,7 @@ okNewProfileJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.newProfileNameJLabel!.setText("New Profile Name");
     
@@ -206,9 +205,9 @@ this.newProfileNameJLabel!.setText("New Profile Name");
     
 this.newProfileJDialog!.getContentPane()!.setLayout(newProfileJDialogLayout);
     
-newProfileJDialogLayout!.setHorizontalGroup(newProfileJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(newProfileJDialogLayout!.createSequentialGroup()!.addGroup(newProfileJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(newProfileJDialogLayout!.createSequentialGroup()!.addGap(80, 80, 80)!.addComponent(newProfileNameJLabel))!.addGroup(newProfileJDialogLayout!.createSequentialGroup()!.addGap(30, 30, 30)!.addComponent(newProfileNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))!.addGroup(newProfileJDialogLayout!.createSequentialGroup()!.addGap(100, 100, 100)!.addComponent(okNewProfileJButton)))!.addContainerGap(35, Short.MAX_VALUE)));
+newProfileJDialogLayout!.setHorizontalGroup(newProfileJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(newProfileJDialogLayout!.createSequentialGroup()!.addGroup(newProfileJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(newProfileJDialogLayout!.createSequentialGroup()!.addGap(80, 80, 80)!.addComponent(this.newProfileNameJLabel))!.addGroup(newProfileJDialogLayout!.createSequentialGroup()!.addGap(30, 30, 30)!.addComponent(this.newProfileNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))!.addGroup(newProfileJDialogLayout!.createSequentialGroup()!.addGap(100, 100, 100)!.addComponent(this.okNewProfileJButton)))!.addContainerGap(35, Short.MAX_VALUE)));
     
-newProfileJDialogLayout!.setVerticalGroup(newProfileJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(newProfileJDialogLayout!.createSequentialGroup()!.addGap(10, 10, 10)!.addComponent(newProfileNameJLabel)!.addGap(16, 16, 16)!.addComponent(newProfileNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGap(20, 20, 20)!.addComponent(okNewProfileJButton)));
+newProfileJDialogLayout!.setVerticalGroup(newProfileJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(newProfileJDialogLayout!.createSequentialGroup()!.addGap(10, 10, 10)!.addComponent(this.newProfileNameJLabel)!.addGap(16, 16, 16)!.addComponent(this.newProfileNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGap(20, 20, 20)!.addComponent(this.okNewProfileJButton)));
     
 setLayout(new java.awt.GridLayout(1, 0));
     
@@ -232,8 +231,7 @@ genericProfilesJListValueChanged(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.genericProfilesJScrollPane!.setViewportView(this.genericProfilesJList);
     
@@ -249,8 +247,7 @@ newProfileJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.deleteProfileJButton!.setText("Delete");
     
@@ -264,8 +261,7 @@ deleteProfileJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jPanel1!.setPreferredSize(new java.awt.Dimension(1000, 100));
     
@@ -285,8 +281,7 @@ screenCaptureJRadioButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jLabel1!.setText("Profile Options");
     
@@ -308,8 +303,7 @@ savedCaptureJRadioButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.captureMotionAnalysisJCheckBox!.setText("Motion Analysis");
     
@@ -327,8 +321,7 @@ captureMotionAnalysisJCheckBoxActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.captureComparisonJCheckBox!.setText("Comparison");
     
@@ -346,8 +339,7 @@ captureComparisonJCheckBoxActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jLabel3!.setText("Image Processing:");
     
@@ -358,20 +350,20 @@ this.jLabel3!.setToolTipText("Turns on/off various extended image processing");
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
-jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(screenCaptureJRadioButton)!.addComponent(jLabel1)!.addComponent(jLabel2)!.addComponent(savedCaptureJRadioButton)!.addComponent(captureMotionAnalysisJCheckBox)!.addComponent(captureComparisonJCheckBox)!.addComponent(jLabel3))!.addContainerGap(22, Short.MAX_VALUE)));
+jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(this.screenCaptureJRadioButton)!.addComponent(this.jLabel1)!.addComponent(this.jLabel2)!.addComponent(this.savedCaptureJRadioButton)!.addComponent(this.captureMotionAnalysisJCheckBox)!.addComponent(this.captureComparisonJCheckBox)!.addComponent(this.jLabel3))!.addContainerGap(22, Short.MAX_VALUE)));
     
-jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel2)!.addGap(7, 7, 7)!.addComponent(screenCaptureJRadioButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(savedCaptureJRadioButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel3)!.addGap(7, 7, 7)!.addComponent(captureComparisonJCheckBox)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(captureMotionAnalysisJCheckBox)!.addContainerGap(106, Short.MAX_VALUE)));
+jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addComponent(this.jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(this.jLabel2)!.addGap(7, 7, 7)!.addComponent(this.screenCaptureJRadioButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(this.savedCaptureJRadioButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(this.jLabel3)!.addGap(7, 7, 7)!.addComponent(this.captureComparisonJCheckBox)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(this.captureMotionAnalysisJCheckBox)!.addContainerGap(106, Short.MAX_VALUE)));
     
 
     let genericProfilesJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.genericProfilesJPanel);;
     
 this.genericProfilesJPanel!.setLayout(genericProfilesJPanelLayout);
     
-genericProfilesJPanelLayout!.setHorizontalGroup(genericProfilesJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(genericProfilesJPanelLayout!.createSequentialGroup()!.addGroup(genericProfilesJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(genericProfilesJPanelLayout!.createSequentialGroup()!.addComponent(newProfileJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(deleteProfileJButton))!.addGroup(genericProfilesJPanelLayout!.createSequentialGroup()!.addComponent(genericProfilesJScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)))!.addContainerGap()));
+genericProfilesJPanelLayout!.setHorizontalGroup(genericProfilesJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(genericProfilesJPanelLayout!.createSequentialGroup()!.addGroup(genericProfilesJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(genericProfilesJPanelLayout!.createSequentialGroup()!.addComponent(this.newProfileJButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(this.deleteProfileJButton))!.addGroup(genericProfilesJPanelLayout!.createSequentialGroup()!.addComponent(this.genericProfilesJScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(this.jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)))!.addContainerGap()));
     
-genericProfilesJPanelLayout!.setVerticalGroup(genericProfilesJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(genericProfilesJPanelLayout!.createSequentialGroup()!.addGroup(genericProfilesJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(newProfileJButton)!.addComponent(deleteProfileJButton))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(genericProfilesJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)!.addComponent(genericProfilesJScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE))));
+genericProfilesJPanelLayout!.setVerticalGroup(genericProfilesJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(genericProfilesJPanelLayout!.createSequentialGroup()!.addGroup(genericProfilesJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(this.newProfileJButton)!.addComponent(this.deleteProfileJButton))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(genericProfilesJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(this.jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)!.addComponent(this.genericProfilesJScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE))));
     
-this.genericJTabbedPane!.addTab("Profiles", genericProfilesJPanel);
+this.genericJTabbedPane!.addTab("Profiles", this.genericProfilesJPanel);
     
 
     let blankGenericProfileActionsJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankGenericProfileActionsJPanel);;
@@ -382,7 +374,7 @@ blankGenericProfileActionsJPanelLayout!.setHorizontalGroup(blankGenericProfileAc
     
 blankGenericProfileActionsJPanelLayout!.setVerticalGroup(blankGenericProfileActionsJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 275, Short.MAX_VALUE));
     
-this.genericJTabbedPane!.addTab("Actions", blankGenericProfileActionsJPanel);
+this.genericJTabbedPane!.addTab("Actions", this.blankGenericProfileActionsJPanel);
     
 add(this.genericJTabbedPane);
     

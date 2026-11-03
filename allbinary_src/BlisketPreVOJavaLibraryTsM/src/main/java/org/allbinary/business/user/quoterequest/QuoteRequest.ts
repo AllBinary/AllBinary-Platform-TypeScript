@@ -444,7 +444,7 @@ values.add(time);
 
     let values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-values.put(UserData.USERNAME, userName);
+values.put(UserData.USERNAME, this.userName);
     
 values.put(quoteRequestData!.PROJECT_INFO, this.projectInfo);
     

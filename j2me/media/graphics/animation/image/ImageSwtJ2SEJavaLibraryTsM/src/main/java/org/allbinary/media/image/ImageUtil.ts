@@ -417,8 +417,7 @@ gc.drawImage(image, 0, 0, image.getBounds()!.width, image.getBounds()!.height, 0
     
 }
 
-                                }
-                            );
+                                }());
     
 
 

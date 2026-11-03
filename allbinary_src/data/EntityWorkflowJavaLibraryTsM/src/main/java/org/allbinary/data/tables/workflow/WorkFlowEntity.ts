@@ -233,7 +233,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, this.METHOD_GET, e);
     
 
                                     }
@@ -252,7 +252,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, this.METHOD_GET, e);
     
 
                                     }
@@ -301,7 +301,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
                                 )
                         
                                     {
-                                    workFlowsVector!.add(DbWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, workFlowHashMap));
+                                    workFlowsVector!.add(DbWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, workFlowHashMap));
     
 
                                     }
@@ -361,7 +361,7 @@ super.updateWhere(wherekeysAndValues, updatedValues);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_UPDATE, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, this.METHOD_UPDATE, e);
     
 
                                     }
@@ -380,7 +380,7 @@ super.updateWhere(wherekeysAndValues, updatedValues);
 
     let stringBuffer: StringMaker = new StringMaker();;
     
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(workFlowData!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(workFlowData!.DATA)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(workFlowData!.NAME)!.append(this.sqlStrings!.END);
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.tableName)!.append(this.sqlStrings!.START)!.append(workFlowData!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(workFlowData!.DATA)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(workFlowData!.NAME)!.append(this.sqlStrings!.END);
     
 
 

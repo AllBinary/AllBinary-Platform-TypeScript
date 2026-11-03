@@ -125,7 +125,7 @@ getInstance(...args: any[]): any {
                                 )
                         
                                     {
-                                    graphicsItemInterfaceFactoryInterface= DEFAULT;
+                                    graphicsItemInterfaceFactoryInterface= this.DEFAULT;
     
 
                                     }

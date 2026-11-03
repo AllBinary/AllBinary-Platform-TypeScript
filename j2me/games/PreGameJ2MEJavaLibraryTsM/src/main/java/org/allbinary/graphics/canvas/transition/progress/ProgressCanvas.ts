@@ -182,8 +182,7 @@ this.pathFindingThreadPool!.runAPriorityTask();
     
 }
 
-                                }
-                            ;
+                                }();
 
     public inGameProcessor: Processor = Processor.getInstance()!;
 

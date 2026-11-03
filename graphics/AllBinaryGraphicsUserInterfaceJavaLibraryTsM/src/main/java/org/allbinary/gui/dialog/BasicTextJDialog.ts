@@ -75,8 +75,7 @@ new BasicTextJDialog(new javax.swing.JFrame(), true, "Test").setVisible(true);
     
 }
 
-                                }
-                            );
+                                }());
     
 }
 
@@ -150,8 +149,7 @@ jButton1ActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.textJLabel!.setText("No Text Set");
     
@@ -160,9 +158,9 @@ this.textJLabel!.setText("No Text Set");
     
 getContentPane()!.setLayout(layout);
     
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addGap(80, 80, 80)!.addComponent(jButton1))!.addGroup(layout.createSequentialGroup()!.addContainerGap()!.addComponent(textJLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)))!.addContainerGap()));
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addGap(80, 80, 80)!.addComponent(this.jButton1))!.addGroup(layout.createSequentialGroup()!.addContainerGap()!.addComponent(this.textJLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)))!.addContainerGap()));
     
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addGap(20, 20, 20)!.addComponent(textJLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGap(30, 30, 30)!.addComponent(jButton1)));
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addGap(20, 20, 20)!.addComponent(this.textJLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGap(30, 30, 30)!.addComponent(this.jButton1)));
     
 pack();
     

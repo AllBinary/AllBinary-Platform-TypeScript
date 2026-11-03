@@ -294,8 +294,7 @@ okJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.saveJCheckBox!.setText("Save To File");
     
@@ -317,8 +316,7 @@ displayJCheckBoxActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.itemTypesJList!.setModel(new class extends javax.swing.AbstractListModel
                                 {
@@ -332,7 +330,7 @@ this.itemTypesJList!.setModel(new class extends javax.swing.AbstractListModel
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return strings.length;
+                        return this.strings.length;
     
 }
 
@@ -341,12 +339,11 @@ this.itemTypesJList!.setModel(new class extends javax.swing.AbstractListModel
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return strings[i]!;
+                        return this.strings[i]!;
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jScrollPane1!.setViewportView(this.itemTypesJList);
     
@@ -355,9 +352,9 @@ this.jScrollPane1!.setViewportView(this.itemTypesJList);
     
 this.capturedImageActionJDialog!.getContentPane()!.setLayout(capturedImageActionJDialogLayout);
     
-capturedImageActionJDialogLayout!.setHorizontalGroup(capturedImageActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addGroup(capturedImageActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addGap(61, 61, 61)!.addComponent(titleJLabel))!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addGroup(capturedImageActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(capturedImageActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(displayJCheckBox)!.addComponent(saveJCheckBox, javax.swing.GroupLayout.Alignment.TRAILING))!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addGap(84, 84, 84)!.addComponent(okJButton))))!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)))!.addContainerGap()));
+capturedImageActionJDialogLayout!.setHorizontalGroup(capturedImageActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addGroup(capturedImageActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addGap(61, 61, 61)!.addComponent(this.titleJLabel))!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addGroup(capturedImageActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(capturedImageActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(this.displayJCheckBox)!.addComponent(this.saveJCheckBox, javax.swing.GroupLayout.Alignment.TRAILING))!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addGap(84, 84, 84)!.addComponent(this.okJButton))))!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(this.jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)))!.addContainerGap()));
     
-capturedImageActionJDialogLayout!.setVerticalGroup(capturedImageActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addComponent(titleJLabel)!.addGap(5, 5, 5)!.addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(saveJCheckBox)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(displayJCheckBox)!.addGap(9, 9, 9)!.addComponent(okJButton)!.addContainerGap()));
+capturedImageActionJDialogLayout!.setVerticalGroup(capturedImageActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addComponent(this.titleJLabel)!.addGap(5, 5, 5)!.addComponent(this.jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(this.saveJCheckBox)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(this.displayJCheckBox)!.addGap(9, 9, 9)!.addComponent(this.okJButton)!.addContainerGap()));
     
 setMinimumSize(new java.awt.Dimension(100, 0));
     
@@ -371,8 +368,7 @@ capturedImageActionJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jLabel1!.setText("Capture Image:");
     
@@ -381,9 +377,9 @@ this.jLabel1!.setText("Capture Image:");
     
 this.setLayout(layout);
     
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(capturedImageActionJButton)));
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(this.jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(this.capturedImageActionJButton)));
     
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(capturedImageActionJButton)));
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(this.jLabel1)!.addComponent(this.capturedImageActionJButton)));
     
 }
 

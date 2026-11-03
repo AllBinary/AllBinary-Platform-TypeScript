@@ -243,7 +243,7 @@ this.streetAddress= new StreetAddress(this.request);
     let success: string = "Restore Successful";;
     
 
-    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(new ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING), portion)!;;
+    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(new ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING), this.portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

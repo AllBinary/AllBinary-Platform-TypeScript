@@ -106,7 +106,7 @@ save(...args: any[]): any {
     let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    let capturedBufferedImageCacheable: BufferedImageFrameCacheable = ((getInstance as AutomaticCacheInterface).get(frame) as BufferedImageFrameCacheable);;
+    let capturedBufferedImageCacheable: BufferedImageFrameCacheable = ((CapturedBufferedImagesCacheSingleton.getInstance() as AutomaticCacheInterface).get(frame) as BufferedImageFrameCacheable);;
     
 this.logUtil!.putF(("Saving: " +capturedBufferedImageCacheable!.toString()), this, commonStrings!.SAVE);
     

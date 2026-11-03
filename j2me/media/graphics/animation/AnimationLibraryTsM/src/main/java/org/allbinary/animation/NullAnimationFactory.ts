@@ -78,8 +78,7 @@ export class NullAnimationFactory
     public paintXY(graphics: Graphics, x: number, y: number){
 }
 
-                                }
-                            ;
+                                }();
 
     public readonly EMPTY_ARRAY: Animation[] = [];
 

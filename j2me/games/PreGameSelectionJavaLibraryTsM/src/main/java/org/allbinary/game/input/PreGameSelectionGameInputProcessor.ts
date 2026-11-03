@@ -130,7 +130,7 @@ export class PreGameSelectionGameInputProcessor extends Processor implements Gam
     
 SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
-this.gameCanvas!.setGameState(nextGameState);
+gameCanvas!.setGameState(nextGameState);
     
 GameKeyEventHandler.getInstance()!.removeListener(getPlayerGameInput());
     
@@ -157,8 +157,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
  
 }
 
-                                }
-                            ;
+                                }();
 
 public constructor (gameCanvas: AllBinaryGameCanvas, preGameSelectorPaintable: PreGameSelectorPaintable, nextGameState: GameState, lockedIndex: number){
 
@@ -241,7 +240,7 @@ break;
                                     {
                                     this.abRunnable!.setRunning(true);
     
-ThreadObjectUtil.getInstance()!.processThread(abRunnable);
+ThreadObjectUtil.getInstance()!.processThread(this.abRunnable);
     
 
                                     }

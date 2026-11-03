@@ -369,7 +369,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionSc
             
     public shouldProcess(frame: number): boolean{
 
-    let capturedBufferedImageCacheable: BufferedImageFrameCacheable = (getInstance as AutomaticCacheInterface).get(Number(frame)) as BufferedImageFrameCacheable;;
+    let capturedBufferedImageCacheable: BufferedImageFrameCacheable = (CapturedBufferedImagesCacheSingleton.getInstance() as AutomaticCacheInterface).get(Number(frame)) as BufferedImageFrameCacheable;;
     
 
     let bufferedImage: BufferedImage = capturedBufferedImageCacheable!.getBufferedImage()!;;

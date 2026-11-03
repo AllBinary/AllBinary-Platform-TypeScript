@@ -205,7 +205,7 @@ this.logUtil!.put("Licensing Failure", this, this.commonStrings!.GET, e);
 
                         if(this.abeLicenseInterface == 
                                     null
-                                 || this.abeLicenseInterface == AbeNoLicense.getInstance() || !this.abeLicenseInterface!.hasKey() || isCheck() || currentTime -checkPeriod > time)
+                                 || this.abeLicenseInterface == AbeNoLicense.getInstance() || !this.abeLicenseInterface!.hasKey() || isCheck() || currentTime -this.checkPeriod > this.time)
                         
                                     {
                                     this.abeLicenseInterface= 

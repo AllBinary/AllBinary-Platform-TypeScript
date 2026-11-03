@@ -340,7 +340,7 @@ this.searchRequest!.setFileBaseName(pageName);
     let inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;;
     
 
-    let productListingPages: string[] = inventorySearchUtil!.search(abeClientInformation, searchRequest, vector)!;;
+    let productListingPages: string[] = inventorySearchUtil!.search(abeClientInformation, this.searchRequest, vector)!;;
     
 
 

@@ -90,7 +90,7 @@ this.canvasDrawLineString= new CanvasDrawLineString(displayInfo!.getLastHalfWidt
     public paint(graphics: Graphics){
 graphics.setColor(BasicColorFactory.getInstance()!.WHITE.intValue());
     
-this.canvasDrawLineString!.paint(graphics, title, 0);
+this.canvasDrawLineString!.paint(graphics, this.title, 0);
     
 this.getPreGameSelectionForm()!.paint(graphics);
     

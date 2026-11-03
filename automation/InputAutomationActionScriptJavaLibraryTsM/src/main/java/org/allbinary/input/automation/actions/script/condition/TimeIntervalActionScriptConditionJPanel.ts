@@ -169,8 +169,7 @@ okJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jLabel2!.setText("Time (ms):");
     
@@ -179,9 +178,9 @@ this.jLabel2!.setText("Time (ms):");
     
 this.timeIntervalActionJDialog!.getContentPane()!.setLayout(timeIntervalActionJDialogLayout);
     
-timeIntervalActionJDialogLayout!.setHorizontalGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(timeIntervalActionJDialogLayout!.createSequentialGroup()!.addGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, timeIntervalActionJDialogLayout!.createSequentialGroup()!.addGap(82, 82, 82)!.addComponent(okJButton))!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, timeIntervalActionJDialogLayout!.createSequentialGroup()!.addGap(32, 32, 32)!.addGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(timeIntervalActionJDialogLayout!.createSequentialGroup()!.addComponent(jLabel2)!.addGap(16, 16, 16)!.addComponent(timeIntervalJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE))!.addComponent(titleJLabel))))!.addContainerGap(36, Short.MAX_VALUE)));
+timeIntervalActionJDialogLayout!.setHorizontalGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(timeIntervalActionJDialogLayout!.createSequentialGroup()!.addGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, timeIntervalActionJDialogLayout!.createSequentialGroup()!.addGap(82, 82, 82)!.addComponent(this.okJButton))!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, timeIntervalActionJDialogLayout!.createSequentialGroup()!.addGap(32, 32, 32)!.addGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(timeIntervalActionJDialogLayout!.createSequentialGroup()!.addComponent(this.jLabel2)!.addGap(16, 16, 16)!.addComponent(this.timeIntervalJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE))!.addComponent(this.titleJLabel))))!.addContainerGap(36, Short.MAX_VALUE)));
     
-timeIntervalActionJDialogLayout!.setVerticalGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(timeIntervalActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(titleJLabel)!.addGap(20, 20, 20)!.addGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel2)!.addComponent(timeIntervalJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addGap(15, 15, 15)!.addComponent(okJButton)!.addContainerGap()));
+timeIntervalActionJDialogLayout!.setVerticalGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(timeIntervalActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(this.titleJLabel)!.addGap(20, 20, 20)!.addGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(this.jLabel2)!.addComponent(this.timeIntervalJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addGap(15, 15, 15)!.addComponent(this.okJButton)!.addContainerGap()));
     
 setMinimumSize(new java.awt.Dimension(100, 0));
     
@@ -195,8 +194,7 @@ timeIntervalActionJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jLabel1!.setText("Time Interval:");
     
@@ -205,9 +203,9 @@ this.jLabel1!.setText("Time Interval:");
     
 this.setLayout(layout);
     
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(timeIntervalActionJButton)));
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(this.jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(this.timeIntervalActionJButton)));
     
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(timeIntervalActionJButton)));
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(this.jLabel1)!.addComponent(this.timeIntervalActionJButton)));
     
 }
 

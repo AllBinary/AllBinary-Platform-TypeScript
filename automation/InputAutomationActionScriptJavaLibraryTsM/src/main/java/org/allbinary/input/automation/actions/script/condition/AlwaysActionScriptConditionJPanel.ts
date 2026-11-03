@@ -179,8 +179,7 @@ okJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jLabel2!.setText("On:");
     
@@ -193,9 +192,9 @@ this.alwaysJComboBox!.setModel(new javax.swing.DefaultComboBoxModel([
     
 this.alwaysActionJDialog!.getContentPane()!.setLayout(alwaysActionJDialogLayout);
     
-alwaysActionJDialogLayout!.setHorizontalGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGap(47, 47, 47)!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, alwaysActionJDialogLayout!.createSequentialGroup()!.addComponent(jLabel2)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(alwaysJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addComponent(titleJLabel)))!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGap(79, 79, 79)!.addComponent(okJButton)))!.addContainerGap(45, Short.MAX_VALUE)));
+alwaysActionJDialogLayout!.setHorizontalGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGap(47, 47, 47)!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, alwaysActionJDialogLayout!.createSequentialGroup()!.addComponent(this.jLabel2)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(this.alwaysJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addComponent(this.titleJLabel)))!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGap(79, 79, 79)!.addComponent(this.okJButton)))!.addContainerGap(45, Short.MAX_VALUE)));
     
-alwaysActionJDialogLayout!.setVerticalGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(titleJLabel)!.addGap(20, 20, 20)!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(alwaysJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(jLabel2))!.addGap(15, 15, 15)!.addComponent(okJButton)!.addContainerGap()));
+alwaysActionJDialogLayout!.setVerticalGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(this.titleJLabel)!.addGap(20, 20, 20)!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(this.alwaysJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(this.jLabel2))!.addGap(15, 15, 15)!.addComponent(this.okJButton)!.addContainerGap()));
     
 setMinimumSize(new java.awt.Dimension(100, 0));
     
@@ -209,8 +208,7 @@ alwaysActionJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jLabel1!.setText("Always:");
     
@@ -219,9 +217,9 @@ this.jLabel1!.setText("Always:");
     
 this.setLayout(layout);
     
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)!.addComponent(alwaysActionJButton)));
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(this.jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)!.addComponent(this.alwaysActionJButton)));
     
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(alwaysActionJButton)));
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(this.jLabel1)!.addComponent(this.alwaysActionJButton)));
     
 }
 

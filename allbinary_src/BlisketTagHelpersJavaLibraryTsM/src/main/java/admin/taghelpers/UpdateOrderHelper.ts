@@ -272,51 +272,51 @@ orderHashMap!.put(EntryData.getInstance()!.ID, this.entryId);
     
 orderHashMap!.put(OrderData.ID, this.orderId);
     
-orderHashMap!.put(UserData.USERNAME, userName);
+orderHashMap!.put(UserData.USERNAME, this.userName);
     
 orderHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     
-orderHashMap!.put(OrderHistoryData.SHIPPEDDATE, shipDate);
+orderHashMap!.put(OrderHistoryData.SHIPPEDDATE, this.shipDate);
     
-orderHashMap!.put(OrderHistoryData.ORDERDATE, orderDate);
+orderHashMap!.put(OrderHistoryData.ORDERDATE, this.orderDate);
     
-orderHashMap!.put(OrderHistoryData.TRANSDATE, transDate);
+orderHashMap!.put(OrderHistoryData.TRANSDATE, this.transDate);
     
-orderHashMap!.put(OrderHistoryData.CANCELDATE, cancelDate);
+orderHashMap!.put(OrderHistoryData.CANCELDATE, this.cancelDate);
     
-orderHashMap!.put(OrderHistoryData.STATUS, status);
+orderHashMap!.put(OrderHistoryData.STATUS, this.status);
     
-orderHashMap!.put(PaymentData.METHOD, paymentMethod);
+orderHashMap!.put(PaymentData.METHOD, this.paymentMethod);
     
-orderHashMap!.put(PaymentData.NAME, name);
+orderHashMap!.put(PaymentData.NAME, this.name);
     
-orderHashMap!.put(PaymentData.TYPE, type);
+orderHashMap!.put(PaymentData.TYPE, this.type);
     
-orderHashMap!.put(PaymentData.EXPIRATION, expiration);
+orderHashMap!.put(PaymentData.EXPIRATION, this.expiration);
     
-orderHashMap!.put(BillingAddressData.NAME, billingName);
+orderHashMap!.put(BillingAddressData.NAME, this.billingName);
     
-orderHashMap!.put(BillingAddressData.STREET, billingStreet);
+orderHashMap!.put(BillingAddressData.STREET, this.billingStreet);
     
-orderHashMap!.put(BillingAddressData.CITY, billingCity);
+orderHashMap!.put(BillingAddressData.CITY, this.billingCity);
     
-orderHashMap!.put(BillingAddressData.STATE, billingState);
+orderHashMap!.put(BillingAddressData.STATE, this.billingState);
     
-orderHashMap!.put(BillingAddressData.CODE, billingCode);
+orderHashMap!.put(BillingAddressData.CODE, this.billingCode);
     
-orderHashMap!.put(BillingAddressData.COUNTRY, billingCountry);
+orderHashMap!.put(BillingAddressData.COUNTRY, this.billingCountry);
     
-orderHashMap!.put(ShippingAddressData.NAME, shippingName);
+orderHashMap!.put(ShippingAddressData.NAME, this.shippingName);
     
-orderHashMap!.put(ShippingAddressData.STREET, shippingStreet);
+orderHashMap!.put(ShippingAddressData.STREET, this.shippingStreet);
     
-orderHashMap!.put(ShippingAddressData.CITY, shippingCity);
+orderHashMap!.put(ShippingAddressData.CITY, this.shippingCity);
     
-orderHashMap!.put(ShippingAddressData.STATE, shippingState);
+orderHashMap!.put(ShippingAddressData.STATE, this.shippingState);
     
-orderHashMap!.put(ShippingAddressData.CODE, shippingCode);
+orderHashMap!.put(ShippingAddressData.CODE, this.shippingCode);
     
-orderHashMap!.put(ShippingAddressData.COUNTRY, shippingCountry);
+orderHashMap!.put(ShippingAddressData.COUNTRY, this.shippingCountry);
     
 orderHashMap!.put(ShippingMethodData.NAME, this.shippingMethodName);
     
@@ -338,7 +338,7 @@ orderHashMap!.put(OrderData.STORECOMMENT, this.storeComment);
     
 orderHashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment);
     
-whereHashMap!.put(OrderData.ID, orderId);
+whereHashMap!.put(OrderData.ID, this.orderId);
     
 OrderHistoryEntityFactory.getInstance()!.update(whereHashMap, orderHashMap);
     

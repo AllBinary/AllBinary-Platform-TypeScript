@@ -269,8 +269,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
  
 }
 
-                                }
-                            );
+                                }());
     
 }
 
@@ -364,7 +363,7 @@ inputAutomationConfigurationFactory!.init(InputAutomationClientInformationFactor
 
                         }
                             
-this.inputAutomationModuleFactory= new InputAutomationModuleFactoryFactory(inputAutomationModuleConfigurations, this);
+this.inputAutomationModuleFactory= new InputAutomationModuleFactoryFactory(this.inputAutomationModuleConfigurations, this);
     
  = 
 .
@@ -425,9 +424,9 @@ this.noModuleSelectedJLabel!.setText("Please Select A Module");
     
 this.noModuleSelectedJDialog!.getContentPane()!.setLayout(noModuleSelectedJDialogLayout);
     
-noModuleSelectedJDialogLayout!.setHorizontalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(noModuleSelectedJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(noModuleSelectedJLabel)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+noModuleSelectedJDialogLayout!.setHorizontalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(noModuleSelectedJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(this.noModuleSelectedJLabel)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
     
-noModuleSelectedJDialogLayout!.setVerticalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(noModuleSelectedJLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE));
+noModuleSelectedJDialogLayout!.setVerticalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(this.noModuleSelectedJLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE));
     
 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
     
@@ -448,8 +447,7 @@ formWindowLostFocus(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 addFocusListener(new class extends java.awt.event.FocusAdapter
                                 {
@@ -464,8 +462,7 @@ formFocusLost(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.gameRobotJTabbedPane!.setMinimumSize(new java.awt.Dimension(320, 200));
     
@@ -479,8 +476,7 @@ inputAutomationModuleJListValueChanged(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jScrollPane1!.setViewportView(this.inputAutomationModuleJList);
     
@@ -489,11 +485,11 @@ this.jScrollPane1!.setViewportView(this.inputAutomationModuleJList);
     
 this.inputAutomationModuleJPanel!.setLayout(inputAutomationModuleJPanelLayout);
     
-inputAutomationModuleJPanelLayout!.setHorizontalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(367, Short.MAX_VALUE)));
+inputAutomationModuleJPanelLayout!.setHorizontalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(this.jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(367, Short.MAX_VALUE)));
     
-inputAutomationModuleJPanelLayout!.setVerticalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+inputAutomationModuleJPanelLayout!.setVerticalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(this.jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
     
-this.gameRobotJTabbedPane!.addTab("Modules", inputAutomationModuleJPanel);
+this.gameRobotJTabbedPane!.addTab("Modules", this.inputAutomationModuleJPanel);
     
 
     let automationModuleConfigurationJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.automationModuleConfigurationJPanel);;
@@ -504,7 +500,7 @@ automationModuleConfigurationJPanelLayout!.setHorizontalGroup(automationModuleCo
     
 automationModuleConfigurationJPanelLayout!.setVerticalGroup(automationModuleConfigurationJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 334, Short.MAX_VALUE));
     
-this.gameRobotJTabbedPane!.addTab("Configuration", automationModuleConfigurationJPanel);
+this.gameRobotJTabbedPane!.addTab("Configuration", this.automationModuleConfigurationJPanel);
     
 this.processingJMenu!.setText("Processing");
     
@@ -520,8 +516,7 @@ startJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.processingJMenu!.add(this.startJMenuItem);
     
@@ -535,8 +530,7 @@ stopJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.processingJMenu!.add(this.stopJMenuItem);
     
@@ -552,8 +546,7 @@ optionsJMenuActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.stopOnFocusJCheckBoxMenuItem!.setSelected(true);
     
@@ -569,8 +562,7 @@ stopOnFocusJCheckBoxMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.optionsJMenu!.add(this.stopOnFocusJCheckBoxMenuItem);
     
@@ -588,8 +580,7 @@ helpJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.toolsJMenu!.add(this.helpJMenuItem);
     
@@ -603,8 +594,7 @@ updatesJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.toolsJMenu!.add(this.updatesJMenuItem);
     
@@ -618,8 +608,7 @@ subscriptionJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.toolsJMenu!.add(this.subscriptionJMenuItem);
     
@@ -633,8 +622,7 @@ modulesJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.toolsJMenu!.add(this.modulesJMenuItem);
     
@@ -648,8 +636,7 @@ aboutJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.toolsJMenu!.add(this.aboutJMenuItem);
     
@@ -662,9 +649,9 @@ setJMenuBar(this.mainJMenuBar);
     
 getContentPane()!.setLayout(layout);
     
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(gameRobotJTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE));
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(this.gameRobotJTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE));
     
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(gameRobotJTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE));
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(this.gameRobotJTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE));
     
 pack();
     

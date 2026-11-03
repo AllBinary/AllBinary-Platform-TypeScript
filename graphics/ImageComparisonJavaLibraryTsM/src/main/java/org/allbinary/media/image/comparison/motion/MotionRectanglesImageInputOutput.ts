@@ -153,7 +153,7 @@ save(...args: any[]): any {
     let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    let motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable = (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;;
+    let motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable = (AllMotionRectanglesResultsCacheSingleton.getInstance() as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;;
     
 
                         if(motionRectanglesResultsFrameCacheable != 
@@ -166,13 +166,13 @@ save(...args: any[]): any {
     
 this.save(motionRectangles, frame);
     
-motionRectanglesResultsFrameCacheable= (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
+motionRectanglesResultsFrameCacheable= (ConsolidatedMotionRectanglesResultsCacheSingleton.getInstance() as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
     
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
     
 this.save(motionRectangles, frame);
     
-motionRectanglesResultsFrameCacheable= (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
+motionRectanglesResultsFrameCacheable= (ConstrainedMotionRectanglesResultsCacheSingleton.getInstance() as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
     
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
     

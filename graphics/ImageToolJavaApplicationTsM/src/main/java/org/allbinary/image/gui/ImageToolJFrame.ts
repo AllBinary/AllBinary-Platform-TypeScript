@@ -271,17 +271,16 @@ okJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 
     let analysisActionJDialogLayout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.analysisActionJDialog!.getContentPane());;
     
 this.analysisActionJDialog!.getContentPane()!.setLayout(analysisActionJDialogLayout);
     
-analysisActionJDialogLayout!.setHorizontalGroup(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(analysisActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(analysisActionJDialogLayout!.createSequentialGroup()!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(blueJLabel)!.add(greenJLabel)!.add(redJLabel)!.add(colorRangeJLabel))!.add(29, 29, 29)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(org.jdesktop.layout.GroupLayout.TRAILING, minJLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)!.add(org.jdesktop.layout.GroupLayout.LEADING, minBlueJTextField)!.add(org.jdesktop.layout.GroupLayout.LEADING, minGreenJTextField)!.add(org.jdesktop.layout.GroupLayout.LEADING, minRedJTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)!.add(org.jdesktop.layout.GroupLayout.LEADING, okJButton)))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(org.jdesktop.layout.GroupLayout.LEADING, analysisActionJDialogLayout!.createSequentialGroup()!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)!.add(org.jdesktop.layout.GroupLayout.LEADING, maxRedJTextField)!.add(org.jdesktop.layout.GroupLayout.LEADING, analysisActionJDialogLayout!.createSequentialGroup()!.add(1, 1, 1)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(maxBlueJTextField)!.add(maxGreenJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 43, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 17, Short.MAX_VALUE))!.add(org.jdesktop.layout.GroupLayout.LEADING, maxJLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE))!.addContainerGap())!.add(org.jdesktop.layout.GroupLayout.TRAILING, analysisActionJDialogLayout!.createSequentialGroup()!.add(titleJLabel)!.add(25, 25, 25)))));
+analysisActionJDialogLayout!.setHorizontalGroup(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(analysisActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(analysisActionJDialogLayout!.createSequentialGroup()!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(this.blueJLabel)!.add(this.greenJLabel)!.add(this.redJLabel)!.add(this.colorRangeJLabel))!.add(29, 29, 29)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(org.jdesktop.layout.GroupLayout.TRAILING, this.minJLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)!.add(org.jdesktop.layout.GroupLayout.LEADING, this.minBlueJTextField)!.add(org.jdesktop.layout.GroupLayout.LEADING, this.minGreenJTextField)!.add(org.jdesktop.layout.GroupLayout.LEADING, this.minRedJTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)!.add(org.jdesktop.layout.GroupLayout.LEADING, this.okJButton)))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(org.jdesktop.layout.GroupLayout.LEADING, analysisActionJDialogLayout!.createSequentialGroup()!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)!.add(org.jdesktop.layout.GroupLayout.LEADING, this.maxRedJTextField)!.add(org.jdesktop.layout.GroupLayout.LEADING, analysisActionJDialogLayout!.createSequentialGroup()!.add(1, 1, 1)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(this.maxBlueJTextField)!.add(this.maxGreenJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 43, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 17, Short.MAX_VALUE))!.add(org.jdesktop.layout.GroupLayout.LEADING, this.maxJLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE))!.addContainerGap())!.add(org.jdesktop.layout.GroupLayout.TRAILING, analysisActionJDialogLayout!.createSequentialGroup()!.add(this.titleJLabel)!.add(25, 25, 25)))));
     
-analysisActionJDialogLayout!.setVerticalGroup(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(analysisActionJDialogLayout!.createSequentialGroup()!.add(titleJLabel)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(minJLabel)!.add(colorRangeJLabel)!.add(maxJLabel))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(redJLabel)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(minRedJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(maxRedJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(greenJLabel)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(minGreenJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(maxGreenJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(blueJLabel)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(minBlueJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(maxBlueJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))!.add(16, 16, 16)!.add(okJButton)!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+analysisActionJDialogLayout!.setVerticalGroup(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(analysisActionJDialogLayout!.createSequentialGroup()!.add(this.titleJLabel)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(this.minJLabel)!.add(this.colorRangeJLabel)!.add(this.maxJLabel))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(this.redJLabel)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(this.minRedJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(this.maxRedJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(this.greenJLabel)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(this.minGreenJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(this.maxGreenJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)!.add(this.blueJLabel)!.add(analysisActionJDialogLayout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(this.minBlueJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(this.maxBlueJTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))!.add(16, 16, 16)!.add(this.okJButton)!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
     
 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
     
@@ -301,8 +300,7 @@ fileJMenuActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.openImageJMenuItem!.setText("Open");
     
@@ -314,8 +312,7 @@ openImageJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.fileJMenu!.add(this.openImageJMenuItem);
     
@@ -331,8 +328,7 @@ processingJMenuActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.analyzeJMenuItem!.setText("Image Analyze");
     
@@ -344,8 +340,7 @@ analyzeJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.processingJMenu!.add(this.analyzeJMenuItem);
     
@@ -359,8 +354,7 @@ generateMirrorSpriteMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.processingJMenu!.add(this.generateMirrorSpriteMenuItem);
     
@@ -374,8 +368,7 @@ generateRotationSpriteJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.processingJMenu!.add(this.generateRotationSpriteJMenuItem);
     
@@ -389,8 +382,7 @@ generateSpriteSplitterMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.processingJMenu!.add(this.generateSpriteSplitterMenuItem);
     
@@ -404,8 +396,7 @@ generateRotationMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.processingJMenu!.add(this.generateRotationMenuItem);
     
@@ -419,8 +410,7 @@ createStripImageJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.processingJMenu!.add(this.createStripImageJMenuItem);
     
@@ -434,8 +424,7 @@ mirrorJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.processingJMenu!.add(this.mirrorJMenuItem);
     
@@ -449,8 +438,7 @@ scaleImagesJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.processingJMenu!.add(this.scaleImagesJMenuItem);
     
@@ -464,8 +452,7 @@ canvasImagesJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.processingJMenu!.add(this.canvasImagesJMenuItem);
     
@@ -479,8 +466,7 @@ createIconsJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.processingJMenu!.add(this.createIconImagesJMenuItem);
     
@@ -634,8 +620,7 @@ i= 0;
     
 }
 
-                                }
-                            );
+                                }());
     
 
     let bufferedImageArray: BufferedImage[] = new Array(files.length);;

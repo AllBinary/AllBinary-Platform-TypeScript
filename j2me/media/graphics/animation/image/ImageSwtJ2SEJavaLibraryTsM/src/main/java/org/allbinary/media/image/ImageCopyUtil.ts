@@ -366,7 +366,7 @@ image= new SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.create
                                     }
                                 
                         else {
-                            this.logUtil!.putF(UNABLE, this, this.commonStrings!.CONSTRUCTOR);
+                            this.logUtil!.putF(this.UNABLE, this, this.commonStrings!.CONSTRUCTOR);
     
 image= new SwtImmutableImage(originalImmutableImage!.getName(), new PostLoadSwtImmutableImageProcessor(originalImmutableImage));
     
@@ -686,7 +686,7 @@ image= this.openGLUtil!.addImage(image);
                         
                                     {
                                     
-    let originalImageData: ImageData = (getImage as org.eclipse.swt.graphics.Image).getImageData()!;;
+    let originalImageData: ImageData = (originalImage!.getImage() as org.eclipse.swt.graphics.Image).getImageData()!;;
     
 
     let mutableImage2: SwtMutableImage = image as SwtMutableImage;;
@@ -740,9 +740,7 @@ newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta
 
 }
 
-getImage = mutableImage2!.getImage()getImage as org.eclipse.swt.graphics.Image
-getImage.
-                    getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0);
+(mutableImage2!.getImage() as org.eclipse.swt.graphics.Image).getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0);
     
 
 
@@ -758,7 +756,7 @@ getImage.
     let originalImmutableImage: SwtImmutableImage = image as SwtImmutableImage;;
     
 
-    let originalImageData: ImageData = (getImage as org.eclipse.swt.graphics.Image).getImageData()!;;
+    let originalImageData: ImageData = (originalImage!.getImage() as org.eclipse.swt.graphics.Image).getImageData()!;;
     
 
     let halfWidthDelta: number = (newWidth -originalImage!.getWidth()) /2;;
@@ -809,9 +807,7 @@ newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta
 
 }
 
-getImage = originalImmutableImage!.getImage()getImage as org.eclipse.swt.graphics.Image
-getImage.
-                    getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0);
+(originalImmutableImage!.getImage() as org.eclipse.swt.graphics.Image).getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0);
     
 
 

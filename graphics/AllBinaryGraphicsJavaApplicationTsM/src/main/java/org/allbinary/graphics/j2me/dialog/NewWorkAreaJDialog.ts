@@ -152,8 +152,7 @@ submitButton!.addActionListener(new class extends ActionListener
  
 }
 
-                                }
-                            );
+                                }());
     
 this.setSize(150, 100);
     
@@ -251,8 +250,7 @@ closeDialog(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 pack();
     

@@ -121,7 +121,7 @@ save(...args: any[]): any {
                         
                                     {
                                     
-    let imageComparisonResultFrameCacheable: ImageComparisonResultFrameCacheable = (getInstance as AutomaticCacheInterface).get(frame) as ImageComparisonResultFrameCacheable;;
+    let imageComparisonResultFrameCacheable: ImageComparisonResultFrameCacheable = (ImageComparisonResultCacheSingleton.getInstance() as AutomaticCacheInterface).get(frame) as ImageComparisonResultFrameCacheable;;
     
 
                         if(imageComparisonResultFrameCacheable != 

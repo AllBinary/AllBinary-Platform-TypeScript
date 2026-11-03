@@ -209,7 +209,7 @@ stringBuffer!.append(" from to the user table");
     public insert(): string{
 
  try { 
-    let userInterface: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;;
+    let userInterface: UserInterface = NewUserFactory.getInstance(this.request, this.hashMap)!;;
     
 
     let enable: string = this.hashMap!.get(EntryData.getInstance()!.ENABLE) as string;;
@@ -279,7 +279,7 @@ UserEntityFactory.getInstance()!.insert(values);
     public update(): string{
 
  try { 
-    let user: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;;
+    let user: UserInterface = NewUserFactory.getInstance(this.request, this.hashMap)!;;
     
 
     let values: HashMap<any, any> = user.toHashMap()!;;

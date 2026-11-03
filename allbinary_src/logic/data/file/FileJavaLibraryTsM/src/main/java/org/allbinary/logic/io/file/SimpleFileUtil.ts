@@ -130,8 +130,7 @@ export class SimpleFileUtil
     public close(){
 }
 
-                                }
-                            ;
+                                }();
     
 }
 
@@ -206,8 +205,7 @@ export class SimpleFileUtil
     public close(){
 }
 
-                                }
-                            ;
+                                }();
     
 }
 
@@ -278,8 +276,7 @@ export class SimpleFileUtil
     public close(){
 }
 
-                                }
-                            ;
+                                }();
     
 }
 

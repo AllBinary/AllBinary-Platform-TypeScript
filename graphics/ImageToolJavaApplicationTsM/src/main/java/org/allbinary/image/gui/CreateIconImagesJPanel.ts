@@ -215,9 +215,9 @@ iconHeightList!.add(864);
                         for (
     let index2: number = 0;index2 < size; index2++)
         {
-width= (get as Integer).intValue();
+width= (iconWidthList!.get(index2) as Integer).intValue();
     
-height= (get as Integer).intValue();
+height= (iconHeightList!.get(index2) as Integer).intValue();
     
 
     let generatedBufferedImageArray: BufferedImage[] = imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true)!;;
@@ -269,7 +269,7 @@ outer$CreateIconImagesJPanel.getParent()!.repaint();
  {
   const e = caught;
   
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 
  }
@@ -277,8 +277,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
  
 }
 
-                                }
-                            .start();
+                                }().start();
     
 }
 
@@ -312,17 +311,16 @@ aboveJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 
     let layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(aboveJButton)!.addGap(0, 335, Short.MAX_VALUE)));
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(this.aboveJButton)!.addGap(0, 335, Short.MAX_VALUE)));
     
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addContainerGap()!.addComponent(aboveJButton)!.addContainerGap(286, Short.MAX_VALUE)));
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addContainerGap()!.addComponent(this.aboveJButton)!.addContainerGap(286, Short.MAX_VALUE)));
     
 }
 

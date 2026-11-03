@@ -686,9 +686,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
     let imageLoader: ImageLoader = new ImageLoader();;
     
 
-    let imageData: ImageData = image = imageimage as SwtMutableImage
-image.
-                    image.getImageData()!;;
+    let imageData: ImageData = (image as SwtMutableImage).image.getImageData()!;;
     
 imageData!.transparentPixel= imageData!.getPixel(0, 0);
     

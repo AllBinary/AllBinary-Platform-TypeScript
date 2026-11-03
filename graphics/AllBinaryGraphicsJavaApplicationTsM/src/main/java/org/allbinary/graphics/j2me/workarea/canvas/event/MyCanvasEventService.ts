@@ -110,9 +110,7 @@ MyCanvasEventService.listenerList!.remove(listener.constructor as Class<any>, li
                         if(evt.getCommand()!.compareTo(MyCanvasEventService.DELETE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
-.
-                    delete(evt);
+                                    (listeners[i +1]! as MyCanvasEventListener).delete(evt);
     
 
                                     }
@@ -121,9 +119,7 @@ MyCanvasEventService.listenerList!.remove(listener.constructor as Class<any>, li
                         if(evt.getCommand()!.compareTo(MyCanvasEventService.DUPLICATE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
-.
-                    duplicate(evt);
+                                    (listeners[i +1]! as MyCanvasEventListener).duplicate(evt);
     
 
                                     }
@@ -132,9 +128,7 @@ MyCanvasEventService.listenerList!.remove(listener.constructor as Class<any>, li
                         if(evt.getCommand()!.compareTo(MyCanvasEventService.SELECT) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
-.
-                    select(evt);
+                                    (listeners[i +1]! as MyCanvasEventListener).select(evt);
     
 
                                     }
@@ -143,9 +137,7 @@ MyCanvasEventService.listenerList!.remove(listener.constructor as Class<any>, li
                         if(evt.getCommand()!.compareTo(MyCanvasEventService.ROTATE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
-.
-                    rotate(evt);
+                                    (listeners[i +1]! as MyCanvasEventListener).rotate(evt);
     
 
                                     }
@@ -154,9 +146,7 @@ MyCanvasEventService.listenerList!.remove(listener.constructor as Class<any>, li
                         if(evt.getCommand()!.compareTo(MyCanvasEventService.EXPLODE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
-.
-                    explode(evt);
+                                    (listeners[i +1]! as MyCanvasEventListener).explode(evt);
     
 
                                     }
@@ -165,9 +155,7 @@ MyCanvasEventService.listenerList!.remove(listener.constructor as Class<any>, li
                         if(evt.getCommand()!.compareTo(MyCanvasEventService.AUTOEXPLODE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
-.
-                    autoExplode(evt);
+                                    (listeners[i +1]! as MyCanvasEventListener).autoExplode(evt);
     
 
                                     }
@@ -176,9 +164,7 @@ MyCanvasEventService.listenerList!.remove(listener.constructor as Class<any>, li
                         if(evt.getCommand()!.compareTo(MyCanvasEventService.CENTER) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
-.
-                    center(evt);
+                                    (listeners[i +1]! as MyCanvasEventListener).center(evt);
     
 
                                     }

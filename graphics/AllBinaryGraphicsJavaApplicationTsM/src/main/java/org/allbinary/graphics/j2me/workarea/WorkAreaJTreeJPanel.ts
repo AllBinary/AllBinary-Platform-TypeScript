@@ -154,8 +154,7 @@ workAreaJTreeMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.workAreaPropertiesJPanel!.removeAll();
     
@@ -488,8 +487,7 @@ itemJPopupMenuPopupMenuWillBecomeVisible(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.deleteJMenuItem!.setText("Delete");
     
@@ -501,8 +499,7 @@ deleteJMenuItemMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.itemJPopupMenu!.add(this.deleteJMenuItem);
     
@@ -516,8 +513,7 @@ copyJMenuItemMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.itemJPopupMenu!.add(this.copyJMenuItem);
     
@@ -531,8 +527,7 @@ rotateJMenuItemMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.itemJPopupMenu!.add(this.rotateJMenuItem);
     
@@ -546,8 +541,7 @@ workAreaPropertiesJPanelMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.workAreaPropertiesJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     

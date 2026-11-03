@@ -225,7 +225,7 @@ this.imageRotationUtil!.rotateImageCanvasSurfaceClear(this.originalImage, this.t
     
 this.alphaProcessor!.setAlpha(this.imageModifierUtil, this.originalImage, this.twoImages[this.bufferedImageIndex]!, this.alphaP);
     
-this.imageRotationUtil!.drawImage(this.originalImage, imageToShow, canvasSurface);
+this.imageRotationUtil!.drawImage(this.originalImage, this.imageToShow, canvasSurface);
     
 canvasSurface!.restore();
     

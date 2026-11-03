@@ -184,8 +184,7 @@ this.multipassWaypointPathRunnable!.processEndRunnable();
                     
 }
 
-                                }
-                            ;
+                                }();
 
     private currentPassRunnable: Runnable = this.FIRST_RUNNABLE;
 

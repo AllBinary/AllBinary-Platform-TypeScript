@@ -143,7 +143,7 @@ this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!);
     let playN: PlayN = PlayN.getInstance()!;;
     
 
-    let canvas: Canvas = (graphics as HtmlGraphics).get(canvasImage as HtmlImage)!;;
+    let canvas: Canvas = (playN!.graphics() as HtmlGraphics).get(canvasImage as HtmlImage)!;;
     
 canvas.translate(this.originalImage!.getWidth() /2, this.originalImage!.getHeight() /2);
     
@@ -240,7 +240,7 @@ this.imageRotationUtil!.rotateImageCanvasSurfaceClear(this.originalImage, this.t
     
 this.alphaProcessor!.setAlpha(this.imageModifierUtil, this.originalImage, this.twoImages[this.bufferedImageIndex]!, this.alphaP);
     
-this.imageRotationUtil!.drawImage(this.originalImage, imageToShow, canvasSurface);
+this.imageRotationUtil!.drawImage(this.originalImage, this.imageToShow, canvasSurface);
     
 canvasSurface!.restore();
     

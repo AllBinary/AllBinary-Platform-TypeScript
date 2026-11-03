@@ -150,7 +150,7 @@ PreLogUtil.putOE("init Failed", this, commonStrings!.INIT, e);
 
     public encrypt(array: number[]): number[]{
 
- try { this.cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+ try { this.cipher.init(Cipher.ENCRYPT_MODE, this.secretKey);
     
 
     let ivArray: number[] = this.secretKey!.getEncoded()!;;
@@ -213,7 +213,7 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
 
     public decrypt(array: number[]): number[]{
 
- try { this.cipher.init(Cipher.DECRYPT_MODE, secretKey);
+ try { this.cipher.init(Cipher.DECRYPT_MODE, this.secretKey);
     
 
     let ivArray: number[] = new Array(8).fill(0);;

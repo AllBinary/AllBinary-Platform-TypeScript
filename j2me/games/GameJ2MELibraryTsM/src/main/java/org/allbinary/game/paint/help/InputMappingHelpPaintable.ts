@@ -283,7 +283,7 @@ input= list.objectArray[index2]! as Input;
     
 updateMyFontProperties!.inputDeltaXArray[index]![index2]= font.stringWidth(input.getName());
     
-updateMyFontProperties!.sepArray[index]![index2]= EMPTY_STRING;
+updateMyFontProperties!.sepArray[index]![index2]= this.EMPTY_STRING;
     
 
                         if(index2 +1 < list.size())
@@ -321,7 +321,7 @@ updateMyFontProperties!.sepArray[index]![index2]= EMPTY_STRING;
                                     }
                                 
 
-                        if(updateMyFontProperties!.sepArray[index]![index2] != EMPTY_STRING)
+                        if(updateMyFontProperties!.sepArray[index]![index2] != this.EMPTY_STRING)
                         
                                     {
                                     updateMyFontProperties!.sepWidthArray[index]![index2]= font.stringWidth(updateMyFontProperties!.sepArray[index]![index2]!);

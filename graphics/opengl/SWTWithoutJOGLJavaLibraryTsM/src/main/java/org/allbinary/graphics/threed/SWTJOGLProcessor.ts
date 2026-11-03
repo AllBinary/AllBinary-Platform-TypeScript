@@ -76,8 +76,7 @@ export class SWTJOGLProcessor
     public run(renderer: any){
 }
 
-                                }
-                            ;
+                                }();
 
     public init(display: any, comp: any){
 }

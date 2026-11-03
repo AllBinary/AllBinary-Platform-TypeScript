@@ -907,37 +907,37 @@ values.add(time);
 
     let values: HashMap<any, any> = StdUtil.getInstance()!.createHashMap()!;;
     
-values.put(UserData.USERNAME, userName);
+values.put(UserData.USERNAME, this.userName);
     
-values.put(UserData.PREFIXNAME, prefixName);
+values.put(UserData.PREFIXNAME, this.prefixName);
     
-values.put(UserData.FIRSTNAME, firstName);
+values.put(UserData.FIRSTNAME, this.firstName);
     
-values.put(UserData.LASTNAME, lastName);
+values.put(UserData.LASTNAME, this.lastName);
     
-values.put(UserData.MIDDLENAME, middleName);
+values.put(UserData.MIDDLENAME, this.middleName);
     
-values.put(UserData.SUFFIXNAME, suffixName);
+values.put(UserData.SUFFIXNAME, this.suffixName);
     
-values.put(UserData.COMPANY, company);
+values.put(UserData.COMPANY, this.company);
     
-values.put(UserData.POSITIONATCOMPANY, positionAtCompany);
+values.put(UserData.POSITIONATCOMPANY, this.positionAtCompany);
     
-values.put(UserData.MAINEMAIL, mainEmail);
+values.put(UserData.MAINEMAIL, this.mainEmail);
     
-values.put(UserData.SECONDARYEMAIL, secondaryEmail);
+values.put(UserData.SECONDARYEMAIL, this.secondaryEmail);
     
-values.put(UserData.HOMEPHONE, homePhone);
+values.put(UserData.HOMEPHONE, this.homePhone);
     
-values.put(UserData.CELLPHONE, cellPhone);
+values.put(UserData.CELLPHONE, this.cellPhone);
     
-values.put(UserData.WORKPHONE, workPhone);
+values.put(UserData.WORKPHONE, this.workPhone);
     
-values.put(UserData.OTHERCONTACT, otherContact);
+values.put(UserData.OTHERCONTACT, this.otherContact);
     
-values.put(UserData.ELECTRONICDEVICE, electronicDevice);
+values.put(UserData.ELECTRONICDEVICE, this.electronicDevice);
     
-values.put(UserData.FAX, fax);
+values.put(UserData.FAX, this.fax);
     
 
                         if(this.getRole() != 

@@ -288,7 +288,7 @@ resultHashMap= super.getRow(updateKeyAndValue);
 
     let stringBuffer: StringMaker = new StringMaker();;
     
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(OrderData.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.tableName)!.append(this.sqlStrings!.START)!.append(OrderData.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
 stringBuffer!.append(paymentTransactionKeysFactory!.RESULT.toString())!.append(this.sqlTypeStrings!.MAX_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.PNREF.toString())!.append(this.sqlTypeStrings!.TWELVE_CHAR_COLUMN_NOT_NULL);
     

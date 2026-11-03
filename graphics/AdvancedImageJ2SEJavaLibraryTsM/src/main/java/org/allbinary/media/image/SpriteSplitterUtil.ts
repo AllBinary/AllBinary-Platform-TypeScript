@@ -262,7 +262,7 @@ visitor.visit(generatedBufferedImage, nameEnding, index);
                                     }
                                 
                              else 
-                        if(spriteType == HORIZONTAL_ANIMATIONS)
+                        if(spriteType == this.HORIZONTAL_ANIMATIONS)
                         
                                     {
                                     

@@ -68,8 +68,9 @@ export class NullShaderComposite extends ShaderComposite {
     public init(gl: GL10){
 }
 
-                                }
-                            ;
+                                }(OpenGLCapabilities.getInstance()!.VERSION_2_0, [
+new Shader(),new Shader()
+                                                ], CompositeShaderUpdater.getInstance(), ShaderInitializer.getInstance(), ModelViewProjection.getInstance(), NullOpenGLProcessorFactory.getInstance(), NullOpenGLProcessorFactory.getInstance(), NullOpenGLProcessorFactory.getInstance());
 
     public static getInstance(): ShaderComposite{
 

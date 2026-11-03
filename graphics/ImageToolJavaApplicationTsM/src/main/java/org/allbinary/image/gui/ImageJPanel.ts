@@ -96,7 +96,7 @@ this.setSize(this.bufferedImage!.getWidth(
                                     {
                                     this.logUtil!.putF(this.commonStrings!.START, this, this.canvasStrings!.PAINT);
     
-graphics.drawImage(bufferedImage, 0, 0, this.bufferedImage!.getWidth(
+graphics.drawImage(this.bufferedImage, 0, 0, this.bufferedImage!.getWidth(
                             null), this.bufferedImage!.getHeight(
                             null), 
                             null);

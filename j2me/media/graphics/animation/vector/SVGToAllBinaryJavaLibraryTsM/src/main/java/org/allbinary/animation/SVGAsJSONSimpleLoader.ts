@@ -209,7 +209,7 @@ console.log(stringBuilder!.toString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return EMPTY_POINTS;
+                        return this.EMPTY_POINTS;
     
 
                                     }
@@ -219,12 +219,12 @@ console.log(stringBuilder!.toString());
     let root: JSONObject = new JSONObject(svgAsJson);;
     
 
-    let svgValue: any = root.opt(KEY_SVG)!;;
+    let svgValue: any = root.opt(this.KEY_SVG)!;;
     
 
     let svg: JSONObject = (svgValue == 
                                     null
-                                 ? root : this.asObject(svgValue, KEY_SVG));;
+                                 ? root : this.asObject(svgValue, this.KEY_SVG));;
     
 
     let pointVector: BasicArrayList = new BasicArrayListD();;
@@ -284,7 +284,7 @@ console.log(stringBuilder!.toString());
 
 
 
-                            throw new IllegalArgumentException(ERROR_PARSE_SVG_JSON, e);
+                            throw new IllegalArgumentException(this.ERROR_PARSE_SVG_JSON, e);
                     
 
  }
@@ -365,9 +365,9 @@ this.addShape(pointVector, array.opt(index), shapeType);
                 //@Throws(Exception.constructor)
             
     addLine(pointVector: BasicArrayList, line: JSONObject){
-this.addPoint(pointVector, this.readInt(line, KEY_X1), this.readInt(line, KEY_Y1));
+this.addPoint(pointVector, this.readInt(line, this.KEY_X1), this.readInt(line, this.KEY_Y1));
     
-this.addPoint(pointVector, this.readInt(line, KEY_X2), this.readInt(line, KEY_Y2));
+this.addPoint(pointVector, this.readInt(line, this.KEY_X2), this.readInt(line, this.KEY_Y2));
     
 this.addSeparator(pointVector);
     
@@ -378,23 +378,23 @@ this.addSeparator(pointVector);
             
     addCircle(pointVector: BasicArrayList, circle: JSONObject){
 
-    let cx: number = this.readInt(circle, KEY_CX)!;;
+    let cx: number = this.readInt(circle, this.KEY_CX)!;;
     
 
-    let cy: number = this.readInt(circle, KEY_CY)!;;
+    let cy: number = this.readInt(circle, this.KEY_CY)!;;
     
 
-    let radius: number = this.readInt(circle, KEY_R)!;;
+    let radius: number = this.readInt(circle, this.KEY_R)!;;
     
 
 
 
 
                         for (
-    let index: number = 0;index <= CIRCLE_SEGMENTS; index++)
+    let index: number = 0;index <= this.CIRCLE_SEGMENTS; index++)
         {
 
-    let angle: number = (Math.PI *2.0d *index) /CIRCLE_SEGMENTS;;
+    let angle: number = (Math.PI *2.0d *index) /this.CIRCLE_SEGMENTS;;
     
 
     let x: number = globalThis.Math.trunc(Math.round(cx +(Math.cos(angle) *radius)));;
@@ -415,10 +415,10 @@ this.addSeparator(pointVector);
             
     addRectangle(pointVector: BasicArrayList, rectangle: JSONObject){
 
-    let x: number = this.readInt(rectangle, KEY_X, 0)!;;
+    let x: number = this.readInt(rectangle, this.KEY_X, 0)!;;
     
 
-    let y: number = this.readInt(rectangle, KEY_Y, 0)!;;
+    let y: number = this.readInt(rectangle, this.KEY_Y, 0)!;;
     
 
     let width: number = this.readInt(rectangle, this.graphicsStrings!.WIDTH)!;;
@@ -448,7 +448,7 @@ pointVector!.add([x,y]);
 
 
     addSeparator(pointVector: BasicArrayList){
-pointVector!.add([SHAPE_SEPARATOR[0],SHAPE_SEPARATOR[1]]);
+pointVector!.add([this.SHAPE_SEPARATOR[0],this.SHAPE_SEPARATOR[1]]);
     
 }
 
@@ -476,7 +476,7 @@ readInt(...args: any[]): any {
                                     
 
 
-                            throw new IllegalArgumentException(ERROR_MISSING_KEY_PREFIX +key);
+                            throw new IllegalArgumentException(this.ERROR_MISSING_KEY_PREFIX +key);
                     
 
                                     }
@@ -558,7 +558,7 @@ e.printStackTrace();
 
 
 
-                            throw new IllegalArgumentException(ERROR_INVALID_NUMBER_PREFIX +key);
+                            throw new IllegalArgumentException(this.ERROR_INVALID_NUMBER_PREFIX +key);
                     
 }
 
@@ -580,7 +580,7 @@ e.printStackTrace();
 
 
 
-                            throw new IllegalArgumentException(ERROR_EXPECTED_OBJECT_PREFIX +name);
+                            throw new IllegalArgumentException(this.ERROR_EXPECTED_OBJECT_PREFIX +name);
                     
 }
 
@@ -594,7 +594,7 @@ e.printStackTrace();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return EMPTY_POINTS;
+                        return this.EMPTY_POINTS;
     
 
                                     }

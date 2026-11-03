@@ -349,8 +349,7 @@ exitForm(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jButton2!.setText("New");
     
@@ -362,8 +361,7 @@ jButton2ActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jToolBar1!.add(this.jButton2);
     
@@ -377,8 +375,7 @@ saveJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jToolBar1!.add(this.saveJButton);
     
@@ -392,8 +389,7 @@ jButton1ActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jToolBar1!.add(this.jButton1);
     
@@ -407,8 +403,7 @@ openJButtonActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jToolBar1!.add(this.openJButton);
     
@@ -442,8 +437,7 @@ playJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jToolBar1!.add(this.playJButton);
     
@@ -457,8 +451,7 @@ stopJjButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jToolBar1!.add(this.stopJjButton);
     
@@ -478,8 +471,7 @@ jTabbedPaneStateChanged(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.mainJPanel!.add(this.jTabbedPane);
     
@@ -505,8 +497,7 @@ fileJMenuActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.newJMenuItem!.setText("New");
     
@@ -518,8 +509,7 @@ newJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.fileJMenu!.add(this.newJMenuItem);
     
@@ -533,8 +523,7 @@ openJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.fileJMenu!.add(this.openJMenuItem);
     
@@ -548,8 +537,7 @@ saveJMenuItemMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.fileJMenu!.add(this.saveJMenuItem);
     
@@ -567,8 +555,7 @@ exportJMenuItem1ActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.fileJMenu!.add(this.exportJMenuItem1);
     
@@ -582,8 +569,7 @@ exitJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.fileJMenu!.add(this.exitJMenuItem);
     
@@ -601,8 +587,7 @@ zoomInJMenuItemMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.viewJMenu!.add(this.zoomInJMenuItem);
     
@@ -616,8 +601,7 @@ zoomOutJMenuItemMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.viewJMenu!.add(this.zoomOutJMenuItem);
     
@@ -635,8 +619,7 @@ explodeAllJMenuItemMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.objectJMenu!.add(this.explodeAllJMenuItem);
     
@@ -652,8 +635,7 @@ frameJMenuActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.previousFrameJMenuItem!.setText("Previous");
     
@@ -693,8 +675,7 @@ centerJMenuItemActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.generateJMenu!.add(this.centerJMenuItem);
     
@@ -712,8 +693,7 @@ autoExplodeJMenuItemMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.generateJMenu!.add(this.autoExplodeJMenuItem);
     
@@ -731,8 +711,7 @@ jMenuItem1ActionPerformed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.generateJMenu!.add(this.jMenuItem1);
     
@@ -746,8 +725,7 @@ autoRotateGenerationJMenuItemMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.generateJMenu!.add(this.autoRotateGenerationJMenuItem);
     

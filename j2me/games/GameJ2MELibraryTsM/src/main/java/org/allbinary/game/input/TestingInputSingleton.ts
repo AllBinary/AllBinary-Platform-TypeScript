@@ -134,8 +134,7 @@ testInputInterface!.up();
     
 }
 
-                                }
-                            ;
+                                }();
     
 this.inputProcessorArray[Canvas.DOWN]= new class extends GameInputProcessor
                                 {
@@ -147,8 +146,7 @@ testInputInterface!.down();
     
 }
 
-                                }
-                            ;
+                                }();
     
 this.inputProcessorArray[Canvas.LEFT]= new class extends GameInputProcessor
                                 {
@@ -160,8 +158,7 @@ testInputInterface!.left();
     
 }
 
-                                }
-                            ;
+                                }();
     
 this.inputProcessorArray[Canvas.RIGHT]= new class extends GameInputProcessor
                                 {
@@ -173,8 +170,7 @@ testInputInterface!.right();
     
 }
 
-                                }
-                            ;
+                                }();
     
 this.inputProcessorArray[Canvas.KEY_NUM7]= new class extends GameInputProcessor
                                 {
@@ -186,8 +182,7 @@ testInputInterface!.strafeLeft();
     
 }
 
-                                }
-                            ;
+                                }();
     
 this.inputProcessorArray[Canvas.KEY_NUM9]= new class extends GameInputProcessor
                                 {
@@ -199,8 +194,7 @@ testInputInterface!.strafeRight();
     
 }
 
-                                }
-                            ;
+                                }();
     
 GameInputProcessorUtil.init(this.inputProcessorArray);
     

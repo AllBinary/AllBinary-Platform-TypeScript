@@ -131,7 +131,7 @@ public constructor (connectionInfo: DbConnectionInfo){
  {
   const e = caught;
   
-this.logUtil!.put(this.FAILED, this, GET_HOST_NAME, e);
+this.logUtil!.put(this.FAILED, this, this.GET_HOST_NAME, e);
     
 
 

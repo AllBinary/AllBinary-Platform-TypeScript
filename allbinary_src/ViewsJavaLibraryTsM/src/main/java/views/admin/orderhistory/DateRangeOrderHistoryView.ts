@@ -298,7 +298,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "view");
                                     }
                                 
 
-    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PREPROCESSING, fromDate, toDate)!;;
+    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PREPROCESSING, this.fromDate, this.toDate)!;;
     
 
     let size: number = orderHistoryVector!.size()!;;
@@ -336,7 +336,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.SHIPPED, fromDate, toDate)!;;
+    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.SHIPPED, this.fromDate, this.toDate)!;;
     
 
     let size: number = orderHistoryVector!.size()!;;
@@ -374,7 +374,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PARTIALLYSHIPPED, fromDate, toDate)!;;
+    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PARTIALLYSHIPPED, this.fromDate, this.toDate)!;;
     
 
     let size: number = orderHistoryVector!.size()!;;
@@ -412,7 +412,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PROCESSING, fromDate, toDate)!;;
+    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PROCESSING, this.fromDate, this.toDate)!;;
     
 
     let size: number = orderHistoryVector!.size()!;;
@@ -450,7 +450,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.CANCELLED, fromDate, toDate)!;;
+    let orderHistoryVector: BasicArrayList = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.CANCELLED, this.fromDate, this.toDate)!;;
     
 
     let size: number = orderHistoryVector!.size()!;;

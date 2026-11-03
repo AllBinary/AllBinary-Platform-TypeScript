@@ -92,6 +92,7 @@ private constructor (){
 
 create(...args: any[]): any {
    
+   
     if (args.length === 1) return this.create$overload1(args[0]);
    
     if (args.length === 1 && typeof args[0] === 'string') return this.create$overload2(args[0]);
@@ -108,6 +109,7 @@ create(...args: any[]): any {
 }
 
 remove(...args: any[]): any {
+   
    
     if (args.length === 1) return this.remove$overload1(args[0]);
    
@@ -223,13 +225,16 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
 
 search(...args: any[]): any {
    
+   
+    if (args.length === 2 && typeof args[1] === 'boolean' && args[0] instanceof AbFile) return this.search$overload4(args[0], args[1]);
+    
     if (args.length === 2) return this.search$overload1(args[0], args[1]);
    
     if (args.length === 3 && typeof args[2] === 'boolean') return this.search$overload2(args[0], args[1], args[2]);
    
     if (args.length === 1) return this.search$overload3(args[0]);
    
-    if (args.length === 2 && typeof args[1] === 'boolean') return this.search$overload4(args[0], args[1]);
+    if (args.length === 2 && typeof args[1] === 'boolean' && args[0] == null) return this.search$overload4(args[0], args[1]);
    
     if (args.length === 2 && typeof args[0] === 'string') return this.search$overload5(args[0], args[1]);
    
@@ -239,6 +244,8 @@ search(...args: any[]): any {
    
     if (args.length === 3 && typeof args[0] === 'number' && typeof args[2] === 'boolean') return this.search$overload8(args[0], args[1], args[2]);
    
+    if (args.length === 2 && typeof args[1] === 'boolean') return this.search$overload4(args[0], args[1]);
+    
    throw new TypeError('No matching overload: search'); }
   
     public search$overload1(fileFilter: FileFilter, file: AbFile): BasicArrayList{

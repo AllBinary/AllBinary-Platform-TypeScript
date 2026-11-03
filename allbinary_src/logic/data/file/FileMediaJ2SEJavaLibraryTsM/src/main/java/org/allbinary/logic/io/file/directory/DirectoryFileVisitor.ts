@@ -64,9 +64,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return visit = this.visit(arg0)visit as Boolean
-visit.
-                    .valueOf();;
+                        return (this.visit(arg0) as Boolean)..valueOf();;
     
 }
 

@@ -132,7 +132,7 @@ this.logUtil!.putF(new StringMaker().append("Created: ")!.append(this.toString()
 
 
     public paint(graphics: Graphics){
-this.animationInterface!.paintXY(graphics, animationX, this.animationY);
+this.animationInterface!.paintXY(graphics, this.animationX, this.animationY);
     
 }
 

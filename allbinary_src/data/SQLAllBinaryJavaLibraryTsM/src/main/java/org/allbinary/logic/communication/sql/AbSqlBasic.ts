@@ -203,7 +203,7 @@ this.sqlConnectionPool!.add(this.getDatabaseConnectionInfoInterface()!.getUrl(),
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +statement, this, METHOD_EXECUTED_SQL_STATEMENT, e);
+                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +statement, this, this.METHOD_EXECUTED_SQL_STATEMENT, e);
     
 
                                     }
@@ -285,7 +285,7 @@ this.conn=
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    this.logUtil!.put(this.SQL_CONNECTION_RETRYING, this, METHOD_CREATE_CONNECTION, se);
+                                    this.logUtil!.put(this.SQL_CONNECTION_RETRYING, this, this.METHOD_CREATE_CONNECTION, se);
     
 
                                     }
@@ -352,7 +352,7 @@ jdbcDriverClass!.newInstance();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    this.logUtil!.put(this.LOAD_JDBC_DRIVER_FAILED_LABEL +this.getDatabaseConnectionInfoInterface()!.getJdbcDriver(), this, METHOD_INITIALIZE, e);
+                                    this.logUtil!.put(this.LOAD_JDBC_DRIVER_FAILED_LABEL +this.getDatabaseConnectionInfoInterface()!.getJdbcDriver(), this, this.METHOD_INITIALIZE, e);
     
 
                                     }

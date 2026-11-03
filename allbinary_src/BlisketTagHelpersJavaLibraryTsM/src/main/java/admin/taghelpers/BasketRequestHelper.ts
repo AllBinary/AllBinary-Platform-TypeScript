@@ -176,7 +176,7 @@ this.num= this.request.getParameter(BasketData.ITEMTOTALINBASKET);
 
                                     }
                                 
-basket.addItem(this.id, num);
+basket.addItem(this.id, this.num);
     
 
                                     }

@@ -178,7 +178,7 @@ keyAndValue!.put(this.NOTHING, this.NOTHING);
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    PreLogUtil.put(this.NOT_IN_DB, NAME, this.METHOD_GET);
+                                    PreLogUtil.put(this.NOT_IN_DB, this.NAME, this.METHOD_GET);
     
 
                                     }
@@ -291,7 +291,7 @@ keyAndValue!.put(this.NOTHING, this.NOTHING);
 
 
     public update(){
-updateWhere(NOTHING, NOTHING, InitInfo.getInstance()!.toHashMap());
+updateWhere(this.NOTHING, this.NOTHING, InitInfo.getInstance()!.toHashMap());
     
 }
 

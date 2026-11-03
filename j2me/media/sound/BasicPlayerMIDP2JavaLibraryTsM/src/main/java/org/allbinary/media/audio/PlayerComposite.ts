@@ -166,7 +166,7 @@ this.player.deallocate();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (player as TimeBaseInterface).getTimeBase();;
+                        return (this.player as TimeBaseInterface).getTimeBase();;
     
 }
 
@@ -175,9 +175,7 @@ this.player.deallocate();
             //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public setTimeBase(timeBase: TimeBase){
-player = this.playerplayer as TimeBaseInterface
-player.
-                    setTimeBase(timeBase);
+(this.player as TimeBaseInterface).setTimeBase(timeBase);
     
 }
 

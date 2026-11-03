@@ -117,8 +117,7 @@ lineJButtonMouseClicked(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.lineJButton);
     
@@ -134,8 +133,7 @@ rectJButtonMouseClicked(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.rectJButton);
     
@@ -151,8 +149,7 @@ arcJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.arcJButton);
     
@@ -168,8 +165,7 @@ stringJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.stringJButton);
     
@@ -185,8 +181,7 @@ charJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.charJButton);
     
@@ -202,8 +197,7 @@ roundRectJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.roundRectJButton);
     
@@ -219,8 +213,7 @@ imageJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.imageJButton);
     
@@ -236,8 +229,7 @@ fillArcJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.fillArcJButton);
     
@@ -253,8 +245,7 @@ fillRectJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.fillRectJButton);
     
@@ -270,8 +261,7 @@ fillRoundRectJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.fillRoundRectJButton);
     
@@ -287,8 +277,7 @@ dottedLineJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.dottedLineJButton);
     
@@ -304,8 +293,7 @@ dottedRectButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.dottedRectButton);
     
@@ -321,8 +309,7 @@ dottedArcJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.dottedArcJButton);
     
@@ -338,8 +325,7 @@ dottedFillRectJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.dottedFillRectJButton);
     
@@ -355,8 +341,7 @@ dottedFillArcJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.dottedFillArcJButton);
     
@@ -372,8 +357,7 @@ dottedFillRountRectJButtonMousePressed(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 add(this.dottedFillRountRectJButton);
     

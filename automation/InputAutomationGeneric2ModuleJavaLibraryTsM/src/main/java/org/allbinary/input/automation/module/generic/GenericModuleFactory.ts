@@ -86,7 +86,7 @@ public constructor (){
 
     public getInstance(): RunnableInterface{
 
-    let genericProfile: GenericProfile = (getConfigurationJPanel as GenericModuleConfigurationJPanel).getSelectedGenericProfile()!;;
+    let genericProfile: GenericProfile = (this.getConfigurationJPanel() as GenericModuleConfigurationJPanel).getSelectedGenericProfile()!;;
     
 
     let inputAutomationActionInterface: InputAutomationActionInterface = new GenericInputAutomationAction() as InputAutomationActionInterface;;

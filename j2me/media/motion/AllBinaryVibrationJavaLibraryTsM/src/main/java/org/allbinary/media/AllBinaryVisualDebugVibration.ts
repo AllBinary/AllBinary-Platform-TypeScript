@@ -106,7 +106,7 @@ this.timeDelayHelper!.delay= duration;
     
 this.myFontProcessor!.process(graphics);
     
-graphics.drawString(this.VIBRATING, this.displayInfoSingleton!.getLastHalfWidth() -(width>>1), 0, this.anchor);
+graphics.drawString(this.VIBRATING, this.displayInfoSingleton!.getLastHalfWidth() -(this.width>>1), 0, this.anchor);
     
 
                                     }

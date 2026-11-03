@@ -75,9 +75,7 @@ export class FullScreenUtil
                 //@Throws(Exception.constructor)
             
     public initOnRun(fullScreenInterface: Canvas, commandListener: CommandListener){
-fullScreenInterface = fullScreenInterfacefullScreenInterface as RunnableCanvas
-fullScreenInterface.
-                    waitOnNotify(0);
+(fullScreenInterface as RunnableCanvas).waitOnNotify(0);
     
 
                         if(commandListener != 

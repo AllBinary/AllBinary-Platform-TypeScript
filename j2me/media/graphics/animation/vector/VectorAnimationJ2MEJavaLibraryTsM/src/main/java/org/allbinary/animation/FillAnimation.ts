@@ -155,7 +155,7 @@ super.setAlpha(alpha);
 
 
     paint(g: Graphics){
-g.drawRGB(pixelBuffer, 0, width, 0, 0, width, height, true);
+g.drawRGB(this.pixelBuffer, 0, this.width, 0, 0, this.width, this.height, true);
     
 }
 

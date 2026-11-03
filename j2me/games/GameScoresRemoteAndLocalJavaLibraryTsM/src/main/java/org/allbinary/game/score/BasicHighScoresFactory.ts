@@ -213,8 +213,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e);
  
 }
 
-                                }
-                            );
+                                }());
     
 }
 

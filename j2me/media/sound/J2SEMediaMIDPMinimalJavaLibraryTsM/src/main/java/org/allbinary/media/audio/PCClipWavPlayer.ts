@@ -188,8 +188,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
  
 }
 
-                                }
-                            );
+                                }());
     
 }
 
@@ -240,8 +239,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
  
 }
 
-                                }
-                            );
+                                }());
     
 }
 
@@ -303,8 +301,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
  
 }
 
-                                }
-                            );
+                                }());
     
 }
 

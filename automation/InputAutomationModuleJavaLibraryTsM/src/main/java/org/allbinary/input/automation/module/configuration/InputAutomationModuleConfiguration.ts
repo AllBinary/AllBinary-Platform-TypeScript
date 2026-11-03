@@ -227,7 +227,7 @@ this.init(abeClientInformation);
 
  try { this.logUtil!.putF("Name: " +getName(), this, this.commonStrings!.INIT);
     
-this.logUtil!.putF("ClassName: " +className, this, this.commonStrings!.INIT);
+this.logUtil!.putF("ClassName: " +this.className, this, this.commonStrings!.INIT);
     
 this.setInputAutomationModuleInterface(AbeFactory.getInstance()!.getInstance()!.getInstance(abeClientInformation, getClassName()) as InputAutomationModuleFactoryInterface);
     

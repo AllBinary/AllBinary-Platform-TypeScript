@@ -175,7 +175,7 @@ stringBuffer!.append("taxes");
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    let abPath: AbPath = new AbPath(stringBuffer!.toString(), TAXATIONFILENAME);;
+    let abPath: AbPath = new AbPath(stringBuffer!.toString(), this.TAXATIONFILENAME);;
     
 
     let transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;;

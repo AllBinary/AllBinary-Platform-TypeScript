@@ -216,9 +216,7 @@ graphics.update();
     
 progressCanvas!.update(graphics);
     
-getInstance = OpenGLImageCacheFactory.getInstance()getInstance as OpenGLImageCache
-getInstance.
-                    update(gl);
+(OpenGLImageCacheFactory.getInstance() as OpenGLImageCache).update(gl);
     
 this.processRunnables();
     

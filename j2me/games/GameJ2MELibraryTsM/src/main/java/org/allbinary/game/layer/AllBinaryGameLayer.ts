@@ -126,8 +126,7 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.BLACK);
     
 }
 
-                                }
-                             : NullPaintable.getInstance());
+                                }() : NullPaintable.getInstance());
 
     private readonly gameKeyEventList: BasicArrayList = new BasicArrayListD();
 

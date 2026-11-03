@@ -182,7 +182,7 @@ shippingMethodNode!.appendChild(shippingView!.toXmlNode(document));
     let subTotal: Money = basket.getSubTotal()!;;
     
 
-    let taxRate: number = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.getTaxRate(streetAddress, storeFrontInterface)!;;
+    let taxRate: number = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, this.storeFrontInterface)!.getTaxRate(streetAddress, this.storeFrontInterface)!;;
     
 
     let tax: Money = new Money();;

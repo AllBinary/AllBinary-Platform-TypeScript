@@ -172,8 +172,7 @@ actionScriptJTreeMouseReleased(evt);
     
 }
 
-                                }
-                            );
+                                }());
     
 this.jScrollPane1!.setViewportView(this.actionScriptJTree);
     

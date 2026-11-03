@@ -533,7 +533,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isRarelyUsedSession()");
             
     isRoleValid(): boolean{
 
- try { this.makeSessionValid(BasicUserRoleFactory.getInstance()!.INSTALLER, userName);
+ try { this.makeSessionValid(BasicUserRoleFactory.getInstance()!.INSTALLER, this.userName);
     
 
 

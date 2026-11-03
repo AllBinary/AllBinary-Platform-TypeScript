@@ -91,7 +91,7 @@ public constructor (){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.tableData= new StringMaker().append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(VALUE)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(NAME)!.append(this.sqlStrings!.END)!.toString();
+this.tableData= new StringMaker().append(this.sqlStrings!.CREATE_TABLE)!.append(this.tableName)!.append(this.sqlStrings!.START)!.append(this.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(this.VALUE)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(this.NAME)!.append(this.sqlStrings!.END)!.toString();
     
 super.setTableName(this.tableName);
     
@@ -110,7 +110,7 @@ keysAndValues!.put(this.NAME, name);
     let hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
-                        if((get as string).compareTo(name) != 0)
+                        if((hashMap!.get(this.NAME) as string).compareTo(name) != 0)
                         
                                     {
                                     
@@ -202,7 +202,7 @@ super.updateWhere(this.NAME, hashMap!.get(this.NAME) as string, hashMap);
 
     public createTable(): string{
 
-    let returnStr: string = super.createTable(tableData)!;;
+    let returnStr: string = super.createTable(this.tableData)!;;
     
 
 

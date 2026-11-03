@@ -169,11 +169,9 @@ originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
     let scaledPlayNImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
     
 
-    let canvas: Canvas = (graphics as HtmlGraphics).get(scaledPlayNImage as HtmlImage)!;;
+    let canvas: Canvas = (PlayN.getInstance()!.graphics() as HtmlGraphics).get(scaledPlayNImage as HtmlImage)!;;
     
-originalPlayNImage = originalPlayNImageoriginalPlayNImage as ImageImpl
-originalPlayNImage.
-                    draw(canvas.gc(), 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight());
+(originalPlayNImage as ImageImpl).draw(canvas.gc(), 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight());
     
 
 

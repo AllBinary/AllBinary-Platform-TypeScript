@@ -66,11 +66,11 @@ export class ShapeTypeFactory
 
     public readonly KEY_RECT: string = "rect";
 
-    public readonly LINE: ShapeType = new ShapeType(KEY_LINE);
+    public readonly LINE: ShapeType = new ShapeType(this.KEY_LINE);
 
-    public readonly CIRCLE: ShapeType = new ShapeType(KEY_CIRCLE);
+    public readonly CIRCLE: ShapeType = new ShapeType(this.KEY_CIRCLE);
 
-    public readonly RECTANGLE: ShapeType = new ShapeType(KEY_RECTANGLE);
+    public readonly RECTANGLE: ShapeType = new ShapeType(this.KEY_RECTANGLE);
 
 }
 

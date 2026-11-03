@@ -228,7 +228,7 @@ row.put(QuoteRequestData.getInstance()!.ID, id.toString());
 
     let stringBuffer: StringMaker = new StringMaker();;
     
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START);
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.tableName)!.append(this.sqlStrings!.START);
     
 stringBuffer!.append(quoteRequestData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     

@@ -58,7 +58,7 @@ public constructor (data: number[]){
     public visit(anyType: any): any{
 this.stringBuilder!.delete(0, this.stringBuilder!.length());
     
-this.print(this.data, stringBuilder);
+this.print(this.data, this.stringBuilder);
     
 
 

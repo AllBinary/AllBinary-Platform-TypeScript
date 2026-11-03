@@ -352,7 +352,7 @@ FileUtil.getInstance()!.copy(path, backupAbPath);
 
         while(index < value.length)
         {
-index= value.indexOf(specialCharArray[0]!, lastIndex);
+index= value.indexOf(this.specialCharArray[0]!, lastIndex);
     
 
                         if(index !=  -1)
@@ -420,7 +420,7 @@ lastIndex= index +1;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    this.logUtil!.putF(ERROR_CREATING +path, this, this.METHOD_BACKUP_TABLE);
+                                    this.logUtil!.putF(this.ERROR_CREATING +path, this, this.METHOD_BACKUP_TABLE);
     
 
                                     }

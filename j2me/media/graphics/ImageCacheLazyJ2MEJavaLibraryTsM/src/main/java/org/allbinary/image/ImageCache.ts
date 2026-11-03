@@ -161,7 +161,7 @@ NotHTMLProcessor = (() => { const outer$ImageCache = this; return class extends 
 
 
     public process(){
-this.concurrentImageLoadingProcessor!.runTask();
+concurrentImageLoadingProcessor!.runTask();
     
 }
 
@@ -191,7 +191,7 @@ HTMLEndProcessor = (() => { const outer$ImageCache = this; return class extends 
 
     public process(){
 
-    let size: number = this.gdResources!.currentLayoutRequiredTotal;;
+    let size: number = gdResources!.currentLayoutRequiredTotal;;
     
 
                     //Otherwise - statement - EmptyStmt

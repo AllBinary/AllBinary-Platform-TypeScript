@@ -112,7 +112,7 @@ MusicManagerPlayerListener = (() => { const outer$MusicManager = this; return cl
         
 
     public playerUpdate(player: Player, event: string, eventData: any){
-PreLogUtil.put(event, this, this.commonStrings!.PROCESS);
+PreLogUtil.put(event, this, commonStrings!.PROCESS);
     
 
                         if(event == PlayerListener.END_OF_MEDIA || event == PlayerListener.STOPPED || event == PlayerListener.CLOSED)
@@ -196,7 +196,7 @@ this.process();
 
 
     public nextSong(nextSongSound: Sound, leftVolume: number, rightVolume: number){
-PreLogUtil.put(new StringMaker().append(NEXT_SONG)!.append(nextSongSound!.getResource())!.toString(), this, this.commonStrings!.PROCESS);
+PreLogUtil.put(new StringMaker().append(this.NEXT_SONG)!.append(nextSongSound!.getResource())!.toString(), this, this.commonStrings!.PROCESS);
     
 this.nextSongSound= nextSongSound;
     
@@ -289,7 +289,7 @@ this.timeDelayHelper!.delay= globalThis.Math.trunc(duration);
     
 PreLogUtil.put(new StringMaker().append(NO_DURATION_FOR)!.append(this.currentSongSound!.getResource())!.toString(), this, this.commonStrings!.PROCESS);
     
-this.currentSongSound!.getPlayerP()!.addPlayerListener(playerListener);
+this.currentSongSound!.getPlayerP()!.addPlayerListener(this.playerListener);
     
 this.noDuration= true;
     

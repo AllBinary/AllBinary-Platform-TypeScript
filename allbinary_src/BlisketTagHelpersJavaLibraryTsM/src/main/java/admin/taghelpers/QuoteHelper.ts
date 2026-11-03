@@ -291,7 +291,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST
     let index: number = 0;index < size; index++)
         {
 
-    let nextId: number = (get as Integer).intValue()!;;
+    let nextId: number = (vector.get(index) as Integer).intValue()!;;
     
 
                         if(id < nextId)
@@ -468,7 +468,7 @@ this.emailAdmins(quoteRequest);
     let success: string = "Restore Successful";;
     
 
-    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance(), portion)!;;
+    let result: string = AbSqlTableUtil.getInstance()!.restoreTable(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance(), this.portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

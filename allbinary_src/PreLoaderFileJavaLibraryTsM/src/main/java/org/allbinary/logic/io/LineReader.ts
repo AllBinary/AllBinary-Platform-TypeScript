@@ -115,7 +115,7 @@ this.logUtil!.put("File: " +fileName, this, "LineReader", e);
     public hasNext(): boolean{
 
  try { 
-    let nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;;
+    let nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, this.index)!;;
     
 
                         if(nextIndex ==  -1)
@@ -167,7 +167,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "hasNext", e);
     public next(): string{
 
  try { 
-    let nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;;
+    let nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, this.index)!;;
     
 
                         if(nextIndex ==  -1)
@@ -182,7 +182,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "hasNext", e);
                                     }
                                 
 
-    let temp: string = this.string.substring(index, nextIndex)!;;
+    let temp: string = this.string.substring(this.index, nextIndex)!;;
     
 this.index= nextIndex +1;
     

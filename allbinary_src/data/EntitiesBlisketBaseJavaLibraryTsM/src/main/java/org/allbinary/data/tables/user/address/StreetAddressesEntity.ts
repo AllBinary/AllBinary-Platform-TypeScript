@@ -294,7 +294,7 @@ this.setDefault(address.getId());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getLargestIntegerInColumnWhere(StreetAddressData.ID, UserData.USERNAME, userName);;
+                        return super.getLargestIntegerInColumnWhere(StreetAddressData.ID, UserData.USERNAME, this.userName);;
     
 }
 

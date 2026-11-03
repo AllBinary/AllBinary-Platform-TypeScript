@@ -156,7 +156,7 @@ this.tableName= tableName;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return tableName +this.DROPPED_SUCCESS;
+                        return this.tableName +this.DROPPED_SUCCESS;
     
  }
  catch (caught: any) {
@@ -176,7 +176,7 @@ this.tableName= tableName;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return "Failed to Drop " +tableName +" table.";
+                        return "Failed to Drop " +this.tableName +" table.";
     
 
  }
