@@ -171,7 +171,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as CoreImage;
 
     let canvas: Canvas = (PlayN.getInstance()!.graphics() as HtmlGraphics).get(scaledPlayNImage as HtmlImage)!;;
     
-(originalPlayNImage as ImageImpl).draw(canvas.gc(), 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight());
+canvas.drawScale(originalPlayNImage, 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight());
     
 
 

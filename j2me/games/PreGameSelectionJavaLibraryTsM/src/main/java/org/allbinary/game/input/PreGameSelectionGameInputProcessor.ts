@@ -101,38 +101,38 @@ import { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInt
 //sameFolderImports - not GWT import - same folder const PlayerGameInputCompositeInterface
 import { PlayerGameInput } from './PlayerGameInput.js';
 //sameFolderImports - not GWT import - same folder const PlayerGameInput
+//import { PreGameSelectionRunnable } from './PreGameSelectionRunnable.js';
+//sameFolderImports - not GWT import - same folder const PreGameSelectionRunnable
 import { GameInputProcessorComposite } from './GameInputProcessorComposite.js';
 //sameFolderImports - not GWT import - same folder const GameInputProcessorComposite
+type PreGameSelectionRunnable = InstanceType<PreGameSelectionGameInputProcessor['PreGameSelectionRunnable']>;
 
 export class PreGameSelectionGameInputProcessor extends Processor implements GameInputProcessorInterface, PlayerGameInputCompositeInterface {
         
 
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+//inner= member=true isStatic=
+PreGameSelectionRunnable = (() => { const outer$PreGameSelectionGameInputProcessor = this; return class extends ABRunnable {
+        
 
-    private readonly gameCanvas: AllBinaryGameCanvas;
+    private readonly inputProcessor: PreGameSelectionGameInputProcessor;
 
-    private readonly preGameSelectorPaintable: PreGameSelectorPaintable;
+ constructor (inputProcessor: PreGameSelectionGameInputProcessor){
 
-    private readonly inputTimeHelper: TimeDelayHelper = new TimeDelayHelper(650);
+            super();
+        this.inputProcessor= inputProcessor;
+    
+}
 
-    private readonly nextGameState: GameState;
 
-    private readonly playerGameInput: PlayerGameInput;
-
-    private readonly lockedIndex: number;
-
-    private readonly abRunnable: ABRunnable = new class extends ABRunnable
-                                {
-                                
     public run(){
 
  try { this.setRunning(true);
     
 SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
-gameCanvas!.setGameState(nextGameState);
+this.inputProcessor!.gameCanvas!.setGameState(this.inputProcessor!.nextGameState);
     
-GameKeyEventHandler.getInstance()!.removeListener(getPlayerGameInput());
+GameKeyEventHandler.getInstance()!.removeListener(this.inputProcessor!.getPlayerGameInput());
     
 this.setRunning(false);
     
@@ -157,7 +157,23 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
  
 }
 
-                                }();
+
+}; })();
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly gameCanvas: AllBinaryGameCanvas;
+
+    private readonly preGameSelectorPaintable: PreGameSelectorPaintable;
+
+    private readonly inputTimeHelper: TimeDelayHelper = new TimeDelayHelper(650);
+
+    private readonly nextGameState: GameState;
+
+    private readonly playerGameInput: PlayerGameInput;
+
+    private readonly lockedIndex: number;
+
+    private readonly abRunnable: ABRunnable = new this.PreGameSelectionRunnable(this);
 
 public constructor (gameCanvas: AllBinaryGameCanvas, preGameSelectorPaintable: PreGameSelectorPaintable, nextGameState: GameState, lockedIndex: number){
 

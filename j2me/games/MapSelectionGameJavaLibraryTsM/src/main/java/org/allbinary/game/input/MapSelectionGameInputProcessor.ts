@@ -101,29 +101,29 @@ import { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInt
 //sameFolderImports - not GWT import - same folder const PlayerGameInputCompositeInterface
 import { PlayerGameInput } from './PlayerGameInput.js';
 //sameFolderImports - not GWT import - same folder const PlayerGameInput
+//import { MapSelectionRunnable } from './MapSelectionRunnable.js';
+//sameFolderImports - not GWT import - same folder const MapSelectionRunnable
 import { GameInputProcessorComposite } from './GameInputProcessorComposite.js';
 //sameFolderImports - not GWT import - same folder const GameInputProcessorComposite
+type MapSelectionRunnable = InstanceType<MapSelectionGameInputProcessor['MapSelectionRunnable']>;
 
 export class MapSelectionGameInputProcessor extends Processor implements GameInputProcessorInterface, PlayerGameInputCompositeInterface {
         
 
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+//inner= member=true isStatic=
+MapSelectionRunnable = (() => { const outer$MapSelectionGameInputProcessor = this; return class extends ABRunnable {
+        
 
-    private readonly gameCanvas: AllBinaryGameCanvas;
+    private readonly inputProcessor: MapSelectionGameInputProcessor;
 
-    private readonly raceTrackGeographicMapInterfaceFactoryInterface: MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface;
+ constructor (inputProcessor: MapSelectionGameInputProcessor){
 
-    private readonly preGameSelectorPaintable: PreGameSelectorPaintable;
+            super();
+        this.inputProcessor= inputProcessor;
+    
+}
 
-    private readonly inputTimeHelper: TimeDelayHelper = new TimeDelayHelper(650);
 
-    private readonly playerGameInput: PlayerGameInput;
-
-    private readonly lockedIndex: number;
-
-    private readonly abRunnable: ABRunnable = new class extends ABRunnable
-                                {
-                                
     public run(){
 
  try { this.setRunning(true);
@@ -131,16 +131,16 @@ export class MapSelectionGameInputProcessor extends Processor implements GameInp
 SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
 
-    let track: number = preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex() +1;;
+    let track: number = this.inputProcessor!.preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex() +1;;
     
 
-    let wave: number = raceTrackGeographicMapInterfaceFactoryInterface!.getFirstWaveWithTrack(track)!;;
+    let wave: number = this.inputProcessor!.raceTrackGeographicMapInterfaceFactoryInterface!.getFirstWaveWithTrack(track)!;;
     
-gameCanvas!.getLayerManager()!.getGameInfo()!.setCurrentLevel(wave);
+this.inputProcessor!.gameCanvas!.getLayerManager()!.getGameInfo()!.setCurrentLevel(wave);
     
-gameCanvas!.buildGameInit(false);
+this.inputProcessor!.gameCanvas!.buildGameInit(false);
     
-GameKeyEventHandler.getInstance()!.removeListener(getPlayerGameInput());
+GameKeyEventHandler.getInstance()!.removeListener(this.inputProcessor!.getPlayerGameInput());
     
 this.setRunning(false);
     
@@ -165,7 +165,23 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
  
 }
 
-                                }();
+
+}; })();
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly gameCanvas: AllBinaryGameCanvas;
+
+    private readonly raceTrackGeographicMapInterfaceFactoryInterface: MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface;
+
+    private readonly preGameSelectorPaintable: PreGameSelectorPaintable;
+
+    private readonly inputTimeHelper: TimeDelayHelper = new TimeDelayHelper(650);
+
+    private readonly playerGameInput: PlayerGameInput;
+
+    private readonly lockedIndex: number;
+
+    private readonly abRunnable: ABRunnable = new this.MapSelectionRunnable(this);
 
 public constructor (gameCanvas: AllBinaryGameCanvas, raceTrackGeographicMapInterfaceFactoryInterface: MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface, mapSelectorPaintable: PreGameSelectorPaintable, lockedIndex: number){
 

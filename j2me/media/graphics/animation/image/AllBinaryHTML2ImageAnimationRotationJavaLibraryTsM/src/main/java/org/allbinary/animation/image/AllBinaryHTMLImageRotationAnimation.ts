@@ -143,7 +143,10 @@ this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!);
     let playN: PlayN = PlayN.getInstance()!;;
     
 
-    let canvas: Canvas = (playN!.graphics() as HtmlGraphics).get(canvasImage as HtmlImage)!;;
+    let htmlGraphics: HtmlGraphics = playN!.graphics() as HtmlGraphics;;
+    
+
+    let canvas: Canvas = htmlGraphics!.get(canvasImage as HtmlImage)!;;
     
 canvas.translate(this.originalImage!.getWidth() /2, this.originalImage!.getHeight() /2);
     

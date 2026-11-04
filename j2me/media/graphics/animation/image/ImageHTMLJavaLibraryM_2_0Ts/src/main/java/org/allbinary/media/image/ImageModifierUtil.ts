@@ -92,7 +92,10 @@ type HTMLPlaynUtil<T = any, U = any> = typeof HTMLPlaynUtil extends abstract new
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //import { ImageCopyCallback } from './ImageCopyCallback.js';
+//sameFolderImports - not GWT import - same folder const ImageCopyCallback
+type ImageCopyCallback = InstanceType<ImageModifierUtil['ImageCopyCallback']>;
+
 export class ImageModifierUtil
             extends Object
          {
@@ -108,6 +111,67 @@ export class ImageModifierUtil
 }
 
 
+//inner= member=true isStatic=
+ImageCopyCallback = (() => { const outer$ImageModifierUtil = this; return class
+            extends Object
+         implements Callback {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
+
+
+    private readonly imageModifierUtil: ImageModifierUtil;
+
+    private readonly imageArray: Image[];
+
+    private readonly index: number;
+
+    private readonly image: Image;
+
+    private readonly image3: CoreImage;
+
+ constructor (imageModifierUtil: ImageModifierUtil, imageArray: Image[], index: number, image: Image, image3: CoreImage){
+
+            super();
+        this.imageModifierUtil= imageModifierUtil;
+    
+this.imageArray= imageArray;
+    
+this.index= index;
+    
+this.image= image;
+    
+this.image3= image3;
+    
+}
+
+
+    public onSuccess(resource: any){
+
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+
+    let resourceCallbackStrings: ResourceCallbackStrings = this.imageModifierUtil!.resourceCallbackStrings;;
+    
+logUtil!.putF(resourceCallbackStrings!.DONE +this.image.getName(), this, resourceCallbackStrings!.HANDLE_IMAGE);
+    
+this.imageModifierUtil!.copy(this.imageArray, this.index, this.image, this.image3);
+    
+}
+
+
+    public onFailure(e: Throwable){
+
+    let logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+
+    let resourceCallbackStrings: ResourceCallbackStrings = this.imageModifierUtil!.resourceCallbackStrings;;
+    
+logUtil!.put(new StringMaker().append(this.imageModifierUtil!.commonStrings!.EXCEPTION_LABEL)!.append(resourceCallbackStrings!.ERROR)!.append(this.image.getName())!.toString(), this, resourceCallbackStrings!.HANDLE_IMAGE, e);
+    
+}
+
+
+}; })();
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
@@ -249,28 +313,7 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
                                 
                         else {
                             
-    let callback: Callback = new class extends Callback
-                                {
-                                
-    public onSuccess(resource: any){
-
-    let logUtil: LogUtil = LogUtil.getInstance()!;;
-    
-logUtil!.putF(resourceCallbackStrings!.DONE +image.getName(), this, resourceCallbackStrings!.HANDLE_IMAGE);
-    
-copy(imageArray, index, image, image3);
-    
-}
-
-    public onFailure(e: Throwable){
-
-    let logUtil: LogUtil = LogUtil.getInstance()!;;
-    
-logUtil!.put(new StringMaker().append(commonStrings!.EXCEPTION_LABEL)!.append(resourceCallbackStrings!.ERROR)!.append(image.getName())!.toString(), this, resourceCallbackStrings!.HANDLE_IMAGE, e);
-    
-}
-
-                                }();;
+    let callback: Callback = new this.ImageCopyCallback(this, imageArray, index, image, image3);;
     
 image3.addCallback(callback);
     

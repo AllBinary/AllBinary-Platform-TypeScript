@@ -111,14 +111,24 @@ MusicManagerPlayerListener = (() => { const outer$MusicManager = this; return cl
          implements PlayerListener {
         
 
+    private readonly musicManager: MusicManager;
+
+ constructor (musicManager: MusicManager){
+
+            super();
+        this.musicManager= musicManager;
+    
+}
+
+
     public playerUpdate(player: Player, event: string, eventData: any){
-PreLogUtil.put(event, this, commonStrings!.PROCESS);
+PreLogUtil.put(event, this, this.musicManager!.commonStrings!.PROCESS);
     
 
                         if(event == PlayerListener.END_OF_MEDIA || event == PlayerListener.STOPPED || event == PlayerListener.CLOSED)
                         
                                     {
-                                    reset();
+                                    this.musicManager!.reset();
     
 
                                     }
@@ -139,7 +149,7 @@ PreLogUtil.put(event, this, commonStrings!.PROCESS);
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
 
-    private readonly playerListener: PlayerListener = new this.MusicManagerPlayerListener();
+    private readonly playerListener: PlayerListener = new this.MusicManagerPlayerListener(this);
 
     private readonly PLAY: string = "Play ";
 
