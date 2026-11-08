@@ -107,8 +107,24 @@ this.setTableName(this.tableName);
     
 }
 
-
-    public insert(category: Category){
+insert(...args: any[]): any {
+   
+   
+    if (args.length === 1 && args[0] instanceof Category) return this.insert$overload1(args[0]);
+    
+    if (args.length === 1 && args[0] instanceof BasicArrayList) return this.insert$overload2(args[0]);
+    
+    if (args.length === 1 && args[0] == null) return this.insert$overload1(args[0]);
+   
+    if (args.length === 1 && args[0] == null) return this.insert$overload2(args[0]);
+   
+    if (args.length === 1) return this.insert$overload1(args[0]);
+    
+    if (args.length === 1) return this.insert$overload2(args[0]);
+    
+   throw new TypeError('No matching overload: insert'); }
+  
+    public insert$overload1(category: Category){
 
  try { 
     let categoryVector: BasicArrayList = category.toVector()!;;
@@ -241,6 +257,12 @@ super.updateWhere(CategoryData.getInstance()!.NAME, updatedValues!.get(CategoryD
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.dropTable();;
+    
+}
+
+
+    public insert$overload2(values: BasicArrayList){
+super.insert(values);
     
 }
 

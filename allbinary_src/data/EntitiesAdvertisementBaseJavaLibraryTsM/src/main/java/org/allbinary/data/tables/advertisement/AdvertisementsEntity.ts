@@ -254,5 +254,11 @@ super.updateWhere(EntryData.getInstance()!.ID, updatedValues!.get(EntryData.getI
 }
 
 
+    public insert(values: BasicArrayList){
+super.insert(values);
+    
+}
+
+
 }
 

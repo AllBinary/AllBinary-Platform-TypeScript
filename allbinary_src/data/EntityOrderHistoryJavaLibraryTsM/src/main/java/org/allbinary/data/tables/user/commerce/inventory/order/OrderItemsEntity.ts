@@ -150,8 +150,16 @@ this.setTableName(this.tableName);
     
 }
 
-
-    public insert(userName: string, order: OrderInterface){
+insert(...args: any[]): any {
+   
+   
+    if (args.length === 2 && typeof args[0] === 'string') return this.insert$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.insert$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: insert'); }
+  
+    public insert$overload1(userName: string, order: OrderInterface){
 
     let vector: BasicArrayList = new BasicArrayListD();;
     
@@ -743,6 +751,12 @@ stringBuffer!.append(") )");
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.dropTable();;
+    
+}
+
+
+    public insert$overload2(values: BasicArrayList){
+super.insert(values);
     
 }
 

@@ -223,5 +223,11 @@ super.updateWhere(this.NAME, hashMap!.get(this.NAME) as string, hashMap);
 }
 
 
+    public deleteWhere(key: string, value: string){
+super.deleteWhere(key, value);
+    
+}
+
+
 }
 

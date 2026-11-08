@@ -216,5 +216,17 @@ this.newStoreFrontInterface= StoreFrontFactory.getInstance(this.newStoreFrontInt
 }
 
 
+                //@Throws(Exception.constructor)
+            
+    public getTransformInfoInterface(): TransformInfoInterface{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getTransformInfoInterface();;
+    
+}
+
+
 }
 

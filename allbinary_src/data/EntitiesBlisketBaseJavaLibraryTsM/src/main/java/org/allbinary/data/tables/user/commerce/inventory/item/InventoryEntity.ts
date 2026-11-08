@@ -461,5 +461,11 @@ super.updateWhere(this.basicItemData!.ID, updatedValues!.get(this.basicItemData!
 }
 
 
+    public deleteWhere(key: string, value: string){
+super.deleteWhere(key, value);
+    
+}
+
+
 }
 

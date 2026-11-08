@@ -35,6 +35,9 @@ import { VirtualKeyboardEventHandler } from '../../../org/allbinary/input/event/
 import { VirtualKeyboardEventListenerInterface } from '../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
 //not GWT import const VirtualKeyboardEventListenerInterface
 
+import { AllBinaryEventObject } from '../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not GWT import const AllBinaryEventObject
+
 
 
 
@@ -71,6 +74,12 @@ VirtualKeyboardEventHandler.getInstance()!.addListenerInterface(this);
                 //@Throws(Exception.constructor)
             
     public onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent){
+}
+
+
+    public onEvent(eventObject: AllBinaryEventObject){
+super.onEvent(eventObject);
+    
 }
 
 

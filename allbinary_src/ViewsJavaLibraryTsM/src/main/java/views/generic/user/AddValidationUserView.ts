@@ -260,5 +260,17 @@ stringBuffer!.append("The User Name you selected is already in use.<br/>  Please
 }
 
 
+                //@Throws(Exception.constructor)
+            
+    public getTransformInfoInterface(): TransformInfoInterface{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getTransformInfoInterface();;
+    
+}
+
+
 }
 

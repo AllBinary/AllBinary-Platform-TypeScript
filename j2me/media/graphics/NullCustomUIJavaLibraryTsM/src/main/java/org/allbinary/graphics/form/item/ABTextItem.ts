@@ -65,5 +65,41 @@ public constructor (label: string, layout: number, altText: string, backgroundBa
 }
 
 
+    public getMinimumWidth(): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getMinimumWidth();;
+    
+}
+
+
+    public getMinimumHeight(): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getMinimumHeight();;
+    
+}
+
+
+    public getLabel(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getLabel();;
+    
+}
+
+
+    public paintXY(graphics: Graphics, x: number, y: number){
+super.paintXY(graphics, x, y);
+    
+}
+
+
 }
 

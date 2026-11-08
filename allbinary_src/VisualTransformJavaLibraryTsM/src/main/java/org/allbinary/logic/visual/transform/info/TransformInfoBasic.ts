@@ -49,6 +49,9 @@ import { TransformInfoObjectConfigInterface } from '../../../../../../org/allbin
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
 
+import { WeblisketSessionInterface } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
+//not GWT import const WeblisketSessionInterface
+
 
 
 
@@ -311,6 +314,36 @@ this.storeFrontInterface= storeFrontInterface;
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
+    
+}
+
+
+    public getWeblisketSession(): WeblisketSessionInterface{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getWeblisketSession();;
+    
+}
+
+
+    public getPageContext(): PageContext{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getPageContext();;
+    
+}
+
+
+    public getPropertiesHashMap(): HashMap<any, any>{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getPropertiesHashMap();;
     
 }
 

@@ -156,6 +156,90 @@ this.viewPosition!.setAllbinaryLayer(this);
 }
 
 
+    public setPosition(x: number, y: number, z: number){
+super.setPosition(x, y, z);
+    
+}
+
+
+    public moveDXYZ(dx: number, dy: number, dz: number){
+super.moveDXYZ(dx, dy, dz);
+    
+}
+
+
+    public getXP(): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getXP();;
+    
+}
+
+
+    public getYP(): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getYP();;
+    
+}
+
+
+    public getZP(): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getZP();;
+    
+}
+
+
+    public getWidth(): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getWidth();;
+    
+}
+
+
+    public getHeight(): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getHeight();;
+    
+}
+
+
+    public setVisible(visible: boolean){
+super.setVisible(visible);
+    
+}
+
+
+    public isVisible(): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.isVisible();;
+    
+}
+
+
+    public paint(graphics: Graphics){
+super.paint(graphics);
+    
+}
+
+
                 //@Throws(Exception.constructor)
             
     public onChangeEvent(layerManagerEvent: ViewPositionEvent){

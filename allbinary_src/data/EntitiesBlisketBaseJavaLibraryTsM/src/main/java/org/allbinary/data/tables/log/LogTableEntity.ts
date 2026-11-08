@@ -34,6 +34,10 @@ import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/
 const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 type StringMaker<T = any, U = any> = typeof StringMaker extends abstract new (...args: any[]) => infer Instance ? Instance : typeof StringMaker;
 
+//not plain js import { BasicArrayList } 
+const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+type BasicArrayList<T = any, U = any> = typeof BasicArrayList extends abstract new (...args: any[]) => infer Instance ? Instance : typeof BasicArrayList;
+
 
 
 
@@ -95,6 +99,28 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.tableName)!.app
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.createTable(this.createTableStatement());;
+    
+}
+
+
+    public deleteWhere(key: string, value: string){
+super.deleteWhere(key, value);
+    
+}
+
+
+    public insert(values: BasicArrayList){
+super.insert(values);
+    
+}
+
+
+    public dropTable(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.dropTable();;
     
 }
 

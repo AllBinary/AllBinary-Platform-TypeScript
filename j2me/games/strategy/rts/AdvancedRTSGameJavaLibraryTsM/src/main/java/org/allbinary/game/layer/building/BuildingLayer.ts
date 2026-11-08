@@ -163,6 +163,9 @@ import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/
 const ABHashtable = globalThis.org.allbinary.util.ABHashtable;
 type ABHashtable<T = any, U = any> = typeof ABHashtable extends abstract new (...args: any[]) => infer Instance ? Instance : typeof ABHashtable;
 
+import { RotationAnimation } from '../../../../../org/allbinary/animation/RotationAnimation.js';
+//not GWT import const RotationAnimation
+
 
 
 
@@ -835,6 +838,22 @@ buildingInfoHudPaintable!.setRtsLayer(this);
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BuildingLayer.getStaticType();;
+    
+}
+
+
+    public getRotationAnimationInterface(): RotationAnimation{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getRotationAnimationInterface();;
+    
+}
+
+
+    public setFrame(index: number){
+super.setFrame(index);
     
 }
 

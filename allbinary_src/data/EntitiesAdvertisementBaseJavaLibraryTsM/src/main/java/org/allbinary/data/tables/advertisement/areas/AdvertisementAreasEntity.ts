@@ -291,5 +291,11 @@ super.updateWhere(AdvertisementAreaData.getInstance()!.NAME, updatedValues!.get(
 }
 
 
+    public insert(values: BasicArrayList){
+super.insert(values);
+    
+}
+
+
 }
 

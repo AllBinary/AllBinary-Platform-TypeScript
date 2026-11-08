@@ -44,6 +44,9 @@ import { OutputKeys } from '../../../../../../javax/xml/transform/OutputKeys.js'
 import { Transformer } from '../../../../../../javax/xml/transform/Transformer.js';
 //not GWT import const Transformer
 
+import { TransformerConfigurationException } from '../../../../../../javax/xml/transform/TransformerConfigurationException.js';
+//not GWT import const TransformerConfigurationException
+
 import { TransformerFactory } from '../../../../../../javax/xml/transform/TransformerFactory.js';
 //not GWT import const TransformerFactory
 
@@ -62,10 +65,6 @@ import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/
 
 import { CharacterSetData } from '../../../../../../org/allbinary/logic/java/characters/CharacterSetData.js';
 //not GWT import const CharacterSetData
-
-//not plain js import { CommonStrings } 
-const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
-type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
 
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
 //not GWT import const Document
@@ -158,7 +157,9 @@ copyTransformer!.transform(domSource, streamResult);
 
     private readonly INDENT_NUMBER: string = "indent-number";
 
-    private transformer: Transformer;
+    private indent: number= 0;
+
+    private ignoreDeclaration: boolean= false;
 
 private constructor (){
 
@@ -167,10 +168,28 @@ private constructor (){
     
 }
 
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public init(indent: number, ignoreDeclaration: boolean){
+this.indent= indent;
+    
+this.ignoreDeclaration= ignoreDeclaration;
+    
+}
 
- try { 
+createTransformer(...args: any[]): any {
+   
+   
+    if (args.length === 2 && typeof args[0] === 'number' && typeof args[1] === 'boolean') return this.createTransformer$overload1(args[0], args[1]);
+   
+    if (args.length === 0) return this.createTransformer$overload2();
+   
+   throw new TypeError('No matching overload: createTransformer'); }
+  
+                //@Throws(TransformerConfigurationException.constructor)
+            
+    createTransformer$overload1(indent: number, ignoreDeclaration: boolean): Transformer{
+
     let booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
@@ -178,34 +197,70 @@ private constructor (){
     
 transformerFactory!.setAttribute(this.INDENT_NUMBER, indent);
     
-this.transformer= transformerFactory!.newTransformer();
-    
-this.transformer.setOutputProperty(OutputKeys.ENCODING, CharacterSetData.getInstance()!.UTF_8);
-    
-this.transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, (ignoreDeclaration ? booleanFactory!.YES : booleanFactory!.NO));
-    
-this.transformer.setOutputProperty(OutputKeys.INDENT, booleanFactory!.YES);
-    
- }
- catch (caught: any) {
- {
-  const e = caught;
-  
 
-    let commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    let transformer: Transformer = transformerFactory!.newTransformer()!;;
     
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+transformer.setOutputProperty(OutputKeys.ENCODING, CharacterSetData.getInstance()!.UTF_8);
+    
+transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, (ignoreDeclaration ? booleanFactory!.YES : booleanFactory!.NO));
+    
+transformer.setOutputProperty(OutputKeys.INDENT, booleanFactory!.YES);
     
 
- }
-   }
- 
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return transformer;
+    
+}
+
+
+                //@Throws(TransformerConfigurationException.constructor)
+            
+    public createTransformer$overload2(): Transformer{
+
+    let currentIndent: number= 0;;
+    
+
+    let currentIgnoreDeclaration: boolean= false;;
+    
+
+        
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
+        //synchronized(this) 
+
+        //mutex.withLock
+        
+currentIndent= this.indent;
+    
+currentIgnoreDeclaration= this.ignoreDeclaration;
+    
+
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.createTransformer(currentIndent, currentIgnoreDeclaration);;
+    
 }
 
 
                 //@Throws(Exception.constructor)
             
     public format(xmlString: string): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.formatWithTransformer(xmlString, this.createTransformer());;
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public formatWithTransformer(xmlString: string, transformer: Transformer): string{
 
     let src: InputSource = new InputSource(new StringReader(xmlString));;
     
@@ -215,7 +270,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 
     let out: Writer = new StringWriter();;
     
-this.transformer.transform(new DOMSource(document), new StreamResult(out));
+transformer.transform(new DOMSource(document), new StreamResult(out));
     
 
 

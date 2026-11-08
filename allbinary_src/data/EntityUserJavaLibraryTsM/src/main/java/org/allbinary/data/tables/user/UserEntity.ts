@@ -585,5 +585,15 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.tableName)!.app
 }
 
 
+    public dropTable(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.dropTable();;
+    
+}
+
+
 }
 

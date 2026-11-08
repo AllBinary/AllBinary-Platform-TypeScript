@@ -58,6 +58,8 @@ type StringUtil<T = any, U = any> = typeof StringUtil extends abstract new (...a
 //sameFolderImports - not GWT import - same folder const TextAnimation
 import { TextInterface } from './TextInterface.js';
 //sameFolderImports - not GWT import - same folder const TextInterface
+import { TextChangeListener } from './TextChangeListener.js';
+//sameFolderImports - not GWT import - same folder const TextChangeListener
 
 export class CustomTextAnimation extends TextAnimation implements TextInterface {
         
@@ -116,6 +118,12 @@ this.fontDebugFactory!.setFont(existingFont, graphics);
 this.hasChanged= true;
     
 this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, globalThis.Math.trunc((this.fontSize *scaleX)));
+    
+}
+
+
+    public setTextWithOnMeasure(text: string, textChangeListener: TextChangeListener){
+super.setTextWithOnMeasure(text, textChangeListener);
     
 }
 

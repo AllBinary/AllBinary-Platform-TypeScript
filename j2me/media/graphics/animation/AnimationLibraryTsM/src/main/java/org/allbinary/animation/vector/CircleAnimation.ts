@@ -85,5 +85,21 @@ graphics.drawArc(x, y, this.width, this.height, 0, this.TOTAL_ANGLE);
 }
 
 
+    public getBasicColorP(): BasicColor{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getBasicColorP();;
+    
+}
+
+
+    public setBasicColorP(basicColor: BasicColor){
+super.setBasicColorP(basicColor);
+    
+}
+
+
 }
 

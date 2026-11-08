@@ -27,6 +27,12 @@ import { VirtualKeyboardEventListenerInterface } from '../../../../../org/allbin
 import { Activity } from '../../../../../android/app/Activity.js';
 //not GWT import const Activity
 
+import { VirtualKeyboardEvent } from '../../../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
+//not GWT import const VirtualKeyboardEvent
+
+import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not GWT import const AllBinaryEventObject
+
 
 
 
@@ -57,6 +63,18 @@ public constructor (activity: Activity){
 
             super();
         }
+
+
+    public onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent){
+super.onVirtualKeyboardEvent(virtualKeyboardEvent);
+    
+}
+
+
+    public onEvent(eventObject: AllBinaryEventObject){
+super.onEvent(eventObject);
+    
+}
 
 
 }

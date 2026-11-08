@@ -76,11 +76,11 @@ export class FrameLog
          {
         
 
-    private static frameBytes: number[] = Array.from(new TextEncoder().encode(.toCharArray()), byte => (byte << 24) >> 24)!;
+    private static frameBytes: number[] = Array.from(new TextEncoder().encode("Frame: "), byte => (byte << 24) >> 24)!;
 
-    private static info: number[] = Array.from(new TextEncoder().encode(.toCharArray()), byte => (byte << 24) >> 24)!;
+    private static info: number[] = Array.from(new TextEncoder().encode("Info: \n"), byte => (byte << 24) >> 24)!;
 
-    private static actions: number[] = Array.from(new TextEncoder().encode(.toCharArray()), byte => (byte << 24) >> 24)!;
+    private static actions: number[] = Array.from(new TextEncoder().encode("Actions: \n"), byte => (byte << 24) >> 24)!;
 
     private readonly frame: Long;
 

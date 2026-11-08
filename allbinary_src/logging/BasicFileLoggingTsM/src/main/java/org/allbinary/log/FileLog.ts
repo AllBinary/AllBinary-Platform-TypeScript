@@ -90,7 +90,7 @@ export class FileLog
 
     private static readonly logPath: string = "g:\\log\\";
 
-    private static readonly extension: string = .toCharArray();
+    private static readonly extension: string = "dat";
 
     private static readonly fileName: string = .toCharArray();
 
@@ -278,7 +278,7 @@ static put(...args: any[]): any {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return .toCharArray();
+                        return "Log File Creation Error";
     
 
                                     }
@@ -301,7 +301,7 @@ static put(...args: any[]): any {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return .toCharArray();
+                        return "Couldn't Create a Backup file";
     
 
                                     }
@@ -389,7 +389,7 @@ FileLog.fileOut!.flush();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return .toCharArray();
+                        return "Log File Creation Error";
     
 
                                     }
@@ -412,7 +412,7 @@ FileLog.fileOut!.flush();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return .toCharArray();
+                        return "Couldn't Create a Backup file";
     
 
                                     }

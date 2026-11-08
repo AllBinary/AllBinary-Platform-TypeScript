@@ -128,8 +128,16 @@ this.logUtil!.putF("KeyCode: " +keycode, this, "keyRelease");
     
 }
 
-
-    public mouseMove(x: Integer, y: Integer){
+mouseMove(...args: any[]): any {
+   
+   
+    if (args.length === 2) return this.mouseMove$overload1(args[0], args[1]);
+   
+    if (args.length === 1) return this.mouseMove$overload2(args[0]);
+   
+   throw new TypeError('No matching overload: mouseMove'); }
+  
+    public mouseMove$overload1(x: Integer, y: Integer){
 this.logUtil!.putF("X: " +x +" Y: " +y, this, "mouseMove");
     
 }
@@ -214,6 +222,36 @@ this.logUtil!.putF("Buttons: " +buttons, this, "mouseRelease");
 
 
     public waitForIdle(){
+}
+
+
+    public mouseMove$overload2(point: Point){
+super.mouseMove(point);
+    
+}
+
+mouseMoveToTarget(...args: any[]): any {
+   
+   
+    if (args.length === 1) return this.mouseMoveToTarget$overload1(args[0]);
+   
+    if (args.length === 3) return this.mouseMoveToTarget$overload2(args[0], args[1], args[2]);
+   
+   throw new TypeError('No matching overload: mouseMoveToTarget'); }
+  
+                //@Throws(Exception.constructor)
+            
+    public mouseMoveToTarget$overload1(rectangle: Rectangle){
+super.mouseMoveToTarget(rectangle);
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public mouseMoveToTarget$overload2(rectangle: Rectangle, x: Integer, y: Integer){
+super.mouseMoveToTarget(rectangle, x, y);
+    
 }
 
 

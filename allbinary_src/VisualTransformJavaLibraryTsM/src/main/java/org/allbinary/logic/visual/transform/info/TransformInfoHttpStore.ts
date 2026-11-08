@@ -209,5 +209,21 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 }
 
 
+    public setStoreName(value: string){
+super.setStoreName(value);
+    
+}
+
+
+    public getStoreName(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getStoreName();;
+    
+}
+
+
 }
 

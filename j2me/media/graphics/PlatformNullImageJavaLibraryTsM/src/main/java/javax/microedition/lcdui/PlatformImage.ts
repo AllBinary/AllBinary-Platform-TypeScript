@@ -106,7 +106,7 @@ export class PlatformImage
 }
 
 
-    public getGraphics(graphicsSurface: any, width: number, height: number, image: Image): javax.microedition.lcdui.Graphics{
+    public getGraphics(graphicsSurface: any, width: number, height: number, image: Image): Graphics{
 
 
 
@@ -115,11 +115,11 @@ export class PlatformImage
 }
 
 
-    public drawImage(image: Image, x: number, y: number, anchor: number, g2: javax.microedition.lcdui.Graphics, g: any){
+    public drawImage(image: Image, x: number, y: number, anchor: number, g2: Graphics, g: any){
 }
 
 
-    public drawRegion(image: Image, x_src: number, y_src: number, width: number, height: number, transform: number, x_dst: number, y_dst: number, anchor: number, g: javax.microedition.lcdui.Graphics){
+    public drawRegion(image: Image, x_src: number, y_src: number, width: number, height: number, transform: number, x_dst: number, y_dst: number, anchor: number, g: Graphics){
 }
 
 

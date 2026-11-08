@@ -20,6 +20,8 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
+        
 //not plain js import { CommonStrings } 
 const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 type CommonStrings<T = any, U = any> = typeof CommonStrings extends abstract new (...args: any[]) => infer Instance ? Instance : typeof CommonStrings;
@@ -46,6 +48,15 @@ import { GeographicMapCellPositionFactoryInterface } from '../../../../../../../
 
 import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
 //not GWT import const GeographicMapCellTypeFactory
+
+import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not GWT import const BasicColor
+
+import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+//not GWT import const GeographicMapCellPosition
+
+import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
+//not GWT import const GeographicMapCellType
 
 
 
@@ -185,6 +196,84 @@ this.miniGeographicMap= miniBasicGeographicMap;
 
     public setRaceTrackData(raceTrackData: RaceTrackData){
 this.raceTrackData= raceTrackData;
+    
+}
+
+
+    public getId(): Integer{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getId();;
+    
+}
+
+
+    public getName(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getName();;
+    
+}
+
+
+    public reset(){
+super.reset();
+    
+}
+
+
+    public getAllBinaryTiledLayer(): AllBinaryTiledLayer{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getAllBinaryTiledLayer();;
+    
+}
+
+
+    public getCellTypeFromMapCellTypeInt(cellTypeId: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getCellTypeFromMapCellTypeInt(cellTypeId);;
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public getCellTypeAt(cellPosition: GeographicMapCellPosition): GeographicMapCellType{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getCellTypeAt(cellPosition);;
+    
+}
+
+
+    public getForegroundBasicColor(): BasicColor{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getForegroundBasicColor();;
+    
+}
+
+
+    public getBackgroundBasicColor(): BasicColor{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getBackgroundBasicColor();;
     
 }
 

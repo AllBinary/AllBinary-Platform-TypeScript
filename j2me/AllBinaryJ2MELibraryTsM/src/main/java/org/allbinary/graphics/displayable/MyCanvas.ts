@@ -135,6 +135,26 @@ this.commandStack= StdUtil.getInstance()!.createStack();
 }
 
 
+    public getWidth(): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getWidth();;
+    
+}
+
+
+    public getHeight(): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getHeight();;
+    
+}
+
+
     public setFullScreenMode(mode: boolean){
 super.setFullScreenMode(mode);
     

@@ -31,9 +31,6 @@
             //import { Double } from '../../../java/lang/Double.js';
             const Double = (globalThis.java?.lang?.Double ?? class {}) as typeof globalThis.java.lang.Double;
         
-import { Enumeration } from '../../../java/util/Enumeration.js';
-//not GWT import const Enumeration
-
 import { GraphicsStrings } from '../../../org/allbinary/graphics/GraphicsStrings.js';
 //not GWT import const GraphicsStrings
 
@@ -230,13 +227,21 @@ console.log(stringBuilder!.toString());
     let pointVector: BasicArrayList = new BasicArrayListD();;
     
 
-    let keys: Enumeration<any> = svg.keys()!;;
+    let objectArray: any[] = svg.keysAsArray()!;;
     
 
-        while(keys.hasMoreElements())
+    let size: number = objectArray!.length
+                ;;
+    
+
+
+
+
+                        for (
+    let index: number = 0;index < size; index++)
         {
 
-    let key: string = keys.nextElement()! as string;;
+    let key: string = objectArray[index]! as string;;
     
 
     let value: any = svg.opt(key)!;;

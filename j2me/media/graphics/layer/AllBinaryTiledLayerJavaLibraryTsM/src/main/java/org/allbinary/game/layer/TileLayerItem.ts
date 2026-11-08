@@ -146,5 +146,15 @@ this.tiledLayer!.paint(graphics);
 }
 
 
+    public getLabel(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getLabel();;
+    
+}
+
+
 }
 

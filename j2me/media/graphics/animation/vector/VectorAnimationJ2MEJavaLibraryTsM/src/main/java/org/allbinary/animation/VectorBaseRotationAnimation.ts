@@ -233,5 +233,21 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(this.currentPoints!.len
 }
 
 
+    public getBasicColorP(): BasicColor{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getBasicColorP();;
+    
+}
+
+
+    public setBasicColorP(basicColor: BasicColor){
+super.setBasicColorP(basicColor);
+    
+}
+
+
 }
 

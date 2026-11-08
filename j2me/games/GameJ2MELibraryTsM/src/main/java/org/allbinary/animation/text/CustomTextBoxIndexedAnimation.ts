@@ -175,5 +175,15 @@ this.customTextBox!.paintXY(graphics, x, y);
 }
 
 
+    public getWidth(): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getWidth();;
+    
+}
+
+
 }
 

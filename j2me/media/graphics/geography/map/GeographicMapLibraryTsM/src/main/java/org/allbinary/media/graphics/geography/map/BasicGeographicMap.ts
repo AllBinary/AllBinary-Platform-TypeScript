@@ -579,5 +579,83 @@ cellPositionArray[index]![index2]= this.getCellPositionAtXY(x, y);
 }
 
 
+    public getId(): Integer{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getId();;
+    
+}
+
+
+    public getName(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getName();;
+    
+}
+
+
+    public reset(){
+super.reset();
+    
+}
+
+
+    public getAllBinaryTiledLayer(): AllBinaryTiledLayer{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getAllBinaryTiledLayer();;
+    
+}
+
+
+    public getCellTypeFromMapCellTypeInt(cellTypeId: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getCellTypeFromMapCellTypeInt(cellTypeId);;
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public getCellTypeAt(cellPosition: GeographicMapCellPosition): GeographicMapCellType{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getCellTypeAt(cellPosition);;
+    
+}
+
+
+    public getForegroundBasicColor(): BasicColor{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getForegroundBasicColor();;
+    
+}
+
+
+    public getBackgroundBasicColor(): BasicColor{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return super.getBackgroundBasicColor();;
+    
+}
+
+
 }
 
